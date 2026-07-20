@@ -371,6 +371,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3R4W228G24;
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Team Store Provisioning Profile: com.lldm.coro";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/DummySDK/System/Library/Frameworks\"",

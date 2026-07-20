@@ -57,7 +57,7 @@ jobs:
           /usr/libexec/PlistBuddy -c "Set :teamID '$TEAM_ID'" ios/App/App/ExportOptions.plist
           
           # Save to environment variables for subsequent steps
-          echo "PROVISIONING_PROFILE_UUID=$UUID" >> $GITHUB_ENV
+          echo "PROVISIONING_PROFILE_NAME=$PROFILE_NAME" >> $GITHUB_ENV
           echo "DEVELOPMENT_TEAM_ID=$TEAM_ID" >> $GITHUB_ENV
 
       - name: Build Xcode Archive
@@ -67,6 +67,10 @@ jobs:
                      -sdk iphoneos \
                      -configuration Release \
                      -archivePath $RUNNER_TEMP/App.xcarchive \
+                     CODE_SIGN_STYLE=Manual \
+                     CODE_SIGN_IDENTITY="Apple Distribution" \
+                     PROVISIONING_PROFILE_SPECIFIER="$PROVISIONING_PROFILE_NAME" \
+                     DEVELOPMENT_TEAM="$DEVELOPMENT_TEAM_ID" \
                      archive
 
       - name: Export IPA
