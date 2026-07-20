@@ -50,6 +50,10 @@ jobs:
           # Add temporary keychain to user search list so xcodebuild finds the certificate
           security list-keychains -d user -s $KEYCHAIN_PATH $(security list-keychains -d user | tr -d '"')
 
+      - name: Debug - List signing identities
+        run: |
+          security find-identity -v -p codesigning $RUNNER_TEMP/build.keychain-db
+
       - name: Create App Store Connect API Private Key
         run: |
           mkdir -p ~/private_keys
