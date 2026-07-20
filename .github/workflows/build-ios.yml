@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build & Upload to App Store Connect
-    runs-on: macos-14
+    runs-on: macos-26
 
     steps:
       - name: Checkout Repository
@@ -30,7 +30,7 @@ jobs:
         run: npx cap sync ios
 
       - name: Select Xcode version
-        run: sudo xcode-select -s /Applications/Xcode_15.4.app
+        run: sudo xcode-select -s /Applications/Xcode_26.6.app
 
       - name: Install Apple Certificate
         uses: apple-actions/import-codesign-certs@v3
