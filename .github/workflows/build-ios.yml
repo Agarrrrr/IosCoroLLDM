@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-level: '22'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install Dependencies
@@ -32,56 +32,40 @@ jobs:
       - name: Select Xcode version
         run: sudo xcode-select -s /Applications/Xcode_15.4.app
 
-      - name: Cache CocoaPods
-        uses: actions/cache@v4
+      - name: Install Apple Certificate
+        uses: apple-actions/import-codesign-certs@v3
         with:
-          path: ios/App/Pods
-          key: ${{ runner.os }}-pods-${{ hashFiles('ios/App/Podfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pods-
-
-      - name: Install CocoaPods
-        run: |
-          cd ios/App
-          pod install
-
-      # -------------------------------------------------------------
-      # OPCIONAL: Si deseas firmar y subir automáticamente, 
-      # descomenta los siguientes pasos y añade los secretos a GitHub:
-      # -------------------------------------------------------------
-      # - name: Install Apple Certificate and Provisioning Profile
-      #   uses: apple-actions/import-codesign-certs@v3
-      #   with:
-      #     p12-file-base64: ${{ secrets.APPLE_P12_BASE64 }}
-      #     p12-password: ${{ secrets.APPLE_P12_PASSWORD }}
-      #     keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }}
+          p12-file-base64: ${{ secrets.APPLE_P12_BASE64 }}
+          p12-password: ${{ secrets.APPLE_P12_PASSWORD }}
+          keychain-password: 'Television2012'
       
-      # - name: Install Provisioning Profile
-      #   run: |
-      #     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-      #     echo "${{ secrets.APPLE_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
+      - name: Install Provisioning Profile
+        run: |
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          echo "${{ secrets.APPLE_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
 
       - name: Build Xcode Archive
         run: |
-          xcodebuild -workspace ios/App/App.xcworkspace \
+          xcodebuild -project ios/App/App.xcodeproj \
                      -scheme App \
                      -sdk iphoneos \
                      -configuration Release \
                      -archivePath $RUNNER_TEMP/App.xcarchive \
-                     archive \
-                     CODE_SIGNING_ALLOWED=NO
+                     archive
 
-      # - name: Export IPA
-      #   run: |
-      #     xcodebuild -exportArchive \
-      #                -archivePath $RUNNER_TEMP/App.xcarchive \
-      #                -exportOptionsPlist ios/App/App/ExportOptions.plist \
-      #                -exportPath $RUNNER_TEMP/build
+      - name: Export IPA
+        id: export
+        run: |
+          xcodebuild -exportArchive \
+                     -archivePath $RUNNER_TEMP/App.xcarchive \
+                     -exportOptionsPlist ios/App/App/ExportOptions.plist \
+                     -exportPath $RUNNER_TEMP/build
+          echo "ipa-path=$RUNNER_TEMP/build/App.ipa" >> $GITHUB_OUTPUT
       
-      # - name: Upload to App Store Connect
-      #   uses: apple-actions/upload-testflight-build@v1
-      #   with:
-      #     app-path: ${{ steps.export.outputs.ipa-path }}
-      #     issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
-      #     api-key-id: ${{ secrets.APPSTORE_KEY_ID }}
-      #     api-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}
+      - name: Upload to App Store Connect
+        uses: apple-actions/upload-testflight-build@v1
+        with:
+          app-path: ${{ steps.export.outputs.ipa-path }}
+          issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+          api-key-id: ${{ secrets.APPSTORE_KEY_ID }}
+          api-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}
