@@ -66,6 +66,17 @@ jobs:
           # Dynamically update ExportOptions.plist with the correct Profile Name and Team ID
           /usr/libexec/PlistBuddy -c "Set :provisioningProfiles:com.lldm.coro '$PROFILE_NAME'" ios/App/App/ExportOptions.plist
           /usr/libexec/PlistBuddy -c "Set :teamID '$TEAM_ID'" ios/App/App/ExportOptions.plist
+          
+          # Dynamically replace the UUID placeholder in project.pbxproj
+          python3 -c "
+import sys
+path = 'ios/App/App.xcodeproj/project.pbxproj'
+with open(path, 'r') as f:
+    text = f.read()
+text = text.replace('REPLACE_WITH_UUID', sys.argv[1])
+with open(path, 'w') as f:
+    f.write(text)
+" "$UUID"
 
       - name: Build Xcode Archive
         run: |
