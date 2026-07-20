@@ -55,9 +55,11 @@ jobs:
           security find-identity -v -p codesigning $RUNNER_TEMP/build.keychain-db
 
       - name: Create App Store Connect API Private Key
+        env:
+          APPSTORE_PRIVATE_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY }}
         run: |
           mkdir -p ~/private_keys
-          echo "${{ secrets.APPSTORE_PRIVATE_KEY }}" > ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8
+          echo "$APPSTORE_PRIVATE_KEY" > ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8
 
       - name: Build Xcode Archive
         run: |
