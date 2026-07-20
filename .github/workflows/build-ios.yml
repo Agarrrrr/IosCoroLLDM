@@ -43,6 +43,22 @@ jobs:
         run: |
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           echo "${{ secrets.APPLE_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
+          
+          # Extract UUID, Name, and Team ID from the provisioning profile
+          UUID=$(security cms -D -i ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision | xmllint --xpath 'string(//key[text()="UUID"]/following-sibling::string[1])' -)
+          PROFILE_NAME=$(security cms -D -i ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision | xmllint --xpath 'string(//key[text()="Name"]/following-sibling::string[1])' -)
+          TEAM_ID=$(security cms -D -i ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision | xmllint --xpath 'string(//key[text()="TeamIdentifier"]/following-sibling::array[1]/string[1])' -)
+          
+          # Rename the profile to its UUID so Xcode can resolve it
+          mv ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UUID.mobileprovision
+          
+          # Dynamically update ExportOptions.plist with the correct Profile Name and Team ID
+          /usr/libexec/PlistBuddy -c "Set :provisioningProfiles:com.lldm.coro '$PROFILE_NAME'" ios/App/App/ExportOptions.plist
+          /usr/libexec/PlistBuddy -c "Set :teamID '$TEAM_ID'" ios/App/App/ExportOptions.plist
+          
+          # Save to environment variables for subsequent steps
+          echo "PROVISIONING_PROFILE_UUID=$UUID" >> $GITHUB_ENV
+          echo "DEVELOPMENT_TEAM_ID=$TEAM_ID" >> $GITHUB_ENV
 
       - name: Build Xcode Archive
         run: |
@@ -51,6 +67,10 @@ jobs:
                      -sdk iphoneos \
                      -configuration Release \
                      -archivePath $RUNNER_TEMP/App.xcarchive \
+                     CODE_SIGN_STYLE=Manual \
+                     DEVELOPMENT_TEAM=$DEVELOPMENT_TEAM_ID \
+                     PROVISIONING_PROFILE=$PROVISIONING_PROFILE_UUID \
+                     CODE_SIGN_IDENTITY="Apple Distribution" \
                      archive
 
       - name: Export IPA
