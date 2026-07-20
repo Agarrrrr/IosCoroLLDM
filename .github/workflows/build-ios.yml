@@ -72,6 +72,7 @@ jobs:
                      -authenticationKeyPath ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8 \
                      -authenticationKeyID ${{ secrets.APPSTORE_KEY_ID }} \
                      -authenticationKeyIssuerID ${{ secrets.APPSTORE_ISSUER_ID }} \
+                     CODE_SIGN_IDENTITY="" \
                      archive
 
       - name: Export IPA
