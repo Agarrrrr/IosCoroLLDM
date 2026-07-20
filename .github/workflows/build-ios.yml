@@ -68,15 +68,7 @@ jobs:
           /usr/libexec/PlistBuddy -c "Set :teamID '$TEAM_ID'" ios/App/App/ExportOptions.plist
           
           # Dynamically replace the UUID placeholder in project.pbxproj
-          python3 -c "
-import sys
-path = 'ios/App/App.xcodeproj/project.pbxproj'
-with open(path, 'r') as f:
-    text = f.read()
-text = text.replace('REPLACE_WITH_UUID', sys.argv[1])
-with open(path, 'w') as f:
-    f.write(text)
-" "$UUID"
+          python3 -c "import sys; path='ios/App/App.xcodeproj/project.pbxproj'; text=open(path).read().replace('REPLACE_WITH_UUID', sys.argv[1]); open(path, 'w').write(text)" "$UUID"
 
       - name: Build Xcode Archive
         run: |
