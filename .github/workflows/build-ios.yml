@@ -50,25 +50,10 @@ jobs:
           # Add temporary keychain to user search list so xcodebuild finds the certificate
           security list-keychains -d user -s $KEYCHAIN_PATH $(security list-keychains -d user | tr -d '"')
 
-      - name: Install Provisioning Profile
+      - name: Create App Store Connect API Private Key
         run: |
-          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-          echo "${{ secrets.APPLE_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
-          
-          # Extract UUID, Name, and Team ID from the provisioning profile
-          UUID=$(security cms -D -i ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision | xmllint --xpath 'string(//key[text()="UUID"]/following-sibling::string[1])' -)
-          PROFILE_NAME=$(security cms -D -i ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision | xmllint --xpath 'string(//key[text()="Name"]/following-sibling::string[1])' -)
-          TEAM_ID=$(security cms -D -i ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision | xmllint --xpath 'string(//key[text()="TeamIdentifier"]/following-sibling::array[1]/string[1])' -)
-          
-          # Copy the profile to its UUID name so Xcode can resolve it
-          cp ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UUID.mobileprovision
-          
-          # Dynamically update ExportOptions.plist with the correct Profile Name and Team ID
-          /usr/libexec/PlistBuddy -c "Set :provisioningProfiles:com.lldm.coro '$PROFILE_NAME'" ios/App/App/ExportOptions.plist
-          /usr/libexec/PlistBuddy -c "Set :teamID '$TEAM_ID'" ios/App/App/ExportOptions.plist
-          
-          # Dynamically replace the UUID placeholder in project.pbxproj
-          python3 -c "import sys; path='ios/App/App.xcodeproj/project.pbxproj'; text=open(path).read().replace('REPLACE_WITH_UUID', sys.argv[1]); open(path, 'w').write(text)" "$UUID"
+          mkdir -p ~/private_keys
+          echo "${{ secrets.APPSTORE_PRIVATE_KEY }}" > ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8
 
       - name: Build Xcode Archive
         run: |
@@ -77,6 +62,10 @@ jobs:
                      -sdk iphoneos \
                      -configuration Release \
                      -archivePath $RUNNER_TEMP/App.xcarchive \
+                     -allowProvisioningUpdates \
+                     -authenticationKeyPath ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8 \
+                     -authenticationKeyID ${{ secrets.APPSTORE_KEY_ID }} \
+                     -authenticationKeyIssuerID ${{ secrets.APPSTORE_ISSUER_ID }} \
                      archive
 
       - name: Export IPA
@@ -85,7 +74,11 @@ jobs:
           xcodebuild -exportArchive \
                      -archivePath $RUNNER_TEMP/App.xcarchive \
                      -exportOptionsPlist ios/App/App/ExportOptions.plist \
-                     -exportPath $RUNNER_TEMP/build
+                     -exportPath $RUNNER_TEMP/build \
+                     -allowProvisioningUpdates \
+                     -authenticationKeyPath ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8 \
+                     -authenticationKeyID ${{ secrets.APPSTORE_KEY_ID }} \
+                     -authenticationKeyIssuerID ${{ secrets.APPSTORE_ISSUER_ID }}
           echo "ipa-path=$RUNNER_TEMP/build/App.ipa" >> $GITHUB_OUTPUT
       
       - name: Upload to App Store Connect
