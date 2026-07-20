@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "checkJs": true,
+        "allowJs": true,
+        "strict": false,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "lib": ["DOM", "ESNext"],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

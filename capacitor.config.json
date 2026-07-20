@@ -1,0 +1,25 @@
+{
+  "appId": "com.lldm.coro",
+  "appName": "Coro LLDM",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "adjustMarginsForEdgeToEdge": "never"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#1a1a2e",
+      "showSpinner": false,
+      "androidSpinnerStyle": "small"
+    },
+    "StatusBar": {
+      "style": "dark",
+      "backgroundColor": "#00000000",
+      "overlaysWebView": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "com.lldmcorobc.twa",
+        "paths": ["/auth.html", "/index.html", "/"]
+      }
+    ]
+  }
+}

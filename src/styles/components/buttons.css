@@ -1,0 +1,108 @@
+/* --- BOTONES CON FEEDBACK PREMIUM --- */
+.btn-principal, .btn-secundario, .btn-peligro, .nav-btn, .nav-item {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de presión física */
+.btn-principal:active, .btn-secundario:active, .nav-btn:active, .btn-icono:active {
+    transform: scale(0.96);
+    filter: brightness(0.9);
+}
+
+/* SIDEBAR: Feedback de Selección */
+.nav-btn {
+    width: calc(100% - 30px);
+    margin: 4px 15px;
+    padding: 14px 18px;
+    border: none;
+    background: transparent;
+    color: var(--color-texto-suave);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    transition: background-color 0.2s, transform 0.1s, color 0.2s !important;
+}
+
+.nav-btn:hover, .nav-btn:active {
+    background: color-mix(in srgb, var(--color-texto-principal) 8%, transparent);
+    color: var(--color-texto-principal);
+}
+
+/* Estado Activo: Muy visible */
+.nav-btn.activo {
+    background: var(--color-acento) !important;
+    color: white !important;
+    font-weight: 800;
+    box-shadow: 0 4px 12px var(--color-sombra-acento);
+    transform: scale(1.02);
+}
+
+.nav-btn.activo svg {
+    stroke: white !important;
+}
+
+/* Iconos dentro de botones */
+.nav-btn .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    opacity: 0.8;
+}
+
+/* --- BOTONES DE AJUSTES (MODAL) --- */
+.btn-ajuste {
+    padding: 14px 16px;
+    border-radius: 14px;
+    font-size: 11px;
+    font-weight: 800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), filter 0.2s, background-color 0.2s;
+    letter-spacing: 0.5px;
+    width: 100%;
+    user-select: none;
+    outline: none;
+}
+
+.btn-ajuste:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
+}
+
+.btn-ajuste svg {
+    flex-shrink: 0;
+}
+
+.btn-ajuste-sync { 
+    background: color-mix(in srgb, var(--color-acento) 15%, transparent); 
+    color: var(--color-acento-fuerte); 
+}
+
+.btn-ajuste-cache { 
+    background: var(--color-input-fondo); 
+    color: var(--color-texto-suave); 
+}
+
+.btn-ajuste-pass { 
+    background: color-mix(in srgb, #3b82f6 15%, transparent); 
+    color: #60a5fa; 
+}
+
+.btn-ajuste-peligro { 
+    background: color-mix(in srgb, #ef4444 15%, transparent); 
+    color: #f87171; 
+}
+

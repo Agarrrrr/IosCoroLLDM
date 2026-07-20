@@ -1,0 +1,265 @@
+.toast {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-superficie);
+    color: var(--color-texto-principal);
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-left: 5px solid var(--color-acento);
+    pointer-events: auto;
+    animation: toastIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    min-width: 250px;
+    max-width: 80vw;
+    text-align: center;
+    z-index: 9999; /* Asegura estar por encima de TODO, incluso modales (3000) */
+}
+
+.toast.error { border-left-color: #ef4444; }
+
+/* --- BANNERS MODERNOS (BASE / MÓVILES) --- */
+.banner-vivo, .banner-recordatorio {
+    position: fixed;
+    top: max(env(safe-area-inset-top, 16px), 16px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: min(380px, 90vw); /* Máximo 380px o 90% del celular */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    z-index: 10000;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+    animation: slideDown 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.banner-vivo { 
+    background-color: var(--color-acento-suave); 
+    color: var(--color-acento-fuerte); 
+    border: 1px solid var(--color-acento);
+}
+
+.banner-recordatorio { 
+    background-color: var(--color-superficie-secundaria); 
+    color: var(--color-texto-principal); 
+    border: 1px solid var(--color-borde); 
+}
+
+/* Variante para avisos Estatales (Azul profesional adaptado) */
+.banner-vivo.estatal {
+    background-color: color-mix(in srgb, #4338ca 15%, transparent);
+    color: #6366f1;
+    border-color: color-mix(in srgb, #4338ca 30%, transparent);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translate(-50%, -150%); 
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+
+/* =========================================
+   ADAPTACIONES POR RESOLUCIÓN (MEDIA QUERIES)
+   ========================================= */
+
+/* TABLETS (A partir de 768px) */
+@media (min-width: 768px) {
+    .banner-vivo, .banner-recordatorio {
+        top: 20px; /* Lo bajamos un poquito más */
+        max-width: 420px; /* Permitimos que sea un poco más ancho */
+        padding: 12px 20px; /* Más área táctil/respiro */
+        font-size: 14px; /* Letra ligeramente más grande */
+    }
+}
+
+/* ESCRITORIO (A partir de 1024px) */
+@media (min-width: 1024px) {
+    .banner-vivo, .banner-recordatorio {
+        top: 24px; /* Aún más separado del techo */
+        max-width: 450px; /* Ancho máximo para monitores */
+        padding: 14px 24px; /* Proporciones de escritorio */
+        font-size: 15px; /* Letra óptima para PC */
+    }
+}
+
+
+
+.banner-texto {
+    font-size: 14px;
+    font-weight: 700;
+    flex: 1;
+    line-height: 1.3;
+    padding-right: 5px;
+    
+    /* 1. Propiedades estándar (Para silenciar al editor) */
+    box-orient: vertical;
+    line-clamp: 2;
+    display: box;
+    
+    /* 2. Propiedades WebKit (Para que realmente funcione en el navegador) */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    
+    overflow: hidden;
+}
+
+.banner-btn {
+    background-color: color-mix(in srgb, var(--color-texto-principal) 20%, transparent);
+    color: var(--color-texto-principal);
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+.banner-btn:active {
+    transform: scale(0.95);
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-cerrar-banner {
+    background: transparent;
+    border: none;
+    color: currentColor;
+    opacity: 0.7;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: opacity 0.2s, background 0.2s, transform 0.2s;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.btn-cerrar-banner:hover {
+    opacity: 1;
+}
+
+.btn-cerrar-banner:active {
+    background: color-mix(in srgb, currentColor 10%, transparent);
+    transform: scale(0.9);
+}
+
+@keyframes toastIn { 
+    from { transform: translateX(-50%) translateY(-20px); opacity: 0; } 
+    to { transform: translateX(-50%) translateY(0); opacity: 1; } 
+}
+
+@keyframes toastOut { 
+    from { transform: translateX(-50%) translateY(0); opacity: 1; } 
+    to { transform: translateX(-50%) translateY(-20px); opacity: 0; } 
+}
+@keyframes slideDown { from { top: -100px; opacity: 0; } to { top: max(env(safe-area-inset-top, 20px), 20px); opacity: 1; } }
+
+/* --- BADGES DE HISTORIAL DE NOTIFICACIONES --- */
+.notificacion-item {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-bottom: 1px solid var(--color-borde);
+    transition: background-color 0.2s ease;
+}
+
+.notificacion-item:last-child {
+    border-bottom: none;
+}
+
+.notificacion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.notificacion-fecha {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-texto-suave);
+    text-transform: uppercase;
+}
+
+.notificacion-mensaje {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-texto-principal);
+}
+
+.badge-notif {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+}
+
+.badge-notif-vivo {
+    background-color: var(--color-acento-suave);
+    color: var(--color-acento-fuerte);
+    border-color: var(--color-acento);
+}
+
+.badge-notif-nuevo {
+    background-color: var(--color-fondo-app);
+    color: var(--color-acento);
+    border-color: var(--color-borde);
+}
+
+.badge-notif-aviso {
+    background-color: var(--color-superficie-secundaria);
+    color: var(--color-texto-suave);
+    border-color: var(--color-borde);
+}
+
+.notificacion-item.interactivo {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.notificacion-item.interactivo:active {
+    background-color: var(--color-acento-suave);
+}
+
+/* --- ADAPTACIONES POR TEMA (Hacks de contraste si es necesario) --- */
+html.tema-contraste .badge-notif {
+    background-color: #000 !important;
+    color: #ff0 !important;
+    border-color: #ff0 !important;
+}
+
+html.tema-contraste .notificacion-item:active {
+    background-color: #220 !important;
+}

@@ -1,0 +1,12 @@
+/* --- GESTOR BC - MASTER STYLE --- */
+@import "./components/themes.css";
+@import "./components/layout.css";
+@import "./components/buttons.css";
+@import "./components/modals.css";
+@import "./components/notifications.css";
+
+/* --- MÓDULOS ESPECÍFICOS DEL GESTOR --- */
+@import "./gestor/gestor-layout.css";
+@import "./gestor/gestor-topbar.css";
+@import "./gestor/gestor-nav.css";
+@import "./gestor/gestor-components.css";

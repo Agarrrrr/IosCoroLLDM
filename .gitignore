@@ -1,0 +1,91 @@
+# Dependencias
+node_modules/
+
+# Archivos de entorno (CRÍTICO)
+.env
+.env.*
+
+# Carpetas de compilación de Vite
+dist/
+dist-ssr/
+
+# Archivos de sistema operativo (Basura de Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Logs de errores de NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuraciones locales de editores
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Contexto de desarrollo y arquitectura
+*.context.md
+docs_arquitectura/
+
+# Claves de Firma de Android (CRÍTICO - NUNCA SUBIR)
+*.jks
+*.keystore
+repertoriobc.jks
+
+# Cuentas de Servicio y Llaves (CRÍTICO - NUNCA SUBIR)
+repertorio-estatal-c5014bf0ca60.json
+revenuecat-key.json
+
+# Android / Gradle Build Artifacts
+.gradle/
+android/.gradle/
+app/build/
+android/app/build/
+build/
+android/local.properties
+*.apk
+*.aab
+*.idsig
+
+# Artefactos de pruebas (Playwright / Vitest)
+playwright-report/
+test-results/
+coverage/
+
+# PWA y Desarrollo
+dev-dist/
+manifest-checksum.txt
+
+# Memoria de Gemini CLI (Privada)
+.gemini/
+MEMORY.md
+
+
+
+# Antigravity/Scratch
+scratch/
+.antigravitycli/
+
+# Archivos Temporales y Pruebas Locales
+test.swift
+test2.swift
+test_audio.html
+test_audio.swift
+test_audio_category.swift
+test_dlopen.swift
+test_perform.swift
+test_perform2.swift
+plan.md
+extracted.jsonl
+cantos_existentes.txt
+consulta_auditoria.js
+repertorio-estatal-c5014bf0ca60.json
+revenuecat-key.json
+local.properties
+dist/
+dist-ssr/
+node_modules/
+.DS_Store
+
+

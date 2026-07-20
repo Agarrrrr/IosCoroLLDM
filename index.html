@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="view-transition" content="same-origin">
+    <title>Repertorio Coral</title>
+    
+    <!-- Optimizaciones de Red -->
+    <link rel="preconnect" href="https://mxnhmtztxgeccohlgqpt.supabase.co">
+    
+    <link rel="stylesheet" href="/src/styles/main.css">
+    
+    <!-- PWA Dynamic Localization -->
+    <script>
+        (function() {
+            var isEn = navigator.language.startsWith('en');
+            document.title = isEn ? 'TLOTW Choir' : 'Coro LLDM';
+            document.write('<link rel="manifest" href="/manifest' + (isEn ? '_en' : '') + '.json">');
+            document.write('<meta name="apple-mobile-web-app-title" content="' + (isEn ? 'TLOTW Choir' : 'Coro LLDM') + '">');
+        })();
+    </script>
+    <link rel="icon" type="image/png" href="/assets/icono.png">
+    <link rel="apple-touch-icon" href="/assets/icono.png">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0d47a1">
+    
+    <!-- PDF.js v4.10.38 cargado como script estático para evitar race conditions del bundler -->
+    <script src="/vendor/pdf.legacy.min.js" defer></script>
+</head>
+<body>
+    
+    <!-- Splash Screen Nativo -->
+    <div id="splash-nativo" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #fdfdfd; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 999999; transition: opacity 0.4s ease-out, visibility 0.4s ease-out;">
+        <div id="splash-logo" style="width: 120px; height: 120px; background-color: #0d47a1; -webkit-mask-image: url(/assets/icono.svg); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url(/assets/icono.svg); mask-size: contain; mask-repeat: no-repeat; mask-position: center; animation: pulse 2s infinite ease-in-out;" aria-label="Logo"></div>
+        <script>
+            (function() {
+                try {
+                    var tema = localStorage.getItem('tema-ui');
+                    var splash = document.getElementById('splash-nativo');
+                    var logo = document.getElementById('splash-logo');
+                    if (['oscuro', 'contraste', 'oled', 'quiet'].includes(tema)) {
+                        splash.style.backgroundColor = '#11161c';
+                        logo.style.backgroundColor = '#ffffff';
+                    } else if (tema === 'sepia') {
+                        splash.style.backgroundColor = '#f4ecd8';
+                        logo.style.backgroundColor = '#4e342e';
+                    } else {
+                        logo.style.backgroundColor = '#0d47a1';
+                    }
+                } catch(e) {}
+            })();
+        </script>
+        <style>
+            @keyframes pulse {
+                0% { transform: scale(0.95); opacity: 0.8; }
+                50% { transform: scale(1.05); opacity: 1; }
+                100% { transform: scale(0.95); opacity: 0.8; }
+            }
+        </style>
+    </div>
+
+    <div id="vista-menu" class="layout-principal" style="opacity: 0; transition: opacity 0.5s ease-in;">
+        
+        <aside id="sidebar-temas" class="sidebar oculto">
+            <div class="logo-sidebar">
+                <span id="tag-basico-sidebar" data-i18n="sidebar.plan_basico" style="display:inline-block; background: rgba(100, 100, 100, 0.15); color: #888; border: 1px solid rgba(100, 100, 100, 0.3); font-size: 11px; font-weight: 800; letter-spacing: 1.5px; padding: 4px 10px; border-radius: 6px; text-transform: uppercase; vertical-align: middle;">BÁSICO</span>
+                <span id="tag-pro-sidebar" data-i18n="sidebar.plan_pro" style="display:none; background: rgba(212, 175, 55, 0.15); color: #D4AF37; border: 1px solid rgba(212, 175, 55, 0.5); font-size: 11px; font-weight: 800; letter-spacing: 1.5px; padding: 4px 10px; border-radius: 6px; vertical-align: middle; text-transform: uppercase;">PRO</span>
+                <span id="contador-cantos" class="contador-estilo">...</span>
+            </div>
+        
+            <div class="sidebar-scroll">
+                <div class="sidebar-seccion">
+                    <p class="section-label" data-i18n="sidebar.carpetas">CARPETAS</p>
+                    <button class="nav-btn activo" data-cat="favoritos">
+                        <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+                        <span data-i18n="sidebar.favoritos">FAVORITOS</span>
+                    </button>
+                    <button class="nav-btn" data-cat="todos">
+                        <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></span>
+                        <span data-i18n="sidebar.todos_cantos">TODOS LOS CANTOS</span>
+                    </button>
+                </div>
+        
+                <div class="sidebar-seccion">
+                    <p class="section-label" data-i18n="sidebar.filtrar">FILTRAR POR TEMA</p>
+                    <div id="lista-temas" class="temas-list"></div>
+                </div>
+            </div>
+
+            <div id="sidebar-footer" class="sidebar-footer">
+                <button id="btn-sidebar-pro" class="nav-btn" style="display: none !important; color: #D4AF37;" onclick="window.uiController.mostrarModalPremium()">
+                    <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span> <span data-i18n="premium.house_ad_btn">HAZTE PRO</span>
+                </button>
+                <button id="btn-ajustes" class="nav-btn">
+                    <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></span> <span data-i18n="sidebar.ajustes_app">AJUSTES DE LA APP</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="contenido-derecho">
+            <header class="cabecera-menu">
+                <button id="btn-toggle-sidebar" class="btn-topbar" title="Mostrar/Ocultar Menú">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <div class="contenedor-buscador">
+    
+                    <input type="text" name="fakeusernameremembered" style="position: absolute; opacity: 0; top: -9999px; height: 0; width: 0; z-index: -1;" aria-hidden="true" tabindex="-1">
+                    <input type="password" name="fakepasswordremembered" style="position: absolute; opacity: 0; top: -9999px; height: 0; width: 0; z-index: -1;" aria-hidden="true" tabindex="-1">
+
+                    <input type="search" id="buscador" placeholder="Buscar canto por título..." data-i18n-placeholder="buscador.placeholder" autocomplete="off" spellcheck="false">
+    
+                    <button id="btn-limpiar-busqueda" class="oculto" title="Borrar búsqueda">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    </div>
+                <button id="btn-modo-escucha" class="btn-topbar" title="Modo Escucha (Jukebox)" style="display: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                </button>
+                <button id="btn-selector-tema" class="btn-topbar" title="Cambiar tema">
+                    <svg class="icono-tema-luna" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0a7 7 0 0 0 9.79 9.79z"></path>
+                    </svg>
+                    <svg class="icono-tema-sol" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </header>
+            
+            <div id="lista-cantos" class="lista-vertical"></div>
+        </main>
+    </div>
+
+    <!-- Banner Canto en Vivo -->
+    <div id="banner-vivo" class="banner-vivo" style="display: none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 18a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path><path d="M17.65 17.65a8 8 0 1 0-11.3 0"></path></svg>
+        <span id="banner-texto" class="banner-texto">Nombre del Canto</span>
+        <button id="btn-abrir-vivo" class="banner-btn" data-i18n="banner.abrir">ABRIR</button>
+        <button id="btn-cerrar-banner" class="btn-cerrar-banner">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+
+    <!-- Banner Recordatorio -->
+    <div id="banner-recordatorio" class="banner-recordatorio" style="display: none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-acento); flex-shrink: 0;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        <span id="recordatorio-texto" class="banner-texto" data-i18n="banner.mensaje">MENSAJE IMPORTANTE</span>
+        <button id="btn-cerrar-recordatorio" class="btn-cerrar-banner">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+
+    <!-- Banner Actualización -->
+    <div id="banner-actualizacion" class="banner-vivo" style="display: none; background-color: var(--color-acento); color: white;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+        <span class="banner-texto" data-i18n="banner.nueva_version">NUEVA VERSIÓN DISPONIBLE</span>
+        <button id="btn-actualizar-app" class="banner-btn" data-i18n="banner.actualizar">ACTUALIZAR</button>
+        <button id="btn-cerrar-actualizacion" class="btn-cerrar-banner">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+
+    <!-- Sistema de Toasts -->
+    <div id="contenedor-toasts"></div>
+
+    <!-- Visor PDF -->
+    <div id="vista-visor" style="display: none;">
+        <!-- Metrónomo Flotante -->
+        <div id="metronomo-flotante" style="display: none; position: fixed; top: 80px; left: 20px; z-index: 100; gap: 8px; align-items: center; justify-content: flex-start;"></div>
+        
+        <div id="barra-superior">
+            <button id="btn-cerrar" class="btn-topbar" title="Cerrar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </button>
+            <h2 id="titulo-canto">Nombre del Canto</h2>
+
+            <!-- Contenedor del Switch Bilingüe -->
+            <div id="contenedor-switch-idioma" class="switch-bilingue-container" style="display: none;">
+                <span class="lang-label">ES</span>
+                <label class="switch-bilingue">
+                    <input type="checkbox" id="toggle-idioma-partitura">
+                    <span class="slider-bilingue round"></span>
+                </label>
+                <span class="lang-label">EN</span>
+            </div>
+            <button id="btn-visor-voces" class="btn-topbar" title="Reproducir Voces (MIDI)" style="display: none;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>
+                </svg>
+            </button>
+            <button id="btn-descargar-pdf" class="btn-topbar" title="Descargar partitura" style="display: flex;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+            <div id="contenedor-botones-secundarios" class="botones-secundarios">
+                <button id="btn-reset-zoom" class="btn-topbar" title="Ajustar a la pantalla" style="display: none;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path>
+                        <path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path>
+                    </svg>
+                    <span class="texto-btn-menu" data-i18n="visor.ajustar_pantalla">Ajustar Pantalla</span>
+                </button>
+
+                <button id="btn-visor-tema" class="btn-topbar" title="Cambiar modo de lectura" style="display: none;">
+                    <svg class="icono-tema-luna" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0a7 7 0 0 0 9.79 9.79z"></path>
+                    </svg>
+                    <svg class="icono-tema-sol" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <span class="texto-btn-menu" data-i18n="visor.modo_lectura">Modo Lectura</span>
+                </button>
+                <button id="btn-visor-compartir" class="btn-topbar" title="Compartir partitura" style="display: flex;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                    <span class="texto-btn-menu" data-i18n="visor.compartir">Compartir</span>
+                </button>
+            </div>
+
+            <button id="btn-visor-mas-opciones" class="btn-topbar btn-mas-opciones" title="Más opciones">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="1.5"></circle>
+                    <circle cx="19" cy="12" r="1.5"></circle>
+                    <circle cx="5" cy="12" r="1.5"></circle>
+                </svg>
+            </button>
+
+
+        </div>
+        <div id="contenedor-pdf"></div>
+
+        <!-- Reproductor MIDI Bottom-Sheet (v2.0.0) -->
+        <div id="midi-player-container" class="midi-player-sheet oculto">
+            <div class="midi-drag-handle"></div>
+            
+            <div class="midi-main-controls">
+                <button id="midi-btn-repeat" class="btn-midi-secundario" title="Repetir" style="opacity: 0.5;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="17 1 21 5 17 9"></polyline>
+                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                        <polyline points="7 23 3 19 7 15"></polyline>
+                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                    </svg>
+                </button>
+
+                <button id="midi-btn-play" class="btn-midi-principal">
+                    <svg class="icon-play" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+                    <svg class="icon-pause" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
+                </button>
+
+                <div class="midi-progress-wrapper">
+                    <input type="range" id="midi-progress" min="0" max="100" step="any" value="0" class="midi-slider-progreso">
+                    <div class="midi-time-display">
+                        <span id="midi-time-current">0:00</span>
+                        <span id="midi-time-total">0:00</span>
+                    </div>
+                </div>
+
+                <button id="midi-btn-opciones" class="btn-midi-secundario" title="Opciones Avanzadas">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                </button>
+            </div>
+
+            <div class="midi-voice-selector">
+                <button class="btn-voz activo" data-voz="ensamble" data-i18n="midi.voz_ensamble">ENSAMBLE</button>
+                <button class="btn-voz" data-voz="solista" style="display: none;" data-i18n="midi.voz_sol">SOL</button>
+                <button class="btn-voz" data-voz="soprano">S</button>
+                <button class="btn-voz" data-voz="alto">A</button>
+                <button class="btn-voz" data-voz="tenor">T</button>
+                <button class="btn-voz" data-voz="bajo">B</button>
+            </div>
+
+            <!-- Panel Avanzado (Oculto por defecto) -->
+            <div id="midi-advanced-panel" class="midi-submenu" style="display: none;">
+                <div class="midi-tool-item">
+                    <label data-i18n="midi.volumen">VOLUMEN GENERAL</label>
+                    <input type="range" id="midi-master-volume" min="0" max="2" step="0.1" value="1" class="midi-slider-progreso">
+                </div>
+
+                <div class="midi-tool-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.05);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <label style="margin-bottom: 0;"><span data-i18n="midi.velocidad">VELOCIDAD:</span> <span id="midi-speed-value" style="color: var(--color-acento);">1.00x</span></label>
+                    </div>
+                    <input type="range" id="midi-speed-control" min="0.5" max="1.5" step="0.05" value="1" class="midi-slider-progreso">
+                    <div style="display: flex; justify-content: flex-end; margin-top: 12px;">
+                        <button id="midi-btn-speed-reset" data-i18n="midi.resetear" style="background: rgba(212, 175, 55, 0.15); color: var(--color-acento); border: none; padding: 6px 12px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">RESTABLECER (1.0x)</button>
+                    </div>
+                </div>
+
+                <div class="midi-tool-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.05);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <label style="margin-bottom: 0;" data-i18n="midi.metronomo">METRÓNOMO (CLICK)</label>
+                        <input type="checkbox" id="midi-metronomo-toggle" style="width: 20px; height: 20px; accent-color: var(--color-acento);">
+                    </div>
+                </div>
+
+                <div class="midi-mixer-container">
+                    <p class="section-label" data-i18n="midi.mixer">MIXER DE VOCES</p>
+                    <div id="midi-mixer-sliders" class="mixer-grid">
+                        <!-- Se genera dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ajustes -->
+    <div id="modal-ajustes" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-i18n="ajustes.titulo">Ajustes de la App</h3>
+                <button id="btn-cerrar-ajustes" class="btn-cerrar-ico">✕</button>
+            </div>
+
+            <!-- IDIOMA -->
+            <div class="ajustes-seccion">
+                <p class="section-label" data-i18n="ajustes.idioma">IDIOMA / LANGUAGE</p>
+                <div class="tarjeta-info preferencias-grid" style="padding: 10px 16px;">
+                    <div class="preferencia-item nav-segmentada" style="gap: 8px;">
+                        <div class="segmented-control">
+                            <button id="btn-lang-es" class="segmented-btn activo">Español</button>
+                            <button id="btn-lang-en" class="segmented-btn">English</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 2. NAVEGACIÓN -->
+            <div class="ajustes-seccion">
+                <p class="section-label" data-i18n="ajustes.navegacion">NAVEGACIÓN</p>
+                <div class="tarjeta-info preferencias-grid" style="padding: 10px 16px;">
+                    <div class="preferencia-item nav-segmentada" style="gap: 8px;">
+                        <div class="segmented-control">
+                            <button id="btn-nav-scroll" class="segmented-btn activo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                                <span data-i18n="ajustes.scroll">Scroll</span>
+                            </button>
+                            <button id="btn-nav-paginas" class="segmented-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                                <span data-i18n="ajustes.paginas">Páginas</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <!-- 5. PREFERENCIAS -->
+            <div class="ajustes-seccion" style="padding-top: 10px;">
+                <label class="checkbox-premium">
+                    <input type="checkbox" id="chk-habilitar-jukebox">
+                    <div class="checkbox-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span class="checkbox-label" data-i18n="ajustes.chk_reproductor_global">Mostrar reproductor global</span>
+                </label>
+            </div>
+
+            <div class="ajustes-footer" style="padding-bottom: 70px;">
+                <p class="app-version">CoroLLDM <span>v1.0.0</span></p>
+                <p class="developer" data-i18n="ajustes.developer">Desarrollado por <strong>Huri Tolentino</strong></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

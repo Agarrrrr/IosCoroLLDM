@@ -1,0 +1,58 @@
+2026-06-12 22:49:56,171 INFO s.s.S.SPDFApplication [main] Without additional features in jar
+2026-06-12 22:49:56,174 INFO s.s.c.c.ConfigInitializer [main] Current settings file line count: 0
+2026-06-12 22:49:56,178 INFO s.s.c.c.ConfigInitializer [main] Created settings file from template
+2026-06-12 22:49:56,179 INFO s.s.c.c.ConfigInitializer [main] Created custom_settings file: .\configs\custom_settings.yml
+2026-06-12 22:49:56,179 INFO s.s.S.SPDFApplication [main] Settings file: .\configs\settings.yml
+2026-06-12 22:49:56,180 INFO s.s.S.SPDFApplication [main] Custom settings file: .\configs\custom_settings.yml
+2026-06-12 22:49:56,841 INFO s.s.S.SPDFApplication [main] Starting SPDFApplication v2.12.0 using Java 25.0.4-beta with PID 20608 (E:\StirlingPDF\Stirling-PDF.jar started by Huri_ in C:\Users\Huri_\Documents\proyectos\repertoriocoral)
+2026-06-12 22:49:56,843 INFO s.s.S.SPDFApplication [main] The following 1 profile is active: "default"
+2026-06-12 22:49:59,643 INFO s.s.S.c.MultipartConfiguration [main] Using default multipart file upload limit: 2000MB
+2026-06-12 22:50:00,430 INFO s.s.c.c.RuntimePathConfig [main] Registered watched folder path: C:\Users\Huri_\Documents\proyectos\repertoriocoral\pipeline\watchedFolders
+2026-06-12 22:50:00,430 INFO s.s.c.c.RuntimePathConfig [main] Using Tesseract data path: /usr/share/tesseract-ocr/5/tessdata
+2026-06-12 22:50:00,662 WARN s.s.S.c.ExternalAppDepConfig [virtual-40] Missing dependency: rar - Disabling group: rar (Affected features: PDF To Cbr)
+2026-06-12 22:50:00,685 WARN s.s.S.c.ExternalAppDepConfig [virtual-45] Missing dependency: qpdf - Disabling group: qpdf (Affected features: Repair, Compress PDF)
+2026-06-12 22:50:00,690 WARN s.s.S.c.ExternalAppDepConfig [virtual-46] Missing dependency: weasyprint - Disabling group: Weasyprint (Affected features: Eml To PDF, Markdown To PDF, Url To PDF, Html To PDF)
+2026-06-12 22:50:00,698 WARN s.s.S.c.ExternalAppDepConfig [virtual-48] Missing dependency: magick - Disabling group: ImageMagick (Affected features: Compress PDF)
+2026-06-12 22:50:00,694 WARN s.s.S.c.ExternalAppDepConfig [virtual-47] Missing dependency: pdftohtml - Disabling group: Pdftohtml (Affected features: PDF To Html, PDF To Markdown)
+2026-06-12 22:50:00,703 WARN s.s.S.c.ExternalAppDepConfig [virtual-42] Missing dependency: tesseract - Disabling group: tesseract (Affected features: Ocr PDF)
+2026-06-12 22:50:00,713 WARN s.s.S.c.ExternalAppDepConfig [virtual-44] Missing dependency: ocrmypdf - Disabling group: OCRmyPDF (Affected features: Ocr PDF)
+2026-06-12 22:50:00,717 WARN s.s.S.c.ExternalAppDepConfig [virtual-49] Missing dependency: gs - Disabling group: Ghostscript (Affected features: Replace Invert PDF, Repair, Compress PDF, Scanner Effect, Vector To PDF, PDF To Vector, Crop)
+2026-06-12 22:50:00,747 WARN s.s.S.c.ExternalAppDepConfig [virtual-52] Missing dependency: ebook-convert - Disabling group: Calibre (Affected features: PDF To Epub)
+2026-06-12 22:50:00,751 WARN s.s.S.c.ExternalAppDepConfig [virtual-51] Missing dependency: unoconvert - Disabling group: Unoconvert (Affected features: File To PDF)
+2026-06-12 22:50:00,778 WARN s.s.S.c.ExternalAppDepConfig [virtual-50] Missing dependency: soffice - Disabling group: LibreOffice (Affected features: File To PDF, PDF To Xml, PDF To Presentation, PDF To Pdfa, PDF To Word, PDF To Rtf, PDF To Html)
+2026-06-12 22:50:00,956 WARN s.s.S.c.ExternalAppDepConfig [main] Missing dependency: Python (reason: Python interpreter not found on PATH) - Disabling Python features: File To PDF, Url To PDF, Html To PDF, Extract Image Scans and OpenCV features: Extract Image Scans
+2026-06-12 22:50:00,958 INFO s.s.S.c.EndpointConfiguration [main] Disabled tool groups: Calibre, Ghostscript, ImageMagick, LibreOffice, OCRmyPDF, OpenCV, Pdftohtml, Python, Unoconvert, Weasyprint, qpdf, rar, tesseract (endpoints may have alternative implementations)
+2026-06-12 22:50:00,959 INFO s.s.S.c.EndpointConfiguration [main] Disabled functional groups: enterprise
+2026-06-12 22:50:00,959 INFO s.s.S.c.EndpointConfiguration [main] Total disabled endpoints: 20. Disabled endpoints: eml-to-pdf, extract-image-scans, file-to-pdf, html-to-pdf, ocr-pdf, pdf-to-cbr, pdf-to-epub, pdf-to-html, pdf-to-markdown, pdf-to-pdfa, pdf-to-presentation, pdf-to-rtf, pdf-to-vector, pdf-to-word, pdf-to-xml, repair, replace-invert-pdf, scanner-effect, url-to-pdf, vector-to-pdf
+2026-06-12 22:50:01,337 INFO s.s.c.c.i.InProcessClusterConfiguration [main] Cluster backplane: in-process (single node)
+2026-06-12 22:50:01,353 INFO s.s.S.s.PdfJsonFallbackFontService [main] Using fallback font location: classpath:/static/fonts/NotoSans-Regular.ttf
+2026-06-12 22:50:01,358 INFO s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] CFF conversion enabled, checking tool availability...
+2026-06-12 22:50:01,402 WARN s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] Python command '/opt/venv/bin/python3' not found; Python CFF conversion disabled
+2026-06-12 22:50:01,510 WARN s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] FontForge command 'fontforge' not found; FontForge CFF conversion disabled
+2026-06-12 22:50:01,511 INFO s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] Selected CFF converter method: python
+2026-06-12 22:50:02,365 INFO s.s.S.s.p.t.l.Type3FontLibrary [main] [TYPE3] Loaded 61 Type3 library entries (signatures=81, aliases=64) from classpath:/type3/library/index.json
+2026-06-12 22:50:02,563 INFO s.s.S.s.VeraPDFService [main] VeraPDF Greenfield initialized successfully
+2026-06-12 22:50:02,685 INFO s.s.c.s.MobileScannerService [main] Mobile scanner temp directory: C:\Users\Huri_\AppData\Local\Temp\stirling-mobile-scanner
+2026-06-12 22:50:03,649 INFO s.s.S.s.CertificateValidationService [main] Loading certificates from Java system trust store
+2026-06-12 22:50:03,673 INFO s.s.S.s.CertificateValidationService [main] Loaded 120 CA certificates from Java system trust store
+2026-06-12 22:50:03,673 INFO s.s.S.s.CertificateValidationService [main] Loading bundled Mozilla CA certificates from resources
+2026-06-12 22:50:03,691 INFO s.s.S.c.w.ReactRoutingController [main] Static files custom path: .\customFiles\static\
+2026-06-12 22:50:03,766 INFO s.s.c.s.TempFileCleanupService [main] Running in Server-jar mode, using conservative cleanup strategy
+2026-06-12 22:50:03,772 INFO s.s.c.s.TempFileCleanupService [main] Startup cleanup complete. Deleted 0 temporary files/directories
+2026-06-12 22:50:03,790 INFO s.s.c.u.FileMonitor [main] Monitoring directory: C:\Users\Huri_\Documents\proyectos\repertoriocoral\pipeline\watchedFolders
+2026-06-12 22:50:04,599 INFO s.s.c.s.JobQueue [main] Starting JobQueue lifecycle
+2026-06-12 22:50:04,654 INFO s.s.S.SPDFApplication [main] Started SPDFApplication in 8.471 seconds (process running for 9.482)
+2026-06-12 22:50:04,661 INFO s.s.c.s.TempFileCleanupService [scheduled-vt-3] Running scheduled temporary file cleanup
+2026-06-12 22:50:04,662 WARN s.s.c.u.FileMonitor [scheduled-vt-6] Not monitoring any directories; attempting to re-register root paths.
+2026-06-12 22:50:04,663 INFO s.s.c.u.TempFileManager [scheduled-vt-3] Cleaned up 0 old temporary files
+2026-06-12 22:50:04,663 INFO s.s.c.s.TempFileCleanupService [scheduled-vt-3] Cleaned up 0 registered temporary files
+2026-06-12 22:50:04,663 INFO s.s.S.c.a.p.PipelineDirectoryProcessor [scheduled-vt-4] Created directory: C:\Users\Huri_\Documents\proyectos\repertoriocoral\pipeline\watchedFolders
+2026-06-12 22:50:04,670 WARN o.s.c.e.SpringDocAppInitializer [main] SpringDoc /v1/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-12 22:50:04,670 WARN o.s.c.e.SpringDocAppInitializer [main] SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-12 22:50:04,670 INFO s.s.S.SPDFApplication [main] Stirling-PDF running on port: 8080
+2026-06-12 22:50:04,676 INFO s.s.S.SPDFApplication [main] Stirling-PDF Started.
+2026-06-12 22:50:04,677 INFO s.s.S.SPDFApplication [main] Navigate to http://localhost:8080/
+2026-06-12 22:50:09,650 WARN s.s.c.u.FileMonitor [scheduled-vt-7] Not monitoring any directories; attempting to re-register root paths.
+2026-06-12 22:50:09,652 INFO s.s.c.u.FileMonitor [scheduled-vt-7] Registered directory: C:\Users\Huri_\Documents\proyectos\repertoriocoral\pipeline\watchedFolders
+2026-06-12 22:50:39,270 INFO s.s.S.c.a.m.RemoveImagesController [virtual-93] Removed 2 images from PDF with 2 pages
+2026-06-12 22:50:40,405 INFO o.a.p.e.u.DeletingRandomAccessFile [virtual-93] Successfully deleted temp file: C:\Users\Huri_\AppData\Local\Temp\stirling-pdf\stirling-pdf-12582473868288716818.tmp

@@ -1,0 +1,373 @@
+/* --- LAYOUT PRINCIPAL --- */
+html {
+    background-color: var(--color-fondo-app);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+    -webkit-tap-highlight-color: transparent;
+}
+
+button, a, .nav-btn, .item-canto {
+    touch-action: manipulation;
+}
+
+/* Scrollbars personalizados y discretos */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-texto-principal) 15%, transparent);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in srgb, var(--color-texto-principal) 30%, transparent);
+}
+
+body {
+    background-color: var(--color-fondo-app);
+    color: var(--color-texto-principal);
+    overscroll-behavior: none; 
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    padding-bottom: var(--ad-banner-height, 0px); /* Espacio para el anuncio */
+    /* Bugfix iPadOS: No aplicar user-select: none en el body, bloquea el teclado virtual.
+       Se aplica selectivamente a botones y listas en su lugar. */
+    -webkit-touch-callout: none;
+}
+
+/* Permitir interacción y escritura en campos de entrada (Crítico para iOS 15 y iPads viejos) */
+input, textarea, select, [contenteditable="true"] {
+    user-select: auto !important;
+    -webkit-user-select: auto !important;
+    pointer-events: auto !important;
+    -webkit-appearance: none; /* Evita estilos nativos que puedan interferir en Safari */
+    cursor: text !important; /* Fuerza a WebKit a reconocer que es texto */
+    -webkit-touch-callout: default !important; /* Restaura interacciones táctiles nativas */
+    touch-action: manipulation !important; /* Bloquea gestos globales de JS (swipe/pinch) */
+    transform: translateZ(0); /* Fuerza re-dibujado de la caja de colisión táctil */
+}
+
+/* Restablecer apariencia para checkboxes y radio si es necesario */
+input[type="checkbox"], input[type="radio"] {
+    -webkit-appearance: checkbox;
+}
+
+.layout-principal {
+    display: flex;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.contenido-derecho {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-superficie-secundaria);
+    
+    /* Bugfix iPadOS: Prevenir selección al hacer scroll */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* --- SIDEBAR --- */
+#sidebar-temas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2500; /* Aumentado para estar sobre todo en tablet */
+    
+    width: 85%;
+    max-width: 320px; 
+    height: 100%;
+    
+    background-color: var(--color-superficie);
+    border-right: 1px solid var(--color-borde);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; 
+    
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Bugfix iPadOS: Prevenir selección al hacer scroll */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#sidebar-temas:not(.oculto) {
+    transform: translateX(0);
+}
+
+@media (min-width: 1025px) {
+    #sidebar-temas {
+        position: relative; 
+        transform: translateX(0); 
+        width: 300px; 
+        z-index: 100;
+        box-shadow: none !important;
+    }
+    
+    #sidebar-temas.oculto {
+        display: none;
+    }
+}
+
+.logo-sidebar {
+    padding: 24px 20px;
+    padding-top: max(24px, calc(10px + env(safe-area-inset-top)));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.logo-sidebar h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--color-texto-principal);
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.contador-estilo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    letter-spacing: 0.5px; 
+    color: var(--color-texto-suave);
+    background: var(--color-input-fondo);
+    border-radius: 20px;
+    border: 1px solid var(--color-borde);
+    
+    font-size: 13px; 
+    font-weight: 700;
+    
+    padding: 5px 10px; 
+}
+
+@media (min-width: 768px) {
+    .contador-estilo {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contador-estilo {
+        font-size: 15px;
+        padding: 7px 14px;
+    }
+}
+
+.estado-offline-banner {
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px; 
+    
+    font-size: 11px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    padding: 6px 16px;
+    margin: 10px auto;
+    
+    background: var(--color-superficie-secundaria);
+    color: var(--color-texto-suave);
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.estado-offline-banner.completado {
+    color: #10b981;
+    background: color-mix(in srgb, #10b981 12%, transparent);
+    border-color: color-mix(in srgb, #10b981 25%, transparent);
+}
+
+.sidebar-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 0;
+    scrollbar-width: none; /* Firefox */
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.sidebar-footer {
+    padding-bottom: calc(env(safe-area-inset-bottom) + var(--ad-banner-height, 0px));
+    padding-top: 10px;
+    background-color: var(--color-superficie);
+    border-top: 1px solid var(--color-borde);
+    margin-top: auto;
+    width: 100%;
+}
+
+.section-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--color-texto-suave);
+    padding: 20px 20px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- TOPBAR BUTTONS --- */
+.btn-topbar {
+    background: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto-principal);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+#btn-toggle-sidebar {
+    display: flex;
+}
+
+.btn-topbar:active {
+    transform: scale(0.92);
+    background: var(--color-input-fondo);
+    border-color: var(--color-acento);
+    color: var(--color-acento);
+}
+
+#btn-selector-tema svg {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#btn-selector-tema:hover svg {
+    transform: rotate(30deg) scale(1.1);
+    color: var(--color-acento);
+}
+
+/* --- RESPONSIVIDAD TABLET Y MÓVIL --- */
+@media (max-width: 1024px) {
+    #sidebar-temas {
+        position: fixed;
+        left: 0;
+        top: 0;
+        box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+    }
+
+    #sidebar-temas.oculto {
+        transform: translateX(-100%);
+        box-shadow: none;
+    }
+
+    .layout-principal {
+        position: relative;
+    }
+}
+
+/* --- ANIMACIONES --- */
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.spin-anim {
+    animation: spin 1s linear infinite;
+}
+
+/* --- OVERLAY --- */
+#overlay-sidebar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 90;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#overlay-sidebar.activo {
+    display: block;
+}
+
+/* --- INPUTS GLOBALES --- */
+.input-estandar {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--color-input-borde);
+    background-color: var(--color-input-fondo);
+    color: var(--color-texto-principal);
+    font-size: 16px; /* Bugfix iOS Safari: Debe ser al menos 16px para evitar auto-zoom */
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.input-estandar:focus {
+    border-color: var(--color-acento);
+    background-color: var(--color-superficie);
+    box-shadow: 0 0 0 4px var(--color-acento-suave);
+}
+
+.input-estandar::placeholder {
+    color: var(--color-texto-suave);
+    opacity: 0.7;
+}
+
+/* --- NATIVE VISOR GESTURE FORWARDING VIA CSS --- */
+body.con-visor {
+    pointer-events: none !important;
+}
+
+body.con-visor #barra-superior,
+body.con-visor .midi-player-sheet,
+body.con-visor .menu-contextual-temas,
+body.con-visor .sidebar,
+body.con-visor .toast,
+body.con-visor .modal,
+body.con-visor .premium-modal,
+body.con-visor .modal-overlay,
+body.con-visor .modal-sheet,
+body.con-visor #herramientas-pincel {
+    pointer-events: auto !important;
+}
+
+/* Evitar que los toques caigan a través de los elementos semi-transparentes del topbar/MIDI durante el dibujo */
+body.modo-dibujo #barra-superior,
+body.modo-dibujo .midi-player-sheet {
+    background-color: var(--color-superficie) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Manager - Coro LLDM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <style>
+        body { background-color: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .ag-theme-alpine { --ag-border-color: #e2e8f0; --ag-header-background-color: #f8fafc; --ag-row-hover-color: #f1f5f9; }
+    </style>
+</head>
+<body class="h-screen flex flex-col overflow-hidden">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center shrink-0">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">BM</div>
+            <div>
+                <h1 class="font-bold text-lg text-gray-900">Bulk Manager</h1>
+                <p class="text-xs text-gray-500">Gestión de Partituras y MIDI</p>
+            </div>
+        </div>
+        <div class="flex gap-3">
+            <button onclick="deleteSelected()" class="px-4 py-2 text-sm font-medium text-red-600 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition-colors">
+                Borrar Seleccionados
+            </button>
+            <button onclick="loadData()" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                Recargar
+            </button>
+            <button onclick="saveData()" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-sm flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
+                Guardar Cambios
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="flex-1 flex overflow-hidden p-6 gap-6">
+        <!-- Grid Container -->
+        <div class="flex-1 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden flex flex-col min-w-0">
+            <!-- Toolbar -->
+            <div class="p-4 border-b border-gray-100 flex gap-4">
+                <input type="text" id="filterText" oninput="onFilterTextBoxChanged()" placeholder="Buscar por nombre, archivo o tema..." class="flex-1 px-4 py-2 text-sm bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all">
+            </div>
+            
+            <!-- AG Grid -->
+            <div id="myGrid" class="ag-theme-alpine flex-1 w-full"></div>
+        </div>
+
+        <!-- PDF Preview Pane -->
+        <div class="w-1/3 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden flex flex-col shrink-0">
+            <div class="p-4 border-b border-gray-100 bg-gray-50 flex justify-between items-center">
+                <div>
+                    <h2 class="text-sm font-bold text-gray-700">Previsualización de PDF</h2>
+                    <span id="previewName" class="text-xs text-gray-500 truncate max-w-[200px] block">Ninguno seleccionado</span>
+                </div>
+                <button id="btnReplacePdf" onclick="document.getElementById('pdfUploadInput').click()" class="hidden px-3 py-1.5 text-xs font-medium text-blue-600 bg-blue-50 border border-blue-200 rounded-md hover:bg-blue-100 transition-colors">
+                    Reemplazar PDF
+                </button>
+                <input type="file" id="pdfUploadInput" accept=".pdf" class="hidden" onchange="uploadNewPdf(event)">
+            </div>
+            <div class="flex-1 relative bg-gray-200">
+                <iframe id="pdfPreview" class="absolute inset-0 w-full h-full border-0" src="about:blank"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-xl transform transition-transform duration-300 translate-y-20 opacity-0 flex items-center gap-3 z-50">
+        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        <span id="toastMsg" class="font-medium text-sm">Cambios guardados</span>
+    </div>
+
+    <script>
+        let gridApi;
+        let midiList = ['(Ninguno)'];
+
+        const columnDefs = [
+            { field: "id", headerName: "ID", width: 220, filter: 'agTextColumnFilter' },
+            { field: "nombre", headerName: "Título del Canto", editable: true, flex: 1, filter: 'agTextColumnFilter', cellClass: 'font-medium' },
+            { field: "archivo", headerName: "PDF File", editable: true, flex: 1, filter: 'agTextColumnFilter', cellClass: 'text-gray-500 font-mono text-xs' },
+            { 
+                field: "midi_archivo", 
+                headerName: "Archivo MIDI", 
+                editable: true, 
+                width: 200,
+                cellEditor: 'agSelectCellEditor',
+                cellEditorParams: () => ({ values: midiList }),
+                valueSetter: params => {
+                    params.data.midi_archivo = (params.newValue === '(Ninguno)' || !params.newValue) ? null : params.newValue;
+                    return true;
+                }
+            },
+            { 
+                field: "temas", 
+                headerName: "Temas (Separados por coma)", 
+                editable: true, 
+                width: 250,
+                valueGetter: params => params.data.temas ? params.data.temas.join(', ') : '',
+                valueSetter: params => {
+                    params.data.temas = params.newValue.split(',').map(s => s.trim()).filter(s => s);
+                    return true;
+                },
+                filter: 'agTextColumnFilter'
+            },
+            { 
+                field: "_lang", 
+                headerName: "Idioma", 
+                editable: true, 
+                width: 100,
+                cellEditor: 'agSelectCellEditor',
+                cellEditorParams: { values: ['es', 'en'] }
+            }
+        ];
+
+        const gridOptions = {
+            columnDefs: columnDefs,
+            rowData: [],
+            rowSelection: 'multiple',
+            animateRows: true,
+            defaultColDef: { sortable: true, resizable: true },
+            pagination: true,
+            paginationPageSize: 100,
+            onSelectionChanged: () => {
+                const selectedRows = gridApi.getSelectedRows();
+                if (selectedRows.length === 1) {
+                    const row = selectedRows[0];
+                    document.getElementById('previewName').innerText = row.archivo;
+                    document.getElementById('pdfPreview').src = '/assets/pdfs/' + row.archivo + '#view=FitH';
+                    document.getElementById('btnReplacePdf').classList.remove('hidden');
+                } else {
+                    document.getElementById('pdfPreview').src = 'about:blank';
+                    document.getElementById('previewName').innerText = 'Ninguno seleccionado';
+                    document.getElementById('btnReplacePdf').classList.add('hidden');
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const gridDiv = document.querySelector('#myGrid');
+            gridApi = agGrid.createGrid(gridDiv, gridOptions);
+            await fetchMidis();
+            loadData();
+        });
+
+        async function fetchMidis() {
+            try {
+                const res = await fetch('/api/midis');
+                midiList = await res.json();
+            } catch (err) {
+                console.warn('Could not fetch MIDIs:', err);
+            }
+        }
+
+        function onFilterTextBoxChanged() {
+            gridApi.setQuickFilter(document.getElementById('filterText').value);
+        }
+
+        async function loadData() {
+            try {
+                gridApi.showLoadingOverlay();
+                const res = await fetch('/api/catalogo');
+                const data = await res.json();
+                // Ensure midi_archivo displays nicely if null
+                data.forEach(d => { if (!d.midi_archivo) d.midi_archivo = '(Ninguno)' });
+                gridApi.setGridOption('rowData', data);
+            } catch (err) {
+                alert("Error cargando. ¿Servidor corriendo?");
+            }
+        }
+
+        async function saveData() {
+            try {
+                const rowData = [];
+                gridApi.forEachNode(node => rowData.push(node.data));
+                
+                // Limpiar (Ninguno) antes de guardar
+                const cleanData = rowData.map(r => {
+                    if (r.midi_archivo === '(Ninguno)') delete r.midi_archivo;
+                    return r;
+                });
+                
+                const res = await fetch('/api/catalogo/bulk', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ items: cleanData })
+                });
+                
+                const result = await res.json();
+                if (result.success) showToast('¡Guardado exitosamente!');
+            } catch (err) {
+                alert("Error intentando guardar.");
+            }
+        }
+
+        async function deleteSelected() {
+            const selectedNodes = gridApi.getSelectedNodes();
+            const selectedRows = gridApi.getSelectedRows();
+            if (selectedRows.length === 0) return alert('Selecciona al menos un canto para borrar.');
+            
+            if (!confirm(`¿Estás seguro que deseas ELIMINAR ${selectedRows.length} cantos? Esto borrará el PDF de tu disco duro.`)) return;
+
+            for (let row of selectedRows) {
+                try {
+                    await fetch('/api/canto/' + row.id, {
+                        method: 'DELETE',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ fileName: row.archivo })
+                    });
+                } catch(e) {
+                    console.error('Error deleting', row.id);
+                }
+            }
+            gridApi.applyTransaction({ remove: selectedRows });
+            showToast('Cantos eliminados correctamente');
+            document.getElementById('pdfPreview').src = 'about:blank';
+            document.getElementById('previewName').innerText = 'Ninguno seleccionado';
+            document.getElementById('btnReplacePdf').classList.add('hidden');
+        }
+
+        async function uploadNewPdf(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const selectedRows = gridApi.getSelectedRows();
+            if (selectedRows.length !== 1) return alert('Selecciona exactamente un canto para reemplazar su PDF.');
+            
+            const row = selectedRows[0];
+            const currentFileName = row.archivo;
+            
+            const formData = new FormData();
+            formData.append('pdf', file);
+            formData.append('fileName', currentFileName); // Sobrescribir el actual
+            
+            try {
+                const res = await fetch('/api/upload-pdf', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await res.json();
+                
+                if (result.success) {
+                    showToast('PDF reemplazado con éxito');
+                    // Forzar recarga del iframe añadiendo un timestamp a la url
+                    document.getElementById('pdfPreview').src = '/assets/pdfs/' + currentFileName + '?t=' + Date.now() + '#view=FitH';
+                } else {
+                    alert(result.error || 'Error desconocido');
+                }
+            } catch(e) {
+                alert('Error al subir PDF. Verifica que el servidor Bulk Manager está encendido.');
+            }
+            
+            // Reset input
+            event.target.value = '';
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 3000);
+        }
+    </script>
+</body>
+</html>

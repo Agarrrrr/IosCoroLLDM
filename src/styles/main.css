@@ -1,0 +1,254 @@
+/* ESTILOS COMPARTIDOS POR COMPONENTES MODULARES */
+@import "./components/themes.css";
+@import "./components/layout.css";
+@import "./components/buttons.css";
+@import "./components/visor.css";
+@import "./components/modals.css";
+@import "./components/notifications.css";
+@import "./components/midi-player.css";
+@import "./components/jukebox.css";
+
+/* --- CABECERA MEJORADA (INDEX) --- */
+.cabecera-menu {
+    padding: 12px 20px;
+    padding-top: max(12px, env(safe-area-inset-top));
+    background-color: var(--color-superficie);
+    border-bottom: 1px solid var(--color-borde);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.contenedor-buscador {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+#buscador {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid var(--color-input-borde);
+    background-color: var(--color-input-fondo);
+    color: var(--color-texto-principal);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+#buscador:focus {
+    border-color: var(--color-acento);
+    background-color: var(--color-superficie);
+    box-shadow: 0 0 0 4px var(--color-acento-suave);
+    transform: scale(1.01);
+}
+
+#btn-limpiar-busqueda {
+    position: absolute;
+    right: 12px;
+    background: var(--color-borde);
+    border: none;
+    color: var(--color-texto-suave);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#btn-limpiar-busqueda:hover {
+    background: var(--color-acento);
+    color: white;
+}
+#btn-limpiar-busqueda.oculto {
+    display: none;
+}
+
+/* --- LISTA DE CANTOS ESTILIZADA --- */
+.lista-vertical {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px 20px 140px 20px; /* Padding extra para que el reproductor no tape contenido */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .lista-vertical {
+        padding-bottom: calc(140px + env(safe-area-inset-bottom));
+    }
+}
+
+.tarjeta-canto {
+    background-color: var(--color-superficie);
+    padding: 22px 24px;
+    border-radius: 18px;
+    display: flex;
+    flex-shrink: 0; /* CRÍTICO: Previene que las tarjetas se aplasten al hacer scroll */
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-borde);
+    border-left: 5px solid var(--color-acento); /* Restauración de la raya dorada estética */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-canto {
+    flex: 1;
+    min-width: 0;
+}
+
+/* 1. TAMAÑOS BASE (Para móviles por defecto) */
+.tarjeta-canto {
+    padding: 16px; /* Relleno más pequeño para móviles */
+}
+
+.tarjeta-canto h3 {
+    font-size: 16px; /* Letra un poco más pequeña */
+    font-weight: 800;
+    color: var(--color-texto-principal);
+    margin: 0 0 8px 0;
+    letter-spacing: -0.2px;
+    line-height: 1.3;
+}
+
+.tarjeta-canto:active {
+    transform: scale(0.97);
+    background-color: var(--color-superficie-secundaria);
+}
+
+.tarjeta-canto:hover {
+    border-color: var(--color-acento);
+    box-shadow: 0 10px 24px rgba(212, 175, 55, 0.12);
+}
+
+@media (min-width: 768px) {
+    .tarjeta-canto {
+        padding: 24px;
+    }
+    .tarjeta-canto h3 {
+        font-size: 18px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .tarjeta-canto {
+        padding: 32px;
+    }
+    .tarjeta-canto h3 {
+        font-size: 22px; 
+    }
+}
+
+.tema-etiqueta {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-texto-suave);
+    background: var(--color-superficie-secundaria);
+    padding: 3px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid var(--color-borde);
+}
+
+/* --- LISTA DE TEMAS (SIDEBAR) --- */
+.temas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 15px;
+}
+
+.item-tema {
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-texto-suave);
+    border: none;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.item-tema:active {
+    transform: scale(0.96);
+    background-color: var(--color-superficie-secundaria);
+}
+
+.item-tema:hover {
+    background-color: var(--color-superficie-secundaria);
+    color: var(--color-texto-principal);
+}
+
+.item-tema.activo {
+    background-color: var(--color-acento);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.developer {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .developer strong {
+    color: #2c3e50; /* Un tono más oscuro para tu nombre */
+  }
+/* VIEW TRANSITIONS NATIVAS (Fase 6) */
+::view-transition-old(root),::view-transition-new(root) { animation-duration: 0.3s; animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1); }
+.hero-transition-active { view-transition-name: canto-hero !important; }
+::view-transition-old(canto-hero),::view-transition-new(canto-hero) { animation-duration: 0.45s; animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1); mix-blend-mode: normal; }
+
+@keyframes heart-burst { 0% { transform: scale(1); } 50% { transform: scale(1.5); fill: var(--color-acento); } 100% { transform: scale(1); } } .heart-burst-anim svg { animation: heart-burst 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; } .btn-fav { transition: transform 0.2s; } .btn-fav:active { transform: scale(0.85); }
+
+/* --- HOUSE AD BANNER (FALLBACK OFFLINE/ADBLOCK) --- */
+.house-ad-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, var(--color-acento), #aa7700);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding-bottom: env(safe-area-inset-bottom);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+.house-ad-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.house-ad-content button {
+    background: white;
+    color: var(--color-acento);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+}

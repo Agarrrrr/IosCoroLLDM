@@ -1,0 +1,181 @@
+.topbar {
+    background: var(--navy-deep);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 3px solid var(--gold-accent);
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.topbar-izq {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.brand-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-app { 
+    margin: 0;
+    white-space: nowrap;
+    font-size: 18px; 
+    font-weight: 900; 
+    letter-spacing: 1px;
+    background: linear-gradient(to right, white, var(--gold-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.badge-rol {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--gold-accent);
+    padding: 4px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--gold-accent);
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* Contenedor Central (Selector de Sede) */
+.topbar-centro {
+    width: 100%;
+}
+
+.selector-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.05);
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    justify-content: space-between;
+}
+
+.selector-wrapper label {
+    font-size: 10px;
+    font-weight: 800;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+.select-contexto {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+    flex: 1;
+    min-width: 0; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Eliminamos el max-width limitante para que use todo el espacio en el celular */
+}
+
+/* --- SOLUCIÓN AL DESPLEGABLE INVISIBLE --- */
+.select-contexto option {
+    background-color: white; 
+    color: var(--navy-deep); 
+    font-weight: 600;
+    padding: 10px; /* Un poco de respiro entre opciones */
+}
+
+
+.topbar-der {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.topbar-der button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    border-radius: 10px; 
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+}
+
+/* Distribución Proporcional */
+#btn-ir-publico {
+    flex: 7; 
+}
+
+#btn-cerrar-sesion {
+    flex: 3;
+}
+
+/* Colores UX */
+.btn-secundario {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--gold-accent);
+    border: 1px solid var(--gold-accent) !important;
+}
+
+.btn-peligro {
+    background: rgba(255, 69, 58, 0.1);
+    color: #ff453a;
+    border: 1px solid rgba(255, 69, 58, 0.3) !important;
+}
+
+
+@media (max-width: 400px) {
+    .logo-app {
+        font-size: 16px;
+    }
+    .topbar-der button {
+        padding: 12px 5px; 
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .topbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 30px;
+    }
+
+    .topbar-izq {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topbar-centro, .topbar-der {
+        width: auto;
+    }
+    
+    .topbar-der {
+        width: 400px;
+        margin-top: 0;
+    }
+}
