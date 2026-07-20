@@ -67,10 +67,6 @@ jobs:
                      -sdk iphoneos \
                      -configuration Release \
                      -archivePath $RUNNER_TEMP/App.xcarchive \
-                     CODE_SIGN_STYLE=Manual \
-                     DEVELOPMENT_TEAM=$DEVELOPMENT_TEAM_ID \
-                     PROVISIONING_PROFILE=$PROVISIONING_PROFILE_UUID \
-                     CODE_SIGN_IDENTITY="Apple Distribution" \
                      archive
 
       - name: Export IPA
