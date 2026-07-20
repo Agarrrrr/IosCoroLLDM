@@ -1,0 +1,87 @@
+name: Build iOS App
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build & Upload to App Store Connect
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-level: '22'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Web App
+        run: npm run build
+
+      - name: Sync Capacitor iOS Project
+        run: npx cap sync ios
+
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app
+
+      - name: Cache CocoaPods
+        uses: actions/cache@v4
+        with:
+          path: ios/App/Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('ios/App/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+
+      - name: Install CocoaPods
+        run: |
+          cd ios/App
+          pod install
+
+      # -------------------------------------------------------------
+      # OPCIONAL: Si deseas firmar y subir automáticamente, 
+      # descomenta los siguientes pasos y añade los secretos a GitHub:
+      # -------------------------------------------------------------
+      # - name: Install Apple Certificate and Provisioning Profile
+      #   uses: apple-actions/import-codesign-certs@v3
+      #   with:
+      #     p12-file-base64: ${{ secrets.APPLE_P12_BASE64 }}
+      #     p12-password: ${{ secrets.APPLE_P12_PASSWORD }}
+      #     keychain-password: ${{ secrets.KEYCHAIN_PASSWORD }}
+      
+      # - name: Install Provisioning Profile
+      #   run: |
+      #     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+      #     echo "${{ secrets.APPLE_PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
+
+      - name: Build Xcode Archive
+        run: |
+          xcodebuild -workspace ios/App/App.xcworkspace \
+                     -scheme App \
+                     -sdk iphoneos \
+                     -configuration Release \
+                     -archivePath $RUNNER_TEMP/App.xcarchive \
+                     archive \
+                     CODE_SIGNING_ALLOWED=NO
+
+      # - name: Export IPA
+      #   run: |
+      #     xcodebuild -exportArchive \
+      #                -archivePath $RUNNER_TEMP/App.xcarchive \
+      #                -exportOptionsPlist ios/App/App/ExportOptions.plist \
+      #                -exportPath $RUNNER_TEMP/build
+      
+      # - name: Upload to App Store Connect
+      #   uses: apple-actions/upload-testflight-build@v1
+      #   with:
+      #     app-path: ${{ steps.export.outputs.ipa-path }}
+      #     issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+      #     api-key-id: ${{ secrets.APPSTORE_KEY_ID }}
+      #     api-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}
