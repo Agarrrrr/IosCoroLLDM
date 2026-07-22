@@ -51,8 +51,14 @@ export const visorUI = {
                 if (window.innerWidth <= 600) {
                     const abrir = (menuOpciones.style.display !== 'flex');
                     menuOpciones.style.display = abrir ? 'flex' : 'none';
-                    if (window.pdfEngine && window.pdfEngine._modoNativo && window.pdfEngine._nativeBridge) {
-                        window.pdfEngine._nativeBridge.setBarsVisible(!abrir).catch(()=>{});
+                    if (nativePdfBridge && nativePdfBridge.isNative) {
+                        if (abrir) {
+                            nativePdfBridge.registrarRect('menu3puntos', menuOpciones);
+                            nativePdfBridge.setBarsVisible(false).catch(()=>{});
+                        } else {
+                            nativePdfBridge.desregistrarRect('menu3puntos');
+                            nativePdfBridge.setBarsVisible(true).catch(()=>{});
+                        }
                     }
                 }
             }, { signal });
@@ -61,8 +67,9 @@ export const visorUI = {
                 if (window.innerWidth <= 600 && menuOpciones.style.display === 'flex') {
                     if (e.target instanceof Node && !menuOpciones.contains(e.target) && e.target !== btnOpciones) {
                         menuOpciones.style.display = 'none';
-                        if (window.pdfEngine && window.pdfEngine._modoNativo && window.pdfEngine._nativeBridge) {
-                            window.pdfEngine._nativeBridge.setBarsVisible(true).catch(()=>{});
+                        if (nativePdfBridge && nativePdfBridge.isNative) {
+                            nativePdfBridge.desregistrarRect('menu3puntos');
+                            nativePdfBridge.setBarsVisible(true).catch(()=>{});
                         }
                     }
                 }
@@ -74,8 +81,9 @@ export const visorUI = {
                     if (btn.id === 'btn-visor-tema') return;
                     if (window.innerWidth <= 600) {
                         menuOpciones.style.display = 'none';
-                        if (window.pdfEngine && window.pdfEngine._modoNativo && window.pdfEngine._nativeBridge) {
-                            window.pdfEngine._nativeBridge.setBarsVisible(true).catch(()=>{});
+                        if (nativePdfBridge && nativePdfBridge.isNative) {
+                            nativePdfBridge.desregistrarRect('menu3puntos');
+                            nativePdfBridge.setBarsVisible(true).catch(()=>{});
                         }
                     }
                 }, { signal });
@@ -651,11 +659,14 @@ export const visorUI = {
             }
 
             const estaActivo = playerSheet.classList.toggle('activo');
-            if (window.pdfEngine && window.pdfEngine._nativeBridge) {
-                setTimeout(() => {
-                    const height = estaActivo ? Math.max(playerSheet.offsetHeight || 0, 280) : 0;
-                    window.pdfEngine._nativeBridge.setBottomInset(height).catch(()=>{});
-                }, 30);
+            if (nativePdfBridge && nativePdfBridge.isNative) {
+                if (estaActivo) {
+                    nativePdfBridge.registrarRect('reproductor', playerSheet);
+                    nativePdfBridge.setBottomInset(280).catch(()=>{});
+                } else {
+                    nativePdfBridge.desregistrarRect('reproductor');
+                    nativePdfBridge.setBottomInset(0).catch(()=>{});
+                }
             }
             if (estaActivo && advancedPanel) {
                 advancedPanel.style.display = 'none'; // Restaurar estado comprimido al abrir

@@ -117,6 +117,7 @@ export const nativePdfBridge = {
 
     async closePdf() {
         if (!this.isNative || !NativePdf) return;
+        this.limpiarRects();
         try { await NativePdf.closePdf(); } catch(e) {}
     },
     
@@ -146,8 +147,47 @@ export const nativePdfBridge = {
     },
 
     async setInteractiveRects(rects) {
-        if (!this.isNative) return;
+        if (!this.isNative || !NativePdf) return;
         try { await NativePdf.setInteractiveRects({ rects }); } catch(e) {}
+    },
+
+    // ---- Registro Centralizado de Rectángulos Interactivos Dinámicos ----
+    _rectsActivos: new Map(),
+
+    registrarRect(id, el) {
+        if (!this.isNative || !el) return;
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                const r = el.getBoundingClientRect();
+                if (r.width > 0 && r.height > 0) {
+                    this._rectsActivos.set(id, {
+                        x: r.left,
+                        y: r.top,
+                        width: r.width,
+                        height: r.height
+                    });
+                }
+                this._sincronizarRects();
+            }, 50);
+        });
+    },
+
+    desregistrarRect(id) {
+        if (!this.isNative) return;
+        this._rectsActivos.delete(id);
+        this._sincronizarRects();
+    },
+
+    limpiarRects() {
+        if (!this.isNative) return;
+        this._rectsActivos.clear();
+        this._sincronizarRects();
+    },
+
+    _sincronizarRects() {
+        const rects = Array.from(this._rectsActivos.values());
+        console.log('📤 [nativePdfBridge] Sincronizando rects con nativo:', JSON.stringify(rects));
+        this.setInteractiveRects(rects);
     },
     
     async jumpToPage(pageIndex) {

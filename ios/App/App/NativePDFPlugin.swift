@@ -416,22 +416,23 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
     
     // MARK: - setInteractiveRects
     @objc public func setInteractiveRects(_ call: CAPPluginCall) {
-        guard let rectsData = call.options["rects"] as? [[String: Any]] else {
-            call.resolve()
-            return
-        }
+        let rectsData = (call.options["rects"] as? [[String: Any]]) ?? (call.getArray("rects", JSArray()) as? [[String: Any]]) ?? []
+        print("🔴 [NativePdf] setInteractiveRects llamado con raw options: \(String(describing: call.options))")
         
         var newRects: [CGRect] = []
         for dict in rectsData {
-            if let x = (dict["x"] as? Double) ?? (dict["x"] as? Int).map({ Double($0) }),
-               let y = (dict["y"] as? Double) ?? (dict["y"] as? Int).map({ Double($0) }),
-               let w = (dict["width"] as? Double) ?? (dict["width"] as? Int).map({ Double($0) }),
-               let h = (dict["height"] as? Double) ?? (dict["height"] as? Int).map({ Double($0) }) {
-                newRects.append(CGRect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(w), height: CGFloat(h)))
+            let xVal = (dict["x"] as? Double) ?? Double(dict["x"] as? Int ?? 0)
+            let yVal = (dict["y"] as? Double) ?? Double(dict["y"] as? Int ?? 0)
+            let wVal = (dict["width"] as? Double) ?? Double(dict["width"] as? Int ?? 0)
+            let hVal = (dict["height"] as? Double) ?? Double(dict["height"] as? Int ?? 0)
+            
+            if wVal > 0 && hVal > 0 {
+                newRects.append(CGRect(x: CGFloat(xVal), y: CGFloat(yVal), width: CGFloat(wVal), height: CGFloat(hVal)))
             }
         }
         
         DispatchQueue.main.async { [weak self] in
+            print("🔴 [NativePdf] Rects parseados exitosamente (\(newRects.count)): \(newRects)")
             self?.touchForwardView?.interactiveRects = newRects
             call.resolve()
         }
