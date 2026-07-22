@@ -55,7 +55,7 @@ describe('limitsManager (Anti-Trampas y DRM)', () => {
         // Simular que gastó los audios hoy (ej: año 2026)
         const date2026 = new Date('2026-06-19T10:00:00Z');
         vi.setSystemTime(date2026);
-        for(let i = 0; i < 3; i++) limitsManager.registrarReproduccionAudio(`c-${i}`);
+        for(let i = 0; i < limitsManager.LIMITES.MAX_AUDIOS_DIARIOS; i++) limitsManager.registrarReproduccionAudio(`c-${i}`);
         expect(limitsManager.puedeReproducirAudio()).toBe(false);
         
         // Usuario hace trampa y cambia su fecha a 2024 para evadir el pago
@@ -72,7 +72,7 @@ describe('limitsManager (Anti-Trampas y DRM)', () => {
         
         const hoy = new Date('2026-06-19T10:00:00Z');
         vi.setSystemTime(hoy);
-        for(let i = 0; i < 3; i++) limitsManager.registrarReproduccionAudio(`c-${i}`);
+        for(let i = 0; i < limitsManager.LIMITES.MAX_AUDIOS_DIARIOS; i++) limitsManager.registrarReproduccionAudio(`c-${i}`);
         expect(limitsManager.puedeReproducirAudio()).toBe(false);
         
         const manana = new Date('2026-06-20T10:00:00Z');

@@ -182,7 +182,8 @@ export const pdfEngine = {
         const actualizarBotonesAuxiliares = (cantoActual) => {
             const btnVoces = document.getElementById('btn-visor-voces');
             if (btnVoces) {
-                btnVoces.style.display = 'none'; // Desactivado permanentemente a petición del usuario
+                const tieneMidi = cantoActual && (cantoActual.midiUrl || cantoActual.midi_archivo || (cantoActual.archivo && (cantoActual.midi_archivo || cantoActual.midiUrl)));
+                btnVoces.style.display = tieneMidi ? 'flex' : 'none';
             }
             
             const btnDescargarPdf = document.getElementById('btn-descargar-pdf');

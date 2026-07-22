@@ -8,6 +8,8 @@ export const adManager = {
     _appOpenCargado: false,
 
     async inicializar() {
+        this._inicializado = true;
+        this._interstitialCargado = true;
         console.log("[AdManager] Anuncios deshabilitados por configuración.");
     },
 
@@ -28,8 +30,9 @@ export const adManager = {
 
     async preCargarAnuncioRecompensa() {},
 
-    mostrarAnuncioRecompensaMidi() {
-        return Promise.resolve(true);
+    async mostrarAnuncioRecompensaMidi() {
+        if (!this._rewardedCargado) return false;
+        return true;
     },
 
     _mostrarHouseAdBanner() {}

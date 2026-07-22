@@ -6,6 +6,8 @@ export const limitsManager = {
     },
     
     esPremium() {
+        const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('is_premium_user') : null;
+        if (stored === 'false') return false;
         return true; // Premium por defecto para omitir compras/anuncios
     },
 
@@ -40,8 +42,6 @@ export const limitsManager = {
 
         // Anti-Time Travel: Si el reloj retrocedió, detectamos trampa. No resetear.
         if (ahora < estado.last_timestamp) {
-            estado.last_timestamp = ahora;
-            this._guardarEstado(estado);
             return estado; 
         }
 
@@ -50,8 +50,10 @@ export const limitsManager = {
             estado.fecha = fechaHoy;
             estado.audiosReproducidos = 0;
             estado.pdfsAbiertos = 0;
-            estado.bloqueo_drm = false;
-            estado.offline_resets_count = 0;
+            estado.offline_resets_count = (estado.offline_resets_count || 0) + 1;
+            if (estado.offline_resets_count >= this.LIMITES.MAX_RESETEOS_OFFLINE) {
+                estado.bloqueo_drm = true;
+            }
             estado.last_timestamp = ahora;
             this._guardarEstado(estado);
         } else {
@@ -103,12 +105,15 @@ export const limitsManager = {
 
     puedeReproducirAudio() {
         if (this.esPremium()) return true;
+        if (this.estaBloqueadoPorDRM()) return false;
         const estado = this._obtenerEstadoHoy();
         return estado.audiosReproducidos < this.LIMITES.MAX_AUDIOS_DIARIOS;
     },
 
     estaBloqueadoPorDRM() {
-        return false;
+        if (this.esPremium()) return false;
+        const estado = this._obtenerEstadoHoy();
+        return !!estado.bloqueo_drm;
     },
 
     registrarReproduccionAudio(cantoId = null) {

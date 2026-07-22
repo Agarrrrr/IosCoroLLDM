@@ -20,7 +20,14 @@ let metronomoPart = null;
 
 let _nativeAudioPlugin = null;
 function getNativeAudioPlugin() {
-    return null; // Audios nativos desactivados
+    if (_nativeAudioPlugin) return _nativeAudioPlugin;
+    if (typeof window !== 'undefined' && window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform()) {
+        if (window.Capacitor.Plugins && window.Capacitor.Plugins.NativeAudio) {
+            _nativeAudioPlugin = window.Capacitor.Plugins.NativeAudio;
+            return _nativeAudioPlugin;
+        }
+    }
+    return null;
 }
 
 export const midiEngine = {
@@ -104,15 +111,23 @@ export const midiEngine = {
                 overrideSupports(Tone.ToneAudioBuffer);
                 overrideSupports(Tone.Buffer);
 
-                // Helper para cargar y decodificar audio usando OfflineAudioContext.
+                let sharedOfflineCtx = null;
+                const getSharedOfflineCtx = () => {
+                    if (!sharedOfflineCtx) {
+                        const OfflineCtxClass = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+                        sharedOfflineCtx = new OfflineCtxClass(1, 1, 44100);
+                    }
+                    return sharedOfflineCtx;
+                };
+
+                // Helper para cargar y decodificar audio usando OfflineAudioContext compartido.
                 // OfflineAudioContext ignora el estado "suspended" de la API WebAudio en iOS,
                 // permitiendo decodificar los buffers en segundo plano sin requerir gesto previo del usuario.
                 const loadAndDecodeToneBuffer = async (url) => {
                     const response = await fetch(url);
                     if (!response.ok) throw new Error(`HTTP ${response.status} en ${url}`);
                     const arrayBuffer = await response.arrayBuffer();
-                    const OfflineCtxClass = window.OfflineAudioContext || window.webkitOfflineAudioContext;
-                    const offlineCtx = new OfflineCtxClass(1, 1, 44100);
+                    const offlineCtx = getSharedOfflineCtx();
                     const nativeBuffer = await offlineCtx.decodeAudioData(arrayBuffer);
                     return new Tone.ToneAudioBuffer(nativeBuffer);
                 };
@@ -145,16 +160,17 @@ export const midiEngine = {
                     };
 
                     const decodedBuffers = {};
-                    console.log("🎹 [MIDI] Decodificando muestras manualmente en ToneAudioBuffers...");
+                    console.log("🎹 [MIDI] Decodificando muestras manualmente en ToneAudioBuffers en paralelo...");
                     
-                    for (const note of Object.keys(sampleFiles)) {
+                    const notes = Object.keys(sampleFiles);
+                    await Promise.all(notes.map(async (note) => {
                         const fileName = sampleFiles[note];
                         try {
                             decodedBuffers[note] = await loadAndDecodeToneBuffer(`audio/piano/${fileName}`);
                         } catch (err) {
                             console.error(`❌ [MIDI] Error cargando muestra ${note}:`, err);
                         }
-                    }
+                    }));
 
                     pianoInstrument = new Tone.Sampler({
                         urls: decodedBuffers,
@@ -185,7 +201,11 @@ export const midiEngine = {
 
                 console.log("🎹 [MIDI] Cargando Sampler Local...");
                 const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout cargando Sampler MIDI (15s)")), 15000));
-                await Promise.race([Tone.loaded(), timeoutPromise]);
+                try {
+                    await Promise.race([Tone.loaded(), timeoutPromise]);
+                } catch (tErr) {
+                    console.warn("⚠️ [MIDI] Tone.loaded() warning (continuando):", tErr);
+                }
                 this.instrumentoCargado = true;
                 console.log("🎹 [MIDI] Sampler listo.");
 
@@ -818,6 +838,10 @@ export const midiEngine = {
             Tone.Transport.pause();
             if (pianoInstrument) pianoInstrument.releaseAll();
         }
+        const nativeAudio = getNativeAudioPlugin();
+        if (nativeAudio && nativeAudio.releaseAllNotes) {
+            nativeAudio.releaseAllNotes().catch(() => {});
+        }
         // Arquitectura 3: Liberar Wake Lock al pausar para no consumir batería
         this._liberarWakeLock();
     },
@@ -830,6 +854,10 @@ export const midiEngine = {
             Tone.Transport.stop();
             Tone.Transport.ticks = 0;
             if (pianoInstrument) pianoInstrument.releaseAll();
+        }
+        const nativeAudio = getNativeAudioPlugin();
+        if (nativeAudio && nativeAudio.releaseAllNotes) {
+            nativeAudio.releaseAllNotes().catch(() => {});
         }
         // Arquitectura 3: Liberar Wake Lock al detener
         this._liberarWakeLock();
@@ -900,6 +928,10 @@ export const midiEngine = {
     liberarNotas(fullReset = true) {
         if (fullReset) this._pendingPlay = false;
         try {
+            const nativeAudio = getNativeAudioPlugin();
+            if (nativeAudio && nativeAudio.releaseAllNotes) {
+                nativeAudio.releaseAllNotes().catch(() => {});
+            }
             if (masterGainNode && Tone) {
                 const now = Tone.now();
                 masterGainNode.gain.cancelScheduledValues(now);
