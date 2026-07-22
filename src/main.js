@@ -47,6 +47,24 @@ App.addListener('appStateChange', ({ isActive }) => {
     if (isActive) {
         document.body.style.height = '';
         document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+        
+        const vistaMenu = document.getElementById('vista-menu');
+        const vistaVisor = document.getElementById('vista-visor');
+
+        if (vistaMenu) {
+            // Remover cualquier clase de animación atascada por la pausa de WebKit al minimizar
+            vistaMenu.classList.remove('anim-dashboard-out', 'anim-dashboard-in');
+            
+            if (vistaVisor && vistaVisor.style.display === 'block') {
+                vistaMenu.style.display = 'none';
+            } else {
+                vistaMenu.style.display = 'flex';
+                vistaMenu.style.opacity = '1';
+                // Forzar reflow en WebKit para re-dibujar la vista al 100% de ancho
+                void vistaMenu.offsetWidth;
+            }
+        }
+
         if (window.nativePdfBridge?.isNative && window.pdfEngine?._modoNativo) {
             window.nativePdfBridge._applyInitialInset();
         }

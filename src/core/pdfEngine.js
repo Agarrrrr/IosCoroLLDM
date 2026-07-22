@@ -331,9 +331,14 @@ export const pdfEngine = {
                     if (e.animationName === 'dashboardOut') {
                         vistaMenu.style.display = 'none';
                         vistaMenu.removeEventListener('animationend', onAnimationEndOut);
+                        vistaMenu.classList.remove('anim-dashboard-out');
                     }
                 };
                 vistaMenu.addEventListener('animationend', onAnimationEndOut);
+                setTimeout(() => {
+                    vistaMenu.classList.remove('anim-dashboard-out');
+                    if (vistaVisor.style.display === 'block') vistaMenu.style.display = 'none';
+                }, 450);
                 document.getElementById('titulo-canto').textContent = canto.nombre;
                 const barraSuperior = document.getElementById('barra-superior');
                 if (barraSuperior) {
@@ -424,9 +429,14 @@ export const pdfEngine = {
             if (e.animationName === 'dashboardOut') {
                 vistaMenu.style.display = 'none';
                 vistaMenu.removeEventListener('animationend', onAnimationEndOut2);
+                vistaMenu.classList.remove('anim-dashboard-out');
             }
         };
         vistaMenu.addEventListener('animationend', onAnimationEndOut2);
+        setTimeout(() => {
+            vistaMenu.classList.remove('anim-dashboard-out');
+            if (vistaVisor.style.display === 'block') vistaMenu.style.display = 'none';
+        }, 450);
         document.getElementById('titulo-canto').textContent = canto.nombre;
         barraSuperior.classList.remove('barra-oculta');
 
@@ -982,8 +992,11 @@ export const pdfEngine = {
         };
         vistaMenu.addEventListener('animationend', onAnimationEnd);
 
-        // Fallback: si animationend no dispara, liberar el guard
-        setTimeout(() => { this._cerrandoVisor = false; }, 500);
+        // Fallback: si animationend no dispara (ej. app a segundo plano), liberar el guard y limpiar clases atascadas
+        setTimeout(() => { 
+            vistaMenu.classList.remove('anim-dashboard-in', 'anim-dashboard-out');
+            this._cerrandoVisor = false; 
+        }, 500);
 
         // Mostrar Intersticial si ya superó el límite sin anuncios de hoy
         if (limitsManager.debeMostrarIntersticial() && window.adManager) {
