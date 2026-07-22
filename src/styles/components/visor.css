@@ -45,18 +45,21 @@
 }
 
 .anim-dashboard-out {
-    transition: transform 0.4s cubic-bezier(0.1, 0.9, 0.2, 1);
-    transform: translateX(-100%);
+    animation: dashboardOut 0.4s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
 }
 
 .anim-dashboard-in {
-    transition: transform 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
-    transform: translateX(0);
+    animation: dashboardIn 0.35s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
 }
 
-/* Estado inicial para animación de entrada — se aplica antes de .anim-dashboard-in */
-.anim-dashboard-pre {
-    transform: translateX(-100%);
+@keyframes dashboardOut {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes dashboardIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
 }
 
 .anim-pop-in {

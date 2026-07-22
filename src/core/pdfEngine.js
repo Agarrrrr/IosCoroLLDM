@@ -324,16 +324,16 @@ export const pdfEngine = {
                 vistaVisor.style.display = 'block';
                 vistaVisor.style.opacity = '1';
                 
-                vistaMenu.classList.remove('anim-dashboard-in', 'anim-dashboard-pre');
+                vistaMenu.classList.remove('anim-dashboard-in');
                 vistaMenu.classList.add('anim-dashboard-out');
                 
-                const onTransitionEndOut = (e) => {
-                    if (e.propertyName === 'transform') {
+                const onAnimationEndOut = (e) => {
+                    if (e.animationName === 'dashboardOut') {
                         vistaMenu.style.display = 'none';
-                        vistaMenu.removeEventListener('transitionend', onTransitionEndOut);
+                        vistaMenu.removeEventListener('animationend', onAnimationEndOut);
                     }
                 };
-                vistaMenu.addEventListener('transitionend', onTransitionEndOut);
+                vistaMenu.addEventListener('animationend', onAnimationEndOut);
                 document.getElementById('titulo-canto').textContent = canto.nombre;
                 const barraSuperior = document.getElementById('barra-superior');
                 if (barraSuperior) {
@@ -416,17 +416,17 @@ export const pdfEngine = {
         vistaVisor.style.display = 'block';
         vistaVisor.classList.remove('anim-slide-in', 'anim-slide-out');
         
-        vistaMenu.classList.remove('anim-dashboard-in', 'anim-dashboard-out', 'anim-dashboard-pre');
+        vistaMenu.classList.remove('anim-dashboard-in', 'anim-dashboard-out');
         void vistaMenu.offsetWidth;
         vistaMenu.classList.add('anim-dashboard-out');
         
-        const onTransitionEndOut2 = (e) => {
-            if (e.propertyName === 'transform') {
+        const onAnimationEndOut2 = (e) => {
+            if (e.animationName === 'dashboardOut') {
                 vistaMenu.style.display = 'none';
-                vistaMenu.removeEventListener('transitionend', onTransitionEndOut2);
+                vistaMenu.removeEventListener('animationend', onAnimationEndOut2);
             }
         };
-        vistaMenu.addEventListener('transitionend', onTransitionEndOut2);
+        vistaMenu.addEventListener('animationend', onAnimationEndOut2);
         document.getElementById('titulo-canto').textContent = canto.nombre;
         barraSuperior.classList.remove('barra-oculta');
 
@@ -947,23 +947,18 @@ export const pdfEngine = {
             barraSuperior.style.opacity = '0';
         }
 
-        // Preparar vistaMenu: quitar cualquier clase de animación previa
+        // Preparar vistaMenu: quitar cualquier animación previa y resetear
         vistaMenu.classList.remove('anim-dashboard-out', 'anim-dashboard-in');
         vistaMenu.style.display = 'flex';
-        // Establecer estado inicial (fuera de pantalla) sin transición
-        vistaMenu.classList.add('anim-dashboard-pre');
         vistaMenu.style.opacity = '1';
-        
-        // Forzar reflow para que el navegador registre el estado inicial
+        // Forzar reflow para limpiar cualquier animación en curso
         void vistaMenu.offsetWidth;
-        
-        // Iniciar animación de entrada: quitar pre, agregar in (con transición)
-        vistaMenu.classList.remove('anim-dashboard-pre');
+        // Iniciar animación de entrada
         vistaMenu.classList.add('anim-dashboard-in');
 
-        const onTransitionEnd = (e) => {
-            if (e.propertyName === 'transform') {
-                vistaMenu.removeEventListener('transitionend', onTransitionEnd);
+        const onAnimationEnd = (e) => {
+            if (e.animationName === 'dashboardIn') {
+                vistaMenu.removeEventListener('animationend', onAnimationEnd);
                 vistaMenu.classList.remove('anim-dashboard-in');
                 vistaVisor.style.display = 'none';
                 vistaVisor.style.backgroundColor = '';
@@ -984,7 +979,7 @@ export const pdfEngine = {
                 }
             }
         };
-        vistaMenu.addEventListener('transitionend', onTransitionEnd);
+        vistaMenu.addEventListener('animationend', onAnimationEnd);
 
         // Fallback: si animationend no dispara, liberar el guard
         setTimeout(() => { this._cerrandoVisor = false; }, 500);
