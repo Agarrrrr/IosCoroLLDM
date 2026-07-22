@@ -324,16 +324,16 @@ export const pdfEngine = {
                 vistaVisor.style.display = 'block';
                 vistaVisor.style.opacity = '1';
                 
-                vistaMenu.classList.remove('anim-dashboard-in');
+                vistaMenu.classList.remove('anim-dashboard-in', 'anim-dashboard-pre');
                 vistaMenu.classList.add('anim-dashboard-out');
                 
-                const onAnimationEndIn = (e) => {
-                    if (e.animationName === 'dashboardOut') {
+                const onTransitionEndOut = (e) => {
+                    if (e.propertyName === 'transform') {
                         vistaMenu.style.display = 'none';
-                        vistaMenu.removeEventListener('animationend', onAnimationEndIn);
+                        vistaMenu.removeEventListener('transitionend', onTransitionEndOut);
                     }
                 };
-                vistaMenu.addEventListener('animationend', onAnimationEndIn);
+                vistaMenu.addEventListener('transitionend', onTransitionEndOut);
                 document.getElementById('titulo-canto').textContent = canto.nombre;
                 const barraSuperior = document.getElementById('barra-superior');
                 if (barraSuperior) {
@@ -416,17 +416,17 @@ export const pdfEngine = {
         vistaVisor.style.display = 'block';
         vistaVisor.classList.remove('anim-slide-in', 'anim-slide-out');
         
-        vistaMenu.classList.remove('anim-dashboard-in', 'anim-dashboard-out');
+        vistaMenu.classList.remove('anim-dashboard-in', 'anim-dashboard-out', 'anim-dashboard-pre');
         void vistaMenu.offsetWidth;
         vistaMenu.classList.add('anim-dashboard-out');
         
-        const onAnimationEndOut = (e) => {
-            if (e.animationName === 'dashboardOut') {
+        const onTransitionEndOut2 = (e) => {
+            if (e.propertyName === 'transform') {
                 vistaMenu.style.display = 'none';
-                vistaMenu.removeEventListener('animationend', onAnimationEndOut);
+                vistaMenu.removeEventListener('transitionend', onTransitionEndOut2);
             }
         };
-        vistaMenu.addEventListener('animationend', onAnimationEndOut);
+        vistaMenu.addEventListener('transitionend', onTransitionEndOut2);
         document.getElementById('titulo-canto').textContent = canto.nombre;
         barraSuperior.classList.remove('barra-oculta');
 
@@ -903,7 +903,7 @@ export const pdfEngine = {
     _cerrandoVisor: false,
 
     cerrarVisor: function(contenedorPdf) {
-        // Guard: evitar doble ejecución (swipe-back dispara pdfClosed → cerrarVisor → closePdf → pdfClosed otra vez)
+        // Guard: evitar doble ejecución — si ya estamos cerrando, ignorar
         if (this._cerrandoVisor) return;
         this._cerrandoVisor = true;
 
@@ -942,37 +942,40 @@ export const pdfEngine = {
         const vistaVisor = document.getElementById('vista-visor');
         const barraSuperior = document.getElementById('barra-superior');
         
-        // Ocultar topbar al instante para que no estorbe visualmente mientras el dashboard entra
+        // Ocultar topbar al instante
         if (barraSuperior) {
             barraSuperior.style.opacity = '0';
         }
 
+        // Preparar vistaMenu: quitar cualquier clase de animación previa
+        vistaMenu.classList.remove('anim-dashboard-out', 'anim-dashboard-in');
         vistaMenu.style.display = 'flex';
-        vistaMenu.classList.remove('anim-dashboard-out');
-        vistaMenu.classList.remove('anim-dashboard-in');
+        // Establecer estado inicial (fuera de pantalla) sin transición
+        vistaMenu.classList.add('anim-dashboard-pre');
+        vistaMenu.style.opacity = '1';
         
-        // Forzar reflow para que la animación reinicie y dispare el evento
+        // Forzar reflow para que el navegador registre el estado inicial
         void vistaMenu.offsetWidth;
         
+        // Iniciar animación de entrada: quitar pre, agregar in (con transición)
+        vistaMenu.classList.remove('anim-dashboard-pre');
         vistaMenu.classList.add('anim-dashboard-in');
 
-        const onAnimationEndOut = (e) => {
-            if (e.animationName === 'dashboardIn') {
+        const onTransitionEnd = (e) => {
+            if (e.propertyName === 'transform') {
+                vistaMenu.removeEventListener('transitionend', onTransitionEnd);
+                vistaMenu.classList.remove('anim-dashboard-in');
                 vistaVisor.style.display = 'none';
                 vistaVisor.style.backgroundColor = '';
                 document.getElementById('contenedor-pdf').style.backgroundColor = '';
                 document.documentElement.style.backgroundColor = '';
                 document.body.style.backgroundColor = '';
-                vistaMenu.removeEventListener('animationend', onAnimationEndOut);
                 this._cerrandoVisor = false;
                 
-                // PREVENCIÓN DE FUGAS DE MEMORIA: Desmontaje real de React
-                // Anterior: render({ canto: null }) NO llamaba cleanup de useEffect, dejando
-                // addEventListener('visibilitychange') + IntersectionObserver + canvas VRAM
-                // activos indefinidamente tras ~30 PDFs → canvas negros → crash en Android.
+                // Desmontar React para liberar memoria
                 if (this._reactRoot) {
                     try {
-                        this._reactRoot.unmount(); // Dispara cleanup de todos los useEffect
+                        this._reactRoot.unmount();
                         this._reactRoot = null;
                     } catch(e) {
                         console.warn('[PDF] Error en unmount:', e);
@@ -981,9 +984,9 @@ export const pdfEngine = {
                 }
             }
         };
-        vistaMenu.addEventListener('animationend', onAnimationEndOut);
+        vistaMenu.addEventListener('transitionend', onTransitionEnd);
 
-        // Fallback: si animationend no dispara (elemento oculto, sin animación, etc), liberar el guard
+        // Fallback: si animationend no dispara, liberar el guard
         setTimeout(() => { this._cerrandoVisor = false; }, 500);
 
         // Mostrar Intersticial si ya superó el límite sin anuncios de hoy
