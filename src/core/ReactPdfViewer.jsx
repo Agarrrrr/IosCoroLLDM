@@ -165,12 +165,26 @@ export default function ReactPdfViewer({ canto }) {
         decryptOffThread(pdfUrl)
             .then(buffer => {
                 if (cancelled) return;
+                // DIAGNÓSTICO: verificar que el buffer desencriptado es un PDF válido
+                const probe = new Uint8Array(buffer, 0, 5);
+                const header = String.fromCharCode(...probe);
+                const diagMsg = `ReactPdf decrypt: ${buffer.byteLength}b, hdr="${header}"`;
+                console.warn(`[ReactPdf][DIAG] ${diagMsg}`);
+                if (window.nativePdfBridge) window.nativePdfBridge._diag(diagMsg);
+                if (header !== '%PDF-') {
+                    const errMsg = `ReactPdf: Buffer NO es PDF (hdr="${header}")`;
+                    console.error(`[ReactPdf][DIAG] ${errMsg}`);
+                    if (window.nativePdfBridge) window.nativePdfBridge._diag(errMsg, true);
+                    setPdfError('El archivo parece estar dañado o la desencriptación falló.');
+                    return;
+                }
                 setPdfData({ data: new Uint8Array(buffer) });
                 // El ArrayBuffer original puede ser GC'd ahora — solo necesitamos el Uint8Array
             })
             .catch(err => {
                 if (cancelled) return;
                 console.error('Error al procesar PDF:', err);
+                if (window.nativePdfBridge) window.nativePdfBridge._diag(`ReactPdf decrypt error: ${err.message || err}`, true);
                 setPdfError('Error al cargar la partitura. Verifica tu conexión.');
             });
 
@@ -209,6 +223,7 @@ export default function ReactPdfViewer({ canto }) {
                     onLoadSuccess={onDocumentLoadSuccess}
                     onLoadError={(error) => {
                         console.error('Error interno de PDF.js:', error);
+                        if (window.nativePdfBridge) window.nativePdfBridge._diag(`PDF.js error: ${error.message || error}`, true);
                         setPdfError('El archivo parece estar dañado o la desencriptación falló.');
                         setPdfData(null);
                     }}

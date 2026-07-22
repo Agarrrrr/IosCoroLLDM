@@ -172,22 +172,19 @@ export const nativePdfBridge = {
     _diagLogs: [],
     _diag(msg, isError = false) {
         this._diagLogs.push({ msg, isError, time: new Date().toISOString() });
-        // Mostrar en el contenedor-pdf si existe (modo fallback activo)
-        const contenedor = document.getElementById('contenedor-pdf');
-        if (contenedor) {
-            let diagEl = document.getElementById('nativepdf-diag');
-            if (!diagEl) {
-                diagEl = document.createElement('div');
-                diagEl.id = 'nativepdf-diag';
-                diagEl.style.cssText = 'position:fixed;bottom:0;left:0;right:0;max-height:40vh;overflow-y:auto;background:rgba(0,0,0,0.85);color:#0f0;font:10px monospace;padding:8px;z-index:99999;pointer-events:auto;';
-                contenedor.appendChild(diagEl);
-            }
-            const line = document.createElement('div');
-            line.style.color = isError ? '#f66' : '#0f0';
-            line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
-            diagEl.appendChild(line);
-            diagEl.scrollTop = diagEl.scrollHeight;
+        // Fijar en document.body para que el fallback React no lo borre
+        let diagEl = document.getElementById('nativepdf-diag');
+        if (!diagEl) {
+            diagEl = document.createElement('div');
+            diagEl.id = 'nativepdf-diag';
+            diagEl.style.cssText = 'position:fixed;bottom:0;left:0;right:0;max-height:35vh;overflow-y:auto;background:rgba(0,0,0,0.9);color:#0f0;font:10px monospace;padding:8px;z-index:999999;pointer-events:auto;-webkit-overflow-scrolling:touch;';
+            document.body.appendChild(diagEl);
         }
+        const line = document.createElement('div');
+        line.style.color = isError ? '#f66' : '#0f0';
+        line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+        diagEl.appendChild(line);
+        diagEl.scrollTop = diagEl.scrollHeight;
     },
 
     // ---- Registro Centralizado de Rectángulos Interactivos Dinámicos ----
