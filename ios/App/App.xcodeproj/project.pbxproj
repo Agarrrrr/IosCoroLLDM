@@ -199,6 +199,7 @@
 			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -348,7 +350,6 @@
 					"-weak-lswift_time",
 					"-weak-lswiftsys_time",
 					"-weak-lswiftunistd",
-					"-Wl,-undefined,dynamic_lookup",
 					"-weak_framework",
 					MarketplaceKit,
 					"-weak_framework",
@@ -399,7 +400,6 @@
 					"-weak-lswift_time",
 					"-weak-lswiftsys_time",
 					"-weak-lswiftunistd",
-					"-Wl,-undefined,dynamic_lookup",
 					"-weak_framework",
 					MarketplaceKit,
 					"-weak_framework",

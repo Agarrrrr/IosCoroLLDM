@@ -164,10 +164,41 @@ function construirInterfaz() {
         };
     }
 
-    // En pantallas grandes (>1024px, ej. iPad en horizontal), mostrar la barra lateral por defecto
-    if (window.innerWidth > 1024 && DOM.sidebar) {
-        DOM.sidebar.classList.remove('oculto');
-    }
+    // Ajuste responsivo de Sidebar (Tablets / Móvil) según orientación
+    const syncSidebarOrientation = () => {
+        const esPortrait = window.matchMedia('(orientation: portrait)').matches || window.innerHeight > window.innerWidth;
+        const esTabletOEscritorioLandscape = (window.innerWidth >= 768 && window.matchMedia('(orientation: landscape)').matches) || window.innerWidth > 1024;
+
+        if (esPortrait) {
+            // EN MODO VERTICAL (PORTRAIT): Siempre forzar ocultar el sidebar en celulares y tablets al rotar
+            if (DOM.sidebar) DOM.sidebar.classList.add('oculto');
+            if (DOM.overlay) {
+                DOM.overlay.style.opacity = '0';
+                DOM.overlay.style.display = 'none';
+                DOM.overlay.classList.remove('activo');
+            }
+        } else if (esTabletOEscritorioLandscape) {
+            // EN MODO HORIZONTAL (TABLET / ESCRITORIO): Siempre visible 100% fijo (App Store Guidelines)
+            if (DOM.sidebar) DOM.sidebar.classList.remove('oculto');
+            if (DOM.overlay) {
+                DOM.overlay.style.opacity = '0';
+                DOM.overlay.style.display = 'none';
+                DOM.overlay.classList.remove('activo');
+            }
+        } else {
+            // Celulares en Horizontal: Ocultar sidebar para dar espacio a la pantalla
+            if (DOM.sidebar) DOM.sidebar.classList.add('oculto');
+            if (DOM.overlay) {
+                DOM.overlay.style.opacity = '0';
+                DOM.overlay.style.display = 'none';
+                DOM.overlay.classList.remove('activo');
+            }
+        }
+    };
+
+    syncSidebarOrientation();
+    window.addEventListener('resize', syncSidebarOrientation);
+    window.addEventListener('orientationchange', syncSidebarOrientation);
 
     // Forzar el primer tick reactivo y cargar categoría inicial asíncrona si es necesario
     store.setState({ categoriaActiva: APP_STATE.categoriaActiva || 'todos' });
