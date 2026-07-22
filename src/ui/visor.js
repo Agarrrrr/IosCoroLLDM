@@ -49,7 +49,11 @@ export const visorUI = {
             btnOpciones.addEventListener('click', (e) => {
                 e.stopPropagation();
                 if (window.innerWidth <= 600) {
-                    menuOpciones.style.display = (menuOpciones.style.display === 'flex') ? 'none' : 'flex';
+                    const abrir = (menuOpciones.style.display !== 'flex');
+                    menuOpciones.style.display = abrir ? 'flex' : 'none';
+                    if (window.pdfEngine && window.pdfEngine._modoNativo && window.pdfEngine._nativeBridge) {
+                        window.pdfEngine._nativeBridge.setBarsVisible(!abrir).catch(()=>{});
+                    }
                 }
             }, { signal });
 
@@ -57,6 +61,9 @@ export const visorUI = {
                 if (window.innerWidth <= 600 && menuOpciones.style.display === 'flex') {
                     if (e.target instanceof Node && !menuOpciones.contains(e.target) && e.target !== btnOpciones) {
                         menuOpciones.style.display = 'none';
+                        if (window.pdfEngine && window.pdfEngine._modoNativo && window.pdfEngine._nativeBridge) {
+                            window.pdfEngine._nativeBridge.setBarsVisible(true).catch(()=>{});
+                        }
                     }
                 }
             }, { signal });
@@ -65,7 +72,12 @@ export const visorUI = {
                 btn.addEventListener('click', () => {
                     // Evitar cerrar el menú si es el botón de temas, para que el sub-menú de colores pueda mostrarse
                     if (btn.id === 'btn-visor-tema') return;
-                    if (window.innerWidth <= 600) menuOpciones.style.display = 'none';
+                    if (window.innerWidth <= 600) {
+                        menuOpciones.style.display = 'none';
+                        if (window.pdfEngine && window.pdfEngine._modoNativo && window.pdfEngine._nativeBridge) {
+                            window.pdfEngine._nativeBridge.setBarsVisible(true).catch(()=>{});
+                        }
+                    }
                 }, { signal });
             });
         }

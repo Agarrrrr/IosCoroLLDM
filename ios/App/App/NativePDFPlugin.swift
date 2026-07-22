@@ -158,10 +158,28 @@ class TouchForwardView: UIView, UIGestureRecognizerDelegate {
     var barsVisible: Bool = true
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        // Retornar nil siempre para que TouchForwardView no bloquee la WKWebView.
-        // La WKWebView maneja sus elementos HTML (reproductor, botones, menús, modal compartir)
-        // y los toques en áreas transparentes con pointer-events:none caen a la PDFView nativa.
-        return nil
+        let view = super.hitTest(point, with: event)
+        if view === self {
+            if !barsVisible {
+                return nil
+            }
+            
+            let topLimit = self.plugin?.topbarHeight ?? (self.safeAreaInsets.top + 64.0)
+            let bottomInset = self.plugin?.bottomInset ?? 0.0
+            let bottomLimit = self.bounds.height - bottomInset
+            
+            // Si el toque cae en la barra superior o en el reproductor desplegado (bottomInset > 0), dejarlo pasar a la webView (return nil)
+            if point.y < topLimit || (bottomInset > 0 && point.y > bottomLimit) {
+                return nil
+            }
+            
+            // De lo contrario (centro de la partitura), reenviar al PDFView nativo para permitir el scroll y navegación de la partitura
+            if let target = targetView {
+                let convertedPoint = self.convert(point, to: target)
+                return target.hitTest(convertedPoint, with: event)
+            }
+        }
+        return view
     }
 }
 
