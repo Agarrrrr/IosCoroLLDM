@@ -51,6 +51,9 @@ App.addListener('appStateChange', ({ isActive }) => {
         const vistaMenu = document.getElementById('vista-menu');
         const vistaVisor = document.getElementById('vista-visor');
 
+        // Disparar evento resize global para que CSS recalcule el viewport completo en iOS
+        window.dispatchEvent(new Event('resize'));
+
         if (vistaMenu) {
             // Remover cualquier clase de animación atascada por la pausa de WebKit al minimizar
             vistaMenu.classList.remove('anim-dashboard-out', 'anim-dashboard-in');

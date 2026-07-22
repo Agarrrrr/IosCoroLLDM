@@ -347,8 +347,14 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
                 NotificationCenter.default.addObserver(
                     forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main
                 ) { [weak self] _ in
-                    self?.pdfView?.layoutDocumentView()
-                    if let pv = self?.pdfView {
+                    guard let self = self else { return }
+                    if let webView = self.webView {
+                        webView.frame = webView.superview?.bounds ?? webView.frame
+                        webView.setNeedsLayout()
+                        webView.layoutIfNeeded()
+                    }
+                    self.pdfView?.layoutDocumentView()
+                    if let pv = self.pdfView {
                         pv.minScaleFactor = pv.scaleFactorForSizeToFit
                         pv.scaleFactor = pv.scaleFactorForSizeToFit
                     }
