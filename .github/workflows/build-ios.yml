@@ -78,15 +78,22 @@ jobs:
       - name: Export IPA
         id: export
         run: |
-          xcodebuild -exportArchive \
-                     -archivePath $RUNNER_TEMP/App.xcarchive \
-                     -exportOptionsPlist ios/App/App/ExportOptions.plist \
-                     -exportPath $RUNNER_TEMP/build \
-                     -allowProvisioningUpdates \
-                     -authenticationKeyPath ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8 \
-                     -authenticationKeyID ${{ secrets.APPSTORE_KEY_ID }} \
-                     -authenticationKeyIssuerID ${{ secrets.APPSTORE_ISSUER_ID }}
-          echo "ipa-path=$RUNNER_TEMP/build/App.ipa" >> $GITHUB_OUTPUT
+          for i in 1 2 3; do
+            echo "--- Export attempt $i/3 ---"
+            xcodebuild -exportArchive \
+                       -archivePath $RUNNER_TEMP/App.xcarchive \
+                       -exportOptionsPlist ios/App/App/ExportOptions.plist \
+                       -exportPath $RUNNER_TEMP/build \
+                       -allowProvisioningUpdates \
+                       -authenticationKeyPath ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8 \
+                       -authenticationKeyID ${{ secrets.APPSTORE_KEY_ID }} \
+                       -authenticationKeyIssuerID ${{ secrets.APPSTORE_ISSUER_ID }} \
+                       -verbose && { echo "ipa-path=$RUNNER_TEMP/build/App.ipa" >> $GITHUB_OUTPUT; exit 0; }
+            echo "Export failed, waiting 30s before retry..."
+            sleep 30
+          done
+          echo "Export failed after 3 attempts."
+          exit 1
       
       - name: Upload to App Store Connect
         uses: apple-actions/upload-testflight-build@v1
