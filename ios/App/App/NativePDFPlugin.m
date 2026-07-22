@@ -27,10 +27,7 @@ void configurePlaybackAudioSession(void) {
         audioSessionClass = NSClassFromString(@"AVAudioSession");
     }
     
-    if (!audioSessionClass) {
-        NSLog(@"⚠️ [AudioSession] Class AVAudioSession no encontrada");
-        return;
-    }
+    if (!audioSessionClass) return;
     
     SEL sharedSessionSel = NSSelectorFromString(@"sharedInstance");
     id sharedSession = nil;
@@ -41,36 +38,26 @@ void configurePlaybackAudioSession(void) {
 #pragma clang diagnostic pop
     }
     
-    if (!sharedSession) {
-        NSLog(@"⚠️ [AudioSession] No se pudo obtener sharedInstance");
-        return;
-    }
+    if (!sharedSession) return;
     
-    // Configurar Categoría a Playback (ignora el interruptor de silencio)
-    SEL setCategorySel = NSSelectorFromString(@"setCategory:error:");
+    // Configurar Categoría a Playback con MixWithOthers (1) + AllowBluetooth (4)
+    // Esto evita que iOS envíe AudioSession::beginInterruption al WebContent process de WKWebView
+    SEL setCategorySel = NSSelectorFromString(@"setCategory:withOptions:error:");
     if ([sharedSession respondsToSelector:setCategorySel]) {
-        typedef BOOL (*SetCategoryFn)(id, SEL, NSString *, NSError **);
+        typedef BOOL (*SetCategoryFn)(id, SEL, NSString *, NSUInteger, NSError **);
         SetCategoryFn setCategory = (SetCategoryFn)[sharedSession methodForSelector:setCategorySel];
         NSError *err = nil;
-        BOOL ok = setCategory(sharedSession, setCategorySel, @"AVAudioSessionCategoryPlayback", &err);
-        if (!ok) {
-            NSLog(@"⚠️ [AudioSession] Error al configurar category: %@", err);
-        } else {
-            NSLog(@"🔊 [AudioSession] Categoría AVAudioSessionCategoryPlayback configurada.");
+        BOOL ok = setCategory(sharedSession, setCategorySel, @"AVAudioSessionCategoryPlayback", 1 | 4, &err);
+        if (ok) {
+            NSLog(@"🔊 [AudioSession] Categoría AVAudioSessionCategoryPlayback (MixWithOthers) configurada.");
         }
-    }
-    
-    // Activar Sesión de Audio
-    SEL setActiveSel = NSSelectorFromString(@"setActive:error:");
-    if ([sharedSession respondsToSelector:setActiveSel]) {
-        typedef BOOL (*SetActiveFn)(id, SEL, BOOL, NSError **);
-        SetActiveFn setActive = (SetActiveFn)[sharedSession methodForSelector:setActiveSel];
-        NSError *err = nil;
-        BOOL ok = setActive(sharedSession, setActiveSel, YES, &err);
-        if (!ok) {
-            NSLog(@"⚠️ [AudioSession] Error al activar sesión: %@", err);
-        } else {
-            NSLog(@"🔊 [AudioSession] Sesión de Audio activada con éxito.");
+    } else {
+        SEL fallbackSel = NSSelectorFromString(@"setCategory:error:");
+        if ([sharedSession respondsToSelector:fallbackSel]) {
+            typedef BOOL (*FallbackFn)(id, SEL, NSString *, NSError **);
+            FallbackFn setCategory = (FallbackFn)[sharedSession methodForSelector:fallbackSel];
+            NSError *err = nil;
+            setCategory(sharedSession, fallbackSel, @"AVAudioSessionCategoryPlayback", &err);
         }
     }
 }

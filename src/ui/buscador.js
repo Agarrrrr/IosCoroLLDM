@@ -153,10 +153,18 @@ export const buscadorUI = {
             spanNombre.textContent = canto.nombre;
             h3.appendChild(spanNombre);
 
-            if (false && canto.midi_archivo) {
+            const tieneMidi = !!(canto && (
+                (canto.midi_archivo && canto.midi_archivo !== 'null' && canto.midi_archivo !== 'undefined') ||
+                (canto.midi_url && canto.midi_url !== 'null' && canto.midi_url !== 'undefined') ||
+                (canto.midiUrl && canto.midiUrl !== 'null' && canto.midiUrl !== 'undefined')
+            ));
+
+            if (tieneMidi) {
                 const divAudio = document.createElement('div');
+                divAudio.title = "Tiene audio MIDI";
                 divAudio.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-acento)"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>`;
                 divAudio.style.display = 'flex';
+                divAudio.style.alignItems = 'center';
                 h3.appendChild(divAudio);
             }
             

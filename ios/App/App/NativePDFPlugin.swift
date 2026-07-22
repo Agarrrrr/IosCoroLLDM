@@ -158,25 +158,10 @@ class TouchForwardView: UIView, UIGestureRecognizerDelegate {
     var barsVisible: Bool = true
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        let view = super.hitTest(point, with: event)
-        if view === self {
-            if barsVisible {
-                let topLimit = self.plugin?.topbarHeight ?? (self.safeAreaInsets.top + 64.0)
-                let bottomLimit = self.bounds.height - (self.plugin?.bottomInset ?? 0.0)
-                
-                // Si está en las barras superior/inferior, dejamos que caiga a la webView que está atrás
-                if point.y < topLimit || point.y > bottomLimit {
-                    return nil
-                }
-            }
-            
-            // De lo contrario, reenviamos al PDFView que está atrás de la webView
-            if let target = targetView {
-                let convertedPoint = self.convert(point, to: target)
-                return target.hitTest(convertedPoint, with: event)
-            }
-        }
-        return view
+        // Retornar nil siempre para que TouchForwardView no bloquee la WKWebView.
+        // La WKWebView maneja sus elementos HTML (reproductor, botones, menús, modal compartir)
+        // y los toques en áreas transparentes con pointer-events:none caen a la PDFView nativa.
+        return nil
     }
 }
 
@@ -221,7 +206,6 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
     
     // MARK: - openPdf
     @objc public func openPdf(_ call: CAPPluginCall) {
-        configurePlaybackAudioSession()
         guard let path = call.options["path"] as? String else {
             call.resolve(["error": "Must provide path"])
             return
@@ -391,7 +375,6 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
     
     // MARK: - setBottomInset
     @objc public func setBottomInset(_ call: CAPPluginCall) {
-        configurePlaybackAudioSession()
         let insetVal = (call.options["inset"] as? Double) ?? Double(call.options["inset"] as? Int ?? 0)
         let inset = CGFloat(insetVal)
         DispatchQueue.main.async { [weak self] in

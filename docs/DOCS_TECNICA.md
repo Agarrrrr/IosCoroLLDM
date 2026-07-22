@@ -62,6 +62,23 @@ La aplicación utiliza `Vite` con configuraciones altamente específicas:
 
 ---
 
-## 6. 🧪 Entornos de Pruebas Automáticas
-- **Unit Testing (Vitest):** Se utiliza `jsdom` para simular entornos de Canvas y LocalStorage. Los motores como `pdfEngine` y `anotacionesManager` son testeados independientemente sin levantar un servidor real.
-- **E2E Testing (Playwright):** Las pruebas End-to-End usan una instancia de Chromium y se apoyan intensivamente en el **Pase de Invitado**. Se inserta `/?ev=TESTING_ID` y localStorage simulado para arrancar directamente en el Visor de Partituras, logrando probar interacciones táctiles y de red sin pasar por los flujos tediosos de Login.
+---
+
+## 7. 🎹 Motor de Reproducción MIDI y Puente Nativo (iOS / WebAudio)
+
+### A. Desbloqueo Síncrono de AudioContext
+En iOS WebKit, el `AudioContext` arranca en estado `suspended` hasta ser reanudado síncronamente dentro de la pila de llamadas de una interacción explícita del usuario (`touchstart` / `click`).
+- `midiEngine.desbloquearAudioSync()` ejecuta `rawCtx.resume()` y `Tone.start()` de forma estrictamente síncrona en el primer toque.
+- Se eliminaron las esperas asíncronas de `Tone.loaded()` que causaban latencia inicial o timeouts de 15 segundos, marcando `instrumentoCargado = true` inmediatamente al terminar la decodificación de las muestras en memoria.
+
+### B. Decodificación de Muestras Acústicas Reales
+- **Compatibilidad con WebKit**: Se emplea `rawCtx.decodeAudioData(bufferCopy)` pasando un duplicado del buffer (`arrayBuffer.slice(0)`) para prevenir que Safari desasocie la memoria durante la decodificación.
+- **Resolución de Assets del Bundle**: Las muestras (`audio/piano/*.mp3` y `audio/metro/*.mp3`) se resuelven mediante `new URL(cleanPath, window.location.href).href` (`capacitor://localhost/audio/piano/*.mp3`), garantizando que se lean directamente del paquete web empaquetado sin invocar `Capacitor.convertFileSrc` (el cual está reservado únicamente para archivos del sistema de archivos local de iOS).
+
+### C. Jerarquía de Capas Nativas y Eventos Táctiles (PDFKit vs WKWebView)
+- La vista de lectura de partituras utiliza un visor nativo `PDFView` (PDFKit) posicionado por debajo de la `WKWebView`.
+- `TouchForwardView.hitTest` en `NativePDFPlugin.swift` retorna `nil`, delegando el control táctil a la `WKWebView`.
+- En la interfaz web:
+  - Los controles interactivos (botones Play, Voces, barra de progreso, menú de 3 puntos, opciones de Compartir y herramientas de Anotaciones) tienen CSS `pointer-events: auto`, recibiendo el 100% de la interactividad táctil inmediatamente.
+  - La zona transparente de la partitura tiene CSS `pointer-events: none`, permitiendo que los gestos de scroll, cambio de página y pinch-zoom pasen de forma transparente al motor nativo `PDFView` subyacente.
+

@@ -87,5 +87,8 @@ dist/
 dist-ssr/
 node_modules/
 .DS_Store
+APPSTORE_PRIVATE_KEY.txt
+CERTIFICADO_P12_BASE64.txt
+PROVISIONING_PROFILE_BASE64.txt
 
 

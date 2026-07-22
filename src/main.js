@@ -26,17 +26,20 @@ i18n.updateDOM();
 // Arrancar la aplicación usando el nuevo inicializador
 appInitializer.iniciar(APP_STATE, dashboardUI.DOM, dashboardUI.UI_API);
 
+import { midiEngine } from './core/midiEngine.js';
+
 // Pre-desbloqueo de AudioContext para iOS/Safari al primer gesto del usuario
 const desbloquearAudioGlobal = () => {
-    import('./core/midiEngine.js').then(({ midiEngine }) => {
+    try {
         midiEngine.desbloquearAudioSync();
-    }).catch(err => console.warn("Fallo en pre-desbloqueo de audio:", err));
-    
-    window.removeEventListener('touchstart', desbloquearAudioGlobal);
-    window.removeEventListener('click', desbloquearAudioGlobal);
+    } catch(err) {
+        console.warn("Fallo en pre-desbloqueo de audio:", err);
+    }
+    window.removeEventListener('touchstart', desbloquearAudioGlobal, { capture: true });
+    window.removeEventListener('click', desbloquearAudioGlobal, { capture: true });
 };
-window.addEventListener('touchstart', desbloquearAudioGlobal, { passive: true });
-window.addEventListener('click', desbloquearAudioGlobal, { passive: true });
+window.addEventListener('touchstart', desbloquearAudioGlobal, { capture: true, passive: true });
+window.addEventListener('click', desbloquearAudioGlobal, { capture: true, passive: true });
 
 // Corrección de layout al volver del background
 import { App } from '@capacitor/app';

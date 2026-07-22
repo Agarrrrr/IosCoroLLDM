@@ -627,6 +627,9 @@ export const visorUI = {
         }, { passive: true, signal });
 
         btnVoces.onclick = async () => {
+            if (midiEngine.desbloquearAudioSync) {
+                midiEngine.desbloquearAudioSync();
+            }
             // Verificar límites ANTES de mostrar el reproductor para evitar frustración
             if (!limitsManager.puedeReproducirAudio()) {
                 if (window.uiController && typeof window.uiController.mostrarModalPremium === 'function') {
@@ -637,8 +640,10 @@ export const visorUI = {
 
             const estaActivo = playerSheet.classList.toggle('activo');
             if (window.pdfEngine && window.pdfEngine._nativeBridge) {
-                const height = estaActivo ? (playerSheet.offsetHeight || 250) : 0;
-                window.pdfEngine._nativeBridge.setBottomInset(height).catch(()=>{});
+                setTimeout(() => {
+                    const height = estaActivo ? Math.max(playerSheet.offsetHeight || 0, 280) : 0;
+                    window.pdfEngine._nativeBridge.setBottomInset(height).catch(()=>{});
+                }, 30);
             }
             if (estaActivo && advancedPanel) {
                 advancedPanel.style.display = 'none'; // Restaurar estado comprimido al abrir
@@ -678,6 +683,7 @@ export const visorUI = {
         };
 
         btnPlay.onclick = async () => {
+            console.log("▶️ [VISOR] PLAY PRESIONADO EN JS");
             // Reanudar e iniciar contexto de forma estrictamente síncrona en el gesto del usuario
             if (midiEngine.desbloquearAudioSync) {
                 midiEngine.desbloquearAudioSync();

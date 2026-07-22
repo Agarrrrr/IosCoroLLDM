@@ -182,7 +182,11 @@ export const pdfEngine = {
         const actualizarBotonesAuxiliares = (cantoActual) => {
             const btnVoces = document.getElementById('btn-visor-voces');
             if (btnVoces) {
-                const tieneMidi = cantoActual && (cantoActual.midiUrl || cantoActual.midi_archivo || (cantoActual.archivo && (cantoActual.midi_archivo || cantoActual.midiUrl)));
+                const tieneMidi = !!(cantoActual && (
+                    (cantoActual.midi_archivo && cantoActual.midi_archivo !== 'null' && cantoActual.midi_archivo !== 'undefined') ||
+                    (cantoActual.midi_url && cantoActual.midi_url !== 'null' && cantoActual.midi_url !== 'undefined') ||
+                    (cantoActual.midiUrl && cantoActual.midiUrl !== 'null' && cantoActual.midiUrl !== 'undefined')
+                ));
                 btnVoces.style.display = tieneMidi ? 'flex' : 'none';
             }
             
@@ -281,27 +285,13 @@ export const pdfEngine = {
         actualizarBotonesAuxiliares(canto);
 
         // --- PRE-CARGA DEL REPRODUCTOR MIDI ---
-        const midiUrl = (canto.midi_archivo && canto.midi_archivo !== 'null') 
-            ? localDB.resolverUrlMidi(canto.midi_archivo)
+        const rawMidi = (canto && (canto.midi_archivo || canto.midi_url || canto.midiUrl)) || '';
+        const midiUrl = (rawMidi && rawMidi !== 'null' && rawMidi !== 'undefined')
+            ? localDB.resolverUrlMidi(rawMidi)
             : '';
 
         if (midiUrl && window.visorUI) {
-            const checarCacheYEjecutar = async () => {
-                try {
-                    const cache = await caches.open('midi-cache-v1'); 
-                    const match = await cache.match(midiUrl);
-                    if (match) {
-                        console.log("⚡ [MIDI] Encontrado en caché, cargando al instante...");
-                        if (this._midiPreloadTimeout) clearTimeout(this._midiPreloadTimeout);
-                        window.visorUI.cargarMidi(midiUrl).catch(() => {});
-                    } else {
-                        console.log("⚡ [MIDI] No en caché. Esperando acción del usuario.");
-                    }
-                } catch (e) {
-                    console.warn("[MIDI] Error al revisar caché de preload");
-                }
-            };
-            checarCacheYEjecutar();
+            window.visorUI.cargarMidi(midiUrl).catch(() => {});
         } else if (window.midiEngine) {
             this._midiPreloadTimeout = setTimeout(() => {
                 window.midiEngine.inicializar().catch(() => {});

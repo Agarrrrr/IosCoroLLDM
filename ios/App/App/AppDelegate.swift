@@ -1,16 +1,13 @@
 import UIKit
 import Capacitor
 
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Configuración de la sesión de audio a través de la función C exportada
-        // Evita el bug de cabeceras rotas de CoreAudioTypes en Xcode y el enmudecimiento por optimización de enlazado (dead-code stripping).
+        // Configuración de la sesión de audio a través de la función C exportada (evita bug de cabeceras de Xcode)
         configurePlaybackAudioSession()
         return true
     }

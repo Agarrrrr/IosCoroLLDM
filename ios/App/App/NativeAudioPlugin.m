@@ -54,33 +54,6 @@ CAP_PLUGIN(NativeAudioPlugin, "NativeAudio",
     // Carga dinámica del framework AVFoundation para evitar vincular headers desalineados
     dlopen("/System/Library/Frameworks/AVFoundation.framework/AVFoundation", RTLD_NOW);
     
-    // Configurar AVAudioSession mediante introspección
-    Class audioSessionClass = NSClassFromString(@"AVAudioSession");
-    if (audioSessionClass) {
-        SEL sharedSessionSel = NSSelectorFromString(@"sharedInstance");
-        if ([audioSessionClass respondsToSelector:sharedSessionSel]) {
-            #pragma clang diagnostic push
-            #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            id session = [audioSessionClass performSelector:sharedSessionSel];
-            #pragma clang diagnostic pop
-            
-            if (session) {
-                SEL setCategorySel = NSSelectorFromString(@"setCategory:error:");
-                if ([session respondsToSelector:setCategorySel]) {
-                    typedef BOOL (*SetCategoryFn)(id, SEL, NSString *, NSError **);
-                    SetCategoryFn fn = (SetCategoryFn)[session methodForSelector:setCategorySel];
-                    fn(session, setCategorySel, @"AVAudioSessionCategoryPlayback", nil);
-                }
-                SEL setActiveSel = NSSelectorFromString(@"setActive:error:");
-                if ([session respondsToSelector:setActiveSel]) {
-                    typedef BOOL (*SetActiveFn)(id, SEL, BOOL, NSError **);
-                    SetActiveFn fn = (SetActiveFn)[session methodForSelector:setActiveSel];
-                    fn(session, setActiveSel, YES, nil);
-                }
-            }
-        }
-    }
-    
     NSDictionary<NSNumber *, NSString *> *noteMap = @{
         @21: @"A0", @24: @"C1", @27: @"Ds1", @30: @"Fs1",
         @33: @"A1", @36: @"C2", @39: @"Ds2", @42: @"Fs2",

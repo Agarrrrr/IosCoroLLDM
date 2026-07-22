@@ -5,11 +5,9 @@
 import { limitsManager } from './limitsManager.js';
 import { decryptFileFromUrl } from './decryptor.js';
 import { i18n } from './i18n.js';
+import * as ToneModule from 'tone';
 
-// Importación dinámica (Lazy Loading) de @tonejs/midi en la función cargarCancion()
-// para evitar bloquear la carga inicial del sitio y simplificar arquitectura (0-overhead)
-// Lazy Loading: Se cargarán dinámicamente para evitar el Autoplay Policy Warning
-let Tone = null;
+const Tone = ToneModule.default || ToneModule;
 
 let pianoInstrument = null;
 let masterGainNode = null;
@@ -77,20 +75,6 @@ export const midiEngine = {
                     Tone = m.default || m;
                 }
 
-                // Si estamos corriendo en la App Nativa de iOS (Capacitor), usar el motor de audio Swift Nativo
-                const nativeAudio = getNativeAudioPlugin();
-                if (nativeAudio) {
-                    try {
-                        await nativeAudio.initEngine();
-                        console.log("🎹 [MIDI] NativeAudio engine nativo en Swift inicializado con éxito.");
-                    } catch(nativeErr) {
-                        console.warn("⚠️ [MIDI] Error inicializando NativeAudio nativo:", nativeErr);
-                    }
-                    this.instrumentoCargado = true;
-                    this.cargando = false;
-                    return;
-                }
-
                 if (!masterVolumeNode) masterVolumeNode = new Tone.Volume(0).toDestination();
 
                 // Válvula de ganancia conectada directamente al volumen maestro
@@ -111,36 +95,71 @@ export const midiEngine = {
                 overrideSupports(Tone.ToneAudioBuffer);
                 overrideSupports(Tone.Buffer);
 
-                let sharedOfflineCtx = null;
-                const getSharedOfflineCtx = () => {
-                    if (!sharedOfflineCtx) {
-                        const OfflineCtxClass = window.OfflineAudioContext || window.webkitOfflineAudioContext;
-                        sharedOfflineCtx = new OfflineCtxClass(1, 1, 44100);
-                    }
-                    return sharedOfflineCtx;
+                const resolveAudioUrl = (url) => {
+                    if (!url) return '';
+                    if (url.startsWith('http') || url.startsWith('blob:') || url.startsWith('data:')) return url;
+                    const cleanPath = url.startsWith('/') ? url.slice(1) : url;
+                    return new URL(cleanPath, window.location.href).href;
                 };
 
-                // Helper para cargar y decodificar audio usando OfflineAudioContext compartido.
-                // OfflineAudioContext ignora el estado "suspended" de la API WebAudio en iOS,
-                // permitiendo decodificar los buffers en segundo plano sin requerir gesto previo del usuario.
+                // Helper para cargar y decodificar audio de forma limpia en iOS WebKit / Capacitor.
                 const loadAndDecodeToneBuffer = async (url) => {
-                    const response = await fetch(url);
-                    if (!response.ok) throw new Error(`HTTP ${response.status} en ${url}`);
+                    const primaryUrl = resolveAudioUrl(url);
+                    let response;
+                    try {
+                        response = await fetch(primaryUrl);
+                        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    } catch (fetchErr) {
+                        const fallbackUrl = url.startsWith('/') ? url : `/${url}`;
+                        response = await fetch(fallbackUrl);
+                        if (!response.ok) throw new Error(`HTTP ${response.status} en ${fallbackUrl}`);
+                    }
+                    
                     const arrayBuffer = await response.arrayBuffer();
-                    const offlineCtx = getSharedOfflineCtx();
-                    const nativeBuffer = await offlineCtx.decodeAudioData(arrayBuffer);
-                    return new Tone.ToneAudioBuffer(nativeBuffer);
+                    const rawCtx = (Tone && Tone.context && Tone.context.rawContext)
+                        ? Tone.context.rawContext
+                        : (Tone && Tone.context && Tone.context._context)
+                            ? Tone.context._context
+                            : new (window.AudioContext || window.webkitAudioContext)();
+
+                    return new Promise((resolve, reject) => {
+                        const bufferCopy = arrayBuffer.slice(0);
+                        let isResolved = false;
+                        const safeResolve = (buf) => {
+                            if (!isResolved) {
+                                isResolved = true;
+                                resolve(new Tone.ToneAudioBuffer(buf));
+                            }
+                        };
+                        const safeReject = (err) => {
+                            if (!isResolved) {
+                                isResolved = true;
+                                reject(err || new Error(`Error decodeAudioData en ${url}`));
+                            }
+                        };
+
+                        try {
+                            const res = rawCtx.decodeAudioData(bufferCopy, safeResolve, safeReject);
+                            if (res && typeof res.then === 'function') {
+                                res.then(safeResolve).catch(safeReject);
+                            }
+                        } catch (e) {
+                            safeReject(e);
+                        }
+                    });
                 };
+
+                const audioExt = 'mp3';
 
                 // Metrónomo de madera — Tone.Player con samples reales
                 try {
                     if (!metroHi) {
-                        const buffer = await loadAndDecodeToneBuffer('audio/metro/wood-hi.mp3');
+                        const buffer = await loadAndDecodeToneBuffer(`audio/metro/wood-hi.${audioExt}`);
                         metroHi = new Tone.Player(buffer).connect(masterVolumeNode);
                         metroHi.volume.value = -6;
                     }
                     if (!metroLo) {
-                        const buffer = await loadAndDecodeToneBuffer('audio/metro/wood-lo.mp3');
+                        const buffer = await loadAndDecodeToneBuffer(`audio/metro/wood-lo.${audioExt}`);
                         metroLo = new Tone.Player(buffer).connect(masterVolumeNode);
                         metroLo.volume.value = -8;
                     }
@@ -150,64 +169,52 @@ export const midiEngine = {
 
                 if (!pianoInstrument) {
                     const sampleFiles = {
-                        "A0": "A0.mp3", "C1": "C1.mp3", "D#1": "Ds1.mp3", "F#1": "Fs1.mp3",
-                        "A1": "A1.mp3", "C2": "C2.mp3", "D#2": "Ds2.mp3", "F#2": "Fs2.mp3",
-                        "A2": "A2.mp3", "C3": "C3.mp3", "D#3": "Ds3.mp3", "F#3": "Fs3.mp3",
-                        "A3": "A3.mp3", "C4": "C4.mp3", "D#4": "Ds4.mp3", "F#4": "Fs4.mp3",
-                        "A4": "A4.mp3", "C5": "C5.mp3", "D#5": "Ds5.mp3", "F#5": "Fs5.mp3",
-                        "A5": "A5.mp3", "C6": "C6.mp3", "D#6": "Ds6.mp3", "F#6": "Fs6.mp3",
-                        "A6": "A6.mp3", "C7": "C7.mp3", "D#7": "Ds7.mp3", "F#7": "Fs7.mp3", "C8": "C8.mp3"
+                        "A0": `A0.${audioExt}`, "C1": `C1.${audioExt}`, "D#1": `Ds1.${audioExt}`, "F#1": `Fs1.${audioExt}`,
+                        "A1": `A1.${audioExt}`, "C2": `C2.${audioExt}`, "D#2": `Ds2.${audioExt}`, "F#2": `Fs2.${audioExt}`,
+                        "A2": `A2.${audioExt}`, "C3": `C3.${audioExt}`, "D#3": `Ds3.${audioExt}`, "F#3": `Fs3.${audioExt}`,
+                        "A3": `A3.${audioExt}`, "C4": `C4.${audioExt}`, "D#4": `Ds4.${audioExt}`, "F#4": `Fs4.${audioExt}`,
+                        "A4": `A4.${audioExt}`, "C5": `C5.${audioExt}`, "D#5": `Ds5.${audioExt}`, "F#5": `Fs5.${audioExt}`,
+                        "A5": `A5.${audioExt}`, "C6": `C6.${audioExt}`, "D#6": `Ds6.${audioExt}`, "F#6": `Fs6.${audioExt}`,
+                        "A6": `A6.${audioExt}`, "C7": `C7.${audioExt}`, "D#7": `Ds7.${audioExt}`, "F#7": `Fs7.${audioExt}`, "C8": `C8.${audioExt}`
                     };
 
                     const decodedBuffers = {};
-                    console.log("🎹 [MIDI] Decodificando muestras manualmente en ToneAudioBuffers en paralelo...");
+                    console.log(`🎹 [MIDI] Decodificando muestras de piano (.${audioExt}) en paralelo para plataforma ${isNativePlatform ? 'Nativa iOS' : 'Web'}...`);
                     
                     const notes = Object.keys(sampleFiles);
+                    let successCount = 0;
                     await Promise.all(notes.map(async (note) => {
                         const fileName = sampleFiles[note];
                         try {
                             decodedBuffers[note] = await loadAndDecodeToneBuffer(`audio/piano/${fileName}`);
+                            successCount++;
                         } catch (err) {
-                            console.error(`❌ [MIDI] Error cargando muestra ${note}:`, err);
+                            console.error(`❌ [MIDI] Error cargando muestra ${note} (${fileName}):`, err);
                         }
                     }));
+                    console.log(`🎹 [MIDI] Muestras de piano decodificadas: ${successCount} de ${notes.length}`);
 
-                    pianoInstrument = new Tone.Sampler({
-                        urls: decodedBuffers,
-                        attack: 0,
-                        release: 0.6,
-                        maxPolyphony: 64,
-                        onload: () => {
-                            try {
-                                const ctx = Tone.context.rawContext || Tone.context._context;
-                                if (ctx && ctx.state === 'running') {
-                                    const now = Tone.now();
-                                    const g = 0.0001; 
-                                    pianoInstrument.triggerAttack("C3", now, g);
-                                    pianoInstrument.triggerAttack("C5", now, g);
-                                    pianoInstrument.triggerRelease("C3", now + 0.005);
-                                    pianoInstrument.triggerRelease("C5", now + 0.005);
-                                    console.log("🔥 [MIDI] Warm-up silencioso completado.");
-                                } else {
-                                    console.log("⏳ [MIDI] Warm-up pospuesto hasta la interacción del usuario.");
-                                }
-                            } catch(e) {
-                                console.warn("⚠️ [MIDI] Warm-up omitido:", e.message);
+                    if (successCount > 0) {
+                        pianoInstrument = new Tone.Sampler({
+                            urls: decodedBuffers,
+                            attack: 0,
+                            release: 0.6,
+                            maxPolyphony: 64,
+                            onload: () => {
+                                console.log("✅ [MIDI] Tone.Sampler listo con muestras de piano.");
                             }
-                        }
-                    });
+                        });
+                    } else {
+                        console.warn("⚠️ [MIDI] Muestras mp3 no disponibles. Usando sintesis PolySynth de respaldo (0-latencia).");
+                        pianoInstrument = new Tone.PolySynth(Tone.Synth, {
+                            oscillator: { type: 'triangle' },
+                            envelope: { attack: 0.005, decay: 0.3, sustain: 0.4, release: 0.8 }
+                        });
+                    }
                     pianoInstrument.connect(masterGainNode);
+                    this.instrumentoCargado = true;
+                    console.log("🎹 [MIDI] Sampler de piano configurado e instrumentoCargado = true.");
                 }
-
-                console.log("🎹 [MIDI] Cargando Sampler Local...");
-                const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout cargando Sampler MIDI (15s)")), 15000));
-                try {
-                    await Promise.race([Tone.loaded(), timeoutPromise]);
-                } catch (tErr) {
-                    console.warn("⚠️ [MIDI] Tone.loaded() warning (continuando):", tErr);
-                }
-                this.instrumentoCargado = true;
-                console.log("🎹 [MIDI] Sampler listo.");
 
                 if (!this._visibilityListenerRegistered) {
                     this._visibilityListenerRegistered = true;
@@ -452,7 +459,6 @@ export const midiEngine = {
             }
             try {
                 Tone.start();
-                console.log('[MIDI] Tone.start() ejecutado síncronamente.');
             } catch (startErr) {
                 console.error('[MIDI] Tone.start() falló:', startErr);
             }
@@ -497,7 +503,10 @@ export const midiEngine = {
                     // 3. Procesamiento Nativo síncrono con Lazy Import (@tonejs/midi)
                     // Elimina overhead de WebWorker y serialización.
                     const midiModule = await import('@tonejs/midi');
-                    const Midi = midiModule.Midi || midiModule.default?.Midi || midiModule.default;
+                    const Midi = (typeof midiModule.Midi === 'function' && midiModule.Midi) ||
+                                 (midiModule.default && typeof midiModule.default.Midi === 'function' && midiModule.default.Midi) ||
+                                 (typeof midiModule.default === 'function' && midiModule.default) ||
+                                 midiModule.Midi || midiModule.default;
                     const parsedData = new Midi(arrayBuffer);
                     parsedMidiJSON = parsedData.toJSON();
                     parsedMidiJSON.duration = parsedData.duration;
