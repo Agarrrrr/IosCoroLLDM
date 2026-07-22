@@ -16,6 +16,14 @@ export const nativePdfBridge = {
         }
         try {
             const { registerPlugin } = await import('@capacitor/core');
+            // Verificación real: el proxy de registerPlugin nunca falla aunque el
+            // plugin no exista en el bridge nativo. Comprobar disponibilidad real
+            // para no entrar en modo nativo con un plugin fantasma.
+            if (typeof Capacitor.isPluginAvailable === 'function' && !Capacitor.isPluginAvailable('NativePdf')) {
+                console.warn('[NativePdf] Plugin no registrado en el bridge nativo, usando visor web (PDF.js).');
+                this.isNative = false;
+                return;
+            }
             NativePdf = registerPlugin('NativePdf');
             this.isNative = true;
             
@@ -74,17 +82,18 @@ export const nativePdfBridge = {
     async openPdf(archivo, startPage = 0) {
         if (!this.isNative || !NativePdf) return false;
         
+        let overlay = null;
+        let pageListener = null;
         try {
             const fileUri = await this._getDecryptedFileUri(archivo);
             if (!fileUri) return false;
             
             // Ponytail: un overlay simple sin frameworks
-            const overlay = document.createElement('div');
+            overlay = document.createElement('div');
             overlay.style.cssText = `position:fixed;inset:0;z-index:9999;background:var(--color-pdf-fondo,#1b2430);display:flex;align-items:center;justify-content:center;transition:opacity 0.4s ease`;
             overlay.innerHTML = '<div class="spinner"></div>';
             document.body.appendChild(overlay);
 
-            let pageListener;
             pageListener = await NativePdf.addListener('pageChanged', () => {
                 overlay.style.opacity = '0';
                 setTimeout(() => overlay.remove(), 400);
@@ -106,6 +115,10 @@ export const nativePdfBridge = {
             return true;
         } catch(e) {
             console.error('[NativePdf] Error abriendo PDF nativo:', e);
+            // FIX: limpiar el overlay para no dejar la pantalla tapada
+            // y permitir que el fallback React (PDF.js) sea visible
+            try { overlay?.remove(); } catch(_) {}
+            try { pageListener?.remove(); } catch(_) {}
             return false;
         }
     },

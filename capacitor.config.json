@@ -11,6 +11,14 @@
   "android": {
     "adjustMarginsForEdgeToEdge": "never"
   },
+  "ios": {
+    "packageClassList": [
+      "AppPlugin",
+      "FilesystemPlugin",
+      "NativePDFPlugin",
+      "NativeAudioPlugin"
+    ]
+  },
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 1500,
