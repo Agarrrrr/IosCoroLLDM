@@ -257,27 +257,35 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
         }
         
         // DIAGNÓSTICO: verificar el archivo en disco antes de abrir
+        var diagMessages: [String] = []
         if let url = pdfURL, let attrs = try? FileManager.default.attributesOfItem(atPath: url.path), let size = attrs[.size] as? Int {
-            print("[NativePdf][DIAG] archivo en disco: \(url.path), tamaño=\(size) bytes")
+            let msg = "disco: \(size)b en \(url.lastPathComponent)"
+            print("[NativePdf][DIAG] \(msg)")
+            diagMessages.append(msg)
             if let data = try? Data(contentsOf: url), data.count >= 5 {
                 let header = String(data: data.prefix(5), encoding: .ascii) ?? "?"
-                print("[NativePdf][DIAG] primeros 5 bytes: \"\(header)\"")
+                let msg2 = "hdr=\"\(header)\""
+                print("[NativePdf][DIAG] \(msg2)")
+                diagMessages.append(msg2)
                 if header != "%PDF-" {
-                    print("[NativePdf][DIAG] ¡El archivo en disco NO es un PDF válido!")
-                    call.resolve(["error": "Archivo en disco corrupto (header=\(header))"])
+                    let err = "Disco corrupto (hdr=\(header))"
+                    print("[NativePdf][DIAG] ¡\(err)!")
+                    call.resolve(["error": err, "diag": diagMessages])
                     return
                 }
             }
         }
 
         guard let url = pdfURL, let document = CustomPDFDocument(url: url) else {
-            call.resolve(["error": "PDF no encontrado en: \(path)"])
+            call.resolve(["error": "PDF no encontrado en: \(path)", "diag": diagMessages])
             return
         }
-        print("[NativePdf][DIAG] PDFDocument creado, pageCount=\(document.pageCount)")
+        let pcMsg = "pageCount=\(document.pageCount)"
+        print("[NativePdf][DIAG] \(pcMsg)")
+        diagMessages.append(pcMsg)
         if document.pageCount == 0 {
-            print("[NativePdf][DIAG] ¡PDFDocument tiene 0 páginas — PDFKit no pudo parsear!")
-            call.resolve(["error": "PDFDocument vacío (0 páginas)"])
+            print("[NativePdf][DIAG] ¡PDFDocument tiene 0 páginas!")
+            call.resolve(["error": "PDFDocument vacío (0 páginas)", "diag": diagMessages])
             return
         }
         document.theme = theme

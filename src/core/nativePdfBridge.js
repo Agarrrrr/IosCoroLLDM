@@ -106,6 +106,10 @@ export const nativePdfBridge = {
             
             if (result && result.error) {
                 console.error('[NativePdf] Error en openPdf:', result.error);
+                this._diag(`openPdf error: ${result.error}`, true);
+                if (result.diag && Array.isArray(result.diag)) {
+                    result.diag.forEach(d => this._diag(`swift: ${d}`, true));
+                }
                 overlay.remove();
                 pageListener?.remove();
                 return false;
@@ -162,6 +166,28 @@ export const nativePdfBridge = {
     async setInteractiveRects(rects) {
         if (!this.isNative || !NativePdf) return;
         try { await NativePdf.setInteractiveRects({ rects }); } catch(e) {}
+    },
+
+    // Diagnóstico visible en UI (para TestFlight sin consola)
+    _diagLogs: [],
+    _diag(msg, isError = false) {
+        this._diagLogs.push({ msg, isError, time: new Date().toISOString() });
+        // Mostrar en el contenedor-pdf si existe (modo fallback activo)
+        const contenedor = document.getElementById('contenedor-pdf');
+        if (contenedor) {
+            let diagEl = document.getElementById('nativepdf-diag');
+            if (!diagEl) {
+                diagEl = document.createElement('div');
+                diagEl.id = 'nativepdf-diag';
+                diagEl.style.cssText = 'position:fixed;bottom:0;left:0;right:0;max-height:40vh;overflow-y:auto;background:rgba(0,0,0,0.85);color:#0f0;font:10px monospace;padding:8px;z-index:99999;pointer-events:auto;';
+                contenedor.appendChild(diagEl);
+            }
+            const line = document.createElement('div');
+            line.style.color = isError ? '#f66' : '#0f0';
+            line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            diagEl.appendChild(line);
+            diagEl.scrollTop = diagEl.scrollHeight;
+        }
     },
 
     // ---- Registro Centralizado de Rectángulos Interactivos Dinámicos ----
@@ -277,13 +303,18 @@ export const nativePdfBridge = {
             // DIAGNÓSTICO: verificar magic bytes y tamaño tras desencriptar
             const probe = new Uint8Array(decryptedBuffer, 0, 5);
             const header = String.fromCharCode(...probe);
-            console.warn(`[NativePdf][DIAG] decrypted: ${decryptedBuffer.byteLength} bytes, header="${header}", encrypted=${encryptedBuffer.byteLength} bytes`);
+            const diagMsg = `decrypt: ${decryptedBuffer.byteLength}b, hdr="${header}", enc=${encryptedBuffer.byteLength}b`;
+            console.warn(`[NativePdf][DIAG] ${diagMsg}`);
+            this._diag(diagMsg);
             if (header !== '%PDF-') {
-                console.error('[NativePdf][DIAG] ¡El buffer desencriptado NO es un PDF válido!');
+                const errMsg = `Buffer NO es PDF válido (hdr="${header}")`;
+                console.error(`[NativePdf][DIAG] ¡${errMsg}!`);
+                this._diag(errMsg, true);
                 return null;
             }
         } catch(e) {
             console.error('[NativePdf] Error desencriptando:', archivo, e);
+            this._diag(`Error decrypt: ${e.message || e}`, true);
             return null;
         }
 
@@ -316,7 +347,9 @@ export const nativePdfBridge = {
             // DIAGNÓSTICO: verificar el tamaño real escrito en disco
             try {
                 const statAfter = await Filesystem.stat({ directory: Directory.Cache, path: cacheName });
-                console.warn(`[NativePdf][DIAG] escrito en disco: ${statAfter.size} bytes (esperado: ${decryptedBuffer.byteLength})`);
+                const diskMsg = `disco: ${statAfter.size}b (esperado: ${decryptedBuffer.byteLength}b)`;
+                console.warn(`[NativePdf][DIAG] ${diskMsg}`);
+                this._diag(diskMsg);
             } catch(_) {}
 
             const uriResult = await Filesystem.getUri({
@@ -330,6 +363,7 @@ export const nativePdfBridge = {
             return fileUri;
         } catch(e) {
             console.error('[NativePdf] Error escribiendo PDF a cache:', e);
+            this._diag(`Error writeFile: ${e.message || e}`, true);
             return null;
         }
     }
