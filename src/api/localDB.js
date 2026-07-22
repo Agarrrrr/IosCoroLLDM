@@ -305,12 +305,14 @@ export const localDB = {
     resolverUrlPdf(nombre) {
         if (!nombre) return "";
         if (nombre.startsWith('http') || nombre.startsWith('blob:') || nombre.startsWith('data:')) return nombre;
-        return `/offline_assets/pdfs/${nombre}`;
+        const nombreLimpio = encodeURI(nombre);
+        return `/offline_assets/pdfs/${nombreLimpio}`;
     },
 
     resolverUrlMidi(nombre) {
         if (!nombre) return "";
         if (nombre.startsWith('http') || nombre.startsWith('blob:') || nombre.startsWith('data:')) return nombre;
-        return `/offline_assets/midis/${nombre}`;
+        const nombreLimpio = encodeURI(nombre);
+        return `/offline_assets/midis/${nombreLimpio}`;
     }
 };

@@ -129,10 +129,12 @@ input[type="checkbox"], input[type="radio"] {
         width: 300px; 
         z-index: 100;
         box-shadow: none !important;
+        transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     #sidebar-temas.oculto {
-        display: none;
+        display: flex;
+        margin-left: -300px;
     }
 }
 

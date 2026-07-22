@@ -200,15 +200,27 @@ export const uiController = {
         else sidebar.classList.toggle('oculto');
         
         const estaAbierto = !sidebar.classList.contains('oculto');
+        const esMovilOTablet = window.innerWidth <= 1024;
         
-        if (window.innerWidth <= 1024) { // Aumentado para tablets
+        if (esMovilOTablet) {
             if (estaAbierto) {
+                overlay.style.display = 'block';
                 overlay.classList.add('activo');
                 setTimeout(() => overlay.style.opacity = '1', 10);
             } else {
                 overlay.style.opacity = '0';
-                setTimeout(() => overlay.classList.remove('activo'), 300);
+                overlay.classList.remove('activo');
+                setTimeout(() => {
+                    if (sidebar.classList.contains('oculto')) {
+                        overlay.style.display = 'none';
+                    }
+                }, 300);
             }
+        } else {
+            // En pantalla grande (> 1024px), el overlay NUNCA debe estar visible
+            overlay.style.opacity = '0';
+            overlay.classList.remove('activo');
+            overlay.style.display = 'none';
         }
     },
 

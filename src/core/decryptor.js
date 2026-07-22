@@ -1,49 +1,45 @@
+export async function decryptArrayBuffer(encryptedBuffer) {
+    const previewLength = Math.min(encryptedBuffer.byteLength, 1024);
+    const headerBytes = new Uint8Array(encryptedBuffer, 0, previewLength);
+    const headerStr = String.fromCharCode(...headerBytes);
+    
+    if (headerStr.includes('%PDF') || headerStr.startsWith('MThd')) {
+        return encryptedBuffer; // No estaba encriptado, es un PDF o MIDI limpio
+    }
+    
+    const rawKeyString = "repertorio-coral-lldm-key-2026";
+    const encoder = new TextEncoder();
+    
+    const hashBuffer = await window.crypto.subtle.digest('SHA-256', encoder.encode(rawKeyString));
+    
+    const cryptoKey = await window.crypto.subtle.importKey(
+        "raw",
+        hashBuffer,
+        { name: "AES-GCM" },
+        false,
+        ["decrypt"]
+    );
+    
+    const iv = encryptedBuffer.slice(0, 12);
+    const dataWithTag = encryptedBuffer.slice(12);
+    
+    const decryptedBuffer = await window.crypto.subtle.decrypt(
+        { name: "AES-GCM", iv: new Uint8Array(iv) },
+        cryptoKey,
+        dataWithTag
+    );
+    
+    return decryptedBuffer;
+}
+
 export async function decryptFileFromUrl(url) {
     try {
-        const response = await fetch(url);
+        const urlFinal = encodeURI(url);
+        const response = await fetch(urlFinal);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         
         const encryptedBuffer = await response.arrayBuffer();
-        
-        // Verificar si es un archivo plano (PDF o MIDI sin encriptar) por fallback
-        // El estándar PDF permite que %PDF-1.x esté en los primeros 1024 bytes.
-        const previewLength = Math.min(encryptedBuffer.byteLength, 1024);
-        const headerBytes = new Uint8Array(encryptedBuffer, 0, previewLength);
-        const headerStr = String.fromCharCode(...headerBytes);
-        
-        if (headerStr.includes('%PDF') || headerStr.startsWith('MThd')) {
-            return encryptedBuffer; // No estaba encriptado, es un PDF o MIDI limpio
-        }
-        
-        // El key usado para encriptar: sha256('repertorio-coral-lldm-key-2026')
-        const rawKeyString = "repertorio-coral-lldm-key-2026";
-        const encoder = new TextEncoder();
-        
-        // Crear el hash SHA-256 de la contraseña (idéntico al de NodeJS)
-        const hashBuffer = await window.crypto.subtle.digest('SHA-256', encoder.encode(rawKeyString));
-        
-        // Importar como AES-GCM Key
-        const cryptoKey = await window.crypto.subtle.importKey(
-            "raw",
-            hashBuffer,
-            { name: "AES-GCM" },
-            false,
-            ["decrypt"]
-        );
-        
-        // Extraer partes (12 bytes IV + Payload + 16 bytes Tag)
-        // En AES-GCM estándar WebCrypto, el Tag va al final del ciphertext.
-        // Node.js lo concatena así: [IV][Ciphertext][Tag]
-        const iv = encryptedBuffer.slice(0, 12);
-        const dataWithTag = encryptedBuffer.slice(12);
-        
-        const decryptedBuffer = await window.crypto.subtle.decrypt(
-            { name: "AES-GCM", iv: new Uint8Array(iv) },
-            cryptoKey,
-            dataWithTag
-        );
-        
-        return decryptedBuffer;
+        return await decryptArrayBuffer(encryptedBuffer);
     } catch (e) {
         console.error("Error al desencriptar el archivo:", e);
         throw e;

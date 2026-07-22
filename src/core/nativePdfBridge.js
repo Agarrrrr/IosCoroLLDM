@@ -246,7 +246,7 @@ export const nativePdfBridge = {
         // 2. Si no está en disco, buscarlo como asset empaquetado
         if (!encryptedBuffer) {
             try {
-                const assetUrl = `/offline_assets/pdfs/${archivo}`;
+                const assetUrl = `/offline_assets/pdfs/${encodeURI(archivo)}`;
                 const resp = await fetch(assetUrl);
                 if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
                 encryptedBuffer = await resp.arrayBuffer();
@@ -259,13 +259,8 @@ export const nativePdfBridge = {
         // 3. Desencriptar (la función detecta automáticamente si ya es un PDF limpio)
         let decryptedBuffer;
         try {
-            // decryptOffThread acepta URL, pero también podemos pasarle el buffer directamente
-            // Usar decryptFileFromUrl con un blob URL
-            const blob = new Blob([encryptedBuffer]);
-            const blobUrl = URL.createObjectURL(blob);
-            const { decryptFileFromUrl } = await import('./decryptor.js');
-            decryptedBuffer = await decryptFileFromUrl(blobUrl);
-            URL.revokeObjectURL(blobUrl);
+            const { decryptArrayBuffer } = await import('./decryptor.js');
+            decryptedBuffer = await decryptArrayBuffer(encryptedBuffer);
         } catch(e) {
             console.error('[NativePdf] Error desencriptando:', archivo, e);
             return null;

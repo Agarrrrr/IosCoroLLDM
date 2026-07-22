@@ -7,8 +7,7 @@ import { pdfEngine } from './pdfEngine.js';
 import { localDB } from '../api/localDB.js';
 import { decryptOffThread } from './decryptor.js';
 
-import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
-pdfjs.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
+pdfjs.GlobalWorkerOptions.workerSrc = '/vendor/pdf.worker.legacy.min.js';
 
 // ─── Componente de Página Individual ─────────────────────────────────────────
 const PdfPageWithAnnotations = ({ index, cantoId, maxWidth }) => {

@@ -26,7 +26,8 @@ self.onmessage = async ({ data }) => {
             return;
         }
 
-        const response = await fetch(url);
+        const urlFinal = encodeURI(url);
+        const response = await fetch(urlFinal);
         if (!response.ok) throw new Error(`HTTP ${response.status} al descargar ${url}`);
 
         const encryptedBuffer = await response.arrayBuffer();

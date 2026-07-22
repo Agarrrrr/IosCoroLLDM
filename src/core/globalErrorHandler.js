@@ -22,14 +22,7 @@ export const globalErrorHandler = {
         // Captura promesas rechazadas sin un bloque catch
         window.addEventListener('unhandledrejection', (event) => {
             var reason = event.reason;
-            var msg = 'Error en promesa';
-            var stack = null;
-            if (reason) {
-                if (reason.stack) stack = reason.stack;
-                if (reason.message) msg = reason.message;
-                else if (typeof reason === 'string') msg = reason;
-            }
-            this.mostrarPantallaFallo(msg, 'Promise', 0, stack);
+            console.error("[UnhandledRejection] Promesa no manejada capturada:", reason);
         });
     },
 

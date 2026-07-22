@@ -164,6 +164,11 @@ function construirInterfaz() {
         };
     }
 
+    // En pantallas grandes (>1024px, ej. iPad en horizontal), mostrar la barra lateral por defecto
+    if (window.innerWidth > 1024 && DOM.sidebar) {
+        DOM.sidebar.classList.remove('oculto');
+    }
+
     // Forzar el primer tick reactivo y cargar categoría inicial asíncrona si es necesario
     store.setState({ categoriaActiva: APP_STATE.categoriaActiva || 'todos' });
     cargarCategoriaActual();
@@ -540,7 +545,12 @@ function configurarEventosGlobales() {
         }
     });
 
-    if (DOM.btnToggleSidebar) DOM.btnToggleSidebar.addEventListener('click', () => uiController.alternarSidebar(DOM.sidebar, DOM.overlay));
+    if (DOM.btnToggleSidebar) {
+        DOM.btnToggleSidebar.addEventListener('click', (e) => {
+            e.stopPropagation();
+            uiController.alternarSidebar(DOM.sidebar, DOM.overlay);
+        });
+    }
     if (DOM.overlay) DOM.overlay.addEventListener('click', () => uiController.alternarSidebar(DOM.sidebar, DOM.overlay, true));
 
     // Gesto Swipe de izquierda a derecha para abrir sidebar
