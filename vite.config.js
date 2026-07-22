@@ -192,7 +192,8 @@ export default defineConfig({
     include: ['tests/unit/**/*.{test,spec}.{js,ts}', 'src/**/*.{test,spec}.{js,ts}'],
   },
   esbuild: {
-    drop: ['console', 'debugger'],
+    drop: ['debugger'],
+    pure: ['console.log', 'console.debug'],
   },
   build: {
     chunkSizeWarningLimit: 1200,
