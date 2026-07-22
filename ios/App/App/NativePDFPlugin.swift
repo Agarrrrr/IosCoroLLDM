@@ -156,6 +156,7 @@ class TouchForwardView: UIView, UIGestureRecognizerDelegate {
     weak var targetView: TouchPassPDFView?
     weak var plugin: NativePDFPlugin?
     var barsVisible: Bool = true
+    var interactiveRects: [CGRect] = []
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let view = super.hitTest(point, with: event)
@@ -164,6 +165,14 @@ class TouchForwardView: UIView, UIGestureRecognizerDelegate {
                 return nil
             }
             
+            // 1. Evaluar rectángulos dinámicos registrados desde JS (menús, reproductor, modales, herramientas)
+            for rect in interactiveRects {
+                if rect.contains(point) {
+                    return nil
+                }
+            }
+            
+            // 2. Fallback a límites de barra superior (con safeAreaTop) e inferior
             let safeTop = self.safeAreaInsets.top
             let rawTop = self.plugin?.topbarHeight ?? 64.0
             let topLimit = rawTop + safeTop
@@ -171,7 +180,7 @@ class TouchForwardView: UIView, UIGestureRecognizerDelegate {
             let bottomInset = self.plugin?.bottomInset ?? 0.0
             let bottomLimit = self.bounds.height - bottomInset
             
-            // Si el toque cae en la barra superior (incluyendo safeArea) o en el reproductor desplegado (bottomInset > 0), dejarlo pasar a la webView
+            // Si el toque cae en la barra superior o en el reproductor desplegado (bottomInset > 0), dejarlo pasar a la webView
             if point.y < topLimit || (bottomInset > 0 && point.y > bottomLimit) {
                 return nil
             }
@@ -405,6 +414,29 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
         }
     }
     
+    // MARK: - setInteractiveRects
+    @objc public func setInteractiveRects(_ call: CAPPluginCall) {
+        guard let rectsData = call.options["rects"] as? [[String: Any]] else {
+            call.resolve()
+            return
+        }
+        
+        var newRects: [CGRect] = []
+        for dict in rectsData {
+            if let x = (dict["x"] as? Double) ?? (dict["x"] as? Int).map({ Double($0) }),
+               let y = (dict["y"] as? Double) ?? (dict["y"] as? Int).map({ Double($0) }),
+               let w = (dict["width"] as? Double) ?? (dict["width"] as? Int).map({ Double($0) }),
+               let h = (dict["height"] as? Double) ?? (dict["height"] as? Int).map({ Double($0) }) {
+                newRects.append(CGRect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(w), height: CGFloat(h)))
+            }
+        }
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.touchForwardView?.interactiveRects = newRects
+            call.resolve()
+        }
+    }
+    
     // MARK: - closePdf
     @objc public func closePdf(_ call: CAPPluginCall) {
         DispatchQueue.main.async { [weak self] in
@@ -412,6 +444,7 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
                 call.resolve()
                 return
             }
+            self.touchForwardView?.interactiveRects = []
             self.touchForwardView?.removeFromSuperview()
             self.touchForwardView = nil
             self.pdfView = nil // Evita reentrancia infinita si JS llama dos veces

@@ -144,6 +144,11 @@ export const nativePdfBridge = {
         if (!this.isNative) return;
         try { await NativePdf.setBottomInset({ inset }); } catch(e) {}
     },
+
+    async setInteractiveRects(rects) {
+        if (!this.isNative) return;
+        try { await NativePdf.setInteractiveRects({ rects }); } catch(e) {}
+    },
     
     async jumpToPage(pageIndex) {
         if (!this.isNative || !NativePdf) return;

@@ -11,6 +11,7 @@ CAP_PLUGIN(NativePDFPlugin, "NativePdf",
     CAP_PLUGIN_METHOD(setBarsVisible, CAPPluginReturnPromise);
     CAP_PLUGIN_METHOD(setTopbarInset, CAPPluginReturnPromise);
     CAP_PLUGIN_METHOD(setBottomInset, CAPPluginReturnPromise);
+    CAP_PLUGIN_METHOD(setInteractiveRects, CAPPluginReturnPromise);
     CAP_PLUGIN_METHOD(updateDisplayMode, CAPPluginReturnPromise);
 )
 
