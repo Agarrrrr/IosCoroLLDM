@@ -164,11 +164,14 @@ class TouchForwardView: UIView, UIGestureRecognizerDelegate {
                 return nil
             }
             
-            let topLimit = self.plugin?.topbarHeight ?? (self.safeAreaInsets.top + 64.0)
+            let safeTop = self.safeAreaInsets.top
+            let rawTop = self.plugin?.topbarHeight ?? 64.0
+            let topLimit = rawTop + safeTop
+            
             let bottomInset = self.plugin?.bottomInset ?? 0.0
             let bottomLimit = self.bounds.height - bottomInset
             
-            // Si el toque cae en la barra superior o en el reproductor desplegado (bottomInset > 0), dejarlo pasar a la webView (return nil)
+            // Si el toque cae en la barra superior (incluyendo safeArea) o en el reproductor desplegado (bottomInset > 0), dejarlo pasar a la webView
             if point.y < topLimit || (bottomInset > 0 && point.y > bottomLimit) {
                 return nil
             }
@@ -493,8 +496,9 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
     
     // MARK: - setTopbarInset
     @objc public func setTopbarInset(_ call: CAPPluginCall) {
-        let heightVal = (call.options["height"] as? Double) ?? Double(call.options["height"] as? Int ?? 64)
-        let height = CGFloat(heightVal)
+        let heightVal = (call.options["height"] as? Double) ?? Double(call.options["height"] as? Int ?? 0)
+        let insetVal = (call.options["inset"] as? Double) ?? Double(call.options["inset"] as? Int ?? 0)
+        let height = CGFloat(max(heightVal, insetVal, 64.0))
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.topbarHeight = height
