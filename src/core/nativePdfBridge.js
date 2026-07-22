@@ -274,6 +274,14 @@ export const nativePdfBridge = {
         try {
             const { decryptArrayBuffer } = await import('./decryptor.js');
             decryptedBuffer = await decryptArrayBuffer(encryptedBuffer);
+            // DIAGNÓSTICO: verificar magic bytes y tamaño tras desencriptar
+            const probe = new Uint8Array(decryptedBuffer, 0, 5);
+            const header = String.fromCharCode(...probe);
+            console.warn(`[NativePdf][DIAG] decrypted: ${decryptedBuffer.byteLength} bytes, header="${header}", encrypted=${encryptedBuffer.byteLength} bytes`);
+            if (header !== '%PDF-') {
+                console.error('[NativePdf][DIAG] ¡El buffer desencriptado NO es un PDF válido!');
+                return null;
+            }
         } catch(e) {
             console.error('[NativePdf] Error desencriptando:', archivo, e);
             return null;
@@ -305,6 +313,12 @@ export const nativePdfBridge = {
                 data: base64
             });
             
+            // DIAGNÓSTICO: verificar el tamaño real escrito en disco
+            try {
+                const statAfter = await Filesystem.stat({ directory: Directory.Cache, path: cacheName });
+                console.warn(`[NativePdf][DIAG] escrito en disco: ${statAfter.size} bytes (esperado: ${decryptedBuffer.byteLength})`);
+            } catch(_) {}
+
             const uriResult = await Filesystem.getUri({
                 directory: Directory.Cache,
                 path: cacheName
