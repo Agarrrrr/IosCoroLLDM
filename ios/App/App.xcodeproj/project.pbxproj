@@ -342,6 +342,7 @@
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-ObjC",
 					"-weak-lswiftXPC",
 					"-weak-lswift_Builtin_float",
 					"-weak-lswift_errno",
@@ -393,6 +394,7 @@
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-ObjC",
 					"-weak-lswiftXPC",
 					"-weak-lswift_Builtin_float",
 					"-weak-lswift_errno",
