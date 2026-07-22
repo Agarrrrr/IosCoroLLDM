@@ -38,8 +38,9 @@ export const nativePdfBridge = {
             });
             
             NativePdf.addListener('pdfClosed', () => {
-                // Evitar doble cierre: si ya se está cerrando (desde closePdf), ignorar
-                if (window.pdfEngine && !window.pdfEngine._cerrandoVisor) {
+                // Evitar doble cierre: si ya se está cerrando (desde closePdf) o el visor ya está oculto, ignorar
+                const visor = document.getElementById('vista-visor');
+                if (window.pdfEngine && !window.pdfEngine._cerrandoVisor && visor && visor.style.display !== 'none') {
                     const contenedor = document.getElementById('contenedor-pdf');
                     window.pdfEngine.cerrarVisor(contenedor);
                 }

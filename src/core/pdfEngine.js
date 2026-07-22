@@ -903,8 +903,9 @@ export const pdfEngine = {
     _cerrandoVisor: false,
 
     cerrarVisor: function(contenedorPdf) {
-        // Guard: evitar doble ejecución — si ya estamos cerrando, ignorar
-        if (this._cerrandoVisor) return;
+        const vistaVisorEl = document.getElementById('vista-visor');
+        // Guard: evitar doble ejecución — si ya estamos cerrando o el visor ya está oculto, ignorar
+        if (this._cerrandoVisor || (vistaVisorEl && vistaVisorEl.style.display === 'none')) return;
         this._cerrandoVisor = true;
 
         if (this._prefetchTimeout) {
