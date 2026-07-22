@@ -900,7 +900,13 @@ export const pdfEngine = {
         canvas.addEventListener('touchmove', onMove, { passive: false, signal });
         window.addEventListener('touchend', onEnd, { passive: false, signal });
     },
+    _cerrandoVisor: false,
+
     cerrarVisor: function(contenedorPdf) {
+        // Guard: evitar doble ejecución (swipe-back dispara pdfClosed → cerrarVisor → closePdf → pdfClosed otra vez)
+        if (this._cerrandoVisor) return;
+        this._cerrandoVisor = true;
+
         if (this._prefetchTimeout) {
             clearTimeout(this._prefetchTimeout);
             this._prefetchTimeout = null;
@@ -958,6 +964,7 @@ export const pdfEngine = {
                 document.documentElement.style.backgroundColor = '';
                 document.body.style.backgroundColor = '';
                 vistaMenu.removeEventListener('animationend', onAnimationEndOut);
+                this._cerrandoVisor = false;
                 
                 // PREVENCIÓN DE FUGAS DE MEMORIA: Desmontaje real de React
                 // Anterior: render({ canto: null }) NO llamaba cleanup de useEffect, dejando
@@ -976,6 +983,8 @@ export const pdfEngine = {
         };
         vistaMenu.addEventListener('animationend', onAnimationEndOut);
 
+        // Fallback: si animationend no dispara (elemento oculto, sin animación, etc), liberar el guard
+        setTimeout(() => { this._cerrandoVisor = false; }, 500);
 
         // Mostrar Intersticial si ya superó el límite sin anuncios de hoy
         if (limitsManager.debeMostrarIntersticial() && window.adManager) {

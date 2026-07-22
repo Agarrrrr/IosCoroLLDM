@@ -256,36 +256,12 @@ public class NativePDFPlugin: CAPPlugin, PDFDocumentDelegate {
             }
         }
         
-        // DIAGNÓSTICO: verificar el archivo en disco antes de abrir
-        var diagMessages: [String] = []
-        if let url = pdfURL, let attrs = try? FileManager.default.attributesOfItem(atPath: url.path), let size = attrs[.size] as? Int {
-            let msg = "disco: \(size)b en \(url.lastPathComponent)"
-            print("[NativePdf][DIAG] \(msg)")
-            diagMessages.append(msg)
-            if let data = try? Data(contentsOf: url), data.count >= 5 {
-                let header = String(data: data.prefix(5), encoding: .ascii) ?? "?"
-                let msg2 = "hdr=\"\(header)\""
-                print("[NativePdf][DIAG] \(msg2)")
-                diagMessages.append(msg2)
-                if header != "%PDF-" {
-                    let err = "Disco corrupto (hdr=\(header))"
-                    print("[NativePdf][DIAG] ¡\(err)!")
-                    call.resolve(["error": err, "diag": diagMessages])
-                    return
-                }
-            }
-        }
-
         guard let url = pdfURL, let document = CustomPDFDocument(url: url) else {
-            call.resolve(["error": "PDF no encontrado en: \(path)", "diag": diagMessages])
+            call.resolve(["error": "PDF no encontrado en: \(path)"])
             return
         }
-        let pcMsg = "pageCount=\(document.pageCount)"
-        print("[NativePdf][DIAG] \(pcMsg)")
-        diagMessages.append(pcMsg)
         if document.pageCount == 0 {
-            print("[NativePdf][DIAG] ¡PDFDocument tiene 0 páginas!")
-            call.resolve(["error": "PDFDocument vacío (0 páginas)", "diag": diagMessages])
+            call.resolve(["error": "PDFDocument vacío (0 páginas)"])
             return
         }
         document.theme = theme

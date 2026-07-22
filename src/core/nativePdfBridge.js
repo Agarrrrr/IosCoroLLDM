@@ -22,7 +22,6 @@ export const nativePdfBridge = {
             if (typeof Capacitor.isPluginAvailable === 'function' && !Capacitor.isPluginAvailable('NativePdf')) {
                 console.warn('[NativePdf] Plugin no registrado en el bridge nativo, usando visor web (PDF.js).');
                 this.isNative = false;
-                this._diag('PLUGIN NO REGISTRADO — fallback a PDF.js', true);
                 return;
             }
             NativePdf = registerPlugin('NativePdf');
@@ -39,7 +38,8 @@ export const nativePdfBridge = {
             });
             
             NativePdf.addListener('pdfClosed', () => {
-                if (window.pdfEngine) {
+                // Evitar doble cierre: si ya se está cerrando (desde closePdf), ignorar
+                if (window.pdfEngine && !window.pdfEngine._cerrandoVisor) {
                     const contenedor = document.getElementById('contenedor-pdf');
                     window.pdfEngine.cerrarVisor(contenedor);
                 }
@@ -107,10 +107,6 @@ export const nativePdfBridge = {
             
             if (result && result.error) {
                 console.error('[NativePdf] Error en openPdf:', result.error);
-                this._diag(`openPdf error: ${result.error}`, true);
-                if (result.diag && Array.isArray(result.diag)) {
-                    result.diag.forEach(d => this._diag(`swift: ${d}`, true));
-                }
                 overlay.remove();
                 pageListener?.remove();
                 return false;
@@ -120,8 +116,6 @@ export const nativePdfBridge = {
             return true;
         } catch(e) {
             console.error('[NativePdf] Error abriendo PDF nativo:', e);
-            // FIX: limpiar el overlay para no dejar la pantalla tapada
-            // y permitir que el fallback React (PDF.js) sea visible
             try { overlay?.remove(); } catch(_) {}
             try { pageListener?.remove(); } catch(_) {}
             return false;
@@ -169,25 +163,6 @@ export const nativePdfBridge = {
         try { await NativePdf.setInteractiveRects({ rects }); } catch(e) {}
     },
 
-    // Diagnóstico visible en UI (para TestFlight sin consola)
-    _diagLogs: [],
-    _diag(msg, isError = false) {
-        this._diagLogs.push({ msg, isError, time: new Date().toISOString() });
-        // Fijar en document.body para que el fallback React no lo borre
-        let diagEl = document.getElementById('nativepdf-diag');
-        if (!diagEl) {
-            diagEl = document.createElement('div');
-            diagEl.id = 'nativepdf-diag';
-            diagEl.style.cssText = 'position:fixed;bottom:0;left:0;right:0;max-height:35vh;overflow-y:auto;background:rgba(0,0,0,0.9);color:#0f0;font:10px monospace;padding:8px;z-index:999999;pointer-events:auto;-webkit-overflow-scrolling:touch;';
-            document.body.appendChild(diagEl);
-        }
-        const line = document.createElement('div');
-        line.style.color = isError ? '#f66' : '#0f0';
-        line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
-        diagEl.appendChild(line);
-        diagEl.scrollTop = diagEl.scrollHeight;
-    },
-
     // ---- Registro Centralizado de Rectángulos Interactivos Dinámicos ----
     _rectsActivos: new Map(),
 
@@ -223,7 +198,6 @@ export const nativePdfBridge = {
 
     _sincronizarRects() {
         const rects = Array.from(this._rectsActivos.values());
-        console.log('📤 [nativePdfBridge] Sincronizando rects con nativo:', JSON.stringify(rects));
         this.setInteractiveRects(rects);
     },
     
@@ -257,10 +231,9 @@ export const nativePdfBridge = {
         // 1. Intentar cargar desde disco offline (archivos descargados por el usuario)
         //    Si existe en Directory.Data, leerlo directo
         let encryptedBuffer = null;
-        let cachedFileUri = null;
         
         try {
-            const stat = await Filesystem.stat({
+            await Filesystem.stat({
                 directory: Directory.Data,
                 path: `offline_assets/pdfs/${archivo}`
             });
@@ -298,21 +271,8 @@ export const nativePdfBridge = {
         try {
             const { decryptArrayBuffer } = await import('./decryptor.js');
             decryptedBuffer = await decryptArrayBuffer(encryptedBuffer);
-            // DIAGNÓSTICO: verificar magic bytes y tamaño tras desencriptar
-            const probe = new Uint8Array(decryptedBuffer, 0, 5);
-            const header = String.fromCharCode(...probe);
-            const diagMsg = `decrypt: ${decryptedBuffer.byteLength}b, hdr="${header}", enc=${encryptedBuffer.byteLength}b`;
-            console.warn(`[NativePdf][DIAG] ${diagMsg}`);
-            this._diag(diagMsg);
-            if (header !== '%PDF-') {
-                const errMsg = `Buffer NO es PDF válido (hdr="${header}")`;
-                console.error(`[NativePdf][DIAG] ¡${errMsg}!`);
-                this._diag(errMsg, true);
-                return null;
-            }
         } catch(e) {
             console.error('[NativePdf] Error desencriptando:', archivo, e);
-            this._diag(`Error decrypt: ${e.message || e}`, true);
             return null;
         }
 
@@ -342,14 +302,6 @@ export const nativePdfBridge = {
                 data: base64
             });
             
-            // DIAGNÓSTICO: verificar el tamaño real escrito en disco
-            try {
-                const statAfter = await Filesystem.stat({ directory: Directory.Cache, path: cacheName });
-                const diskMsg = `disco: ${statAfter.size}b (esperado: ${decryptedBuffer.byteLength}b)`;
-                console.warn(`[NativePdf][DIAG] ${diskMsg}`);
-                this._diag(diskMsg);
-            } catch(_) {}
-
             const uriResult = await Filesystem.getUri({
                 directory: Directory.Cache,
                 path: cacheName
@@ -357,11 +309,9 @@ export const nativePdfBridge = {
             
             const fileUri = uriResult.uri;
             _decryptedCache.set(archivo, fileUri);
-            console.log('[NativePdf] PDF desencriptado y guardado en cache:', fileUri);
             return fileUri;
         } catch(e) {
             console.error('[NativePdf] Error escribiendo PDF a cache:', e);
-            this._diag(`Error writeFile: ${e.message || e}`, true);
             return null;
         }
     }
