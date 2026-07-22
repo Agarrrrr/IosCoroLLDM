@@ -179,7 +179,7 @@ export const midiEngine = {
                     };
 
                     const decodedBuffers = {};
-                    console.log(`🎹 [MIDI] Decodificando muestras de piano (.${audioExt}) en paralelo para plataforma ${isNativePlatform ? 'Nativa iOS' : 'Web'}...`);
+                    console.log(`🎹 [MIDI] Decodificando muestras de piano (.${audioExt}) en paralelo...`);
                     
                     const notes = Object.keys(sampleFiles);
                     let successCount = 0;
