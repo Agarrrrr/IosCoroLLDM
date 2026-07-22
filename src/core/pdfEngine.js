@@ -165,6 +165,9 @@ export const pdfEngine = {
             await nativePdfBridge.init();
             this._nativeBridge = nativePdfBridge;
             this._nativeBridgeInit = true;
+            // Exponer globalmente para diagnósticos on-device
+            window.pdfEngine = this;
+            window.nativePdfBridge = nativePdfBridge;
             
             // Escuchar cambios de página para actualizar el canvas de dibujo nativo
             window.addEventListener('pdf-page-changed', (e) => {

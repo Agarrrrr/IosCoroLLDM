@@ -22,6 +22,7 @@ export const nativePdfBridge = {
             if (typeof Capacitor.isPluginAvailable === 'function' && !Capacitor.isPluginAvailable('NativePdf')) {
                 console.warn('[NativePdf] Plugin no registrado en el bridge nativo, usando visor web (PDF.js).');
                 this.isNative = false;
+                this._diag('PLUGIN NO REGISTRADO — fallback a PDF.js', true);
                 return;
             }
             NativePdf = registerPlugin('NativePdf');

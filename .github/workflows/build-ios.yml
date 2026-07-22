@@ -29,6 +29,9 @@ jobs:
       - name: Sync Capacitor iOS Project
         run: npx cap sync ios
 
+      - name: Register Local Plugins
+        run: node scripts/registerLocalPlugins.js
+
       - name: Select Xcode version
         run: sudo xcode-select -s /Applications/Xcode_26.6.app
 
