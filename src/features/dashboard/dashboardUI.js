@@ -814,7 +814,7 @@ function configurarEventosGlobales() {
     }
     const btnDescargarPdf = document.getElementById('btn-descargar-pdf');
     if (btnDescargarPdf) {
-        btnDescargarPdf.style.display = 'flex'; // Siempre activo por defecto
+        btnDescargarPdf.style.display = 'none';
     }
     const chkJukebox = document.getElementById('chk-habilitar-jukebox');
     if (DOM.btnModoEscucha) {

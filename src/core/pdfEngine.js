@@ -195,32 +195,10 @@ export const pdfEngine = {
             
             const btnDescargarPdf = document.getElementById('btn-descargar-pdf');
             if (btnDescargarPdf) {
-                btnDescargarPdf.style.display = 'none'; // Desactivado permanentemente por request
+                btnDescargarPdf.style.display = 'none'; // Desactivado permanentemente por revisión App Store
             }
-            
-            const pdfUrl = (cantoActual && cantoActual.archivo && cantoActual.archivo !== 'null') ? localDB.resolverUrlPdf(cantoActual.archivo) : '';
-            const nombrePdf = `${(cantoActual.nombre || 'Partitura').replace(/[<>:"\/\\|?*]+/g, '').trim()}.pdf`;
-
-            if (btnCompartir && pdfUrl) {
-                btnCompartir.style.display = 'flex';
-                btnCompartir.onclick = (e) => {
-                    e.stopPropagation();
-                    decryptOffThread(pdfUrl).then(buffer => new Blob([buffer], { type: 'application/pdf' })).then(blob => {
-                        if (navigator.share && navigator.canShare) {
-                            const file = new File([blob], nombrePdf, { type: 'application/pdf' });
-                            if (navigator.canShare({ files: [file] })) {
-                                navigator.share({
-                                    title: cantoActual.nombre,
-                                    files: [file]
-                                }).catch(()=>{});
-                                return;
-                            }
-                        }
-                        if (window.uiController) window.uiController.mostrarToast('No se puede compartir en este dispositivo', 'aviso');
-                    }).catch(e => {
-                        if (window.uiController) window.uiController.mostrarToast('Error al compartir', 'error');
-                    });
-                };
+            if (btnCompartir) {
+                btnCompartir.style.display = 'none'; // Desactivado permanentemente por revisión App Store
             }
         };
 
