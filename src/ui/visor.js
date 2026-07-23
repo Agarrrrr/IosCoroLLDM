@@ -642,8 +642,17 @@ export const visorUI = {
                 }
             }
             
-            // Limpiar transición después de animar
-            setTimeout(() => { if (!isDragging) playerSheet.style.transition = ''; }, 300);
+            // Limpiar transición después de animar y re-sincronizar el rectángulo interactivo nativo
+            setTimeout(() => { 
+                if (!isDragging) playerSheet.style.transition = ''; 
+                if (nativePdfBridge && nativePdfBridge.isNative) {
+                    if (playerSheet.classList.contains('activo')) {
+                        nativePdfBridge.registrarRect('reproductor', playerSheet);
+                    } else {
+                        nativePdfBridge.desregistrarRect('reproductor', playerSheet);
+                    }
+                }
+            }, 350);
         }, { passive: true, signal });
 
         btnVoces.onclick = async () => {
@@ -741,6 +750,9 @@ export const visorUI = {
             btnOpcionesToggle.onclick = /** @param {MouseEvent} e */ (e) => {
                 e.preventDefault(); e.stopPropagation();
                 advancedPanel.style.display = (advancedPanel.style.display === 'none' || advancedPanel.style.display === '') ? 'block' : 'none';
+                if (nativePdfBridge && nativePdfBridge.isNative) {
+                    nativePdfBridge.registrarRect('reproductor', playerSheet);
+                }
             };
         }
 

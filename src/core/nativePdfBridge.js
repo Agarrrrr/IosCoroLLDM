@@ -167,6 +167,7 @@ export const nativePdfBridge = {
     // ---- Registro Centralizado de Rectángulos Interactivos Dinámicos ----
     _rectsActivos: new Map(),
     _observers: new Map(),
+    _transitionListeners: new Map(),
 
     registrarRect(id, el) {
         if (!this.isNative || !el) return;
@@ -190,10 +191,18 @@ export const nativePdfBridge = {
             this._sincronizarRects();
         };
 
+        if (!this._transitionListeners.has(id)) {
+            const onEnd = () => actualizar();
+            el.addEventListener('transitionend', onEnd);
+            this._transitionListeners.set(id, onEnd);
+        }
+
+        actualizar();
         requestAnimationFrame(() => {
             actualizar();
             setTimeout(actualizar, 100);
             setTimeout(actualizar, 350);
+            setTimeout(actualizar, 500);
         });
 
         if (typeof ResizeObserver !== 'undefined') {
@@ -206,8 +215,12 @@ export const nativePdfBridge = {
         }
     },
 
-    desregistrarRect(id) {
+    desregistrarRect(id, el) {
         if (!this.isNative) return;
+        if (this._transitionListeners.has(id)) {
+            if (el) try { el.removeEventListener('transitionend', this._transitionListeners.get(id)); } catch(e) {}
+            this._transitionListeners.delete(id);
+        }
         if (this._observers.has(id)) {
             this._observers.get(id).disconnect();
             this._observers.delete(id);
