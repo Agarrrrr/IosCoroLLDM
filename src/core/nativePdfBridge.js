@@ -166,34 +166,67 @@ export const nativePdfBridge = {
 
     // ---- Registro Centralizado de Rectángulos Interactivos Dinámicos ----
     _rectsActivos: new Map(),
+    _observers: new Map(),
 
     registrarRect(id, el) {
         if (!this.isNative || !el) return;
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-                const r = el.getBoundingClientRect();
-                if (r.width > 0 && r.height > 0) {
-                    this._rectsActivos.set(id, {
-                        x: r.left,
-                        y: r.top,
-                        width: r.width,
-                        height: r.height
-                    });
+
+        const actualizar = () => {
+            const r = el.getBoundingClientRect();
+            if (r.width > 0 && r.height > 0) {
+                this._rectsActivos.set(id, {
+                    x: r.left,
+                    y: r.top,
+                    width: r.width,
+                    height: r.height
+                });
+                if (id === 'reproductor') {
+                    const bottomInset = Math.max(0, Math.ceil(window.innerHeight - r.top));
+                    this.setBottomInset(bottomInset).catch(() => {});
                 }
-                this._sincronizarRects();
-            }, 50);
+            } else {
+                this._rectsActivos.delete(id);
+            }
+            this._sincronizarRects();
+        };
+
+        requestAnimationFrame(() => {
+            actualizar();
+            setTimeout(actualizar, 100);
+            setTimeout(actualizar, 350);
         });
+
+        if (typeof ResizeObserver !== 'undefined') {
+            if (this._observers.has(id)) {
+                this._observers.get(id).disconnect();
+            }
+            const ro = new ResizeObserver(() => actualizar());
+            ro.observe(el);
+            this._observers.set(id, ro);
+        }
     },
 
     desregistrarRect(id) {
         if (!this.isNative) return;
+        if (this._observers.has(id)) {
+            this._observers.get(id).disconnect();
+            this._observers.delete(id);
+        }
         this._rectsActivos.delete(id);
+        if (id === 'reproductor') {
+            this.setBottomInset(0).catch(() => {});
+        }
         this._sincronizarRects();
     },
 
     limpiarRects() {
         if (!this.isNative) return;
+        for (const ro of this._observers.values()) {
+            try { ro.disconnect(); } catch(e) {}
+        }
+        this._observers.clear();
         this._rectsActivos.clear();
+        this.setBottomInset(0).catch(() => {});
         this._sincronizarRects();
     },
 
