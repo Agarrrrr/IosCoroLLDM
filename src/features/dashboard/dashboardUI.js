@@ -817,14 +817,8 @@ function configurarEventosGlobales() {
         btnDescargarPdf.style.display = 'flex'; // Siempre activo por defecto
     }
     const chkJukebox = document.getElementById('chk-habilitar-jukebox');
-    if (chkJukebox && DOM.btnModoEscucha) {
-        chkJukebox.checked = localStorage.getItem('habilitar-jukebox') === 'true';
-        DOM.btnModoEscucha.style.display = chkJukebox.checked ? 'flex' : 'none';
-        
-        chkJukebox.addEventListener('change', (e) => {
-            localStorage.setItem('habilitar-jukebox', e.target.checked);
-            DOM.btnModoEscucha.style.display = e.target.checked ? 'flex' : 'none';
-        });
+    if (DOM.btnModoEscucha) {
+        DOM.btnModoEscucha.style.display = 'none';
     }
 }
 
