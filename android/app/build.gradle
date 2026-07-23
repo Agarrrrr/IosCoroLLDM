@@ -20,9 +20,9 @@ android {
     signingConfigs {
         release {
             storeFile file("repertoriobc.jks")
-            storePassword "television2012"
+            storePassword System.getenv("ANDROID_STORE_PASSWORD") ?: "television2012"
             keyAlias "repertoriobc-alias"
-            keyPassword "television2012"
+            keyPassword System.getenv("ANDROID_KEY_PASSWORD") ?: "television2012"
         }
     }
     buildTypes {
