@@ -64,7 +64,7 @@ jobs:
             KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
             KEYCHAIN_PASSWORD="${KEYCHAIN_PASSWORD:-ci_${GITHUB_RUN_ID}_${GITHUB_RUN_ATTEMPT}}"
 
-            python3 -c "import base64, re, os; dec = lambda k, p: open(p, 'wb').write(base64.b64decode(re.sub(r'[^A-Za-z0-9+/=]', '', os.environ.get(k, ''))[:len(re.sub(r'[^A-Za-z0-9+/=]', '', os.environ.get(k, '')))-len(re.sub(r'[^A-Za-z0-9+/=]', '', os.environ.get(k, '')))%4])) if os.environ.get(k) else None; dec('BUILD_CERTIFICATE_BASE64', '$CERTIFICATE_PATH')"
+            printf '%s' "$BUILD_CERTIFICATE_BASE64" | base64 --decode > "$CERTIFICATE_PATH"
 
             security create-keychain -p "${KEYCHAIN_PASSWORD}" $KEYCHAIN_PATH
             security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
