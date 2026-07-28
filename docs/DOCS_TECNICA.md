@@ -1,6 +1,6 @@
-# 📘 Documentación Técnica - Repertorio BC
+# Documentación Técnica - Coro LLDM
 
-Este documento profundiza en las complejidades internas, motores lógicos, flujos de red y estrategias offline que operan "bajo el capó" de Repertorio BC.
+Este documento profundiza en las complejidades internas, motores lógicos, flujos de red y estrategias offline que operan "bajo el capó" de Coro LLDM.
 
 ---
 

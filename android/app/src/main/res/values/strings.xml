@@ -1,7 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Coro LLDM</string>
-    <string name="title_activity_main">Coro LLDM</string>
-    <string name="package_name">com.lldm.repertoriobc</string>
-    <string name="custom_url_scheme">com.lldm.repertoriobc</string>
 </resources>

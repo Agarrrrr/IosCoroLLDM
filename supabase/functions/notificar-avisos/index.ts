@@ -42,7 +42,7 @@ serve(async (req) => {
 
     // 4. Configurar tus llaves maestras VAPID
     webpush.setVapidDetails(
-      'mailto:contacto@repertoriobc.com', // Puedes cambiarlo luego
+      'mailto:contacto@lldmcorobc.com', // Puedes cambiarlo luego
       Deno.env.get('VAPID_PUBLIC_KEY') ?? '',
       Deno.env.get('VAPID_PRIVATE_KEY') ?? ''
     )

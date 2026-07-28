@@ -20,7 +20,7 @@ Vinculado directamente a `auth.users` de Supabase.
 - `estado`: Control de aprobación de cuentas (`activo`, `pendiente`, `rechazado`).
 - `nombre`: Nombre legible.
 
-### `cantos` (Repertorio Físico)
+### `cantos` (Catálogo de Cantos)
 El archivo maestro universal. Independiente de las sedes.
 - `id`: Int8 (Autoincremental).
 - `nombre`: Título de la pieza o himno.

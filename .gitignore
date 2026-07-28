@@ -31,13 +31,16 @@ docs_arquitectura/
 # Claves de Firma de Android (CRÍTICO - NUNCA SUBIR)
 *.jks
 *.keystore
-repertoriobc.jks
+corolldm.jks
 
 # Cuentas de Servicio y Llaves (CRÍTICO - NUNCA SUBIR)
-repertorio-estatal-c5014bf0ca60.json
+coro-lldm-sa.json
 revenuecat-key.json
 
 # Android / Gradle Build Artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
 .gradle/
 android/.gradle/
 app/build/
@@ -47,6 +50,9 @@ android/local.properties
 *.apk
 *.aab
 *.idsig
+
+# Capturas y registros locales de validación
+logs/
 
 # Artefactos de pruebas (Playwright / Vitest)
 playwright-report/
@@ -80,7 +86,7 @@ plan.md
 extracted.jsonl
 cantos_existentes.txt
 consulta_auditoria.js
-repertorio-estatal-c5014bf0ca60.json
+coro-lldm-sa.json
 revenuecat-key.json
 local.properties
 dist/

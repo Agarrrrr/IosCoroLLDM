@@ -1,4 +1,4 @@
-# REPERTORIO BC - MASTER CONTEXT
+# CORO LLDM - MASTER CONTEXT
 
 ## Propósito del Proyecto
 Sistema de gestión de partituras PWA (Progressive Web App) diseñado para coros, con soporte offline (Service Worker), gestión multi-sede y catálogo maestro. Desarrollado para optimizar la visualización de partituras en dispositivos móviles durante ensayos y presentaciones en vivo (iOS/Android).
@@ -38,7 +38,7 @@ Sistema de gestión de partituras PWA (Progressive Web App) diseñado para coros
 - **Manejo de DELETE:** Los eventos `DELETE` de Supabase envían el payload vacío en `.new`. Siempre verificar `.old` si el evento es un borrado (Implementado en L46 de `realtimeManager.js`).
 
 ### 2. Gestión Offline y Optimizaciones
-- **Fast-Fail Network:** Antes de ejecutar queries de refresco, los controladores siempre verifican `!navigator.onLine || window.MODO_OFFLINE_FORZADO`. Si no hay red, caen de gracia renderizando las variables en memoria (`cacheRepertorio`, `eventosLocales`, etc).
+- **Fast-Fail Network:** Antes de ejecutar queries de refresco, los controladores siempre verifican `!navigator.onLine || window.MODO_OFFLINE_FORZADO`. Si no hay red, caen de gracia renderizando las variables en memoria (`cacheCatalogo`, `eventosLocales`, etc).
 - **Renderizado Optimista:** Al crear o borrar elementos (Ej. Carpetas en `eventosPanel.js`), se debe modificar el arreglo local de JavaScript y pintar el DOM *antes* de enviar la petición a Supabase, para garantizar feedback visual instantáneo (0ms de latencia).
 
 ### 3. Deep Linking y Pase de Invitado

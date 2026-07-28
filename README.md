@@ -1,4 +1,4 @@
-# 🎼 Repertorio BC - PWA de Gestión de Partituras
+# CORO LLDM - App de Gestión de Partituras
 
 ![Versión](https://img.shields.io/badge/Versi%C3%B3n-4.0.0-gold)
 ![PWA](https://img.shields.io/badge/PWA-Ready-green)
@@ -6,7 +6,7 @@
 ![iOS](https://img.shields.io/badge/iOS-12.5.7+-silver)
 ![ToneJS](https://img.shields.io/badge/Audio-ToneJS-orange)
 
-**Repertorio BC** es una aplicación web progresiva (PWA) de alto rendimiento diseñada específicamente para coros. Su objetivo principal es centralizar, gestionar y visualizar partituras de forma eficiente en dispositivos móviles y tablets, garantizando el acceso incluso en condiciones de baja conectividad.
+**Coro LLDM** es una aplicación
 
 El sistema se aloja bajo el dominio unificado oficial **[www.lldmcorobc.com](https://www.lldmcorobc.com)**, el cual sirve tanto a la Progressive Web App (PWA) en iOS como a la Trusted Web Activity (TWA) nativa en Android.
 
@@ -58,8 +58,8 @@ Hemos documentado detalladamente el código fuente (`/src`) para garantizar la m
 
 1. **Clonación:**
    ```bash
-   git clone https://github.com/tu-usuario/repertoriobc.git
-   cd repertoriobc
+   git clone https://github.com/tu-usuario/corolldm.git
+   cd corolldm
    ```
 2. **Dependencias:**
    ```bash

@@ -1,12 +1,12 @@
-# 📖 Guía de Usuario - Repertorio BC
+# Guía de Usuario - Coro LLDM
 
-Bienvenido a **Repertorio BC**. Esta guía está diseñada para ayudarte a dominar las funciones avanzadas de la PWA, desde el uso sin internet hasta el reproductor musical interactivo.
+Bienvenido a **Coro LLDM**. Esta guía está diseñada para ayudarte a dominar las funciones avanzadas de la PWA, desde el uso sin internet hasta el reproductor musical interactivo.
 
 ---
 
 ## 📱 1. Instalación App (TWA / PWA)
 
-Repertorio BC está unificado bajo el dominio oficial **www.lldmcorobc.com**.
+Coro LLDM está unificado bajo el dominio oficial **www.lldmcorobc.com**.
 
 - **En iPhone/iPad (Safari):**
     1. Abre `https://www.lldmcorobc.com`.

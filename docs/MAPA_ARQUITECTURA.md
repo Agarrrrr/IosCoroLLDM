@@ -1,4 +1,4 @@
-# 🏗️ Mapa de Arquitectura - Repertorio BC
+# Mapa de Arquitectura - Coro LLDM
 
 Este documento detalla la estructura completa del código fuente (`src/`) del proyecto. Sirve como mapa maestro para entender cómo interactúan los módulos, qué controla cada área, y dónde hacer modificaciones sin afectar dependencias.
 

@@ -1,10 +1,10 @@
 # 🏗️ ARQUITECTURA FRONTEND Y ESTILOS
 
-Este documento establece las reglas fundamentales de la interfaz (UI) de Repertorio BC, las metodologías de CSS y los patrones arquitectónicos visuales.
+Este documento establece las reglas fundamentales de la interfaz (UI) de Coro LLDM, las metodologías de CSS y los patrones arquitectónicos visuales.
 
 ## 📂 1. Organización Reactiva sin Frameworks
 
-En Repertorio BC **NO se utilizan** frameworks reactivos pesados (como React, Vue o Angular). En su lugar, utilizamos un patrón Vanilla JS con un Event Bus y `stateManager`.
+En Coro LLDM **NO se utilizan** frameworks reactivos pesados (como React, Vue o Angular). En su lugar, utilizamos un patrón Vanilla JS con un Event Bus y `stateManager`.
 
 ### Módulos Funcionales
 * **`src/features/dashboardUI.js`**: Implementa renderizado condicional. Suscribe un listener al Store global y repinta únicamente las listas (`ul`) cuando detecta cambios en las categorías o búsquedas. Contiene la lógica para la UI Mobile-First.

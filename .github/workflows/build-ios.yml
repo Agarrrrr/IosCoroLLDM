@@ -1,110 +1,187 @@
-name: Build iOS App
+name: Build & Deploy iOS App to App Store Connect
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Build & Upload to App Store Connect
+  build-ios:
+    name: Build & Deploy iOS App
     runs-on: macos-26
-
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Java SDK
+        uses: actions/setup-java@v4
         with:
-          node-version: '22'
-          cache: 'npm'
+          distribution: 'temurin'
+          java-version: '17'
 
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Build Web App
-        run: npm run build
-
-      - name: Sync Capacitor iOS Project
-        run: npx cap sync ios
-
-      - name: Register Local Plugins
-        run: node scripts/registerLocalPlugins.js
+      - name: Set up Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.4'
+          channel: 'stable'
+          cache: true
 
       - name: Select Xcode version
         run: sudo xcode-select -s /Applications/Xcode_26.6.app
 
-      - name: Install Apple Certificate & Configure Keychain
+      - name: Restore GoogleService-Info.plist from secret if exists
         run: |
-          KEYCHAIN_PATH=$RUNNER_TEMP/build.keychain-db
-          KEYCHAIN_PASSWORD="kc_${{ github.run_id }}_${{ github.run_number }}"
-          
-          # Create temporary keychain
-          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
-          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-          
-          # Import certificate from base64
-          echo "${{ secrets.APPLE_P12_BASE64 }}" | base64 --decode > $RUNNER_TEMP/cert.p12
-          security import $RUNNER_TEMP/cert.p12 -k $KEYCHAIN_PATH -P "${{ secrets.APPLE_P12_PASSWORD }}" -T /usr/bin/codesign -T /usr/bin/productsign -T /usr/bin/xcodebuild
-          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-          
-          # Add temporary keychain to user search list so xcodebuild finds the certificate
-          security list-keychains -d user -s $KEYCHAIN_PATH $(security list-keychains -d user | tr -d '"')
+          if [ -n "${{ secrets.GOOGLE_SERVICE_INFO_PLIST }}" ]; then
+            echo "${{ secrets.GOOGLE_SERVICE_INFO_PLIST }}" > ios/Runner/GoogleService-Info.plist
+            echo "GoogleService-Info.plist restored from secrets."
+          else
+            echo "Using repository GoogleService-Info.plist."
+          fi
 
-      - name: Debug - List signing identities
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Install CocoaPods dependencies
         run: |
-          security find-identity -v -p codesigning $RUNNER_TEMP/build.keychain-db
+          cd ios
+          pod install
 
-      - name: Create App Store Connect API Private Key
+      - name: Import Signing Certificate (if secrets present)
         env:
-          APPSTORE_PRIVATE_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY }}
+          BUILD_CERTIFICATE_BASE64: ${{ secrets.APPLE_P12_BASE64 || secrets.BUILD_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.APPLE_P12_PASSWORD || secrets.P12_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
-          mkdir -p ~/private_keys
-          echo "$APPSTORE_PRIVATE_KEY" > ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8
+          if [ -n "$BUILD_CERTIFICATE_BASE64" ]; then
+            if [ -z "$P12_PASSWORD" ]; then
+              echo "::error::APPLE_P12_PASSWORD (or P12_PASSWORD) is required."
+              exit 1
+            fi
+            echo "Setting up keychain and signing certificates..."
+            export CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
+            KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
+            KEYCHAIN_PASSWORD="${KEYCHAIN_PASSWORD:-ci_${GITHUB_RUN_ID}_${GITHUB_RUN_ATTEMPT}}"
 
-      - name: Build Xcode Archive
-        run: |
-          BUILD_NUMBER=$((25 + ${{ github.run_number }}))
-          echo "Building with CURRENT_PROJECT_VERSION=$BUILD_NUMBER"
-          xcodebuild -project ios/App/App.xcodeproj \
-                     -scheme App \
-                     -sdk iphoneos \
-                     -configuration Release \
-                     -archivePath $RUNNER_TEMP/App.xcarchive \
-                     -allowProvisioningUpdates \
-                     -authenticationKeyPath ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8 \
-                     -authenticationKeyID ${{ secrets.APPSTORE_KEY_ID }} \
-                     -authenticationKeyIssuerID ${{ secrets.APPSTORE_ISSUER_ID }} \
-                     CURRENT_PROJECT_VERSION=$BUILD_NUMBER \
-                     CODE_SIGN_IDENTITY="" \
-                     archive
+            python3 -c "import base64, re, os; dec = lambda k, p: open(p, 'wb').write(base64.b64decode(re.sub(r'[^A-Za-z0-9+/=]', '', os.environ.get(k, ''))[:len(re.sub(r'[^A-Za-z0-9+/=]', '', os.environ.get(k, '')))-len(re.sub(r'[^A-Za-z0-9+/=]', '', os.environ.get(k, '')))%4])) if os.environ.get(k) else None; dec('BUILD_CERTIFICATE_BASE64', '$CERTIFICATE_PATH')"
 
-      - name: Export IPA
-        id: export
+            security create-keychain -p "${KEYCHAIN_PASSWORD}" $KEYCHAIN_PATH
+            security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
+            security unlock-keychain -p "${KEYCHAIN_PASSWORD}" $KEYCHAIN_PATH
+
+            security import $CERTIFICATE_PATH -k $KEYCHAIN_PATH -P "$P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/productsign -T /usr/bin/xcodebuild
+            security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${KEYCHAIN_PASSWORD}" $KEYCHAIN_PATH
+            security list-keychains -d user -s $KEYCHAIN_PATH $(security list-keychains -d user | tr -d '"')
+            echo "Keychain initialized successfully."
+          else
+            echo "No signing certificates provided in Secrets. Proceeding with unsigned build."
+          fi
+
+      - name: Setup App Store Connect API Key
+        env:
+          APP_STORE_CONNECT_API_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY || secrets.APP_STORE_CONNECT_API_KEY }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APPSTORE_KEY_ID || secrets.APP_STORE_CONNECT_KEY_ID }}
         run: |
-          for i in 1 2 3; do
-            echo "--- Export attempt $i/3 ---"
-            xcodebuild -exportArchive \
-                       -archivePath $RUNNER_TEMP/App.xcarchive \
-                       -exportOptionsPlist ios/App/App/ExportOptions.plist \
-                       -exportPath $RUNNER_TEMP/build \
+          if [ -n "$APP_STORE_CONNECT_API_KEY" ] && [ -n "$APP_STORE_CONNECT_KEY_ID" ]; then
+            mkdir -p ~/.private_keys ~/.appstoreconnect/private_keys
+            P8_PATH=~/.private_keys/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8
+            P8_PATH2=~/.appstoreconnect/private_keys/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8
+            if echo "$APP_STORE_CONNECT_API_KEY" | grep -q "BEGIN PRIVATE KEY"; then
+              echo "$APP_STORE_CONNECT_API_KEY" > "$P8_PATH"
+              echo "$APP_STORE_CONNECT_API_KEY" > "$P8_PATH2"
+            else
+              echo -n "$APP_STORE_CONNECT_API_KEY" | base64 --decode > "$P8_PATH"
+              echo -n "$APP_STORE_CONNECT_API_KEY" | base64 --decode > "$P8_PATH2"
+            fi
+            echo "App Store Connect API Key configured."
+          fi
+
+      - name: Build Xcode Archive and Export IPA
+        env:
+          APP_STORE_CONNECT_API_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY || secrets.APP_STORE_CONNECT_API_KEY }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APPSTORE_KEY_ID || secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APPSTORE_ISSUER_ID || secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          REVENUECAT_IOS_API_KEY: ${{ secrets.REVENUECAT_IOS_API_KEY }}
+        run: |
+          IOS_BUILD_NUMBER=$((23000 + GITHUB_RUN_NUMBER))
+          echo "Building Flutter iOS release..."
+          echo "TestFlight build number: $IOS_BUILD_NUMBER"
+          BUILD_ARGS=(--release --no-codesign --build-number="$IOS_BUILD_NUMBER")
+          if [ -n "$REVENUECAT_IOS_API_KEY" ]; then
+            BUILD_ARGS+=(--dart-define=REVENUECAT_IOS_API_KEY="$REVENUECAT_IOS_API_KEY")
+          fi
+          flutter build ios "${BUILD_ARGS[@]}"
+
+          if [ -n "$APP_STORE_CONNECT_API_KEY" ] && [ -n "$APP_STORE_CONNECT_KEY_ID" ] && [ -n "$APP_STORE_CONNECT_ISSUER_ID" ]; then
+            echo "Archiving with xcodebuild and -allowProvisioningUpdates..."
+            xcodebuild -workspace ios/Runner.xcworkspace \
+                       -scheme Runner \
+                       -sdk iphoneos \
+                       -configuration Release \
+                       -archivePath $RUNNER_TEMP/Runner.xcarchive \
                        -allowProvisioningUpdates \
-                       -authenticationKeyPath ~/private_keys/AuthKey_${{ secrets.APPSTORE_KEY_ID }}.p8 \
-                       -authenticationKeyID ${{ secrets.APPSTORE_KEY_ID }} \
-                       -authenticationKeyIssuerID ${{ secrets.APPSTORE_ISSUER_ID }} \
-                       -verbose && { echo "ipa-path=$RUNNER_TEMP/build/App.ipa" >> $GITHUB_OUTPUT; exit 0; }
-            echo "Export failed, waiting 30s before retry..."
-            sleep 30
-          done
-          echo "Export failed after 3 attempts."
-          exit 1
-      
-      - name: Upload to App Store Connect
-        uses: apple-actions/upload-testflight-build@v1
+                       -authenticationKeyPath ~/.private_keys/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8 \
+                       -authenticationKeyID $APP_STORE_CONNECT_KEY_ID \
+                       -authenticationKeyIssuerID $APP_STORE_CONNECT_ISSUER_ID \
+                       archive
+
+            echo "Generating export_options.plist..."
+            EXPORT_PLIST="ios/export_options.plist"
+            rm -f "$EXPORT_PLIST"
+            /usr/libexec/PlistBuddy -c "Add :method string app-store-connect" "$EXPORT_PLIST"
+            /usr/libexec/PlistBuddy -c "Add :signingStyle string automatic" "$EXPORT_PLIST"
+            /usr/libexec/PlistBuddy -c "Add :stripSwiftSymbols bool true" "$EXPORT_PLIST"
+
+            echo "Exporting IPA with xcodebuild..."
+            mkdir -p build/ios/ipa
+            xcodebuild -exportArchive \
+                       -archivePath $RUNNER_TEMP/Runner.xcarchive \
+                       -exportOptionsPlist ios/export_options.plist \
+                       -exportPath build/ios/ipa \
+                       -allowProvisioningUpdates \
+                       -authenticationKeyPath ~/.private_keys/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8 \
+                       -authenticationKeyID $APP_STORE_CONNECT_KEY_ID \
+                       -authenticationKeyIssuerID $APP_STORE_CONNECT_ISSUER_ID
+          else
+            echo "App Store Connect API Key not provided. Skipping signed archive and export."
+          fi
+
+      - name: Upload IPA to App Store Connect / TestFlight (if API Key provided)
+        env:
+          APP_STORE_CONNECT_API_KEY: ${{ secrets.APPSTORE_PRIVATE_KEY || secrets.APP_STORE_CONNECT_API_KEY }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APPSTORE_KEY_ID || secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APPSTORE_ISSUER_ID || secrets.APP_STORE_CONNECT_ISSUER_ID }}
+        run: |
+          if [ -n "$APP_STORE_CONNECT_API_KEY" ] && [ -n "$APP_STORE_CONNECT_KEY_ID" ] && [ -n "$APP_STORE_CONNECT_ISSUER_ID" ]; then
+            echo "Uploading IPA to App Store Connect..."
+            mkdir -p ~/.private_keys ~/.appstoreconnect/private_keys
+            P8_PATH=~/.private_keys/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8
+            P8_PATH2=~/.appstoreconnect/private_keys/AuthKey_${APP_STORE_CONNECT_KEY_ID}.p8
+            if echo "$APP_STORE_CONNECT_API_KEY" | grep -q "BEGIN PRIVATE KEY"; then
+              echo "$APP_STORE_CONNECT_API_KEY" > "$P8_PATH"
+              echo "$APP_STORE_CONNECT_API_KEY" > "$P8_PATH2"
+            else
+              echo -n "$APP_STORE_CONNECT_API_KEY" | base64 --decode > "$P8_PATH"
+              echo -n "$APP_STORE_CONNECT_API_KEY" | base64 --decode > "$P8_PATH2"
+            fi
+
+            IPA_FILE=$(ls build/ios/ipa/*.ipa | head -n 1)
+            echo "Uploading $IPA_FILE..."
+            xcrun altool --upload-app -f "$IPA_FILE" \
+              --type ios \
+              --apiKey "$APP_STORE_CONNECT_KEY_ID" \
+              --apiIssuer "$APP_STORE_CONNECT_ISSUER_ID"
+            echo "IPA uploaded to App Store Connect successfully!"
+          else
+            echo "App Store Connect API Key not provided. Skipping upload."
+          fi
+
+      - name: Upload iOS Build Artifact
+        uses: actions/upload-artifact@v4
         with:
-          app-path: ${{ steps.export.outputs.ipa-path }}
-          issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
-          api-key-id: ${{ secrets.APPSTORE_KEY_ID }}
-          api-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}
+          name: ios-build-artifact
+          path: |
+            build/ios/ipa/*.ipa
+            build/ios/iphoneos/Runner.app
+          if-no-files-found: ignore
