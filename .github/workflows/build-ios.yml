@@ -31,15 +31,6 @@ jobs:
       - name: Select Xcode version
         run: sudo xcode-select -s /Applications/Xcode_26.6.app
 
-      - name: Restore GoogleService-Info.plist from secret if exists
-        run: |
-          if [ -n "${{ secrets.GOOGLE_SERVICE_INFO_PLIST }}" ]; then
-            echo "${{ secrets.GOOGLE_SERVICE_INFO_PLIST }}" > ios/Runner/GoogleService-Info.plist
-            echo "GoogleService-Info.plist restored from secrets."
-          else
-            echo "Using repository GoogleService-Info.plist."
-          fi
-
       - name: Install dependencies
         run: flutter pub get
 
