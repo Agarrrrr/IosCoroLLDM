@@ -1951,6 +1951,7 @@
     "id": "usmc_85a0d369ba4b73a012bc4b2c",
     "nombre": "Cantos Jubilosos",
     "archivo": "usmc_85a0d369ba4b73a012bc4b2c_cantos_jubilosos.pdf",
+    "midi_archivo": "cantos-jubilosos-1784597349308.mid",
     "temas": [
       "Santa Cena"
     ],
@@ -4451,6 +4452,7 @@
     "id": "usmc_af6ad90414c5d2f2cc457b0f",
     "nombre": "El Rey ya Viene",
     "archivo": "usmc_af6ad90414c5d2f2cc457b0f_el_rey_ya_viene.pdf",
+    "midi_archivo": "el-rey-ya-viene-1784604985536.mid",
     "temas": [
       "Advenimiento",
       "Santa Cena"
@@ -7262,16 +7264,6 @@
       "Santa Cena"
     ],
     "es_privado": false
-  },
-  {
-    "id": "usmc_0836b7c8b6dbd58c9f",
-    "nombre": "Juventud",
-    "archivo": "0836b7c8b6dbd58c9f_juventud.pdf",
-    "temas": [
-      "Alabanza",
-      "Adoración"
-    ],
-    "es_privado": true
   },
   {
     "id": "usmc_64b3ebea9631ba687d630861",
@@ -11400,6 +11392,7 @@
     "id": "usmc_64b3e4279631ba687d6304fb",
     "nombre": "Señor en tu Presencia",
     "archivo": "64b3e4279631ba687d6304fb_señor_en_tu_presencia.pdf",
+    "midi_archivo": "senor-en-tu-presencia-1784605276589.mid",
     "temas": [
       "Petición"
     ],
