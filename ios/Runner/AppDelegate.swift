@@ -37,8 +37,97 @@ import UserNotifications
         let receiptName = Bundle.main.appStoreReceiptURL?.lastPathComponent
         result(receiptName == "sandboxReceipt")
       }
+
+      let midiRenderChannel = FlutterMethodChannel(
+        name: "com.lldm.coro/midi_render",
+        binaryMessenger: controller.binaryMessenger
+      )
+      midiRenderChannel.setMethodCallHandler { [weak self] call, result in
+        guard call.method == "renderMidiToWav" else {
+          result(FlutterMethodNotImplemented)
+          return
+        }
+        guard let args = call.arguments as? [String: Any],
+              let midiPath = args["midiPath"] as? String,
+              let soundfontPath = args["soundfontPath"] as? String,
+              let outputPath = args["outputPath"] as? String else {
+          result(FlutterError(code: "INVALID_ARGS", message: "Argumentos inválidos", details: nil))
+          return
+        }
+        self?.renderMidiToWav(midiPath: midiPath, soundfontPath: soundfontPath, outputPath: outputPath) { success, errorMsg in
+          DispatchQueue.main.async {
+            if success {
+              result(true)
+            } else {
+              result(FlutterError(code: "RENDER_ERROR", message: errorMsg ?? "Error al renderizar audio", details: nil))
+            }
+          }
+        }
+      }
     }
 
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
+
+  private func renderMidiToWav(midiPath: String, soundfontPath: String, outputPath: String, completion: @escaping (Bool, String?) -> Void) {
+    DispatchQueue.global(qos: .userInitiated).async {
+      do {
+        let midiURL = URL(fileURLWithPath: midiPath)
+        let sfURL = URL(fileURLWithPath: soundfontPath)
+        let outURL = URL(fileURLWithPath: outputPath)
+
+        let engine = AVAudioEngine()
+        let sampler = AVAudioUnitSampler()
+        engine.attach(sampler)
+        engine.connect(sampler, to: engine.mainMixerNode, format: nil)
+
+        try sampler.loadSoundbankInstrument(
+          at: sfURL,
+          program: 0,
+          bankMSB: UInt8(kAudioUnitSamplerBank_GraphicSoundBank),
+          bankLSB: 0
+        )
+
+        let sequencer = AVAudioSequencer(audioEngine: engine)
+        try sequencer.load(from: midiURL, options: [])
+
+        for track in sequencer.tracks {
+          track.destinationAudioUnit = sampler
+        }
+
+        let duration = sequencer.length.durationInSeconds
+        guard duration > 0 else {
+          completion(false, "El archivo MIDI no contiene datos de audio")
+          return
+        }
+
+        let sampleRate: Double = 44100.0
+        let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)!
+
+        try engine.enableManualRenderingMode(.offline, format: format, maximumFrameCount: 4096)
+        try engine.start()
+        try sequencer.start()
+
+        let outputFile = try AVAudioFile(forWriting: outURL, settings: format.settings)
+        let buffer = AVAudioPCMBuffer(pcmFormat: engine.manualRenderingFormat, frameCapacity: 4096)!
+
+        let totalFrames = AVAudioFramePosition((duration + 1.0) * sampleRate)
+        while engine.manualRenderingSampleTime < totalFrames {
+          let framesToRender = min(AVAudioFrameCount(4096), AVAudioFrameCount(totalFrames - engine.manualRenderingSampleTime))
+          let status = try engine.renderOffline(framesToRender, to: buffer)
+          if status == .success {
+            try outputFile.write(from: buffer)
+          } else {
+            break
+          }
+        }
+        sequencer.stop()
+        engine.stop()
+        completion(true, nil)
+      } catch {
+        completion(false, error.localizedDescription)
+      }
+    }
+  }
 }
+

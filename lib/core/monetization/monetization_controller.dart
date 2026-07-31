@@ -270,9 +270,22 @@ class MonetizationController extends StateNotifier<MonetizationState>
         '${now.day.toString().padLeft(2, '0')}';
   }
 
-  /// Verifica y consume un crédito de exportación de audio.
+  /// Verifica si el usuario tiene créditos para exportar audio.
+  /// Devuelve `true` si el usuario es premium o le quedan créditos hoy.
+  Future<bool> canExportAudio() async {
+    await refreshCustomerInfo();
+    if (state.isPremium) return true;
+    final today = _todayKey();
+    if (_box.get('audio_export_day') != today) {
+      return true;
+    }
+    final used = (_box.get('audio_export_count') as int?) ?? 0;
+    final extra = (_box.get('audio_export_extra') as int?) ?? 0;
+    return used < 3 || extra > 0;
+  }
+
+  /// Consume un crédito de exportación de audio cuando el export fue exitoso.
   /// Gratuito: máximo 3 exports por día. Premium: ilimitado.
-  /// Devuelve `true` si el export puede proceder.
   Future<bool> consumeAudioExport() async {
     await refreshCustomerInfo();
     if (state.isPremium) return true;

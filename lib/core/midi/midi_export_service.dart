@@ -44,9 +44,9 @@ class MidiExportService {
     int? trackIndex,
     String? voiceName,
   }) async {
-    if (!Platform.isAndroid) {
+    if (!Platform.isAndroid && !Platform.isIOS) {
       throw UnsupportedError(
-        'La exportación MP3 local está disponible actualmente en Android.',
+        'La exportación MP3 no está disponible en este dispositivo.',
       );
     }
 
@@ -84,12 +84,22 @@ class MidiExportService {
     var stage = 'preparando el render';
     try {
       if (await wavFile.exists()) await wavFile.delete();
-      debugPrint('[MidiExport] Renderizando $baseName con FluidSynth');
-      await Isolate.run(() => _FluidSynthRenderer.render(
-            midiPath: renderMidi.path,
-            soundfontPath: soundfont.path,
-            outputPath: wavFile.path,
-          ));
+      if (Platform.isAndroid) {
+        debugPrint('[MidiExport] Renderizando $baseName con FluidSynth');
+        await Isolate.run(() => _FluidSynthRenderer.render(
+              midiPath: renderMidi.path,
+              soundfontPath: soundfont.path,
+              outputPath: wavFile.path,
+            ));
+      } else if (Platform.isIOS) {
+        debugPrint('[MidiExport] Renderizando $baseName con AVAudioEngine iOS');
+        const channel = MethodChannel('com.lldm.coro/midi_render');
+        await channel.invokeMethod('renderMidiToWav', {
+          'midiPath': renderMidi.path,
+          'soundfontPath': soundfont.path,
+          'outputPath': wavFile.path,
+        });
+      }
       stage = 'codificando el MP3';
       debugPrint('[MidiExport] Codificando $baseName con LAME');
       await _encodeWavToMp3(wavFile, mp3File);

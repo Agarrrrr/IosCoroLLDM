@@ -515,6 +515,15 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       return;
     }
 
+    // Para exportar audio, verificar límite de créditos diarios
+    final canExport =
+        await ref.read(monetizationProvider.notifier).canExportAudio();
+    if (!mounted) return;
+    if (!canExport) {
+      await _mostrarDialogoLimiteExport(canto, localPdfPath);
+      return;
+    }
+
     if (!Platform.isAndroid) {
       if (selection.kind == _ShareKind.allVoices) {
         await _exportarTodasLasVocesIOS(canto, voices);
@@ -540,21 +549,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     if (renderBox == null) return Rect.zero;
     final offset = renderBox.localToGlobal(Offset.zero);
     return offset & renderBox.size;
-  }
-
-  /// Verifica el límite de exports diarios antes de abrir el menú de compartir.
-  Future<void> _checkExportLimitAndProceed(
-    Canto canto,
-    String? localPdfPath,
-  ) async {
-    final monetization = ref.read(monetizationProvider.notifier);
-    final canExport = await monetization.consumeAudioExport();
-    if (!mounted) return;
-    if (!canExport) {
-      await _mostrarDialogoLimiteExport(canto, localPdfPath);
-      return;
-    }
-    await _mostrarMenuCompartirMp3(canto, localPdfPath);
   }
 
   /// Diálogo de límite diario de exports alcanzado (solo usuarios free).
@@ -602,8 +596,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     if (!mounted) return;
     if (earned) {
       await ref.read(monetizationProvider.notifier).grantRewardedExport();
-      // Consume el crédito recién otorgado
-      await ref.read(monetizationProvider.notifier).consumeAudioExport();
       await _mostrarMenuCompartirMp3(canto, localPdfPath);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -664,6 +656,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         subject: canto.nombre,
         sharePositionOrigin: _shareButtonRect(),
       );
+      await ref.read(monetizationProvider.notifier).consumeAudioExport();
       unawaited(AdsService.instance.onExportCompleted());
     } catch (e) {
       if (mounted && dialogOpen) {
@@ -748,6 +741,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         subject: canto.nombre,
         sharePositionOrigin: _shareButtonRect(),
       );
+      await ref.read(monetizationProvider.notifier).consumeAudioExport();
       unawaited(AdsService.instance.onExportCompleted());
     } catch (e) {
       if (mounted && dialogOpen) {
@@ -847,6 +841,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('MP3 guardado correctamente.')),
           );
+          await ref.read(monetizationProvider.notifier).consumeAudioExport();
           unawaited(AdsService.instance.onExportCompleted());
         }
       } else {
@@ -856,6 +851,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
+        await ref.read(monetizationProvider.notifier).consumeAudioExport();
         unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
@@ -952,6 +948,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('${files.length} archivos MP3 guardados.')),
           );
+          await ref.read(monetizationProvider.notifier).consumeAudioExport();
           unawaited(AdsService.instance.onExportCompleted());
         }
       } else {
@@ -962,6 +959,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
+        await ref.read(monetizationProvider.notifier).consumeAudioExport();
         unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
@@ -1234,7 +1232,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               key: _shareButtonKey,
                               child: _TopBarBtn(
                                 icon: Icons.ios_share_rounded,
-                                onTap: () => _checkExportLimitAndProceed(
+                                onTap: () => _mostrarMenuCompartirMp3(
                                     canto, state.localPath),
                                 tooltip: strings.t(
                                   'Compartir o guardar',
