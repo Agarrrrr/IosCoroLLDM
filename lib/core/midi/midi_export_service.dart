@@ -148,6 +148,42 @@ class MidiExportService {
         '${_safeDisplayName(suffix)}.mp3';
   }
 
+  static String displayPdfFileName(Canto canto) {
+    return '${_safeDisplayName(canto.nombre)}.pdf';
+  }
+
+  static String displayMidiFileName(
+    Canto canto, {
+    MidiExportVoice? voice,
+  }) {
+    final suffix = voice?.name ?? 'Ensamble';
+    return '${_safeDisplayName(canto.nombre)} - '
+        '${_safeDisplayName(suffix)}.mid';
+  }
+
+  static Future<File> exportMidiVoice(
+    Canto canto, {
+    int? trackIndex,
+    String? voiceName,
+  }) async {
+    final sourceMidi = await OfflineFiles.ensureMidi(canto);
+    final originalBytes = await sourceMidi.readAsBytes();
+    final tempDir = await getTemporaryDirectory();
+    final fileName = displayMidiFileName(
+      canto,
+      voice: trackIndex == null || voiceName == null
+          ? null
+          : MidiExportVoice(trackIndex: trackIndex, name: voiceName),
+    );
+    final targetFile = File('${tempDir.path}/$fileName');
+
+    final exportBytes = trackIndex == null
+        ? originalBytes
+        : _midiWithSelectedTrack(originalBytes, trackIndex);
+    await targetFile.writeAsBytes(exportBytes, flush: true);
+    return targetFile;
+  }
+
   static String _safeDisplayName(String value) {
     final cleaned =
         value.replaceAll(RegExp(r'[<>:"/\\|?*\x00-\x1F]'), '').trim();

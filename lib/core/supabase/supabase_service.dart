@@ -3,11 +3,12 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 class SupabaseService {
   // Las credenciales anon/publicas de Supabase
   static const String _supabaseUrl = 'https://mxnhmtztxgeccohlgqpt.supabase.co';
-  static const String _supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im14bmhtdHp0eGdlY2NvaGxncXB0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3OTcxMDMsImV4cCI6MjA5MjM3MzEwM30.xoqintNQy_mX02uX4kVuFmv-JCrQeBAWmqBvzBGcR1M';
+  static const String _supabaseAnonKey =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im14bmhtdHp0eGdlY2NvaGxncXB0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3OTcxMDMsImV4cCI6MjA5MjM3MzEwM30.xoqintNQy_mX02uX4kVuFmv-JCrQeBAWmqBvzBGcR1M';
 
-  // Almacenamiento público de Supabase (para PDFs y MIDI)
+  // Worker autenticado para el catálogo unificado.
   static const String storageUrl =
-      'https://mxnhmtztxgeccohlgqpt.supabase.co/storage/v1/object/public';
+      'https://repertoriobc-files.huritolentino.workers.dev';
 
   static Future<void> init() async {
     await Supabase.initialize(

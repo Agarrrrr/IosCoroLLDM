@@ -493,6 +493,9 @@ class MidiEngine {
   }
 
   MidiTempoChange _tempoAt(ParsedMidiSong song, double time) {
+    if (song.tempoChanges.isEmpty) {
+      return const MidiTempoChange(tick: 0, timeSeconds: 0.0, bpm: 120);
+    }
     var active = song.tempoChanges.first;
     for (final change in song.tempoChanges) {
       if (change.timeSeconds > time) break;
@@ -502,6 +505,15 @@ class MidiEngine {
   }
 
   MidiTimeSignature _signatureAt(ParsedMidiSong song, double time) {
+    if (song.timeSignatures.isEmpty) {
+      return const MidiTimeSignature(
+        tick: 0,
+        timeSeconds: 0.0,
+        numerator: 4,
+        denominator: 4,
+        metronomeClocks: 24,
+      );
+    }
     var active = song.timeSignatures.first;
     for (final signature in song.timeSignatures) {
       if (signature.timeSeconds > time) break;

@@ -6,6 +6,7 @@ import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
+import 'package:coro_lldm/features/auth/auth_gate.dart';
 
 class CoroLLDMApp extends ConsumerWidget {
   const CoroLLDMApp({super.key});

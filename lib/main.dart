@@ -13,7 +13,7 @@ import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // 1. Inicializar Supabase (cliente directo, sin login obligatorio)
+  // 1. Inicializar Supabase
   await SupabaseService.init();
 
   // 2. Inicializar Hive (offline cache + favoritos)
