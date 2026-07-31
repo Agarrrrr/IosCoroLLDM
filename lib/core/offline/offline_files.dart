@@ -6,6 +6,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
+import 'package:hive/hive.dart';
 
 /// Proveedor offline-first de partituras y archivos MIDI.
 ///
@@ -18,15 +19,25 @@ class OfflineFiles {
     ..options.connectTimeout = const Duration(seconds: 10)
     ..options.receiveTimeout = const Duration(seconds: 60);
 
-  static String resolvePdfUrl(String archivo) {
-    if (archivo.startsWith('http')) return archivo;
-    return '${SupabaseService.storageUrl}/partituras/$archivo';
+  static String resolvePdfUrl(Canto canto) {
+    if (canto.archivo.startsWith('http')) return canto.archivo;
+    if (_isUnifiedObjectKey(canto.archivo)) {
+      return '${SupabaseService.storageUrl}/v1/files/${canto.id}/pdf';
+    }
+    return '${SupabaseService.storageUrl}/partituras/${canto.archivo}';
   }
 
-  static String resolveMidiUrl(String archivoMidi) {
+  static String resolveMidiUrl(Canto canto) {
+    final archivoMidi = canto.midiArchivo!;
     if (archivoMidi.startsWith('http')) return archivoMidi;
+    if (_isUnifiedObjectKey(archivoMidi)) {
+      return '${SupabaseService.storageUrl}/v1/files/${canto.id}/midi';
+    }
     return '${SupabaseService.storageUrl}/midi_files/$archivoMidi';
   }
+
+  static bool _isUnifiedObjectKey(String value) =>
+      value.startsWith('global/') || value.startsWith('local/');
 
   static Future<Directory> _docsDir() => getApplicationDocumentsDirectory();
 
@@ -42,36 +53,58 @@ class OfflineFiles {
 
   static Future<File> ensurePdf(Canto canto) async {
     final file = await pdfFile(canto.id);
-    if (await _validateCached(file, FileCrypto.isPdf)) return file;
+    if (await _cachedVersionIsCurrent(
+      file,
+      '${canto.id}_pdf_version',
+      canto.version,
+      FileCrypto.isPdf,
+    )) {
+      return file;
+    }
 
-    if (!canto.archivo.startsWith('http')) {
+    if (canto.version == 1 && !canto.archivo.startsWith('http')) {
       final copied = await _copyFromAsset(
         'assets/offline_assets/pdfs/${canto.archivo}',
         file,
         FileCrypto.isPdf,
       );
-      if (copied) return file;
+      if (copied) {
+        await _rememberVersion('${canto.id}_pdf_version', canto.version);
+        return file;
+      }
     }
 
-    await _download(resolvePdfUrl(canto.archivo), file, FileCrypto.isPdf);
+    await _download(resolvePdfUrl(canto), file, FileCrypto.isPdf);
+    await _rememberVersion('${canto.id}_pdf_version', canto.version);
     return file;
   }
 
   static Future<File> ensureMidi(Canto canto) async {
     final file = await midiFile(canto.id);
-    if (await _validateCached(file, FileCrypto.isMidi)) return file;
+    if (await _cachedVersionIsCurrent(
+      file,
+      '${canto.id}_midi_version',
+      canto.version,
+      FileCrypto.isMidi,
+    )) {
+      return file;
+    }
 
     final midi = canto.midiArchivo!;
-    if (!midi.startsWith('http')) {
+    if (canto.version == 1 && !midi.startsWith('http')) {
       final copied = await _copyFromAsset(
         'assets/offline_assets/midis/$midi',
         file,
         FileCrypto.isMidi,
       );
-      if (copied) return file;
+      if (copied) {
+        await _rememberVersion('${canto.id}_midi_version', canto.version);
+        return file;
+      }
     }
 
-    await _download(resolveMidiUrl(midi), file, FileCrypto.isMidi);
+    await _download(resolveMidiUrl(canto), file, FileCrypto.isMidi);
+    await _rememberVersion('${canto.id}_midi_version', canto.version);
     return file;
   }
 
@@ -103,7 +136,16 @@ class OfflineFiles {
     try {
       if (await encryptedTmp.exists()) await encryptedTmp.delete();
       debugPrint('[OfflineFiles] Descargando: $url');
-      await _dio.download(url, encryptedTmp.path);
+      final token = SupabaseService.client.auth.currentSession?.accessToken;
+      await _dio.download(
+        url,
+        encryptedTmp.path,
+        options: Options(
+          headers: {
+            if (token != null) 'Authorization': 'Bearer $token',
+          },
+        ),
+      );
       await _decryptAndWrite(
         await encryptedTmp.readAsBytes(),
         target,
@@ -138,6 +180,30 @@ class OfflineFiles {
       } catch (_) {}
       return false;
     }
+  }
+
+  static Future<bool> _cachedVersionIsCurrent(
+    File file,
+    String metadataKey,
+    int expectedVersion,
+    bool Function(List<int>) validator,
+  ) async {
+    if (!await _validateCached(file, validator)) return false;
+    final box = Hive.box('cache');
+    final cachedVersion = box.get(metadataKey) as int?;
+    if (cachedVersion == expectedVersion) return true;
+
+    // Los archivos heredados no tenían metadatos. Se aceptan como v1 y desde
+    // aquí quedan versionados; una versión remota superior obliga a descargar.
+    if (cachedVersion == null && expectedVersion == 1) {
+      await box.put(metadataKey, 1);
+      return true;
+    }
+    return false;
+  }
+
+  static Future<void> _rememberVersion(String key, int version) {
+    return Hive.box('cache').put(key, version);
   }
 
   static Future<void> _decryptAndWrite(

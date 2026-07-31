@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
+import 'package:coro_lldm/core/supabase/supabase_service.dart';
 
 class SettingsDialog extends ConsumerStatefulWidget {
   const SettingsDialog({super.key});
@@ -173,6 +174,48 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                     ref.read(themeProvider.notifier).setProfileLectura(),
                 accentColor: accentColor,
               ),
+              const SizedBox(height: 12),
+              const Divider(),
+              const SizedBox(height: 12),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  icon: const Icon(Icons.logout_rounded),
+                  label: Text(strings.t('Cerrar sesión', 'Sign out')),
+                  onPressed: () async {
+                    final confirmed = await showDialog<bool>(
+                      context: context,
+                      builder: (dialogContext) => AlertDialog(
+                        title: Text(
+                          strings.t('Cerrar sesión', 'Sign out'),
+                        ),
+                        content: Text(
+                          strings.t(
+                            'El repertorio descargado permanecerá en este dispositivo, pero necesitarás iniciar sesión para volver a entrar.',
+                            'Downloaded scores will stay on this device, but you will need to sign in again to enter.',
+                          ),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () =>
+                                Navigator.pop(dialogContext, false),
+                            child: Text(strings.t('Cancelar', 'Cancel')),
+                          ),
+                          FilledButton(
+                            onPressed: () => Navigator.pop(dialogContext, true),
+                            child: Text(
+                              strings.t('Cerrar sesión', 'Sign out'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                    if (confirmed != true) return;
+                    await SupabaseService.client.auth.signOut();
+                    if (context.mounted) Navigator.pop(context);
+                  },
+                ),
+              ),
             ],
           ),
         ),
@@ -212,7 +255,9 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
           boxShadow: [
             if (isSelected)
               BoxShadow(
-                  color: color.withOpacity(0.4), blurRadius: 8, spreadRadius: 2)
+                  color: color.withValues(alpha: 0.4),
+                  blurRadius: 8,
+                  spreadRadius: 2)
           ],
         ),
         child: isSelected
@@ -237,10 +282,14 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
         curve: Curves.easeInOut,
         padding: const EdgeInsets.symmetric(vertical: 12),
         decoration: BoxDecoration(
-          color: isSelected ? accentColor.withOpacity(0.1) : Colors.transparent,
+          color: isSelected
+              ? accentColor.withValues(alpha: 0.1)
+              : Colors.transparent,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? accentColor : Colors.grey.withOpacity(0.3),
+            color: isSelected
+                ? accentColor
+                : Colors.grey.withValues(alpha: 0.3),
             width: isSelected ? 2 : 1,
           ),
         ),
@@ -289,10 +338,14 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? accentColor : Colors.grey.withOpacity(0.2),
+            color: isSelected
+                ? accentColor
+                : Colors.grey.withValues(alpha: 0.2),
             width: isSelected ? 2 : 1,
           ),
-          color: isSelected ? accentColor.withOpacity(0.1) : Colors.transparent,
+          color: isSelected
+              ? accentColor.withValues(alpha: 0.1)
+              : Colors.transparent,
         ),
         child: Row(
           children: [

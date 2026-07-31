@@ -13,9 +13,11 @@ class FileCrypto {
   static const _pdfHeader = [0x25, 0x50, 0x44, 0x46]; // %PDF
   static const _midiHeader = [0x4D, 0x54, 0x68, 0x64]; // MThd
 
-  static bool isPdf(List<int> bytes) => _hasHeader(bytes, _pdfHeader);
+  static bool isPdf(List<int> bytes) =>
+      bytes.length >= 32 && _hasHeader(bytes, _pdfHeader);
 
-  static bool isMidi(List<int> bytes) => _hasHeader(bytes, _midiHeader);
+  static bool isMidi(List<int> bytes) =>
+      bytes.length >= 14 && _hasHeader(bytes, _midiHeader);
 
   static bool isPlainFile(List<int> bytes) => isPdf(bytes) || isMidi(bytes);
 

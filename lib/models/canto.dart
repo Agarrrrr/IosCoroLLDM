@@ -12,6 +12,8 @@ class Canto {
   /// ID del canto vinculado en el otro idioma (versión bilingüe).
   final String? vinculoIdioma;
   final String? updatedAt;
+  final int version;
+  final int cifradoVersion;
 
   Canto({
     required this.id,
@@ -22,6 +24,8 @@ class Canto {
     this.idioma = 'es',
     this.vinculoIdioma,
     this.updatedAt,
+    this.version = 1,
+    this.cifradoVersion = 1,
   });
 
   factory Canto.fromJson(Map<String, dynamic> json) {
@@ -29,11 +33,17 @@ class Canto {
       id: json['id'].toString(),
       nombre: json['nombre'] as String? ?? '',
       archivo: json['archivo'] as String? ?? '',
-      temas: (json['temas'] as List<dynamic>?)?.map((e) => e.toString()).toList() ?? [],
+      temas: (json['temas'] as List<dynamic>?)
+              ?.map((e) => e.toString())
+              .toList() ??
+          [],
       midiArchivo: json['midi_archivo'] as String?,
-      idioma: json['_idioma'] as String? ?? 'es',
+      idioma: json['_idioma'] as String? ?? json['idioma'] as String? ?? 'es',
       vinculoIdioma: json['vinculo_idioma'] as String?,
-      updatedAt: json['updated_at']?.toString() ?? json['updatedAt']?.toString(),
+      updatedAt:
+          json['updated_at']?.toString() ?? json['updatedAt']?.toString(),
+      version: (json['version'] as num?)?.toInt() ?? 1,
+      cifradoVersion: (json['cifrado_version'] as num?)?.toInt() ?? 1,
     );
   }
 
@@ -46,6 +56,8 @@ class Canto {
       if (midiArchivo != null) 'midi_archivo': midiArchivo,
       '_idioma': idioma,
       if (vinculoIdioma != null) 'vinculo_idioma': vinculoIdioma,
+      'version': version,
+      'cifrado_version': cifradoVersion,
     };
   }
 }

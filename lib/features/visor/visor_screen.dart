@@ -226,7 +226,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       final firstPageWidth = document.pages.first.width;
       final viewWidth = MediaQuery.of(context).size.width;
       final scale = viewWidth / firstPageWidth;
-      if (mounted && _minScaleLimit != scale) {
+      if (mounted && (_minScaleLimit - scale).abs() > 0.001) {
         setState(() {
           _minScaleLimit = scale;
         });
@@ -493,8 +493,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     if (selection == null || !mounted) return;
     if (selection.kind == _ShareKind.pdf) {
       if (localPdfPath != null && await File(localPdfPath).exists()) {
+        final pdfName = MidiExportService.displayPdfFileName(canto);
+        final tempDir = await getTemporaryDirectory();
+        final sharePdf = File('${tempDir.path}/$pdfName');
+        await File(localPdfPath).copy(sharePdf.path);
         await Share.shareXFiles(
-          [XFile(localPdfPath)],
+          [XFile(sharePdf.path, name: pdfName, mimeType: 'application/pdf')],
           text: 'Partitura: ${canto.nombre}',
         );
       } else if (mounted) {
@@ -507,12 +511,52 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       return;
     }
 
+    if (!Platform.isAndroid) {
+      await _exportarAudioIOS(canto, selection.voice);
+      return;
+    }
+
     final destination = await _elegirDestino();
     if (destination == null || !mounted) return;
     if (selection.kind == _ShareKind.allVoices) {
       await _exportarTodasLasVoces(canto, voices, destination);
     } else {
       await _exportarMp3(canto, selection.voice, destination);
+    }
+  }
+
+  Future<void> _exportarAudioIOS(
+    Canto canto,
+    MidiExportVoice? voice,
+  ) async {
+    try {
+      final midiFile = await MidiExportService.exportMidiVoice(
+        canto,
+        trackIndex: voice?.trackIndex,
+        voiceName: voice?.name,
+      );
+      final displayFileName = MidiExportService.displayMidiFileName(
+        canto,
+        voice: voice,
+      );
+      if (!mounted) return;
+      await Share.shareXFiles(
+        [
+          XFile(
+            midiFile.path,
+            name: displayFileName,
+            mimeType: 'audio/midi',
+          ),
+        ],
+        text: voice == null
+            ? '${canto.nombre} - Ensamble'
+            : '${canto.nombre} - ${voice.name}',
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('No se pudo compartir el audio: $e')),
+      );
     }
   }
 
@@ -603,8 +647,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           );
         }
       } else {
+        final mp3Name = MidiExportService.displayFileName(canto, voice: voice);
         await Share.shareXFiles(
-          [XFile(mp3.path, mimeType: 'audio/mpeg')],
+          [XFile(mp3.path, name: mp3Name, mimeType: 'audio/mpeg')],
           text: voice == null
               ? 'Ensamble: ${canto.nombre}'
               : '${voice.name}: ${canto.nombre}',
@@ -1024,12 +1069,49 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                                   BlendMode.multiply)),
                                       child: PdfViewer.file(
                                         state.localPath!,
-                                        key: ValueKey(
-                                            '${state.localPath}_${File(state.localPath!).existsSync() ? File(state.localPath!).lastModifiedSync().millisecondsSinceEpoch : 0}'),
+                                        key: ValueKey(state.localPath!),
                                         controller: _pdfController,
                                         params: PdfViewerParams(
+                                          maxPageCacheSize: 4,
                                           enableTextSelection: false,
                                           minScale: _minScaleLimit,
+                                          errorBannerBuilder:
+                                              (context, error, stackTrace) =>
+                                                  Center(
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(24.0),
+                                              child: Column(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  const Icon(
+                                                    Icons.error_outline_rounded,
+                                                    color: Colors.red,
+                                                    size: 48,
+                                                  ),
+                                                  const SizedBox(height: 12),
+                                                  const Text(
+                                                    'No se pudo abrir la partitura',
+                                                    style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 16,
+                                                    ),
+                                                  ),
+                                                  const SizedBox(height: 6),
+                                                  Text(
+                                                    '$error',
+                                                    textAlign: TextAlign.center,
+                                                    style: const TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.grey,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
                                           boundaryMargin: isMobile
                                               ? const EdgeInsets.only(
                                                   bottom: 96,

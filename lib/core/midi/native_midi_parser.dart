@@ -520,16 +520,34 @@ class NativeMidiParser {
         String displayName = trackName;
         final lowerName = trackName.toLowerCase();
         if (lowerName.contains('soprano 2') || lowerName == 's2') {
-          displayName = 'S2';
+          displayName = 'Soprano 2';
+        } else if (lowerName.contains('soprano 1') || lowerName == 's1') {
+          displayName = 'Soprano 1';
+        } else if (lowerName.contains('soprano')) {
+          displayName = 'Soprano';
         } else if (lowerName.contains('alto 2') || lowerName == 'a2') {
-          displayName = 'A2';
+          displayName = 'Alto 2';
+        } else if (lowerName.contains('alto 1') || lowerName == 'a1') {
+          displayName = 'Alto 1';
+        } else if (lowerName.contains('alto') || lowerName.contains('contralto')) {
+          displayName = 'Alto';
         } else if (lowerName.contains('tenor 2') || lowerName == 't2') {
-          displayName = 'T2';
+          displayName = 'Tenor 2';
+        } else if (lowerName.contains('tenor 1') || lowerName == 't1') {
+          displayName = 'Tenor 1';
+        } else if (lowerName.contains('tenor')) {
+          displayName = 'Tenor';
         } else if (lowerName.contains('bajo 2') || lowerName == 'b2') {
-          displayName = 'B2';
+          displayName = 'Bajo 2';
+        } else if (lowerName.contains('bajo 1') || lowerName == 'b1') {
+          displayName = 'Bajo 1';
+        } else if (lowerName.contains('bajo') || lowerName.contains('bass')) {
+          displayName = 'Bajo';
         } else if (lowerName.contains('baritono') ||
             lowerName.contains('barítono')) {
           displayName = 'Barítono';
+        } else if (lowerName.contains('solista') || lowerName.contains('solo')) {
+          displayName = 'Solista';
         }
 
         trackInfos.add(MidiTrackInfo(
@@ -571,7 +589,9 @@ class NativeMidiParser {
                 normalizedTempos,
                 defaultBpm,
               ),
-              bpm: (60000000 / tempo.microsecondsPerQuarter).round(),
+              bpm: tempo.microsecondsPerQuarter > 0
+                  ? (60000000 / tempo.microsecondsPerQuarter).round()
+                  : defaultBpm,
             ))
         .toList(growable: false);
 
@@ -620,41 +640,168 @@ class NativeMidiParser {
     );
   }
 
-  /// Conserva los nombres del MIDI únicamente cuando todas las pistas tienen
-  /// una etiqueta útil y no hay varios pianos que vuelvan ambigua la función
-  /// coral. Los escaneos de cuatro y cinco pentagramas se interpretan por el
-  /// orden convencional de la partitura.
+  static bool _isInstrumentName(String name) {
+    final lower = name.trim().toLowerCase();
+    if (lower.isEmpty) return true;
+    if (RegExp(r'^(pista|track|channel|canal)\s*\d*$').hasMatch(lower)) {
+      return true;
+    }
+    const instrumentKeywords = [
+      'piano',
+      'organ',
+      'flute',
+      'strings',
+      'guitar',
+      'bass',
+      'drums',
+      'keyboard',
+      'synth',
+      'violin',
+      'cello',
+      'harpsichord',
+      'brass',
+      'woodwind',
+      'percussion',
+      'instrument',
+      'acoust',
+      'electric',
+      'grand'
+    ];
+    for (final kw in instrumentKeywords) {
+      if (lower.contains(kw)) return true;
+    }
+    return false;
+  }
+
+  static bool _isClassicVoiceName(String name) {
+    if (_isInstrumentName(name)) return false;
+    final lower = name.trim().toLowerCase();
+    const voiceKeywords = [
+      'soprano',
+      'contralto',
+      'alto',
+      'tenor',
+      'bajo',
+      'solista',
+      'solo',
+      'baritono',
+      'barítono',
+      'mezzosoprano',
+      'mezzo',
+      'cantus',
+      'altus',
+      'bassus',
+      's1',
+      's2',
+      'a1',
+      'a2',
+      't1',
+      't2',
+      'b1',
+      'b2',
+      's',
+      'a',
+      't',
+      'b'
+    ];
+    for (final kw in voiceKeywords) {
+      if (lower == kw ||
+          lower.startsWith('$kw ') ||
+          lower.endsWith(' $kw') ||
+          lower.contains(' $kw ') ||
+          lower.contains('$kw 1') ||
+          lower.contains('$kw 2')) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /// Normaliza los nombres de las pistas ignorando nombres de instrumentos.
+  /// - 4 voces: forzar ['Soprano', 'Alto', 'Tenor', 'Bajo']
+  /// - 5 voces: si todas son voces clásicas (ej. Soprano, Alto, Tenor, Barítono, Bajo), respetarlas. Si no, ['Solista', 'Soprano', 'Alto', 'Tenor', 'Bajo']
+  /// - 8 voces: ['Soprano', 'Alto', 'Tenor', 'Bajo', 'Soprano 2', 'Alto 2', 'Tenor 2', 'Bajo 2'] (a menos que todas tengan nombres clásicos)
   static List<MidiTrackInfo> normalizeVoiceNames(
     List<MidiTrackInfo> tracks,
   ) {
-    if (tracks.length != 4 && tracks.length != 5) {
-      return List<MidiTrackInfo>.unmodifiable(tracks);
+    if (tracks.isEmpty) return List<MidiTrackInfo>.unmodifiable(tracks);
+
+    // 4 voces: DE AFUERZA es Soprano, Alto, Tenor, Bajo
+    if (tracks.length == 4) {
+      const labels = ['Soprano', 'Alto', 'Tenor', 'Bajo'];
+      return List<MidiTrackInfo>.unmodifiable([
+        for (var index = 0; index < 4; index++)
+          MidiTrackInfo(
+            index: tracks[index].index,
+            name: labels[index],
+            notes: tracks[index].notes,
+          ),
+      ]);
     }
 
-    final normalizedNames =
-        tracks.map((track) => track.name.trim().toLowerCase()).toList();
-    final allNamed = normalizedNames.every(
-      (name) =>
-          name.isNotEmpty && !RegExp(r'^(pista|track)\s*\d*$').hasMatch(name),
-    );
-    final pianoCount =
-        normalizedNames.where((name) => name.contains('piano')).length;
-
-    if (allNamed && pianoCount <= 1) {
-      return List<MidiTrackInfo>.unmodifiable(tracks);
+    // 5 voces: si TODAS las 5 pistas tienen nombre de voz clásico, SE RESPETAN.
+    // De lo contrario (o si hay pianos / pistas genéricas), Solista, Soprano, Alto, Tenor, Bajo.
+    if (tracks.length == 5) {
+      final allClassic =
+          tracks.every((track) => _isClassicVoiceName(track.name));
+      if (allClassic) {
+        return List<MidiTrackInfo>.unmodifiable(tracks);
+      } else {
+        const labels = ['Solista', 'Soprano', 'Alto', 'Tenor', 'Bajo'];
+        return List<MidiTrackInfo>.unmodifiable([
+          for (var index = 0; index < 5; index++)
+            MidiTrackInfo(
+              index: tracks[index].index,
+              name: labels[index],
+              notes: tracks[index].notes,
+            ),
+        ]);
+      }
     }
 
-    final labels = tracks.length == 5
-        ? const ['Solo', 'Soprano', 'Alto', 'Tenor', 'Bajo']
-        : const ['Soprano', 'Alto', 'Tenor', 'Bajo'];
-    return List<MidiTrackInfo>.unmodifiable([
-      for (var index = 0; index < tracks.length; index++)
-        MidiTrackInfo(
-          index: tracks[index].index,
-          name: labels[index],
-          notes: tracks[index].notes,
-        ),
-    ]);
+    // 8 voces: Soprano, Alto, Tenor, Bajo, Soprano 2, Alto 2, Tenor 2, Bajo 2
+    if (tracks.length == 8) {
+      final allClassic =
+          tracks.every((track) => _isClassicVoiceName(track.name));
+      if (allClassic) {
+        return List<MidiTrackInfo>.unmodifiable(tracks);
+      } else {
+        const labels = [
+          'Soprano',
+          'Alto',
+          'Tenor',
+          'Bajo',
+          'Soprano 2',
+          'Alto 2',
+          'Tenor 2',
+          'Bajo 2'
+        ];
+        return List<MidiTrackInfo>.unmodifiable([
+          for (var index = 0; index < 8; index++)
+            MidiTrackInfo(
+              index: tracks[index].index,
+              name: labels[index],
+              notes: tracks[index].notes,
+            ),
+        ]);
+      }
+    }
+
+    // Para cualquier otra cantidad de pistas, reemplazar nombres de instrumentos por Voz N
+    final result = <MidiTrackInfo>[];
+    for (var index = 0; index < tracks.length; index++) {
+      final track = tracks[index];
+      if (_isInstrumentName(track.name)) {
+        result.add(MidiTrackInfo(
+          index: track.index,
+          name: 'Voz ${index + 1}',
+          notes: track.notes,
+        ));
+      } else {
+        result.add(track);
+      }
+    }
+    return List<MidiTrackInfo>.unmodifiable(result);
   }
 
   // ── Lectura de variable-length int (VarInt) ─────────────────────────────
@@ -662,8 +809,8 @@ class NativeMidiParser {
       Uint8List bytes, int startOffset, void Function(int) setOffset) {
     int value = 0;
     int offset = startOffset;
+    int byte = 0;
 
-    int byte;
     do {
       if (offset >= bytes.length) break;
       byte = bytes[offset++];
@@ -677,25 +824,27 @@ class NativeMidiParser {
   // ── Conversión de ticks a segundos respetando cambios de tempo ────────
   static double _ticksToSeconds(
       int ticks, int ppq, List<_TempoEvent> tempoMap, int initialBpm) {
+    final safePpq = ppq > 0 ? ppq : 480;
+    final safeBpm = initialBpm > 0 ? initialBpm : 120;
     if (tempoMap.isEmpty) {
-      return (ticks / ppq) * (60.0 / initialBpm);
+      return (ticks / safePpq) * (60.0 / safeBpm);
     }
 
     double time = 0.0;
     int currentTick = 0;
-    int currentUsPerQuarter = (60000000 / initialBpm).round();
+    int currentUsPerQuarter = (60000000 / safeBpm).round();
 
     for (final te in tempoMap) {
       if (te.tick >= ticks) break;
       final deltaTicks = te.tick - currentTick;
-      time += (deltaTicks / ppq) * (currentUsPerQuarter / 1000000.0);
+      time += (deltaTicks / safePpq) * (currentUsPerQuarter / 1000000.0);
       currentTick = te.tick;
       currentUsPerQuarter = te.microsecondsPerQuarter;
     }
 
     if (ticks > currentTick) {
       final deltaTicks = ticks - currentTick;
-      time += (deltaTicks / ppq) * (currentUsPerQuarter / 1000000.0);
+      time += (deltaTicks / safePpq) * (currentUsPerQuarter / 1000000.0);
     }
 
     return time;

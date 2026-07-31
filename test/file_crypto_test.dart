@@ -111,18 +111,43 @@ void main() {
     ]);
     expect(
       unnamedFiveVoices.map((track) => track.name),
-      ['Solo', 'Soprano', 'Alto', 'Tenor', 'Bajo'],
+      ['Solista', 'Soprano', 'Alto', 'Tenor', 'Bajo'],
     );
 
-    final explicitNames = NativeMidiParser.normalizeVoiceNames([
-      track(0, 'Cantus'),
-      track(1, 'Altus'),
+    final baritonoFiveVoices = NativeMidiParser.normalizeVoiceNames([
+      track(0, 'Soprano'),
+      track(1, 'Alto'),
       track(2, 'Tenor'),
-      track(3, 'Bassus'),
+      track(3, 'Barítono'),
+      track(4, 'Bajo'),
     ]);
     expect(
-      explicitNames.map((track) => track.name),
-      ['Cantus', 'Altus', 'Tenor', 'Bassus'],
+      baritonoFiveVoices.map((track) => track.name),
+      ['Soprano', 'Alto', 'Tenor', 'Barítono', 'Bajo'],
+    );
+
+    final eightVoicesDefault = NativeMidiParser.normalizeVoiceNames([
+      track(0, 'Pista 1'),
+      track(1, 'Pista 2'),
+      track(2, 'Pista 3'),
+      track(3, 'Pista 4'),
+      track(4, 'Pista 5'),
+      track(5, 'Pista 6'),
+      track(6, 'Pista 7'),
+      track(7, 'Pista 8'),
+    ]);
+    expect(
+      eightVoicesDefault.map((track) => track.name),
+      [
+        'Soprano',
+        'Alto',
+        'Tenor',
+        'Bajo',
+        'Soprano 2',
+        'Alto 2',
+        'Tenor 2',
+        'Bajo 2'
+      ],
     );
   });
 
