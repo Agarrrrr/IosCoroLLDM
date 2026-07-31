@@ -17,6 +17,14 @@ void main() {
     expect(FileCrypto.isPdf(clear), isTrue);
   });
 
+  test('valida la partitura específica A él la Gloria y Alabanza', () async {
+    final file = File('assets/offline_assets/pdfs/a_el_la_gloria_y_alabanza-1781321071836.pdf');
+    expect(await file.exists(), isTrue);
+    final bytes = await file.readAsBytes();
+    final clear = FileCrypto.decryptIfNeeded(bytes);
+    expect(FileCrypto.isPdf(clear), isTrue);
+  });
+
   test('descifra un MIDI de la biblioteca offline', () async {
     final file = Directory('assets/offline_assets/midis')
         .listSync()

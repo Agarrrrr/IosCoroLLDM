@@ -51,7 +51,7 @@ class CoroLLDMApp extends ConsumerWidget {
             textScaler: data.textScaler
                 .clamp(minScaleFactor: 1.0, maxScaleFactor: 1.35),
           ),
-          child: AuthGate(child: child!),
+          child: child!,
         );
       },
       routerConfig: router,
