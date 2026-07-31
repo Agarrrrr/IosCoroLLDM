@@ -1075,7 +1075,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           enableTextSelection: false,
                                           minScale: _minScaleLimit,
                                           errorBannerBuilder:
-                                              (context, error, stackTrace) =>
+                                              (context, error, stackTrace, documentRef) =>
                                                   Center(
                                             child: Padding(
                                               padding:
