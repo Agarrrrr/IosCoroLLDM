@@ -1,6 +1,7 @@
 import Flutter
 import UIKit
 import AVFoundation
+import AudioToolbox
 import UserNotifications
 
 @main
@@ -84,7 +85,7 @@ import UserNotifications
         try sampler.loadSoundbankInstrument(
           at: sfURL,
           program: 0,
-          bankMSB: UInt8(kAudioUnitSamplerBank_GraphicSoundBank),
+          bankMSB: 0x79,
           bankLSB: 0
         )
 
