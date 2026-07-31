@@ -229,6 +229,40 @@ class AdsService with WidgetsBindingObserver {
     await ad.show();
   }
 
+  /// Llamar cuando un export de audio fue exitoso (no si fue cancelado).
+  /// Muestra un anuncio intersticial de fondo sin bloquear la UI.
+  Future<void> onExportCompleted() async {
+    if (_premium || !_initialized) return;
+    final count = ((_box.get('export_ad_count') as int?) ?? 0) + 1;
+    final threshold = (_box.get('export_ad_threshold') as int?) ?? 2;
+    if (count < threshold) {
+      await _box.put('export_ad_count', count);
+      return;
+    }
+    await _box.put('export_ad_count', 0);
+    await _box.put('export_ad_threshold', 1 + Random().nextInt(3));
+    final ad = _interstitial;
+    if (ad == null || _showingFullScreen) {
+      _loadInterstitial();
+      return;
+    }
+    _interstitial = null;
+    _showingFullScreen = true;
+    ad.fullScreenContentCallback = FullScreenContentCallback(
+      onAdDismissedFullScreenContent: (ad) {
+        ad.dispose();
+        _showingFullScreen = false;
+        _loadInterstitial();
+      },
+      onAdFailedToShowFullScreenContent: (ad, _) {
+        ad.dispose();
+        _showingFullScreen = false;
+        _loadInterstitial();
+      },
+    );
+    await ad.show();
+  }
+
   void _loadRewarded() {
     final id = AdUnitIds.rewarded;
     if (_premium || id == null || _rewarded != null) return;
