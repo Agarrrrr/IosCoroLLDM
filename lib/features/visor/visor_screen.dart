@@ -1072,7 +1072,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                         key: ValueKey(state.localPath!),
                                         controller: _pdfController,
                                         params: PdfViewerParams(
-                                          maxPageCacheSize: 4,
                                           enableTextSelection: false,
                                           minScale: _minScaleLimit,
                                           errorBannerBuilder:
