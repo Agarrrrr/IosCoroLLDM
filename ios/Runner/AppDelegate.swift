@@ -91,12 +91,6 @@ import UserNotifications
           track.destinationAudioUnit = sampler
         }
 
-        let duration = sequencer.length.durationInSeconds
-        guard duration > 0 else {
-          completion(false, "El archivo MIDI no contiene datos de audio")
-          return
-        }
-
         let sampleRate: Double = 44100.0
         let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)!
 
@@ -107,16 +101,31 @@ import UserNotifications
         let outputFile = try AVAudioFile(forWriting: outURL, settings: format.settings)
         let buffer = AVAudioPCMBuffer(pcmFormat: engine.manualRenderingFormat, frameCapacity: 4096)!
 
-        let totalFrames = AVAudioFramePosition((duration + 1.0) * sampleRate)
-        while engine.manualRenderingSampleTime < totalFrames {
-          let framesToRender = min(AVAudioFrameCount(4096), AVAudioFrameCount(totalFrames - engine.manualRenderingSampleTime))
+        // Cap de seguridad: 20 minutos
+        let maxFrames = AVAudioFramePosition(1200.0 * sampleRate)
+        // Detección de fin de secuencia: si la posición no avanza en
+        // ~3 segundos de audio renderizado, damos la canción por terminada.
+        let stallThreshold = Int(3.0 * sampleRate / 4096.0)
+        var stallCount = 0
+        var prevPosition: Double = -1.0
+
+        while engine.manualRenderingSampleTime < maxFrames {
+          let remaining = maxFrames - engine.manualRenderingSampleTime
+          let framesToRender = min(AVAudioFrameCount(4096), AVAudioFrameCount(remaining))
           let status = try engine.renderOffline(framesToRender, to: buffer)
-          if status == .success {
-            try outputFile.write(from: buffer)
+          guard status == .success else { break }
+          try outputFile.write(from: buffer)
+
+          let pos = sequencer.currentPositionInSeconds
+          if pos <= prevPosition {
+            stallCount += 1
+            if stallCount >= stallThreshold { break }
           } else {
-            break
+            stallCount = 0
+            prevPosition = pos
           }
         }
+
         sequencer.stop()
         engine.stop()
         completion(true, nil)
