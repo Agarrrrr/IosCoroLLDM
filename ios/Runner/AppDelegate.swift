@@ -82,12 +82,7 @@ import UserNotifications
         engine.attach(sampler)
         engine.connect(sampler, to: engine.mainMixerNode, format: nil)
 
-        try sampler.loadSoundbankInstrument(
-          at: sfURL,
-          program: 0,
-          bankMSB: 0x79,
-          bankLSB: 0
-        )
+        try sampler.loadInstrument(at: sfURL)
 
         let sequencer = AVAudioSequencer(audioEngine: engine)
         try sequencer.load(from: midiURL, options: [])
