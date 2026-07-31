@@ -443,8 +443,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     const _ShareSelection(_ShareKind.ensemble),
                   ),
                 ),
-                if (Platform.isAndroid)
-                  ListTile(
+                ListTile(
                     leading: const Icon(
                       Icons.library_music_rounded,
                       color: Colors.deepOrange,
@@ -503,7 +502,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         await File(localPdfPath).copy(sharePdf.path);
         await Share.shareXFiles(
           [XFile(sharePdf.path, name: pdfName, mimeType: 'application/pdf')],
-          text: 'Partitura: ${canto.nombre}',
+          subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
       } else if (mounted) {
@@ -517,7 +516,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
 
     if (!Platform.isAndroid) {
-      await _exportarAudioIOS(canto, selection.voice);
+      if (selection.kind == _ShareKind.allVoices) {
+        await _exportarTodasLasVocesIOS(canto, voices);
+      } else {
+        await _exportarAudioIOS(canto, selection.voice);
+      }
       return;
     }
 
@@ -618,37 +621,144 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     Canto canto,
     MidiExportVoice? voice,
   ) async {
+    var dialogOpen = true;
+    showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (dialogContext) => PopScope(
+        canPop: false,
+        child: AlertDialog(
+          content: Row(
+            children: [
+              const CircularProgressIndicator(),
+              const SizedBox(width: 20),
+              Expanded(
+                child: Text(
+                  voice == null
+                      ? 'Convirtiendo ensamble a MP3…'
+                      : 'Convirtiendo ${voice.name} a MP3…',
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
     try {
-      final midiFile = await MidiExportService.exportMidiVoice(
+      final mp3 = await MidiExportService.exportMp3(
         canto,
         trackIndex: voice?.trackIndex,
         voiceName: voice?.name,
       );
-      final displayFileName = MidiExportService.displayMidiFileName(
+      final displayFileName = MidiExportService.displayFileName(
         canto,
         voice: voice,
       );
       if (!mounted) return;
+      if (dialogOpen) {
+        Navigator.of(context, rootNavigator: true).pop();
+        dialogOpen = false;
+      }
       await Share.shareXFiles(
-        [
-          XFile(
-            midiFile.path,
-            name: displayFileName,
-            mimeType: 'audio/midi',
-          ),
-        ],
-        text: voice == null
-            ? '${canto.nombre} - Ensamble'
-            : '${canto.nombre} - ${voice.name}',
+        [XFile(mp3.path, name: displayFileName, mimeType: 'audio/mpeg')],
+        subject: canto.nombre,
         sharePositionOrigin: _shareButtonRect(),
       );
-      // Export exitoso: mostrar intersticial en background
       unawaited(AdsService.instance.onExportCompleted());
     } catch (e) {
+      if (mounted && dialogOpen) {
+        Navigator.of(context, rootNavigator: true).pop();
+      }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('No se pudo compartir el audio: $e')),
+        SnackBar(content: Text('No se pudo exportar el audio: $e')),
       );
+    }
+  }
+
+  Future<void> _exportarTodasLasVocesIOS(
+    Canto canto,
+    List<MidiExportVoice> voices,
+  ) async {
+    final progress =
+        ValueNotifier<(int, int, String)>((0, voices.length + 1, 'Ensamble'));
+    var cancelled = false;
+    var dialogOpen = true;
+    showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (dialogContext) => PopScope(
+        canPop: false,
+        child: AlertDialog(
+          title: const Text('Preparando archivos MP3'),
+          content: ValueListenableBuilder<(int, int, String)>(
+            valueListenable: progress,
+            builder: (context, value, child) {
+              final completed = value.$1;
+              final total = value.$2;
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  LinearProgressIndicator(
+                    value: total == 0 ? null : completed / total,
+                  ),
+                  const SizedBox(height: 16),
+                  Text('${value.$3}\n$completed de $total'),
+                ],
+              );
+            },
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                cancelled = true;
+                progress.value = progress.value;
+              },
+              child: const Text('Cancelar'),
+            ),
+          ],
+        ),
+      ),
+    );
+    try {
+      final files = await MidiExportService.exportAllMp3(
+        canto,
+        onProgress: (completed, total, label) {
+          progress.value = (completed, total, label);
+        },
+        isCancelled: () => cancelled,
+      );
+      if (!mounted) return;
+      if (dialogOpen) {
+        Navigator.of(context, rootNavigator: true).pop();
+        dialogOpen = false;
+      }
+      if (files.isEmpty || cancelled) return;
+      final names = <String>[
+        MidiExportService.displayFileName(canto),
+        for (final voice in voices)
+          MidiExportService.displayFileName(canto, voice: voice),
+      ];
+      await Share.shareXFiles(
+        [
+          for (var i = 0; i < files.length; i++)
+            XFile(files[i].path, name: names[i], mimeType: 'audio/mpeg'),
+        ],
+        subject: canto.nombre,
+        sharePositionOrigin: _shareButtonRect(),
+      );
+      unawaited(AdsService.instance.onExportCompleted());
+    } catch (e) {
+      if (mounted && dialogOpen) {
+        Navigator.of(context, rootNavigator: true).pop();
+      }
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('No se pudieron exportar los MP3: $e')),
+      );
+    } finally {
+      progress.dispose();
     }
   }
 
@@ -743,9 +853,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         final mp3Name = MidiExportService.displayFileName(canto, voice: voice);
         await Share.shareXFiles(
           [XFile(mp3.path, name: mp3Name, mimeType: 'audio/mpeg')],
-          text: voice == null
-              ? 'Ensamble: ${canto.nombre}'
-              : '${voice.name}: ${canto.nombre}',
+          subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
         unawaited(AdsService.instance.onExportCompleted());
@@ -851,7 +959,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           [
             for (final file in files) XFile(file.path, mimeType: 'audio/mpeg'),
           ],
-          text: 'Ensamble y voces: ${canto.nombre}',
+          subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
         unawaited(AdsService.instance.onExportCompleted());
