@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pdfrx/pdfrx.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -66,6 +67,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   final PdfViewerController _pdfController = PdfViewerController();
   Orientation? _lastOrientation;
   double _minScaleLimit = 0.1;
+
+  // Clave global para obtener la posición del botón de compartir (requerida en iOS)
+  final GlobalKey _shareButtonKey = GlobalKey();
 
   @override
   void initState() {
@@ -500,6 +504,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         await Share.shareXFiles(
           [XFile(sharePdf.path, name: pdfName, mimeType: 'application/pdf')],
           text: 'Partitura: ${canto.nombre}',
+          sharePositionOrigin: _shareButtonRect(),
         );
       } else if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -522,6 +527,90 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       await _exportarTodasLasVoces(canto, voices, destination);
     } else {
       await _exportarMp3(canto, selection.voice, destination);
+    }
+  }
+
+  /// Devuelve el Rect del botón de compartir para iOS share sheet.
+  Rect _shareButtonRect() {
+    final renderBox = _shareButtonKey.currentContext?.findRenderObject()
+        as RenderBox?;
+    if (renderBox == null) return Rect.zero;
+    final offset = renderBox.localToGlobal(Offset.zero);
+    return offset & renderBox.size;
+  }
+
+  /// Verifica el límite de exports diarios antes de abrir el menú de compartir.
+  Future<void> _checkExportLimitAndProceed(
+    Canto canto,
+    String? localPdfPath,
+  ) async {
+    final monetization = ref.read(monetizationProvider.notifier);
+    final canExport = await monetization.consumeAudioExport();
+    if (!mounted) return;
+    if (!canExport) {
+      await _mostrarDialogoLimiteExport(canto, localPdfPath);
+      return;
+    }
+    await _mostrarMenuCompartirMp3(canto, localPdfPath);
+  }
+
+  /// Diálogo de límite diario de exports alcanzado (solo usuarios free).
+  Future<void> _mostrarDialogoLimiteExport(
+    Canto canto,
+    String? localPdfPath,
+  ) async {
+    final strings = AppStrings.of(context);
+    final result = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(strings.t('Límite diario alcanzado', 'Daily limit reached')),
+        content: Text(strings.t(
+          'Puedes exportar 3 audios gratis al día. ¿Quieres ver un anuncio breve '
+          'para obtener 1 más, o apoyar el desarrollo con Premium?',
+          'You can export 3 free audios per day. Watch a short ad to get 1 more, '
+          'or support the app with Premium.',
+        )),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, 'cancel'),
+            child: Text(strings.t('Cancelar', 'Cancel')),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, 'premium'),
+            child: Text(strings.t('Ir a Premium', 'Go Premium')),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, 'rewarded'),
+            child: Text(strings.t('Ver anuncio', 'Watch ad')),
+          ),
+        ],
+      ),
+    );
+    if (!mounted || result == null || result == 'cancel') return;
+    if (result == 'premium') {
+      await showDialog<void>(
+        context: context,
+        builder: (_) => const PremiumDialog(),
+      );
+      return;
+    }
+    // 'rewarded'
+    final earned = await AdsService.instance.showRewarded();
+    if (!mounted) return;
+    if (earned) {
+      await ref.read(monetizationProvider.notifier).grantRewardedExport();
+      // Consume el crédito recién otorgado
+      await ref.read(monetizationProvider.notifier).consumeAudioExport();
+      await _mostrarMenuCompartirMp3(canto, localPdfPath);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(strings.t(
+            'El anuncio no está disponible aún. Inténtalo de nuevo.',
+            'Ad not available yet. Please try again.',
+          )),
+        ),
+      );
     }
   }
 
@@ -551,7 +640,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         text: voice == null
             ? '${canto.nombre} - Ensamble'
             : '${canto.nombre} - ${voice.name}',
+        sharePositionOrigin: _shareButtonRect(),
       );
+      // Export exitoso: mostrar intersticial en background
+      unawaited(AdsService.instance.onExportCompleted());
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -645,6 +737,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('MP3 guardado correctamente.')),
           );
+          unawaited(AdsService.instance.onExportCompleted());
         }
       } else {
         final mp3Name = MidiExportService.displayFileName(canto, voice: voice);
@@ -653,7 +746,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           text: voice == null
               ? 'Ensamble: ${canto.nombre}'
               : '${voice.name}: ${canto.nombre}',
+          sharePositionOrigin: _shareButtonRect(),
         );
+        unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
       if (!mounted) return;
@@ -749,6 +844,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('${files.length} archivos MP3 guardados.')),
           );
+          unawaited(AdsService.instance.onExportCompleted());
         }
       } else {
         await Share.shareXFiles(
@@ -756,7 +852,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
             for (final file in files) XFile(file.path, mimeType: 'audio/mpeg'),
           ],
           text: 'Ensamble y voces: ${canto.nombre}',
+          sharePositionOrigin: _shareButtonRect(),
         );
+        unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
       if (!mounted) return;
@@ -1024,13 +1122,16 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                   'MIDI player',
                                 ),
                               ),
-                            _TopBarBtn(
-                              icon: Icons.ios_share_rounded,
-                              onTap: () => _mostrarMenuCompartirMp3(
-                                  canto, state.localPath),
-                              tooltip: strings.t(
-                                'Compartir o guardar',
-                                'Share or save',
+                            SizedBox(
+                              key: _shareButtonKey,
+                              child: _TopBarBtn(
+                                icon: Icons.ios_share_rounded,
+                                onTap: () => _checkExportLimitAndProceed(
+                                    canto, state.localPath),
+                                tooltip: strings.t(
+                                  'Compartir o guardar',
+                                  'Share or save',
+                                ),
                               ),
                             ),
                             _TopBarBtn(
