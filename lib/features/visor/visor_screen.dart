@@ -26,6 +26,7 @@ import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/features/premium/premium_dialog.dart';
 
 const List<double> _kSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0];
+const double _kScaleEpsilon = 0.001;
 
 enum _ShareKind { pdf, ensemble, allVoices, voice }
 
@@ -226,22 +227,31 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }
 
   void _calcularLimiteEscala(PdfDocument document) {
-    if (document.pages.isNotEmpty) {
-      final firstPageWidth = document.pages.first.width;
-      final viewWidth = MediaQuery.of(context).size.width;
-      final scale = viewWidth / firstPageWidth;
-      if (mounted && (_minScaleLimit - scale).abs() > 0.001) {
-        setState(() {
-          _minScaleLimit = scale;
-        });
-        // Forzar al controlador a respetar el minScale bloqueando la matriz
-        if (_pdfController.isReady) {
-          final currentMatrix = _pdfController.value;
-          final currentScale = currentMatrix.getMaxScaleOnAxis();
-          if (currentScale < _minScaleLimit) {
-            _ajustarZoomAlAncho();
-          }
-        }
+    if (document.pages.isEmpty) return;
+
+    final firstPageWidth = document.pages.first.width;
+    final viewWidth = MediaQuery.sizeOf(context).width;
+    if (!firstPageWidth.isFinite ||
+        firstPageWidth <= 0 ||
+        !viewWidth.isFinite ||
+        viewWidth <= 0) {
+      return;
+    }
+
+    final scale = viewWidth / firstPageWidth;
+    if (!mounted || (_minScaleLimit - scale).abs() <= _kScaleEpsilon) {
+      return;
+    }
+
+    setState(() {
+      _minScaleLimit = scale;
+    });
+    // Forzar al controlador a respetar el minScale bloqueando la matriz.
+    if (_pdfController.isReady) {
+      final currentMatrix = _pdfController.value;
+      final currentScale = currentMatrix.getMaxScaleOnAxis();
+      if (currentScale + _kScaleEpsilon < scale) {
+        _ajustarZoomAlAncho();
       }
     }
   }

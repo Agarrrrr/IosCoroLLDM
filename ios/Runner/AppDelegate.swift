@@ -92,14 +92,45 @@ import UserNotifications
         }
 
         let sampleRate: Double = 44100.0
-        let pcmFormat = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: sampleRate, channels: 2, interleaved: true)!
+        guard let engineFormat = AVAudioFormat(
+          standardFormatWithSampleRate: sampleRate,
+          channels: 2
+        ), let fileFormat = AVAudioFormat(
+          commonFormat: .pcmFormatInt16,
+          sampleRate: sampleRate,
+          channels: 2,
+          interleaved: true
+        ) else {
+          throw NSError(
+            domain: "com.lldm.coro.midi_render",
+            code: -1,
+            userInfo: [NSLocalizedDescriptionKey: "No se pudieron crear los formatos de audio"]
+          )
+        }
 
-        try engine.enableManualRenderingMode(.offline, format: pcmFormat, maximumFrameCount: 4096)
+        try engine.enableManualRenderingMode(.offline, format: engineFormat, maximumFrameCount: 4096)
         try engine.start()
         try sequencer.start()
 
-        let outputFile = try AVAudioFile(forWriting: outURL, settings: pcmFormat.settings)
-        let buffer = AVAudioPCMBuffer(pcmFormat: engine.manualRenderingFormat, frameCapacity: 4096)!
+        // El motor exige su formato canónico Float32 no intercalado. El archivo
+        // conserva ese formato de procesamiento y AVAudioFile convierte a PCM16
+        // intercalado al escribir el WAV.
+        let outputFile = try AVAudioFile(
+          forWriting: outURL,
+          settings: fileFormat.settings,
+          commonFormat: .pcmFormatFloat32,
+          interleaved: false
+        )
+        guard let buffer = AVAudioPCMBuffer(
+          pcmFormat: engine.manualRenderingFormat,
+          frameCapacity: 4096
+        ) else {
+          throw NSError(
+            domain: "com.lldm.coro.midi_render",
+            code: -2,
+            userInfo: [NSLocalizedDescriptionKey: "No se pudo crear el buffer de renderizado"]
+          )
+        }
 
         // Cap de seguridad: 20 minutos
         let maxFrames = AVAudioFramePosition(1200.0 * sampleRate)
@@ -135,4 +166,3 @@ import UserNotifications
     }
   }
 }
-
