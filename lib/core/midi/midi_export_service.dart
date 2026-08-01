@@ -283,24 +283,37 @@ class MidiExportService {
       const framesPerChunk = 8192;
       await input.setPosition(wavInfo.dataOffset);
       var remainingFrames = wavInfo.frameCount;
+      final bytesPerSample = wavInfo.bitsPerSample ~/ 8;
+      final bytesPerFrame = wavInfo.channels * bytesPerSample;
+
       while (remainingFrames > 0) {
         final requestedFrames = remainingFrames.clamp(0, framesPerChunk);
-        final pcm = await input.read(
-            requestedFrames * wavInfo.channels * Int16List.bytesPerElement);
-        final count =
-            pcm.length ~/ (wavInfo.channels * Int16List.bytesPerElement);
+        final pcm = await input.read(requestedFrames * bytesPerFrame);
+        final count = pcm.length ~/ bytesPerFrame;
         if (count == 0) break;
         final pcmData = ByteData.sublistView(pcm);
         final left = Int16List(count);
         final right = wavInfo.channels == 2 ? Int16List(count) : null;
         for (var i = 0; i < count; i++) {
-          final sampleOffset = i * wavInfo.channels * Int16List.bytesPerElement;
-          left[i] = pcmData.getInt16(sampleOffset, Endian.little);
-          if (right != null) {
-            right[i] = pcmData.getInt16(
-              sampleOffset + Int16List.bytesPerElement,
-              Endian.little,
-            );
+          final sampleOffset = i * bytesPerFrame;
+          if (wavInfo.isFloat) {
+            final fLeft = pcmData.getFloat32(sampleOffset, Endian.little);
+            left[i] = (fLeft * 32767.0).clamp(-32768.0, 32767.0).toInt();
+            if (right != null) {
+              final fRight = pcmData.getFloat32(
+                sampleOffset + 4,
+                Endian.little,
+              );
+              right[i] = (fRight * 32767.0).clamp(-32768.0, 32767.0).toInt();
+            }
+          } else {
+            left[i] = pcmData.getInt16(sampleOffset, Endian.little);
+            if (right != null) {
+              right[i] = pcmData.getInt16(
+                sampleOffset + 2,
+                Endian.little,
+              );
+            }
           }
         }
         sink.add(await encoder.encode(
@@ -325,7 +338,7 @@ class MidiExportService {
     if (riffHeader.length < 12 ||
         String.fromCharCodes(riffHeader.sublist(0, 4)) != 'RIFF' ||
         String.fromCharCodes(riffHeader.sublist(8, 12)) != 'WAVE') {
-      throw const FormatException('FluidSynth no generó un WAV válido');
+      throw const FormatException('El archivo no es un WAV válido');
     }
 
     int? channels;
@@ -333,6 +346,7 @@ class MidiExportService {
     int? bitsPerSample;
     int? dataOffset;
     int? dataLength;
+    bool isFloat = false;
     var offset = 12;
 
     while (offset + 8 <= fileLength) {
@@ -349,9 +363,10 @@ class MidiExportService {
         if (formatBytes.length < 16) break;
         final format = ByteData.sublistView(formatBytes);
         final encoding = format.getUint16(0, Endian.little);
-        if (encoding != 1) {
+        if (encoding != 1 && encoding != 3) {
           throw const FormatException('Se esperaba audio PCM');
         }
+        isFloat = (encoding == 3);
         channels = format.getUint16(2, Endian.little);
         sampleRate = format.getUint32(4, Endian.little);
         bitsPerSample = format.getUint16(14, Endian.little);
@@ -365,17 +380,20 @@ class MidiExportService {
 
     if (channels == null ||
         sampleRate == null ||
-        bitsPerSample != 16 ||
+        bitsPerSample == null ||
         dataOffset == null ||
         dataLength == null ||
         (channels != 1 && channels != 2)) {
       throw const FormatException('Formato WAV no compatible');
     }
+    final bytesPerSample = bitsPerSample ~/ 8;
     return _WavInfo(
       channels: channels,
       sampleRate: sampleRate,
       dataOffset: dataOffset,
-      frameCount: dataLength ~/ (channels * 2),
+      frameCount: dataLength ~/ (channels * bytesPerSample),
+      bitsPerSample: bitsPerSample,
+      isFloat: isFloat,
     );
   }
 
@@ -393,12 +411,16 @@ class _WavInfo {
   final int sampleRate;
   final int dataOffset;
   final int frameCount;
+  final int bitsPerSample;
+  final bool isFloat;
 
   const _WavInfo({
     required this.channels,
     required this.sampleRate,
     required this.dataOffset,
     required this.frameCount,
+    required this.bitsPerSample,
+    required this.isFloat,
   });
 }
 

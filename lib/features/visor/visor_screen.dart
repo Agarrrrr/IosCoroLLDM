@@ -362,6 +362,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     String? localPdfPath,
   ) async {
     final theme = Theme.of(context);
+    final strings = AppStrings.of(context);
     List<MidiExportVoice> voices = const [];
     String? midiError;
     if (canto.midiArchivo != null && canto.midiArchivo!.isNotEmpty) {
@@ -401,7 +402,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
               ),
               const SizedBox(height: 16),
               Text(
-                '${Platform.isAndroid ? 'Exportar' : 'Compartir'} '
+                '${strings.t(Platform.isAndroid ? 'Exportar' : 'Compartir', Platform.isAndroid ? 'Export' : 'Share')} '
                 '"${canto.nombre}"',
                 style: GoogleFonts.inter(
                   fontSize: 18,
@@ -416,9 +417,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   Icons.picture_as_pdf_rounded,
                   color: theme.colorScheme.primary,
                 ),
-                title: const Text('Partitura (PDF)'),
+                title: Text(strings.t('Partitura (PDF)', 'Sheet Music (PDF)')),
                 subtitle: Text(
-                  AppStrings.of(context).t(
+                  strings.t(
                     'Compartir la partitura',
                     'Share the score',
                   ),
@@ -434,33 +435,41 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     Icons.groups_rounded,
                     color: Colors.amber,
                   ),
-                  title: const Text('Ensamble completo (MP3)'),
-                  subtitle: const Text(
+                  title: Text(strings.t(
+                    'Ensamble completo (MP3)',
+                    'Full Ensemble (MP3)',
+                  )),
+                  subtitle: Text(strings.t(
                     'Convertir todas las voces en el dispositivo',
-                  ),
+                    'Convert all voices on device',
+                  )),
                   onTap: () => Navigator.pop(
                     sheetContext,
                     const _ShareSelection(_ShareKind.ensemble),
                   ),
                 ),
                 ListTile(
-                    leading: const Icon(
-                      Icons.library_music_rounded,
-                      color: Colors.deepOrange,
-                    ),
-                    title: const Text('Ensamble y todas las voces (MP3)'),
-                    subtitle: const Text(
-                      'Convertir todo en una sola operación',
-                    ),
-                    onTap: () => Navigator.pop(
-                      sheetContext,
-                      const _ShareSelection(_ShareKind.allVoices),
-                    ),
+                  leading: const Icon(
+                    Icons.library_music_rounded,
+                    color: Colors.deepOrange,
                   ),
+                  title: Text(strings.t(
+                    'Ensamble y todas las voces (MP3)',
+                    'Ensemble and all voices (MP3)',
+                  )),
+                  subtitle: Text(strings.t(
+                    'Convertir todo en una sola operación',
+                    'Convert all in a single operation',
+                  )),
+                  onTap: () => Navigator.pop(
+                    sheetContext,
+                    const _ShareSelection(_ShareKind.allVoices),
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
                   child: Text(
-                    'VOCES INDIVIDUALES',
+                    strings.t('VOCES INDIVIDUALES', 'INDIVIDUAL VOICES'),
                     style: GoogleFonts.inter(
                       fontSize: 11,
                       fontWeight: FontWeight.w800,
@@ -473,7 +482,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   ListTile(
                     leading: const Icon(Icons.graphic_eq_rounded),
                     title: Text(voice.name),
-                    subtitle: const Text('Convertir esta voz a MP3'),
+                    subtitle: Text(strings.t(
+                      'Convertir esta voz a MP3',
+                      'Convert this voice to MP3',
+                    )),
                     onTap: () => Navigator.pop(
                       sheetContext,
                       _ShareSelection(_ShareKind.voice, voice),
@@ -613,6 +625,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     Canto canto,
     MidiExportVoice? voice,
   ) async {
+    final strings = AppStrings.of(context);
     var dialogOpen = true;
     showDialog<void>(
       context: context,
@@ -627,8 +640,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
               Expanded(
                 child: Text(
                   voice == null
-                      ? 'Convirtiendo ensamble a MP3…'
-                      : 'Convirtiendo ${voice.name} a MP3…',
+                      ? strings.t('Convirtiendo ensamble a MP3…', 'Converting ensemble to MP3…')
+                      : strings.t('Convirtiendo ${voice.name} a MP3…', 'Converting ${voice.name} to MP3…'),
                 ),
               ),
             ],
@@ -664,7 +677,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('No se pudo exportar el audio: $e')),
+        SnackBar(content: Text('${strings.t('No se pudo exportar el audio', 'Could not export audio')}: $e')),
       );
     }
   }
@@ -673,8 +686,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     Canto canto,
     List<MidiExportVoice> voices,
   ) async {
+    final strings = AppStrings.of(context);
     final progress =
-        ValueNotifier<(int, int, String)>((0, voices.length + 1, 'Ensamble'));
+        ValueNotifier<(int, int, String)>((0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
     var cancelled = false;
     var dialogOpen = true;
     showDialog<void>(
@@ -683,7 +697,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       builder: (dialogContext) => PopScope(
         canPop: false,
         child: AlertDialog(
-          title: const Text('Preparando archivos MP3'),
+          title: Text(strings.t('Preparando archivos MP3', 'Preparing MP3 files')),
           content: ValueListenableBuilder<(int, int, String)>(
             valueListenable: progress,
             builder: (context, value, child) {
@@ -697,7 +711,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     value: total == 0 ? null : completed / total,
                   ),
                   const SizedBox(height: 16),
-                  Text('${value.$3}\n$completed de $total'),
+                  Text('${value.$3}\n$completed ${strings.t('de', 'of')} $total'),
                 ],
               );
             },
@@ -708,7 +722,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                 cancelled = true;
                 progress.value = progress.value;
               },
-              child: const Text('Cancelar'),
+              child: Text(strings.t('Cancelar', 'Cancel')),
             ),
           ],
         ),
@@ -749,7 +763,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('No se pudieron exportar los MP3: $e')),
+        SnackBar(content: Text('${strings.t('No se pudieron exportar los MP3', 'Could not export MP3s')}: $e')),
       );
     } finally {
       progress.dispose();
@@ -758,6 +772,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
   Future<_ExportDestination?> _elegirDestino() async {
     if (!Platform.isAndroid) return _ExportDestination.share;
+    final strings = AppStrings.of(context);
     return showModalBottomSheet<_ExportDestination>(
       context: context,
       builder: (sheetContext) => SafeArea(
@@ -766,8 +781,14 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           children: [
             ListTile(
               leading: const Icon(Icons.save_alt_rounded),
-              title: const Text('Guardar en dispositivo'),
-              subtitle: const Text('Elegir nombre y ubicación'),
+              title: Text(strings.t(
+                'Guardar en dispositivo',
+                'Save to device',
+              )),
+              subtitle: Text(strings.t(
+                'Elegir nombre y ubicación',
+                'Choose name and location',
+              )),
               onTap: () => Navigator.pop(
                 sheetContext,
                 _ExportDestination.save,
@@ -775,8 +796,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.ios_share_rounded),
-              title: const Text('Compartir'),
-              subtitle: const Text('Enviar mediante otra aplicación'),
+              title: Text(strings.t('Compartir', 'Share')),
+              subtitle: Text(strings.t(
+                'Enviar mediante otra aplicación',
+                'Send via another app',
+              )),
               onTap: () => Navigator.pop(
                 sheetContext,
                 _ExportDestination.share,
@@ -793,7 +817,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     MidiExportVoice? voice,
     _ExportDestination destination,
   ) async {
-    var operation = 'crear';
+    final strings = AppStrings.of(context);
+    var operation = strings.t('crear', 'create');
     var dialogOpen = true;
     showDialog<void>(
       context: context,
@@ -808,8 +833,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
               Expanded(
                 child: Text(
                   voice == null
-                      ? 'Convirtiendo ensamble a MP3…'
-                      : 'Convirtiendo ${voice.name} a MP3…',
+                      ? strings.t('Convirtiendo ensamble a MP3…', 'Converting ensemble to MP3…')
+                      : strings.t('Convirtiendo ${voice.name} a MP3…', 'Converting ${voice.name} to MP3…'),
                 ),
               ),
             ],
@@ -830,7 +855,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         dialogOpen = false;
       }
       if (destination == _ExportDestination.save) {
-        operation = 'guardar';
+        operation = strings.t('guardar', 'save');
         final saved = await AndroidFileSaver.save([
           AndroidSaveFile(
             file: mp3,
@@ -839,7 +864,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         ]);
         if (mounted && saved) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('MP3 guardado correctamente.')),
+            SnackBar(content: Text(strings.t('MP3 guardado correctamente.', 'MP3 saved successfully.'))),
           );
           await ref.read(monetizationProvider.notifier).consumeAudioExport();
           unawaited(AdsService.instance.onExportCompleted());
@@ -861,7 +886,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         dialogOpen = false;
       }
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('No se pudo $operation el MP3: $e')),
+        SnackBar(content: Text('${strings.t('No se pudo', 'Could not')} $operation ${strings.t('el MP3', 'the MP3')}: $e')),
       );
     }
   }
@@ -871,18 +896,19 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     List<MidiExportVoice> voices,
     _ExportDestination destination,
   ) async {
+    final strings = AppStrings.of(context);
     final progress =
-        ValueNotifier<(int, int, String)>((0, voices.length + 1, 'Ensamble'));
+        ValueNotifier<(int, int, String)>((0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
     var cancelled = false;
     var dialogOpen = true;
-    var operation = 'crear';
+    var operation = strings.t('crear', 'create');
     showDialog<void>(
       context: context,
       barrierDismissible: false,
       builder: (dialogContext) => PopScope(
         canPop: false,
         child: AlertDialog(
-          title: const Text('Preparando archivos MP3'),
+          title: Text(strings.t('Preparando archivos MP3', 'Preparing MP3 files')),
           content: ValueListenableBuilder<(int, int, String)>(
             valueListenable: progress,
             builder: (context, value, child) {
@@ -898,8 +924,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   const SizedBox(height: 16),
                   Text(
                     cancelled
-                        ? 'Cancelando al terminar el archivo actual…'
-                        : '${value.$3}\n$completed de $total',
+                        ? strings.t('Cancelando al terminar el archivo actual…', 'Cancelling after current file…')
+                        : '${value.$3}\n$completed ${strings.t('de', 'of')} $total',
                   ),
                 ],
               );
@@ -911,7 +937,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                 cancelled = true;
                 progress.value = progress.value;
               },
-              child: const Text('Cancelar'),
+              child: Text(strings.t('Cancelar', 'Cancel')),
             ),
           ],
         ),
@@ -939,14 +965,14 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           MidiExportService.displayFileName(canto, voice: voice),
       ];
       if (destination == _ExportDestination.save) {
-        operation = 'guardar';
+        operation = strings.t('guardar', 'save');
         final saved = await AndroidFileSaver.save([
           for (var i = 0; i < files.length; i++)
             AndroidSaveFile(file: files[i], name: names[i]),
         ]);
         if (mounted && saved) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('${files.length} archivos MP3 guardados.')),
+            SnackBar(content: Text('${files.length} ${strings.t('archivos MP3 guardados.', 'MP3 files saved.')}')),
           );
           await ref.read(monetizationProvider.notifier).consumeAudioExport();
           unawaited(AdsService.instance.onExportCompleted());
@@ -969,7 +995,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         dialogOpen = false;
       }
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('No se pudieron $operation los MP3: $e')),
+        SnackBar(content: Text('${strings.t('No se pudieron', 'Could not')} $operation ${strings.t('los MP3', 'the MP3s')}: $e')),
       );
     } finally {
       progress.dispose();
