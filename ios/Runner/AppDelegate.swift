@@ -92,22 +92,13 @@ import UserNotifications
         }
 
         let sampleRate: Double = 44100.0
-        let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)!
+        let pcmFormat = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: sampleRate, channels: 2, interleaved: true)!
 
-        try engine.enableManualRenderingMode(.offline, format: format, maximumFrameCount: 4096)
+        try engine.enableManualRenderingMode(.offline, format: pcmFormat, maximumFrameCount: 4096)
         try engine.start()
         try sequencer.start()
 
-        let settings: [String: Any] = [
-          AVFormatIDKey: kAudioFormatLinearPCM,
-          AVSampleRateKey: sampleRate,
-          AVNumberOfChannelsKey: 2,
-          AVLinearPCMBitDepthKey: 16,
-          AVLinearPCMIsBigEndianKey: false,
-          AVLinearPCMIsFloatKey: false,
-          AVLinearPCMIsNonInterleavedKey: false
-        ]
-        let outputFile = try AVAudioFile(forWriting: outURL, settings: settings)
+        let outputFile = try AVAudioFile(forWriting: outURL, settings: pcmFormat.settings)
         let buffer = AVAudioPCMBuffer(pcmFormat: engine.manualRenderingFormat, frameCapacity: 4096)!
 
         // Cap de seguridad: 20 minutos
