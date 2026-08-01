@@ -12,8 +12,8 @@ iOS falta completar la configuración externa:
 
 1. Agregar en RevenueCat una app de App Store con bundle ID `com.lldm.coro`.
 2. Conectar RevenueCat con App Store Connect.
-3. Crear o importar en App Store Connect `corolldm_mensual` y
-   `corolldm_anual`.
+3. Crear o importar en App Store Connect `corolldm_menusalv2` y
+   `corolldm_anualv2`.
 4. Asociar ambos productos al entitlement `premium`.
 5. Agregarlos a la oferta predeterminada usando los paquetes `$rc_monthly` y
    `$rc_annual`.
