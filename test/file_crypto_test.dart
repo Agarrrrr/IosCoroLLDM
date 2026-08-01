@@ -18,7 +18,8 @@ void main() {
   });
 
   test('valida la partitura específica A él la Gloria y Alabanza', () async {
-    final file = File('assets/offline_assets/pdfs/a_el_la_gloria_y_alabanza-1781321071836.pdf');
+    final file = File(
+        'assets/offline_assets/pdfs/a_el_la_gloria_y_alabanza-1781321071836.pdf');
     expect(await file.exists(), isTrue);
     final bytes = await file.readAsBytes();
     final clear = FileCrypto.decryptIfNeeded(bytes);
@@ -36,6 +37,9 @@ void main() {
     expect(FileCrypto.isMidi(clear), isTrue);
 
     final song = NativeMidiParser.parse(clear);
+    expect(song.durationSeconds, greaterThan(0));
+    expect(
+        song.durationSeconds, lessThan(const Duration(minutes: 20).inSeconds));
     expect(song.tempoChanges, isNotEmpty);
     expect(song.timeSignatures, isNotEmpty);
     expect(song.timeSignatures.first.numerator, greaterThan(0));

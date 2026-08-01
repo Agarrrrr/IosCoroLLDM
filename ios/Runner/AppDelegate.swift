@@ -51,11 +51,19 @@ import UserNotifications
         guard let args = call.arguments as? [String: Any],
               let midiPath = args["midiPath"] as? String,
               let soundfontPath = args["soundfontPath"] as? String,
-              let outputPath = args["outputPath"] as? String else {
+              let outputPath = args["outputPath"] as? String,
+              let durationSeconds = args["durationSeconds"] as? Double,
+              durationSeconds.isFinite,
+              durationSeconds > 0 else {
           result(FlutterError(code: "INVALID_ARGS", message: "Argumentos inválidos", details: nil))
           return
         }
-        self?.renderMidiToWav(midiPath: midiPath, soundfontPath: soundfontPath, outputPath: outputPath) { success, errorMsg in
+        self?.renderMidiToWav(
+          midiPath: midiPath,
+          soundfontPath: soundfontPath,
+          outputPath: outputPath,
+          durationSeconds: durationSeconds
+        ) { success, errorMsg in
           DispatchQueue.main.async {
             if success {
               result(true)
@@ -70,7 +78,13 @@ import UserNotifications
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 
-  private func renderMidiToWav(midiPath: String, soundfontPath: String, outputPath: String, completion: @escaping (Bool, String?) -> Void) {
+  private func renderMidiToWav(
+    midiPath: String,
+    soundfontPath: String,
+    outputPath: String,
+    durationSeconds: Double,
+    completion: @escaping (Bool, String?) -> Void
+  ) {
     DispatchQueue.global(qos: .userInitiated).async {
       do {
         let midiURL = URL(fileURLWithPath: midiPath)
@@ -132,13 +146,12 @@ import UserNotifications
           )
         }
 
-        // Cap de seguridad: 20 minutos
-        let maxFrames = AVAudioFramePosition(1200.0 * sampleRate)
-        // Detección de fin de secuencia: si la posición no avanza en
-        // ~3 segundos de audio renderizado, damos la canción por terminada.
-        let stallThreshold = Int(3.0 * sampleRate / 4096.0)
-        var stallCount = 0
-        var prevPosition: Double = -1.0
+        // NativeMidiParser calcula la duración del MIDI respetando sus cambios
+        // de tempo. Añadimos una cola breve para la liberación y reverberación
+        // del sampler, manteniendo 20 minutos solo como límite de seguridad.
+        let tailSeconds = 2.0
+        let renderDuration = min(durationSeconds + tailSeconds, 1200.0)
+        let maxFrames = AVAudioFramePosition(ceil(renderDuration * sampleRate))
 
         while engine.manualRenderingSampleTime < maxFrames {
           let remaining = maxFrames - engine.manualRenderingSampleTime
@@ -146,15 +159,6 @@ import UserNotifications
           let status = try engine.renderOffline(framesToRender, to: buffer)
           guard status == .success else { break }
           try outputFile.write(from: buffer)
-
-          let pos = sequencer.currentPositionInSeconds
-          if pos <= prevPosition {
-            stallCount += 1
-            if stallCount >= stallThreshold { break }
-          } else {
-            stallCount = 0
-            prevPosition = pos
-          }
         }
 
         sequencer.stop()

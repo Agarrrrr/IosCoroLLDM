@@ -28,6 +28,8 @@ class MidiExportVoice {
 class MidiExportService {
   MidiExportService._();
 
+  static const int _exportCacheVersion = 2;
+
   static Future<List<MidiExportVoice>> voices(Canto canto) async {
     final midi = await OfflineFiles.ensureMidi(canto);
     final song = NativeMidiParser.parse(await midi.readAsBytes());
@@ -65,20 +67,31 @@ class MidiExportService {
         .take(8)
         .map((byte) => byte.toRadixString(16).padLeft(2, '0'))
         .join();
-    final baseName = '${safeTitle}_${suffix}_$fingerprint';
+    final legacyBaseName = '${safeTitle}_${suffix}_$fingerprint';
+    final baseName = '${legacyBaseName}_v$_exportCacheVersion';
     final renderMidi = File('${workDir.path}/$baseName.mid');
     final wavFile = File('${workDir.path}/$baseName.wav');
     final mp3File = File('${workDir.path}/$baseName.mp3');
+    final legacyMp3File = File('${workDir.path}/$legacyBaseName.mp3');
     final soundfont = await _ensureSoundfont(workDir);
 
     if (await mp3File.exists() && await mp3File.length() > 0) {
       debugPrint('[MidiExport] Reutilizando MP3 en caché: ${mp3File.path}');
       return mp3File;
     }
+    // La versión anterior podía contener hasta 20 minutos de silencio.
+    // Se elimina al volver a exportar para recuperar ese espacio.
+    if (await legacyMp3File.exists()) {
+      await legacyMp3File.delete();
+    }
 
     final exportBytes = trackIndex == null
         ? originalBytes
         : _midiWithSelectedTrack(originalBytes, trackIndex);
+    final durationSeconds = NativeMidiParser.parse(exportBytes).durationSeconds;
+    if (!durationSeconds.isFinite || durationSeconds <= 0) {
+      throw const FormatException('El MIDI no tiene una duración válida');
+    }
     await renderMidi.writeAsBytes(exportBytes, flush: true);
 
     var stage = 'preparando el render';
@@ -98,6 +111,7 @@ class MidiExportService {
           'midiPath': renderMidi.path,
           'soundfontPath': soundfont.path,
           'outputPath': wavFile.path,
+          'durationSeconds': durationSeconds,
         });
       }
       stage = 'codificando el MP3';
