@@ -14,7 +14,24 @@ List<Canto> _parseCantosJsonString(String jsonString) {
 }
 
 List<Canto> _parseCantosList(List<dynamic> data) {
-  final lista = data.map((e) => Canto.fromJson(e)).toList();
+  final parsed = data.map((e) => Canto.fromJson(e)).toList();
+  final byId = {for (final canto in parsed) canto.id: canto};
+
+  // Una traducción usa el mismo arreglo musical. Si solo una versión tiene
+  // MIDI, compartirlo mediante el vínculo explícito evita duplicar archivos y
+  // mantiene disponibles el reproductor y las exportaciones en ambos idiomas.
+  final lista = parsed.map((canto) {
+    if (canto.midiArchivo?.isNotEmpty == true) return canto;
+    final linkedId = canto.vinculoIdioma;
+    if (linkedId == null || linkedId.isEmpty) return canto;
+    final counterpart = byId[linkedId];
+    if (counterpart == null ||
+        counterpart.idioma == canto.idioma ||
+        counterpart.midiArchivo?.isNotEmpty != true) {
+      return canto;
+    }
+    return canto.withMidiFrom(counterpart);
+  }).toList();
   lista.sort(
       (a, b) => _naturalSort(_normalizar(a.nombre), _normalizar(b.nombre)));
   return lista;

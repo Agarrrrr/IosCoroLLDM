@@ -32,7 +32,7 @@ class OfflineFiles {
     final archivoMidi = canto.midiArchivo!;
     if (archivoMidi.startsWith('http')) return archivoMidi;
     if (_isUnifiedObjectKey(archivoMidi)) {
-      return '${SupabaseService.storageUrl}/v1/files/${canto.id}/midi';
+      return '${SupabaseService.storageUrl}/v1/files/${canto.effectiveMidiSourceId}/midi';
     }
     return '${SupabaseService.storageUrl}/midi_files/$archivoMidi';
   }
@@ -85,27 +85,33 @@ class OfflineFiles {
     if (await _cachedVersionIsCurrent(
       file,
       '${canto.id}_midi_version',
-      canto.version,
+      canto.effectiveMidiVersion,
       FileCrypto.isMidi,
     )) {
       return file;
     }
 
     final midi = canto.midiArchivo!;
-    if (canto.version == 1 && !midi.startsWith('http')) {
+    if (canto.effectiveMidiVersion == 1 && !midi.startsWith('http')) {
       final copied = await _copyFromAsset(
         'assets/offline_assets/midis/$midi',
         file,
         FileCrypto.isMidi,
       );
       if (copied) {
-        await _rememberVersion('${canto.id}_midi_version', canto.version);
+        await _rememberVersion(
+          '${canto.id}_midi_version',
+          canto.effectiveMidiVersion,
+        );
         return file;
       }
     }
 
     await _download(resolveMidiUrl(canto), file, FileCrypto.isMidi);
-    await _rememberVersion('${canto.id}_midi_version', canto.version);
+    await _rememberVersion(
+      '${canto.id}_midi_version',
+      canto.effectiveMidiVersion,
+    );
     return file;
   }
 
