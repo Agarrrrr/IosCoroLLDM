@@ -3,17 +3,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 
 class ScoreCard extends ConsumerWidget {
   final Canto canto;
-  final int index;
   final VoidCallback onTap;
 
   const ScoreCard({
     super.key,
     required this.canto,
-    required this.index,
     required this.onTap,
   });
 
@@ -212,16 +209,6 @@ class ScoreCard extends ConsumerWidget {
           ),
         ),
       ),
-    )
-        .animate(
-          delay: Duration(milliseconds: index < 10 ? index * 22 : 220),
-        )
-        .fadeIn(duration: 280.ms)
-        .slideX(
-          begin: 0.035,
-          end: 0,
-          duration: 320.ms,
-          curve: Curves.easeOutCubic,
-        );
+    );
   }
 }

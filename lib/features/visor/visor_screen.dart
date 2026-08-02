@@ -312,8 +312,17 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     Navigator.pop(context);
                     if (localPdfPath != null &&
                         await File(localPdfPath).exists()) {
+                      final pdfName =
+                          MidiExportService.displayPdfFileName(canto);
+                      final tempPdf = File(
+                        '${(await getTemporaryDirectory()).path}/$pdfName',
+                      );
+                      await File(localPdfPath).copy(tempPdf.path);
                       await Share.shareXFiles(
-                        [XFile(localPdfPath)],
+                        [
+                          XFile(tempPdf.path,
+                              name: pdfName, mimeType: 'application/pdf')
+                        ],
                         text: 'Partitura: ${canto.nombre}',
                       );
                     } else {
@@ -343,11 +352,15 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                             fontSize: 12, color: Colors.grey)),
                     onTap: () async {
                       Navigator.pop(context);
-                      final dir = await getApplicationDocumentsDirectory();
-                      final midiFile = File('${dir.path}/${canto.id}.mid');
+                      final midiFile = await OfflineFiles.midiFile(canto.id);
                       if (await midiFile.exists()) {
+                        final midiName =
+                            MidiExportService.displayMidiFileName(canto);
                         await Share.shareXFiles(
-                          [XFile(midiFile.path)],
+                          [
+                            XFile(midiFile.path,
+                                name: midiName, mimeType: 'audio/midi')
+                          ],
                           text: 'Audio MIDI: ${canto.nombre}',
                         );
                       } else {
@@ -566,8 +579,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
   /// Devuelve el Rect del botón de compartir para iOS share sheet.
   Rect _shareButtonRect() {
-    final renderBox = _shareButtonKey.currentContext?.findRenderObject()
-        as RenderBox?;
+    final renderBox =
+        _shareButtonKey.currentContext?.findRenderObject() as RenderBox?;
     if (renderBox == null) return Rect.zero;
     final offset = renderBox.localToGlobal(Offset.zero);
     return offset & renderBox.size;
@@ -582,12 +595,13 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final result = await showDialog<String>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: Text(strings.t('Límite diario alcanzado', 'Daily limit reached')),
+        title:
+            Text(strings.t('Límite diario alcanzado', 'Daily limit reached')),
         content: Text(strings.t(
           'Puedes exportar 3 audios gratis al día. ¿Quieres ver un anuncio breve '
-          'para obtener 1 más, o apoyar el desarrollo con Premium?',
+              'para obtener 1 más, o apoyar el desarrollo con Premium?',
           'You can export 3 free audios per day. Watch a short ad to get 1 more, '
-          'or support the app with Premium.',
+              'or support the app with Premium.',
         )),
         actions: [
           TextButton(
@@ -650,8 +664,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
               Expanded(
                 child: Text(
                   voice == null
-                      ? strings.t('Convirtiendo ensamble a MP3…', 'Converting ensemble to MP3…')
-                      : strings.t('Convirtiendo ${voice.name} a MP3…', 'Converting ${voice.name} to MP3…'),
+                      ? strings.t('Convirtiendo ensamble a MP3…',
+                          'Converting ensemble to MP3…')
+                      : strings.t('Convirtiendo ${voice.name} a MP3…',
+                          'Converting ${voice.name} to MP3…'),
                 ),
               ),
             ],
@@ -687,7 +703,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${strings.t('No se pudo exportar el audio', 'Could not export audio')}: $e')),
+        SnackBar(
+            content: Text(
+                '${strings.t('No se pudo exportar el audio', 'Could not export audio')}: $e')),
       );
     }
   }
@@ -697,8 +715,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     List<MidiExportVoice> voices,
   ) async {
     final strings = AppStrings.of(context);
-    final progress =
-        ValueNotifier<(int, int, String)>((0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
+    final progress = ValueNotifier<(int, int, String)>(
+        (0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
     var cancelled = false;
     var dialogOpen = true;
     showDialog<void>(
@@ -707,7 +725,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       builder: (dialogContext) => PopScope(
         canPop: false,
         child: AlertDialog(
-          title: Text(strings.t('Preparando archivos MP3', 'Preparing MP3 files')),
+          title:
+              Text(strings.t('Preparando archivos MP3', 'Preparing MP3 files')),
           content: ValueListenableBuilder<(int, int, String)>(
             valueListenable: progress,
             builder: (context, value, child) {
@@ -721,7 +740,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     value: total == 0 ? null : completed / total,
                   ),
                   const SizedBox(height: 16),
-                  Text('${value.$3}\n$completed ${strings.t('de', 'of')} $total'),
+                  Text(
+                      '${value.$3}\n$completed ${strings.t('de', 'of')} $total'),
                 ],
               );
             },
@@ -773,7 +793,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${strings.t('No se pudieron exportar los MP3', 'Could not export MP3s')}: $e')),
+        SnackBar(
+            content: Text(
+                '${strings.t('No se pudieron exportar los MP3', 'Could not export MP3s')}: $e')),
       );
     } finally {
       progress.dispose();
@@ -843,8 +865,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
               Expanded(
                 child: Text(
                   voice == null
-                      ? strings.t('Convirtiendo ensamble a MP3…', 'Converting ensemble to MP3…')
-                      : strings.t('Convirtiendo ${voice.name} a MP3…', 'Converting ${voice.name} to MP3…'),
+                      ? strings.t('Convirtiendo ensamble a MP3…',
+                          'Converting ensemble to MP3…')
+                      : strings.t('Convirtiendo ${voice.name} a MP3…',
+                          'Converting ${voice.name} to MP3…'),
                 ),
               ),
             ],
@@ -874,7 +898,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         ]);
         if (mounted && saved) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(strings.t('MP3 guardado correctamente.', 'MP3 saved successfully.'))),
+            SnackBar(
+                content: Text(strings.t(
+                    'MP3 guardado correctamente.', 'MP3 saved successfully.'))),
           );
           await ref.read(monetizationProvider.notifier).consumeAudioExport();
           unawaited(AdsService.instance.onExportCompleted());
@@ -896,7 +922,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         dialogOpen = false;
       }
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${strings.t('No se pudo', 'Could not')} $operation ${strings.t('el MP3', 'the MP3')}: $e')),
+        SnackBar(
+            content: Text(
+                '${strings.t('No se pudo', 'Could not')} $operation ${strings.t('el MP3', 'the MP3')}: $e')),
       );
     }
   }
@@ -907,8 +935,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     _ExportDestination destination,
   ) async {
     final strings = AppStrings.of(context);
-    final progress =
-        ValueNotifier<(int, int, String)>((0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
+    final progress = ValueNotifier<(int, int, String)>(
+        (0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
     var cancelled = false;
     var dialogOpen = true;
     var operation = strings.t('crear', 'create');
@@ -918,7 +946,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       builder: (dialogContext) => PopScope(
         canPop: false,
         child: AlertDialog(
-          title: Text(strings.t('Preparando archivos MP3', 'Preparing MP3 files')),
+          title:
+              Text(strings.t('Preparando archivos MP3', 'Preparing MP3 files')),
           content: ValueListenableBuilder<(int, int, String)>(
             valueListenable: progress,
             builder: (context, value, child) {
@@ -934,7 +963,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   const SizedBox(height: 16),
                   Text(
                     cancelled
-                        ? strings.t('Cancelando al terminar el archivo actual…', 'Cancelling after current file…')
+                        ? strings.t('Cancelando al terminar el archivo actual…',
+                            'Cancelling after current file…')
                         : '${value.$3}\n$completed ${strings.t('de', 'of')} $total',
                   ),
                 ],
@@ -982,7 +1012,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         ]);
         if (mounted && saved) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('${files.length} ${strings.t('archivos MP3 guardados.', 'MP3 files saved.')}')),
+            SnackBar(
+                content: Text(
+                    '${files.length} ${strings.t('archivos MP3 guardados.', 'MP3 files saved.')}')),
           );
           await ref.read(monetizationProvider.notifier).consumeAudioExport();
           unawaited(AdsService.instance.onExportCompleted());
@@ -990,7 +1022,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       } else {
         await Share.shareXFiles(
           [
-            for (final file in files) XFile(file.path, mimeType: 'audio/mpeg'),
+            for (var i = 0; i < files.length; i++)
+              XFile(
+                files[i].path,
+                name: names[i],
+                mimeType: 'audio/mpeg',
+              ),
           ],
           subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
@@ -1005,7 +1042,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         dialogOpen = false;
       }
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('${strings.t('No se pudieron', 'Could not')} $operation ${strings.t('los MP3', 'the MP3s')}: $e')),
+        SnackBar(
+            content: Text(
+                '${strings.t('No se pudieron', 'Could not')} $operation ${strings.t('los MP3', 'the MP3s')}: $e')),
       );
     } finally {
       progress.dispose();
@@ -1317,9 +1356,35 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                         params: PdfViewerParams(
                                           enableTextSelection: false,
                                           minScale: _minScaleLimit,
-                                          errorBannerBuilder:
-                                              (context, error, stackTrace, documentRef) =>
-                                                  Center(
+                                          maxScale: 6,
+                                          limitRenderingCache: true,
+                                          maxImageBytesCachedOnMemory:
+                                              24 * 1024 * 1024,
+                                          horizontalCacheExtent: 0.25,
+                                          verticalCacheExtent: 0.25,
+                                          getPageRenderingScale: (
+                                            context,
+                                            page,
+                                            controller,
+                                            estimatedScale,
+                                          ) {
+                                            const maxRasterDimension = 1800.0;
+                                            final longestSide =
+                                                max(page.width, page.height);
+                                            if (!longestSide.isFinite ||
+                                                longestSide <= 0) {
+                                              return estimatedScale;
+                                            }
+                                            return min(
+                                              estimatedScale,
+                                              maxRasterDimension / longestSide,
+                                            )
+                                                .clamp(0.15, estimatedScale)
+                                                .toDouble();
+                                          },
+                                          errorBannerBuilder: (context, error,
+                                                  stackTrace, documentRef) =>
+                                              Center(
                                             child: Padding(
                                               padding:
                                                   const EdgeInsets.all(24.0),
@@ -1373,27 +1438,34 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           layoutPages: isCarousel
                                               ? (pages, params) {
                                                   final height = pages.fold(
-                                                          0.0,
-                                                          (prev, page) => max<
-                                                                  double>(prev,
-                                                              page.height)) +
+                                                        0.0,
+                                                        (previous, page) =>
+                                                            max<double>(
+                                                          previous,
+                                                          page.height,
+                                                        ),
+                                                      ) +
                                                       params.margin * 2;
                                                   final pageLayouts = <Rect>[];
-                                                  double x = params.margin;
+                                                  var x = params.margin;
                                                   for (final page in pages) {
-                                                    pageLayouts.add(Rect.fromLTWH(
+                                                    pageLayouts.add(
+                                                      Rect.fromLTWH(
                                                         x,
                                                         (height - page.height) /
                                                             2,
                                                         page.width,
-                                                        page.height));
+                                                        page.height,
+                                                      ),
+                                                    );
                                                     x += page.width +
                                                         params.margin;
                                                   }
                                                   return PdfPageLayout(
-                                                      pageLayouts: pageLayouts,
-                                                      documentSize:
-                                                          Size(x, height));
+                                                    pageLayouts: pageLayouts,
+                                                    documentSize:
+                                                        Size(x, height),
+                                                  );
                                                 }
                                               : isMobile
                                                   ? (pages, params) {

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -23,6 +25,7 @@ class DashboardScreen extends ConsumerStatefulWidget {
 class _DashboardScreenState extends ConsumerState<DashboardScreen> {
   final TextEditingController _searchController = TextEditingController();
   late final ScrollController _scrollController;
+  Timer? _searchDebounce;
 
   @override
   void initState() {
@@ -46,6 +49,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
 
   @override
   void dispose() {
+    _searchDebounce?.cancel();
     if (_scrollController.hasClients) {
       Hive.box('cache').put(
         'dashboard_scroll_offset',
@@ -109,7 +113,12 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                       child: TextField(
                         controller: _searchController,
                         onChanged: (val) {
-                          ref.read(searchTextProvider.notifier).set(val);
+                          _searchDebounce?.cancel();
+                          _searchDebounce = Timer(
+                            const Duration(milliseconds: 180),
+                            () =>
+                                ref.read(searchTextProvider.notifier).set(val),
+                          );
                           setState(
                               () {}); // Forzar rebuild para mostrar/ocultar el botón X
                         },
@@ -238,7 +247,6 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                             final canto = cantos[index];
                             return ScoreCard(
                               canto: canto,
-                              index: index,
                               onTap: () => _openCanto(canto.id),
                             );
                           },

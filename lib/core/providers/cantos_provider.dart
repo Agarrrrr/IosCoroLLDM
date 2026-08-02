@@ -246,7 +246,11 @@ List<Canto> _filterAndSortCantosEnIsolate(FilterParams params) {
         } else {
           // Búsqueda difusa para palabras más largas
           bool match = nNombre.contains(word) || nTemas.contains(word);
-          if (!match) {
+          // La búsqueda difusa es muy costosa para catálogos grandes porque
+          // Levenshtein crea una matriz por cada palabra y cada canto.
+          // En catálogos grandes conservamos la búsqueda por coincidencia,
+          // que es rápida y evita bloquear la UI o agotar memoria.
+          if (!match && params.cantos.length <= 1200) {
             final titleWords = nNombre.split(' ');
             for (final tw in titleWords) {
               if (tw.length >= word.length - 1) {

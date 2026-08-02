@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:isolate';
 import 'package:coro_lldm/core/security/file_crypto.dart';
 import 'package:coro_lldm/core/supabase/supabase_service.dart';
 import 'package:coro_lldm/models/canto.dart';
@@ -167,10 +168,16 @@ class OfflineFiles {
   ) async {
     if (!await file.exists()) return false;
     try {
-      final bytes = await file.readAsBytes();
-      if (validator(bytes)) return true;
+      final handle = await file.open();
+      try {
+        final header = await handle.read(32);
+        if (validator(header)) return true;
+      } finally {
+        await handle.close();
+      }
 
       // Migra automáticamente la caché defectuosa creada por versiones previas.
+      final bytes = await file.readAsBytes();
       await _decryptAndWrite(bytes, file, validator);
       return true;
     } catch (e) {
@@ -211,7 +218,9 @@ class OfflineFiles {
     File target,
     bool Function(List<int>) validator,
   ) async {
-    final clearBytes = FileCrypto.decryptIfNeeded(source);
+    final clearBytes = FileCrypto.isPlainFile(source)
+        ? source
+        : await Isolate.run(() => FileCrypto.decryptIfNeeded(source));
     if (!validator(clearBytes)) {
       throw const FormatException(
         'El contenido descifrado no tiene un formato válido',
