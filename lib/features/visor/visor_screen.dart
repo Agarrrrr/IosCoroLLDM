@@ -310,28 +310,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                           GoogleFonts.inter(fontSize: 12, color: Colors.grey)),
                   onTap: () async {
                     Navigator.pop(context);
-                    if (localPdfPath != null &&
-                        await File(localPdfPath).exists()) {
-                      final pdfName =
-                          MidiExportService.displayPdfFileName(canto);
-                      final tempPdf = File(
-                        '${(await getTemporaryDirectory()).path}/$pdfName',
-                      );
-                      await File(localPdfPath).copy(tempPdf.path);
-                      await Share.shareXFiles(
-                        [
-                          XFile(tempPdf.path,
-                              name: pdfName, mimeType: 'application/pdf')
-                        ],
-                        text: 'Partitura: ${canto.nombre}',
-                      );
-                    } else {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                            content: Text(
-                                'El archivo PDF de la partitura no se encuentra cargado.')),
-                      );
-                    }
+                    await _guardarOCompartirPdf(canto, localPdfPath);
                   },
                 ),
                 if (canto.midiArchivo != null && canto.midiArchivo!.isNotEmpty)
@@ -443,8 +422,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                 title: Text(strings.t('Partitura (PDF)', 'Sheet Music (PDF)')),
                 subtitle: Text(
                   strings.t(
-                    'Compartir la partitura',
-                    'Share the score',
+                    Platform.isAndroid
+                        ? 'Guardar o compartir la partitura'
+                        : 'Compartir la partitura',
+                    Platform.isAndroid
+                        ? 'Save or share the score'
+                        : 'Share the score',
                   ),
                 ),
                 onTap: () => Navigator.pop(
@@ -530,23 +513,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
     if (selection == null || !mounted) return;
     if (selection.kind == _ShareKind.pdf) {
-      if (localPdfPath != null && await File(localPdfPath).exists()) {
-        final pdfName = MidiExportService.displayPdfFileName(canto);
-        final tempDir = await getTemporaryDirectory();
-        final sharePdf = File('${tempDir.path}/$pdfName');
-        await File(localPdfPath).copy(sharePdf.path);
-        await Share.shareXFiles(
-          [XFile(sharePdf.path, name: pdfName, mimeType: 'application/pdf')],
-          subject: canto.nombre,
-          sharePositionOrigin: _shareButtonRect(),
-        );
-      } else if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('La partitura PDF todavía no está disponible.'),
-          ),
-        );
-      }
+      await _guardarOCompartirPdf(canto, localPdfPath);
       return;
     }
 
@@ -844,6 +811,66 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     );
   }
 
+  Future<void> _guardarOCompartirPdf(
+    Canto canto,
+    String? localPdfPath,
+  ) async {
+    final strings = AppStrings.of(context);
+    if (localPdfPath == null || !await File(localPdfPath).exists()) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(strings.t(
+            'La partitura PDF todavía no está disponible.',
+            'The PDF score is not available yet.',
+          ))),
+        );
+      }
+      return;
+    }
+
+    final destination = await _elegirDestino();
+    if (destination == null || !mounted) return;
+
+    final sourcePdf = File(localPdfPath);
+    final pdfName = MidiExportService.displayPdfFileName(canto);
+    try {
+      if (destination == _ExportDestination.save) {
+        final saved = await AndroidFileSaver.save([
+          AndroidSaveFile(
+            file: sourcePdf,
+            name: pdfName,
+            mimeType: 'application/pdf',
+          ),
+        ]);
+        if (mounted && saved) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(strings.t(
+              'PDF guardado correctamente.',
+              'PDF saved successfully.',
+            ))),
+          );
+        }
+        return;
+      }
+
+      final tempDir = await getTemporaryDirectory();
+      final sharePdf = File('${tempDir.path}/$pdfName');
+      await sourcePdf.copy(sharePdf.path);
+      await Share.shareXFiles(
+        [XFile(sharePdf.path, name: pdfName, mimeType: 'application/pdf')],
+        subject: canto.nombre,
+        sharePositionOrigin: _shareButtonRect(),
+      );
+    } catch (error) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(
+          '${strings.t('No se pudo guardar o compartir el PDF', 'Could not save or share the PDF')}: $error',
+        )),
+      );
+    }
+  }
+
   Future<void> _exportarMp3(
     Canto canto,
     MidiExportVoice? voice,
@@ -894,6 +921,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           AndroidSaveFile(
             file: mp3,
             name: MidiExportService.displayFileName(canto, voice: voice),
+            mimeType: 'audio/mpeg',
           ),
         ]);
         if (mounted && saved) {
@@ -1008,7 +1036,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         operation = strings.t('guardar', 'save');
         final saved = await AndroidFileSaver.save([
           for (var i = 0; i < files.length; i++)
-            AndroidSaveFile(file: files[i], name: names[i]),
+            AndroidSaveFile(
+              file: files[i],
+              name: names[i],
+              mimeType: 'audio/mpeg',
+            ),
         ]);
         if (mounted && saved) {
           ScaffoldMessenger.of(context).showSnackBar(
