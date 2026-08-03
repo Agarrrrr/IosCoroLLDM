@@ -57,8 +57,10 @@ locales, evitando Premium falso durante testing.
 - Cinco cantos MIDI distintos por día; repetir el mismo canto no consume otro.
 - Un anuncio recompensado agrega un canto adicional cuando existe un bloque
   configurado para la plataforma.
-- El primer intersticial aparece en la tercera apertura de partitura y después
-  cada dos a cuatro aperturas.
+- El primer intersticial aparece en la quinta apertura de partitura y después
+  cada cinco a ocho aperturas.
+- Separación global mínima de tres minutos entre anuncios a pantalla completa
+  (App Open e Intersticial) para evitar acumulación.
 - Banner adaptable en el catálogo.
 - Anuncio de apertura al regresar a primer plano, con separación local mínima
   de dos minutos.

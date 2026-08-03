@@ -6247,7 +6247,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 7
+    "version": 7,
+    "_idioma": "es"
   },
   {
     "id": "usmc_abf449543701c7a2df",
@@ -9583,8 +9584,8 @@
   {
     "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
     "nombre": "La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá",
-    "archivo": "la-vida-se-va-como-el-viento-y-pronto-en-las-nubes-vendr--1781326531686.pdf",
-    "midi_archivo": null,
+    "archivo": "global/assets/pdf/933d7b514551607d7f4d27e4dc19a4e2c89c3dafde33fa07c10783029ef1dc50.enc",
+    "midi_archivo": "global/assets/midi/8f8ec264aea98d2c2020941409dc8d78c2e5e4008d5b64832d36f4852ecfe983.enc",
     "vinculo_idioma": null,
     "temas": [
       "Advenimiento",
@@ -9592,7 +9593,9 @@
     ],
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": null,
+    "version": 6
   },
   {
     "id": "7ab042ee-8461-4214-bc25-668ec0ae5659",
@@ -9703,7 +9706,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b561dd21b21cae02605eb9",
@@ -14336,7 +14340,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 5
+    "version": 5,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b5807221b21cae02606127",

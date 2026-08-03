@@ -64,6 +64,7 @@ class AdsService with WidgetsBindingObserver {
   AppOpenAd? _appOpen;
   DateTime? _appOpenLoadedAt;
   DateTime? _lastAppOpenShownAt;
+  DateTime? _lastFullScreenShownAt;
   InterstitialAd? _interstitial;
   RewardedAd? _rewarded;
   final ValueNotifier<bool> ready = ValueNotifier(false);
@@ -181,7 +182,9 @@ class AdsService with WidgetsBindingObserver {
         _loadAppOpen();
       },
     );
-    _lastAppOpenShownAt = DateTime.now();
+    final now = DateTime.now();
+    _lastAppOpenShownAt = now;
+    _lastFullScreenShownAt = now;
     await ad.show();
   }
 
@@ -200,13 +203,21 @@ class AdsService with WidgetsBindingObserver {
   Future<void> onPdfOpened() async {
     if (_premium || !_initialized) return;
     final count = ((_box.get('pdf_open_count') as int?) ?? 0) + 1;
-    final threshold = (_box.get('pdf_ad_threshold') as int?) ?? 3;
+    final threshold = (_box.get('pdf_ad_threshold') as int?) ?? 5;
     if (count < threshold) {
       await _box.put('pdf_open_count', count);
       return;
     }
     await _box.put('pdf_open_count', 0);
-    await _box.put('pdf_ad_threshold', 2 + Random().nextInt(3));
+    await _box.put('pdf_ad_threshold', 5 + Random().nextInt(4));
+
+    // Respetar cooldown de 3 minutos entre anuncios a pantalla completa
+    if (_lastFullScreenShownAt != null &&
+        DateTime.now().difference(_lastFullScreenShownAt!) <
+            const Duration(minutes: 3)) {
+      return;
+    }
+
     final ad = _interstitial;
     if (ad == null || _showingFullScreen) {
       _loadInterstitial();
@@ -226,6 +237,7 @@ class AdsService with WidgetsBindingObserver {
         _loadInterstitial();
       },
     );
+    _lastFullScreenShownAt = DateTime.now();
     await ad.show();
   }
 
@@ -241,6 +253,14 @@ class AdsService with WidgetsBindingObserver {
     }
     await _box.put('export_ad_count', 0);
     await _box.put('export_ad_threshold', 1 + Random().nextInt(3));
+
+    // Respetar cooldown de 3 minutos entre anuncios a pantalla completa
+    if (_lastFullScreenShownAt != null &&
+        DateTime.now().difference(_lastFullScreenShownAt!) <
+            const Duration(minutes: 3)) {
+      return;
+    }
+
     final ad = _interstitial;
     if (ad == null || _showingFullScreen) {
       _loadInterstitial();
@@ -260,6 +280,7 @@ class AdsService with WidgetsBindingObserver {
         _loadInterstitial();
       },
     );
+    _lastFullScreenShownAt = DateTime.now();
     await ad.show();
   }
 
