@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'dart:isolate';
 import 'package:coro_lldm/core/security/file_crypto.dart';
-import 'package:coro_lldm/core/supabase/supabase_service.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
@@ -16,6 +15,9 @@ import 'package:hive/hive.dart';
 class OfflineFiles {
   OfflineFiles._();
 
+  static const String storageUrl =
+      'https://repertoriobc-files.huritolentino.workers.dev';
+
   static final Dio _dio = Dio()
     ..options.connectTimeout = const Duration(seconds: 10)
     ..options.receiveTimeout = const Duration(seconds: 60);
@@ -23,18 +25,18 @@ class OfflineFiles {
   static String resolvePdfUrl(Canto canto) {
     if (canto.archivo.startsWith('http')) return canto.archivo;
     if (_isUnifiedObjectKey(canto.archivo)) {
-      return '${SupabaseService.storageUrl}/v1/files/${canto.id}/pdf';
+      return '$storageUrl/v1/files/${canto.id}/pdf';
     }
-    return '${SupabaseService.storageUrl}/partituras/${canto.archivo}';
+    return '$storageUrl/partituras/${canto.archivo}';
   }
 
   static String resolveMidiUrl(Canto canto) {
     final archivoMidi = canto.midiArchivo!;
     if (archivoMidi.startsWith('http')) return archivoMidi;
     if (_isUnifiedObjectKey(archivoMidi)) {
-      return '${SupabaseService.storageUrl}/v1/files/${canto.effectiveMidiSourceId}/midi';
+      return '$storageUrl/v1/files/${canto.effectiveMidiSourceId}/midi';
     }
-    return '${SupabaseService.storageUrl}/midi_files/$archivoMidi';
+    return '$storageUrl/midi_files/$archivoMidi';
   }
 
   static bool _isUnifiedObjectKey(String value) =>
@@ -143,15 +145,9 @@ class OfflineFiles {
     try {
       if (await encryptedTmp.exists()) await encryptedTmp.delete();
       debugPrint('[OfflineFiles] Descargando: $url');
-      final token = SupabaseService.client.auth.currentSession?.accessToken;
       await _dio.download(
         url,
         encryptedTmp.path,
-        options: Options(
-          headers: {
-            if (token != null) 'Authorization': 'Bearer $token',
-          },
-        ),
       );
       await _decryptAndWrite(
         await encryptedTmp.readAsBytes(),

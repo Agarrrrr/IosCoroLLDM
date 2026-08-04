@@ -3,7 +3,6 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/models/canto.dart';
-import 'package:coro_lldm/core/supabase/supabase_service.dart';
 import 'dart:convert';
 import 'package:hive/hive.dart';
 
@@ -58,27 +57,7 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
       }
     }
 
-    // 2. Catálogo remoto unificado. Durante la migración conservamos los
-    // assets empaquetados como respaldo para no dejar usuarios sin repertorio.
-    try {
-      final response =
-          await SupabaseService.client.rpc('catalogo_global_bilingue');
-      final remote = (response as List<dynamic>)
-          .map((item) => Map<String, dynamic>.from(item as Map))
-          .toList();
-      if (remote.isNotEmpty) {
-        for (final canto in remote) {
-          canto['_idioma'] = canto['idioma'] ?? 'es';
-        }
-        final remoteJson = jsonEncode(remote);
-        await box.put('cantos_json', remoteJson);
-        return compute(_parseCantosJsonString, remoteJson);
-      }
-    } catch (e) {
-      debugPrint('Error loading unified remote catalog: $e');
-    }
-
-    // 3. Respaldo bilingüe empaquetado con la app.
+    // 2. Carga bilingüe empaquetada con la app (Assets locales).
     try {
       final rawEs = await rootBundle.loadString('assets/catalogo.json');
       final rawEn = await rootBundle.loadString('assets/catalogo_en.json');

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
-import 'package:coro_lldm/core/supabase/supabase_service.dart';
 import 'package:coro_lldm/app/app.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
@@ -13,10 +12,7 @@ import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // 1. Inicializar Supabase
-  await SupabaseService.init();
-
-  // 2. Inicializar Hive (offline cache + favoritos)
+  // 1. Inicializar Hive (offline cache + favoritos)
   await Hive.initFlutter();
   await Hive.openBox('cache');
   await Hive.openBox(FavoritosNotifier.boxName);

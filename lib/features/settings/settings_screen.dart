@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
-import 'package:coro_lldm/core/supabase/supabase_service.dart';
 
 class SettingsDialog extends ConsumerStatefulWidget {
   const SettingsDialog({super.key});
@@ -173,48 +172,6 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                 onTap: () =>
                     ref.read(themeProvider.notifier).setProfileLectura(),
                 accentColor: accentColor,
-              ),
-              const SizedBox(height: 12),
-              const Divider(),
-              const SizedBox(height: 12),
-              SizedBox(
-                width: double.infinity,
-                child: OutlinedButton.icon(
-                  icon: const Icon(Icons.logout_rounded),
-                  label: Text(strings.t('Cerrar sesión', 'Sign out')),
-                  onPressed: () async {
-                    final confirmed = await showDialog<bool>(
-                      context: context,
-                      builder: (dialogContext) => AlertDialog(
-                        title: Text(
-                          strings.t('Cerrar sesión', 'Sign out'),
-                        ),
-                        content: Text(
-                          strings.t(
-                            'El repertorio descargado permanecerá en este dispositivo, pero necesitarás iniciar sesión para volver a entrar.',
-                            'Downloaded scores will stay on this device, but you will need to sign in again to enter.',
-                          ),
-                        ),
-                        actions: [
-                          TextButton(
-                            onPressed: () =>
-                                Navigator.pop(dialogContext, false),
-                            child: Text(strings.t('Cancelar', 'Cancel')),
-                          ),
-                          FilledButton(
-                            onPressed: () => Navigator.pop(dialogContext, true),
-                            child: Text(
-                              strings.t('Cerrar sesión', 'Sign out'),
-                            ),
-                          ),
-                        ],
-                      ),
-                    );
-                    if (confirmed != true) return;
-                    await SupabaseService.client.auth.signOut();
-                    if (context.mounted) Navigator.pop(context);
-                  },
-                ),
               ),
             ],
           ),
