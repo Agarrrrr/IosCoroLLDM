@@ -86,6 +86,7 @@ flutter:
     - assets/catalogo.json
     - assets/catalogo_en.json
     - assets/offline_assets/pdfs/
+    - assets/offline_assets/pdfs/global/assets/pdf/
     - assets/offline_assets/midis/
     - assets/offline_assets/midis/global/assets/midi/
     - assets/audio/metro/

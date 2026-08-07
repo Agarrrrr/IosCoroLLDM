@@ -29,6 +29,29 @@ void main() {
     expect(FileCrypto.isPdf(clear), isTrue);
   });
 
+  test('todos los PDF globales incluidos son válidos', () async {
+    final files = Directory(
+      'assets/offline_assets/pdfs/global/assets/pdf',
+    ).listSync().whereType<File>().toList();
+
+    expect(files, isNotEmpty);
+    for (final file in files) {
+      final assetPath = file.path.replaceAll('\\', '/');
+      final bundled = await rootBundle.load(assetPath);
+      final clear = FileCrypto.decryptIfNeeded(
+        bundled.buffer.asUint8List(
+          bundled.offsetInBytes,
+          bundled.lengthInBytes,
+        ),
+      );
+      expect(
+        FileCrypto.isPdf(clear),
+        isTrue,
+        reason: '${file.path} no contiene un PDF válido',
+      );
+    }
+  });
+
   test('descifra un MIDI de la biblioteca offline', () async {
     final file = Directory('assets/offline_assets/midis')
         .listSync()

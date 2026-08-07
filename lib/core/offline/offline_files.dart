@@ -65,7 +65,11 @@ class OfflineFiles {
       return file;
     }
 
-    if (canto.version == 1 && !canto.archivo.startsWith('http')) {
+    // Las claves global/local identifican el contenido exacto. Si ese archivo
+    // viene empaquetado, úsalo sin red aunque la versión del catálogo sea > 1.
+    final canUseBundledPdf = !canto.archivo.startsWith('http') &&
+        (canto.version == 1 || _isUnifiedObjectKey(canto.archivo));
+    if (canUseBundledPdf) {
       final copied = await _copyFromAsset(
         'assets/offline_assets/pdfs/${canto.archivo}',
         file,
