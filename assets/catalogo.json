@@ -1226,17 +1226,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b5edbb21b21cae02606774",
+    "id": "8b821175-3104-5f2b-960b-6e79f8a02acf",
+    "external_id": "usmc_64b5edbb21b21cae02606774",
     "nombre": "Amor Sin Condición",
-    "archivo": "64b5edbb21b21cae02606774_amor_sin_condición.pdf",
+    "archivo": "global/assets/pdf/9057b4eac835f7abb2e6a6682f62bd2b5edb86b9d0eb07db91d9ad2e423dae9a.enc",
+    "midi_archivo": "global/assets/midi/45c195f25b4b04728ece326db4f2d1d311616d914998d53386812bc1f811b9d5.enc",
     "temas": [
       "Amor"
     ],
-    "es_privado": false,
+    "idioma": "es",
     "vinculo_idioma": null,
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
+    "version": 5,
+    "_idioma": "es"
   },
   {
     "id": "9565cde4-0685-474b-acdc-7c326fc7c38a",
@@ -4040,17 +4041,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b594c021b21cae0260642e",
+    "id": "8c7946cc-a162-53fb-a5a3-819b74c68daa",
+    "external_id": "usmc_64b594c021b21cae0260642e",
     "nombre": "Digno no Soy",
-    "archivo": "64b594c021b21cae0260642e_digno_no_soy.pdf",
+    "archivo": "global/assets/pdf/df8656714e441206b042356615fc791972c2b6b8a40e439054cd3586f9415c9e.enc",
+    "midi_archivo": "global/assets/midi/ba2fce781ff4e98d3a2549c1f4329854ae7c83a77386a59790a3b6ab36dd8869.enc",
     "temas": [
       "Consagración"
     ],
-    "es_privado": false,
+    "idioma": "es",
     "vinculo_idioma": null,
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
+    "version": 5,
+    "_idioma": "es"
   },
   {
     "id": "cd46288f-95a6-4870-81e9-a72534208e3c",
@@ -4797,15 +4799,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_661dd45ad6b0cc15aeab119a",
+    "id": "3104615c-5de2-5753-a919-fbf264b6648c",
+    "external_id": "usmc_661dd45ad6b0cc15aeab119a",
     "nombre": "Él es la Luz Del Mundo",
-    "archivo": "661dd45ad6b0cc15aeab119a_el_es_la_luz_del_mundo.pdf",
+    "archivo": "global/assets/pdf/72a88d2c5d4cdfbbf7cbd62dc6d39c0c4fbd467058173f1f5db74f92e1e57f72.enc",
+    "midi_archivo": "global/assets/midi/81915a47d17ca2285f2c83300f1bb4fc604003c00ebc26e402f76b8817cc7257.enc",
     "temas": [
       "Llamamiento"
     ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 5,
+    "_idioma": "es"
   },
   {
     "id": "usmc_9ba38555eec2bab818163953",
@@ -5435,17 +5440,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_04e333e474ec3f72fcbc4452",
+    "id": "abc50a30-b08f-5323-91c4-83bff158281c",
+    "external_id": "usmc_04e333e474ec3f72fcbc4452",
     "nombre": "El Valle de Los Huesos Secos",
-    "archivo": "usmc_04e333e474ec3f72fcbc4452_el_valle_de_los_huesos_secos.pdf",
+    "archivo": "global/assets/pdf/4bb920d938acded8b91b26da16fdd981e03e21d305ed2c35481435903a061e04.enc",
+    "midi_archivo": "global/assets/midi/ffbb5e2fb1695bf43fed7f3f9986a4c483394ff6e63c56d92b05f3fc67491109.enc",
     "temas": [
       "Alabanza"
     ],
-    "es_privado": false,
+    "idioma": "es",
     "vinculo_idioma": null,
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
+    "version": 5,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b5fb0321b21cae02606b80",
@@ -6222,17 +6228,6 @@
     "vinculo_idioma": "usmc_69334c7817c3ffd6839b76e1",
     "midi_archivo": "eres-el-fiel-ejemplo-a-seguir-1784232214037.mid",
     "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
-    "id": "usmc_64b54bd521b21cae02605c5c",
-    "nombre": "Eres el Más Hermoso",
-    "archivo": "64b54bd521b21cae02605c5c_eres_el_más_hermoso.pdf",
-    "temas": [
-      "Elección"
-    ],
-    "es_privado": false,
     "_idioma": "es",
     "idioma": "es"
   },
@@ -7417,8 +7412,8 @@
   {
     "id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
     "nombre": "Guerrero Celestial",
-    "archivo": "guerrero-celestial-1781325547125.pdf",
-    "midi_archivo": null,
+    "archivo": "global/assets/pdf/4df104af0bba1def16f0724a5eca60ea6bbcf10d1e8591680d8499755b194633.enc",
+    "midi_archivo": "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc",
     "vinculo_idioma": null,
     "temas": [
       "Elección",
@@ -7426,7 +7421,9 @@
     ],
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+    "version": 5
   },
   {
     "id": "bd81c242-20e5-4441-a30c-686ccb7d17c7",
@@ -8181,16 +8178,19 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_595c514cc4e9d58c9e",
+    "id": "9d9da006-13de-5b0f-8326-8dd191864256",
+    "external_id": "usmc_595c514cc4e9d58c9e",
     "nombre": "Imaginate tu",
-    "archivo": "595c514cc4e9d58c9e_imaginate-tu.pdf",
+    "archivo": "global/assets/pdf/c2ab1956d4cf0434ee7fa7dbd09ed3233436db382658857a20e711d2c7cf3bc6.enc",
+    "midi_archivo": "global/assets/midi/a78e4a0bd7b283862bb440ffe329040fb0404ac3eeda16644ae086876ebae6fa.enc",
     "temas": [
-      "Alabanza",
-      "Adoración"
+      "Adoración",
+      "Alabanza"
     ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 5,
+    "_idioma": "es"
   },
   {
     "id": "3c8263be-e682-49c3-9cab-ab4c6e343559",
@@ -8301,16 +8301,19 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b5f74b21b21cae026069e6",
+    "id": "536e3a2a-b0bb-4c58-8ddf-cbba608da0fc",
+    "external_id": "usmc_64b5f74b21b21cae026069e6",
     "nombre": "Isaías 12",
-    "archivo": "64b5f74b21b21cae026069e6_isaías_12.pdf",
+    "archivo": "global/assets/pdf/d263b00da5ea81df5b77a2e1c2fe2d0fa27675ac8b330bc96d23cb6381bbc670.enc",
+    "midi_archivo": "global/assets/midi/2f2c8124240aee484132ee08c0582592aac6bfba569d933a8348855f25b0d1ef.enc",
     "temas": [
-      "Alabanza",
-      "Adoración"
+      "Adoración",
+      "Alabanza"
     ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 7,
+    "_idioma": "es"
   },
   {
     "id": "ea80c529-887d-413c-acc0-ae925b3a4e37",
@@ -9569,21 +9572,8 @@
     "idioma": "es"
   },
   {
-    "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
-    "nombre": "La Vida se va Como el Viento",
-    "archivo": "la-vida-se-va-como-el-viento-1781307127391.pdf",
-    "midi_archivo": null,
-    "vinculo_idioma": null,
-    "temas": [
-      "Evangelización"
-    ],
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
     "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
-    "nombre": "La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá",
+    "nombre": "La Vida se va Como el Viento",
     "archivo": "global/assets/pdf/933d7b514551607d7f4d27e4dc19a4e2c89c3dafde33fa07c10783029ef1dc50.enc",
     "midi_archivo": "global/assets/midi/8f8ec264aea98d2c2020941409dc8d78c2e5e4008d5b64832d36f4852ecfe983.enc",
     "vinculo_idioma": null,
@@ -11338,17 +11328,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b5fb7921b21cae02606bb3",
+    "id": "41c7944f-56f9-4b7f-baa8-832928225fd7",
+    "external_id": "usmc_64b5fb7921b21cae02606bb3",
     "nombre": "Ocasos",
     "archivo": "ocasos-1781287442185.pdf",
+    "midi_archivo": "global/assets/midi/5c370c2e065aa8c211ab1911e22fb37853cc285f697ba42c0e5f5cd949e7f31d.enc",
     "temas": [
       "Advenimiento"
     ],
-    "es_privado": false,
-    "vinculo_idioma": null,
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "vinculo_idioma": "usmc_64b1f9e6ea321fbb1d6b86b2",
+    "version": 8,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b3eba79631ba687d630841",
@@ -11704,15 +11695,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_68149dfb520c8624329efcc1",
+    "id": "b1e13154-1899-5211-916e-f747f9c9491b",
+    "external_id": "usmc_68149dfb520c8624329efcc1",
     "nombre": "Oh Salvador, Las Gracias te Doy",
     "archivo": "68149dfb520c8624329efcc1_oh_salvador_las_gracias_te_doy.pdf",
+    "midi_archivo": "global/assets/midi/8437f397e7c95a36eadcab6f4c9c3d844983eea9d0eb445cb24a2ef9f2614371.enc",
     "temas": [
       "Gratitud"
     ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 4,
+    "_idioma": "es"
   },
   {
     "id": "local_apk_1781321072042_142",
@@ -12908,15 +12902,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b5956d21b21cae026064ae",
+    "id": "45d26fb9-b9fb-49d8-b953-c46a14d51634",
+    "external_id": "usmc_64b5956d21b21cae026064ae",
     "nombre": "Quiero Ser",
     "archivo": "64b5956d21b21cae026064ae_quiero_ser.pdf",
+    "midi_archivo": "global/assets/midi/cd06a9742fcb85fd69f8d054a4093c8dfcee6234f7102bf4ec5660622e12234a.enc",
     "temas": [
       "Consagración"
     ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 6,
+    "_idioma": "es"
   },
   {
     "id": "28a716ba-78eb-48be-9c05-8234fabfbb35",
@@ -13272,15 +13269,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_8fd68204efefc8cfec",
+    "id": "4952c7d8-2e3e-5725-a3b9-89756522ddc6",
+    "external_id": "usmc_8fd68204efefc8cfec",
     "nombre": "Salmo 125",
     "archivo": "Salmo 125.pdf",
+    "midi_archivo": "global/assets/midi/4cdd0a644f141d0ac6be8077dfaef71cc107659256ad02db64f86df306391463.enc",
     "temas": [
       "Alabanza"
     ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 4,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b5f8c121b21cae02606aaa",
@@ -15428,17 +15428,18 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_b531fd532939d58c9c",
+    "id": "21a57ea9-9696-5dd0-8e8a-2c14708b2ca1",
+    "external_id": "usmc_b531fd532939d58c9c",
     "nombre": "Valle de Los Huesos Secos",
     "archivo": "b531fd532939d58c9c_huesos-secos.pdf",
+    "midi_archivo": "global/assets/midi/ffbb5e2fb1695bf43fed7f3f9986a4c483394ff6e63c56d92b05f3fc67491109.enc",
     "temas": [
       "Alabanza"
     ],
-    "es_privado": false,
+    "idioma": "es",
     "vinculo_idioma": null,
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
+    "version": 4,
+    "_idioma": "es"
   },
   {
     "id": "usmc_feabeaba2fd1c92173",
@@ -16036,27 +16037,30 @@
     "id": "a6f00c5d-bcf7-4c5a-b33d-2c19820f81ee",
     "nombre": "Yo Tengo un Padre",
     "archivo": "yo-tengo-un-padre-1781575930352.pdf",
-    "midi_archivo": null,
+    "midi_archivo": "global/assets/midi/a00d0190092e0bf21b4a5efd395a363dee599227c16ad1924bd7361d93c19609.enc",
     "vinculo_idioma": null,
     "temas": [
       "Elección"
     ],
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": null,
+    "version": 4
   },
   {
-    "id": "usmc_64b5ea7621b21cae026066c9",
+    "id": "aee16528-1068-4d94-bd67-18920f9a596f",
+    "external_id": "usmc_64b5ea7621b21cae026066c9",
     "nombre": "Yo te Seguiré",
     "archivo": "64b5ea7621b21cae026066c9_yo_te_seguiré.pdf",
+    "midi_archivo": "global/assets/midi/07a06d76482931344a8fa8eb582923b6514796c3c2cb86cb958a437a3f0a7713.enc",
     "temas": [
       "Confianza"
     ],
-    "es_privado": false,
+    "idioma": "es",
     "vinculo_idioma": "48788f99-8158-4df1-b0f1-79c1dbcbce6b",
-    "midi_archivo": null,
-    "_idioma": "es",
-    "idioma": "es"
+    "version": 10,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b58b2821b21cae026062a9",

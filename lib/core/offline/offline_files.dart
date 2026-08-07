@@ -94,7 +94,12 @@ class OfflineFiles {
     }
 
     final midi = canto.midiArchivo!;
-    if (canto.effectiveMidiVersion == 1 && !midi.startsWith('http')) {
+    // Las claves global/local son content-addressed: si el archivo existe en
+    // el paquete corresponde exactamente a esa versión, aunque el canto tenga
+    // una versión de catálogo mayor que 1. La red queda solo como respaldo.
+    final canUseBundledMidi = !midi.startsWith('http') &&
+        (canto.effectiveMidiVersion == 1 || _isUnifiedObjectKey(midi));
+    if (canUseBundledMidi) {
       final copied = await _copyFromAsset(
         'assets/offline_assets/midis/$midi',
         file,

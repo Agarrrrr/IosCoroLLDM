@@ -87,6 +87,7 @@ flutter:
     - assets/catalogo_en.json
     - assets/offline_assets/pdfs/
     - assets/offline_assets/midis/
+    - assets/offline_assets/midis/global/assets/midi/
     - assets/audio/metro/
 
   # An image asset can refer to one or more resolution-specific "variants", see

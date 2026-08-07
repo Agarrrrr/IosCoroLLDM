@@ -3,9 +3,12 @@ import 'dart:io';
 import 'package:coro_lldm/core/security/file_crypto.dart';
 import 'package:coro_lldm/core/midi/midi_engine.dart';
 import 'package:coro_lldm/core/midi/native_midi_parser.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
   test('descifra un PDF de la biblioteca offline', () async {
     final file = Directory('assets/offline_assets/pdfs')
         .listSync()
@@ -44,6 +47,35 @@ void main() {
     expect(song.timeSignatures, isNotEmpty);
     expect(song.timeSignatures.first.numerator, greaterThan(0));
     expect(song.timeSignatures.first.denominator, greaterThan(0));
+  });
+
+  test('todos los MIDI globales incluidos son válidos', () async {
+    final files = Directory(
+      'assets/offline_assets/midis/global/assets/midi',
+    ).listSync().whereType<File>().toList();
+
+    expect(files, isNotEmpty);
+    for (final file in files) {
+      final assetPath = file.path.replaceAll('\\', '/');
+      final bundled = await rootBundle.load(assetPath);
+      final clear = FileCrypto.decryptIfNeeded(
+        bundled.buffer.asUint8List(
+          bundled.offsetInBytes,
+          bundled.lengthInBytes,
+        ),
+      );
+      expect(
+        FileCrypto.isMidi(clear),
+        isTrue,
+        reason: '${file.path} no contiene un MIDI válido',
+      );
+      final song = NativeMidiParser.parse(clear);
+      expect(
+        song.durationSeconds,
+        greaterThan(0),
+        reason: '${file.path} no tiene duración musical',
+      );
+    }
   });
 
   test('agrupa métricas compuestas rápidas sin alterar 3/8', () {
