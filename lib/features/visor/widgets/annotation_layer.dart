@@ -244,7 +244,7 @@ class _AnnotationPainter extends CustomPainter {
 
       final paint = Paint()
         ..color = trazo.color
-        ..strokeWidth = trazo.tool == ToolType.eraser ? 20.0 : trazo.size
+        ..strokeWidth = trazo.size
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round
         ..style = PaintingStyle.stroke

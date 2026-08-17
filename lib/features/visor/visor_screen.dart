@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pdfrx/pdfrx.dart';
@@ -126,12 +127,34 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }
 
   void _toggleTools() {
+    final nextVisible = !_showTools;
+    final currentState = ref.read(pdfEngineProvider);
+    final pdf = ref.read(pdfEngineProvider.notifier);
     setState(() {
-      _showTools = !_showTools;
-      _showDrawingPalette = false;
-      ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
-      if (_showTools) _showMidi = false;
+      _showTools = nextVisible;
+      _showDrawingPalette =
+          nextVisible && currentState.currentTool != ToolType.text;
+      if (nextVisible) _showMidi = false;
     });
+    pdf.setDrawingMode(nextVisible);
+    _annotationFeedback();
+  }
+
+  void _annotationFeedback() {
+    HapticFeedback.selectionClick();
+    SystemSound.play(SystemSoundType.click);
+  }
+
+  void _selectDrawingTool(ToolType tool) {
+    final state = ref.read(pdfEngineProvider);
+    final sameTool = state.currentTool == tool && state.isDrawingMode;
+    final pdf = ref.read(pdfEngineProvider.notifier);
+    pdf.setDrawingMode(true);
+    pdf.setTool(tool);
+    setState(() {
+      _showDrawingPalette = !sameTool || !_showDrawingPalette;
+    });
+    _annotationFeedback();
   }
 
   void _toggleMidi() {
@@ -1639,9 +1662,15 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                     _ToolBtn(
                                         icon: Icons.pan_tool_rounded,
                                         isActive: !state.isDrawingMode,
-                                        onTap: () => ref
-                                            .read(pdfEngineProvider.notifier)
-                                            .setDrawingMode(false)),
+                                        tooltip: 'Navegar por la partitura',
+                                        onTap: () {
+                                          ref
+                                              .read(pdfEngineProvider.notifier)
+                                              .setDrawingMode(false);
+                                          setState(() =>
+                                              _showDrawingPalette = false);
+                                          _annotationFeedback();
+                                        }),
                                     Container(
                                         width: 1,
                                         height: 20,
@@ -1652,27 +1681,15 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                       icon: Icons.edit_rounded,
                                       isActive: state.isDrawingMode &&
                                           state.currentTool == ToolType.pencil,
-                                      onTap: () {
-                                        final e = ref
-                                            .read(pdfEngineProvider.notifier);
-                                        e.setDrawingMode(true);
-                                        e.setTool(ToolType.pencil);
-                                        setState(
-                                            () => _showDrawingPalette = false);
-                                      },
-                                      onDoubleTap: () {
-                                        final e = ref
-                                            .read(pdfEngineProvider.notifier);
-                                        e.setDrawingMode(true);
-                                        e.setTool(ToolType.pencil);
-                                        setState(() => _showDrawingPalette =
-                                            !_showDrawingPalette);
-                                      },
+                                      tooltip: 'Lápiz y opciones',
+                                      onTap: () =>
+                                          _selectDrawingTool(ToolType.pencil),
                                     ),
                                     _ToolBtn(
                                         icon: Icons.text_fields_rounded,
                                         isActive: state.isDrawingMode &&
                                             state.currentTool == ToolType.text,
+                                        tooltip: 'Insertar texto',
                                         onTap: () {
                                           final e = ref
                                               .read(pdfEngineProvider.notifier);
@@ -1680,27 +1697,15 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           e.setTool(ToolType.text);
                                           setState(() =>
                                               _showDrawingPalette = false);
+                                          _annotationFeedback();
                                         }),
                                     _ToolBtn(
                                       icon: Icons.cleaning_services_rounded,
                                       isActive: state.isDrawingMode &&
                                           state.currentTool == ToolType.eraser,
-                                      onTap: () {
-                                        final e = ref
-                                            .read(pdfEngineProvider.notifier);
-                                        e.setDrawingMode(true);
-                                        e.setTool(ToolType.eraser);
-                                        setState(
-                                            () => _showDrawingPalette = false);
-                                      },
-                                      onDoubleTap: () {
-                                        final e = ref
-                                            .read(pdfEngineProvider.notifier);
-                                        e.setDrawingMode(true);
-                                        e.setTool(ToolType.eraser);
-                                        setState(() => _showDrawingPalette =
-                                            !_showDrawingPalette);
-                                      },
+                                      tooltip: 'Borrador y opciones',
+                                      onTap: () =>
+                                          _selectDrawingTool(ToolType.eraser),
                                     ),
                                     if (state.isDrawingMode) ...[
                                       Container(
@@ -1766,6 +1771,17 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     // Slider de grosor
+                                    _StrokePreview(
+                                      sizeValue: state.currentTool ==
+                                              ToolType.eraser
+                                          ? state.eraserSize
+                                          : state.currentSize,
+                                      isEraser:
+                                          state.currentTool == ToolType.eraser,
+                                      color: state.currentTool == ToolType.eraser
+                                          ? accentColor
+                                          : state.currentColor,
+                                    ),
                                     SizedBox(
                                       width: 100,
                                       child: SliderTheme(
@@ -1795,6 +1811,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           onChanged: (val) => ref
                                               .read(pdfEngineProvider.notifier)
                                               .setCurrentSize(val),
+                                          onChangeEnd: (_) =>
+                                              HapticFeedback.selectionClick(),
                                         ),
                                       ),
                                     ),
@@ -1812,30 +1830,42 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           color: Colors.black,
                                           isActive: state.currentColor ==
                                               Colors.black,
-                                          onTap: () => ref
-                                              .read(pdfEngineProvider.notifier)
-                                              .setCurrentColor(Colors.black)),
+                                          onTap: () {
+                                            ref
+                                                .read(pdfEngineProvider.notifier)
+                                                .setCurrentColor(Colors.black);
+                                            _annotationFeedback();
+                                          }),
                                       _ColorBtn(
                                           color: Colors.red,
                                           isActive:
                                               state.currentColor == Colors.red,
-                                          onTap: () => ref
-                                              .read(pdfEngineProvider.notifier)
-                                              .setCurrentColor(Colors.red)),
+                                          onTap: () {
+                                            ref
+                                                .read(pdfEngineProvider.notifier)
+                                                .setCurrentColor(Colors.red);
+                                            _annotationFeedback();
+                                          }),
                                       _ColorBtn(
                                           color: Colors.blue,
                                           isActive:
                                               state.currentColor == Colors.blue,
-                                          onTap: () => ref
-                                              .read(pdfEngineProvider.notifier)
-                                              .setCurrentColor(Colors.blue)),
+                                          onTap: () {
+                                            ref
+                                                .read(pdfEngineProvider.notifier)
+                                                .setCurrentColor(Colors.blue);
+                                            _annotationFeedback();
+                                          }),
                                       _ColorBtn(
                                           color: Colors.white,
                                           isActive: state.currentColor ==
                                               Colors.white,
-                                          onTap: () => ref
-                                              .read(pdfEngineProvider.notifier)
-                                              .setCurrentColor(Colors.white)),
+                                          onTap: () {
+                                            ref
+                                                .read(pdfEngineProvider.notifier)
+                                                .setCurrentColor(Colors.white);
+                                            _annotationFeedback();
+                                          }),
                                     ]
                                   ],
                                 ),
@@ -2535,35 +2565,121 @@ class _ToolBtn extends StatelessWidget {
   final IconData icon;
   final bool isActive;
   final VoidCallback onTap;
-  final VoidCallback? onDoubleTap;
+  final String? tooltip;
 
   const _ToolBtn(
       {required this.icon,
       required this.isActive,
       required this.onTap,
-      this.onDoubleTap});
+      this.tooltip});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return InkWell(
+    final button = InkWell(
       onTap: onTap,
-      onDoubleTap: onDoubleTap,
+      enableFeedback: true,
       borderRadius: BorderRadius.circular(20),
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: isActive
-              ? theme.colorScheme.primary.withOpacity(0.1)
+              ? theme.colorScheme.primary.withOpacity(0.14)
               : Colors.transparent,
           shape: BoxShape.circle,
+          border: Border.all(
+            color: isActive
+                ? theme.colorScheme.primary.withOpacity(0.45)
+                : Colors.transparent,
+          ),
         ),
         child: Icon(icon,
             size: 20,
-            color: isActive ? theme.colorScheme.primary : Colors.grey),
+            color: isActive
+                ? theme.colorScheme.primary
+                : theme.colorScheme.onSurface.withOpacity(0.58)),
+      ),
+    );
+    return tooltip == null ? button : Tooltip(message: tooltip!, child: button);
+  }
+}
+
+class _StrokePreview extends StatelessWidget {
+  final double sizeValue;
+  final bool isEraser;
+  final Color color;
+
+  const _StrokePreview({
+    required this.sizeValue,
+    required this.isEraser,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final diameter = (sizeValue * 1.7).clamp(4.0, 30.0).toDouble();
+    return Tooltip(
+      message: isEraser ? 'Tamaño del borrador' : 'Tamaño del pincel',
+      child: SizedBox(
+        width: 40,
+        height: 40,
+        child: CustomPaint(
+          painter: _StrokePreviewPainter(
+            diameter: diameter,
+            color: color,
+            isEraser: isEraser,
+            background: theme.colorScheme.surface,
+          ),
+        ),
       ),
     );
   }
+}
+
+class _StrokePreviewPainter extends CustomPainter {
+  final double diameter;
+  final Color color;
+  final bool isEraser;
+  final Color background;
+
+  const _StrokePreviewPainter({
+    required this.diameter,
+    required this.color,
+    required this.isEraser,
+    required this.background,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = size.center(Offset.zero);
+    final radius = diameter / 2;
+    final outline = Paint()
+      ..color = color.withOpacity(0.9)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2;
+
+    if (isEraser) {
+      canvas.drawCircle(
+        center,
+        radius,
+        Paint()
+          ..color = color.withOpacity(
+              background.computeLuminance() > 0.5 ? 0.08 : 0.18),
+      );
+      canvas.drawCircle(center, radius, outline);
+    } else {
+      canvas.drawCircle(center, radius, Paint()..color = color);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _StrokePreviewPainter oldDelegate) =>
+      oldDelegate.diameter != diameter ||
+      oldDelegate.color != color ||
+      oldDelegate.isEraser != isEraser ||
+      oldDelegate.background != background;
 }
 
 class _ColorBtn extends StatelessWidget {
