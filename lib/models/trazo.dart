@@ -39,6 +39,26 @@ class Trazo {
     this.oculto = false,
   });
 
+  Trazo copyWith({
+    ToolType? tool,
+    Color? color,
+    double? size,
+    List<PointNormalized>? points,
+    String? texto,
+    PointNormalized? pos,
+    bool? oculto,
+  }) {
+    return Trazo(
+      tool: tool ?? this.tool,
+      color: color ?? this.color,
+      size: size ?? this.size,
+      points: points ?? List<PointNormalized>.from(this.points),
+      texto: texto ?? this.texto,
+      pos: pos ?? this.pos,
+      oculto: oculto ?? this.oculto,
+    );
+  }
+
   Map<String, dynamic> toJson() => {
         'herramienta': tool.name,
         'color':

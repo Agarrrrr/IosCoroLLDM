@@ -87,7 +87,19 @@ class MidiMeterPattern {
     required this.isCompound,
   });
 
-  int get beatsPerMeasure => groups.length;
+  int get beatsPerMeasure =>
+      groups.fold<int>(0, (total, group) => total + group);
+
+  List<int> get groupStartIndices {
+    final starts = <int>[];
+    var index = 0;
+    for (final group in groups) {
+      starts.add(index);
+      index += group;
+    }
+    return starts;
+  }
+
   double get measureLengthInQuarters =>
       groups.fold<int>(0, (sum, group) => sum + group) * writtenUnitInQuarters;
 
@@ -98,8 +110,10 @@ class MidiMeterPattern {
     int metronomeClocks = 24,
   }) {
     final writtenPulseInQuarters = 4.0 / denominator;
+    // Conservamos las agrupaciones musicales para mostrarlas visualmente,
+    // pero no las convertimos en un único pulso. Cada unidad escrita sigue
+    // teniendo su propio pulso y solo el primero recibe el acento principal.
     var preferredGroup = 1;
-
     if (denominator == 8 && metronomeClocks == 24) {
       preferredGroup = bpm > 70 && numerator != 3 ? 3 : 1;
     } else if (metronomeClocks > 0) {
@@ -111,13 +125,13 @@ class MidiMeterPattern {
     }
 
     final groups = _partitionMeter(numerator, preferredGroup);
-    final compound = denominator == 8 &&
+    final isCompound = denominator == 8 &&
         numerator > 3 &&
         groups.every((group) => group == 3);
     return MidiMeterPattern(
       groups: groups,
       writtenUnitInQuarters: writtenPulseInQuarters,
-      isCompound: compound,
+      isCompound: isCompound,
     );
   }
 
@@ -127,17 +141,11 @@ class MidiMeterPattern {
     final insideMeasure =
         safeElapsed - (measureIndex * measureLengthInQuarters);
     final writtenPosition = insideMeasure / writtenUnitInQuarters;
-    return (measureIndex * groups.length) + beatIndexAt(writtenPosition);
+    return (measureIndex * beatsPerMeasure) + beatIndexAt(writtenPosition);
   }
 
   int beatIndexAt(double writtenPosition) {
-    var boundary = 0.0;
-    var active = 0;
-    for (var index = 0; index < groups.length; index++) {
-      if (writtenPosition + 1e-7 >= boundary) active = index;
-      boundary += groups[index];
-    }
-    return active;
+    return writtenPosition.floor().clamp(0, beatsPerMeasure - 1);
   }
 
   static List<int> _partitionMeter(int numerator, int preferredGroup) {

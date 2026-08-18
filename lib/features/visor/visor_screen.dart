@@ -1615,6 +1615,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                 onMetronomo: _midi.toggleMetronomo,
                                 onVozToggle: (trackIndex, muted) =>
                                     _midi.setTrackMute(trackIndex, muted),
+                                onVozVolumeChange: (trackIndex, volume) =>
+                                    _midi.setTrackVolume(trackIndex, volume),
+                                onResetVozVolumes: _midi.resetTrackVolumes,
                                 onVozSolo: (soloTrackIndex) {
                                   // Activar solo la voz seleccionada y mutear las demás
                                   for (var v in currentMidiState.voces) {
@@ -1897,6 +1900,8 @@ class _MidiPanel extends StatefulWidget {
   final void Function(double) onSpeedChange;
   final VoidCallback onMetronomo;
   final void Function(int, bool) onVozToggle;
+  final void Function(int, double) onVozVolumeChange;
+  final VoidCallback onResetVozVolumes;
   final void Function(int) onVozSolo;
   final bool isLoaded;
   final bool isReady;
@@ -1910,6 +1915,8 @@ class _MidiPanel extends StatefulWidget {
     required this.onSpeedChange,
     required this.onMetronomo,
     required this.onVozToggle,
+    required this.onVozVolumeChange,
+    required this.onResetVozVolumes,
     required this.onVozSolo,
     required this.isLoaded,
     required this.isReady,
@@ -1990,9 +1997,15 @@ class _MidiPanelState extends State<_MidiPanel> {
                             final isCurrent =
                                 index == widget.midiState.beatIndex;
                             final isFirst = index == 0;
+                            final isGroupStart = widget
+                                .midiState.beatGroupStarts
+                                .contains(index);
                             return AnimatedContainer(
                               duration: const Duration(milliseconds: 90),
-                              margin: const EdgeInsets.symmetric(horizontal: 2),
+                              margin: EdgeInsets.only(
+                                left: isGroupStart && index > 0 ? 5 : 2,
+                                right: 2,
+                              ),
                               width: isCurrent ? dotSize + 2 : dotSize,
                               height: isCurrent ? dotSize + 2 : dotSize,
                               decoration: BoxDecoration(
@@ -2267,101 +2280,129 @@ class _MidiPanelState extends State<_MidiPanel> {
                                   color: Colors.grey.withOpacity(0.8)),
                               const SizedBox(width: 8),
                               Expanded(
-                                child: SingleChildScrollView(
-                                  scrollDirection: Axis.horizontal,
-                                  child: Row(
-                                    children: [
-                                      // Botón para activar todas las voces rápidamente (Ensamble)
-                                      GestureDetector(
-                                        onTap: () {
-                                          for (var v
-                                              in widget.midiState.voces) {
-                                            if (!v.activa) {
-                                              widget.onVozToggle(v.trackIndex,
-                                                  false); // false = unmute (activa)
-                                            }
-                                          }
-                                        },
-                                        child: AnimatedContainer(
-                                          duration:
-                                              const Duration(milliseconds: 200),
-                                          margin:
-                                              const EdgeInsets.only(right: 6),
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 10, vertical: 4),
-                                          decoration: BoxDecoration(
-                                            color: widget.accentColor
-                                                .withOpacity(0.15),
-                                            borderRadius:
-                                                BorderRadius.circular(20),
-                                            border: Border.all(
-                                                color: widget.accentColor),
-                                          ),
-                                          child: Text(
-                                            'Todos',
-                                            style: GoogleFonts.inter(
-                                              fontSize: 11,
-                                              fontWeight: FontWeight.w700,
-                                              color: widget.accentColor,
-                                            ),
-                                          ),
-                                        ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'Voces',
+                                      style: GoogleFonts.inter(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w700,
                                       ),
-                                      ...widget.midiState.voces.map((voz) {
-                                        return GestureDetector(
-                                          onTap: () {
-                                            if (voz.activa) {
-                                              // Prevenir mutear todas las voces (debe quedar al menos una)
-                                              final activeCount = widget
-                                                  .midiState.voces
-                                                  .where((v) => v.activa)
-                                                  .length;
-                                              if (activeCount <= 1) return;
-                                            }
-                                            widget.onVozToggle(
-                                                voz.trackIndex, voz.activa);
-                                          },
-                                          onLongPress: () =>
-                                              widget.onVozSolo(voz.trackIndex),
-                                          child: AnimatedContainer(
-                                            duration: const Duration(
-                                                milliseconds: 200),
-                                            margin:
-                                                const EdgeInsets.only(right: 6),
-                                            padding: const EdgeInsets.symmetric(
-                                                horizontal: 10, vertical: 4),
-                                            decoration: BoxDecoration(
-                                              color: voz.activa
-                                                  ? widget.accentColor
-                                                  : Colors.grey
-                                                      .withOpacity(0.1),
-                                              borderRadius:
-                                                  BorderRadius.circular(20),
-                                              border: Border.all(
-                                                color: voz.activa
-                                                    ? widget.accentColor
-                                                    : Colors.grey
-                                                        .withOpacity(0.3),
-                                              ),
-                                            ),
-                                            child: Text(
-                                              voz.nombre,
-                                              style: GoogleFonts.inter(
-                                                fontSize: 11,
-                                                fontWeight: FontWeight.w600,
-                                                color: voz.activa
-                                                    ? Colors.white
-                                                    : Colors.grey,
-                                              ),
-                                            ),
-                                          ),
-                                        );
-                                      }),
-                                    ],
-                                  ),
+                                    ),
+                                    const Spacer(),
+                                    TextButton(
+                                      onPressed: widget.onResetVozVolumes,
+                                      child: const Text('Restablecer'),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
+                          ),
+                          const SizedBox(height: 4),
+                          ConstrainedBox(
+                            constraints: const BoxConstraints(maxHeight: 230),
+                            child: ListView.separated(
+                              shrinkWrap: true,
+                              padding: EdgeInsets.zero,
+                              itemCount: widget.midiState.voces.length,
+                              separatorBuilder: (_, __) =>
+                                  const SizedBox(height: 6),
+                              itemBuilder: (context, index) {
+                                final voz = widget.midiState.voces[index];
+                                final volume =
+                                    voz.volumen.clamp(0.0, 1.0).toDouble();
+                                final activeCount = widget.midiState.voces
+                                    .where((v) => v.activa)
+                                    .length;
+                                return Row(
+                                  children: [
+                                    IconButton(
+                                      icon: Icon(
+                                        voz.activa && volume > 0
+                                            ? (volume > 0.5
+                                                ? Icons.volume_up_rounded
+                                                : Icons.volume_down_rounded)
+                                            : Icons.volume_off_rounded,
+                                        size: 18,
+                                        color: voz.activa
+                                            ? widget.accentColor
+                                            : Colors.grey,
+                                      ),
+                                      onPressed: () {
+                                        if (voz.activa && activeCount <= 1) {
+                                          return;
+                                        }
+                                        widget.onVozToggle(
+                                            voz.trackIndex, voz.activa);
+                                      },
+                                      tooltip: voz.activa
+                                          ? 'Silenciar ${voz.nombre}'
+                                          : 'Activar ${voz.nombre}',
+                                      padding: EdgeInsets.zero,
+                                      constraints: const BoxConstraints(
+                                          minWidth: 28, minHeight: 28),
+                                    ),
+                                    const SizedBox(width: 4),
+                                    SizedBox(
+                                      width: 62,
+                                      child: GestureDetector(
+                                        onLongPress: () => widget
+                                            .onVozSolo(voz.trackIndex),
+                                        child: Text(
+                                          voz.nombre,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: GoogleFonts.inter(
+                                            fontSize: 11,
+                                            fontWeight: FontWeight.w600,
+                                            color: voz.activa
+                                                ? theme.colorScheme.onSurface
+                                                : Colors.grey,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: SliderTheme(
+                                        data: SliderThemeData(
+                                          trackHeight: 3,
+                                          thumbShape:
+                                              const RoundSliderThumbShape(
+                                                  enabledThumbRadius: 6),
+                                          activeTrackColor:
+                                              widget.accentColor,
+                                          inactiveTrackColor: widget.accentColor
+                                              .withOpacity(0.2),
+                                          thumbColor: widget.accentColor,
+                                          overlayShape:
+                                              const RoundSliderOverlayShape(
+                                                  overlayRadius: 12),
+                                        ),
+                                        child: Slider(
+                                          value: volume,
+                                          onChanged: loading
+                                              ? null
+                                              : (value) => widget
+                                                  .onVozVolumeChange(
+                                                      voz.trackIndex, value),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 36,
+                                      child: Text(
+                                        '${(volume * 100).round()}%',
+                                        textAlign: TextAlign.right,
+                                        style: GoogleFonts.inter(
+                                          fontSize: 10,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                );
+                              },
+                            ),
                           ),
                         ],
                       ],

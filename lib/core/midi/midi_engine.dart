@@ -21,6 +21,7 @@ class MidiState {
   final int? beatNumerator;
   final int beatSerial;
   final bool? beatEsPrimero;
+  final List<int> beatGroupStarts;
   final int? timeSignatureNumerator;
   final int? timeSignatureDenominator;
 
@@ -38,6 +39,7 @@ class MidiState {
     this.beatNumerator,
     this.beatSerial = 0,
     this.beatEsPrimero,
+    this.beatGroupStarts = const [],
     this.timeSignatureNumerator,
     this.timeSignatureDenominator,
   });
@@ -56,6 +58,7 @@ class MidiState {
     int? beatNumerator,
     int? beatSerial,
     bool? beatEsPrimero,
+    List<int>? beatGroupStarts,
     int? timeSignatureNumerator,
     int? timeSignatureDenominator,
   }) =>
@@ -73,6 +76,7 @@ class MidiState {
         beatNumerator: beatNumerator ?? this.beatNumerator,
         beatSerial: beatSerial ?? this.beatSerial,
         beatEsPrimero: beatEsPrimero ?? this.beatEsPrimero,
+        beatGroupStarts: beatGroupStarts ?? this.beatGroupStarts,
         timeSignatureNumerator:
             timeSignatureNumerator ?? this.timeSignatureNumerator,
         timeSignatureDenominator:
@@ -84,8 +88,14 @@ class MidiVoz {
   final int trackIndex;
   final String nombre;
   bool activa;
+  double volumen;
 
-  MidiVoz({required this.trackIndex, required this.nombre, this.activa = true});
+  MidiVoz({
+    required this.trackIndex,
+    required this.nombre,
+    this.activa = true,
+    this.volumen = 1.0,
+  });
 }
 
 class _ScheduledMidiNote {
@@ -118,6 +128,7 @@ class MidiEngine {
   int _playbackCursor = 0;
   int _lastProgressEmitMicros = 0;
   final Map<int, bool> _mutedTracks = {}; // trackIndex -> isMuted
+  final Map<int, double> _trackVolumes = {}; // trackIndex -> volume
   final Map<int, int> _trackChannels = {};
 
   // Metrónomo
@@ -232,10 +243,17 @@ class MidiEngine {
         );
 
       _mutedTracks.clear();
+      _trackVolumes.clear();
       _trackChannels.clear();
       final voces = _song!.tracks.map((t) {
         _mutedTracks[t.index] = false;
-        return MidiVoz(trackIndex: t.index, nombre: t.name, activa: true);
+        _trackVolumes[t.index] = 1.0;
+        return MidiVoz(
+          trackIndex: t.index,
+          nombre: t.name,
+          activa: true,
+          volumen: 1.0,
+        );
       }).toList();
       await _configureVoiceChannels(_song!.tracks);
       final initialSignature = _song!.timeSignatures.first;
@@ -262,6 +280,7 @@ class MidiEngine {
         beatNumerator: initialPattern.beatsPerMeasure,
         beatSerial: 0,
         beatEsPrimero: true,
+        beatGroupStarts: initialPattern.groupStartIndices,
         timeSignatureNumerator: initialSignature.numerator,
         timeSignatureDenominator: initialSignature.denominator,
       ));
@@ -373,14 +392,84 @@ class MidiEngine {
 
   void setTrackMute(int trackIndex, bool muted) {
     _mutedTracks[trackIndex] = muted;
+    final channel = _trackChannels[trackIndex];
+    final volume = muted ? 0.0 : (_trackVolumes[trackIndex] ?? 1.0);
+    if (channel != null && _sfId != null && _midiPro.isInitialized) {
+      unawaited(_midiPro.controlChange(
+        sfId: _sfId!,
+        channel: channel,
+        controller: 7,
+        value: (volume * 127).round().clamp(0, 127),
+      ));
+    }
     final updatedVoces = _state.voces.map((v) {
       if (v.trackIndex == trackIndex) {
         return MidiVoz(
-            trackIndex: v.trackIndex, nombre: v.nombre, activa: !muted);
+          trackIndex: v.trackIndex,
+          nombre: v.nombre,
+          activa: !muted,
+          volumen: v.volumen,
+        );
       }
       return v;
     }).toList();
     _emit(_state.copyWith(voces: updatedVoces));
+  }
+
+  void setTrackVolume(int trackIndex, double volume) {
+    final clamped = volume.clamp(0.0, 1.0).toDouble();
+    _trackVolumes[trackIndex] = clamped;
+    final muted = clamped == 0.0;
+    _mutedTracks[trackIndex] = muted;
+
+    final channel = _trackChannels[trackIndex];
+    if (channel != null && _sfId != null && _midiPro.isInitialized) {
+      final effectiveGain = clamped * clamped;
+      unawaited(_midiPro.controlChange(
+        sfId: _sfId!,
+        channel: channel,
+        controller: 7,
+        value: (effectiveGain * 127).round().clamp(0, 127),
+      ));
+    }
+
+    _emit(_state.copyWith(
+      voces: _state.voces.map((v) {
+        if (v.trackIndex != trackIndex) return v;
+        return MidiVoz(
+          trackIndex: v.trackIndex,
+          nombre: v.nombre,
+          activa: !muted,
+          volumen: clamped,
+        );
+      }).toList(),
+    ));
+  }
+
+  void resetTrackVolumes() {
+    for (final trackIndex in _trackVolumes.keys) {
+      _trackVolumes[trackIndex] = 1.0;
+      _mutedTracks[trackIndex] = false;
+      final channel = _trackChannels[trackIndex];
+      if (channel != null && _sfId != null && _midiPro.isInitialized) {
+        unawaited(_midiPro.controlChange(
+          sfId: _sfId!,
+          channel: channel,
+          controller: 7,
+          value: 127,
+        ));
+      }
+    }
+    _emit(_state.copyWith(
+      voces: _state.voces
+          .map((v) => MidiVoz(
+                trackIndex: v.trackIndex,
+                nombre: v.nombre,
+                activa: true,
+                volumen: 1.0,
+              ))
+          .toList(),
+    ));
   }
 
   double _getCurrentTimeSeconds() {
@@ -424,6 +513,7 @@ class MidiEngine {
         _playNativeNote(
           scheduled.note,
           _trackChannels[scheduled.trackIndex] ?? 0,
+          trackIndex: scheduled.trackIndex,
         );
       }
     }
@@ -482,6 +572,7 @@ class MidiEngine {
         beatNumerator: meterPattern.beatsPerMeasure,
         beatSerial: playClick ? _state.beatSerial + 1 : _state.beatSerial,
         beatEsPrimero: isFirstBeat,
+        beatGroupStarts: meterPattern.groupStartIndices,
         timeSignatureNumerator: signature.numerator,
         timeSignatureDenominator: signature.denominator,
       ));
@@ -536,16 +627,22 @@ class MidiEngine {
   ///
   /// El conteo por altura evita cortar una nota sostenida por otra voz.
   /// El "epoch" invalida stops pendientes tras pause/stop/seek.
-  void _playNativeNote(MidiNoteEvent note, int channel) {
+  void _playNativeNote(MidiNoteEvent note, int channel,
+      {required int trackIndex}) {
     if (!_midiPro.isInitialized || _sfId == null) return;
     try {
+      final trackVolume = _trackVolumes[trackIndex] ?? 1.0;
+      if (trackVolume <= 0.0) return;
       final pitch = note.note;
       final sfId = _sfId!;
       final epoch = _playbackEpoch;
       final noteKey = (channel << 8) | pitch;
       final activeNotes =
           _activeNoteCounts.values.fold<int>(0, (sum, count) => sum + count);
-      final velocity = masteredVelocity(note.velocity, activeNotes);
+      final velocity =
+          (masteredVelocity(note.velocity, activeNotes) * trackVolume)
+              .round()
+              .clamp(1, 127);
       _activeNoteCounts[noteKey] = (_activeNoteCounts[noteKey] ?? 0) + 1;
       _midiPro.playNote(
         channel: channel,
@@ -581,14 +678,14 @@ class MidiEngine {
   /// saturen el piano.
   static int masteredVelocity(int inputVelocity, int activeNotes) {
     final normalized = inputVelocity.clamp(1, 127) / 127.0;
-    final compressed = 30.0 + math.pow(normalized, 0.68) * 66.0;
+    final compressed = 34.0 + math.pow(normalized, 0.68) * 78.0;
     final polyphonyGain =
         (1 / math.sqrt(1 + activeNotes.clamp(0, 96) / 24.0)).clamp(0.72, 1.0);
-    return (compressed * polyphonyGain).round().clamp(1, 104);
+    return (compressed * polyphonyGain).round().clamp(1, 120);
   }
 
   Future<void> _configureMastering() async {
-    await _midiPro.setMasterGain(0.72);
+    await _midiPro.setMasterGain(0.95);
     await _midiPro.setEqualizer(
       enabled: true,
       bassGain: -1.5,
