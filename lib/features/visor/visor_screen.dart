@@ -29,7 +29,7 @@ import 'package:coro_lldm/features/premium/premium_dialog.dart';
 const List<double> _kSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0];
 const double _kScaleEpsilon = 0.001;
 
-enum _ShareKind { pdf, ensemble, allVoices, voice }
+enum _ShareKind { pdf, voicesOnly, allVoices, voice }
 
 enum _ExportDestination { share, save }
 
@@ -465,16 +465,16 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     color: Colors.amber,
                   ),
                   title: Text(strings.t(
-                    'Ensamble completo (MP3)',
-                    'Full Ensemble (MP3)',
+                    'Voces individuales (MP3)',
+                    'Individual Voices (MP3)',
                   )),
                   subtitle: Text(strings.t(
-                    'Convertir todas las voces en el dispositivo',
-                    'Convert all voices on device',
+                    'Convertir cada voz por separado, sin ensamble',
+                    'Convert each voice separately, without ensemble',
                   )),
                   onTap: () => Navigator.pop(
                     sheetContext,
-                    const _ShareSelection(_ShareKind.ensemble),
+                    const _ShareSelection(_ShareKind.voicesOnly),
                   ),
                 ),
                 ListTile(
@@ -550,8 +550,13 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
 
     if (!Platform.isAndroid) {
-      if (selection.kind == _ShareKind.allVoices) {
-        await _exportarTodasLasVocesIOS(canto, voices);
+      if (selection.kind == _ShareKind.allVoices ||
+          selection.kind == _ShareKind.voicesOnly) {
+        await _exportarTodasLasVocesIOS(
+          canto,
+          voices,
+          includeEnsemble: selection.kind == _ShareKind.allVoices,
+        );
       } else {
         await _exportarAudioIOS(canto, selection.voice);
       }
@@ -560,8 +565,14 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
     final destination = await _elegirDestino();
     if (destination == null || !mounted) return;
-    if (selection.kind == _ShareKind.allVoices) {
-      await _exportarTodasLasVoces(canto, voices, destination);
+    if (selection.kind == _ShareKind.allVoices ||
+        selection.kind == _ShareKind.voicesOnly) {
+      await _exportarTodasLasVoces(
+        canto,
+        voices,
+        destination,
+        includeEnsemble: selection.kind == _ShareKind.allVoices,
+      );
     } else {
       await _exportarMp3(canto, selection.voice, destination);
     }
@@ -703,10 +714,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   Future<void> _exportarTodasLasVocesIOS(
     Canto canto,
     List<MidiExportVoice> voices,
+    {bool includeEnsemble = true}
   ) async {
     final strings = AppStrings.of(context);
+    final total = voices.length + (includeEnsemble ? 1 : 0);
     final progress = ValueNotifier<(int, int, String)>(
-        (0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
+        (0, total, strings.t('Voces individuales', 'Individual voices')));
     var cancelled = false;
     var dialogOpen = true;
     showDialog<void>(
@@ -755,6 +768,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           progress.value = (completed, total, label);
         },
         isCancelled: () => cancelled,
+        includeEnsemble: includeEnsemble,
       );
       if (!mounted) return;
       if (dialogOpen) {
@@ -763,7 +777,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       if (files.isEmpty || cancelled) return;
       final names = <String>[
-        MidiExportService.displayFileName(canto),
+        if (includeEnsemble) MidiExportService.displayFileName(canto),
         for (final voice in voices)
           MidiExportService.displayFileName(canto, voice: voice),
       ];
@@ -984,10 +998,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     Canto canto,
     List<MidiExportVoice> voices,
     _ExportDestination destination,
+    {bool includeEnsemble = true}
   ) async {
     final strings = AppStrings.of(context);
+    final total = voices.length + (includeEnsemble ? 1 : 0);
     final progress = ValueNotifier<(int, int, String)>(
-        (0, voices.length + 1, strings.t('Ensamble', 'Ensemble')));
+        (0, total, strings.t('Voces individuales', 'Individual voices')));
     var cancelled = false;
     var dialogOpen = true;
     var operation = strings.t('crear', 'create');
@@ -1042,6 +1058,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           progress.value = (completed, total, label);
         },
         isCancelled: () => cancelled,
+        includeEnsemble: includeEnsemble,
       );
       if (!mounted) return;
       if (dialogOpen) {
@@ -1051,7 +1068,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       if (files.isEmpty || cancelled) return;
 
       final names = <String>[
-        MidiExportService.displayFileName(canto),
+        if (includeEnsemble) MidiExportService.displayFileName(canto),
         for (final voice in voices)
           MidiExportService.displayFileName(canto, voice: voice),
       ];
@@ -2113,8 +2130,6 @@ class _MidiPanelState extends State<_MidiPanel> {
                                       onChanged: (value) {
                                         setModalState(() {
                                           localVolumes[voz.trackIndex] = value;
-                                          localMuted[voz.trackIndex] =
-                                              value == 0;
                                         });
                                         widget.onVozVolumeChange(
                                             voz.trackIndex, value);

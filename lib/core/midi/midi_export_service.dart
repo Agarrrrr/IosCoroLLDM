@@ -141,10 +141,11 @@ class MidiExportService {
     Canto canto, {
     required void Function(int completed, int total, String label) onProgress,
     bool Function()? isCancelled,
+    bool includeEnsemble = true,
   }) async {
     final availableVoices = await voices(canto);
     final jobs = <({MidiExportVoice? voice, String label})>[
-      (voice: null, label: 'Ensamble'),
+      if (includeEnsemble) (voice: null, label: 'Ensamble'),
       for (final voice in availableVoices) (voice: voice, label: voice.name),
     ];
     final files = <File>[];

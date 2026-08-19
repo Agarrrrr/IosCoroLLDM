@@ -197,8 +197,12 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
         : trazo;
     final isSelected = index == _selectedTextIndex;
     final textPainter = _layoutText(displayTrazo);
-    final width = textPainter.width + (isSelected ? 40 : 16);
-    final height = textPainter.height + (isSelected ? 19 : 12);
+    final width = isSelected
+        ? (textPainter.width + 40).clamp(72.0, double.infinity).toDouble()
+        : textPainter.width + 16;
+    final height = isSelected
+        ? (textPainter.height + 19).clamp(56.0, double.infinity).toDouble()
+        : textPainter.height + 12;
     final left = position.x * widget.pageSize.width;
     final top = position.y * widget.pageSize.height -
         textPainter.height -

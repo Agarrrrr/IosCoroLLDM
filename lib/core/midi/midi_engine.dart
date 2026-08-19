@@ -419,8 +419,9 @@ class MidiEngine {
   void setTrackVolume(int trackIndex, double volume) {
     final clamped = volume.clamp(0.0, 1.0).toDouble();
     _trackVolumes[trackIndex] = clamped;
-    final muted = clamped == 0.0;
-    _mutedTracks[trackIndex] = muted;
+    // El volumen y el mute son estados independientes. Una voz sin notas,
+    // o un volumen ajustado a cero, no debe convertirse en un mute manual.
+    final muted = _mutedTracks[trackIndex] ?? false;
 
     final channel = _trackChannels[trackIndex];
     if (channel != null && _sfId != null && _midiPro.isInitialized) {
