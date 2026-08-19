@@ -1938,6 +1938,206 @@ class _MidiPanelState extends State<_MidiPanel> {
     return '$m:$s';
   }
 
+  void _abrirMezcladorModal(BuildContext parentContext) {
+    showModalBottomSheet<void>(
+      context: parentContext,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (modalContext) {
+        final theme = Theme.of(modalContext);
+        final localVolumes = <int, double>{
+          for (final voz in widget.midiState.voces)
+            voz.trackIndex: voz.volumen.clamp(0.0, 1.0).toDouble(),
+        };
+        final localMuted = <int, bool>{
+          for (final voz in widget.midiState.voces)
+            voz.trackIndex: !voz.activa,
+        };
+
+        return StatefulBuilder(
+          builder: (context, setModalState) => SafeArea(
+            child: Container(
+              margin: const EdgeInsets.all(12),
+              constraints: BoxConstraints(
+                maxHeight: MediaQuery.of(modalContext).size.height * 0.45,
+              ),
+              decoration: BoxDecoration(
+                color: theme.scaffoldBackgroundColor,
+                borderRadius: BorderRadius.circular(24),
+                border: Border.all(
+                  color: widget.accentColor.withOpacity(0.4),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.25),
+                    blurRadius: 16,
+                    offset: const Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 10, 12, 6),
+                    child: Row(
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.arrow_back_rounded, size: 20),
+                          tooltip: 'Regresar',
+                          onPressed: () => Navigator.pop(modalContext),
+                        ),
+                        const SizedBox(width: 4),
+                        Expanded(
+                          child: Text(
+                            'Mezclador de voces',
+                            style: GoogleFonts.inter(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        TextButton.icon(
+                          onPressed: () {
+                            widget.onResetVozVolumes();
+                            setModalState(() {
+                              for (final voz in widget.midiState.voces) {
+                                localVolumes[voz.trackIndex] = 1.0;
+                                localMuted[voz.trackIndex] = false;
+                              }
+                            });
+                          },
+                          icon: Icon(Icons.rotate_left_rounded,
+                              size: 16, color: widget.accentColor),
+                          label: Text(
+                            'Restablecer',
+                            style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                              color: widget.accentColor,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Divider(height: 1, color: Colors.grey.withOpacity(0.2)),
+                  Expanded(
+                    child: ListView.separated(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 12),
+                      itemCount: widget.midiState.voces.length,
+                      separatorBuilder: (_, __) => const SizedBox(height: 10),
+                      itemBuilder: (context, index) {
+                        final voz = widget.midiState.voces[index];
+                        final volume =
+                            localVolumes[voz.trackIndex] ?? voz.volumen;
+                        final muted = localMuted[voz.trackIndex] ?? !voz.activa;
+                        return Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: theme.colorScheme.surface,
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(
+                              color: !muted
+                                  ? widget.accentColor.withOpacity(0.25)
+                                  : Colors.grey.withOpacity(0.15),
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              IconButton(
+                                icon: Icon(
+                                  !muted && volume > 0
+                                      ? (volume > 0.5
+                                          ? Icons.volume_up_rounded
+                                          : Icons.volume_down_rounded)
+                                      : Icons.volume_off_rounded,
+                                  size: 20,
+                                  color: !muted
+                                      ? widget.accentColor
+                                      : Colors.grey,
+                                ),
+                                onPressed: () {
+                                  setModalState(() {
+                                    localMuted[voz.trackIndex] = !muted;
+                                  });
+                                  widget.onVozToggle(voz.trackIndex, muted);
+                                },
+                                tooltip: muted
+                                    ? 'Activar ${voz.nombre}'
+                                    : 'Silenciar ${voz.nombre}',
+                              ),
+                              const SizedBox(width: 4),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        GestureDetector(
+                                          onLongPress: () =>
+                                              widget.onVozSolo(voz.trackIndex),
+                                          child: Text(
+                                            voz.nombre,
+                                            style: GoogleFonts.inter(
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.w600,
+                                              color: !muted
+                                                  ? theme.colorScheme.onSurface
+                                                  : Colors.grey,
+                                            ),
+                                          ),
+                                        ),
+                                        Text(
+                                          '${(volume * 100).round()}%',
+                                          style: GoogleFonts.inter(
+                                            fontSize: 11,
+                                            fontWeight: FontWeight.w700,
+                                            color: !muted
+                                                ? widget.accentColor
+                                                : Colors.grey,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Slider(
+                                      value: volume.clamp(0.0, 1.0).toDouble(),
+                                      activeColor: widget.accentColor,
+                                      inactiveColor: widget.accentColor
+                                          .withOpacity(0.2),
+                                      onChanged: (value) {
+                                        setModalState(() {
+                                          localVolumes[voz.trackIndex] = value;
+                                          localMuted[voz.trackIndex] =
+                                              value == 0;
+                                        });
+                                        widget.onVozVolumeChange(
+                                            voz.trackIndex, value);
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -2203,6 +2403,15 @@ class _MidiPanelState extends State<_MidiPanel> {
                   tooltip: 'Detener',
                   size: 22,
                 ),
+                const SizedBox(width: 8),
+                _GoldIconBtn(
+                  icon: Icons.tune_rounded,
+                  isActive: false,
+                  activeColor: widget.accentColor,
+                  onTap: loading ? null : () => _abrirMezcladorModal(context),
+                  tooltip: 'Mezclador de voces',
+                  size: 22,
+                ),
               ],
             ),
 
@@ -2270,141 +2479,6 @@ class _MidiPanelState extends State<_MidiPanel> {
                           ],
                         ),
 
-                        // ── Voces (SATB) ──────────────────────────────────────────────
-                        if (widget.midiState.voces.isNotEmpty) ...[
-                          const SizedBox(height: 12),
-                          Row(
-                            children: [
-                              Icon(Icons.people_rounded,
-                                  size: 16,
-                                  color: Colors.grey.withOpacity(0.8)),
-                              const SizedBox(width: 8),
-                              Expanded(
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      'Voces',
-                                      style: GoogleFonts.inter(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w700,
-                                      ),
-                                    ),
-                                    const Spacer(),
-                                    TextButton(
-                                      onPressed: widget.onResetVozVolumes,
-                                      child: const Text('Restablecer'),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 4),
-                          ConstrainedBox(
-                            constraints: const BoxConstraints(maxHeight: 230),
-                            child: ListView.separated(
-                              shrinkWrap: true,
-                              padding: EdgeInsets.zero,
-                              itemCount: widget.midiState.voces.length,
-                              separatorBuilder: (_, __) =>
-                                  const SizedBox(height: 6),
-                              itemBuilder: (context, index) {
-                                final voz = widget.midiState.voces[index];
-                                final volume =
-                                    voz.volumen.clamp(0.0, 1.0).toDouble();
-                                final activeCount = widget.midiState.voces
-                                    .where((v) => v.activa)
-                                    .length;
-                                return Row(
-                                  children: [
-                                    IconButton(
-                                      icon: Icon(
-                                        voz.activa && volume > 0
-                                            ? (volume > 0.5
-                                                ? Icons.volume_up_rounded
-                                                : Icons.volume_down_rounded)
-                                            : Icons.volume_off_rounded,
-                                        size: 18,
-                                        color: voz.activa
-                                            ? widget.accentColor
-                                            : Colors.grey,
-                                      ),
-                                      onPressed: () {
-                                        if (voz.activa && activeCount <= 1) {
-                                          return;
-                                        }
-                                        widget.onVozToggle(
-                                            voz.trackIndex, voz.activa);
-                                      },
-                                      tooltip: voz.activa
-                                          ? 'Silenciar ${voz.nombre}'
-                                          : 'Activar ${voz.nombre}',
-                                      padding: EdgeInsets.zero,
-                                      constraints: const BoxConstraints(
-                                          minWidth: 28, minHeight: 28),
-                                    ),
-                                    const SizedBox(width: 4),
-                                    SizedBox(
-                                      width: 62,
-                                      child: GestureDetector(
-                                        onLongPress: () => widget
-                                            .onVozSolo(voz.trackIndex),
-                                        child: Text(
-                                          voz.nombre,
-                                          overflow: TextOverflow.ellipsis,
-                                          style: GoogleFonts.inter(
-                                            fontSize: 11,
-                                            fontWeight: FontWeight.w600,
-                                            color: voz.activa
-                                                ? theme.colorScheme.onSurface
-                                                : Colors.grey,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: SliderTheme(
-                                        data: SliderThemeData(
-                                          trackHeight: 3,
-                                          thumbShape:
-                                              const RoundSliderThumbShape(
-                                                  enabledThumbRadius: 6),
-                                          activeTrackColor:
-                                              widget.accentColor,
-                                          inactiveTrackColor: widget.accentColor
-                                              .withOpacity(0.2),
-                                          thumbColor: widget.accentColor,
-                                          overlayShape:
-                                              const RoundSliderOverlayShape(
-                                                  overlayRadius: 12),
-                                        ),
-                                        child: Slider(
-                                          value: volume,
-                                          onChanged: loading
-                                              ? null
-                                              : (value) => widget
-                                                  .onVozVolumeChange(
-                                                      voz.trackIndex, value),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 36,
-                                      child: Text(
-                                        '${(volume * 100).round()}%',
-                                        textAlign: TextAlign.right,
-                                        style: GoogleFonts.inter(
-                                          fontSize: 10,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                );
-                              },
-                            ),
-                          ),
-                        ],
                       ],
                     )
                   : const SizedBox(width: double.infinity, height: 0),
