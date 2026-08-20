@@ -116,6 +116,183 @@ String _normalizar(String str) {
       .trim();
 }
 
+/// Normaliza texto para la búsqueda y unifica números escritos y dígitos.
+/// Por ejemplo: `125`, `ciento veinticinco` y `one hundred twenty-five`
+/// quedan representados como `125`.
+@visibleForTesting
+String normalizeSearchText(String str) {
+  final clean = _normalizar(str)
+      .replaceAll(RegExp(r'[^a-z0-9]+'), ' ')
+      .replaceAll(RegExp(r'\s+'), ' ')
+      .trim();
+  if (clean.isEmpty) return clean;
+
+  final tokens = clean.split(' ');
+  final normalized = <String>[];
+  var index = 0;
+  while (index < tokens.length) {
+    final spanish = _parseSpanishNumber(tokens, index);
+    final english = _parseEnglishNumber(tokens, index);
+    final parsed = spanish ?? english;
+    if (parsed != null) {
+      normalized.add(parsed[0].toString());
+      index += parsed[1];
+    } else {
+      normalized.add(tokens[index]);
+      index++;
+    }
+  }
+  return normalized.join(' ');
+}
+
+// Devuelve [valor, cantidadDeTokens]. Los conectores "y" y "and" solo
+// forman parte de una cifra cuando están entre dos palabras numéricas.
+List<int>? _parseSpanishNumber(List<String> tokens, int start) {
+  const values = <String, int>{
+    'cero': 0,
+    'un': 1,
+    'uno': 1,
+    'una': 1,
+    'dos': 2,
+    'tres': 3,
+    'cuatro': 4,
+    'cinco': 5,
+    'seis': 6,
+    'siete': 7,
+    'ocho': 8,
+    'nueve': 9,
+    'diez': 10,
+    'once': 11,
+    'doce': 12,
+    'trece': 13,
+    'catorce': 14,
+    'quince': 15,
+    'dieciseis': 16,
+    'diecisiete': 17,
+    'dieciocho': 18,
+    'diecinueve': 19,
+    'veinte': 20,
+    'veintiuno': 21,
+    'veintidos': 22,
+    'veintitres': 23,
+    'veinticuatro': 24,
+    'veinticinco': 25,
+    'veintiseis': 26,
+    'veintisiete': 27,
+    'veintiocho': 28,
+    'veintinueve': 29,
+    'treinta': 30,
+    'cuarenta': 40,
+    'cincuenta': 50,
+    'sesenta': 60,
+    'setenta': 70,
+    'ochenta': 80,
+    'noventa': 90,
+    'cien': 100,
+    'ciento': 100,
+    'doscientos': 200,
+    'trescientos': 300,
+    'cuatrocientos': 400,
+    'quinientos': 500,
+    'seiscientos': 600,
+    'setecientos': 700,
+    'ochocientos': 800,
+    'novecientos': 900,
+  };
+  return _parseNumber(tokens, start, values, 'y');
+}
+
+List<int>? _parseEnglishNumber(List<String> tokens, int start) {
+  const values = <String, int>{
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9,
+    'ten': 10,
+    'eleven': 11,
+    'twelve': 12,
+    'thirteen': 13,
+    'fourteen': 14,
+    'fifteen': 15,
+    'sixteen': 16,
+    'seventeen': 17,
+    'eighteen': 18,
+    'nineteen': 19,
+    'twenty': 20,
+    'thirty': 30,
+    'forty': 40,
+    'fifty': 50,
+    'sixty': 60,
+    'seventy': 70,
+    'eighty': 80,
+    'ninety': 90,
+  };
+  return _parseNumber(tokens, start, values, 'and');
+}
+
+List<int>? _parseNumber(
+  List<String> tokens,
+  int start,
+  Map<String, int> values,
+  String connector,
+) {
+  var current = 0;
+  var total = 0;
+  var index = start;
+  var sawNumber = false;
+
+  while (index < tokens.length) {
+    final token = tokens[index];
+    final value = values[token];
+    if (value != null) {
+      current += value;
+      sawNumber = true;
+      index++;
+      continue;
+    }
+    if (token == 'hundred' && values.containsKey('one')) {
+      if (!sawNumber) break;
+      current = (current == 0 ? 1 : current) * 100;
+      index++;
+      continue;
+    }
+    if (token == 'thousand' && values.containsKey('one')) {
+      if (!sawNumber) break;
+      total += (current == 0 ? 1 : current) * 1000;
+      current = 0;
+      index++;
+      continue;
+    }
+    if (token == 'mil') {
+      if (!sawNumber) break;
+      total += (current == 0 ? 1 : current) * 1000;
+      current = 0;
+      index++;
+      continue;
+    }
+    if (token == connector &&
+        sawNumber &&
+        index + 1 < tokens.length &&
+        (values.containsKey(tokens[index + 1]) ||
+            tokens[index + 1] == 'hundred' ||
+            tokens[index + 1] == 'thousand' ||
+            tokens[index + 1] == 'mil')) {
+      index++;
+      continue;
+    }
+    break;
+  }
+
+  if (!sawNumber) return null;
+  return [total + current, index - start];
+}
+
 int _naturalSort(String a, String b) {
   final regex = RegExp(r'(\d+|\D+)');
   final matchesA = regex.allMatches(a).map((m) => m.group(0)!).toList();
@@ -219,7 +396,7 @@ int _levenshtein(String s, String t) {
 
 // Lógica pura de filtrado extraída a nivel superior para el Isolate
 List<Canto> _filterAndSortCantosEnIsolate(FilterParams params) {
-  final queryNormalizada = _normalizar(params.query);
+  final queryNormalizada = normalizeSearchText(params.query);
   final queryWords =
       queryNormalizada.isEmpty ? <String>[] : queryNormalizada.split(' ');
   final favoritosSet = params.favoritos.toSet();
@@ -230,8 +407,9 @@ List<Canto> _filterAndSortCantosEnIsolate(FilterParams params) {
 
     // 1. Si la barra de búsqueda tiene texto: búsqueda dentro del idioma activo.
     if (queryWords.isNotEmpty) {
-      final nNombre = _normalizar(canto.nombre);
-      final nTemas = canto.temas.map((t) => _normalizar(t)).join(' ');
+      final nNombre = normalizeSearchText(canto.nombre);
+      final nTemas =
+          canto.temas.map(normalizeSearchText).join(' ');
 
       for (final word in queryWords) {
         if (word.length <= 2) {
@@ -285,10 +463,10 @@ List<Canto> _filterAndSortCantosEnIsolate(FilterParams params) {
   // 3. Ordenar resultados por relevancia
   if (queryNormalizada.isNotEmpty) {
     filtrados.sort((a, b) {
-      final nA = _normalizar(a.nombre);
-      final nB = _normalizar(b.nombre);
-      final nTemasA = a.temas.map((t) => _normalizar(t)).join(' ');
-      final nTemasB = b.temas.map((t) => _normalizar(t)).join(' ');
+      final nA = normalizeSearchText(a.nombre);
+      final nB = normalizeSearchText(b.nombre);
+      final nTemasA = a.temas.map(normalizeSearchText).join(' ');
+      final nTemasB = b.temas.map(normalizeSearchText).join(' ');
 
       int scoreA = 0;
       int scoreB = 0;

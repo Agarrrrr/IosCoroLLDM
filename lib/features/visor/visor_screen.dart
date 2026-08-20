@@ -2077,10 +2077,14 @@ class _MidiPanelState extends State<_MidiPanel> {
                                       : Colors.grey,
                                 ),
                                 onPressed: () {
+                                  final nextMuted = !muted;
                                   setModalState(() {
-                                    localMuted[voz.trackIndex] = !muted;
+                                    localMuted[voz.trackIndex] = nextMuted;
                                   });
-                                  widget.onVozToggle(voz.trackIndex, muted);
+                                  widget.onVozToggle(
+                                    voz.trackIndex,
+                                    nextMuted,
+                                  );
                                 },
                                 tooltip: muted
                                     ? 'Activar ${voz.nombre}'

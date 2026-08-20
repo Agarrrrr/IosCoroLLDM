@@ -2454,6 +2454,19 @@
     "idioma": "es"
   },
   {
+    "id": "14c77d61-f0f1-4273-ae2f-160d27721554",
+    "external_id": null,
+    "nombre": "Centenario de la Restauración",
+    "archivo": "global/assets/pdf/974bd6105e6a7e3feb441fc87e27546147c965b7cff21add231506d74584a9a2.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Centenario"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
+  },
+  {
     "id": "usmc_2ff8227f61dac6f6f1",
     "nombre": "Centenario de Salvación",
     "archivo": "Centenario de Salvaci_n.pdf",
@@ -2538,6 +2551,19 @@
     "idioma": "es"
   },
   {
+    "id": "2f72fcd4-110f-4398-bd04-d2a166916ab7",
+    "external_id": null,
+    "nombre": "Cien Años de Gran Restauración",
+    "archivo": "global/assets/pdf/1fe9250cde36be802e1fadd5175b320ed37aa6e63d728ebf765b1b9f06a3d34b.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Centenario"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
+  },
+  {
     "id": "usmc_c5c1ed099ba6c7067e",
     "nombre": "Cien Años de Luz",
     "archivo": "Cien A_os de Luz.pdf",
@@ -2547,6 +2573,19 @@
     "es_privado": false,
     "_idioma": "es",
     "idioma": "es"
+  },
+  {
+    "id": "98525f6b-60ac-4d23-9e9b-16cc8248d2d6",
+    "external_id": null,
+    "nombre": "Cien Años de Misericordia",
+    "archivo": "global/assets/pdf/f3ed15fa33e70c6faf2cbedb705d7fc7a60194b8f723c75db45e0f126bd2fc2f.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Centenario"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
   },
   {
     "id": "3fcbf7e7-7628-4504-be11-f96702517487",
@@ -2923,6 +2962,19 @@
     "coro_id": "local",
     "_idioma": "es",
     "idioma": "es"
+  },
+  {
+    "id": "8716f68b-320d-49cb-9b06-f32c20de38b8",
+    "external_id": null,
+    "nombre": "Con Gran Emoción",
+    "archivo": "global/assets/pdf/7c5d08d2037c87f08bbeee75f8cc54e86b2e038b301f436c2fef11468972470d.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Centenario"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
   },
   {
     "id": "7ec3cfd0-276e-4fcc-984a-415fdf9d2ef5",
@@ -4206,13 +4258,17 @@
   {
     "id": "58a3f3e0-704b-471f-96c7-ce9bb5c71a7f",
     "nombre": "Divino Redentor",
-    "archivo": "divino-redentor-1781309443936.pdf",
+    "archivo": "global/assets/pdf/ab7918dac148618dba2c4543bb28072c1f39b4f9f24a99be7d279f844731b717.enc",
     "temas": [
-      "Gratitud"
+      "Pasión"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": null,
+    "midi_archivo": null,
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_64b5346721b21cae02605847",
@@ -6852,6 +6908,19 @@
     "idioma": "es"
   },
   {
+    "id": "6fe1ac22-a290-4b43-8e0f-fc6a594dcb03",
+    "external_id": null,
+    "nombre": "Firme Estoy",
+    "archivo": "global/assets/pdf/1e1d1b1735e34485d1643946c283e0d7e6a81c470b10e781a2625b06cfb19e75.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Elección"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
+  },
+  {
     "id": "6bbf3754-705a-411c-b527-dd1378955921",
     "nombre": "Firmes y Adelante",
     "archivo": "firmes-y-adelante.pdf",
@@ -7695,6 +7764,19 @@
     "es_privado": false,
     "_idioma": "es",
     "idioma": "es"
+  },
+  {
+    "id": "a2fced6f-e069-4539-897b-e93f72070e7f",
+    "external_id": null,
+    "nombre": "Hemos Sido Invitados",
+    "archivo": "global/assets/pdf/9eeec19fae0e65e664420472462b819a1a888d3587c6de1dda5f0a7e16611c51.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Santa Cena"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
   },
   {
     "id": "usmc_64b5376421b21cae026058aa",
@@ -9130,6 +9212,19 @@
     "idioma": "es"
   },
   {
+    "id": "043f1232-35ef-4855-88af-397bbdfbe384",
+    "external_id": null,
+    "nombre": "La Luz Del Mundo Brilla",
+    "archivo": "global/assets/pdf/162b8aeeb8531628c0ca083c1502cd9159c8aee7100483697096aeace25cb7d6.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Centenario"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
+  },
+  {
     "id": "ec542b1f-c043-4175-b119-025f3cac0aef",
     "nombre": "La Luz de un Apóstol",
     "archivo": "la-luz-de-un-apostol.pdf",
@@ -9267,6 +9362,20 @@
     "vinculo_idioma": "usmc_48a8f26670c74b69f5763cdd",
     "_idioma": "es",
     "idioma": "es"
+  },
+  {
+    "id": "f248d759-407a-42df-ab47-2667f3208ff9",
+    "external_id": null,
+    "nombre": "La Oración De Amor",
+    "archivo": "global/assets/pdf/4753d1bbd3da4f47104cbe8be6298a9bf7e8a51cb2681708ee46fcad374e2b91.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Oración Apostólica",
+      "Petición"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
   },
   {
     "id": "18990049-2417-4fe9-8b60-61d8fd1754f8",
@@ -12497,6 +12606,32 @@
     "es_privado": false,
     "_idioma": "es",
     "idioma": "es"
+  },
+  {
+    "id": "e2080d98-706d-43e7-ba63-ddd8966e6063",
+    "external_id": null,
+    "nombre": "Preparada Está la Cena",
+    "archivo": "global/assets/pdf/37d89cf1ed31ba40af8e7fc6d0b3bb250f47016cc88f158869eff87be14966ef.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Santa Cena"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
+  },
+  {
+    "id": "f1a4b62a-050c-445a-93aa-ca420cfeb62e",
+    "external_id": null,
+    "nombre": "Primer Centenario",
+    "archivo": "global/assets/pdf/71f972f03c08166fbfab6ed1916a3f084dffc562fc6793075565af3931073fc2.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Centenario"
+    ],
+    "idioma": "es",
+    "vinculo_idioma": null,
+    "version": 1
   },
   {
     "id": "f795de73-eaef-488a-80d2-769f756f1808",
@@ -16025,13 +16160,17 @@
   {
     "id": "308bd1de-102f-4bb2-a16c-4d1b993ad470",
     "nombre": "Yo Tengo un Himno de Loor",
-    "archivo": "yo-tengo-un-himno-de-loor-1781309511418.pdf",
+    "archivo": "global/assets/pdf/419ec567c345b7d21e899ae2e74ed86c8921098465a7e88545f70b481656767f.enc",
     "temas": [
       "Alabanza"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": null,
+    "midi_archivo": "global/assets/midi/bfc2001f5c4239edc788b8f88d7229ec175515f3936decd388f74fb006e7be57.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "a6f00c5d-bcf7-4c5a-b33d-2c19820f81ee",

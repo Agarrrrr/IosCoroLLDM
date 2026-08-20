@@ -197,20 +197,25 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
         : trazo;
     final isSelected = index == _selectedTextIndex;
     final textPainter = _layoutText(displayTrazo);
-    final width = isSelected
-        ? (textPainter.width + 40).clamp(72.0, double.infinity).toDouble()
-        : textPainter.width + 16;
-    final height = isSelected
-        ? (textPainter.height + 19).clamp(56.0, double.infinity).toDouble()
-        : textPainter.height + 12;
+    final textWidth = (textPainter.width + 16).clamp(32.0, double.infinity)
+        .toDouble();
+    final textHeight = (textPainter.height + 12).clamp(28.0, double.infinity)
+        .toDouble();
+    // Los controles viven en un área de interacción exterior: nunca cubren
+    // el texto ni compiten entre sí, incluso con anotaciones pequeñas.
+    final controlInsets = isSelected
+        ? const EdgeInsets.fromLTRB(14, 14, 34, 14)
+        : EdgeInsets.zero;
+    final width = textWidth + controlInsets.horizontal;
+    final height = textHeight + controlInsets.vertical;
     final left = position.x * widget.pageSize.width;
     final top = position.y * widget.pageSize.height -
         textPainter.height -
         (isSelected ? 12 : 6);
 
     return Positioned(
-      left: left,
-      top: top,
+      left: left - controlInsets.left,
+      top: top - controlInsets.top,
       width: width,
       height: height,
       child: GestureDetector(
@@ -219,27 +224,23 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
         onPanStart: (_) => _selectText(index),
         onPanUpdate: (details) => _moveSelectedText(index, details.delta),
         onPanEnd: (_) => _commitSelectedTextEdit(),
-        child: Container(
-          padding: EdgeInsets.fromLTRB(
-            7,
-            isSelected ? 12 : 5,
-            7,
-            7,
-          ),
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: state.currentColor.withOpacity(0.9),
-              width: index == _selectedTextIndex ? 1.5 : 1,
-            ),
-            borderRadius: BorderRadius.circular(3),
-            color: Colors.white.withOpacity(0.06),
-          ),
-          child: Stack(
-            clipBehavior: Clip.none,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(
-                  right: index == _selectedTextIndex ? 18 : 0,
+        child: Stack(
+          clipBehavior: Clip.none,
+          children: [
+            Positioned(
+              left: controlInsets.left,
+              top: controlInsets.top,
+              width: textWidth,
+              height: textHeight,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: state.currentColor.withOpacity(0.9),
+                    width: isSelected ? 1.5 : 1,
+                  ),
+                  borderRadius: BorderRadius.circular(6),
+                  color: Colors.black.withOpacity(0.12),
                 ),
                 child: Align(
                   alignment: Alignment.centerLeft,
@@ -253,24 +254,28 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                   ),
                 ),
               ),
+            ),
               if (isSelected) ...[
                 Positioned(
-                  right: 1,
-                  top: 1,
+                  right: 0,
+                  top: 0,
                   child: GestureDetector(
                     behavior: HitTestBehavior.opaque,
                     onTap: () => _deleteSelectedText(index),
                     child: SizedBox(
-                      width: 24,
-                      height: 24,
+                      width: 22,
+                      height: 22,
                       child: DecoratedBox(
                         decoration: BoxDecoration(
-                          color: state.currentColor,
-                          shape: BoxShape.circle,
+                          color: Colors.black.withOpacity(0.58),
+                          borderRadius: BorderRadius.circular(5),
+                          border: Border.all(
+                            color: Colors.white.withOpacity(0.32),
+                          ),
                         ),
                         child: const Icon(
-                          Icons.close,
-                          size: 15,
+                          Icons.close_rounded,
+                          size: 14,
                           color: Colors.white,
                         ),
                       ),
@@ -278,8 +283,8 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                   ),
                 ),
                 Positioned(
-                  right: 1,
-                  bottom: 1,
+                  right: 0,
+                  bottom: 0,
                   child: GestureDetector(
                     behavior: HitTestBehavior.opaque,
                     onPanStart: (_) => _selectText(index),
@@ -287,16 +292,19 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                         _resizeSelectedText(index, details.delta.dy),
                     onPanEnd: (_) => _commitSelectedTextEdit(),
                     child: SizedBox(
-                      width: 24,
-                      height: 24,
+                      width: 22,
+                      height: 22,
                       child: DecoratedBox(
                         decoration: BoxDecoration(
-                          color: state.currentColor.withOpacity(0.85),
-                          borderRadius: BorderRadius.circular(4),
+                          color: Colors.black.withOpacity(0.58),
+                          borderRadius: BorderRadius.circular(5),
+                          border: Border.all(
+                            color: Colors.white.withOpacity(0.32),
+                          ),
                         ),
                         child: const Icon(
-                          Icons.open_in_full,
-                          size: 14,
+                          Icons.open_in_full_rounded,
+                          size: 13,
                           color: Colors.white,
                       ),
                       ),
@@ -304,8 +312,7 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                   ),
                 ),
               ],
-            ],
-          ),
+          ],
         ),
       ),
     );
