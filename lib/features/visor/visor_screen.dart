@@ -1136,8 +1136,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       orElse: () => Canto(id: '', nombre: 'Partitura', archivo: '', temas: []),
     );
     final strings = AppStrings.of(context);
-    final isAppleMobile = Platform.isIOS;
-    final isMobile = isAppleMobile || Platform.isAndroid;
+    final isMobile = Platform.isIOS || Platform.isAndroid;
 
     // Iniciar MIDI cuando el canto ya está resuelto del catálogo
     if (!_midiIniciado && canto.id == widget.cantoId && canto.id.isNotEmpty) {
@@ -1431,9 +1430,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           maxScale: 6,
                                           limitRenderingCache: true,
                                           maxImageBytesCachedOnMemory:
-                                              24 * 1024 * 1024,
-                                          horizontalCacheExtent: 0.25,
-                                          verticalCacheExtent: 0.25,
+                                              32 * 1024 * 1024,
+                                          horizontalCacheExtent: 0.35,
+                                          verticalCacheExtent: 0.75,
                                           getPageRenderingScale: (
                                             context,
                                             page,
@@ -1496,10 +1495,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                                   bottom: 96,
                                                 )
                                               : EdgeInsets.zero,
+                                          // Usar la fricción estándar evita que
+                                          // el desplazamiento se detenga demasiado
+                                          // pronto en iPad/iPhone.
                                           interactionEndFrictionCoefficient:
-                                              isAppleMobile
-                                                  ? 0.00008
-                                                  : 0.0000135,
+                                              0.0000135,
                                           onViewerReady:
                                               (document, controller) {
                                             _calcularLimiteEscala(document);
@@ -1592,11 +1592,13 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           pageOverlaysBuilder:
                                               (context, pageRect, page) => [
                                             Positioned.fill(
-                                              child: AnnotationLayer(
-                                                cantoId: widget.cantoId,
-                                                pageNumber: page.pageNumber,
-                                                pageSize: Size(pageRect.width,
-                                                    pageRect.height),
+                                              child: RepaintBoundary(
+                                                child: AnnotationLayer(
+                                                  cantoId: widget.cantoId,
+                                                  pageNumber: page.pageNumber,
+                                                  pageSize: Size(pageRect.width,
+                                                      pageRect.height),
+                                                ),
                                               ),
                                             ),
                                           ],
@@ -2200,11 +2202,21 @@ class _MidiPanelState extends State<_MidiPanel> {
                           widget.midiState.timeSignatureNumerator ?? beats;
                       final denominator =
                           widget.midiState.timeSignatureDenominator ?? 4;
+                      final groups = widget.midiState.beatGroups;
+                      final grouping = groups.any((group) => group > 1)
+                          ? ' · ${groups.join('+')}'
+                          : '';
+                      final groupStarts = <int>[];
+                      var groupOffset = 0;
+                      for (final group in groups) {
+                        groupStarts.add(groupOffset);
+                        groupOffset += group;
+                      }
                       return Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text(
-                            '$numerator/$denominator',
+                            '$numerator/$denominator$grouping',
                             style: GoogleFonts.inter(
                               fontSize: 10,
                               fontWeight: FontWeight.w700,
@@ -2216,9 +2228,7 @@ class _MidiPanelState extends State<_MidiPanel> {
                             final isCurrent =
                                 index == widget.midiState.beatIndex;
                             final isFirst = index == 0;
-                            final isGroupStart = widget
-                                .midiState.beatGroupStarts
-                                .contains(index);
+                            final isGroupStart = groupStarts.contains(index);
                             return AnimatedContainer(
                               duration: const Duration(milliseconds: 90),
                               margin: EdgeInsets.only(

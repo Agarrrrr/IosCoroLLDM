@@ -47,6 +47,20 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
     context.push('/visor/$cantoId');
   }
 
+  /// Una búsqueda cambia por completo el contenido de la lista. Mantener la
+  /// posición previa puede dejar los resultados fuera de la vista.
+  void _moveCatalogToTop() {
+    void reset() {
+      if (!_scrollController.hasClients) return;
+      if (_scrollController.offset > 0) {
+        _scrollController.jumpTo(0);
+      }
+    }
+
+    reset();
+    WidgetsBinding.instance.addPostFrameCallback((_) => reset());
+  }
+
   @override
   void dispose() {
     _searchDebounce?.cancel();
@@ -113,6 +127,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                       child: TextField(
                         controller: _searchController,
                         onChanged: (val) {
+                          _moveCatalogToTop();
                           _searchDebounce?.cancel();
                           _searchDebounce = Timer(
                             const Duration(milliseconds: 180),
@@ -139,6 +154,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                                       size: 20, color: Colors.grey),
                                   onPressed: () {
                                     _searchController.clear();
+                                    _moveCatalogToTop();
                                     ref
                                         .read(searchTextProvider.notifier)
                                         .set('');

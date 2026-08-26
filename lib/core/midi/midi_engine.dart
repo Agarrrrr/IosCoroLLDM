@@ -21,7 +21,8 @@ class MidiState {
   final int? beatNumerator;
   final int beatSerial;
   final bool? beatEsPrimero;
-  final List<int> beatGroupStarts;
+  /// Unidades escritas que forman cada pulso, p. ej. [3, 3] para 6/8.
+  final List<int> beatGroups;
   final int? timeSignatureNumerator;
   final int? timeSignatureDenominator;
 
@@ -39,7 +40,7 @@ class MidiState {
     this.beatNumerator,
     this.beatSerial = 0,
     this.beatEsPrimero,
-    this.beatGroupStarts = const [],
+    this.beatGroups = const [],
     this.timeSignatureNumerator,
     this.timeSignatureDenominator,
   });
@@ -58,7 +59,7 @@ class MidiState {
     int? beatNumerator,
     int? beatSerial,
     bool? beatEsPrimero,
-    List<int>? beatGroupStarts,
+    List<int>? beatGroups,
     int? timeSignatureNumerator,
     int? timeSignatureDenominator,
   }) =>
@@ -76,7 +77,7 @@ class MidiState {
         beatNumerator: beatNumerator ?? this.beatNumerator,
         beatSerial: beatSerial ?? this.beatSerial,
         beatEsPrimero: beatEsPrimero ?? this.beatEsPrimero,
-        beatGroupStarts: beatGroupStarts ?? this.beatGroupStarts,
+        beatGroups: beatGroups ?? this.beatGroups,
         timeSignatureNumerator:
             timeSignatureNumerator ?? this.timeSignatureNumerator,
         timeSignatureDenominator:
@@ -280,7 +281,7 @@ class MidiEngine {
         beatNumerator: initialPattern.beatsPerMeasure,
         beatSerial: 0,
         beatEsPrimero: true,
-        beatGroupStarts: initialPattern.groupStartIndices,
+        beatGroups: initialPattern.groups,
         timeSignatureNumerator: initialSignature.numerator,
         timeSignatureDenominator: initialSignature.denominator,
       ));
@@ -573,7 +574,7 @@ class MidiEngine {
         beatNumerator: meterPattern.beatsPerMeasure,
         beatSerial: playClick ? _state.beatSerial + 1 : _state.beatSerial,
         beatEsPrimero: isFirstBeat,
-        beatGroupStarts: meterPattern.groupStartIndices,
+        beatGroups: meterPattern.groups,
         timeSignatureNumerator: signature.numerator,
         timeSignatureDenominator: signature.denominator,
       ));

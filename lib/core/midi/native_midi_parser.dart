@@ -87,18 +87,11 @@ class MidiMeterPattern {
     required this.isCompound,
   });
 
+  /// Cada unidad escrita es un pulso del metrónomo. Las agrupaciones se
+  /// preservan para mostrar el fraseo (p. ej. 6/8 como 3+3), sin omitir
+  /// ninguno de sus seis pulsos.
   int get beatsPerMeasure =>
       groups.fold<int>(0, (total, group) => total + group);
-
-  List<int> get groupStartIndices {
-    final starts = <int>[];
-    var index = 0;
-    for (final group in groups) {
-      starts.add(index);
-      index += group;
-    }
-    return starts;
-  }
 
   double get measureLengthInQuarters =>
       groups.fold<int>(0, (sum, group) => sum + group) * writtenUnitInQuarters;
@@ -110,9 +103,6 @@ class MidiMeterPattern {
     int metronomeClocks = 24,
   }) {
     final writtenPulseInQuarters = 4.0 / denominator;
-    // Conservamos las agrupaciones musicales para mostrarlas visualmente,
-    // pero no las convertimos en un único pulso. Cada unidad escrita sigue
-    // teniendo su propio pulso y solo el primero recibe el acento principal.
     var preferredGroup = 1;
     if (denominator == 8 && metronomeClocks == 24) {
       preferredGroup = bpm > 70 && numerator != 3 ? 3 : 1;

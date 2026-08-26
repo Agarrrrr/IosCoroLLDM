@@ -108,8 +108,14 @@ void main() {
       bpm: 71,
     );
     expect(sixEight.isCompound, isTrue);
-    expect(sixEight.beatsPerMeasure, 2);
+    expect(sixEight.beatsPerMeasure, 6);
     expect(sixEight.groups, [3, 3]);
+    expect(sixEight.beatIndexAt(0), 0);
+    expect(sixEight.beatIndexAt(2.9), 2);
+    expect(sixEight.beatIndexAt(3.0), 3);
+    expect(sixEight.pulseSerialAt(0.0), 0);
+    expect(sixEight.pulseSerialAt(1.49), 2);
+    expect(sixEight.pulseSerialAt(1.5), 3);
 
     final threeEight = MidiMeterPattern.from(
       numerator: 3,
