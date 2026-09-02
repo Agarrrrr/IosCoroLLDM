@@ -75,18 +75,31 @@ class PdfEngineState {
 }
 
 class PdfEngineNotifier extends Notifier<PdfEngineState> {
+  static const _maxHistoryEntries = 50;
+  static const _saveDebounce = Duration(milliseconds: 150);
+
   bool _isInitializing = false;
   String? _initializingForId;
   Future<void> _annotationWrites = Future.value();
+  Timer? _annotationSaveTimer;
+  String? _pendingAnnotationCantoId;
+  Map<int, List<Trazo>>? _pendingAnnotations;
 
   @override
   PdfEngineState build() {
+    ref.onDispose(() {
+      _annotationSaveTimer?.cancel();
+      _flushPendingAnnotations();
+    });
     return PdfEngineState();
   }
 
   Future<void> init(String newCantoId) async {
     if (_isInitializing && _initializingForId == newCantoId) return;
     if (state.cantoId == newCantoId && state.localPath != null) return;
+
+    _annotationSaveTimer?.cancel();
+    _flushPendingAnnotations();
 
     _isInitializing = true;
     _initializingForId = newCantoId;
@@ -169,6 +182,11 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
     }
 
     newHistory.add(nuevosTrazos);
+    if (newHistory.length > _maxHistoryEntries) {
+      newHistory = newHistory.sublist(
+        newHistory.length - _maxHistoryEntries,
+      );
+    }
     state = state.copyWith(
       trazos: nuevosTrazos,
       history: newHistory,
@@ -180,9 +198,24 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
   void _persistAnnotations(Map<int, List<Trazo>> trazos) {
     final cantoId = state.cantoId;
     if (cantoId == null || cantoId.isEmpty) return;
-    final snapshot = _deepCopyTrazos(trazos);
-    // Las operaciones se serializan para que un trazo anterior no termine de
-    // escribir después de uno más reciente cuando el usuario dibuja rápido.
+
+    // Los mapas del estado son inmutables. Podemos conservar la última
+    // referencia y agrupar cambios consecutivos sin duplicar todos los puntos.
+    _pendingAnnotationCantoId = cantoId;
+    _pendingAnnotations = trazos;
+    _annotationSaveTimer?.cancel();
+    _annotationSaveTimer = Timer(_saveDebounce, _flushPendingAnnotations);
+  }
+
+  void _flushPendingAnnotations() {
+    final cantoId = _pendingAnnotationCantoId;
+    final snapshot = _pendingAnnotations;
+    _pendingAnnotationCantoId = null;
+    _pendingAnnotations = null;
+    if (cantoId == null || snapshot == null) return;
+
+    // Las escrituras siguen serializadas para que una operación lenta nunca
+    // pueda sobrescribir un estado más reciente.
     _annotationWrites = _annotationWrites
         .catchError((_) {})
         .then((_) => AnnotationStore.save(cantoId, snapshot));
@@ -192,35 +225,29 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
   }
 
   void addTrazo(int pageNumber, Trazo trazo) {
-    final Map<int, List<Trazo>> nuevosTrazos = _deepCopyTrazos(state.trazos);
-    if (!nuevosTrazos.containsKey(pageNumber)) {
-      nuevosTrazos[pageNumber] = [];
-    }
-    nuevosTrazos[pageNumber]!.add(trazo);
-
-    _pushHistory(nuevosTrazos);
+    final pageTrazos = List<Trazo>.from(state.trazos[pageNumber] ?? const [])
+      ..add(trazo.copyWith());
+    _pushHistory(_replacePage(pageNumber, pageTrazos));
   }
 
   void updateTrazo(int pageNumber, int index, Trazo trazo) {
-    final nuevosTrazos = _deepCopyTrazos(state.trazos);
-    final pageTrazos = nuevosTrazos[pageNumber];
-    if (pageTrazos == null || index < 0 || index >= pageTrazos.length) return;
-    pageTrazos[index] = trazo;
-    _pushHistory(nuevosTrazos);
+    final currentPage = state.trazos[pageNumber];
+    if (currentPage == null || index < 0 || index >= currentPage.length) return;
+    final pageTrazos = List<Trazo>.from(currentPage);
+    pageTrazos[index] = trazo.copyWith();
+    _pushHistory(_replacePage(pageNumber, pageTrazos));
   }
 
   void deleteTrazo(int pageNumber, int index) {
-    final nuevosTrazos = _deepCopyTrazos(state.trazos);
-    final pageTrazos = nuevosTrazos[pageNumber];
-    if (pageTrazos == null || index < 0 || index >= pageTrazos.length) return;
+    final currentPage = state.trazos[pageNumber];
+    if (currentPage == null || index < 0 || index >= currentPage.length) return;
+    final pageTrazos = List<Trazo>.from(currentPage);
     pageTrazos.removeAt(index);
-    _pushHistory(nuevosTrazos);
+    _pushHistory(_replacePage(pageNumber, pageTrazos));
   }
 
   void clearAll(int pageNumber) {
-    final Map<int, List<Trazo>> nuevosTrazos = _deepCopyTrazos(state.trazos);
-    nuevosTrazos[pageNumber] = [];
-    _pushHistory(nuevosTrazos);
+    _pushHistory(_replacePage(pageNumber, const []));
   }
 
   void clearAllGlobal() {
@@ -234,6 +261,7 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
         trazos: state.history[newIndex],
         historyIndex: newIndex,
       );
+      _persistAnnotations(state.trazos);
     }
   }
 
@@ -244,15 +272,17 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
         trazos: state.history[newIndex],
         historyIndex: newIndex,
       );
+      _persistAnnotations(state.trazos);
     }
   }
 
-  Map<int, List<Trazo>> _deepCopyTrazos(Map<int, List<Trazo>> source) {
-    final copy = <int, List<Trazo>>{};
-    source.forEach((key, value) {
-      copy[key] = value.map((trazo) => trazo.copyWith()).toList();
-    });
-    return copy;
+  Map<int, List<Trazo>> _replacePage(
+    int pageNumber,
+    List<Trazo> pageTrazos,
+  ) {
+    final updated = Map<int, List<Trazo>>.from(state.trazos);
+    updated[pageNumber] = List<Trazo>.unmodifiable(pageTrazos);
+    return Map<int, List<Trazo>>.unmodifiable(updated);
   }
 }
 

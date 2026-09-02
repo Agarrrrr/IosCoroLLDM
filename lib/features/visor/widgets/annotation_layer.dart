@@ -3,6 +3,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:coro_lldm/core/pdf/pdf_engine.dart';
 import 'package:coro_lldm/models/trazo.dart';
 
+typedef _AnnotationLayerData = ({
+  bool isDrawingMode,
+  ToolType currentTool,
+  Color currentColor,
+  double currentSize,
+  double eraserSize,
+  List<Trazo> savedTrazos,
+});
+
 class AnnotationLayer extends ConsumerStatefulWidget {
   final String cantoId;
   final int pageNumber;
@@ -21,6 +30,7 @@ class AnnotationLayer extends ConsumerStatefulWidget {
 
 class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
   Trazo? _currentTrazo;
+  Path? _currentPath;
   Offset? _textTapPosition;
   Offset? _eraserPreviewPosition;
   int? _selectedTextIndex;
@@ -37,11 +47,14 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
     super.dispose();
   }
 
-  void _handlePointerDown(PointerDownEvent event, PdfEngineState state) {
+  void _handlePointerDown(PointerDownEvent event, _AnnotationLayerData state) {
     _activePointers++;
     if (!state.isDrawingMode) return;
     if (_activePointers > 1) {
-      setState(() => _currentTrazo = null);
+      setState(() {
+        _currentTrazo = null;
+        _currentPath = null;
+      });
       return;
     }
 
@@ -69,17 +82,23 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
             : state.currentSize,
         points: [normalizedPoint],
       );
+      _currentPath = Path()
+        ..moveTo(event.localPosition.dx, event.localPosition.dy);
       if (state.currentTool == ToolType.eraser) {
         _eraserPreviewPosition = event.localPosition;
       }
     });
   }
 
-  void _handlePointerMove(PointerMoveEvent event, PdfEngineState state) {
+  void _handlePointerMove(PointerMoveEvent event, _AnnotationLayerData state) {
     if (!state.isDrawingMode ||
         _currentTrazo == null ||
-        state.currentTool == ToolType.text) return;
-    if (_activePointers > 1) return;
+        state.currentTool == ToolType.text) {
+      return;
+    }
+    if (_activePointers > 1) {
+      return;
+    }
 
     final normalizedPoint = PointNormalized(
       event.localPosition.dx / widget.pageSize.width,
@@ -88,41 +107,49 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
 
     setState(() {
       _currentTrazo!.points.add(normalizedPoint);
+      _currentPath?.lineTo(event.localPosition.dx, event.localPosition.dy);
       if (state.currentTool == ToolType.eraser) {
         _eraserPreviewPosition = event.localPosition;
       }
     });
   }
 
-  void _handlePointerUp(PointerUpEvent event, PdfEngineState state) {
+  void _handlePointerUp(PointerUpEvent event, _AnnotationLayerData state) {
     _activePointers--;
     if (_activePointers < 0) _activePointers = 0;
 
     if (!state.isDrawingMode ||
         _currentTrazo == null ||
-        state.currentTool == ToolType.text) return;
+        state.currentTool == ToolType.text) {
+      return;
+    }
 
     ref
         .read(pdfEngineProvider.notifier)
         .addTrazo(widget.pageNumber, _currentTrazo!);
     setState(() {
       _currentTrazo = null;
+      _currentPath = null;
       _eraserPreviewPosition = null;
     });
   }
 
-  void _handlePointerCancel(PointerCancelEvent event, PdfEngineState state) {
+  void _handlePointerCancel(
+    PointerCancelEvent event,
+    _AnnotationLayerData state,
+  ) {
     _activePointers--;
     if (_activePointers < 0) _activePointers = 0;
     setState(() {
       _currentTrazo = null;
+      _currentPath = null;
       _eraserPreviewPosition = null;
     });
   }
 
   void _selectText(int index) {
-    final text = (ref.read(pdfEngineProvider).trazos[widget.pageNumber] ?? [])[
-        index];
+    final text =
+        (ref.read(pdfEngineProvider).trazos[widget.pageNumber] ?? [])[index];
     if (text.pos == null) return;
     setState(() {
       _selectedTextIndex = index;
@@ -188,19 +215,25 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
     return painter;
   }
 
-  Widget _buildTextSelectionBox(int index, Trazo trazo, PdfEngineState state) {
-    final position = index == _selectedTextIndex && _selectedTextPosition != null
-        ? _selectedTextPosition!
-        : trazo.pos!;
-    final displayTrazo = index == _selectedTextIndex && _selectedTextSize != null
-        ? trazo.copyWith(size: _selectedTextSize)
-        : trazo;
+  Widget _buildTextSelectionBox(
+    int index,
+    Trazo trazo,
+    _AnnotationLayerData state,
+  ) {
+    final position =
+        index == _selectedTextIndex && _selectedTextPosition != null
+            ? _selectedTextPosition!
+            : trazo.pos!;
+    final displayTrazo =
+        index == _selectedTextIndex && _selectedTextSize != null
+            ? trazo.copyWith(size: _selectedTextSize)
+            : trazo;
     final isSelected = index == _selectedTextIndex;
     final textPainter = _layoutText(displayTrazo);
-    final textWidth = (textPainter.width + 16).clamp(32.0, double.infinity)
-        .toDouble();
-    final textHeight = (textPainter.height + 12).clamp(28.0, double.infinity)
-        .toDouble();
+    final textWidth =
+        (textPainter.width + 16).clamp(32.0, double.infinity).toDouble();
+    final textHeight =
+        (textPainter.height + 12).clamp(28.0, double.infinity).toDouble();
     // Los controles viven en un área de interacción exterior: nunca cubren
     // el texto ni compiten entre sí, incluso con anotaciones pequeñas.
     final controlInsets = isSelected
@@ -236,11 +269,11 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: state.currentColor.withOpacity(0.9),
+                    color: state.currentColor.withValues(alpha: 0.9),
                     width: isSelected ? 1.5 : 1,
                   ),
                   borderRadius: BorderRadius.circular(6),
-                  color: Colors.black.withOpacity(0.12),
+                  color: Colors.black.withValues(alpha: 0.12),
                 ),
                 child: Align(
                   alignment: Alignment.centerLeft,
@@ -255,70 +288,73 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                 ),
               ),
             ),
-              if (isSelected) ...[
-                Positioned(
-                  right: 0,
-                  top: 0,
-                  child: GestureDetector(
-                    behavior: HitTestBehavior.opaque,
-                    onTap: () => _deleteSelectedText(index),
-                    child: SizedBox(
-                      width: 22,
-                      height: 22,
-                      child: DecoratedBox(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.58),
-                          borderRadius: BorderRadius.circular(5),
-                          border: Border.all(
-                            color: Colors.white.withOpacity(0.32),
-                          ),
+            if (isSelected) ...[
+              Positioned(
+                right: 0,
+                top: 0,
+                child: GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: () => _deleteSelectedText(index),
+                  child: SizedBox(
+                    width: 22,
+                    height: 22,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        color: Colors.black.withValues(alpha: 0.58),
+                        borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          color: Colors.white.withValues(alpha: 0.32),
                         ),
-                        child: const Icon(
-                          Icons.close_rounded,
-                          size: 14,
-                          color: Colors.white,
-                        ),
+                      ),
+                      child: const Icon(
+                        Icons.close_rounded,
+                        size: 14,
+                        color: Colors.white,
                       ),
                     ),
                   ),
                 ),
-                Positioned(
-                  right: 0,
-                  bottom: 0,
-                  child: GestureDetector(
-                    behavior: HitTestBehavior.opaque,
-                    onPanStart: (_) => _selectText(index),
-                    onPanUpdate: (details) =>
-                        _resizeSelectedText(index, details.delta.dy),
-                    onPanEnd: (_) => _commitSelectedTextEdit(),
-                    child: SizedBox(
-                      width: 22,
-                      height: 22,
-                      child: DecoratedBox(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.58),
-                          borderRadius: BorderRadius.circular(5),
-                          border: Border.all(
-                            color: Colors.white.withOpacity(0.32),
-                          ),
+              ),
+              Positioned(
+                right: 0,
+                bottom: 0,
+                child: GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onPanStart: (_) => _selectText(index),
+                  onPanUpdate: (details) =>
+                      _resizeSelectedText(index, details.delta.dy),
+                  onPanEnd: (_) => _commitSelectedTextEdit(),
+                  child: SizedBox(
+                    width: 22,
+                    height: 22,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        color: Colors.black.withValues(alpha: 0.58),
+                        borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          color: Colors.white.withValues(alpha: 0.32),
                         ),
-                        child: const Icon(
-                          Icons.open_in_full_rounded,
-                          size: 13,
-                          color: Colors.white,
                       ),
+                      child: const Icon(
+                        Icons.open_in_full_rounded,
+                        size: 13,
+                        color: Colors.white,
                       ),
                     ),
                   ),
                 ),
-              ],
+              ),
+            ],
           ],
         ),
       ),
     );
   }
 
-  void _commitTextAnnotation(PdfEngineState state, [String? submittedText]) {
+  void _commitTextAnnotation(
+    _AnnotationLayerData state, [
+    String? submittedText,
+  ]) {
     final text = (submittedText ?? _textController.value.text).trim();
     if (_textTapPosition == null || text.isEmpty) {
       setState(() => _textTapPosition = null);
@@ -347,11 +383,21 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
 
   @override
   Widget build(BuildContext context) {
-    final state = ref.watch(pdfEngineProvider);
-    final savedTrazos = state.trazos[widget.pageNumber] ?? [];
-
-    final trazosToDraw = List<Trazo>.from(savedTrazos);
-    if (_currentTrazo != null) trazosToDraw.add(_currentTrazo!);
+    final state = ref.watch(
+      pdfEngineProvider.select(
+        (value) => (
+          isDrawingMode: value.isDrawingMode,
+          currentTool: value.currentTool,
+          currentColor: value.currentColor,
+          currentSize: value.currentSize,
+          eraserSize: value.eraserSize,
+          savedTrazos: value.trazos[widget.pageNumber] ?? const <Trazo>[],
+        ),
+      ),
+    );
+    final savedTrazos = state.savedTrazos;
+    final activeTrazos =
+        _currentTrazo == null ? const <Trazo>[] : <Trazo>[_currentTrazo!];
 
     return Stack(
       children: [
@@ -369,14 +415,29 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
               color: Colors.transparent, // Necesario para atrapar gestos
               width: widget.pageSize.width,
               height: widget.pageSize.height,
-              child: CustomPaint(
-                painter: _AnnotationPainter(
-                  trazosToDraw,
-                  eraserPreviewPosition: _eraserPreviewPosition,
-                  eraserPreviewSize: state.eraserSize,
-                  showTextInOverlay:
-                      state.isDrawingMode && state.currentTool == ToolType.text,
-                ),
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  RepaintBoundary(
+                    child: CustomPaint(
+                      painter: _AnnotationPainter(
+                        savedTrazos,
+                        showTextInOverlay: state.isDrawingMode &&
+                            state.currentTool == ToolType.text,
+                      ),
+                    ),
+                  ),
+                  CustomPaint(
+                    painter: _AnnotationPainter(
+                      activeTrazos,
+                      eraserPreviewPosition: _eraserPreviewPosition,
+                      eraserPreviewSize: state.eraserSize,
+                      paintEraserStrokes: false,
+                      activePath: _currentPath,
+                      alwaysRepaint: true,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -398,7 +459,7 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                 child: IntrinsicWidth(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.8),
+                      color: Colors.white.withValues(alpha: 0.8),
                       border: Border.all(color: state.currentColor),
                       borderRadius: BorderRadius.circular(4),
                     ),
@@ -458,21 +519,33 @@ class _AnnotationPainter extends CustomPainter {
   final Offset? eraserPreviewPosition;
   final double eraserPreviewSize;
   final bool showTextInOverlay;
+  final bool paintEraserStrokes;
+  final Path? activePath;
+  final bool alwaysRepaint;
 
   _AnnotationPainter(
     this.trazos, {
     this.eraserPreviewPosition,
     this.eraserPreviewSize = 20,
     this.showTextInOverlay = false,
+    this.paintEraserStrokes = true,
+    this.activePath,
+    this.alwaysRepaint = false,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Aislar la capa para que el BlendMode.clear del borrador no perfore toda la pantalla
-    canvas.saveLayer(Offset.zero & size, Paint());
+    final needsIsolatedLayer = paintEraserStrokes &&
+        trazos.any((trazo) => trazo.tool == ToolType.eraser);
+    // Solo crear una textura intermedia cuando realmente hay borrador. Para
+    // páginas sin borrado, pintar directamente evita una composición costosa.
+    if (needsIsolatedLayer) {
+      canvas.saveLayer(Offset.zero & size, Paint());
+    }
 
     for (var trazo in trazos) {
       if (trazo.oculto) continue;
+      if (!paintEraserStrokes && trazo.tool == ToolType.eraser) continue;
 
       if (trazo.tool == ToolType.text &&
           trazo.texto != null &&
@@ -519,12 +592,14 @@ class _AnnotationPainter extends CustomPainter {
         ..blendMode =
             trazo.tool == ToolType.eraser ? BlendMode.clear : BlendMode.srcOver;
 
-      final path = Path();
-      path.moveTo(trazo.points.first.x * size.width,
-          trazo.points.first.y * size.height);
-      for (int i = 1; i < trazo.points.length; i++) {
-        path.lineTo(
-            trazo.points[i].x * size.width, trazo.points[i].y * size.height);
+      final path = activePath ?? Path();
+      if (activePath == null) {
+        path.moveTo(trazo.points.first.x * size.width,
+            trazo.points.first.y * size.height);
+        for (int i = 1; i < trazo.points.length; i++) {
+          path.lineTo(
+              trazo.points[i].x * size.width, trazo.points[i].y * size.height);
+        }
       }
 
       canvas.drawPath(path, paint);
@@ -532,10 +607,10 @@ class _AnnotationPainter extends CustomPainter {
 
     if (eraserPreviewPosition != null) {
       final previewPaint = Paint()
-        ..color = Colors.black.withOpacity(0.22)
+        ..color = Colors.black.withValues(alpha: 0.22)
         ..style = PaintingStyle.fill;
       final outlinePaint = Paint()
-        ..color = Colors.black.withOpacity(0.72)
+        ..color = Colors.black.withValues(alpha: 0.72)
         ..style = PaintingStyle.stroke
         ..strokeWidth = 1.2;
       canvas.drawCircle(
@@ -550,10 +625,20 @@ class _AnnotationPainter extends CustomPainter {
       );
     }
 
-    // Restaurar la capa
-    canvas.restore();
+    if (needsIsolatedLayer) {
+      canvas.restore();
+    }
   }
 
   @override
-  bool shouldRepaint(covariant _AnnotationPainter oldDelegate) => true;
+  bool shouldRepaint(covariant _AnnotationPainter oldDelegate) {
+    return alwaysRepaint ||
+        oldDelegate.alwaysRepaint != alwaysRepaint ||
+        !identical(oldDelegate.trazos, trazos) ||
+        oldDelegate.eraserPreviewPosition != eraserPreviewPosition ||
+        oldDelegate.eraserPreviewSize != eraserPreviewSize ||
+        oldDelegate.showTextInOverlay != showTextInOverlay ||
+        oldDelegate.paintEraserStrokes != paintEraserStrokes ||
+        !identical(oldDelegate.activePath, activePath);
+  }
 }

@@ -70,6 +70,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   Orientation? _lastOrientation;
   double _minScaleLimit = 0.1;
   Timer? _carouselSnapTimer;
+  Timer? _carouselHintTimer;
+  bool _showCarouselNavigationHint = false;
 
   // Clave global para obtener la posición del botón de compartir (requerida en iOS)
   final GlobalKey _shareButtonKey = GlobalKey();
@@ -116,6 +118,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   @override
   void dispose() {
     _carouselSnapTimer?.cancel();
+    _carouselHintTimer?.cancel();
     _midi.dispose();
     super.dispose();
   }
@@ -251,6 +254,57 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
   }
 
+  Future<void> _irAPaginaCarrusel(
+    int pageNumber, {
+    Duration duration = const Duration(milliseconds: 220),
+  }) async {
+    if (!_pdfController.isReady || _pdfController.pageCount == 0) return;
+
+    final targetPage = pageNumber.clamp(1, _pdfController.pageCount);
+    final matrix = _pdfController.calcMatrixFitWidthForPage(
+      pageNumber: targetPage,
+    );
+    if (matrix == null) return;
+
+    _carouselSnapTimer?.cancel();
+    await _pdfController.goTo(matrix, duration: duration);
+  }
+
+  void _manejarToqueEnVisor(
+    TapUpDetails details, {
+    required double viewerWidth,
+    required bool isCarousel,
+    required bool isDrawingMode,
+  }) {
+    if (isDrawingMode) return;
+    if (!isCarousel || !_pdfController.isReady || viewerWidth <= 0) {
+      _toggleTopBar();
+      return;
+    }
+
+    final x = details.localPosition.dx;
+    final currentPage = _pdfController.pageNumber ?? 1;
+    if (x <= viewerWidth * 0.30) {
+      unawaited(_irAPaginaCarrusel(currentPage - 1));
+    } else if (x >= viewerWidth * 0.70) {
+      unawaited(_irAPaginaCarrusel(currentPage + 1));
+    } else {
+      _toggleTopBar();
+    }
+  }
+
+  void _mostrarPistaDeNavegacionCarrusel({required int pageCount}) {
+    _carouselHintTimer?.cancel();
+    if (pageCount < 2 || !mounted) return;
+
+    setState(() => _showCarouselNavigationHint = true);
+    _carouselHintTimer = Timer(const Duration(seconds: 1), () {
+      if (mounted) {
+        setState(() => _showCarouselNavigationHint = false);
+      }
+    });
+  }
+
   /// En carrusel la página que contiene el centro del visor es la activa.
   /// Esto da un umbral natural de media página para avanzar o regresar y evita
   /// que una anotación se perciba como parte de la página vecina.
@@ -299,13 +353,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       final pageNumber = _pdfController.pageNumber;
       if (pageNumber == null) return;
       unawaited(
-        _pdfController
-            .goToPage(
-              pageNumber: pageNumber,
-              anchor: PdfPageAnchor.center,
-              duration: const Duration(milliseconds: 180),
-            )
-            .catchError((Object error, StackTrace stackTrace) {
+        _irAPaginaCarrusel(
+          pageNumber,
+          duration: const Duration(milliseconds: 180),
+        ).catchError((Object error, StackTrace stackTrace) {
           debugPrint('No se pudo ajustar el carrusel: $error');
         }),
       );
@@ -1477,229 +1528,306 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   Expanded(
                     child: Stack(
                       children: [
-                        GestureDetector(
-                          onTap: _toggleTopBar,
-                          child: state.isLoading
-                              ? _LoadingPlaceholder()
-                              : state.error != null
-                                  ? Center(child: Text(state.error!))
-                                  : ColorFiltered(
-                                      colorFilter: isDark
-                                          ? (isSepiaProfile
-                                              ? quietFilter
-                                              : invertFilter)
-                                          : (isSepiaProfile
-                                              ? sepiaFilter
-                                              : const ColorFilter.mode(
-                                                  Colors.transparent,
-                                                  BlendMode.multiply)),
-                                      child: PdfViewer.file(
-                                        state.localPath!,
-                                        key: ValueKey(state.localPath!),
-                                        controller: _pdfController,
-                                        params: PdfViewerParams(
-                                          enableTextSelection: false,
-                                          minScale: _minScaleLimit,
-                                          maxScale: 6,
-                                          pageAnchor: isCarousel
-                                              ? PdfPageAnchor.center
-                                              : PdfPageAnchor.top,
-                                          pageAnchorEnd: isCarousel
-                                              ? PdfPageAnchor.center
-                                              : PdfPageAnchor.bottom,
-                                          limitRenderingCache: true,
-                                          maxImageBytesCachedOnMemory:
-                                              32 * 1024 * 1024,
-                                          horizontalCacheExtent: 0.35,
-                                          verticalCacheExtent: 0.75,
-                                          getPageRenderingScale: (
-                                            context,
-                                            page,
-                                            controller,
-                                            estimatedScale,
-                                          ) {
-                                            const maxRasterDimension = 1800.0;
-                                            final longestSide =
-                                                max(page.width, page.height);
-                                            if (!longestSide.isFinite ||
-                                                longestSide <= 0) {
-                                              return estimatedScale;
-                                            }
-                                            return min(
+                        LayoutBuilder(
+                          builder: (context, viewerConstraints) =>
+                              GestureDetector(
+                            behavior: HitTestBehavior.translucent,
+                            onTapUp: (details) => _manejarToqueEnVisor(
+                              details,
+                              viewerWidth: viewerConstraints.maxWidth,
+                              isCarousel: isCarousel,
+                              isDrawingMode: state.isDrawingMode,
+                            ),
+                            child: state.isLoading
+                                ? _LoadingPlaceholder()
+                                : state.error != null
+                                    ? Center(child: Text(state.error!))
+                                    : ColorFiltered(
+                                        colorFilter: isDark
+                                            ? (isSepiaProfile
+                                                ? quietFilter
+                                                : invertFilter)
+                                            : (isSepiaProfile
+                                                ? sepiaFilter
+                                                : const ColorFilter.mode(
+                                                    Colors.transparent,
+                                                    BlendMode.multiply)),
+                                        child: PdfViewer.file(
+                                          state.localPath!,
+                                          key: ValueKey(state.localPath!),
+                                          controller: _pdfController,
+                                          params: PdfViewerParams(
+                                            enableTextSelection: false,
+                                            margin: isCarousel ? 0 : 8,
+                                            minScale: _minScaleLimit,
+                                            maxScale: 6,
+                                            pageAnchor: isCarousel
+                                                ? PdfPageAnchor.center
+                                                : PdfPageAnchor.top,
+                                            pageAnchorEnd: isCarousel
+                                                ? PdfPageAnchor.center
+                                                : PdfPageAnchor.bottom,
+                                            limitRenderingCache: true,
+                                            maxImageBytesCachedOnMemory:
+                                                32 * 1024 * 1024,
+                                            horizontalCacheExtent: 0.35,
+                                            verticalCacheExtent: 0.75,
+                                            getPageRenderingScale: (
+                                              context,
+                                              page,
+                                              controller,
                                               estimatedScale,
-                                              maxRasterDimension / longestSide,
-                                            )
-                                                .clamp(0.15, estimatedScale)
-                                                .toDouble();
-                                          },
-                                          errorBannerBuilder: (context, error,
-                                                  stackTrace, documentRef) =>
-                                              Center(
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(24.0),
-                                              child: Column(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                children: [
-                                                  const Icon(
-                                                    Icons.error_outline_rounded,
-                                                    color: Colors.red,
-                                                    size: 48,
-                                                  ),
-                                                  const SizedBox(height: 12),
-                                                  const Text(
-                                                    'No se pudo abrir la partitura',
-                                                    style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontSize: 16,
+                                            ) {
+                                              const maxRasterDimension = 1800.0;
+                                              final longestSide =
+                                                  max(page.width, page.height);
+                                              if (!longestSide.isFinite ||
+                                                  longestSide <= 0) {
+                                                return estimatedScale;
+                                              }
+                                              return min(
+                                                estimatedScale,
+                                                maxRasterDimension /
+                                                    longestSide,
+                                              )
+                                                  .clamp(0.15, estimatedScale)
+                                                  .toDouble();
+                                            },
+                                            errorBannerBuilder: (context, error,
+                                                    stackTrace, documentRef) =>
+                                                Center(
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(24.0),
+                                                child: Column(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    const Icon(
+                                                      Icons
+                                                          .error_outline_rounded,
+                                                      color: Colors.red,
+                                                      size: 48,
                                                     ),
-                                                  ),
-                                                  const SizedBox(height: 6),
-                                                  Text(
-                                                    '$error',
-                                                    textAlign: TextAlign.center,
-                                                    style: const TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.grey,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                          boundaryMargin: isMobile
-                                              ? const EdgeInsets.only(
-                                                  bottom: 96,
-                                                )
-                                              : EdgeInsets.zero,
-                                          // Usar la fricción estándar evita que
-                                          // el desplazamiento se detenga demasiado
-                                          // pronto en iPad/iPhone.
-                                          interactionEndFrictionCoefficient:
-                                              0.0000135,
-                                          onViewerReady:
-                                              (document, controller) {
-                                            _calcularLimiteEscala(document);
-                                            _ajustarZoomAlAncho();
-                                          },
-                                          onInteractionStart: (_) {
-                                            _carouselSnapTimer?.cancel();
-                                          },
-                                          onInteractionEnd: (_) {
-                                            if (isCarousel &&
-                                                !state.isDrawingMode) {
-                                              _programarAjusteDeCarrusel();
-                                            }
-                                          },
-                                          panEnabled: !state.isDrawingMode,
-                                          scaleEnabled: true,
-                                          calculateCurrentPageNumber: isCarousel
-                                              ? (visibleRect, pageRects, _) =>
-                                                  _paginaActualEnCarrusel(
-                                                    visibleRect,
-                                                    pageRects,
-                                                  )
-                                              : null,
-                                          layoutPages: isCarousel
-                                              ? (pages, params) {
-                                                  final height = pages.fold(
-                                                        0.0,
-                                                        (previous, page) =>
-                                                            max<double>(
-                                                          previous,
-                                                          page.height,
-                                                        ),
-                                                      ) +
-                                                      params.margin * 2;
-                                                  final pageLayouts = <Rect>[];
-                                                  var x = params.margin;
-                                                  for (final page in pages) {
-                                                    pageLayouts.add(
-                                                      Rect.fromLTWH(
-                                                        x,
-                                                        (height - page.height) /
-                                                            2,
-                                                        page.width,
-                                                        page.height,
+                                                    const SizedBox(height: 12),
+                                                    const Text(
+                                                      'No se pudo abrir la partitura',
+                                                      style: TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontSize: 16,
                                                       ),
-                                                    );
-                                                    x += page.width +
-                                                        params.margin;
-                                                  }
-                                                  return PdfPageLayout(
-                                                    pageLayouts: pageLayouts,
-                                                    documentSize:
-                                                        Size(x, height),
-                                                  );
-                                                }
-                                              : isMobile
-                                                  ? (pages, params) {
-                                                      final width = pages.fold(
-                                                            0.0,
-                                                            (value, page) =>
-                                                                max(
-                                                              value,
-                                                              page.width,
-                                                            ),
-                                                          ) +
-                                                          params.margin * 2;
-                                                      final pageLayouts =
-                                                          <Rect>[];
-                                                      var y = params.margin;
-                                                      for (final page
-                                                          in pages) {
-                                                        pageLayouts.add(
-                                                          Rect.fromLTWH(
-                                                            (width -
-                                                                    page.width) /
-                                                                2,
-                                                            y,
-                                                            page.width,
-                                                            page.height,
-                                                          ),
-                                                        );
-                                                        y += page.height +
-                                                            params.margin;
-                                                      }
-                                                      final endSpace =
-                                                          pages.isEmpty
-                                                              ? 96.0
-                                                              : max(
-                                                                  96.0,
-                                                                  pages.last
-                                                                          .height *
-                                                                      0.12,
-                                                                );
-                                                      return PdfPageLayout(
-                                                        pageLayouts:
-                                                            pageLayouts,
-                                                        documentSize: Size(
-                                                          width,
-                                                          y + endSpace,
-                                                        ),
-                                                      );
-                                                    }
-                                                  : null,
-                                          backgroundColor: Colors.white,
-                                          pageDropShadow: null,
-                                          pageOverlaysBuilder:
-                                              (context, pageRect, page) => [
-                                            Positioned.fill(
-                                              child: RepaintBoundary(
-                                                child: AnnotationLayer(
-                                                  cantoId: widget.cantoId,
-                                                  pageNumber: page.pageNumber,
-                                                  pageSize: Size(pageRect.width,
-                                                      pageRect.height),
+                                                    ),
+                                                    const SizedBox(height: 6),
+                                                    Text(
+                                                      '$error',
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: const TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.grey,
+                                                      ),
+                                                    ),
+                                                  ],
                                                 ),
                                               ),
                                             ),
-                                          ],
+                                            boundaryMargin: isCarousel
+                                                ? EdgeInsets.zero
+                                                : isMobile
+                                                    ? const EdgeInsets.only(
+                                                        bottom: 96,
+                                                      )
+                                                    : EdgeInsets.zero,
+                                            // Usar la fricción estándar evita que
+                                            // el desplazamiento se detenga demasiado
+                                            // pronto en iPad/iPhone.
+                                            interactionEndFrictionCoefficient:
+                                                0.0000135,
+                                            onViewerReady:
+                                                (document, controller) {
+                                              _calcularLimiteEscala(document);
+                                              _ajustarZoomAlAncho();
+                                              if (isCarousel) {
+                                                _mostrarPistaDeNavegacionCarrusel(
+                                                  pageCount:
+                                                      document.pages.length,
+                                                );
+                                              }
+                                            },
+                                            onInteractionStart: (_) {
+                                              _carouselSnapTimer?.cancel();
+                                            },
+                                            onInteractionEnd: (_) {
+                                              if (isCarousel &&
+                                                  !state.isDrawingMode) {
+                                                _programarAjusteDeCarrusel();
+                                              }
+                                            },
+                                            panEnabled: !state.isDrawingMode,
+                                            scaleEnabled: true,
+                                            calculateCurrentPageNumber:
+                                                isCarousel
+                                                    ? (visibleRect, pageRects,
+                                                            _) =>
+                                                        _paginaActualEnCarrusel(
+                                                          visibleRect,
+                                                          pageRects,
+                                                        )
+                                                    : null,
+                                            layoutPages: isCarousel
+                                                ? (pages, params) {
+                                                    final height = pages.fold(
+                                                          0.0,
+                                                          (previous, page) =>
+                                                              max<double>(
+                                                            previous,
+                                                            page.height,
+                                                          ),
+                                                        ) +
+                                                        params.margin * 2;
+                                                    final pageLayouts =
+                                                        <Rect>[];
+                                                    var x = params.margin;
+                                                    for (final page in pages) {
+                                                      pageLayouts.add(
+                                                        Rect.fromLTWH(
+                                                          x,
+                                                          (height -
+                                                                  page.height) /
+                                                              2,
+                                                          page.width,
+                                                          page.height,
+                                                        ),
+                                                      );
+                                                      x += page.width +
+                                                          params.margin;
+                                                    }
+                                                    return PdfPageLayout(
+                                                      pageLayouts: pageLayouts,
+                                                      documentSize:
+                                                          Size(x, height),
+                                                    );
+                                                  }
+                                                : isMobile
+                                                    ? (pages, params) {
+                                                        final width = pages
+                                                                .fold(
+                                                              0.0,
+                                                              (value, page) =>
+                                                                  max(
+                                                                value,
+                                                                page.width,
+                                                              ),
+                                                            ) +
+                                                            params.margin * 2;
+                                                        final pageLayouts =
+                                                            <Rect>[];
+                                                        var y = params.margin;
+                                                        for (final page
+                                                            in pages) {
+                                                          pageLayouts.add(
+                                                            Rect.fromLTWH(
+                                                              (width -
+                                                                      page.width) /
+                                                                  2,
+                                                              y,
+                                                              page.width,
+                                                              page.height,
+                                                            ),
+                                                          );
+                                                          y += page.height +
+                                                              params.margin;
+                                                        }
+                                                        final endSpace =
+                                                            pages.isEmpty
+                                                                ? 96.0
+                                                                : max(
+                                                                    96.0,
+                                                                    pages.last
+                                                                            .height *
+                                                                        0.12,
+                                                                  );
+                                                        return PdfPageLayout(
+                                                          pageLayouts:
+                                                              pageLayouts,
+                                                          documentSize: Size(
+                                                            width,
+                                                            y + endSpace,
+                                                          ),
+                                                        );
+                                                      }
+                                                    : null,
+                                            backgroundColor: Colors.white,
+                                            pageDropShadow: null,
+                                            pageOverlaysBuilder:
+                                                (context, pageRect, page) => [
+                                              Positioned.fill(
+                                                child: RepaintBoundary(
+                                                  child: AnnotationLayer(
+                                                    cantoId: widget.cantoId,
+                                                    pageNumber: page.pageNumber,
+                                                    pageSize: Size(
+                                                        pageRect.width,
+                                                        pageRect.height),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
+                          ),
+                        ),
+
+                        Positioned(
+                          right: 12,
+                          top: 0,
+                          bottom: 0,
+                          child: Center(
+                            child: IgnorePointer(
+                              child: AnimatedOpacity(
+                                opacity:
+                                    isCarousel && _showCarouselNavigationHint
+                                        ? 1
+                                        : 0,
+                                duration: const Duration(milliseconds: 380),
+                                curve: Curves.easeOut,
+                                child: Semantics(
+                                  label: strings.t(
+                                    'Toca el lado derecho para avanzar',
+                                    'Tap the right side to advance',
+                                  ),
+                                  child: Container(
+                                    width: 48,
+                                    height: 48,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: theme.colorScheme.surface
+                                          .withValues(alpha: 0.90),
+                                      border: Border.all(
+                                        color: theme.colorScheme.outline
+                                            .withValues(alpha: 0.42),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.black
+                                              .withValues(alpha: 0.22),
+                                          blurRadius: 12,
+                                          offset: const Offset(0, 3),
+                                        ),
+                                      ],
                                     ),
+                                    child: Icon(
+                                      Icons.arrow_forward_ios_rounded,
+                                      size: 24,
+                                      color: accentColor,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
 
                         // ── Panel MIDI Flotante ──────────────────────────────
