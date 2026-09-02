@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:coro_lldm/core/pdf/annotation_store.dart';
 import 'package:coro_lldm/core/offline/offline_files.dart';
 import 'package:coro_lldm/core/offline/sync_manager.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
@@ -74,6 +77,7 @@ class PdfEngineState {
 class PdfEngineNotifier extends Notifier<PdfEngineState> {
   bool _isInitializing = false;
   String? _initializingForId;
+  Future<void> _annotationWrites = Future.value();
 
   @override
   PdfEngineState build() {
@@ -89,7 +93,14 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
 
     try {
       // ensurePdf también valida y migra copias cifradas de versiones previas.
-      state = PdfEngineState(cantoId: newCantoId, isLoading: true);
+      final savedTrazos = await AnnotationStore.load(newCantoId);
+      state = PdfEngineState(
+        cantoId: newCantoId,
+        isLoading: true,
+        trazos: savedTrazos,
+        history: savedTrazos.isEmpty ? const [] : [savedTrazos],
+        historyIndex: savedTrazos.isEmpty ? -1 : 0,
+      );
 
       // Resolver el canto desde el catálogo (esperando a que cargue si es necesario)
       final cantos = await ref.read(cantosBaseProvider.future);
@@ -163,6 +174,21 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
       history: newHistory,
       historyIndex: newHistory.length - 1,
     );
+    _persistAnnotations(nuevosTrazos);
+  }
+
+  void _persistAnnotations(Map<int, List<Trazo>> trazos) {
+    final cantoId = state.cantoId;
+    if (cantoId == null || cantoId.isEmpty) return;
+    final snapshot = _deepCopyTrazos(trazos);
+    // Las operaciones se serializan para que un trazo anterior no termine de
+    // escribir después de uno más reciente cuando el usuario dibuja rápido.
+    _annotationWrites = _annotationWrites
+        .catchError((_) {})
+        .then((_) => AnnotationStore.save(cantoId, snapshot));
+    unawaited(_annotationWrites.catchError((error) {
+      debugPrint('[PdfEngine] No se pudieron guardar anotaciones: $error');
+    }));
   }
 
   void addTrazo(int pageNumber, Trazo trazo) {

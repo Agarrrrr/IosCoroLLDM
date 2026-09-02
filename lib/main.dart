@@ -15,6 +15,7 @@ void main() async {
   // 1. Inicializar Hive (offline cache + favoritos)
   await Hive.initFlutter();
   await Hive.openBox('cache');
+  await Hive.openBox('annotations');
   await Hive.openBox(FavoritosNotifier.boxName);
   await Hive.openBox('monetization');
 

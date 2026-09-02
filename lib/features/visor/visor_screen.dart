@@ -69,6 +69,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   final PdfViewerController _pdfController = PdfViewerController();
   Orientation? _lastOrientation;
   double _minScaleLimit = 0.1;
+  Timer? _carouselSnapTimer;
 
   // Clave global para obtener la posición del botón de compartir (requerida en iOS)
   final GlobalKey _shareButtonKey = GlobalKey();
@@ -114,6 +115,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
   @override
   void dispose() {
+    _carouselSnapTimer?.cancel();
     _midi.dispose();
     super.dispose();
   }
@@ -247,6 +249,67 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         _pdfController.value = matrix;
       }
     }
+  }
+
+  /// En carrusel la página que contiene el centro del visor es la activa.
+  /// Esto da un umbral natural de media página para avanzar o regresar y evita
+  /// que una anotación se perciba como parte de la página vecina.
+  int? _paginaActualEnCarrusel(
+    Rect visibleRect,
+    List<Rect> pageRects,
+  ) {
+    if (pageRects.isEmpty) return null;
+
+    final center = visibleRect.center;
+    var nearestIndex = 0;
+    var nearestDistance = double.infinity;
+    for (var index = 0; index < pageRects.length; index++) {
+      final rect = pageRects[index];
+      if (rect.contains(center)) return index + 1;
+
+      final dx = center.dx < rect.left
+          ? rect.left - center.dx
+          : center.dx > rect.right
+              ? center.dx - rect.right
+              : 0.0;
+      final dy = center.dy < rect.top
+          ? rect.top - center.dy
+          : center.dy > rect.bottom
+              ? center.dy - rect.bottom
+              : 0.0;
+      final distance = dx * dx + dy * dy;
+      if (distance < nearestDistance) {
+        nearestDistance = distance;
+        nearestIndex = index;
+      }
+    }
+    return nearestIndex + 1;
+  }
+
+  void _programarAjusteDeCarrusel() {
+    _carouselSnapTimer?.cancel();
+    _carouselSnapTimer = Timer(const Duration(milliseconds: 380), () {
+      if (!mounted || !_pdfController.isReady) return;
+
+      // Con zoom ampliado el usuario necesita poder desplazarse libremente
+      // dentro de la página; el ajuste solo aplica al nivel de lectura.
+      final currentScale = _pdfController.value.getMaxScaleOnAxis();
+      if (currentScale > _minScaleLimit + 0.02) return;
+
+      final pageNumber = _pdfController.pageNumber;
+      if (pageNumber == null) return;
+      unawaited(
+        _pdfController
+            .goToPage(
+              pageNumber: pageNumber,
+              anchor: PdfPageAnchor.center,
+              duration: const Duration(milliseconds: 180),
+            )
+            .catchError((Object error, StackTrace stackTrace) {
+          debugPrint('No se pudo ajustar el carrusel: $error');
+        }),
+      );
+    });
   }
 
   void _calcularLimiteEscala(PdfDocument document) {
@@ -1438,6 +1501,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                           enableTextSelection: false,
                                           minScale: _minScaleLimit,
                                           maxScale: 6,
+                                          pageAnchor: isCarousel
+                                              ? PdfPageAnchor.center
+                                              : PdfPageAnchor.top,
+                                          pageAnchorEnd: isCarousel
+                                              ? PdfPageAnchor.center
+                                              : PdfPageAnchor.bottom,
                                           limitRenderingCache: true,
                                           maxImageBytesCachedOnMemory:
                                               32 * 1024 * 1024,
@@ -1515,8 +1584,24 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                             _calcularLimiteEscala(document);
                                             _ajustarZoomAlAncho();
                                           },
+                                          onInteractionStart: (_) {
+                                            _carouselSnapTimer?.cancel();
+                                          },
+                                          onInteractionEnd: (_) {
+                                            if (isCarousel &&
+                                                !state.isDrawingMode) {
+                                              _programarAjusteDeCarrusel();
+                                            }
+                                          },
                                           panEnabled: !state.isDrawingMode,
                                           scaleEnabled: true,
+                                          calculateCurrentPageNumber: isCarousel
+                                              ? (visibleRect, pageRects, _) =>
+                                                  _paginaActualEnCarrusel(
+                                                    visibleRect,
+                                                    pageRects,
+                                                  )
+                                              : null,
                                           layoutPages: isCarousel
                                               ? (pages, params) {
                                                   final height = pages.fold(
