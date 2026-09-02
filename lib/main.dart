@@ -8,6 +8,7 @@ import 'package:coro_lldm/app/app.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
+import 'package:coro_lldm/core/providers/theme_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +16,8 @@ void main() async {
   // 1. Inicializar Hive (offline cache + favoritos)
   await Hive.initFlutter();
   await Hive.openBox('cache');
+  await Hive.openBox(userSettingsBoxName);
+  await migrateLegacyUserSettings();
   await Hive.openBox('annotations');
   await Hive.openBox(FavoritosNotifier.boxName);
   await Hive.openBox('monetization');

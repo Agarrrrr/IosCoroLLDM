@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
+import 'package:coro_lldm/core/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -13,6 +14,7 @@ void main() {
     hiveDirectory = await Directory.systemTemp.createTemp('coro_lldm_test_');
     Hive.init(hiveDirectory.path);
     await Hive.openBox('cache');
+    await Hive.openBox(userSettingsBoxName);
     await Hive.openBox(FavoritosNotifier.boxName);
   });
 

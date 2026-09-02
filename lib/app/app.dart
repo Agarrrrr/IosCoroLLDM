@@ -7,7 +7,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 
-
 class CoroLLDMApp extends ConsumerWidget {
   const CoroLLDMApp({super.key});
 
@@ -40,10 +39,14 @@ class CoroLLDMApp extends ConsumerWidget {
       theme: themeMode == AppThemeMode.sepia
           ? AppTheme.getTheme(AppThemeMode.sepia, accentColor)
           : AppTheme.getTheme(AppThemeMode.claro, accentColor),
-      darkTheme:
-          (themeMode == AppThemeMode.sepia || themeMode == AppThemeMode.quiet)
-              ? AppTheme.getTheme(AppThemeMode.quiet, accentColor)
-              : AppTheme.getTheme(AppThemeMode.oscuro, accentColor),
+      darkTheme: AppTheme.getTheme(
+        themeMode == AppThemeMode.quiet
+            ? AppThemeMode.quiet
+            : themeMode == AppThemeMode.oscuroNormal
+                ? AppThemeMode.oscuroNormal
+                : AppThemeMode.oscuro,
+        accentColor,
+      ),
       builder: (context, child) {
         final data = MediaQuery.of(context);
         return MediaQuery(

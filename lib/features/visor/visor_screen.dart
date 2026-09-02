@@ -72,6 +72,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   Timer? _carouselSnapTimer;
   Timer? _carouselHintTimer;
   bool _showCarouselNavigationHint = false;
+  int _carouselNavigationEpoch = 0;
 
   // Clave global para obtener la posición del botón de compartir (requerida en iOS)
   final GlobalKey _shareButtonKey = GlobalKey();
@@ -119,6 +120,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   void dispose() {
     _carouselSnapTimer?.cancel();
     _carouselHintTimer?.cancel();
+    _carouselNavigationEpoch++;
     _midi.dispose();
     super.dispose();
   }
@@ -260,11 +262,27 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }) async {
     if (!_pdfController.isReady || _pdfController.pageCount == 0) return;
 
+    final requestEpoch = ++_carouselNavigationEpoch;
     final targetPage = pageNumber.clamp(1, _pdfController.pageCount);
-    final matrix = _pdfController.calcMatrixFitWidthForPage(
+    var matrix = _pdfController.calcMatrixForPage(
       pageNumber: targetPage,
+      anchor: PdfPageAnchor.all,
     );
-    if (matrix == null) return;
+    final targetScale = matrix.getMaxScaleOnAxis();
+
+    if ((_minScaleLimit - targetScale).abs() > _kScaleEpsilon && mounted) {
+      setState(() => _minScaleLimit = targetScale);
+      await WidgetsBinding.instance.endOfFrame;
+      if (!mounted ||
+          requestEpoch != _carouselNavigationEpoch ||
+          !_pdfController.isReady) {
+        return;
+      }
+      matrix = _pdfController.calcMatrixForPage(
+        pageNumber: targetPage,
+        anchor: PdfPageAnchor.all,
+      );
+    }
 
     _carouselSnapTimer?.cancel();
     await _pdfController.goTo(matrix, duration: duration);
@@ -1302,14 +1320,27 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final orientation = MediaQuery.of(context).orientation;
     if (_lastOrientation != null && _lastOrientation != orientation) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (_pdfController.isReady && _pdfController.pages.isNotEmpty) {
-          final firstPageWidth = _pdfController.pages.first.width;
-          final viewWidth = MediaQuery.of(context).size.width;
-          setState(() {
-            _minScaleLimit = (viewWidth / firstPageWidth);
-          });
-          _ajustarZoomAlAncho();
+        if (!mounted ||
+            !_pdfController.isReady ||
+            _pdfController.pageCount == 0) {
+          return;
         }
+        if (isCarousel) {
+          unawaited(
+            _irAPaginaCarrusel(
+              _pdfController.pageNumber ?? 1,
+              duration: Duration.zero,
+            ),
+          );
+          return;
+        }
+
+        final matrix = _pdfController.calcMatrixFitWidthForPage(
+          pageNumber: _pdfController.pageNumber ?? 1,
+        );
+        if (matrix == null) return;
+        setState(() => _minScaleLimit = matrix.getMaxScaleOnAxis());
+        _pdfController.value = matrix;
       });
     }
     _lastOrientation = orientation;
@@ -1318,6 +1349,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final isSepiaProfile =
         themeMode == AppThemeMode.sepia || themeMode == AppThemeMode.quiet;
+    final isNormalDark = themeMode == AppThemeMode.oscuroNormal;
 
     // Filtro para modo oscuro (Quiet) que mapea el fondo blanco a gris oscuro y notas a claro
     const quietFilter = ColorFilter.matrix([
@@ -1360,6 +1392,30 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       -1.0,
       0.0,
       255.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+    ]);
+
+    // Oscuro normal: blanco del PDF -> #1B2430 y negro -> #F1F5F9.
+    const normalDarkFilter = ColorFilter.matrix([
+      -0.83922,
+      0.0,
+      0.0,
+      0.0,
+      241.0,
+      0.0,
+      -0.81961,
+      0.0,
+      0.0,
+      245.0,
+      0.0,
+      0.0,
+      -0.78824,
+      0.0,
+      249.0,
       0.0,
       0.0,
       0.0,
@@ -1415,7 +1471,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     curve: Curves.easeInOut,
                     height: _showTopBar ? 60 : 0,
                     decoration: BoxDecoration(
-                      color: theme.scaffoldBackgroundColor,
+                      color: theme.appBarTheme.backgroundColor ??
+                          theme.scaffoldBackgroundColor,
                       border: Border(
                           bottom:
                               BorderSide(color: Colors.grey.withOpacity(0.2))),
@@ -1546,7 +1603,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                         colorFilter: isDark
                                             ? (isSepiaProfile
                                                 ? quietFilter
-                                                : invertFilter)
+                                                : isNormalDark
+                                                    ? normalDarkFilter
+                                                    : invertFilter)
                                             : (isSepiaProfile
                                                 ? sepiaFilter
                                                 : const ColorFilter.mode(
@@ -1562,10 +1621,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                             minScale: _minScaleLimit,
                                             maxScale: 6,
                                             pageAnchor: isCarousel
-                                                ? PdfPageAnchor.center
+                                                ? PdfPageAnchor.all
                                                 : PdfPageAnchor.top,
                                             pageAnchorEnd: isCarousel
-                                                ? PdfPageAnchor.center
+                                                ? PdfPageAnchor.all
                                                 : PdfPageAnchor.bottom,
                                             limitRenderingCache: true,
                                             maxImageBytesCachedOnMemory:
@@ -1646,13 +1705,20 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                                 0.0000135,
                                             onViewerReady:
                                                 (document, controller) {
-                                              _calcularLimiteEscala(document);
-                                              _ajustarZoomAlAncho();
                                               if (isCarousel) {
+                                                unawaited(
+                                                  _irAPaginaCarrusel(
+                                                    controller.pageNumber ?? 1,
+                                                    duration: Duration.zero,
+                                                  ),
+                                                );
                                                 _mostrarPistaDeNavegacionCarrusel(
                                                   pageCount:
                                                       document.pages.length,
                                                 );
+                                              } else {
+                                                _calcularLimiteEscala(document);
+                                                _ajustarZoomAlAncho();
                                               }
                                             },
                                             onInteractionStart: (_) {
