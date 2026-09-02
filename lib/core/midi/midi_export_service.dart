@@ -28,7 +28,10 @@ class MidiExportVoice {
 class MidiExportService {
   MidiExportService._();
 
-  static const int _exportCacheVersion = 2;
+  // v3 invalida renders anteriores: el master de exportación ahora tiene
+  // +10 dB respecto de la mezcla original.
+  static const int _exportCacheVersion = 3;
+  static const double _masterBoostLinear = 3.1622776601683795;
 
   static Future<List<MidiExportVoice>> voices(Canto canto) async {
     final midi = await OfflineFiles.ensureMidi(canto);
@@ -551,7 +554,10 @@ class _FluidSynthRenderer {
       setIntValue('synth.chorus.active', 1);
       setIntValue('audio.period-size', 4096);
       setNumberValue('synth.sample-rate', 48000);
-      setNumberValue('synth.gain', 0.55);
+      setNumberValue(
+        'synth.gain',
+        0.55 * MidiExportService._masterBoostLinear,
+      );
 
       synth = newSynth(settings);
       if (synth == nullptr) throw StateError('No se pudo iniciar FluidSynth');

@@ -54,6 +54,12 @@ android/local.properties
 # Capturas y registros locales de validación
 logs/
 
+# Artefactos locales del sitio promocional
+website/.reports/
+website/.preview-output/
+website/.preview-tmp/
+website/.wrangler/
+
 # Artefactos de pruebas (Playwright / Vitest)
 playwright-report/
 test-results/

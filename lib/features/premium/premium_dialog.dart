@@ -119,7 +119,7 @@ class PremiumDialog extends ConsumerWidget {
                     TextButton(
                       onPressed: () => launchUrl(
                         Uri.parse(
-                          'https://www.lldmcorobc.com/privacy.html',
+                          'https://lldmcoro.com/privacidad',
                         ),
                         mode: LaunchMode.externalApplication,
                       ),
@@ -133,7 +133,7 @@ class PremiumDialog extends ConsumerWidget {
                     TextButton(
                       onPressed: () => launchUrl(
                         Uri.parse(
-                          'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
+                          'https://lldmcoro.com/terminos',
                         ),
                         mode: LaunchMode.externalApplication,
                       ),

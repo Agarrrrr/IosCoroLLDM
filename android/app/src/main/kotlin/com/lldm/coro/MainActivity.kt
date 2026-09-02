@@ -1,7 +1,11 @@
 package com.lldm.coro
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.media.AudioDeviceCallback
+import android.media.AudioDeviceInfo
+import android.media.AudioManager
 import android.net.Uri
 import android.provider.DocumentsContract
 import io.flutter.embedding.android.FlutterActivity
@@ -17,6 +21,7 @@ class MainActivity : FlutterActivity() {
     private val chooseFolderRequest = 4102
     private var pendingResult: MethodChannel.Result? = null
     private var pendingFiles: List<SaveFile> = emptyList()
+    private var audioDeviceCallback: AudioDeviceCallback? = null
 
     data class SaveFile(
         val path: String,
@@ -26,6 +31,21 @@ class MainActivity : FlutterActivity() {
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        val audioRouteChannel = MethodChannel(
+            flutterEngine.dartExecutor.binaryMessenger,
+            "com.lldm.coro/audio_route",
+        )
+        val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        audioDeviceCallback = object : AudioDeviceCallback() {
+            override fun onAudioDevicesAdded(addedDevices: Array<out AudioDeviceInfo>) {
+                notifyAudioRouteChanged(audioRouteChannel, audioManager)
+            }
+
+            override fun onAudioDevicesRemoved(removedDevices: Array<out AudioDeviceInfo>) {
+                notifyAudioRouteChanged(audioRouteChannel, audioManager)
+            }
+        }.also { audioManager.registerAudioDeviceCallback(it, null) }
+
         MethodChannel(
             flutterEngine.dartExecutor.binaryMessenger,
             channelName,
@@ -36,6 +56,27 @@ class MainActivity : FlutterActivity() {
                 result.notImplemented()
             }
         }
+    }
+
+    private fun notifyAudioRouteChanged(
+        channel: MethodChannel,
+        audioManager: AudioManager,
+    ) {
+        runOnUiThread {
+            val outputs = audioManager.getDevices(AudioManager.GET_DEVICES_OUTPUTS).map {
+                mapOf("name" to it.productName.toString(), "type" to it.type)
+            }
+            channel.invokeMethod("routeChanged", mapOf("outputs" to outputs))
+        }
+    }
+
+    override fun cleanUpFlutterEngine(flutterEngine: FlutterEngine) {
+        audioDeviceCallback?.let {
+            val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+            audioManager.unregisterAudioDeviceCallback(it)
+        }
+        audioDeviceCallback = null
+        super.cleanUpFlutterEngine(flutterEngine)
     }
 
     private fun startSave(call: MethodCall, result: MethodChannel.Result) {

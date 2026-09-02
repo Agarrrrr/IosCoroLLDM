@@ -355,18 +355,22 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     onTap: () async {
                       Navigator.pop(context);
                       final midiFile = await OfflineFiles.midiFile(canto.id);
+                      if (!mounted) return;
                       if (await midiFile.exists()) {
                         final midiName =
                             MidiExportService.displayMidiFileName(canto);
+                        final shareMidi =
+                            await _prepareShareFile(midiFile, midiName);
                         await Share.shareXFiles(
                           [
-                            XFile(midiFile.path,
+                            XFile(shareMidi.path,
                                 name: midiName, mimeType: 'audio/midi')
                           ],
                           text: 'Audio MIDI: ${canto.nombre}',
                         );
                       } else {
-                        ScaffoldMessenger.of(context).showSnackBar(
+                        if (!mounted) return;
+                        ScaffoldMessenger.of(this.context).showSnackBar(
                           const SnackBar(
                               content: Text(
                                   'El archivo de audio MIDI aún se está descargando.')),
@@ -686,13 +690,14 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         canto,
         voice: voice,
       );
+      final shareMp3 = await _prepareShareFile(mp3, displayFileName);
       if (!mounted) return;
       if (dialogOpen) {
         Navigator.of(context, rootNavigator: true).pop();
         dialogOpen = false;
       }
       await Share.shareXFiles(
-        [XFile(mp3.path, name: displayFileName, mimeType: 'audio/mpeg')],
+        [XFile(shareMp3.path, name: displayFileName, mimeType: 'audio/mpeg')],
         subject: canto.nombre,
         sharePositionOrigin: _shareButtonRect(),
       );
@@ -712,10 +717,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }
 
   Future<void> _exportarTodasLasVocesIOS(
-    Canto canto,
-    List<MidiExportVoice> voices,
-    {bool includeEnsemble = true}
-  ) async {
+      Canto canto, List<MidiExportVoice> voices,
+      {bool includeEnsemble = true}) async {
     final strings = AppStrings.of(context);
     final total = voices.length + (includeEnsemble ? 1 : 0);
     final progress = ValueNotifier<(int, int, String)>(
@@ -781,10 +784,14 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         for (final voice in voices)
           MidiExportService.displayFileName(canto, voice: voice),
       ];
+      final shareFiles = await Future.wait([
+        for (var i = 0; i < files.length; i++)
+          _prepareShareFile(files[i], names[i]),
+      ]);
       await Share.shareXFiles(
         [
-          for (var i = 0; i < files.length; i++)
-            XFile(files[i].path, name: names[i], mimeType: 'audio/mpeg'),
+          for (var i = 0; i < shareFiles.length; i++)
+            XFile(shareFiles[i].path, name: names[i], mimeType: 'audio/mpeg'),
         ],
         subject: canto.nombre,
         sharePositionOrigin: _shareButtonRect(),
@@ -856,7 +863,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     if (localPdfPath == null || !await File(localPdfPath).exists()) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(strings.t(
+          SnackBar(
+              content: Text(strings.t(
             'La partitura PDF todavía no está disponible.',
             'The PDF score is not available yet.',
           ))),
@@ -881,7 +889,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         ]);
         if (mounted && saved) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(strings.t(
+            SnackBar(
+                content: Text(strings.t(
               'PDF guardado correctamente.',
               'PDF saved successfully.',
             ))),
@@ -890,9 +899,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         return;
       }
 
-      final tempDir = await getTemporaryDirectory();
-      final sharePdf = File('${tempDir.path}/$pdfName');
-      await sourcePdf.copy(sharePdf.path);
+      final sharePdf = await _prepareShareFile(sourcePdf, pdfName);
       await Share.shareXFiles(
         [XFile(sharePdf.path, name: pdfName, mimeType: 'application/pdf')],
         subject: canto.nombre,
@@ -901,7 +908,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     } catch (error) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(
+        SnackBar(
+            content: Text(
           '${strings.t('No se pudo guardar o compartir el PDF', 'Could not save or share the PDF')}: $error',
         )),
       );
@@ -972,8 +980,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         }
       } else {
         final mp3Name = MidiExportService.displayFileName(canto, voice: voice);
+        final shareMp3 = await _prepareShareFile(mp3, mp3Name);
         await Share.shareXFiles(
-          [XFile(mp3.path, name: mp3Name, mimeType: 'audio/mpeg')],
+          [XFile(shareMp3.path, name: mp3Name, mimeType: 'audio/mpeg')],
           subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
@@ -995,11 +1004,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }
 
   Future<void> _exportarTodasLasVoces(
-    Canto canto,
-    List<MidiExportVoice> voices,
-    _ExportDestination destination,
-    {bool includeEnsemble = true}
-  ) async {
+      Canto canto, List<MidiExportVoice> voices, _ExportDestination destination,
+      {bool includeEnsemble = true}) async {
     final strings = AppStrings.of(context);
     final total = voices.length + (includeEnsemble ? 1 : 0);
     final progress = ValueNotifier<(int, int, String)>(
@@ -1092,11 +1098,15 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           unawaited(AdsService.instance.onExportCompleted());
         }
       } else {
+        final shareFiles = await Future.wait([
+          for (var i = 0; i < files.length; i++)
+            _prepareShareFile(files[i], names[i]),
+        ]);
         await Share.shareXFiles(
           [
-            for (var i = 0; i < files.length; i++)
+            for (var i = 0; i < shareFiles.length; i++)
               XFile(
-                files[i].path,
+                shareFiles[i].path,
                 name: names[i],
                 mimeType: 'audio/mpeg',
               ),
@@ -1794,15 +1804,16 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                   children: [
                                     // Slider de grosor
                                     _StrokePreview(
-                                      sizeValue: state.currentTool ==
-                                              ToolType.eraser
-                                          ? state.eraserSize
-                                          : state.currentSize,
+                                      sizeValue:
+                                          state.currentTool == ToolType.eraser
+                                              ? state.eraserSize
+                                              : state.currentSize,
                                       isEraser:
                                           state.currentTool == ToolType.eraser,
-                                      color: state.currentTool == ToolType.eraser
-                                          ? accentColor
-                                          : state.currentColor,
+                                      color:
+                                          state.currentTool == ToolType.eraser
+                                              ? accentColor
+                                              : state.currentColor,
                                     ),
                                     SizedBox(
                                       width: 100,
@@ -1854,7 +1865,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                               Colors.black,
                                           onTap: () {
                                             ref
-                                                .read(pdfEngineProvider.notifier)
+                                                .read(
+                                                    pdfEngineProvider.notifier)
                                                 .setCurrentColor(Colors.black);
                                             _annotationFeedback();
                                           }),
@@ -1864,7 +1876,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                               state.currentColor == Colors.red,
                                           onTap: () {
                                             ref
-                                                .read(pdfEngineProvider.notifier)
+                                                .read(
+                                                    pdfEngineProvider.notifier)
                                                 .setCurrentColor(Colors.red);
                                             _annotationFeedback();
                                           }),
@@ -1874,7 +1887,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                               state.currentColor == Colors.blue,
                                           onTap: () {
                                             ref
-                                                .read(pdfEngineProvider.notifier)
+                                                .read(
+                                                    pdfEngineProvider.notifier)
                                                 .setCurrentColor(Colors.blue);
                                             _annotationFeedback();
                                           }),
@@ -1884,7 +1898,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                               Colors.white,
                                           onTap: () {
                                             ref
-                                                .read(pdfEngineProvider.notifier)
+                                                .read(
+                                                    pdfEngineProvider.notifier)
                                                 .setCurrentColor(Colors.white);
                                             _annotationFeedback();
                                           }),
@@ -1905,6 +1920,21 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         ),
       ),
     );
+  }
+
+  /// Algunas apps receptoras ignoran `XFile.name` y muestran el nombre físico
+  /// del archivo. Compartimos una copia con el nombre público para no filtrar
+  /// IDs, huellas de caché ni versiones y para que Android resuelva `.mp3`
+  /// como audio MPEG al entregar el URI a WhatsApp.
+  Future<File> _prepareShareFile(File source, String displayName) async {
+    final tempDir = await getTemporaryDirectory();
+    final shareDir = Directory(
+      '${tempDir.path}/share_exports/'
+      '${DateTime.now().microsecondsSinceEpoch}',
+    );
+    await shareDir.create(recursive: true);
+    final target = File('${shareDir.path}/$displayName');
+    return source.copy(target.path);
   }
 }
 
@@ -1969,8 +1999,7 @@ class _MidiPanelState extends State<_MidiPanel> {
             voz.trackIndex: voz.volumen.clamp(0.0, 1.0).toDouble(),
         };
         final localMuted = <int, bool>{
-          for (final voz in widget.midiState.voces)
-            voz.trackIndex: !voz.activa,
+          for (final voz in widget.midiState.voces) voz.trackIndex: !voz.activa,
         };
 
         return StatefulBuilder(
@@ -2074,9 +2103,8 @@ class _MidiPanelState extends State<_MidiPanel> {
                                           : Icons.volume_down_rounded)
                                       : Icons.volume_off_rounded,
                                   size: 20,
-                                  color: !muted
-                                      ? widget.accentColor
-                                      : Colors.grey,
+                                  color:
+                                      !muted ? widget.accentColor : Colors.grey,
                                 ),
                                 onPressed: () {
                                   final nextMuted = !muted;
@@ -2095,8 +2123,7 @@ class _MidiPanelState extends State<_MidiPanel> {
                               const SizedBox(width: 4),
                               Expanded(
                                 child: Column(
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
                                       mainAxisAlignment:
@@ -2131,8 +2158,8 @@ class _MidiPanelState extends State<_MidiPanel> {
                                     Slider(
                                       value: volume.clamp(0.0, 1.0).toDouble(),
                                       activeColor: widget.accentColor,
-                                      inactiveColor: widget.accentColor
-                                          .withOpacity(0.2),
+                                      inactiveColor:
+                                          widget.accentColor.withOpacity(0.2),
                                       onChanged: (value) {
                                         setModalState(() {
                                           localVolumes[voz.trackIndex] = value;
@@ -2507,7 +2534,6 @@ class _MidiPanelState extends State<_MidiPanel> {
                             ),
                           ],
                         ),
-
                       ],
                     )
                   : const SizedBox(width: double.infinity, height: 0),
@@ -2809,8 +2835,8 @@ class _StrokePreviewPainter extends CustomPainter {
         center,
         radius,
         Paint()
-          ..color = color.withOpacity(
-              background.computeLuminance() > 0.5 ? 0.08 : 0.18),
+          ..color = color
+              .withOpacity(background.computeLuminance() > 0.5 ? 0.08 : 0.18),
       );
       canvas.drawCircle(center, radius, outline);
     } else {

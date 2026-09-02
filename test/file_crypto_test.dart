@@ -2,7 +2,9 @@ import 'dart:io';
 
 import 'package:coro_lldm/core/security/file_crypto.dart';
 import 'package:coro_lldm/core/midi/midi_engine.dart';
+import 'package:coro_lldm/core/midi/midi_export_service.dart';
 import 'package:coro_lldm/core/midi/native_midi_parser.dart';
+import 'package:coro_lldm/models/canto.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_test/flutter_test.dart';
 
@@ -234,5 +236,28 @@ void main() {
     expect(medium, lessThan(loud));
     expect(loud, lessThanOrEqualTo(104));
     expect(dense, lessThan(loud));
+  });
+
+  test('los nombres públicos de exportación no exponen identificadores', () {
+    final canto = Canto(
+      id: '64b5ff8d21b21cae02606cab',
+      nombre: 'Yo alabo a un Dios',
+      archivo: '64b5ff8d21b21cae02606cab_yo_alabo_a_un_dios.pdf',
+      temas: const [],
+      midiArchivo: 'yo-alabo-a-un-dios-1781309510501.mid',
+    );
+
+    expect(
+      MidiExportService.displayPdfFileName(canto),
+      'Yo alabo a un Dios.pdf',
+    );
+    expect(
+      MidiExportService.displayMidiFileName(canto),
+      'Yo alabo a un Dios - Ensamble.mid',
+    );
+    expect(
+      MidiExportService.displayFileName(canto),
+      'Yo alabo a un Dios - Ensamble.mp3',
+    );
   });
 }

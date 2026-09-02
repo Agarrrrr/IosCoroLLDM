@@ -6,6 +6,8 @@ import UserNotifications
 
 @main
 @objc class AppDelegate: FlutterAppDelegate {
+  private var audioRouteObserver: NSObjectProtocol?
+
   override func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -13,7 +15,7 @@ import UserNotifications
     // Configurar AVAudioSession como Playback para que el audio suene
     // incluso con el interruptor físico de silencio activado.
     do {
-      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers])
+      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
       try AVAudioSession.sharedInstance().setActive(true)
     } catch {
       print("Error configurando AVAudioSession: \(error)")
@@ -26,6 +28,21 @@ import UserNotifications
     GeneratedPluginRegistrant.register(with: self)
 
     if let controller = window?.rootViewController as? FlutterViewController {
+      let audioRouteChannel = FlutterMethodChannel(
+        name: "com.lldm.coro/audio_route",
+        binaryMessenger: controller.binaryMessenger
+      )
+      audioRouteObserver = NotificationCenter.default.addObserver(
+        forName: AVAudioSession.routeChangeNotification,
+        object: AVAudioSession.sharedInstance(),
+        queue: .main
+      ) { _ in
+        let outputs = AVAudioSession.sharedInstance().currentRoute.outputs.map {
+          ["name": $0.portName, "type": $0.portType.rawValue]
+        }
+        audioRouteChannel.invokeMethod("routeChanged", arguments: ["outputs": outputs])
+      }
+
       let appInfoChannel = FlutterMethodChannel(
         name: "com.lldm.coro/app_info",
         binaryMessenger: controller.binaryMessenger
@@ -78,6 +95,12 @@ import UserNotifications
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 
+  deinit {
+    if let observer = audioRouteObserver {
+      NotificationCenter.default.removeObserver(observer)
+    }
+  }
+
   private func renderMidiToWav(
     midiPath: String,
     soundfontPath: String,
@@ -97,6 +120,8 @@ import UserNotifications
         engine.connect(sampler, to: engine.mainMixerNode, format: nil)
 
         try sampler.loadInstrument(at: sfURL)
+        // AVAudioUnitSampler expresa la ganancia maestra en decibelios.
+        sampler.masterGain = 10.0
 
         let sequencer = AVAudioSequencer(audioEngine: engine)
         try sequencer.load(from: midiURL, options: [])

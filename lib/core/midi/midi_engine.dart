@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:math' as math;
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_midi_pro/flutter_midi_pro.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:coro_lldm/core/midi/native_midi_parser.dart';
@@ -21,6 +22,7 @@ class MidiState {
   final int? beatNumerator;
   final int beatSerial;
   final bool? beatEsPrimero;
+
   /// Unidades escritas que forman cada pulso, p. ej. [3, 3] para 6/8.
   final List<int> beatGroups;
   final int? timeSignatureNumerator;
@@ -114,7 +116,12 @@ class _ScheduledMidiNote {
 class MidiEngine {
   static final MidiEngine _instance = MidiEngine._internal();
   factory MidiEngine() => _instance;
-  MidiEngine._internal();
+  MidiEngine._internal() {
+    _audioRouteChannel.setMethodCallHandler(_handleAudioRouteCall);
+  }
+
+  static const MethodChannel _audioRouteChannel =
+      MethodChannel('com.lldm.coro/audio_route');
 
   final _midiPro = MidiPro();
   int? _sfId; // SoundfontSamplerId devuelto por loadSoundfontAsset en v4
@@ -143,6 +150,9 @@ class MidiEngine {
   //   pendientes que ya no corresponden a la reproducción actual.
   final Map<int, int> _activeNoteCounts = {};
   int _playbackEpoch = 0;
+  int _playRequestEpoch = 0;
+  bool _playStartPending = false;
+  bool _routeRecoveryPending = false;
 
   // StreamController broadcast: no lo cerramos en dispose() porque el singleton
   // vive toda la sesión y cerrarlo rompería el stream para siempre.
@@ -292,8 +302,26 @@ class MidiEngine {
     }
   }
 
-  void play() {
-    if (_song == null || _state.isPlaying) return;
+  Future<void> play() async {
+    if (_song == null || _state.isPlaying || _playStartPending) return;
+    _playStartPending = true;
+    final requestEpoch = ++_playRequestEpoch;
+
+    try {
+      await _restoreSynthConfiguration();
+    } catch (error) {
+      // Si la reafirmación falla, intentamos usar el estado que el plugin
+      // conserve en vez de dejar al usuario sin reproducción.
+      debugPrint('⚠️ [NativeMidiEngine] No se pudo reafirmar el piano: $error');
+    } finally {
+      _playStartPending = false;
+    }
+
+    if (_song == null ||
+        _state.isPlaying ||
+        requestEpoch != _playRequestEpoch) {
+      return;
+    }
 
     _stopwatch.reset();
     _stopwatch.start();
@@ -304,7 +332,56 @@ class MidiEngine {
     _emit(_state.copyWith(isPlaying: true));
   }
 
+  Future<dynamic> _handleAudioRouteCall(MethodCall call) async {
+    if (call.method != 'routeChanged') return;
+    debugPrint('🎧 [NativeMidiEngine] Cambio de salida: ${call.arguments}');
+    await _recoverAfterAudioRouteChange();
+  }
+
+  Future<void> _recoverAfterAudioRouteChange() async {
+    if (_routeRecoveryPending || !_midiPro.isInitialized || _sfId == null) {
+      return;
+    }
+    _routeRecoveryPending = true;
+    final wasPlaying = _state.isPlaying;
+    final resumeAt =
+        wasPlaying ? _getCurrentTimeSeconds() : _state.tiempoActual;
+
+    if (wasPlaying) {
+      _playbackTimer?.cancel();
+      _stopwatch.stop();
+      _playbackEpoch++;
+      _stopAllNotes();
+    }
+
+    try {
+      // Al conectar audífonos o una bocina el sistema puede reconstruir la
+      // salida. Reaplicamos sesión, preset de piano, mezcla y efectos.
+      await Future<void>.delayed(const Duration(milliseconds: 120));
+      await _restoreSynthConfiguration();
+    } catch (error, stackTrace) {
+      debugPrint(
+        '❌ [NativeMidiEngine] Error recuperando la salida de audio: '
+        '$error\n$stackTrace',
+      );
+    } finally {
+      _routeRecoveryPending = false;
+    }
+
+    if (wasPlaying && _state.isPlaying && _song != null) {
+      _startOffsetSeconds =
+          resumeAt.clamp(0.0, _song!.durationSeconds).toDouble();
+      _playbackCursor = _firstNoteAtOrAfter(_startOffsetSeconds);
+      _primeMetronomeAt(_startOffsetSeconds);
+      _stopwatch.reset();
+      _stopwatch.start();
+      _playbackTimer =
+          Timer.periodic(const Duration(milliseconds: 20), _onTick);
+    }
+  }
+
   void pause() {
+    _playRequestEpoch++;
     _stopwatch.stop();
     _startOffsetSeconds = _getCurrentTimeSeconds();
     _playbackTimer?.cancel();
@@ -314,6 +391,7 @@ class MidiEngine {
   }
 
   void stop() {
+    _playRequestEpoch++;
     _stopwatch.stop();
     _stopwatch.reset();
     _playbackTimer?.cancel();
@@ -683,11 +761,14 @@ class MidiEngine {
     final compressed = 34.0 + math.pow(normalized, 0.68) * 78.0;
     final polyphonyGain =
         (1 / math.sqrt(1 + activeNotes.clamp(0, 96) / 24.0)).clamp(0.72, 1.0);
-    return (compressed * polyphonyGain).round().clamp(1, 120);
+    return (compressed * polyphonyGain).round().clamp(1, 104);
   }
 
   Future<void> _configureMastering() async {
-    await _midiPro.setMasterGain(0.95);
+    // +10 dB = x3.162 en amplitud. El plugin admite este margen tanto en
+    // Android como en iOS; mantenemos la compresión de velocidad para domar
+    // los acordes densos.
+    await _midiPro.setMasterGain(0.95 * 3.1622776601683795);
     await _midiPro.setEqualizer(
       enabled: true,
       bassGain: -1.5,
@@ -702,6 +783,18 @@ class MidiEngine {
       level: 0.12,
     );
     await _midiPro.setChorus(enabled: false);
+  }
+
+  Future<void> _restoreSynthConfiguration() async {
+    if (!_midiPro.isInitialized || _sfId == null) return;
+    if (Platform.isIOS) {
+      await _midiPro.configureAudioSession(
+        category: AudioSessionCategory.playback,
+        mixWithOthers: false,
+      );
+    }
+    await _configureMastering();
+    if (_song != null) await _configureVoiceChannels(_song!.tracks);
   }
 
   Future<void> _configureVoiceChannels(List<MidiTrackInfo> tracks) async {
@@ -750,7 +843,11 @@ class MidiEngine {
         sfId: _sfId!,
         channel: channel,
         controller: 7,
-        value: 104,
+        value: (_mutedTracks[tracks[index].index] ?? false)
+            ? 0
+            : (104 * math.pow(_trackVolumes[tracks[index].index] ?? 1.0, 2))
+                .round()
+                .clamp(0, 127),
       );
     }
   }
