@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap');
+
+:root {
+  --bg: #f7f5ef;
+  --surface: #fffefa;
+  --surface-soft: #f0eee7;
+  --text: #1d2428;
+  --muted: #687078;
+  --line: #e4e0d6;
+  --accent: #c9a832;
+  --accent-strong: #9a7b17;
+  --accent-ink: #26312f;
+  --brand: #314a43;
+  --brand-text: #f6f3ea;
+  --brand-muted: #bcc6bb;
+  --phone: #fdfbf5;
+  --phone-text: #1d2428;
+  --phone-muted: #969a95;
+  --phone-line: #eeece5;
+  --phone-input: #f1f0ec;
+  --gold-panel: #e9d890;
+  --gold-panel-text: #26312f;
+  --gold-panel-muted: #526159;
+  --shadow: rgba(27, 38, 33, 0.15);
+  --shadow-strong: rgba(20, 30, 26, 0.25);
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', Arial, sans-serif;
+  --mono: 'DM Mono', monospace;
+}
+
+html[data-theme='dark'],
+.site.dark {
+  --bg: #16211f;
+  --surface: #21302d;
+  --surface-soft: #293a36;
+  --text: #ffffff;
+  --muted: #f0f4f0;
+  --line: #53645d;
+  --accent: #d7b94c;
+  --accent-strong: #f1d96f;
+  --accent-ink: #1d2925;
+  --brand: #29463d;
+  --brand-text: #ffffff;
+  --brand-muted: #ffffff;
+  --phone: #fdfbf5;
+  --phone-text: #1d2428;
+  --phone-muted: #969a95;
+  --phone-line: #eeece5;
+  --phone-input: #f1f0ec;
+  --gold-panel: #d7b94c;
+  --gold-panel-text: #1d2925;
+  --gold-panel-muted: #35473f;
+  --shadow: rgba(0, 0, 0, 0.24);
+  --shadow-strong: rgba(0, 0, 0, 0.38);
+}
+
+*:focus-visible {
+  outline: 3px solid var(--accent-strong);
+  outline-offset: 4px;
+}

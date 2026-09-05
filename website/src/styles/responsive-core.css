@@ -1,0 +1,334 @@
+@media (max-width: 800px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .solution-process {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-bottom: 70px;
+  }
+  .use-case-grid {
+    grid-template-columns: 1fr;
+  }
+  .use-case {
+    min-height: 0;
+  }
+}
+@media (max-width: 800px) {
+  .roadmap-page {
+    padding-top: 78px;
+  }
+  .roadmap-stages {
+    grid-template-columns: 1fr;
+    margin-top: 52px;
+  }
+  .roadmap-stage {
+    min-height: 0;
+  }
+  .roadmap-stage h2 {
+    margin-top: 28px;
+  }
+  .roadmap-pending {
+    margin-top: 65px;
+    padding-top: 52px;
+  }
+  .roadmap-pending-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.social-glyph {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+.social-instagram,
+.social-tiktok {
+  width: 16px;
+  height: 16px;
+}
+.not-found {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  column-gap: 70px;
+}
+.not-found::after {
+  content: '';
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  background: url('/404-repair.png') center/cover no-repeat;
+  border: 0;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px var(--shadow);
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+.not-found > * {
+  grid-column: 1;
+}
+.site.dark .not-found::after {
+  border-color: transparent;
+  background-image: linear-gradient(rgba(22, 33, 31, 0.62), rgba(22, 33, 31, 0.62)), url('/404-repair.png');
+  background-blend-mode: normal;
+  filter: saturate(0.84);
+}
+@media (max-width: 800px) {
+  .not-found {
+    grid-template-columns: 1fr;
+  }
+  .not-found::after {
+    grid-column: 1;
+    grid-row: auto;
+    max-width: 420px;
+    margin-top: 42px;
+  }
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 46px;
+  }
+  .hero-visual {
+    transform: scale(0.9);
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .feature-grid,
+  .song-grid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 88px 0;
+  }
+  .metrics {
+    padding: 20px 0;
+  }
+  .metric {
+    padding: 0 12px;
+  }
+  .metric:nth-child(3),
+  .metric:nth-child(4) {
+    padding-left: 0;
+  }
+  .metric strong {
+    font-size: 17px;
+  }
+  .metric span {
+    font-size: 8px;
+  }
+  .floating-badge {
+    font-size: 9px;
+  }
+  .badge-a {
+    right: -2px;
+  }
+  .badge-b {
+    left: -2px;
+  }
+  .footer-links {
+    gap: 11px;
+  }
+  .store-button {
+    min-width: 122px;
+    padding-inline: 11px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    display: flex;
+  }
+}
+
+/* Tablet navigation and content density. */
+@media (max-width: 1050px) {
+  .container {
+    width: min(100% - 48px, 940px);
+  }
+  .nav {
+    display: flex;
+    min-height: 70px;
+    gap: 12px;
+  }
+  .nav-toggle {
+    display: grid;
+    order: 2;
+    margin-left: auto;
+  }
+  .nav-controls {
+    order: 1;
+    gap: 7px;
+  }
+  .nav-links {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 24px;
+    right: 24px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px) scale(0.98);
+    transform-origin: top center;
+    background: var(--surface);
+    border: 1px solid transparent;
+    padding: 0 18px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    box-shadow: 0 18px 34px transparent;
+    transition:
+      max-height 0.45s cubic-bezier(0.2, 0.8, 0.25, 1),
+      opacity 0.24s ease,
+      transform 0.35s ease,
+      visibility 0.45s step-end,
+      border-color 0.3s ease,
+      padding 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  .nav-links.open {
+    max-height: 380px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    border-color: var(--line);
+    padding: 18px;
+    box-shadow: 0 18px 34px var(--shadow);
+    transition:
+      max-height 0.55s cubic-bezier(0.2, 0.8, 0.25, 1),
+      opacity 0.25s ease,
+      transform 0.35s ease,
+      border-color 0.3s ease,
+      padding 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  .nav-links a {
+    padding: 13px 8px;
+    opacity: 0;
+    transform: translateY(-7px);
+    transition:
+      opacity 0.25s ease,
+      transform 0.3s ease;
+  }
+  .nav-links.open a {
+    opacity: 1;
+    transform: none;
+  }
+  .nav-links.open a:nth-child(1) {
+    transition-delay: 0.06s;
+  }
+  .nav-links.open a:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  .nav-links.open a:nth-child(3) {
+    transition-delay: 0.14s;
+  }
+  .nav-links.open a:nth-child(4) {
+    transition-delay: 0.18s;
+  }
+  .nav-links.open a:nth-child(5) {
+    transition-delay: 0.22s;
+  }
+  .nav-cta {
+    justify-content: center;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1100px) {
+  .hero {
+    gap: 24px;
+    min-height: 590px;
+  }
+  .hero-visual {
+    transform: scale(0.87);
+  }
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px 24px;
+  }
+  .song-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .demo-layout {
+    gap: 42px;
+  }
+  .bc-layout {
+    gap: 52px;
+  }
+  .collab-layout {
+    gap: 60px;
+  }
+  .contact-card {
+    gap: 45px;
+    padding: 46px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 28px, 520px);
+  }
+  .hero {
+    padding-top: 52px;
+  }
+  .hero-actions,
+  .download-group > div {
+    width: 100%;
+  }
+  .download-group > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .store-button {
+    min-width: 0;
+    padding-inline: 10px;
+  }
+  .text-action {
+    justify-content: flex-start;
+  }
+  .hero-visual {
+    min-height: 440px;
+  }
+  .phone-card {
+    transform: rotate(2deg) scale(0.88);
+  }
+  .section,
+  .contact-section {
+    padding: 76px 0;
+  }
+  .demo-band,
+  .bc-section,
+  .collab-section,
+  .services-section {
+    padding: 80px 0;
+  }
+  .demo-window {
+    transform: none;
+  }
+  .demo-content {
+    padding: 18px 14px;
+  }
+  .song-card {
+    min-height: 92px;
+  }
+  .song-meta {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .bc-stats {
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+  .contact-card {
+    padding: 30px 20px;
+  }
+  .footer-top {
+    gap: 20px;
+  }
+  .store-links {
+    width: 100%;
+  }
+  .footer-bottom {
+    font-size: 9px;
+  }
+}

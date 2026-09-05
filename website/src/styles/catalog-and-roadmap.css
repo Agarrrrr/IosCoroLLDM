@@ -1,0 +1,315 @@
+.song-card.is-pending::before {
+  background: var(--muted);
+}
+.song-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--text);
+}
+.song-card:hover::before {
+  transform: scale(1.28);
+}
+.song-card.has-audio {
+  cursor: pointer;
+}
+.song-card.is-pending {
+  cursor: default;
+}
+.song-card:disabled {
+  opacity: 0.68;
+}
+.song-card.is-playing {
+  border-color: var(--accent-strong);
+}
+.song-card.is-playing .song-state {
+  animation: mini-pulse 1s ease-in-out infinite;
+}
+.song-card-title {
+  align-items: center;
+  padding-left: 0;
+}
+.song-card-title h3 {
+  flex: 1;
+}
+.song-dot {
+  display: none;
+}
+.song-state {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  flex: none;
+}
+.has-audio .song-state {
+  color: var(--accent-strong);
+}
+.is-pending .song-state {
+  color: var(--muted);
+}
+.song-meta {
+  align-items: center;
+  margin: 10px 0 0;
+}
+.song-meta > span:first-child {
+  color: var(--muted);
+}
+.song-status {
+  padding: 0;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+}
+.has-audio .song-status {
+  color: var(--accent-strong);
+}
+.is-pending .song-status {
+  color: var(--muted);
+}
+.ensemble-demo {
+  position: fixed;
+  z-index: 30;
+  right: clamp(16px, 4vw, 48px);
+  bottom: clamp(16px, 4vw, 40px);
+  width: min(430px, calc(100vw - 32px));
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  box-shadow: 0 18px 50px color-mix(in srgb, var(--text) 20%, transparent);
+  backdrop-filter: blur(16px);
+  color: var(--text);
+  animation: toast-in 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.ensemble-demo > div {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+.ensemble-demo strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.ensemble-demo span {
+  color: var(--muted);
+  font: 9px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.ensemble-demo small {
+  color: var(--muted);
+  font: 9px var(--mono);
+}
+.demo-progress {
+  width: min(260px, 100%);
+  height: 3px;
+  margin-top: 4px;
+  overflow: hidden;
+  background: var(--line);
+}
+.demo-progress i {
+  display: block;
+  height: 100%;
+  background: var(--accent-strong);
+  transition: width 0.08s linear;
+}
+.demo-controls {
+  margin-left: auto;
+  display: flex !important;
+  align-items: center;
+  gap: 5px;
+}
+.demo-controls button {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+.demo-controls button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: var(--surface-soft);
+}
+.demo-controls button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.demo-wave {
+  width: 34px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--accent-strong);
+}
+.demo-wave i {
+  display: block;
+  width: 3px;
+  height: 8px;
+  border-radius: 99px;
+  background: currentColor;
+  animation: wave 1s ease-in-out infinite;
+}
+.demo-wave i:nth-child(2) {
+  animation-delay: 0.12s;
+  height: 17px;
+}
+.demo-wave i:nth-child(3) {
+  animation-delay: 0.24s;
+  height: 12px;
+}
+.demo-wave i:nth-child(4) {
+  animation-delay: 0.36s;
+  height: 20px;
+}
+.demo-wave.loading i {
+  animation-play-state: paused;
+  opacity: 0.45;
+}
+@keyframes wave {
+  50% {
+    transform: scaleY(0.35);
+  }
+}
+@keyframes toast-in {
+  from {
+    transform: translateY(18px) scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes mini-pulse {
+  50% {
+    transform: scale(0.84);
+    opacity: 0.58;
+  }
+}
+@media (max-width: 600px) {
+  .song-grid {
+    column-gap: 16px;
+  }
+  .song-card {
+    min-height: 0;
+    padding: 15px 0 13px 14px;
+  }
+  .song-card::before {
+    top: 19px;
+    width: 6px;
+    height: 6px;
+  }
+  .song-state {
+    width: 20px;
+    height: 20px;
+  }
+  .song-state svg {
+    width: 13px;
+    height: 13px;
+  }
+  .song-meta {
+    margin: 7px 0 0;
+  }
+  .song-status {
+    font-size: 7px;
+  }
+  .ensemble-demo {
+    right: 12px;
+    bottom: 12px;
+    width: calc(100vw - 24px);
+    padding: 11px 12px;
+  }
+  .demo-controls button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* The mobile header exposes the destinations people use first. The menu now
+   contains secondary pages instead of being the only way to navigate. */
+.mobile-primary-nav {
+  display: none;
+}
+@media (max-width: 1050px) {
+  .nav-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+  }
+  .mobile-primary-nav {
+    display: flex;
+    align-items: stretch;
+    gap: 7px;
+    padding: 0 0 11px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-primary-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .mobile-nav-link {
+    min-height: 42px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 7px;
+    padding: 0 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease,
+      background 0.2s ease,
+      transform 0.2s ease;
+  }
+  .mobile-nav-link svg {
+    color: var(--accent-strong);
+  }
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus-visible,
+  .mobile-nav-link.active {
+    color: var(--text);
+    border-color: var(--accent);
+    background: var(--surface-soft);
+  }
+  .mobile-nav-link:active {
+    transform: scale(0.96);
+  }
+  .nav-links {
+    top: calc(100% + 53px);
+  }
+}
+@media (max-width: 600px) {
+  .mobile-primary-nav {
+    padding-bottom: 9px;
+    gap: 6px;
+  }
+  .mobile-nav-link {
+    min-height: 40px;
+    padding-inline: 11px;
+    font-size: 11px;
+  }
+  .nav-links {
+    top: calc(100% + 49px);
+  }
+}

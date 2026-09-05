@@ -1,0 +1,9 @@
+.release-changes summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.release-changes[open] summary {
+  margin-bottom: 14px;
+}

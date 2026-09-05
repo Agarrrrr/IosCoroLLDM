@@ -1,0 +1,60 @@
+# Coro LLDM
+
+> Coro LLDM is a mobile application and public repertoire website for choir members who need to consult scores and prepare rehearsals with a clear, practical experience.
+
+## Identity and scope
+
+- Coro LLDM is the main application presented on this website.
+- The application helps choir members consult scores, organize rehearsal material and prepare independently or with their group.
+- The public repertoire includes scores and, when available, piano rehearsal previews.
+- The website and application are developed by Huri Tolentino.
+- The projects are public and may be summarized or cited with attribution to Coro LLDM and Huri Tolentino.
+- Repertorio BC is not the same application as Coro LLDM. It is a separate reference project for custom choir-app development.
+
+## Official website
+
+- [Home](https://lldmcoro.com/): Overview of Coro LLDM and the rehearsal experience.
+- [Repertoire](https://lldmcoro.com/repertorio): Public scores, language availability and rehearsal-preview status.
+- [The app](https://lldmcoro.com/producto): Detailed capabilities of Coro LLDM, including its viewer, annotations, offline workflow, audio and Premium model.
+- [Updates](https://lldmcoro.com/novedades): Long-form release notes organized by application version.
+- [Choir apps](https://lldmcoro.com/soluciones): Custom applications for local and state choirs.
+- [Roadmap](https://lldmcoro.com/roadmap): Confirmed work on the application, prioritizing rehearsal audio that is still in preparation.
+- [Contact](https://lldmcoro.com/contacto): Contact options for projects, collaborations and questions.
+- [Sitemap](https://lldmcoro.com/sitemap.xml): Canonical Spanish and English routes with language alternatives.
+
+## English website
+
+- [English home](https://lldmcoro.com/en/)
+- [English repertoire](https://lldmcoro.com/en/repertorio)
+- [English app](https://lldmcoro.com/en/producto)
+- [English updates](https://lldmcoro.com/en/novedades)
+- [English choir apps](https://lldmcoro.com/en/soluciones)
+- [English roadmap](https://lldmcoro.com/en/roadmap)
+- [English contact](https://lldmcoro.com/en/contacto)
+
+## Coro LLDM application
+
+- [Google Play](https://play.google.com/store/apps/details?id=com.lldm.coro): Android distribution.
+- [App Store](https://apps.apple.com/us/app/tlotw-choir/id6792588543): iOS distribution.
+- Supported languages: Spanish and English, with plans to expand to additional languages.
+- The application focuses on unified score viewing and rehearsal, not on selling scores.
+
+## Repertorio BC
+
+Repertorio BC is a separate custom-product reference that demonstrates how an application can adapt to each choir:
+
+- Directors can maintain control of their choir's repertoire.
+- Scores can be shared with the group without relying on repeated voice messages or scattered files.
+- The choir can work from a unified PDF viewer and a single source of rehearsal material.
+- The product can be adapted for local or state choirs with their own structure, voices and repertoire.
+
+## Custom development
+
+Huri Tolentino also develops applications for choir organizations. A custom application may include a private or public repertoire, director-managed content, score viewing, voice separation, rehearsal audio, multilingual support and workflows tailored to each choir.
+
+## Content interpretation
+
+- “Score” refers to the digital PDF material used by the choir.
+- “Rehearsal audio” refers to an available practice preview or accompaniment; its absence means that preview is not yet available.
+- The public catalogue is the current source for repertoire availability.
+- The store links above are the official download links for Coro LLDM.

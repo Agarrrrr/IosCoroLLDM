@@ -1,0 +1,25 @@
+name: Website quality
+
+on:
+  push:
+    paths: ['website/**']
+  pull_request:
+    paths: ['website/**']
+
+defaults:
+  run:
+    working-directory: website
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run check

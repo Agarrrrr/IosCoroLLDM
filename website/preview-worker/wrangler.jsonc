@@ -1,0 +1,8 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "coro-lldm-previews",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-26",
+  "observability": { "enabled": true },
+  "r2_buckets": [{ "binding": "PREVIEWS", "bucket_name": "coro-lldm-previews" }],
+}

@@ -1,0 +1,11 @@
+dist
+node_modules
+.preview-output
+.preview-tmp
+test-results
+playwright-report
+coverage
+public/catalogo*.json
+public/roadmap-pending.json
+public/catalog-validation.json
+public/catalog-meta.json

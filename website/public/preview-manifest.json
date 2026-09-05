@@ -1,0 +1,1525 @@
+{
+  "version": 2,
+  "previews": {
+    "aar-n-ser-tu-nombre-1784232119017.mid": {
+      "opus": "aar-n-ser-tu-nombre-1784232119017-piano-90.opus",
+      "aac": "aar-n-ser-tu-nombre-1784232119017-piano-90.m4a"
+    },
+    "acepto-el-reto-1784232125485.mid": {
+      "opus": "acepto-el-reto-1784232125485.opus",
+      "aac": "acepto-el-reto-1784232125485.m4a"
+    },
+    "ac-rcame-a-ti-1784232131859.mid": {
+      "opus": "ac-rcame-a-ti-1784232131859.opus",
+      "aac": "ac-rcame-a-ti-1784232131859.m4a"
+    },
+    "ac-rcate-1784232137737.mid": {
+      "opus": "ac-rcate-1784232137737.opus",
+      "aac": "ac-rcate-1784232137737.m4a"
+    },
+    "adelante-juventud-1784232188838.mid": {
+      "opus": "adelante-juventud-1784232188838.opus",
+      "aac": "adelante-juventud-1784232188838.m4a"
+    },
+    "adorad-a-dios-1784232194689.mid": {
+      "opus": "adorad-a-dios-1784232194689.opus",
+      "aac": "adorad-a-dios-1784232194689.m4a"
+    },
+    "brilliant-light-1781401032876.mid": {
+      "opus": "brilliant-light-1781401032876.opus",
+      "aac": "brilliant-light-1781401032876.m4a"
+    },
+    "a-jesucristo-ven-sin-tardar-1779081958894.mid": {
+      "opus": "a-jesucristo-ven-sin-tardar-1779081958894.opus",
+      "aac": "a-jesucristo-ven-sin-tardar-1779081958894.m4a"
+    },
+    "a-jesus-loor-1779083057399.mid": {
+      "opus": "a-jesus-loor-1779083057399.opus",
+      "aac": "a-jesus-loor-1779083057399.m4a"
+    },
+    "alabad-a-jehova-1779147790894.mid": {
+      "opus": "alabad-a-jehova-1779147790894.opus",
+      "aac": "alabad-a-jehova-1779147790894.m4a"
+    },
+    "alabad-al-gran-rey-1779158237657.mid": {
+      "opus": "alabad-al-gran-rey-1779158237657.opus",
+      "aac": "alabad-al-gran-rey-1779158237657.m4a"
+    },
+    "alabanzas-en-el-cielo-1784219075015.mid": {
+      "opus": "alabanzas-en-el-cielo-1784219075015.opus",
+      "aac": "alabanzas-en-el-cielo-1784219075015.m4a"
+    },
+    "a-la-batalla-1780289099473.mid": {
+      "opus": "a-la-batalla-1780289099473.opus",
+      "aac": "a-la-batalla-1780289099473.m4a"
+    },
+    "alabo-tu-voluntad-1779158523300.mid": {
+      "opus": "alabo-tu-voluntad-1779158523300.opus",
+      "aac": "alabo-tu-voluntad-1779158523300.m4a"
+    },
+    "at-the-right-hand-of-god-1781399343653.mid": {
+      "opus": "at-the-right-hand-of-god-1781399343653.opus",
+      "aac": "at-the-right-hand-of-god-1781399343653.m4a"
+    },
+    "al-amparo-de-la-roca-1780291073119.mid": {
+      "opus": "al-amparo-de-la-roca-1780291073119.opus",
+      "aac": "al-amparo-de-la-roca-1780291073119.m4a"
+    },
+    "alcance-salvacion-1779159521983.mid": {
+      "opus": "alcance-salvacion-1779159521983.opus",
+      "aac": "alcance-salvacion-1779159521983.m4a"
+    },
+    "al-despertar-por-la-manana-1779121509828.mid": {
+      "opus": "al-despertar-por-la-manana-1779121509828.opus",
+      "aac": "al-despertar-por-la-manana-1779121509828.m4a"
+    },
+    "al-divino-salvador-1779125506300.mid": {
+      "opus": "al-divino-salvador-1779125506300.opus",
+      "aac": "al-divino-salvador-1779125506300.m4a"
+    },
+    "la-profecia-de-dios-1780118217120.mid": {
+      "opus": "la-profecia-de-dios-1780118217120.opus",
+      "aac": "la-profecia-de-dios-1780118217120.m4a"
+    },
+    "aleluya-al-cordero-de-dios-1779162432052.mid": {
+      "opus": "aleluya-al-cordero-de-dios-1779162432052.opus",
+      "aac": "aleluya-al-cordero-de-dios-1779162432052.m4a"
+    },
+    "aleluya-al-rey-1779828232782.mid": {
+      "opus": "aleluya-al-rey-1779828232782.opus",
+      "aac": "aleluya-al-rey-1779828232782.m4a"
+    },
+    "hallelujah-amen-1781582869940.mid": {
+      "opus": "hallelujah-amen-1781582869940.opus",
+      "aac": "hallelujah-amen-1781582869940.m4a"
+    },
+    "aleluya-de-beethoven-1781383877268.mid": {
+      "opus": "aleluya-de-beethoven-1781383877268.opus",
+      "aac": "aleluya-de-beethoven-1781383877268.m4a"
+    },
+    "aleluya-de-haendel-1779839901619.mid": {
+      "opus": "aleluya-de-haendel-1779839901619.opus",
+      "aac": "aleluya-de-haendel-1779839901619.m4a"
+    },
+    "hallelujah-there-s-anointed-of-god-1782097509793.mid": {
+      "opus": "hallelujah-there-s-anointed-of-god-1782097509793.opus",
+      "aac": "hallelujah-there-s-anointed-of-god-1782097509793.m4a"
+    },
+    "aleluya-nuestro-dios-1779248079927.mid": {
+      "opus": "aleluya-nuestro-dios-1779248079927.opus",
+      "aac": "aleluya-nuestro-dios-1779248079927.m4a"
+    },
+    "aleluya-oh-creador-1779415095367.mid": {
+      "opus": "aleluya-oh-creador-1779415095367.opus",
+      "aac": "aleluya-oh-creador-1779415095367.m4a"
+    },
+    "into-the-garden-1782508472433.mid": {
+      "opus": "into-the-garden-1782508472433.opus",
+      "aac": "into-the-garden-1782508472433.m4a"
+    },
+    "al-nombre-de-jesus-load-1779143793797.mid": {
+      "opus": "al-nombre-de-jesus-load-1779143793797.opus",
+      "aac": "al-nombre-de-jesus-load-1779143793797.m4a"
+    },
+    "al-sonar-de-la-trompeta-1779144395257.mid": {
+      "opus": "al-sonar-de-la-trompeta-1779144395257.opus",
+      "aac": "al-sonar-de-la-trompeta-1779144395257.m4a"
+    },
+    "global/assets/midi/45c195f25b4b04728ece326db4f2d1d311616d914998d53386812bc1f811b9d5.enc": {
+      "opus": "93ebb0332cbe65abd6ff7285.opus",
+      "aac": "93ebb0332cbe65abd6ff7285.m4a"
+    },
+    "loving-angel-1782517670212.mid": {
+      "opus": "loving-angel-1782517670212.opus",
+      "aac": "loving-angel-1782517670212.m4a"
+    },
+    "ante-tu-altar-1779410117508.mid": {
+      "opus": "ante-tu-altar-1779410117508.opus",
+      "aac": "ante-tu-altar-1779410117508.m4a"
+    },
+    "anos-mi-alma-en-vanidad-vivio-1779415158161.mid": {
+      "opus": "anos-mi-alma-en-vanidad-vivio-1779415158161.opus",
+      "aac": "anos-mi-alma-en-vanidad-vivio-1779415158161.m4a"
+    },
+    "apocalipsis-10-1780194776829.mid": {
+      "opus": "apocalipsis-10-1780194776829.opus",
+      "aac": "apocalipsis-10-1780194776829.m4a"
+    },
+    "apocalipsis-14-6-1780196463843.mid": {
+      "opus": "apocalipsis-14-6-1780196463843.opus",
+      "aac": "apocalipsis-14-6-1780196463843.m4a"
+    },
+    "apocalipsis-19-1783482309326.mid": {
+      "opus": "apocalipsis-19-1783482309326.opus",
+      "aac": "apocalipsis-19-1783482309326.m4a"
+    },
+    "ap-stol-padre-y-maestro-1783483201702.mid": {
+      "opus": "ap-stol-padre-y-maestro-1783483201702.opus",
+      "aac": "ap-stol-padre-y-maestro-1783483201702.m4a"
+    },
+    "a-solas-al-huerto-1779084461760.mid": {
+      "opus": "a-solas-al-huerto-1779084461760.opus",
+      "aac": "a-solas-al-huerto-1779084461760.m4a"
+    },
+    "a-ti-solo-nuestro-rey-1779118598915.mid": {
+      "opus": "a-ti-solo-nuestro-rey-1779118598915.opus",
+      "aac": "a-ti-solo-nuestro-rey-1779118598915.m4a"
+    },
+    "a-vencer-el-mal-1779086382716.mid": {
+      "opus": "a-vencer-el-mal-1779086382716.opus",
+      "aac": "a-vencer-el-mal-1779086382716.m4a"
+    },
+    "barro-en-tus-manos-1779411480858.mid": {
+      "opus": "barro-en-tus-manos-1779411480858.opus",
+      "aac": "barro-en-tus-manos-1779411480858.m4a"
+    },
+    "bendita-eleccion-1779830905137.mid": {
+      "opus": "bendita-eleccion-1779830905137.opus",
+      "aac": "bendita-eleccion-1779830905137.m4a"
+    },
+    "bendita-fe-1779992702148.mid": {
+      "opus": "bendita-fe-1779992702148.opus",
+      "aac": "bendita-fe-1779992702148.m4a"
+    },
+    "what-blessed-love-1784230662501.mid": {
+      "opus": "what-blessed-love-1784230662501.opus",
+      "aac": "what-blessed-love-1784230662501.m4a"
+    },
+    "bendito-dios-1779832253324.mid": {
+      "opus": "bendito-dios-1779832253324.opus",
+      "aac": "bendito-dios-1779832253324.m4a"
+    },
+    "bendito-salvador-1781488519011.mid": {
+      "opus": "bendito-salvador-1781488519011.opus",
+      "aac": "bendito-salvador-1781488519011.m4a"
+    },
+    "bienaventurados-1780254375161.mid": {
+      "opus": "bienaventurados-1780254375161.opus",
+      "aac": "bienaventurados-1780254375161.m4a"
+    },
+    "cada-paso-1779832856363.mid": {
+      "opus": "cada-paso-1779832856363.opus",
+      "aac": "cada-paso-1779832856363.m4a"
+    },
+    "cada-paso-al-caminar-1780340065312.mid": {
+      "opus": "cada-paso-al-caminar-1780340065312.opus",
+      "aac": "cada-paso-al-caminar-1780340065312.m4a"
+    },
+    "cantad-a-jehova-nuestro-dios-1779833551386.mid": {
+      "opus": "cantad-a-jehova-nuestro-dios-1779833551386.opus",
+      "aac": "cantad-a-jehova-nuestro-dios-1779833551386.m4a"
+    },
+    "cantad-alegres-a-dios-1780340388168.mid": {
+      "opus": "cantad-alegres-a-dios-1780340388168.opus",
+      "aac": "cantad-alegres-a-dios-1780340388168.m4a"
+    },
+    "cantad-del-amor-de-cristo-1779835147561.mid": {
+      "opus": "cantad-del-amor-de-cristo-1779835147561.opus",
+      "aac": "cantad-del-amor-de-cristo-1779835147561.m4a"
+    },
+    "cantemos-con-alegria-1779835326775.mid": {
+      "opus": "cantemos-con-alegria-1779835326775.opus",
+      "aac": "cantemos-con-alegria-1779835326775.m4a"
+    },
+    "cantemos-su-victoria-1780088081877.mid": {
+      "opus": "cantemos-su-victoria-1780088081877.opus",
+      "aac": "cantemos-su-victoria-1780088081877.m4a"
+    },
+    "canten-a-cristo-rey-1779838784844.mid": {
+      "opus": "canten-a-cristo-rey-1779838784844.opus",
+      "aac": "canten-a-cristo-rey-1779838784844.m4a"
+    },
+    "cantos-jubilosos-1784597349308.mid": {
+      "opus": "cantos-jubilosos-1784597349308.opus",
+      "aac": "cantos-jubilosos-1784597349308.m4a"
+    },
+    "house-of-god-1782097523169.mid": {
+      "opus": "house-of-god-1782097523169.opus",
+      "aac": "house-of-god-1782097523169.m4a"
+    },
+    "come-partake-of-the-holy-supper-1781581310652.mid": {
+      "opus": "come-partake-of-the-holy-supper-1781581310652.opus",
+      "aac": "come-partake-of-the-holy-supper-1781581310652.m4a"
+    },
+    "centenario-de-amor-1780267960126.mid": {
+      "opus": "centenario-de-amor-1780267960126.opus",
+      "aac": "centenario-de-amor-1780267960126.m4a"
+    },
+    "cerca-de-ti-senor-1779855354997.mid": {
+      "opus": "cerca-de-ti-senor-1779855354997.opus",
+      "aac": "cerca-de-ti-senor-1779855354997.m4a"
+    },
+    "como-la-lluvia-1779992222571.mid": {
+      "opus": "como-la-lluvia-1779992222571.opus",
+      "aac": "como-la-lluvia-1779992222571.m4a"
+    },
+    "como-puedo-pagarte-1780076167898.mid": {
+      "opus": "como-puedo-pagarte-1780076167898.opus",
+      "aac": "como-puedo-pagarte-1780076167898.m4a"
+    },
+    "con-canticos-senor-1779855923178.mid": {
+      "opus": "con-canticos-senor-1779855923178.opus",
+      "aac": "con-canticos-senor-1779855923178.m4a"
+    },
+    "con-mis-manos-hacia-el-cielo-1780077201181.mid": {
+      "opus": "con-mis-manos-hacia-el-cielo-1780077201181.opus",
+      "aac": "con-mis-manos-hacia-el-cielo-1780077201181.m4a"
+    },
+    "con-gran-gozo-y-placer-1779856125772.mid": {
+      "opus": "con-gran-gozo-y-placer-1779856125772.opus",
+      "aac": "con-gran-gozo-y-placer-1779856125772.m4a"
+    },
+    "conmigo-va-1780269365278.mid": {
+      "opus": "conmigo-va-1780269365278.opus",
+      "aac": "conmigo-va-1780269365278.m4a"
+    },
+    "an-honor-to-know-you-1781398864935.mid": {
+      "opus": "an-honor-to-know-you-1781398864935.opus",
+      "aac": "an-honor-to-know-you-1781398864935.m4a"
+    },
+    "con-reverencia-1779856882529.mid": {
+      "opus": "con-reverencia-1779856882529.opus",
+      "aac": "con-reverencia-1779856882529.m4a"
+    },
+    "contigo-estoy-tan-feliz-1779934145488.midi": {
+      "opus": "contigo-estoy-tan-feliz-1779934145488.opus",
+      "aac": "contigo-estoy-tan-feliz-1779934145488.m4a"
+    },
+    "con-todo-mi-ser-1779991582778.mid": {
+      "opus": "con-todo-mi-ser-1779991582778.opus",
+      "aac": "con-todo-mi-ser-1779991582778.m4a"
+    },
+    "coros-celestiales-1779949728319.midi": {
+      "opus": "coros-celestiales-1779949728319.opus",
+      "aac": "coros-celestiales-1779949728319.m4a"
+    },
+    "creed-en-jehova-nuestro-dios-1779949713096.midi": {
+      "opus": "creed-en-jehova-nuestro-dios-1779949713096.opus",
+      "aac": "creed-en-jehova-nuestro-dios-1779949713096.m4a"
+    },
+    "creo-en-ti-1780080104235.mid": {
+      "opus": "creo-en-ti-1780080104235.opus",
+      "aac": "creo-en-ti-1780080104235.m4a"
+    },
+    "cristiandad-del-mundo-1780637584375.mid": {
+      "opus": "cristiandad-del-mundo-1780637584375.opus",
+      "aac": "cristiandad-del-mundo-1780637584375.m4a"
+    },
+    "cuan-amables-son-tus-moradas-1779479451976.mid": {
+      "opus": "cuan-amables-son-tus-moradas-1779479451976.opus",
+      "aac": "cuan-amables-son-tus-moradas-1779479451976.m4a"
+    },
+    "cuando-amanezca-el-dia-1780081886494.mid": {
+      "opus": "cuando-amanezca-el-dia-1780081886494.opus",
+      "aac": "cuando-amanezca-el-dia-1780081886494.m4a"
+    },
+    "cuando-estemos-en-el-cielo-1779993335136.mid": {
+      "opus": "cuando-estemos-en-el-cielo-1779993335136.opus",
+      "aac": "cuando-estemos-en-el-cielo-1779993335136.m4a"
+    },
+    "cuando-oi-su-voz-1780082849548.mid": {
+      "opus": "cuando-oi-su-voz-1780082849548.opus",
+      "aac": "cuando-oi-su-voz-1780082849548.m4a"
+    },
+    "cuan-grande-es-la-obra-1780081469953.mid": {
+      "opus": "cuan-grande-es-la-obra-1780081469953.opus",
+      "aac": "cuan-grande-es-la-obra-1780081469953.m4a"
+    },
+    "declina-el-dia-1781486779389.mid": {
+      "opus": "declina-el-dia-1781486779389.opus",
+      "aac": "declina-el-dia-1781486779389.m4a"
+    },
+    "del-celeste-pais-1779995129948.mid": {
+      "opus": "del-celeste-pais-1779995129948.opus",
+      "aac": "del-celeste-pais-1779995129948.m4a"
+    },
+    "de-lo-profundo-1779937510559.mid": {
+      "opus": "de-lo-profundo-1779937510559.opus",
+      "aac": "de-lo-profundo-1779937510559.m4a"
+    },
+    "desde-que-salvo-estoy-1780083658812.mid": {
+      "opus": "desde-que-salvo-estoy-1780083658812.opus",
+      "aac": "desde-que-salvo-estoy-1780083658812.m4a"
+    },
+    "dia-feliz-1779996977853.mid": {
+      "opus": "dia-feliz-1779996977853.opus",
+      "aac": "dia-feliz-1779996977853.m4a"
+    },
+    "dichoso-dia-1780084523967.mid": {
+      "opus": "dichoso-dia-1780084523967.opus",
+      "aac": "dichoso-dia-1780084523967.m4a"
+    },
+    "digno-es-el-cordero-h-ndel-1781389821528.mid": {
+      "opus": "digno-es-el-cordero-h-ndel-1781389821528.opus",
+      "aac": "digno-es-el-cordero-h-ndel-1781389821528.m4a"
+    },
+    "global/assets/midi/ba2fce781ff4e98d3a2549c1f4329854ae7c83a77386a59790a3b6ab36dd8869.enc": {
+      "opus": "5007252e9178037b286b8a02.opus",
+      "aac": "5007252e9178037b286b8a02.m4a"
+    },
+    "dile-1780269896012.mid": {
+      "opus": "dile-1780269896012.opus",
+      "aac": "dile-1780269896012.m4a"
+    },
+    "dios-os-guarde-1779949678632.midi": {
+      "opus": "dios-os-guarde-1779949678632.opus",
+      "aac": "dios-os-guarde-1779949678632.m4a"
+    },
+    "dios-poderoso-1779998759229.mid": {
+      "opus": "dios-poderoso-1779998759229.opus",
+      "aac": "dios-poderoso-1779998759229.m4a"
+    },
+    "god-will-provide-1781667649610.mid": {
+      "opus": "god-will-provide-1781667649610.opus",
+      "aac": "god-will-provide-1781667649610.m4a"
+    },
+    "ineffable-gift-1782507396456.mid": {
+      "opus": "ineffable-gift-1782507396456.opus",
+      "aac": "ineffable-gift-1782507396456.m4a"
+    },
+    "doy-gracias-al-senor-1779997804145.mid": {
+      "opus": "doy-gracias-al-senor-1779997804145.opus",
+      "aac": "doy-gracias-al-senor-1779997804145.m4a"
+    },
+    "dulce-oracion-1780093364480.mid": {
+      "opus": "dulce-oracion-1780093364480.opus",
+      "aac": "dulce-oracion-1780093364480.m4a"
+    },
+    "el-aliento-de-mi-ser-1779949560635.midi": {
+      "opus": "el-aliento-de-mi-ser-1779949560635.opus",
+      "aac": "el-aliento-de-mi-ser-1779949560635.m4a"
+    },
+    "el-amor-del-senor-es-infinito-1780094714932.mid": {
+      "opus": "el-amor-del-senor-es-infinito-1780094714932.opus",
+      "aac": "el-amor-del-senor-es-infinito-1780094714932.m4a"
+    },
+    "el-angel-del-apocalipsis-14-6-1780342136902.mid": {
+      "opus": "el-angel-del-apocalipsis-14-6-1780342136902.opus",
+      "aac": "el-angel-del-apocalipsis-14-6-1780342136902.m4a"
+    },
+    "el-ano-que-se-va-1779999120668.mid": {
+      "opus": "el-ano-que-se-va-1779999120668.opus",
+      "aac": "el-ano-que-se-va-1779999120668.m4a"
+    },
+    "el-apostol-de-la-consolacion-1779999698236.mid": {
+      "opus": "el-apostol-de-la-consolacion-1779999698236.opus",
+      "aac": "el-apostol-de-la-consolacion-1779999698236.m4a"
+    },
+    "the-fragrance-of-the-election-1783361212841.mid": {
+      "opus": "the-fragrance-of-the-election-1783361212841.opus",
+      "aac": "the-fragrance-of-the-election-1783361212841.m4a"
+    },
+    "el-canto-triunfal-1779999972289.mid": {
+      "opus": "el-canto-triunfal-1779999972289.opus",
+      "aac": "el-canto-triunfal-1779999972289.m4a"
+    },
+    "el-coro-celestial-1781303400762.mid": {
+      "opus": "el-coro-celestial-1781303400762.opus",
+      "aac": "el-coro-celestial-1781303400762.m4a"
+    },
+    "eleccion-1779949583573.midi": {
+      "opus": "eleccion-1779949583573.opus",
+      "aac": "eleccion-1779949583573.m4a"
+    },
+    "eleccion-apostolica-1780098209862.mid": {
+      "opus": "eleccion-apostolica-1780098209862.opus",
+      "aac": "eleccion-apostolica-1780098209862.m4a"
+    },
+    "election-of-god-1781401381933.mid": {
+      "opus": "election-of-god-1781401381933.opus",
+      "aac": "election-of-god-1781401381933.m4a"
+    },
+    "global/assets/midi/81915a47d17ca2285f2c83300f1bb4fc604003c00ebc26e402f76b8817cc7257.enc": {
+      "opus": "1d556ad264114e5d95472583.opus",
+      "aac": "1d556ad264114e5d95472583.m4a"
+    },
+    "el-esp-ritu-de-cristo-1783361528477.mid": {
+      "opus": "el-esp-ritu-de-cristo-1783361528477.opus",
+      "aac": "el-esp-ritu-de-cristo-1783361528477.m4a"
+    },
+    "el-lema-de-la-iglesia-1780095869035.mid": {
+      "opus": "el-lema-de-la-iglesia-1780095869035.opus",
+      "aac": "el-lema-de-la-iglesia-1780095869035.m4a"
+    },
+    "the-lion-of-judah-1783361258180.mid": {
+      "opus": "the-lion-of-judah-1783361258180.opus",
+      "aac": "the-lion-of-judah-1783361258180.m4a"
+    },
+    "el-libro-de-la-vida-1780343462699.mid": {
+      "opus": "el-libro-de-la-vida-1780343462699.opus",
+      "aac": "el-libro-de-la-vida-1780343462699.m4a"
+    },
+    "the-calling-1783360858082.mid": {
+      "opus": "the-calling-1783360858082.opus",
+      "aac": "the-calling-1783360858082.m4a"
+    },
+    "el-tercer-angel-1779256281063.mid": {
+      "opus": "el-tercer-angel-1779256281063.opus",
+      "aac": "el-tercer-angel-1779256281063.m4a"
+    },
+    "el-manto-de-la-eleccion-1779935754380.midi": {
+      "opus": "el-manto-de-la-eleccion-1779935754380.opus",
+      "aac": "el-manto-de-la-eleccion-1779935754380.m4a"
+    },
+    "el-nombre-del-senor-1780208689319.mid": {
+      "opus": "el-nombre-del-senor-1780208689319.opus",
+      "aac": "el-nombre-del-senor-1780208689319.m4a"
+    },
+    "el-nuevo-israel-1780097199421.mid": {
+      "opus": "el-nuevo-israel-1780097199421.opus",
+      "aac": "el-nuevo-israel-1780097199421.m4a"
+    },
+    "el-palacio-celestial-1780270896844.mid": {
+      "opus": "el-palacio-celestial-1780270896844.opus",
+      "aac": "el-palacio-celestial-1780270896844.m4a"
+    },
+    "el-pueblo-feliz-1779949452985.midi": {
+      "opus": "el-pueblo-feliz-1779949452985.opus",
+      "aac": "el-pueblo-feliz-1779949452985.m4a"
+    },
+    "el-que-habita-al-abrigo-de-dios-1779949908086.midi": {
+      "opus": "el-que-habita-al-abrigo-de-dios-1779949908086.opus",
+      "aac": "el-que-habita-al-abrigo-de-dios-1779949908086.m4a"
+    },
+    "el-que-ha-de-venir-vendra-1780097652302.mid": {
+      "opus": "el-que-ha-de-venir-vendra-1780097652302.opus",
+      "aac": "el-que-ha-de-venir-vendra-1780097652302.m4a"
+    },
+    "el-rey-ya-viene-1784604985536.mid": {
+      "opus": "el-rey-ya-viene-1784604985536.opus",
+      "aac": "el-rey-ya-viene-1784604985536.m4a"
+    },
+    "the-sower-1783361274682.mid": {
+      "opus": "the-sower-1783361274682.opus",
+      "aac": "the-sower-1783361274682.m4a"
+    },
+    "el-senor-resucito-1779949438347.midi": {
+      "opus": "el-senor-resucito-1779949438347.opus",
+      "aac": "el-senor-resucito-1779949438347.m4a"
+    },
+    "global/assets/midi/ffbb5e2fb1695bf43fed7f3f9986a4c483394ff6e63c56d92b05f3fc67491109.enc": {
+      "opus": "0e2b449fcfc8798305528ab9.opus",
+      "aac": "0e2b449fcfc8798305528ab9.m4a"
+    },
+    "he-shall-come-1782097422443.mid": {
+      "opus": "he-shall-come-1782097422443.opus",
+      "aac": "he-shall-come-1782097422443.m4a"
+    },
+    "born-in-bethlehem-1781400683760.mid": {
+      "opus": "born-in-bethlehem-1781400683760.opus",
+      "aac": "born-in-bethlehem-1781400683760.m4a"
+    },
+    "en-g-lgota-jes-s-muri--1784232203894.mid": {
+      "opus": "en-g-lgota-jes-s-muri--1784232203894.opus",
+      "aac": "en-g-lgota-jes-s-muri--1784232203894.m4a"
+    },
+    "engrandecido-sea-dios-1780003362085.mid": {
+      "opus": "engrandecido-sea-dios-1780003362085.opus",
+      "aac": "engrandecido-sea-dios-1780003362085.m4a"
+    },
+    "en-jesucristo-se-halla-la-paz-1779936295994.midi": {
+      "opus": "en-jesucristo-se-halla-la-paz-1779936295994.opus",
+      "aac": "en-jesucristo-se-halla-la-paz-1779936295994.m4a"
+    },
+    "en-la-mesa-del-senor-1780098790998.mid": {
+      "opus": "en-la-mesa-del-senor-1780098790998.opus",
+      "aac": "en-la-mesa-del-senor-1780098790998.m4a"
+    },
+    "en-las-alas-de-su-amor-1780099085000.mid": {
+      "opus": "en-las-alas-de-su-amor-1780099085000.opus",
+      "aac": "en-las-alas-de-su-amor-1780099085000.m4a"
+    },
+    "en-las-mananas-de-bendicion-1780099240632.mid": {
+      "opus": "en-las-mananas-de-bendicion-1780099240632.opus",
+      "aac": "en-las-mananas-de-bendicion-1780099240632.m4a"
+    },
+    "en-mi-alma-hay-una-bendicion-1780099564179.mid": {
+      "opus": "en-mi-alma-hay-una-bendicion-1780099564179.opus",
+      "aac": "en-mi-alma-hay-una-bendicion-1780099564179.m4a"
+    },
+    "en-mi-camino-1779937883587.midi": {
+      "opus": "en-mi-camino-1779937883587.opus",
+      "aac": "en-mi-camino-1779937883587.m4a"
+    },
+    "en-mi-ser-tengo-paz-1779936275785.mid": {
+      "opus": "en-mi-ser-tengo-paz-1779936275785.opus",
+      "aac": "en-mi-ser-tengo-paz-1779936275785.m4a"
+    },
+    "en-su-corazon-1779949381444.midi": {
+      "opus": "en-su-corazon-1779949381444.opus",
+      "aac": "en-su-corazon-1779949381444.m4a"
+    },
+    "en-tu-amor-senor-1780100015642.mid": {
+      "opus": "en-tu-amor-senor-1780100015642.opus",
+      "aac": "en-tu-amor-senor-1780100015642.m4a"
+    },
+    "eran-cien-ovejas-1780264772263.mid": {
+      "opus": "eran-cien-ovejas-1780264772263.opus",
+      "aac": "eran-cien-ovejas-1780264772263.m4a"
+    },
+    "eres-como-cedros-1783361539405.mid": {
+      "opus": "eres-como-cedros-1783361539405.opus",
+      "aac": "eres-como-cedros-1783361539405.m4a"
+    },
+    "eres-el-fiel-ejemplo-a-seguir-1784232214037.mid": {
+      "opus": "eres-el-fiel-ejemplo-a-seguir-1784232214037.opus",
+      "aac": "eres-el-fiel-ejemplo-a-seguir-1784232214037.m4a"
+    },
+    "eres-mi-todo-1780267028040.mid": {
+      "opus": "eres-mi-todo-1780267028040.opus",
+      "aac": "eres-mi-todo-1780267028040.m4a"
+    },
+    "es-dios-1779934548005.mid": {
+      "opus": "es-dios-1779934548005.opus",
+      "aac": "es-dios-1779934548005.m4a"
+    },
+    "es-el-dios-de-los-ejercitos-1780101741119.mid": {
+      "opus": "es-el-dios-de-los-ejercitos-1780101741119.opus",
+      "aac": "es-el-dios-de-los-ejercitos-1780101741119.m4a"
+    },
+    "es-mas-hermoso-que-el-sol-1780003629005.mid": {
+      "opus": "es-mas-hermoso-que-el-sol-1780003629005.opus",
+      "aac": "es-mas-hermoso-que-el-sol-1780003629005.m4a"
+    },
+    "es-mi-divino-jesus-1780102691173.mid": {
+      "opus": "es-mi-divino-jesus-1780102691173.opus",
+      "aac": "es-mi-divino-jesus-1780102691173.m4a"
+    },
+    "es-por-ti-1779936167127.midi": {
+      "opus": "es-por-ti-1779936167127.opus",
+      "aac": "es-por-ti-1779936167127.m4a"
+    },
+    "estas-en-mi-corazon-1779936816132.midi": {
+      "opus": "estas-en-mi-corazon-1779936816132.opus",
+      "aac": "estas-en-mi-corazon-1779936816132.m4a"
+    },
+    "eternamente-gloria-1780004026961.mid": {
+      "opus": "eternamente-gloria-1780004026961.opus",
+      "aac": "eternamente-gloria-1780004026961.m4a"
+    },
+    "oh-happy-day-1782838483181.mid": {
+      "opus": "oh-happy-day-1782838483181.opus",
+      "aac": "oh-happy-day-1782838483181.m4a"
+    },
+    "fieles-siervos-del-maestro-1780103239773.mid": {
+      "opus": "fieles-siervos-del-maestro-1780103239773.opus",
+      "aac": "fieles-siervos-del-maestro-1780103239773.m4a"
+    },
+    "firmes-y-adelante-1779949358546.mid": {
+      "opus": "firmes-y-adelante-1779949358546.opus",
+      "aac": "firmes-y-adelante-1779949358546.m4a"
+    },
+    "assurance-of-salvation-1781399071029.mid": {
+      "opus": "assurance-of-salvation-1781399071029.opus",
+      "aac": "assurance-of-salvation-1781399071029.m4a"
+    },
+    "gloria-gloria-aleluya-1780114473685.mid": {
+      "opus": "gloria-gloria-aleluya-1780114473685.opus",
+      "aac": "gloria-gloria-aleluya-1780114473685.m4a"
+    },
+    "gracias-a-dios-1780104973730.mid": {
+      "opus": "gracias-a-dios-1780104973730.opus",
+      "aac": "gracias-a-dios-1780104973730.m4a"
+    },
+    "gracias-a-ti-senor-1780105286551.mid": {
+      "opus": "gracias-a-ti-senor-1780105286551.opus",
+      "aac": "gracias-a-ti-senor-1780105286551.m4a"
+    },
+    "great-friend-of-god-1781668135341.mid": {
+      "opus": "great-friend-of-god-1781668135341.opus",
+      "aac": "great-friend-of-god-1781668135341.m4a"
+    },
+    "gran-apostol-del-senor-1780106189156.mid": {
+      "opus": "gran-apostol-del-senor-1780106189156.opus",
+      "aac": "gran-apostol-del-senor-1780106189156.m4a"
+    },
+    "grande-es-jehova-1780344492851.mid": {
+      "opus": "grande-es-jehova-1780344492851.opus",
+      "aac": "grande-es-jehova-1780344492851.m4a"
+    },
+    "grato-es-contar-la-historia-1780004285582.mid": {
+      "opus": "grato-es-contar-la-historia-1780004285582.opus",
+      "aac": "grato-es-contar-la-historia-1780004285582.m4a"
+    },
+    "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc": {
+      "opus": "9def7de31668377ac9c9951e.opus",
+      "aac": "9def7de31668377ac9c9951e.m4a"
+    },
+    "haciendo-historia-1780107443962.mid": {
+      "opus": "haciendo-historia-1780107443962.opus",
+      "aac": "haciendo-historia-1780107443962.m4a"
+    },
+    "has-oido-la-historia-de-cristo-1780107846507.mid": {
+      "opus": "has-oido-la-historia-de-cristo-1780107846507.opus",
+      "aac": "has-oido-la-historia-de-cristo-1780107846507.m4a"
+    },
+    "hasta-la-eternidad-1780271705524.mid": {
+      "opus": "hasta-la-eternidad-1780271705524.opus",
+      "aac": "hasta-la-eternidad-1780271705524.m4a"
+    },
+    "hay-una-hora-de-solaz-1779938649550.midi": {
+      "opus": "hay-una-hora-de-solaz-1779938649550.opus",
+      "aac": "hay-una-hora-de-solaz-1779938649550.m4a"
+    },
+    "he-de-estar-1779406843023.mid": {
+      "opus": "he-de-estar-1779406843023.opus",
+      "aac": "he-de-estar-1779406843023.m4a"
+    },
+    "hermosa-bendicion-1780005729831.mid": {
+      "opus": "hermosa-bendicion-1780005729831.opus",
+      "aac": "hermosa-bendicion-1780005729831.m4a"
+    },
+    "hermosa-oracion-1780006114454.mid": {
+      "opus": "hermosa-oracion-1780006114454.opus",
+      "aac": "hermosa-oracion-1780006114454.m4a"
+    },
+    "hermoso-pais-1780348284105.mid": {
+      "opus": "hermoso-pais-1780348284105.opus",
+      "aac": "hermoso-pais-1780348284105.m4a"
+    },
+    "holocausto-de-amor-1779948587439.midi": {
+      "opus": "holocausto-de-amor-1779948587439.opus",
+      "aac": "holocausto-de-amor-1779948587439.m4a"
+    },
+    "honorable-1780108266767.mid": {
+      "opus": "honorable-1780108266767.opus",
+      "aac": "honorable-1780108266767.m4a"
+    },
+    "hosanna-1780194904375.mid": {
+      "opus": "hosanna-1780194904375.opus",
+      "aac": "hosanna-1780194904375.m4a"
+    },
+    "my-savior-lives-and-reigns-1782519141525.mid": {
+      "opus": "my-savior-lives-and-reigns-1782519141525.opus",
+      "aac": "my-savior-lives-and-reigns-1782519141525.m4a"
+    },
+    "nailed-to-the-cross-1782519305573.mid": {
+      "opus": "nailed-to-the-cross-1782519305573.opus",
+      "aac": "nailed-to-the-cross-1782519305573.m4a"
+    },
+    "global/assets/midi/a78e4a0bd7b283862bb440ffe329040fb0404ac3eeda16644ae086876ebae6fa.enc": {
+      "opus": "a59b9e7539a0c73d3d23af41.opus",
+      "aac": "a59b9e7539a0c73d3d23af41.m4a"
+    },
+    "imperio-y-dominio-1780108580881.mid": {
+      "opus": "imperio-y-dominio-1780108580881.opus",
+      "aac": "imperio-y-dominio-1780108580881.m4a"
+    },
+    "imposible-mentirle-al-corazon-1780274934848.mid": {
+      "opus": "imposible-mentirle-al-corazon-1780274934848.opus",
+      "aac": "imposible-mentirle-al-corazon-1780274934848.m4a"
+    },
+    "inquebrantable-amor-1780349206694.mid": {
+      "opus": "inquebrantable-amor-1780349206694.opus",
+      "aac": "inquebrantable-amor-1780349206694.m4a"
+    },
+    "global/assets/midi/2f2c8124240aee484132ee08c0582592aac6bfba569d933a8348855f25b0d1ef.enc": {
+      "opus": "17b79d801af035702a20f6dc.opus",
+      "aac": "17b79d801af035702a20f6dc.m4a"
+    },
+    "jamas-en-nuestro-oido-1779948316701.midi": {
+      "opus": "jamas-en-nuestro-oido-1779948316701.opus",
+      "aac": "jamas-en-nuestro-oido-1779948316701.m4a"
+    },
+    "jehova-el-senor-es-rey-1779948963283.mid": {
+      "opus": "jehova-el-senor-es-rey-1779948963283.opus",
+      "aac": "jehova-el-senor-es-rey-1779948963283.m4a"
+    },
+    "jehova-te-bendiga-y-te-guarde-1780108861957.mid": {
+      "opus": "jehova-te-bendiga-y-te-guarde-1780108861957.opus",
+      "aac": "jehova-te-bendiga-y-te-guarde-1780108861957.m4a"
+    },
+    "jerusalem-city-of-god-1782511635811.mid": {
+      "opus": "jerusalem-city-of-god-1782511635811.opus",
+      "aac": "jerusalem-city-of-god-1782511635811.m4a"
+    },
+    "jesucristo-mi-alma-te-alaba-1780109190562.mid": {
+      "opus": "jesucristo-mi-alma-te-alaba-1780109190562.opus",
+      "aac": "jesucristo-mi-alma-te-alaba-1780109190562.m4a"
+    },
+    "jesus-viene-1779937695563.midi": {
+      "opus": "jesus-viene-1779937695563.opus",
+      "aac": "jesus-viene-1779937695563.m4a"
+    },
+    "junto-a-ti-1780209067848.mid": {
+      "opus": "junto-a-ti-1780209067848.opus",
+      "aac": "junto-a-ti-1780209067848.m4a"
+    },
+    "juntos-hasta-el-ultimo-aliento-1780112000006.mid": {
+      "opus": "juntos-hasta-el-ultimo-aliento-1780112000006.opus",
+      "aac": "juntos-hasta-el-ultimo-aliento-1780112000006.m4a"
+    },
+    "unanimes-1779840510138.mid": {
+      "opus": "unanimes-1779840510138.opus",
+      "aac": "unanimes-1779840510138.m4a"
+    },
+    "the-city-of-god-1783361188186.mid": {
+      "opus": "the-city-of-god-1783361188186.opus",
+      "aac": "the-city-of-god-1783361188186.m4a"
+    },
+    "the-apostolic-era-1783360851068.mid": {
+      "opus": "the-apostolic-era-1783360851068.opus",
+      "aac": "the-apostolic-era-1783360851068.m4a"
+    },
+    "la-fiesta-mas-grande-1779948032932.midi": {
+      "opus": "la-fiesta-mas-grande-1779948032932.opus",
+      "aac": "la-fiesta-mas-grande-1779948032932.m4a"
+    },
+    "la-fiesta-universal-1783371085429.mid": {
+      "opus": "la-fiesta-universal-1783371085429.opus",
+      "aac": "la-fiesta-universal-1783371085429.m4a"
+    },
+    "la-gran-aguila-1780351522441.mid": {
+      "opus": "la-gran-aguila-1780351522441.opus",
+      "aac": "la-gran-aguila-1780351522441.m4a"
+    },
+    "la-gran-jerusalen-1780510370233.mid": {
+      "opus": "la-gran-jerusalen-1780510370233.opus",
+      "aac": "la-gran-jerusalen-1780510370233.m4a"
+    },
+    "la-iglesia-del-dios-vivo-1783360912215.mid": {
+      "opus": "la-iglesia-del-dios-vivo-1783360912215.opus",
+      "aac": "la-iglesia-del-dios-vivo-1783360912215.m4a"
+    },
+    "la-luz-de-la-vida-1780353397646.mid": {
+      "opus": "la-luz-de-la-vida-1780353397646.opus",
+      "aac": "la-luz-de-la-vida-1780353397646.m4a"
+    },
+    "la-luz-de-un-apostol-1780008930368.mid": {
+      "opus": "la-luz-de-un-apostol-1780008930368.opus",
+      "aac": "la-luz-de-un-apostol-1780008930368.m4a"
+    },
+    "la-luz-que-llego-a-mi-alma-1780115045383.mid": {
+      "opus": "la-luz-que-llego-a-mi-alma-1780115045383.opus",
+      "aac": "la-luz-que-llego-a-mi-alma-1780115045383.m4a"
+    },
+    "la-manifestaci-n-1781486374398.mid": {
+      "opus": "la-manifestaci-n-1781486374398.opus",
+      "aac": "la-manifestaci-n-1781486374398.m4a"
+    },
+    "la-merced-de-nuestro-padre-1779936746824.midi": {
+      "opus": "la-merced-de-nuestro-padre-1779936746824.opus",
+      "aac": "la-merced-de-nuestro-padre-1779936746824.m4a"
+    },
+    "la-mision-1780195027955.mid": {
+      "opus": "la-mision-1780195027955.opus",
+      "aac": "la-mision-1780195027955.m4a"
+    },
+    "la-obra-del-senor-1780246966243.mid": {
+      "opus": "la-obra-del-senor-1780246966243.opus",
+      "aac": "la-obra-del-senor-1780246966243.m4a"
+    },
+    "la-obra-perfecta-1780009457104.mid": {
+      "opus": "la-obra-perfecta-1780009457104.opus",
+      "aac": "la-obra-perfecta-1780009457104.m4a"
+    },
+    "la-oracion-del-justo-1780116903237.mid": {
+      "opus": "la-oracion-del-justo-1780116903237.opus",
+      "aac": "la-oracion-del-justo-1780116903237.m4a"
+    },
+    "la-revelacion-1780010230897.mid": {
+      "opus": "la-revelacion-1780010230897.opus",
+      "aac": "la-revelacion-1780010230897.m4a"
+    },
+    "the-holy-supper-of-the-lord-1783361203146.mid": {
+      "opus": "the-holy-supper-of-the-lord-1783361203146.opus",
+      "aac": "the-holy-supper-of-the-lord-1783361203146.m4a"
+    },
+    "las-bodas-del-cordero-1780010586880.mid": {
+      "opus": "las-bodas-del-cordero-1780010586880.opus",
+      "aac": "las-bodas-del-cordero-1780010586880.m4a"
+    },
+    "la-victoria-es-de-cristo-1780118830402.mid": {
+      "opus": "la-victoria-es-de-cristo-1780118830402.opus",
+      "aac": "la-victoria-es-de-cristo-1780118830402.m4a"
+    },
+    "la-victoria-es-de-cristo-1780195461507.mid": {
+      "opus": "la-victoria-es-de-cristo-1780195461507.opus",
+      "aac": "la-victoria-es-de-cristo-1780195461507.m4a"
+    },
+    "global/assets/midi/8f8ec264aea98d2c2020941409dc8d78c2e5e4008d5b64832d36f4852ecfe983.enc": {
+      "opus": "e113a546b447bb8bfedcc8ff.opus",
+      "aac": "e113a546b447bb8bfedcc8ff.m4a"
+    },
+    "la-voz-de-muchos-angeles-1780009736819.mid": {
+      "opus": "la-voz-de-muchos-angeles-1780009736819.opus",
+      "aac": "la-voz-de-muchos-angeles-1780009736819.m4a"
+    },
+    "lazos-inquebrantables-1784232221575.mid": {
+      "opus": "lazos-inquebrantables-1784232221575.opus",
+      "aac": "lazos-inquebrantables-1784232221575.m4a"
+    },
+    "llama-de-luz-1780119346422.mid": {
+      "opus": "llama-de-luz-1780119346422.opus",
+      "aac": "llama-de-luz-1780119346422.m4a"
+    },
+    "los-cielos-cuentan-la-gloria-de-dios-1781391248232.mid": {
+      "opus": "los-cielos-cuentan-la-gloria-de-dios-1781391248232.opus",
+      "aac": "los-cielos-cuentan-la-gloria-de-dios-1781391248232.m4a"
+    },
+    "los-siglos-pasaron-1780119281898.mid": {
+      "opus": "los-siglos-pasaron-1780119281898.opus",
+      "aac": "los-siglos-pasaron-1780119281898.m4a"
+    },
+    "maravillosa-gracia-1780010808398.mid": {
+      "opus": "maravillosa-gracia-1780010808398.opus",
+      "aac": "maravillosa-gracia-1780010808398.m4a"
+    },
+    "maravilloso-es-1779947256701.mid": {
+      "opus": "maravilloso-es-1779947256701.opus",
+      "aac": "maravilloso-es-1779947256701.m4a"
+    },
+    "marcha-con-gozo-1780120454003.mid": {
+      "opus": "marcha-con-gozo-1780120454003.opus",
+      "aac": "marcha-con-gozo-1780120454003.m4a"
+    },
+    "mas-que-vencedores-1780273166528.mid": {
+      "opus": "mas-que-vencedores-1780273166528.opus",
+      "aac": "mas-que-vencedores-1780273166528.m4a"
+    },
+    "me-enamoraste-1780120960183.mid": {
+      "opus": "me-enamoraste-1780120960183.opus",
+      "aac": "me-enamoraste-1780120960183.m4a"
+    },
+    "alas-and-did-my-savior-bleed-1782505859595.mid": {
+      "opus": "alas-and-did-my-savior-bleed-1782505859595.opus",
+      "aac": "alas-and-did-my-savior-bleed-1782505859595.m4a"
+    },
+    "me-hirio-el-pecado-1780122053383.mid": {
+      "opus": "me-hirio-el-pecado-1780122053383.opus",
+      "aac": "me-hirio-el-pecado-1780122053383.m4a"
+    },
+    "mensaje-de-salvacion-1780011286792.mid": {
+      "opus": "mensaje-de-salvacion-1780011286792.opus",
+      "aac": "mensaje-de-salvacion-1780011286792.m4a"
+    },
+    "my-hope-1782518863081.mid": {
+      "opus": "my-hope-1782518863081.opus",
+      "aac": "my-hope-1782518863081.m4a"
+    },
+    "mi-gratitud-1780122603509.mid": {
+      "opus": "mi-gratitud-1780122603509.opus",
+      "aac": "mi-gratitud-1780122603509.m4a"
+    },
+    "miles-de-almas-cantaran-1780370331438.mid": {
+      "opus": "miles-de-almas-cantaran-1780370331438.opus",
+      "aac": "miles-de-almas-cantaran-1780370331438.m4a"
+    },
+    "ministerio-sagrado-1780124175674.mid": {
+      "opus": "ministerio-sagrado-1780124175674.opus",
+      "aac": "ministerio-sagrado-1780124175674.m4a"
+    },
+    "mi-oracion-1780123336181.mid": {
+      "opus": "mi-oracion-1780123336181.opus",
+      "aac": "mi-oracion-1780123336181.m4a"
+    },
+    "mi-padre-en-la-fe-1780507765584.mid": {
+      "opus": "mi-padre-en-la-fe-1780507765584.opus",
+      "aac": "mi-padre-en-la-fe-1780507765584.m4a"
+    },
+    "mi-torre-fuerte-1780123877578.mid": {
+      "opus": "mi-torre-fuerte-1780123877578.opus",
+      "aac": "mi-torre-fuerte-1780123877578.m4a"
+    },
+    "nacimos-para-ti-1780125078948.mid": {
+      "opus": "nacimos-para-ti-1780125078948.opus",
+      "aac": "nacimos-para-ti-1780125078948.m4a"
+    },
+    "destined-for-you-simple-version--1781581870254.mid": {
+      "opus": "destined-for-you-simple-version--1781581870254.opus",
+      "aac": "destined-for-you-simple-version--1781581870254.m4a"
+    },
+    "nada-nos-separara-1780125773284.mid": {
+      "opus": "nada-nos-separara-1780125773284.opus",
+      "aac": "nada-nos-separara-1780125773284.m4a"
+    },
+    "nardo-justicia-y-gloria-1780208248058.mid": {
+      "opus": "nardo-justicia-y-gloria-1780208248058.opus",
+      "aac": "nardo-justicia-y-gloria-1780208248058.m4a"
+    },
+    "necesito-a-cristo-1779943574453.midi": {
+      "opus": "necesito-a-cristo-1779943574453.opus",
+      "aac": "necesito-a-cristo-1779943574453.m4a"
+    },
+    "no-es-de-todos-1784232231252.mid": {
+      "opus": "no-es-de-todos-1784232231252.opus",
+      "aac": "no-es-de-todos-1784232231252.m4a"
+    },
+    "no-hay-amigo-mas-hermoso-1779943548411.midi": {
+      "opus": "no-hay-amigo-mas-hermoso-1779943548411.opus",
+      "aac": "no-hay-amigo-mas-hermoso-1779943548411.m4a"
+    },
+    "no-hay-amigo-mejor-1779935161707.midi": {
+      "opus": "no-hay-amigo-mejor-1779935161707.opus",
+      "aac": "no-hay-amigo-mejor-1779935161707.m4a"
+    },
+    "no-tengo-cuidados-1780126089104.mid": {
+      "opus": "no-tengo-cuidados-1780126089104.opus",
+      "aac": "no-tengo-cuidados-1780126089104.m4a"
+    },
+    "nuestro-capitan-1779937899359.midi": {
+      "opus": "nuestro-capitan-1779937899359.opus",
+      "aac": "nuestro-capitan-1779937899359.m4a"
+    },
+    "nuestro-consuelo-1779936894025.midi": {
+      "opus": "nuestro-consuelo-1779936894025.opus",
+      "aac": "nuestro-consuelo-1779936894025.m4a"
+    },
+    "global/assets/midi/5c370c2e065aa8c211ab1911e22fb37853cc285f697ba42c0e5f5cd949e7f31d.enc": {
+      "opus": "e9af0034393183381e4945de.opus",
+      "aac": "e9af0034393183381e4945de.m4a"
+    },
+    "oh-alma-mia-1780365710238.mid": {
+      "opus": "oh-alma-mia-1780365710238.opus",
+      "aac": "oh-alma-mia-1780365710238.m4a"
+    },
+    "oh-brillara-1780195517767.mid": {
+      "opus": "oh-brillara-1780195517767.opus",
+      "aac": "oh-brillara-1780195517767.m4a"
+    },
+    "oh-creador-1779943595456.midi": {
+      "opus": "oh-creador-1779943595456.opus",
+      "aac": "oh-creador-1779943595456.m4a"
+    },
+    "oh-que-amigo-nos-es-cristo-1779944025066.midi": {
+      "opus": "oh-que-amigo-nos-es-cristo-1779944025066.opus",
+      "aac": "oh-que-amigo-nos-es-cristo-1779944025066.m4a"
+    },
+    "global/assets/midi/8437f397e7c95a36eadcab6f4c9c3d844983eea9d0eb445cb24a2ef9f2614371.enc": {
+      "opus": "47bbcb3a6194d323bfba94ae.opus",
+      "aac": "47bbcb3a6194d323bfba94ae.m4a"
+    },
+    "oh-senor-1780127104791.mid": {
+      "opus": "oh-senor-1780127104791.opus",
+      "aac": "oh-senor-1780127104791.m4a"
+    },
+    "otro-ano-mas-1779936039231.midi": {
+      "opus": "otro-ano-mas-1779936039231.opus",
+      "aac": "otro-ano-mas-1779936039231.m4a"
+    },
+    "padre-1780127584928.mid": {
+      "opus": "padre-1780127584928.opus",
+      "aac": "padre-1780127584928.m4a"
+    },
+    "padre-a-tus-pies-me-postro-1780127421207.mid": {
+      "opus": "padre-a-tus-pies-me-postro-1780127421207.opus",
+      "aac": "padre-a-tus-pies-me-postro-1780127421207.m4a"
+    },
+    "padre-tu-significas-1780012361105.mid": {
+      "opus": "padre-tu-significas-1780012361105.opus",
+      "aac": "padre-tu-significas-1780012361105.m4a"
+    },
+    "paloma-mia-1780128179055.mid": {
+      "opus": "paloma-mia-1780128179055.opus",
+      "aac": "paloma-mia-1780128179055.m4a"
+    },
+    "para-siempre-es-su-misericordia-1778990571647.mid": {
+      "opus": "para-siempre-es-su-misericordia-1778990571647.opus",
+      "aac": "para-siempre-es-su-misericordia-1778990571647.m4a"
+    },
+    "para-siempre-santidad-1780128024776.mid": {
+      "opus": "para-siempre-santidad-1780128024776.opus",
+      "aac": "para-siempre-santidad-1780128024776.m4a"
+    },
+    "it-seems-like-yesterday-1782509201972.mid": {
+      "opus": "it-seems-like-yesterday-1782509201972.opus",
+      "aac": "it-seems-like-yesterday-1782509201972.m4a"
+    },
+    "pecador-ven-al-dulce-jesus-1779936344085.mid": {
+      "opus": "pecador-ven-al-dulce-jesus-1779936344085.opus",
+      "aac": "pecador-ven-al-dulce-jesus-1779936344085.m4a"
+    },
+    "por-conocerle-aleluya-amen-1779951085433.mid": {
+      "opus": "por-conocerle-aleluya-amen-1779951085433.opus",
+      "aac": "por-conocerle-aleluya-amen-1779951085433.m4a"
+    },
+    "by-grace-of-god-1781578123547.mid": {
+      "opus": "by-grace-of-god-1781578123547.opus",
+      "aac": "by-grace-of-god-1781578123547.m4a"
+    },
+    "por-la-oracion-del-justo-1779936838323.midi": {
+      "opus": "por-la-oracion-del-justo-1779936838323.opus",
+      "aac": "por-la-oracion-del-justo-1779936838323.m4a"
+    },
+    "porque-el-vive-1780128692783.mid": {
+      "opus": "porque-el-vive-1780128692783.opus",
+      "aac": "porque-el-vive-1780128692783.m4a"
+    },
+    "por-tu-eleccion-1779944104590.midi": {
+      "opus": "por-tu-eleccion-1779944104590.opus",
+      "aac": "por-tu-eleccion-1779944104590.m4a"
+    },
+    "preciosa-fe-1779944087186.midi": {
+      "opus": "preciosa-fe-1779944087186.opus",
+      "aac": "preciosa-fe-1779944087186.m4a"
+    },
+    "puerta-del-cielo-1780174458203.mid": {
+      "opus": "puerta-del-cielo-1780174458203.opus",
+      "aac": "puerta-del-cielo-1780174458203.m4a"
+    },
+    "que-dulce-es-el-amor-1779944071670.midi": {
+      "opus": "que-dulce-es-el-amor-1779944071670.opus",
+      "aac": "que-dulce-es-el-amor-1779944071670.m4a"
+    },
+    "que-gran-amor-1780013251922.mid": {
+      "opus": "que-gran-amor-1780013251922.opus",
+      "aac": "que-gran-amor-1780013251922.m4a"
+    },
+    "que-mi-vida-entera-este-1779937528292.midi": {
+      "opus": "que-mi-vida-entera-este-1779937528292.opus",
+      "aac": "que-mi-vida-entera-este-1779937528292.m4a"
+    },
+    "may-he-be-happy-1782518246433.mid": {
+      "opus": "may-he-be-happy-1782518246433.opus",
+      "aac": "may-he-be-happy-1782518246433.m4a"
+    },
+    "que-secreto-amor-1780175798850.mid": {
+      "opus": "que-secreto-amor-1780175798850.opus",
+      "aac": "que-secreto-amor-1780175798850.m4a"
+    },
+    "que-un-coro-de-angeles-1780176378160.mid": {
+      "opus": "que-un-coro-de-angeles-1780176378160.opus",
+      "aac": "que-un-coro-de-angeles-1780176378160.m4a"
+    },
+    "quien-me-enseno-a-querer-1780177801491.mid": {
+      "opus": "quien-me-enseno-a-querer-1780177801491.opus",
+      "aac": "quien-me-enseno-a-querer-1780177801491.m4a"
+    },
+    "quieres-ser-salvo-1780013387633.mid": {
+      "opus": "quieres-ser-salvo-1780013387633.opus",
+      "aac": "quieres-ser-salvo-1780013387633.m4a"
+    },
+    "quiero-cantar-con-fe-1779939035286.midi": {
+      "opus": "quiero-cantar-con-fe-1779939035286.opus",
+      "aac": "quiero-cantar-con-fe-1779939035286.m4a"
+    },
+    "global/assets/midi/cd06a9742fcb85fd69f8d054a4093c8dfcee6234f7102bf4ec5660622e12234a.enc": {
+      "opus": "e25e2e341a2602748367d8d3.opus",
+      "aac": "e25e2e341a2602748367d8d3.m4a"
+    },
+    "quiero-ser-como-tu-1780178024495.mid": {
+      "opus": "quiero-ser-como-tu-1780178024495.opus",
+      "aac": "quiero-ser-como-tu-1780178024495.m4a"
+    },
+    "recuerda-1780776578735.mid": {
+      "opus": "recuerda-1780776578735.opus",
+      "aac": "recuerda-1780776578735.m4a"
+    },
+    "resplandor-de-cristo-1780179459513.mid": {
+      "opus": "resplandor-de-cristo-1780179459513.opus",
+      "aac": "resplandor-de-cristo-1780179459513.m4a"
+    },
+    "restauracion-1778890230133.mid": {
+      "opus": "restauracion-1778890230133.opus",
+      "aac": "restauracion-1778890230133.m4a"
+    },
+    "rey-del-universo-1780361570581.mid": {
+      "opus": "rey-del-universo-1780361570581.opus",
+      "aac": "rey-del-universo-1780361570581.m4a"
+    },
+    "eternal-king-1781582256446.mid": {
+      "opus": "eternal-king-1781582256446.opus",
+      "aac": "eternal-king-1781582256446.m4a"
+    },
+    "salmo-23-1779908510230.mid": {
+      "opus": "salmo-23-1779908510230.opus",
+      "aac": "salmo-23-1779908510230.m4a"
+    },
+    "salmo-90-1780180424947.mid": {
+      "opus": "salmo-90-1780180424947.opus",
+      "aac": "salmo-90-1780180424947.m4a"
+    },
+    "salmo-100-1781391633152.mid": {
+      "opus": "salmo-100-1781391633152.opus",
+      "aac": "salmo-100-1781391633152.m4a"
+    },
+    "salmo-100-cantad-a-dios--1781391647856.mid": {
+      "opus": "salmo-100-cantad-a-dios--1781391647856.opus",
+      "aac": "salmo-100-cantad-a-dios--1781391647856.m4a"
+    },
+    "salmo-115-1780179998331.mid": {
+      "opus": "salmo-115-1780179998331.opus",
+      "aac": "salmo-115-1780179998331.m4a"
+    },
+    "global/assets/midi/4cdd0a644f141d0ac6be8077dfaef71cc107659256ad02db64f86df306391463.enc": {
+      "opus": "5ace4872769e2ebf6e03425a.opus",
+      "aac": "5ace4872769e2ebf6e03425a.m4a"
+    },
+    "salmo-150-1779912523535.mid": {
+      "opus": "salmo-150-1779912523535.opus",
+      "aac": "salmo-150-1779912523535.m4a"
+    },
+    "holy-convocation-1782097476573.mid": {
+      "opus": "holy-convocation-1782097476573.opus",
+      "aac": "holy-convocation-1782097476573.m4a"
+    },
+    "holy-celebration-1782097467092.mid": {
+      "opus": "holy-celebration-1782097467092.opus",
+      "aac": "holy-celebration-1782097467092.m4a"
+    },
+    "santo-es-el-senor-1779939012960.midi": {
+      "opus": "santo-es-el-senor-1779939012960.opus",
+      "aac": "santo-es-el-senor-1779939012960.m4a"
+    },
+    "santo-varon-1780195582790.mid": {
+      "opus": "santo-varon-1780195582790.opus",
+      "aac": "santo-varon-1780195582790.m4a"
+    },
+    "sed-jubilosos-1778888825913.mid": {
+      "opus": "sed-jubilosos-1778888825913.opus",
+      "aac": "sed-jubilosos-1778888825913.m4a"
+    },
+    "se-llama-fe-1780013566855.mid": {
+      "opus": "se-llama-fe-1780013566855.opus",
+      "aac": "se-llama-fe-1780013566855.m4a"
+    },
+    "senor-aqui-a-tus-plantas-1780181109592.mid": {
+      "opus": "senor-aqui-a-tus-plantas-1780181109592.opus",
+      "aac": "senor-aqui-a-tus-plantas-1780181109592.m4a"
+    },
+    "senor-en-tu-presencia-1784605276589.mid": {
+      "opus": "senor-en-tu-presencia-1784605276589.opus",
+      "aac": "senor-en-tu-presencia-1784605276589.m4a"
+    },
+    "senor-jesus-cuan-bella-1780181438789.mid": {
+      "opus": "senor-jesus-cuan-bella-1780181438789.opus",
+      "aac": "senor-jesus-cuan-bella-1780181438789.m4a"
+    },
+    "senor-mi-dios-1780181835104.mid": {
+      "opus": "senor-mi-dios-1780181835104.opus",
+      "aac": "senor-mi-dios-1780181835104.m4a"
+    },
+    "se-or-tu-eres-el-mismo-1784232244254.mid": {
+      "opus": "se-or-tu-eres-el-mismo-1784232244254.opus",
+      "aac": "se-or-tu-eres-el-mismo-1784232244254.m4a"
+    },
+    "senor-tu-ves-mi-corazon-1780182155281.mid": {
+      "opus": "senor-tu-ves-mi-corazon-1780182155281.opus",
+      "aac": "senor-tu-ves-mi-corazon-1780182155281.m4a"
+    },
+    "se-oye-coro-triunfal-1779936372211.midi": {
+      "opus": "se-oye-coro-triunfal-1779936372211.opus",
+      "aac": "se-oye-coro-triunfal-1779936372211.m4a"
+    },
+    "si-callare-tus-maravillas-1779938992641.midi": {
+      "opus": "si-callare-tus-maravillas-1779938992641.opus",
+      "aac": "si-callare-tus-maravillas-1779938992641.m4a"
+    },
+    "siempre-a-su-lado-1780363218512.mid": {
+      "opus": "siempre-a-su-lado-1780363218512.opus",
+      "aac": "siempre-a-su-lado-1780363218512.m4a"
+    },
+    "siempre-con-usted-1780273591757.mid": {
+      "opus": "siempre-con-usted-1780273591757.opus",
+      "aac": "siempre-con-usted-1780273591757.m4a"
+    },
+    "siempre-estas-conmigo-1780183210988.mid": {
+      "opus": "siempre-estas-conmigo-1780183210988.opus",
+      "aac": "siempre-estas-conmigo-1780183210988.m4a"
+    },
+    "siempre-te-alabare-1779946700514.mid": {
+      "opus": "siempre-te-alabare-1779946700514.opus",
+      "aac": "siempre-te-alabare-1779946700514.m4a"
+    },
+    "siempre-te-amare-1780013804606.mid": {
+      "opus": "siempre-te-amare-1780013804606.opus",
+      "aac": "siempre-te-amare-1780013804606.m4a"
+    },
+    "si-fui-motivo-de-dolor-1781239596037.mid": {
+      "opus": "si-fui-motivo-de-dolor-1781239596037.opus",
+      "aac": "si-fui-motivo-de-dolor-1781239596037.m4a"
+    },
+    "siglo-de-luz-1780273988172.mid": {
+      "opus": "siglo-de-luz-1780273988172.opus",
+      "aac": "siglo-de-luz-1780273988172.m4a"
+    },
+    "onward-to-battle-1784230870710.mid": {
+      "opus": "onward-to-battle-1784230870710.opus",
+      "aac": "onward-to-battle-1784230870710.m4a"
+    },
+    "somos-cartas-leidas-1780184768147.mid": {
+      "opus": "somos-cartas-leidas-1780184768147.opus",
+      "aac": "somos-cartas-leidas-1780184768147.m4a"
+    },
+    "soy-yo-soldado-de-jesus-1780014361158.mid": {
+      "opus": "soy-yo-soldado-de-jesus-1780014361158.opus",
+      "aac": "soy-yo-soldado-de-jesus-1780014361158.m4a"
+    },
+    "his-tender-voice-1782098013658.mid": {
+      "opus": "his-tender-voice-1782098013658.opus",
+      "aac": "his-tender-voice-1782098013658.m4a"
+    },
+    "suenen-dulces-himnos-1780129635441.mid": {
+      "opus": "suenen-dulces-himnos-1780129635441.opus",
+      "aac": "suenen-dulces-himnos-1780129635441.m4a"
+    },
+    "his-loving-gaze-1782097494446.mid": {
+      "opus": "his-loving-gaze-1782097494446.opus",
+      "aac": "his-loving-gaze-1782097494446.m4a"
+    },
+    "sus-banderas-1780188613301.mid": {
+      "opus": "sus-banderas-1780188613301.opus",
+      "aac": "sus-banderas-1780188613301.m4a"
+    },
+    "global/assets/midi/cd1901acd030fa08b8ad7c17e87126cc88beb664199ea880b6463e9a1a4a1195.enc": {
+      "opus": "8918348b97f186173f204061.opus",
+      "aac": "8918348b97f186173f204061.m4a"
+    },
+    "it-s-a-time-of-acceptance-now-1782509013943.mid": {
+      "opus": "it-s-a-time-of-acceptance-now-1782509013943.opus",
+      "aac": "it-s-a-time-of-acceptance-now-1782509013943.m4a"
+    },
+    "te-loamos-1780189138616.mid": {
+      "opus": "te-loamos-1780189138616.opus",
+      "aac": "te-loamos-1780189138616.m4a"
+    },
+    "te-necesito-ya-1780189336387.mid": {
+      "opus": "te-necesito-ya-1780189336387.opus",
+      "aac": "te-necesito-ya-1780189336387.m4a"
+    },
+    "tenia-que-ocurrir-1780195166631.mid": {
+      "opus": "tenia-que-ocurrir-1780195166631.opus",
+      "aac": "tenia-que-ocurrir-1780195166631.m4a"
+    },
+    "tiempos-de-gracia-1780189850335.mid": {
+      "opus": "tiempos-de-gracia-1780189850335.opus",
+      "aac": "tiempos-de-gracia-1780189850335.m4a"
+    },
+    "tocad-trompeta-ya-1780190194329.mid": {
+      "opus": "tocad-trompeta-ya-1780190194329.opus",
+      "aac": "tocad-trompeta-ya-1780190194329.m4a"
+    },
+    "toda-voz-1780191684910.mid": {
+      "opus": "toda-voz-1780191684910.opus",
+      "aac": "toda-voz-1780191684910.m4a"
+    },
+    "todos-fuimos-sepultados-1780191839853.mid": {
+      "opus": "todos-fuimos-sepultados-1780191839853.opus",
+      "aac": "todos-fuimos-sepultados-1780191839853.m4a"
+    },
+    "tributad-honor-a-cristo-1780014528447.mid": {
+      "opus": "tributad-honor-a-cristo-1780014528447.opus",
+      "aac": "tributad-honor-a-cristo-1780014528447.m4a"
+    },
+    "tronos-y-reinados-1780014573089.mid": {
+      "opus": "tronos-y-reinados-1780014573089.opus",
+      "aac": "tronos-y-reinados-1780014573089.m4a"
+    },
+    "tu-eres-creador-1779938917435.midi": {
+      "opus": "tu-eres-creador-1779938917435.opus",
+      "aac": "tu-eres-creador-1779938917435.m4a"
+    },
+    "tu-eres-dios-1779938940263.midi": {
+      "opus": "tu-eres-dios-1779938940263.opus",
+      "aac": "tu-eres-dios-1779938940263.m4a"
+    },
+    "tu-eres-mi-esperanza-1779936147742.midi": {
+      "opus": "tu-eres-mi-esperanza-1779936147742.opus",
+      "aac": "tu-eres-mi-esperanza-1779936147742.m4a"
+    },
+    "tu-eres-para-m--1781241017134.mid": {
+      "opus": "tu-eres-para-m--1781241017134.opus",
+      "aac": "tu-eres-para-m--1781241017134.m4a"
+    },
+    "un-acto-de-amor-1780252027782.mid": {
+      "opus": "un-acto-de-amor-1780252027782.opus",
+      "aac": "un-acto-de-amor-1780252027782.m4a"
+    },
+    "una-firme-esperanza-1779937934891.midi": {
+      "opus": "una-firme-esperanza-1779937934891.opus",
+      "aac": "una-firme-esperanza-1779937934891.m4a"
+    },
+    "a-lovely-story-1781577412772.mid": {
+      "opus": "a-lovely-story-1781577412772.opus",
+      "aac": "a-lovely-story-1781577412772.m4a"
+    },
+    "una-lumbrera-1779938616296.midi": {
+      "opus": "una-lumbrera-1779938616296.opus",
+      "aac": "una-lumbrera-1779938616296.m4a"
+    },
+    "una-oracion-1779947397818.midi": {
+      "opus": "una-oracion-1779947397818.opus",
+      "aac": "una-oracion-1779947397818.m4a"
+    },
+    "un-apostol-1780183836800.mid": {
+      "opus": "un-apostol-1780183836800.opus",
+      "aac": "un-apostol-1780183836800.m4a"
+    },
+    "una-vez-perdido-1779936381464.midi": {
+      "opus": "una-vez-perdido-1779936381464.opus",
+      "aac": "una-vez-perdido-1779936381464.m4a"
+    },
+    "una-vida-feliz-1779937805758.midi": {
+      "opus": "una-vida-feliz-1779937805758.opus",
+      "aac": "una-vida-feliz-1779937805758.m4a"
+    },
+    "un-banquete-de-amor-1779937830093.midi": {
+      "opus": "un-banquete-de-amor-1779937830093.opus",
+      "aac": "un-banquete-de-amor-1779937830093.m4a"
+    },
+    "a-gesture-of-god-1781397149246.mid": {
+      "opus": "a-gesture-of-god-1781397149246.opus",
+      "aac": "a-gesture-of-god-1781397149246.m4a"
+    },
+    "un-grande-honor-1780364130442.mid": {
+      "opus": "un-grande-honor-1780364130442.opus",
+      "aac": "un-grande-honor-1780364130442.m4a"
+    },
+    "a-gift-from-god-1781397297342.mid": {
+      "opus": "a-gift-from-god-1781397297342.opus",
+      "aac": "a-gift-from-god-1781397297342.m4a"
+    },
+    "un-seis-de-abril-1780192118370.mid": {
+      "opus": "un-seis-de-abril-1780192118370.opus",
+      "aac": "un-seis-de-abril-1780192118370.m4a"
+    },
+    "all-things-are-ready-1781398015307.mid": {
+      "opus": "all-things-are-ready-1781398015307.opus",
+      "aac": "all-things-are-ready-1781398015307.m4a"
+    },
+    "ven-amigo-a-jesus-1780193022692.mid": {
+      "opus": "ven-amigo-a-jesus-1780193022692.opus",
+      "aac": "ven-amigo-a-jesus-1780193022692.m4a"
+    },
+    "venid-venid-cantad-la-bella-historia-1780193680247.mid": {
+      "opus": "venid-venid-cantad-la-bella-historia-1780193680247.opus",
+      "aac": "venid-venid-cantad-la-bella-historia-1780193680247.m4a"
+    },
+    "viene-a-mi-mente-1779937975288.midi": {
+      "opus": "viene-a-mi-mente-1779937975288.opus",
+      "aac": "viene-a-mi-mente-1779937975288.m4a"
+    },
+    "he-comes-from-god-1782097406379.mid": {
+      "opus": "he-comes-from-god-1782097406379.opus",
+      "aac": "he-comes-from-god-1782097406379.m4a"
+    },
+    "villancico-de-las-campanas-1780184260178.mid": {
+      "opus": "villancico-de-las-campanas-1780184260178.opus",
+      "aac": "villancico-de-las-campanas-1780184260178.m4a"
+    },
+    "vosotros-oh-fieles-1780247659283.mid": {
+      "opus": "vosotros-oh-fieles-1780247659283.opus",
+      "aac": "vosotros-oh-fieles-1780247659283.m4a"
+    },
+    "ya-sea-en-el-valle-1779947423967.midi": {
+      "opus": "ya-sea-en-el-valle-1779947423967.opus",
+      "aac": "ya-sea-en-el-valle-1779947423967.m4a"
+    },
+    "yo-adoro-un-dios-omnipotente-1780247359978.mid": {
+      "opus": "yo-adoro-un-dios-omnipotente-1780247359978.opus",
+      "aac": "yo-adoro-un-dios-omnipotente-1780247359978.m4a"
+    },
+    "global/assets/midi/a00d0190092e0bf21b4a5efd395a363dee599227c16ad1924bd7361d93c19609.enc": {
+      "opus": "38bed3e5c31720cd29b98102.opus",
+      "aac": "38bed3e5c31720cd29b98102.m4a"
+    },
+    "global/assets/midi/07a06d76482931344a8fa8eb582923b6514796c3c2cb86cb958a437a3f0a7713.enc": {
+      "opus": "2cd196ef5918edac2624cd5d.opus",
+      "aac": "2cd196ef5918edac2624cd5d.m4a"
+    },
+    "all-hail-the-power-advanced--1781397820183.mid": {
+      "opus": "all-hail-the-power-advanced--1781397820183.opus",
+      "aac": "all-hail-the-power-advanced--1781397820183.m4a"
+    },
+    "amen-hallelujah-1781398473090.mid": {
+      "opus": "amen-hallelujah-1781398473090.opus",
+      "aac": "amen-hallelujah-1781398473090.m4a"
+    },
+    "beautiful-city-1781399798631.mid": {
+      "opus": "beautiful-city-1781399798631.opus",
+      "aac": "beautiful-city-1781399798631.m4a"
+    },
+    "christ-arose-1781580461861.mid": {
+      "opus": "christ-arose-1781580461861.opus",
+      "aac": "christ-arose-1781580461861.m4a"
+    },
+    "come-to-the-feast-1781581500765.mid": {
+      "opus": "come-to-the-feast-1781581500765.opus",
+      "aac": "come-to-the-feast-1781581500765.m4a"
+    },
+    "glory-to-god-1781401615276.mid": {
+      "opus": "glory-to-god-1781401615276.opus",
+      "aac": "glory-to-god-1781401615276.m4a"
+    },
+    "glory-unto-jesus-christ-1782196343018.mid": {
+      "opus": "glory-unto-jesus-christ-1782196343018.opus",
+      "aac": "glory-unto-jesus-christ-1782196343018.m4a"
+    },
+    "how-great-thou-art-advanced--1782230175911.mid": {
+      "opus": "how-great-thou-art-advanced--1782230175911.opus",
+      "aac": "how-great-thou-art-advanced--1782230175911.m4a"
+    },
+    "how-lovely-are-thy-dwellings-1782493818187.mid": {
+      "opus": "how-lovely-are-thy-dwellings-1782493818187.opus",
+      "aac": "how-lovely-are-thy-dwellings-1782493818187.m4a"
+    },
+    "i-am-praying-for-you-1782493884870.mid": {
+      "opus": "i-am-praying-for-you-1782493884870.opus",
+      "aac": "i-am-praying-for-you-1782493884870.m4a"
+    },
+    "i-am-resolved-1782493890656.mid": {
+      "opus": "i-am-resolved-1782493890656.opus",
+      "aac": "i-am-resolved-1782493890656.m4a"
+    },
+    "i-am-so-grateful-oh-lord-1782493899779.mid": {
+      "opus": "i-am-so-grateful-oh-lord-1782493899779.opus",
+      "aac": "i-am-so-grateful-oh-lord-1782493899779.m4a"
+    },
+    "i-am-still-here-1782494111545.mid": {
+      "opus": "i-am-still-here-1782494111545.opus",
+      "aac": "i-am-still-here-1782494111545.m4a"
+    },
+    "i-am-thine-o-lord-1782494013333.mid": {
+      "opus": "i-am-thine-o-lord-1782494013333.opus",
+      "aac": "i-am-thine-o-lord-1782494013333.m4a"
+    },
+    "i-know-it-s-you-1782494019472.mid": {
+      "opus": "i-know-it-s-you-1782494019472.opus",
+      "aac": "i-know-it-s-you-1782494019472.m4a"
+    },
+    "i-know-who-holds-tomorrow-1782494024337.mid": {
+      "opus": "i-know-who-holds-tomorrow-1782494024337.opus",
+      "aac": "i-know-who-holds-tomorrow-1782494024337.m4a"
+    },
+    "i-m-a-soldier-of-christ-1782494031769.mid": {
+      "opus": "i-m-a-soldier-of-christ-1782494031769.opus",
+      "aac": "i-m-a-soldier-of-christ-1782494031769.m4a"
+    },
+    "incline-thine-ear-1782494057237.mid": {
+      "opus": "incline-thine-ear-1782494057237.opus",
+      "aac": "incline-thine-ear-1782494057237.m4a"
+    },
+    "i-praise-the-omnipotent-god-1782494065069.mid": {
+      "opus": "i-praise-the-omnipotent-god-1782494065069.opus",
+      "aac": "i-praise-the-omnipotent-god-1782494065069.m4a"
+    },
+    "my-gentle-lord-1782518540161.mid": {
+      "opus": "my-gentle-lord-1782518540161.opus",
+      "aac": "my-gentle-lord-1782518540161.m4a"
+    },
+    "show-pity-lord-1783360546081.mid": {
+      "opus": "show-pity-lord-1783360546081.opus",
+      "aac": "show-pity-lord-1783360546081.m4a"
+    },
+    "sing-praise-hallelujah-1783360612604.mid": {
+      "opus": "sing-praise-hallelujah-1783360612604.opus",
+      "aac": "sing-praise-hallelujah-1783360612604.m4a"
+    },
+    "special-banquet-1783480655029.mid": {
+      "opus": "special-banquet-1783480655029.opus",
+      "aac": "special-banquet-1783480655029.m4a"
+    },
+    "sunset-1783360596278.mid": {
+      "opus": "sunset-1783360596278.opus",
+      "aac": "sunset-1783360596278.m4a"
+    },
+    "the-church-of-the-living-god-1783360865995.mid": {
+      "opus": "the-church-of-the-living-god-1783360865995.opus",
+      "aac": "the-church-of-the-living-god-1783360865995.m4a"
+    },
+    "the-garden-of-prayer-1783361217577.mid": {
+      "opus": "the-garden-of-prayer-1783361217577.opus",
+      "aac": "the-garden-of-prayer-1783361217577.m4a"
+    }
+  }
+}

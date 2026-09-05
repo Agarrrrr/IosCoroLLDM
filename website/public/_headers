@@ -1,0 +1,28 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://coro-lldm-previews.huritolentino.workers.dev; media-src 'self' https://coro-lldm-previews.huritolentino.workers.dev; form-action 'self'; upgrade-insecure-requests
+*/
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.png
+  Cache-Control: public, max-age=86400
+
+/catalogo.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/catalogo_en.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/catalog-stats.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/catalog-meta.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/preview-manifest.json
+  Cache-Control: public, max-age=3600, must-revalidate

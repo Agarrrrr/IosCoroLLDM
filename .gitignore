@@ -59,6 +59,12 @@ website/.reports/
 website/.preview-output/
 website/.preview-tmp/
 website/.wrangler/
+website/playwright-report/
+website/test-results/
+website/coverage/
+website/debug.log
+website/.github/
+/.pnpm-store/
 
 # Artefactos de pruebas (Playwright / Vitest)
 playwright-report/

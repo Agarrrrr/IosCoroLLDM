@@ -1,0 +1,15 @@
+{
+  "name": "Coro LLDM / TLOTW Choir",
+  "short_name": "Coro LLDM",
+  "description": "Partituras, audios de ensayo y herramientas para coros. / Sheet music, rehearsal audio and choir tools.",
+  "lang": "es",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0c2b24",
+  "theme_color": "#0c2b24",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

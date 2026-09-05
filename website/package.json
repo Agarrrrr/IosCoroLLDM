@@ -1,0 +1,45 @@
+{
+  "name": "coro-lldm-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync:catalog": "node scripts/sync-catalog.mjs",
+    "render:previews": "node scripts/render-previews.mjs",
+    "transcode:previews": "node scripts/transcode-previews.mjs",
+    "upload:previews": "node scripts/upload-previews.mjs",
+    "validate:previews": "node scripts/validate-previews.mjs",
+    "predev": "npm run sync:catalog",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "prebuild": "npm run sync:catalog && npm run generate:sitemap",
+    "dev": "vite",
+    "build": "vite build && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "deploy:pages": "wrangler pages deploy dist --project-name coro-lldm",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test tests/site-utils.test.js",
+    "test:e2e": "playwright test",
+    "validate:site": "node scripts/validate-html.mjs",
+    "validate:links": "node scripts/validate-links.mjs",
+    "validate:headers": "node scripts/validate-headers.mjs",
+    "check": "npm run lint && npm run format:check && npm run test && npm run build && npm run validate:site && npm run validate:links && npm run validate:headers && npm run test:e2e"
+  },
+  "dependencies": {
+    "lucide-react": "1.34.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@playwright/test": "^1.63.0",
+    "@vitejs/plugin-react": "6.1.0",
+    "eslint": "9.39.1",
+    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-refresh": "0.4.24",
+    "prettier": "3.6.2",
+    "vite": "8.2.2",
+    "wrangler": "4.127.0"
+  }
+}
