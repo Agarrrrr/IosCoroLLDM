@@ -62,7 +62,7 @@ Las prioridades referencian la deuda canónica de la sección 3. No representan 
 ### Publicación, Cloudflare y SEO
 
 - [x] **DT-01 — Activar CI desde la raíz.** Verificado el 4 de septiembre de 2026: `.github/workflows/website-quality.yml` se ejecuta desde la raíz, instala dependencias y Chromium, y lanza la verificación completa en `website/`.
-- [ ] **DT-02 — Resolver la URL canónica temporal.** Mientras `lldmcoro.com` no tenga DNS, canonical, hreflang, Open Graph, sitemap, `robots.txt`, `llms.txt` y JSON-LD apuntan a un dominio que no sirve la web pública de Pages.
+- [x] **DT-02 — Resolver la URL canónica temporal.** Verificado el 4 de septiembre de 2026: mientras `lldmcoro.com` no tenga DNS, canonical, hreflang, Open Graph, sitemap, `robots.txt`, `llms.txt` y JSON-LD usan `https://coro-lldm.pages.dev`. Al conectar el dominio, `SITE_ORIGIN` debe regresar a `https://lldmcoro.com` y el despliegue debe verificarse de nuevo.
 - [x] **DT-03 — Retirar el reporte técnico del despliegue.** Verificado el 29 de agosto de 2026: `sync:catalog` escribe el reporte de aproximadamente 450 KB en `website/.reports/catalog-validation.json`, lo ignora Git y elimina la copia de `public/`.
 - [x] **DT-04 — Alinear y desplegar CORS del Worker.** Verificado el 29 de agosto de 2026: producción responde para `https://coro-lldm.pages.dev` con CORS restringido, Range, ETag y caché inmutable; también sirve AAC/M4A con `audio/mp4; codecs=mp4a.40.2`.
 - [x] **DT-05 — Añadir configuración reproducible de Pages.** Verificado el 4 de septiembre de 2026: `website/wrangler.jsonc` fija el proyecto, el directorio `dist` y la fecha de compatibilidad; `npm run deploy:pages` reproduce el comando de Pages.

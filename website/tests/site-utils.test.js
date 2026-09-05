@@ -43,9 +43,9 @@ describe('site navigation and metadata', () => {
 
   it('builds one localized SEO source for prerendering and runtime', () => {
     const seo = seoForPage('producto', 'en')
-    assert.equal(seo.url, 'https://lldmcoro.com/en/producto')
-    assert.equal(seo.alternates.es, 'https://lldmcoro.com/producto')
-    assert.equal(seo.image, 'https://lldmcoro.com/social-preview-en.png')
+    assert.equal(seo.url, 'https://coro-lldm.pages.dev/en/producto')
+    assert.equal(seo.alternates.es, 'https://coro-lldm.pages.dev/producto')
+    assert.equal(seo.image, 'https://coro-lldm.pages.dev/social-preview-en.png')
     const graph = buildStructuredData({ page: 'producto', lang: 'en', metadata: seo.metadata })['@graph']
     assert.ok(graph.some((entry) => entry['@type'] === 'FAQPage'))
   })
