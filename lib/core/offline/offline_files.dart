@@ -65,10 +65,10 @@ class OfflineFiles {
       return file;
     }
 
-    // Las claves global/local identifican el contenido exacto. Si ese archivo
-    // viene empaquetado, úsalo sin red aunque la versión del catálogo sea > 1.
-    final canUseBundledPdf = !canto.archivo.startsWith('http') &&
-        (canto.version == 1 || _isUnifiedObjectKey(canto.archivo));
+    // El catálogo empaquetado y sus assets se publican juntos. Si la ruta no
+    // es remota, el archivo del bundle siempre corresponde a esta versión del
+    // catálogo, incluso para nombres heredados que no usan global/local.
+    final canUseBundledPdf = !canto.archivo.startsWith('http');
     if (canUseBundledPdf) {
       final copied = await _copyFromAsset(
         'assets/offline_assets/pdfs/${canto.archivo}',
@@ -98,11 +98,9 @@ class OfflineFiles {
     }
 
     final midi = canto.midiArchivo!;
-    // Las claves global/local son content-addressed: si el archivo existe en
-    // el paquete corresponde exactamente a esa versión, aunque el canto tenga
-    // una versión de catálogo mayor que 1. La red queda solo como respaldo.
-    final canUseBundledMidi = !midi.startsWith('http') &&
-        (canto.effectiveMidiVersion == 1 || _isUnifiedObjectKey(midi));
+    // Igual que los PDF, todo MIDI con ruta local pertenece al catálogo que se
+    // compiló con la app y debe intentarse desde el bundle antes que la red.
+    final canUseBundledMidi = !midi.startsWith('http');
     if (canUseBundledMidi) {
       final copied = await _copyFromAsset(
         'assets/offline_assets/midis/$midi',
