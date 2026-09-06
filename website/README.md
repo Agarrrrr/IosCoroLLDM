@@ -67,7 +67,7 @@ El proyecto se construye con `npm run build` y se publica desde `website/dist`. 
 - Build output directory: `dist`
 - Root directory: `website`
 
-El dominio canónico previsto es `https://lldmcoro.com`. Hasta que tenga un registro DNS hacia Pages, la versión pública verificable es `https://coro-lldm.pages.dev/`. El workflow de GitHub Actions ejecuta la cadena de calidad en cada cambio que afecte a `website`; la publicación queda bajo el control del proyecto de Cloudflare Pages.
+El dominio canónico y público es `https://lldmcoro.com`, conectado al proyecto de Cloudflare Pages. El workflow de GitHub Actions ejecuta la cadena de calidad en cada cambio que afecte a `website`; la publicación queda bajo el control del proyecto de Cloudflare Pages.
 
 ## Límites actuales
 

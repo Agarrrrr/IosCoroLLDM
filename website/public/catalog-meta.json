@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-29T19:34:47.269Z",
-  "version": "0b93cab8f9949b34",
+  "generatedAt": "2026-09-06T13:08:36.263Z",
+  "version": "81e0448092e30ea6",
   "dateMeaning": "last-sync-from-application-assets",
   "source": "application-assets",
   "languages": [
@@ -9,7 +9,7 @@
   ],
   "catalogs": {
     "es": {
-      "hash": "e8de8a0927f576f7ee6c32e6cd2e031b3ee955bd9366a732f38f5a0dd31958f9",
+      "hash": "b2532f29d3cae4a1b7d8aa2477ee4ac0171483fccf6cd604f8a147173ad99180",
       "total": 1342,
       "withMidi": 365,
       "withPreview": 364
