@@ -425,7 +425,7 @@ class AppTheme {
           shadowColor: centenarioDayGold.withValues(alpha: 0.18),
           fontFamily: 'Inter',
           appBarTheme: const AppBarTheme(
-            backgroundColor: Color(0xF2FFF8E7),
+            backgroundColor: Color(0xFFDED0A8),
             foregroundColor: foreground,
             elevation: 0,
           ),

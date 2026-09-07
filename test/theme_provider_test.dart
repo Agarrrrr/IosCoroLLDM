@@ -109,6 +109,10 @@ void main() {
     expect(theme.colorScheme.primary, AppTheme.centenarioDayGold);
     expect(theme.colorScheme.onSurface, const Color(0xFF173D32));
     expect(theme.brightness, Brightness.light);
+    expect(
+      theme.appBarTheme.backgroundColor!.computeLuminance(),
+      lessThan(theme.scaffoldBackgroundColor.computeLuminance()),
+    );
   });
 
   test('Centenario oscuro conserva el verde y dorado exactos del emblema', () {
