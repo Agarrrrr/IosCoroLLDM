@@ -40,9 +40,17 @@ void _writeSetting(String key, Object value) {
   Hive.box(userSettingsBoxName).put(key, value);
 }
 
-// `oscuroNormal` se agrega al final para no cambiar los índices ya guardados
-// de claro, OLED (`oscuro`), sepia y quiet.
-enum AppThemeMode { claro, oscuro, sepia, quiet, oscuroNormal }
+// Los temas nuevos se agregan al final para no cambiar los índices ya guardados
+// de claro, OLED (`oscuro`), sepia, quiet y oscuro normal.
+enum AppThemeMode {
+  claro,
+  oscuro,
+  sepia,
+  quiet,
+  oscuroNormal,
+  centenario,
+  centenarioOscuro,
+}
 
 // --- THEME MODE PROVIDER ---
 class ThemeNotifier extends Notifier<AppThemeMode> {
@@ -68,6 +76,10 @@ class ThemeNotifier extends Notifier<AppThemeMode> {
       set(AppThemeMode.quiet);
     } else if (state == AppThemeMode.quiet) {
       set(AppThemeMode.sepia);
+    } else if (state == AppThemeMode.centenario) {
+      set(AppThemeMode.centenarioOscuro);
+    } else if (state == AppThemeMode.centenarioOscuro) {
+      set(AppThemeMode.centenario);
     }
   }
 
@@ -166,7 +178,15 @@ final pdfNavModeProvider =
     NotifierProvider<PdfNavModeNotifier, bool>(PdfNavModeNotifier.new);
 
 class AppTheme {
+  static const centenarioDayBackground = Color(0xFFF3E9CC);
+  static const centenarioDayGold = Color(0xFF9A7418);
+  static const centenarioNightBackground = Color(0xFF0C2B24);
+  static const centenarioNightGold = Color(0xFFD4AF37);
+
   static Color adaptAccent(AppThemeMode mode, Color baseColor) {
+    if (mode == AppThemeMode.centenario) return centenarioDayGold;
+    if (mode == AppThemeMode.centenarioOscuro) return centenarioNightGold;
+
     // El dorado base ya fue diseñado específicamente para oscuro normal.
     if (mode == AppThemeMode.oscuroNormal &&
         baseColor == AccentColorNotifier.defaultAccent) {
@@ -198,6 +218,10 @@ class AppTheme {
         saturation = (hsv.saturation * 0.70).clamp(0.0, 0.62);
         value = hsv.value.clamp(0.76, 0.90);
         break;
+      case AppThemeMode.centenario:
+        return centenarioDayGold;
+      case AppThemeMode.centenarioOscuro:
+        return centenarioNightGold;
     }
 
     return hsv.withSaturation(saturation).withValue(value).toColor();
@@ -359,6 +383,152 @@ class AppTheme {
             backgroundColor: const Color(0xFF3C3F42),
             foregroundColor: effectiveAccent,
             elevation: 0,
+          ),
+        );
+      case AppThemeMode.centenario:
+        const foreground = Color(0xFF173D32);
+        const softText = Color(0xFF496B5E);
+        const surface = Color(0xFFFFF8E7);
+        const secondarySurface = Color(0xFFE8DDBE);
+        const inputBackground = Color(0xFFEFE5C9);
+        const border = Color(0xFF9F863E);
+        const subtleBorder = Color(0xFFC8B98D);
+        const brightGold = Color(0xFFB58C2B);
+
+        final scheme = ColorScheme.fromSeed(
+          seedColor: centenarioDayGold,
+          brightness: Brightness.light,
+        ).copyWith(
+          primary: centenarioDayGold,
+          onPrimary: const Color(0xFFFFF8E7),
+          secondary: brightGold,
+          onSecondary: foreground,
+          surface: surface,
+          onSurface: foreground,
+          surfaceContainer: inputBackground,
+          surfaceContainerHighest: secondarySurface,
+          onSurfaceVariant: softText,
+          outline: border,
+          outlineVariant: subtleBorder,
+          error: const Color(0xFF9D3C2F),
+          onError: const Color(0xFFFFF8E7),
+          shadow: centenarioDayGold.withValues(alpha: 0.18),
+        );
+
+        return ThemeData(
+          brightness: Brightness.light,
+          colorScheme: scheme,
+          scaffoldBackgroundColor: centenarioDayBackground,
+          cardColor: surface,
+          dividerColor: subtleBorder,
+          canvasColor: secondarySurface,
+          shadowColor: centenarioDayGold.withValues(alpha: 0.18),
+          fontFamily: 'Inter',
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Color(0xF2FFF8E7),
+            foregroundColor: foreground,
+            elevation: 0,
+          ),
+          dialogTheme: const DialogThemeData(backgroundColor: surface),
+          inputDecorationTheme: InputDecorationTheme(
+            filled: true,
+            fillColor: inputBackground,
+            hintStyle: const TextStyle(color: softText),
+            labelStyle: const TextStyle(color: softText),
+            enabledBorder: OutlineInputBorder(
+              borderSide: const BorderSide(color: subtleBorder),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide:
+                  const BorderSide(color: centenarioDayGold, width: 1.5),
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+          switchTheme: SwitchThemeData(
+            thumbColor: WidgetStateProperty.resolveWith(
+              (states) => states.contains(WidgetState.selected)
+                  ? centenarioDayGold
+                  : softText,
+            ),
+            trackColor: WidgetStateProperty.resolveWith(
+              (states) => states.contains(WidgetState.selected)
+                  ? subtleBorder
+                  : secondarySurface,
+            ),
+          ),
+        );
+      case AppThemeMode.centenarioOscuro:
+        const foreground = Color(0xFFF1D471);
+        const softText = Color(0xFFC9B55F);
+        const surface = Color(0xFF12382F);
+        const secondarySurface = Color(0xFF0F332B);
+        const inputBackground = Color(0xFF174238);
+        const border = Color(0xFF8F7A32);
+        const subtleBorder = Color(0xFF665924);
+        const brightGold = Color(0xFFF0CF67);
+
+        final scheme = ColorScheme.fromSeed(
+          seedColor: centenarioNightGold,
+          brightness: Brightness.dark,
+        ).copyWith(
+          primary: centenarioNightGold,
+          onPrimary: centenarioNightBackground,
+          secondary: brightGold,
+          onSecondary: centenarioNightBackground,
+          surface: surface,
+          onSurface: foreground,
+          surfaceContainer: inputBackground,
+          surfaceContainerHighest: secondarySurface,
+          onSurfaceVariant: softText,
+          outline: border,
+          outlineVariant: subtleBorder,
+          error: const Color(0xFFF2A65A),
+          onError: centenarioNightBackground,
+          shadow: centenarioNightGold.withValues(alpha: 0.24),
+        );
+
+        return ThemeData(
+          brightness: Brightness.dark,
+          colorScheme: scheme,
+          scaffoldBackgroundColor: centenarioNightBackground,
+          cardColor: surface,
+          dividerColor: subtleBorder,
+          canvasColor: secondarySurface,
+          shadowColor: centenarioNightGold.withValues(alpha: 0.24),
+          fontFamily: 'Inter',
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Color(0xF20F332B),
+            foregroundColor: foreground,
+            elevation: 0,
+          ),
+          dialogTheme: const DialogThemeData(backgroundColor: surface),
+          inputDecorationTheme: InputDecorationTheme(
+            filled: true,
+            fillColor: inputBackground,
+            hintStyle: const TextStyle(color: softText),
+            labelStyle: const TextStyle(color: softText),
+            enabledBorder: OutlineInputBorder(
+              borderSide: const BorderSide(color: subtleBorder),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide:
+                  const BorderSide(color: centenarioNightGold, width: 1.5),
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+          switchTheme: SwitchThemeData(
+            thumbColor: WidgetStateProperty.resolveWith(
+              (states) => states.contains(WidgetState.selected)
+                  ? centenarioNightGold
+                  : softText,
+            ),
+            trackColor: WidgetStateProperty.resolveWith(
+              (states) => states.contains(WidgetState.selected)
+                  ? border
+                  : secondarySurface,
+            ),
           ),
         );
     }

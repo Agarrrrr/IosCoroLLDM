@@ -1350,6 +1350,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final isSepiaProfile =
         themeMode == AppThemeMode.sepia || themeMode == AppThemeMode.quiet;
     final isNormalDark = themeMode == AppThemeMode.oscuroNormal;
+    final isCentenarioProfile = themeMode == AppThemeMode.centenario ||
+        themeMode == AppThemeMode.centenarioOscuro;
+    final isCentenarioDark = themeMode == AppThemeMode.centenarioOscuro;
 
     // Filtro para modo oscuro (Quiet) que mapea el fondo blanco a gris oscuro y notas a claro
     const quietFilter = ColorFilter.matrix([
@@ -1416,6 +1419,54 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       -0.78824,
       0.0,
       249.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+    ]);
+
+    // Centenario oscuro: blanco del PDF -> verde profundo y negro -> dorado.
+    const centenarioDarkFilter = ColorFilter.matrix([
+      -0.76078,
+      0.0,
+      0.0,
+      0.0,
+      212.0,
+      0.0,
+      -0.46275,
+      0.0,
+      0.0,
+      175.0,
+      0.0,
+      0.0,
+      -0.03137,
+      0.0,
+      55.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+    ]);
+
+    // Centenario día: blanco del PDF -> marfil y negro -> verde institucional.
+    const centenarioDayFilter = ColorFilter.matrix([
+      0.86275,
+      0.0,
+      0.0,
+      0.0,
+      23.0,
+      0.0,
+      0.67451,
+      0.0,
+      0.0,
+      61.0,
+      0.0,
+      0.0,
+      0.60392,
+      0.0,
+      50.0,
       0.0,
       0.0,
       0.0,
@@ -1603,14 +1654,18 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                         colorFilter: isDark
                                             ? (isSepiaProfile
                                                 ? quietFilter
-                                                : isNormalDark
-                                                    ? normalDarkFilter
-                                                    : invertFilter)
-                                            : (isSepiaProfile
-                                                ? sepiaFilter
-                                                : const ColorFilter.mode(
-                                                    Colors.transparent,
-                                                    BlendMode.multiply)),
+                                                : isCentenarioDark
+                                                    ? centenarioDarkFilter
+                                                    : isNormalDark
+                                                        ? normalDarkFilter
+                                                        : invertFilter)
+                                            : (isCentenarioProfile
+                                                ? centenarioDayFilter
+                                                : isSepiaProfile
+                                                    ? sepiaFilter
+                                                    : const ColorFilter.mode(
+                                                        Colors.transparent,
+                                                        BlendMode.multiply)),
                                         child: PdfViewer.file(
                                           state.localPath!,
                                           key: ValueKey(state.localPath!),

@@ -102,6 +102,67 @@ void main() {
     );
   });
 
+  test('Centenario día usa marfil, verde institucional y dorado sobrio', () {
+    final theme = AppTheme.getTheme(AppThemeMode.centenario, Colors.blue);
+
+    expect(theme.scaffoldBackgroundColor, AppTheme.centenarioDayBackground);
+    expect(theme.colorScheme.primary, AppTheme.centenarioDayGold);
+    expect(theme.colorScheme.onSurface, const Color(0xFF173D32));
+    expect(theme.brightness, Brightness.light);
+  });
+
+  test('Centenario oscuro conserva el verde y dorado exactos del emblema', () {
+    final theme = AppTheme.getTheme(
+      AppThemeMode.centenarioOscuro,
+      Colors.blue,
+    );
+
+    expect(theme.scaffoldBackgroundColor, AppTheme.centenarioNightBackground);
+    expect(theme.colorScheme.primary, AppTheme.centenarioNightGold);
+    expect(theme.colorScheme.onPrimary, AppTheme.centenarioNightBackground);
+    expect(theme.brightness, Brightness.dark);
+  });
+
+  test('la paleta Centenario oscura conserva armonía y contraste legible', () {
+    final scheme = AppTheme.getTheme(
+      AppThemeMode.centenarioOscuro,
+      Colors.red,
+    ).colorScheme;
+    final baseGold = HSVColor.fromColor(AppTheme.centenarioNightGold);
+
+    for (final color in [
+      scheme.secondary,
+      scheme.onSurface,
+      scheme.onSurfaceVariant,
+      scheme.outline,
+    ]) {
+      final hsv = HSVColor.fromColor(color);
+      expect(hsv.hue, closeTo(baseGold.hue, 8));
+    }
+
+    final contrast = _contrastRatio(
+      scheme.onSurface,
+      AppTheme.centenarioNightBackground,
+    );
+    expect(contrast, greaterThanOrEqualTo(4.5));
+    expect(
+      HSVColor.fromColor(scheme.secondary).value,
+      greaterThan(baseGold.value),
+    );
+  });
+
+  test('Centenario alterna entre día y noche sin cambiar de perfil', () {
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
+
+    container.read(themeProvider.notifier).set(AppThemeMode.centenario);
+    container.read(themeProvider.notifier).toggleDayNight();
+    expect(container.read(themeProvider), AppThemeMode.centenarioOscuro);
+
+    container.read(themeProvider.notifier).toggleDayNight();
+    expect(container.read(themeProvider), AppThemeMode.centenario);
+  });
+
   test('la preferencia OLED cambia y persiste el tema nocturno normal', () {
     final container = ProviderContainer();
     addTearDown(container.dispose);
@@ -161,4 +222,12 @@ void main() {
       Colors.purple.toARGB32(),
     );
   });
+}
+
+double _contrastRatio(Color foreground, Color background) {
+  final lighter = foreground.computeLuminance();
+  final darker = background.computeLuminance();
+  final high = lighter > darker ? lighter : darker;
+  final low = lighter > darker ? darker : lighter;
+  return (high + 0.05) / (low + 0.05);
 }

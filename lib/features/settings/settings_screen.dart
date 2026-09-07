@@ -86,34 +86,38 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
               _buildSectionTitle(
                 strings.t('COLOR DE ACENTO', 'ACCENT COLOR'),
               ),
-              Wrap(
-                spacing: 12,
-                runSpacing: 12,
-                children: [
-                  _buildColorDot(AccentColorNotifier.defaultAccent,
-                      selectedAccentColor), // Dorado
-                  _buildColorDot(
-                      const Color(0xFF3B82F6), selectedAccentColor), // Azul
-                  _buildColorDot(
-                      const Color(0xFF10B981), selectedAccentColor), // Verde
-                  _buildColorDot(
-                      const Color(0xFFEF4444), selectedAccentColor), // Carmesí
-                  _buildColorDot(
-                      const Color(0xFF8B5CF6), selectedAccentColor), // Púrpura
-                  _buildColorDot(
-                      const Color(0xFFF97316), selectedAccentColor), // Naranja
-                  _buildColorDot(const Color(0xFF06B6D4),
-                      selectedAccentColor), // Cian (Teal)
-                  _buildColorDot(const Color(0xFFEC4899),
-                      selectedAccentColor), // Rosa (Magenta)
-                  _buildColorDot(
-                      const Color(0xFF6366F1), selectedAccentColor), // Índigo
-                  _buildColorDot(const Color(0xFF64748B),
-                      selectedAccentColor), // Plata (Slate)
-                  _buildColorDot(
-                      const Color(0xFF8B5A2B), selectedAccentColor), // Café
-                ],
-              ),
+              if (currentTheme == AppThemeMode.centenario ||
+                  currentTheme == AppThemeMode.centenarioOscuro)
+                _buildCentenarioAccentNotice(strings)
+              else
+                Wrap(
+                  spacing: 12,
+                  runSpacing: 12,
+                  children: [
+                    _buildColorDot(AccentColorNotifier.defaultAccent,
+                        selectedAccentColor), // Dorado
+                    _buildColorDot(
+                        const Color(0xFF3B82F6), selectedAccentColor), // Azul
+                    _buildColorDot(
+                        const Color(0xFF10B981), selectedAccentColor), // Verde
+                    _buildColorDot(const Color(0xFFEF4444),
+                        selectedAccentColor), // Carmesí
+                    _buildColorDot(const Color(0xFF8B5CF6),
+                        selectedAccentColor), // Púrpura
+                    _buildColorDot(const Color(0xFFF97316),
+                        selectedAccentColor), // Naranja
+                    _buildColorDot(const Color(0xFF06B6D4),
+                        selectedAccentColor), // Cian (Teal)
+                    _buildColorDot(const Color(0xFFEC4899),
+                        selectedAccentColor), // Rosa (Magenta)
+                    _buildColorDot(
+                        const Color(0xFF6366F1), selectedAccentColor), // Índigo
+                    _buildColorDot(const Color(0xFF64748B),
+                        selectedAccentColor), // Plata (Slate)
+                    _buildColorDot(
+                        const Color(0xFF8B5A2B), selectedAccentColor), // Café
+                  ],
+                ),
               const SizedBox(height: 24),
 
               // 2. MODO PDF (SCROLL VS CAROUSEL)
@@ -180,13 +184,26 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                     ref.read(themeProvider.notifier).setProfileLectura(),
                 accentColor: accentColor,
               ),
-              _buildOledSwitch(
-                strings: strings,
-                enabled: useOledDarkMode,
+              _buildThemeOption(
+                context: context,
+                title: strings.t('Centenario', 'Centenary'),
+                icon: Icons.workspace_premium_rounded,
+                isSelected: currentTheme == AppThemeMode.centenario ||
+                    currentTheme == AppThemeMode.centenarioOscuro,
+                onTap: () => ref
+                    .read(themeProvider.notifier)
+                    .set(AppThemeMode.centenario),
                 accentColor: accentColor,
-                onChanged: (enabled) =>
-                    ref.read(oledDarkModeProvider.notifier).set(enabled),
               ),
+              if (currentTheme != AppThemeMode.centenario &&
+                  currentTheme != AppThemeMode.centenarioOscuro)
+                _buildOledSwitch(
+                  strings: strings,
+                  enabled: useOledDarkMode,
+                  accentColor: accentColor,
+                  onChanged: (enabled) =>
+                      ref.read(oledDarkModeProvider.notifier).set(enabled),
+                ),
             ],
           ),
         ),
@@ -252,6 +269,55 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
     );
   }
 
+  Widget _buildCentenarioAccentNotice(AppStrings strings) {
+    final scheme = Theme.of(context).colorScheme;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      decoration: BoxDecoration(
+        color: scheme.primary.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: scheme.outline),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 28,
+            height: 28,
+            decoration: BoxDecoration(
+              color: scheme.primary,
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: scheme.primary.withValues(alpha: 0.28),
+                  blurRadius: 8,
+                ),
+              ],
+            ),
+            child: Icon(
+              Icons.auto_awesome_rounded,
+              size: 16,
+              color: scheme.onPrimary,
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              strings.t(
+                'Dorado Centenario fijo para conservar la armonía',
+                'Fixed Centenary gold to preserve color harmony',
+              ),
+              style: GoogleFonts.inter(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: scheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildSectionTitle(String title) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
@@ -260,7 +326,7 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
         style: GoogleFonts.inter(
           fontSize: 12,
           fontWeight: FontWeight.bold,
-          color: Colors.grey,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
           letterSpacing: 1,
         ),
       ),

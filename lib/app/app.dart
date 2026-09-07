@@ -22,7 +22,9 @@ class CoroLLDMApp extends ConsumerWidget {
     final language = ref.watch(languageFilterProvider);
 
     ThemeMode getMaterialThemeMode() {
-      if (themeMode == AppThemeMode.claro || themeMode == AppThemeMode.sepia) {
+      if (themeMode == AppThemeMode.claro ||
+          themeMode == AppThemeMode.sepia ||
+          themeMode == AppThemeMode.centenario) {
         return ThemeMode.light;
       } else {
         return ThemeMode.dark;
@@ -36,15 +38,19 @@ class CoroLLDMApp extends ConsumerWidget {
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       debugShowCheckedModeBanner: false,
       themeMode: getMaterialThemeMode(),
-      theme: themeMode == AppThemeMode.sepia
-          ? AppTheme.getTheme(AppThemeMode.sepia, accentColor)
-          : AppTheme.getTheme(AppThemeMode.claro, accentColor),
+      theme: themeMode == AppThemeMode.centenario
+          ? AppTheme.getTheme(AppThemeMode.centenario, accentColor)
+          : themeMode == AppThemeMode.sepia
+              ? AppTheme.getTheme(AppThemeMode.sepia, accentColor)
+              : AppTheme.getTheme(AppThemeMode.claro, accentColor),
       darkTheme: AppTheme.getTheme(
-        themeMode == AppThemeMode.quiet
-            ? AppThemeMode.quiet
-            : themeMode == AppThemeMode.oscuroNormal
-                ? AppThemeMode.oscuroNormal
-                : AppThemeMode.oscuro,
+        themeMode == AppThemeMode.centenarioOscuro
+            ? AppThemeMode.centenarioOscuro
+            : themeMode == AppThemeMode.quiet
+                ? AppThemeMode.quiet
+                : themeMode == AppThemeMode.oscuroNormal
+                    ? AppThemeMode.oscuroNormal
+                    : AppThemeMode.oscuro,
         accentColor,
       ),
       builder: (context, child) {
