@@ -830,7 +830,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       await Share.shareXFiles(
         [XFile(shareMp3.path, name: displayFileName, mimeType: 'audio/mpeg')],
-        subject: canto.nombre,
         sharePositionOrigin: _shareButtonRect(),
       );
       await ref.read(monetizationProvider.notifier).consumeAudioExport();
@@ -925,7 +924,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           for (var i = 0; i < shareFiles.length; i++)
             XFile(shareFiles[i].path, name: names[i], mimeType: 'audio/mpeg'),
         ],
-        subject: canto.nombre,
         sharePositionOrigin: _shareButtonRect(),
       );
       await ref.read(monetizationProvider.notifier).consumeAudioExport();
@@ -1115,7 +1113,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         final shareMp3 = await _prepareShareFile(mp3, mp3Name);
         await Share.shareXFiles(
           [XFile(shareMp3.path, name: mp3Name, mimeType: 'audio/mpeg')],
-          subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
         await ref.read(monetizationProvider.notifier).consumeAudioExport();
@@ -1243,7 +1240,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                 mimeType: 'audio/mpeg',
               ),
           ],
-          subject: canto.nombre,
           sharePositionOrigin: _shareButtonRect(),
         );
         await ref.read(monetizationProvider.notifier).consumeAudioExport();
@@ -2258,8 +2254,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
   /// Algunas apps receptoras ignoran `XFile.name` y muestran el nombre físico
   /// del archivo. Compartimos una copia con el nombre público para no filtrar
-  /// IDs, huellas de caché ni versiones y para que Android resuelva `.mp3`
-  /// como audio MPEG al entregar el URI a WhatsApp.
+  /// IDs, huellas de caché ni versiones y para que las apps de mensajería
+  /// reciban un MP3 real identificado como `audio/mpeg`, sin adjuntar asunto
+  /// ni texto que pueda hacer que lo traten como un documento genérico.
   Future<File> _prepareShareFile(File source, String displayName) async {
     final tempDir = await getTemporaryDirectory();
     final shareDir = Directory(
