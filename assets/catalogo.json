@@ -1009,7 +1009,7 @@
       "Santa Cena"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_6595e1eaccdb4bbe80674697",
+    "vinculo_idioma": "usmc_6595db49ccdb4bbe8067459b",
     "_idioma": "es",
     "idioma": "es"
   },
@@ -1345,7 +1345,7 @@
       "Consagración"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_6595da4dccdb4bbe80674572",
+    "vinculo_idioma": "usmc_65592ca26269024850c23068",
     "_idioma": "es",
     "idioma": "es"
   },
@@ -2856,7 +2856,7 @@
       "Elección"
     ],
     "es_privado": false,
-    "vinculo_idioma": null,
+    "vinculo_idioma": "usmc_647b741f793a334d51fb6ccd",
     "coro_id": "local",
     "_idioma": "es",
     "idioma": "es"
@@ -3835,7 +3835,7 @@
     "nombre": "De Gala Espiritual",
     "archivo": "de-gala-espiritual-1781287197195.pdf",
     "midi_archivo": null,
-    "vinculo_idioma": "usmc_6514c55b7dacd58cf5",
+    "vinculo_idioma": "usmc_64b1f965ea321fbb1d6b869e",
     "temas": [
       "Santa Cena"
     ],
@@ -6690,7 +6690,7 @@
       "Santa Cena"
     ],
     "es_privado": false,
-    "vinculo_idioma": null,
+    "vinculo_idioma": "usmc_e227d5991599add4d37802a0",
     "coro_id": "local",
     "_idioma": "es",
     "idioma": "es"
@@ -8467,7 +8467,7 @@
       "Despedida"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_37d832ebbc612b8f9dd6ec0b",
+    "vinculo_idioma": "usmc_e0f79a1b7081cc0e28f619ed",
     "_idioma": "es",
     "idioma": "es"
   },
@@ -8795,7 +8795,7 @@
       "Alabanza"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_64b1fc2fea321fbb1d6b870a",
+    "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
     "idioma": "es"
@@ -9233,7 +9233,7 @@
       "Elección"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_e92f6dbcfbb3daf62807426e",
+    "vinculo_idioma": "usmc_c2e3e1a20f65eaa5073fd2ef",
     "_idioma": "es",
     "idioma": "es"
   },
@@ -9478,7 +9478,7 @@
       "Alabanza"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_65592d3b6269024850c2307b",
+    "vinculo_idioma": null,
     "_idioma": "es",
     "idioma": "es"
   },
@@ -13550,7 +13550,7 @@
       "Elección"
     ],
     "es_privado": false,
-    "vinculo_idioma": null,
+    "vinculo_idioma": "usmc_647b7404793a334d51fb6cc0",
     "coro_id": "local",
     "_idioma": "es",
     "idioma": "es"
@@ -14346,7 +14346,7 @@
     "nombre": "Suenen Dulces Himnos",
     "archivo": "suenen-dulces-himnos-1781285977842.pdf",
     "midi_archivo": "suenen-dulces-himnos-1780129635441.mid",
-    "vinculo_idioma": "b7cf893d-48e9-4253-8d36-e1d7ef59fee9",
+    "vinculo_idioma": null,
     "temas": [
       "Alabanza"
     ],
