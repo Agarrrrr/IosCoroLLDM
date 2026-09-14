@@ -154,10 +154,11 @@ class MainActivity : FlutterActivity() {
                 type = "audio/mpeg"
                 setPackage("com.whatsapp")
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-                clipData = ClipData.newUri(contentResolver, "audio/mpeg", uris.first())
+                val clip = ClipData.newUri(contentResolver, "audio/mpeg", uris.first())
                 for (index in 1 until uris.size) {
-                    clipData.addItem(ClipData.Item(uris[index]))
+                    clip.addItem(ClipData.Item(uris[index]))
                 }
+                clipData = clip
                 if (uris.size == 1) {
                     putExtra(Intent.EXTRA_STREAM, uris.first())
                 } else {

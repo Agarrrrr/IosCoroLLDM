@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
+import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 
 class SettingsDialog extends ConsumerStatefulWidget {
   const SettingsDialog({super.key});
@@ -22,6 +24,8 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
     final isCarousel = ref.watch(pdfNavModeProvider);
     final language = ref.watch(languageFilterProvider);
     final strings = AppStrings.of(context);
+    final monetizationState = ref.watch(monetizationProvider);
+    final appUserId = monetizationState.appUserId;
 
     return Dialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -86,38 +90,34 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
               _buildSectionTitle(
                 strings.t('COLOR DE ACENTO', 'ACCENT COLOR'),
               ),
-              if (currentTheme == AppThemeMode.centenario ||
-                  currentTheme == AppThemeMode.centenarioOscuro)
-                _buildCentenarioAccentNotice(strings)
-              else
-                Wrap(
-                  spacing: 12,
-                  runSpacing: 12,
-                  children: [
-                    _buildColorDot(AccentColorNotifier.defaultAccent,
-                        selectedAccentColor), // Dorado
-                    _buildColorDot(
-                        const Color(0xFF3B82F6), selectedAccentColor), // Azul
-                    _buildColorDot(
-                        const Color(0xFF10B981), selectedAccentColor), // Verde
-                    _buildColorDot(const Color(0xFFEF4444),
-                        selectedAccentColor), // Carmesí
-                    _buildColorDot(const Color(0xFF8B5CF6),
-                        selectedAccentColor), // Púrpura
-                    _buildColorDot(const Color(0xFFF97316),
-                        selectedAccentColor), // Naranja
-                    _buildColorDot(const Color(0xFF06B6D4),
-                        selectedAccentColor), // Cian (Teal)
-                    _buildColorDot(const Color(0xFFEC4899),
-                        selectedAccentColor), // Rosa (Magenta)
-                    _buildColorDot(
-                        const Color(0xFF6366F1), selectedAccentColor), // Índigo
-                    _buildColorDot(const Color(0xFF64748B),
-                        selectedAccentColor), // Plata (Slate)
-                    _buildColorDot(
-                        const Color(0xFF8B5A2B), selectedAccentColor), // Café
-                  ],
-                ),
+              Wrap(
+                spacing: 12,
+                runSpacing: 12,
+                children: [
+                  _buildColorDot(AccentColorNotifier.defaultAccent,
+                      selectedAccentColor), // Dorado
+                  _buildColorDot(
+                      const Color(0xFF3B82F6), selectedAccentColor), // Azul
+                  _buildColorDot(
+                      const Color(0xFF10B981), selectedAccentColor), // Verde
+                  _buildColorDot(const Color(0xFFEF4444),
+                      selectedAccentColor), // Carmesí
+                  _buildColorDot(const Color(0xFF8B5CF6),
+                      selectedAccentColor), // Púrpura
+                  _buildColorDot(const Color(0xFFF97316),
+                      selectedAccentColor), // Naranja
+                  _buildColorDot(const Color(0xFF06B6D4),
+                      selectedAccentColor), // Cian (Teal)
+                  _buildColorDot(const Color(0xFFEC4899),
+                      selectedAccentColor), // Rosa (Magenta)
+                  _buildColorDot(
+                      const Color(0xFF6366F1), selectedAccentColor), // Índigo
+                  _buildColorDot(const Color(0xFF64748B),
+                      selectedAccentColor), // Plata (Slate)
+                  _buildColorDot(
+                      const Color(0xFF8B5A2B), selectedAccentColor), // Café
+                ],
+              ),
               const SizedBox(height: 24),
 
               // 2. MODO PDF (SCROLL VS CAROUSEL)
@@ -184,29 +184,152 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                     ref.read(themeProvider.notifier).setProfileLectura(),
                 accentColor: accentColor,
               ),
-              _buildThemeOption(
+              _buildOledSwitch(
+                strings: strings,
+                enabled: useOledDarkMode,
+                accentColor: accentColor,
+                onChanged: (enabled) =>
+                    ref.read(oledDarkModeProvider.notifier).set(enabled),
+              ),
+              const SizedBox(height: 24),
+
+              // 4. IDENTIFICADOR DE CUENTA / SORTEOS Y SOPORTE
+              _buildSectionTitle(strings.t(
+                'ID DE CUENTA / SOPORTE',
+                'ACCOUNT ID / SUPPORT',
+              )),
+              _buildAccountIdCard(
                 context: context,
-                title: strings.t('Centenario', 'Centenary'),
-                icon: Icons.workspace_premium_rounded,
-                isSelected: currentTheme == AppThemeMode.centenario ||
-                    currentTheme == AppThemeMode.centenarioOscuro,
-                onTap: () => ref
-                    .read(themeProvider.notifier)
-                    .set(AppThemeMode.centenario),
+                strings: strings,
+                appUserId: appUserId,
                 accentColor: accentColor,
               ),
-              if (currentTheme != AppThemeMode.centenario &&
-                  currentTheme != AppThemeMode.centenarioOscuro)
-                _buildOledSwitch(
-                  strings: strings,
-                  enabled: useOledDarkMode,
-                  accentColor: accentColor,
-                  onChanged: (enabled) =>
-                      ref.read(oledDarkModeProvider.notifier).set(enabled),
-                ),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildAccountIdCard({
+    required BuildContext context,
+    required AppStrings strings,
+    required String? appUserId,
+    required Color accentColor,
+  }) {
+    final theme = Theme.of(context);
+    final hasId = appUserId != null && appUserId.isNotEmpty;
+    final displayId = hasId
+        ? appUserId
+        : strings.t('Generando identificador...', 'Generating ID...');
+
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 0.6),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+          color: theme.colorScheme.outline.withValues(alpha: 0.25),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.fingerprint_rounded,
+                size: 20,
+                color: accentColor,
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  strings.t(
+                    'Identificador para sorteos y soporte',
+                    'Giveaway & support identifier',
+                  ),
+                  style: GoogleFonts.inter(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: theme.colorScheme.onSurface,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            decoration: BoxDecoration(
+              color: theme.colorScheme.surface,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                color: theme.colorScheme.outline.withValues(alpha: 0.2),
+              ),
+            ),
+            child: Row(
+              children: [
+                Expanded(
+                  child: SelectableText(
+                    displayId,
+                    style: GoogleFonts.inter(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w500,
+                      color: hasId
+                          ? theme.colorScheme.onSurface
+                          : theme.colorScheme.onSurfaceVariant,
+                    ),
+                    maxLines: 1,
+                  ),
+                ),
+                if (hasId) ...[
+                  const SizedBox(width: 8),
+                  InkWell(
+                    onTap: () async {
+                      await Clipboard.setData(ClipboardData(text: appUserId));
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              strings.t(
+                                'ID copiado al portapapeles',
+                                'ID copied to clipboard',
+                              ),
+                            ),
+                            behavior: SnackBarBehavior.floating,
+                            duration: const Duration(seconds: 2),
+                          ),
+                        );
+                      }
+                    },
+                    borderRadius: BorderRadius.circular(6),
+                    child: Padding(
+                      padding: const EdgeInsets.all(4),
+                      child: Icon(
+                        Icons.copy_rounded,
+                        size: 18,
+                        color: accentColor,
+                      ),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            strings.t(
+              'Comparte este código para participar en sorteos de suscripciones anuales o para solicitar soporte técnico.',
+              'Share this code to enter yearly subscription giveaways or request technical support.',
+            ),
+            style: GoogleFonts.inter(
+              fontSize: 11,
+              color: theme.colorScheme.onSurfaceVariant,
+              height: 1.3,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -265,55 +388,6 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-      ),
-    );
-  }
-
-  Widget _buildCentenarioAccentNotice(AppStrings strings) {
-    final scheme = Theme.of(context).colorScheme;
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-      decoration: BoxDecoration(
-        color: scheme.primary.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: scheme.outline),
-      ),
-      child: Row(
-        children: [
-          Container(
-            width: 28,
-            height: 28,
-            decoration: BoxDecoration(
-              color: scheme.primary,
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: scheme.primary.withValues(alpha: 0.28),
-                  blurRadius: 8,
-                ),
-              ],
-            ),
-            child: Icon(
-              Icons.auto_awesome_rounded,
-              size: 16,
-              color: scheme.onPrimary,
-            ),
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Text(
-              strings.t(
-                'Dorado Centenario fijo para conservar la armonía',
-                'Fixed Centenary gold to preserve color harmony',
-              ),
-              style: GoogleFonts.inter(
-                fontSize: 12,
-                fontWeight: FontWeight.w600,
-                color: scheme.onSurfaceVariant,
-              ),
-            ),
-          ),
-        ],
       ),
     );
   }

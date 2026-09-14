@@ -28,6 +28,7 @@ class MonetizationState {
   final PremiumOrigin premiumOrigin;
   final List<Package> packages;
   final String? error;
+  final String? appUserId;
 
   const MonetizationState({
     this.initialized = false,
@@ -37,6 +38,7 @@ class MonetizationState {
     this.premiumOrigin = PremiumOrigin.none,
     this.packages = const [],
     this.error,
+    this.appUserId,
   });
 
   MonetizationState copyWith({
@@ -47,6 +49,7 @@ class MonetizationState {
     PremiumOrigin? premiumOrigin,
     List<Package>? packages,
     String? error,
+    String? appUserId,
     bool clearError = false,
   }) {
     return MonetizationState(
@@ -57,6 +60,7 @@ class MonetizationState {
       premiumOrigin: premiumOrigin ?? this.premiumOrigin,
       packages: packages ?? this.packages,
       error: clearError ? null : (error ?? this.error),
+      appUserId: appUserId ?? this.appUserId,
     );
   }
 }
@@ -83,10 +87,12 @@ class MonetizationController extends StateNotifier<MonetizationState>
 
     final cachedLegacy =
         Platform.isIOS && (_box.get('ios_legacy_premium') == true);
+    final cachedAppUserId = _box.get('revenuecat_app_user_id') as String?;
     state = state.copyWith(
       isPremium: cachedLegacy,
       premiumOrigin:
           cachedLegacy ? PremiumOrigin.iosLegacy : PremiumOrigin.none,
+      appUserId: cachedAppUserId,
       clearError: true,
     );
 
@@ -115,6 +121,14 @@ class MonetizationController extends StateNotifier<MonetizationState>
       _purchasesConfigured = true;
       Purchases.addCustomerInfoUpdateListener(_customerInfoListener);
       WidgetsBinding.instance.addObserver(this);
+
+      try {
+        final currentUserId = await Purchases.appUserID;
+        if (currentUserId.isNotEmpty) {
+          _box.put('revenuecat_app_user_id', currentUserId);
+          state = state.copyWith(appUserId: currentUserId);
+        }
+      } catch (_) {}
 
       if (Platform.isIOS && kReleaseMode && !cachedLegacy) {
         if (_box.get('ios_receipt_migrated') != true) {
@@ -178,6 +192,10 @@ class MonetizationController extends StateNotifier<MonetizationState>
     if (legacy) {
       _box.put('ios_legacy_premium', true);
     }
+    final originalUserId = info.originalAppUserId.trim();
+    if (originalUserId.isNotEmpty) {
+      _box.put('revenuecat_app_user_id', originalUserId);
+    }
     state = state.copyWith(
       isPremium: subscribed || legacy,
       premiumOrigin: subscribed
@@ -185,6 +203,7 @@ class MonetizationController extends StateNotifier<MonetizationState>
           : legacy
               ? PremiumOrigin.iosLegacy
               : PremiumOrigin.none,
+      appUserId: originalUserId.isNotEmpty ? originalUserId : state.appUserId,
       clearError: true,
     );
   }

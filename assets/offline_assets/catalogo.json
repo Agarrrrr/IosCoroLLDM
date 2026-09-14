@@ -158,9 +158,9 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_e267758cd6c26b7d4a7265bf",
+    "id": "5bcd554d-a357-49a2-97ab-e9d5f2473259",
     "nombre": "Adorno en tu Corona",
-    "archivo": "usmc_e267758cd6c26b7d4a7265bf_adorno_en_tu_corona.pdf",
+    "archivo": "global/assets/pdf/6e90a25d3be905ccba636213478b1947f512c522ce982ead33bbc9d6606fc9b6.enc",
     "temas": [
       "Elección"
     ],
@@ -168,7 +168,10 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_e267758cd6c26b7d4a7265bf",
+    "midi_archivo": "global/assets/midi/52e4b69cce62582bb617ef3897a35c91b3f7698b52eab8e0ee9c347a48e7d816.enc",
+    "version": 9
   },
   {
     "id": "usmc_64b5f54121b21cae02606896",
@@ -974,16 +977,20 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_661dd419d6b0cc15aeab118a",
+    "id": "43a441a6-84a6-5781-adf5-0fbaf9868027",
     "nombre": "A Los Pies Del Salvador",
-    "archivo": "661dd419d6b0cc15aeab118a_a_los_pies_del_salvador.pdf",
+    "archivo": "global/assets/pdf/8da91949e7e9b24d75cac79c0d04a522b3c536647d31d1aa71f687970fc67e77.enc",
     "temas": [
       "Confianza",
       "Esperanza"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_661dd419d6b0cc15aeab118a",
+    "midi_archivo": "global/assets/midi/3ede2026af2399f3369e56910dbc074b2fc23d8292f755a5cfde9cead830ca07.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_085a95be5c8ccc33826a8d65",
@@ -1598,16 +1605,20 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b5323721b21cae02605726",
+    "id": "6e8bb24f-1552-5dbb-8f6e-90c43ba5fb3a",
     "nombre": "A Veces me Pregunto",
-    "archivo": "64b5323721b21cae02605726_a_veces_me_pregunto.pdf",
+    "archivo": "global/assets/pdf/0fcb22ccb0beb9771c27beb6f7fa18918a0d38c3013b88638d2eb60700c2796f.enc",
     "temas": [
-      "Gratitud",
-      "Gracia"
+      "Gracia",
+      "Gratitud"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_64b5323721b21cae02605726",
+    "midi_archivo": "global/assets/midi/c3d799154741b3f928d8f72f3d91f64cdc454b59b8759c45035fa99bb7e3505f.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_64b3e98a9631ba687d63071b",
@@ -2724,29 +2735,36 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_661dce6dd6b0cc15aeab1070",
+    "id": "e9645dbc-f991-5905-880c-a59670808990",
     "nombre": "Como en Jericó",
-    "archivo": "661dce6dd6b0cc15aeab1070_como_en_jericó.pdf",
+    "archivo": "global/assets/pdf/cf0d247d716e00b95bbba63a77228586456914275a3d1360d39dda9820664544.enc",
     "temas": [
       "Oración"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_661dce6dd6b0cc15aeab1070",
+    "midi_archivo": "global/assets/midi/abef96d1e12a23894abfb3fea3579afcfbe124ff8efd2cfd743d1254fff0afba.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
-    "id": "usmc_4ca469494e297d2b16f73225",
+    "id": "43994b2b-23bc-5614-85f0-9aa11515b0bc",
     "nombre": "Como la Aurora",
-    "archivo": "usmc_4ca469494e297d2b16f73225_como_la_aurora.pdf",
+    "archivo": "global/assets/pdf/a8f352c1492718a92d24c1d04b9169562964cb16d07b902a09579bed5512bd80.enc",
     "temas": [
-      "Honra",
-      "Elección"
+      "Elección",
+      "Honra"
     ],
     "es_privado": false,
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_4ca469494e297d2b16f73225",
+    "midi_archivo": "global/assets/midi/1c1a47f08433cdac18eccb14c55ce12ed5e54e58d13632d0c641de259dda6c07.enc",
+    "version": 5
   },
   {
     "id": "adba1d9e-19cc-4ed9-9eda-d8ef68ce019b",
@@ -4908,9 +4926,9 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_bbc408c9db1bdf5b94f2f7a3",
+    "id": "39fa7291-acb9-46d8-84cf-b002d53448ee",
     "nombre": "El Hijo Pródigo",
-    "archivo": "usmc_bbc408c9db1bdf5b94f2f7a3_el_hijo_prodigo.pdf",
+    "archivo": "global/assets/pdf/885bfa9d5d42667b961ad84fc5147a643b76ba13bfa6f3d7c56e7b58821fc899.enc",
     "temas": [
       "Llamamiento",
       "Restauración"
@@ -4919,7 +4937,10 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_bbc408c9db1bdf5b94f2f7a3",
+    "midi_archivo": "global/assets/midi/c17fd7295cc6bcea64e46ae9b042b3353821f9c9484a99c748d72f92d672117e.enc",
+    "version": 7
   },
   {
     "id": "usmc_aa2d094b6736d58c58",
@@ -5173,9 +5194,9 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_6105cf61da32223f623f88c6",
+    "id": "3945b678-d571-50f2-99b8-ede61102a4d4",
     "nombre": "El Pescador",
-    "archivo": "usmc_6105cf61da32223f623f88c6_el_pescador.pdf",
+    "archivo": "global/assets/pdf/c3ec50177873ef0b065f720e14ce2951948ddb09507bc2b31ad7e550c27b8285.enc",
     "temas": [
       "Advenimiento",
       "Amor"
@@ -5184,20 +5205,25 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_6105cf61da32223f623f88c6",
+    "midi_archivo": "global/assets/midi/e9dd00aacb27cd45725ae69d9cfc75e68f43a3ab795b55996f82fcb2e74836be.enc",
+    "version": 5
   },
   {
     "id": "add2c20d-883f-40c3-87b8-1f1ef1874a50",
     "nombre": "El Pueblo Feliz",
-    "archivo": "el-pueblo-feliz.pdf",
-    "midi_archivo": "el-pueblo-feliz-1779949452985.midi",
+    "archivo": "global/assets/pdf/d5727cea24c8c4149d8ad87ab20435fcb71b72484973b3859894bfb9dfc083c2.enc",
+    "midi_archivo": "global/assets/midi/39feef8acfc3da03a2f08f92c0cdb71534213a5d46a9fa995ae9b5ab47c30ca4.enc",
     "temas": [
       "Honra"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_644e8e86fc2bf23dfa336add",
+    "vinculo_idioma": "d7d3479a-98ad-5cd5-b3ad-0050a36f32c1",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "add2c20d-883f-40c3-87b8-1f1ef1874a50",
+    "version": 11
   },
   {
     "id": "usmc_f28cb212005fd58c62",
@@ -6529,15 +6555,19 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b54c0921b21cae02605c7c",
+    "id": "43f85a38-d3ed-541f-933b-6cbe0d23107b",
     "nombre": "Es Honorable",
-    "archivo": "64b54c0921b21cae02605c7c_es_honorable.pdf",
+    "archivo": "global/assets/pdf/445e73c5a4c15b4966159d36fe3761a587ff090d420806a309ab2529ea4dfc34.enc",
     "temas": [
       "Elección"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_64b54c0921b21cae02605c7c",
+    "midi_archivo": "global/assets/midi/e63928b445b1699e657f700d531ef9798c786c57134c2440863dec6ddb0d7320.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_64b54c2521b21cae02605c8c",
@@ -7994,16 +8024,20 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_9237ea180edad58c92",
+    "id": "ec231848-a924-5db7-b987-9393fa8a782a",
     "nombre": "Hijo Prodigo",
-    "archivo": "9237ea180edad58c92_hijo-prodigo.pdf",
+    "archivo": "global/assets/pdf/111bff8c2c5cefef4c406a6e5156aebb47c725f0347adb36dafc0655a3365f80.enc",
     "temas": [
-      "Alabanza",
-      "Adoración"
+      "Adoración",
+      "Alabanza"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_9237ea180edad58c92",
+    "midi_archivo": "global/assets/midi/c17fd7295cc6bcea64e46ae9b042b3353821f9c9484a99c748d72f92d672117e.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "local_apk_1781321071976_228",
@@ -8608,13 +8642,17 @@
   {
     "id": "ec27b68e-da9c-4962-8061-caac106b0cd8",
     "nombre": "Joya Perfecta",
-    "archivo": "joya-perfecta-1781309467258.pdf",
+    "archivo": "global/assets/pdf/2fdff72df14c2c575919d07a835be7532ca342d181eb4fa8164754c1f3f046ff.enc",
     "temas": [
       "Elección"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": null,
+    "midi_archivo": "global/assets/midi/133c46524b82e264e8a3759925d1b37c3d8f5e6ddda5b48ff77fb5ee7ffdca9c.enc",
+    "vinculo_idioma": null,
+    "version": 1
   },
   {
     "id": "37d4f207-b859-466a-a15f-3e8f64ca9796",
@@ -9770,15 +9808,19 @@
     "idioma": "es"
   },
   {
-    "id": "local_apk_1781321071999_821",
+    "id": "cfdf316c-980a-59c1-b4bb-237c73a4f146",
     "nombre": "Le Saludamos de Corazón",
-    "archivo": "le_saludamos_de_corazon-1781321071998.pdf",
+    "archivo": "global/assets/pdf/2d9e337413c2a92c056fb6cc8b1d6b2fd9c4e8a37d5a3267c956d3526b6a6b68.enc",
     "temas": [
       "15 De Septiembre"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "local_apk_1781321071999_821",
+    "midi_archivo": "global/assets/midi/d087acfcc8949f7bbab0a7973f6d6a02bdf519cae12f4803592a8021009b2915.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_a421dd0c0548d58cbb",
@@ -10861,26 +10903,34 @@
     "idioma": "es"
   },
   {
-    "id": "local_apk_1781321072021_331",
+    "id": "d513251c-3d3f-5f55-8310-e7b099f0d7fc",
     "nombre": "Mujer Bendita de Dios",
-    "archivo": "mujer_bendita_de_dios-1781321072020.pdf",
+    "archivo": "global/assets/pdf/920b01177db8af62014179ff34afbcd3000db592bc26c40f9cb07b9ea12b8592.enc",
     "temas": [
       "15 De Septiembre"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "local_apk_1781321072021_331",
+    "midi_archivo": "global/assets/midi/d71e4bd278e39c5ff286bfede8fd6ece791c984c87e402895ab460777020a125.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
-    "id": "local_apk_1781321072023_685",
+    "id": "8fad5f5e-b9dd-5ebf-80d7-20c7bd4dba24",
     "nombre": "Mujer de Gran Valor",
-    "archivo": "mujer_de_gran_valor-1781321072021.pdf",
+    "archivo": "global/assets/pdf/4286a546bee2873ed3331f2f7632b7dca7e838ac9707364a532210d1498cd2f0.enc",
     "temas": [
       "15 De Septiembre"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "local_apk_1781321072023_685",
+    "midi_archivo": "global/assets/midi/b671d25cd33d1f5fefc94670b369c61fb184269870b3893bb416e97905b1c053.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "local_apk_1781321072025_209",
@@ -11393,15 +11443,19 @@
     "idioma": "es"
   },
   {
-    "id": "local_apk_1781321072037_125",
+    "id": "4a6cb159-6079-583e-b29d-c22e38324768",
     "nombre": "Nuestros Deseos",
-    "archivo": "nuestros_deseos-1781321072036.pdf",
+    "archivo": "global/assets/pdf/d5ce7126ab0e76863af7e031957a5537645c306368851de7ff2747cc0a3ed7e2.enc",
     "temas": [
       "15 De Septiembre"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "local_apk_1781321072037_125",
+    "midi_archivo": "global/assets/midi/cc11b4eb3b9ae916be24eedc9b4a7a19a9161a463b50dea0c6f6eb48ea03886f.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "d91ffb2b-b2fb-42ab-afe4-65fd022fdfa7",
@@ -13909,16 +13963,20 @@
     "idioma": "es"
   },
   {
-    "id": "local_apk_1781321072128_193",
+    "id": "c89d7913-ca1c-550d-94a2-1291d8b1f103",
     "nombre": "Siempre Feliz",
-    "archivo": "siempre_feliz-1781321072127.pdf",
+    "archivo": "global/assets/pdf/084a264417c2fc96e51cf36e9fb92e613f227e3a2ce377ce9b9142edfaae2d90.enc",
     "temas": [
-      "Gratitud",
-      "Adoración"
+      "Adoración",
+      "Gratitud"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "local_apk_1781321072128_193",
+    "midi_archivo": "global/assets/midi/427af1266e8eb3ee445307e250d7b57665c8ef794e7c25588a92b8c0773b5a47.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "local_apk_1781321072129_241",
@@ -15047,15 +15105,19 @@
     "idioma": "es"
   },
   {
-    "id": "local_apk_1781321072150_144",
+    "id": "6c2aa892-cafc-5f3a-bcc5-b4e05c0c5319",
     "nombre": "Una Hermosura de Dios",
-    "archivo": "una_hermosura_de_dios-1781321072149.pdf",
+    "archivo": "global/assets/pdf/86cb16583e957f4f2e93a42a7240b8a710fe5b01c1f3c67cd668cabfdc5de21f.enc",
     "temas": [
       "15 De Septiembre"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "local_apk_1781321072150_144",
+    "midi_archivo": "global/assets/midi/41caf60172de39fb1467c98b526e248ba9514e05233ab1ef88e566e2ea13bde0.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "usmc_64b58a8721b21cae02606266",

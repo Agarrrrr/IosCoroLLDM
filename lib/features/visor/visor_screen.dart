@@ -26,6 +26,7 @@ import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/features/premium/premium_dialog.dart';
+import 'package:coro_lldm/features/premium/reward_or_premium_dialog.dart';
 
 const List<double> _kSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0];
 const double _kScaleEpsilon = 0.001;
@@ -194,57 +195,39 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
   Future<void> _showAudioLimitDialog(Canto canto) async {
     final strings = AppStrings.of(context);
-    await showDialog<void>(
+    final accentColor = Theme.of(context).colorScheme.primary;
+    final result = await showRewardOrPremiumDialog(
       context: context,
-      builder: (dialogContext) => AlertDialog(
-        title: Text(strings.t('Límite diario', 'Daily limit')),
-        content: Text(
-          strings.t(
-            'La versión gratuita permite escuchar 5 cantos distintos al día. Puedes obtener un audio extra viendo un anuncio o activar Premium.',
-            'The free version lets you listen to 5 different songs per day. Watch an ad for one extra audio or activate Premium.',
+      type: RewardPromptType.audioPlayback,
+      accentColor: accentColor,
+    );
+    if (!mounted || result == null || result == RewardPromptResult.dismiss) {
+      return;
+    }
+    if (result == RewardPromptResult.premium) {
+      await showPremiumDialog(context);
+      return;
+    }
+    // RewardPromptResult.rewarded
+    final earned = await AdsService.instance.showRewarded();
+    if (!mounted) return;
+    if (!earned) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            strings.t(
+              'El anuncio todavía no está disponible. Intenta de nuevo en unos segundos.',
+              'The ad is not available yet. Try again in a few seconds.',
+            ),
           ),
         ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogContext),
-            child: Text(strings.t('Ahora no', 'Not now')),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(dialogContext);
-              showPremiumDialog(context);
-            },
-            child: const Text('Premium'),
-          ),
-          if (AdUnitIds.rewarded != null)
-            FilledButton(
-              onPressed: () async {
-                Navigator.pop(dialogContext);
-                final earned = await AdsService.instance.showRewarded();
-                if (!mounted) return;
-                if (!earned) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        strings.t(
-                          'El anuncio todavía no está disponible. Intenta de nuevo en unos segundos.',
-                          'The ad is not available yet. Try again in a few seconds.',
-                        ),
-                      ),
-                    ),
-                  );
-                  return;
-                }
-                final controller = ref.read(monetizationProvider.notifier);
-                await controller.grantRewardedAudio();
-                await controller.consumeAudioAccess(canto.id);
-                if (mounted) _midi.play();
-              },
-              child: Text(strings.t('Ver anuncio', 'Watch ad')),
-            ),
-        ],
-      ),
-    );
+      );
+      return;
+    }
+    final controller = ref.read(monetizationProvider.notifier);
+    await controller.grantRewardedAudio();
+    await controller.consumeAudioAccess(canto.id);
+    if (mounted) _midi.play();
   }
 
   void _ajustarZoomAlAncho() {
@@ -730,42 +713,20 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     String? localPdfPath,
   ) async {
     final strings = AppStrings.of(context);
-    final result = await showDialog<String>(
+    final accentColor = Theme.of(context).colorScheme.primary;
+    final result = await showRewardOrPremiumDialog(
       context: context,
-      builder: (ctx) => AlertDialog(
-        title:
-            Text(strings.t('Límite diario alcanzado', 'Daily limit reached')),
-        content: Text(strings.t(
-          'Puedes exportar 3 audios gratis al día. ¿Quieres ver un anuncio breve '
-              'para obtener 1 más, o apoyar el desarrollo con Premium?',
-          'You can export 3 free audios per day. Watch a short ad to get 1 more, '
-              'or support the app with Premium.',
-        )),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, 'cancel'),
-            child: Text(strings.t('Cancelar', 'Cancel')),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, 'premium'),
-            child: Text(strings.t('Ir a Premium', 'Go Premium')),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.pop(ctx, 'rewarded'),
-            child: Text(strings.t('Ver anuncio', 'Watch ad')),
-          ),
-        ],
-      ),
+      type: RewardPromptType.audioExport,
+      accentColor: accentColor,
     );
-    if (!mounted || result == null || result == 'cancel') return;
-    if (result == 'premium') {
-      await showDialog<void>(
-        context: context,
-        builder: (_) => const PremiumDialog(),
-      );
+    if (!mounted || result == null || result == RewardPromptResult.dismiss) {
       return;
     }
-    // 'rewarded'
+    if (result == RewardPromptResult.premium) {
+      await showPremiumDialog(context);
+      return;
+    }
+    // RewardPromptResult.rewarded
     final earned = await AdsService.instance.showRewarded();
     if (!mounted) return;
     if (earned) {
@@ -1340,9 +1301,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final isSepiaProfile =
         themeMode == AppThemeMode.sepia || themeMode == AppThemeMode.quiet;
     final isNormalDark = themeMode == AppThemeMode.oscuroNormal;
-    final isCentenarioProfile = themeMode == AppThemeMode.centenario ||
-        themeMode == AppThemeMode.centenarioOscuro;
-    final isCentenarioDark = themeMode == AppThemeMode.centenarioOscuro;
 
     // Filtro para modo oscuro (Quiet) que mapea el fondo blanco a gris oscuro y notas a claro
     const quietFilter = ColorFilter.matrix([
@@ -1416,53 +1374,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       0.0,
     ]);
 
-    // Centenario oscuro: blanco del PDF -> verde profundo y negro -> dorado.
-    const centenarioDarkFilter = ColorFilter.matrix([
-      -0.76078,
-      0.0,
-      0.0,
-      0.0,
-      212.0,
-      0.0,
-      -0.46275,
-      0.0,
-      0.0,
-      175.0,
-      0.0,
-      0.0,
-      -0.03137,
-      0.0,
-      55.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-    ]);
-
-    // Centenario día: blanco del PDF -> marfil y negro -> verde institucional.
-    const centenarioDayFilter = ColorFilter.matrix([
-      0.86275,
-      0.0,
-      0.0,
-      0.0,
-      23.0,
-      0.0,
-      0.67451,
-      0.0,
-      0.0,
-      61.0,
-      0.0,
-      0.0,
-      0.60392,
-      0.0,
-      50.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-    ]);
 
     // Filtro sepia para la partitura en modo sepia (blanco -> #F4ECD8, negro -> #5b4636)
     const sepiaFilter = ColorFilter.matrix([
@@ -1644,18 +1555,14 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                         colorFilter: isDark
                                             ? (isSepiaProfile
                                                 ? quietFilter
-                                                : isCentenarioDark
-                                                    ? centenarioDarkFilter
-                                                    : isNormalDark
-                                                        ? normalDarkFilter
-                                                        : invertFilter)
-                                            : (isCentenarioProfile
-                                                ? centenarioDayFilter
-                                                : isSepiaProfile
-                                                    ? sepiaFilter
-                                                    : const ColorFilter.mode(
-                                                        Colors.transparent,
-                                                        BlendMode.multiply)),
+                                                : isNormalDark
+                                                    ? normalDarkFilter
+                                                    : invertFilter)
+                                            : (isSepiaProfile
+                                                ? sepiaFilter
+                                                : const ColorFilter.mode(
+                                                    Colors.transparent,
+                                                    BlendMode.multiply)),
                                         child: PdfViewer.file(
                                           state.localPath!,
                                           key: ValueKey(state.localPath!),
@@ -2719,92 +2626,111 @@ class _MidiPanelState extends State<_MidiPanel> {
             const SizedBox(height: 10),
 
             // ── Controles principales ──────────────────────────────────────
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // Metrónomo toggle
-                _GoldIconBtn(
-                  isActive: widget.midiState.metronomoActivo,
-                  activeColor: widget.accentColor,
-                  onTap: loading ? null : widget.onMetronomo,
-                  tooltip: 'Metrónomo',
-                  size: 22,
-                  child: TweenAnimationBuilder<double>(
-                    duration: const Duration(milliseconds: 180),
-                    curve: Curves.easeInOutCubic,
-                    tween: Tween<double>(
-                      begin: 0.0,
-                      end: widget.midiState.metronomoActivo &&
-                              widget.midiState.isPlaying
-                          ? (widget.midiState.beatSerial.isEven ? -0.42 : 0.42)
-                          : 0.0,
+            Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 340),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    // Mezclador de voces
+                    _GoldIconBtn(
+                      icon: Icons.tune_rounded,
+                      isActive: false,
+                      activeColor: widget.accentColor,
+                      onTap: loading ? null : () => _abrirMezcladorModal(context),
+                      tooltip: 'Mezclador de voces',
+                      size: 22,
                     ),
-                    builder: (context, angle, child) {
-                      return MetronomeIcon(
-                        color: widget.midiState.metronomoActivo
-                            ? widget.accentColor
-                            : Colors.grey.withOpacity(0.6),
-                        size: 20,
-                        rotationAngle: angle,
-                      );
-                    },
-                  ),
-                ),
-                const SizedBox(width: 8),
-                // Play / Pause
-                GestureDetector(
-                  onTap: loading ? null : widget.onPlay,
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 200),
-                    width: 52,
-                    height: 52,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: loading
-                          ? Colors.grey.withOpacity(0.2)
-                          : widget.accentColor,
-                      boxShadow: loading
-                          ? []
-                          : [
-                              BoxShadow(
-                                  color: widget.accentColor.withOpacity(0.4),
-                                  blurRadius: 12)
-                            ],
+                    // Metrónomo toggle
+                    _GoldIconBtn(
+                      isActive: widget.midiState.metronomoActivo,
+                      activeColor: widget.accentColor,
+                      onTap: loading ? null : widget.onMetronomo,
+                      tooltip: 'Metrónomo',
+                      size: 22,
+                      child: TweenAnimationBuilder<double>(
+                        duration: const Duration(milliseconds: 180),
+                        curve: Curves.easeInOutCubic,
+                        tween: Tween<double>(
+                          begin: 0.0,
+                          end: widget.midiState.metronomoActivo &&
+                                  widget.midiState.isPlaying
+                              ? (widget.midiState.beatSerial.isEven ? -0.42 : 0.42)
+                              : 0.0,
+                        ),
+                        builder: (context, angle, child) {
+                          return MetronomeIcon(
+                            color: widget.midiState.metronomoActivo
+                                ? widget.accentColor
+                                : Colors.grey.withOpacity(0.6),
+                            size: 20,
+                            rotationAngle: angle,
+                          );
+                        },
+                      ),
                     ),
-                    child: loading
-                        ? const Padding(
-                            padding: EdgeInsets.all(14),
-                            child: CircularProgressIndicator(
-                                color: Colors.white, strokeWidth: 2.5))
-                        : Icon(
-                            widget.midiState.isPlaying
-                                ? Icons.pause_rounded
-                                : Icons.play_arrow_rounded,
-                            color: Colors.white,
-                            size: 28,
-                          ),
-                  ),
+                    // Play / Pause (Foco central del reproductor)
+                    GestureDetector(
+                      onTap: loading ? null : widget.onPlay,
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        width: 52,
+                        height: 52,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: loading
+                              ? Colors.grey.withOpacity(0.2)
+                              : widget.accentColor,
+                          boxShadow: loading
+                              ? []
+                              : [
+                                  BoxShadow(
+                                      color: widget.accentColor.withOpacity(0.4),
+                                      blurRadius: 12)
+                                ],
+                        ),
+                        child: loading
+                            ? const Padding(
+                                padding: EdgeInsets.all(14),
+                                child: CircularProgressIndicator(
+                                    color: Colors.white, strokeWidth: 2.5))
+                            : Padding(
+                                padding: EdgeInsets.only(
+                                  left: widget.midiState.isPlaying ? 0 : 2.5,
+                                ),
+                                child: Icon(
+                                  widget.midiState.isPlaying
+                                      ? Icons.pause_rounded
+                                      : Icons.play_arrow_rounded,
+                                  color: Colors.white,
+                                  size: 28,
+                                ),
+                              ),
+                      ),
+                    ),
+                    // Stop
+                    _GoldIconBtn(
+                      icon: Icons.stop_rounded,
+                      isActive: false,
+                      activeColor: widget.accentColor,
+                      onTap: loading ? null : widget.onStop,
+                      tooltip: 'Detener',
+                      size: 22,
+                    ),
+                    // Selector de velocidad
+                    _GoldIconBtn(
+                      icon: Icons.speed_rounded,
+                      isActive: _showSettings,
+                      activeColor: widget.accentColor,
+                      onTap: loading
+                          ? null
+                          : () => setState(() => _showSettings = !_showSettings),
+                      tooltip: 'Velocidad',
+                      size: 22,
+                    ),
+                  ],
                 ),
-                const SizedBox(width: 8),
-                // Stop
-                _GoldIconBtn(
-                  icon: Icons.stop_rounded,
-                  isActive: false,
-                  activeColor: widget.accentColor,
-                  onTap: loading ? null : widget.onStop,
-                  tooltip: 'Detener',
-                  size: 22,
-                ),
-                const SizedBox(width: 8),
-                _GoldIconBtn(
-                  icon: Icons.tune_rounded,
-                  isActive: false,
-                  activeColor: widget.accentColor,
-                  onTap: loading ? null : () => _abrirMezcladorModal(context),
-                  tooltip: 'Mezclador de voces',
-                  size: 22,
-                ),
-              ],
+              ),
             ),
 
             // Sección Expandible de Ajustes
@@ -2977,8 +2903,11 @@ class _GoldIconBtn extends StatelessWidget {
       message: tooltip,
       child: GestureDetector(
         onTap: onTap,
+        behavior: HitTestBehavior.opaque,
         child: Container(
-          padding: const EdgeInsets.all(10),
+          width: 42,
+          height: 42,
+          alignment: Alignment.center,
           decoration: BoxDecoration(
             color:
                 isActive ? activeColor.withOpacity(0.15) : Colors.transparent,

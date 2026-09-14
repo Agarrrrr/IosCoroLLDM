@@ -1,6 +1,7 @@
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -147,6 +148,60 @@ class PremiumDialog extends ConsumerWidget {
                   ],
                 ),
               ],
+            ],
+            if (state.appUserId != null && state.appUserId!.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              const Divider(height: 1),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          strings.t('ID de Cuenta / Soporte', 'Account / Support ID'),
+                          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                fontSize: 10,
+                                color: Theme.of(context).colorScheme.onSurfaceVariant,
+                              ),
+                        ),
+                        const SizedBox(height: 2),
+                        SelectableText(
+                          state.appUserId!,
+                          style: const TextStyle(
+                            fontFamily: 'monospace',
+                            fontSize: 10,
+                            letterSpacing: -0.2,
+                          ),
+                          maxLines: 1,
+                        ),
+                      ],
+                    ),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.copy_rounded, size: 16),
+                    tooltip: strings.t('Copiar ID', 'Copy ID'),
+                    onPressed: () async {
+                      await Clipboard.setData(ClipboardData(text: state.appUserId!));
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              strings.t(
+                                'ID copiado al portapapeles',
+                                'ID copied to clipboard',
+                              ),
+                            ),
+                            duration: const Duration(seconds: 2),
+                            behavior: SnackBarBehavior.floating,
+                          ),
+                        );
+                      }
+                    },
+                  ),
+                ],
+              ),
             ],
             if (state.error != null) ...[
               const SizedBox(height: 12),

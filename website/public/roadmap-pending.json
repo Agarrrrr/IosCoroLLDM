@@ -1,63 +1,44 @@
 {
-  "generatedAt": "2026-09-06T14:08:42.660Z",
+  "generatedAt": "2026-09-14T21:33:48.812Z",
   "items": [
     {
-      "id": "usmc_64b537b021b21cae026058ce",
-      "name": "Los Convidados",
-      "language": "es",
+      "id": "usmc_36b6c58c5058c8c573",
+      "name": "Redeem my Soul",
+      "language": "en",
       "themes": [
-        "Esperanza"
+        "Passion"
       ]
     },
     {
-      "id": "local_apk_1781321072062_150",
-      "name": "Quiero Decirle Que le Amo",
-      "language": "es",
-      "themes": [
-        "Elección",
-        "Reconocimiento"
-      ]
-    },
-    {
-      "id": "bd81c242-20e5-4441-a30c-686ccb7d17c7",
-      "name": "Guiado Por su Mano",
+      "id": "usmc_64b5635a21b21cae02605f0c",
+      "name": "Mi Alma Reconoce su Elección",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "usmc_10fc9c696e50eb62c1454df6",
-      "name": "Dios Está Aquí",
+      "id": "10c9e50d-d4aa-4ae1-8170-91c7f5f83813",
+      "name": "Señor Jesus tu Eres mi Esperanza",
       "language": "es",
       "themes": [
-        "Alabanza",
-        "Confianza"
+        "Gratitud"
       ]
     },
     {
-      "id": "usmc_661dd237d6b0cc15aeab112a",
-      "name": "El Ejército de Dios",
+      "id": "usmc_6f4eeb050b8653c907068afe",
+      "name": "Bendice a mi Señor",
       "language": "es",
       "themes": [
-        "Lucha"
+        "Petición"
       ]
     },
     {
-      "id": "usmc_6814a08c520c8624329efd61",
-      "name": "¿quién Como Tú, oh Jehová?",
+      "id": "usmc_1342f19672712e9373bbaff2",
+      "name": "A Jesucristo Rendid",
       "language": "es",
       "themes": [
-        "Alabanza",
-        "Adoración"
-      ]
-    },
-    {
-      "id": "usmc_eaa6123f175fc7cddb",
-      "name": "Fue un Seis de Abril",
-      "language": "es",
-      "themes": [
-        "Centenario"
+        "Alabanza"
       ]
     },
     {
@@ -70,90 +51,48 @@
       ]
     },
     {
-      "id": "usmc_69cb3e521363ac9e6f6196de",
-      "name": "The Light Shone Once Again",
-      "language": "en",
-      "themes": [
-        "Restoration of the Church",
-        "Centennial"
-      ]
-    },
-    {
-      "id": "usmc_64b3e8319631ba687d6306a8",
-      "name": "Batallon, Adelante!",
-      "language": "es",
-      "themes": [
-        "Obra",
-        "Juventud"
-      ]
-    },
-    {
-      "id": "usmc_64b580d621b21cae0260616d",
-      "name": "Un Día tu Luz Llegó",
+      "id": "usmc_a84621411143c864d6",
+      "name": "Mi Ejemplo a Seguir",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "usmc_73e78e367a3fc7a889",
-      "name": "Eres Luz",
+      "id": "usmc_68148c09520c8624329efb4b",
+      "name": "Vamos Todos Con Valor",
+      "language": "es",
+      "themes": [
+        "Lucha"
+      ]
+    },
+    {
+      "id": "34f3f39a-e922-46c7-b266-23c731d68582",
+      "name": "Decreto de Gloria",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "local_apk_1781321072025_209",
-      "name": "Mujer Virtuosa",
+      "id": "local_apk_1781321071914_582",
+      "name": "El Amor de un Padre",
       "language": "es",
       "themes": [
-        "17 De Diciembre"
+        "Oración Apostólica"
       ]
     },
     {
-      "id": "usmc_661dd3bdd6b0cc15aeab117a",
-      "name": "Señor, Tú Eres mi Refugio",
-      "language": "es",
-      "themes": [
-        "Confianza"
-      ]
-    },
-    {
-      "id": "usmc_c18d6b2f140607c5656f2c8b",
-      "name": "Níveas Ropas",
-      "language": "es",
-      "themes": [
-        "Esperanza"
-      ]
-    },
-    {
-      "id": "local_apk_1781321071947_266",
-      "name": "Fecha Inolvidable",
-      "language": "es",
-      "themes": [
-        "6 De Abril"
-      ]
-    },
-    {
-      "id": "local_apk_1781321072148_98",
-      "name": "Un Torrente de Gracia",
-      "language": "es",
-      "themes": [
-        "Amor"
-      ]
-    },
-    {
-      "id": "usmc_68148ac5520c8624329efae7",
-      "name": "Contentos Por tu Gracia ",
+      "id": "usmc_a22328c1e186a51031b36f08",
+      "name": "Más Esplendente Que el Sol",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "usmc_15482e5f3112d58ce8",
-      "name": "Santo Siervo de Dios",
+      "id": "usmc_d67f0f110f42d58cda",
+      "name": "Que Grato es Llevar",
       "language": "es",
       "themes": [
         "Alabanza",
@@ -161,11 +100,67 @@
       ]
     },
     {
-      "id": "usmc_647b7319793a334d51fb6c72",
-      "name": "O Jesus, i Have Promised",
+      "id": "usmc_feabeaba2fd1c92173",
+      "name": "Vamos!",
+      "language": "es",
+      "themes": [
+        "Lucha"
+      ]
+    },
+    {
+      "id": "usmc_f7f3a4bd92b3c848c7",
+      "name": "La Oración de tu Amigo",
+      "language": "es",
+      "themes": [
+        "Oración Apostólica"
+      ]
+    },
+    {
+      "id": "usmc_86524a4aaaa6d58cdd",
+      "name": "Que el Señor le Guarde",
+      "language": "es",
+      "themes": [
+        "14 de Febrero"
+      ]
+    },
+    {
+      "id": "usmc_64b5e7bd21b21cae02606632",
+      "name": "Mi Esperanza es en ti",
+      "language": "es",
+      "themes": [
+        "Confianza"
+      ]
+    },
+    {
+      "id": "8675a914-5f93-47ab-bc44-f057c729ecd4",
+      "name": "Hogar de Mis Recuerdos",
+      "language": "es",
+      "themes": [
+        "Esperanza"
+      ]
+    },
+    {
+      "id": "e485ddef-4ea0-43f7-97d5-2d70475a69e0",
+      "name": "La Razón de mi Vivir",
+      "language": "es",
+      "themes": [
+        "Elección"
+      ]
+    },
+    {
+      "id": "usmc_681486be520c8624329ef9c7",
+      "name": "Busca a tu Creador",
+      "language": "es",
+      "themes": [
+        "Exhortación"
+      ]
+    },
+    {
+      "id": "usmc_e0008f54b892c098b19049d8",
+      "name": "The Prayer of The Apostle",
       "language": "en",
       "themes": [
-        "Intercession"
+        "Apostolic Intercession"
       ]
     }
   ]

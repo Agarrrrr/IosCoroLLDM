@@ -1,11 +1,8 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:math';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:hive/hive.dart';
 
 class AdUnitIds {
   static String get banner {
@@ -63,13 +60,9 @@ class AdsService with WidgetsBindingObserver {
   bool _showingFullScreen = false;
   AppOpenAd? _appOpen;
   DateTime? _appOpenLoadedAt;
-  DateTime? _lastAppOpenShownAt;
-  DateTime? _lastFullScreenShownAt;
   InterstitialAd? _interstitial;
   RewardedAd? _rewarded;
   final ValueNotifier<bool> ready = ValueNotifier(false);
-
-  Box get _box => Hive.box('monetization');
 
   Future<void> initialize({required bool isPremium}) async {
     _premium = isPremium;
@@ -161,11 +154,6 @@ class AdsService with WidgetsBindingObserver {
       _loadAppOpen();
       return;
     }
-    if (_lastAppOpenShownAt != null &&
-        DateTime.now().difference(_lastAppOpenShownAt!) <
-            const Duration(minutes: 2)) {
-      return;
-    }
     final ad = _appOpen;
     if (ad == null) return;
     _appOpen = null;
@@ -182,9 +170,6 @@ class AdsService with WidgetsBindingObserver {
         _loadAppOpen();
       },
     );
-    final now = DateTime.now();
-    _lastAppOpenShownAt = now;
-    _lastFullScreenShownAt = now;
     await ad.show();
   }
 
@@ -201,25 +186,9 @@ class AdsService with WidgetsBindingObserver {
   }
 
   Future<void> onPdfOpened() async {
-    if (_premium || !_initialized) return;
-    final count = ((_box.get('pdf_open_count') as int?) ?? 0) + 1;
-    final threshold = (_box.get('pdf_ad_threshold') as int?) ?? 5;
-    if (count < threshold) {
-      await _box.put('pdf_open_count', count);
-      return;
-    }
-    await _box.put('pdf_open_count', 0);
-    await _box.put('pdf_ad_threshold', 5 + Random().nextInt(4));
-
-    // Respetar cooldown de 3 minutos entre anuncios a pantalla completa
-    if (_lastFullScreenShownAt != null &&
-        DateTime.now().difference(_lastFullScreenShownAt!) <
-            const Duration(minutes: 3)) {
-      return;
-    }
-
+    if (_premium || !_initialized || _showingFullScreen) return;
     final ad = _interstitial;
-    if (ad == null || _showingFullScreen) {
+    if (ad == null) {
       _loadInterstitial();
       return;
     }
@@ -237,32 +206,15 @@ class AdsService with WidgetsBindingObserver {
         _loadInterstitial();
       },
     );
-    _lastFullScreenShownAt = DateTime.now();
     await ad.show();
   }
 
   /// Llamar cuando un export de audio fue exitoso (no si fue cancelado).
   /// Muestra un anuncio intersticial de fondo sin bloquear la UI.
   Future<void> onExportCompleted() async {
-    if (_premium || !_initialized) return;
-    final count = ((_box.get('export_ad_count') as int?) ?? 0) + 1;
-    final threshold = (_box.get('export_ad_threshold') as int?) ?? 2;
-    if (count < threshold) {
-      await _box.put('export_ad_count', count);
-      return;
-    }
-    await _box.put('export_ad_count', 0);
-    await _box.put('export_ad_threshold', 1 + Random().nextInt(3));
-
-    // Respetar cooldown de 3 minutos entre anuncios a pantalla completa
-    if (_lastFullScreenShownAt != null &&
-        DateTime.now().difference(_lastFullScreenShownAt!) <
-            const Duration(minutes: 3)) {
-      return;
-    }
-
+    if (_premium || !_initialized || _showingFullScreen) return;
     final ad = _interstitial;
-    if (ad == null || _showingFullScreen) {
+    if (ad == null) {
       _loadInterstitial();
       return;
     }
@@ -280,7 +232,6 @@ class AdsService with WidgetsBindingObserver {
         _loadInterstitial();
       },
     );
-    _lastFullScreenShownAt = DateTime.now();
     await ad.show();
   }
 

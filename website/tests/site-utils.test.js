@@ -55,8 +55,8 @@ describe('site navigation and metadata', () => {
     const release = prerenderContentFor('novedades', 'es')
     assert.equal(product.h1, copy.en.capabilitiesTitle)
     assert.ok(product.faq.length > 0)
-    assert.equal(release.h1, 'Versión 2.5.2')
-    assert.ok(release.details.includes('Te Alabaré'))
+    assert.equal(release.h1, 'Versión 3.0.0')
+    assert.ok(release.details.some((d) => d.includes('A Los Pies Del Salvador')))
   })
 })
 

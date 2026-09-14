@@ -16,6 +16,7 @@ class SplashScreen extends ConsumerStatefulWidget {
 
 class _SplashScreenState extends ConsumerState<SplashScreen> {
   Timer? _timer;
+  bool _closing = false;
 
   @override
   void initState() {
@@ -23,9 +24,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       FlutterNativeSplash.remove();
     });
-    _timer = Timer(const Duration(milliseconds: 1300), () {
+    // Inicia un fade out suave antes de salir
+    _timer = Timer(const Duration(milliseconds: 1200), () {
       if (mounted) {
-        context.go('/');
+        setState(() => _closing = true);
+        Future.delayed(const Duration(milliseconds: 350), () {
+          if (mounted) context.go('/');
+        });
       }
     });
   }
@@ -53,77 +58,79 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
       backgroundColor: theme.scaffoldBackgroundColor,
       body: SafeArea(
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Spacer(flex: 3),
-              Container(
-                width: 130,
-                height: 130,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: accentColor.withValues(alpha: isDark ? 0.28 : 0.18),
-                      blurRadius: 36,
-                      spreadRadius: 8,
+          child: AnimatedOpacity(
+            opacity: _closing ? 0.0 : 1.0,
+            duration: const Duration(milliseconds: 320),
+            curve: Curves.easeOut,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Spacer(flex: 3),
+                // Emblema con difuminado suave sin saltos
+                Container(
+                  width: 124,
+                  height: 124,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: accentColor.withValues(alpha: isDark ? 0.20 : 0.12),
+                        blurRadius: 32,
+                        spreadRadius: 6,
+                      ),
+                    ],
+                  ),
+                  child: Image.asset(
+                    'assets/brand/emblem-transparent.png',
+                    fit: BoxFit.contain,
+                  ),
+                )
+                    .animate()
+                    .fadeIn(duration: 650.ms, curve: Curves.easeInOut),
+                const SizedBox(height: 26),
+                // Título institucional sobrio
+                Text(
+                  'CORO LLDM',
+                  style: GoogleFonts.cinzel(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 4.0,
+                    color: titleColor,
+                  ),
+                )
+                    .animate()
+                    .fadeIn(delay: 200.ms, duration: 600.ms, curve: Curves.easeInOut),
+                const SizedBox(height: 8),
+                // Subtítulo
+                Text(
+                  'HIMNOS & PARTITURAS',
+                  style: GoogleFonts.inter(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    letterSpacing: 3.2,
+                    color: subtitleColor,
+                  ),
+                )
+                    .animate()
+                    .fadeIn(delay: 350.ms, duration: 550.ms, curve: Curves.easeInOut),
+                const Spacer(flex: 2),
+                // Barra de progreso minimalista teñida con el color de resalte
+                SizedBox(
+                  width: 64,
+                  height: 2.5,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(3),
+                    child: LinearProgressIndicator(
+                      backgroundColor: accentColor.withValues(alpha: 0.15),
+                      valueColor: AlwaysStoppedAnimation<Color>(accentColor),
                     ),
-                  ],
-                ),
-                child: Image.asset(
-                  'assets/brand/emblem-transparent.png',
-                  fit: BoxFit.contain,
-                ),
-              )
-                  .animate()
-                  .fadeIn(duration: 500.ms, curve: Curves.easeOut)
-                  .scale(
-                    begin: const Offset(0.85, 0.85),
-                    end: const Offset(1.0, 1.0),
-                    duration: 650.ms,
-                    curve: Curves.easeOutBack,
                   ),
-              const SizedBox(height: 28),
-              Text(
-                'CORO LLDM',
-                style: GoogleFonts.cinzel(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 4.0,
-                  color: titleColor,
-                ),
-              )
-                  .animate()
-                  .fadeIn(delay: 200.ms, duration: 450.ms)
-                  .slideY(begin: 0.15, end: 0, duration: 450.ms, curve: Curves.easeOut),
-              const SizedBox(height: 8),
-              Text(
-                'HIMNOS & PARTITURAS',
-                style: GoogleFonts.inter(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 3.2,
-                  color: subtitleColor,
-                ),
-              )
-                  .animate()
-                  .fadeIn(delay: 350.ms, duration: 450.ms),
-              const Spacer(flex: 2),
-              SizedBox(
-                width: 72,
-                height: 3,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(3),
-                  child: LinearProgressIndicator(
-                    backgroundColor: accentColor.withValues(alpha: 0.18),
-                    valueColor: AlwaysStoppedAnimation<Color>(accentColor),
-                  ),
-                ),
-              )
-                  .animate()
-                  .fadeIn(delay: 450.ms, duration: 400.ms),
-              const Spacer(flex: 1),
-            ],
+                )
+                    .animate()
+                    .fadeIn(delay: 450.ms, duration: 500.ms, curve: Curves.easeInOut),
+                const Spacer(flex: 1),
+              ],
+            ),
           ),
         ),
       ),
