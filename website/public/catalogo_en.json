@@ -874,7 +874,7 @@
     ],
     "es_privado": false,
     "midi_archivo": "jehova-te-bendiga-y-te-guarde-1780108861957.mid",
-    "vinculo_idioma": "350d447f-1aea-455a-97b4-d48162d7b0ec",
+    "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "en",
     "idioma": "en"
@@ -1734,7 +1734,7 @@
     "nombre": "I Will Follow You",
     "archivo": "i-will-follow-you-1784056530843.pdf",
     "midi_archivo": null,
-    "vinculo_idioma": "usmc_64b5ea7621b21cae026066c9",
+    "vinculo_idioma": "aee16528-1068-4d94-bd67-18920f9a596f",
     "temas": [
       "Grace",
       "Trust"
@@ -2629,7 +2629,7 @@
       "Advent of the Lord"
     ],
     "es_privado": false,
-    "vinculo_idioma": "usmc_64b5fb7921b21cae02606bb3",
+    "vinculo_idioma": "41c7944f-56f9-4b7f-baa8-832928225fd7",
     "coro_id": "local",
     "midi_archivo": "sunset-1783360596278.mid",
     "_idioma": "en",
@@ -3033,7 +3033,7 @@
     ],
     "es_privado": false,
     "midi_archivo": "la-luz-de-un-apostol-1780008930368.mid",
-    "vinculo_idioma": "ec542b1f-c043-4175-b119-025f3cac0aef",
+    "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "en",
     "idioma": "en"
@@ -3269,7 +3269,7 @@
     ],
     "es_privado": false,
     "escaneado": true,
-    "vinculo_idioma": null,
+    "vinculo_idioma": "18990049-2417-4fe9-8b60-61d8fd1754f8",
     "midi_archivo": null,
     "coro_id": "local",
     "_idioma": "en",
@@ -3658,7 +3658,7 @@
       "Holy Supper"
     ],
     "es_privado": false,
-    "vinculo_idioma": "d16ce5cd-1e4a-4e40-b906-a71b990a94d5",
+    "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "en",
     "idioma": "en"
@@ -3926,7 +3926,7 @@
     ],
     "es_privado": false,
     "midi_archivo": "al-sonar-de-la-trompeta-1779144395257.mid",
-    "vinculo_idioma": "5e141f15-749d-49af-9287-d646f0ad7663",
+    "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "en",
     "idioma": "en"

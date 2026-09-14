@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:coro_lldm/core/security/file_crypto.dart';
 import 'package:coro_lldm/core/midi/midi_engine.dart';
@@ -238,6 +239,69 @@ void main() {
     expect(dense, lessThan(loud));
   });
 
+  test('el reproductor MIDI conserva el aumento maestro solicitado', () {
+    expect(MidiEngine.playbackMasterBoostDb, 15.0);
+  });
+
+  test('exportar una voz no conserva las notas de la pista de tempo', () {
+    final midi = Uint8List.fromList([
+      ...'MThd'.codeUnits,
+      0,
+      0,
+      0,
+      6,
+      0,
+      1,
+      0,
+      2,
+      0,
+      96,
+      ..._midiTrack([
+        0,
+        0xFF,
+        0x51,
+        3,
+        7,
+        0xA1,
+        0x20,
+        0,
+        0x90,
+        60,
+        80,
+        96,
+        0x80,
+        60,
+        0,
+        0,
+        0xFF,
+        0x2F,
+        0,
+      ]),
+      ..._midiTrack([
+        0,
+        0x90,
+        67,
+        80,
+        96,
+        0x80,
+        67,
+        0,
+        0,
+        0xFF,
+        0x2F,
+        0,
+      ]),
+    ]);
+
+    final selected = MidiExportService.midiForSelectedTrack(midi, 1);
+    final song = NativeMidiParser.parse(selected);
+
+    expect(song.tracks, hasLength(1));
+    expect(song.tracks.single.notes, hasLength(1));
+    expect(song.tracks.single.notes.single.note, 67);
+    expect(song.tempoBpm, 120);
+  });
+
   test('los nombres públicos de exportación no exponen identificadores', () {
     final canto = Canto(
       id: '64b5ff8d21b21cae02606cab',
@@ -261,3 +325,12 @@ void main() {
     );
   });
 }
+
+List<int> _midiTrack(List<int> payload) => [
+      ...'MTrk'.codeUnits,
+      0,
+      0,
+      0,
+      payload.length,
+      ...payload,
+    ];

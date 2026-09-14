@@ -1,11 +1,37 @@
-import { ArrowRight, BookOpen, Headphones, Music2, Play, Search, Sparkles, Users, WifiOff } from 'lucide-react'
+import { ArrowRight, BookOpen, Headphones, Play, Search, Sparkles, Users, WifiOff, X } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import { APP_STORE, PLAY_STORE } from '../app-config'
 import { INTERACTIVE_DEMO_URL } from '../site-data'
-import { demoPreviewRows, phonePreviewRows } from '../content/mockup'
+import { demoPreviewRows } from '../content/mockup'
 import { AppleLogo, DemoRow, Feature, GooglePlayLogo, Metric, SectionIntro } from './ui.jsx'
 
-export function HomePage({ brandName, catalogStats, lang, t }) {
+function ResponsiveImage({ alt, assetUrl, height = '1350', image, priority = false, width = '1080' }) {
+  return (
+    <picture>
+      <source media="(max-width: 620px)" srcSet={assetUrl(`site-media/${image}-480.webp`)} />
+      <img
+        alt={alt}
+        decoding="async"
+        fetchPriority={priority ? 'high' : undefined}
+        height={height}
+        loading={priority ? 'eager' : 'lazy'}
+        src={assetUrl(`site-media/${image}-960.webp`)}
+        width={width}
+      />
+    </picture>
+  )
+}
+
+export function HomePage({ assetUrl, brandName, catalogStats, lang, t }) {
   const locale = lang === 'es' ? 'es-MX' : 'en-US'
+  const [expandedImage, setExpandedImage] = useState(null)
+  const heroImage = lang === 'en' ? 'hero-tlotw-choir' : 'hero-coro-lldm'
+  const featureImages = ['feature-catalog', 'feature-topics', 'feature-score', 'feature-voices', 'feature-annotations']
+  useEffect(() => {
+    const closeOnEscape = (event) => event.key === 'Escape' && setExpandedImage(null)
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [])
   return (
     <>
       <section className="hero container" id="inicio">
@@ -36,34 +62,14 @@ export function HomePage({ brandName, catalogStats, lang, t }) {
         </div>
         <div className="hero-visual" aria-label={t('appPreviewLabel')}>
           <div className="glow" />
-          <div className="phone-card">
-            <div className="phone-top">
-              <span>9:41</span>
-              <span>● ● ▰</span>
-            </div>
-            <div className="phone-title">
-              <span>{t('phoneTitle')}</span>
-              <Music2 size={19} />
-            </div>
-            <div className="phone-search">
-              <Search size={15} /> {t('phoneSearch')}
-            </div>
-            {phonePreviewRows.map((song) => (
-              <div className="phone-song" key={song.title}>
-                <span className="song-accent" />
-                <div>
-                  <strong>{song.title}</strong>
-                  <small>{song.category}</small>
-                </div>
-                <span className="music-mark">{song.marker}</span>
-              </div>
-            ))}
-            <div className="phone-bottom">
-              <span>⌂</span>
-              <span className="active">♫</span>
-              <span>⚙</span>
-            </div>
-          </div>
+          <button
+            className="hero-app-shot image-trigger"
+            type="button"
+            onClick={() => setExpandedImage(heroImage)}
+            aria-label={t('enlargeImage')}
+          >
+            <ResponsiveImage alt={t('appPreviewLabel')} assetUrl={assetUrl} image={heroImage} priority />
+          </button>
           <div className="floating-badge badge-a">
             <Headphones size={15} /> {t('voiceAudio')}
           </div>
@@ -86,7 +92,36 @@ export function HomePage({ brandName, catalogStats, lang, t }) {
           <Feature icon={<WifiOff />} number="03" title={t('f3')} text={t('f3c')} />
           <Feature icon={<Users />} number="04" title={t('f4')} text={t('f4c')} />
         </div>
+        <div className="feature-gallery" aria-label={t('appPreviewLabel')}>
+          {featureImages.map((image) => (
+            <button
+              className="feature-gallery-card image-trigger"
+              key={image}
+              type="button"
+              onClick={() => setExpandedImage(image)}
+              aria-label={t('enlargeImage')}
+            >
+              <ResponsiveImage alt={t('appPreviewLabel')} assetUrl={assetUrl} image={image} />
+            </button>
+          ))}
+        </div>
       </section>
+      {expandedImage && (
+        <div
+          className="image-lightbox"
+          role="dialog"
+          aria-label={t('appPreviewLabel')}
+          aria-modal="true"
+          onMouseDown={() => setExpandedImage(null)}
+        >
+          <button className="image-lightbox-close" type="button" onClick={() => setExpandedImage(null)} aria-label={t('closeImage')}>
+            <X aria-hidden="true" />
+          </button>
+          <div className="image-lightbox-content" onMouseDown={(event) => event.stopPropagation()}>
+            <ResponsiveImage alt={t('appPreviewLabel')} assetUrl={assetUrl} image={expandedImage} priority />
+          </div>
+        </div>
+      )}
       <section className="demo-band" id="demo">
         <div className="container demo-layout">
           <div>

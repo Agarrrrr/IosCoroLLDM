@@ -21,6 +21,7 @@ import 'package:coro_lldm/models/canto.dart';
 import 'package:coro_lldm/core/midi/midi_engine.dart';
 import 'package:coro_lldm/core/midi/midi_export_service.dart';
 import 'package:coro_lldm/core/storage/android_file_saver.dart';
+import 'package:coro_lldm/core/storage/whatsapp_audio_share.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
@@ -1111,10 +1112,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       } else {
         final mp3Name = MidiExportService.displayFileName(canto, voice: voice);
         final shareMp3 = await _prepareShareFile(mp3, mp3Name);
-        await Share.shareXFiles(
-          [XFile(shareMp3.path, name: mp3Name, mimeType: 'audio/mpeg')],
-          sharePositionOrigin: _shareButtonRect(),
-        );
+        final sentToWhatsApp = await WhatsAppAudioShare.share([shareMp3]);
+        if (!sentToWhatsApp) {
+          await _shareMp3Files([shareMp3], [mp3Name]);
+        }
         await ref.read(monetizationProvider.notifier).consumeAudioExport();
         unawaited(AdsService.instance.onExportCompleted());
       }
@@ -1231,17 +1232,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           for (var i = 0; i < files.length; i++)
             _prepareShareFile(files[i], names[i]),
         ]);
-        await Share.shareXFiles(
-          [
-            for (var i = 0; i < shareFiles.length; i++)
-              XFile(
-                shareFiles[i].path,
-                name: names[i],
-                mimeType: 'audio/mpeg',
-              ),
-          ],
-          sharePositionOrigin: _shareButtonRect(),
-        );
+        final sentToWhatsApp = await WhatsAppAudioShare.share(shareFiles);
+        if (!sentToWhatsApp) {
+          await _shareMp3Files(shareFiles, names);
+        }
         await ref.read(monetizationProvider.notifier).consumeAudioExport();
         unawaited(AdsService.instance.onExportCompleted());
       }
@@ -2266,6 +2260,17 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     await shareDir.create(recursive: true);
     final target = File('${shareDir.path}/$displayName');
     return source.copy(target.path);
+  }
+
+  Future<bool> _shareMp3Files(List<File> files, List<String> names) async {
+    await Share.shareXFiles(
+      [
+        for (var index = 0; index < files.length; index++)
+          XFile(files[index].path, name: names[index], mimeType: 'audio/mpeg'),
+      ],
+      sharePositionOrigin: _shareButtonRect(),
+    );
+    return true;
   }
 }
 

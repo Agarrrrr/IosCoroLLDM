@@ -12,7 +12,7 @@ export function SiteFooter({ appStore, assetUrl, brandName, goTo, lang, playStor
     <footer className="footer">
       <div className="container footer-top">
         <a className="brand" href={routePath('inicio')} onClick={goTo('inicio')}>
-          <img src={assetUrl('logo.png')} alt="" width="32" height="32" />
+          <img src={assetUrl('site-media/brand-mark.webp')} alt="" width="32" height="32" />
           <span>{brandName}</span>
         </a>
         <div className="footer-links">

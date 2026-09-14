@@ -5,6 +5,7 @@ node_modules
 test-results
 playwright-report
 coverage
+.reports
 public/catalogo*.json
 public/roadmap-pending.json
 public/catalog-validation.json

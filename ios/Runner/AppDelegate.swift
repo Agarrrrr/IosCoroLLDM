@@ -121,7 +121,8 @@ import UserNotifications
 
         try sampler.loadInstrument(at: sfURL)
         // AVAudioUnitSampler expresa la ganancia maestra en decibelios.
-        sampler.masterGain = 10.0
+        // Coincide con el reproductor y eleva la exportación 5 dB adicionales.
+        sampler.masterGain = 15.0
 
         let sequencer = AVAudioSequencer(audioEngine: engine)
         try sequencer.load(from: midiURL, options: [])

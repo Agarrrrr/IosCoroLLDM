@@ -32,13 +32,9 @@ export function useAppController() {
   const [languageAnimating, setLanguageAnimating] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [contactTopic, setContactTopic] = useState(null)
-  const [contactName, setContactName] = useState('')
-  const [contactEmail, setContactEmail] = useState('')
-  const [contactMessage, setContactMessage] = useState('')
   const [feedback, setFeedback] = useState('')
   const demoRequest = useRef(0)
   const demoPlayer = useRef(null)
-  const contactMessageRef = useRef(null)
   const feedbackTimer = useRef(null)
   const navToggleRef = useRef(null)
   const timers = useRef(new Set())
@@ -137,11 +133,7 @@ export function useAppController() {
   }
   const chooseContactTopic = (topic) => {
     setContactTopic(topic)
-    requestFrame(() => contactMessageRef.current?.focus())
-  }
-  const submitContact = (event) => {
-    event.preventDefault()
-    announce(contactName.trim() && contactEmail.trim() && contactMessage.trim() ? t('contactDeliveryPending') : t('contactIncomplete'))
+    requestFrame(() => pageDocument()?.querySelector('.contact-direct .button')?.focus())
   }
   const goTo = (target) => (event) => {
     event.preventDefault()
@@ -202,10 +194,6 @@ export function useAppController() {
     catalogStats,
     changeDemo,
     chooseContactTopic,
-    contactEmail,
-    contactMessage,
-    contactMessageRef,
-    contactName,
     contactTopic,
     dark,
     displayedSongs,
@@ -226,15 +214,11 @@ export function useAppController() {
     query,
     roadmapLoading,
     roadmapPending,
-    setContactEmail,
-    setContactMessage,
-    setContactName,
     setFilter,
     setMobileOpen,
     setQuery,
     setVisibleCount,
     stopDemo,
-    submitContact,
     t,
     themeAnimating,
     toggleDemo,

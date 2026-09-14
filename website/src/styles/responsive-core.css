@@ -57,7 +57,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 1;
-  background: url('/404-repair.png') center/cover no-repeat;
+  background: url('/404-repair.webp') center/cover no-repeat;
   border: 0;
   border-radius: 28px;
   box-shadow: 0 20px 60px var(--shadow);
@@ -69,7 +69,7 @@
 }
 .site.dark .not-found::after {
   border-color: transparent;
-  background-image: linear-gradient(rgba(22, 33, 31, 0.62), rgba(22, 33, 31, 0.62)), url('/404-repair.png');
+  background-image: linear-gradient(rgba(22, 33, 31, 0.62), rgba(22, 33, 31, 0.62)), url('/404-repair.webp');
   background-blend-mode: normal;
   filter: saturate(0.84);
 }
@@ -96,6 +96,10 @@
   .feature-grid,
   .song-grid {
     grid-template-columns: 1fr;
+  }
+  .feature-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   .section {
     padding: 88px 0;
@@ -247,6 +251,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 34px 24px;
   }
+  .feature-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .song-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -290,6 +297,9 @@
     min-height: 440px;
   }
   .phone-card {
+    transform: rotate(2deg) scale(0.88);
+  }
+  .hero-app-shot {
     transform: rotate(2deg) scale(0.88);
   }
   .section,

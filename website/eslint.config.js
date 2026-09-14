@@ -48,7 +48,16 @@ export default [
     rules: { 'no-unused-vars': 'off', 'react-refresh/only-export-components': 'off' },
   },
   {
-    files: ['preview-worker/**/*.js'],
-    languageOptions: { globals: { Headers: 'readonly', Response: 'readonly', URL: 'readonly', console: 'readonly' } },
+    files: ['preview-worker/**/*.js', 'contact-worker/**/*.js'],
+    languageOptions: {
+      globals: {
+        Headers: 'readonly',
+        Response: 'readonly',
+        URL: 'readonly',
+        URLSearchParams: 'readonly',
+        console: 'readonly',
+        fetch: 'readonly',
+      },
+    },
   },
 ]

@@ -28,10 +28,10 @@ class MidiExportVoice {
 class MidiExportService {
   MidiExportService._();
 
-  // v3 invalida renders anteriores: el master de exportación ahora tiene
-  // +10 dB respecto de la mezcla original.
-  static const int _exportCacheVersion = 3;
-  static const double _masterBoostLinear = 3.1622776601683795;
+  // v4 invalida renders anteriores: el master de exportación ahora tiene
+  // +15 dB respecto de la mezcla original, cinco más que la versión previa.
+  static const int _exportCacheVersion = 4;
+  static const double _masterBoostLinear = 5.623413251903491;
 
   static Future<List<MidiExportVoice>> voices(Canto canto) async {
     final midi = await OfflineFiles.ensureMidi(canto);
@@ -90,7 +90,7 @@ class MidiExportService {
 
     final exportBytes = trackIndex == null
         ? originalBytes
-        : _midiWithSelectedTrack(originalBytes, trackIndex);
+        : midiForSelectedTrack(originalBytes, trackIndex);
     final durationSeconds = NativeMidiParser.parse(exportBytes).durationSeconds;
     if (!durationSeconds.isFinite || durationSeconds <= 0) {
       throw const FormatException('El MIDI no tiene una duración válida');
@@ -207,7 +207,7 @@ class MidiExportService {
 
     final exportBytes = trackIndex == null
         ? originalBytes
-        : _midiWithSelectedTrack(originalBytes, trackIndex);
+        : midiForSelectedTrack(originalBytes, trackIndex);
     await targetFile.writeAsBytes(exportBytes, flush: true);
     return targetFile;
   }
@@ -229,7 +229,13 @@ class MidiExportService {
     return file;
   }
 
-  static Uint8List _midiWithSelectedTrack(
+  /// Conserva una sola voz y, cuando exista, un mapa de tempo sin notas.
+  ///
+  /// Algunos MIDI mezclan acompañamiento musical dentro de la primera pista
+  /// junto con el tempo. Antes se conservaba esa pista completa al exportar
+  /// una voz, provocando que ésta se oyera solapada. Ahora se retienen solo
+  /// sus eventos de metadatos (tempo, compás, etc.).
+  static Uint8List midiForSelectedTrack(
     Uint8List bytes,
     int selectedTrack,
   ) {
@@ -257,27 +263,133 @@ class MidiExportService {
       offset = end;
     }
 
-    final selected = tracks.where(
-      (track) => track.index == 0 || track.index == selectedTrack,
-    );
-    final selectedList = selected.toList(growable: false);
-    if (!selectedList.any((track) => track.index == selectedTrack)) {
+    final selectedList = tracks
+        .where((track) => track.index == selectedTrack)
+        .toList(growable: false);
+    if (selectedList.isEmpty) {
       throw ArgumentError('La voz seleccionada no existe en el MIDI');
     }
 
+    final outputTracks = <Uint8List>[
+      if (selectedTrack != 0) _metadataOnlyTrack(tracks.first.bytes),
+      selectedList.single.bytes,
+    ];
+
     final header = Uint8List.fromList(bytes.sublist(0, 8 + headerLength));
     // Formato 0 si queda una pista; formato 1 si conservamos tempo + voz.
-    final format = selectedList.length == 1 ? 0 : 1;
+    final format = outputTracks.length == 1 ? 0 : 1;
     header[8] = (format >> 8) & 0xFF;
     header[9] = format & 0xFF;
-    header[10] = (selectedList.length >> 8) & 0xFF;
-    header[11] = selectedList.length & 0xFF;
+    header[10] = (outputTracks.length >> 8) & 0xFF;
+    header[11] = outputTracks.length & 0xFF;
 
     final builder = BytesBuilder(copy: false)..add(header);
-    for (final track in selectedList) {
-      builder.add(track.bytes);
+    for (final track in outputTracks) {
+      builder.add(track);
     }
     return builder.takeBytes();
+  }
+
+  static Uint8List _metadataOnlyTrack(Uint8List track) {
+    if (track.length < 8 ||
+        String.fromCharCodes(track.sublist(0, 4)) != 'MTrk') {
+      throw const FormatException('Pista MIDI inválida');
+    }
+
+    final payload = track.sublist(8);
+    final output = BytesBuilder(copy: false);
+    var offset = 0;
+    var runningStatus = 0;
+    var pendingDelta = 0;
+
+    while (offset < payload.length) {
+      final delta = _readVariableLength(payload, offset);
+      offset = delta.next;
+      pendingDelta += delta.value;
+      if (offset >= payload.length) break;
+
+      final eventStart = offset;
+      final statusByte = payload[offset++];
+      final usesRunningStatus = statusByte < 0x80;
+      final status = usesRunningStatus ? runningStatus : statusByte;
+      if (status == 0) {
+        throw const FormatException('Estado MIDI incompleto');
+      }
+      if (!usesRunningStatus && status >= 0x80 && status <= 0xEF) {
+        runningStatus = status;
+      }
+
+      var keep = false;
+      if (status == 0xFF) {
+        if (offset >= payload.length) {
+          throw const FormatException('Metadato MIDI incompleto');
+        }
+        offset++; // tipo de metadato
+        final length = _readVariableLength(payload, offset);
+        offset = length.next + length.value;
+        keep = true;
+      } else if (status == 0xF0 || status == 0xF7) {
+        final length = _readVariableLength(payload, offset);
+        offset = length.next + length.value;
+        keep = true;
+      } else if (status >= 0x80 && status <= 0xEF) {
+        final command = status & 0xF0;
+        offset += command == 0xC0 || command == 0xD0 ? 1 : 2;
+      } else {
+        throw const FormatException('Evento MIDI no compatible');
+      }
+
+      if (offset > payload.length) {
+        throw const FormatException('Evento MIDI truncado');
+      }
+      if (keep) {
+        _writeVariableLength(output, pendingDelta);
+        output.add(payload.sublist(eventStart, offset));
+        pendingDelta = 0;
+      }
+    }
+
+    final filtered = output.takeBytes();
+    final chunk = BytesBuilder(copy: false)
+      ..add(const [0x4D, 0x54, 0x72, 0x6B])
+      ..add([
+        (filtered.length >> 24) & 0xFF,
+        (filtered.length >> 16) & 0xFF,
+        (filtered.length >> 8) & 0xFF,
+        filtered.length & 0xFF,
+      ])
+      ..add(filtered);
+    return chunk.takeBytes();
+  }
+
+  static ({int value, int next}) _readVariableLength(
+    Uint8List bytes,
+    int offset,
+  ) {
+    var value = 0;
+    for (var count = 0; count < 4; count++) {
+      if (offset >= bytes.length) {
+        throw const FormatException('Valor MIDI truncado');
+      }
+      final byte = bytes[offset++];
+      value = (value << 7) | (byte & 0x7F);
+      if ((byte & 0x80) == 0) return (value: value, next: offset);
+    }
+    throw const FormatException('Valor MIDI inválido');
+  }
+
+  static void _writeVariableLength(BytesBuilder output, int value) {
+    if (value < 0) throw const FormatException('Delta MIDI inválido');
+    final bytes = <int>[value & 0x7F];
+    while (value > 0x7F) {
+      value >>= 7;
+      bytes.add(value & 0x7F);
+    }
+    for (var index = bytes.length - 1; index >= 0; index--) {
+      output.addByte(
+        index == 0 ? bytes[index] : bytes[index] | 0x80,
+      );
+    }
   }
 
   static int _readUint32(Uint8List bytes, int offset) {

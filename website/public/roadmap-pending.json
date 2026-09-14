@@ -1,90 +1,51 @@
 {
-  "generatedAt": "2026-09-06T13:08:36.320Z",
+  "generatedAt": "2026-09-06T14:08:42.660Z",
   "items": [
     {
-      "id": "usmc_64b5ed9e21b21cae02606764",
-      "name": "Amor, oh Cuán Sublime Amor",
+      "id": "usmc_64b537b021b21cae026058ce",
+      "name": "Los Convidados",
       "language": "es",
       "themes": [
-        "Amor",
-        "Gracia"
+        "Esperanza"
       ]
     },
     {
-      "id": "usmc_68148bc9520c8624329efb3b",
-      "name": "Oh mi Jesucristo",
+      "id": "local_apk_1781321072062_150",
+      "name": "Quiero Decirle Que le Amo",
       "language": "es",
       "themes": [
-        "Alabanza"
+        "Elección",
+        "Reconocimiento"
       ]
     },
     {
-      "id": "usmc_5919c9800f52c90600",
-      "name": "Tuyo Señor",
-      "language": "es",
-      "themes": [
-        "Consagración"
-      ]
-    },
-    {
-      "id": "usmc_0383a7901b7dd58c6c",
-      "name": "En tu Campo Señor",
-      "language": "es",
-      "themes": [
-        "Obra"
-      ]
-    },
-    {
-      "id": "usmc_64b5306d21b21cae02605606",
-      "name": "Ahora Soy Muy Feliz",
-      "language": "es",
-      "themes": [
-        "Gratitud"
-      ]
-    },
-    {
-      "id": "usmc_64b58e4321b21cae026062e0",
-      "name": "Yo le Amo",
+      "id": "bd81c242-20e5-4441-a30c-686ccb7d17c7",
+      "name": "Guiado Por su Mano",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "usmc_64b5f7d321b21cae02606a26",
-      "name": "La Grandeza de tu Gloria",
+      "id": "usmc_10fc9c696e50eb62c1454df6",
+      "name": "Dios Está Aquí",
       "language": "es",
       "themes": [
-        "Alabanza"
-      ]
-    },
-    {
-      "id": "local_apk_1781321071941_685",
-      "name": "Era un Doce de Diciembre",
-      "language": "es",
-      "themes": [
-        "12 De Diciembre"
-      ]
-    },
-    {
-      "id": "197232b8-7a49-4ac5-b5c0-c669878e8939",
-      "name": "Con Jesús Estoy",
-      "language": "es",
-      "themes": [
+        "Alabanza",
         "Confianza"
       ]
     },
     {
-      "id": "local_apk_1781321071995_655",
-      "name": "La Preciosa Voz Del Apóstol",
+      "id": "usmc_661dd237d6b0cc15aeab112a",
+      "name": "El Ejército de Dios",
       "language": "es",
       "themes": [
-        "Oración Apostólica"
+        "Lucha"
       ]
     },
     {
-      "id": "usmc_ee70deb59b27d58c73",
-      "name": "Es tu Presencia",
+      "id": "usmc_6814a08c520c8624329efd61",
+      "name": "¿quién Como Tú, oh Jehová?",
       "language": "es",
       "themes": [
         "Alabanza",
@@ -92,77 +53,119 @@
       ]
     },
     {
-      "id": "usmc_68149fbe520c8624329efd41",
-      "name": "La Grandeza de Dios",
+      "id": "usmc_eaa6123f175fc7cddb",
+      "name": "Fue un Seis de Abril",
       "language": "es",
       "themes": [
-        "Gratitud"
+        "Centenario"
       ]
     },
     {
-      "id": "3766125f-f08e-42c5-b072-97043736da33",
-      "name": "Tiempo de Meditacion",
+      "id": "usmc_01718ce61be5d58ce4",
+      "name": "Salmo 23",
       "language": "es",
       "themes": [
-        "Meditación"
+        "Alabanza",
+        "Adoración"
       ]
     },
     {
-      "id": "f248d759-407a-42df-ab47-2667f3208ff9",
-      "name": "La Oración De Amor",
-      "language": "es",
+      "id": "usmc_69cb3e521363ac9e6f6196de",
+      "name": "The Light Shone Once Again",
+      "language": "en",
       "themes": [
-        "Oración Apostólica",
-        "Petición"
+        "Restoration of the Church",
+        "Centennial"
       ]
     },
     {
-      "id": "usmc_64b3e53c9631ba687d630562",
-      "name": "Camino al Calvario",
+      "id": "usmc_64b3e8319631ba687d6306a8",
+      "name": "Batallon, Adelante!",
       "language": "es",
       "themes": [
-        "Pasión"
+        "Obra",
+        "Juventud"
       ]
     },
     {
-      "id": "usmc_64b3e4099631ba687d6304eb",
-      "name": "Señor de Los Cielos",
-      "language": "es",
-      "themes": [
-        "Petición"
-      ]
-    },
-    {
-      "id": "usmc_661dd419d6b0cc15aeab118a",
-      "name": "A Los Pies Del Salvador",
-      "language": "es",
-      "themes": [
-        "Confianza",
-        "Esperanza"
-      ]
-    },
-    {
-      "id": "usmc_64b58a1721b21cae02606226",
-      "name": "Un Gran Consolador",
+      "id": "usmc_64b580d621b21cae0260616d",
+      "name": "Un Día tu Luz Llegó",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "usmc_6559306b6269024850c230fe",
-      "name": "You Gave up Your Life",
-      "language": "en",
+      "id": "usmc_73e78e367a3fc7a889",
+      "name": "Eres Luz",
+      "language": "es",
       "themes": [
-        "Passion"
+        "Elección"
       ]
     },
     {
-      "id": "usmc_97be3ba022331805eea09398",
-      "name": "The Angel's Companion",
+      "id": "local_apk_1781321072025_209",
+      "name": "Mujer Virtuosa",
+      "language": "es",
+      "themes": [
+        "17 De Diciembre"
+      ]
+    },
+    {
+      "id": "usmc_661dd3bdd6b0cc15aeab117a",
+      "name": "Señor, Tú Eres mi Refugio",
+      "language": "es",
+      "themes": [
+        "Confianza"
+      ]
+    },
+    {
+      "id": "usmc_c18d6b2f140607c5656f2c8b",
+      "name": "Níveas Ropas",
+      "language": "es",
+      "themes": [
+        "Esperanza"
+      ]
+    },
+    {
+      "id": "local_apk_1781321071947_266",
+      "name": "Fecha Inolvidable",
+      "language": "es",
+      "themes": [
+        "6 De Abril"
+      ]
+    },
+    {
+      "id": "local_apk_1781321072148_98",
+      "name": "Un Torrente de Gracia",
+      "language": "es",
+      "themes": [
+        "Amor"
+      ]
+    },
+    {
+      "id": "usmc_68148ac5520c8624329efae7",
+      "name": "Contentos Por tu Gracia ",
+      "language": "es",
+      "themes": [
+        "Elección"
+      ]
+    },
+    {
+      "id": "usmc_15482e5f3112d58ce8",
+      "name": "Santo Siervo de Dios",
+      "language": "es",
+      "themes": [
+        "Alabanza",
+        "Adoración"
+      ]
+    },
+    {
+      "id": "usmc_647b7319793a334d51fb6c72",
+      "name": "O Jesus, i Have Promised",
       "language": "en",
       "themes": [
-        "Election"
+        "Intercession"
       ]
     }
   ]

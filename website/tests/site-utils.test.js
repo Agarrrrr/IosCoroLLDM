@@ -45,7 +45,7 @@ describe('site navigation and metadata', () => {
     const seo = seoForPage('producto', 'en')
     assert.equal(seo.url, 'https://lldmcoro.com/en/producto')
     assert.equal(seo.alternates.es, 'https://lldmcoro.com/producto')
-    assert.equal(seo.image, 'https://lldmcoro.com/social-preview-en.png')
+    assert.equal(seo.image, 'https://lldmcoro.com/site-media/social-preview-en.jpg')
     const graph = buildStructuredData({ page: 'producto', lang: 'en', metadata: seo.metadata })['@graph']
     assert.ok(graph.some((entry) => entry['@type'] === 'FAQPage'))
   })

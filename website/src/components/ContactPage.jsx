@@ -1,19 +1,9 @@
-import { ArrowRight, BriefcaseBusiness, HeartHandshake, MessageCircle } from 'lucide-react'
+import { ArrowRight, BriefcaseBusiness, HeartHandshake, Mail, MessageCircle } from 'lucide-react'
 import { ContactRoute } from './ui.jsx'
 
-export function ContactPage({
-  contactEmail,
-  contactMessage,
-  contactMessageRef,
-  contactName,
-  contactTopic,
-  onChooseTopic,
-  onSubmit,
-  setContactEmail,
-  setContactMessage,
-  setContactName,
-  t,
-}) {
+export function ContactPage({ contactTopic, onChooseTopic, t }) {
+  const subject = contactTopic ? t(`contactSubject${contactTopic[0].toUpperCase()}${contactTopic.slice(1)}`) : t('contactSubject')
+  const href = `mailto:contacto@lldmcoro.com?subject=${encodeURIComponent(subject)}`
   return (
     <section className="contact-section container" id="contacto">
       <div className={contactTopic ? 'contact-card has-topic' : 'contact-card choosing-topic'}>
@@ -51,48 +41,14 @@ export function ContactPage({
           </div>
           {!contactTopic && <p className="contact-choose">{t('contactChoose')}</p>}
         </div>
-        {contactTopic && (
-          <div className="contact-form-wrap">
-            <p className="contact-next">{t('contactNext')}</p>
-            <form onSubmit={onSubmit}>
-              <label>
-                {t('name')}
-                <input
-                  value={contactName}
-                  onChange={(event) => setContactName(event.target.value)}
-                  placeholder={t('namePlaceholder')}
-                  autoComplete="name"
-                  required
-                />
-              </label>
-              <label>
-                {t('email')}
-                <input
-                  type="email"
-                  value={contactEmail}
-                  onChange={(event) => setContactEmail(event.target.value)}
-                  placeholder={t('emailPlaceholder')}
-                  autoComplete="email"
-                  required
-                />
-              </label>
-              <label>
-                {t('message')}
-                <textarea
-                  ref={contactMessageRef}
-                  value={contactMessage}
-                  onChange={(event) => setContactMessage(event.target.value)}
-                  placeholder={t('messagePlaceholder')}
-                  rows="5"
-                  required
-                />
-              </label>
-              <button className="button primary" type="submit">
-                {t('send')} <ArrowRight size={16} />
-              </button>
-            </form>
-          </div>
-        )}
+        <div className="contact-direct">
+          <Mail size={19} aria-hidden="true" />
+          <p>{t('contactDirect')}</p>
+          <a href="mailto:contacto@lldmcoro.com">contacto@lldmcoro.com</a>
+          <a className="button primary" href={href}>
+            {t('contactEmailAction')} <ArrowRight size={16} />
+          </a>
+        </div>
       </div>
     </section>
   )

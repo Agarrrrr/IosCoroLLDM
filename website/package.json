@@ -7,6 +7,9 @@
     "sync:catalog": "node scripts/sync-catalog.mjs",
     "render:previews": "node scripts/render-previews.mjs",
     "transcode:previews": "node scripts/transcode-previews.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "prepare:site-media": "node scripts/prepare-site-media.mjs",
+    "generate:social-campaign": "node scripts/generate-social-campaign.mjs",
     "upload:previews": "node scripts/upload-previews.mjs",
     "validate:previews": "node scripts/validate-previews.mjs",
     "predev": "npm run sync:catalog",
@@ -39,6 +42,7 @@
     "eslint-plugin-react-hooks": "7.0.1",
     "eslint-plugin-react-refresh": "0.4.24",
     "prettier": "3.6.2",
+    "sharp": "^0.35.4",
     "vite": "8.2.2",
     "wrangler": "4.127.0"
   }

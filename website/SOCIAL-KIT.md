@@ -1,21 +1,33 @@
-# TLOTW Choir — Social media kit
+# Coro LLDM / TLOTW Choir — Kit Oficial de Identidad y Redes Sociales
 
-Assets prepared for both identities of the project: **TLOTW Choir** in English and **Coro LLDM** in Spanish.
+Materiales oficiales del proyecto bajo la nueva identidad de lujo: **Marfil Vela, Oro Antiguo y Deep Espresso**.
 
-## Assets
+## Sistema Visual Oficial
 
-- `public/social-kit/tlotw-choir-icon.png` — 512 × 512, avatar/profile image.
-- `public/social-kit/tlotw-choir-banner.png` — 1500 × 500, horizontal banner for Facebook, LinkedIn and general profile headers.
-- `public/social-kit/tlotw-choir-promo.png` — 1080 × 1350, portrait promotional post for Instagram and Facebook.
-- `public/social-kit/coro-lldm-banner.png` — 1500 × 500, Spanish horizontal banner.
-- `public/social-kit/coro-lldm-promo.png` — 1080 × 1350, Spanish portrait promotional post.
+- **Fondo Principal (Marfil Vela):** `#F5F0E6`
+- **Oro Metálico Clásico:** `#D4AF37`
+- **Oro Bronce Suave:** `#B08D57`
+- **Deep Espresso (Ancla tipográfica):** `#3B2F2F`
+- **Blanco Puro:** `#FFFFFF`
+- **Símbolo Sagrado:** Libro abierto de cánticos en la base, lira clásica con llama viva central de la fe ('La Luz'), enmarcado por laureles triunfales.
 
-## Visual system
+## Archivos Activos (`public/social-kit/`)
 
-- Deep forest green: `#0C2B24`
-- Warm gold: `#D4AF37`
-- Ivory / paper: `#F7F1E3`
-- Charcoal: `#1B211F`
-- Primary symbol: the official lyre silhouette, without the original blue app square.
+| Uso | Archivo | Dimensiones |
+| :--- | :--- | :--- |
+| **Icono Oficial de App (Squircle)** | `coro-lldm-app-icon-rounded.png` | 1024 × 1024 px (exterior transparente) |
+| **Emblema Vectorial Puro** | `coro-lldm-emblema-transparente.png` | 1024 × 1024 px (fondo 100% transparente) |
+| **Avatar de Perfil Redes** | `coro-lldm-perfil-redes.png` | 512 × 512 px (zona segura circular) |
+| **Banner Oficial YouTube** | `coro-lldm-youtube-banner.png` | 2560 × 1440 px (zona segura 1546 × 423) |
+| **Banner Oficial Facebook** | `coro-lldm-facebook-banner.png` | 1500 × 500 px |
+| **Marca de Agua YouTube** | `coro-lldm-watermark-youtube.png` | 512 × 512 px ("Suscríbete") |
+| **Póster Promocional Oficial** | `coro-lldm-promo.jpg` | 1080 × 1350 px (Instagram/Facebook feed) |
+| **Social Preview Web (ES)** | `coro-lldm-social-preview.jpg` / `public/social-preview.jpg` | 1200 × 630 px (WhatsApp/OG) |
+| **Social Preview Web (EN)** | `tlotw-choir-social-preview.jpg` / `public/social-preview-en.jpg` | 1200 × 630 px (WhatsApp/OG) |
+| **Miniatura YouTube Canto** | `miniatura-youtube-el-aliento-de-mi-ser.jpg` | 16:9 |
+| **Miniatura Reels/TikTok** | `miniatura-reels-tiktok-el-aliento-de-mi-ser.jpg` | 9:16 vertical |
 
-The banner and promotional post use the real score-viewer experience as their product reference. Store badges are included only in the promotional post; links should remain in the post caption or profile bio.
+## Archivo Histórico
+
+Los materiales verdes anteriores se resguardan de forma segura en:  
+`public/social-kit/archivo-identidad-anterior/`

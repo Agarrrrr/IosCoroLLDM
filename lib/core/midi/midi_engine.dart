@@ -114,6 +114,11 @@ class _ScheduledMidiNote {
 /// Motor de audio MIDI 100% Nativo en Flutter utilizando [MidiPro]
 /// (FluidSynth en Android y AVFoundation/AudioUnits en iOS).
 class MidiEngine {
+  /// Ganancia objetivo del reproductor MIDI. Mantiene 0.95 de margen al
+  /// enviarla al sintetizador para preservar los picos de acordes densos.
+  static const double playbackMasterBoostDb = 15.0;
+  static const double _playbackMasterBoostLinear = 5.623413251903491;
+
   static final MidiEngine _instance = MidiEngine._internal();
   factory MidiEngine() => _instance;
   MidiEngine._internal() {
@@ -765,10 +770,10 @@ class MidiEngine {
   }
 
   Future<void> _configureMastering() async {
-    // +10 dB = x3.162 en amplitud. El plugin admite este margen tanto en
-    // Android como en iOS; mantenemos la compresión de velocidad para domar
-    // los acordes densos.
-    await _midiPro.setMasterGain(0.95 * 3.1622776601683795);
+    // +15 dB = x5.623 en amplitud: son +5 dB frente al ajuste anterior.
+    // El plugin admite este margen tanto en Android como en iOS; conservamos
+    // la compresión de velocidad y el 5% de margen para domar acordes densos.
+    await _midiPro.setMasterGain(0.95 * _playbackMasterBoostLinear);
     await _midiPro.setEqualizer(
       enabled: true,
       bassGain: -1.5,

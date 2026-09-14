@@ -1,6 +1,7 @@
 package com.lldm.coro
 
 import android.app.Activity
+import android.content.ClipData
 import android.content.Context
 import android.content.Intent
 import android.media.AudioDeviceCallback
@@ -8,6 +9,7 @@ import android.media.AudioDeviceInfo
 import android.media.AudioManager
 import android.net.Uri
 import android.provider.DocumentsContract
+import androidx.core.content.FileProvider
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodCall
@@ -17,6 +19,7 @@ import java.io.FileInputStream
 
 class MainActivity : FlutterActivity() {
     private val channelName = "com.lldm.coro/file_saver"
+    private val whatsAppAudioShareChannelName = "com.lldm.coro/whatsapp_audio_share"
     private val createFileRequest = 4101
     private val chooseFolderRequest = 4102
     private var pendingResult: MethodChannel.Result? = null
@@ -52,6 +55,17 @@ class MainActivity : FlutterActivity() {
         ).setMethodCallHandler { call, result ->
             if (call.method == "saveFiles") {
                 startSave(call, result)
+            } else {
+                result.notImplemented()
+            }
+        }
+
+        MethodChannel(
+            flutterEngine.dartExecutor.binaryMessenger,
+            whatsAppAudioShareChannelName,
+        ).setMethodCallHandler { call, result ->
+            if (call.method == "shareAudio") {
+                shareAudioToWhatsApp(call, result)
             } else {
                 result.notImplemented()
             }
@@ -116,6 +130,48 @@ class MainActivity : FlutterActivity() {
                 )
             }
             startActivityForResult(intent, chooseFolderRequest)
+        }
+    }
+
+    private fun shareAudioToWhatsApp(call: MethodCall, result: MethodChannel.Result) {
+        val files = call.argument<List<String>>("paths").orEmpty()
+            .map(::File)
+            .filter(File::isFile)
+        if (files.isEmpty()) {
+            result.error("missing_files", "No hay audios para compartir.", null)
+            return
+        }
+
+        try {
+            val authority = "$packageName.coro_fileprovider"
+            val uris = ArrayList<Uri>(files.size)
+            files.forEach { file ->
+                uris.add(FileProvider.getUriForFile(this, authority, file))
+            }
+            val intent = Intent(
+                if (uris.size == 1) Intent.ACTION_SEND else Intent.ACTION_SEND_MULTIPLE,
+            ).apply {
+                type = "audio/mpeg"
+                setPackage("com.whatsapp")
+                addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                clipData = ClipData.newUri(contentResolver, "audio/mpeg", uris.first())
+                for (index in 1 until uris.size) {
+                    clipData.addItem(ClipData.Item(uris[index]))
+                }
+                if (uris.size == 1) {
+                    putExtra(Intent.EXTRA_STREAM, uris.first())
+                } else {
+                    putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris)
+                }
+            }
+            if (intent.resolveActivity(packageManager) == null) {
+                result.success(false)
+                return
+            }
+            startActivity(intent)
+            result.success(true)
+        } catch (error: Exception) {
+            result.error("whatsapp_share_failed", error.message, null)
         }
     }
 

@@ -46,7 +46,7 @@ export function SiteHeader({
     <header className="nav-wrap">
       <nav className="nav container">
         <a className="brand" href={routePath('inicio')} onClick={goTo('inicio')}>
-          <img src={assetUrl('logo.png')} alt={brandName} width="32" height="32" />
+          <img src={assetUrl('site-media/brand-mark.webp')} alt={brandName} width="32" height="32" />
           <span>{brandName}</span>
         </a>
         <div id="primary-navigation" className={mobileOpen ? 'nav-links open' : 'nav-links'}>

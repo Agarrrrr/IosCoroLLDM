@@ -37,7 +37,9 @@ function App() {
         toggleMobileMenu={() => app.setMobileOpen((isOpen) => !isOpen)}
       />
       <main id="main-content" tabIndex="-1">
-        {app.page === 'inicio' && <HomePage brandName={app.brandName} catalogStats={app.catalogStats} lang={app.lang} t={app.t} />}
+        {app.page === 'inicio' && (
+          <HomePage assetUrl={assetUrl} brandName={app.brandName} catalogStats={app.catalogStats} lang={app.lang} t={app.t} />
+        )}
         {app.page === 'producto' && <ProductPage t={app.t} lang={app.lang} faq={faqCopy} />}
         {app.page === 'novedades' && <ReleasePage t={app.t} lang={app.lang} />}
         {app.page === 'repertorio' && (
@@ -80,21 +82,7 @@ function App() {
           />
         )}
         {app.page === 'roadmap' && <RoadmapPage t={app.t} items={app.roadmapPending} loading={app.roadmapLoading} />}
-        {app.page === 'contacto' && (
-          <ContactPage
-            contactEmail={app.contactEmail}
-            contactMessage={app.contactMessage}
-            contactMessageRef={app.contactMessageRef}
-            contactName={app.contactName}
-            contactTopic={app.contactTopic}
-            onChooseTopic={app.chooseContactTopic}
-            onSubmit={app.submitContact}
-            setContactEmail={app.setContactEmail}
-            setContactMessage={app.setContactMessage}
-            setContactName={app.setContactName}
-            t={app.t}
-          />
-        )}
+        {app.page === 'contacto' && <ContactPage contactTopic={app.contactTopic} onChooseTopic={app.chooseContactTopic} t={app.t} />}
         {['privacidad', 'terminos', 'atribuciones'].includes(app.page) && <LegalPage type={app.page} lang={app.lang} t={app.t} />}
         {app.page === 'not-found' && (
           <section className="not-found container">

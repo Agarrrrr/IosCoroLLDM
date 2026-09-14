@@ -9,7 +9,7 @@ export function SolutionsPage({ assetUrl, dark, goTo, lang, routePath, solutionC
         <div className="container bc-layout">
           <div className="bc-mark">
             <img
-              src={assetUrl(dark ? 'bc-logo-white.png' : 'bc-logo-blue.png')}
+              src={assetUrl(dark ? 'bc-logo-white.webp' : 'bc-logo-blue.webp')}
               alt="Repertorio BC"
               width="160"
               height="160"

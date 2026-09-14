@@ -99,6 +99,40 @@ extracted.jsonl
 cantos_existentes.txt
 consulta_auditoria.js
 coro-lldm-sa.json
+
+# Artefactos de pruebas (Playwright / Vitest)
+playwright-report/
+test-results/
+coverage/
+
+# PWA y Desarrollo
+dev-dist/
+manifest-checksum.txt
+
+# Memoria de Gemini CLI (Privada)
+.gemini/
+MEMORY.md
+
+
+
+# Antigravity/Scratch
+scratch/
+.antigravitycli/
+
+# Archivos Temporales y Pruebas Locales
+test.swift
+test2.swift
+test_audio.html
+test_audio.swift
+test_audio_category.swift
+test_dlopen.swift
+test_perform.swift
+test_perform2.swift
+plan.md
+extracted.jsonl
+cantos_existentes.txt
+consulta_auditoria.js
+coro-lldm-sa.json
 revenuecat-key.json
 local.properties
 dist/
@@ -108,5 +142,4 @@ node_modules/
 APPSTORE_PRIVATE_KEY.txt
 CERTIFICADO_P12_BASE64.txt
 PROVISIONING_PROFILE_BASE64.txt
-
-
+*.log

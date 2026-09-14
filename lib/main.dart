@@ -9,9 +9,11 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   // 1. Inicializar Hive (offline cache + favoritos)
   await Hive.initFlutter();

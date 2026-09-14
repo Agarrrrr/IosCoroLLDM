@@ -98,7 +98,7 @@ export const alternateUrlsFor = (page) => ({
   en: canonicalUrlFor(page, 'en'),
   default: canonicalUrlFor(page, 'es'),
 })
-export const socialImageUrlFor = (lang) => `${SITE_ORIGIN}/${lang === 'en' ? 'social-preview-en.png' : 'social-preview.png'}`
+export const socialImageUrlFor = (lang) => `${SITE_ORIGIN}/site-media/social-preview-${lang === 'en' ? 'en' : 'es'}.jpg`
 export const socialImageAltFor = (lang) =>
   lang === 'en' ? 'TLOTW Choir: scores and rehearsals for choirs' : 'Coro LLDM: partituras y ensayos para coros'
 export const localeFor = (lang) => (lang === 'en' ? 'en_US' : 'es_MX')
