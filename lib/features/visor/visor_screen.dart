@@ -28,7 +28,6 @@ import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/features/premium/premium_dialog.dart';
 import 'package:coro_lldm/features/premium/reward_or_premium_dialog.dart';
 
-const List<double> _kSpeeds = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0];
 const double _kScaleEpsilon = 0.001;
 
 enum _ShareKind { pdf, voicesOnly, allVoices, voice }
@@ -2459,6 +2458,15 @@ class _MidiPanelState extends State<_MidiPanel> {
                         fontWeight: FontWeight.w600,
                         fontSize: 13,
                         color: widget.accentColor)),
+                const SizedBox(width: 8),
+                Text(
+                  '♩ = ${widget.midiState.tempoBpm}',
+                  style: GoogleFonts.inter(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.grey,
+                  ),
+                ),
                 const Spacer(),
                 // Metrónomo Visual (Row de bolitas)
                 if (widget.midiState.metronomoActivo &&
@@ -2741,60 +2749,49 @@ class _MidiPanelState extends State<_MidiPanel> {
                   ? Column(
                       children: [
                         const SizedBox(height: 16),
-                        // ── Selector de velocidad ──────────────────────────────────────
+                        // ── Velocidad continua ───────────────────────────
                         Row(
                           children: [
                             Icon(Icons.speed_rounded,
                                 size: 16, color: Colors.grey.withOpacity(0.8)),
                             const SizedBox(width: 8),
-                            Expanded(
-                              child: SingleChildScrollView(
-                                scrollDirection: Axis.horizontal,
-                                child: Row(
-                                  children: _kSpeeds.map((s) {
-                                    final active =
-                                        (widget.midiState.speed - s).abs() <
-                                            0.05;
-                                    return GestureDetector(
-                                      onTap: loading
-                                          ? null
-                                          : () => widget.onSpeedChange(s),
-                                      child: AnimatedContainer(
-                                        duration:
-                                            const Duration(milliseconds: 200),
-                                        margin: const EdgeInsets.only(right: 6),
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 10, vertical: 4),
-                                        decoration: BoxDecoration(
-                                          color: active
-                                              ? widget.accentColor
-                                              : widget.accentColor
-                                                  .withOpacity(0.08),
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                          border: Border.all(
-                                              color: active
-                                                  ? widget.accentColor
-                                                  : widget.accentColor
-                                                      .withOpacity(0.3)),
-                                        ),
-                                        child: Text(
-                                          '${s}x',
-                                          style: GoogleFonts.inter(
-                                            fontSize: 11,
-                                            fontWeight: FontWeight.w600,
-                                            color: active
-                                                ? Colors.white
-                                                : widget.accentColor,
-                                          ),
-                                        ),
-                                      ),
-                                    );
-                                  }).toList(),
-                                ),
+                            Text(
+                              '${widget.midiState.speed.toStringAsFixed(2)}×',
+                              style: GoogleFonts.inter(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                                color: widget.accentColor,
                               ),
                             ),
                           ],
+                        ),
+                        SliderTheme(
+                          data: SliderThemeData(
+                            trackHeight: 4,
+                            activeTrackColor: widget.accentColor,
+                            inactiveTrackColor:
+                                widget.accentColor.withOpacity(0.2),
+                            thumbColor: widget.accentColor,
+                            overlayShape: const RoundSliderOverlayShape(
+                              overlayRadius: 14,
+                            ),
+                          ),
+                          child: Slider(
+                            value: widget.midiState.speed.clamp(0.5, 2.0),
+                            min: 0.5,
+                            max: 2.0,
+                            divisions: 30,
+                            label:
+                                '${widget.midiState.speed.toStringAsFixed(2)}×',
+                            onChanged: loading ? null : widget.onSpeedChange,
+                          ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [Text('0.50×'), Text('2.00×')],
+                          ),
                         ),
                       ],
                     )

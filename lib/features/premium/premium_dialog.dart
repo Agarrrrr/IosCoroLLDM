@@ -101,6 +101,39 @@ class PremiumDialog extends ConsumerWidget {
                   ),
                 )
               else ...[
+                if (monthly != null) ...[
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.primaryContainer,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.card_giftcard_rounded,
+                          color: Theme.of(context).colorScheme.onPrimaryContainer,
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            strings.t(
+                              '1 semana gratis para nuevos suscriptores elegibles.',
+                              '1 week free for eligible new subscribers.',
+                            ),
+                            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onPrimaryContainer,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                ],
                 if (annual != null) _purchaseButton(context, ref, annual, true),
                 if (monthly != null) ...[
                   const SizedBox(height: 8),

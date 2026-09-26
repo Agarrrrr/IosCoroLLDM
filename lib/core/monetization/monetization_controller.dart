@@ -82,6 +82,56 @@ class MonetizationController extends StateNotifier<MonetizationState>
   bool _purchasesConfigured = false;
   bool _refreshingCustomerInfo = false;
 
+  static const MethodChannel _cloudSyncChannel =
+      MethodChannel('com.lldm.coro/cloud_sync');
+
+  Future<String> _resolvePersistentUserId() async {
+    // 1. En iOS, verificar si existe un ID previamente sincronizado en iCloud Keychain
+    if (Platform.isIOS) {
+      try {
+        final cloudId =
+            await _cloudSyncChannel.invokeMethod<String>('getCloudUserId');
+        if (cloudId != null && cloudId.trim().isNotEmpty) {
+          final id = cloudId.trim();
+          await _box.put('revenuecat_app_user_id', id);
+          return id;
+        }
+      } catch (_) {}
+    }
+
+    // 2. Revisar si ya existía un ID guardado en Hive (compras o sesiones previas)
+    final cachedId = (_box.get('revenuecat_app_user_id') as String?)?.trim();
+    if (cachedId != null && cachedId.isNotEmpty) {
+      // Si existe localmente pero no estaba en iCloud (ej. usuario existente que actualiza la app),
+      // sincronizarlo ahora a iCloud para que sus otros dispositivos lo hereden.
+      if (Platform.isIOS) {
+        try {
+          await _cloudSyncChannel.invokeMethod<bool>(
+            'saveCloudUserId',
+            {'userId': cachedId},
+          );
+        } catch (_) {}
+      }
+      return cachedId;
+    }
+
+    // 3. Si es un usuario completamente nuevo, generar un ID determinista y persistente
+    final randomSuffix =
+        DateTime.now().microsecondsSinceEpoch.toRadixString(36);
+    final newId = 'coro_$randomSuffix';
+    await _box.put('revenuecat_app_user_id', newId);
+
+    if (Platform.isIOS) {
+      try {
+        await _cloudSyncChannel.invokeMethod<bool>(
+          'saveCloudUserId',
+          {'userId': newId},
+        );
+      } catch (_) {}
+    }
+    return newId;
+  }
+
   Future<void> initialize() async {
     if (state.initialized) return;
 
@@ -117,18 +167,21 @@ class MonetizationController extends StateNotifier<MonetizationState>
       if (kDebugMode) {
         await Purchases.setLogLevel(LogLevel.debug);
       }
-      await Purchases.configure(PurchasesConfiguration(apiKey));
+      final persistentUserId = await _resolvePersistentUserId();
+      final purchasesConfig = PurchasesConfiguration(apiKey)
+        ..appUserID = persistentUserId;
+      await Purchases.configure(purchasesConfig);
       _purchasesConfigured = true;
       Purchases.addCustomerInfoUpdateListener(_customerInfoListener);
       WidgetsBinding.instance.addObserver(this);
 
-      try {
-        final currentUserId = await Purchases.appUserID;
-        if (currentUserId.isNotEmpty) {
-          _box.put('revenuecat_app_user_id', currentUserId);
-          state = state.copyWith(appUserId: currentUserId);
-        }
-      } catch (_) {}
+      state = state.copyWith(appUserId: persistentUserId);
+
+      if (Platform.isAndroid && !state.isPremium) {
+        try {
+          await Purchases.syncPurchases();
+        } catch (_) {}
+      }
 
       if (Platform.isIOS && kReleaseMode && !cachedLegacy) {
         if (_box.get('ios_receipt_migrated') != true) {
@@ -195,6 +248,14 @@ class MonetizationController extends StateNotifier<MonetizationState>
     final originalUserId = info.originalAppUserId.trim();
     if (originalUserId.isNotEmpty) {
       _box.put('revenuecat_app_user_id', originalUserId);
+      if (Platform.isIOS) {
+        try {
+          _cloudSyncChannel.invokeMethod<bool>(
+            'saveCloudUserId',
+            {'userId': originalUserId},
+          );
+        } catch (_) {}
+      }
     }
     state = state.copyWith(
       isPremium: subscribed || legacy,
@@ -246,6 +307,47 @@ class MonetizationController extends StateNotifier<MonetizationState>
     try {
       final info = await Purchases.restorePurchases();
       _applyCustomerInfo(info);
+      final original = info.originalAppUserId.trim();
+      if (original.isNotEmpty) {
+        await _box.put('revenuecat_app_user_id', original);
+        if (Platform.isIOS) {
+          try {
+            await _cloudSyncChannel.invokeMethod<bool>(
+              'saveCloudUserId',
+              {'userId': original},
+            );
+          } catch (_) {}
+        }
+      }
+      return state.isPremium;
+    } catch (error) {
+      state = state.copyWith(error: error.toString());
+      return false;
+    } finally {
+      state = state.copyWith(isBusy: false);
+    }
+  }
+
+  /// Permite vincular manualmente la cuenta a un ID de otro dispositivo
+  /// (ej. transferir o compartir entre Android e iPad).
+  Future<bool> linkAccount(String targetAppUserId) async {
+    if (!state.revenueCatConfigured) return false;
+    final cleanId = targetAppUserId.trim();
+    if (cleanId.isEmpty || cleanId == state.appUserId) return state.isPremium;
+
+    state = state.copyWith(isBusy: true, clearError: true);
+    try {
+      final logInResult = await Purchases.logIn(cleanId);
+      await _box.put('revenuecat_app_user_id', cleanId);
+      if (Platform.isIOS) {
+        try {
+          await _cloudSyncChannel.invokeMethod<bool>(
+            'saveCloudUserId',
+            {'userId': cleanId},
+          );
+        } catch (_) {}
+      }
+      _applyCustomerInfo(logInResult.customerInfo);
       return state.isPremium;
     } catch (error) {
       state = state.copyWith(error: error.toString());

@@ -329,6 +329,131 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
               height: 1.3,
             ),
           ),
+          const SizedBox(height: 12),
+          const Divider(height: 1),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: () async {
+                    final messenger = ScaffoldMessenger.of(context);
+                    final restored =
+                        await ref.read(monetizationProvider.notifier).restore();
+                    if (!context.mounted) return;
+                    messenger.showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          restored
+                              ? strings.t(
+                                  'Compras restauradas con éxito',
+                                  'Purchases restored successfully',
+                                )
+                              : strings.t(
+                                  'No se encontró una suscripción activa',
+                                  'No active subscription found',
+                                ),
+                        ),
+                        behavior: SnackBarBehavior.floating,
+                      ),
+                    );
+                  },
+                  icon: const Icon(Icons.restore_rounded, size: 16),
+                  label: Text(
+                    strings.t('Restaurar', 'Restore'),
+                    style: const TextStyle(fontSize: 11),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: () => _showLinkAccountDialog(context, strings),
+                  icon: const Icon(Icons.devices_rounded, size: 16),
+                  label: Text(
+                    strings.t('Vincular', 'Link account'),
+                    style: const TextStyle(fontSize: 11),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showLinkAccountDialog(BuildContext context, AppStrings strings) {
+    final textController = TextEditingController();
+    showDialog(
+      context: context,
+      builder: (dialogCtx) => AlertDialog(
+        title: Text(
+          strings.t('Vincular otro dispositivo', 'Link another device'),
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              strings.t(
+                'Si ya tienes Premium en otro dispositivo (ej. celular Android o iPad), ingresa aquí su ID de Cuenta para sincronizarlo.',
+                'If you already have Premium on another device, enter its Account ID here to sync it.',
+              ),
+              style: const TextStyle(fontSize: 12),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: textController,
+              decoration: InputDecoration(
+                hintText: strings.t('Pega el ID aquí...', 'Paste ID here...'),
+                border: const OutlineInputBorder(),
+                isDense: true,
+              ),
+              style: const TextStyle(fontSize: 12, fontFamily: 'monospace'),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogCtx),
+            child: Text(strings.t('Cancelar', 'Cancel')),
+          ),
+          FilledButton(
+            onPressed: () async {
+              final text = textController.text.trim();
+              if (text.isEmpty) return;
+              Navigator.pop(dialogCtx);
+              final messenger = ScaffoldMessenger.of(context);
+              final linked = await ref
+                  .read(monetizationProvider.notifier)
+                  .linkAccount(text);
+              if (!context.mounted) return;
+              messenger.showSnackBar(
+                SnackBar(
+                  content: Text(
+                    linked
+                        ? strings.t(
+                            'Cuenta vinculada. ¡Premium activo!',
+                            'Account linked. Premium active!',
+                          )
+                        : strings.t('Cuenta vinculada.', 'Account linked.'),
+                  ),
+                  behavior: SnackBarBehavior.floating,
+                ),
+              );
+            },
+            child: Text(strings.t('Vincular', 'Link')),
+          ),
         ],
       ),
     );

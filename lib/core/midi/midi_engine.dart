@@ -16,6 +16,8 @@ class MidiState {
   final double tiempoActual; // segundos
   final double tiempoTotal; // segundos
   final double speed;
+  /// Tempo musical escrito como negras por minuto, sin aplicar la velocidad.
+  final int tempoBpm;
   final bool metronomoActivo;
   final List<MidiVoz> voces;
   final int? beatIndex;
@@ -36,6 +38,7 @@ class MidiState {
     this.tiempoActual = 0.0,
     this.tiempoTotal = 0.0,
     this.speed = 1.0,
+    this.tempoBpm = 120,
     this.metronomoActivo = false,
     this.voces = const [],
     this.beatIndex,
@@ -55,6 +58,7 @@ class MidiState {
     double? tiempoActual,
     double? tiempoTotal,
     double? speed,
+    int? tempoBpm,
     bool? metronomoActivo,
     List<MidiVoz>? voces,
     int? beatIndex,
@@ -73,6 +77,7 @@ class MidiState {
         tiempoActual: tiempoActual ?? this.tiempoActual,
         tiempoTotal: tiempoTotal ?? this.tiempoTotal,
         speed: speed ?? this.speed,
+        tempoBpm: tempoBpm ?? this.tempoBpm,
         metronomoActivo: metronomoActivo ?? this.metronomoActivo,
         voces: voces ?? this.voces,
         beatIndex: beatIndex ?? this.beatIndex,
@@ -291,6 +296,7 @@ class MidiEngine {
         progress: 0.0,
         tiempoActual: 0.0,
         tiempoTotal: _song!.durationSeconds,
+        tempoBpm: _song!.tempoChanges.first.bpm,
         voces: voces,
         beatIndex: 0,
         beatNumerator: initialPattern.beatsPerMeasure,
@@ -438,6 +444,7 @@ class MidiEngine {
       tiempoActual: targetTime,
       progress: progress,
       isPlaying: wasPlaying,
+      tempoBpm: _tempoAt(_song!, targetTime).bpm,
     ));
 
     // Reiniciar el loop de reproducción si estaba sonando
@@ -449,13 +456,18 @@ class MidiEngine {
   }
 
   void setSpeed(double speed) {
+    final selectedSpeed = speed.clamp(0.5, 2.0).toDouble();
+    if ((selectedSpeed - _state.speed).abs() < 0.001) return;
+
+    // Conserva la posición al mover el deslizador durante la reproducción;
+    // pausar y reiniciar en cada paso hacía que el control se sintiera tosco.
     if (_state.isPlaying) {
-      pause();
-      _emit(_state.copyWith(speed: speed));
-      play();
-    } else {
-      _emit(_state.copyWith(speed: speed));
+      _startOffsetSeconds = _getCurrentTimeSeconds();
+      _stopwatch
+        ..reset()
+        ..start();
     }
+    _emit(_state.copyWith(speed: selectedSpeed));
   }
 
   void toggleMetronomo() {
@@ -483,7 +495,7 @@ class MidiEngine {
         sfId: _sfId!,
         channel: channel,
         controller: 7,
-        value: (volume * 127).round().clamp(0, 127),
+        value: muted ? 0 : _mixControllerValue(volume),
       ));
     }
     final updatedVoces = _state.voces.map((v) {
@@ -509,12 +521,11 @@ class MidiEngine {
 
     final channel = _trackChannels[trackIndex];
     if (channel != null && _sfId != null && _midiPro.isInitialized) {
-      final effectiveGain = clamped * clamped;
       unawaited(_midiPro.controlChange(
         sfId: _sfId!,
         channel: channel,
         controller: 7,
-        value: (effectiveGain * 127).round().clamp(0, 127),
+        value: muted ? 0 : _mixControllerValue(clamped),
       ));
     }
 
@@ -582,6 +593,7 @@ class MidiEngine {
       _emit(_state.copyWith(
         tiempoActual: currentTime,
         progress: progress,
+        tempoBpm: _tempoAt(_song!, currentTime).bpm,
       ));
     }
 
@@ -660,6 +672,7 @@ class MidiEngine {
         beatGroups: meterPattern.groups,
         timeSignatureNumerator: signature.numerator,
         timeSignatureDenominator: signature.denominator,
+        tempoBpm: tempo.bpm,
       ));
 
       if (playClick) {
@@ -724,10 +737,7 @@ class MidiEngine {
       final noteKey = (channel << 8) | pitch;
       final activeNotes =
           _activeNoteCounts.values.fold<int>(0, (sum, count) => sum + count);
-      final velocity =
-          (masteredVelocity(note.velocity, activeNotes) * trackVolume)
-              .round()
-              .clamp(1, 127);
+      final velocity = masteredVelocity(note.velocity, activeNotes);
       _activeNoteCounts[noteKey] = (_activeNoteCounts[noteKey] ?? 0) + 1;
       _midiPro.playNote(
         channel: channel,
@@ -758,16 +768,26 @@ class MidiEngine {
     }
   }
 
-  /// Compresión de dinámica MIDI con rodilla suave y compensación moderada de
-  /// polifonía. Conserva los acentos, pero evita ataques aislados y acordes que
-  /// saturen el piano.
+  /// Los audios son material de ensayo: la interpretación de dinámicas se deja
+  /// al coro. Todas las notas se reproducen a una intensidad uniforme de forte.
   static int masteredVelocity(int inputVelocity, int activeNotes) {
-    final normalized = inputVelocity.clamp(1, 127) / 127.0;
-    final compressed = 34.0 + math.pow(normalized, 0.68) * 78.0;
-    final polyphonyGain =
-        (1 / math.sqrt(1 + activeNotes.clamp(0, 96) / 24.0)).clamp(0.72, 1.0);
-    return (compressed * polyphonyGain).round().clamp(1, 104);
+    return 96;
   }
+
+  /// Una escala en decibelios se percibe mucho más uniforme que una ganancia
+  /// lineal o cuadrática. El 30% inicial alcanza -18 dB y el 70% final afina
+  /// la zona útil de mezcla, desde -18 dB hasta 0 dB.
+  static double mixGainForControl(double control) {
+    final value = control.clamp(0.0, 1.0).toDouble();
+    if (value == 0.0) return 0.0;
+    final decibels = value <= 0.3
+        ? -48.0 + (30.0 * (value / 0.3))
+        : -18.0 + (18.0 * ((value - 0.3) / 0.7));
+    return math.pow(10.0, decibels / 20.0).toDouble();
+  }
+
+  int _mixControllerValue(double control) =>
+      (mixGainForControl(control) * 127).round().clamp(0, 127);
 
   Future<void> _configureMastering() async {
     // +15 dB = x5.623 en amplitud: son +5 dB frente al ajuste anterior.
@@ -850,9 +870,7 @@ class MidiEngine {
         controller: 7,
         value: (_mutedTracks[tracks[index].index] ?? false)
             ? 0
-            : (104 * math.pow(_trackVolumes[tracks[index].index] ?? 1.0, 2))
-                .round()
-                .clamp(0, 127),
+            : _mixControllerValue(_trackVolumes[tracks[index].index] ?? 1.0),
       );
     }
   }

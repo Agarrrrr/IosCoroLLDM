@@ -852,18 +852,18 @@
     "idioma": "en"
   },
   {
-    "id": "usmc_a5b1174b142ac7e3da",
+    "id": "be6a34b1-f8b2-590f-834e-d5a9e2cd9049",
     "nombre": "Glory Unto Jesus Christ",
-    "archivo": "Glory unto Jesus Christ.pdf",
-    "temas": [
-      "Praise & Worship"
-    ],
+    "archivo": "global/assets/pdf/a815a9d86455585292befb9088cf0bbc54f6ad1ba432dd3e57bcce991c464a69.enc",
+    "temas": [],
     "es_privado": false,
-    "midi_archivo": "glory-unto-jesus-christ-1782196343018.mid",
+    "midi_archivo": "global/assets/midi/32f6ce9093623453f444e9fba9e464a67a5217a5252a605c92ed137229d66d7b.enc",
     "coro_id": "local",
     "vinculo_idioma": null,
     "_idioma": "en",
-    "idioma": "en"
+    "idioma": "en",
+    "external_id": "usmc_a5b1174b142ac7e3da",
+    "version": 4
   },
   {
     "id": "usmc_37d832ebbc612b8f9dd6ec0b",
@@ -1913,6 +1913,20 @@
     "idioma": "en"
   },
   {
+    "id": "176aa0de-a723-4e26-ba1f-d99bcc0e8160",
+    "external_id": null,
+    "nombre": "My Divine Jesus Christ",
+    "archivo": "global/assets/pdf/9faae5db46c9b484735c689c1bff62e569f385ba74375582f981fabf42d97387.enc",
+    "midi_archivo": "global/assets/midi/1c8828b4efc07194ed89718b9ff543431bdda6e4c50a44010317988304e5fcc1.enc",
+    "temas": [
+      "Love of God",
+      "Trust"
+    ],
+    "idioma": "en",
+    "vinculo_idioma": "3005f5b8-4e10-40e7-92d2-60a7b68593da",
+    "version": 1
+  },
+  {
     "id": "usmc_647b6a3dfc5d9756c985e528",
     "nombre": "My Father in Faith",
     "archivo": "647b6a3dfc5d9756c985e528_my_father_in_faith.pdf",
@@ -2335,6 +2349,19 @@
     "idioma": "en"
   },
   {
+    "id": "b15fc005-f63f-4013-862e-27a8f7b45148",
+    "external_id": null,
+    "nombre": "One More Year Has Gone",
+    "archivo": "global/assets/pdf/0e76f91e2a87af0c101e6892067545ba62c59a1d1ba22a6bbb42056f7bde3c8d.enc",
+    "midi_archivo": "global/assets/midi/44753eb3656204e05b198e14f911733b738ab239269e8e059f70aea02a7822dd.enc",
+    "temas": [
+      "New Year"
+    ],
+    "idioma": "en",
+    "vinculo_idioma": "712d6777-14e1-4093-b682-7acbb24466d9",
+    "version": 1
+  },
+  {
     "id": "usmc_2b8a8f8217d2c8a467",
     "nombre": "Only You",
     "archivo": "Only You.pdf",
@@ -2495,6 +2522,19 @@
     "coro_id": "local",
     "_idioma": "en",
     "idioma": "en"
+  },
+  {
+    "id": "7726e94a-16fe-4b41-9dfb-0336ff654342",
+    "external_id": null,
+    "nombre": "Ring The Bells Of Heaven [Baptism]",
+    "archivo": "global/assets/pdf/12f86983535a0bc504bdf1a416216ba1b6bae253cad694db61874fe668c1ff8f.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Baptism"
+    ],
+    "idioma": "en",
+    "vinculo_idioma": null,
+    "version": 1
   },
   {
     "id": "usmc_647b752c793a334d51fb6d0e",
@@ -2803,6 +2843,20 @@
     "idioma": "en"
   },
   {
+    "id": "75e1b00b-f50e-447e-92e0-d5476aa5735a",
+    "external_id": null,
+    "nombre": "The Centuries Have Passed By",
+    "archivo": "global/assets/pdf/aec9ea4b07c7fa478955e6e44d09a2494fb9f652b52f49d8a4a3018012158dc4.enc",
+    "midi_archivo": "global/assets/midi/87088c2924e536eb44652b61944b2ba75bd9733db79766dc3698cd41b0bc276b.enc",
+    "temas": [
+      "Election",
+      "Restoration of the Church"
+    ],
+    "idioma": "en",
+    "vinculo_idioma": "9d883cba-04a6-402d-942c-90286211c9fd",
+    "version": 1
+  },
+  {
     "id": "usmc_68b9c361c43c95818020b203",
     "nombre": "The Church of The Living God",
     "archivo": "68b9c361c43c95818020b203_the_church_of_the_living_god.pdf",
@@ -2940,6 +2994,20 @@
     "coro_id": "local",
     "_idioma": "en",
     "idioma": "en"
+  },
+  {
+    "id": "0f9daf80-e5b4-429c-95a3-9f44dbc4eec6",
+    "external_id": null,
+    "nombre": "The Great Potter",
+    "archivo": "global/assets/pdf/141ffcca1c376f7e4b9d21e1086c1d165894d4a640d9b32f936b0c794e5e3e1a.enc",
+    "midi_archivo": null,
+    "temas": [
+      "Consecration",
+      "Gratitude"
+    ],
+    "idioma": "en",
+    "vinculo_idioma": "c17e1cc7-5c27-4ab1-9a75-3826fc2e66df",
+    "version": 1
   },
   {
     "id": "usmc_caf436a80759ce7a19568e1e",

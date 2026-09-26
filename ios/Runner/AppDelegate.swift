@@ -56,6 +56,27 @@ import UserNotifications
         result(receiptName == "sandboxReceipt")
       }
 
+      let cloudSyncChannel = FlutterMethodChannel(
+        name: "com.lldm.coro/cloud_sync",
+        binaryMessenger: controller.binaryMessenger
+      )
+      cloudSyncChannel.setMethodCallHandler { call, result in
+        switch call.method {
+        case "getCloudUserId":
+          result(KeychainCloudHelper.getUserId())
+        case "saveCloudUserId":
+          guard let args = call.arguments as? [String: Any],
+                let userId = args["userId"] as? String else {
+            result(FlutterError(code: "INVALID_ARGS", message: "Falta userId", details: nil))
+            return
+          }
+          KeychainCloudHelper.saveUserId(userId)
+          result(true)
+        default:
+          result(FlutterMethodNotImplemented)
+        }
+      }
+
       let midiRenderChannel = FlutterMethodChannel(
         name: "com.lldm.coro/midi_render",
         binaryMessenger: controller.binaryMessenger
@@ -196,3 +217,64 @@ import UserNotifications
     }
   }
 }
+
+enum KeychainCloudHelper {
+  private static let service = "com.lldm.coro.user_identity"
+  private static let account = "persistent_user_id"
+  private static let kvKey = "coro_cloud_user_id"
+
+  static func getUserId() -> String? {
+    // 1. Intentar leer desde Keychain sincronizable con iCloud
+    let query: [String: Any] = [
+      kSecClass as String: kSecClassGenericPassword,
+      kSecAttrService as String: service,
+      kSecAttrAccount as String: account,
+      kSecReturnData as String: true,
+      kSecMatchLimit as String: kSecMatchLimitOne,
+      kSecAttrSynchronizable as String: kCFBooleanTrue!
+    ]
+
+    var dataTypeRef: AnyObject?
+    let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
+    if status == errSecSuccess, let data = dataTypeRef as? Data, let id = String(data: data, encoding: .utf8), !id.isEmpty {
+      return id
+    }
+
+    // 2. Intentar leer desde NSUbiquitousKeyValueStore si está disponible
+    let kvStore = NSUbiquitousKeyValueStore.default
+    if let kvId = kvStore.string(forKey: kvKey), !kvId.isEmpty {
+      return kvId
+    }
+
+    return nil
+  }
+
+  static func saveUserId(_ userId: String) {
+    guard let data = userId.data(using: .utf8) else { return }
+
+    // Limpiar entrada anterior si existiera
+    let deleteQuery: [String: Any] = [
+      kSecClass as String: kSecClassGenericPassword,
+      kSecAttrService as String: service,
+      kSecAttrAccount as String: account,
+      kSecAttrSynchronizable as String: kCFBooleanTrue!
+    ]
+    SecItemDelete(deleteQuery as CFDictionary)
+
+    // Guardar nuevo ID sincronizable en iCloud Keychain
+    let addQuery: [String: Any] = [
+      kSecClass as String: kSecClassGenericPassword,
+      kSecAttrService as String: service,
+      kSecAttrAccount as String: account,
+      kSecValueData as String: data,
+      kSecAttrSynchronizable as String: kCFBooleanTrue!
+    ]
+    SecItemAdd(addQuery as CFDictionary, nil)
+
+    // Sincronizar también con NSUbiquitousKeyValueStore como respaldo secundario
+    let kvStore = NSUbiquitousKeyValueStore.default
+    kvStore.set(userId, forKey: kvKey)
+    kvStore.synchronize()
+  }
+}
+

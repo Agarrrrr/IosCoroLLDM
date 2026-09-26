@@ -227,16 +227,23 @@ void main() {
     );
   });
 
-  test('la compresión MIDI conserva acentos sin permitir picos', () {
+  test('el reproductor MIDI uniforma las dinámicas a forte para ensayo', () {
     final soft = MidiEngine.masteredVelocity(24, 0);
     final medium = MidiEngine.masteredVelocity(72, 0);
     final loud = MidiEngine.masteredVelocity(127, 0);
     final dense = MidiEngine.masteredVelocity(127, 24);
 
-    expect(soft, lessThan(medium));
-    expect(medium, lessThan(loud));
-    expect(loud, lessThanOrEqualTo(104));
-    expect(dense, lessThan(loud));
+    expect(soft, 96);
+    expect(medium, 96);
+    expect(loud, 96);
+    expect(dense, 96);
+  });
+
+  test('el volumen reserva el 70% final para mezcla fina en decibelios', () {
+    expect(MidiEngine.mixGainForControl(0.0), 0.0);
+    expect(MidiEngine.mixGainForControl(0.3), closeTo(0.1259, 0.0001));
+    expect(MidiEngine.mixGainForControl(0.65), closeTo(0.3548, 0.0001));
+    expect(MidiEngine.mixGainForControl(1.0), 1.0);
   });
 
   test('el reproductor MIDI conserva el aumento maestro solicitado', () {

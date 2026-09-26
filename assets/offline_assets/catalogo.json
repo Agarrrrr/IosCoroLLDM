@@ -258,9 +258,9 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_1342f19672712e9373bbaff2",
+    "id": "acd9b129-271f-558c-82a1-7686f0f4019e",
     "nombre": "A Jesucristo Rendid",
-    "archivo": "usmc_1342f19672712e9373bbaff2_a_jesucristo_rendid.pdf",
+    "archivo": "global/assets/pdf/e1e9928074f02bd7c7cf558ca7f966507268f760e5875b2496b8fa8d6dbba96b.enc",
     "temas": [
       "Alabanza"
     ],
@@ -268,7 +268,10 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_1342f19672712e9373bbaff2",
+    "midi_archivo": "global/assets/midi/8af6b0dc554c790e166f8f7ac18e138968ad4b25b0ae46b388b5e997d47d15e2.enc",
+    "version": 7
   },
   {
     "id": "0a39253d-7c6d-45dc-8497-745a49654ba2",
@@ -1180,9 +1183,9 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_d7b6eb3d070c7f1e1f796aa6",
+    "id": "25b2d341-6705-51b9-ba9a-2c458c4959b0",
     "nombre": "Amor Celestial",
-    "archivo": "usmc_d7b6eb3d070c7f1e1f796aa6_amor_celestial.pdf",
+    "archivo": "global/assets/pdf/a41b38b81f279f1c2beb2768bc4f2d380b8daf9589412b3239f1d0e9e4f66ee9.enc",
     "temas": [
       "Elección"
     ],
@@ -1190,7 +1193,10 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_d7b6eb3d070c7f1e1f796aa6",
+    "midi_archivo": "global/assets/midi/c02171c25e459b7db7c13c2aff163f159a65c50d4ca1de3a83cb5590c49bac06.enc",
+    "version": 5
   },
   {
     "id": "usmc_9d649edd917b1d608b4ffd02",
@@ -1310,15 +1316,17 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b53d7721b21cae02605974",
+    "id": "e85a0f52-5a31-5c49-997b-ad89b38e455a",
     "nombre": "Ángel Poderoso",
-    "archivo": "64b53d7721b21cae02605974_ángel_poderoso.pdf",
-    "temas": [
-      "Elección"
-    ],
+    "archivo": "global/assets/pdf/2c4d87da1f9a6ac4fb0794d7fad765a5403134ec11355c71b70e3154e5f50911.enc",
+    "temas": [],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_64b53d7721b21cae02605974",
+    "midi_archivo": "global/assets/midi/e26c1badf6f81009432ac5369e3cd8f12ac27b72cc424a586f5a95158235321a.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_64b5944a21b21cae026063de",
@@ -1547,14 +1555,17 @@
   {
     "id": "d98201e5-8059-4ac9-b2ba-e6c9aaed685a",
     "nombre": "A ti Solo Nuestro Rey",
-    "archivo": "a-ti-solo-nuestro-rey-1780641946670.pdf",
-    "midi_archivo": "a-ti-solo-nuestro-rey-1779118598915.mid",
+    "archivo": "global/assets/pdf/6fc2dda816c29cb4cd47cac75b3b17318720896c811d0cb32e6f4ec696f8e25c.enc",
+    "midi_archivo": "global/assets/midi/0637e7f94c8d0e56778c79fd8257cd5af100267e666a32e60f3fbb11ca3a7bb9.enc",
     "temas": [
       "Amanecer"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "d98201e5-8059-4ac9-b2ba-e6c9aaed685a",
+    "vinculo_idioma": null,
+    "version": 7
   },
   {
     "id": "usmc_661dd0a4d6b0cc15aeab10ea",
@@ -1791,9 +1802,9 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_6f4eeb050b8653c907068afe",
+    "id": "320df700-41b9-5bf3-96b7-19294e5d2c1e",
     "nombre": "Bendice a mi Señor",
-    "archivo": "usmc_6f4eeb050b8653c907068afe_bendice_a_mi_senor.pdf",
+    "archivo": "global/assets/pdf/af5d42c6483ccf155c8e0b3a183b457e137aaf707ada7bfe4247dec1fae428fb.enc",
     "temas": [
       "Petición"
     ],
@@ -1801,7 +1812,10 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_6f4eeb050b8653c907068afe",
+    "midi_archivo": "global/assets/midi/8c34916d60cefff8dce75199ea48bfb819d4cb108a062ba08b0777ba06971279.enc",
+    "version": 5
   },
   {
     "id": "36c57df2-0970-47f6-adec-ff436703c4e7",
@@ -2475,7 +2489,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "usmc_2ff8227f61dac6f6f1",
@@ -2572,7 +2587,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "usmc_c5c1ed099ba6c7067e",
@@ -2596,7 +2612,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "3fcbf7e7-7628-4504-be11-f96702517487",
@@ -2992,7 +3009,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "7ec3cfd0-276e-4fcc-984a-415fdf9d2ef5",
@@ -3877,16 +3895,20 @@
     "idioma": "es"
   },
   {
-    "id": "local_apk_1781321071900_101",
+    "id": "ed9747e7-c7ca-50a1-b1bd-9f9767ed715c",
     "nombre": "Del Cielo Descienden",
-    "archivo": "del_cielo_descienden-1781321071898.pdf",
+    "archivo": "global/assets/pdf/a0ae33af1f46891fe54fb40d65d1c39db5e6f8419de01a76fc8b221ca8678d63.enc",
     "temas": [
-      "Alabanza",
-      "Adoración"
+      "Adoración",
+      "Alabanza"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "local_apk_1781321071900_101",
+    "midi_archivo": "global/assets/midi/d80b12dde7282210378c8ad8ab413814c5ce5d69da2890fda10fe686b4ce4c7e.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "b297e978-d77d-41ec-a1c4-0dba55198215",
@@ -3952,15 +3974,19 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b5fac621b21cae02606b60",
+    "id": "7950cfc4-f0d7-54e8-a3ad-3c32602b9a52",
     "nombre": "De su Mano",
-    "archivo": "64b5fac621b21cae02606b60_de_su_mano.pdf",
+    "archivo": "global/assets/pdf/9ef6d0091b7167bc630a4e54dd892f7221c097c6583247950f4f7187a4b19761.enc",
     "temas": [
       "Advenimiento"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_64b5fac621b21cae02606b60",
+    "midi_archivo": "global/assets/midi/d2aeeac6b2ed63d688f6814ff3d75b2ec858d4f38a4ca536b34bd84b125867a4.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_8312f3e023c0d58c4e",
@@ -6079,9 +6105,9 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_5dda6476d336d617d77af11f",
+    "id": "12ccd8d4-c86d-5e11-8240-a4130ca3e5eb",
     "nombre": "En Nuestro México",
-    "archivo": "usmc_5dda6476d336d617d77af11f_en_nuestro_mexico.pdf",
+    "archivo": "global/assets/pdf/dd841f5cbb4bd61eb3f9ac9177354886fe7db452fe5890c3515023918a2f0eaf.enc",
     "temas": [
       "6 de Abril"
     ],
@@ -6089,7 +6115,10 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_5dda6476d336d617d77af11f",
+    "midi_archivo": "global/assets/midi/7ac2e859f98e095c530f0c0a4dcda08d1b2862115260eedd276766ed211ec3d4.enc",
+    "version": 5
   },
   {
     "id": "usmc_64b5939121b21cae0260639e",
@@ -6948,7 +6977,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "6bbf3754-705a-411c-b527-dd1378955921",
@@ -7806,7 +7836,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b5376421b21cae026058aa",
@@ -9260,7 +9291,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "ec542b1f-c043-4175-b119-025f3cac0aef",
@@ -9413,7 +9445,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "18990049-2417-4fe9-8b60-61d8fd1754f8",
@@ -10490,15 +10523,19 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_a84621411143c864d6",
+    "id": "15d71867-d14c-508b-99f5-54b82438b194",
     "nombre": "Mi Ejemplo a Seguir",
-    "archivo": "Mi Ejemplo a Seguir.pdf",
+    "archivo": "global/assets/pdf/bf030618ba62b2b68a42ba6e01460db7e1e00ada0d2c0b39593871482dbb03a6.enc",
     "temas": [
       "Elección"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_a84621411143c864d6",
+    "midi_archivo": "global/assets/midi/4329b6bd083065976c06fc767b92eaf4caa30fcee269fbefb392c0d9ea6a96ac.enc",
+    "vinculo_idioma": null,
+    "version": 5
   },
   {
     "id": "usmc_64b5637321b21cae02605f1c",
@@ -12672,7 +12709,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "f1a4b62a-050c-445a-93aa-ca420cfeb62e",
@@ -12685,7 +12723,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "f795de73-eaef-488a-80d2-769f756f1808",
@@ -13220,15 +13259,19 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_64b3e3009631ba687d63049b",
+    "id": "c037109b-346d-53c0-a9d2-633a42b1221b",
     "nombre": "Regresa al Hogar",
-    "archivo": "64b3e3009631ba687d63049b_regresa_al_hogar.pdf",
+    "archivo": "global/assets/pdf/98d9512b0dc49a884761154e58e76c741286d26c7b8b6e1af4a732b7b81d7eee.enc",
     "temas": [
       "Restauración"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_64b3e3009631ba687d63049b",
+    "midi_archivo": "global/assets/midi/e1e9bdea9596580fbf3fdf7eee729a54a87913ce70609e2d0d955701be2d5341.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "local_apk_1781321072064_363",
@@ -13756,13 +13799,17 @@
   {
     "id": "10c9e50d-d4aa-4ae1-8170-91c7f5f83813",
     "nombre": "Señor Jesus tu Eres mi Esperanza",
-    "archivo": "se-or-jesus-tu-eres-mi-esperanza-1781309497204.pdf",
+    "archivo": "global/assets/pdf/9fbb4bf348bc16aa1f4a237156adb1e06ddbb4f13fb7840785e05f8c63014d57.enc",
     "temas": [
       "Gratitud"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": null,
+    "midi_archivo": "global/assets/midi/e2c92300b36a9cf84761425d836a469a681aec60a17ccbfb8eb20f5b9a3b1a81.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "53605260-bdb5-49a3-a96f-cb4c9071d7ba",
@@ -14029,19 +14076,23 @@
   {
     "id": "7c176f6b-f16a-49f7-a685-132802dee92e",
     "nombre": "Si Fui Motivo",
-    "archivo": "si-fui-motivo-1781309498242.pdf",
+    "archivo": "global/assets/pdf/10823851474972af77a21fe55f0f0930dd98b5ad937169f178a5446d87905577.enc",
     "temas": [
       "Intercesión"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": null,
+    "midi_archivo": "global/assets/midi/8a884c31b324316bc7c5489e72cee9dec5902a5b5eb2b5c6038b76795a29a6b3.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "35ecfe71-7d8a-48f3-9719-660e8b163865",
     "nombre": "Si Fui Motivo de Dolor",
     "archivo": "global/assets/pdf/5853bef0f52f84ee532b0ed6be4e61e5ab4e564b80ea31e4b50e85cb49ea989d.enc",
-    "midi_archivo": "si-fui-motivo-de-dolor-1781239596037.mid",
+    "midi_archivo": "global/assets/midi/8a884c31b324316bc7c5489e72cee9dec5902a5b5eb2b5c6038b76795a29a6b3.enc",
     "vinculo_idioma": "usmc_647b6e72f16057b9e8d4bda5",
     "temas": [
       "Intercesión"
@@ -15639,15 +15690,19 @@
     "_idioma": "es"
   },
   {
-    "id": "usmc_feabeaba2fd1c92173",
+    "id": "1a9a76d2-fdef-50bd-9436-f04c4bc7eb8b",
     "nombre": "Vamos!",
-    "archivo": "Vamos_.pdf",
+    "archivo": "global/assets/pdf/8fed24c5097a7569f2b1b8e5ed18f007e57b2910cde7c2447ce9e9fc61d6c1b3.enc",
     "temas": [
       "Lucha"
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "external_id": "usmc_feabeaba2fd1c92173",
+    "midi_archivo": "global/assets/midi/e1755cd023233d5cf18aadceac567d35c3f07fa994f8c21e278c43f1f9d5aed9.enc",
+    "vinculo_idioma": null,
+    "version": 4
   },
   {
     "id": "usmc_681488a8520c8624329efa57",
