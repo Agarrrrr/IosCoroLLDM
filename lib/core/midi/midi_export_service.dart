@@ -28,9 +28,9 @@ class MidiExportVoice {
 class MidiExportService {
   MidiExportService._();
 
-  // v4 invalida renders anteriores: el master de exportación ahora tiene
-  // +15 dB respecto de la mezcla original, cinco más que la versión previa.
-  static const int _exportCacheVersion = 4;
+  // Invalida renders anteriores a la corrección de running status al aislar
+  // voces. Conserva el master de exportación de +15 dB.
+  static const int _exportCacheVersion = 5;
   static const double _masterBoostLinear = 5.623413251903491;
 
   static Future<List<MidiExportVoice>> voices(Canto canto) async {
@@ -334,7 +334,10 @@ class MidiExportService {
         keep = true;
       } else if (status >= 0x80 && status <= 0xEF) {
         final command = status & 0xF0;
-        offset += command == 0xC0 || command == 0xD0 ? 1 : 2;
+        final dataLength = command == 0xC0 || command == 0xD0 ? 1 : 2;
+        // Con running status, statusByte ya era el primer dato del evento.
+        // Contarlo otra vez desplazaba la lectura y truncaba la pista de tempo.
+        offset += dataLength - (usesRunningStatus ? 1 : 0);
       } else {
         throw const FormatException('Evento MIDI no compatible');
       }
