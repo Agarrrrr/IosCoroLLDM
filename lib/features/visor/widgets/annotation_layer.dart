@@ -9,6 +9,7 @@ import 'package:coro_lldm/core/pdf/pdf_engine.dart';
 import 'package:coro_lldm/models/trazo.dart';
 import 'annotation_eraser_preview.dart';
 import 'annotation_theme_palette.dart';
+import 'pdf_theme_palette.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
 
 typedef _AnnotationLayerData = ({
@@ -322,6 +323,7 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
       setState(() {
         _currentTrazo = null;
         _currentPath = null;
+        _eraserPreviewPosition = null;
       });
       return;
     }
@@ -726,6 +728,35 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
         savedPainter is _AnnotationEraserReadyPainter ||
         _rasterPending.isNotEmpty;
 
+    final liveEraser = _currentTrazo?.tool == ToolType.eraser;
+    if (liveEraser) {
+      final liveKey = _rasterKey(savedTrazos, false);
+      savedPainter = _AnnotationLiveEraserPainter(
+        savedPainter,
+        _AnnotationPainter(activeTrazos,
+            activePath: _currentPath,
+            isolateEraserStrokes: false,
+            alwaysRepaint: true),
+        _currentTrazo!.points.length == 1
+            ? Rect.fromCircle(
+                center: Offset(
+                    _currentTrazo!.points.first.x * widget.pageSize.width,
+                    _currentTrazo!.points.first.y * widget.pageSize.height),
+                radius: _currentTrazo!.size / 2 + 2)
+            : _currentPath?.getBounds().inflate(_currentTrazo!.size / 2 + 2) ??
+                Rect.zero,
+        liveKey?.region ?? widget.visibleRect,
+        liveKey?.ratio ?? MediaQuery.devicePixelRatioOf(context),
+      );
+    }
+    // Keep enough editing space near the right/top edge; the saved anchor is
+    // unchanged. Explicit width lets multiline input show the whole text.
+    final textLeft = (_textTapPosition?.dx ?? 0)
+        .clamp(0.0, math.max(0.0, widget.pageSize.width - 200))
+        .toDouble();
+    final textTop = ((_textTapPosition?.dy ?? 0) - state.currentSize * 10)
+        .clamp(0.0, math.max(0.0, widget.pageSize.height - 48))
+        .toDouble();
     return Stack(
       children: [
         // Detector de gestos para dibujar mediante Listener (permite pasar eventos al PDF)
@@ -752,7 +783,7 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                         // Avoid preparing a second engine cache for that image
                         // or for geometry being replaced on the next frame.
                         isComplex: !usesRasterImage && savedTrazos.length > 8,
-                        willChange: usesRasterImage,
+                        willChange: usesRasterImage || liveEraser,
                         painter: savedPainter,
                       ),
                     ),
@@ -784,63 +815,58 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
         // Widget flotante para texto nativo (Sin modales!)
         if (_textTapPosition != null)
           Positioned(
-            left: _textTapPosition!.dx,
-            top: _textTapPosition!.dy -
-                (state.currentSize * 10), // Ajuste visual
+            left: textLeft,
+            top: textTop,
             child: Material(
               color: Colors.transparent,
-              child: ConstrainedBox(
-                constraints: BoxConstraints(
-                  minWidth: 150,
-                  maxWidth: widget.pageSize.width - _textTapPosition!.dx - 8,
-                ),
-                child: IntrinsicWidth(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.8),
-                      border: Border.all(
-                          color: AnnotationThemePalette.color(
-                              state.currentColor,
-                              ToolType.text,
-                              widget.themeMode)),
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    child: TextField(
-                      controller: _textController,
-                      focusNode: _textFocusNode,
-                      minLines: 1,
-                      maxLines: 4,
-                      keyboardType: TextInputType.multiline,
-                      style: TextStyle(
+              child: SizedBox(
+                width: math.max(1.0, widget.pageSize.width - textLeft - 8),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: (widget.themeMode == null
+                            ? Colors.white
+                            : PdfThemePalette.background(widget.themeMode!))
+                        .withValues(alpha: .96),
+                    border: Border.all(
                         color: AnnotationThemePalette.color(state.currentColor,
-                            ToolType.text, widget.themeMode),
-                        fontSize: state.currentSize * 10,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      decoration: const InputDecoration(
-                        border: InputBorder.none,
-                        isDense: true,
-                        contentPadding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-                      ),
-                      onSubmitted: (value) =>
-                          _commitTextAnnotation(state, value),
-                      onTapOutside: (_) {
-                        // iOS puede entregar el último carácter como parte de
-                        // la composición del teclado después de este evento.
-                        // Esperamos un frame para no guardar texto truncado.
-                        FocusScope.of(context).unfocus();
-                        Future<void>.delayed(
-                          const Duration(milliseconds: 80),
-                          () {
-                            if (mounted && _textTapPosition != null) {
-                              _commitTextAnnotation(state);
-                            }
-                          },
-                        );
-                      },
-                    ),
+                            ToolType.text, widget.themeMode)),
+                    borderRadius: BorderRadius.circular(4),
                   ),
+                  child: MediaQuery.withNoTextScaling(
+                      child: TextField(
+                    controller: _textController,
+                    focusNode: _textFocusNode,
+                    minLines: 1,
+                    maxLines: null,
+                    keyboardType: TextInputType.multiline,
+                    style: TextStyle(
+                      color: AnnotationThemePalette.color(
+                          state.currentColor, ToolType.text, widget.themeMode),
+                      fontSize: state.currentSize * 10,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    decoration: const InputDecoration(
+                      border: InputBorder.none,
+                      isDense: true,
+                      contentPadding:
+                          EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                    ),
+                    onSubmitted: (value) => _commitTextAnnotation(state, value),
+                    onTapOutside: (_) {
+                      // iOS puede entregar el último carácter como parte de
+                      // la composición del teclado después de este evento.
+                      // Esperamos un frame para no guardar texto truncado.
+                      FocusScope.of(context).unfocus();
+                      Future<void>.delayed(
+                        const Duration(milliseconds: 80),
+                        () {
+                          if (mounted && _textTapPosition != null) {
+                            _commitTextAnnotation(state);
+                          }
+                        },
+                      );
+                    },
+                  )),
                 ),
               ),
             ),
@@ -1094,6 +1120,53 @@ void _paintAnnotationPartition(
   paintTail?.call();
   canvas.restore();
   canvas.restore();
+}
+
+/// Preview on the annotation surface only, keeping the cached PDF untouched.
+/// Allocate a compositing layer only around the currently affected region.
+class _AnnotationLiveEraserPainter extends CustomPainter {
+  final CustomPainter saved;
+  final _AnnotationPainter eraser;
+  final Rect affected;
+  final Rect? visibleRect;
+  final double ratio;
+  _AnnotationLiveEraserPainter(
+      this.saved, this.eraser, this.affected, this.visibleRect, this.ratio);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final region = visibleRect ?? (Offset.zero & size);
+    final bounds = affected.intersect(region);
+    if (bounds.isEmpty) {
+      saved.paint(canvas, size);
+      return;
+    }
+    final damage = Rect.fromLTRB(
+      region.left + ((bounds.left - region.left) * ratio).floor() / ratio,
+      region.top + ((bounds.top - region.top) * ratio).floor() / ratio,
+      region.left + ((bounds.right - region.left) * ratio).ceil() / ratio,
+      region.top + ((bounds.bottom - region.top) * ratio).ceil() / ratio,
+    ).intersect(region);
+    canvas.save();
+    canvas.clipPath(
+        Path()
+          ..fillType = PathFillType.evenOdd
+          ..addRect(region)
+          ..addRect(damage),
+        doAntiAlias: false);
+    saved.paint(canvas, size);
+    canvas.restore();
+    canvas.save();
+    canvas.clipRect(damage, doAntiAlias: false);
+    canvas.saveLayer(damage, Paint());
+    saved.paint(canvas, size);
+    eraser.paint(canvas, size);
+    canvas.restore();
+    canvas.restore();
+  }
+
+  @override
+  bool shouldRepaint(_AnnotationLiveEraserPainter old) => true;
 }
 
 class _AnnotationComposedPainter extends CustomPainter {

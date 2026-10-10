@@ -22,9 +22,7 @@ class ScoreCard extends ConsumerWidget {
     final strings = AppStrings.of(context);
 
     final cardBg = Theme.of(context).colorScheme.surface;
-    final audioColor = AccessibleColors.against(
-        const Color(0xFF20B89A), [cardBg],
-        minimum: 3.2);
+    final audioColor = Theme.of(context).colorScheme.primary;
 
     return RepaintBoundary(
       child: Padding(

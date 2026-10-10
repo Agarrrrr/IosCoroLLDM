@@ -30,6 +30,9 @@ class SelectionController extends MonetizationController {
     purchases.add(package);
     return false;
   }
+
+  @override
+  Future<RestoreResult> restore() async => RestoreResult.restored;
 }
 
 void main() {
@@ -96,6 +99,22 @@ void main() {
       expect(tester.takeException(), isNull);
     });
   }
+  testWidgets('Aviso de Premium aparece encima del diálogo y se puede tocar',
+      (tester) async {
+    await mount(tester, SelectionController(), 'es');
+    await tester.tap(find.text('Restaurar compras'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 250));
+    final banner = find.byKey(const ValueKey('app-notification-banner'));
+    expect(banner.hitTestable(), findsOneWidget);
+    expect(find.byType(SnackBar), findsNothing);
+    expect(find.byType(PremiumDialog), findsOneWidget);
+    await tester.tap(banner);
+    await tester.pumpAndSettle();
+    expect(banner, findsNothing);
+    expect(find.byType(PremiumDialog), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
   testWidgets('El foco del teclado permanece en el diálogo hasta cerrarlo',
       (tester) async {
     final outside = FocusNode();

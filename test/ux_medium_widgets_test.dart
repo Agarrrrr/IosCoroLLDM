@@ -55,16 +55,14 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  testWidgets('Título completo del visor se abre, copia y cierra al 200%',
+  testWidgets('Título del visor es pasivo y no abre ventanas al 200%',
       (tester) async {
     await mount(tester, const ScoreTitleButton(title: title));
     await tester.tap(find.text(title));
     await tester.pumpAndSettle();
-    expect(find.widgetWithText(SelectableText, title), findsOneWidget);
-    expect(tester.takeException(), isNull);
-    await tester.tap(find.text('Cerrar'));
-    await tester.pumpAndSettle();
     expect(find.byType(AlertDialog), findsNothing);
+    expect(find.byType(InkWell), findsNothing);
+    expect(tester.takeException(), isNull);
   });
   testWidgets(
       'Catálogo usa dos líneas; favorito tiene 48dp y no abre la partitura',
@@ -82,6 +80,24 @@ void main() {
     expect(opened, 0);
     expect(find.byTooltip('Quitar de favoritos'), findsOneWidget);
     expect(tester.takeException(), isNull);
+  });
+  testWidgets('El piano y el resalte de audio conservan el dorado del tema',
+      (tester) async {
+    final canto = Canto(
+        id: 'audio',
+        nombre: 'Canto con piano',
+        archivo: 'test.pdf',
+        midiArchivo: 'test.mid',
+        temas: []);
+    await mount(tester, ScoreCard(canto: canto, onTap: () {}));
+    final gold =
+        Theme.of(tester.element(find.byType(ScoreCard))).colorScheme.primary;
+    expect(tester.widget<Icon>(find.byIcon(Icons.piano_rounded)).color, gold);
+    final accents = tester
+        .widgetList<Ink>(find.byType(Ink))
+        .where((ink) => ink.decoration is BoxDecoration)
+        .map((ink) => (ink.decoration! as BoxDecoration).color);
+    expect(accents, contains(gold));
   });
   testWidgets('Cuotas explican cantos desbloqueados y archivos disponibles',
       (tester) async {
@@ -202,6 +218,9 @@ void main() {
     expect(find.textContaining('Cantos nuevos disponibles: 2'), findsNothing);
     expect(find.byTooltip('Ajustes del reproductor'), findsNothing);
     expect(find.byIcon(Icons.settings_rounded), findsNothing);
+    expect(find.text('Reproductor'), findsNothing);
+    expect(find.byIcon(Icons.piano_rounded), findsOneWidget);
+    expect(find.byIcon(Icons.keyboard_arrow_down_rounded), findsNothing);
     final play = tester.getCenter(find.byIcon(Icons.play_arrow_rounded));
     final mix = tester.getCenter(find.byTooltip('Mezcla de voces'));
     final speed = tester.getCenter(find.byTooltip('Velocidad'));

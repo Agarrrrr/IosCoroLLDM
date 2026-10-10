@@ -1,0 +1,68 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/search_normalization_test.dart
+00:00 +0: E:/proyectos/IosCoroLLDM/test/search_normalization_test.dart: Buscar activa Todos los cantos y no recupera el filtro al limpiar
+00:00 +1: E:/proyectos/IosCoroLLDM/test/search_normalization_test.dart: normalización numérica de búsqueda unifica dígitos con números escritos en español
+00:00 +2: E:/proyectos/IosCoroLLDM/test/search_normalization_test.dart: normalización numérica de búsqueda unifica dígitos con números escritos en inglés
+00:01 +3: E:/proyectos/IosCoroLLDM/test/premium_selection_test.dart: Elegir plan no compra: continuar usa únicamente la selección (es)
+00:02 +4: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Título del visor es pasivo y no abre ventanas al 200%
+00:02 +5: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Título del visor es pasivo y no abre ventanas al 200%
+00:02 +6: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Título del visor es pasivo y no abre ventanas al 200%
+00:03 +7: E:/proyectos/IosCoroLLDM/test/premium_selection_test.dart: El foco del teclado permanece en el diálogo hasta cerrarlo
+00:03 +8: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Catálogo usa dos líneas; favorito tiene 48dp y no abre la partitura
+00:03 +9: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: (setUpAll)
+00:03 +9: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: El piano y el resalte de audio conservan el dorado del tema
+00:03 +10: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.claro es, 320px, texto 200%
+00:03 +11: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.claro es, 320px, texto 200%
+00:03 +12: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.claro es, 320px, texto 200%
+00:04 +13: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.claro es, 320px, texto 200%
+00:04 +14: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.claro es, 320px, texto 200%
+00:04 +15: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.claro es, 320px, texto 200%
+00:05 +16: E:/proyectos/IosCoroLLDM/test/app_notification_banner_test.dart: Notification floats with rounded surface, handles 200% text and expires
+00:05 +17: E:/proyectos/IosCoroLLDM/test/app_notification_banner_test.dart: Notification floats with rounded surface, handles 200% text and expires
+00:05 +18: E:/proyectos/IosCoroLLDM/test/app_notification_banner_test.dart: Notification floats with rounded surface, handles 200% text and expires
+00:05 +19: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.claro es, 320px, texto 200%
+00:06 +20: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.claro en, 320px, texto 200%
+00:06 +21: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.claro en, 320px, texto 200%
+00:06 +22: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.claro en, 320px, texto 200%
+00:06 +23: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.claro en, 320px, texto 200%
+00:06 +24: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.oscuro es, 320px, texto 200%
+00:06 +25: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.oscuro es, 320px, texto 200%
+00:06 +26: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.oscuro es, 320px, texto 200%
+00:07 +27: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.oscuro es, 320px, texto 200%
+00:07 +28: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.oscuro en, 320px, texto 200%
+00:07 +29: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.oscuro en, 320px, texto 200%
+00:07 +30: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.oscuro en, 320px, texto 200%
+00:07 +31: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.oscuro en, 320px, texto 200%
+00:07 +32: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.sepia es, 320px, texto 200%
+00:07 +33: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.sepia es, 320px, texto 200%
+00:07 +34: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.sepia es, 320px, texto 200%
+00:07 +35: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.sepia es, 320px, texto 200%
+00:07 +36: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.sepia en, 320px, texto 200%
+00:08 +37: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.sepia en, 320px, texto 200%
+00:08 +38: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.sepia en, 320px, texto 200%
+00:08 +39: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.sepia en, 320px, texto 200%
+00:08 +40: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.quiet es, 320px, texto 200%
+00:08 +41: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.quiet es, 320px, texto 200%
+00:08 +42: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.quiet es, 320px, texto 200%
+00:08 +43: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.quiet es, 320px, texto 200%
+00:08 +44: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.quiet en, 320px, texto 200%
+00:09 +45: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.quiet en, 320px, texto 200%
+00:09 +46: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.quiet en, 320px, texto 200%
+00:09 +47: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.quiet en, 320px, texto 200%
+00:09 +48: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.oscuroNormal es, 320px, texto 200%
+00:09 +49: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.oscuroNormal es, 320px, texto 200%
+00:09 +50: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.oscuroNormal es, 320px, texto 200%
+00:09 +51: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.oscuroNormal es, 320px, texto 200%
+00:09 +52: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings: AppThemeMode.oscuroNormal en, 320px, texto 200%
+00:09 +53: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium: AppThemeMode.oscuroNormal en, 320px, texto 200%
+00:09 +54: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward: AppThemeMode.oscuroNormal en, 320px, texto 200%
+00:09 +55: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer: AppThemeMode.oscuroNormal en, 320px, texto 200%
+00:09 +56: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: Ajustes selecciona tema y navegación; colores tienen nombre y área 48dp
+00:10 +57: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: Ajustes conserva restaurar y elimina vinculación por ID
+00:10 +58: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: Ajustes y Premium permanecen fijos al desplazar 40 temas
+00:10 +59: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: Identificador de soporte oculta el prefijo técnico
+00:10 +60: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: settings horizontal con texto 200%
+00:10 +61: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: premium horizontal con texto 200%
+00:10 +62: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: reward horizontal con texto 200%
+00:10 +63: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: drawer horizontal con texto 200%
+00:10 +64: E:/proyectos/IosCoroLLDM/test/ux_accessibility_test.dart: (tearDownAll)
+00:10 +64: All tests passed!

@@ -3,6 +3,7 @@ import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:flutter/material.dart';
 import 'subscription_terms.dart';
 import 'restore_feedback.dart';
+import 'package:coro_lldm/features/shared/app_notification_banner.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -70,8 +71,8 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
               Text(
                 state.premiumOrigin == PremiumOrigin.iosLegacy
                     ? strings.t(
-                        'Premium vitalicio reconocido por haber adquirido la versión original para iOS.',
-                        'Lifetime Premium recognized from your original iOS purchase.',
+                        'Premium vitalicio activo.',
+                        'Lifetime Premium is active.',
                       )
                     : strings.t(
                         'Tu suscripción Premium está activa.',
@@ -110,8 +111,8 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
               else if (plans.isEmpty)
                 Text(
                   strings.t(
-                    'No pudimos cargar los planes. Cierra esta ventana e inténtalo de nuevo con conexión a internet.',
-                    'We could not load the plans. Close this window and try again with an internet connection.',
+                    'No se cargaron los planes. Inténtalo de nuevo con internet.',
+                    'Plans could not load. Try again with an internet connection.',
                   ),
                 )
               else ...[
@@ -142,8 +143,7 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                         },
                   child: Text(state.isBusy
                       ? strings.t('Procesando…', 'Processing…')
-                      : strings.t('Continuar con el plan seleccionado',
-                          'Continue with selected plan')),
+                      : strings.t('Continuar', 'Continue')),
                 ),
                 if (eligibility.isLoading)
                   Padding(
@@ -153,8 +153,8 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                 const SizedBox(height: 14),
                 Text(
                   strings.t(
-                    'La tienda confirmará el precio y las condiciones antes de pagar. Los planes con renovación automática continúan hasta que los canceles desde la tienda antes del siguiente periodo.',
-                    'The store will confirm the price and terms before payment. Auto-renewing plans continue until you cancel in the store before the next period.',
+                    'Renovación automática. Cancela en la tienda antes del siguiente periodo.',
+                    'Auto-renews. Cancel in the store before the next period.',
                   ),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
@@ -216,13 +216,9 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                 : () async {
                     final restored = await controller.restore();
                     if (!context.mounted) return;
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text(
-                          restoreFeedback(restored, strings),
-                        ),
-                      ),
-                    );
+                    AppNotificationBanner.show(
+                        context, restoreFeedback(restored, strings),
+                        icon: Icons.workspace_premium_rounded);
                   },
             child: Text(state.isBusy
                 ? strings.t('Procesando…', 'Processing…')
@@ -333,9 +329,8 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                         if (terms.eligibilityUnknown) ...[
                           const SizedBox(height: 8),
                           Text(
-                              strings.t(
-                                  'La tienda confirmará si tienes una oferta disponible.',
-                                  'The store will confirm whether an offer is available to you.'),
+                              strings.t('Oferta sujeta a elegibilidad.',
+                                  'Offer subject to eligibility.'),
                               style: Theme.of(context)
                                   .textTheme
                                   .bodyMedium

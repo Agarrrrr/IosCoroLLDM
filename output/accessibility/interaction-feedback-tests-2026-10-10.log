@@ -1,0 +1,56 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart
+00:00 +0: E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart: Live erase matches committed pixels at fractional origin and DPR 2
+00:00 +1: E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart: Eraser clears before pointer up, including cached 1 pencil strokes
+00:00 +2: E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart: Eraser clears before pointer up, including cached 1 highlighter strokes
+00:00 +3: E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart: Eraser clears before pointer up, including cached 101 pencil strokes
+00:01 +4: E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart: Eraser clears before pointer up, including cached 101 highlighter strokes
+00:01 +5: E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart: Text preview expands for complete input near edge in claro
+00:01 +6: E:/proyectos/IosCoroLLDM/test/app_notification_banner_test.dart: Notification floats with rounded surface, handles 200% text and expires
+00:01 +7: E:/proyectos/IosCoroLLDM/test/app_notification_banner_test.dart: Notification floats with rounded surface, handles 200% text and expires
+00:01 +8: E:/proyectos/IosCoroLLDM/test/annotation_live_feedback_test.dart: Clear requires confirmation; undo/redo reflect actual history
+00:02 +9: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: (setUpAll)
+00:02 +9: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Título del visor es pasivo y no abre ventanas al 200%
+00:03 +10: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Catálogo usa dos líneas; favorito tiene 48dp y no abre la partitura
+00:03 +11: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Cuotas explican cantos desbloqueados y archivos disponibles
+00:04 +12: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:04 +13: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:04 +14: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:04 +15: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Panel real de audio: cuota oculta y controles de 48dp caben en 320px
+00:04 +16: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Panel real de audio: cuota oculta y controles de 48dp caben en 320px
+00:04 +17: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Player swipe closes without stop or seek; progress stays independent
+00:05 +18: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: (tearDownAll)
+00:05 +18: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: layout resolves a cache miss to an existing physical image
+00:06 +19: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: reopening reuses only the matching page and releases on pressure
+00:06 +20: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +21: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +22: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +23: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +24: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +25: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +26: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +27: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +28: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +29: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +30: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +31: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:08 +32: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:10 +33: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:10 +34: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:10 +34: E:/proyectos/IosCoroLLDM/test/pdf_deferred_render_test.dart: PDF page filter inverts paper without inverting colored overlays
+PdfDocument initial load: deferred-render-regression-1 (47 ms)
+00:10 +35: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:10 +36: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:10 +36: E:/proyectos/IosCoroLLDM/test/pdf_deferred_render_test.dart: background page geometry keeps the visible page zoom and position
+PdfDocument initial load: deferred-render-regression-2 (4 ms)
+00:10 +37: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:10 +37: E:/proyectos/IosCoroLLDM/test/pdf_deferred_render_test.dart: returning to a page reuses a cache that is below its limit
+PdfDocument initial load: deferred-render-regression-3 (4 ms)
+00:10 +38: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:10 +38: E:/proyectos/IosCoroLLDM/test/pdf_deferred_render_test.dart: deferred zoom rendering uses the current viewport scale
+PdfDocument initial load: deferred-render-regression-1 (4 ms)
+00:10 +39: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:12 +40: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: false, translucent: false))
+00:17 +41: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: false))
+00:22 +42: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: viewport changes reveal the full saved stroke without losing input
+00:22 +43: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: saved erasing preserves the PDF background and stroke order at zoom
+00:22 +44: All tests passed!

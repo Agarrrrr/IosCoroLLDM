@@ -9752,8 +9752,22 @@
     "idioma": "es"
   },
   {
-    "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
+    "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
     "nombre": "La Vida se va Como el Viento",
+    "archivo": "global/assets/pdf/e6e1295d099bf1e9d86b7274eade60c17ce0b0595ca209406711a12529324809.enc",
+    "midi_archivo": "global/assets/midi/7c5d03657ae81557310c610e626d2c2f2cbae102cbd36a839b0fd8f7a176ad02.enc",
+    "vinculo_idioma": null,
+    "temas": [
+      "Evangelización"
+    ],
+    "coro_id": "local",
+    "_idioma": "es",
+    "idioma": "es",
+    "version": 4
+  },
+  {
+    "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
+    "nombre": "La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá",
     "archivo": "global/assets/pdf/933d7b514551607d7f4d27e4dc19a4e2c89c3dafde33fa07c10783029ef1dc50.enc",
     "midi_archivo": "global/assets/midi/8f8ec264aea98d2c2020941409dc8d78c2e5e4008d5b64832d36f4852ecfe983.enc",
     "vinculo_idioma": null,

@@ -7,6 +7,7 @@ import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/features/premium/restore_feedback.dart';
+import 'package:coro_lldm/features/shared/app_notification_banner.dart';
 
 class SettingsDialog extends ConsumerStatefulWidget {
   const SettingsDialog({super.key});
@@ -229,8 +230,8 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                                 style: Theme.of(context).textTheme.titleMedium),
                             const SizedBox(height: 8),
                             _description(strings.t(
-                                'Si ya compraste Premium, usa la misma cuenta de App Store o Google Play y restaura tus compras.',
-                                'If you purchased Premium, use the same App Store or Google Play account and restore your purchases.')),
+                                'Restaura con la cuenta de la tienda donde compraste Premium.',
+                                'Restore with the store account used to purchase Premium.')),
                             OutlinedButton.icon(
                               onPressed: purchases.isBusy
                                   ? null
@@ -239,10 +240,10 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                                           .read(monetizationProvider.notifier)
                                           .restore();
                                       if (!context.mounted) return;
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(SnackBar(
-                                              content: Text(restoreFeedback(
-                                                  result, strings))));
+                                      AppNotificationBanner.show(context,
+                                          restoreFeedback(result, strings),
+                                          icon:
+                                              Icons.workspace_premium_rounded);
                                     },
                               icon: const Icon(Icons.restore),
                               label: Text(purchases.isBusy
@@ -272,11 +273,11 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                                   await Clipboard.setData(ClipboardData(
                                       text: purchases.appUserId!));
                                   if (!context.mounted) return;
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                          content: Text(strings.t(
-                                              'Identificador copiado',
-                                              'Identifier copied'))));
+                                  AppNotificationBanner.show(
+                                      context,
+                                      strings.t('Identificador copiado',
+                                          'Identifier copied'),
+                                      icon: Icons.copy_rounded);
                                 },
                                 icon: const Icon(Icons.copy),
                                 label: Text(strings.t('Copiar identificador',

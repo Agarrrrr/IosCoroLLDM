@@ -10,19 +10,21 @@ class AnnotationTools extends StatelessWidget {
   final PdfEngineState state;
   final ValueChanged<ToolType> onTool;
   final VoidCallback onNavigate, onUndo, onClear;
+  final VoidCallback? onRedo;
   const AnnotationTools(
       {super.key,
       required this.state,
       required this.onTool,
       required this.onNavigate,
       required this.onUndo,
+      this.onRedo,
       required this.onClear});
 
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     Widget button(
-            String label, Widget icon, bool selected, VoidCallback action) =>
+            String label, Widget icon, bool selected, VoidCallback? action) =>
         IconButton(
             tooltip: label,
             onPressed: action,
@@ -66,12 +68,44 @@ class AnnotationTools extends StatelessWidget {
                     state.isDrawingMode && state.currentTool == tool,
                     () => onTool(tool)),
               if (state.isDrawingMode) ...[
+                button('Deshacer', const Icon(Icons.undo_rounded), false,
+                    state.canUndo ? onUndo : null),
                 button(
-                    'Deshacer', const Icon(Icons.undo_rounded), false, onUndo),
-                button('Borrar anotaciones',
-                    const Icon(Icons.delete_outline_rounded), false, onClear),
+                    AppStrings.of(context).t('Rehacer', 'Redo'),
+                    const Icon(Icons.redo_rounded),
+                    false,
+                    state.canRedo ? onRedo : null),
+                button(
+                    'Borrar anotaciones',
+                    const Icon(Icons.delete_outline_rounded),
+                    false,
+                    state.trazos.values.any((strokes) => strokes.isNotEmpty)
+                        ? () => _confirmClear(context)
+                        : null),
               ],
             ])));
+  }
+
+  Future<void> _confirmClear(BuildContext context) async {
+    final strings = AppStrings.of(context);
+    final confirmed = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+                scrollable: true,
+                title: Text(strings.t('¿Borrar todas las anotaciones?',
+                    'Delete all annotations?')),
+                content: Text(strings.t(
+                    'Se borrarán las anotaciones de todas las páginas de este canto.',
+                    'Annotations on every page of this song will be deleted.')),
+                actions: [
+                  TextButton(
+                      onPressed: () => Navigator.pop(context, false),
+                      child: Text(strings.t('Cancelar', 'Cancel'))),
+                  FilledButton(
+                      onPressed: () => Navigator.pop(context, true),
+                      child: Text(strings.t('Borrar todo', 'Delete all'))),
+                ]));
+    if (context.mounted && confirmed == true) onClear();
   }
 }
 

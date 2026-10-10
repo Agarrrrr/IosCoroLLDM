@@ -1,0 +1,14 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart
+00:00 +0: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: (setUpAll)
+00:00 +0: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Tema y Favoritos elegidos después de buscar filtran resultados
+00:00 +1: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Búsqueda sin coincidencias en favoritos conserva la colección
+00:00 +2: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Búsqueda sin coincidencias en favoritos conserva la colección
+00:00 +3: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Búsqueda sin coincidencias en favoritos conserva la colección
+00:00 +4: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Búsqueda sin coincidencias en favoritos conserva la colección
+00:01 +5: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Favoritos realmente vacíos explican cómo añadir cantos
+00:01 +6: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Catálogo ilegible muestra un fallo de lectura, no resultados vacíos
+00:01 +7: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Catálogo vacío se distingue de búsqueda sin coincidencias
+00:01 +8: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Preparación de exportación acepta una sola pulsación y se desbloquea
+00:01 +9: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: Fallo del audio muestra explicación y no deja controles cargando
+00:01 +10: E:/proyectos/IosCoroLLDM/test/qol_feedback_test.dart: (tearDownAll)
+00:01 +10: All tests passed!

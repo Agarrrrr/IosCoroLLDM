@@ -1,0 +1,7 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/viento_catalog_identity_test.dart
+00:00 +0: Ambas obras conservan identidad y recursos distintos en assets/catalogo.json
+00:00 +1: Ambas obras conservan identidad y recursos distintos en assets/offline_assets/catalogo.json
+00:00 +2: Ambas obras conservan identidad y recursos distintos en website/public/catalogo.json
+00:00 +3: PDF y cuatro voces empaquetados corresponden a La Vida se va Como el Viento
+00:00 +4: PDF y cuatro voces empaquetados corresponden a La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá
+00:00 +5: All tests passed!

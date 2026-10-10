@@ -43,11 +43,10 @@ class RewardOrPremiumDialog extends StatelessWidget {
             Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
           Text(playback
               ? strings.t(
-                  'Hoy ya escuchaste los 5 cantos gratuitos. Puedes volver a escucharlos o elegir cómo abrir otro canto.',
-                  'You have listened to today’s 5 free songs. You can replay them or choose how to open another song.')
-              : strings.t(
-                  'Hoy ya utilizaste las 3 exportaciones gratuitas. Elige cómo continuar.',
-                  'You have used today’s 3 free exports. Choose how to continue.')),
+                  'Usaste los 5 cantos gratuitos de hoy. Puedes volver a escucharlos.',
+                  'You used today’s 5 free songs. You can replay them.')
+              : strings.t('Usaste las 3 exportaciones gratuitas de hoy.',
+                  'You used today’s 3 free exports.')),
           const SizedBox(height: 20),
           _option(context,
               title: strings.t('Obtener Premium', 'Get Premium'),

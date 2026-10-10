@@ -41,6 +41,11 @@ class _Sync extends SyncManagerNotifier {
   SyncState build() => SyncState();
 }
 
+class _Language extends LanguageFilterNotifier {
+  @override
+  String build() => 'es';
+}
+
 void main() {
   late Directory directory;
   setUpAll(() async {
@@ -53,6 +58,51 @@ void main() {
   tearDownAll(() async {
     await Hive.close();
     await directory.delete(recursive: true);
+  });
+
+  testWidgets('Tema y Favoritos elegidos después de buscar filtran resultados',
+      (tester) async {
+    final scope = ProviderContainer(overrides: [
+      languageFilterProvider.overrideWith(_Language.new),
+      cantosBaseProvider.overrideWith(() => _Catalog([
+            Canto(
+                id: 'one',
+                nombre: 'Esperanza primera',
+                archivo: '1.pdf',
+                temas: ['Alabanza']),
+            Canto(
+                id: 'two',
+                nombre: 'Esperanza segunda',
+                archivo: '2.pdf',
+                temas: ['Juventud']),
+            Canto(
+                id: 'en',
+                nombre: 'Esperanza English',
+                archivo: '3.pdf',
+                temas: ['Juventud'],
+                idioma: 'en'),
+          ], false)),
+      favoritosProvider.overrideWith(() => _Favorites({'one'})),
+    ]);
+    addTearDown(scope.dispose);
+    scope.read(searchTextProvider.notifier).set('Esperanza');
+    await tester.runAsync(() async {
+      await scope.read(cantosBaseProvider.future);
+      Future<List<String>> results() async =>
+          (await scope.read(cantosFiltradosProvider.future))
+              .map((canto) => canto.id)
+              .toList();
+      expect(await results(), ['one', 'two']);
+      scope.read(categoryFilterProvider.notifier).set('tema_Juventud');
+      expect(await results(), ['two']);
+      scope.read(soloFavoritosProvider.notifier).set(true);
+      expect(await results(), isEmpty);
+      scope.read(categoryFilterProvider.notifier).set('');
+      expect(await results(), ['one']);
+      scope.read(soloFavoritosProvider.notifier).set(false);
+      expect(await results(), ['one', 'two']);
+      expect(scope.read(searchTextProvider), 'Esperanza');
+    });
   });
 
   Future<ProviderContainer> catalog(WidgetTester tester,

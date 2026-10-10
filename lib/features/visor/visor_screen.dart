@@ -33,6 +33,7 @@ import 'package:coro_lldm/features/premium/usage_quota_notice.dart';
 import 'package:coro_lldm/features/visor/widgets/score_title_button.dart';
 import 'package:coro_lldm/features/visor/widgets/async_action_icon_button.dart';
 import 'package:coro_lldm/features/shared/content_notice.dart';
+import 'package:coro_lldm/features/shared/app_notification_banner.dart';
 import 'package:coro_lldm/features/visor/widgets/player_dismiss_handle.dart';
 import 'package:coro_lldm/features/visor/widgets/annotation_tools.dart';
 import 'package:coro_lldm/features/visor/widgets/player_options_sheet.dart';
@@ -218,12 +219,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         if (!_quotaToastShown && !ref.read(monetizationProvider).isPremium) {
           _quotaToastShown = true;
           final remaining = currentUsageQuota().newSongsRemaining;
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            duration: const Duration(seconds: 2),
-            content: Text(AppStrings.of(context).t(
-                '$remaining cantos nuevos disponibles hoy',
-                '$remaining new songs available today')),
-          ));
+          AppNotificationBanner.show(
+              context,
+              AppStrings.of(context).t('$remaining cantos disponibles hoy',
+                  '$remaining songs available today'));
         }
         return;
       }
@@ -1885,6 +1884,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                             },
                             onUndo: () =>
                                 ref.read(pdfEngineProvider.notifier).undo(),
+                            onRedo: () =>
+                                ref.read(pdfEngineProvider.notifier).redo(),
                             onClear: () => ref
                                 .read(pdfEngineProvider.notifier)
                                 .clearAllGlobal(),
@@ -2061,9 +2062,9 @@ class _MidiPanelState extends State<MidiPanel> {
     }
 
     return Material(
-      elevation: 4,
+      elevation: 12,
       borderRadius: BorderRadius.circular(20),
-      shadowColor: Colors.black.withOpacity(0.2),
+      shadowColor: Colors.black.withValues(alpha: .35),
       child: ConstrainedBox(
           constraints: BoxConstraints(
               maxHeight: MediaQuery.of(context).size.height * 0.70),
@@ -2088,12 +2089,6 @@ class _MidiPanelState extends State<MidiPanel> {
                   children: [
                     Icon(Icons.piano_rounded,
                         color: widget.accentColor, size: 18),
-                    const SizedBox(width: 8),
-                    Text(AppStrings.of(context).t('Reproductor', 'Player'),
-                        style: GoogleFonts.inter(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 13,
-                            color: widget.accentColor)),
                     const SizedBox(width: 8),
                     Text(
                       '♩ = ${widget.midiState.tempoBpm}',

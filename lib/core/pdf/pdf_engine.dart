@@ -36,6 +36,8 @@ class PdfEngineState {
   // Historial para Deshacer/Rehacer
   final List<Map<int, List<Trazo>>> history;
   final int historyIndex;
+  bool get canUndo => historyIndex > 0;
+  bool get canRedo => historyIndex >= 0 && historyIndex < history.length - 1;
 
   PdfEngineState({
     this.cantoId,

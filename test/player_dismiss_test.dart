@@ -20,8 +20,11 @@ void main() {
     expect(closes, 0);
     await tester.drag(handle, const Offset(0, 100));
     expect(closes, 1);
-    await tester.tap(find.byIcon(Icons.keyboard_arrow_down_rounded));
-    expect(closes, 2);
+    expect(find.byIcon(Icons.keyboard_arrow_down_rounded), findsNothing);
+    final semantics = tester.ensureSemantics();
+    final accessible = find.bySemanticsLabel('Close player');
+    expect(accessible, findsOneWidget);
+    semantics.dispose();
   });
   testWidgets('A cancelled swipe does not close', (tester) async {
     var closes = 0;

@@ -17,49 +17,32 @@ class _PlayerDismissHandleState extends State<PlayerDismissHandle> {
   Widget build(BuildContext context) {
     final label =
         AppStrings.of(context).t('Cerrar reproductor', 'Close player');
-    return Row(children: [
-      Expanded(
-        child: Semantics(
-          label: label,
-          hint: AppStrings.of(context).t('Desliza hacia abajo', 'Swipe down'),
-          button: true,
-          onTap: widget.onClose,
-          child: GestureDetector(
-            key: const ValueKey('player-dismiss-drag'),
+    return Semantics(
+      label: label,
+      hint: AppStrings.of(context).t('Desliza hacia abajo', 'Swipe down'),
+      button: true,
+      onTap: widget.onClose,
+      child: GestureDetector(
+        key: const ValueKey('player-dismiss-drag'),
+        behavior: HitTestBehavior.opaque,
+        onVerticalDragStart: (_) => _distance = 0,
+        onVerticalDragUpdate: (details) =>
+            _distance = (_distance + details.delta.dy).clamp(0, 1000),
+        onVerticalDragCancel: () => _distance = 0,
+        onVerticalDragEnd: (details) {
+          final close = _distance >= 48 ||
+              (_distance >= 12 && (details.primaryVelocity ?? 0) >= 700);
+          _distance = 0;
+          if (close) widget.onClose();
+        },
+        child: Listener(
             behavior: HitTestBehavior.opaque,
-            onVerticalDragStart: (_) => _distance = 0,
-            onVerticalDragUpdate: (details) =>
-                _distance = (_distance + details.delta.dy).clamp(0, 1000),
-            onVerticalDragCancel: () => _distance = 0,
-            onVerticalDragEnd: (details) {
-              final close = _distance >= 48 ||
-                  (_distance >= 12 && (details.primaryVelocity ?? 0) >= 700);
-              _distance = 0;
-              if (close) widget.onClose();
-            },
-            child: Listener(
-                onPointerCancel: (_) => _distance = 0,
-                child: SizedBox(
-                  height: 48,
-                  child: Center(
-                    child: Container(
-                      width: 40,
-                      height: 5,
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
-                        borderRadius: BorderRadius.circular(3),
-                      ),
-                    ),
-                  ),
-                )),
-          ),
-        ),
+            onPointerCancel: (_) => _distance = 0,
+            child: SizedBox(
+              height: 28,
+              width: double.infinity,
+            )),
       ),
-      IconButton(
-        tooltip: label,
-        onPressed: widget.onClose,
-        icon: const Icon(Icons.keyboard_arrow_down_rounded),
-      ),
-    ]);
+    );
   }
 }

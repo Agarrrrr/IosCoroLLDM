@@ -97,7 +97,13 @@ final cantosBaseProvider =
 class SearchTextNotifier extends Notifier<String> {
   @override
   String build() => '';
-  void set(String value) => state = value;
+  void set(String value) {
+    if (normalizeSearchText(value).isNotEmpty) {
+      ref.read(categoryFilterProvider.notifier).set('');
+      ref.read(soloFavoritosProvider.notifier).set(false);
+    }
+    state = value;
+  }
 }
 
 final searchTextProvider =
@@ -405,6 +411,17 @@ List<Canto> _filterAndSortCantosEnIsolate(FilterParams params) {
     // El idioma elegido en Ajustes siempre limita el catálogo, incluso al buscar.
     if (canto.idioma != params.language) return false;
 
+    // Un filtro elegido después de buscar limita también sus resultados.
+    if (params.soloFavoritos && !favoritosSet.contains(canto.id)) {
+      return false;
+    }
+    if (params.categoria.startsWith('tema_')) {
+      final temaABuscar = params.categoria.replaceFirst('tema_', '');
+      if (!canto.temas.any((t) => _normalizar(t) == _normalizar(temaABuscar))) {
+        return false;
+      }
+    }
+
     // 1. Si la barra de búsqueda tiene texto: búsqueda dentro del idioma activo.
     if (queryWords.isNotEmpty) {
       final nNombre = normalizeSearchText(canto.nombre);
@@ -441,19 +458,7 @@ List<Canto> _filterAndSortCantosEnIsolate(FilterParams params) {
           }
         }
       }
-      return true; // Coincide con la búsqueda global en cualquier idioma o tema
-    }
-
-    // 2. Si la búsqueda está VACÍA: aplicar filtros de idioma, favoritos y tema
-    if (params.soloFavoritos && !favoritosSet.contains(canto.id)) {
-      return false;
-    }
-
-    if (params.categoria.startsWith('tema_')) {
-      final temaABuscar = params.categoria.replaceFirst('tema_', '');
-      final hasTema =
-          canto.temas.any((t) => _normalizar(t) == _normalizar(temaABuscar));
-      if (!hasTema) return false;
+      return true;
     }
 
     return true;
