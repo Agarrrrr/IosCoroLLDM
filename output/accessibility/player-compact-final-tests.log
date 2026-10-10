@@ -1,0 +1,13 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart
+00:00 +0: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: (setUpAll)
+00:00 +0: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Título completo del visor se abre, copia y cierra al 200%
+00:01 +1: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:01 +2: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:01 +3: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:01 +4: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:01 +5: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Submenús de velocidad y mezcla conservan los controles y sus callbacks
+00:01 +6: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Submenús de velocidad y mezcla conservan los controles y sus callbacks
+00:01 +7: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Panel real de audio: cuota oculta y controles de 48dp caben en 320px
+00:01 +8: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: Player swipe closes without stop or seek; progress stays independent
+00:01 +9: E:/proyectos/IosCoroLLDM/test/ux_medium_widgets_test.dart: (tearDownAll)
+00:01 +9: All tests passed!

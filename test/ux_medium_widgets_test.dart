@@ -100,7 +100,7 @@ void main() {
     expect(find.textContaining('disponibles'), findsNothing);
   });
   testWidgets(
-      'Velocidad directa y mezcla conservan los controles y sus callbacks',
+      'Submenús de velocidad y mezcla conservan los controles y sus callbacks',
       (tester) async {
     var speed = 1.5;
     var solos = 0;
@@ -134,7 +134,10 @@ void main() {
       );
     }));
     expect(find.byTooltip('Player settings'), findsNothing);
-    await tester.scrollUntilVisible(find.text('Restablecer'), 100);
+    expect(find.text('Restablecer'), findsNothing);
+    await tester.tap(find.byTooltip('Velocidad'));
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.text('Restablecer'));
     await tester.tap(find.text('Restablecer'));
     await tester.pumpAndSettle();
     expect(speed, 1);
@@ -145,10 +148,11 @@ void main() {
     speedSlider.onChanged!(0.75);
     await tester.pumpAndSettle();
     expect(speed, 0.75);
-    await tester.scrollUntilVisible(find.text('Mezcla de voces'), 100);
-    await tester.tap(find.text('Mezcla de voces'));
+    await tester.tap(find.byTooltip('Cerrar'));
     await tester.pumpAndSettle();
-    await tester.scrollUntilVisible(find.byTooltip('Silenciar Soprano'), 100);
+    await tester.tap(find.byTooltip('Mezcla de voces'));
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byTooltip('Silenciar Soprano'));
     await tester.tap(find.byTooltip('Silenciar Soprano'));
     await tester.pumpAndSettle();
     expect(voice.activa, isFalse);
@@ -156,7 +160,7 @@ void main() {
     tester.widgetList<Slider>(find.byType(Slider)).last.onChanged!(0.4);
     await tester.pumpAndSettle();
     expect(voice.volumen, 0.4);
-    await tester.scrollUntilVisible(find.text('Solo'), 100);
+    await tester.ensureVisible(find.text('Solo'));
     await tester.tap(find.text('Solo'));
     await tester.pumpAndSettle();
     expect(solos, 1);
@@ -166,7 +170,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
   testWidgets(
-      'Panel real de audio: cuota visible y controles de 48dp caben en 320px',
+      'Panel real de audio: cuota oculta y controles de 48dp caben en 320px',
       (tester) async {
     await mount(
         tester,
@@ -175,6 +179,7 @@ void main() {
                 width: 296,
                 child: MidiPanel(
                   cantoId: 'known',
+                  onClose: () {},
                   midiState: const MidiState(isLoaded: true),
                   onPlay: () {},
                   onStop: () {},
@@ -194,15 +199,57 @@ void main() {
       expect(size.width, greaterThanOrEqualTo(48));
       expect(size.height, greaterThanOrEqualTo(48));
     }
-    expect(find.textContaining('Cantos nuevos disponibles: 2'), findsOneWidget);
+    expect(find.textContaining('Cantos nuevos disponibles: 2'), findsNothing);
     expect(find.byTooltip('Ajustes del reproductor'), findsNothing);
     expect(find.byIcon(Icons.settings_rounded), findsNothing);
+    final play = tester.getCenter(find.byIcon(Icons.play_arrow_rounded));
+    final mix = tester.getCenter(find.byTooltip('Mezcla de voces'));
+    final speed = tester.getCenter(find.byTooltip('Velocidad'));
+    expect(mix.dx, lessThan(play.dx));
+    expect(speed.dx, greaterThan(play.dx));
+    expect(mix.dy, closeTo(play.dy, .1));
+    expect(speed.dy, closeTo(play.dy, .1));
     expect(tester.takeException(), isNull, reason: 'Panel cerrado');
-    await tester.scrollUntilVisible(find.text('Mezcla de voces'), 200);
-    expect(tester.takeException(), isNull, reason: 'Panel desplazado');
-    await tester.tap(find.text('Mezcla de voces'));
+    await tester.tap(find.byTooltip('Mezcla de voces'));
     await tester.pumpAndSettle();
     expect(find.text('Restablecer mezcla'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets(
+      'Player swipe closes without stop or seek; progress stays independent',
+      (tester) async {
+    var closes = 0;
+    var stops = 0;
+    var seeks = 0;
+    await mount(
+        tester,
+        MidiPanel(
+            cantoId: 'known',
+            midiState: const MidiState(isLoaded: true, isPlaying: true),
+            isLoaded: true,
+            isReady: true,
+            accentColor: Colors.blue,
+            onClose: () => closes++,
+            onPlay: () {},
+            onStop: () => stops++,
+            onSeek: (_) => seeks++,
+            onSpeedChange: (_) {},
+            onMetronomo: () {},
+            onVozToggle: (_, __) {},
+            onVozVolumeChange: (_, __) {},
+            onResetVozVolumes: () {},
+            onVozSolo: (_) {}));
+    final progress = find.byType(Slider);
+    await tester.drag(progress, const Offset(100, 0));
+    await tester.pump();
+    expect(seeks, 1);
+    expect(closes, 0);
+    await tester.drag(find.byKey(const ValueKey('player-dismiss-drag')),
+        const Offset(0, 100));
+    expect(closes, 1);
+    expect(stops, 0);
+    expect(seeks, 1);
     expect(tester.takeException(), isNull);
   });
 }

@@ -1,9 +1,9 @@
 import 'dart:async';
+import 'package:coro_lldm/features/shared/content_notice.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
@@ -30,6 +30,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
   @override
   void initState() {
     super.initState();
+    _searchController.text = ref.read(searchTextProvider);
     final savedOffset =
         (Hive.box('cache').get('dashboard_scroll_offset') as num?)
                 ?.toDouble() ??
@@ -81,13 +82,21 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
     ref.watch(syncManagerProvider);
 
     final cantosAsync = ref.watch(cantosFiltradosProvider);
-    final cantos = cantosAsync.value ?? [];
+    final cantos = cantosAsync.valueOrNull ?? [];
     final theme = Theme.of(context);
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final soloFavoritos = ref.watch(soloFavoritosProvider);
     final strings = AppStrings.of(context);
 
-    final isLoadingBase = ref.watch(cantosBaseProvider).isLoading;
+    final base = ref.watch(cantosBaseProvider);
+    final search = ref.watch(searchTextProvider);
+    final category = ref.watch(categoryFilterProvider);
+    final favorites = ref.watch(favoritosProvider);
+    final hasCriteria =
+        search.trim().isNotEmpty || category.isNotEmpty || soloFavoritos;
+    final noFavorites = soloFavoritos && favorites.isEmpty;
+    final failed = base.hasError || cantosAsync.hasError;
+    final emptyCatalog = base.hasValue && base.value!.isEmpty;
 
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
@@ -157,6 +166,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                                       color:
                                           theme.colorScheme.onSurfaceVariant),
                                   onPressed: () {
+                                    _searchDebounce?.cancel();
                                     _searchController.clear();
                                     _moveCatalogToTop();
                                     ref
@@ -190,90 +200,85 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
 
             // Lista Vertical de Cantos
             Expanded(
-              child: isLoadingBase
+              child: base.isLoading ||
+                      (cantosAsync.isLoading && !cantosAsync.hasValue)
                   ? Center(
                       child: CircularProgressIndicator(
-                          color: theme.colorScheme.primary),
-                    )
-                  : cantos.isEmpty
-                      ? LayoutBuilder(
-                          builder: (context, constraints) => RefreshIndicator(
-                            onRefresh: () async {},
-                            child: ListView(
-                              physics: const AlwaysScrollableScrollPhysics(),
-                              children: [
-                                SizedBox(
-                                  height: constraints.maxHeight,
-                                  child: Center(
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          soloFavoritos
-                                              ? Icons.favorite_border_rounded
-                                              : Icons.library_music_rounded,
-                                          size: 64,
-                                          color: theme
-                                              .colorScheme.onSurfaceVariant,
-                                        ),
-                                        const SizedBox(height: 16),
-                                        Text(
-                                          soloFavoritos
-                                              ? strings.t(
-                                                  'No tienes cantos favoritos',
-                                                  'You have no favorite songs',
-                                                )
-                                              : strings.t(
-                                                  'Sin resultados',
-                                                  'No results',
-                                                ),
-                                          style: GoogleFonts.inter(
-                                              color: theme
-                                                  .colorScheme.onSurfaceVariant,
-                                              fontWeight: FontWeight.w600,
-                                              fontSize: 16),
-                                        ),
-                                        const SizedBox(height: 8),
-                                        Text(
-                                          soloFavoritos
-                                              ? strings.t(
-                                                  'Toca el corazón de cualquier canto para guardarlo aquí.',
-                                                  'Tap the heart on any song to save it here.',
-                                                )
-                                              : strings.t(
-                                                  'Prueba con otro término o filtro.',
-                                                  'Try another search or filter.',
-                                                ),
-                                          style: GoogleFonts.inter(
-                                              color: theme
-                                                  .colorScheme.onSurfaceVariant,
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 14),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                          color: theme.colorScheme.primary))
+                  : failed
+                      ? ContentNotice(
+                          icon: Icons.library_music_outlined,
+                          title: strings.t('No se pudo abrir el repertorio',
+                              'Could not open the repertoire'),
+                          message: strings.t(
+                              'No pudimos leer el catálogo de cantos de esta instalación. Puedes comunicar el problema al soporte de la app.',
+                              'We could not read this installation’s song catalog. You can report the problem to app support.'),
                         )
-                      : ListView.builder(
-                          key: const PageStorageKey('catalog-song-list'),
-                          controller: _scrollController,
-                          padding: const EdgeInsets.all(16),
-                          physics: const BouncingScrollPhysics(),
-                          itemCount: cantos.length,
-                          itemBuilder: (context, index) {
-                            final canto = cantos[index];
-                            return ScoreCard(
-                              canto: canto,
-                              onTap: () => _openCanto(canto.id),
-                            );
-                          },
-                        ),
+                      : cantos.isEmpty
+                          ? ContentNotice(
+                              icon: noFavorites
+                                  ? Icons.favorite_border_rounded
+                                  : Icons.library_music_outlined,
+                              title: emptyCatalog
+                                  ? strings.t('No hay cantos disponibles',
+                                      'No songs available')
+                                  : noFavorites
+                                      ? strings.t('No tienes cantos favoritos',
+                                          'You have no favorite songs')
+                                      : strings.t(
+                                          'Sin coincidencias', 'No matches'),
+                              message: emptyCatalog
+                                  ? strings.t(
+                                      'El catálogo de esta instalación está vacío. Puedes comunicar el problema al soporte de la app.',
+                                      'This installation’s catalog is empty. You can report the problem to app support.')
+                                  : noFavorites
+                                      ? strings.t(
+                                          'Toca el corazón de cualquier canto para guardarlo aquí.',
+                                          'Tap the heart on any song to save it here.')
+                                      : strings.t(
+                                          'No hay cantos que coincidan con tu búsqueda y los filtros actuales.',
+                                          'No songs match your search and current filters.'),
+                              action: !emptyCatalog &&
+                                      hasCriteria &&
+                                      !noFavorites
+                                  ? TextButton(
+                                      onPressed: () {
+                                        _searchDebounce?.cancel();
+                                        _searchController.clear();
+                                        ref
+                                            .read(searchTextProvider.notifier)
+                                            .set('');
+                                        ref
+                                            .read(
+                                                categoryFilterProvider.notifier)
+                                            .set('');
+                                        ref
+                                            .read(
+                                                soloFavoritosProvider.notifier)
+                                            .set(false);
+                                        _moveCatalogToTop();
+                                        setState(() {});
+                                      },
+                                      child: Text(strings.t(
+                                          'Limpiar búsqueda y filtros',
+                                          'Clear search and filters')),
+                                    )
+                                  : null,
+                            )
+                          : ListView.builder(
+                              key: const PageStorageKey('catalog-song-list'),
+                              controller: _scrollController,
+                              padding: const EdgeInsets.all(16),
+                              physics: const BouncingScrollPhysics(),
+                              itemCount: cantos.length,
+                              itemBuilder: (context, index) {
+                                final canto = cantos[index];
+                                return ScoreCard(
+                                  canto: canto,
+                                  onTap: () => _openCanto(canto.id),
+                                );
+                              },
+                            ),
             ),
             const MonetizationBanner(),
           ],

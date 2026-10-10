@@ -252,6 +252,8 @@ class AppTheme {
     final container = surfaces.last;
     final selected =
         Color.alphaBlend(original.primary.withValues(alpha: 0.10), surface);
+    final solidAccent =
+        AccessibleColors.against(accentColor, surfaces, minimum: 3.1);
     final backgrounds = [...surfaces, selected];
     final primary = AccessibleColors.against(original.primary, backgrounds);
     final secondary = AccessibleColors.against(original.secondary, backgrounds);
@@ -267,8 +269,8 @@ class AppTheme {
       onSecondary: _onAccent(secondary),
       tertiary: secondary,
       onTertiary: _onAccent(secondary),
-      primaryContainer: selected,
-      onPrimaryContainer: text,
+      primaryContainer: solidAccent,
+      onPrimaryContainer: _onAccent(solidAccent),
       secondaryContainer: selected,
       onSecondaryContainer: text,
       tertiaryContainer: selected,

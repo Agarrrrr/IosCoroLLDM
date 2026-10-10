@@ -3,8 +3,10 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pdfrx/pdfrx.dart';
+import 'package:coro_lldm/features/visor/widgets/pdf_theme_palette.dart';
 
 class _Token extends PdfPageRenderCancellationToken {
   bool canceled = false;
@@ -107,6 +109,66 @@ class _Bitmap extends PdfImage {
 }
 
 void main() {
+  testWidgets(
+      'PDF page filter inverts paper without inverting colored overlays',
+      (tester) async {
+    tester.view.devicePixelRatio = 1;
+    tester.view.physicalSize = const Size(300, 400);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    addTearDown(tester.view.resetPhysicalSize);
+    final bitmap = (await tester.runAsync(() async {
+      final recorder = ui.PictureRecorder();
+      Canvas(recorder).drawColor(Colors.white, BlendMode.src);
+      final picture = recorder.endRecording();
+      final result = await picture.toImage(1, 1);
+      picture.dispose();
+      return result;
+    }))!;
+    final document = _Document(bitmap: bitmap);
+    final key = GlobalKey();
+    await tester.pumpWidget(MaterialApp(
+        home: RepaintBoundary(
+            key: key,
+            child: PdfViewer(PdfDocumentRefDirect(document),
+                params: PdfViewerParams(
+                  enableTextSelection: false,
+                  pageColorFilter: PdfThemePalette.invertFilter,
+                  backgroundColor: Colors.black,
+                  pageDropShadow: null,
+                  pageOverlaysBuilder: (context, rect, page) => [
+                    Positioned(
+                        left: rect.width / 2 - 5,
+                        top: rect.height / 2 - 5,
+                        child: const SizedBox(
+                            width: 10,
+                            height: 10,
+                            child: ColoredBox(color: Colors.red))),
+                  ],
+                )))));
+    await tester.pumpAndSettle();
+    final bytes = (await tester.runAsync(() async {
+      final image = await (key.currentContext!.findRenderObject()!
+              as RenderRepaintBoundary)
+          .toImage();
+      final data = await image.toByteData(format: ui.ImageByteFormat.rawRgba);
+      image.dispose();
+      return data!.buffer.asUint8List();
+    }))!;
+    var red = 0;
+    var black = 0;
+    var cyan = 0;
+    for (var i = 0; i < bytes.length; i += 4) {
+      if (bytes[i] > 220 && bytes[i + 1] < 100 && bytes[i + 2] < 100) red++;
+      if (bytes[i] < 10 && bytes[i + 1] < 10 && bytes[i + 2] < 10) black++;
+      if (bytes[i] < 100 && bytes[i + 1] > 220 && bytes[i + 2] > 220) cyan++;
+    }
+    expect(red, greaterThan(50));
+    expect(black, greaterThan(100000));
+    expect(cyan, 0);
+    await tester.pumpWidget(const SizedBox());
+    await tester.pumpAndSettle();
+    bitmap.dispose();
+  });
   testWidgets(
       'background page geometry keeps the visible page zoom and position',
       (tester) async {

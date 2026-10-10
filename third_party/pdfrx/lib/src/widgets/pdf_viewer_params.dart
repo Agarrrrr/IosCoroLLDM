@@ -14,6 +14,7 @@ class PdfViewerParams {
   const PdfViewerParams({
     this.margin = 8.0,
     this.backgroundColor = Colors.grey,
+    this.pageColorFilter,
     this.layoutPages,
     this.normalizeMatrix,
     this.maxScale = 8.0,
@@ -72,6 +73,9 @@ class PdfViewerParams {
 
   /// Background color of the viewer.
   final Color backgroundColor;
+
+  /// Applied only to PDF page pixels. Widget overlays keep their own colors.
+  final ColorFilter? pageColorFilter;
 
   /// Function to customize the layout of the pages.
   ///
@@ -532,6 +536,7 @@ class PdfViewerParams {
         forceReload ||
         other.margin != margin ||
         other.backgroundColor != backgroundColor ||
+        other.pageColorFilter != pageColorFilter ||
         other.maxScale != maxScale ||
         other.minScale != minScale ||
         other.useAlternativeFitScaleAsMinScale != useAlternativeFitScaleAsMinScale ||
@@ -564,6 +569,7 @@ class PdfViewerParams {
 
     return other.margin == margin &&
         other.backgroundColor == backgroundColor &&
+        other.pageColorFilter == pageColorFilter &&
         other.maxScale == maxScale &&
         other.minScale == minScale &&
         other.useAlternativeFitScaleAsMinScale == useAlternativeFitScaleAsMinScale &&
@@ -618,6 +624,7 @@ class PdfViewerParams {
   int get hashCode {
     return margin.hashCode ^
         backgroundColor.hashCode ^
+        pageColorFilter.hashCode ^
         maxScale.hashCode ^
         minScale.hashCode ^
         useAlternativeFitScaleAsMinScale.hashCode ^

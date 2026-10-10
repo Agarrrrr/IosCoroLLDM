@@ -41,12 +41,12 @@ class SyncManagerNotifier extends Notifier<SyncState> {
   @override
   SyncState build() {
     ref.listen(cantosBaseProvider, (previous, next) {
-      if (next.value != null) {
-        _recount(next.value!);
+      if (next.valueOrNull != null) {
+        _recount(next.valueOrNull!);
       }
     });
 
-    final initial = ref.read(cantosBaseProvider).value;
+    final initial = ref.read(cantosBaseProvider).valueOrNull;
     if (initial != null && initial.isNotEmpty) {
       Future.microtask(() => _recount(initial));
     }
@@ -57,7 +57,7 @@ class SyncManagerNotifier extends Notifier<SyncState> {
   /// Recuenta las partituras presentes en disco. Se puede llamar tras
   /// completar una descarga bajo demanda para refrescar el indicador.
   Future<void> refresh() async {
-    final cantos = ref.read(cantosBaseProvider).value;
+    final cantos = ref.read(cantosBaseProvider).valueOrNull;
     if (cantos != null) await _recount(cantos);
   }
 
@@ -78,4 +78,5 @@ class SyncManagerNotifier extends Notifier<SyncState> {
   }
 }
 
-final syncManagerProvider = NotifierProvider<SyncManagerNotifier, SyncState>(SyncManagerNotifier.new);
+final syncManagerProvider =
+    NotifierProvider<SyncManagerNotifier, SyncState>(SyncManagerNotifier.new);

@@ -1,0 +1,17 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/annotation_theme_test.dart
+00:00 +0: Highlights keep hue and remain visible in claro
+00:00 +1: Text and neutral ink adapt to claro
+00:00 +2: Highlights keep hue and remain visible in oscuro
+00:00 +3: Text and neutral ink adapt to oscuro
+00:00 +4: Highlights keep hue and remain visible in sepia
+00:00 +5: Text and neutral ink adapt to sepia
+00:00 +6: Highlights keep hue and remain visible in quiet
+00:00 +7: Text and neutral ink adapt to quiet
+00:00 +8: Highlights keep hue and remain visible in oscuroNormal
+00:00 +9: Text and neutral ink adapt to oscuroNormal
+00:00 +10: Mapped pages reuse paths and do not copy point arrays
+00:00 +11: Marker color and width are independent of pencil settings
+00:00 +12: Marker controls fit 320px and 200% text in every theme
+00:01 +13: White theme solid gold is brighter than its accessible text color
+00:01 +14: Real marker rendering is translucent and erases without changing paper
+00:01 +15: All tests passed!

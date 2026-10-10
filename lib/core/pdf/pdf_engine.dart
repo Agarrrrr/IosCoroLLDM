@@ -20,6 +20,15 @@ class PdfEngineState {
   final Color currentColor;
   final double currentSize;
   final double eraserSize;
+  final Color highlighterColor;
+  final double highlighterSize;
+  Color get drawingColor =>
+      currentTool == ToolType.highlighter ? highlighterColor : currentColor;
+  double get drawingSize => currentTool == ToolType.eraser
+      ? eraserSize
+      : currentTool == ToolType.highlighter
+          ? highlighterSize
+          : currentSize;
 
   // Trazos por número de página (1-indexed)
   final Map<int, List<Trazo>> trazos;
@@ -38,6 +47,8 @@ class PdfEngineState {
     this.currentColor = Colors.black,
     this.currentSize = 3.0,
     this.eraserSize = 20.0,
+    this.highlighterColor = const Color(0xFFEEFF00),
+    this.highlighterSize = 18.0,
     this.trazos = const {},
     this.history = const [],
     this.historyIndex = -1,
@@ -53,6 +64,8 @@ class PdfEngineState {
     Color? currentColor,
     double? currentSize,
     double? eraserSize,
+    Color? highlighterColor,
+    double? highlighterSize,
     Map<int, List<Trazo>>? trazos,
     List<Map<int, List<Trazo>>>? history,
     int? historyIndex,
@@ -67,6 +80,8 @@ class PdfEngineState {
       currentColor: currentColor ?? this.currentColor,
       currentSize: currentSize ?? this.currentSize,
       eraserSize: eraserSize ?? this.eraserSize,
+      highlighterColor: highlighterColor ?? this.highlighterColor,
+      highlighterSize: highlighterSize ?? this.highlighterSize,
       trazos: trazos ?? this.trazos,
       history: history ?? this.history,
       historyIndex: historyIndex ?? this.historyIndex,
@@ -139,7 +154,7 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
       state = PdfEngineState(
         cantoId: newCantoId,
         isLoading: false,
-        error: 'Partitura no disponible. Verifica tu conexión a internet.',
+        error: 'No se pudo abrir el archivo de esta partitura.',
       );
     } finally {
       _isInitializing = false;
@@ -156,12 +171,16 @@ class PdfEngineNotifier extends Notifier<PdfEngineState> {
   }
 
   void setCurrentColor(Color color) {
-    state = state.copyWith(currentColor: color);
+    state = state.currentTool == ToolType.highlighter
+        ? state.copyWith(highlighterColor: color)
+        : state.copyWith(currentColor: color);
   }
 
   void setCurrentSize(double size) {
     if (state.currentTool == ToolType.eraser) {
       state = state.copyWith(eraserSize: size);
+    } else if (state.currentTool == ToolType.highlighter) {
+      state = state.copyWith(highlighterSize: size);
     } else {
       state = state.copyWith(currentSize: size);
     }

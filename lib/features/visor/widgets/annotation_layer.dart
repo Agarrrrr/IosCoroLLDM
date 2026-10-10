@@ -8,6 +8,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:coro_lldm/core/pdf/pdf_engine.dart';
 import 'package:coro_lldm/models/trazo.dart';
 import 'annotation_eraser_preview.dart';
+import 'annotation_theme_palette.dart';
+import 'package:coro_lldm/core/providers/theme_provider.dart';
 
 typedef _AnnotationLayerData = ({
   bool isDrawingMode,
@@ -19,6 +21,7 @@ typedef _AnnotationLayerData = ({
 });
 
 class AnnotationLayer extends ConsumerStatefulWidget {
+  final AppThemeMode? themeMode;
   final String cantoId;
   final int pageNumber;
   final Size pageSize;
@@ -30,6 +33,7 @@ class AnnotationLayer extends ConsumerStatefulWidget {
 
   const AnnotationLayer({
     super.key,
+    this.themeMode,
     required this.cantoId,
     required this.pageNumber,
     required this.pageSize,
@@ -237,7 +241,7 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                 isolateForRaster: trazos.any((stroke) =>
                     !stroke.oculto &&
                     stroke.tool != ToolType.eraser &&
-                    stroke.color.a != 1));
+                    stroke.paintColor.a != 1));
         final recorder = ui.PictureRecorder();
         final canvas = Canvas(recorder)
           ..scale(ratio)
@@ -652,16 +656,20 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
         (value) => (
           isDrawingMode: value.isDrawingMode,
           currentTool: value.currentTool,
-          currentColor: value.currentColor,
-          currentSize: value.currentSize,
+          currentColor: value.drawingColor,
+          currentSize: value.drawingSize,
           eraserSize: value.eraserSize,
           savedTrazos: value.trazos[widget.pageNumber] ?? const <Trazo>[],
         ),
       ),
     );
-    final savedTrazos = state.savedTrazos;
-    final activeTrazos =
-        _currentTrazo == null ? const <Trazo>[] : <Trazo>[_currentTrazo!];
+    final savedTrazos =
+        AnnotationThemePalette.strokes(state.savedTrazos, widget.themeMode);
+    final activeTrazos = _currentTrazo == null
+        ? const <Trazo>[]
+        : <Trazo>[
+            AnnotationThemePalette.stroke(_currentTrazo!, widget.themeMode)
+          ];
     var savedPainter = _savedPainter(
         savedTrazos, state.isDrawingMode && state.currentTool == ToolType.text);
     if (!state.isDrawingMode || state.currentTool != ToolType.eraser) {
@@ -697,7 +705,7 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
         savedTrazos.every((stroke) =>
             stroke.oculto ||
             stroke.tool == ToolType.eraser ||
-            stroke.color.a == 1)) {
+            stroke.paintColor.a == 1)) {
       final stage = _eraserPreparationStage;
       // Compile outline, partition, replacement and clear on separate frames.
       // Do not add preparation work to an already active pointer gesture.
@@ -790,7 +798,11 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white.withValues(alpha: 0.8),
-                      border: Border.all(color: state.currentColor),
+                      border: Border.all(
+                          color: AnnotationThemePalette.color(
+                              state.currentColor,
+                              ToolType.text,
+                              widget.themeMode)),
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: TextField(
@@ -800,7 +812,8 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
                       maxLines: 4,
                       keyboardType: TextInputType.multiline,
                       style: TextStyle(
-                        color: state.currentColor,
+                        color: AnnotationThemePalette.color(state.currentColor,
+                            ToolType.text, widget.themeMode),
                         fontSize: state.currentSize * 10,
                         fontWeight: FontWeight.bold,
                       ),
@@ -930,7 +943,8 @@ class _AnnotationRasterEntry {
   final ui.Image image;
   bool failed = false;
   late final bool canBeIncrementalBase = key.trazos.every((stroke) =>
-      stroke.oculto || (stroke.tool != ToolType.eraser && stroke.color.a == 1));
+      stroke.oculto ||
+      (stroke.tool != ToolType.eraser && stroke.paintColor.a == 1));
   _AnnotationRasterEntry(this.key, this.image);
   int get bytes => image.width * image.height * 4;
 }
@@ -1019,7 +1033,7 @@ class _AnnotationEraserReadyPainter extends CustomPainter {
         entry.key.trazos.any((stroke) =>
             !stroke.oculto &&
             stroke.tool != ToolType.eraser &&
-            stroke.color.a != 1)) {
+            stroke.paintColor.a != 1)) {
       fallback.paint(canvas, size);
       return;
     }
@@ -1288,7 +1302,7 @@ class _AnnotationPainter extends CustomPainter {
       }
 
       final paint = Paint()
-        ..color = trazo.color
+        ..color = trazo.paintColor
         ..strokeWidth = trazo.size
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round

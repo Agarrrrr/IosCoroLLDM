@@ -22,6 +22,9 @@ class ScoreCard extends ConsumerWidget {
     final strings = AppStrings.of(context);
 
     final cardBg = Theme.of(context).colorScheme.surface;
+    final audioColor = AccessibleColors.against(
+        const Color(0xFF20B89A), [cardBg],
+        minimum: 3.2);
 
     return RepaintBoundary(
       child: Padding(
@@ -47,7 +50,9 @@ class ScoreCard extends ConsumerWidget {
                 padding: EdgeInsets.zero,
                 child: Ink(
                   decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary,
+                    color: hasAudio
+                        ? audioColor
+                        : Theme.of(context).colorScheme.outlineVariant,
                     borderRadius: BorderRadius.circular(17),
                   ),
                   child: Padding(
@@ -92,17 +97,18 @@ class ScoreCard extends ConsumerWidget {
                                     children: [
                                       if (hasAudio) ...[
                                         Icon(Icons.piano_rounded,
-                                            size: 12,
-                                            color: Theme.of(context)
-                                                .colorScheme
-                                                .primary),
+                                            size: 22, color: audioColor),
                                         const SizedBox(width: 4),
                                       ],
                                       Flexible(
                                         child: Text(
                                           canto.temas.isEmpty
-                                              ? 'Sin categoría'
-                                              : canto.temas.join(' · '),
+                                              ? (hasAudio
+                                                  ? strings.t(
+                                                      'Con piano', 'With piano')
+                                                  : strings.t(
+                                                      'Partitura', 'Score'))
+                                              : '${hasAudio ? strings.t('Con piano', 'With piano') : strings.t('Partitura', 'Score')} · ${canto.temas.join(' · ')}',
                                           maxLines: 1,
                                           overflow: TextOverflow.ellipsis,
                                           style: TextStyle(

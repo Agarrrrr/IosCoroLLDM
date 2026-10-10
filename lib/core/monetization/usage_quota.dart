@@ -28,11 +28,16 @@ class UsageQuota {
 }
 
 // Read-only observation of the same counters that enforce access.
+UsageQuota currentUsageQuota() {
+  final box = Hive.isBoxOpen('monetization') ? Hive.box('monetization') : null;
+  return UsageQuota.fromStored(
+      box?.toMap().cast<String, dynamic>() ?? {}, DateTime.now());
+}
+
 final usageQuotaProvider = StreamProvider.autoDispose<UsageQuota>((ref) {
   final output = StreamController<UsageQuota>();
   final box = Hive.isBoxOpen('monetization') ? Hive.box('monetization') : null;
-  void publish() => output.add(UsageQuota.fromStored(
-      box?.toMap().cast<String, dynamic>() ?? {}, DateTime.now()));
+  void publish() => output.add(currentUsageQuota());
   publish();
   final subscription = box
       ?.watch()

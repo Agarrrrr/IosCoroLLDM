@@ -85,7 +85,7 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
       debugPrint('Error loading bundled catalogs: $e');
       // Si falla y teniamos state (del cache), devolvemos el viejo state
       if (state.hasValue) return state.value!;
-      return [];
+      rethrow;
     }
   }
 }
@@ -408,8 +408,7 @@ List<Canto> _filterAndSortCantosEnIsolate(FilterParams params) {
     // 1. Si la barra de búsqueda tiene texto: búsqueda dentro del idioma activo.
     if (queryWords.isNotEmpty) {
       final nNombre = normalizeSearchText(canto.nombre);
-      final nTemas =
-          canto.temas.map(normalizeSearchText).join(' ');
+      final nTemas = canto.temas.map(normalizeSearchText).join(' ');
 
       for (final word in queryWords) {
         if (word.length <= 2) {
@@ -512,12 +511,12 @@ final cantosFiltradosProvider = FutureProvider<List<Canto>>((ref) async {
   final soloFavoritos = ref.watch(soloFavoritosProvider);
   final favoritos = ref.watch(favoritosProvider);
 
-  if (cantosAsync.value == null) {
+  if (cantosAsync.valueOrNull == null) {
     return [];
   }
 
   final params = FilterParams(
-    cantos: cantosAsync.value!,
+    cantos: cantosAsync.valueOrNull!,
     query: query,
     categoria: categoria,
     language: language,

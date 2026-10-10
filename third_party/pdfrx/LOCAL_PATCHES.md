@@ -24,3 +24,8 @@ scale changes for device validation. This logging is disabled by default.
 Platform sources are unchanged. Generated .lib and .cxx directories are local
 build artifacts and excluded from version control. Keep this fork until an
 upstream replacement has passed the same device regression scenario.
+
+`PdfViewerParams.pageColorFilter` applies theme matrices to base page images,
+partial zoom images and loading placeholders. Widget annotation overlays are
+painted outside this filter, so colored ink is not inverted. A pixel regression
+verifies white PDF paper becomes black while a red overlay remains red.

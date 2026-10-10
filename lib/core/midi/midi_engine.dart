@@ -16,6 +16,7 @@ class MidiState {
   final double tiempoActual; // segundos
   final double tiempoTotal; // segundos
   final double speed;
+
   /// Tempo musical escrito como negras por minuto, sin aplicar la velocidad.
   final int tempoBpm;
   final bool metronomoActivo;
@@ -239,19 +240,21 @@ class MidiEngine {
     }
   }
 
-  Future<void> loadMidi(String filePath, String nombre) async {
+  Future<bool> loadMidi(String filePath, String nombre) async {
     try {
+      _song = null;
+      stop();
+      _emit(const MidiState(isLoaded: false, isReady: false));
       final file = File(filePath);
       if (!await file.exists()) {
         debugPrint(
             '❌ [NativeMidiEngine] Archivo MIDI no encontrado: $filePath');
-        return;
+        return false;
       }
-
-      stop();
 
       // Aseguramos que el motor de audio esté listo antes de cargar
       await initAudio();
+      if (_sfId == null) return false;
 
       final bytes = await file.readAsBytes();
       _song = NativeMidiParser.parse(bytes);
@@ -308,8 +311,12 @@ class MidiEngine {
       ));
       debugPrint(
           '🎵 [NativeMidiEngine] MIDI cargado: "$nombre", duración: ${_song!.durationSeconds}s');
+      return true;
     } catch (e) {
       debugPrint('❌ [NativeMidiEngine] Error cargando MIDI: $e');
+      _song = null;
+      _emit(const MidiState(isLoaded: false, isReady: true));
+      return false;
     }
   }
 

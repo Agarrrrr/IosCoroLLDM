@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-enum ToolType { pencil, eraser, text }
+enum ToolType { pencil, eraser, text, highlighter }
 
 class PointNormalized {
   final double x; // 0.0 to 1.0 (relative to page width)
@@ -38,6 +38,10 @@ class Trazo {
     this.pos,
     this.oculto = false,
   });
+
+  Color get paintColor => tool == ToolType.highlighter
+      ? color.withValues(alpha: color.a * 0.32)
+      : color;
 
   Trazo copyWith({
     ToolType? tool,

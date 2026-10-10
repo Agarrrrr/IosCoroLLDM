@@ -333,35 +333,6 @@ class MonetizationController extends StateNotifier<MonetizationState>
     }
   }
 
-  /// Permite vincular manualmente la cuenta a un ID de otro dispositivo
-  /// (ej. transferir o compartir entre Android e iPad).
-  Future<bool> linkAccount(String targetAppUserId) async {
-    if (!state.revenueCatConfigured) return false;
-    final cleanId = targetAppUserId.trim();
-    if (cleanId.isEmpty || cleanId == state.appUserId) return state.isPremium;
-
-    state = state.copyWith(isBusy: true, clearError: true);
-    try {
-      final logInResult = await Purchases.logIn(cleanId);
-      await _box.put('revenuecat_app_user_id', cleanId);
-      if (Platform.isIOS) {
-        try {
-          await _cloudSyncChannel.invokeMethod<bool>(
-            'saveCloudUserId',
-            {'userId': cleanId},
-          );
-        } catch (_) {}
-      }
-      _applyCustomerInfo(logInResult.customerInfo);
-      return state.isPremium;
-    } catch (error) {
-      state = state.copyWith(error: error.toString());
-      return false;
-    } finally {
-      state = state.copyWith(isBusy: false);
-    }
-  }
-
   Future<bool> consumeAudioAccess(String cantoId) async {
     await refreshCustomerInfo();
     if (state.isPremium) return true;

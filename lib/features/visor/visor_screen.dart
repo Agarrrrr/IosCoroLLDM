@@ -15,7 +15,6 @@ import 'package:coro_lldm/core/offline/sync_manager.dart';
 import 'package:coro_lldm/core/pdf/pdf_engine.dart';
 import 'package:coro_lldm/models/trazo.dart';
 import 'package:coro_lldm/features/visor/widgets/annotation_layer.dart';
-import 'package:coro_lldm/features/visor/widgets/pdf_color_filter.dart';
 import 'package:coro_lldm/features/visor/widgets/pdf_theme_palette.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
@@ -32,6 +31,11 @@ import 'package:coro_lldm/features/premium/reward_or_premium_dialog.dart';
 import 'package:coro_lldm/core/monetization/usage_quota.dart';
 import 'package:coro_lldm/features/premium/usage_quota_notice.dart';
 import 'package:coro_lldm/features/visor/widgets/score_title_button.dart';
+import 'package:coro_lldm/features/visor/widgets/async_action_icon_button.dart';
+import 'package:coro_lldm/features/shared/content_notice.dart';
+import 'package:coro_lldm/features/visor/widgets/player_dismiss_handle.dart';
+import 'package:coro_lldm/features/visor/widgets/annotation_tools.dart';
+import 'package:coro_lldm/features/visor/widgets/player_options_sheet.dart';
 
 const double _kScaleEpsilon = 0.001;
 
@@ -64,17 +68,20 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   bool _showTopBar = true;
   bool _showTools = false;
   bool _showMidi = false;
+  bool _quotaToastShown = false;
   bool _audioAccessPending = false;
   bool _showDrawingPalette = false;
 
   final MidiEngine _midi = MidiEngine();
   bool _hasMidi = false;
+  String? _midiError;
   bool _midiIniciado = false;
   bool _idiomaVerificado = false;
   bool _pdfAdRegistered = false;
 
   final PdfViewerController _pdfController = PdfViewerController();
   bool _pdfViewReady = false;
+  bool _pdfReadFailed = false;
   Orientation? _lastOrientation;
   double _minScaleLimit = 0.1;
   Timer? _carouselSnapTimer;
@@ -111,10 +118,21 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       final localMidi = await OfflineFiles.ensureMidi(canto);
       if (!mounted) return;
       debugPrint('🎵 [NativeMidiEngine] Cargando MIDI: ${localMidi.path}');
-      _midi.loadMidi(localMidi.path, canto.nombre);
+      final loaded = await _midi.loadMidi(localMidi.path, canto.nombre);
+      if (!loaded) throw const FormatException('No se pudo preparar el audio');
+      if (!mounted) return;
       ref.read(syncManagerProvider.notifier).refresh();
     } catch (e) {
       debugPrint('🎵 [MidiEngine] No se pudo obtener el archivo MIDI: $e');
+      if (!mounted) return;
+      final strings = AppStrings.of(context);
+      final message = strings.t(
+        'No se pudo abrir el audio de este canto. Puedes seguir consultando la partitura.',
+        'Could not open this song’s audio. You can still view the score.',
+      );
+      setState(() => _midiError = message);
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(message)));
     }
   }
 
@@ -197,6 +215,16 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       if (!mounted) return;
       if (allowed) {
         _midi.play();
+        if (!_quotaToastShown && !ref.read(monetizationProvider).isPremium) {
+          _quotaToastShown = true;
+          final remaining = currentUsageQuota().newSongsRemaining;
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            duration: const Duration(seconds: 2),
+            content: Text(AppStrings.of(context).t(
+                '$remaining cantos nuevos disponibles hoy',
+                '$remaining new songs available today')),
+          ));
+        }
         return;
       }
       await _showAudioLimitDialog(canto);
@@ -523,6 +551,24 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     Canto canto,
     String? localPdfPath,
   ) async {
+    try {
+      await _runExportFlow(canto, localPdfPath);
+    } catch (error, stack) {
+      debugPrint('No se pudo preparar la exportación: $error\n$stack');
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(
+        AppStrings.of(context).t(
+            'No se pudo preparar la exportación de este canto.',
+            'Could not prepare this song for export.'),
+      )));
+    }
+  }
+
+  Future<void> _runExportFlow(
+    Canto canto,
+    String? localPdfPath,
+  ) async {
     final theme = Theme.of(context);
     final strings = AppStrings.of(context);
     List<MidiExportVoice> voices = const [];
@@ -531,7 +577,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       try {
         voices = await MidiExportService.voices(canto);
       } catch (e) {
-        midiError = 'No se pudo preparar el MIDI: $e';
+        debugPrint('No se pudo preparar el MIDI para exportar: $e');
+        midiError = strings.t(
+            'No se pudo leer el audio de este canto. Puedes compartir el PDF si está disponible.',
+            'Could not read this song’s audio. You can share the PDF if it is available.');
       }
     }
     if (!mounted) return;
@@ -822,14 +871,16 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       await ref.read(monetizationProvider.notifier).consumeAudioExport();
       unawaited(AdsService.instance.onExportCompleted());
     } catch (e) {
+      debugPrint('Exportación fallida: $e');
       if (mounted && dialogOpen) {
         Navigator.of(context, rootNavigator: true).pop();
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-            content: Text(
-                '${strings.t('No se pudo exportar el audio', 'Could not export audio')}: $e')),
+            content: Text(strings.t(
+                'No se pudo exportar el audio de este canto. El archivo no pudo procesarse o enviarse.',
+                'Could not export this song’s audio. The file could not be processed or sent.'))),
       );
     }
   }
@@ -864,8 +915,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     value: total == 0 ? null : completed / total,
                   ),
                   const SizedBox(height: 16),
-                  Text(
-                      '${value.$3}\n$completed ${strings.t('de', 'of')} $total'),
+                  Text(cancelled
+                      ? strings.t('Cancelando al terminar el archivo actual…',
+                          'Cancelling after current file…')
+                      : '${value.$3}\n$completed ${strings.t('de', 'of')} $total'),
                 ],
               );
             },
@@ -874,7 +927,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
             TextButton(
               onPressed: () {
                 cancelled = true;
-                progress.value = progress.value;
+                progress.value = (
+                  progress.value.$1,
+                  progress.value.$2,
+                  strings.t('Cancelando al terminar el archivo actual…',
+                      'Cancelling after current file…')
+                );
               },
               child: Text(strings.t('Cancelar', 'Cancel')),
             ),
@@ -916,14 +974,16 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       await ref.read(monetizationProvider.notifier).consumeAudioExport();
       unawaited(AdsService.instance.onExportCompleted());
     } catch (e) {
+      debugPrint('Exportación fallida: $e');
       if (mounted && dialogOpen) {
         Navigator.of(context, rootNavigator: true).pop();
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-            content: Text(
-                '${strings.t('No se pudieron exportar los MP3', 'Could not export MP3s')}: $e')),
+            content: Text(strings.t(
+                'No se pudieron exportar los archivos de audio de este canto.',
+                'Could not export this song’s audio files.'))),
       );
     } finally {
       progress.dispose();
@@ -1027,7 +1087,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
             content: Text(
-          '${strings.t('No se pudo guardar o compartir el PDF', 'Could not save or share the PDF')}: $error',
+          strings.t(
+              'No se pudo guardar o compartir la partitura. Comprueba que la ubicación o la aplicación de destino estén disponibles.',
+              'Could not save or share the score. Check that the destination folder or app is available.'),
         )),
       );
     }
@@ -1096,6 +1158,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           unawaited(AdsService.instance.onExportCompleted());
         }
       } else {
+        operation = strings.t('compartir', 'share');
         final mp3Name = MidiExportService.displayFileName(canto, voice: voice);
         final shareMp3 = await _prepareShareFile(mp3, mp3Name);
         final sentToWhatsApp = await WhatsAppAudioShare.share([shareMp3]);
@@ -1106,6 +1169,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
+      debugPrint('Exportación fallida: $e');
       if (!mounted) return;
       if (dialogOpen) {
         Navigator.of(context, rootNavigator: true).pop();
@@ -1113,8 +1177,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-            content: Text(
-                '${strings.t('No se pudo', 'Could not')} $operation ${strings.t('el MP3', 'the MP3')}: $e')),
+            content: Text(strings.t(
+                'No se pudo $operation el archivo de audio. Comprueba que el canto y el destino estén disponibles.',
+                'Could not $operation the audio file. Check that the song and destination are available.'))),
       );
     }
   }
@@ -1164,7 +1229,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
             TextButton(
               onPressed: () {
                 cancelled = true;
-                progress.value = progress.value;
+                progress.value = (
+                  progress.value.$1,
+                  progress.value.$2,
+                  strings.t('Cancelando al terminar el archivo actual…',
+                      'Cancelling after current file…')
+                );
               },
               child: Text(strings.t('Cancelar', 'Cancel')),
             ),
@@ -1214,6 +1284,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           unawaited(AdsService.instance.onExportCompleted());
         }
       } else {
+        operation = strings.t('compartir', 'share');
         final shareFiles = await Future.wait([
           for (var i = 0; i < files.length; i++)
             _prepareShareFile(files[i], names[i]),
@@ -1226,6 +1297,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
+      debugPrint('Exportación fallida: $e');
       if (!mounted) return;
       if (dialogOpen) {
         Navigator.of(context, rootNavigator: true).pop();
@@ -1233,12 +1305,26 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-            content: Text(
-                '${strings.t('No se pudieron', 'Could not')} $operation ${strings.t('los MP3', 'the MP3s')}: $e')),
+            content: Text(strings.t(
+                'No se pudieron $operation los archivos de audio. Comprueba que el canto y el destino estén disponibles.',
+                'Could not $operation the audio files. Check that the song and destination are available.'))),
       );
     } finally {
       progress.dispose();
     }
+  }
+
+  Widget _pdfErrorNotice(BuildContext context) {
+    final strings = AppStrings.of(context);
+    return ContentNotice(
+      icon: Icons.picture_as_pdf_outlined,
+      title: strings.t(
+          'No se pudo abrir esta partitura', 'Could not open this score'),
+      message: strings.t(
+        'El archivo no está disponible o no se pudo leer en este dispositivo. Puedes volver al catálogo y consultar otro canto. Si el problema continúa, comunícalo al soporte de la app.',
+        'The file is unavailable or could not be read on this device. You can return to the catalog and view another song. If the problem persists, report it to app support.',
+      ),
+    );
   }
 
   @override
@@ -1248,7 +1334,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final themeMode = ref.watch(themeProvider);
     final accentColor = theme.colorScheme.primary;
     final isCarousel = ref.watch(pdfNavModeProvider);
-    final cantos = ref.watch(cantosBaseProvider).value ?? [];
+    final cantos = ref.watch(cantosBaseProvider).valueOrNull ?? [];
     final canto = cantos.firstWhere(
       (c) => c.id == widget.cantoId,
       orElse: () => Canto(id: '', nombre: 'Partitura', archivo: '', temas: []),
@@ -1376,8 +1462,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                 tooltip: strings.t(
                                     'Cambiar idioma de la partitura',
                                     'Change score language'),
-                                icon: Icon(Icons.translate_rounded,
-                                    color: accentColor),
+                                icon: Text('ENG–ESP',
+                                    style: TextStyle(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w700,
+                                        color: accentColor)),
                                 onPressed: () => _cambiarIdioma(canto),
                               ),
                             if (_hasMidi)
@@ -1393,10 +1482,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               ),
                             SizedBox(
                               key: _shareButtonKey,
-                              child: _TopBarBtn(
-                                icon: Icons.ios_share_rounded,
-                                onTap: () => _mostrarMenuCompartirMp3(
+                              child: AsyncActionIconButton(
+                                onPressed: () => _mostrarMenuCompartirMp3(
                                     canto, state.localPath),
+                                busyLabel: strings.t('Preparando exportación…',
+                                    'Preparing export…'),
                                 tooltip: strings.t(
                                   'Compartir o guardar',
                                   'Share or save',
@@ -1433,265 +1523,233 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                             ),
                             child: state.isLoading
                                 ? _LoadingPlaceholder()
-                                : state.error != null
-                                    ? Center(child: Text(state.error!))
-                                    : PdfColorFilter(
-                                        colorFilter:
-                                            PdfThemePalette.filter(themeMode),
-                                        child: PdfViewer.file(
-                                          state.localPath!,
-                                          key: ValueKey(state.localPath!),
-                                          controller: _pdfController,
-                                          params: PdfViewerParams(
-                                            enableTextSelection: false,
-                                            margin: isCarousel ? 0 : 8,
-                                            minScale: _minScaleLimit,
-                                            maxScale: 6,
-                                            pageAnchor: isCarousel
-                                                ? PdfPageAnchor.all
-                                                : PdfPageAnchor.top,
-                                            pageAnchorEnd: isCarousel
-                                                ? PdfPageAnchor.all
-                                                : PdfPageAnchor.bottom,
-                                            limitRenderingCache: true,
-                                            maxImageBytesCachedOnMemory:
-                                                32 * 1024 * 1024,
-                                            horizontalCacheExtent: 0.35,
-                                            verticalCacheExtent: 0.75,
-                                            getPageRenderingScale: (
-                                              context,
-                                              page,
-                                              controller,
+                                : state.error != null || _pdfReadFailed
+                                    ? _pdfErrorNotice(context)
+                                    : PdfViewer.file(
+                                        state.localPath!,
+                                        key: ValueKey(state.localPath!),
+                                        controller: _pdfController,
+                                        params: PdfViewerParams(
+                                          errorBannerBuilder: (context, error,
+                                              stack, document) {
+                                            debugPrint(
+                                                'No se pudo leer el PDF: $error');
+                                            WidgetsBinding.instance
+                                                .addPostFrameCallback((_) {
+                                              if (mounted && !_pdfReadFailed) {
+                                                setState(() =>
+                                                    _pdfReadFailed = true);
+                                              }
+                                            });
+                                            return const SizedBox.shrink();
+                                          },
+                                          enableTextSelection: false,
+                                          margin: isCarousel ? 0 : 8,
+                                          minScale: _minScaleLimit,
+                                          maxScale: 6,
+                                          pageAnchor: isCarousel
+                                              ? PdfPageAnchor.all
+                                              : PdfPageAnchor.top,
+                                          pageAnchorEnd: isCarousel
+                                              ? PdfPageAnchor.all
+                                              : PdfPageAnchor.bottom,
+                                          limitRenderingCache: true,
+                                          maxImageBytesCachedOnMemory:
+                                              32 * 1024 * 1024,
+                                          horizontalCacheExtent: 0.35,
+                                          verticalCacheExtent: 0.75,
+                                          getPageRenderingScale: (
+                                            context,
+                                            page,
+                                            controller,
+                                            estimatedScale,
+                                          ) {
+                                            const maxRasterDimension = 1800.0;
+                                            final longestSide =
+                                                max(page.width, page.height);
+                                            if (!longestSide.isFinite ||
+                                                longestSide <= 0) {
+                                              return estimatedScale;
+                                            }
+                                            return min(
                                               estimatedScale,
-                                            ) {
-                                              const maxRasterDimension = 1800.0;
-                                              final longestSide =
-                                                  max(page.width, page.height);
-                                              if (!longestSide.isFinite ||
-                                                  longestSide <= 0) {
-                                                return estimatedScale;
-                                              }
-                                              return min(
-                                                estimatedScale,
-                                                maxRasterDimension /
-                                                    longestSide,
-                                              )
-                                                  .clamp(0.15, estimatedScale)
-                                                  .toDouble();
-                                            },
-                                            errorBannerBuilder: (context, error,
-                                                    stackTrace, documentRef) =>
-                                                Center(
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(24.0),
-                                                child: Column(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    const Icon(
-                                                      Icons
-                                                          .error_outline_rounded,
-                                                      color: Colors.red,
-                                                      size: 48,
-                                                    ),
-                                                    const SizedBox(height: 12),
-                                                    const Text(
-                                                      'No se pudo abrir la partitura',
-                                                      style: TextStyle(
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontSize: 16,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(height: 6),
-                                                    Text(
-                                                      '$error',
-                                                      textAlign:
-                                                          TextAlign.center,
-                                                      style: const TextStyle(
-                                                        fontSize: 12,
-                                                        color: Colors.grey,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                            boundaryMargin: isCarousel
-                                                ? EdgeInsets.zero
-                                                : isMobile
-                                                    ? const EdgeInsets.only(
-                                                        bottom: 96,
-                                                      )
-                                                    : EdgeInsets.zero,
-                                            // Usar la fricción estándar evita que
-                                            // el desplazamiento se detenga demasiado
-                                            // pronto en iPad/iPhone.
-                                            interactionEndFrictionCoefficient:
-                                                0.0000135,
-                                            onViewerReady:
-                                                (document, controller) async {
-                                              if (isCarousel) {
-                                                await _irAPaginaCarrusel(
-                                                  controller.pageNumber ?? 1,
-                                                  duration: Duration.zero,
-                                                );
-                                                if (!mounted) return;
-                                                _mostrarPistaDeNavegacionCarrusel(
-                                                  pageCount:
-                                                      document.pages.length,
-                                                );
-                                              } else {
-                                                _calcularLimiteEscala(document);
-                                                _ajustarZoomAlAncho();
-                                              }
-                                              if (mounted) {
-                                                setState(
-                                                    () => _pdfViewReady = true);
-                                              }
-                                            },
-                                            onInteractionStart: (_) {
-                                              _carouselSnapTimer?.cancel();
-                                            },
-                                            onInteractionEnd: (_) {
-                                              if (isCarousel &&
-                                                  !state.isDrawingMode) {
-                                                _programarAjusteDeCarrusel();
-                                              }
-                                            },
-                                            panEnabled: !state.isDrawingMode,
-                                            scaleEnabled: true,
-                                            calculateCurrentPageNumber:
-                                                isCarousel
-                                                    ? (visibleRect, pageRects,
-                                                            _) =>
-                                                        _paginaActualEnCarrusel(
-                                                          visibleRect,
-                                                          pageRects,
-                                                        )
-                                                    : null,
-                                            layoutPages: isCarousel
-                                                ? (pages, params) {
-                                                    final height = pages.fold(
-                                                          0.0,
-                                                          (previous, page) =>
-                                                              max<double>(
-                                                            previous,
-                                                            page.height,
-                                                          ),
-                                                        ) +
-                                                        params.margin * 2;
-                                                    final pageLayouts =
-                                                        <Rect>[];
-                                                    var x = params.margin;
-                                                    for (final page in pages) {
-                                                      pageLayouts.add(
-                                                        Rect.fromLTWH(
-                                                          x,
-                                                          (height -
-                                                                  page.height) /
-                                                              2,
-                                                          page.width,
+                                              maxRasterDimension / longestSide,
+                                            )
+                                                .clamp(0.15, estimatedScale)
+                                                .toDouble();
+                                          },
+                                          boundaryMargin: isCarousel
+                                              ? EdgeInsets.zero
+                                              : isMobile
+                                                  ? const EdgeInsets.only(
+                                                      bottom: 96,
+                                                    )
+                                                  : EdgeInsets.zero,
+                                          // Usar la fricción estándar evita que
+                                          // el desplazamiento se detenga demasiado
+                                          // pronto en iPad/iPhone.
+                                          interactionEndFrictionCoefficient:
+                                              0.0000135,
+                                          onViewerReady:
+                                              (document, controller) async {
+                                            if (isCarousel) {
+                                              await _irAPaginaCarrusel(
+                                                controller.pageNumber ?? 1,
+                                                duration: Duration.zero,
+                                              );
+                                              if (!mounted) return;
+                                              _mostrarPistaDeNavegacionCarrusel(
+                                                pageCount:
+                                                    document.pages.length,
+                                              );
+                                            } else {
+                                              _calcularLimiteEscala(document);
+                                              _ajustarZoomAlAncho();
+                                            }
+                                            if (mounted) {
+                                              setState(
+                                                  () => _pdfViewReady = true);
+                                            }
+                                          },
+                                          onInteractionStart: (_) {
+                                            _carouselSnapTimer?.cancel();
+                                          },
+                                          onInteractionEnd: (_) {
+                                            if (isCarousel &&
+                                                !state.isDrawingMode) {
+                                              _programarAjusteDeCarrusel();
+                                            }
+                                          },
+                                          panEnabled: !state.isDrawingMode,
+                                          scaleEnabled: true,
+                                          calculateCurrentPageNumber: isCarousel
+                                              ? (visibleRect, pageRects, _) =>
+                                                  _paginaActualEnCarrusel(
+                                                    visibleRect,
+                                                    pageRects,
+                                                  )
+                                              : null,
+                                          layoutPages: isCarousel
+                                              ? (pages, params) {
+                                                  final height = pages.fold(
+                                                        0.0,
+                                                        (previous, page) =>
+                                                            max<double>(
+                                                          previous,
                                                           page.height,
                                                         ),
-                                                      );
-                                                      x += page.width +
-                                                          params.margin;
-                                                    }
-                                                    return PdfPageLayout(
-                                                      pageLayouts: pageLayouts,
-                                                      documentSize:
-                                                          Size(x, height),
+                                                      ) +
+                                                      params.margin * 2;
+                                                  final pageLayouts = <Rect>[];
+                                                  var x = params.margin;
+                                                  for (final page in pages) {
+                                                    pageLayouts.add(
+                                                      Rect.fromLTWH(
+                                                        x,
+                                                        (height - page.height) /
+                                                            2,
+                                                        page.width,
+                                                        page.height,
+                                                      ),
                                                     );
+                                                    x += page.width +
+                                                        params.margin;
                                                   }
-                                                : isMobile
-                                                    ? (pages, params) {
-                                                        final width = pages
-                                                                .fold(
-                                                              0.0,
-                                                              (value, page) =>
-                                                                  max(
-                                                                value,
-                                                                page.width,
-                                                              ),
-                                                            ) +
-                                                            params.margin * 2;
-                                                        final pageLayouts =
-                                                            <Rect>[];
-                                                        var y = params.margin;
-                                                        for (final page
-                                                            in pages) {
-                                                          pageLayouts.add(
-                                                            Rect.fromLTWH(
-                                                              (width -
-                                                                      page.width) /
-                                                                  2,
-                                                              y,
+                                                  return PdfPageLayout(
+                                                    pageLayouts: pageLayouts,
+                                                    documentSize:
+                                                        Size(x, height),
+                                                  );
+                                                }
+                                              : isMobile
+                                                  ? (pages, params) {
+                                                      final width = pages.fold(
+                                                            0.0,
+                                                            (value, page) =>
+                                                                max(
+                                                              value,
                                                               page.width,
-                                                              page.height,
                                                             ),
-                                                          );
-                                                          y += page.height +
-                                                              params.margin;
-                                                        }
-                                                        final endSpace =
-                                                            pages.isEmpty
-                                                                ? 96.0
-                                                                : max(
-                                                                    96.0,
-                                                                    pages.last
-                                                                            .height *
-                                                                        0.12,
-                                                                  );
-                                                        return PdfPageLayout(
-                                                          pageLayouts:
-                                                              pageLayouts,
-                                                          documentSize: Size(
-                                                            width,
-                                                            y + endSpace,
+                                                          ) +
+                                                          params.margin * 2;
+                                                      final pageLayouts =
+                                                          <Rect>[];
+                                                      var y = params.margin;
+                                                      for (final page
+                                                          in pages) {
+                                                        pageLayouts.add(
+                                                          Rect.fromLTWH(
+                                                            (width -
+                                                                    page.width) /
+                                                                2,
+                                                            y,
+                                                            page.width,
+                                                            page.height,
                                                           ),
                                                         );
+                                                        y += page.height +
+                                                            params.margin;
                                                       }
-                                                    : null,
-                                            backgroundColor: Colors.white,
-                                            pageDropShadow: null,
-                                            pageOverlaysBuilder:
-                                                (context, pageRect, page) {
-                                              // The viewer first lays out at its
-                                              // default matrix, then fits the
-                                              // page. Avoid preparing dense
-                                              // notes at those transient sizes.
-                                              if (!_pdfViewReady) {
-                                                return const <Widget>[];
-                                              }
-                                              final visiblePage =
-                                                  pageRect.intersect(
-                                                Rect.fromLTWH(
-                                                  0,
-                                                  0,
-                                                  viewerConstraints.maxWidth,
-                                                  viewerConstraints.maxHeight,
+                                                      final endSpace =
+                                                          pages.isEmpty
+                                                              ? 96.0
+                                                              : max(
+                                                                  96.0,
+                                                                  pages.last
+                                                                          .height *
+                                                                      0.12,
+                                                                );
+                                                      return PdfPageLayout(
+                                                        pageLayouts:
+                                                            pageLayouts,
+                                                        documentSize: Size(
+                                                          width,
+                                                          y + endSpace,
+                                                        ),
+                                                      );
+                                                    }
+                                                  : null,
+                                          backgroundColor:
+                                              PdfThemePalette.background(
+                                                  themeMode),
+                                          pageColorFilter:
+                                              PdfThemePalette.filter(themeMode),
+                                          pageDropShadow: null,
+                                          pageOverlaysBuilder:
+                                              (context, pageRect, page) {
+                                            // The viewer first lays out at its
+                                            // default matrix, then fits the
+                                            // page. Avoid preparing dense
+                                            // notes at those transient sizes.
+                                            if (!_pdfViewReady) {
+                                              return const <Widget>[];
+                                            }
+                                            final visiblePage =
+                                                pageRect.intersect(
+                                              Rect.fromLTWH(
+                                                0,
+                                                0,
+                                                viewerConstraints.maxWidth,
+                                                viewerConstraints.maxHeight,
+                                              ),
+                                            );
+                                            return [
+                                              Positioned.fill(
+                                                child: AnnotationLayer(
+                                                  themeMode: themeMode,
+                                                  cantoId: widget.cantoId,
+                                                  pageNumber: page.pageNumber,
+                                                  pageSize: Size(pageRect.width,
+                                                      pageRect.height),
+                                                  visibleRect: visiblePage
+                                                          .isEmpty
+                                                      ? Rect.zero
+                                                      : visiblePage.shift(
+                                                          -pageRect.topLeft),
                                                 ),
-                                              );
-                                              return [
-                                                Positioned.fill(
-                                                  child: AnnotationLayer(
-                                                    cantoId: widget.cantoId,
-                                                    pageNumber: page.pageNumber,
-                                                    pageSize: Size(
-                                                        pageRect.width,
-                                                        pageRect.height),
-                                                    visibleRect: visiblePage
-                                                            .isEmpty
-                                                        ? Rect.zero
-                                                        : visiblePage.shift(
-                                                            -pageRect.topLeft),
-                                                  ),
-                                                ),
-                                              ];
-                                            },
-                                          ),
+                                              ),
+                                            ];
+                                          },
                                         ),
                                       ),
                           ),
@@ -1764,7 +1822,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               left: 12,
                               right: 12,
                               child: MidiPanel(
+                                onClose: () =>
+                                    setState(() => _showMidi = false),
                                 cantoId: canto.id,
+                                errorMessage: _midiError,
                                 midiState: currentMidiState,
                                 onPlay: () =>
                                     _handlePlay(canto, currentMidiState),
@@ -1794,251 +1855,60 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                           },
                         ),
 
-                        // ── Panel Herramientas de Dibujo ─────────────────────
                         AnimatedPositioned(
                           duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeInOut,
                           bottom: _showTools
-                              ? 12 + MediaQuery.of(context).padding.bottom
-                              : -120,
+                              ? 12 + MediaQuery.paddingOf(context).bottom
+                              : -160,
                           left: 8,
                           right: 8,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 10, vertical: 5),
-                                decoration: BoxDecoration(
-                                  color: theme.scaffoldBackgroundColor,
-                                  borderRadius: BorderRadius.circular(30),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: Colors.black.withOpacity(0.1),
-                                        blurRadius: 10)
-                                  ],
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    _ToolBtn(
-                                        icon: Icons.pan_tool_rounded,
-                                        isActive: !state.isDrawingMode,
-                                        tooltip: 'Navegar por la partitura',
-                                        onTap: () {
-                                          ref
-                                              .read(pdfEngineProvider.notifier)
-                                              .setDrawingMode(false);
-                                          setState(() =>
-                                              _showDrawingPalette = false);
-                                          _annotationFeedback();
-                                        }),
-                                    Container(
-                                        width: 1,
-                                        height: 20,
-                                        color: Colors.grey.withOpacity(0.3),
-                                        margin: const EdgeInsets.symmetric(
-                                            horizontal: 5)),
-                                    _ToolBtn(
-                                      icon: Icons.edit_rounded,
-                                      isActive: state.isDrawingMode &&
-                                          state.currentTool == ToolType.pencil,
-                                      tooltip: 'Lápiz y opciones',
-                                      onTap: () =>
-                                          _selectDrawingTool(ToolType.pencil),
-                                    ),
-                                    _ToolBtn(
-                                        icon: Icons.text_fields_rounded,
-                                        isActive: state.isDrawingMode &&
-                                            state.currentTool == ToolType.text,
-                                        tooltip: 'Insertar texto',
-                                        onTap: () {
-                                          final e = ref
-                                              .read(pdfEngineProvider.notifier);
-                                          e.setDrawingMode(true);
-                                          e.setTool(ToolType.text);
-                                          setState(() =>
-                                              _showDrawingPalette = false);
-                                          _annotationFeedback();
-                                        }),
-                                    _ToolBtn(
-                                      icon: Icons.cleaning_services_rounded,
-                                      isActive: state.isDrawingMode &&
-                                          state.currentTool == ToolType.eraser,
-                                      tooltip: 'Borrador y opciones',
-                                      onTap: () =>
-                                          _selectDrawingTool(ToolType.eraser),
-                                    ),
-                                    if (state.isDrawingMode) ...[
-                                      Container(
-                                          width: 1,
-                                          height: 20,
-                                          color: Colors.grey.withOpacity(0.3),
-                                          margin: const EdgeInsets.symmetric(
-                                              horizontal: 5)),
-                                      _ToolBtn(
-                                        icon: Icons.undo_rounded,
-                                        isActive: false,
-                                        onTap: () => ref
-                                            .read(pdfEngineProvider.notifier)
-                                            .undo(),
-                                      ),
-                                      _ToolBtn(
-                                        icon: Icons.redo_rounded,
-                                        isActive: false,
-                                        onTap: () => ref
-                                            .read(pdfEngineProvider.notifier)
-                                            .redo(),
-                                      ),
-                                      _ToolBtn(
-                                        icon: Icons.delete_sweep_rounded,
-                                        isActive: false,
-                                        onTap: () => ref
-                                            .read(pdfEngineProvider.notifier)
-                                            .clearAllGlobal(),
-                                      ),
-                                    ],
-                                  ],
-                                ),
-                              ),
-                            ],
+                          child: AnnotationTools(
+                            state: state,
+                            onTool: (tool) {
+                              if (tool == ToolType.text) {
+                                ref
+                                    .read(pdfEngineProvider.notifier)
+                                    .setDrawingMode(true);
+                                ref
+                                    .read(pdfEngineProvider.notifier)
+                                    .setTool(tool);
+                                setState(() => _showDrawingPalette = false);
+                              } else {
+                                _selectDrawingTool(tool);
+                              }
+                            },
+                            onNavigate: () {
+                              ref
+                                  .read(pdfEngineProvider.notifier)
+                                  .setDrawingMode(false);
+                              setState(() => _showDrawingPalette = false);
+                            },
+                            onUndo: () =>
+                                ref.read(pdfEngineProvider.notifier).undo(),
+                            onClear: () => ref
+                                .read(pdfEngineProvider.notifier)
+                                .clearAllGlobal(),
                           ),
                         ),
-
-                        // ── Paleta de Dibujo Flotante (Grosor y Color) ─────────
                         AnimatedPositioned(
                           duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeInOut,
-                          bottom: (_showTools && _showDrawingPalette)
-                              ? 72 + MediaQuery.of(context).padding.bottom
-                              : -120,
+                          bottom: _showTools && _showDrawingPalette
+                              ? 72 + MediaQuery.paddingOf(context).bottom
+                              : -180,
                           left: 8,
                           right: 8,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 15, vertical: 10),
-                                decoration: BoxDecoration(
-                                  color: theme.scaffoldBackgroundColor,
-                                  borderRadius: BorderRadius.circular(20),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: Colors.black.withOpacity(0.1),
-                                        blurRadius: 10)
-                                  ],
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    // Slider de grosor
-                                    _StrokePreview(
-                                      sizeValue:
-                                          state.currentTool == ToolType.eraser
-                                              ? state.eraserSize
-                                              : state.currentSize,
-                                      isEraser:
-                                          state.currentTool == ToolType.eraser,
-                                      color:
-                                          state.currentTool == ToolType.eraser
-                                              ? accentColor
-                                              : state.currentColor,
-                                    ),
-                                    SizedBox(
-                                      width: 100,
-                                      child: SliderTheme(
-                                        data: SliderThemeData(
-                                          thumbShape:
-                                              const RoundSliderThumbShape(
-                                                  enabledThumbRadius: 6),
-                                          overlayShape:
-                                              const RoundSliderOverlayShape(
-                                                  overlayRadius: 12),
-                                          trackHeight: 2,
-                                          activeTrackColor: accentColor,
-                                          inactiveTrackColor:
-                                              Colors.grey.withOpacity(0.3),
-                                          thumbColor: accentColor,
-                                        ),
-                                        child: Slider(
-                                          value: state.currentTool ==
-                                                  ToolType.eraser
-                                              ? state.eraserSize
-                                              : state.currentSize,
-                                          min: 1.0,
-                                          max: state.currentTool ==
-                                                  ToolType.eraser
-                                              ? 40.0
-                                              : 15.0,
-                                          onChanged: (val) => ref
-                                              .read(pdfEngineProvider.notifier)
-                                              .setCurrentSize(val),
-                                          onChangeEnd: (_) =>
-                                              HapticFeedback.selectionClick(),
-                                        ),
-                                      ),
-                                    ),
-
-                                    // Selector de colores solo si no es borrador
-                                    if (state.currentTool !=
-                                        ToolType.eraser) ...[
-                                      Container(
-                                          width: 1,
-                                          height: 20,
-                                          color: Colors.grey.withOpacity(0.3),
-                                          margin: const EdgeInsets.symmetric(
-                                              horizontal: 10)),
-                                      _ColorBtn(
-                                          color: Colors.black,
-                                          isActive: state.currentColor ==
-                                              Colors.black,
-                                          onTap: () {
-                                            ref
-                                                .read(
-                                                    pdfEngineProvider.notifier)
-                                                .setCurrentColor(Colors.black);
-                                            _annotationFeedback();
-                                          }),
-                                      _ColorBtn(
-                                          color: Colors.red,
-                                          isActive:
-                                              state.currentColor == Colors.red,
-                                          onTap: () {
-                                            ref
-                                                .read(
-                                                    pdfEngineProvider.notifier)
-                                                .setCurrentColor(Colors.red);
-                                            _annotationFeedback();
-                                          }),
-                                      _ColorBtn(
-                                          color: Colors.blue,
-                                          isActive:
-                                              state.currentColor == Colors.blue,
-                                          onTap: () {
-                                            ref
-                                                .read(
-                                                    pdfEngineProvider.notifier)
-                                                .setCurrentColor(Colors.blue);
-                                            _annotationFeedback();
-                                          }),
-                                      _ColorBtn(
-                                          color: Colors.white,
-                                          isActive: state.currentColor ==
-                                              Colors.white,
-                                          onTap: () {
-                                            ref
-                                                .read(
-                                                    pdfEngineProvider.notifier)
-                                                .setCurrentColor(Colors.white);
-                                            _annotationFeedback();
-                                          }),
-                                    ]
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
+                          child: AnnotationPalette(
+                              themeMode: themeMode,
+                              state: state,
+                              onSize: (size) => ref
+                                  .read(pdfEngineProvider.notifier)
+                                  .setCurrentSize(size),
+                              onColor: (color) {
+                                ref
+                                    .read(pdfEngineProvider.notifier)
+                                    .setCurrentColor(color);
+                                _annotationFeedback();
+                              }),
                         ),
                       ],
                     ),
@@ -2084,6 +1954,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 // MIDI Panel — Reproductor completo
 // ══════════════════════════════════════════════════════════════════════════════
 class MidiPanel extends StatefulWidget {
+  final VoidCallback? onClose;
+  final String? errorMessage;
   final String cantoId;
   final MidiState midiState;
   final VoidCallback onPlay;
@@ -2101,6 +1973,8 @@ class MidiPanel extends StatefulWidget {
 
   const MidiPanel({
     super.key,
+    this.onClose,
+    this.errorMessage,
     required this.cantoId,
     required this.midiState,
     required this.onPlay,
@@ -2131,69 +2005,32 @@ class _MidiPanelState extends State<MidiPanel> {
     return '$m:$s';
   }
 
-  Widget _buildVoiceMix(BuildContext context, bool loading) {
-    final strings = AppStrings.of(context);
-    final scheme = Theme.of(context).colorScheme;
-    return ExpansionTile(
-      tilePadding: EdgeInsets.zero,
-      title: Text(strings.t('Mezcla de voces', 'Voice mix'),
-          style: const TextStyle(fontSize: 14)),
-      children: [
-        Align(
-          alignment: Alignment.centerRight,
-          child: TextButton(
-            onPressed: loading ? null : widget.onResetVozVolumes,
-            child: Text(strings.t('Restablecer mezcla', 'Reset mix')),
-          ),
-        ),
-        for (final voice in widget.midiState.voces)
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 6),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Wrap(
-                  spacing: 8,
-                  crossAxisAlignment: WrapCrossAlignment.center,
-                  children: [
-                    IconButton(
-                      tooltip: voice.activa
-                          ? strings.t('Silenciar ${voice.nombre}',
-                              'Mute ${voice.nombre}')
-                          : strings.t('Activar ${voice.nombre}',
-                              'Unmute ${voice.nombre}'),
-                      onPressed: loading
-                          ? null
-                          : () => widget.onVozToggle(
-                              voice.trackIndex, voice.activa),
-                      icon: Icon(voice.activa
-                          ? Icons.volume_up_rounded
-                          : Icons.volume_off_rounded),
-                    ),
-                    Text(voice.nombre,
-                        style: TextStyle(color: scheme.onSurface)),
-                    Text('${(voice.volumen * 100).round()}%'),
-                    TextButton(
-                      onPressed: loading
-                          ? null
-                          : () => widget.onVozSolo(voice.trackIndex),
-                      child: Text(strings.t('Solo', 'Solo')),
-                    ),
-                  ],
-                ),
-                Slider(
-                  value: voice.volumen.clamp(0.0, 1.0),
-                  label: '${(voice.volumen * 100).round()}%',
-                  onChanged: loading
-                      ? null
-                      : (value) =>
-                          widget.onVozVolumeChange(voice.trackIndex, value),
-                ),
-              ],
-            ),
-          ),
-      ],
-    );
+  void _showOptions(bool voiceMix) {
+    showModalBottomSheet<void>(
+        context: context,
+        isScrollControlled: true,
+        showDragHandle: true,
+        builder: (context) => PlayerOptionsSheet(
+            initialState: widget.midiState,
+            voiceMix: voiceMix,
+            onSpeed: widget.onSpeedChange,
+            onMute: widget.onVozToggle,
+            onVolume: widget.onVozVolumeChange,
+            onSolo: widget.onVozSolo,
+            onReset: widget.onResetVozVolumes));
+  }
+
+  Duration get _beatDuration {
+    final midi = widget.midiState;
+    final groups = midi.beatGroups;
+    final units =
+        groups.isEmpty ? 1 : groups[(midi.beatIndex ?? 0) % groups.length];
+    final ms = 60000 /
+        (max(1, midi.tempoBpm) * midi.speed.clamp(.5, 2)) *
+        4 /
+        (midi.timeSignatureDenominator ?? 4) *
+        units;
+    return Duration(milliseconds: ms.round().clamp(80, 4000));
   }
 
   @override
@@ -2201,8 +2038,30 @@ class _MidiPanelState extends State<MidiPanel> {
     final theme = Theme.of(context);
     final bool loading = !widget.isReady || !widget.isLoaded;
 
+    if (widget.errorMessage != null) {
+      return Material(
+        borderRadius: BorderRadius.circular(20),
+        color: theme.scaffoldBackgroundColor,
+        child: ConstrainedBox(
+          constraints:
+              BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * .7),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            if (widget.onClose != null)
+              PlayerDismissHandle(onClose: widget.onClose!),
+            Flexible(
+                child: ContentNotice(
+              icon: Icons.music_off_rounded,
+              title: AppStrings.of(context)
+                  .t('Audio no disponible', 'Audio unavailable'),
+              message: widget.errorMessage!,
+            )),
+          ]),
+        ),
+      );
+    }
+
     return Material(
-      elevation: 12,
+      elevation: 4,
       borderRadius: BorderRadius.circular(20),
       shadowColor: Colors.black.withOpacity(0.2),
       child: ConstrainedBox(
@@ -2213,14 +2072,14 @@ class _MidiPanelState extends State<MidiPanel> {
             decoration: BoxDecoration(
               color: theme.scaffoldBackgroundColor,
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: widget.accentColor.withOpacity(0.4)),
             ),
             padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                UsageQuotaNotice(cantoId: widget.cantoId),
+                if (widget.onClose != null)
+                  PlayerDismissHandle(onClose: widget.onClose!),
                 // Indicador metrónomo (flash en cada beat)
                 Wrap(
                   spacing: 8,
@@ -2241,7 +2100,7 @@ class _MidiPanelState extends State<MidiPanel> {
                       style: GoogleFonts.inter(
                         fontSize: 11,
                         fontWeight: FontWeight.w700,
-                        color: Colors.grey,
+                        color: theme.colorScheme.onSurfaceVariant,
                       ),
                     ),
                     // Metrónomo Visual (Row de bolitas)
@@ -2382,10 +2241,12 @@ class _MidiPanelState extends State<MidiPanel> {
                         children: [
                           Text(_formatTime(widget.midiState.tiempoActual),
                               style: GoogleFonts.inter(
-                                  fontSize: 11, color: Colors.grey)),
+                                  fontSize: 11,
+                                  color: theme.colorScheme.onSurfaceVariant)),
                           Text(_formatTime(widget.midiState.tiempoTotal),
                               style: GoogleFonts.inter(
-                                  fontSize: 11, color: Colors.grey)),
+                                  fontSize: 11,
+                                  color: theme.colorScheme.onSurfaceVariant)),
                         ],
                       ),
                     ),
@@ -2408,8 +2269,10 @@ class _MidiPanelState extends State<MidiPanel> {
                           tooltip: 'Metrónomo',
                           size: 22,
                           child: TweenAnimationBuilder<double>(
-                            duration: const Duration(milliseconds: 180),
-                            curve: Curves.easeInOutCubic,
+                            duration: MediaQuery.disableAnimationsOf(context)
+                                ? Duration.zero
+                                : _beatDuration,
+                            curve: Curves.easeInOutSine,
                             tween: Tween<double>(
                               begin: 0.0,
                               end: widget.midiState.metronomoActivo &&
@@ -2423,7 +2286,7 @@ class _MidiPanelState extends State<MidiPanel> {
                               return MetronomeIcon(
                                 color: widget.midiState.metronomoActivo
                                     ? widget.accentColor
-                                    : Colors.grey.withOpacity(0.6),
+                                    : theme.colorScheme.onSurfaceVariant,
                                 size: 20,
                                 rotationAngle: angle,
                               );
@@ -2431,6 +2294,12 @@ class _MidiPanelState extends State<MidiPanel> {
                           ),
                         ),
                         // Play / Pause (Foco central del reproductor)
+                        IconButton(
+                            tooltip: AppStrings.of(context)
+                                .t('Mezcla de voces', 'Voice mix'),
+                            icon: const Icon(Icons.tune_rounded),
+                            onPressed:
+                                loading ? null : () => _showOptions(true)),
                         GestureDetector(
                           onTap: loading ? null : widget.onPlay,
                           child: AnimatedContainer(
@@ -2441,15 +2310,7 @@ class _MidiPanelState extends State<MidiPanel> {
                               shape: BoxShape.circle,
                               color: loading
                                   ? Colors.grey.withOpacity(0.2)
-                                  : widget.accentColor,
-                              boxShadow: loading
-                                  ? []
-                                  : [
-                                      BoxShadow(
-                                          color: widget.accentColor
-                                              .withOpacity(0.4),
-                                          blurRadius: 12)
-                                    ],
+                                  : theme.colorScheme.primaryContainer,
                             ),
                             child: loading
                                 ? const Padding(
@@ -2465,13 +2326,20 @@ class _MidiPanelState extends State<MidiPanel> {
                                       widget.midiState.isPlaying
                                           ? Icons.pause_rounded
                                           : Icons.play_arrow_rounded,
-                                      color: Colors.white,
+                                      color:
+                                          theme.colorScheme.onPrimaryContainer,
                                       size: 28,
                                     ),
                                   ),
                           ),
                         ),
                         // Stop
+                        IconButton(
+                            tooltip:
+                                AppStrings.of(context).t('Velocidad', 'Speed'),
+                            icon: const Icon(Icons.speed_rounded),
+                            onPressed:
+                                loading ? null : () => _showOptions(false)),
                         _GoldIconBtn(
                           icon: Icons.stop_rounded,
                           isActive: false,
@@ -2484,41 +2352,6 @@ class _MidiPanelState extends State<MidiPanel> {
                     ),
                   ),
                 ),
-
-                const SizedBox(height: 12),
-                Wrap(
-                  spacing: 12,
-                  crossAxisAlignment: WrapCrossAlignment.center,
-                  children: [
-                    Text(AppStrings.of(context).t('Velocidad', 'Speed')),
-                    Text('${widget.midiState.speed.toStringAsFixed(2)}×'),
-                    TextButton(
-                      onPressed: loading || widget.midiState.speed == 1.0
-                          ? null
-                          : () => widget.onSpeedChange(1.0),
-                      child: Text(
-                          AppStrings.of(context).t('Restablecer', 'Reset')),
-                    ),
-                  ],
-                ),
-                Slider(
-                  value: widget.midiState.speed.clamp(0.5, 2.0),
-                  min: 0.5,
-                  max: 2.0,
-                  divisions: 30,
-                  label: '${widget.midiState.speed.toStringAsFixed(2)}×',
-                  onChanged: loading ? null : widget.onSpeedChange,
-                ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Flexible(
-                        child: Text('0.50×', style: TextStyle(fontSize: 14))),
-                    Flexible(
-                        child: Text('2.00×', style: TextStyle(fontSize: 14))),
-                  ],
-                ),
-                _buildVoiceMix(context, loading),
               ],
             ),
           ))),
@@ -2712,171 +2545,6 @@ class MetronomeIcon extends StatelessWidget {
     return CustomPaint(
       size: Size(size, size),
       painter: MetronomePainter(color: color, rotationAngle: rotationAngle),
-    );
-  }
-}
-
-class _ToolBtn extends StatelessWidget {
-  final IconData icon;
-  final bool isActive;
-  final VoidCallback onTap;
-  final String? tooltip;
-
-  const _ToolBtn(
-      {required this.icon,
-      required this.isActive,
-      required this.onTap,
-      this.tooltip});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final button = InkWell(
-      onTap: onTap,
-      enableFeedback: true,
-      borderRadius: BorderRadius.circular(20),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
-        padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          color: isActive
-              ? theme.colorScheme.primary.withOpacity(0.14)
-              : Colors.transparent,
-          shape: BoxShape.circle,
-          border: Border.all(
-            color: isActive
-                ? theme.colorScheme.primary.withOpacity(0.45)
-                : Colors.transparent,
-          ),
-        ),
-        child: Icon(icon,
-            size: 20,
-            color: isActive
-                ? theme.colorScheme.primary
-                : theme.colorScheme.onSurface.withOpacity(0.58)),
-      ),
-    );
-    return tooltip == null ? button : Tooltip(message: tooltip!, child: button);
-  }
-}
-
-class _StrokePreview extends StatelessWidget {
-  final double sizeValue;
-  final bool isEraser;
-  final Color color;
-
-  const _StrokePreview({
-    required this.sizeValue,
-    required this.isEraser,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final diameter = (sizeValue * 1.7).clamp(4.0, 30.0).toDouble();
-    return Tooltip(
-      message: isEraser ? 'Tamaño del borrador' : 'Tamaño del pincel',
-      child: SizedBox(
-        width: 40,
-        height: 40,
-        child: CustomPaint(
-          painter: _StrokePreviewPainter(
-            diameter: diameter,
-            color: color,
-            isEraser: isEraser,
-            background: theme.colorScheme.surface,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _StrokePreviewPainter extends CustomPainter {
-  final double diameter;
-  final Color color;
-  final bool isEraser;
-  final Color background;
-
-  const _StrokePreviewPainter({
-    required this.diameter,
-    required this.color,
-    required this.isEraser,
-    required this.background,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final center = size.center(Offset.zero);
-    final radius = diameter / 2;
-    final outline = Paint()
-      ..color = color.withOpacity(0.9)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
-
-    if (isEraser) {
-      canvas.drawCircle(
-        center,
-        radius,
-        Paint()
-          ..color = color
-              .withOpacity(background.computeLuminance() > 0.5 ? 0.08 : 0.18),
-      );
-      canvas.drawCircle(center, radius, outline);
-    } else {
-      canvas.drawCircle(center, radius, Paint()..color = color);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _StrokePreviewPainter oldDelegate) =>
-      oldDelegate.diameter != diameter ||
-      oldDelegate.color != color ||
-      oldDelegate.isEraser != isEraser ||
-      oldDelegate.background != background;
-}
-
-class _ColorBtn extends StatelessWidget {
-  final Color color;
-  final bool isActive;
-  final VoidCallback onTap;
-
-  const _ColorBtn(
-      {required this.color, required this.isActive, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final borderColor = color == Colors.white ? Colors.grey : color;
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(20),
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 4),
-        padding: const EdgeInsets.all(2),
-        decoration: BoxDecoration(
-          color: isActive
-              ? theme.colorScheme.primary.withOpacity(0.2)
-              : Colors.transparent,
-          shape: BoxShape.circle,
-        ),
-        child: Container(
-          width: 24,
-          height: 24,
-          decoration: BoxDecoration(
-            color: color,
-            shape: BoxShape.circle,
-            border: Border.all(color: borderColor, width: 1),
-            boxShadow: [
-              if (isActive)
-                BoxShadow(
-                    color: theme.colorScheme.primary.withOpacity(0.5),
-                    blurRadius: 4),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }

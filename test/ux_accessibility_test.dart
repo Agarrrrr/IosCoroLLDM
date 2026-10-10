@@ -25,13 +25,23 @@ class TestPurchases extends MonetizationController {
     state = const MonetizationState(
         revenueCatConfigured: true,
         packages: [monthly],
-        appUserId: 'support-test');
+        appUserId: r'$RCAnonymousID:support-test');
   }
 }
 
 class EmptyCantos extends CantosNotifier {
+  EmptyCantos({this.many = false});
+  final bool many;
   @override
-  Future<List<Canto>> build() async => [];
+  Future<List<Canto>> build() async => many
+      ? List.generate(
+          40,
+          (i) => Canto(
+              id: '$i',
+              nombre: 'Canto $i',
+              archivo: '$i.pdf',
+              temas: ['Tema ${i.toString().padLeft(2, '0')}']))
+      : [];
 }
 
 class MemoryTheme extends ThemeNotifier {
@@ -76,7 +86,9 @@ void main() {
 
   Future<void> mount(
       WidgetTester tester, Widget child, AppThemeMode mode, String language,
-      {double scale = 2, Size viewport = const Size(320, 640)}) async {
+      {double scale = 2,
+      Size viewport = const Size(320, 640),
+      bool many = false}) async {
     tester.view.physicalSize = viewport;
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
@@ -89,7 +101,7 @@ void main() {
           oledDarkModeProvider.overrideWith(MemoryOled.new),
           pdfNavModeProvider.overrideWith(MemoryNavigation.new),
           languageFilterProvider.overrideWith(MemoryLanguage.new),
-          cantosBaseProvider.overrideWith(EmptyCantos.new),
+          cantosBaseProvider.overrideWith(() => EmptyCantos(many: many)),
           cantosFiltradosProvider.overrideWith((ref) async => []),
         ],
         child: MaterialApp(
@@ -185,21 +197,41 @@ void main() {
     expect(find.text('Páginas hacia los lados'), findsOneWidget);
   });
 
-  testWidgets('Vincular dispositivo es legible al 200% y se puede cancelar',
+  testWidgets('Ajustes conserva restaurar y elimina vinculación por ID',
       (tester) async {
     await mount(tester, const SettingsDialog(), AppThemeMode.claro, 'es');
     await tester
         .ensureVisible(find.byKey(const PageStorageKey('settings-purchases')));
     await tester.tap(find.byKey(const PageStorageKey('settings-purchases')));
     await tester.pumpAndSettle();
-    await tester.scrollUntilVisible(
-        find.text('Vincular otro dispositivo'), 300);
-    await tester.tap(find.text('Vincular otro dispositivo'));
-    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('Restaurar compras'), 200);
+    expect(find.text('Restaurar compras'), findsOneWidget);
+    expect(find.text('Vincular otro dispositivo'), findsNothing);
     expect(tester.takeException(), isNull);
-    await tester.tap(find.text('Cancelar'));
-    await tester.pumpAndSettle();
+  });
+
+  testWidgets('Ajustes y Premium permanecen fijos al desplazar 40 temas',
+      (tester) async {
+    await mount(tester, const AppDrawer(), AppThemeMode.claro, 'es',
+        many: true);
+    final settings = tester.getCenter(find.text('Ajustes'));
+    final premium = tester.getCenter(find.text('Obtener Premium'));
+    await tester.scrollUntilVisible(find.text('Tema 39'), 400);
+    expect(tester.getCenter(find.text('Ajustes')), settings);
+    expect(tester.getCenter(find.text('Obtener Premium')), premium);
+    expect(find.text('Ajustes').hitTestable(), findsOneWidget);
+    expect(find.text('Obtener Premium').hitTestable(), findsOneWidget);
     expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Identificador de soporte oculta el prefijo técnico',
+      (tester) async {
+    await mount(tester, const SettingsDialog(), AppThemeMode.claro, 'es');
+    await tester.scrollUntilVisible(find.text('Ayuda e identificador'), 200);
+    await tester.tap(find.text('Ayuda e identificador'));
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(SelectableText, 'support-test'), findsOneWidget);
+    expect(find.textContaining('RCAnonymousID:'), findsNothing);
   });
 
   for (final screen in ['settings', 'premium', 'reward', 'drawer']) {

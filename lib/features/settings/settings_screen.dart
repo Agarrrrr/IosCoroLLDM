@@ -86,7 +86,6 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                     onPressed: () => Navigator.pop(context),
                     icon: const Icon(Icons.close_rounded)),
               ])),
-          const Divider(height: 1),
           Flexible(
               child: SingleChildScrollView(
                   padding: const EdgeInsets.all(16),
@@ -215,8 +214,7 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                           ]),
                       _settingsGroup(
                           'purchases',
-                          strings.t(
-                              'Premium y dispositivos', 'Premium and devices'),
+                          strings.t('Premium', 'Premium'),
                           purchases.isPremium
                               ? strings.t('Premium activo', 'Premium active')
                               : strings.t('Versión gratuita', 'Free version'),
@@ -252,27 +250,22 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                                   : strings.t('Restaurar compras',
                                       'Restore purchases')),
                             ),
-                            OutlinedButton.icon(
-                                onPressed: purchases.isBusy
-                                    ? null
-                                    : () => _showLinkAccountDialog(
-                                        context, strings),
-                                icon: const Icon(Icons.devices),
-                                label: Text(strings.t(
-                                    'Vincular otro dispositivo',
-                                    'Link another device'))),
                           ]),
                       const SizedBox(height: 16),
                       ExpansionTile(
+                        shape: const Border(),
+                        collapsedShape: const Border(),
                         tilePadding: EdgeInsets.zero,
                         title: Text(strings.t(
                             'Ayuda e identificador', 'Help and identifier')),
                         children: [
                           _description(strings.t(
-                              'Este código sirve para soporte, sorteos y vincular tu acceso Premium con otro dispositivo. No es una contraseña.',
-                              'This code is for support, giveaways and linking your Premium access to another device. It is not a password.')),
+                              'Tu identificador de soporte ayuda a localizar una incidencia.',
+                              'Your support identifier helps us locate an issue.')),
                           if (purchases.appUserId?.isNotEmpty == true) ...[
-                            SelectableText(purchases.appUserId!,
+                            SelectableText(
+                                purchases.appUserId!.replaceFirst(
+                                    RegExp(r'^\$?RCAnonymousID:'), ''),
                                 style: Theme.of(context).textTheme.bodyMedium),
                             TextButton.icon(
                                 onPressed: () async {
@@ -303,19 +296,29 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
 
   Widget _settingsGroup(String id, String title, String summary, IconData icon,
           List<Widget> children) =>
-      ExpansionTile(
-        key: PageStorageKey('settings-$id'),
-        tilePadding: EdgeInsets.zero,
-        childrenPadding: const EdgeInsets.only(top: 8, bottom: 16),
-        leading: Icon(icon),
-        title: Text(title, style: Theme.of(context).textTheme.titleMedium),
-        subtitle: Text(summary),
-        children: [
-          Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: children)
-        ],
-      );
+      Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: DecoratedBox(
+              decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surfaceContainerLow,
+                  borderRadius: BorderRadius.circular(22)),
+              child: ExpansionTile(
+                shape: const Border(),
+                collapsedShape: const Border(),
+                key: PageStorageKey('settings-$id'),
+                tilePadding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                childrenPadding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                leading: Icon(icon),
+                title:
+                    Text(title, style: Theme.of(context).textTheme.titleMedium),
+                subtitle: Text(summary),
+                children: [
+                  Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: children)
+                ],
+              )));
 
   Widget _heading(String text) => Padding(
       padding: const EdgeInsets.only(top: 20, bottom: 8),
@@ -334,14 +337,16 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
   Widget _choice(String title, IconData icon, bool selected, VoidCallback onTap,
       {String? subtitle}) {
     final scheme = Theme.of(context).colorScheme;
-    final foreground = selected ? scheme.onPrimary : scheme.onSurface;
+    final foreground = selected ? scheme.onPrimaryContainer : scheme.onSurface;
     return Padding(
         padding: const EdgeInsets.only(bottom: 8),
         child: Semantics(
           selected: selected,
           button: true,
           child: Material(
-            color: selected ? scheme.primary : scheme.surfaceContainerHighest,
+            color: selected
+                ? scheme.primaryContainer
+                : scheme.surfaceContainerHighest,
             borderRadius: BorderRadius.circular(12),
             child: InkWell(
                 onTap: onTap,
@@ -377,79 +382,5 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                 )),
           ),
         ));
-  }
-
-  Future<void> _showLinkAccountDialog(
-      BuildContext context, AppStrings strings) async {
-    final textController = TextEditingController();
-    await showDialog(
-      context: context,
-      builder: (dialogCtx) => AlertDialog(
-        scrollable: true,
-        title: Text(
-          strings.t('Vincular otro dispositivo', 'Link another device'),
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              strings.t(
-                'Para compartir tu acceso Premium, pega el identificador del otro dispositivo. Lo encontrarás en Ajustes, en «Ayuda e identificador». No necesitas crear una cuenta.',
-                'To share your Premium access, paste the other device’s identifier from Settings, under “Help and identifier”. No account registration is needed.',
-              ),
-              style: const TextStyle(fontSize: 14),
-            ),
-            const SizedBox(height: 12),
-            TextField(
-              controller: textController,
-              decoration: InputDecoration(
-                labelText: strings.t('Identificador del otro dispositivo',
-                    'Other device identifier'),
-                border: const OutlineInputBorder(),
-                isDense: true,
-              ),
-              style: const TextStyle(fontSize: 14, fontFamily: 'monospace'),
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(dialogCtx),
-            child: Text(strings.t('Cancelar', 'Cancel')),
-          ),
-          FilledButton(
-            onPressed: () async {
-              final text = textController.text.trim();
-              if (text.isEmpty) return;
-              Navigator.pop(dialogCtx);
-              final messenger = ScaffoldMessenger.of(context);
-              final linked = await ref
-                  .read(monetizationProvider.notifier)
-                  .linkAccount(text);
-              if (!context.mounted) return;
-              messenger.showSnackBar(
-                SnackBar(
-                  content: Text(
-                    linked
-                        ? strings.t(
-                            'Dispositivo vinculado. Premium activo.',
-                            'Device linked. Premium active.',
-                          )
-                        : strings.t(
-                            'No se pudo activar Premium con este identificador. Comprueba el código y la conexión.',
-                            'Premium could not be activated with this identifier. Check the code and your connection.'),
-                  ),
-                  behavior: SnackBarBehavior.floating,
-                ),
-              );
-            },
-            child: Text(strings.t('Vincular', 'Link')),
-          ),
-        ],
-      ),
-    );
-    textController.dispose();
   }
 }

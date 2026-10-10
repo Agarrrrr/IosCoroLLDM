@@ -513,18 +513,24 @@ class _PdfViewerState extends State<PdfViewer> with SingleTickerProviderStateMix
       // and zoom instead of animating another fit-to-page through dense notes.
       Matrix4? backgroundRelayoutMatrix;
       final updatedLayout = _layout;
-      if (isLayoutChanged && !isViewSizeChanged && oldLayout != null && updatedLayout != null &&
-          currentPageNumber != null && currentPageNumber > 0 &&
+      if (isLayoutChanged &&
+          !isViewSizeChanged &&
+          oldLayout != null &&
+          updatedLayout != null &&
+          currentPageNumber != null &&
+          currentPageNumber > 0 &&
           currentPageNumber <= oldLayout.pageLayouts.length &&
           oldLayout.pageLayouts.length == updatedLayout.pageLayouts.length) {
         final index = currentPageNumber - 1;
         final oldPage = oldLayout.pageLayouts[index];
         final newPage = updatedLayout.pageLayouts[index];
-        final backgroundSizeChanged = List.generate(oldLayout.pageLayouts.length,
-            (i) => oldLayout.pageLayouts[i].size != updatedLayout.pageLayouts[i].size).any((changed) => changed);
+        final backgroundSizeChanged = List.generate(
+          oldLayout.pageLayouts.length,
+          (i) => oldLayout.pageLayouts[i].size != updatedLayout.pageLayouts[i].size,
+        ).any((changed) => changed);
         if (oldPage.size == newPage.size && backgroundSizeChanged) {
-          backgroundRelayoutMatrix = _txController.value.clone()
-            ..translate(oldPage.left - newPage.left, oldPage.top - newPage.top);
+          backgroundRelayoutMatrix =
+              _txController.value.clone()..translate(oldPage.left - newPage.left, oldPage.top - newPage.top);
         }
       }
       Future.microtask(() async {
@@ -1005,13 +1011,16 @@ class _PdfViewerState extends State<PdfViewer> with SingleTickerProviderStateMix
           realSize.image,
           Rect.fromLTWH(0, 0, realSize.image.width.toDouble(), realSize.image.height.toDouble()),
           rect,
-          Paint()..filterQuality = FilterQuality.high,
+          Paint()
+            ..filterQuality = FilterQuality.high
+            ..colorFilter = widget.params.pageColorFilter,
         );
       } else {
         canvas.drawRect(
           rect,
           Paint()
             ..color = Colors.white
+            ..colorFilter = widget.params.pageColorFilter
             ..style = PaintingStyle.fill,
         );
       }
@@ -1035,7 +1044,9 @@ class _PdfViewerState extends State<PdfViewer> with SingleTickerProviderStateMix
           partial.image,
           Rect.fromLTWH(0, 0, partial.image.width.toDouble(), partial.image.height.toDouble()),
           partial.rect,
-          Paint()..filterQuality = FilterQuality.high,
+          Paint()
+            ..filterQuality = FilterQuality.high
+            ..colorFilter = widget.params.pageColorFilter,
         );
       }
 
@@ -1172,8 +1183,10 @@ class _PdfViewerState extends State<PdfViewer> with SingleTickerProviderStateMix
     if (!mounted || cancellationToken.isCanceled) return null;
 
     if (const bool.fromEnvironment('AUDIT_PDF_RENDER')) {
-      debugPrint('PDF_PARTIAL page=${page.pageNumber} requestedScale=$requestedScale '
-          'scale=$scale pixels=${(inPageRect.width * scale).toInt()}x${(inPageRect.height * scale).toInt()}');
+      debugPrint(
+        'PDF_PARTIAL page=${page.pageNumber} requestedScale=$requestedScale '
+        'scale=$scale pixels=${(inPageRect.width * scale).toInt()}x${(inPageRect.height * scale).toInt()}',
+      );
     }
 
     final img = await page.render(
