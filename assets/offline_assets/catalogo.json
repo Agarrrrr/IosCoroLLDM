@@ -128,7 +128,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/7aae8cdfc9e5900c4b5f00b082552a2823b396db6e9d332cf661e1f7474205e9.enc",
+    "version": 2
   },
   {
     "id": "usmc_5392bae9d05ad58c1c",
@@ -4726,7 +4728,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/e65392a9581acad38ed81c0b0527a51b575ce4dcd598350646889422ba0d9eeb.enc",
+    "version": 2
   },
   {
     "id": "usmc_64b5f67921b21cae02606966",
@@ -7754,7 +7758,9 @@
     "es_privado": false,
     "vinculo_idioma": "usmc_64adc3c4970ee4295057e46c",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/fdbe519a92b7826752a94c62811ea9d02f4075231524f806928f7f9a0db29e4d.enc",
+    "version": 2
   },
   {
     "id": "8801903c-3808-43ee-9658-05620cd4b6bf",
@@ -14730,7 +14736,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/0dd793b19b38e75882cd84e6a498aad70dc80b882b5fa53fedbf6725b20b927a.enc",
+    "version": 2
   },
   {
     "id": "usmc_3e080c39f535c8fb47",
@@ -16342,6 +16350,39 @@
       "Gracia"
     ],
     "es_privado": false,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "3ad4f5e6-ca67-4792-8747-4a86fd4e4633",
+    "nombre": "Al Gran Señor",
+    "archivo": "global/assets/pdf/00dc2874937c1945a12796b18a27f6f3d66e3894221d5c12536e2e41b05da3df.enc",
+    "temas": [
+      "Adoración"
+    ],
+    "es_privado": false,
+    "midi_archivo": "global/assets/midi/0f1c2471e6474cd91487f76af47cc60b81b90c9dbcbb99a98dd266ee3d22d338.enc",
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "2f2f7e13-a98d-44ec-9694-155223a5bc4c",
+    "nombre": "Salmo 23 - Jehová es mi Pastor",
+    "archivo": "global/assets/pdf/3dda4ef161dd9790e3a3457f94c54bd1d82e61bb7f5149cf9e513b70b31fa960.enc",
+    "temas": [
+      "Alabanza",
+      "Adoración"
+    ],
+    "es_privado": false,
+    "midi_archivo": "global/assets/midi/b1af402d04ff449898fb686ed34becd09756ab264278b240275774d955ff0deb.enc",
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
     "_idioma": "es",
     "idioma": "es"
   }

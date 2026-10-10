@@ -1,0 +1,30 @@
+{
+  "oldAssetsChecked": 2164,
+  "changed": [
+    "assets\\catalogo.json",
+    "assets\\offline_assets\\catalogo.json"
+  ],
+  "added": [
+    "assets\\offline_assets\\midis\\global\\assets\\midi\\0dd793b19b38e75882cd84e6a498aad70dc80b882b5fa53fedbf6725b20b927a.enc",
+    "assets\\offline_assets\\midis\\global\\assets\\midi\\0f1c2471e6474cd91487f76af47cc60b81b90c9dbcbb99a98dd266ee3d22d338.enc",
+    "assets\\offline_assets\\midis\\global\\assets\\midi\\7aae8cdfc9e5900c4b5f00b082552a2823b396db6e9d332cf661e1f7474205e9.enc",
+    "assets\\offline_assets\\midis\\global\\assets\\midi\\b1af402d04ff449898fb686ed34becd09756ab264278b240275774d955ff0deb.enc",
+    "assets\\offline_assets\\midis\\global\\assets\\midi\\e65392a9581acad38ed81c0b0527a51b575ce4dcd598350646889422ba0d9eeb.enc",
+    "assets\\offline_assets\\midis\\global\\assets\\midi\\fdbe519a92b7826752a94c62811ea9d02f4075231524f806928f7f9a0db29e4d.enc",
+    "assets\\offline_assets\\pdfs\\global\\assets\\pdf\\00dc2874937c1945a12796b18a27f6f3d66e3894221d5c12536e2e41b05da3df.enc",
+    "assets\\offline_assets\\pdfs\\global\\assets\\pdf\\3dda4ef161dd9790e3a3457f94c54bd1d82e61bb7f5149cf9e513b70b31fa960.enc"
+  ],
+  "existingAssetBytesUnchanged": true,
+  "pdfChecks": [
+    {
+      "name": "Al Gran Señor",
+      "pages": 8,
+      "validFlateStreams": 13
+    },
+    {
+      "name": "Salmo 23 - Jehová es mi Pastor",
+      "pages": 4,
+      "validFlateStreams": 9
+    }
+  ]
+}
