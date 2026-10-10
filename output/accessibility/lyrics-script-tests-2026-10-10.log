@@ -1,0 +1,24 @@
+{"id": "score", "status": "error"}
+test_approval_cannot_reuse_another_pdf (test_extract.ExtractTests.test_approval_cannot_reuse_another_pdf) ... ok
+test_changed_rows_are_not_assumed_to_be_new_verses (test_extract.ExtractTests.test_changed_rows_are_not_assumed_to_be_new_verses) ... ok
+test_chorus_variants_are_flagged_not_repeated (test_extract.ExtractTests.test_chorus_variants_are_flagged_not_repeated) ... ok
+test_closed_satb_candidate_requires_four_labels (test_extract.ExtractTests.test_closed_satb_candidate_requires_four_labels) ... ok
+test_compact_output_prints_chorus_once (test_extract.ExtractTests.test_compact_output_prints_chorus_once) ... ok
+{"excluded": 0, "draft_needs_review": 0, "approved": 0, "error": 1}
+{"id": "score", "status": "approved"}
+test_current_approval_publishes_only_reviewed_sections (test_extract.ExtractTests.test_current_approval_publishes_only_reviewed_sections) ... ok
+test_explicit_verse_after_chorus_changes_section (test_extract.ExtractTests.test_explicit_verse_after_chorus_changes_section) ... ok
+test_mixed_document_never_exports_partial_lyrics (test_extract.ExtractTests.test_mixed_document_never_exports_partial_lyrics) ... ok
+test_open_satb_is_excluded (test_extract.ExtractTests.test_open_satb_is_excluded) ... ok
+test_path_traversal_rejected (test_extract.ExtractTests.test_path_traversal_rejected) ... ok
+test_plain_text_pdf_is_not_a_digital_score (test_extract.ExtractTests.test_plain_text_pdf_is_not_a_digital_score) ... ok
+test_remote_reference_is_not_downloaded (test_extract.ExtractTests.test_remote_reference_is_not_downloaded) ... ok
+test_repeated_printed_chorus_is_a_single_block (test_extract.ExtractTests.test_repeated_printed_chorus_is_a_single_block) ... ok
+test_scanned_pdf_with_hidden_text_still_rejected (test_extract.ExtractTests.test_scanned_pdf_with_hidden_text_still_rejected) ... ok
+test_syllables_elisions_and_system_continuations (test_extract.ExtractTests.test_syllables_elisions_and_system_continuations) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.348s
+
+OK
+{"excluded": 0, "draft_needs_review": 0, "approved": 1, "error": 0}
