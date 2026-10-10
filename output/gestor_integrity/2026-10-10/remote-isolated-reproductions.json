@@ -1,0 +1,38 @@
+{
+  "source": "E:/proyectos/CoroLLDM/src/api/remoteCatalogDB.js",
+  "allNetworkMocked": true,
+  "realDataModified": false,
+  "results": [
+    {
+      "name": "Create resolves an existing UUID by title and calls cloud update for that work",
+      "reproduced": true,
+      "savedId": "11111111-1111-4111-8111-111111111111"
+    },
+    {
+      "name": "HTTP 500 from local synchronization does not stop saveCanto success",
+      "reproduced": true,
+      "saveReturnedSuccess": true
+    },
+    {
+      "name": "Local/remote same-title works with different UUIDs are collapsed and score replaced",
+      "reproduced": true,
+      "rows": [
+        {
+          "id": "11111111-1111-4111-8111-111111111111",
+          "nombre": "Un canto",
+          "archivo": "other-score.pdf",
+          "idioma": "es",
+          "midi_archivo": null,
+          "_idioma": "es",
+          "_nombre_norm": "un canto",
+          "_autor_norm": ""
+        }
+      ]
+    },
+    {
+      "name": "Editing a bundled encrypted filename uploads double-encrypted content",
+      "reproduced": true,
+      "pdfHeaderAfterOneDecrypt": false
+    }
+  ]
+}

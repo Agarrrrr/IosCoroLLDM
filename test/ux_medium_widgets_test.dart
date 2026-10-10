@@ -186,6 +186,52 @@ void main() {
     expect(tester.takeException(), isNull);
   });
   testWidgets(
+      'Metrónomo muestra solo el compás y atraviesa el centro durante el pulso',
+      (tester) async {
+    var midi = const MidiState(
+        isLoaded: true,
+        isPlaying: true,
+        metronomoActivo: true,
+        tempoBpm: 60,
+        beatIndex: 0,
+        beatNumerator: 2,
+        beatGroups: [3, 3],
+        timeSignatureNumerator: 6,
+        timeSignatureDenominator: 8);
+    late StateSetter update;
+    await mount(tester, StatefulBuilder(builder: (context, setState) {
+      update = setState;
+      return MidiPanel(
+          cantoId: 'known',
+          midiState: midi,
+          onPlay: () {},
+          onStop: () {},
+          onSeek: (_) {},
+          onSpeedChange: (_) {},
+          onMetronomo: () {},
+          onVozToggle: (_, __) {},
+          onVozVolumeChange: (_, __) {},
+          onResetVozVolumes: () {},
+          onVozSolo: (_) {},
+          isLoaded: true,
+          isReady: true,
+          accentColor: Colors.blue);
+    }));
+    expect(find.text('6/8'), findsOneWidget);
+    expect(find.textContaining('3+3'), findsNothing);
+    final icon = find.byType(MetronomeIcon);
+    final left = tester.widget<MetronomeIcon>(icon).rotationAngle;
+    expect(left, lessThan(-.8));
+    update(() => midi = midi.copyWith(beatSerial: 1, beatIndex: 1));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 750));
+    expect(
+        tester.widget<MetronomeIcon>(icon).rotationAngle.abs(), lessThan(.02));
+    await tester.pump(const Duration(milliseconds: 750));
+    expect(tester.widget<MetronomeIcon>(icon).rotationAngle, greaterThan(.8));
+    expect(tester.takeException(), isNull);
+  });
+  testWidgets(
       'Panel real de audio: cuota oculta y controles de 48dp caben en 320px',
       (tester) async {
     await mount(

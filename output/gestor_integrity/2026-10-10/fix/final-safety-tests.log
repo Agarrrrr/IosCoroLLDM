@@ -1,0 +1,30 @@
+
+> repertorio-bc@1.0.0 test:catalog-safety
+> node --test scripts/catalog_safety.test.mjs scripts/remote_catalog_safety.test.mjs
+
+✔ Distinct IDs retain distinct works even with identical titles (17.0712ms)
+✔ Older incoming versions and remote URLs cannot undo offline fixes (0.4944ms)
+✔ Explicit alias migration is refused instead of silently replacing IDs (0.1787ms)
+✔ Invalid and double-encrypted resources are rejected; valid PDF and MIDI accepted (11.7616ms)
+✔ Transaction failure restores every previously changed file (23.2191ms)
+✔ Upsert preserves same-title works and destination-exclusive songs (36.7604ms)
+✔ Missing bytes and invalid PDF uploads leave catalogs untouched (13.8601ms)
+✔ Metadata-only upsert copies an existing validated asset to every offline destination (24.8992ms)
+✔ Metadata saves cannot revert another song version or its local PDF (31.5519ms)
+✔ Explicit delete propagates the ID while keeping shared PDF files (25.9761ms)
+✔ Batch sync aborts on invalid mandatory JSON before touching any destination (23.1515ms)
+✔ Batch dry-run keeps catalog and asset bytes unchanged (37.4679ms)
+✔ New work with the same title gets a different ID, never updates the old work (5.7264ms)
+✔ Distinct local and remote UUIDs with the same title remain two works (1.6667ms)
+✔ A failed local sync reports cloud success and offline failure, not full success (1.9764ms)
+✔ Encrypted local PDF is uploaded with one encryption and a clear-content hash; offline bytes supplied (27.4953ms)
+✔ Invalid PDF is rejected before remote upload (2.3854ms)
+✔ Delete explicitly propagates only the requested ID to local synchronization (1.2059ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 821.5054

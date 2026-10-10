@@ -23,7 +23,7 @@ class PremiumDialog extends ConsumerStatefulWidget {
 }
 
 class _PremiumDialogState extends ConsumerState<PremiumDialog> {
-  String? _selectedId;
+  String? _purchasingId;
   String? _focusedId;
 
   @override
@@ -36,8 +36,7 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
     final plans = [if (monthly != null) monthly, if (annual != null) annual];
     final eligibility = ref.watch(introEligibilityProvider);
     final store = ref.watch(subscriptionStoreProvider);
-    final selected =
-        plans.where((p) => p.identifier == _selectedId).firstOrNull;
+    final busy = state.isBusy || _purchasingId != null;
 
     return AlertDialog(
       scrollable: true,
@@ -123,7 +122,7 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                   _planOption(
                       context,
                       plan,
-                      state.isBusy,
+                      busy,
                       SubscriptionTerms.forProduct(plan.storeProduct,
                           english: strings.isEnglish,
                           android: store == SubscriptionStore.google,
@@ -131,20 +130,6 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                               .value?[plan.storeProduct.identifier])),
                   const SizedBox(height: 12),
                 ],
-                FilledButton(
-                  key: const ValueKey('premium-continue'),
-                  onPressed: selected == null || state.isBusy
-                      ? null
-                      : () async {
-                          final purchased = await controller.purchase(selected);
-                          if (purchased && context.mounted) {
-                            Navigator.pop(context);
-                          }
-                        },
-                  child: Text(state.isBusy
-                      ? strings.t('Procesando…', 'Processing…')
-                      : strings.t('Continuar', 'Continue')),
-                ),
                 if (eligibility.isLoading)
                   Padding(
                       padding: const EdgeInsets.only(top: 8),
@@ -158,10 +143,12 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                   ),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
-                Wrap(
-                  alignment: WrapAlignment.center,
+                Row(
+                  key: const ValueKey('premium-legal-links'),
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextButton(
+                    Expanded(
+                        child: TextButton(
                       onPressed: () => launchUrl(
                         Uri.parse(
                           'https://lldmcoro.com/privacidad',
@@ -173,9 +160,11 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                           'Política de privacidad',
                           'Privacy policy',
                         ),
+                        textAlign: TextAlign.center,
                       ),
-                    ),
-                    TextButton(
+                    )),
+                    Expanded(
+                        child: TextButton(
                       onPressed: () => launchUrl(
                         Uri.parse(
                           'https://lldmcoro.com/terminos',
@@ -187,8 +176,9 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                           'Términos de uso',
                           'Terms of use',
                         ),
+                        textAlign: TextAlign.center,
                       ),
-                    ),
+                    )),
                   ],
                 ),
               ],
@@ -211,7 +201,7 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
       actions: [
         if (!state.isPremium)
           TextButton(
-            onPressed: state.isBusy
+            onPressed: busy
                 ? null
                 : () async {
                     final restored = await controller.restore();
@@ -220,7 +210,7 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                         context, restoreFeedback(restored, strings),
                         icon: Icons.workspace_premium_rounded);
                   },
-            child: Text(state.isBusy
+            child: Text(busy
                 ? strings.t('Procesando…', 'Processing…')
                 : strings.t('Restaurar compras', 'Restore purchases')),
           ),
@@ -260,31 +250,27 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
   ) {
     final strings = AppStrings.of(context);
     final scheme = Theme.of(context).colorScheme;
-    final selected = package.identifier == _selectedId;
-    final foreground = selected ? scheme.onPrimary : scheme.onSurface;
+    final annual = package.packageType == PackageType.annual;
+    final foreground = annual ? scheme.onPrimary : scheme.onSurface;
     final label = package.packageType == PackageType.annual
         ? strings.t('Anual', 'Annual')
         : strings.t('Mensual', 'Monthly');
     return Semantics(
-      selected: selected,
-      checked: selected,
-      inMutuallyExclusiveGroup: true,
+      button: true,
       enabled: !busy,
       child: Material(
         key: ValueKey('premium-plan-material-${package.identifier}'),
-        color: selected ? scheme.primary : scheme.surfaceContainerHighest,
+        color: annual ? scheme.primary : scheme.surfaceContainerHighest,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
             side: BorderSide(
                 width: 2,
                 color: _focusedId == package.identifier
-                    ? (selected ? scheme.onPrimary : scheme.primary)
+                    ? (annual ? scheme.onPrimary : scheme.primary)
                     : Colors.transparent)),
         child: InkWell(
           key: ValueKey('premium-plan-${package.identifier}'),
-          onTap: busy
-              ? null
-              : () => setState(() => _selectedId = package.identifier),
+          onTap: busy ? null : () => _purchase(package),
           onFocusChange: (focused) => setState(() {
             if (focused) {
               _focusedId = package.identifier;
@@ -299,9 +285,9 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Icon(
-                      selected
-                          ? Icons.radio_button_checked
-                          : Icons.radio_button_off,
+                      annual
+                          ? Icons.workspace_premium_rounded
+                          : Icons.shopping_bag_outlined,
                       color: foreground),
                   const SizedBox(width: 12),
                   Expanded(
@@ -313,6 +299,14 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                                 .textTheme
                                 .titleMedium
                                 ?.copyWith(color: foreground)),
+                        if (annual)
+                          Text(strings.t('Mejor plan', 'Best plan'),
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .labelLarge
+                                  ?.copyWith(
+                                      color: foreground,
+                                      fontWeight: FontWeight.bold)),
                         Text(terms.recurringPrice,
                             style: Theme.of(context)
                                 .textTheme
@@ -336,11 +330,28 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
                                   .bodyMedium
                                   ?.copyWith(color: foreground)),
                         ],
+                        if (_purchasingId == package.identifier) ...[
+                          const SizedBox(height: 8),
+                          Text(strings.t('Procesando…', 'Processing…'),
+                              style: TextStyle(color: foreground)),
+                        ],
                       ])),
                 ],
               )),
         ),
       ),
     );
+  }
+
+  Future<void> _purchase(Package package) async {
+    if (_purchasingId != null || ref.read(monetizationProvider).isBusy) return;
+    setState(() => _purchasingId = package.identifier);
+    try {
+      final purchased =
+          await ref.read(monetizationProvider.notifier).purchase(package);
+      if (purchased && mounted) Navigator.pop(context);
+    } finally {
+      if (mounted) setState(() => _purchasingId = null);
+    }
   }
 }

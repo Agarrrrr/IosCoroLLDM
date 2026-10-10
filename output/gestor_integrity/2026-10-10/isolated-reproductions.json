@@ -1,0 +1,87 @@
+{
+  "source": "E:\\proyectos\\CoroLLDM\\vite.config.js",
+  "networkUsed": false,
+  "realCatalogsModified": false,
+  "results": [
+    {
+      "name": "Same title and different IDs: upsert overwrites an independent work",
+      "reproduced": true,
+      "remaining": [
+        {
+          "id": "second",
+          "nombre": "Un canto",
+          "archivo": "different.pdf",
+          "idioma": "es"
+        }
+      ]
+    },
+    {
+      "name": "Metadata save replaces the entire iOS catalog and removes an exclusive song",
+      "reproduced": true,
+      "iosIds": [
+        "first"
+      ]
+    },
+    {
+      "name": "A successful upsert accepts a PDF reference with no bundled bytes",
+      "reproduced": true,
+      "status": 200
+    },
+    {
+      "name": "Invalid PDF bytes are encrypted and accepted as a successful upload",
+      "reproduced": true,
+      "status": 200,
+      "encryptedLength": 33
+    },
+    {
+      "name": "Disk failure after iOS catalog write leaves the failed change persisted",
+      "reproduced": true,
+      "status": 500,
+      "iosIds": [
+        "partial"
+      ]
+    },
+    {
+      "name": "Repertoire merge still deletes distinct works having the same normalized title",
+      "reproduced": true,
+      "remaining": [
+        {
+          "id": "global",
+          "nombre": "Un canto",
+          "archivo": "global.pdf",
+          "idioma": "es",
+          "_idioma": "es"
+        }
+      ]
+    },
+    {
+      "name": "Local delete removes PWA entry but leaves both iOS catalogs untouched",
+      "reproduced": true,
+      "status": 200
+    },
+    {
+      "name": "Real PWA metadata sync reintroduces the remote Pecador route and downgrades repaired PDF version",
+      "reproduced": true,
+      "pecadorRemote": true,
+      "graciaVersion": 1
+    },
+    {
+      "name": "Batch sync interprets invalid source JSON as an empty catalog",
+      "reproduced": true,
+      "parsedSourceRows": 0
+    },
+    {
+      "name": "Batch sync merges and drops different arrangements sharing a title",
+      "reproduced": true,
+      "remaining": [
+        {
+          "id": "global",
+          "nombre": "Un canto",
+          "archivo": "global.pdf",
+          "idioma": "es",
+          "_idioma": "es"
+        }
+      ]
+    }
+  ]
+}

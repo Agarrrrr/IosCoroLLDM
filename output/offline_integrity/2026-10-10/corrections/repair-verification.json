@@ -1,0 +1,35 @@
+{
+  "repairedPdf": "assets\\offline_assets\\pdfs\\maravillosa-gracia-1782161328444.pdf",
+  "streams": [
+    {
+      "object": 47,
+      "decodedBytes": 2,
+      "compressedBytes": 10
+    },
+    {
+      "object": 49,
+      "decodedBytes": 3,
+      "compressedBytes": 11
+    }
+  ],
+  "allFlateStreamsValid": 25,
+  "pageComparisons": [
+    {
+      "page": 1,
+      "identicalPixels": true
+    },
+    {
+      "page": 2,
+      "identicalPixels": true
+    }
+  ],
+  "beforeWarnings": "Syntax Error (145866): Bad block header in flate stream\r\nSyntax Error (158143): Bad block header in flate stream\r\n",
+  "afterWarnings": "",
+  "originalEncryptedSha256": "0e7db9f1784d7fd61d85590b1406c2b276b657aadbb2524ef8e0e1518ff46b4d",
+  "repairedEncryptedSha256": "3dba0f04c007daf4f106ef2dfcdd4f37094cb47b18c8e3201d61c707a32dcf2b",
+  "repairedClearSha256": "d1732c17cabdb758debacdb7a1decc336c20a78ab80d057bed7e2d147238371d",
+  "catalogChanges": {
+    "pecadorPdf": "pecador-ven-al-dulce-jesus-1777250932709.pdf",
+    "graciaPdfVersion": 2
+  }
+}

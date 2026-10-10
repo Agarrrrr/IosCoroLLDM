@@ -1,0 +1,9 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/integration_test/offline_integrity_device_test.dart
+Running Gradle task 'assembleDebug'...                            104.7s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...          18.2s
+00:00 +0: Physical Android: every bundled PDF page and MIDI opens offline
+00:16 +0: Physical Android: every bundled PDF page and MIDI opens offline - did not complete [E]
+00:16 +0: (tearDownAll) - did not complete [E]
+00:16 +0: Some tests failed.
+No tests were found.

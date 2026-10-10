@@ -37,6 +37,8 @@ import 'package:coro_lldm/features/shared/app_notification_banner.dart';
 import 'package:coro_lldm/features/visor/widgets/player_dismiss_handle.dart';
 import 'package:coro_lldm/features/visor/widgets/annotation_tools.dart';
 import 'package:coro_lldm/features/visor/widgets/player_options_sheet.dart';
+import 'score_wakelock.dart';
+import 'widgets/metronome_motion.dart';
 
 const double _kScaleEpsilon = 0.001;
 
@@ -66,6 +68,7 @@ class VisorScreen extends ConsumerStatefulWidget {
 }
 
 class _VisorScreenState extends ConsumerState<VisorScreen> {
+  late final ScoreWakelock _screenLock;
   bool _showTopBar = true;
   bool _showTools = false;
   bool _showMidi = false;
@@ -96,6 +99,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   @override
   void initState() {
     super.initState();
+    _screenLock = ScoreWakelock();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(pdfEngineProvider.notifier).init(widget.cantoId);
     });
@@ -145,6 +149,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
   @override
   void dispose() {
+    _screenLock.dispose();
     _carouselSnapTimer?.cancel();
     _carouselHintTimer?.cancel();
     _carouselNavigationEpoch++;
@@ -2021,18 +2026,7 @@ class _MidiPanelState extends State<MidiPanel> {
             onReset: widget.onResetVozVolumes));
   }
 
-  Duration get _beatDuration {
-    final midi = widget.midiState;
-    final groups = midi.beatGroups;
-    final units =
-        groups.isEmpty ? 1 : groups[(midi.beatIndex ?? 0) % groups.length];
-    final ms = 60000 /
-        (max(1, midi.tempoBpm) * midi.speed.clamp(.5, 2)) *
-        4 /
-        (midi.timeSignatureDenominator ?? 4) *
-        units;
-    return Duration(milliseconds: ms.round().clamp(80, 4000));
-  }
+  Duration get _beatDuration => MetronomeMotion.pulseDuration(widget.midiState);
 
   @override
   Widget build(BuildContext context) {
@@ -2111,9 +2105,6 @@ class _MidiPanelState extends State<MidiPanel> {
                           final denominator =
                               widget.midiState.timeSignatureDenominator ?? 4;
                           final groups = widget.midiState.beatGroups;
-                          final grouping = groups.any((group) => group > 1)
-                              ? ' · ${groups.join('+')}'
-                              : '';
                           final groupStarts = <int>[];
                           var groupOffset = 0;
                           for (final group in groups) {
@@ -2124,7 +2115,7 @@ class _MidiPanelState extends State<MidiPanel> {
                             crossAxisAlignment: WrapCrossAlignment.center,
                             children: [
                               Text(
-                                '$numerator/$denominator$grouping',
+                                '$numerator/$denominator',
                                 style: GoogleFonts.inter(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w700,
@@ -2273,8 +2264,10 @@ class _MidiPanelState extends State<MidiPanel> {
                               end: widget.midiState.metronomoActivo &&
                                       widget.midiState.isPlaying
                                   ? (widget.midiState.beatSerial.isEven
-                                      ? -0.42
-                                      : 0.42)
+                                      ? -MetronomeMotion.amplitude(
+                                          widget.midiState)
+                                      : MetronomeMotion.amplitude(
+                                          widget.midiState))
                                   : 0.0,
                             ),
                             builder: (context, angle, child) {
@@ -2282,7 +2275,7 @@ class _MidiPanelState extends State<MidiPanel> {
                                 color: widget.midiState.metronomoActivo
                                     ? widget.accentColor
                                     : theme.colorScheme.onSurfaceVariant,
-                                size: 20,
+                                size: 22,
                                 rotationAngle: angle,
                               );
                             },
@@ -2509,7 +2502,7 @@ class MetronomePainter extends CustomPainter {
     // Draw needle straight up
     canvas.drawLine(
       Offset.zero,
-      Offset(0, -size.height * 0.5),
+      Offset(0, -size.height * 0.62),
       paint,
     );
 

@@ -1,0 +1,15 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/integration_test/offline_integrity_device_test.dart
+Running Gradle task 'assembleDebug'...                             63.4s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...          17.4s
+00:00 +0: Physical Android: every bundled PDF page and MIDI opens offline
+🎧 [NativeMidiEngine] Cambio de salida: {outputs: [{name: SM-G986U, type: 1}, {name: SM-G986U, type: 2}, {name: SM-G986U, type: 18}]}
+🎵 [NativeMidiEngine] Inicializando sintetizador...
+🎵 [NativeMidiEngine] Cargando SoundFont desde assets...
+🎵 [NativeMidiEngine] SoundFont cargado ✓ (sfId=1) — Piano Acústico activo
+🎵 [NativeMidiEngine] Metrónomo inicializado ✓
+🎵 [NativeMidiEngine] MIDI cargado: "assets/offline_assets/midis/maravillosa-gracia-1780010808398.mid", duración: 255.33207211041668s
+🎵 [NativeMidiEngine] MIDI cargado: "assets/offline_assets/midis/pecador-ven-al-dulce-jesus-1779936344085.mid", duración: 204.8s
+DEVICE AUDIT REPORT: /storage/emulated/0/Android/data/com.lldm.coro.perfaudit/files/offline-integrity-device.json
+00:02 +1: (tearDownAll)
+00:02 +1: All tests passed!

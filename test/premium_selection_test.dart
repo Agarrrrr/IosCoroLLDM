@@ -9,6 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'subscription_terms_test.dart' as fixtures;
+import 'dart:async';
 
 const annual = Package(
     'annual',
@@ -21,6 +22,7 @@ const monthly = Package('monthly', PackageType.monthly, fixtures.introProduct,
 
 class SelectionController extends MonetizationController {
   final List<Package> purchases = [];
+  Completer<bool>? pendingPurchase;
   SelectionController() {
     state = const MonetizationState(
         revenueCatConfigured: true, packages: [monthly, annual]);
@@ -28,7 +30,7 @@ class SelectionController extends MonetizationController {
   @override
   Future<bool> purchase(Package package) async {
     purchases.add(package);
-    return false;
+    return pendingPurchase == null ? false : await pendingPurchase!.future;
   }
 
   @override
@@ -74,12 +76,13 @@ void main() {
 
   for (final language in ['es', 'en']) {
     testWidgets(
-        'Elegir plan no compra: continuar usa únicamente la selección ($language)',
+        'Cada plan abre su compra directamente y los enlaces quedan al lado ($language)',
         (tester) async {
       final controller = SelectionController();
       await mount(tester, controller, language);
-      final button = find.byKey(const ValueKey('premium-continue'));
-      expect(tester.widget<FilledButton>(button).onPressed, isNull);
+      expect(find.byKey(const ValueKey('premium-continue')), findsNothing);
+      expect(find.text(language == 'es' ? 'Mejor plan' : 'Best plan'),
+          findsOneWidget);
       expect(
           find.textContaining(
               language == 'es' ? '1 semana gratis' : '1 week free'),
@@ -89,16 +92,43 @@ void main() {
         await tester.ensureVisible(plan);
         await tester.tap(plan);
         await tester.pumpAndSettle();
-        expect(controller.purchases, isEmpty);
+        expect(controller.purchases.last.identifier, id);
         expect(tester.takeException(), isNull);
       }
-      await tester.ensureVisible(button);
-      await tester.tap(button);
-      await tester.pumpAndSettle();
-      expect(controller.purchases, [annual]);
+      expect(controller.purchases, [monthly, annual]);
+      final legal = find.byKey(const ValueKey('premium-legal-links'));
+      await tester.ensureVisible(legal);
+      final privacy = find
+          .text(language == 'es' ? 'Política de privacidad' : 'Privacy policy');
+      final terms =
+          find.text(language == 'es' ? 'Términos de uso' : 'Terms of use');
+      expect(
+          tester.getTopLeft(privacy).dx, lessThan(tester.getTopLeft(terms).dx));
+      expect(tester.getTopLeft(privacy).dy,
+          closeTo(tester.getTopLeft(terms).dy, 1));
       expect(tester.takeException(), isNull);
     });
   }
+  testWidgets(
+      'Una compra pendiente bloquea los dos planes y permite reintentar al cancelar',
+      (tester) async {
+    final controller = SelectionController()
+      ..pendingPurchase = Completer<bool>();
+    await mount(tester, controller, 'es');
+    final plan = find.byKey(const ValueKey('premium-plan-annual'));
+    await tester.ensureVisible(plan);
+    await tester.tap(plan);
+    await tester.pump();
+    for (final id in ['annual', 'monthly']) {
+      final option = find.byKey(ValueKey('premium-plan-$id'));
+      expect(tester.widget<InkWell>(option).onTap, isNull);
+    }
+    expect(controller.purchases, [annual]);
+    controller.pendingPurchase!.complete(false);
+    await tester.pumpAndSettle();
+    expect(tester.widget<InkWell>(plan).onTap, isNotNull);
+    expect(find.byType(PremiumDialog), findsOneWidget);
+  });
   testWidgets('Aviso de Premium aparece encima del diálogo y se puede tocar',
       (tester) async {
     await mount(tester, SelectionController(), 'es');

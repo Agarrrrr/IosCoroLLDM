@@ -1,0 +1,30 @@
+[
+  {
+    "asset": "maravillosa-gracia-1782161328444.pdf",
+    "pages": 2,
+    "streamErrors": [
+      {
+        "object": 47,
+        "type": "None",
+        "subtype": "None",
+        "error": "Error -5 while decompressing data: incomplete or truncated stream"
+      },
+      {
+        "object": 49,
+        "type": "None",
+        "subtype": "None",
+        "error": "Error -5 while decompressing data: incomplete or truncated stream"
+      }
+    ]
+  },
+  {
+    "asset": "04c79188cdea334f3a8e2850_i_praise_the_omnipotent_god.pdf",
+    "pages": 2,
+    "streamErrors": []
+  },
+  {
+    "asset": "pecador-ven-al-dulce-jesus-1777250932709.pdf",
+    "pages": 1,
+    "streamErrors": []
+  }
+]

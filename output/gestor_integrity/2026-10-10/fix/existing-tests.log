@@ -1,0 +1,13 @@
+
+> repertorio-bc@1.0.0 test:run
+> vitest run
+
+
+ RUN  v4.1.10 E:/proyectos/CoroLLDM
+
+
+ Test Files  5 passed (5)
+      Tests  20 passed (20)
+   Start at  12:04:58
+   Duration  23.42s (transform 1.06s, setup 0ms, import 2.66s, tests 68ms, environment 102.24s)
+

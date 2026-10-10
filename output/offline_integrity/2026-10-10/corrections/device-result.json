@@ -1,0 +1,19 @@
+{
+  "evidenceType": "summary_from_successful_test_log_and_test_assertions",
+  "rawDeviceJsonRecovered": false,
+  "note": "Flutter removed the external report before adb pull after successful completion; this is a summary, not the raw device JSON.",
+  "sourceLog": "output\\offline_integrity\\2026-10-10\\corrections\\device-tests-unlocked.log",
+  "sourceTest": "integration_test/offline_integrity_device_test.dart",
+  "scope": "two_corrected_songs",
+  "device": "Samsung SM_G986U Android 13",
+  "date": "2026-10-10",
+  "testPassed": true,
+  "resourceCountAsserted": 4,
+  "songCountAsserted": 2,
+  "errorsEmptyAsserted": true,
+  "networkAttemptsZeroAsserted": true,
+  "midiDurationsLoggedSeconds": {
+    "Maravillosa Gracia": 255.33207211041668,
+    "Pecador, Ven al Dulce Jesus": 204.8
+  }
+}
