@@ -1,7 +1,8 @@
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'subscription_terms.dart';
+import 'restore_feedback.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -13,16 +14,29 @@ Future<void> showPremiumDialog(BuildContext context) {
   );
 }
 
-class PremiumDialog extends ConsumerWidget {
+class PremiumDialog extends ConsumerStatefulWidget {
   const PremiumDialog({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PremiumDialog> createState() => _PremiumDialogState();
+}
+
+class _PremiumDialogState extends ConsumerState<PremiumDialog> {
+  String? _selectedId;
+  String? _focusedId;
+
+  @override
+  Widget build(BuildContext context) {
     final strings = AppStrings.of(context);
     final state = ref.watch(monetizationProvider);
     final controller = ref.read(monetizationProvider.notifier);
     final monthly = _package(state.packages, PackageType.monthly);
     final annual = _package(state.packages, PackageType.annual);
+    final plans = [if (monthly != null) monthly, if (annual != null) annual];
+    final eligibility = ref.watch(introEligibilityProvider);
+    final store = ref.watch(subscriptionStoreProvider);
+    final selected =
+        plans.where((p) => p.identifier == _selectedId).firstOrNull;
 
     return AlertDialog(
       scrollable: true,
@@ -36,19 +50,18 @@ class PremiumDialog extends ConsumerWidget {
       title: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.workspace_premium_rounded, color: Color(0xFFD4AF37)),
+          Icon(Icons.workspace_premium_rounded,
+              color: Theme.of(context).colorScheme.primary),
           const SizedBox(width: 10),
           Expanded(
             child: Text(
               state.isPremium ? 'Premium' : 'Coro LLDM Premium',
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
             ),
           ),
         ],
       ),
       content: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 420, minWidth: 240),
+        constraints: const BoxConstraints(maxWidth: 420),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -88,62 +101,60 @@ class PremiumDialog extends ConsumerWidget {
               if (!state.revenueCatConfigured)
                 Text(
                   strings.t(
-                    'Las compras todavía no están configuradas para esta plataforma.',
-                    'Purchases are not configured for this platform yet.',
+                    'La tienda no está disponible en este momento. Inténtalo de nuevo más tarde.',
+                    'The store is currently unavailable. Try again later.',
                   ),
-                  style: TextStyle(color: Theme.of(context).colorScheme.error),
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
                 )
-              else if (state.packages.isEmpty)
+              else if (plans.isEmpty)
                 Text(
                   strings.t(
-                    'No hay planes disponibles. Revisa la oferta predeterminada en RevenueCat.',
-                    'No plans are available. Check the default RevenueCat offering.',
+                    'No pudimos cargar los planes. Cierra esta ventana e inténtalo de nuevo con conexión a internet.',
+                    'We could not load the plans. Close this window and try again with an internet connection.',
                   ),
                 )
               else ...[
-                if (monthly != null) ...[
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.primaryContainer,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.card_giftcard_rounded,
-                          color: Theme.of(context).colorScheme.onPrimaryContainer,
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Text(
-                            strings.t(
-                              '1 semana gratis para nuevos suscriptores elegibles.',
-                              '1 week free for eligible new subscribers.',
-                            ),
-                            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                  color: Theme.of(context)
-                                      .colorScheme
-                                      .onPrimaryContainer,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 10),
+                Text(strings.t('Elige tu plan', 'Choose your plan'),
+                    style: Theme.of(context).textTheme.titleMedium),
+                const SizedBox(height: 12),
+                for (final plan in plans) ...[
+                  _planOption(
+                      context,
+                      plan,
+                      state.isBusy,
+                      SubscriptionTerms.forProduct(plan.storeProduct,
+                          english: strings.isEnglish,
+                          android: store == SubscriptionStore.google,
+                          eligibility: eligibility
+                              .value?[plan.storeProduct.identifier])),
+                  const SizedBox(height: 12),
                 ],
-                if (annual != null) _purchaseButton(context, ref, annual, true),
-                if (monthly != null) ...[
-                  const SizedBox(height: 8),
-                  _purchaseButton(context, ref, monthly, false),
-                ],
+                FilledButton(
+                  key: const ValueKey('premium-continue'),
+                  onPressed: selected == null || state.isBusy
+                      ? null
+                      : () async {
+                          final purchased = await controller.purchase(selected);
+                          if (purchased && context.mounted) {
+                            Navigator.pop(context);
+                          }
+                        },
+                  child: Text(state.isBusy
+                      ? strings.t('Procesando…', 'Processing…')
+                      : strings.t('Continuar con el plan seleccionado',
+                          'Continue with selected plan')),
+                ),
+                if (eligibility.isLoading)
+                  Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: Text(strings.t('Comprobando ofertas disponibles…',
+                          'Checking available offers…'))),
                 const SizedBox(height: 14),
                 Text(
                   strings.t(
-                    'Las suscripciones se renuevan automáticamente salvo que se cancelen desde la cuenta de la tienda antes del siguiente periodo.',
-                    'Subscriptions renew automatically unless cancelled from the store account before the next period.',
+                    'La tienda confirmará el precio y las condiciones antes de pagar. Los planes con renovación automática continúan hasta que los canceles desde la tienda antes del siguiente periodo.',
+                    'The store will confirm the price and terms before payment. Auto-renewing plans continue until you cancel in the store before the next period.',
                   ),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
@@ -182,67 +193,15 @@ class PremiumDialog extends ConsumerWidget {
                 ),
               ],
             ],
-            if (state.appUserId != null && state.appUserId!.isNotEmpty) ...[
-              const SizedBox(height: 16),
-              const Divider(height: 1),
-              const SizedBox(height: 10),
-              Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          strings.t('ID de Cuenta / Soporte', 'Account / Support ID'),
-                          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                fontSize: 10,
-                                color: Theme.of(context).colorScheme.onSurfaceVariant,
-                              ),
-                        ),
-                        const SizedBox(height: 2),
-                        SelectableText(
-                          state.appUserId!,
-                          style: const TextStyle(
-                            fontFamily: 'monospace',
-                            fontSize: 10,
-                            letterSpacing: -0.2,
-                          ),
-                          maxLines: 1,
-                        ),
-                      ],
-                    ),
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.copy_rounded, size: 16),
-                    tooltip: strings.t('Copiar ID', 'Copy ID'),
-                    onPressed: () async {
-                      await Clipboard.setData(ClipboardData(text: state.appUserId!));
-                      if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              strings.t(
-                                'ID copiado al portapapeles',
-                                'ID copied to clipboard',
-                              ),
-                            ),
-                            duration: const Duration(seconds: 2),
-                            behavior: SnackBarBehavior.floating,
-                          ),
-                        );
-                      }
-                    },
-                  ),
-                ],
-              ),
-            ],
             if (state.error != null) ...[
               const SizedBox(height: 12),
               Text(
-                state.error!,
+                strings.t(
+                    'No se pudo completar la operación. Revisa tu conexión e inténtalo de nuevo.',
+                    'The operation could not be completed. Check your connection and try again.'),
                 style: TextStyle(
-                  color: Theme.of(context).colorScheme.error,
-                  fontSize: 12,
+                  color: Theme.of(context).colorScheme.onSurface,
+                  fontSize: 14,
                 ),
               ),
             ],
@@ -260,20 +219,14 @@ class PremiumDialog extends ConsumerWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
-                          restored
-                              ? strings.t(
-                                  'Compras restauradas',
-                                  'Purchases restored',
-                                )
-                              : strings.t(
-                                  'No se encontró una compra Premium activa',
-                                  'No active Premium purchase was found',
-                                ),
+                          restoreFeedback(restored, strings),
                         ),
                       ),
                     );
                   },
-            child: Text(strings.t('Restaurar compras', 'Restore purchases')),
+            child: Text(state.isBusy
+                ? strings.t('Procesando…', 'Processing…')
+                : strings.t('Restaurar compras', 'Restore purchases')),
           ),
         TextButton(
           onPressed: () => Navigator.pop(context),
@@ -303,35 +256,96 @@ class PremiumDialog extends ConsumerWidget {
     );
   }
 
-  Widget _purchaseButton(
+  Widget _planOption(
     BuildContext context,
-    WidgetRef ref,
     Package package,
-    bool highlighted,
+    bool busy,
+    SubscriptionTerms terms,
   ) {
     final strings = AppStrings.of(context);
-    final state = ref.watch(monetizationProvider);
-    final product = package.storeProduct;
+    final scheme = Theme.of(context).colorScheme;
+    final selected = package.identifier == _selectedId;
+    final foreground = selected ? scheme.onPrimary : scheme.onSurface;
     final label = package.packageType == PackageType.annual
         ? strings.t('Anual', 'Annual')
         : strings.t('Mensual', 'Monthly');
-    final action = state.isBusy
-        ? null
-        : () async {
-            final purchased =
-                await ref.read(monetizationProvider.notifier).purchase(package);
-            if (purchased && context.mounted) Navigator.pop(context);
-          };
-
-    return highlighted
-        ? FilledButton.icon(
-            onPressed: action,
-            icon: const Icon(Icons.star_rounded),
-            label: Text('$label · ${product.priceString}'),
-          )
-        : OutlinedButton(
-            onPressed: action,
-            child: Text('$label · ${product.priceString}'),
-          );
+    return Semantics(
+      selected: selected,
+      checked: selected,
+      inMutuallyExclusiveGroup: true,
+      enabled: !busy,
+      child: Material(
+        key: ValueKey('premium-plan-material-${package.identifier}'),
+        color: selected ? scheme.primary : scheme.surfaceContainerHighest,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+            side: BorderSide(
+                width: 2,
+                color: _focusedId == package.identifier
+                    ? (selected ? scheme.onPrimary : scheme.primary)
+                    : Colors.transparent)),
+        child: InkWell(
+          key: ValueKey('premium-plan-${package.identifier}'),
+          onTap: busy
+              ? null
+              : () => setState(() => _selectedId = package.identifier),
+          onFocusChange: (focused) => setState(() {
+            if (focused) {
+              _focusedId = package.identifier;
+            } else if (_focusedId == package.identifier) {
+              _focusedId = null;
+            }
+          }),
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(
+                      selected
+                          ? Icons.radio_button_checked
+                          : Icons.radio_button_off,
+                      color: foreground),
+                  const SizedBox(width: 12),
+                  Expanded(
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                        Text(label,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleMedium
+                                ?.copyWith(color: foreground)),
+                        Text(terms.recurringPrice,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyLarge
+                                ?.copyWith(color: foreground)),
+                        if (terms.offer != null) ...[
+                          const SizedBox(height: 8),
+                          Text(terms.offer!,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyMedium
+                                  ?.copyWith(color: foreground)),
+                        ],
+                        if (terms.eligibilityUnknown) ...[
+                          const SizedBox(height: 8),
+                          Text(
+                              strings.t(
+                                  'La tienda confirmará si tienes una oferta disponible.',
+                                  'The store will confirm whether an offer is available to you.'),
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyMedium
+                                  ?.copyWith(color: foreground)),
+                        ],
+                      ])),
+                ],
+              )),
+        ),
+      ),
+    );
   }
 }

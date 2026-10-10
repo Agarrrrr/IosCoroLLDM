@@ -20,6 +20,8 @@ const _iosRevenueCatKey = String.fromEnvironment(
 
 enum PremiumOrigin { none, subscription, iosLegacy }
 
+enum RestoreResult { restored, noPurchase, unavailable, failed, busy }
+
 class MonetizationState {
   final bool initialized;
   final bool revenueCatConfigured;
@@ -301,8 +303,9 @@ class MonetizationController extends StateNotifier<MonetizationState>
     }
   }
 
-  Future<bool> restore() async {
-    if (!state.revenueCatConfigured) return false;
+  Future<RestoreResult> restore() async {
+    if (state.isBusy) return RestoreResult.busy;
+    if (!state.revenueCatConfigured) return RestoreResult.unavailable;
     state = state.copyWith(isBusy: true, clearError: true);
     try {
       final info = await Purchases.restorePurchases();
@@ -319,10 +322,12 @@ class MonetizationController extends StateNotifier<MonetizationState>
           } catch (_) {}
         }
       }
-      return state.isPremium;
+      return state.isPremium
+          ? RestoreResult.restored
+          : RestoreResult.noPurchase;
     } catch (error) {
       state = state.copyWith(error: error.toString());
-      return false;
+      return RestoreResult.failed;
     } finally {
       state = state.copyWith(isBusy: false);
     }
@@ -362,8 +367,7 @@ class MonetizationController extends StateNotifier<MonetizationState>
     if (state.isPremium) return true;
     final today = _todayKey();
     if (_box.get('audio_day') != today) {
-      await _box.put('audio_day', today);
-      await _box.put('audio_cantos', <String>[]);
+      await _box.putAll({'audio_day': today, 'audio_cantos': <String>[]});
     }
     final used = List<String>.from(
       (_box.get('audio_cantos') as List?) ?? const [],
@@ -412,9 +416,11 @@ class MonetizationController extends StateNotifier<MonetizationState>
     if (state.isPremium) return true;
     final today = _todayKey();
     if (_box.get('audio_export_day') != today) {
-      await _box.put('audio_export_day', today);
-      await _box.put('audio_export_count', 0);
-      await _box.put('audio_export_extra', 0);
+      await _box.putAll({
+        'audio_export_day': today,
+        'audio_export_count': 0,
+        'audio_export_extra': 0
+      });
     }
     final used = (_box.get('audio_export_count') as int?) ?? 0;
     final extra = (_box.get('audio_export_extra') as int?) ?? 0;
@@ -433,6 +439,14 @@ class MonetizationController extends StateNotifier<MonetizationState>
 
   /// Otorga 1 crédito extra de export como recompensa del anuncio rewarded.
   Future<void> grantRewardedExport() async {
+    final today = _todayKey();
+    if (_box.get('audio_export_day') != today) {
+      await _box.putAll({
+        'audio_export_day': today,
+        'audio_export_count': 0,
+        'audio_export_extra': 0
+      });
+    }
     final extra = (_box.get('audio_export_extra') as int?) ?? 0;
     await _box.put('audio_export_extra', extra + 1);
   }

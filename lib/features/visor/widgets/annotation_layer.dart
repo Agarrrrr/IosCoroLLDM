@@ -1,7 +1,13 @@
+import 'dart:async';
+import 'dart:math' as math;
+import 'dart:ui' as ui;
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:coro_lldm/core/pdf/pdf_engine.dart';
 import 'package:coro_lldm/models/trazo.dart';
+import 'annotation_eraser_preview.dart';
 
 typedef _AnnotationLayerData = ({
   bool isDrawingMode,
@@ -16,12 +22,20 @@ class AnnotationLayer extends ConsumerStatefulWidget {
   final String cantoId;
   final int pageNumber;
   final Size pageSize;
+  final Rect? visibleRect;
+  @visibleForTesting
+  final bool rasterCacheEnabled;
+  @visibleForTesting
+  final VoidCallback? onRasterPrepared;
 
   const AnnotationLayer({
     super.key,
     required this.cantoId,
     required this.pageNumber,
     required this.pageSize,
+    this.visibleRect,
+    this.rasterCacheEnabled = true,
+    this.onRasterPrepared,
   });
 
   @override
@@ -29,6 +43,17 @@ class AnnotationLayer extends ConsumerStatefulWidget {
 }
 
 class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
+  late final _AnnotationReopenCache _reopenCache;
+  late final _AnnotationPathCache _savedPathCache;
+  int _eraserPreparationStage = 0;
+  bool _eraserFeedbackShown = false;
+  Timer? _eraserFeedbackTimer;
+  // Keep only recent immutable history snapshots. This makes alternating
+  // undo/redo reuse pixels rather than tessellating hundreds of paths again.
+  final _rasterHistory = <_AnnotationRasterEntry>[];
+  final _rasterPending = <_AnnotationRasterKey>{};
+  static const _rasterBudget = 24 * 1024 * 1024;
+  static const _auditCache = bool.fromEnvironment('AUDIT_TRACE_RESIDUAL');
   Trazo? _currentTrazo;
   Path? _currentPath;
   Offset? _textTapPosition;
@@ -41,15 +66,254 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
   final FocusNode _textFocusNode = FocusNode();
 
   @override
+  void initState() {
+    super.initState();
+    _reopenCache = ref.read(_annotationReopenCacheProvider);
+    _savedPathCache = _reopenCache.paths;
+  }
+
+  @override
   void dispose() {
+    _eraserFeedbackTimer?.cancel();
+    // Transfer ownership of one recent image, rather than rebuilding it when
+    // the same unchanged page is opened again. Active pages keep their own LRU.
+    if (widget.rasterCacheEnabled && _rasterHistory.isNotEmpty) {
+      final recent = _rasterHistory.removeLast();
+      _reopenCache.remember(widget.cantoId, widget.pageNumber, recent);
+    }
+    for (final entry in _rasterHistory) {
+      entry.image.dispose();
+    }
+    _rasterHistory.clear();
     _textController.dispose();
     _textFocusNode.dispose();
     super.dispose();
   }
 
+  _AnnotationRasterKey? _rasterKey(List<Trazo> trazos, bool textInOverlay) {
+    final ratio = View.of(context).devicePixelRatio;
+    final visible = (widget.visibleRect ?? (Offset.zero & widget.pageSize))
+        .intersect(Offset.zero & widget.pageSize);
+    if (visible.isEmpty) return null;
+    final box = context.findRenderObject();
+    final origin = box is RenderBox && box.hasSize
+        ? box.localToGlobal(Offset.zero)
+        : Offset.zero;
+    // Align the offscreen image to global physical pixels, including fractional
+    // page offsets, so cached strokes keep the same antialiasing as direct paint.
+    // Ignore floating-point noise from equivalent PDF transforms, while
+    // retaining the actual subpixel phase (precision: 1e-9 logical pixels).
+    double stable(double value) => (value * 1e9).round() / 1e9;
+    final region = Rect.fromLTRB(
+      stable((origin.dx + visible.left) * ratio).floor() / ratio - origin.dx,
+      stable((origin.dy + visible.top) * ratio).floor() / ratio - origin.dy,
+      stable((origin.dx + visible.right) * ratio).ceil() / ratio - origin.dx,
+      stable((origin.dy + visible.bottom) * ratio).ceil() / ratio - origin.dy,
+    );
+    return (
+      trazos: trazos,
+      size: Size(stable(widget.pageSize.width), stable(widget.pageSize.height)),
+      region: Rect.fromLTRB(stable(region.left), stable(region.top),
+          stable(region.right), stable(region.bottom)),
+      ratio: ratio,
+      textInOverlay: textInOverlay
+    );
+  }
+
+  CustomPainter _savedPainter(List<Trazo> trazos, bool textInOverlay) {
+    CustomPainter painter = _AnnotationPainter(trazos,
+        pathCache: _savedPathCache,
+        showTextInOverlay: textInOverlay,
+        isolateForRaster: trazos.length >= 100);
+    if (!widget.rasterCacheEnabled || trazos.length < 100) return painter;
+    final key = _rasterKey(trazos, textInOverlay);
+    if (key == null) return painter;
+    final region = key.region;
+    final ratio = key.ratio;
+    for (var i = 0; i < _rasterHistory.length; i++) {
+      if (_rasterHistory[i].key == key) {
+        final entry = _rasterHistory.removeAt(i);
+        _rasterHistory.add(entry);
+        if (_auditCache) {
+          debugPrint('ANNOTATION_CACHE hit page=${widget.pageNumber} '
+              'strokes=${trazos.length} size=${key.size} region=${key.region}');
+        }
+        return _AnnotationRasterPainter(entry);
+      }
+    }
+    final width = (region.width * ratio).round();
+    final height = (region.height * ratio).round();
+    if (width < 1 || height < 1 || width * height * 4 > _rasterBudget) {
+      if (_auditCache) debugPrint('ANNOTATION_CACHE skipped ${width}x$height');
+      return painter;
+    }
+    if (_auditCache) {
+      debugPrint('ANNOTATION_CACHE miss page=${widget.pageNumber} '
+          'strokes=${trazos.length} id=${identityHashCode(trazos)} '
+          'size=${key.size.width},${key.size.height} '
+          'region=${key.region.left},${key.region.top},'
+          '${key.region.right},${key.region.bottom}');
+    }
+    _AnnotationRasterEntry? prefix;
+    for (final entry in _rasterHistory) {
+      final previous = entry.key;
+      // Repeatedly snapshotting translucent ink or erased edges accumulates
+      // 8-bit alpha rounding. Compose from an un-erased opaque checkpoint.
+      if (!entry.canBeIncrementalBase ||
+          previous.size != key.size ||
+          previous.region != key.region ||
+          previous.ratio != key.ratio ||
+          previous.textInOverlay != key.textInOverlay ||
+          previous.trazos.length >= trazos.length ||
+          (prefix != null &&
+              previous.trazos.length <= prefix.key.trazos.length)) {
+        continue;
+      }
+      var matches = true;
+      for (var i = 0; i < previous.trazos.length; i++) {
+        if (!identical(previous.trazos[i], trazos[i])) {
+          matches = false;
+          break;
+        }
+      }
+      if (matches) prefix = entry;
+    }
+    if (prefix != null) {
+      painter = _AnnotationComposedPainter(
+          prefix,
+          trazos,
+          _AnnotationPainter(trazos.sublist(prefix.key.trazos.length),
+              pathCache: _savedPathCache,
+              showTextInOverlay: textInOverlay,
+              isolateEraserStrokes: false));
+    }
+    if (_rasterPending.isEmpty && _rasterPending.add(key)) {
+      var cacheChanged = false;
+      _AnnotationRasterEntry? prepare() {
+        if (!mounted) return null;
+        // The first build has no laid-out RenderBox. Resolve the physical
+        // pixel alignment now, rather than caching that temporary zero origin.
+        final preparedKey = _rasterKey(trazos, textInOverlay);
+        if (preparedKey == null) {
+          _rasterPending.remove(key);
+          return null;
+        }
+        // A Positioned parent's offset can change during layout, after build.
+        // Recheck the actual geometry before creating another GPU image.
+        for (var i = 0; i < _rasterHistory.length; i++) {
+          if (_rasterHistory[i].key == preparedKey) {
+            final existing = _rasterHistory.removeAt(i);
+            _rasterHistory.add(existing);
+            _rasterPending.remove(key);
+            return existing;
+          }
+        }
+        final reused =
+            _reopenCache.take(widget.cantoId, widget.pageNumber, preparedKey);
+        if (reused != null) {
+          cacheChanged = true;
+          _rasterHistory.add(reused);
+          _rasterPending.remove(key);
+          return reused;
+        }
+        final region = preparedKey.region;
+        final ratio = preparedKey.ratio;
+        final width = (region.width * ratio).round();
+        final height = (region.height * ratio).round();
+        if (width < 1 || height < 1 || width * height * 4 > _rasterBudget) {
+          _rasterPending.remove(key);
+          return null;
+        }
+        // This picture renders into its own transparent image, never onto the
+        // PDF. Opaque ink needs no second full-size saveLayer, including when
+        // clearing it. Translucent ink keeps that layer to preserve alpha
+        // rounding against direct rendering across repeated edits.
+        final preparedPainter = prefix != null && preparedKey == key
+            ? painter
+            : _AnnotationPainter(trazos,
+                pathCache: _savedPathCache,
+                showTextInOverlay: textInOverlay,
+                isolateEraserStrokes: false,
+                isolateForRaster: trazos.any((stroke) =>
+                    !stroke.oculto &&
+                    stroke.tool != ToolType.eraser &&
+                    stroke.color.a != 1));
+        final recorder = ui.PictureRecorder();
+        final canvas = Canvas(recorder)
+          ..scale(ratio)
+          ..translate(-region.left, -region.top)
+          ..clipRect(region);
+        preparedPainter.paint(canvas, preparedKey.size);
+        final picture = recorder.endRecording();
+        try {
+          // Only the handle is synchronous; rasterization stays asynchronous.
+          // Keep the result GPU resident instead of reading all pixels back
+          // to the host and then uploading them again on the next paint.
+          final image = picture.toImageSync(width, height);
+          if (!mounted) {
+            image.dispose();
+            return null;
+          }
+          final entry = _AnnotationRasterEntry(preparedKey, image);
+          cacheChanged = true;
+          widget.onRasterPrepared?.call();
+          _rasterHistory.add(entry);
+          _AnnotationRasterEntry? checkpoint;
+          for (final candidate in _rasterHistory.reversed) {
+            if (candidate.canBeIncrementalBase &&
+                candidate.key.size == preparedKey.size &&
+                candidate.key.region == preparedKey.region &&
+                candidate.key.ratio == preparedKey.ratio &&
+                candidate.key.textInOverlay == preparedKey.textInOverlay) {
+              checkpoint = candidate;
+              break;
+            }
+          }
+          while (_rasterHistory.length > 3 ||
+              _rasterHistory.fold<int>(0, (n, e) => n + e.bytes) >
+                  _rasterBudget) {
+            final disposable = _rasterHistory.indexWhere((candidate) =>
+                !identical(candidate, checkpoint) &&
+                !identical(candidate, entry));
+            _rasterHistory
+                .removeAt(disposable < 0 ? 0 : disposable)
+                .image
+                .dispose();
+          }
+          return entry;
+        } catch (error) {
+          debugPrint('No se pudo preparar la caché de anotaciones: $error');
+        } finally {
+          picture.dispose();
+          _rasterPending.remove(key);
+        }
+
+        return null;
+      }
+
+      if (prefix == null) {
+        // Prepare after layout, at the first paint. Draw that same GPU image
+        // immediately instead of rasterizing the full vector scene twice.
+        final preparingPainter = _AnnotationPreparingPainter(painter, prepare);
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          _rasterPending.remove(key);
+          if (mounted && cacheChanged && preparingPainter.entry != null) {
+            setState(() {});
+          }
+        });
+        return preparingPainter;
+      }
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (prepare() != null && cacheChanged && mounted) setState(() {});
+      });
+    }
+    return painter;
+  }
+
   void _handlePointerDown(PointerDownEvent event, _AnnotationLayerData state) {
     _activePointers++;
     if (!state.isDrawingMode) return;
+    if (state.currentTool == ToolType.eraser) _eraserPreparationStage = 4;
     if (_activePointers > 1) {
       setState(() {
         _currentTrazo = null;
@@ -398,6 +662,61 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
     final savedTrazos = state.savedTrazos;
     final activeTrazos =
         _currentTrazo == null ? const <Trazo>[] : <Trazo>[_currentTrazo!];
+    var savedPainter = _savedPainter(
+        savedTrazos, state.isDrawingMode && state.currentTool == ToolType.text);
+    if (!state.isDrawingMode || state.currentTool != ToolType.eraser) {
+      _eraserPreparationStage = 0;
+      _eraserFeedbackShown = false;
+      _eraserFeedbackTimer?.cancel();
+      _eraserPreviewPosition = null;
+    } else if (!_eraserFeedbackShown) {
+      _eraserFeedbackShown = true;
+      final visible = (widget.visibleRect ?? (Offset.zero & widget.pageSize))
+          .intersect(Offset.zero & widget.pageSize);
+      if (!visible.isEmpty && _activePointers == 0) {
+        final position = visible.center;
+        _eraserPreviewPosition = position;
+        _eraserFeedbackTimer = Timer(const Duration(milliseconds: 220), () {
+          if (mounted &&
+              _activePointers == 0 &&
+              _eraserPreviewPosition == position) {
+            setState(() => _eraserPreviewPosition = null);
+          }
+        });
+      }
+    }
+    if (state.isDrawingMode &&
+        state.currentTool == ToolType.eraser &&
+        _eraserPreparationStage < 4 &&
+        _activePointers == 0 &&
+        savedTrazos.length >= 100 &&
+        !kIsWeb &&
+        defaultTargetPlatform == TargetPlatform.android &&
+        (savedPainter is _AnnotationRasterPainter ||
+            savedPainter is _AnnotationPreparingPainter) &&
+        savedTrazos.every((stroke) =>
+            stroke.oculto ||
+            stroke.tool == ToolType.eraser ||
+            stroke.color.a == 1)) {
+      final stage = _eraserPreparationStage;
+      // Compile outline, partition, replacement and clear on separate frames.
+      // Do not add preparation work to an already active pointer gesture.
+      if (stage > 0) {
+        savedPainter = _AnnotationEraserReadyPainter(
+            savedPainter, state.eraserSize,
+            prepareRestore: stage >= 2, prepareClear: stage == 3);
+      }
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted && _eraserPreparationStage == stage) {
+          setState(() => _eraserPreparationStage++);
+        }
+      });
+    }
+    final usesRasterImage = savedPainter is _AnnotationRasterPainter ||
+        savedPainter is _AnnotationComposedPainter ||
+        savedPainter is _AnnotationPreparingPainter ||
+        savedPainter is _AnnotationEraserReadyPainter ||
+        _rasterPending.isNotEmpty;
 
     return Stack(
       children: [
@@ -411,30 +730,41 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
           // IgnorePointer si no estamos en modo dibujo, permite que pdfrx haga scroll
           child: IgnorePointer(
             ignoring: !state.isDrawingMode,
-            child: Container(
-              color: Colors.transparent, // Necesario para atrapar gestos
+            child: SizedBox(
               width: widget.pageSize.width,
               height: widget.pageSize.height,
               child: Stack(
                 fit: StackFit.expand,
                 children: [
                   RepaintBoundary(
-                    child: CustomPaint(
-                      painter: _AnnotationPainter(
-                        savedTrazos,
-                        showTextInOverlay: state.isDrawingMode &&
-                            state.currentTool == ToolType.text,
+                    child: ClipRect(
+                      clipper: _AnnotationViewportClipper(widget.visibleRect),
+                      child: CustomPaint(
+                        // Dense snapshots already have a bounded image cache.
+                        // Avoid preparing a second engine cache for that image
+                        // or for geometry being replaced on the next frame.
+                        isComplex: !usesRasterImage && savedTrazos.length > 8,
+                        willChange: usesRasterImage,
+                        painter: savedPainter,
                       ),
                     ),
                   ),
-                  CustomPaint(
-                    painter: _AnnotationPainter(
-                      activeTrazos,
-                      eraserPreviewPosition: _eraserPreviewPosition,
-                      eraserPreviewSize: state.eraserSize,
-                      paintEraserStrokes: false,
-                      activePath: _currentPath,
-                      alwaysRepaint: true,
+                  RepaintBoundary(
+                    child: ClipRect(
+                      clipper: _AnnotationViewportClipper(widget.visibleRect),
+                      child: CustomPaint(
+                        // This geometry changes on every pointer move; caching
+                        // it competes with the stable annotations underneath.
+                        willChange: true,
+                        painter: _AnnotationPainter(
+                          activeTrazos,
+                          eraserPreviewPosition: _eraserPreviewPosition,
+                          eraserPreviewSize: state.eraserSize,
+                          paintEraserStrokes: false,
+                          activePath: _currentPath,
+                          alwaysRepaint: true,
+                        ),
+                      ),
                     ),
                   ),
                 ],
@@ -514,14 +844,383 @@ class _AnnotationLayerState extends ConsumerState<AnnotationLayer> {
   }
 }
 
+typedef _AnnotationRasterKey = ({
+  List<Trazo> trazos,
+  Size size,
+  Rect region,
+  double ratio,
+  bool textInOverlay
+});
+
+final _annotationReopenCacheProvider = Provider<_AnnotationReopenCache>((ref) {
+  final cache = _AnnotationReopenCache();
+  ref.onDispose(cache.dispose);
+  return cache;
+});
+
+// One detached image for the current app session, at most 24 MiB. Matching
+// requires the exact immutable page snapshot and physical geometry: edits,
+// zoom, viewport, text-overlay mode and a different song cannot reuse it.
+class _AnnotationReopenCache with WidgetsBindingObserver {
+  _AnnotationReopenCache() {
+    WidgetsBinding.instance.addObserver(this);
+  }
+  String? _cantoId;
+  int? _pageNumber;
+  _AnnotationRasterEntry? _entry;
+  bool _disposed = false;
+  final paths = _AnnotationPathCache();
+
+  _AnnotationRasterEntry? take(
+      String cantoId, int pageNumber, _AnnotationRasterKey key) {
+    final entry = _entry;
+    if (const bool.fromEnvironment('AUDIT_TRACE_RESIDUAL')) {
+      debugPrint('ANNOTATION_REOPEN take song=$cantoId page=$pageNumber '
+          'stored=$_cantoId/$_pageNumber same=${entry?.key == key} '
+          'snapshot=${identical(entry?.key.trazos, key.trazos)} '
+          'size=${entry?.key.size.width},${entry?.key.size.height}/'
+          '${key.size.width},${key.size.height} '
+          'region=${entry?.key.region.left},${entry?.key.region.top}/'
+          '${key.region.left},${key.region.top}');
+    }
+    if (_disposed ||
+        entry == null ||
+        entry.failed ||
+        _cantoId != cantoId ||
+        _pageNumber != pageNumber ||
+        entry.key != key) {
+      return null;
+    }
+    _entry = null;
+    return entry;
+  }
+
+  void remember(String cantoId, int pageNumber, _AnnotationRasterEntry entry) {
+    _clear();
+    if (_disposed || entry.failed || entry.bytes > 24 * 1024 * 1024) {
+      entry.image.dispose();
+      return;
+    }
+    _cantoId = cantoId;
+    _pageNumber = pageNumber;
+    _entry = entry;
+  }
+
+  void _clear() {
+    _entry?.image.dispose();
+    _entry = null;
+  }
+
+  @override
+  void didHaveMemoryPressure() {
+    _clear();
+    paths.clear();
+  }
+
+  void dispose() {
+    _disposed = true;
+    WidgetsBinding.instance.removeObserver(this);
+    _clear();
+    paths.clear();
+  }
+}
+
+class _AnnotationRasterEntry {
+  final _AnnotationRasterKey key;
+  final ui.Image image;
+  bool failed = false;
+  late final bool canBeIncrementalBase = key.trazos.every((stroke) =>
+      stroke.oculto || (stroke.tool != ToolType.eraser && stroke.color.a == 1));
+  _AnnotationRasterEntry(this.key, this.image);
+  int get bytes => image.width * image.height * 4;
+}
+
+class _AnnotationPreparingPainter extends CustomPainter {
+  final CustomPainter fallback;
+  final _AnnotationRasterEntry? Function() prepare;
+  _AnnotationRasterEntry? entry;
+  bool _attempted = false;
+  _AnnotationPreparingPainter(this.fallback, this.prepare);
+
+  _AnnotationRasterEntry? resolve() {
+    if (!_attempted) {
+      _attempted = true;
+      entry = prepare();
+    }
+    return entry;
+  }
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final prepared = resolve();
+    if (prepared == null) {
+      fallback.paint(canvas, size);
+    } else {
+      _AnnotationRasterPainter(prepared).paint(canvas, size);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _AnnotationPreparingPainter oldDelegate) => true;
+}
+
+class _AnnotationRasterPainter extends CustomPainter {
+  final _AnnotationRasterEntry entry;
+  final BlendMode blendMode;
+  _AnnotationRasterPainter(this.entry, {this.blendMode = BlendMode.srcOver});
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (!entry.failed) {
+      try {
+        canvas.drawImageRect(
+            entry.image,
+            Rect.fromLTWH(0, 0, entry.image.width.toDouble(),
+                entry.image.height.toDouble()),
+            entry.key.region,
+            Paint()
+              ..filterQuality = FilterQuality.none
+              ..blendMode = blendMode);
+        return;
+      } on ui.PictureRasterizationException catch (error) {
+        entry.failed = true;
+        debugPrint('Se usará dibujo directo de anotaciones: $error');
+      }
+    }
+    _AnnotationPainter(entry.key.trazos,
+            showTextInOverlay: entry.key.textInOverlay, isolateForRaster: true)
+        .paint(canvas, size);
+  }
+
+  @override
+  bool shouldRepaint(covariant _AnnotationRasterPainter oldDelegate) =>
+      !identical(entry, oldDelegate.entry) ||
+      blendMode != oldDelegate.blendMode;
+}
+
+// Prepare the eraser on the screen before movement, preserving stored ink.
+class _AnnotationEraserReadyPainter extends CustomPainter {
+  _AnnotationEraserReadyPainter(this.fallback, this.eraserSize,
+      {required this.prepareRestore, required this.prepareClear});
+  final CustomPainter fallback;
+  final double eraserSize;
+  final bool prepareRestore;
+  final bool prepareClear;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final painter = fallback;
+    final entry = painter is _AnnotationRasterPainter
+        ? painter.entry
+        : painter is _AnnotationPreparingPainter
+            ? painter.resolve()
+            : null;
+    if (entry == null ||
+        entry.failed ||
+        entry.key.trazos.any((stroke) =>
+            !stroke.oculto &&
+            stroke.tool != ToolType.eraser &&
+            stroke.color.a != 1)) {
+      fallback.paint(canvas, size);
+      return;
+    }
+    final region = entry.key.region;
+    final ratio = entry.key.ratio;
+    final dx = (region.width * ratio / 4).floor() / ratio;
+    final dy = (region.height * ratio / 4).floor() / ratio;
+    final damage = Rect.fromLTRB(region.left + dx, region.top + dy,
+        region.right - dx, region.bottom - dy);
+    // Exercise the real clear/clip programs in the temporary layer, then
+    // replace its contents from the unchanged source before compositing it.
+    // Nothing is added to the model or persisted as an eraser stroke.
+    _paintAnnotationPartition(canvas, size, entry, damage, paintTail: () {
+      if (!prepareRestore || entry.failed) return;
+      if (prepareClear) {
+        final path = Path()
+          ..moveTo(damage.left + damage.width * .1, damage.center.dy);
+        for (var i = 1; i <= 120; i++) {
+          path.lineTo(damage.left + damage.width * (.1 + .8 * i / 120),
+              damage.center.dy + math.sin(i / 10) * damage.height * .2);
+        }
+        canvas.drawPath(
+            path,
+            Paint()
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = eraserSize
+              ..strokeCap = StrokeCap.round
+              ..strokeJoin = StrokeJoin.round
+              ..blendMode = BlendMode.clear);
+      }
+      _AnnotationRasterPainter(entry, blendMode: BlendMode.src)
+          .paint(canvas, size);
+    });
+  }
+
+  @override
+  bool shouldRepaint(covariant _AnnotationEraserReadyPainter oldDelegate) =>
+      true;
+}
+
+void _paintAnnotationPartition(
+    Canvas canvas, Size size, _AnnotationRasterEntry prefix, Rect damage,
+    {VoidCallback? paintTail}) {
+  final region = prefix.key.region;
+  canvas.save();
+  canvas.clipPath(
+      Path()
+        ..fillType = PathFillType.evenOdd
+        ..addRect(region)
+        ..addRect(damage),
+      doAntiAlias: false);
+  _AnnotationRasterPainter(prefix).paint(canvas, size);
+  canvas.restore();
+  canvas.save();
+  canvas.clipRect(damage, doAntiAlias: false);
+  canvas.saveLayer(damage, Paint());
+  _AnnotationRasterPainter(prefix).paint(canvas, size);
+  paintTail?.call();
+  canvas.restore();
+  canvas.restore();
+}
+
+class _AnnotationComposedPainter extends CustomPainter {
+  final _AnnotationRasterEntry prefix;
+  final List<Trazo> snapshot;
+  final _AnnotationPainter tail;
+  _AnnotationComposedPainter(this.prefix, this.snapshot, this.tail);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final erases = tail.trazos.any((stroke) =>
+        !stroke.oculto &&
+        stroke.tool == ToolType.eraser &&
+        stroke.points.isNotEmpty);
+    if (!erases) {
+      _AnnotationRasterPainter(prefix).paint(canvas, size);
+      tail.paint(canvas, size);
+      return;
+    }
+    final region = prefix.key.region;
+    Rect? bounds;
+    for (final stroke in tail.trazos) {
+      if (stroke.oculto) continue;
+      if (stroke.tool == ToolType.text) {
+        bounds = region;
+        break;
+      }
+      Rect? pathBounds;
+      for (final point in stroke.points) {
+        final position = Offset(point.x * size.width, point.y * size.height);
+        final pointRect = Rect.fromPoints(position, position);
+        pathBounds = pathBounds?.expandToInclude(pointRect) ?? pointRect;
+      }
+      if (pathBounds != null) {
+        final strokeBounds =
+            pathBounds.inflate(stroke.size / 2 + 1 / prefix.key.ratio);
+        bounds = bounds?.expandToInclude(strokeBounds) ?? strokeBounds;
+      }
+    }
+    final affected = bounds?.intersect(region);
+    if (affected == null || affected.isEmpty) {
+      _AnnotationRasterPainter(prefix).paint(canvas, size);
+      return;
+    }
+    final ratio = prefix.key.ratio;
+    final damage = Rect.fromLTRB(
+            region.left +
+                ((affected.left - region.left) * ratio).floor() / ratio,
+            region.top + ((affected.top - region.top) * ratio).floor() / ratio,
+            region.left +
+                ((affected.right - region.left) * ratio).ceil() / ratio,
+            region.top +
+                ((affected.bottom - region.top) * ratio).ceil() / ratio)
+        .intersect(region);
+    // The two clips partition physical pixels. Composite the unaffected
+    // prefix directly and allocate an erasing layer only for the edited area.
+    _paintAnnotationPartition(canvas, size, prefix, damage,
+        paintTail: () => tail.paint(canvas, size));
+  }
+
+  @override
+  bool shouldRepaint(covariant _AnnotationComposedPainter oldDelegate) =>
+      !identical(prefix, oldDelegate.prefix) ||
+      !identical(snapshot, oldDelegate.snapshot);
+}
+
+class _AnnotationViewportClipper extends CustomClipper<Rect> {
+  const _AnnotationViewportClipper(this.visibleRect);
+  final Rect? visibleRect;
+
+  @override
+  Rect getClip(Size size) {
+    final rect =
+        visibleRect?.intersect(Offset.zero & size) ?? Offset.zero & size;
+    return rect.isEmpty ? Rect.zero : rect;
+  }
+
+  @override
+  bool shouldReclip(covariant _AnnotationViewportClipper oldClipper) =>
+      oldClipper.visibleRect != visibleRect;
+}
+
+// Weak keys release geometry when a stroke is no longer referenced by the
+// current page or undo history. Points are immutable, but the containing list
+// can be replaced or edited; compare its contents before reusing a path.
+class _AnnotationPathCache {
+  var _paths = Expando<_CachedAnnotationPath>();
+
+  void clear() => _paths = Expando<_CachedAnnotationPath>();
+
+  Path pathFor(Trazo stroke, Size size) {
+    final cached = _paths[stroke];
+    if (cached != null && cached.matches(stroke.points, size)) {
+      return cached.path;
+    }
+    final path = Path()
+      ..moveTo(
+        stroke.points.first.x * size.width,
+        stroke.points.first.y * size.height,
+      );
+    for (final point in stroke.points.skip(1)) {
+      path.lineTo(point.x * size.width, point.y * size.height);
+    }
+    _paths[stroke] = _CachedAnnotationPath(
+      size,
+      List<PointNormalized>.of(stroke.points),
+      path,
+    );
+    return path;
+  }
+}
+
+class _CachedAnnotationPath {
+  _CachedAnnotationPath(this.size, this.points, this.path);
+  final Size size;
+  final List<PointNormalized> points;
+  final Path path;
+
+  bool matches(List<PointNormalized> current, Size currentSize) {
+    if (size != currentSize || points.length != current.length) return false;
+    for (var i = 0; i < points.length; i++) {
+      if (!identical(points[i], current[i]) &&
+          (points[i].x != current[i].x || points[i].y != current[i].y)) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
 class _AnnotationPainter extends CustomPainter {
   final List<Trazo> trazos;
   final Offset? eraserPreviewPosition;
   final double eraserPreviewSize;
   final bool showTextInOverlay;
   final bool paintEraserStrokes;
+  final bool isolateEraserStrokes;
+  final bool isolateForRaster;
   final Path? activePath;
   final bool alwaysRepaint;
+  final _AnnotationPathCache? pathCache;
 
   _AnnotationPainter(
     this.trazos, {
@@ -529,16 +1228,21 @@ class _AnnotationPainter extends CustomPainter {
     this.eraserPreviewSize = 20,
     this.showTextInOverlay = false,
     this.paintEraserStrokes = true,
+    this.isolateEraserStrokes = true,
+    this.isolateForRaster = false,
     this.activePath,
     this.alwaysRepaint = false,
+    this.pathCache,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
-    final needsIsolatedLayer = paintEraserStrokes &&
-        trazos.any((trazo) => trazo.tool == ToolType.eraser);
-    // Solo crear una textura intermedia cuando realmente hay borrador. Para
-    // páginas sin borrado, pintar directamente evita una composición costosa.
+    final needsIsolatedLayer = isolateForRaster ||
+        (isolateEraserStrokes &&
+            paintEraserStrokes &&
+            trazos.any((trazo) => trazo.tool == ToolType.eraser));
+    // Direct dense rendering uses the same transparent composition as cached
+    // images. Offscreen preparation already has an isolated image target.
     if (needsIsolatedLayer) {
       canvas.saveLayer(Offset.zero & size, Paint());
     }
@@ -592,8 +1296,8 @@ class _AnnotationPainter extends CustomPainter {
         ..blendMode =
             trazo.tool == ToolType.eraser ? BlendMode.clear : BlendMode.srcOver;
 
-      final path = activePath ?? Path();
-      if (activePath == null) {
+      final path = activePath ?? pathCache?.pathFor(trazo, size) ?? Path();
+      if (activePath == null && pathCache == null) {
         path.moveTo(trazo.points.first.x * size.width,
             trazo.points.first.y * size.height);
         for (int i = 1; i < trazo.points.length; i++) {
@@ -606,23 +1310,8 @@ class _AnnotationPainter extends CustomPainter {
     }
 
     if (eraserPreviewPosition != null) {
-      final previewPaint = Paint()
-        ..color = Colors.black.withValues(alpha: 0.22)
-        ..style = PaintingStyle.fill;
-      final outlinePaint = Paint()
-        ..color = Colors.black.withValues(alpha: 0.72)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.2;
-      canvas.drawCircle(
-        eraserPreviewPosition!,
-        eraserPreviewSize / 2,
-        previewPaint,
-      );
-      canvas.drawCircle(
-        eraserPreviewPosition!,
-        eraserPreviewSize / 2,
-        outlinePaint,
-      );
+      paintAnnotationEraserPreview(
+          canvas, eraserPreviewPosition!, eraserPreviewSize);
     }
 
     if (needsIsolatedLayer) {
@@ -639,6 +1328,8 @@ class _AnnotationPainter extends CustomPainter {
         oldDelegate.eraserPreviewSize != eraserPreviewSize ||
         oldDelegate.showTextInOverlay != showTextInOverlay ||
         oldDelegate.paintEraserStrokes != paintEraserStrokes ||
+        oldDelegate.isolateEraserStrokes != isolateEraserStrokes ||
+        oldDelegate.isolateForRaster != isolateForRaster ||
         !identical(oldDelegate.activePath, activePath);
   }
 }

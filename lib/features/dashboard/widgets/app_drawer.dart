@@ -39,20 +39,21 @@ class AppDrawer extends ConsumerWidget {
         borderRadius: BorderRadius.zero,
       ),
       child: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: ListView(
           children: [
             // LOGO SIDEBAR
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
               decoration: BoxDecoration(
                 border: Border(
-                    bottom: BorderSide(color: Colors.grey.withOpacity(0.2))),
+                    bottom:
+                        BorderSide(color: Colors.grey.withValues(alpha: 0.2))),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  Expanded(
+                      child: Text(
                     'Coro LLDM',
                     style: GoogleFonts.inter(
                       fontSize: 20,
@@ -60,12 +61,12 @@ class AppDrawer extends ConsumerWidget {
                       color: theme.colorScheme.onSurface,
                       letterSpacing: 0.5,
                     ),
-                  ),
+                  )),
                   Container(
                     padding:
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: theme.colorScheme.secondary.withOpacity(0.1),
+                      color: theme.colorScheme.secondary.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
@@ -118,7 +119,7 @@ class AppDrawer extends ConsumerWidget {
                       LinearProgressIndicator(
                         value: syncState.progress,
                         backgroundColor:
-                            theme.colorScheme.secondary.withOpacity(0.1),
+                            theme.colorScheme.secondary.withValues(alpha: 0.1),
                         valueColor:
                             AlwaysStoppedAnimation(theme.colorScheme.secondary),
                         borderRadius: BorderRadius.circular(10),
@@ -131,17 +132,17 @@ class AppDrawer extends ConsumerWidget {
             ),
 
             // SCROLL AREA (Temas)
-            Expanded(
-              child: ListView(
-                padding: const EdgeInsets.symmetric(vertical: 10),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Column(
                 children: [
-                  // TODOS LOS CANTOS
-                  _buildSectionLabel(strings.t('CATÁLOGO', 'CATALOG')),
+                  // Todos los cantos
+                  _buildSectionLabel(context, strings.t('CATÁLOGO', 'CATALOG')),
                   _buildSidebarBtn(
                     context: context,
                     ref: ref,
                     id: '',
-                    label: strings.t('TODOS LOS CANTOS', 'ALL SONGS'),
+                    label: strings.t('Todos los cantos', 'All songs'),
                     isActiveOverride: !soloFavoritos &&
                         ref.watch(categoryFilterProvider).isEmpty,
                     onTap: () {
@@ -153,7 +154,7 @@ class AppDrawer extends ConsumerWidget {
                     context: context,
                     ref: ref,
                     id: 'favoritos',
-                    label: strings.t('FAVORITOS', 'FAVORITES'),
+                    label: strings.t('Mis favoritos', 'My favorites'),
                     icon: Icons.favorite_rounded,
                     isActiveOverride: soloFavoritos,
                     onTap: () {
@@ -166,13 +167,14 @@ class AppDrawer extends ConsumerWidget {
                   if (temasUnicos.isNotEmpty) ...[
                     const SizedBox(height: 10),
                     _buildSectionLabel(
-                      strings.t('FILTRAR POR TEMA', 'FILTER BY TOPIC'),
+                      context,
+                      strings.t('Filtrar por tema', 'Filter by topic'),
                     ),
                     ...temasUnicos.map((tema) => _buildSidebarBtn(
                           context: context,
                           ref: ref,
                           id: 'tema_$tema',
-                          label: tema.toUpperCase(),
+                          label: tema,
                           isTema: true,
                           onTap: () {
                             ref.read(soloFavoritosProvider.notifier).set(false);
@@ -191,7 +193,7 @@ class AppDrawer extends ConsumerWidget {
               decoration: BoxDecoration(
                 color: theme.scaffoldBackgroundColor,
                 border: Border(
-                    top: BorderSide(color: Colors.grey.withOpacity(0.2))),
+                    top: BorderSide(color: Colors.grey.withValues(alpha: 0.2))),
               ),
               padding: const EdgeInsets.only(bottom: 10, top: 10),
               child: Column(
@@ -226,8 +228,8 @@ class AppDrawer extends ConsumerWidget {
                             ? Icons.verified_rounded
                             : Icons.workspace_premium_rounded,
                         label: premium
-                            ? strings.t('PREMIUM ACTIVO', 'PREMIUM ACTIVE')
-                            : strings.t('OBTENER PREMIUM', 'GET PREMIUM'),
+                            ? strings.t('Premium activo', 'Premium active')
+                            : strings.t('Obtener Premium', 'Get Premium'),
                         onTap: () {
                           Navigator.pop(context);
                           showPremiumDialog(context);
@@ -236,12 +238,13 @@ class AppDrawer extends ConsumerWidget {
                     },
                   ),
                   _buildSectionLabel(
-                    strings.t('CONFIGURACIÓN', 'CONFIGURATION'),
+                    context,
+                    strings.t('Preferencias', 'Preferences'),
                   ),
                   _buildFooterBtn(
                     context: context,
                     icon: Icons.settings_rounded,
-                    label: strings.t('AJUSTES DE LA APP', 'APP SETTINGS'),
+                    label: strings.t('Ajustes', 'Settings'),
                     onTap: () {
                       Navigator.pop(context);
                       showDialog(
@@ -259,7 +262,7 @@ class AppDrawer extends ConsumerWidget {
     );
   }
 
-  Widget _buildSectionLabel(String text) {
+  Widget _buildSectionLabel(BuildContext context, String text) {
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 10),
       child: Text(
@@ -267,7 +270,7 @@ class AppDrawer extends ConsumerWidget {
         style: GoogleFonts.inter(
           fontSize: 11,
           fontWeight: FontWeight.w800,
-          color: Colors.grey.shade600,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
           letterSpacing: 1,
         ),
       ),
@@ -291,59 +294,60 @@ class AppDrawer extends ConsumerWidget {
     // En PWA los botones no tienen padding horizontal externo, sino interno
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 2),
-      child: InkWell(
-        onTap: () {
-          if (onTap != null) {
-            onTap();
-          } else {
-            ref.read(soloFavoritosProvider.notifier).set(false);
-            ref.read(categoryFilterProvider.notifier).set(id);
-          }
-          Navigator.pop(context); // Cierra sidebar (comportamiento móvil web)
-        },
-        borderRadius: BorderRadius.circular(12),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-          decoration: BoxDecoration(
-            color: isActive ? theme.colorScheme.secondary : Colors.transparent,
+      child: Semantics(
+          selected: isActive,
+          button: true,
+          child: InkWell(
+            onTap: () {
+              if (onTap != null) {
+                onTap();
+              } else {
+                ref.read(soloFavoritosProvider.notifier).set(false);
+                ref.read(categoryFilterProvider.notifier).set(id);
+              }
+              Navigator.pop(
+                  context); // Cierra sidebar (comportamiento móvil web)
+            },
             borderRadius: BorderRadius.circular(12),
-            boxShadow: isActive
-                ? [
-                    BoxShadow(
-                        color: theme.colorScheme.secondary.withOpacity(0.3),
-                        blurRadius: 12,
-                        offset: const Offset(0, 4))
-                  ]
-                : null,
-          ),
-          child: Row(
-            children: [
-              if (icon != null) ...[
-                Icon(
-                  icon,
-                  size: 18,
-                  color: isActive
-                      ? Colors.white
-                      : theme.colorScheme.onSurface.withOpacity(0.7),
-                ),
-                const SizedBox(width: 12),
-              ],
-              Expanded(
-                child: Text(
-                  label,
-                  style: GoogleFonts.inter(
-                    fontSize: 14,
-                    fontWeight: isActive ? FontWeight.w700 : FontWeight.w500,
-                    color: isActive
-                        ? Colors.white
-                        : theme.colorScheme.onSurface.withOpacity(0.7),
-                  ),
-                ),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+              decoration: BoxDecoration(
+                color:
+                    isActive ? theme.colorScheme.secondary : Colors.transparent,
+                borderRadius: BorderRadius.circular(12),
               ),
-            ],
-          ),
-        ),
-      ),
+              child: Row(
+                children: [
+                  if (icon != null) ...[
+                    Icon(
+                      icon,
+                      size: 18,
+                      color: isActive
+                          ? theme.colorScheme.onSecondary
+                          : theme.colorScheme.onSurfaceVariant,
+                    ),
+                    const SizedBox(width: 12),
+                  ],
+                  Expanded(
+                    child: Text(
+                      label,
+                      style: GoogleFonts.inter(
+                        fontSize: 14,
+                        fontWeight:
+                            isActive ? FontWeight.w700 : FontWeight.w500,
+                        color: isActive
+                            ? theme.colorScheme.onSecondary
+                            : theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                  if (isActive)
+                    Icon(Icons.check_rounded,
+                        size: 18, color: theme.colorScheme.onSecondary),
+                ],
+              ),
+            ),
+          )),
     );
   }
 
@@ -357,20 +361,20 @@ class AppDrawer extends ConsumerWidget {
     return InkWell(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Row(
           children: [
-            Icon(icon,
-                size: 18, color: theme.colorScheme.onSurface.withOpacity(0.7)),
+            Icon(icon, size: 18, color: theme.colorScheme.onSurfaceVariant),
             const SizedBox(width: 12),
-            Text(
+            Expanded(
+                child: Text(
               label,
               style: GoogleFonts.inter(
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
-                color: theme.colorScheme.onSurface.withOpacity(0.7),
+                color: theme.colorScheme.onSurfaceVariant,
               ),
-            ),
+            )),
           ],
         ),
       ),

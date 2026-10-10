@@ -144,14 +144,18 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                             'Buscar canto por título...',
                             'Search songs by title...',
                           ),
-                          hintStyle: const TextStyle(
-                              color: Colors.grey, fontWeight: FontWeight.w500),
-                          prefixIcon: const Icon(Icons.search_rounded,
-                              size: 20, color: Colors.grey),
+                          hintStyle: TextStyle(
+                              color: theme.colorScheme.onSurfaceVariant,
+                              fontWeight: FontWeight.w500),
+                          prefixIcon: Icon(Icons.search_rounded,
+                              size: 20,
+                              color: theme.colorScheme.onSurfaceVariant),
                           suffixIcon: _searchController.text.isNotEmpty
                               ? IconButton(
-                                  icon: const Icon(Icons.close_rounded,
-                                      size: 20, color: Colors.grey),
+                                  icon: Icon(Icons.close_rounded,
+                                      size: 20,
+                                      color:
+                                          theme.colorScheme.onSurfaceVariant),
                                   onPressed: () {
                                     _searchController.clear();
                                     _moveCatalogToTop();
@@ -187,9 +191,9 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
             // Lista Vertical de Cantos
             Expanded(
               child: isLoadingBase
-                  ? const Center(
-                      child:
-                          CircularProgressIndicator(color: Color(0xFFD4AF37)),
+                  ? Center(
+                      child: CircularProgressIndicator(
+                          color: theme.colorScheme.primary),
                     )
                   : cantos.isEmpty
                       ? LayoutBuilder(
@@ -210,7 +214,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                                               ? Icons.favorite_border_rounded
                                               : Icons.library_music_rounded,
                                           size: 64,
-                                          color: Colors.grey.withOpacity(0.3),
+                                          color: theme
+                                              .colorScheme.onSurfaceVariant,
                                         ),
                                         const SizedBox(height: 16),
                                         Text(
@@ -224,7 +229,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                                                   'No results',
                                                 ),
                                           style: GoogleFonts.inter(
-                                              color: Colors.grey,
+                                              color: theme
+                                                  .colorScheme.onSurfaceVariant,
                                               fontWeight: FontWeight.w600,
                                               fontSize: 16),
                                         ),
@@ -240,7 +246,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                                                   'Try another search or filter.',
                                                 ),
                                           style: GoogleFonts.inter(
-                                              color: Colors.grey,
+                                              color: theme
+                                                  .colorScheme.onSurfaceVariant,
                                               fontWeight: FontWeight.w400,
                                               fontSize: 14),
                                           textAlign: TextAlign.center,

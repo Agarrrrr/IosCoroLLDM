@@ -15,6 +15,8 @@ import 'package:coro_lldm/core/offline/sync_manager.dart';
 import 'package:coro_lldm/core/pdf/pdf_engine.dart';
 import 'package:coro_lldm/models/trazo.dart';
 import 'package:coro_lldm/features/visor/widgets/annotation_layer.dart';
+import 'package:coro_lldm/features/visor/widgets/pdf_color_filter.dart';
+import 'package:coro_lldm/features/visor/widgets/pdf_theme_palette.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
 import 'package:coro_lldm/models/canto.dart';
@@ -27,6 +29,9 @@ import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/features/premium/premium_dialog.dart';
 import 'package:coro_lldm/features/premium/reward_or_premium_dialog.dart';
+import 'package:coro_lldm/core/monetization/usage_quota.dart';
+import 'package:coro_lldm/features/premium/usage_quota_notice.dart';
+import 'package:coro_lldm/features/visor/widgets/score_title_button.dart';
 
 const double _kScaleEpsilon = 0.001;
 
@@ -59,6 +64,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   bool _showTopBar = true;
   bool _showTools = false;
   bool _showMidi = false;
+  bool _audioAccessPending = false;
   bool _showDrawingPalette = false;
 
   final MidiEngine _midi = MidiEngine();
@@ -68,6 +74,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   bool _pdfAdRegistered = false;
 
   final PdfViewerController _pdfController = PdfViewerController();
+  bool _pdfViewReady = false;
   Orientation? _lastOrientation;
   double _minScaleLimit = 0.1;
   Timer? _carouselSnapTimer;
@@ -177,19 +184,25 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }
 
   Future<void> _handlePlay(Canto canto, MidiState midiState) async {
-    if (midiState.isPlaying) {
-      _midi.pause();
-      return;
+    if (_audioAccessPending) return;
+    _audioAccessPending = true;
+    try {
+      if (midiState.isPlaying) {
+        _midi.pause();
+        return;
+      }
+      final allowed = await ref
+          .read(monetizationProvider.notifier)
+          .consumeAudioAccess(canto.id);
+      if (!mounted) return;
+      if (allowed) {
+        _midi.play();
+        return;
+      }
+      await _showAudioLimitDialog(canto);
+    } finally {
+      _audioAccessPending = false;
     }
-    final allowed = await ref
-        .read(monetizationProvider.notifier)
-        .consumeAudioAccess(canto.id);
-    if (!mounted) return;
-    if (allowed) {
-      _midi.play();
-      return;
-    }
-    await _showAudioLimitDialog(canto);
   }
 
   Future<void> _showAudioLimitDialog(Canto canto) async {
@@ -204,7 +217,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       return;
     }
     if (result == RewardPromptResult.premium) {
-      await showPremiumDialog(context);
+      final allowed = await confirmAccessAfterPrompt(
+        prompt: () => showPremiumDialog(context),
+        isCurrent: () => mounted && widget.cantoId == canto.id,
+        checkAccess: () async => ref.read(monetizationProvider).isPremium,
+      );
+      if (allowed) _midi.play();
       return;
     }
     // RewardPromptResult.rewarded
@@ -225,8 +243,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
     final controller = ref.read(monetizationProvider.notifier);
     await controller.grantRewardedAudio();
-    await controller.consumeAudioAccess(canto.id);
-    if (mounted) _midi.play();
+    final allowed = await controller.consumeAudioAccess(canto.id);
+    if (mounted && allowed && widget.cantoId == canto.id) _midi.play();
   }
 
   void _ajustarZoomAlAncho() {
@@ -552,9 +570,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
               ),
+              const UsageQuotaNotice(exports: true),
               const SizedBox(height: 12),
               ListTile(
                 leading: Icon(
@@ -664,8 +681,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         await ref.read(monetizationProvider.notifier).canExportAudio();
     if (!mounted) return;
     if (!canExport) {
-      await _mostrarDialogoLimiteExport(canto, localPdfPath);
-      return;
+      final allowed = await _mostrarDialogoLimiteExport(canto);
+      if (!allowed || !mounted) return;
     }
 
     if (!Platform.isAndroid) {
@@ -707,9 +724,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }
 
   /// Diálogo de límite diario de exports alcanzado (solo usuarios free).
-  Future<void> _mostrarDialogoLimiteExport(
+  Future<bool> _mostrarDialogoLimiteExport(
     Canto canto,
-    String? localPdfPath,
   ) async {
     final strings = AppStrings.of(context);
     final accentColor = Theme.of(context).colorScheme.primary;
@@ -719,18 +735,27 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       accentColor: accentColor,
     );
     if (!mounted || result == null || result == RewardPromptResult.dismiss) {
-      return;
+      return false;
     }
     if (result == RewardPromptResult.premium) {
-      await showPremiumDialog(context);
-      return;
+      return confirmAccessAfterPrompt(
+        prompt: () => showPremiumDialog(context),
+        isCurrent: () => mounted && widget.cantoId == canto.id,
+        checkAccess: () =>
+            ref.read(monetizationProvider.notifier).canExportAudio(),
+      );
     }
     // RewardPromptResult.rewarded
     final earned = await AdsService.instance.showRewarded();
-    if (!mounted) return;
+    if (!mounted) return false;
     if (earned) {
       await ref.read(monetizationProvider.notifier).grantRewardedExport();
-      await _mostrarMenuCompartirMp3(canto, localPdfPath);
+      return confirmAccessAfterPrompt(
+        prompt: () async {},
+        isCurrent: () => mounted && widget.cantoId == canto.id,
+        checkAccess: () =>
+            ref.read(monetizationProvider.notifier).canExportAudio(),
+      );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -741,6 +766,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         ),
       );
     }
+    return false;
   }
 
   Future<void> _exportarAudioIOS(
@@ -1220,7 +1246,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final state = ref.watch(pdfEngineProvider);
     final theme = Theme.of(context);
     final themeMode = ref.watch(themeProvider);
-    final accentColor = ref.watch(accentColorProvider);
+    final accentColor = theme.colorScheme.primary;
     final isCarousel = ref.watch(pdfNavModeProvider);
     final cantos = ref.watch(cantosBaseProvider).value ?? [];
     final canto = cantos.firstWhere(
@@ -1295,109 +1321,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
     _lastOrientation = orientation;
 
-    // Evaluamos el brillo del sistema directamente, ya que el modo "Sepia" ahora delega en el SO el cambio a oscuro (Quiet)
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final isSepiaProfile =
-        themeMode == AppThemeMode.sepia || themeMode == AppThemeMode.quiet;
-    final isNormalDark = themeMode == AppThemeMode.oscuroNormal;
-
-    // Filtro para modo oscuro (Quiet) que mapea el fondo blanco a gris oscuro y notas a claro
-    const quietFilter = ColorFilter.matrix([
-      -0.65098,
-      0.0,
-      0.0,
-      0.0,
-      226.0,
-      0.0,
-      -0.66275,
-      0.0,
-      0.0,
-      232.0,
-      0.0,
-      0.0,
-      -0.68235,
-      0.0,
-      240.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-    ]);
-
-    // Filtro original en negativo (para tema oscuro normal)
-    const invertFilter = ColorFilter.matrix([
-      -1.0,
-      0.0,
-      0.0,
-      0.0,
-      255.0,
-      0.0,
-      -1.0,
-      0.0,
-      0.0,
-      255.0,
-      0.0,
-      0.0,
-      -1.0,
-      0.0,
-      255.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-    ]);
-
-    // Oscuro normal: blanco del PDF -> #1B2430 y negro -> #F1F5F9.
-    const normalDarkFilter = ColorFilter.matrix([
-      -0.83922,
-      0.0,
-      0.0,
-      0.0,
-      241.0,
-      0.0,
-      -0.81961,
-      0.0,
-      0.0,
-      245.0,
-      0.0,
-      0.0,
-      -0.78824,
-      0.0,
-      249.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-    ]);
-
-
-    // Filtro sepia para la partitura en modo sepia (blanco -> #F4ECD8, negro -> #5b4636)
-    const sepiaFilter = ColorFilter.matrix([
-      0.60000,
-      0.0,
-      0.0,
-      0.0,
-      91.0,
-      0.0,
-      0.65098,
-      0.0,
-      0.0,
-      70.0,
-      0.0,
-      0.0,
-      0.63529,
-      0.0,
-      54.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-    ]);
-
     return PopScope(
       canPop: false,
       onPopInvokedWithResult: (didPop, result) {
@@ -1409,7 +1332,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         }
       },
       child: Scaffold(
-        backgroundColor: theme.scaffoldBackgroundColor,
+        backgroundColor: PdfThemePalette.background(themeMode),
         body: SafeArea(
           bottom: isMobile,
           child: Stack(
@@ -1422,8 +1345,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     curve: Curves.easeInOut,
                     height: _showTopBar ? 60 : 0,
                     decoration: BoxDecoration(
-                      color: theme.appBarTheme.backgroundColor ??
-                          theme.scaffoldBackgroundColor,
+                      color: PdfThemePalette.background(themeMode),
                       border: Border(
                           bottom:
                               BorderSide(color: Colors.grey.withOpacity(0.2))),
@@ -1435,8 +1357,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                         child: Row(
                           children: [
                             IconButton(
-                              icon: const Icon(Icons.arrow_back_ios_new_rounded,
-                                  size: 20),
+                              icon: Icon(Icons.arrow_back_ios_new_rounded,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurfaceVariant),
                               onPressed: () {
                                 if (context.canPop()) {
                                   context.pop();
@@ -1446,54 +1369,16 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               },
                             ),
                             Expanded(
-                              child: Text(
-                                canto.nombre,
-                                style: GoogleFonts.inter(
-                                    fontSize: 16, fontWeight: FontWeight.bold),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                            ),
+                                child: ScoreTitleButton(title: canto.nombre)),
                             if (canto.vinculoIdioma != null &&
                                 canto.vinculoIdioma!.isNotEmpty)
-                              Semantics(
-                                button: true,
-                                label: strings.t(
-                                  'Cambiar idioma de la partitura',
-                                  'Change score language',
-                                ),
-                                child: InkWell(
-                                  onTap: () => _cambiarIdioma(canto),
-                                  borderRadius: BorderRadius.circular(14),
-                                  child: AnimatedContainer(
-                                    duration: const Duration(milliseconds: 220),
-                                    margin: const EdgeInsets.symmetric(
-                                      horizontal: 4,
-                                    ),
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 10,
-                                      vertical: 5,
-                                    ),
-                                    decoration: BoxDecoration(
-                                      color: accentColor.withOpacity(0.08),
-                                      borderRadius: BorderRadius.circular(14),
-                                      border: Border.all(
-                                        color: accentColor.withOpacity(0.4),
-                                      ),
-                                    ),
-                                    child: Text(
-                                      canto.idioma == 'es'
-                                          ? 'ESP  |  ENG'
-                                          : 'ENG  |  ESP',
-                                      style: GoogleFonts.inter(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w800,
-                                        letterSpacing: 0.4,
-                                        color: accentColor,
-                                      ),
-                                    ),
-                                  ),
-                                ),
+                              IconButton(
+                                tooltip: strings.t(
+                                    'Cambiar idioma de la partitura',
+                                    'Change score language'),
+                                icon: Icon(Icons.translate_rounded,
+                                    color: accentColor),
+                                onPressed: () => _cambiarIdioma(canto),
                               ),
                             if (_hasMidi)
                               _TopBarBtn(
@@ -1550,18 +1435,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                 ? _LoadingPlaceholder()
                                 : state.error != null
                                     ? Center(child: Text(state.error!))
-                                    : ColorFiltered(
-                                        colorFilter: isDark
-                                            ? (isSepiaProfile
-                                                ? quietFilter
-                                                : isNormalDark
-                                                    ? normalDarkFilter
-                                                    : invertFilter)
-                                            : (isSepiaProfile
-                                                ? sepiaFilter
-                                                : const ColorFilter.mode(
-                                                    Colors.transparent,
-                                                    BlendMode.multiply)),
+                                    : PdfColorFilter(
+                                        colorFilter:
+                                            PdfThemePalette.filter(themeMode),
                                         child: PdfViewer.file(
                                           state.localPath!,
                                           key: ValueKey(state.localPath!),
@@ -1655,14 +1531,13 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                             interactionEndFrictionCoefficient:
                                                 0.0000135,
                                             onViewerReady:
-                                                (document, controller) {
+                                                (document, controller) async {
                                               if (isCarousel) {
-                                                unawaited(
-                                                  _irAPaginaCarrusel(
-                                                    controller.pageNumber ?? 1,
-                                                    duration: Duration.zero,
-                                                  ),
+                                                await _irAPaginaCarrusel(
+                                                  controller.pageNumber ?? 1,
+                                                  duration: Duration.zero,
                                                 );
+                                                if (!mounted) return;
                                                 _mostrarPistaDeNavegacionCarrusel(
                                                   pageCount:
                                                       document.pages.length,
@@ -1670,6 +1545,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                               } else {
                                                 _calcularLimiteEscala(document);
                                                 _ajustarZoomAlAncho();
+                                              }
+                                              if (mounted) {
+                                                setState(
+                                                    () => _pdfViewReady = true);
                                               }
                                             },
                                             onInteractionStart: (_) {
@@ -1778,19 +1657,40 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                             backgroundColor: Colors.white,
                                             pageDropShadow: null,
                                             pageOverlaysBuilder:
-                                                (context, pageRect, page) => [
-                                              Positioned.fill(
-                                                child: RepaintBoundary(
+                                                (context, pageRect, page) {
+                                              // The viewer first lays out at its
+                                              // default matrix, then fits the
+                                              // page. Avoid preparing dense
+                                              // notes at those transient sizes.
+                                              if (!_pdfViewReady) {
+                                                return const <Widget>[];
+                                              }
+                                              final visiblePage =
+                                                  pageRect.intersect(
+                                                Rect.fromLTWH(
+                                                  0,
+                                                  0,
+                                                  viewerConstraints.maxWidth,
+                                                  viewerConstraints.maxHeight,
+                                                ),
+                                              );
+                                              return [
+                                                Positioned.fill(
                                                   child: AnnotationLayer(
                                                     cantoId: widget.cantoId,
                                                     pageNumber: page.pageNumber,
                                                     pageSize: Size(
                                                         pageRect.width,
                                                         pageRect.height),
+                                                    visibleRect: visiblePage
+                                                            .isEmpty
+                                                        ? Rect.zero
+                                                        : visiblePage.shift(
+                                                            -pageRect.topLeft),
                                                   ),
                                                 ),
-                                              ),
-                                            ],
+                                              ];
+                                            },
                                           ),
                                         ),
                                       ),
@@ -1848,8 +1748,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                         ),
 
                         // ── Panel MIDI Flotante ──────────────────────────────
-                        // NOTA: Se mueve a -380 cuando está cerrado para asegurar que no se asome
-                        // de manera poco profesional en pantallas cortas o con partituras de una página.
+                        // Hide the whole panel even when quota text adds height.
                         StreamBuilder<MidiState>(
                           stream: _midi.stateStream,
                           initialData: _midi.state,
@@ -1861,10 +1760,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               curve: Curves.easeInOutCubic,
                               bottom: _showMidi
                                   ? (16 + MediaQuery.of(context).padding.bottom)
-                                  : -380,
+                                  : -MediaQuery.of(context).size.height * 2,
                               left: 12,
                               right: 12,
-                              child: _MidiPanel(
+                              child: MidiPanel(
+                                cantoId: canto.id,
                                 midiState: currentMidiState,
                                 onPlay: () =>
                                     _handlePlay(canto, currentMidiState),
@@ -2183,7 +2083,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 // ══════════════════════════════════════════════════════════════════════════════
 // MIDI Panel — Reproductor completo
 // ══════════════════════════════════════════════════════════════════════════════
-class _MidiPanel extends StatefulWidget {
+class MidiPanel extends StatefulWidget {
+  final String cantoId;
   final MidiState midiState;
   final VoidCallback onPlay;
   final VoidCallback onStop;
@@ -2198,7 +2099,9 @@ class _MidiPanel extends StatefulWidget {
   final bool isReady;
   final Color accentColor;
 
-  const _MidiPanel({
+  const MidiPanel({
+    super.key,
+    required this.cantoId,
     required this.midiState,
     required this.onPlay,
     required this.onStop,
@@ -2215,11 +2118,10 @@ class _MidiPanel extends StatefulWidget {
   });
 
   @override
-  State<_MidiPanel> createState() => _MidiPanelState();
+  State<MidiPanel> createState() => _MidiPanelState();
 }
 
-class _MidiPanelState extends State<_MidiPanel> {
-  bool _showSettings = false;
+class _MidiPanelState extends State<MidiPanel> {
   bool _isDraggingSlider = false;
   double _dragValue = 0.0;
 
@@ -2229,202 +2131,68 @@ class _MidiPanelState extends State<_MidiPanel> {
     return '$m:$s';
   }
 
-  void _abrirMezcladorModal(BuildContext parentContext) {
-    showModalBottomSheet<void>(
-      context: parentContext,
-      backgroundColor: Colors.transparent,
-      isScrollControlled: true,
-      builder: (modalContext) {
-        final theme = Theme.of(modalContext);
-        final localVolumes = <int, double>{
-          for (final voz in widget.midiState.voces)
-            voz.trackIndex: voz.volumen.clamp(0.0, 1.0).toDouble(),
-        };
-        final localMuted = <int, bool>{
-          for (final voz in widget.midiState.voces) voz.trackIndex: !voz.activa,
-        };
-
-        return StatefulBuilder(
-          builder: (context, setModalState) => SafeArea(
-            child: Container(
-              margin: const EdgeInsets.all(12),
-              constraints: BoxConstraints(
-                maxHeight: MediaQuery.of(modalContext).size.height * 0.45,
-              ),
-              decoration: BoxDecoration(
-                color: theme.scaffoldBackgroundColor,
-                borderRadius: BorderRadius.circular(24),
-                border: Border.all(
-                  color: widget.accentColor.withOpacity(0.4),
+  Widget _buildVoiceMix(BuildContext context, bool loading) {
+    final strings = AppStrings.of(context);
+    final scheme = Theme.of(context).colorScheme;
+    return ExpansionTile(
+      tilePadding: EdgeInsets.zero,
+      title: Text(strings.t('Mezcla de voces', 'Voice mix'),
+          style: const TextStyle(fontSize: 14)),
+      children: [
+        Align(
+          alignment: Alignment.centerRight,
+          child: TextButton(
+            onPressed: loading ? null : widget.onResetVozVolumes,
+            child: Text(strings.t('Restablecer mezcla', 'Reset mix')),
+          ),
+        ),
+        for (final voice in widget.midiState.voces)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Wrap(
+                  spacing: 8,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    IconButton(
+                      tooltip: voice.activa
+                          ? strings.t('Silenciar ${voice.nombre}',
+                              'Mute ${voice.nombre}')
+                          : strings.t('Activar ${voice.nombre}',
+                              'Unmute ${voice.nombre}'),
+                      onPressed: loading
+                          ? null
+                          : () => widget.onVozToggle(
+                              voice.trackIndex, voice.activa),
+                      icon: Icon(voice.activa
+                          ? Icons.volume_up_rounded
+                          : Icons.volume_off_rounded),
+                    ),
+                    Text(voice.nombre,
+                        style: TextStyle(color: scheme.onSurface)),
+                    Text('${(voice.volumen * 100).round()}%'),
+                    TextButton(
+                      onPressed: loading
+                          ? null
+                          : () => widget.onVozSolo(voice.trackIndex),
+                      child: Text(strings.t('Solo', 'Solo')),
+                    ),
+                  ],
                 ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.25),
-                    blurRadius: 16,
-                    offset: const Offset(0, 4),
-                  ),
-                ],
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 10, 12, 6),
-                    child: Row(
-                      children: [
-                        IconButton(
-                          icon: const Icon(Icons.arrow_back_rounded, size: 20),
-                          tooltip: 'Regresar',
-                          onPressed: () => Navigator.pop(modalContext),
-                        ),
-                        const SizedBox(width: 4),
-                        Expanded(
-                          child: Text(
-                            'Mezclador de voces',
-                            style: GoogleFonts.inter(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                        TextButton.icon(
-                          onPressed: () {
-                            widget.onResetVozVolumes();
-                            setModalState(() {
-                              for (final voz in widget.midiState.voces) {
-                                localVolumes[voz.trackIndex] = 1.0;
-                                localMuted[voz.trackIndex] = false;
-                              }
-                            });
-                          },
-                          icon: Icon(Icons.rotate_left_rounded,
-                              size: 16, color: widget.accentColor),
-                          label: Text(
-                            'Restablecer',
-                            style: GoogleFonts.inter(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                              color: widget.accentColor,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Divider(height: 1, color: Colors.grey.withOpacity(0.2)),
-                  Expanded(
-                    child: ListView.separated(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 12),
-                      itemCount: widget.midiState.voces.length,
-                      separatorBuilder: (_, __) => const SizedBox(height: 10),
-                      itemBuilder: (context, index) {
-                        final voz = widget.midiState.voces[index];
-                        final volume =
-                            localVolumes[voz.trackIndex] ?? voz.volumen;
-                        final muted = localMuted[voz.trackIndex] ?? !voz.activa;
-                        return Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 12, vertical: 6),
-                          decoration: BoxDecoration(
-                            color: theme.colorScheme.surface,
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(
-                              color: !muted
-                                  ? widget.accentColor.withOpacity(0.25)
-                                  : Colors.grey.withOpacity(0.15),
-                            ),
-                          ),
-                          child: Row(
-                            children: [
-                              IconButton(
-                                icon: Icon(
-                                  !muted && volume > 0
-                                      ? (volume > 0.5
-                                          ? Icons.volume_up_rounded
-                                          : Icons.volume_down_rounded)
-                                      : Icons.volume_off_rounded,
-                                  size: 20,
-                                  color:
-                                      !muted ? widget.accentColor : Colors.grey,
-                                ),
-                                onPressed: () {
-                                  final nextMuted = !muted;
-                                  setModalState(() {
-                                    localMuted[voz.trackIndex] = nextMuted;
-                                  });
-                                  widget.onVozToggle(
-                                    voz.trackIndex,
-                                    nextMuted,
-                                  );
-                                },
-                                tooltip: muted
-                                    ? 'Activar ${voz.nombre}'
-                                    : 'Silenciar ${voz.nombre}',
-                              ),
-                              const SizedBox(width: 4),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        GestureDetector(
-                                          onLongPress: () =>
-                                              widget.onVozSolo(voz.trackIndex),
-                                          child: Text(
-                                            voz.nombre,
-                                            style: GoogleFonts.inter(
-                                              fontSize: 13,
-                                              fontWeight: FontWeight.w600,
-                                              color: !muted
-                                                  ? theme.colorScheme.onSurface
-                                                  : Colors.grey,
-                                            ),
-                                          ),
-                                        ),
-                                        Text(
-                                          '${(volume * 100).round()}%',
-                                          style: GoogleFonts.inter(
-                                            fontSize: 11,
-                                            fontWeight: FontWeight.w700,
-                                            color: !muted
-                                                ? widget.accentColor
-                                                : Colors.grey,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Slider(
-                                      value: volume.clamp(0.0, 1.0).toDouble(),
-                                      activeColor: widget.accentColor,
-                                      inactiveColor:
-                                          widget.accentColor.withOpacity(0.2),
-                                      onChanged: (value) {
-                                        setModalState(() {
-                                          localVolumes[voz.trackIndex] = value;
-                                        });
-                                        widget.onVozVolumeChange(
-                                            voz.trackIndex, value);
-                                      },
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
+                Slider(
+                  value: voice.volumen.clamp(0.0, 1.0),
+                  label: '${(voice.volumen * 100).round()}%',
+                  onChanged: loading
+                      ? null
+                      : (value) =>
+                          widget.onVozVolumeChange(voice.trackIndex, value),
+                ),
+              ],
             ),
           ),
-        );
-      },
+      ],
     );
   }
 
@@ -2437,369 +2205,323 @@ class _MidiPanelState extends State<_MidiPanel> {
       elevation: 12,
       borderRadius: BorderRadius.circular(20),
       shadowColor: Colors.black.withOpacity(0.2),
-      child: Container(
-        decoration: BoxDecoration(
-          color: theme.scaffoldBackgroundColor,
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: widget.accentColor.withOpacity(0.4)),
-        ),
-        padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Indicador metrónomo (flash en cada beat)
-            Row(
-              children: [
-                Icon(Icons.piano_rounded, color: widget.accentColor, size: 18),
-                const SizedBox(width: 8),
-                Text('Reproductor',
-                    style: GoogleFonts.inter(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 13,
-                        color: widget.accentColor)),
-                const SizedBox(width: 8),
-                Text(
-                  '♩ = ${widget.midiState.tempoBpm}',
-                  style: GoogleFonts.inter(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.grey,
-                  ),
-                ),
-                const Spacer(),
-                // Metrónomo Visual (Row de bolitas)
-                if (widget.midiState.metronomoActivo &&
-                    widget.midiState.beatIndex != null &&
-                    widget.midiState.beatNumerator != null) ...[
-                  Builder(
-                    builder: (context) {
-                      final beats = widget.midiState.beatNumerator!;
-                      final dotSize = beats > 8 ? 6.0 : 8.0;
-                      final numerator =
-                          widget.midiState.timeSignatureNumerator ?? beats;
-                      final denominator =
-                          widget.midiState.timeSignatureDenominator ?? 4;
-                      final groups = widget.midiState.beatGroups;
-                      final grouping = groups.any((group) => group > 1)
-                          ? ' · ${groups.join('+')}'
-                          : '';
-                      final groupStarts = <int>[];
-                      var groupOffset = 0;
-                      for (final group in groups) {
-                        groupStarts.add(groupOffset);
-                        groupOffset += group;
-                      }
-                      return Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            '$numerator/$denominator$grouping',
-                            style: GoogleFonts.inter(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.grey,
-                            ),
-                          ),
-                          const SizedBox(width: 7),
-                          ...List.generate(beats, (index) {
-                            final isCurrent =
-                                index == widget.midiState.beatIndex;
-                            final isFirst = index == 0;
-                            final isGroupStart = groupStarts.contains(index);
-                            return AnimatedContainer(
-                              duration: const Duration(milliseconds: 90),
-                              margin: EdgeInsets.only(
-                                left: isGroupStart && index > 0 ? 5 : 2,
-                                right: 2,
-                              ),
-                              width: isCurrent ? dotSize + 2 : dotSize,
-                              height: isCurrent ? dotSize + 2 : dotSize,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: isCurrent
-                                    ? (isFirst
-                                        ? Colors.redAccent
-                                        : widget.accentColor)
-                                    : Colors.grey.withOpacity(0.3),
-                                boxShadow: isCurrent
-                                    ? [
-                                        BoxShadow(
-                                          color: isFirst
-                                              ? Colors.redAccent
-                                                  .withOpacity(0.5)
-                                              : widget.accentColor
-                                                  .withOpacity(0.5),
-                                          blurRadius: 4,
-                                          spreadRadius: 1,
-                                        )
-                                      ]
-                                    : [],
-                              ),
-                            );
-                          }),
-                        ],
-                      );
-                    },
-                  ),
-                  const SizedBox(width: 12),
-                ],
-                if (!widget.isReady)
-                  SizedBox(
-                    width: 14,
-                    height: 14,
-                    child: CircularProgressIndicator(
-                        strokeWidth: 2, color: widget.accentColor),
-                  ),
-                // Botón Ajustes
-                IconButton(
-                  onPressed: () =>
-                      setState(() => _showSettings = !_showSettings),
-                  icon: Icon(
-                    _showSettings
-                        ? Icons.keyboard_arrow_up_rounded
-                        : Icons.settings_rounded,
-                    color: _showSettings
-                        ? widget.accentColor
-                        : Colors.grey.withOpacity(0.8),
-                    size: 20,
-                  ),
-                  padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(),
-                  splashRadius: 18,
-                ),
-              ],
+      child: ConstrainedBox(
+          constraints: BoxConstraints(
+              maxHeight: MediaQuery.of(context).size.height * 0.70),
+          child: SingleChildScrollView(
+              child: Container(
+            decoration: BoxDecoration(
+              color: theme.scaffoldBackgroundColor,
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(color: widget.accentColor.withOpacity(0.4)),
             ),
-            const SizedBox(height: 12),
-
-            // ── Barra de progreso ──────────────────────────────────────────
-            Column(
+            padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SliderTheme(
-                  data: SliderThemeData(
-                    trackHeight: 3,
-                    thumbShape:
-                        const RoundSliderThumbShape(enabledThumbRadius: 6),
-                    activeTrackColor: widget.accentColor,
-                    inactiveTrackColor: widget.accentColor.withOpacity(0.2),
-                    thumbColor: widget.accentColor,
-                    overlayShape:
-                        const RoundSliderOverlayShape(overlayRadius: 14),
-                  ),
-                  child: Slider(
-                    value: _isDraggingSlider
-                        ? _dragValue
-                        : widget.midiState.progress.clamp(0.0, 1.0),
-                    onChangeStart: loading
-                        ? null
-                        : (_) {
-                            setState(() {
-                              _isDraggingSlider = true;
-                              _dragValue = widget.midiState.progress;
-                            });
-                          },
-                    onChanged: loading
-                        ? null
-                        : (v) {
-                            setState(() {
-                              _dragValue = v;
-                            });
-                          },
-                    onChangeEnd: loading
-                        ? null
-                        : (v) {
-                            setState(() {
-                              _isDraggingSlider = false;
-                            });
-                            widget.onSeek(v);
-                          },
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(_formatTime(widget.midiState.tiempoActual),
-                          style: GoogleFonts.inter(
-                              fontSize: 11, color: Colors.grey)),
-                      Text(_formatTime(widget.midiState.tiempoTotal),
-                          style: GoogleFonts.inter(
-                              fontSize: 11, color: Colors.grey)),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-
-            // ── Controles principales ──────────────────────────────────────
-            Center(
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 340),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                UsageQuotaNotice(cantoId: widget.cantoId),
+                // Indicador metrónomo (flash en cada beat)
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
-                    // Mezclador de voces
-                    _GoldIconBtn(
-                      icon: Icons.tune_rounded,
-                      isActive: false,
-                      activeColor: widget.accentColor,
-                      onTap: loading ? null : () => _abrirMezcladorModal(context),
-                      tooltip: 'Mezclador de voces',
-                      size: 22,
+                    Icon(Icons.piano_rounded,
+                        color: widget.accentColor, size: 18),
+                    const SizedBox(width: 8),
+                    Text(AppStrings.of(context).t('Reproductor', 'Player'),
+                        style: GoogleFonts.inter(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 13,
+                            color: widget.accentColor)),
+                    const SizedBox(width: 8),
+                    Text(
+                      '♩ = ${widget.midiState.tempoBpm}',
+                      style: GoogleFonts.inter(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.grey,
+                      ),
                     ),
-                    // Metrónomo toggle
-                    _GoldIconBtn(
-                      isActive: widget.midiState.metronomoActivo,
-                      activeColor: widget.accentColor,
-                      onTap: loading ? null : widget.onMetronomo,
-                      tooltip: 'Metrónomo',
-                      size: 22,
-                      child: TweenAnimationBuilder<double>(
-                        duration: const Duration(milliseconds: 180),
-                        curve: Curves.easeInOutCubic,
-                        tween: Tween<double>(
-                          begin: 0.0,
-                          end: widget.midiState.metronomoActivo &&
-                                  widget.midiState.isPlaying
-                              ? (widget.midiState.beatSerial.isEven ? -0.42 : 0.42)
-                              : 0.0,
-                        ),
-                        builder: (context, angle, child) {
-                          return MetronomeIcon(
-                            color: widget.midiState.metronomoActivo
-                                ? widget.accentColor
-                                : Colors.grey.withOpacity(0.6),
-                            size: 20,
-                            rotationAngle: angle,
+                    // Metrónomo Visual (Row de bolitas)
+                    if (widget.midiState.metronomoActivo &&
+                        widget.midiState.beatIndex != null &&
+                        widget.midiState.beatNumerator != null) ...[
+                      Builder(
+                        builder: (context) {
+                          final beats = widget.midiState.beatNumerator!;
+                          final dotSize = beats > 8 ? 6.0 : 8.0;
+                          final numerator =
+                              widget.midiState.timeSignatureNumerator ?? beats;
+                          final denominator =
+                              widget.midiState.timeSignatureDenominator ?? 4;
+                          final groups = widget.midiState.beatGroups;
+                          final grouping = groups.any((group) => group > 1)
+                              ? ' · ${groups.join('+')}'
+                              : '';
+                          final groupStarts = <int>[];
+                          var groupOffset = 0;
+                          for (final group in groups) {
+                            groupStarts.add(groupOffset);
+                            groupOffset += group;
+                          }
+                          return Wrap(
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Text(
+                                '$numerator/$denominator$grouping',
+                                style: GoogleFonts.inter(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              const SizedBox(width: 7),
+                              ...List.generate(beats, (index) {
+                                final isCurrent =
+                                    index == widget.midiState.beatIndex;
+                                final isFirst = index == 0;
+                                final isGroupStart =
+                                    groupStarts.contains(index);
+                                return AnimatedContainer(
+                                  duration: const Duration(milliseconds: 90),
+                                  margin: EdgeInsets.only(
+                                    left: isGroupStart && index > 0 ? 5 : 2,
+                                    right: 2,
+                                  ),
+                                  width: isCurrent ? dotSize + 2 : dotSize,
+                                  height: isCurrent ? dotSize + 2 : dotSize,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: isCurrent
+                                        ? (isFirst
+                                            ? Colors.redAccent
+                                            : widget.accentColor)
+                                        : Colors.grey.withOpacity(0.3),
+                                    boxShadow: isCurrent
+                                        ? [
+                                            BoxShadow(
+                                              color: isFirst
+                                                  ? Colors.redAccent
+                                                      .withOpacity(0.5)
+                                                  : widget.accentColor
+                                                      .withOpacity(0.5),
+                                              blurRadius: 4,
+                                              spreadRadius: 1,
+                                            )
+                                          ]
+                                        : [],
+                                  ),
+                                );
+                              }),
+                            ],
                           );
                         },
                       ),
-                    ),
-                    // Play / Pause (Foco central del reproductor)
-                    GestureDetector(
-                      onTap: loading ? null : widget.onPlay,
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        width: 52,
-                        height: 52,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: loading
-                              ? Colors.grey.withOpacity(0.2)
-                              : widget.accentColor,
-                          boxShadow: loading
-                              ? []
-                              : [
-                                  BoxShadow(
-                                      color: widget.accentColor.withOpacity(0.4),
-                                      blurRadius: 12)
-                                ],
-                        ),
-                        child: loading
-                            ? const Padding(
-                                padding: EdgeInsets.all(14),
-                                child: CircularProgressIndicator(
-                                    color: Colors.white, strokeWidth: 2.5))
-                            : Padding(
-                                padding: EdgeInsets.only(
-                                  left: widget.midiState.isPlaying ? 0 : 2.5,
-                                ),
-                                child: Icon(
-                                  widget.midiState.isPlaying
-                                      ? Icons.pause_rounded
-                                      : Icons.play_arrow_rounded,
-                                  color: Colors.white,
-                                  size: 28,
-                                ),
-                              ),
+                      const SizedBox(width: 12),
+                    ],
+                    if (!widget.isReady)
+                      SizedBox(
+                        width: 14,
+                        height: 14,
+                        child: CircularProgressIndicator(
+                            strokeWidth: 2, color: widget.accentColor),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+
+                // ── Barra de progreso ──────────────────────────────────────────
+                Column(
+                  children: [
+                    SliderTheme(
+                      data: SliderThemeData(
+                        trackHeight: 3,
+                        thumbShape:
+                            const RoundSliderThumbShape(enabledThumbRadius: 6),
+                        activeTrackColor: widget.accentColor,
+                        inactiveTrackColor: widget.accentColor.withOpacity(0.2),
+                        thumbColor: widget.accentColor,
+                        overlayShape:
+                            const RoundSliderOverlayShape(overlayRadius: 14),
+                      ),
+                      child: Slider(
+                        value: _isDraggingSlider
+                            ? _dragValue
+                            : widget.midiState.progress.clamp(0.0, 1.0),
+                        onChangeStart: loading
+                            ? null
+                            : (_) {
+                                setState(() {
+                                  _isDraggingSlider = true;
+                                  _dragValue = widget.midiState.progress;
+                                });
+                              },
+                        onChanged: loading
+                            ? null
+                            : (v) {
+                                setState(() {
+                                  _dragValue = v;
+                                });
+                              },
+                        onChangeEnd: loading
+                            ? null
+                            : (v) {
+                                setState(() {
+                                  _isDraggingSlider = false;
+                                });
+                                widget.onSeek(v);
+                              },
                       ),
                     ),
-                    // Stop
-                    _GoldIconBtn(
-                      icon: Icons.stop_rounded,
-                      isActive: false,
-                      activeColor: widget.accentColor,
-                      onTap: loading ? null : widget.onStop,
-                      tooltip: 'Detener',
-                      size: 22,
-                    ),
-                    // Selector de velocidad
-                    _GoldIconBtn(
-                      icon: Icons.speed_rounded,
-                      isActive: _showSettings,
-                      activeColor: widget.accentColor,
-                      onTap: loading
-                          ? null
-                          : () => setState(() => _showSettings = !_showSettings),
-                      tooltip: 'Velocidad',
-                      size: 22,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(_formatTime(widget.midiState.tiempoActual),
+                              style: GoogleFonts.inter(
+                                  fontSize: 11, color: Colors.grey)),
+                          Text(_formatTime(widget.midiState.tiempoTotal),
+                              style: GoogleFonts.inter(
+                                  fontSize: 11, color: Colors.grey)),
+                        ],
+                      ),
                     ),
                   ],
                 ),
-              ),
-            ),
+                const SizedBox(height: 10),
 
-            // Sección Expandible de Ajustes
-            AnimatedSize(
-              duration: const Duration(milliseconds: 300),
-              curve: Curves.easeInOutCubic,
-              child: _showSettings
-                  ? Column(
+                // ── Controles principales ──────────────────────────────────────
+                Center(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 340),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        const SizedBox(height: 16),
-                        // ── Velocidad continua ───────────────────────────
-                        Row(
-                          children: [
-                            Icon(Icons.speed_rounded,
-                                size: 16, color: Colors.grey.withOpacity(0.8)),
-                            const SizedBox(width: 8),
-                            Text(
-                              '${widget.midiState.speed.toStringAsFixed(2)}×',
-                              style: GoogleFonts.inter(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w700,
-                                color: widget.accentColor,
-                              ),
+                        // Metrónomo toggle
+                        _GoldIconBtn(
+                          isActive: widget.midiState.metronomoActivo,
+                          activeColor: widget.accentColor,
+                          onTap: loading ? null : widget.onMetronomo,
+                          tooltip: 'Metrónomo',
+                          size: 22,
+                          child: TweenAnimationBuilder<double>(
+                            duration: const Duration(milliseconds: 180),
+                            curve: Curves.easeInOutCubic,
+                            tween: Tween<double>(
+                              begin: 0.0,
+                              end: widget.midiState.metronomoActivo &&
+                                      widget.midiState.isPlaying
+                                  ? (widget.midiState.beatSerial.isEven
+                                      ? -0.42
+                                      : 0.42)
+                                  : 0.0,
                             ),
-                          ],
-                        ),
-                        SliderTheme(
-                          data: SliderThemeData(
-                            trackHeight: 4,
-                            activeTrackColor: widget.accentColor,
-                            inactiveTrackColor:
-                                widget.accentColor.withOpacity(0.2),
-                            thumbColor: widget.accentColor,
-                            overlayShape: const RoundSliderOverlayShape(
-                              overlayRadius: 14,
-                            ),
-                          ),
-                          child: Slider(
-                            value: widget.midiState.speed.clamp(0.5, 2.0),
-                            min: 0.5,
-                            max: 2.0,
-                            divisions: 30,
-                            label:
-                                '${widget.midiState.speed.toStringAsFixed(2)}×',
-                            onChanged: loading ? null : widget.onSpeedChange,
+                            builder: (context, angle, child) {
+                              return MetronomeIcon(
+                                color: widget.midiState.metronomoActivo
+                                    ? widget.accentColor
+                                    : Colors.grey.withOpacity(0.6),
+                                size: 20,
+                                rotationAngle: angle,
+                              );
+                            },
                           ),
                         ),
-                        const Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 8),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [Text('0.50×'), Text('2.00×')],
+                        // Play / Pause (Foco central del reproductor)
+                        GestureDetector(
+                          onTap: loading ? null : widget.onPlay,
+                          child: AnimatedContainer(
+                            duration: const Duration(milliseconds: 200),
+                            width: 52,
+                            height: 52,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: loading
+                                  ? Colors.grey.withOpacity(0.2)
+                                  : widget.accentColor,
+                              boxShadow: loading
+                                  ? []
+                                  : [
+                                      BoxShadow(
+                                          color: widget.accentColor
+                                              .withOpacity(0.4),
+                                          blurRadius: 12)
+                                    ],
+                            ),
+                            child: loading
+                                ? const Padding(
+                                    padding: EdgeInsets.all(14),
+                                    child: CircularProgressIndicator(
+                                        color: Colors.white, strokeWidth: 2.5))
+                                : Padding(
+                                    padding: EdgeInsets.only(
+                                      left:
+                                          widget.midiState.isPlaying ? 0 : 2.5,
+                                    ),
+                                    child: Icon(
+                                      widget.midiState.isPlaying
+                                          ? Icons.pause_rounded
+                                          : Icons.play_arrow_rounded,
+                                      color: Colors.white,
+                                      size: 28,
+                                    ),
+                                  ),
                           ),
+                        ),
+                        // Stop
+                        _GoldIconBtn(
+                          icon: Icons.stop_rounded,
+                          isActive: false,
+                          activeColor: widget.accentColor,
+                          onTap: loading ? null : widget.onStop,
+                          tooltip: 'Detener',
+                          size: 22,
                         ),
                       ],
-                    )
-                  : const SizedBox(width: double.infinity, height: 0),
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 12),
+                Wrap(
+                  spacing: 12,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    Text(AppStrings.of(context).t('Velocidad', 'Speed')),
+                    Text('${widget.midiState.speed.toStringAsFixed(2)}×'),
+                    TextButton(
+                      onPressed: loading || widget.midiState.speed == 1.0
+                          ? null
+                          : () => widget.onSpeedChange(1.0),
+                      child: Text(
+                          AppStrings.of(context).t('Restablecer', 'Reset')),
+                    ),
+                  ],
+                ),
+                Slider(
+                  value: widget.midiState.speed.clamp(0.5, 2.0),
+                  min: 0.5,
+                  max: 2.0,
+                  divisions: 30,
+                  label: '${widget.midiState.speed.toStringAsFixed(2)}×',
+                  onChanged: loading ? null : widget.onSpeedChange,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Flexible(
+                        child: Text('0.50×', style: TextStyle(fontSize: 14))),
+                    Flexible(
+                        child: Text('2.00×', style: TextStyle(fontSize: 14))),
+                  ],
+                ),
+                _buildVoiceMix(context, loading),
+              ],
             ),
-          ],
-        ),
-      ),
+          ))),
     );
   }
 }
@@ -2866,7 +2588,8 @@ class _TopBarBtn extends StatelessWidget {
     final theme = Theme.of(context);
     final color = activeColor ?? theme.colorScheme.primary;
     return IconButton(
-      icon: Icon(icon, color: isActive ? color : Colors.grey),
+      icon: Icon(icon,
+          color: isActive ? color : theme.colorScheme.onSurfaceVariant),
       onPressed: onTap,
       tooltip: tooltip,
     );
@@ -2894,7 +2617,7 @@ class _GoldIconBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final inactiveColor = Colors.grey.withOpacity(0.6);
+    final inactiveColor = Theme.of(context).colorScheme.onSurfaceVariant;
 
     return Tooltip(
       message: tooltip,
@@ -2902,8 +2625,8 @@ class _GoldIconBtn extends StatelessWidget {
         onTap: onTap,
         behavior: HitTestBehavior.opaque,
         child: Container(
-          width: 42,
-          height: 42,
+          width: 48,
+          height: 48,
           alignment: Alignment.center,
           decoration: BoxDecoration(
             color:

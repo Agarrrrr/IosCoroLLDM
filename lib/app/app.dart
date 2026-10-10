@@ -22,8 +22,7 @@ class CoroLLDMApp extends ConsumerWidget {
     final language = ref.watch(languageFilterProvider);
 
     ThemeMode getMaterialThemeMode() {
-      if (themeMode == AppThemeMode.claro ||
-          themeMode == AppThemeMode.sepia) {
+      if (themeMode == AppThemeMode.claro || themeMode == AppThemeMode.sepia) {
         return ThemeMode.light;
       } else {
         return ThemeMode.dark;
@@ -48,16 +47,6 @@ class CoroLLDMApp extends ConsumerWidget {
                 : AppThemeMode.oscuro,
         accentColor,
       ),
-      builder: (context, child) {
-        final data = MediaQuery.of(context);
-        return MediaQuery(
-          data: data.copyWith(
-            textScaler: data.textScaler
-                .clamp(minScaleFactor: 1.0, maxScaleFactor: 1.35),
-          ),
-          child: child!,
-        );
-      },
       routerConfig: router,
     );
   }

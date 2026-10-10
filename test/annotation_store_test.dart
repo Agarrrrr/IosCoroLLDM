@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:coro_lldm/core/pdf/annotation_store.dart';
 import 'package:coro_lldm/models/trazo.dart';
@@ -44,6 +45,9 @@ void main() {
     };
 
     await AnnotationStore.save(cantoId, original);
+    expect(Hive.box(AnnotationStore.boxName).get(cantoId), isA<String>());
+    await Hive.box(AnnotationStore.boxName).close();
+    await Hive.openBox(AnnotationStore.boxName);
     final restored = await AnnotationStore.load(cantoId);
 
     expect(restored.keys, containsAll([1, 2]));
@@ -56,6 +60,9 @@ void main() {
     await Hive.box(AnnotationStore.boxName).put('corrupto', '{no es json');
 
     expect(await AnnotationStore.load('corrupto'), isEmpty);
+    await Hive.box(AnnotationStore.boxName)
+        .put('corrupto-binario', Uint8List.fromList([1, 2, 3]));
+    expect(await AnnotationStore.load('corrupto-binario'), isEmpty);
   });
 
   test('lee el formato JSON existente', () async {
@@ -100,6 +107,9 @@ void main() {
     };
 
     await AnnotationStore.save(cantoId, original);
+    expect(Hive.box(AnnotationStore.boxName).get(cantoId), isA<Uint8List>());
+    await Hive.box(AnnotationStore.boxName).close();
+    await Hive.openBox(AnnotationStore.boxName);
     final restored = await AnnotationStore.load(cantoId);
 
     expect(restored.keys, containsAll([1, 2, 3, 4, 5]));
@@ -107,5 +117,44 @@ void main() {
     expect(restored[1]![0].points, hasLength(60));
     expect(restored[1]![1].tool, ToolType.eraser);
     expect(restored[5]!.last.texto, 'Crescendo');
+    expect(
+      {
+        for (final entry in restored.entries)
+          entry.key: entry.value.map((t) => t.toJson()).toList()
+      },
+      {
+        for (final entry in original.entries)
+          entry.key: entry.value.map((t) => t.toJson()).toList()
+      },
+    );
+  });
+
+  test(
+      'el worker reúne un trazo largo y propaga errores sin perder lo guardado',
+      () async {
+    final longStroke = Trazo(
+        tool: ToolType.pencil,
+        color: Colors.green,
+        size: 2,
+        points: List.generate(6001, (i) => PointNormalized(i / 7000, .25)),
+        texto: 'ñ ♩');
+    await AnnotationStore.save('trazo-largo', {
+      1: [longStroke],
+      2: []
+    });
+    final restored = await AnnotationStore.load('trazo-largo');
+    expect(restored[1]!.single.toJson(), longStroke.toJson());
+    expect(restored[2], isEmpty);
+    final invalid = longStroke.copyWith(points: [
+      PointNormalized(double.nan, .1),
+      ...longStroke.points.skip(1)
+    ]);
+    await expectLater(
+        AnnotationStore.save('trazo-largo', {
+          1: [invalid]
+        }),
+        throwsStateError);
+    expect((await AnnotationStore.load('trazo-largo'))[1]!.single.toJson(),
+        longStroke.toJson());
   });
 }

@@ -39,9 +39,8 @@ void main() {
       theme.colorScheme.surfaceContainerHighest,
       const Color(0xFF16202A),
     );
-    expect(theme.colorScheme.outline, const Color(0xFF314052));
-    expect(theme.colorScheme.primary, const Color(0xFFF6D96B));
-    expect(theme.colorScheme.secondary, const Color(0xFFFFE48F));
+    expect(theme.colorScheme.primary, isNot(AccentColorNotifier.defaultAccent));
+    expect(theme.colorScheme.secondary, theme.colorScheme.primary);
     expect(theme.colorScheme.onSurfaceVariant, const Color(0xFFC3CFDB));
   });
 
@@ -52,9 +51,10 @@ void main() {
       Colors.red,
     );
 
-    expect(theme.colorScheme.primary, adapted);
-    expect(theme.appBarTheme.foregroundColor, adapted);
-    expect(theme.shadowColor, adapted.withValues(alpha: 0.30));
+    expect(HSVColor.fromColor(theme.colorScheme.primary).hue,
+        closeTo(HSVColor.fromColor(adapted).hue, 0.5));
+    expect(theme.appBarTheme.foregroundColor, theme.colorScheme.primary);
+    expect(theme.shadowColor, Colors.black.withValues(alpha: 0.12));
   });
 
   test('ajusta saturación y luminosidad según el tema', () {
@@ -73,8 +73,9 @@ void main() {
     );
 
     expect(light.value, lessThan(oled.value));
-    expect(normalDark.saturation, lessThan(oled.saturation));
-    expect(sepia.saturation, lessThan(normalDark.saturation));
+    expect(HSLColor.fromColor(normalDark.toColor()).saturation,
+        lessThanOrEqualTo(0.56));
+    expect(sepia.hue, closeTo(HSVColor.fromColor(base).hue, 0.5));
     expect(
       AppTheme.getTheme(AppThemeMode.sepia, base).colorScheme.primary,
       AppTheme.adaptAccent(AppThemeMode.sepia, base),

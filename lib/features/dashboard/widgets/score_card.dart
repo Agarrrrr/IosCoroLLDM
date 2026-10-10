@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
+import 'package:coro_lldm/app/accessible_colors.dart';
 
 class ScoreCard extends ConsumerWidget {
   final Canto canto;
@@ -16,7 +17,6 @@ class ScoreCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
     final hasAudio = canto.midiArchivo != null && canto.midiArchivo!.isNotEmpty;
     final isFavorite = ref.watch(favoritosProvider).contains(canto.id);
     final strings = AppStrings.of(context);
@@ -73,18 +73,20 @@ class ScoreCard extends ConsumerWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  Text(
-                                    canto.nombre,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w600,
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .onSurface,
-                                    ),
-                                  ),
+                                  Tooltip(
+                                      message: canto.nombre,
+                                      child: Text(
+                                        canto.nombre,
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w600,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .onSurface,
+                                        ),
+                                      )),
                                   const SizedBox(height: 3),
                                   Row(
                                     children: [
@@ -107,8 +109,7 @@ class ScoreCard extends ConsumerWidget {
                                             fontSize: 12,
                                             color: Theme.of(context)
                                                 .colorScheme
-                                                .onSurface
-                                                .withOpacity(0.6),
+                                                .onSurfaceVariant,
                                           ),
                                         ),
                                       ),
@@ -120,9 +121,13 @@ class ScoreCard extends ConsumerWidget {
 
                             // Botón Favorito (corazón) — marcar/desmarcar instantáneo
                             IconButton(
-                              visualDensity: VisualDensity.compact,
-                              padding: EdgeInsets.zero,
-                              constraints: const BoxConstraints(),
+                              tooltip: isFavorite
+                                  ? strings.t('Quitar de favoritos',
+                                      'Remove from favorites')
+                                  : strings.t('Agregar a favoritos',
+                                      'Add to favorites'),
+                              constraints: const BoxConstraints(
+                                  minWidth: 48, minHeight: 48),
                               icon: AnimatedSwitcher(
                                 duration: const Duration(milliseconds: 260),
                                 reverseDuration:
@@ -143,10 +148,12 @@ class ScoreCard extends ConsumerWidget {
                                   key: ValueKey(isFavorite),
                                   size: 22,
                                   color: isFavorite
-                                      ? const Color(0xFFE25563)
-                                      : (isDark
-                                          ? Colors.white24
-                                          : Colors.grey.shade400),
+                                      ? AccessibleColors.against(
+                                          const Color(0xFFE25563), [cardBg],
+                                          minimum: 3.2)
+                                      : Theme.of(context)
+                                          .colorScheme
+                                          .onSurfaceVariant,
                                 ),
                               ),
                               onPressed: () {
@@ -194,9 +201,9 @@ class ScoreCard extends ConsumerWidget {
                             // Flecha
                             Icon(
                               Icons.chevron_right_rounded,
-                              color: isDark
-                                  ? Colors.white30
-                                  : const Color(0xFFCBD5E1),
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .onSurfaceVariant,
                             ),
                           ],
                         ),

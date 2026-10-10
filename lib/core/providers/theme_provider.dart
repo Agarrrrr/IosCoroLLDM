@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:coro_lldm/app/accessible_colors.dart';
 
 const userSettingsBoxName = 'settings';
 
@@ -172,13 +173,32 @@ final pdfNavModeProvider =
     NotifierProvider<PdfNavModeNotifier, bool>(PdfNavModeNotifier.new);
 
 class AppTheme {
-  static Color adaptAccent(AppThemeMode mode, Color baseColor) {
-    // El dorado base ya fue diseñado específicamente para oscuro normal.
-    if (mode == AppThemeMode.oscuroNormal &&
-        baseColor == AccentColorNotifier.defaultAccent) {
-      return baseColor;
-    }
+  static List<Color> _surfaces(AppThemeMode mode) => switch (mode) {
+        AppThemeMode.claro => const [
+            Colors.white,
+            Color(0xFFF8F9FA),
+            Color(0xFFECEEF0)
+          ],
+        AppThemeMode.oscuro => const [
+            Colors.black,
+            Color(0xFF1E1E1E),
+            Color(0xFF292929)
+          ],
+        AppThemeMode.oscuroNormal => const [
+            Color(0xFF11161C),
+            Color(0xFF1B2430),
+            Color(0xFF222D3A),
+            Color(0xFF16202A)
+          ],
+        AppThemeMode.sepia => const [
+            Color(0xFFFDF5E6),
+            Color(0xFFF4ECD8),
+            Color(0xFFEFE6CF)
+          ],
+        AppThemeMode.quiet => const [Color(0xFF3C3F42), Color(0xFF4A4D51)],
+      };
 
+  static Color adaptAccent(AppThemeMode mode, Color baseColor) {
     final hsv = HSVColor.fromColor(baseColor);
     late final double saturation;
     late final double value;
@@ -206,15 +226,83 @@ class AppTheme {
         break;
     }
 
-    return hsv.withSaturation(saturation).withValue(value).toColor();
+    final candidate = hsv.withSaturation(saturation).withValue(value).toColor();
+    final dark = mode == AppThemeMode.oscuro ||
+        mode == AppThemeMode.oscuroNormal ||
+        mode == AppThemeMode.quiet;
+    final softened = HSLColor.fromColor(candidate);
+    return AccessibleColors.against(
+      dark
+          ? softened
+              .withSaturation(softened.saturation.clamp(0.0, 0.55))
+              .withLightness(softened.lightness.clamp(0.0, 0.64))
+              .toColor()
+          : candidate,
+      _surfaces(mode),
+    );
   }
 
-  static Color _onAccent(Color accent) =>
-      ThemeData.estimateBrightnessForColor(accent) == Brightness.dark
-          ? Colors.white
-          : const Color(0xFF11161C);
+  static Color _onAccent(Color accent) => AccessibleColors.onFill(accent);
 
   static ThemeData getTheme(AppThemeMode mode, Color accentColor) {
+    final theme = _buildTheme(mode, accentColor);
+    final original = theme.colorScheme;
+    final surfaces = _surfaces(mode);
+    final surface = original.surface;
+    final container = surfaces.last;
+    final selected =
+        Color.alphaBlend(original.primary.withValues(alpha: 0.10), surface);
+    final backgrounds = [...surfaces, selected];
+    final primary = AccessibleColors.against(original.primary, backgrounds);
+    final secondary = AccessibleColors.against(original.secondary, backgrounds);
+    final text = AccessibleColors.against(original.onSurface, backgrounds);
+    final muted =
+        AccessibleColors.against(original.onSurfaceVariant, backgrounds);
+    final outline =
+        AccessibleColors.against(original.outline, backgrounds, minimum: 3.2);
+    final scheme = original.copyWith(
+      primary: primary,
+      onPrimary: _onAccent(primary),
+      secondary: secondary,
+      onSecondary: _onAccent(secondary),
+      tertiary: secondary,
+      onTertiary: _onAccent(secondary),
+      primaryContainer: selected,
+      onPrimaryContainer: text,
+      secondaryContainer: selected,
+      onSecondaryContainer: text,
+      tertiaryContainer: selected,
+      onTertiaryContainer: text,
+      onSurface: text,
+      onSurfaceVariant: muted,
+      surfaceContainerLowest: surfaces.first,
+      surfaceContainerLow: surface,
+      surfaceContainer: container,
+      surfaceContainerHigh: container,
+      surfaceContainerHighest: container,
+      outline: outline,
+      outlineVariant: outline,
+    );
+    return theme.copyWith(
+      colorScheme: scheme,
+      appBarTheme: theme.appBarTheme.copyWith(
+          foregroundColor: primary,
+          backgroundColor:
+              theme.appBarTheme.backgroundColor?.withValues(alpha: 1)),
+      shadowColor: Colors.black.withValues(alpha: 0.12),
+      inputDecorationTheme: theme.inputDecorationTheme.copyWith(
+        hintStyle: TextStyle(color: muted),
+        enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: outline),
+            borderRadius: BorderRadius.circular(12)),
+        focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: primary, width: 2),
+            borderRadius: BorderRadius.circular(12)),
+      ),
+    );
+  }
+
+  static ThemeData _buildTheme(AppThemeMode mode, Color accentColor) {
     final effectiveAccent = adaptAccent(mode, accentColor);
 
     switch (mode) {
@@ -260,10 +348,7 @@ class AppTheme {
         const softText = Color(0xFFC3CFDB);
         const inputBackground = Color(0xFF222D3A);
         const inputBorder = Color(0xFF3B4A5D);
-        final strongAccent =
-            effectiveAccent == AccentColorNotifier.defaultAccent
-                ? const Color(0xFFFFE48F)
-                : Color.lerp(effectiveAccent, Colors.white, 0.24)!;
+        final strongAccent = effectiveAccent;
 
         final scheme = ColorScheme.fromSeed(
           seedColor: effectiveAccent,

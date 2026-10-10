@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:coro_lldm/app/accessible_colors.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
+import 'package:coro_lldm/features/premium/restore_feedback.dart';
 
 class SettingsDialog extends ConsumerStatefulWidget {
   const SettingsDialog({super.key});
-
   @override
   ConsumerState<SettingsDialog> createState() => _SettingsDialogState();
 }
@@ -17,385 +17,375 @@ class SettingsDialog extends ConsumerStatefulWidget {
 class _SettingsDialogState extends ConsumerState<SettingsDialog> {
   @override
   Widget build(BuildContext context) {
-    final currentTheme = ref.watch(themeProvider);
-    final useOledDarkMode = ref.watch(oledDarkModeProvider);
-    final selectedAccentColor = ref.watch(accentColorProvider);
-    final accentColor = Theme.of(context).colorScheme.primary;
-    final isCarousel = ref.watch(pdfNavModeProvider);
-    final language = ref.watch(languageFilterProvider);
     final strings = AppStrings.of(context);
-    final monetizationState = ref.watch(monetizationProvider);
-    final appUserId = monetizationState.appUserId;
+    final scheme = Theme.of(context).colorScheme;
+    final mode = ref.watch(themeProvider);
+    final accent = ref.watch(accentColorProvider);
+    final carousel = ref.watch(pdfNavModeProvider);
+    final language = ref.watch(languageFilterProvider);
+    final purchases = ref.watch(monetizationProvider);
+    final themes = [
+      (
+        AppThemeMode.claro,
+        strings.t('Claro', 'Light'),
+        strings.t('Fondo blanco', 'White background'),
+        Icons.light_mode_outlined
+      ),
+      (
+        AppThemeMode.oscuroNormal,
+        strings.t('Oscuro', 'Dark'),
+        strings.t('Fondo azul grisáceo', 'Blue-gray background'),
+        Icons.dark_mode_outlined
+      ),
+      (
+        AppThemeMode.oscuro,
+        strings.t('Negro OLED', 'OLED black'),
+        strings.t('Fondo negro puro', 'Pure black background'),
+        Icons.nightlight_round
+      ),
+      (
+        AppThemeMode.sepia,
+        strings.t('Sepia', 'Sepia'),
+        strings.t('Fondo cálido para leer', 'Warm reading background'),
+        Icons.auto_stories_outlined
+      ),
+      (
+        AppThemeMode.quiet,
+        strings.t('Gris de lectura', 'Reading gray'),
+        strings.t('Fondo gris oscuro', 'Dark gray background'),
+        Icons.chrome_reader_mode_outlined
+      ),
+    ];
+    final colors = [
+      (AccentColorNotifier.defaultAccent, strings.t('Dorado', 'Gold')),
+      (const Color(0xFF3B82F6), strings.t('Azul', 'Blue')),
+      (const Color(0xFF10B981), strings.t('Verde', 'Green')),
+      (const Color(0xFFEF4444), strings.t('Rojo', 'Red')),
+      (const Color(0xFF8B5CF6), strings.t('Púrpura', 'Purple')),
+      (const Color(0xFFF97316), strings.t('Naranja', 'Orange')),
+      (const Color(0xFF06B6D4), strings.t('Cian', 'Cyan')),
+      (const Color(0xFFEC4899), strings.t('Rosa', 'Pink')),
+      (const Color(0xFF6366F1), strings.t('Índigo', 'Indigo')),
+      (const Color(0xFF64748B), strings.t('Plata', 'Silver')),
+      (const Color(0xFF8B5A2B), strings.t('Café', 'Brown')),
+    ];
 
     return Dialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      child: Container(
-        constraints: const BoxConstraints(maxWidth: 400),
-        padding: const EdgeInsets.all(24),
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    strings.t('Ajustes', 'Settings'),
-                    style: GoogleFonts.inter(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.onSurface,
-                    ),
-                  ),
-                  IconButton(
-                    icon: Icon(Icons.close_rounded,
-                        color: Theme.of(context).colorScheme.onSurface),
-                    onPressed: () => Navigator.pop(context),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 16),
-
-              _buildSectionTitle(strings.t('IDIOMA', 'LANGUAGE')),
-              Row(
-                children: [
-                  Expanded(
-                    child: _buildPdfNavOption(
-                      title: 'Español',
-                      icon: Icons.language_rounded,
-                      isSelected: language == 'es',
-                      onTap: () =>
-                          ref.read(languageFilterProvider.notifier).set('es'),
-                      accentColor: accentColor,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: _buildPdfNavOption(
-                      title: 'English',
-                      icon: Icons.language_rounded,
-                      isSelected: language == 'en',
-                      onTap: () =>
-                          ref.read(languageFilterProvider.notifier).set('en'),
-                      accentColor: accentColor,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 24),
-
-              // 1. COLOR DE ACENTO
-              _buildSectionTitle(
-                strings.t('COLOR DE ACENTO', 'ACCENT COLOR'),
-              ),
-              Wrap(
-                spacing: 12,
-                runSpacing: 12,
-                children: [
-                  _buildColorDot(AccentColorNotifier.defaultAccent,
-                      selectedAccentColor), // Dorado
-                  _buildColorDot(
-                      const Color(0xFF3B82F6), selectedAccentColor), // Azul
-                  _buildColorDot(
-                      const Color(0xFF10B981), selectedAccentColor), // Verde
-                  _buildColorDot(const Color(0xFFEF4444),
-                      selectedAccentColor), // Carmesí
-                  _buildColorDot(const Color(0xFF8B5CF6),
-                      selectedAccentColor), // Púrpura
-                  _buildColorDot(const Color(0xFFF97316),
-                      selectedAccentColor), // Naranja
-                  _buildColorDot(const Color(0xFF06B6D4),
-                      selectedAccentColor), // Cian (Teal)
-                  _buildColorDot(const Color(0xFFEC4899),
-                      selectedAccentColor), // Rosa (Magenta)
-                  _buildColorDot(
-                      const Color(0xFF6366F1), selectedAccentColor), // Índigo
-                  _buildColorDot(const Color(0xFF64748B),
-                      selectedAccentColor), // Plata (Slate)
-                  _buildColorDot(
-                      const Color(0xFF8B5A2B), selectedAccentColor), // Café
-                ],
-              ),
-              const SizedBox(height: 24),
-
-              // 2. MODO PDF (SCROLL VS CAROUSEL)
-              _buildSectionTitle(strings.t(
-                'NAVEGACIÓN DE PARTITURA',
-                'SCORE NAVIGATION',
-              )),
-              Row(
-                children: [
-                  Expanded(
-                    child: _buildPdfNavOption(
-                      title: strings.t('Desplazamiento', 'Scrolling'),
-                      icon: Icons.swap_vert_rounded,
-                      isSelected: !isCarousel,
-                      onTap: () =>
-                          ref.read(pdfNavModeProvider.notifier).set(false),
-                      accentColor: accentColor,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: _buildPdfNavOption(
-                      title: strings.t('Carrusel', 'Carousel'),
-                      icon: Icons.view_carousel_rounded,
-                      isSelected: isCarousel,
-                      onTap: () =>
-                          ref.read(pdfNavModeProvider.notifier).set(true),
-                      accentColor: accentColor,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 24),
-
-              // 3. TEMAS
-              _buildSectionTitle(strings.t(
-                'PERFIL DE DISEÑO',
-                'DISPLAY PROFILE',
-              )),
-              _buildThemeOption(
-                context: context,
-                title: strings.t(
-                  'Normal (Día/Noche)',
-                  'Normal (Day/Night)',
-                ),
-                icon: Icons.light_mode_rounded,
-                isSelected: currentTheme == AppThemeMode.claro ||
-                    currentTheme == AppThemeMode.oscuro ||
-                    currentTheme == AppThemeMode.oscuroNormal,
-                onTap: () =>
-                    ref.read(themeProvider.notifier).setProfileNormal(),
-                accentColor: accentColor,
-              ),
-              _buildThemeOption(
-                context: context,
-                title: strings.t(
-                  'Lectura (Sepia/Quiet)',
-                  'Reading (Sepia/Quiet)',
-                ),
-                icon: Icons.auto_stories_rounded,
-                isSelected: currentTheme == AppThemeMode.sepia ||
-                    currentTheme == AppThemeMode.quiet,
-                onTap: () =>
-                    ref.read(themeProvider.notifier).setProfileLectura(),
-                accentColor: accentColor,
-              ),
-              _buildOledSwitch(
-                strings: strings,
-                enabled: useOledDarkMode,
-                accentColor: accentColor,
-                onChanged: (enabled) =>
-                    ref.read(oledDarkModeProvider.notifier).set(enabled),
-              ),
-              const SizedBox(height: 24),
-
-              // 4. IDENTIFICADOR DE CUENTA / SORTEOS Y SOPORTE
-              _buildSectionTitle(strings.t(
-                'ID DE CUENTA / SOPORTE',
-                'ACCOUNT ID / SUPPORT',
-              )),
-              _buildAccountIdCard(
-                context: context,
-                strings: strings,
-                appUserId: appUserId,
-                accentColor: accentColor,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildAccountIdCard({
-    required BuildContext context,
-    required AppStrings strings,
-    required String? appUserId,
-    required Color accentColor,
-  }) {
-    final theme = Theme.of(context);
-    final hasId = appUserId != null && appUserId.isNotEmpty;
-    final displayId = hasId
-        ? appUserId
-        : strings.t('Generando identificador...', 'Generating ID...');
-
-    return Container(
-      padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(
-        color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 0.6),
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(
-          color: theme.colorScheme.outline.withValues(alpha: 0.25),
-        ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Icon(
-                Icons.fingerprint_rounded,
-                size: 20,
-                color: accentColor,
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  strings.t(
-                    'Identificador para sorteos y soporte',
-                    'Giveaway & support identifier',
-                  ),
-                  style: GoogleFonts.inter(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: theme.colorScheme.onSurface,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-            decoration: BoxDecoration(
-              color: theme.colorScheme.surface,
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(
-                color: theme.colorScheme.outline.withValues(alpha: 0.2),
-              ),
-            ),
-            child: Row(
-              children: [
+      insetPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 480),
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          Padding(
+              padding: const EdgeInsets.fromLTRB(20, 12, 8, 8),
+              child: Row(children: [
                 Expanded(
-                  child: SelectableText(
-                    displayId,
-                    style: GoogleFonts.inter(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w500,
-                      color: hasId
-                          ? theme.colorScheme.onSurface
-                          : theme.colorScheme.onSurfaceVariant,
-                    ),
-                    maxLines: 1,
-                  ),
-                ),
-                if (hasId) ...[
-                  const SizedBox(width: 8),
-                  InkWell(
-                    onTap: () async {
-                      await Clipboard.setData(ClipboardData(text: appUserId));
-                      if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              strings.t(
-                                'ID copiado al portapapeles',
-                                'ID copied to clipboard',
-                              ),
-                            ),
-                            behavior: SnackBarBehavior.floating,
-                            duration: const Duration(seconds: 2),
-                          ),
-                        );
-                      }
-                    },
-                    borderRadius: BorderRadius.circular(6),
-                    child: Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: Icon(
-                        Icons.copy_rounded,
-                        size: 18,
-                        color: accentColor,
-                      ),
-                    ),
-                  ),
-                ],
-              ],
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            strings.t(
-              'Comparte este código para participar en sorteos de suscripciones anuales o para solicitar soporte técnico.',
-              'Share this code to enter yearly subscription giveaways or request technical support.',
-            ),
-            style: GoogleFonts.inter(
-              fontSize: 11,
-              color: theme.colorScheme.onSurfaceVariant,
-              height: 1.3,
-            ),
-          ),
-          const SizedBox(height: 12),
+                    child: Text(strings.t('Ajustes', 'Settings'),
+                        style: Theme.of(context).textTheme.headlineSmall)),
+                IconButton(
+                    tooltip: strings.t('Cerrar ajustes', 'Close settings'),
+                    onPressed: () => Navigator.pop(context),
+                    icon: const Icon(Icons.close_rounded)),
+              ])),
           const Divider(height: 1),
-          const SizedBox(height: 10),
-          Row(
-            children: [
-              Expanded(
-                child: OutlinedButton.icon(
-                  onPressed: () async {
-                    final messenger = ScaffoldMessenger.of(context);
-                    final restored =
-                        await ref.read(monetizationProvider.notifier).restore();
-                    if (!context.mounted) return;
-                    messenger.showSnackBar(
-                      SnackBar(
-                        content: Text(
-                          restored
-                              ? strings.t(
-                                  'Compras restauradas con éxito',
-                                  'Purchases restored successfully',
-                                )
-                              : strings.t(
-                                  'No se encontró una suscripción activa',
-                                  'No active subscription found',
-                                ),
-                        ),
-                        behavior: SnackBarBehavior.floating,
+          Flexible(
+              child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      _settingsGroup(
+                          'appearance',
+                          strings.t('Apariencia', 'Appearance'),
+                          '${themes.firstWhere((t) => t.$1 == mode).$2} · ${colors.where((c) => c.$1.toARGB32() == accent.toARGB32()).firstOrNull?.$2 ?? strings.t('Personalizado', 'Custom')}',
+                          Icons.palette_outlined, [
+                        _description(strings.t(
+                            'Elige el fondo de la aplicación y las partituras.',
+                            'Choose the background for the app and scores.')),
+                        for (final theme in themes)
+                          _choice(theme.$2, theme.$4, mode == theme.$1, () {
+                            if (theme.$1 == AppThemeMode.oscuro ||
+                                theme.$1 == AppThemeMode.oscuroNormal) {
+                              ref
+                                  .read(oledDarkModeProvider.notifier)
+                                  .set(theme.$1 == AppThemeMode.oscuro);
+                            }
+                            ref.read(themeProvider.notifier).set(theme.$1);
+                          }, subtitle: theme.$3),
+                        _heading(strings.t('Color de resalte', 'Accent color')),
+                        _description(strings.t(
+                            'El color se adapta al fondo para mantener el contraste.',
+                            'The color adapts to the background to preserve contrast.')),
+                        Wrap(spacing: 8, runSpacing: 8, children: [
+                          for (final color in colors)
+                            Semantics(
+                              label: color.$2,
+                              button: true,
+                              selected:
+                                  color.$1.toARGB32() == accent.toARGB32(),
+                              child: Tooltip(
+                                  message: color.$2,
+                                  child: InkWell(
+                                    borderRadius: BorderRadius.circular(24),
+                                    onTap: () => ref
+                                        .read(accentColorProvider.notifier)
+                                        .set(color.$1),
+                                    child: SizedBox(
+                                        width: 48,
+                                        height: 48,
+                                        child: Center(
+                                            child: Container(
+                                          width: 36,
+                                          height: 36,
+                                          decoration: BoxDecoration(
+                                              color: color.$1,
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                  color: scheme.outline,
+                                                  width: 2)),
+                                          child: color.$1.toARGB32() ==
+                                                  accent.toARGB32()
+                                              ? Icon(Icons.check,
+                                                  color:
+                                                      AccessibleColors.onFill(
+                                                          color.$1),
+                                                  size: 24)
+                                              : null,
+                                        ))),
+                                  )),
+                            ),
+                        ]),
+                      ]),
+                      _settingsGroup(
+                          'reading',
+                          strings.t('Partituras', 'Scores'),
+                          carousel
+                              ? strings.t('Páginas hacia los lados',
+                                  'Swipe pages horizontally')
+                              : strings.t('Páginas hacia arriba',
+                                  'Scroll pages vertically'),
+                          Icons.auto_stories_outlined,
+                          [
+                            _choice(
+                                strings.t('Deslizar hacia arriba',
+                                    'Scroll vertically'),
+                                Icons.swap_vert,
+                                !carousel,
+                                () => ref
+                                    .read(pdfNavModeProvider.notifier)
+                                    .set(false),
+                                subtitle: strings.t(
+                                    'Lee las páginas una debajo de otra.',
+                                    'Read pages one below another.')),
+                            _choice(
+                                strings.t('Deslizar hacia los lados',
+                                    'Swipe horizontally'),
+                                Icons.swap_horiz,
+                                carousel,
+                                () => ref
+                                    .read(pdfNavModeProvider.notifier)
+                                    .set(true),
+                                subtitle: strings.t(
+                                    'Pasa de una página a la siguiente.',
+                                    'Move from one page to the next.')),
+                          ]),
+                      _settingsGroup(
+                          'language',
+                          strings.t(
+                              'Idioma y repertorio', 'Language and repertoire'),
+                          language == 'es' ? 'Español' : 'English',
+                          Icons.language,
+                          [
+                            _description(strings.t(
+                                'Cambia el idioma de la aplicación y del repertorio.',
+                                'Changes the app and repertoire language.')),
+                            _choice(
+                                'Español',
+                                Icons.language,
+                                language == 'es',
+                                () => ref
+                                    .read(languageFilterProvider.notifier)
+                                    .set('es')),
+                            _choice(
+                                'English',
+                                Icons.language,
+                                language == 'en',
+                                () => ref
+                                    .read(languageFilterProvider.notifier)
+                                    .set('en')),
+                          ]),
+                      _settingsGroup(
+                          'purchases',
+                          strings.t(
+                              'Premium y dispositivos', 'Premium and devices'),
+                          purchases.isPremium
+                              ? strings.t('Premium activo', 'Premium active')
+                              : strings.t('Versión gratuita', 'Free version'),
+                          Icons.workspace_premium_outlined,
+                          [
+                            Text(
+                                purchases.isPremium
+                                    ? strings.t(
+                                        'Premium activo', 'Premium active')
+                                    : strings.t(
+                                        'Versión gratuita', 'Free version'),
+                                style: Theme.of(context).textTheme.titleMedium),
+                            const SizedBox(height: 8),
+                            _description(strings.t(
+                                'Si ya compraste Premium, usa la misma cuenta de App Store o Google Play y restaura tus compras.',
+                                'If you purchased Premium, use the same App Store or Google Play account and restore your purchases.')),
+                            OutlinedButton.icon(
+                              onPressed: purchases.isBusy
+                                  ? null
+                                  : () async {
+                                      final result = await ref
+                                          .read(monetizationProvider.notifier)
+                                          .restore();
+                                      if (!context.mounted) return;
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(SnackBar(
+                                              content: Text(restoreFeedback(
+                                                  result, strings))));
+                                    },
+                              icon: const Icon(Icons.restore),
+                              label: Text(purchases.isBusy
+                                  ? strings.t('Procesando…', 'Processing…')
+                                  : strings.t('Restaurar compras',
+                                      'Restore purchases')),
+                            ),
+                            OutlinedButton.icon(
+                                onPressed: purchases.isBusy
+                                    ? null
+                                    : () => _showLinkAccountDialog(
+                                        context, strings),
+                                icon: const Icon(Icons.devices),
+                                label: Text(strings.t(
+                                    'Vincular otro dispositivo',
+                                    'Link another device'))),
+                          ]),
+                      const SizedBox(height: 16),
+                      ExpansionTile(
+                        tilePadding: EdgeInsets.zero,
+                        title: Text(strings.t(
+                            'Ayuda e identificador', 'Help and identifier')),
+                        children: [
+                          _description(strings.t(
+                              'Este código sirve para soporte, sorteos y vincular tu acceso Premium con otro dispositivo. No es una contraseña.',
+                              'This code is for support, giveaways and linking your Premium access to another device. It is not a password.')),
+                          if (purchases.appUserId?.isNotEmpty == true) ...[
+                            SelectableText(purchases.appUserId!,
+                                style: Theme.of(context).textTheme.bodyMedium),
+                            TextButton.icon(
+                                onPressed: () async {
+                                  await Clipboard.setData(ClipboardData(
+                                      text: purchases.appUserId!));
+                                  if (!context.mounted) return;
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                          content: Text(strings.t(
+                                              'Identificador copiado',
+                                              'Identifier copied'))));
+                                },
+                                icon: const Icon(Icons.copy),
+                                label: Text(strings.t('Copiar identificador',
+                                    'Copy identifier'))),
+                          ] else
+                            Text(strings.t(
+                                'Identificador aún no disponible. Comprueba la conexión y vuelve a abrir la aplicación.',
+                                'Identifier not yet available. Check your connection and reopen the app.')),
+                        ],
                       ),
-                    );
-                  },
-                  icon: const Icon(Icons.restore_rounded, size: 16),
-                  label: Text(
-                    strings.t('Restaurar', 'Restore'),
-                    style: const TextStyle(fontSize: 11),
-                  ),
-                  style: OutlinedButton.styleFrom(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: OutlinedButton.icon(
-                  onPressed: () => _showLinkAccountDialog(context, strings),
-                  icon: const Icon(Icons.devices_rounded, size: 16),
-                  label: Text(
-                    strings.t('Vincular', 'Link account'),
-                    style: const TextStyle(fontSize: 11),
-                  ),
-                  style: OutlinedButton.styleFrom(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
+                    ],
+                  ))),
+        ]),
       ),
     );
   }
 
-  void _showLinkAccountDialog(BuildContext context, AppStrings strings) {
+  Widget _settingsGroup(String id, String title, String summary, IconData icon,
+          List<Widget> children) =>
+      ExpansionTile(
+        key: PageStorageKey('settings-$id'),
+        tilePadding: EdgeInsets.zero,
+        childrenPadding: const EdgeInsets.only(top: 8, bottom: 16),
+        leading: Icon(icon),
+        title: Text(title, style: Theme.of(context).textTheme.titleMedium),
+        subtitle: Text(summary),
+        children: [
+          Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: children)
+        ],
+      );
+
+  Widget _heading(String text) => Padding(
+      padding: const EdgeInsets.only(top: 20, bottom: 8),
+      child: Text(text,
+          style: Theme.of(context)
+              .textTheme
+              .titleMedium
+              ?.copyWith(fontWeight: FontWeight.bold)));
+
+  Widget _description(String text) => Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Text(text,
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              color: Theme.of(context).colorScheme.onSurfaceVariant)));
+
+  Widget _choice(String title, IconData icon, bool selected, VoidCallback onTap,
+      {String? subtitle}) {
+    final scheme = Theme.of(context).colorScheme;
+    final foreground = selected ? scheme.onPrimary : scheme.onSurface;
+    return Padding(
+        padding: const EdgeInsets.only(bottom: 8),
+        child: Semantics(
+          selected: selected,
+          button: true,
+          child: Material(
+            color: selected ? scheme.primary : scheme.surfaceContainerHighest,
+            borderRadius: BorderRadius.circular(12),
+            child: InkWell(
+                onTap: onTap,
+                borderRadius: BorderRadius.circular(12),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Row(children: [
+                    Icon(icon, color: foreground),
+                    const SizedBox(width: 12),
+                    Expanded(
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                          Text(title,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyLarge
+                                  ?.copyWith(color: foreground)),
+                          if (subtitle != null)
+                            Text(subtitle,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyMedium
+                                    ?.copyWith(color: foreground)),
+                        ])),
+                    const SizedBox(width: 8),
+                    Icon(
+                        selected
+                            ? Icons.radio_button_checked
+                            : Icons.radio_button_off,
+                        color: foreground),
+                  ]),
+                )),
+          ),
+        ));
+  }
+
+  Future<void> _showLinkAccountDialog(
+      BuildContext context, AppStrings strings) async {
     final textController = TextEditingController();
-    showDialog(
+    await showDialog(
       context: context,
       builder: (dialogCtx) => AlertDialog(
+        scrollable: true,
         title: Text(
           strings.t('Vincular otro dispositivo', 'Link another device'),
           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -406,20 +396,21 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
           children: [
             Text(
               strings.t(
-                'Si ya tienes Premium en otro dispositivo (ej. celular Android o iPad), ingresa aquí su ID de Cuenta para sincronizarlo.',
-                'If you already have Premium on another device, enter its Account ID here to sync it.',
+                'Para compartir tu acceso Premium, pega el identificador del otro dispositivo. Lo encontrarás en Ajustes, en «Ayuda e identificador». No necesitas crear una cuenta.',
+                'To share your Premium access, paste the other device’s identifier from Settings, under “Help and identifier”. No account registration is needed.',
               ),
-              style: const TextStyle(fontSize: 12),
+              style: const TextStyle(fontSize: 14),
             ),
             const SizedBox(height: 12),
             TextField(
               controller: textController,
               decoration: InputDecoration(
-                hintText: strings.t('Pega el ID aquí...', 'Paste ID here...'),
+                labelText: strings.t('Identificador del otro dispositivo',
+                    'Other device identifier'),
                 border: const OutlineInputBorder(),
                 isDense: true,
               ),
-              style: const TextStyle(fontSize: 12, fontFamily: 'monospace'),
+              style: const TextStyle(fontSize: 14, fontFamily: 'monospace'),
             ),
           ],
         ),
@@ -443,10 +434,12 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                   content: Text(
                     linked
                         ? strings.t(
-                            'Cuenta vinculada. ¡Premium activo!',
-                            'Account linked. Premium active!',
+                            'Dispositivo vinculado. Premium activo.',
+                            'Device linked. Premium active.',
                           )
-                        : strings.t('Cuenta vinculada.', 'Account linked.'),
+                        : strings.t(
+                            'No se pudo activar Premium con este identificador. Comprueba el código y la conexión.',
+                            'Premium could not be activated with this identifier. Check the code and your connection.'),
                   ),
                   behavior: SnackBarBehavior.floating,
                 ),
@@ -457,228 +450,6 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
         ],
       ),
     );
-  }
-
-  Widget _buildOledSwitch({
-    required AppStrings strings,
-    required bool enabled,
-    required Color accentColor,
-    required ValueChanged<bool> onChanged,
-  }) {
-    final theme = Theme.of(context);
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 250),
-      decoration: BoxDecoration(
-        color: enabled
-            ? accentColor.withValues(alpha: 0.08)
-            : theme.colorScheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: enabled
-              ? accentColor.withValues(alpha: 0.65)
-              : theme.colorScheme.outline.withValues(alpha: 0.45),
-        ),
-      ),
-      child: SwitchListTile.adaptive(
-        value: enabled,
-        onChanged: onChanged,
-        activeColor: accentColor,
-        secondary: Icon(
-          enabled ? Icons.contrast_rounded : Icons.dark_mode_rounded,
-          color: enabled ? accentColor : theme.colorScheme.onSurfaceVariant,
-        ),
-        title: Text(
-          strings.t('Oscuro OLED', 'OLED dark mode'),
-          style: GoogleFonts.inter(
-            fontWeight: FontWeight.w600,
-            color: theme.colorScheme.onSurface,
-          ),
-        ),
-        subtitle: Text(
-          enabled
-              ? strings.t(
-                  'Negro puro para pantallas OLED',
-                  'Pure black for OLED displays',
-                )
-              : strings.t(
-                  'Oscuro normal azul grisáceo',
-                  'Standard blue-gray dark mode',
-                ),
-          style: GoogleFonts.inter(
-            fontSize: 12,
-            color: theme.colorScheme.onSurfaceVariant,
-          ),
-        ),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 14),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildSectionTitle(String title) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
-      child: Text(
-        title,
-        style: GoogleFonts.inter(
-          fontSize: 12,
-          fontWeight: FontWeight.bold,
-          color: Theme.of(context).colorScheme.onSurfaceVariant,
-          letterSpacing: 1,
-        ),
-      ),
-    );
-  }
-
-  Widget _buildColorDot(Color color, Color selectedColor) {
-    final isSelected = color.toARGB32() == selectedColor.toARGB32();
-    return GestureDetector(
-      onTap: () => ref.read(accentColorProvider.notifier).set(color),
-      child: Container(
-        width: 40,
-        height: 40,
-        decoration: BoxDecoration(
-          color: color,
-          shape: BoxShape.circle,
-          border: isSelected
-              ? Border.all(
-                  color: Theme.of(context).colorScheme.onSurface, width: 3)
-              : null,
-          boxShadow: [
-            if (isSelected)
-              BoxShadow(
-                  color: color.withValues(alpha: 0.4),
-                  blurRadius: 8,
-                  spreadRadius: 2)
-          ],
-        ),
-        child: isSelected
-            ? const Icon(Icons.check_rounded, color: Colors.white, size: 20)
-            : null,
-      ),
-    );
-  }
-
-  Widget _buildPdfNavOption({
-    required String title,
-    required IconData icon,
-    required bool isSelected,
-    required VoidCallback onTap,
-    required Color accentColor,
-  }) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(12),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
-        curve: Curves.easeInOut,
-        padding: const EdgeInsets.symmetric(vertical: 12),
-        decoration: BoxDecoration(
-          color: isSelected
-              ? accentColor.withValues(alpha: 0.1)
-              : Colors.transparent,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color:
-                isSelected ? accentColor : Colors.grey.withValues(alpha: 0.3),
-            width: isSelected ? 2 : 1,
-          ),
-        ),
-        child: Column(
-          children: [
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 300),
-              transitionBuilder: (child, anim) => RotationTransition(
-                  turns: Tween(begin: 0.9, end: 1.0).animate(anim),
-                  child: FadeTransition(opacity: anim, child: child)),
-              child: Icon(icon,
-                  key: ValueKey(isSelected),
-                  color: isSelected ? accentColor : Colors.grey),
-            ),
-            const SizedBox(height: 4),
-            AnimatedDefaultTextStyle(
-              duration: const Duration(milliseconds: 300),
-              style: GoogleFonts.inter(
-                fontSize: 12,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                color: isSelected ? accentColor : Colors.grey,
-              ),
-              child: Text(title),
-            )
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildThemeOption({
-    required BuildContext context,
-    required String title,
-    required IconData icon,
-    required bool isSelected,
-    required VoidCallback onTap,
-    required Color accentColor,
-  }) {
-    return GestureDetector(
-      onTap: onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
-        curve: Curves.easeInOut,
-        margin: const EdgeInsets.only(bottom: 12),
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color:
-                isSelected ? accentColor : Colors.grey.withValues(alpha: 0.2),
-            width: isSelected ? 2 : 1,
-          ),
-          color: isSelected
-              ? accentColor.withValues(alpha: 0.1)
-              : Colors.transparent,
-        ),
-        child: Row(
-          children: [
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 300),
-              transitionBuilder: (child, anim) => RotationTransition(
-                  turns: Tween(begin: 0.9, end: 1.0).animate(anim),
-                  child: FadeTransition(opacity: anim, child: child)),
-              child: Icon(icon,
-                  key: ValueKey(isSelected),
-                  color: isSelected ? accentColor : Colors.grey,
-                  size: 20),
-            ),
-            const SizedBox(width: 16),
-            AnimatedDefaultTextStyle(
-              duration: const Duration(milliseconds: 300),
-              style: GoogleFonts.inter(
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                color: isSelected
-                    ? accentColor
-                    : Theme.of(context).colorScheme.onSurface,
-              ),
-              child: Text(title),
-            ),
-            const Spacer(),
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 300),
-              transitionBuilder: (child, anim) => ScaleTransition(
-                  scale: anim,
-                  child: FadeTransition(opacity: anim, child: child)),
-              child: isSelected
-                  ? Icon(Icons.check_circle_rounded,
-                      key: const ValueKey('check'),
-                      color: accentColor,
-                      size: 20)
-                  : const SizedBox(
-                      key: ValueKey('empty'), width: 20, height: 20),
-            ),
-          ],
-        ),
-      ),
-    );
+    textController.dispose();
   }
 }
