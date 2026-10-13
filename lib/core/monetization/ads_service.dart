@@ -58,6 +58,20 @@ class AdsService with WidgetsBindingObserver {
   bool _premium = false;
   bool _hasBackgrounded = false;
   bool _showingFullScreen = false;
+  int _externalActions = 0;
+
+  /// Returning from a share target or Files must not present an app-open ad.
+  VoidCallback suspendForExternalAction() {
+    _externalActions++;
+    var released = false;
+    return () {
+      if (released) return;
+      released = true;
+      _externalActions--;
+      _hasBackgrounded = false;
+    };
+  }
+
   AppOpenAd? _appOpen;
   DateTime? _appOpenLoadedAt;
   InterstitialAd? _interstitial;
@@ -125,7 +139,7 @@ class AdsService with WidgetsBindingObserver {
       _hasBackgrounded = true;
     } else if (state == AppLifecycleState.resumed && _hasBackgrounded) {
       _hasBackgrounded = false;
-      showAppOpenIfAvailable();
+      if (_externalActions == 0) showAppOpenIfAvailable();
     }
   }
 
@@ -145,7 +159,7 @@ class AdsService with WidgetsBindingObserver {
   }
 
   Future<void> showAppOpenIfAvailable() async {
-    if (_premium || _showingFullScreen) return;
+    if (_premium || _showingFullScreen || _externalActions > 0) return;
     final loadedAt = _appOpenLoadedAt;
     if (loadedAt == null ||
         DateTime.now().difference(loadedAt) > const Duration(hours: 4)) {
@@ -186,7 +200,12 @@ class AdsService with WidgetsBindingObserver {
   }
 
   Future<void> onPdfOpened() async {
-    if (_premium || !_initialized || _showingFullScreen) return;
+    if (_premium ||
+        !_initialized ||
+        _showingFullScreen ||
+        _externalActions > 0) {
+      return;
+    }
     final ad = _interstitial;
     if (ad == null) {
       _loadInterstitial();
@@ -212,7 +231,12 @@ class AdsService with WidgetsBindingObserver {
   /// Llamar cuando un export de audio fue exitoso (no si fue cancelado).
   /// Muestra un anuncio intersticial de fondo sin bloquear la UI.
   Future<void> onExportCompleted() async {
-    if (_premium || !_initialized || _showingFullScreen) return;
+    if (_premium ||
+        !_initialized ||
+        _showingFullScreen ||
+        _externalActions > 0) {
+      return;
+    }
     final ad = _interstitial;
     if (ad == null) {
       _loadInterstitial();

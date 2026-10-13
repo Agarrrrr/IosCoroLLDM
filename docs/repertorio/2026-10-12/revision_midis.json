@@ -1,0 +1,6442 @@
+[
+  {
+    "title": "A lo Largo de la Vida",
+    "category": "01 - SATB prioritarios",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A lo Largo de la Vida\\A lo Largo de la Vida SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\A lo Largo de la Vida\\A lo Largo de la Vida SATB.mid",
+    "sha256": "5335496892546e423c9aa027006fcd9fb4c02b51c953862a6a236879adb5a2e6",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A lo Largo de la Vida\\A lo Largo de la Vida SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 334,
+        "firstTick": 0,
+        "lastOnTick": 324000,
+        "lastEndTick": 328320,
+        "firstSec": 0,
+        "lastOnSec": 270,
+        "lastEndSec": 273.6,
+        "pitchMin": 62,
+        "pitchMax": 79,
+        "pitchMedian": 71,
+        "overlapNotes": 1,
+        "overlapPercent": 0.2994011976047904
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 340,
+        "firstTick": 0,
+        "lastOnTick": 324000,
+        "lastEndTick": 328320,
+        "firstSec": 0,
+        "lastOnSec": 270,
+        "lastEndSec": 273.6,
+        "pitchMin": 57,
+        "pitchMax": 71,
+        "pitchMedian": 66,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 334,
+        "firstTick": 0,
+        "lastOnTick": 324000,
+        "lastEndTick": 328320,
+        "firstSec": 0,
+        "lastOnSec": 270,
+        "lastEndSec": 273.6,
+        "pitchMin": 50,
+        "pitchMax": 66,
+        "pitchMedian": 59,
+        "overlapNotes": 1,
+        "overlapPercent": 0.2994011976047904
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 328,
+        "firstTick": 0,
+        "lastOnTick": 324000,
+        "lastEndTick": 328320,
+        "firstSec": 0,
+        "lastOnSec": 270,
+        "lastEndSec": 273.6,
+        "pitchMin": 43,
+        "pitchMax": 59,
+        "pitchMedian": 49,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          3,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 1440,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 0.25
+      },
+      {
+        "ticks": 324000,
+        "timeSignature": [
+          10,
+          4
+        ],
+        "measures": 14.25
+      }
+    ]
+  },
+  {
+    "title": "Fue por Mí",
+    "category": "01 - SATB prioritarios",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fue por Mí\\Fue por mí SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Fue por Mí\\Fue por mí SATB.mid",
+    "sha256": "2e4a1f83a2af8d4a196e6b6eae20295dbf704c868351f285f8363dde3ae1ebd6",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fue por Mí\\Fue por mí SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 133,
+        "firstTick": 1440,
+        "lastOnTick": 108000,
+        "lastEndTick": 112320,
+        "firstSec": 0.999999,
+        "lastOnSec": 74.99992499999999,
+        "lastEndSec": 77.999922,
+        "pitchMin": 62,
+        "pitchMax": 74,
+        "pitchMedian": 67,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 133,
+        "firstTick": 1440,
+        "lastOnTick": 108000,
+        "lastEndTick": 112320,
+        "firstSec": 0.999999,
+        "lastOnSec": 74.99992499999999,
+        "lastEndSec": 77.999922,
+        "pitchMin": 58,
+        "pitchMax": 67,
+        "pitchMedian": 63,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 141,
+        "firstTick": 1440,
+        "lastOnTick": 108000,
+        "lastEndTick": 112320,
+        "firstSec": 0.999999,
+        "lastOnSec": 74.99992499999999,
+        "lastEndSec": 77.999922,
+        "pitchMin": 53,
+        "pitchMax": 62,
+        "pitchMedian": 58,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 141,
+        "firstTick": 1440,
+        "lastOnTick": 108000,
+        "lastEndTick": 112320,
+        "firstSec": 0.999999,
+        "lastOnSec": 74.99992499999999,
+        "lastEndSec": 77.999922,
+        "pitchMin": 46,
+        "pitchMax": 55,
+        "pitchMedian": 51,
+        "overlapNotes": 1,
+        "overlapPercent": 0.7092198581560284
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 83520,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 7.25
+      },
+      {
+        "ticks": 87840,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 7.5
+      }
+    ]
+  },
+  {
+    "title": "Linaje de Bendición",
+    "category": "01 - SATB prioritarios",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Linaje de Bendición\\Linaje de Bendición SATB2.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Linaje de Bendición\\Linaje de Bendición SATB2.mid",
+    "sha256": "1dae4b2300265199459759be7c3f3636d116795fdd29467fcc102d44c9f38c29",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Linaje de Bendición\\Linaje de Bendición SATB2.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 395,
+        "firstTick": 8160,
+        "lastOnTick": 570240,
+        "lastEndTick": 576000,
+        "firstSec": 8.5,
+        "lastOnSec": 378.59999999999997,
+        "lastEndSec": 382.2,
+        "pitchMin": 62,
+        "pitchMax": 79,
+        "pitchMedian": 71,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Alto",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 424,
+        "firstTick": 5280,
+        "lastOnTick": 570240,
+        "lastEndTick": 576000,
+        "firstSec": 5.5,
+        "lastOnSec": 378.59999999999997,
+        "lastEndSec": 382.2,
+        "pitchMin": 59,
+        "pitchMax": 71,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Tenor",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 439,
+        "firstTick": 2400,
+        "lastOnTick": 570240,
+        "lastEndTick": 576000,
+        "firstSec": 2.5,
+        "lastOnSec": 378.59999999999997,
+        "lastEndSec": 382.2,
+        "pitchMin": 54,
+        "pitchMax": 64,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Bajo",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 665,
+        "firstTick": 0,
+        "lastOnTick": 573120,
+        "lastEndTick": 576000,
+        "firstSec": 0,
+        "lastOnSec": 380.4,
+        "lastEndSec": 382.2,
+        "pitchMin": 43,
+        "pitchMax": 55,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 576000,
+        "timeSignature": [
+          7,
+          4
+        ],
+        "measures": 50
+      }
+    ]
+  },
+  {
+    "title": "Recordando la Muerte de Cristo",
+    "category": "01 - SATB prioritarios",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Recordando la Muerte de Cristo\\Recordando la Muerte de Cristo SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Recordando la Muerte de Cristo\\Recordando la Muerte de Cristo SATB.mid",
+    "sha256": "4890c27dcbbe9e7ea469cc2f612c9ce391ec482bbac5dbea6f664876a0ff22c3",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Recordando la Muerte de Cristo\\Recordando la Muerte de Cristo SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 376,
+        "firstTick": 4320,
+        "lastOnTick": 420480,
+        "lastEndTick": 424800,
+        "firstSec": 3.857139,
+        "lastOnSec": 355.36628700000006,
+        "lastEndSec": 359.86628700000006,
+        "pitchMin": 61,
+        "pitchMax": 78,
+        "pitchMedian": 71,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 342,
+        "firstTick": 15840,
+        "lastOnTick": 420480,
+        "lastEndTick": 424800,
+        "firstSec": 14.142843000000001,
+        "lastOnSec": 355.36628700000006,
+        "lastEndSec": 359.86628700000006,
+        "pitchMin": 61,
+        "pitchMax": 71,
+        "pitchMedian": 66,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 338,
+        "firstTick": 24480,
+        "lastOnTick": 420480,
+        "lastEndTick": 424800,
+        "firstSec": 21.857121000000003,
+        "lastOnSec": 355.36628700000006,
+        "lastEndSec": 359.86628700000006,
+        "pitchMin": 49,
+        "pitchMax": 66,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 340,
+        "firstTick": 24480,
+        "lastOnTick": 420480,
+        "lastEndTick": 424800,
+        "firstSec": 21.857121000000003,
+        "lastOnSec": 355.36628700000006,
+        "lastEndSec": 359.86628700000006,
+        "pitchMin": 42,
+        "pitchMax": 61,
+        "pitchMedian": 52,
+        "overlapNotes": 3,
+        "overlapPercent": 0.8823529411764706
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 420480,
+        "timeSignature": [
+          10,
+          4
+        ],
+        "measures": 18.25
+      }
+    ]
+  },
+  {
+    "title": "Ven a la Fiesta",
+    "category": "01 - SATB prioritarios",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ven a la Fiesta\\Ven a la Fiesta SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Ven a la Fiesta\\Ven a la Fiesta SATB.mid",
+    "sha256": "d8d9c2f60cf8a04b01c80fb95d915c64497967225c93d951ad615b5304a0276d",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ven a la Fiesta\\Ven a la Fiesta SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 155,
+        "firstTick": 0,
+        "lastOnTick": 106564,
+        "lastEndTick": 109440,
+        "firstSec": 0,
+        "lastOnSec": 74.002703775,
+        "lastEndSec": 75.999924,
+        "pitchMin": 60,
+        "pitchMax": 77,
+        "pitchMedian": 68,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 155,
+        "firstTick": 0,
+        "lastOnTick": 106564,
+        "lastEndTick": 109440,
+        "firstSec": 0,
+        "lastOnSec": 74.002703775,
+        "lastEndSec": 75.999924,
+        "pitchMin": 56,
+        "pitchMax": 70,
+        "pitchMedian": 65,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 152,
+        "firstTick": 0,
+        "lastOnTick": 106564,
+        "lastEndTick": 109440,
+        "firstSec": 0,
+        "lastOnSec": 74.002703775,
+        "lastEndSec": 75.999924,
+        "pitchMin": 53,
+        "pitchMax": 63,
+        "pitchMedian": 60,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 152,
+        "firstTick": 0,
+        "lastOnTick": 106564,
+        "lastEndTick": 109440,
+        "firstSec": 0,
+        "lastOnSec": 74.002703775,
+        "lastEndSec": 75.999924,
+        "pitchMin": 42,
+        "pitchMax": 56,
+        "pitchMedian": 49,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Mi Tiempo Ha Llegado",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Tiempo Ha Llegado\\Mi Tiempo Ha Llegado SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Mi Tiempo Ha Llegado\\Mi Tiempo Ha Llegado SATB.mid",
+    "sha256": "af35a4d516471d705ff240f98413359bf26c4ca18d83b22ed3ab96e1d4ea185e",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Tiempo Ha Llegado\\Mi Tiempo Ha Llegado SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 245,
+        "firstTick": 0,
+        "lastOnTick": 263520,
+        "lastEndTick": 267360,
+        "firstSec": 0,
+        "lastOnSec": 234.72878079270833,
+        "lastEndSec": 238.72878079270833,
+        "pitchMin": 59,
+        "pitchMax": 83,
+        "pitchMedian": 72,
+        "overlapNotes": 50,
+        "overlapPercent": 20.408163265306122
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 240,
+        "firstTick": 0,
+        "lastOnTick": 263520,
+        "lastEndTick": 267165,
+        "firstSec": 0,
+        "lastOnSec": 234.72878079270833,
+        "lastEndSec": 238.52565579270833,
+        "pitchMin": 57,
+        "pitchMax": 76,
+        "pitchMedian": 67,
+        "overlapNotes": 42,
+        "overlapPercent": 17.5
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 244,
+        "firstTick": 0,
+        "lastOnTick": 261600,
+        "lastEndTick": 267360,
+        "firstSec": 0,
+        "lastOnSec": 232.72878079270833,
+        "lastEndSec": 238.72878079270833,
+        "pitchMin": 47,
+        "pitchMax": 67,
+        "pitchMedian": 59,
+        "overlapNotes": 45,
+        "overlapPercent": 18.442622950819672
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 215,
+        "firstTick": 0,
+        "lastOnTick": 263520,
+        "lastEndTick": 267360,
+        "firstSec": 0,
+        "lastOnSec": 234.72878079270833,
+        "lastEndSec": 238.72878079270833,
+        "pitchMin": 43,
+        "pitchMax": 60,
+        "pitchMedian": 52,
+        "overlapNotes": 29,
+        "overlapPercent": 13.488372093023257
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0.203125,
+    "endSpreadSec": 0.203125,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 142080,
+        "timeSignature": [
+          5,
+          4
+        ],
+        "measures": 37
+      },
+      {
+        "ticks": 146880,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 38
+      },
+      {
+        "ticks": 173760,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 45
+      },
+      {
+        "ticks": 175680,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 46
+      },
+      {
+        "ticks": 237120,
+        "timeSignature": [
+          11,
+          8
+        ],
+        "measures": 62
+      },
+      {
+        "ticks": 242400,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 62.25
+      },
+      {
+        "ticks": 253920,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 65.25
+      },
+      {
+        "ticks": 259680,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 66.25
+      }
+    ]
+  },
+  {
+    "title": "Más Allá de las Estrellas",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Más Allá de las Estrellas\\Más Allá de las Estrellas SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Más Allá de las Estrellas\\Más Allá de las Estrellas SATB.mid",
+    "sha256": "fb9cc0749f4225d6366ed191f795e5c337b957986b2becf673bd6b96f4d837b6",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Más Allá de las Estrellas\\Más Allá de las Estrellas SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 352,
+        "firstTick": 0,
+        "lastOnTick": 345600,
+        "lastEndTick": 351360,
+        "firstSec": 0,
+        "lastOnSec": 341.9050475,
+        "lastEndSec": 348.4505015,
+        "pitchMin": 60,
+        "pitchMax": 78,
+        "pitchMedian": 70,
+        "overlapNotes": 34,
+        "overlapPercent": 9.659090909090908
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 327,
+        "firstTick": 0,
+        "lastOnTick": 345600,
+        "lastEndTick": 351360,
+        "firstSec": 0,
+        "lastOnSec": 341.9050475,
+        "lastEndSec": 348.4505015,
+        "pitchMin": 59,
+        "pitchMax": 73,
+        "pitchMedian": 65,
+        "overlapNotes": 29,
+        "overlapPercent": 8.868501529051988
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 361,
+        "firstTick": 0,
+        "lastOnTick": 345600,
+        "lastEndTick": 351360,
+        "firstSec": 0,
+        "lastOnSec": 341.9050475,
+        "lastEndSec": 348.4505015,
+        "pitchMin": 51,
+        "pitchMax": 66,
+        "pitchMedian": 60,
+        "overlapNotes": 33,
+        "overlapPercent": 9.141274238227147
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 329,
+        "firstTick": 0,
+        "lastOnTick": 345600,
+        "lastEndTick": 351360,
+        "firstSec": 0,
+        "lastOnSec": 341.9050475,
+        "lastEndSec": 348.4505015,
+        "pitchMin": 41,
+        "pitchMax": 61,
+        "pitchMedian": 53,
+        "overlapNotes": 45,
+        "overlapPercent": 13.677811550151976
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 3840,
+        "timeSignature": [
+          5,
+          4
+        ],
+        "measures": 1
+      },
+      {
+        "ticks": 8640,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 2
+      },
+      {
+        "ticks": 31680,
+        "timeSignature": [
+          5,
+          4
+        ],
+        "measures": 8
+      },
+      {
+        "ticks": 36480,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 9
+      },
+      {
+        "ticks": 86400,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 22
+      },
+      {
+        "ticks": 88320,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 23
+      },
+      {
+        "ticks": 96000,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 25
+      },
+      {
+        "ticks": 97920,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 26
+      },
+      {
+        "ticks": 105600,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 28
+      },
+      {
+        "ticks": 107520,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 29
+      },
+      {
+        "ticks": 115200,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 31
+      },
+      {
+        "ticks": 117120,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 32
+      },
+      {
+        "ticks": 170880,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 46
+      },
+      {
+        "ticks": 172800,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 47
+      },
+      {
+        "ticks": 222720,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 60
+      },
+      {
+        "ticks": 224640,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 61
+      },
+      {
+        "ticks": 232320,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 63
+      },
+      {
+        "ticks": 234240,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 64
+      },
+      {
+        "ticks": 241920,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 66
+      },
+      {
+        "ticks": 243840,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 67
+      },
+      {
+        "ticks": 251520,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 69
+      },
+      {
+        "ticks": 253440,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 70
+      },
+      {
+        "ticks": 345600,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 94
+      }
+    ]
+  },
+  {
+    "title": "A la Sombra de Tus Alas",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A la sombra de tus alas\\3.- A La Sombra De Tus Alas (Consagración)(1).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\A la Sombra de Tus Alas\\3.- A La Sombra De Tus Alas (Consagración)(1).mid",
+    "sha256": "ada9cf89c5d547f5edb9776500710ff9266b7596bedff9d0f0574b9f4a9087a2",
+    "activeTracks": 6,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A la sombra de tus alas\\3.- A La Sombra De Tus Alas (Consagración)(1).mid",
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A la sombra de tus alas\\3.- A La Sombra De Tus Alas (Consagración).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 205,
+        "firstTick": 0,
+        "lastOnTick": 192000,
+        "lastEndTick": 199680,
+        "firstSec": 0,
+        "lastOnSec": 200,
+        "lastEndSec": 208,
+        "pitchMin": 64,
+        "pitchMax": 81,
+        "pitchMedian": 72,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 242,
+        "firstTick": 0,
+        "lastOnTick": 195840,
+        "lastEndTick": 199680,
+        "firstSec": 0,
+        "lastOnSec": 204,
+        "lastEndSec": 208,
+        "pitchMin": 60,
+        "pitchMax": 72,
+        "pitchMedian": 67,
+        "overlapNotes": 1,
+        "overlapPercent": 0.4132231404958678
+      },
+      {
+        "name": "Alto",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 26,
+        "firstTick": 145920,
+        "lastOnTick": 160320,
+        "lastEndTick": 161280,
+        "firstSec": 152,
+        "lastOnSec": 167,
+        "lastEndSec": 168,
+        "pitchMin": 57,
+        "pitchMax": 65,
+        "pitchMedian": 62,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Bajo 1",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 236,
+        "firstTick": 0,
+        "lastOnTick": 195840,
+        "lastEndTick": 199680,
+        "firstSec": 0,
+        "lastOnSec": 204,
+        "lastEndSec": 208,
+        "pitchMin": 52,
+        "pitchMax": 64,
+        "pitchMedian": 59,
+        "overlapNotes": 1,
+        "overlapPercent": 0.423728813559322
+      },
+      {
+        "name": "Bajo 2",
+        "rawTrack": 6,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 232,
+        "firstTick": 0,
+        "lastOnTick": 195840,
+        "lastEndTick": 199680,
+        "firstSec": 0,
+        "lastOnSec": 204,
+        "lastEndSec": 208,
+        "pitchMin": 45,
+        "pitchMax": 60,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Bass",
+        "rawTrack": 7,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 20,
+        "firstTick": 147360,
+        "lastOnTick": 160320,
+        "lastEndTick": 161280,
+        "firstSec": 153.5,
+        "lastOnSec": 167,
+        "lastEndSec": 168,
+        "pitchMin": 45,
+        "pitchMax": 53,
+        "pitchMedian": 50,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 40,
+    "endSpreadSec": 40,
+    "exactFour": false,
+    "similarEnding": false,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Ante Tus Pies",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ante tus pies.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Ante Tus Pies\\Ante tus pies.mid",
+    "sha256": "ac8e9fd4e2e064722a0e62d8a39ae49ee8381c13b92387e8c25cb8e02c9c83b6",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ante tus pies.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Alto 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 105,
+        "firstTick": 1440,
+        "lastOnTick": 90000,
+        "lastEndTick": 92880,
+        "firstSec": 1.5,
+        "lastOnSec": 93.75,
+        "lastEndSec": 96.75,
+        "pitchMin": 59,
+        "pitchMax": 76,
+        "pitchMedian": 69,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Alto 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 105,
+        "firstTick": 1440,
+        "lastOnTick": 90000,
+        "lastEndTick": 92880,
+        "firstSec": 1.5,
+        "lastOnSec": 93.75,
+        "lastEndSec": 96.75,
+        "pitchMin": 59,
+        "pitchMax": 71,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Quintus 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 105,
+        "firstTick": 1440,
+        "lastOnTick": 90000,
+        "lastEndTick": 92160,
+        "firstSec": 1.5,
+        "lastOnSec": 93.75,
+        "lastEndSec": 96,
+        "pitchMin": 54,
+        "pitchMax": 64,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Quintus 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 105,
+        "firstTick": 1440,
+        "lastOnTick": 90000,
+        "lastEndTick": 92160,
+        "firstSec": 1.5,
+        "lastOnSec": 93.75,
+        "lastEndSec": 96,
+        "pitchMin": 45,
+        "pitchMax": 57,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0.75,
+    "endSpreadSec": 0.75,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 43200,
+        "timeSignature": [
+          15,
+          16
+        ],
+        "measures": 3.75
+      },
+      {
+        "ticks": 46800,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 3.8125
+      },
+      {
+        "ticks": 81360,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 15.8125
+      }
+    ]
+  },
+  {
+    "title": "Ciertamente Casa de Dios",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ciertamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Ciertamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid",
+    "sha256": "70e38fc61742d75524ff913d3d9502f62d86f3aa2e725d0206d70dd44b840270",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ciertamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid",
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ciértamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 384,
+        "firstTick": 1920,
+        "lastOnTick": 372480,
+        "lastEndTick": 376800,
+        "firstSec": 1.3333300000000001,
+        "lastOnSec": 250.83276500000005,
+        "lastEndSec": 253.83275750000004,
+        "pitchMin": 60,
+        "pitchMax": 79,
+        "pitchMedian": 69,
+        "overlapNotes": 50,
+        "overlapPercent": 13.020833333333334
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 309,
+        "firstTick": 1920,
+        "lastOnTick": 372480,
+        "lastEndTick": 376800,
+        "firstSec": 1.3333300000000001,
+        "lastOnSec": 250.83276500000005,
+        "lastEndSec": 253.83275750000004,
+        "pitchMin": 60,
+        "pitchMax": 75,
+        "pitchMedian": 64,
+        "overlapNotes": 13,
+        "overlapPercent": 4.207119741100324
+      },
+      {
+        "name": "Tenor 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 360,
+        "firstTick": 1920,
+        "lastOnTick": 372480,
+        "lastEndTick": 376320,
+        "firstSec": 1.3333300000000001,
+        "lastOnSec": 250.83276500000005,
+        "lastEndSec": 253.49942500000006,
+        "pitchMin": 48,
+        "pitchMax": 67,
+        "pitchMedian": 58,
+        "overlapNotes": 38,
+        "overlapPercent": 10.555555555555555
+      },
+      {
+        "name": "Tenor 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 290,
+        "firstTick": 1920,
+        "lastOnTick": 372480,
+        "lastEndTick": 376320,
+        "firstSec": 1.3333300000000001,
+        "lastOnSec": 250.83276500000005,
+        "lastEndSec": 253.49942500000006,
+        "pitchMin": 46,
+        "pitchMax": 63,
+        "pitchMedian": 51,
+        "overlapNotes": 4,
+        "overlapPercent": 1.3793103448275863
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0.5,
+    "endSpreadSec": 0.33333249999998316,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 14400,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 5
+      },
+      {
+        "ticks": 16320,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 6
+      },
+      {
+        "ticks": 54720,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 16
+      },
+      {
+        "ticks": 56640,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 17
+      },
+      {
+        "ticks": 64320,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 19
+      },
+      {
+        "ticks": 67200,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 20
+      },
+      {
+        "ticks": 97920,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 28
+      },
+      {
+        "ticks": 99840,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 29
+      },
+      {
+        "ticks": 105600,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 31
+      },
+      {
+        "ticks": 117120,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 34
+      },
+      {
+        "ticks": 119040,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 35
+      },
+      {
+        "ticks": 138240,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 40
+      },
+      {
+        "ticks": 141120,
+        "timeSignature": [
+          1,
+          4
+        ],
+        "measures": 41
+      },
+      {
+        "ticks": 142080,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 42
+      },
+      {
+        "ticks": 188160,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 54
+      },
+      {
+        "ticks": 190080,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 55
+      },
+      {
+        "ticks": 197760,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 57
+      },
+      {
+        "ticks": 199680,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 58
+      },
+      {
+        "ticks": 218880,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 63
+      },
+      {
+        "ticks": 221760,
+        "timeSignature": [
+          1,
+          4
+        ],
+        "measures": 64
+      },
+      {
+        "ticks": 222720,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 65
+      },
+      {
+        "ticks": 288000,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 82
+      },
+      {
+        "ticks": 289920,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 83
+      },
+      {
+        "ticks": 309120,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 88
+      },
+      {
+        "ticks": 312000,
+        "timeSignature": [
+          1,
+          4
+        ],
+        "measures": 89
+      },
+      {
+        "ticks": 312960,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 90
+      },
+      {
+        "ticks": 351360,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 100
+      },
+      {
+        "ticks": 353280,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 101
+      },
+      {
+        "ticks": 372480,
+        "timeSignature": [
+          8,
+          4
+        ],
+        "measures": 106
+      }
+    ]
+  },
+  {
+    "title": "Día Venturoso",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Día Venturoso\\Día Venturoso (Sep.).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Día Venturoso\\Día Venturoso (Sep.).mid",
+    "sha256": "1d50085006f935d56550ede0c875651884109b165e22d972d1e394934f8309c6",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Día Venturoso\\Día Venturoso (Sep.).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Piano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 132,
+        "firstTick": 0,
+        "lastOnTick": 184320,
+        "lastEndTick": 190080,
+        "firstSec": 0,
+        "lastOnSec": 121.262976,
+        "lastEndSec": 125.052444,
+        "pitchMin": 60,
+        "pitchMax": 72,
+        "pitchMedian": 69,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 140,
+        "firstTick": 0,
+        "lastOnTick": 187200,
+        "lastEndTick": 190080,
+        "firstSec": 0,
+        "lastOnSec": 123.15771,
+        "lastEndSec": 125.052444,
+        "pitchMin": 58,
+        "pitchMax": 67,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 152,
+        "firstTick": 0,
+        "lastOnTick": 187200,
+        "lastEndTick": 190080,
+        "firstSec": 0,
+        "lastOnSec": 123.15771,
+        "lastEndSec": 125.052444,
+        "pitchMin": 55,
+        "pitchMax": 62,
+        "pitchMedian": 60,
+        "overlapNotes": 2,
+        "overlapPercent": 1.3157894736842106
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 138,
+        "firstTick": 0,
+        "lastOnTick": 184320,
+        "lastEndTick": 190080,
+        "firstSec": 0,
+        "lastOnSec": 121.262976,
+        "lastEndSec": 125.052444,
+        "pitchMin": 48,
+        "pitchMax": 55,
+        "pitchMedian": 53,
+        "overlapNotes": 2,
+        "overlapPercent": 1.4492753623188406
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "El Alfarero",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Alfarero\\El Alfarero SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Alfarero\\El Alfarero SATB.mid",
+    "sha256": "0da6cd92849ad6a5cf5bfacd0210f8433c42a83ed8b642a44364fe9d21e034c9",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Alfarero\\El Alfarero SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Alto 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 282,
+        "firstTick": 0,
+        "lastOnTick": 395520,
+        "lastEndTick": 401280,
+        "firstSec": 0,
+        "lastOnSec": 309,
+        "lastEndSec": 316.496875,
+        "pitchMin": 59,
+        "pitchMax": 73,
+        "pitchMedian": 68,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Alto 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 306,
+        "firstTick": 0,
+        "lastOnTick": 395520,
+        "lastEndTick": 401280,
+        "firstSec": 0,
+        "lastOnSec": 309,
+        "lastEndSec": 316.496875,
+        "pitchMin": 59,
+        "pitchMax": 69,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Quintus 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 322,
+        "firstTick": 0,
+        "lastOnTick": 395520,
+        "lastEndTick": 401280,
+        "firstSec": 0,
+        "lastOnSec": 309,
+        "lastEndSec": 316.496875,
+        "pitchMin": 54,
+        "pitchMax": 64,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Quintus 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 286,
+        "firstTick": 0,
+        "lastOnTick": 395520,
+        "lastEndTick": 401280,
+        "firstSec": 0,
+        "lastOnSec": 309,
+        "lastEndSec": 316.496875,
+        "pitchMin": 45,
+        "pitchMax": 57,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 145920,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 38
+      },
+      {
+        "ticks": 147840,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 39
+      }
+    ]
+  },
+  {
+    "title": "El Cántico de Moisés",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Cántico de Moisés\\El Cántico de Moisés SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Cántico de Moisés\\El Cántico de Moisés SATB.mid",
+    "sha256": "02c54fce085c6fa5dcaa85ba2a7690d0bbabeeb93ea6ed5be73862df9f5338d4",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Cántico de Moisés\\El Cántico de Moisés SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 583,
+        "firstTick": 0,
+        "lastOnTick": 460800,
+        "lastEndTick": 464640,
+        "firstSec": 0,
+        "lastOnSec": 364.77138206250004,
+        "lastEndSec": 370.77138206250004,
+        "pitchMin": 62,
+        "pitchMax": 83,
+        "pitchMedian": 74,
+        "overlapNotes": 1,
+        "overlapPercent": 0.17152658662092624
+      },
+      {
+        "name": "Alto",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 552,
+        "firstTick": 0,
+        "lastOnTick": 460800,
+        "lastEndTick": 464640,
+        "firstSec": 0,
+        "lastOnSec": 364.77138206250004,
+        "lastEndSec": 370.77138206250004,
+        "pitchMin": 59,
+        "pitchMax": 76,
+        "pitchMedian": 67,
+        "overlapNotes": 2,
+        "overlapPercent": 0.36231884057971014
+      },
+      {
+        "name": "Tenor",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 525,
+        "firstTick": 0,
+        "lastOnTick": 460800,
+        "lastEndTick": 464640,
+        "firstSec": 0,
+        "lastOnSec": 364.77138206250004,
+        "lastEndSec": 370.77138206250004,
+        "pitchMin": 54,
+        "pitchMax": 66,
+        "pitchMedian": 61,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Baritone",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 510,
+        "firstTick": 0,
+        "lastOnTick": 460800,
+        "lastEndTick": 464640,
+        "firstSec": 0,
+        "lastOnSec": 364.77138206250004,
+        "lastEndSec": 370.77138206250004,
+        "pitchMin": 42,
+        "pitchMax": 64,
+        "pitchMedian": 52,
+        "overlapNotes": 2,
+        "overlapPercent": 0.39215686274509803
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 49920,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 13
+      },
+      {
+        "ticks": 51840,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 14
+      },
+      {
+        "ticks": 336000,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 88
+      },
+      {
+        "ticks": 337920,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 89
+      }
+    ]
+  },
+  {
+    "title": "El Pacto con Dios",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Pacto con Dios\\El Pacto con Dios (SATB).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Pacto con Dios\\El Pacto con Dios (SATB).mid",
+    "sha256": "52eba12edd362e3231e3689cd6ae8fad8ea2a70bebbe3bbc7eb1761672399347",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Pacto con Dios\\El Pacto con Dios (SATB).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Piano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 190,
+        "firstTick": 2880,
+        "lastOnTick": 167040,
+        "lastEndTick": 172800,
+        "firstSec": 1.9999950000000002,
+        "lastOnSec": 115.99971000000001,
+        "lastEndSec": 119.99970000000002,
+        "pitchMin": 61,
+        "pitchMax": 78,
+        "pitchMedian": 67,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 189,
+        "firstTick": 2880,
+        "lastOnTick": 167040,
+        "lastEndTick": 172800,
+        "firstSec": 1.9999950000000002,
+        "lastOnSec": 115.99971000000001,
+        "lastEndSec": 119.99970000000002,
+        "pitchMin": 57,
+        "pitchMax": 69,
+        "pitchMedian": 62,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 206,
+        "firstTick": 2880,
+        "lastOnTick": 167040,
+        "lastEndTick": 172800,
+        "firstSec": 1.9999950000000002,
+        "lastOnSec": 115.99971000000001,
+        "lastEndSec": 119.99970000000002,
+        "pitchMin": 52,
+        "pitchMax": 66,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 208,
+        "firstTick": 2880,
+        "lastOnTick": 167040,
+        "lastEndTick": 172800,
+        "firstSec": 1.9999950000000002,
+        "lastOnSec": 115.99971000000001,
+        "lastEndSec": 119.99970000000002,
+        "pitchMin": 43,
+        "pitchMax": 61,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 169920,
+        "timeSignature": [
+          7,
+          4
+        ],
+        "measures": 14.75
+      }
+    ]
+  },
+  {
+    "title": "El Ángel Que Juan Vio",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Ángel que Juan vió\\El Ángel que Juan vió (S).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Ángel Que Juan Vio\\El Ángel que Juan vió (S).mid",
+    "sha256": "bd52e6c1eb1f59724a724cc78beece6c744a3f9025ad45ac98917a3d412edfeb",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Ángel que Juan vió\\El Ángel que Juan vió (S).mid"
+    ],
+    "tracks": [
+      {
+        "name": "S A 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 319,
+        "firstTick": 1440,
+        "lastOnTick": 203520,
+        "lastEndTick": 207360,
+        "firstSec": 1.5,
+        "lastOnSec": 212,
+        "lastEndSec": 216,
+        "pitchMin": 58,
+        "pitchMax": 75,
+        "pitchMedian": 70,
+        "overlapNotes": 2,
+        "overlapPercent": 0.6269592476489029
+      },
+      {
+        "name": "S A 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 286,
+        "firstTick": 1440,
+        "lastOnTick": 203520,
+        "lastEndTick": 207360,
+        "firstSec": 1.5,
+        "lastOnSec": 212,
+        "lastEndSec": 216,
+        "pitchMin": 56,
+        "pitchMax": 73,
+        "pitchMedian": 65,
+        "overlapNotes": 7,
+        "overlapPercent": 2.4475524475524475
+      },
+      {
+        "name": "Coro 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 263,
+        "firstTick": 3840,
+        "lastOnTick": 203520,
+        "lastEndTick": 207360,
+        "firstSec": 4,
+        "lastOnSec": 212,
+        "lastEndSec": 216,
+        "pitchMin": 51,
+        "pitchMax": 65,
+        "pitchMedian": 58,
+        "overlapNotes": 6,
+        "overlapPercent": 2.2813688212927756
+      },
+      {
+        "name": "Coro 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 258,
+        "firstTick": 3840,
+        "lastOnTick": 203520,
+        "lastEndTick": 207360,
+        "firstSec": 4,
+        "lastOnSec": 212,
+        "lastEndSec": 216,
+        "pitchMin": 44,
+        "pitchMax": 61,
+        "pitchMedian": 51,
+        "overlapNotes": 7,
+        "overlapPercent": 2.7131782945736433
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Eterno Dios",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Eterno Dios\\Eterno Dios.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Eterno Dios\\Eterno Dios.mid",
+    "sha256": "45d9dae274aad326d5683cd6383cfb759d56c542c4f8227004dd1fd968fbd0e2",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Eterno Dios\\Eterno Dios.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Piano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 87,
+        "firstTick": 0,
+        "lastOnTick": 80640,
+        "lastEndTick": 84480,
+        "firstSec": 0,
+        "lastOnSec": 77.5383,
+        "lastEndSec": 81.23060000000001,
+        "pitchMin": 66,
+        "pitchMax": 78,
+        "pitchMedian": 73,
+        "overlapNotes": 2,
+        "overlapPercent": 2.2988505747126435
+      },
+      {
+        "name": "Viola",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 54,
+        "firstTick": 0,
+        "lastOnTick": 80640,
+        "lastEndTick": 84480,
+        "firstSec": 0,
+        "lastOnSec": 77.5383,
+        "lastEndSec": 81.23060000000001,
+        "pitchMin": 59,
+        "pitchMax": 67,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Violonchelo 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 55,
+        "firstTick": 0,
+        "lastOnTick": 80640,
+        "lastEndTick": 84480,
+        "firstSec": 0,
+        "lastOnSec": 77.5383,
+        "lastEndSec": 81.23060000000001,
+        "pitchMin": 50,
+        "pitchMax": 57,
+        "pitchMedian": 55,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Violonchelo 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 57,
+        "firstTick": 0,
+        "lastOnTick": 80640,
+        "lastEndTick": 84480,
+        "firstSec": 0,
+        "lastOnSec": 77.5383,
+        "lastEndSec": 81.23060000000001,
+        "pitchMin": 43,
+        "pitchMax": 57,
+        "pitchMedian": 47,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Fuente de Salvación",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fuente de Salvación\\76 - Fuente de Salvación (Evangelización).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Fuente de Salvación\\76 - Fuente de Salvación (Evangelización).mid",
+    "sha256": "9f8b289366b87256b364545e5508f07608233096d8766e9021c78abd848a9ba8",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fuente de Salvación\\76 - Fuente de Salvación (Evangelización).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 303,
+        "firstTick": 480,
+        "lastOnTick": 247680,
+        "lastEndTick": 251520,
+        "firstSec": 0.352941,
+        "lastOnSec": 182.11755599999998,
+        "lastEndSec": 184.941084,
+        "pitchMin": 64,
+        "pitchMax": 74,
+        "pitchMedian": 69,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 303,
+        "firstTick": 480,
+        "lastOnTick": 247680,
+        "lastEndTick": 251520,
+        "firstSec": 0.352941,
+        "lastOnSec": 182.11755599999998,
+        "lastEndSec": 184.941084,
+        "pitchMin": 61,
+        "pitchMax": 69,
+        "pitchMedian": 66,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Tenor 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 303,
+        "firstTick": 480,
+        "lastOnTick": 247680,
+        "lastEndTick": 251520,
+        "firstSec": 0.352941,
+        "lastOnSec": 182.11755599999998,
+        "lastEndSec": 184.941084,
+        "pitchMin": 57,
+        "pitchMax": 66,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Bajo",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 311,
+        "firstTick": 480,
+        "lastOnTick": 247680,
+        "lastEndTick": 251520,
+        "firstSec": 0.352941,
+        "lastOnSec": 182.11755599999998,
+        "lastEndSec": 184.941084,
+        "pitchMin": 45,
+        "pitchMax": 57,
+        "pitchMedian": 50,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 1920,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 1
+      },
+      {
+        "ticks": 59520,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 16
+      },
+      {
+        "ticks": 63360,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 18
+      },
+      {
+        "ticks": 120960,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 33
+      },
+      {
+        "ticks": 124800,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 35
+      },
+      {
+        "ticks": 182400,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 50
+      },
+      {
+        "ticks": 186240,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 52
+      },
+      {
+        "ticks": 243840,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 67
+      },
+      {
+        "ticks": 247680,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 69
+      }
+    ]
+  },
+  {
+    "title": "La Luz de Aquella Ciudad",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\La Luz de Aquella Ciudad\\La Luz de Aquella Ciudad SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\La Luz de Aquella Ciudad\\La Luz de Aquella Ciudad SATB.mid",
+    "sha256": "44a3300d2b989bf5254ebbe06493a80226ba2c502c67a449a2f5ba5dac22f350",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\La Luz de Aquella Ciudad\\La Luz de Aquella Ciudad SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "  1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 282,
+        "firstTick": 1920,
+        "lastOnTick": 321600,
+        "lastEndTick": 327360,
+        "firstSec": 1.333332,
+        "lastOnSec": 211.33323000000001,
+        "lastEndSec": 214.93323,
+        "pitchMin": 57,
+        "pitchMax": 82,
+        "pitchMedian": 66,
+        "overlapNotes": 32,
+        "overlapPercent": 11.347517730496454
+      },
+      {
+        "name": "  2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 281,
+        "firstTick": 1920,
+        "lastOnTick": 321600,
+        "lastEndTick": 327360,
+        "firstSec": 1.333332,
+        "lastOnSec": 211.33323000000001,
+        "lastEndSec": 214.93323,
+        "pitchMin": 57,
+        "pitchMax": 73,
+        "pitchMedian": 64,
+        "overlapNotes": 26,
+        "overlapPercent": 9.252669039145907
+      },
+      {
+        "name": "  1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 187,
+        "firstTick": 28800,
+        "lastOnTick": 321600,
+        "lastEndTick": 327360,
+        "firstSec": 19.99998,
+        "lastOnSec": 211.33323000000001,
+        "lastEndSec": 214.93323,
+        "pitchMin": 50,
+        "pitchMax": 66,
+        "pitchMedian": 61,
+        "overlapNotes": 67,
+        "overlapPercent": 35.82887700534759
+      },
+      {
+        "name": "  2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 196,
+        "firstTick": 28800,
+        "lastOnTick": 321600,
+        "lastEndTick": 327360,
+        "firstSec": 19.99998,
+        "lastOnSec": 211.33323000000001,
+        "lastEndSec": 214.93323,
+        "pitchMin": 45,
+        "pitchMax": 62,
+        "pitchMedian": 56,
+        "overlapNotes": 66,
+        "overlapPercent": 33.673469387755105
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 95040,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 33
+      },
+      {
+        "ticks": 148800,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 47
+      },
+      {
+        "ticks": 200640,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 65
+      },
+      {
+        "ticks": 304320,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 92
+      },
+      {
+        "ticks": 327360,
+        "timeSignature": [
+          7,
+          4
+        ],
+        "measures": 100
+      }
+    ]
+  },
+  {
+    "title": "Mi Esperanza es en Ti",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Esperanza es en Ti\\Mi Esperanza es en Ti SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Mi Esperanza es en Ti\\Mi Esperanza es en Ti SATB.mid",
+    "sha256": "40df2051d188fe775399f3d932de533b9b66d5e4006292ca13c3a05b59284320",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Esperanza es en Ti\\Mi Esperanza es en Ti SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "  1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 291,
+        "firstTick": 5760,
+        "lastOnTick": 322560,
+        "lastEndTick": 325920,
+        "firstSec": 5.142852,
+        "lastOnSec": 276.3015243427083,
+        "lastEndSec": 279.8563841552083,
+        "pitchMin": 63,
+        "pitchMax": 77,
+        "pitchMedian": 70,
+        "overlapNotes": 4,
+        "overlapPercent": 1.3745704467353952
+      },
+      {
+        "name": "  2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 291,
+        "firstTick": 5760,
+        "lastOnTick": 322560,
+        "lastEndTick": 325920,
+        "firstSec": 5.142852,
+        "lastOnSec": 276.3015243427083,
+        "lastEndSec": 279.8563841552083,
+        "pitchMin": 58,
+        "pitchMax": 72,
+        "pitchMedian": 63,
+        "overlapNotes": 10,
+        "overlapPercent": 3.4364261168384878
+      },
+      {
+        "name": "  1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 305,
+        "firstTick": 1440,
+        "lastOnTick": 322560,
+        "lastEndTick": 325920,
+        "firstSec": 1.285713,
+        "lastOnSec": 276.3015243427083,
+        "lastEndSec": 279.8563841552083,
+        "pitchMin": 51,
+        "pitchMax": 65,
+        "pitchMedian": 58,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "  2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 304,
+        "firstTick": 1440,
+        "lastOnTick": 322560,
+        "lastEndTick": 325920,
+        "firstSec": 1.285713,
+        "lastOnSec": 276.3015243427083,
+        "lastEndSec": 279.8563841552083,
+        "pitchMin": 43,
+        "pitchMax": 61,
+        "pitchMedian": 51,
+        "overlapNotes": 2,
+        "overlapPercent": 0.6578947368421053
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 324480,
+        "timeSignature": [
+          3,
+          8
+        ],
+        "measures": 169
+      }
+    ]
+  },
+  {
+    "title": "No Puedo Imaginar",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\No Puedo Imaginar.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\No Puedo Imaginar\\No Puedo Imaginar.mid",
+    "sha256": "efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132",
+    "activeTracks": 5,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\No Puedo Imaginar.mid"
+    ],
+    "tracks": [
+      {
+        "name": "\u0000",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 632,
+        "firstTick": 96,
+        "lastOnTick": 41473,
+        "lastEndTick": 42048,
+        "firstSec": 0.5454545000000001,
+        "lastOnSec": 235.64202581770837,
+        "lastEndSec": 242.1761161822917,
+        "pitchMin": 58,
+        "pitchMax": 77,
+        "pitchMedian": 67,
+        "overlapNotes": 293,
+        "overlapPercent": 46.360759493670884
+      },
+      {
+        "name": "\u0000",
+        "rawTrack": 7,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 597,
+        "firstTick": 96,
+        "lastOnTick": 41473,
+        "lastEndTick": 42048,
+        "firstSec": 0.5454545000000001,
+        "lastOnSec": 235.64202581770837,
+        "lastEndSec": 242.1761161822917,
+        "pitchMin": 43,
+        "pitchMax": 67,
+        "pitchMedian": 55,
+        "overlapNotes": 288,
+        "overlapPercent": 48.24120603015076
+      },
+      {
+        "name": "\u0000",
+        "rawTrack": 8,
+        "hangingNotes": 0,
+        "programs": [],
+        "instrument": "",
+        "notes": 4,
+        "firstTick": 12768,
+        "lastOnTick": 33696,
+        "lastEndTick": 33888,
+        "firstSec": 72.5454485,
+        "lastOnSec": 191.45452950000004,
+        "lastEndSec": 192.54543850000002,
+        "pitchMin": 53,
+        "pitchMax": 57,
+        "pitchMedian": 57,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "\u0000",
+        "rawTrack": 9,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 20,
+        "firstTick": 20928,
+        "lastOnTick": 25488,
+        "lastEndTick": 25536,
+        "firstSec": 118.90908100000001,
+        "lastOnSec": 144.81816975,
+        "lastEndSec": 145.090897,
+        "pitchMin": 53,
+        "pitchMax": 62,
+        "pitchMedian": 58,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "\u0000",
+        "rawTrack": 10,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 21,
+        "firstTick": 20928,
+        "lastOnTick": 25488,
+        "lastEndTick": 25536,
+        "firstSec": 118.90908100000001,
+        "lastOnSec": 144.81816975,
+        "lastEndSec": 145.090897,
+        "pitchMin": 46,
+        "pitchMax": 55,
+        "pitchMedian": 51,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 192,
+    "endSpreadBeats": 86,
+    "endSpreadSec": 97.0852191822917,
+    "exactFour": false,
+    "similarEnding": false,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          1,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 193,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 1.0052083333333333
+      },
+      {
+        "ticks": 2497,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 4.005208333333333
+      },
+      {
+        "ticks": 3649,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 5.005208333333333
+      },
+      {
+        "ticks": 12865,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 17.005208333333332
+      },
+      {
+        "ticks": 14017,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 18.005208333333332
+      },
+      {
+        "ticks": 20162,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 26.006510416666664
+      },
+      {
+        "ticks": 20738,
+        "timeSignature": [
+          1,
+          4
+        ],
+        "measures": 27.006510416666664
+      },
+      {
+        "ticks": 20929,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 28.001302083333332
+      },
+      {
+        "ticks": 27073,
+        "timeSignature": [
+          5,
+          4
+        ],
+        "measures": 36.00130208333333
+      },
+      {
+        "ticks": 28033,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 37.00130208333333
+      },
+      {
+        "ticks": 33409,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 44.00130208333333
+      },
+      {
+        "ticks": 34561,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 45.00130208333333
+      }
+    ]
+  },
+  {
+    "title": "Oh Salvador Rey Nuestro",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Oh Salvador Rey Nuestro.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Oh Salvador Rey Nuestro\\Oh Salvador Rey Nuestro.mid",
+    "sha256": "b19b1b003e48ad41c388d380dde54dae3ca0945368170333a0d751a97fc73cca",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Oh Salvador Rey Nuestro.mid"
+    ],
+    "tracks": [
+      {
+        "name": "\u0000",
+        "rawTrack": 6,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 228,
+        "firstTick": 480,
+        "lastOnTick": 36864,
+        "lastEndTick": 37632,
+        "firstSec": 2.7272725,
+        "lastOnSec": 209.45452800000004,
+        "lastEndSec": 213.81816400000002,
+        "pitchMin": 59,
+        "pitchMax": 79,
+        "pitchMedian": 67,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "\u0000",
+        "rawTrack": 7,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 267,
+        "firstTick": 480,
+        "lastOnTick": 36864,
+        "lastEndTick": 37632,
+        "firstSec": 2.7272725,
+        "lastOnSec": 209.45452800000004,
+        "lastEndSec": 213.81816400000002,
+        "pitchMin": 57,
+        "pitchMax": 78,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "\u0000",
+        "rawTrack": 8,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 209,
+        "firstTick": 480,
+        "lastOnTick": 36864,
+        "lastEndTick": 37632,
+        "firstSec": 2.7272725,
+        "lastOnSec": 209.45452800000004,
+        "lastEndSec": 213.81816400000002,
+        "pitchMin": 62,
+        "pitchMax": 81,
+        "pitchMedian": 71,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "\u0000",
+        "rawTrack": 9,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 265,
+        "firstTick": 480,
+        "lastOnTick": 36864,
+        "lastEndTick": 37632,
+        "firstSec": 2.7272725,
+        "lastOnSec": 209.45452800000004,
+        "lastEndSec": 213.81816400000002,
+        "pitchMin": 43,
+        "pitchMax": 60,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 192,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Te Bendecimos",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Bendecimos\\Te Bendecimos corregir.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Te Bendecimos\\Te Bendecimos corregir.mid",
+    "sha256": "64dca746f60e65e90003f89b14a26a4df1840c8ef9c2fe0c21181a3924c3133f",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Bendecimos\\Te Bendecimos corregir.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 196,
+        "firstTick": 0,
+        "lastOnTick": 310080,
+        "lastEndTick": 313920,
+        "firstSec": 0,
+        "lastOnSec": 283.9448926520833,
+        "lastEndSec": 291.32565849375,
+        "pitchMin": 61,
+        "pitchMax": 78,
+        "pitchMedian": 69,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Alto",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 205,
+        "firstTick": 0,
+        "lastOnTick": 310080,
+        "lastEndTick": 313920,
+        "firstSec": 0,
+        "lastOnSec": 283.9448926520833,
+        "lastEndSec": 291.32565849375,
+        "pitchMin": 59,
+        "pitchMax": 73,
+        "pitchMedian": 66,
+        "overlapNotes": 10,
+        "overlapPercent": 4.878048780487805
+      },
+      {
+        "name": "Quintus",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 205,
+        "firstTick": 0,
+        "lastOnTick": 310080,
+        "lastEndTick": 313920,
+        "firstSec": 0,
+        "lastOnSec": 283.9448926520833,
+        "lastEndSec": 291.32565849375,
+        "pitchMin": 49,
+        "pitchMax": 66,
+        "pitchMedian": 59,
+        "overlapNotes": 12,
+        "overlapPercent": 5.853658536585366
+      },
+      {
+        "name": "Quintus",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 177,
+        "firstTick": 0,
+        "lastOnTick": 310080,
+        "lastEndTick": 313920,
+        "firstSec": 0,
+        "lastOnSec": 283.9448926520833,
+        "lastEndSec": 291.32565849375,
+        "pitchMin": 45,
+        "pitchMax": 62,
+        "pitchMedian": 53,
+        "overlapNotes": 3,
+        "overlapPercent": 1.694915254237288
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 249600,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 65
+      },
+      {
+        "ticks": 255360,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 66
+      },
+      {
+        "ticks": 289920,
+        "timeSignature": [
+          5,
+          4
+        ],
+        "measures": 75
+      },
+      {
+        "ticks": 294720,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 76
+      }
+    ]
+  },
+  {
+    "title": "Un Gran Consolador",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Un Gran Consolador\\Un Gran Consolador SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Un Gran Consolador\\Un Gran Consolador SATB.mid",
+    "sha256": "a95929404889c2ce5bf15cff25a4edd138d58dabad5bba3c9d516fc82910b5fa",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Un Gran Consolador\\Un Gran Consolador SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 413,
+        "firstTick": 0,
+        "lastOnTick": 424800,
+        "lastEndTick": 429120,
+        "firstSec": 0,
+        "lastOnSec": 294.99970499999995,
+        "lastEndSec": 297.99970199999996,
+        "pitchMin": 58,
+        "pitchMax": 77,
+        "pitchMedian": 68,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 404,
+        "firstTick": 0,
+        "lastOnTick": 424800,
+        "lastEndTick": 429120,
+        "firstSec": 0,
+        "lastOnSec": 294.99970499999995,
+        "lastEndSec": 297.99970199999996,
+        "pitchMin": 56,
+        "pitchMax": 73,
+        "pitchMedian": 63,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Bar�tono 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 406,
+        "firstTick": 0,
+        "lastOnTick": 424800,
+        "lastEndTick": 429120,
+        "firstSec": 0,
+        "lastOnSec": 294.99970499999995,
+        "lastEndSec": 297.99970199999996,
+        "pitchMin": 48,
+        "pitchMax": 63,
+        "pitchMedian": 56,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Bar�tono 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 402,
+        "firstTick": 0,
+        "lastOnTick": 424800,
+        "lastEndTick": 429120,
+        "firstSec": 0,
+        "lastOnSec": 294.99970499999995,
+        "lastEndSec": 297.99970199999996,
+        "pitchMin": 41,
+        "pitchMax": 56,
+        "pitchMedian": 51,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 90720,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 5.25
+      },
+      {
+        "ticks": 93600,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 5.5
+      },
+      {
+        "ticks": 110880,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 6.5
+      },
+      {
+        "ticks": 113760,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 6.75
+      },
+      {
+        "ticks": 118080,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 7
+      },
+      {
+        "ticks": 120960,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 7.25
+      },
+      {
+        "ticks": 228960,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 13.5
+      },
+      {
+        "ticks": 231840,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 13.75
+      },
+      {
+        "ticks": 249120,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 14.75
+      },
+      {
+        "ticks": 252000,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 15
+      },
+      {
+        "ticks": 256320,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 15.25
+      },
+      {
+        "ticks": 259200,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 15.5
+      },
+      {
+        "ticks": 367200,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 21.75
+      },
+      {
+        "ticks": 370080,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 22
+      },
+      {
+        "ticks": 387360,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 23
+      },
+      {
+        "ticks": 390240,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 23.25
+      },
+      {
+        "ticks": 394560,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 23.5
+      },
+      {
+        "ticks": 397440,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 23.75
+      },
+      {
+        "ticks": 414720,
+        "timeSignature": [
+          8,
+          8
+        ],
+        "measures": 24.75
+      },
+      {
+        "ticks": 414720,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 24.75
+      },
+      {
+        "ticks": 420480,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 25.75
+      },
+      {
+        "ticks": 424800,
+        "timeSignature": [
+          17,
+          8
+        ],
+        "measures": 26
+      }
+    ]
+  },
+  {
+    "title": "Ángel de Dios",
+    "category": "02 - Revisar voces o solapamientos",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ángel de Dios\\Ángel de Dios (SATB).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Ángel de Dios\\Ángel de Dios (SATB).mid",
+    "sha256": "58e1f9ee39eb65a688e2681045f4b52488064142291f9082c79ab19704c700db",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ángel de Dios\\Ángel de Dios (SATB).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 133,
+        "firstTick": 1920,
+        "lastOnTick": 97920,
+        "lastEndTick": 100800,
+        "firstSec": 1.333332,
+        "lastOnSec": 67.999932,
+        "lastEndSec": 69.99992999999999,
+        "pitchMin": 61,
+        "pitchMax": 79,
+        "pitchMedian": 69,
+        "overlapNotes": 1,
+        "overlapPercent": 0.7518796992481203
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 135,
+        "firstTick": 1920,
+        "lastOnTick": 97920,
+        "lastEndTick": 100800,
+        "firstSec": 1.333332,
+        "lastOnSec": 67.999932,
+        "lastEndSec": 69.99992999999999,
+        "pitchMin": 59,
+        "pitchMax": 71,
+        "pitchMedian": 64,
+        "overlapNotes": 1,
+        "overlapPercent": 0.7407407407407407
+      },
+      {
+        "name": "Bajo 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 136,
+        "firstTick": 1920,
+        "lastOnTick": 97920,
+        "lastEndTick": 100800,
+        "firstSec": 1.333332,
+        "lastOnSec": 67.999932,
+        "lastEndSec": 69.99992999999999,
+        "pitchMin": 54,
+        "pitchMax": 64,
+        "pitchMedian": 59,
+        "overlapNotes": 2,
+        "overlapPercent": 1.4705882352941178
+      },
+      {
+        "name": "Bajo 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 136,
+        "firstTick": 1920,
+        "lastOnTick": 97920,
+        "lastEndTick": 100800,
+        "firstSec": 1.333332,
+        "lastOnSec": 67.999932,
+        "lastEndSec": 69.99992999999999,
+        "pitchMin": 45,
+        "pitchMax": 57,
+        "pitchMedian": 50,
+        "overlapNotes": 2,
+        "overlapPercent": 1.4705882352941178
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Coronadle Rey",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Coronadle Rey\\Coronadle Rey.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Coronadle Rey\\Coronadle Rey.mid",
+    "sha256": "3090aeab55f76a3f4e624e1a5380bcffcc150a6ea3d27976abc315c64b80d2f1",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Coronadle Rey\\Coronadle Rey.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 341,
+        "firstTick": 2880,
+        "lastOnTick": 316800,
+        "lastEndTick": 326400,
+        "firstSec": 1.5,
+        "lastOnSec": 165,
+        "lastEndSec": 170,
+        "pitchMin": 62,
+        "pitchMax": 81,
+        "pitchMedian": 71,
+        "overlapNotes": 142,
+        "overlapPercent": 41.64222873900293
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 226,
+        "firstTick": 2880,
+        "lastOnTick": 316800,
+        "lastEndTick": 326400,
+        "firstSec": 1.5,
+        "lastOnSec": 165,
+        "lastEndSec": 170,
+        "pitchMin": 59,
+        "pitchMax": 74,
+        "pitchMedian": 67,
+        "overlapNotes": 30,
+        "overlapPercent": 13.274336283185841
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 358,
+        "firstTick": 2880,
+        "lastOnTick": 320640,
+        "lastEndTick": 326400,
+        "firstSec": 1.5,
+        "lastOnSec": 167,
+        "lastEndSec": 170,
+        "pitchMin": 50,
+        "pitchMax": 69,
+        "pitchMedian": 60,
+        "overlapNotes": 152,
+        "overlapPercent": 42.45810055865922
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 277,
+        "firstTick": 2880,
+        "lastOnTick": 320640,
+        "lastEndTick": 326400,
+        "firstSec": 1.5,
+        "lastOnSec": 167,
+        "lastEndSec": 170,
+        "pitchMin": 43,
+        "pitchMax": 62,
+        "pitchMedian": 55,
+        "overlapNotes": 60,
+        "overlapPercent": 21.660649819494584
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 203520,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 53
+      },
+      {
+        "ticks": 312960,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 91
+      },
+      {
+        "ticks": 320640,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 93
+      }
+    ]
+  },
+  {
+    "title": "El Latido de tu Corazón",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Latido de tu Corazón\\El Latido de tu Corazon E.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\El Latido de tu Corazón\\El Latido de tu Corazon E.mid",
+    "sha256": "107ae1ca96dff00f6ad0bb11345533d2833c4ca22f3344545c61ff64bc454cee",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Latido de tu Corazón\\El Latido de tu Corazon E.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Piano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 276,
+        "firstTick": 480,
+        "lastOnTick": 290880,
+        "lastEndTick": 293760,
+        "firstSec": 0.375,
+        "lastOnSec": 227.25,
+        "lastEndSec": 229.5,
+        "pitchMin": 60,
+        "pitchMax": 81,
+        "pitchMedian": 74,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 250,
+        "firstTick": 480,
+        "lastOnTick": 290880,
+        "lastEndTick": 293760,
+        "firstSec": 0.375,
+        "lastOnSec": 227.25,
+        "lastEndSec": 229.5,
+        "pitchMin": 60,
+        "pitchMax": 72,
+        "pitchMedian": 69,
+        "overlapNotes": 2,
+        "overlapPercent": 0.8
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 308,
+        "firstTick": 480,
+        "lastOnTick": 290880,
+        "lastEndTick": 293760,
+        "firstSec": 0.375,
+        "lastOnSec": 227.25,
+        "lastEndSec": 229.5,
+        "pitchMin": 48,
+        "pitchMax": 65,
+        "pitchMedian": 60,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 270,
+        "firstTick": 480,
+        "lastOnTick": 290880,
+        "lastEndTick": 293760,
+        "firstSec": 0.375,
+        "lastOnSec": 227.25,
+        "lastEndSec": 229.5,
+        "pitchMin": 46,
+        "pitchMax": 60,
+        "pitchMedian": 48,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          3,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 1440,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 0.25
+      },
+      {
+        "ticks": 289440,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 12.75
+      }
+    ]
+  },
+  {
+    "title": "Hoy Se Cumplen",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hoy Se Cumplen\\Hoy se cumplen.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Hoy Se Cumplen\\Hoy se cumplen.mid",
+    "sha256": "142fa4f7abc58e22c51c0dc67e338aa3a27e1817124b6721906f3e6b5d51afcc",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hoy Se Cumplen\\Hoy se cumplen.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Piano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 471,
+        "firstTick": 480,
+        "lastOnTick": 457920,
+        "lastEndTick": 460800,
+        "firstSec": 0.3,
+        "lastOnSec": 317.966349,
+        "lastEndSec": 319.966347,
+        "pitchMin": 60,
+        "pitchMax": 79,
+        "pitchMedian": 72,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 495,
+        "firstTick": 480,
+        "lastOnTick": 457920,
+        "lastEndTick": 460800,
+        "firstSec": 0.3,
+        "lastOnSec": 317.966349,
+        "lastEndSec": 319.966347,
+        "pitchMin": 57,
+        "pitchMax": 72,
+        "pitchMedian": 67,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 509,
+        "firstTick": 480,
+        "lastOnTick": 457920,
+        "lastEndTick": 460800,
+        "firstSec": 0.3,
+        "lastOnSec": 317.966349,
+        "lastEndSec": 319.966347,
+        "pitchMin": 48,
+        "pitchMax": 64,
+        "pitchMedian": 60,
+        "overlapNotes": 3,
+        "overlapPercent": 0.5893909626719057
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 474,
+        "firstTick": 480,
+        "lastOnTick": 457920,
+        "lastEndTick": 460800,
+        "firstSec": 0.3,
+        "lastOnSec": 317.966349,
+        "lastEndSec": 319.966347,
+        "pitchMin": 45,
+        "pitchMax": 60,
+        "pitchMedian": 53,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 457920,
+        "timeSignature": [
+          7,
+          4
+        ],
+        "measures": 39.75
+      }
+    ]
+  },
+  {
+    "title": "Lluvias Tardías",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías REC\\Lluvias Tardías REC.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Lluvias Tardías\\Lluvias Tardías REC.mid",
+    "sha256": "5246c9f2a858613add7f904c66ea38a88715f097a2260f9f38c2e4911abfd88a",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías REC\\Lluvias Tardías REC.mid"
+    ],
+    "tracks": [
+      {
+        "name": "S A",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 183,
+        "firstTick": 3840,
+        "lastOnTick": 209280,
+        "lastEndTick": 215040,
+        "firstSec": 3.4285680000000003,
+        "lastOnSec": 189.69504899999998,
+        "lastEndSec": 195.69504899999998,
+        "pitchMin": 61,
+        "pitchMax": 79,
+        "pitchMedian": 67,
+        "overlapNotes": 3,
+        "overlapPercent": 1.639344262295082
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 165,
+        "firstTick": 3840,
+        "lastOnTick": 211200,
+        "lastEndTick": 215040,
+        "firstSec": 3.4285680000000003,
+        "lastOnSec": 191.69504899999998,
+        "lastEndSec": 195.69504899999998,
+        "pitchMin": 57,
+        "pitchMax": 73,
+        "pitchMedian": 64,
+        "overlapNotes": 8,
+        "overlapPercent": 4.848484848484849
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 153,
+        "firstTick": 15360,
+        "lastOnTick": 209280,
+        "lastEndTick": 215040,
+        "firstSec": 13.714272000000001,
+        "lastOnSec": 189.69504899999998,
+        "lastEndSec": 195.69504899999998,
+        "pitchMin": 45,
+        "pitchMax": 66,
+        "pitchMedian": 58,
+        "overlapNotes": 6,
+        "overlapPercent": 3.9215686274509802
+      },
+      {
+        "name": "T B",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 161,
+        "firstTick": 15360,
+        "lastOnTick": 209280,
+        "lastEndTick": 215040,
+        "firstSec": 13.714272000000001,
+        "lastOnSec": 189.69504899999998,
+        "lastEndSec": 195.69504899999998,
+        "pitchMin": 43,
+        "pitchMax": 61,
+        "pitchMedian": 50,
+        "overlapNotes": 6,
+        "overlapPercent": 3.7267080745341614
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 34560,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 9
+      },
+      {
+        "ticks": 36480,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 10
+      },
+      {
+        "ticks": 63360,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 17
+      },
+      {
+        "ticks": 66240,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 18
+      },
+      {
+        "ticks": 70080,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 19
+      },
+      {
+        "ticks": 72000,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 20
+      },
+      {
+        "ticks": 148800,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 40
+      },
+      {
+        "ticks": 150720,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 41
+      },
+      {
+        "ticks": 177600,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 48
+      },
+      {
+        "ticks": 181440,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 50
+      },
+      {
+        "ticks": 204480,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 56
+      },
+      {
+        "ticks": 207360,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 57
+      }
+    ]
+  },
+  {
+    "title": "Lluvias Tardías",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Lluvias Tardías\\Lluvias Tardías SATB.mid",
+    "sha256": "8e1384c70dc4c7f541f2839f4aa623e7a04df691aa1d9343ecb78d5ec3c96d43",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Piano",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 181,
+        "firstTick": 0,
+        "lastOnTick": 204000,
+        "lastEndTick": 207840,
+        "firstSec": 0,
+        "lastOnSec": 186.12765412604165,
+        "lastEndSec": 190.12765412604165,
+        "pitchMin": 61,
+        "pitchMax": 79,
+        "pitchMedian": 67,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 162,
+        "firstTick": 0,
+        "lastOnTick": 204000,
+        "lastEndTick": 207840,
+        "firstSec": 0,
+        "lastOnSec": 186.12765412604165,
+        "lastEndSec": 190.12765412604165,
+        "pitchMin": 55,
+        "pitchMax": 73,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 152,
+        "firstTick": 11520,
+        "lastOnTick": 204000,
+        "lastEndTick": 207840,
+        "firstSec": 9,
+        "lastOnSec": 186.12765412604165,
+        "lastEndSec": 190.12765412604165,
+        "pitchMin": 45,
+        "pitchMax": 69,
+        "pitchMedian": 58,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Piano",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 159,
+        "firstTick": 11520,
+        "lastOnTick": 204000,
+        "lastEndTick": 207840,
+        "firstSec": 9,
+        "lastOnSec": 186.12765412604165,
+        "lastEndSec": 190.12765412604165,
+        "pitchMin": 43,
+        "pitchMax": 62,
+        "pitchMedian": 50,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 30720,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 8
+      },
+      {
+        "ticks": 32640,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 9
+      },
+      {
+        "ticks": 63360,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 17
+      },
+      {
+        "ticks": 69120,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 18
+      },
+      {
+        "ticks": 96000,
+        "timeSignature": [
+          5,
+          4
+        ],
+        "measures": 25
+      },
+      {
+        "ticks": 100800,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 26
+      },
+      {
+        "ticks": 104640,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 27
+      },
+      {
+        "ticks": 108960,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 27.25
+      },
+      {
+        "ticks": 174240,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 44.25
+      },
+      {
+        "ticks": 176160,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 45.25
+      },
+      {
+        "ticks": 199200,
+        "timeSignature": [
+          5,
+          4
+        ],
+        "measures": 51.25
+      },
+      {
+        "ticks": 204000,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 52.25
+      }
+    ]
+  },
+  {
+    "title": "Lluvias Tardías",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías CJ4S\\Lluvias Tardías MOD by Caleb.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Lluvias Tardías\\Lluvias Tardías MOD by Caleb.mid",
+    "sha256": "6f6945bafaf918ab298d23507f74f2afcf1552db8ab094d1d40ee61c95cd9ec3",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías CJ4S\\Lluvias Tardías MOD by Caleb.mid"
+    ],
+    "tracks": [
+      {
+        "name": "S A",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 183,
+        "firstTick": 0,
+        "lastOnTick": 199680,
+        "lastEndTick": 205440,
+        "firstSec": 0,
+        "lastOnSec": 180.43360957812502,
+        "lastEndSec": 186.43360957812502,
+        "pitchMin": 61,
+        "pitchMax": 79,
+        "pitchMedian": 67,
+        "overlapNotes": 3,
+        "overlapPercent": 1.639344262295082
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 144,
+        "firstTick": 32640,
+        "lastOnTick": 201600,
+        "lastEndTick": 205440,
+        "firstSec": 29.142828,
+        "lastOnSec": 182.43360957812502,
+        "lastEndSec": 186.43360957812502,
+        "pitchMin": 57,
+        "pitchMax": 73,
+        "pitchMedian": 64,
+        "overlapNotes": 8,
+        "overlapPercent": 5.555555555555555
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 130,
+        "firstTick": 32640,
+        "lastOnTick": 199680,
+        "lastEndTick": 205440,
+        "firstSec": 29.142828,
+        "lastOnSec": 180.43360957812502,
+        "lastEndSec": 186.43360957812502,
+        "pitchMin": 50,
+        "pitchMax": 66,
+        "pitchMedian": 59,
+        "overlapNotes": 6,
+        "overlapPercent": 4.615384615384615
+      },
+      {
+        "name": "T B",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 161,
+        "firstTick": 11520,
+        "lastOnTick": 199680,
+        "lastEndTick": 205440,
+        "firstSec": 10.285704,
+        "lastOnSec": 180.43360957812502,
+        "lastEndSec": 186.43360957812502,
+        "pitchMin": 43,
+        "pitchMax": 61,
+        "pitchMedian": 50,
+        "overlapNotes": 6,
+        "overlapPercent": 3.7267080745341614
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 30720,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 8
+      },
+      {
+        "ticks": 32640,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 9
+      },
+      {
+        "ticks": 59520,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 16
+      },
+      {
+        "ticks": 62400,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 17
+      },
+      {
+        "ticks": 169920,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 45
+      },
+      {
+        "ticks": 171840,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 46
+      },
+      {
+        "ticks": 194880,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 52
+      },
+      {
+        "ticks": 197760,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 53
+      }
+    ]
+  },
+  {
+    "title": "Perfect (CMG)",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Perfect (CMG).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Perfect (CMG)\\Perfect (CMG).mid",
+    "sha256": "4e8d59eb7efd410b46d3bb3c70ab864c79a1da7433cef62c6044c5f17b4fceb1",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Perfect (CMG).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano/Alto",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 705,
+        "firstTick": 0,
+        "lastOnTick": 385920,
+        "lastEndTick": 391680,
+        "firstSec": 0,
+        "lastOnSec": 382.85676,
+        "lastEndSec": 388.57104,
+        "pitchMin": 56,
+        "pitchMax": 77,
+        "pitchMedian": 67,
+        "overlapNotes": 378,
+        "overlapPercent": 53.61702127659574
+      },
+      {
+        "name": "Solo",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 147,
+        "firstTick": 4320,
+        "lastOnTick": 374160,
+        "lastEndTick": 374400,
+        "firstSec": 4.28571,
+        "lastOnSec": 371.190105,
+        "lastEndSec": 371.4282,
+        "pitchMin": 51,
+        "pitchMax": 65,
+        "pitchMedian": 58,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Tenor/Bass",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 670,
+        "firstTick": 0,
+        "lastOnTick": 385920,
+        "lastEndTick": 391680,
+        "firstSec": 0,
+        "lastOnSec": 382.85676,
+        "lastEndSec": 388.57104,
+        "pitchMin": 41,
+        "pitchMax": 65,
+        "pitchMedian": 53,
+        "overlapNotes": 448,
+        "overlapPercent": 66.86567164179104
+      },
+      {
+        "name": "Rehearsal Piano",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          0
+        ],
+        "instrument": "GM 1",
+        "notes": 1417,
+        "firstTick": 0,
+        "lastOnTick": 385920,
+        "lastEndTick": 391680,
+        "firstSec": 0,
+        "lastOnSec": 382.85676,
+        "lastEndSec": 388.57104,
+        "pitchMin": 41,
+        "pitchMax": 77,
+        "pitchMedian": 63,
+        "overlapNotes": 1199,
+        "overlapPercent": 84.61538461538461
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 18,
+    "endSpreadSec": 17.14283999999998,
+    "exactFour": true,
+    "similarEnding": false,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Remembranza Gloriosa",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Remembranza Gloriosa\\Remembranza-Gloriosa (Separado).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Remembranza Gloriosa\\Remembranza-Gloriosa (Separado).mid",
+    "sha256": "9d0dc2847e2394c4dfb5a510d433194dffb32c4534082a83f5fdc8487e38f637",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Remembranza Gloriosa\\Remembranza-Gloriosa (Separado).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Viol�n 1 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 383,
+        "firstTick": 0,
+        "lastOnTick": 288000,
+        "lastEndTick": 291840,
+        "firstSec": 0,
+        "lastOnSec": 199.51434581249995,
+        "lastEndSec": 203.87798181249997,
+        "pitchMin": 65,
+        "pitchMax": 80,
+        "pitchMedian": 73,
+        "overlapNotes": 1,
+        "overlapPercent": 0.26109660574412535
+      },
+      {
+        "name": "Viol�n 1 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 396,
+        "firstTick": 0,
+        "lastOnTick": 288000,
+        "lastEndTick": 291840,
+        "firstSec": 0,
+        "lastOnSec": 199.51434581249995,
+        "lastEndSec": 203.87798181249997,
+        "pitchMin": 61,
+        "pitchMax": 72,
+        "pitchMedian": 66,
+        "overlapNotes": 4,
+        "overlapPercent": 1.0101010101010102
+      },
+      {
+        "name": "Violonchelo 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 394,
+        "firstTick": 0,
+        "lastOnTick": 288000,
+        "lastEndTick": 291840,
+        "firstSec": 0,
+        "lastOnSec": 199.51434581249995,
+        "lastEndSec": 203.87798181249997,
+        "pitchMin": 54,
+        "pitchMax": 66,
+        "pitchMedian": 61,
+        "overlapNotes": 6,
+        "overlapPercent": 1.5228426395939085
+      },
+      {
+        "name": "Violonchelo 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 392,
+        "firstTick": 0,
+        "lastOnTick": 288000,
+        "lastEndTick": 291840,
+        "firstSec": 0,
+        "lastOnSec": 199.51434581249995,
+        "lastEndSec": 203.87798181249997,
+        "pitchMin": 44,
+        "pitchMax": 61,
+        "pitchMedian": 53,
+        "overlapNotes": 1,
+        "overlapPercent": 0.25510204081632654
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Salmo 148",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Salmo 148\\Salmo 148_2.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Salmo 148\\Salmo 148_2.mid",
+    "sha256": "9b781e996fb3a145e36be08e67d1cbf7a4eab29cacbd8ad921334ed3767b85c4",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Salmo 148\\Salmo 148_2.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Sola 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 275,
+        "firstTick": 15360,
+        "lastOnTick": 166560,
+        "lastEndTick": 169440,
+        "firstSec": 10.105248,
+        "lastOnSec": 109.578783,
+        "lastEndSec": 111.473517,
+        "pitchMin": 64,
+        "pitchMax": 79,
+        "pitchMedian": 71,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Sola 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 249,
+        "firstTick": 30720,
+        "lastOnTick": 166560,
+        "lastEndTick": 169440,
+        "firstSec": 20.210496,
+        "lastOnSec": 109.578783,
+        "lastEndSec": 111.473517,
+        "pitchMin": 59,
+        "pitchMax": 72,
+        "pitchMedian": 67,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Solo 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 186,
+        "firstTick": 30720,
+        "lastOnTick": 166560,
+        "lastEndTick": 169440,
+        "firstSec": 20.210496,
+        "lastOnSec": 109.578783,
+        "lastEndSec": 111.473517,
+        "pitchMin": 52,
+        "pitchMax": 66,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Solo 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          1
+        ],
+        "instrument": "GM 2",
+        "notes": 260,
+        "firstTick": 0,
+        "lastOnTick": 166560,
+        "lastEndTick": 169440,
+        "firstSec": 0,
+        "lastOnSec": 109.578783,
+        "lastEndSec": 111.473517,
+        "pitchMin": 45,
+        "pitchMax": 64,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 57600,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 15
+      },
+      {
+        "ticks": 61920,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 15.25
+      }
+    ]
+  },
+  {
+    "title": "Somos La Luz del Mundo",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Somos La Luz del Mundo\\Somos La Luz Del Mundo SATB (FINAL).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Somos La Luz del Mundo\\Somos La Luz Del Mundo SATB (FINAL).mid",
+    "sha256": "d59846c01f7d2d5e3cf13482775f9012f5afa8d29bcc952a5810a24719c1782f",
+    "activeTracks": 9,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Somos La Luz del Mundo\\Somos La Luz Del Mundo SATB (FINAL).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Bar�tono solista",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 82,
+        "firstTick": 2880,
+        "lastOnTick": 291840,
+        "lastEndTick": 292320,
+        "firstSec": 1.7999999999999998,
+        "lastOnSec": 182.39999999999998,
+        "lastEndSec": 182.69999999999996,
+        "pitchMin": 48,
+        "pitchMax": 66,
+        "pitchMedian": 53,
+        "overlapNotes": 2,
+        "overlapPercent": 2.4390243902439024
+      },
+      {
+        "name": "SOPRANO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 305,
+        "firstTick": 0,
+        "lastOnTick": 334080,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 208.79999999999995,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 58,
+        "pitchMax": 85,
+        "pitchMedian": 70,
+        "overlapNotes": 5,
+        "overlapPercent": 1.639344262295082
+      },
+      {
+        "name": "Soprano",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 304,
+        "firstTick": 0,
+        "lastOnTick": 331200,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 206.99999999999994,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 58,
+        "pitchMax": 78,
+        "pitchMedian": 70,
+        "overlapNotes": 2,
+        "overlapPercent": 0.6578947368421053
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 344,
+        "firstTick": 0,
+        "lastOnTick": 331200,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 206.99999999999994,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 53,
+        "pitchMax": 73,
+        "pitchMedian": 65,
+        "overlapNotes": 7,
+        "overlapPercent": 2.0348837209302326
+      },
+      {
+        "name": "Alto",
+        "rawTrack": 6,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 344,
+        "firstTick": 0,
+        "lastOnTick": 331200,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 206.99999999999994,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 53,
+        "pitchMax": 72,
+        "pitchMedian": 65,
+        "overlapNotes": 7,
+        "overlapPercent": 2.0348837209302326
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 7,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 344,
+        "firstTick": 0,
+        "lastOnTick": 331200,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 206.99999999999994,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 46,
+        "pitchMax": 68,
+        "pitchMedian": 60,
+        "overlapNotes": 8,
+        "overlapPercent": 2.3255813953488373
+      },
+      {
+        "name": "Tenor",
+        "rawTrack": 8,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 344,
+        "firstTick": 0,
+        "lastOnTick": 331200,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 206.99999999999994,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 46,
+        "pitchMax": 65,
+        "pitchMedian": 60,
+        "overlapNotes": 8,
+        "overlapPercent": 2.3255813953488373
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 9,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 318,
+        "firstTick": 0,
+        "lastOnTick": 331200,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 206.99999999999994,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 41,
+        "pitchMax": 61,
+        "pitchMedian": 48,
+        "overlapNotes": 2,
+        "overlapPercent": 0.6289308176100629
+      },
+      {
+        "name": "Bajo",
+        "rawTrack": 10,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 319,
+        "firstTick": 0,
+        "lastOnTick": 331200,
+        "lastEndTick": 338400,
+        "firstSec": 0,
+        "lastOnSec": 206.99999999999994,
+        "lastEndSec": 211.49999999999994,
+        "pitchMin": 41,
+        "pitchMax": 61,
+        "pitchMedian": 48,
+        "overlapNotes": 2,
+        "overlapPercent": 0.6269592476489029
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 48,
+    "endSpreadSec": 28.799999999999983,
+    "exactFour": false,
+    "similarEnding": false,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 11520,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 0.5
+      },
+      {
+        "ticks": 15840,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 0.75
+      },
+      {
+        "ticks": 56160,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 2.5
+      },
+      {
+        "ticks": 60480,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 2.75
+      },
+      {
+        "ticks": 112320,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 5
+      },
+      {
+        "ticks": 116640,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 5.25
+      },
+      {
+        "ticks": 133920,
+        "timeSignature": [
+          27,
+          16
+        ],
+        "measures": 6
+      },
+      {
+        "ticks": 140400,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 6.0625
+      },
+      {
+        "ticks": 169200,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 11.0625
+      },
+      {
+        "ticks": 173520,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 11.3125
+      },
+      {
+        "ticks": 219600,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 13.3125
+      },
+      {
+        "ticks": 223920,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 13.5625
+      },
+      {
+        "ticks": 241200,
+        "timeSignature": [
+          27,
+          16
+        ],
+        "measures": 14.3125
+      },
+      {
+        "ticks": 247680,
+        "timeSignature": [
+          6,
+          4
+        ],
+        "measures": 14.375
+      },
+      {
+        "ticks": 276480,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 19.375
+      },
+      {
+        "ticks": 280800,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 19.625
+      },
+      {
+        "ticks": 315360,
+        "timeSignature": [
+          9,
+          8
+        ],
+        "measures": 21.125
+      },
+      {
+        "ticks": 319680,
+        "timeSignature": [
+          12,
+          8
+        ],
+        "measures": 21.375
+      },
+      {
+        "ticks": 331200,
+        "timeSignature": [
+          15,
+          8
+        ],
+        "measures": 21.875
+      }
+    ]
+  },
+  {
+    "title": "Te Prometo mi Señor",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB) (NEW).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Te Prometo mi Señor\\Te prometo mi Señor (SATB) (NEW).mid",
+    "sha256": "e4c3f0ced33b87354b2f2b33b99a97be68aa6643b0678898d62adf110c7fced7",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB) (NEW).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 368,
+        "firstTick": 960,
+        "lastOnTick": 165600,
+        "lastEndTick": 171071,
+        "firstSec": 1.2,
+        "lastOnSec": 207.32247118020837,
+        "lastEndSec": 215.59708282187503,
+        "pitchMin": 59,
+        "pitchMax": 76,
+        "pitchMedian": 68,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 369,
+        "firstTick": 960,
+        "lastOnTick": 168480,
+        "lastEndTick": 171214,
+        "firstSec": 1.2,
+        "lastOnSec": 211.51599417812506,
+        "lastEndSec": 215.8308327072917,
+        "pitchMin": 59,
+        "pitchMax": 69,
+        "pitchMedian": 64,
+        "overlapNotes": 1,
+        "overlapPercent": 0.27100271002710025
+      },
+      {
+        "name": "Bajo 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 322,
+        "firstTick": 960,
+        "lastOnTick": 168480,
+        "lastEndTick": 171214,
+        "firstSec": 1.2,
+        "lastOnSec": 211.51599417812506,
+        "lastEndSec": 215.8308327072917,
+        "pitchMin": 47,
+        "pitchMax": 64,
+        "pitchMedian": 59,
+        "overlapNotes": 6,
+        "overlapPercent": 1.8633540372670807
+      },
+      {
+        "name": "Bajo 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 317,
+        "firstTick": 960,
+        "lastOnTick": 168480,
+        "lastEndTick": 171214,
+        "firstSec": 1.2,
+        "lastOnSec": 211.51599417812506,
+        "lastEndSec": 215.8308327072917,
+        "pitchMin": 43,
+        "pitchMax": 57,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0.14895833333333333,
+    "endSpreadSec": 0.23374988541667108,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 23040,
+        "timeSignature": [
+          7,
+          8
+        ],
+        "measures": 2
+      },
+      {
+        "ticks": 26400,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 2.25
+      },
+      {
+        "ticks": 78240,
+        "timeSignature": [
+          7,
+          8
+        ],
+        "measures": 20.25
+      },
+      {
+        "ticks": 81600,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 20.5
+      },
+      {
+        "ticks": 133440,
+        "timeSignature": [
+          7,
+          8
+        ],
+        "measures": 25
+      },
+      {
+        "ticks": 136800,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 25.25
+      }
+    ]
+  },
+  {
+    "title": "Te Prometo mi Señor",
+    "category": "03 - Titulos no encontrados en el catalogo",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Te Prometo mi Señor\\Te prometo mi Señor (SATB).mid",
+    "sha256": "f8fe101d8a4e484597e95792cf485071f7d40d7b8e03b352a8b2f0e04af4787f",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 368,
+        "firstTick": 960,
+        "lastOnTick": 165600,
+        "lastEndTick": 171071,
+        "firstSec": 1.2,
+        "lastOnSec": 207.322468759375,
+        "lastEndSec": 215.59708411145832,
+        "pitchMin": 59,
+        "pitchMax": 76,
+        "pitchMedian": 68,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 369,
+        "firstTick": 960,
+        "lastOnTick": 168480,
+        "lastEndTick": 171214,
+        "firstSec": 1.2,
+        "lastOnSec": 211.51599315520835,
+        "lastEndSec": 215.830833996875,
+        "pitchMin": 59,
+        "pitchMax": 69,
+        "pitchMedian": 64,
+        "overlapNotes": 1,
+        "overlapPercent": 0.27100271002710025
+      },
+      {
+        "name": "Bajo 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 322,
+        "firstTick": 960,
+        "lastOnTick": 168480,
+        "lastEndTick": 171214,
+        "firstSec": 1.2,
+        "lastOnSec": 211.51599315520835,
+        "lastEndSec": 215.830833996875,
+        "pitchMin": 47,
+        "pitchMax": 64,
+        "pitchMedian": 59,
+        "overlapNotes": 6,
+        "overlapPercent": 1.8633540372670807
+      },
+      {
+        "name": "Bajo 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 317,
+        "firstTick": 960,
+        "lastOnTick": 168480,
+        "lastEndTick": 171214,
+        "firstSec": 1.2,
+        "lastOnSec": 211.51599315520835,
+        "lastEndSec": 215.830833996875,
+        "pitchMin": 43,
+        "pitchMax": 57,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0.14895833333333333,
+    "endSpreadSec": 0.23374988541667108,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 23040,
+        "timeSignature": [
+          7,
+          8
+        ],
+        "measures": 2
+      },
+      {
+        "ticks": 26400,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 2.25
+      },
+      {
+        "ticks": 78240,
+        "timeSignature": [
+          7,
+          8
+        ],
+        "measures": 20.25
+      },
+      {
+        "ticks": 81600,
+        "timeSignature": [
+          6,
+          8
+        ],
+        "measures": 20.5
+      },
+      {
+        "ticks": 133440,
+        "timeSignature": [
+          7,
+          8
+        ],
+        "measures": 25
+      },
+      {
+        "ticks": 136800,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 25.25
+      }
+    ]
+  },
+  {
+    "title": "En tu amor",
+    "category": "04 - Identidad pendiente",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\En tu amor\\En tu amor (S).mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\En tu amor\\En tu amor (S).mid",
+    "sha256": "636504398c71c35ce0dfa004ac149afc0d50b8bb3a0ec0a362455f172f6876d5",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\En tu amor\\En tu amor (S).mid"
+    ],
+    "tracks": [
+      {
+        "name": "Viola",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 112,
+        "firstTick": 2880,
+        "lastOnTick": 107520,
+        "lastEndTick": 111840,
+        "firstSec": 2.4000000000000004,
+        "lastOnSec": 89.60000000000001,
+        "lastEndSec": 93.2,
+        "pitchMin": 63,
+        "pitchMax": 76,
+        "pitchMedian": 70,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Viola",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 112,
+        "firstTick": 2880,
+        "lastOnTick": 107520,
+        "lastEndTick": 111840,
+        "firstSec": 2.4000000000000004,
+        "lastOnSec": 89.60000000000001,
+        "lastEndSec": 93.2,
+        "pitchMin": 59,
+        "pitchMax": 68,
+        "pitchMedian": 64,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Violonchelo",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 104,
+        "firstTick": 2880,
+        "lastOnTick": 107520,
+        "lastEndTick": 111840,
+        "firstSec": 2.4000000000000004,
+        "lastOnSec": 89.60000000000001,
+        "lastEndSec": 93.2,
+        "pitchMin": 54,
+        "pitchMax": 61,
+        "pitchMedian": 59,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "Violonchelo",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          48
+        ],
+        "instrument": "GM 49",
+        "notes": 104,
+        "firstTick": 2880,
+        "lastOnTick": 107520,
+        "lastEndTick": 111840,
+        "firstSec": 2.4000000000000004,
+        "lastOnSec": 89.60000000000001,
+        "lastEndSec": 93.2,
+        "pitchMin": 47,
+        "pitchMax": 54,
+        "pitchMedian": 52,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 107520,
+        "timeSignature": [
+          11,
+          8
+        ],
+        "measures": 28
+      }
+    ]
+  },
+  {
+    "title": "Proyecto 2",
+    "category": "04 - Identidad pendiente",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Proyecto 2\\Coro SATB.mid",
+    "sha256": "2a320196aceb52356bbeced48fe14eba4c1e69e0fed918734c4513506a8ebba5",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 24,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 67,
+        "pitchMax": 77,
+        "pitchMedian": 72,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 25,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 63,
+        "pitchMax": 72,
+        "pitchMedian": 67,
+        "overlapNotes": 1,
+        "overlapPercent": 4
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 23,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 53,
+        "pitchMax": 65,
+        "pitchMedian": 60,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 23,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 44,
+        "pitchMax": 56,
+        "pitchMedian": 51,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Proyecto 2",
+    "category": "04 - Identidad pendiente",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB2.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Proyecto 2\\Coro SATB2.mid",
+    "sha256": "70dd07d51f7d0bb55b947ae2bdcf7d494f4ddb47e350ad4581ad1fb3276a4749",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB2.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 24,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 67,
+        "pitchMax": 77,
+        "pitchMedian": 72,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 25,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 63,
+        "pitchMax": 72,
+        "pitchMedian": 67,
+        "overlapNotes": 1,
+        "overlapPercent": 4
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 23,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 53,
+        "pitchMax": 65,
+        "pitchMedian": 60,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 24,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 44,
+        "pitchMax": 56,
+        "pitchMedian": 51,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Proyecto 2",
+    "category": "04 - Identidad pendiente",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro STB.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Proyecto 2\\Coro STB.mid",
+    "sha256": "30648e8550d4eeb30440a9cf1dc095ba57800d09654ef4de676d88cb96c47483",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro STB.mid"
+    ],
+    "tracks": [
+      {
+        "name": "SOPRANO",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 24,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 67,
+        "pitchMax": 77,
+        "pitchMedian": 72,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "CONTRALTO",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 18,
+        "firstTick": 0,
+        "lastOnTick": 18720,
+        "lastEndTick": 19200,
+        "firstSec": 0,
+        "lastOnSec": 14.625,
+        "lastEndSec": 15,
+        "pitchMin": 63,
+        "pitchMax": 72,
+        "pitchMedian": 67,
+        "overlapNotes": 1,
+        "overlapPercent": 5.555555555555555
+      },
+      {
+        "name": "TENOR",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 23,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 53,
+        "pitchMax": 65,
+        "pitchMedian": 60,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      },
+      {
+        "name": "BAJO",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 23,
+        "firstTick": 0,
+        "lastOnTick": 26880,
+        "lastEndTick": 30720,
+        "firstSec": 0,
+        "lastOnSec": 21,
+        "lastEndSec": 24,
+        "pitchMin": 44,
+        "pitchMax": 56,
+        "pitchMedian": 51,
+        "overlapNotes": 0,
+        "overlapPercent": 0
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 12,
+    "endSpreadSec": 9,
+    "exactFour": true,
+    "similarEnding": false,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          4,
+          4
+        ],
+        "measures": 0
+      }
+    ]
+  },
+  {
+    "title": "Te loamos, Te glorificamos",
+    "category": "04 - Identidad pendiente",
+    "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mensaje de Salvacion\\298.- Te loamos, Te glorificamos (Alabanza) liud.mid",
+    "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Te loamos, Te glorificamos\\298.- Te loamos, Te glorificamos (Alabanza) liud.mid",
+    "sha256": "d55ed6cc46bb16c3de564275f73c5bb41da8ff6c4e4a6fd6ac85a91341635ad8",
+    "activeTracks": 4,
+    "identicalSources": [
+      "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mensaje de Salvacion\\298.- Te loamos, Te glorificamos (Alabanza) liud.mid"
+    ],
+    "tracks": [
+      {
+        "name": "Soprano 1",
+        "rawTrack": 2,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 176,
+        "firstTick": 960,
+        "lastOnTick": 166080,
+        "lastEndTick": 168960,
+        "firstSec": 1.2,
+        "lastOnSec": 185.2,
+        "lastEndSec": 188.79999999999998,
+        "pitchMin": 62,
+        "pitchMax": 79,
+        "pitchMedian": 70,
+        "overlapNotes": 14,
+        "overlapPercent": 7.954545454545454
+      },
+      {
+        "name": "Soprano 2",
+        "rawTrack": 3,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 174,
+        "firstTick": 960,
+        "lastOnTick": 166080,
+        "lastEndTick": 168960,
+        "firstSec": 1.2,
+        "lastOnSec": 185.2,
+        "lastEndSec": 188.79999999999998,
+        "pitchMin": 58,
+        "pitchMax": 75,
+        "pitchMedian": 65,
+        "overlapNotes": 8,
+        "overlapPercent": 4.597701149425287
+      },
+      {
+        "name": "Bar�tono 1",
+        "rawTrack": 4,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 171,
+        "firstTick": 960,
+        "lastOnTick": 166080,
+        "lastEndTick": 168960,
+        "firstSec": 1.2,
+        "lastOnSec": 185.2,
+        "lastEndSec": 188.79999999999998,
+        "pitchMin": 51,
+        "pitchMax": 63,
+        "pitchMedian": 58,
+        "overlapNotes": 16,
+        "overlapPercent": 9.35672514619883
+      },
+      {
+        "name": "Bar�tono 2",
+        "rawTrack": 5,
+        "hangingNotes": 0,
+        "programs": [
+          52
+        ],
+        "instrument": "GM 53",
+        "notes": 167,
+        "firstTick": 960,
+        "lastOnTick": 166080,
+        "lastEndTick": 168960,
+        "firstSec": 1.2,
+        "lastOnSec": 185.2,
+        "lastEndSec": 188.79999999999998,
+        "pitchMin": 44,
+        "pitchMax": 58,
+        "pitchMedian": 51,
+        "overlapNotes": 2,
+        "overlapPercent": 1.1976047904191616
+      }
+    ],
+    "ppq": 960,
+    "endSpreadBeats": 0,
+    "endSpreadSec": 0,
+    "exactFour": true,
+    "similarEnding": true,
+    "headerTimeSignatures": [
+      {
+        "ticks": 0,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 0
+      },
+      {
+        "ticks": 19200,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 10
+      },
+      {
+        "ticks": 22080,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 11
+      },
+      {
+        "ticks": 27840,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 14
+      },
+      {
+        "ticks": 30720,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 15
+      },
+      {
+        "ticks": 99840,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 51
+      },
+      {
+        "ticks": 102720,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 52
+      },
+      {
+        "ticks": 108480,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 55
+      },
+      {
+        "ticks": 111360,
+        "timeSignature": [
+          2,
+          4
+        ],
+        "measures": 56
+      },
+      {
+        "ticks": 163200,
+        "timeSignature": [
+          3,
+          4
+        ],
+        "measures": 83
+      }
+    ]
+  }
+]

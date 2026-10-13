@@ -583,7 +583,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/ada9cf89c5d547f5edb9776500710ff9266b7596bedff9d0f0574b9f4a9087a2.enc",
+    "version": 5
   },
   {
     "id": "usmc_01827135a62fc5ef4f437bd5",
@@ -979,7 +981,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/5335496892546e423c9aa027006fcd9fb4c02b51c953862a6a236879adb5a2e6.enc",
+    "version": 5
   },
   {
     "id": "43a441a6-84a6-5781-adf5-0fbaf9868027",
@@ -1278,7 +1282,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/58e1f9ee39eb65a688e2681045f4b52488064142291f9082c79ab19704c700db.enc",
+    "version": 5
   },
   {
     "id": "fcd87093-429f-4a8e-ba8f-72d8079b918d",
@@ -1378,7 +1384,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/ac8e9fd4e2e064722a0e62d8a39ae49ee8381c13b92387e8c25cb8e02c9c83b6.enc",
+    "version": 5
   },
   {
     "id": "usmc_79256fd0cda7d58c20",
@@ -2276,14 +2284,15 @@
     "id": "76ab18f8-ab72-48d8-8825-26e854ddcc41",
     "nombre": "Canten los Ángeles",
     "archivo": "canten-los-ngeles-1784056826336.pdf",
-    "midi_archivo": null,
+    "midi_archivo": "global/assets/midi/41d61302792f0c61068d30c6d8b80f91cac3ff98027e8e0007c3c51d8010db6b.enc",
     "vinculo_idioma": null,
     "temas": [
       "Centenario"
     ],
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "version": 5
   },
   {
     "id": "local_apk_1781321071870_389",
@@ -2666,7 +2675,9 @@
     "vinculo_idioma": "usmc_64c90e465c01cc5b98141b62",
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/70e38fc61742d75524ff913d3d9502f62d86f3aa2e725d0206d70dd44b840270.enc",
+    "version": 11
   },
   {
     "id": "usmc_bb2a2cfdfc2e239921b1676f",
@@ -2809,7 +2820,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/564ec572789dc018fca1c4601b2790d58bc42669b79f3f65f74a3f7975fd36b3.enc",
+    "version": 5
   },
   {
     "id": "usmc_dd1b12243e0c07e4d931a53c",
@@ -3312,7 +3325,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/c5b12d636f30d813750b75cb618c0927a919b648ce9b14a94640b86d6c5a3fc8.enc",
+    "version": 5
   },
   {
     "id": "usmc_fe79697ce2bed58cbc",
@@ -3612,7 +3627,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/e571f2d23b44717567cfcb14b65c7ba17ae7e85c01b8f55eb84829b6958ba28c.enc",
+    "version": 5
   },
   {
     "id": "ab2919df-e295-4119-99ac-c4310ef7190a",
@@ -3791,7 +3808,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/377bca109d5c7df053e3d4a141b8ba94bc44a5f4f981edc400fe219b6e4d7c84.enc",
+    "version": 5
   },
   {
     "id": "local_apk_1781321071896_574",
@@ -4062,7 +4081,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/1d50085006f935d56550ede0c875651884109b165e22d972d1e394934f8309c6.enc",
+    "version": 5
   },
   {
     "id": "d6638a4b-1a4c-490c-a31e-953964fcdf32",
@@ -4299,7 +4320,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/ff46841e560274946b29bd5c2eedd495c945b02a815cca16ae026784364121bf.enc",
+    "version": 5
   },
   {
     "id": "58a3f3e0-704b-471f-96c7-ce9bb5c71a7f",
@@ -4434,7 +4457,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/0da6cd92849ad6a5cf5bfacd0210f8433c42a83ed8b642a44364fe9d21e034c9.enc",
+    "version": 7
   },
   {
     "id": "67bdd051-b9b1-45da-b9e1-ca0ff60bb2b7",
@@ -4531,7 +4556,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/57396924e773439713f898e58b63211efadacfe177dc78c66e0b6164b1a1ec8e.enc",
+    "version": 5
   },
   {
     "id": "ab84f530-8f61-4e08-998a-5aac565b7e02",
@@ -4578,7 +4605,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/bd52e6c1eb1f59724a724cc78beece6c744a3f9025ad45ac98917a3d412edfeb.enc",
+    "version": 5
   },
   {
     "id": "1e7b0ea5-4702-4923-993b-574df65ea50d",
@@ -4730,7 +4759,7 @@
     "_idioma": "es",
     "idioma": "es",
     "midi_archivo": "global/assets/midi/e65392a9581acad38ed81c0b0527a51b575ce4dcd598350646889422ba0d9eeb.enc",
-    "version": 2
+    "version": 6
   },
   {
     "id": "usmc_64b5f67921b21cae02606966",
@@ -4741,7 +4770,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/02c54fce085c6fa5dcaa85ba2a7690d0bbabeeb93ea6ed5be73862df9f5338d4.enc",
+    "version": 5
   },
   {
     "id": "8e31df87-4525-44b1-b472-fc2d88259ed9",
@@ -5209,7 +5240,9 @@
     "es_privado": false,
     "vinculo_idioma": "usmc_64b1faa3ea321fbb1d6b86ea",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/52eba12edd362e3231e3689cd6ae8fad8ea2a70bebbe3bbc7eb1761672399347.enc",
+    "version": 9
   },
   {
     "id": "9fc4b6d2-6208-4202-9278-25c8b5f7a6eb",
@@ -5422,7 +5455,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/d5c4ca03416612e563bf0faf3c3ad563d179e0911557e086139a4750022051d1.enc",
+    "version": 5
   },
   {
     "id": "usmc_64b5412e21b21cae02605bb0",
@@ -5609,7 +5644,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/5bbdf50eee7a9bbf480b695d3188fd353654f859db1d36c4164f140f60e4dd44.enc",
+    "version": 5
   },
   {
     "id": "usmc_68148b6b520c8624329efb1b",
@@ -6839,7 +6876,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/45d9dae274aad326d5683cd6383cfb759d56c542c4f8227004dd1fd968fbd0e2.enc",
+    "version": 5
   },
   {
     "id": "usmc_64b5fc9621b21cae02606bd3",
@@ -6975,13 +7014,13 @@
     "external_id": null,
     "nombre": "Firme Estoy",
     "archivo": "global/assets/pdf/1e1d1b1735e34485d1643946c283e0d7e6a81c470b10e781a2625b06cfb19e75.enc",
-    "midi_archivo": null,
+    "midi_archivo": "global/assets/midi/17aacd54ab4001c5bf6281df2a263bd0f34eedbc9f8fa0acb7720440364064e2.enc",
     "temas": [
       "Elección"
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1,
+    "version": 2,
     "_idioma": "es"
   },
   {
@@ -7039,7 +7078,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/9f8b289366b87256b364545e5508f07608233096d8766e9021c78abd848a9ba8.enc",
+    "version": 5
   },
   {
     "id": "8ec7fb9b-3788-4899-8e55-016fa55bb9dc",
@@ -7050,7 +7091,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/2e4a1f83a2af8d4a196e6b6eae20295dbf704c868351f285f8363dde3ae1ebd6.enc",
+    "version": 5
   },
   {
     "id": "usmc_eaa6123f175fc7cddb",
@@ -7689,7 +7732,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/beede97fb6782acec0ab081f0e3d4397c1f7d018520e8418421f3870c2e6e242.enc",
+    "version": 5
   },
   {
     "id": "local_apk_1781321071968_708",
@@ -7724,7 +7769,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/a8962c0cb4b05ead02f92a1b5426bccbb58c4ebc7c3ff10e161603c396c042ea.enc",
+    "version": 5
   },
   {
     "id": "local_apk_1781321071966_540",
@@ -7760,7 +7807,7 @@
     "_idioma": "es",
     "idioma": "es",
     "midi_archivo": "global/assets/midi/fdbe519a92b7826752a94c62811ea9d02f4075231524f806928f7f9a0db29e4d.enc",
-    "version": 2
+    "version": 10
   },
   {
     "id": "8801903c-3808-43ee-9658-05620cd4b6bf",
@@ -7829,7 +7876,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/8a57f1c9218d255120aacaa59d7ea0a3ab36b7bcf1a2ec73be68e0cf106325b8.enc",
+    "version": 5
   },
   {
     "id": "a2fced6f-e069-4539-897b-e93f72070e7f",
@@ -9238,7 +9287,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/44a3300d2b989bf5254ebbe06493a80226ba2c502c67a449a2f5ba5dac22f350.enc",
+    "version": 5
   },
   {
     "id": "60f3702b-2f50-4f11-a061-44d16ac84b85",
@@ -9934,7 +9985,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/1dae4b2300265199459759be7c3f3636d116795fdd29467fcc102d44c9f38c29.enc",
+    "version": 5
   },
   {
     "id": "9322bfb3-0be3-4729-b3c2-75da81c4fedb",
@@ -10290,7 +10343,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/fb9cc0749f4225d6366ed191f795e5c337b957986b2becf673bd6b96f4d837b6.enc",
+    "version": 5
   },
   {
     "id": "local_apk_1781321072011_352",
@@ -10592,7 +10647,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/40df2051d188fe775399f3d932de533b9b66d5e4006292ca13c3a05b59284320.enc",
+    "version": 5
   },
   {
     "id": "usmc_661dcfa4d6b0cc15aeab10b0",
@@ -10825,7 +10882,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/c934f888fcd3ced299020ac0923afdc117e338cc954430923e06659f2dbe68f0.enc",
+    "version": 5
   },
   {
     "id": "usmc_64bf0dccdba2ff17fc25aafc",
@@ -10869,7 +10928,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/d1fabfd32fd6c1a55017a1d95d34fb000a068a13254b8ce1c62d83fec6ec984b.enc",
+    "version": 7
   },
   {
     "id": "usmc_64b5633921b21cae02605ef9",
@@ -10913,7 +10974,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/af35a4d516471d705ff240f98413359bf26c4ca18d83b22ed3ab96e1d4ea185e.enc",
+    "version": 5
   },
   {
     "id": "8303db32-75c6-4532-b362-2cae12dd51b8",
@@ -11105,7 +11168,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/cd0765556e29db7bd0d8cf424b020f68e7a09e356c11b6420d68adc9a66b1226.enc",
+    "version": 4
   },
   {
     "id": "blog_1781328558053_874",
@@ -11377,7 +11442,9 @@
     "vinculo_idioma": null,
     "coro_id": "local",
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132.enc",
+    "version": 4
   },
   {
     "id": "usmc_c847b7f72d4f5279efe5d639",
@@ -11938,7 +12005,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/b19b1b003e48ad41c388d380dde54dae3ca0945368170333a0d751a97fc73cca.enc",
+    "version": 4
   },
   {
     "id": "6ce642d0-9d2b-4535-9ec8-9c9354b4aa7b",
@@ -13220,7 +13289,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/4890c27dcbbe9e7ea469cc2f612c9ce391ec482bbac5dbea6f664876a0ff22c3.enc",
+    "version": 4
   },
   {
     "id": "95053cdd-2883-4f3f-adc0-68e952460082",
@@ -14641,7 +14712,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/64dca746f60e65e90003f89b14a26a4df1840c8ef9c2fe0c21181a3924c3133f.enc",
+    "version": 4
   },
   {
     "id": "8318b7af-acb0-440a-b5ee-2368741b3af0",
@@ -15488,7 +15561,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/a95929404889c2ce5bf15cff25a4edd138d58dabad5bba3c9d516fc82910b5fa.enc",
+    "version": 4
   },
   {
     "id": "a1a21f96-3846-4ddc-a9e5-6b5dddbbe3ad",
@@ -15793,7 +15868,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "global/assets/midi/d8d9c2f60cf8a04b01c80fb95d915c64497967225c93d951ad615b5304a0276d.enc",
+    "version": 4
   },
   {
     "id": "local_apk_1781321072154_276",
@@ -16385,5 +16462,77 @@
     "cifrado_version": 1,
     "_idioma": "es",
     "idioma": "es"
+  },
+  {
+    "id": "ef0fa915-ac3b-47da-9475-aa1b5065f57e",
+    "nombre": "El Latido de tu Corazón",
+    "archivo": "global/assets/pdf/9a4f64d2758d44c0c82d492e650d3d2ed1b72aafc1b656e489cef567c341b9f8.enc",
+    "temas": [],
+    "es_privado": false,
+    "idioma": "es",
+    "_idioma": "es",
+    "cifrado_version": 1,
+    "version": 1,
+    "midi_archivo": "global/assets/midi/107ae1ca96dff00f6ad0bb11345533d2833c4ca22f3344545c61ff64bc454cee.enc"
+  },
+  {
+    "id": "26a259c5-1aa9-4287-a530-4e4689cb871b",
+    "nombre": "Hoy Se Cumplen",
+    "archivo": "global/assets/pdf/9c662ef2bd19b5cfa8eeb4f6679c5c8dffa9cf20b7e3a53d499a8e3a73cdf653.enc",
+    "temas": [],
+    "es_privado": false,
+    "idioma": "es",
+    "_idioma": "es",
+    "cifrado_version": 1,
+    "version": 1,
+    "midi_archivo": "global/assets/midi/142fa4f7abc58e22c51c0dc67e338aa3a27e1817124b6721906f3e6b5d51afcc.enc"
+  },
+  {
+    "id": "faeaaf20-08b6-4075-a4e5-f728ffa7f223",
+    "nombre": "Lluvias Tardías",
+    "archivo": "global/assets/pdf/6b369ee399097f8325f745eb53bb6814fde749586a39932b4fc139a1a8da5a8a.enc",
+    "temas": [],
+    "es_privado": false,
+    "idioma": "es",
+    "_idioma": "es",
+    "cifrado_version": 1,
+    "version": 1,
+    "midi_archivo": "global/assets/midi/2687bffa034c5fb6c686b9f825b8e7f53f9e1bf0f5f75f1b33cde4db31dd3e4c.enc"
+  },
+  {
+    "id": "32eaa7bf-ac4a-479e-8927-7a3dbfd5c35f",
+    "nombre": "Salmo 148",
+    "archivo": "global/assets/pdf/d4bd7454cbf0e9018ab513aab44d82fea4ee6ac242182b78f42dc2fff2c3b781.enc",
+    "temas": [],
+    "es_privado": false,
+    "idioma": "es",
+    "_idioma": "es",
+    "cifrado_version": 1,
+    "version": 1,
+    "midi_archivo": "global/assets/midi/9b781e996fb3a145e36be08e67d1cbf7a4eab29cacbd8ad921334ed3767b85c4.enc"
+  },
+  {
+    "id": "0e69297a-585e-49c6-a572-afe096e9f188",
+    "nombre": "Somos La Luz del Mundo",
+    "archivo": "global/assets/pdf/be15854e3ee1b2e61d51af21808364b412048df873ea0b7feb79d966392cb390.enc",
+    "temas": [],
+    "es_privado": false,
+    "idioma": "es",
+    "_idioma": "es",
+    "cifrado_version": 1,
+    "version": 1,
+    "midi_archivo": "global/assets/midi/d59846c01f7d2d5e3cf13482775f9012f5afa8d29bcc952a5810a24719c1782f.enc"
+  },
+  {
+    "id": "d7bd495f-3573-486f-b1c3-147a6acc34a5",
+    "nombre": "Te Prometo mi Señor",
+    "archivo": "global/assets/pdf/f4ce55c7e372ad14dbc501938792e09e466016093ece7f5a72f2c602eb42cd57.enc",
+    "temas": [],
+    "es_privado": false,
+    "idioma": "es",
+    "_idioma": "es",
+    "cifrado_version": 1,
+    "version": 1,
+    "midi_archivo": "global/assets/midi/e4c3f0ced33b87354b2f2b33b99a97be68aa6643b0678898d62adf110c7fced7.enc"
   }
 ]

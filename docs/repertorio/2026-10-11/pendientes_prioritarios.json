@@ -1,0 +1,32 @@
+[
+  {
+    "name": "A lo Largo de la Vida",
+    "id": "usmc_0def9f80c19dc6ad13",
+    "reason": "El PDF indica 12/8; el MIDI comienza en 3/4 y después pasa a 6/8. Requiere confirmar y preparar el compás antes de incorporarlo.",
+    "sourceMidi": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\A lo Largo de la Vida\\A lo Largo de la Vida SATB.mid"
+  },
+  {
+    "name": "Fue por Mí",
+    "id": "8ec7fb9b-3788-4899-8e55-016fa55bb9dc",
+    "reason": "El PDF actual y la transcripción de origen tienen diferencias de edición, tempo y colocación de cambios de compás. No se asignó este audio.",
+    "sourceMidi": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Fue por Mí\\Fue por mí SATB.mid"
+  },
+  {
+    "name": "Linaje de Bendición",
+    "id": "local_apk_1781321072002_770",
+    "reason": "Las entradas y distribución de las voces requieren confirmar equivalencia con el arreglo actual.",
+    "sourceMidi": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Linaje de Bendición\\Linaje de Bendición SATB2.mid"
+  },
+  {
+    "name": "Recordando la Muerte de Cristo",
+    "id": "usmc_64b3e6ea9631ba687d63062c",
+    "reason": "No quedó confirmada la equivalencia de las notas entre el MIDI y el arreglo cerrado actual. No se asignó este audio.",
+    "sourceMidi": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Recordando la Muerte de Cristo\\Recordando la Muerte de Cristo SATB.mid"
+  },
+  {
+    "name": "Ven a la Fiesta",
+    "id": "0fc41d4c-0866-483b-8987-1add0b933708",
+    "reason": "El PDF indica 6/8 y el MIDI declara 3/8. Requiere revisión del compás.",
+    "sourceMidi": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Ven a la Fiesta\\Ven a la Fiesta SATB.mid"
+  }
+]

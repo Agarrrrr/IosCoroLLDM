@@ -1,0 +1,95 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/export_navigation_test.dart
+00:00 +0: E:/proyectos/IosCoroLLDM/test/export_navigation_test.dart: selection waits for the sheet exit animation
+00:00 +1: E:/proyectos/IosCoroLLDM/test/export_navigation_test.dart: cached conversion closes only its progress route, repeatedly
+00:00 +2: E:/proyectos/IosCoroLLDM/test/export_navigation_test.dart: cleanup cannot close a newer dialog
+00:01 +3: E:/proyectos/IosCoroLLDM/test/export_navigation_test.dart: progress listeners are removed before notifier disposal
+00:01 +4: E:/proyectos/IosCoroLLDM/test/player_sepia_contrast_test.dart: sepia player has a visible outline and legible controls (ready=true)
+00:02 +5: E:/proyectos/IosCoroLLDM/test/player_sepia_contrast_test.dart: sepia player has a visible outline and legible controls (ready=false)
+00:02 +6: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / fff6d96b cumple contraste
+00:02 +7: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff3b82f6 cumple contraste
+00:02 +8: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff10b981 cumple contraste
+00:02 +9: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ffef4444 cumple contraste
+00:02 +10: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff8b5cf6 cumple contraste
+00:02 +11: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / fff97316 cumple contraste
+00:02 +12: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff06b6d4 cumple contraste
+00:02 +13: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ffec4899 cumple contraste
+00:02 +14: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff6366f1 cumple contraste
+00:02 +15: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff64748b cumple contraste
+00:02 +16: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff8b5a2b cumple contraste
+00:02 +17: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff000000 cumple contraste
+00:02 +18: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ffffffff cumple contraste
+00:02 +19: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ffffeb3b cumple contraste
+00:02 +20: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / ff2196f3 cumple contraste
+00:02 +21: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: claro / 80808080 cumple contraste
+00:02 +22: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / fff6d96b cumple contraste
+00:02 +23: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff3b82f6 cumple contraste
+00:02 +24: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff10b981 cumple contraste
+00:02 +25: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ffef4444 cumple contraste
+00:02 +26: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff8b5cf6 cumple contraste
+00:02 +27: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / fff97316 cumple contraste
+00:02 +28: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff06b6d4 cumple contraste
+00:02 +29: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ffec4899 cumple contraste
+00:02 +30: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff6366f1 cumple contraste
+00:02 +31: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff64748b cumple contraste
+00:02 +32: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff8b5a2b cumple contraste
+00:02 +33: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff000000 cumple contraste
+00:02 +34: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ffffffff cumple contraste
+00:02 +35: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ffffeb3b cumple contraste
+00:02 +36: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / ff2196f3 cumple contraste
+00:02 +37: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuro / 80808080 cumple contraste
+00:02 +38: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / fff6d96b cumple contraste
+00:02 +39: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff3b82f6 cumple contraste
+00:02 +40: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff10b981 cumple contraste
+00:02 +41: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ffef4444 cumple contraste
+00:02 +42: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff8b5cf6 cumple contraste
+00:02 +43: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / fff97316 cumple contraste
+00:02 +44: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff06b6d4 cumple contraste
+00:02 +45: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ffec4899 cumple contraste
+00:02 +46: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff6366f1 cumple contraste
+00:02 +47: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff64748b cumple contraste
+00:02 +48: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff8b5a2b cumple contraste
+00:02 +49: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff000000 cumple contraste
+00:02 +50: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ffffffff cumple contraste
+00:02 +51: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ffffeb3b cumple contraste
+00:02 +52: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / ff2196f3 cumple contraste
+00:02 +53: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: sepia / 80808080 cumple contraste
+00:02 +54: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / fff6d96b cumple contraste
+00:02 +55: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff3b82f6 cumple contraste
+00:02 +56: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff10b981 cumple contraste
+00:02 +57: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ffef4444 cumple contraste
+00:02 +58: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff8b5cf6 cumple contraste
+00:02 +59: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / fff97316 cumple contraste
+00:02 +60: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff06b6d4 cumple contraste
+00:02 +61: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ffec4899 cumple contraste
+00:02 +62: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff6366f1 cumple contraste
+00:02 +63: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff64748b cumple contraste
+00:02 +64: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff8b5a2b cumple contraste
+00:02 +65: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff000000 cumple contraste
+00:02 +66: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ffffffff cumple contraste
+00:02 +67: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ffffeb3b cumple contraste
+00:02 +68: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / ff2196f3 cumple contraste
+00:02 +69: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: quiet / 80808080 cumple contraste
+00:02 +70: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / fff6d96b cumple contraste
+00:02 +71: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff3b82f6 cumple contraste
+00:02 +72: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff10b981 cumple contraste
+00:02 +73: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ffef4444 cumple contraste
+00:02 +74: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff8b5cf6 cumple contraste
+00:02 +75: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / fff97316 cumple contraste
+00:02 +76: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff06b6d4 cumple contraste
+00:02 +77: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ffec4899 cumple contraste
+00:02 +78: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff6366f1 cumple contraste
+00:02 +79: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff64748b cumple contraste
+00:02 +80: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff8b5a2b cumple contraste
+00:02 +81: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff000000 cumple contraste
+00:02 +82: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ffffffff cumple contraste
+00:02 +83: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ffffeb3b cumple contraste
+00:02 +84: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / ff2196f3 cumple contraste
+00:02 +85: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: oscuroNormal / 80808080 cumple contraste
+00:02 +86: E:/proyectos/IosCoroLLDM/test/theme_contrast_test.dart: la transparencia se evalúa contra el fondo visible
+00:03 +87: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: Down swipe closes once; upwards and short gestures keep player open
+00:04 +88: E:/proyectos/IosCoroLLDM/test/player_dismiss_test.dart: A cancelled swipe does not close
+00:04 +89: E:/proyectos/IosCoroLLDM/test/midi_export_regression_test.dart: filtra running status de eventos con uno y dos bytes de datos
+00:04 +90: E:/proyectos/IosCoroLLDM/test/midi_export_regression_test.dart: Canten a Cristo Rey permite preparar las cuatro voces por separado
+00:04 +91: E:/proyectos/IosCoroLLDM/test/midi_export_regression_test.dart: todas las voces del catálogo pueden aislarse sin perder notas
+419 MIDI y 1691 voces comprobados
+00:06 +92: All tests passed!

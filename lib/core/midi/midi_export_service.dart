@@ -28,9 +28,9 @@ class MidiExportVoice {
 class MidiExportService {
   MidiExportService._();
 
-  // Invalida renders anteriores a la corrección de running status al aislar
-  // voces. Conserva el master de exportación de +15 dB.
-  static const int _exportCacheVersion = 5;
+  // v6 prevents reuse of partial MP3s left by failed v5 encodes.
+  // Conserva la corrección de voces y el master de exportación de +15 dB.
+  static const int _exportCacheVersion = 6;
   static const double _masterBoostLinear = 5.623413251903491;
 
   static Future<List<MidiExportVoice>> voices(Canto canto) async {
@@ -75,6 +75,7 @@ class MidiExportService {
     final renderMidi = File('${workDir.path}/$baseName.mid');
     final wavFile = File('${workDir.path}/$baseName.wav');
     final mp3File = File('${workDir.path}/$baseName.mp3');
+    final pendingMp3 = File('${mp3File.path}.pending');
     final legacyMp3File = File('${workDir.path}/$legacyBaseName.mp3');
     final soundfont = await _ensureSoundfont(workDir);
 
@@ -119,11 +120,13 @@ class MidiExportService {
       }
       stage = 'codificando el MP3';
       debugPrint('[MidiExport] Codificando $baseName con LAME');
-      await _encodeWavToMp3(wavFile, mp3File);
+      if (await pendingMp3.exists()) await pendingMp3.delete();
+      await _encodeWavToMp3(wavFile, pendingMp3);
 
-      if (!await mp3File.exists() || await mp3File.length() == 0) {
+      if (!await pendingMp3.exists() || await pendingMp3.length() == 0) {
         throw StateError('La conversión no generó audio');
       }
+      await pendingMp3.rename(mp3File.path);
       debugPrint(
         '[MidiExport] MP3 listo: ${mp3File.path} '
         '(${await mp3File.length()} bytes)',
@@ -136,6 +139,7 @@ class MidiExportService {
       try {
         if (await renderMidi.exists()) await renderMidi.delete();
         if (await wavFile.exists()) await wavFile.delete();
+        if (await pendingMp3.exists()) await pendingMp3.delete();
       } catch (_) {}
     }
   }

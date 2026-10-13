@@ -39,6 +39,9 @@ import 'package:coro_lldm/features/visor/widgets/annotation_tools.dart';
 import 'package:coro_lldm/features/visor/widgets/player_options_sheet.dart';
 import 'score_wakelock.dart';
 import 'widgets/metronome_motion.dart';
+import 'widgets/export_navigation.dart';
+import 'package:coro_lldm/core/storage/export_share.dart';
+import 'package:coro_lldm/app/accessible_colors.dart';
 
 const double _kScaleEpsilon = 0.001;
 
@@ -444,113 +447,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
   }
 
-  // Compatibilidad temporal con el menú anterior durante la migración.
-  // ignore: unused_element
-  Future<void> _mostrarMenuCompartir(Canto canto, String? localPdfPath) async {
-    final theme = Theme.of(context);
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: theme.scaffoldBackgroundColor,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) {
-        return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Center(
-                  child: Container(
-                    width: 40,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.3),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'Compartir "${canto.nombre}"',
-                  style: GoogleFonts.inter(
-                      fontSize: 18, fontWeight: FontWeight.bold),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-                const SizedBox(height: 16),
-                ListTile(
-                  leading: Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                      color: theme.colorScheme.primary.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Icon(Icons.picture_as_pdf_rounded,
-                        color: theme.colorScheme.primary),
-                  ),
-                  title: Text('Compartir Partitura (PDF)',
-                      style: GoogleFonts.inter(fontWeight: FontWeight.w600)),
-                  subtitle: Text('Enviar archivo PDF de la partitura',
-                      style:
-                          GoogleFonts.inter(fontSize: 12, color: Colors.grey)),
-                  onTap: () async {
-                    Navigator.pop(context);
-                    await _guardarOCompartirPdf(canto, localPdfPath);
-                  },
-                ),
-                if (canto.midiArchivo != null && canto.midiArchivo!.isNotEmpty)
-                  ListTile(
-                    leading: Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: Colors.amber.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Icon(Icons.music_note_rounded,
-                          color: Colors.amber),
-                    ),
-                    title: Text('Compartir Audio (MIDI)',
-                        style: GoogleFonts.inter(fontWeight: FontWeight.w600)),
-                    subtitle: Text('Enviar archivo de audio MIDI',
-                        style: GoogleFonts.inter(
-                            fontSize: 12, color: Colors.grey)),
-                    onTap: () async {
-                      Navigator.pop(context);
-                      final midiFile = await OfflineFiles.midiFile(canto.id);
-                      if (!mounted) return;
-                      if (await midiFile.exists()) {
-                        final midiName =
-                            MidiExportService.displayMidiFileName(canto);
-                        final shareMidi =
-                            await _prepareShareFile(midiFile, midiName);
-                        await Share.shareXFiles(
-                          [
-                            XFile(shareMidi.path,
-                                name: midiName, mimeType: 'audio/midi')
-                          ],
-                          text: 'Audio MIDI: ${canto.nombre}',
-                        );
-                      } else {
-                        if (!mounted) return;
-                        ScaffoldMessenger.of(this.context).showSnackBar(
-                          const SnackBar(
-                              content: Text(
-                                  'El archivo de audio MIDI aún se está descargando.')),
-                        );
-                      }
-                    },
-                  ),
-              ],
-            ),
-          ),
-        );
-      },
-    );
-  }
-
   Future<void> _mostrarMenuCompartirMp3(
     Canto canto,
     String? localPdfPath,
@@ -589,7 +485,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
     if (!mounted) return;
 
-    final selection = await showModalBottomSheet<_ShareSelection>(
+    final selection = await showSettledExportSheet<_ShareSelection>(
       context: context,
       isScrollControlled: true,
       backgroundColor: theme.scaffoldBackgroundColor,
@@ -610,14 +506,14 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   width: 40,
                   height: 4,
                   decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.3),
+                    color: Colors.grey.withValues(alpha: 0.3),
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
               ),
               const SizedBox(height: 16),
               Text(
-                '${strings.t(Platform.isAndroid ? 'Exportar' : 'Compartir', Platform.isAndroid ? 'Export' : 'Share')} '
+                '${strings.t('Exportar', 'Export')} '
                 '"${canto.nombre}"',
                 style: GoogleFonts.inter(
                   fontSize: 18,
@@ -634,12 +530,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                 title: Text(strings.t('Partitura (PDF)', 'Sheet Music (PDF)')),
                 subtitle: Text(
                   strings.t(
-                    Platform.isAndroid
-                        ? 'Guardar o compartir la partitura'
-                        : 'Compartir la partitura',
-                    Platform.isAndroid
-                        ? 'Save or share the score'
-                        : 'Share the score',
+                    'Guardar o compartir la partitura',
+                    'Save or share the score',
                   ),
                 ),
                 onTap: () => Navigator.pop(
@@ -649,9 +541,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
               ),
               if (voices.isNotEmpty) ...[
                 ListTile(
-                  leading: const Icon(
+                  leading: Icon(
                     Icons.groups_rounded,
-                    color: Colors.amber,
+                    color: theme.colorScheme.primary,
                   ),
                   title: Text(strings.t(
                     'Voces individuales (MP3)',
@@ -667,9 +559,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                   ),
                 ),
                 ListTile(
-                  leading: const Icon(
+                  leading: Icon(
                     Icons.library_music_rounded,
-                    color: Colors.deepOrange,
+                    color: theme.colorScheme.primary,
                   ),
                   title: Text(strings.t(
                     'Ensamble y todas las voces (MP3)',
@@ -692,7 +584,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                       fontSize: 11,
                       fontWeight: FontWeight.w800,
                       letterSpacing: 0.8,
-                      color: Colors.grey,
+                      color: theme.colorScheme.onSurfaceVariant,
                     ),
                   ),
                 ),
@@ -738,20 +630,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       if (!allowed || !mounted) return;
     }
 
-    if (!Platform.isAndroid) {
-      if (selection.kind == _ShareKind.allVoices ||
-          selection.kind == _ShareKind.voicesOnly) {
-        await _exportarTodasLasVocesIOS(
-          canto,
-          voices,
-          includeEnsemble: selection.kind == _ShareKind.allVoices,
-        );
-      } else {
-        await _exportarAudioIOS(canto, selection.voice);
-      }
-      return;
-    }
-
     final destination = await _elegirDestino();
     if (destination == null || !mounted) return;
     if (selection.kind == _ShareKind.allVoices ||
@@ -771,9 +649,13 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   Rect _shareButtonRect() {
     final renderBox =
         _shareButtonKey.currentContext?.findRenderObject() as RenderBox?;
-    if (renderBox == null) return Rect.zero;
-    final offset = renderBox.localToGlobal(Offset.zero);
-    return offset & renderBox.size;
+    final viewport = Offset.zero & MediaQuery.sizeOf(context);
+    if (renderBox != null && renderBox.attached && renderBox.hasSize) {
+      final rect = (renderBox.localToGlobal(Offset.zero) & renderBox.size)
+          .intersect(viewport);
+      if (!rect.isEmpty) return rect;
+    }
+    return Rect.fromCenter(center: viewport.center, width: 1, height: 1);
   }
 
   /// Diálogo de límite diario de exports alcanzado (solo usuarios free).
@@ -822,182 +704,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     return false;
   }
 
-  Future<void> _exportarAudioIOS(
-    Canto canto,
-    MidiExportVoice? voice,
-  ) async {
-    final strings = AppStrings.of(context);
-    var dialogOpen = true;
-    showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (dialogContext) => PopScope(
-        canPop: false,
-        child: AlertDialog(
-          content: Row(
-            children: [
-              const CircularProgressIndicator(),
-              const SizedBox(width: 20),
-              Expanded(
-                child: Text(
-                  voice == null
-                      ? strings.t('Convirtiendo ensamble a MP3…',
-                          'Converting ensemble to MP3…')
-                      : strings.t('Convirtiendo ${voice.name} a MP3…',
-                          'Converting ${voice.name} to MP3…'),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-    try {
-      final mp3 = await MidiExportService.exportMp3(
-        canto,
-        trackIndex: voice?.trackIndex,
-        voiceName: voice?.name,
-      );
-      final displayFileName = MidiExportService.displayFileName(
-        canto,
-        voice: voice,
-      );
-      final shareMp3 = await _prepareShareFile(mp3, displayFileName);
-      if (!mounted) return;
-      if (dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-        dialogOpen = false;
-      }
-      await Share.shareXFiles(
-        [XFile(shareMp3.path, name: displayFileName, mimeType: 'audio/mpeg')],
-        sharePositionOrigin: _shareButtonRect(),
-      );
-      await ref.read(monetizationProvider.notifier).consumeAudioExport();
-      unawaited(AdsService.instance.onExportCompleted());
-    } catch (e) {
-      debugPrint('Exportación fallida: $e');
-      if (mounted && dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-      }
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-            content: Text(strings.t(
-                'No se pudo exportar el audio de este canto. El archivo no pudo procesarse o enviarse.',
-                'Could not export this song’s audio. The file could not be processed or sent.'))),
-      );
-    }
-  }
-
-  Future<void> _exportarTodasLasVocesIOS(
-      Canto canto, List<MidiExportVoice> voices,
-      {bool includeEnsemble = true}) async {
-    final strings = AppStrings.of(context);
-    final total = voices.length + (includeEnsemble ? 1 : 0);
-    final progress = ValueNotifier<(int, int, String)>(
-        (0, total, strings.t('Voces individuales', 'Individual voices')));
-    var cancelled = false;
-    var dialogOpen = true;
-    showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (dialogContext) => PopScope(
-        canPop: false,
-        child: AlertDialog(
-          title:
-              Text(strings.t('Preparando archivos MP3', 'Preparing MP3 files')),
-          content: ValueListenableBuilder<(int, int, String)>(
-            valueListenable: progress,
-            builder: (context, value, child) {
-              final completed = value.$1;
-              final total = value.$2;
-              return Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  LinearProgressIndicator(
-                    value: total == 0 ? null : completed / total,
-                  ),
-                  const SizedBox(height: 16),
-                  Text(cancelled
-                      ? strings.t('Cancelando al terminar el archivo actual…',
-                          'Cancelling after current file…')
-                      : '${value.$3}\n$completed ${strings.t('de', 'of')} $total'),
-                ],
-              );
-            },
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                cancelled = true;
-                progress.value = (
-                  progress.value.$1,
-                  progress.value.$2,
-                  strings.t('Cancelando al terminar el archivo actual…',
-                      'Cancelling after current file…')
-                );
-              },
-              child: Text(strings.t('Cancelar', 'Cancel')),
-            ),
-          ],
-        ),
-      ),
-    );
-    try {
-      final files = await MidiExportService.exportAllMp3(
-        canto,
-        onProgress: (completed, total, label) {
-          progress.value = (completed, total, label);
-        },
-        isCancelled: () => cancelled,
-        includeEnsemble: includeEnsemble,
-      );
-      if (!mounted) return;
-      if (dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-        dialogOpen = false;
-      }
-      if (files.isEmpty || cancelled) return;
-      final names = <String>[
-        if (includeEnsemble) MidiExportService.displayFileName(canto),
-        for (final voice in voices)
-          MidiExportService.displayFileName(canto, voice: voice),
-      ];
-      final shareFiles = await Future.wait([
-        for (var i = 0; i < files.length; i++)
-          _prepareShareFile(files[i], names[i]),
-      ]);
-      await Share.shareXFiles(
-        [
-          for (var i = 0; i < shareFiles.length; i++)
-            XFile(shareFiles[i].path, name: names[i], mimeType: 'audio/mpeg'),
-        ],
-        sharePositionOrigin: _shareButtonRect(),
-      );
-      await ref.read(monetizationProvider.notifier).consumeAudioExport();
-      unawaited(AdsService.instance.onExportCompleted());
-    } catch (e) {
-      debugPrint('Exportación fallida: $e');
-      if (mounted && dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-      }
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-            content: Text(strings.t(
-                'No se pudieron exportar los archivos de audio de este canto.',
-                'Could not export this song’s audio files.'))),
-      );
-    } finally {
-      progress.dispose();
-    }
-  }
-
   Future<_ExportDestination?> _elegirDestino() async {
-    if (!Platform.isAndroid) return _ExportDestination.share;
     final strings = AppStrings.of(context);
-    return showModalBottomSheet<_ExportDestination>(
+    return showSettledExportSheet<_ExportDestination>(
       context: context,
       builder: (sheetContext) => SafeArea(
         child: Column(
@@ -1006,8 +715,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
             ListTile(
               leading: const Icon(Icons.save_alt_rounded),
               title: Text(strings.t(
-                'Guardar en dispositivo',
-                'Save to device',
+                Platform.isIOS
+                    ? 'Guardar en Archivos'
+                    : 'Guardar en dispositivo',
+                Platform.isIOS ? 'Save to Files' : 'Save to device',
               )),
               subtitle: Text(strings.t(
                 'Elegir nombre y ubicación',
@@ -1081,10 +792,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
 
       final sharePdf = await _prepareShareFile(sourcePdf, pdfName);
-      await Share.shareXFiles(
+      if (!mounted) return;
+      await ExportShare.share(
         [XFile(sharePdf.path, name: pdfName, mimeType: 'application/pdf')],
         subject: canto.nombre,
-        sharePositionOrigin: _shareButtonRect(),
+        origin: _shareButtonRect(),
       );
     } catch (error) {
       if (!mounted) return;
@@ -1106,11 +818,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   ) async {
     final strings = AppStrings.of(context);
     var operation = strings.t('crear', 'create');
-    var dialogOpen = true;
-    showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (dialogContext) => PopScope(
+    final dialog = ExportProgressDialog(
+      context,
+      (dialogContext) => PopScope(
         canPop: false,
         child: AlertDialog(
           content: Row(
@@ -1139,10 +849,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         voiceName: voice?.name,
       );
       if (!mounted) return;
-      if (dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-        dialogOpen = false;
-      }
+      await dialog.close();
+      if (!mounted) return;
       if (destination == _ExportDestination.save) {
         operation = strings.t('guardar', 'save');
         final saved = await AndroidFileSaver.save([
@@ -1165,26 +873,27 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         operation = strings.t('compartir', 'share');
         final mp3Name = MidiExportService.displayFileName(canto, voice: voice);
         final shareMp3 = await _prepareShareFile(mp3, mp3Name);
+        if (!mounted) return;
         final sentToWhatsApp = await WhatsAppAudioShare.share([shareMp3]);
-        if (!sentToWhatsApp) {
-          await _shareMp3Files([shareMp3], [mp3Name]);
-        }
+        final shared =
+            sentToWhatsApp || await _shareMp3Files([shareMp3], [mp3Name]);
+        if (!shared || !mounted) return;
         await ref.read(monetizationProvider.notifier).consumeAudioExport();
         unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
       debugPrint('Exportación fallida: $e');
       if (!mounted) return;
-      if (dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-        dialogOpen = false;
-      }
+      await dialog.close();
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
             content: Text(strings.t(
                 'No se pudo $operation el archivo de audio. Comprueba que el canto y el destino estén disponibles.',
                 'Could not $operation the audio file. Check that the song and destination are available.'))),
       );
+    } finally {
+      await dialog.close();
     }
   }
 
@@ -1196,12 +905,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final progress = ValueNotifier<(int, int, String)>(
         (0, total, strings.t('Voces individuales', 'Individual voices')));
     var cancelled = false;
-    var dialogOpen = true;
     var operation = strings.t('crear', 'create');
-    showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (dialogContext) => PopScope(
+    final dialog = ExportProgressDialog(
+      context,
+      (dialogContext) => PopScope(
         canPop: false,
         child: AlertDialog(
           title:
@@ -1257,10 +964,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         includeEnsemble: includeEnsemble,
       );
       if (!mounted) return;
-      if (dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-        dialogOpen = false;
-      }
+      await dialog.close();
+      if (!mounted) return;
       if (files.isEmpty || cancelled) return;
 
       final names = <String>[
@@ -1293,20 +998,19 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           for (var i = 0; i < files.length; i++)
             _prepareShareFile(files[i], names[i]),
         ]);
+        if (!mounted) return;
         final sentToWhatsApp = await WhatsAppAudioShare.share(shareFiles);
-        if (!sentToWhatsApp) {
-          await _shareMp3Files(shareFiles, names);
-        }
+        final shared =
+            sentToWhatsApp || await _shareMp3Files(shareFiles, names);
+        if (!shared || !mounted) return;
         await ref.read(monetizationProvider.notifier).consumeAudioExport();
         unawaited(AdsService.instance.onExportCompleted());
       }
     } catch (e) {
       debugPrint('Exportación fallida: $e');
       if (!mounted) return;
-      if (dialogOpen) {
-        Navigator.of(context, rootNavigator: true).pop();
-        dialogOpen = false;
-      }
+      await dialog.close();
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
             content: Text(strings.t(
@@ -1314,6 +1018,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                 'Could not $operation the audio files. Check that the song and destination are available.'))),
       );
     } finally {
+      await dialog.close();
       progress.dispose();
     }
   }
@@ -1437,8 +1142,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                     decoration: BoxDecoration(
                       color: PdfThemePalette.background(themeMode),
                       border: Border(
-                          bottom:
-                              BorderSide(color: Colors.grey.withOpacity(0.2))),
+                          bottom: BorderSide(
+                              color: Colors.grey.withValues(alpha: 0.2))),
                     ),
                     child: SingleChildScrollView(
                       physics: const NeverScrollableScrollPhysics(),
@@ -1945,14 +1650,13 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   }
 
   Future<bool> _shareMp3Files(List<File> files, List<String> names) async {
-    await Share.shareXFiles(
+    return ExportShare.share(
       [
         for (var index = 0; index < files.length; index++)
           XFile(files[index].path, name: names[index], mimeType: 'audio/mpeg'),
       ],
-      sharePositionOrigin: _shareButtonRect(),
+      origin: _shareButtonRect(),
     );
-    return true;
   }
 }
 
@@ -2035,8 +1739,11 @@ class _MidiPanelState extends State<MidiPanel> {
 
     if (widget.errorMessage != null) {
       return Material(
-        borderRadius: BorderRadius.circular(20),
-        color: theme.scaffoldBackgroundColor,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+            side: BorderSide(color: theme.colorScheme.outline, width: 0.75)),
+        elevation: 12,
+        color: theme.colorScheme.surface,
         child: ConstrainedBox(
           constraints:
               BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * .7),
@@ -2057,7 +1764,11 @@ class _MidiPanelState extends State<MidiPanel> {
 
     return Material(
       elevation: 12,
-      borderRadius: BorderRadius.circular(20),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+          side: BorderSide(color: theme.colorScheme.outline, width: 0.75)),
+      clipBehavior: Clip.antiAlias,
+      color: theme.colorScheme.surface,
       shadowColor: Colors.black.withValues(alpha: .35),
       child: ConstrainedBox(
           constraints: BoxConstraints(
@@ -2065,7 +1776,7 @@ class _MidiPanelState extends State<MidiPanel> {
           child: SingleChildScrollView(
               child: Container(
             decoration: BoxDecoration(
-              color: theme.scaffoldBackgroundColor,
+              color: theme.colorScheme.surface,
               borderRadius: BorderRadius.circular(20),
             ),
             padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -2119,7 +1830,7 @@ class _MidiPanelState extends State<MidiPanel> {
                                 style: GoogleFonts.inter(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w700,
-                                  color: Colors.grey,
+                                  color: theme.colorScheme.onSurfaceVariant,
                                 ),
                               ),
                               const SizedBox(width: 7),
@@ -2141,17 +1852,20 @@ class _MidiPanelState extends State<MidiPanel> {
                                     shape: BoxShape.circle,
                                     color: isCurrent
                                         ? (isFirst
-                                            ? Colors.redAccent
+                                            ? AccessibleColors.against(
+                                                Colors.redAccent,
+                                                [theme.colorScheme.surface],
+                                                minimum: 3.1)
                                             : widget.accentColor)
-                                        : Colors.grey.withOpacity(0.3),
+                                        : Colors.grey.withValues(alpha: 0.3),
                                     boxShadow: isCurrent
                                         ? [
                                             BoxShadow(
                                               color: isFirst
                                                   ? Colors.redAccent
-                                                      .withOpacity(0.5)
+                                                      .withValues(alpha: 0.5)
                                                   : widget.accentColor
-                                                      .withOpacity(0.5),
+                                                      .withValues(alpha: 0.5),
                                               blurRadius: 4,
                                               spreadRadius: 1,
                                             )
@@ -2186,7 +1900,8 @@ class _MidiPanelState extends State<MidiPanel> {
                         thumbShape:
                             const RoundSliderThumbShape(enabledThumbRadius: 6),
                         activeTrackColor: widget.accentColor,
-                        inactiveTrackColor: widget.accentColor.withOpacity(0.2),
+                        inactiveTrackColor:
+                            widget.accentColor.withValues(alpha: 0.2),
                         thumbColor: widget.accentColor,
                         overlayShape:
                             const RoundSliderOverlayShape(overlayRadius: 14),
@@ -2297,14 +2012,15 @@ class _MidiPanelState extends State<MidiPanel> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: loading
-                                  ? Colors.grey.withOpacity(0.2)
+                                  ? Colors.grey.withValues(alpha: 0.2)
                                   : theme.colorScheme.primaryContainer,
                             ),
                             child: loading
-                                ? const Padding(
-                                    padding: EdgeInsets.all(14),
+                                ? Padding(
+                                    padding: const EdgeInsets.all(14),
                                     child: CircularProgressIndicator(
-                                        color: Colors.white, strokeWidth: 2.5))
+                                        color: theme.colorScheme.primary,
+                                        strokeWidth: 2.5))
                                 : Padding(
                                     padding: EdgeInsets.only(
                                       left:
@@ -2362,7 +2078,7 @@ class _LoadingPlaceholder extends StatelessWidget {
               .animate(onPlay: (c) => c.repeat())
               .shimmer(
                   duration: 1500.ms,
-                  color: theme.colorScheme.primary.withOpacity(0.5))
+                  color: theme.colorScheme.primary.withValues(alpha: 0.5))
               .scaleXY(
                   begin: 0.95,
                   end: 1.05,
@@ -2377,7 +2093,7 @@ class _LoadingPlaceholder extends StatelessWidget {
           const SizedBox(height: 20),
           Text('Preparando partitura...',
                   style: GoogleFonts.inter(
-                      color: Colors.grey,
+                      color: theme.colorScheme.onSurfaceVariant,
                       fontSize: 16,
                       fontWeight: FontWeight.w500))
               .animate(onPlay: (c) => c.repeat())
@@ -2450,8 +2166,9 @@ class _GoldIconBtn extends StatelessWidget {
           height: 48,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color:
-                isActive ? activeColor.withOpacity(0.15) : Colors.transparent,
+            color: isActive
+                ? activeColor.withValues(alpha: 0.15)
+                : Colors.transparent,
             shape: BoxShape.circle,
           ),
           child: child ??

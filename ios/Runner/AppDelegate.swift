@@ -7,6 +7,7 @@ import UserNotifications
 @main
 @objc class AppDelegate: FlutterAppDelegate {
   private var audioRouteObserver: NSObjectProtocol?
+  private var fileExport: FileExportCoordinator?
 
   override func application(
     _ application: UIApplication,
@@ -28,6 +29,19 @@ import UserNotifications
     GeneratedPluginRegistrant.register(with: self)
 
     if let controller = window?.rootViewController as? FlutterViewController {
+      let fileExport = FileExportCoordinator(root: controller)
+      self.fileExport = fileExport
+      let exportChannel = FlutterMethodChannel(
+        name: "com.lldm.coro/file_export",
+        binaryMessenger: controller.binaryMessenger
+      )
+      exportChannel.setMethodCallHandler { [weak fileExport] call, result in
+        guard let fileExport = fileExport else {
+          result(FlutterError(code: "UNAVAILABLE", message: "Export unavailable", details: nil))
+          return
+        }
+        fileExport.handle(call, result: result)
+      }
       let audioRouteChannel = FlutterMethodChannel(
         name: "com.lldm.coro/audio_route",
         binaryMessenger: controller.binaryMessenger
@@ -278,3 +292,138 @@ enum KeychainCloudHelper {
   }
 }
 
+
+// One native presentation at a time, with real file URLs and explicit dismissal.
+private final class FileExportCoordinator: NSObject, UIDocumentPickerDelegate, UIAdaptivePresentationControllerDelegate {
+  private weak var root: UIViewController?
+  private var pending: FlutterResult?
+  private var completionValue: Any?
+  private weak var activeController: UIViewController?
+
+  init(root: UIViewController) {
+    self.root = root
+    super.init()
+  }
+
+  func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
+    guard call.method == "shareFiles" || call.method == "saveFiles" else {
+      result(FlutterMethodNotImplemented)
+      return
+    }
+    guard pending == nil else {
+      result(FlutterError(code: "BUSY", message: "An export is already open", details: nil))
+      return
+    }
+    guard let args = call.arguments as? [String: Any] else {
+      result(FlutterError(code: "INVALID_ARGS", message: "Missing files", details: nil))
+      return
+    }
+    let paths: [String]
+    if call.method == "saveFiles" {
+      paths = (args["files"] as? [[String: Any]])?.compactMap { $0["path"] as? String } ?? []
+    } else {
+      paths = args["paths"] as? [String] ?? []
+    }
+    let urls = paths.map { URL(fileURLWithPath: $0) }
+    guard !urls.isEmpty, urls.allSatisfy({ url in
+      guard let values = try? url.resourceValues(forKeys: [.isRegularFileKey, .fileSizeKey]) else { return false }
+      return values.isRegularFile == true && (values.fileSize ?? 0) > 0
+    }) else {
+      result(FlutterError(code: "MISSING_FILE", message: "Export file is missing or empty", details: nil))
+      return
+    }
+    pending = result
+    presentWhenReady(urls: urls, save: call.method == "saveFiles", args: args, attempts: 0)
+  }
+
+  private func presentWhenReady(urls: [URL], save: Bool, args: [String: Any], attempts: Int) {
+    guard let root = root, root.view.window != nil else {
+      finish(FlutterError(code: "UNAVAILABLE", message: "Export screen is unavailable", details: nil))
+      return
+    }
+    var presenter = root
+    while let next = presenter.presentedViewController, !next.isBeingDismissed { presenter = next }
+    if presenter.isBeingDismissed || presenter.isBeingPresented || presenter.presentedViewController != nil {
+      guard attempts < 40 else {
+        finish(FlutterError(code: "PRESENTATION_BUSY", message: "Another window is still open", details: nil))
+        return
+      }
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak self] in
+        self?.presentWhenReady(urls: urls, save: save, args: args, attempts: attempts + 1)
+      }
+      return
+    }
+    let controller: UIViewController
+    if save {
+      let picker = UIDocumentPickerViewController(forExporting: urls, asCopy: true)
+      picker.delegate = self
+      controller = picker
+    } else {
+      let activity = UIActivityViewController(activityItems: urls, applicationActivities: nil)
+      if let subject = args["subject"] as? String { activity.setValue(subject, forKey: "subject") }
+      activity.completionWithItemsHandler = { [weak self, weak activity] _, completed, _, error in
+        DispatchQueue.main.async {
+          guard let self = self else { return }
+          let value: Any
+          if let error = error {
+            value = FlutterError(code: "SHARE_FAILED", message: error.localizedDescription, details: nil)
+          } else {
+            value = completed
+          }
+          self.finishAfterDismissal(activity, value: value)
+        }
+      }
+      // Only iPad needs an anchor. An iPhone sourceView can interfere with iOS 26 dismissal.
+      if UIDevice.current.userInterfaceIdiom == .pad, let popover = activity.popoverPresentationController {
+        popover.sourceView = presenter.view
+        let candidate = CGRect(x: (args["x"] as? NSNumber)?.doubleValue ?? 0,
+                               y: (args["y"] as? NSNumber)?.doubleValue ?? 0,
+                               width: (args["width"] as? NSNumber)?.doubleValue ?? 0,
+                               height: (args["height"] as? NSNumber)?.doubleValue ?? 0)
+        let converted = presenter.view.convert(candidate, from: root.view)
+        let clipped = converted.intersection(presenter.view.bounds)
+        popover.sourceRect = clipped.isNull || clipped.isEmpty
+          ? CGRect(x: presenter.view.bounds.midX, y: presenter.view.bounds.midY, width: 1, height: 1) : clipped
+      }
+      controller = activity
+    }
+    activeController = controller
+    presenter.present(controller, animated: true) {
+      controller.presentationController?.delegate = self
+    }
+  }
+
+  private func finishAfterDismissal(_ controller: UIViewController?, value: Any) {
+    guard pending != nil else { return }
+    completionValue = value
+    guard let controller = controller, controller.presentingViewController != nil else {
+      finish(value)
+      return
+    }
+    if controller.isBeingDismissed, let transition = controller.transitionCoordinator {
+      transition.animate(alongsideTransition: nil) { [weak self] _ in self?.finish(value) }
+    } else {
+      controller.dismiss(animated: true) { [weak self] in self?.finish(value) }
+    }
+  }
+
+  private func finish(_ value: Any) {
+    let callback = pending
+    pending = nil
+    completionValue = nil
+    activeController = nil
+    callback?(value)
+  }
+
+  func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+    finishAfterDismissal(controller, value: !urls.isEmpty)
+  }
+
+  func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+    finishAfterDismissal(controller, value: false)
+  }
+
+  func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+    if presentationController.presentedViewController === activeController { finish(completionValue ?? false) }
+  }
+}

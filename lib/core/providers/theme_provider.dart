@@ -252,8 +252,16 @@ class AppTheme {
     final container = surfaces.last;
     final selected =
         Color.alphaBlend(original.primary.withValues(alpha: 0.10), surface);
-    final solidAccent =
-        AccessibleColors.against(accentColor, surfaces, minimum: 3.1);
+    final accentHue = HSVColor.fromColor(accentColor);
+    final brightGold = mode == AppThemeMode.claro &&
+        accentHue.hue >= 35 &&
+        accentHue.hue <= 60 &&
+        accentHue.saturation >= 0.35;
+    // Gold fills can stay luminous: their labels use onFill for contrast.
+    // Primary text/icons still use the separately contrast-tested foreground.
+    final solidAccent = brightGold
+        ? const Color(0xFFFFD54F)
+        : AccessibleColors.against(accentColor, surfaces, minimum: 3.1);
     final backgrounds = [...surfaces, selected];
     final primary = AccessibleColors.against(original.primary, backgrounds);
     final secondary = AccessibleColors.against(original.secondary, backgrounds);
