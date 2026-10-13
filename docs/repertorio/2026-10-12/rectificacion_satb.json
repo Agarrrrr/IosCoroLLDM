@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-12",
+  "quarantined": [
+    {
+      "id": "usmc_b44ea5087d4ed58cc6",
+      "name": "No Puedo Imaginar",
+      "midiKey": "global/assets/midi/efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132.enc",
+      "reason": "Dos pistas largas agrupadas y tres fragmentarias; no cuatro partes vocales completas",
+      "pdfPreserved": true,
+      "sourcePreserved": true,
+      "version": 5
+    }
+  ],
+  "before": [
+    {
+      "file": "E:/proyectos/IosCoroLLDM/assets/catalogo.json",
+      "row": {
+        "id": "usmc_b44ea5087d4ed58cc6",
+        "nombre": "No Puedo Imaginar",
+        "archivo": "b44ea5087d4ed58cc6_no-puedo-imaginar.pdf",
+        "temas": [
+          "Elección"
+        ],
+        "es_privado": false,
+        "vinculo_idioma": null,
+        "coro_id": "local",
+        "_idioma": "es",
+        "idioma": "es",
+        "midi_archivo": "global/assets/midi/efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132.enc",
+        "version": 4
+      }
+    },
+    {
+      "file": "E:/proyectos/IosCoroLLDM/assets/offline_assets/catalogo.json",
+      "row": {
+        "id": "usmc_b44ea5087d4ed58cc6",
+        "nombre": "No Puedo Imaginar",
+        "archivo": "b44ea5087d4ed58cc6_no-puedo-imaginar.pdf",
+        "temas": [
+          "Elección"
+        ],
+        "es_privado": false,
+        "vinculo_idioma": null,
+        "coro_id": "local",
+        "_idioma": "es",
+        "idioma": "es",
+        "midi_archivo": "global/assets/midi/efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132.enc",
+        "version": 4
+      }
+    },
+    {
+      "file": "E:/proyectos/CoroLLDM/public/offline_assets/catalogo.json",
+      "row": {
+        "id": "usmc_b44ea5087d4ed58cc6",
+        "nombre": "No Puedo Imaginar",
+        "archivo": "b44ea5087d4ed58cc6_no-puedo-imaginar.pdf",
+        "temas": [
+          "Elección"
+        ],
+        "es_privado": false,
+        "vinculo_idioma": null,
+        "coro_id": "local",
+        "_idioma": "es",
+        "idioma": "es",
+        "midi_archivo": "global/assets/midi/efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132.enc",
+        "version": 4
+      }
+    },
+    {
+      "file": "E:/proyectos/repertorio_bc/assets/catalogo.json",
+      "row": {
+        "id": "usmc_b44ea5087d4ed58cc6",
+        "nombre": "No Puedo Imaginar",
+        "archivo": "b44ea5087d4ed58cc6_no-puedo-imaginar.pdf",
+        "temas": [
+          "Elección"
+        ],
+        "es_privado": false,
+        "vinculo_idioma": null,
+        "coro_id": "local",
+        "_idioma": "es",
+        "idioma": "es",
+        "midi_archivo": "global/assets/midi/efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132.enc",
+        "version": 4
+      }
+    }
+  ],
+  "labelCorrections": [
+    {
+      "localId": "usmc_64b5943621b21cae026063ce",
+      "remoteId": "f791c3bf-ba88-5043-b581-dcc906b12993",
+      "name": "A la Sombra de Tus Alas",
+      "oldMidiKey": "global/assets/midi/ada9cf89c5d547f5edb9776500710ff9266b7596bedff9d0f0574b9f4a9087a2.enc",
+      "midiKey": "global/assets/midi/39f5dbda19be3b0ab5e06e63bdfabe4d6cdd4db466525ee10e0cf3b0c43fcb57.enc",
+      "midiHash": "39f5dbda19be3b0ab5e06e63bdfabe4d6cdd4db466525ee10e0cf3b0c43fcb57",
+      "labels": [
+        "Soprano",
+        "Alto",
+        "Parte adicional 1",
+        "Tenor",
+        "Bajo",
+        "Parte adicional 2"
+      ],
+      "oldMidiHash": "ada9cf89c5d547f5edb9776500710ff9266b7596bedff9d0f0574b9f4a9087a2",
+      "sourceMidi": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A la sombra de tus alas\\3.- A La Sombra De Tus Alas (Consagración)(1).mid",
+      "onlyTrackLabelsChanged": true,
+      "version": 6,
+      "mainRoles": [
+        {
+          "track": 0,
+          "role": "Soprano",
+          "notes": 205
+        },
+        {
+          "track": 1,
+          "role": "Alto",
+          "notes": 242
+        },
+        {
+          "track": 3,
+          "role": "Tenor",
+          "notes": 236
+        },
+        {
+          "track": 4,
+          "role": "Bajo",
+          "notes": 232
+        }
+      ],
+      "evidence": "Editable MuseScore con partes Soprano, Alto, Tenor y Bajo; mismos pitches y entradas de las cuatro pistas principales"
+    }
+  ],
+  "originalAssetsUnchanged": 4278,
+  "testsPassed": 109,
+  "previousAabStatus": "NO PUBLICAR - requiere revision SATB y nueva compilacion",
+  "retainedMidiNotMusicallyCertified": true
+}

@@ -30,7 +30,7 @@ String _hash(List<int> bytes) => SHA256Digest()
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   final manifest = jsonDecode(File(
-    'docs/repertorio/2026-10-12/incorporados_30.json',
+    'docs/repertorio/2026-10-12/incorporacion_actual.json',
   ).readAsStringSync()) as Map<String, dynamic>;
   final catalog = jsonDecode(File('assets/catalogo.json').readAsStringSync())
       as List<dynamic>;
@@ -114,4 +114,38 @@ void main() {
       }
     });
   }
+  test(
+      'No Puedo Imaginar conserva su PDF y no ofrece un MIDI SATB sin verificar',
+      () async {
+    final row =
+        catalog.singleWhere((row) => row['id'] == 'usmc_b44ea5087d4ed58cc6')
+            as Map<String, dynamic>;
+    final canto = Canto.fromJson(row);
+    expect(canto.midiArchivo, isNull);
+    final pdf = await OfflineFiles.ensurePdf(canto);
+    expect(_hash(await pdf.readAsBytes()),
+        'ac787c11f2f01fba624c07bbfe0220bc7e6008b986483a93ccb3de7f28841433');
+    expect(noNetwork.attempts, 0);
+  });
+
+  test(
+      'A la Sombra identifica las cuatro partes completas verificadas contra el editable',
+      () async {
+    final r =
+        records.singleWhere((row) => row['name'] == 'A la Sombra de Tus Alas');
+    final data =
+        await rootBundle.load('assets/offline_assets/midis/${r['midiKey']}');
+    final song = NativeMidiParser.parse(FileCrypto.decryptIfNeeded(
+        data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes)));
+    expect(song.tracks, hasLength(6));
+    final voices = [
+      song.tracks[0],
+      song.tracks[1],
+      song.tracks[3],
+      song.tracks[4]
+    ];
+    expect(voices.map((t) => t.name).toList(),
+        ['Soprano', 'Alto', 'Tenor', 'Bajo']);
+    expect(voices.map((t) => t.notes.length).toList(), [205, 242, 236, 232]);
+  });
 }

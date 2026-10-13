@@ -584,8 +584,8 @@
     "coro_id": "local",
     "_idioma": "es",
     "idioma": "es",
-    "midi_archivo": "global/assets/midi/ada9cf89c5d547f5edb9776500710ff9266b7596bedff9d0f0574b9f4a9087a2.enc",
-    "version": 5
+    "midi_archivo": "global/assets/midi/39f5dbda19be3b0ab5e06e63bdfabe4d6cdd4db466525ee10e0cf3b0c43fcb57.enc",
+    "version": 6
   },
   {
     "id": "usmc_01827135a62fc5ef4f437bd5",
@@ -11443,8 +11443,7 @@
     "coro_id": "local",
     "_idioma": "es",
     "idioma": "es",
-    "midi_archivo": "global/assets/midi/efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132.enc",
-    "version": 4
+    "version": 5
   },
   {
     "id": "usmc_c847b7f72d4f5279efe5d639",

@@ -5,7 +5,7 @@ Cambios incorporados hasta el 12 de octubre. Borrador de notas de actualización
 ## Más repertorio para ensayar
 
 - Ocho cantos nuevos, cada uno con partitura PDF y audio MIDI.
-- Audios MIDI añadidos a 44 cantos que ya tenían partitura.
+- Audios MIDI añadidos a 43 cantos que ya tenían partitura.
 - Los nuevos PDF y MIDI están incluidos en los recursos offline.
 - Recuperadas como obras independientes «La Vida se va Como el Viento» y «La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá», cada una con su propia partitura y audio.
 - Corregida la apertura offline de «Pecador, Ven al Dulce Jesús» y un problema de lectura del PDF de «Maravillosa Gracia».
@@ -78,7 +78,7 @@ Cambios incorporados hasta el 12 de octubre. Borrador de notas de actualización
 
 ## Cantos existentes que recibieron MIDI
 
-Estos 44 cantos ya tenían PDF; se les añadió el archivo MIDI de ensayo.
+Estos 43 cantos ya tenían PDF; se les añadió el archivo MIDI de ensayo.
 
 | Canto | Canto |
 |---|---|
@@ -97,13 +97,13 @@ Estos 44 cantos ya tenían PDF; se les añadió el archivo MIDI de ensayo.
 | Divino Mandamiento | Mi Siervo Amado |
 | El Alfarero | Mi Tiempo Ha Llegado |
 | El Ángel de Cristo | Nadie Como Tú |
-| El Ángel Que Juan Vio | No Puedo Imaginar |
-| El Cántico de los 144 Mil | Oh Salvador Rey Nuestro |
-| El Cántico de Moisés | Recordando la Muerte de Cristo |
-| El Pacto con Dios | Te Bendecimos |
-| El Santo Llamamiento | Tiempo de Agradecer |
-| Él Vive | Un Gran Consolador |
-| Eterno Dios | Ven a la Fiesta |
+| El Ángel Que Juan Vio | Oh Salvador Rey Nuestro |
+| El Cántico de los 144 Mil | Recordando la Muerte de Cristo |
+| El Cántico de Moisés | Te Bendecimos |
+| El Pacto con Dios | Tiempo de Agradecer |
+| El Santo Llamamiento | Un Gran Consolador |
+| Él Vive | Ven a la Fiesta |
+| Eterno Dios |  |
 
 ## Cambios de mantenimiento
 
@@ -132,3 +132,7 @@ Se implementaron un nuevo flujo para compartir PDF/MP3 y la opción «Guardar en
 - repertorio/2026-10-11/midis_confirmados.json
 - repertorio/2026-10-12/incorporados_30.json
 - Comparación de los catálogos actuales con el estado anterior al primer commit de octubre (3131ac4).
+
+## Rectificación del 12 de octubre
+
+No Puedo Imaginar vuelve a quedar pendiente: su MIDI no ofrece cuatro pistas vocales completas. A la Sombra de Tus Alas conserva todas sus notas y tiempos y corrige las etiquetas de sus cuatro partes principales contra el editable MuseScore. El AAB anterior queda pendiente de revisión y recompilación. Los conteos describen recursos asignados, no certifican la correspondencia musical de todos los arreglos.
