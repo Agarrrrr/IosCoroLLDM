@@ -2,14 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
-import 'package:coro_lldm/core/monetization/ads_service.dart';
-import 'package:coro_lldm/core/monetization/monetization_controller.dart';
-import 'package:coro_lldm/core/monetization/usage_quota.dart';
 import 'package:coro_lldm/core/providers/jukebox_provider.dart';
 import 'package:coro_lldm/features/jukebox/jukebox_screen.dart';
-import 'package:coro_lldm/features/premium/premium_dialog.dart';
-import 'package:coro_lldm/features/premium/reward_or_premium_dialog.dart';
-import 'package:coro_lldm/features/shared/app_notification_banner.dart';
 import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 
 class JukeboxMiniPlayer extends ConsumerStatefulWidget {
@@ -20,131 +14,20 @@ class JukeboxMiniPlayer extends ConsumerStatefulWidget {
 }
 
 class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
-  bool _accessPending = false;
-  bool _quotaToastShown = false;
-
-  Future<bool> _ensurePlayAccess(String songId) async {
-    final allowed = await ref
-        .read(monetizationProvider.notifier)
-        .consumeAudioAccess(songId);
-    if (!mounted) return false;
-    if (allowed) {
-      if (!_quotaToastShown && !ref.read(monetizationProvider).isPremium) {
-        _quotaToastShown = true;
-        final remaining = currentUsageQuota().newSongsRemaining;
-        AppNotificationBanner.show(
-          context,
-          AppStrings.of(context).t(
-            '$remaining cantos disponibles hoy',
-            '$remaining songs available today',
-          ),
-        );
-      }
-      return true;
-    }
-
-    final strings = AppStrings.of(context);
-    final accentColor = Theme.of(context).colorScheme.primary;
-    final result = await showRewardOrPremiumDialog(
-      context: context,
-      type: RewardPromptType.audioPlayback,
-      accentColor: accentColor,
-    );
-    if (!mounted || result == null || result == RewardPromptResult.dismiss) {
-      return false;
-    }
-    if (result == RewardPromptResult.premium) {
-      await showPremiumDialog(context);
-      return mounted && ref.read(monetizationProvider).isPremium;
-    }
-    final earned = await AdsService.instance.showRewarded();
-    if (!mounted) return false;
-    if (!earned) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            strings.t(
-              'El anuncio todavía no está disponible. Intenta de nuevo en unos segundos.',
-              'The ad is not available yet. Try again in a few seconds.',
-            ),
-          ),
-        ),
-      );
-      return false;
-    }
-    final controller = ref.read(monetizationProvider.notifier);
-    await controller.grantRewardedAudio();
-    final granted = await controller.consumeAudioAccess(songId);
-    return mounted && granted;
-  }
-
   Future<void> _handleTogglePlay() async {
-    if (_accessPending) return;
-    final jukebox = ref.read(jukeboxProvider);
-    if (jukebox.isPlaying) {
-      await ref.read(jukeboxProvider.notifier).togglePlay();
-      return;
-    }
-    final song = jukebox.currentSong ??
-        (jukebox.playlist.isNotEmpty ? jukebox.playlist.first : null);
-    if (song == null) return;
-
-    _accessPending = true;
-    try {
-      final allowed = await _ensurePlayAccess(song.id ?? song.canto);
-      if (!mounted || !allowed) return;
-      await ref.read(jukeboxProvider.notifier).togglePlay();
-    } finally {
-      _accessPending = false;
-    }
+    await ref.read(jukeboxProvider.notifier).togglePlay();
   }
 
   Future<void> _handleNext() async {
-    if (_accessPending) return;
     final jukebox = ref.read(jukeboxProvider);
-    if (jukebox.playlist.isEmpty) return;
-    int nextIndex = jukebox.currentIndex + 1;
-    if (nextIndex >= jukebox.playlist.length) {
-      if (jukebox.repeatMode == JukeboxRepeatMode.all) {
-        nextIndex = 0;
-      } else {
-        return;
-      }
-    }
-    final nextSong = jukebox.playlist[nextIndex];
-    _accessPending = true;
-    try {
-      final allowed = await _ensurePlayAccess(nextSong.id ?? nextSong.canto);
-      if (!mounted || !allowed) return;
-      await ref.read(jukeboxProvider.notifier).next();
-    } finally {
-      _accessPending = false;
-    }
+    if (jukebox.isPlayingAdSpot || jukebox.playlist.isEmpty) return;
+    await ref.read(jukeboxProvider.notifier).next();
   }
 
   Future<void> _handlePrevious() async {
-    if (_accessPending) return;
     final jukebox = ref.read(jukeboxProvider);
-    if (jukebox.playlist.isEmpty) return;
-    if (jukebox.position.inSeconds > 3) {
-      await ref.read(jukeboxProvider.notifier).previous();
-      return;
-    }
-    int prevIndex = jukebox.currentIndex - 1;
-    if (prevIndex < 0) {
-      prevIndex = jukebox.repeatMode == JukeboxRepeatMode.all
-          ? jukebox.playlist.length - 1
-          : 0;
-    }
-    final prevSong = jukebox.playlist[prevIndex];
-    _accessPending = true;
-    try {
-      final allowed = await _ensurePlayAccess(prevSong.id ?? prevSong.canto);
-      if (!mounted || !allowed) return;
-      await ref.read(jukeboxProvider.notifier).previous();
-    } finally {
-      _accessPending = false;
-    }
+    if (jukebox.isPlayingAdSpot || jukebox.playlist.isEmpty) return;
+    await ref.read(jukeboxProvider.notifier).previous();
   }
 
   @override
@@ -263,9 +146,11 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              currentSong?.canto ??
-                                  strings.t(
-                                      'Selecciona un canto', 'Select a song'),
+                              jukebox.isPlayingAdSpot
+                                  ? '${strings.appTitle} Premium'
+                                  : (currentSong?.canto ??
+                                      strings.t(
+                                          'Selecciona un canto', 'Select a song')),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.inter(
@@ -287,7 +172,9 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                                     borderRadius: BorderRadius.circular(6),
                                   ),
                                   child: Text(
-                                    badgeText,
+                                    jukebox.isPlayingAdSpot
+                                        ? strings.t('Mensaje', 'Sponsor')
+                                        : badgeText,
                                     style: GoogleFonts.inter(
                                       fontSize: 10.5,
                                       fontWeight: FontWeight.w700,
@@ -295,7 +182,8 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                                     ),
                                   ),
                                 ),
-                                if (jukebox.isOffline) ...[
+                                if (jukebox.isOffline &&
+                                    !jukebox.isPlayingAdSpot) ...[
                                   const SizedBox(width: 6),
                                   Icon(
                                     Icons.offline_pin_rounded,
@@ -312,7 +200,8 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                       IconButton(
                         icon: const Icon(Icons.skip_previous_rounded, size: 22),
                         color: scheme.onSurfaceVariant,
-                        onPressed: jukebox.playlist.isEmpty
+                        onPressed: (jukebox.playlist.isEmpty ||
+                                jukebox.isPlayingAdSpot)
                             ? null
                             : _handlePrevious,
                       ),
@@ -337,8 +226,10 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                       IconButton(
                         icon: const Icon(Icons.skip_next_rounded, size: 22),
                         color: scheme.onSurfaceVariant,
-                        onPressed:
-                            jukebox.playlist.isEmpty ? null : _handleNext,
+                        onPressed: (jukebox.playlist.isEmpty ||
+                                jukebox.isPlayingAdSpot)
+                            ? null
+                            : _handleNext,
                       ),
                     ],
                   ),

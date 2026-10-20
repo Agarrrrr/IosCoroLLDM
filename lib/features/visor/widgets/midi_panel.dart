@@ -301,7 +301,7 @@ class _MidiPanelState extends State<MidiPanel> {
                     builder: (context) {
                       final voces = widget.midiState.voces;
                       final activeTracks =
-                          voces.where((v) => !v.isMuted).toList();
+                          voces.where((v) => v.activa).toList();
                       final isEnsemble = activeTracks.length == voces.length ||
                           activeTracks.isEmpty;
                       final soloTrackIndex = activeTracks.length == 1

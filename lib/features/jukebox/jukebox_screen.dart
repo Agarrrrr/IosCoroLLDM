@@ -5,16 +5,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/ad_banner.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
-import 'package:coro_lldm/core/monetization/monetization_controller.dart';
-import 'package:coro_lldm/core/monetization/usage_quota.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/core/providers/jukebox_provider.dart';
 import 'package:coro_lldm/core/providers/vocal_audio_provider.dart';
 import 'package:coro_lldm/features/jukebox/widgets/jukebox_cover_card.dart';
 import 'package:coro_lldm/features/premium/premium_dialog.dart';
-import 'package:coro_lldm/features/premium/reward_or_premium_dialog.dart';
-import 'package:coro_lldm/features/shared/app_notification_banner.dart';
 import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 
 class JukeboxScreen extends ConsumerStatefulWidget {
@@ -27,8 +23,6 @@ class JukeboxScreen extends ConsumerStatefulWidget {
 class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
     with SingleTickerProviderStateMixin {
   late final TabController _tabController;
-  bool _accessPending = false;
-  bool _quotaToastShown = false;
   bool _exitAdTriggered = false;
 
   static const List<String> _kVoces = [
@@ -111,148 +105,31 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
     return match?.temas ?? [];
   }
 
-  Future<bool> _ensurePlayAccess(String songId) async {
-    final allowed = await ref
-        .read(monetizationProvider.notifier)
-        .consumeAudioAccess(songId);
-    if (!mounted) return false;
-    if (allowed) {
-      if (!_quotaToastShown && !ref.read(monetizationProvider).isPremium) {
-        _quotaToastShown = true;
-        final remaining = currentUsageQuota().newSongsRemaining;
-        AppNotificationBanner.show(
-          context,
-          AppStrings.of(context).t(
-            '$remaining cantos disponibles hoy',
-            '$remaining songs available today',
-          ),
-        );
-      }
-      return true;
-    }
-
-    final strings = AppStrings.of(context);
-    final accentColor = Theme.of(context).colorScheme.primary;
-    final result = await showRewardOrPremiumDialog(
-      context: context,
-      type: RewardPromptType.audioPlayback,
-      accentColor: accentColor,
-    );
-    if (!mounted || result == null || result == RewardPromptResult.dismiss) {
-      return false;
-    }
-    if (result == RewardPromptResult.premium) {
-      await showPremiumDialog(context);
-      return mounted && ref.read(monetizationProvider).isPremium;
-    }
-    final earned = await AdsService.instance.showRewarded();
-    if (!mounted) return false;
-    if (!earned) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            strings.t(
-              'El anuncio todavía no está disponible. Intenta de nuevo en unos segundos.',
-              'The ad is not available yet. Try again in a few seconds.',
-            ),
-          ),
-        ),
-      );
-      return false;
-    }
-    final controller = ref.read(monetizationProvider.notifier);
-    await controller.grantRewardedAudio();
-    final granted = await controller.consumeAudioAccess(songId);
-    return mounted && granted;
-  }
-
   Future<void> _handleTogglePlay() async {
-    if (_accessPending) return;
-    final jukebox = ref.read(jukeboxProvider);
-    if (jukebox.isPlaying) {
-      await ref.read(jukeboxProvider.notifier).togglePlay();
-      return;
-    }
-    final song = jukebox.currentSong ??
-        (jukebox.playlist.isNotEmpty ? jukebox.playlist.first : null);
-    if (song == null) return;
-
-    _accessPending = true;
-    try {
-      final allowed = await _ensurePlayAccess(song.id ?? song.canto);
-      if (!mounted || !allowed) return;
-      await ref.read(jukeboxProvider.notifier).togglePlay();
-    } finally {
-      _accessPending = false;
-    }
+    await ref.read(jukeboxProvider.notifier).togglePlay();
   }
 
   Future<void> _handlePlayAtIndex(int index,
       {bool switchTabOnPhone = false}) async {
-    if (_accessPending) return;
     final jukebox = ref.read(jukeboxProvider);
+    if (jukebox.isPlayingAdSpot) return;
     if (index < 0 || index >= jukebox.playlist.length) return;
-    final song = jukebox.playlist[index];
-
-    _accessPending = true;
-    try {
-      final allowed = await _ensurePlayAccess(song.id ?? song.canto);
-      if (!mounted || !allowed) return;
-      await ref.read(jukeboxProvider.notifier).playSongAtIndex(index);
-      if (switchTabOnPhone && mounted) {
-        _tabController.animateTo(0);
-      }
-    } finally {
-      _accessPending = false;
+    await ref.read(jukeboxProvider.notifier).playSongAtIndex(index);
+    if (switchTabOnPhone && mounted) {
+      _tabController.animateTo(0);
     }
   }
 
   Future<void> _handleNext() async {
-    if (_accessPending) return;
     final jukebox = ref.read(jukeboxProvider);
-    if (jukebox.playlist.isEmpty) return;
-    int nextIndex = jukebox.currentIndex + 1;
-    if (nextIndex >= jukebox.playlist.length) {
-      if (jukebox.repeatMode == JukeboxRepeatMode.all) {
-        nextIndex = 0;
-      } else {
-        return;
-      }
-    }
-    final nextSong = jukebox.playlist[nextIndex];
-    _accessPending = true;
-    try {
-      final allowed = await _ensurePlayAccess(nextSong.id ?? nextSong.canto);
-      if (!mounted || !allowed) return;
-      await ref.read(jukeboxProvider.notifier).next();
-    } finally {
-      _accessPending = false;
-    }
+    if (jukebox.isPlayingAdSpot || jukebox.playlist.isEmpty) return;
+    await ref.read(jukeboxProvider.notifier).next();
   }
 
   Future<void> _handlePrevious() async {
-    if (_accessPending) return;
     final jukebox = ref.read(jukeboxProvider);
-    if (jukebox.playlist.isEmpty) return;
-    if (jukebox.position.inSeconds > 3) {
-      await ref.read(jukeboxProvider.notifier).previous();
-      return;
-    }
-    int prevIndex = jukebox.currentIndex - 1;
-    if (prevIndex < 0) {
-      prevIndex = jukebox.repeatMode == JukeboxRepeatMode.all
-          ? jukebox.playlist.length - 1
-          : 0;
-    }
-    final prevSong = jukebox.playlist[prevIndex];
-    _accessPending = true;
-    try {
-      final allowed = await _ensurePlayAccess(prevSong.id ?? prevSong.canto);
-      if (!mounted || !allowed) return;
-      await ref.read(jukeboxProvider.notifier).previous();
-    } finally {
-      _accessPending = false;
-    }
+    if (jukebox.isPlayingAdSpot || jukebox.playlist.isEmpty) return;
+    await ref.read(jukeboxProvider.notifier).previous();
   }
 
   Widget _buildAudioModeAndVoiceSelector(
@@ -352,48 +229,59 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
 
         const SizedBox(height: 12),
 
-        // Barra de Selección de Voces siempre disponible (para Voces Cantadas Y para Voces en Piano)
-        SizedBox(
-          height: 36,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            itemCount: _kVoces.length,
-            separatorBuilder: (_, __) => const SizedBox(width: 8),
-            itemBuilder: (context, index) {
-              final voz = _kVoces[index];
-              final isSelected = jukebox.currentVoice == voz;
-              return Material(
-                color: isSelected
-                    ? accentColor
-                    : scheme.surfaceContainerHighest,
-                borderRadius: BorderRadius.circular(18),
-                child: InkWell(
-                  borderRadius: BorderRadius.circular(18),
-                  onTap: () {
-                    ref.read(userVoiceProvider.notifier).setVoice(voz);
-                    ref.read(jukeboxProvider.notifier).setVoice(voz);
-                  },
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 180),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 15,
-                      vertical: 7,
-                    ),
-                    alignment: Alignment.center,
-                    child: Text(
-                      strings.voiceLabel(voz),
-                      style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight:
-                            isSelected ? FontWeight.w700 : FontWeight.w500,
-                        color: isSelected ? onAccent : scheme.onSurface,
+        // Barra de Selección de Voces (En modo Voces muestra solo las voces que existen para el canto actual; en modo Piano siempre están las 5)
+        Builder(
+          builder: (context) {
+            final currentSong = jukebox.currentSong;
+            final availableVoces = isPiano || currentSong == null
+                ? _kVoces
+                : _kVoces
+                    .where((v) => currentSong.voces.containsKey(v))
+                    .toList();
+
+            return SizedBox(
+              height: 36,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemCount: availableVoces.length,
+                separatorBuilder: (_, __) => const SizedBox(width: 8),
+                itemBuilder: (context, index) {
+                  final voz = availableVoces[index];
+                  final isSelected = jukebox.currentVoice == voz;
+                  return Material(
+                    color: isSelected
+                        ? accentColor
+                        : scheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(18),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(18),
+                      onTap: () {
+                        ref.read(userVoiceProvider.notifier).setVoice(voz);
+                        ref.read(jukeboxProvider.notifier).setVoice(voz);
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 180),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 15,
+                          vertical: 7,
+                        ),
+                        alignment: Alignment.center,
+                        child: Text(
+                          strings.voiceLabel(voz),
+                          style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight:
+                                isSelected ? FontWeight.w700 : FontWeight.w500,
+                            color: isSelected ? onAccent : scheme.onSurface,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-              );
-            },
-          ),
+                  );
+                },
+              ),
+            );
+          },
         ),
       ],
     );
@@ -433,9 +321,13 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                   maxHeight: isTablet ? 320 : 330,
                 ),
                 child: JukeboxCoverCard(
-                  title: currentSong?.canto ??
-                      strings.t('Selecciona un canto', 'Select a song'),
-                  temas: songTemas,
+                  title: jukebox.isPlayingAdSpot
+                      ? '${strings.appTitle} Premium'
+                      : (currentSong?.canto ??
+                          strings.t('Selecciona un canto', 'Select a song')),
+                  temas: jukebox.isPlayingAdSpot
+                      ? [strings.t('Sin interrupciones', 'Ad-Free')]
+                      : songTemas,
                   voice: jukebox.currentVoice,
                   isPianoMode: isPiano,
                   isPlaying: jukebox.isPlaying,
@@ -452,8 +344,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          currentSong?.canto ??
-                              strings.t('Sin reproducción', 'Not playing'),
+                          jukebox.isPlayingAdSpot
+                              ? '${strings.appTitle} Premium'
+                              : (currentSong?.canto ??
+                                  strings.t('Sin reproducción', 'Not playing')),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.inter(
@@ -465,21 +359,39 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          songTemas.isNotEmpty
-                              ? '${strings.appTitle} · ${songTemas.join(' · ')}'
-                              : '${strings.appTitle} · ${strings.t('Repertorio Coral', 'Choral Repertoire')}',
+                          jukebox.isPlayingAdSpot
+                              ? strings.t(
+                                  'Mensaje institucional · El siguiente canto comenzará al terminar',
+                                  'Sponsor message · Next song will start automatically',
+                                )
+                              : (songTemas.isNotEmpty
+                                  ? '${strings.appTitle} · ${songTemas.join(' · ')}'
+                                  : '${strings.appTitle} · ${strings.t('Repertorio Coral', 'Choral Repertoire')}'),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.inter(
                             fontSize: 13,
                             fontWeight: FontWeight.w500,
-                            color: scheme.onSurfaceVariant,
+                            color: jukebox.isPlayingAdSpot
+                                ? accentColor
+                                : scheme.onSurfaceVariant,
                           ),
                         ),
                       ],
                     ),
                   ),
-                  if (currentSong != null)
+                  if (jukebox.isPlayingAdSpot)
+                    TextButton(
+                      onPressed: () => showPremiumDialog(context),
+                      child: Text(
+                        strings.t('Premium', 'Premium'),
+                        style: GoogleFonts.inter(
+                          fontWeight: FontWeight.w700,
+                          color: accentColor,
+                        ),
+                      ),
+                    )
+                  else if (currentSong != null)
                     IconButton(
                       iconSize: 28,
                       icon: Icon(
@@ -536,7 +448,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                   max: jukebox.duration.inMilliseconds > 0
                       ? jukebox.duration.inMilliseconds.toDouble()
                       : 1.0,
-                  onChanged: jukebox.duration.inMilliseconds > 0
+                  onChanged: (jukebox.duration.inMilliseconds > 0 &&
+                          !jukebox.isPlayingAdSpot)
                       ? (val) {
                           ref
                               .read(jukeboxProvider.notifier)
@@ -595,8 +508,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     iconSize: 34,
                     icon: const Icon(Icons.skip_previous_rounded),
                     color: scheme.onSurface,
-                    onPressed:
-                        jukebox.playlist.isEmpty ? null : _handlePrevious,
+                    onPressed: (jukebox.playlist.isEmpty ||
+                            jukebox.isPlayingAdSpot)
+                        ? null
+                        : _handlePrevious,
                   ),
                   GestureDetector(
                     onTap: jukebox.playlist.isEmpty ? null : _handleTogglePlay,
@@ -638,7 +553,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     iconSize: 34,
                     icon: const Icon(Icons.skip_next_rounded),
                     color: scheme.onSurface,
-                    onPressed: jukebox.playlist.isEmpty ? null : _handleNext,
+                    onPressed: (jukebox.playlist.isEmpty ||
+                            jukebox.isPlayingAdSpot)
+                        ? null
+                        : _handleNext,
                   ),
                   IconButton(
                     iconSize: 24,

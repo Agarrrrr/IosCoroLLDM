@@ -60,14 +60,15 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     final savedVoice = ref.read(userVoiceProvider);
     final preferred = savedVoice.isNotEmpty ? savedVoice : widget.initialVoice;
 
+    const voicePriority = ['Ensamble', 'Soprano', 'Contralto', 'Tenor', 'Bajo'];
     if (widget.song.voces.containsKey(preferred)) {
       _selectedVoice = preferred;
-    } else if (widget.song.voces.containsKey('Ensamble')) {
-      _selectedVoice = 'Ensamble';
-    } else if (widget.song.voces.isNotEmpty) {
-      _selectedVoice = widget.song.voces.keys.first;
     } else {
-      _selectedVoice = '';
+      _selectedVoice = voicePriority.firstWhere(
+        (v) => widget.song.voces.containsKey(v),
+        orElse: () =>
+            widget.song.voces.isNotEmpty ? widget.song.voces.keys.first : '',
+      );
     }
 
     _setupPlayer();

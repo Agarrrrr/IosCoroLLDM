@@ -70,6 +70,75 @@ class MainActivity : FlutterActivity() {
                 result.notImplemented()
             }
         }
+
+        val mediaSessionChannel = MethodChannel(
+            flutterEngine.dartExecutor.binaryMessenger,
+            "com.lldm.coro/media_session",
+        )
+        MediaPlaybackService.commandListener = { command, args ->
+            runOnUiThread {
+                mediaSessionChannel.invokeMethod(command, args)
+            }
+        }
+        mediaSessionChannel.setMethodCallHandler { call, result ->
+            when (call.method) {
+                "updateMetadata" -> {
+                    val title = call.argument<String>("title") ?: "Coro LLDM"
+                    val artist = call.argument<String>("artist") ?: "Coro LLDM"
+                    val album = call.argument<String>("album") ?: "Coro LLDM"
+                    val durationMs = call.argument<Number>("durationMs")?.toLong() ?: 0L
+                    val positionMs = call.argument<Number>("positionMs")?.toLong() ?: 0L
+                    val isPlaying = call.argument<Boolean>("isPlaying") ?: false
+                    val canSkipNext = call.argument<Boolean>("canSkipNext") ?: true
+                    val canSkipPrev = call.argument<Boolean>("canSkipPrevious") ?: true
+                    val canSeek = call.argument<Boolean>("canSeek") ?: true
+                    MediaPlaybackService.updateMetadata(
+                        context = applicationContext,
+                        title = title,
+                        artist = artist,
+                        album = album,
+                        durationMs = durationMs,
+                        positionMs = positionMs,
+                        isPlaying = isPlaying,
+                        canSkipNext = canSkipNext,
+                        canSkipPrev = canSkipPrev,
+                        canSeek = canSeek,
+                    )
+                    result.success(null)
+                }
+                "updatePlaybackState" -> {
+                    val durationMs = call.argument<Number>("durationMs")?.toLong() ?: 0L
+                    val positionMs = call.argument<Number>("positionMs")?.toLong() ?: 0L
+                    val isPlaying = call.argument<Boolean>("isPlaying") ?: false
+                    val canSkipNext = call.argument<Boolean>("canSkipNext") ?: true
+                    val canSkipPrev = call.argument<Boolean>("canSkipPrevious") ?: true
+                    val canSeek = call.argument<Boolean>("canSeek") ?: true
+                    MediaPlaybackService.updatePlaybackState(
+                        context = applicationContext,
+                        positionMs = positionMs,
+                        durationMs = durationMs,
+                        isPlaying = isPlaying,
+                        canSkipNext = canSkipNext,
+                        canSkipPrev = canSkipPrev,
+                        canSeek = canSeek,
+                    )
+                    result.success(null)
+                }
+                "beginTrackTransition" -> {
+                    MediaPlaybackService.beginTrackTransition(applicationContext)
+                    result.success(null)
+                }
+                "endTrackTransition" -> {
+                    MediaPlaybackService.endTrackTransition()
+                    result.success(null)
+                }
+                "stopSession" -> {
+                    MediaPlaybackService.stopSession(applicationContext)
+                    result.success(null)
+                }
+                else -> result.notImplemented()
+            }
+        }
     }
 
     private fun notifyAudioRouteChanged(

@@ -103,6 +103,7 @@ flutter:
     - assets/offline_assets/midis/
     - assets/offline_assets/midis/global/assets/midi/
     - assets/audio/metro/
+    - assets/audio/spots/
     - assets/brand/
     - assets/icons/
     - assets/voces_manifest.json

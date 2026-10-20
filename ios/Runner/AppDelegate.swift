@@ -2,12 +2,14 @@ import Flutter
 import UIKit
 import AVFoundation
 import AudioToolbox
+import MediaPlayer
 import UserNotifications
 
 @main
 @objc class AppDelegate: FlutterAppDelegate {
   private var audioRouteObserver: NSObjectProtocol?
   private var fileExport: FileExportCoordinator?
+  private var mediaSessionCoordinator: MediaSessionCoordinator?
 
   override func application(
     _ application: UIApplication,
@@ -89,6 +91,16 @@ import UserNotifications
         default:
           result(FlutterMethodNotImplemented)
         }
+      }
+
+      let mediaSessionChannel = FlutterMethodChannel(
+        name: "com.lldm.coro/media_session",
+        binaryMessenger: controller.binaryMessenger
+      )
+      let coordinator = MediaSessionCoordinator(channel: mediaSessionChannel)
+      self.mediaSessionCoordinator = coordinator
+      mediaSessionChannel.setMethodCallHandler { [weak coordinator] call, result in
+        coordinator?.handle(call, result: result)
       }
 
       let midiRenderChannel = FlutterMethodChannel(
@@ -425,5 +437,192 @@ private final class FileExportCoordinator: NSObject, UIDocumentPickerDelegate, U
 
   func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
     if presentationController.presentedViewController === activeController { finish(completionValue ?? false) }
+  }
+}
+
+private final class MediaSessionCoordinator {
+  private let channel: FlutterMethodChannel
+  private var commandsConfigured = false
+  private var transitionTask: UIBackgroundTaskIdentifier = .invalid
+  private var transitionTimer: Timer?
+  private var currentMetadata: [String: Any] = [:]
+  private lazy var cachedArtwork: MPMediaItemArtwork? = {
+    if let img = UIImage(named: "AppIcon") ?? UIImage(named: "LaunchImage") {
+      return MPMediaItemArtwork(boundsSize: img.size) { _ in img }
+    }
+    return nil
+  }()
+
+  init(channel: FlutterMethodChannel) {
+    self.channel = channel
+  }
+
+  private func ensureRemoteCommands() {
+    guard !commandsConfigured else { return }
+    commandsConfigured = true
+
+    let center = MPRemoteCommandCenter.shared()
+    center.playCommand.isEnabled = true
+    center.playCommand.addTarget { [weak self] _ in
+      DispatchQueue.main.async {
+        self?.channel.invokeMethod("play", arguments: nil)
+      }
+      return .success
+    }
+
+    center.pauseCommand.isEnabled = true
+    center.pauseCommand.addTarget { [weak self] _ in
+      DispatchQueue.main.async {
+        self?.channel.invokeMethod("pause", arguments: nil)
+      }
+      return .success
+    }
+
+    center.togglePlayPauseCommand.isEnabled = true
+    center.togglePlayPauseCommand.addTarget { [weak self] _ in
+      DispatchQueue.main.async {
+        self?.channel.invokeMethod("togglePlayPause", arguments: nil)
+      }
+      return .success
+    }
+
+    center.nextTrackCommand.isEnabled = true
+    center.nextTrackCommand.addTarget { [weak self] _ in
+      DispatchQueue.main.async {
+        self?.channel.invokeMethod("next", arguments: nil)
+      }
+      return .success
+    }
+
+    center.previousTrackCommand.isEnabled = true
+    center.previousTrackCommand.addTarget { [weak self] _ in
+      DispatchQueue.main.async {
+        self?.channel.invokeMethod("previous", arguments: nil)
+      }
+      return .success
+    }
+
+    center.changePlaybackPositionCommand.isEnabled = true
+    center.changePlaybackPositionCommand.addTarget { [weak self] event in
+      guard let posEvent = event as? MPChangePlaybackPositionCommandEvent else {
+        return .commandFailed
+      }
+      let ms = Int(posEvent.positionTime * 1000.0)
+      DispatchQueue.main.async {
+        self?.channel.invokeMethod("seek", arguments: ["positionMs": ms])
+      }
+      return .success
+    }
+  }
+
+  func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
+    switch call.method {
+    case "updateMetadata":
+      ensureRemoteCommands()
+      guard let args = call.arguments as? [String: Any] else {
+        result(nil)
+        return
+      }
+      try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
+      try? AVAudioSession.sharedInstance().setActive(true)
+      UIApplication.shared.beginReceivingRemoteControlEvents()
+
+      let title = args["title"] as? String ?? "Coro LLDM"
+      let artist = args["artist"] as? String ?? "Coro LLDM"
+      let album = args["album"] as? String ?? "Coro LLDM"
+      let durationMs = (args["durationMs"] as? NSNumber)?.doubleValue ?? 0
+      let positionMs = (args["positionMs"] as? NSNumber)?.doubleValue ?? 0
+      let isPlaying = (args["isPlaying"] as? Bool) ?? false
+      let canSkipNext = (args["canSkipNext"] as? Bool) ?? true
+      let canSkipPrevious = (args["canSkipPrevious"] as? Bool) ?? true
+      let canSeek = (args["canSeek"] as? Bool) ?? true
+
+      let center = MPRemoteCommandCenter.shared()
+      center.nextTrackCommand.isEnabled = canSkipNext
+      center.previousTrackCommand.isEnabled = canSkipPrevious
+      center.changePlaybackPositionCommand.isEnabled = canSeek
+
+      var info: [String: Any] = [
+        MPMediaItemPropertyTitle: title,
+        MPMediaItemPropertyArtist: artist,
+        MPMediaItemPropertyAlbumTitle: album,
+        MPMediaItemPropertyPlaybackDuration: max(0.0, durationMs / 1000.0),
+        MPNowPlayingInfoPropertyElapsedPlaybackTime: max(0.0, positionMs / 1000.0),
+        MPNowPlayingInfoPropertyPlaybackRate: isPlaying ? 1.0 : 0.0,
+        MPNowPlayingInfoPropertyDefaultPlaybackRate: 1.0,
+      ]
+      if let artwork = cachedArtwork {
+        info[MPMediaItemPropertyArtwork] = artwork
+      }
+      currentMetadata = info
+      MPNowPlayingInfoCenter.default().nowPlayingInfo = info
+      result(nil)
+
+    case "updatePlaybackState":
+      ensureRemoteCommands()
+      guard let args = call.arguments as? [String: Any] else {
+        result(nil)
+        return
+      }
+      let durationMs = (args["durationMs"] as? NSNumber)?.doubleValue ?? 0
+      let positionMs = (args["positionMs"] as? NSNumber)?.doubleValue ?? 0
+      let isPlaying = (args["isPlaying"] as? Bool) ?? false
+      let canSkipNext = (args["canSkipNext"] as? Bool) ?? true
+      let canSkipPrevious = (args["canSkipPrevious"] as? Bool) ?? true
+      let canSeek = (args["canSeek"] as? Bool) ?? true
+
+      let center = MPRemoteCommandCenter.shared()
+      center.nextTrackCommand.isEnabled = canSkipNext
+      center.previousTrackCommand.isEnabled = canSkipPrevious
+      center.changePlaybackPositionCommand.isEnabled = canSeek
+
+      var info = currentMetadata
+      if durationMs > 0 {
+        info[MPMediaItemPropertyPlaybackDuration] = durationMs / 1000.0
+      }
+      info[MPNowPlayingInfoPropertyElapsedPlaybackTime] = max(0.0, positionMs / 1000.0)
+      info[MPNowPlayingInfoPropertyPlaybackRate] = isPlaying ? 1.0 : 0.0
+      currentMetadata = info
+      MPNowPlayingInfoCenter.default().nowPlayingInfo = info
+      result(nil)
+
+    case "beginTrackTransition":
+      beginTransitionTask()
+      try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
+      try? AVAudioSession.sharedInstance().setActive(true)
+      result(nil)
+
+    case "endTrackTransition":
+      endTransitionTask()
+      result(nil)
+
+    case "stopSession":
+      endTransitionTask()
+      currentMetadata.removeAll()
+      MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+      result(nil)
+
+    default:
+      result(FlutterMethodNotImplemented)
+    }
+  }
+
+  private func beginTransitionTask() {
+    endTransitionTask()
+    transitionTask = UIApplication.shared.beginBackgroundTask(withName: "CoroLLDMTrackTransition") { [weak self] in
+      self?.endTransitionTask()
+    }
+    transitionTimer = Timer.scheduledTimer(withTimeInterval: 20.0, repeats: false) { [weak self] _ in
+      self?.endTransitionTask()
+    }
+  }
+
+  private func endTransitionTask() {
+    transitionTimer?.invalidate()
+    transitionTimer = nil
+    if transitionTask != .invalid {
+      UIApplication.shared.endBackgroundTask(transitionTask)
+      transitionTask = .invalid
+    }
   }
 }
