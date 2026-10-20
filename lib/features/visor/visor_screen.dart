@@ -225,157 +225,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     _annotationFeedback();
   }
 
-  Future<void> _mostrarMenuSeleccionAudio(Canto canto) async {
-    if (_showMidi || _showVocal) {
-      setState(() {
-        _showMidi = false;
-        _showVocal = false;
-      });
-      return;
-    }
-
-    // Si solo tiene uno de los dos tipos, abre directamente ese tipo
-    if (_vocalSong == null && _hasMidi) {
-      _toggleMidi();
-      return;
-    }
-    if (_vocalSong != null && !_hasMidi) {
-      setState(() {
-        _showVocal = true;
-        _showMidi = false;
-        _showTools = false;
-        _showDrawingPalette = false;
-        ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
-      });
-      return;
-    }
-
-    final strings = AppStrings.of(context);
-    final theme = Theme.of(context);
-    final accentColor = Theme.of(context).colorScheme.primary;
-
-    final opcion = await showModalBottomSheet<String>(
-      context: context,
-      backgroundColor: theme.colorScheme.surface,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (sheetContext) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 12, 20, 20),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: Colors.grey.withValues(alpha: 0.3),
-                    borderRadius: BorderRadius.circular(2),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              Text(
-                strings.t('¿Qué deseas escuchar?', 'What would you like to hear?'),
-                style: GoogleFonts.inter(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                canto.nombre,
-                style: TextStyle(
-                  fontSize: 13,
-                  color: theme.colorScheme.onSurfaceVariant,
-                ),
-              ),
-              const SizedBox(height: 16),
-              ListTile(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  side: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.15)),
-                ),
-                leading: Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: accentColor.withValues(alpha: 0.12),
-                    shape: BoxShape.circle,
-                  ),
-                  child: SingingIcon(size: 24, color: accentColor),
-                ),
-                title: Text(
-                  strings.t('Voces Cantadas (Estudio Coral)', 'Sung Voices (Choral Study)'),
-                  style: const TextStyle(fontWeight: FontWeight.w600),
-                ),
-                subtitle: Text(
-                  strings.t(
-                    'Grabación de estudio por voces (Soprano, Contralto, Tenor, Bajo) y Ensamble',
-                    'Studio recording by voice (Soprano, Alto, Tenor, Bass) and Ensemble',
-                  ),
-                  style: const TextStyle(fontSize: 12),
-                ),
-                trailing: const Icon(Icons.chevron_right_rounded),
-                onTap: () => Navigator.pop(sheetContext, 'cantado'),
-              ),
-              const SizedBox(height: 10),
-              ListTile(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  side: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.15)),
-                ),
-                leading: Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: accentColor.withValues(alpha: 0.12),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Icon(Icons.piano_rounded, color: accentColor, size: 24),
-                ),
-                title: Text(
-                  strings.t('Acompañamiento en Piano (MIDI)', 'Piano Accompaniment (MIDI)'),
-                  style: const TextStyle(fontWeight: FontWeight.w600),
-                ),
-                subtitle: Text(
-                  strings.t(
-                    'Simulador interactivo con control de tempo, volumen por voz y metrónomo',
-                    'Interactive piano synth with tempo, voice mixing, and metronome',
-                  ),
-                  style: const TextStyle(fontSize: 12),
-                ),
-                trailing: const Icon(Icons.chevron_right_rounded),
-                onTap: () => Navigator.pop(sheetContext, 'piano'),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-
-    if (!mounted) return;
-    if (opcion == 'cantado') {
-      _midi.stop();
-      setState(() {
-        _showVocal = true;
-        _showMidi = false;
-        _showTools = false;
-        _showDrawingPalette = false;
-        ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
-      });
-    } else if (opcion == 'piano') {
-      setState(() {
-        _showMidi = true;
-        _showVocal = false;
-        _showTools = false;
-        _showDrawingPalette = false;
-        ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
-      });
-    }
-  }
-
   void _toggleMidi() {
     setState(() {
       _showMidi = !_showMidi;
@@ -1357,26 +1206,42 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                         color: accentColor)),
                                 onPressed: () => _cambiarIdioma(canto),
                               ),
-                            if (_hasMidi || _vocalSong != null)
+                            if (_vocalSong != null)
                               _TopBarBtn(
-                                icon: (_vocalSong != null && !_showMidi)
-                                    ? null
-                                    : Icons.piano_rounded,
-                                isActive: _showMidi || _showVocal,
+                                isActive: _showVocal,
                                 activeColor: accentColor,
-                                onTap: () => _mostrarMenuSeleccionAudio(canto),
+                                onTap: () {
+                                  setState(() {
+                                    _showVocal = !_showVocal;
+                                    if (_showVocal) {
+                                      _showMidi = false;
+                                      _showTools = false;
+                                      _showDrawingPalette = false;
+                                      ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
+                                    }
+                                  });
+                                },
                                 tooltip: strings.t(
-                                  'Reproductor de audio y estudio coral',
-                                  'Audio player and choral study',
+                                  'Voces cantadas (Estudio coral)',
+                                  'Choral singing voices',
                                 ),
-                                child: (_vocalSong != null && !_showMidi)
-                                    ? SingingIcon(
-                                        size: 22,
-                                        color: (_showMidi || _showVocal)
-                                            ? accentColor
-                                            : Theme.of(context).colorScheme.onSurfaceVariant,
-                                      )
-                                    : null,
+                                child: SingingIcon(
+                                  size: 22,
+                                  color: _showVocal
+                                      ? accentColor
+                                      : Theme.of(context).colorScheme.onSurfaceVariant,
+                                ),
+                              ),
+                            if (_hasMidi)
+                              _TopBarBtn(
+                                icon: Icons.piano_rounded,
+                                isActive: _showMidi,
+                                activeColor: accentColor,
+                                onTap: _toggleMidi,
+                                tooltip: strings.t(
+                                  'Acompañamiento de piano (MIDI)',
+                                  'Piano accompaniment (MIDI)',
+                                ),
                               ),
                             SizedBox(
                               key: _shareButtonKey,

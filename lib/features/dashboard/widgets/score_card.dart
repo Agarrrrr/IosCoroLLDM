@@ -4,6 +4,8 @@ import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/app/accessible_colors.dart';
+import 'package:coro_lldm/core/providers/vocal_audio_provider.dart';
+import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 
 class ScoreCard extends ConsumerWidget {
   final Canto canto;
@@ -18,6 +20,13 @@ class ScoreCard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final hasAudio = canto.midiArchivo != null && canto.midiArchivo!.isNotEmpty;
+    final vocalService = ref.watch(vocalAudioServiceProvider);
+    final hasVocal = vocalService.findSong(
+      cantoId: canto.id,
+      cantoNombre: canto.nombre,
+      lang: canto.idioma,
+    ) != null;
+    final hasAnyAudio = hasAudio || hasVocal;
     final isFavorite = ref.watch(favoritosProvider).contains(canto.id);
     final strings = AppStrings.of(context);
 
@@ -48,7 +57,7 @@ class ScoreCard extends ConsumerWidget {
                 padding: EdgeInsets.zero,
                 child: Ink(
                   decoration: BoxDecoration(
-                    color: hasAudio
+                    color: hasAnyAudio
                         ? audioColor
                         : Theme.of(context).colorScheme.outlineVariant,
                     borderRadius: BorderRadius.circular(17),
@@ -91,39 +100,49 @@ class ScoreCard extends ConsumerWidget {
                                         ),
                                       )),
                                   const SizedBox(height: 3),
-                                  Row(
-                                    children: [
-                                      if (hasAudio) ...[
-                                        Icon(Icons.piano_rounded,
-                                            size: 22, color: audioColor),
-                                        const SizedBox(width: 4),
-                                      ],
-                                      Flexible(
-                                        child: Text(
-                                          canto.temas.isEmpty
-                                              ? (hasAudio
-                                                  ? strings.t(
-                                                      'Con piano', 'With piano')
-                                                  : strings.t(
-                                                      'Partitura', 'Score'))
-                                              : '${hasAudio ? strings.t('Con piano', 'With piano') : strings.t('Partitura', 'Score')} · ${canto.temas.join(' · ')}',
-                                          maxLines: 1,
-                                          overflow: TextOverflow.ellipsis,
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            color: Theme.of(context)
-                                                .colorScheme
-                                                .onSurfaceVariant,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-
-                            // Botón Favorito (corazón) — marcar/desmarcar instantáneo
+                                   Row(
+                                     children: [
+                                       if (hasVocal) ...[
+                                         SingingIcon(
+                                           size: 18,
+                                           color: audioColor,
+                                         ),
+                                         const SizedBox(width: 5),
+                                       ],
+                                       if (hasAudio) ...[
+                                         Icon(Icons.piano_rounded,
+                                             size: 19, color: audioColor),
+                                         const SizedBox(width: 4),
+                                       ],
+                                       Flexible(
+                                         child: Text(
+                                           (() {
+                                             final audioLabel = hasVocal && hasAudio
+                                                 ? strings.t('Voces · Piano', 'Voices · Piano')
+                                                 : hasVocal
+                                                     ? strings.t('Voces cantadas', 'Choral voices')
+                                                     : hasAudio
+                                                         ? strings.t('Con piano', 'With piano')
+                                                         : strings.t('Partitura', 'Score');
+                                             return canto.temas.isEmpty
+                                                 ? audioLabel
+                                                  : '$audioLabel · ' + canto.temas.join(' · ');
+                                           })(),
+                                           maxLines: 1,
+                                           overflow: TextOverflow.ellipsis,
+                                           style: TextStyle(
+                                             fontSize: 12,
+                                             color: Theme.of(context)
+                                                 .colorScheme
+                                                 .onSurfaceVariant,
+                                           ),
+                                         ),
+                                       ),
+                                     ],
+                                   ),
+                                 ],
+                               ),
+                             ),
                             IconButton(
                               tooltip: isFavorite
                                   ? strings.t('Quitar de favoritos',
