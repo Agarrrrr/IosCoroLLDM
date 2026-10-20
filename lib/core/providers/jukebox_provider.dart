@@ -124,6 +124,8 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
   static const String _kCustomOrderBox = 'cache';
   static const String _kCustomOrderPrefix = 'jukebox_custom_order_';
   bool _jukeboxControlsMidi = false;
+  bool _vocalSourceReady = false;
+  int _loadEpoch = 0;
 
   @override
   JukeboxState build() {
@@ -138,6 +140,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     _setupListeners();
 
     ref.onDispose(() {
+      _loadEpoch++;
       _stateSub?.cancel();
       _posSub?.cancel();
       _durSub?.cancel();
@@ -214,6 +217,51 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     }
   }
 
+  bool _matchesMidiVoice(String trackName, String targetVoice) {
+    final t = trackName.trim().toLowerCase();
+    final v = targetVoice.trim().toLowerCase();
+    if (v == 'soprano') return t.contains('soprano') || t == 's1' || t == 's2';
+    if (v == 'contralto' || v == 'alto') {
+      return t.contains('alto') ||
+          t.contains('contralto') ||
+          t == 'a1' ||
+          t == 'a2';
+    }
+    if (v == 'tenor') return t.contains('tenor') || t == 't1' || t == 't2';
+    if (v == 'bajo' || v == 'bass') {
+      return t.contains('bajo') ||
+          t.contains('bass') ||
+          t.contains('baritono') ||
+          t.contains('barítono') ||
+          t == 'b1' ||
+          t == 'b2';
+    }
+    return false;
+  }
+
+  void _applyVoiceToMidiTracks(String voiceKey) {
+    final voces = _midi.state.voces;
+    if (voces.isEmpty) return;
+
+    if (voiceKey == 'Ensamble' || voiceKey == 'Ensemble') {
+      _midi.resetTrackVolumes();
+      return;
+    }
+
+    final matchingTracks =
+        voces.where((v) => _matchesMidiVoice(v.nombre, voiceKey)).toList();
+    if (matchingTracks.isEmpty) {
+      // Si el archivo MIDI no tiene pistas etiquetadas para esa voz, activar todas
+      _midi.resetTrackVolumes();
+      return;
+    }
+
+    for (final v in voces) {
+      final isMatch = _matchesMidiVoice(v.nombre, voiceKey);
+      _midi.setTrackMute(v.trackIndex, !isMatch);
+    }
+  }
+
   Canto? _findCantoForVocalSong(VocalSong song) {
     final cantos = ref.read(cantosBaseProvider).valueOrNull ?? [];
     if (song.id != null) {
@@ -222,9 +270,9 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     }
     final cleanTarget = VocalAudioService.cleanString(song.canto);
     return cantos.where((c) {
-      return c.idioma == state.language &&
-          VocalAudioService.cleanString(c.nombre) == cleanTarget;
-    }).firstOrNull ??
+          return c.idioma == state.language &&
+              VocalAudioService.cleanString(c.nombre) == cleanTarget;
+        }).firstOrNull ??
         cantos.where((c) {
           return VocalAudioService.cleanString(c.nombre) == cleanTarget;
         }).firstOrNull;
@@ -254,6 +302,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     }
 
     final voice = startVoice ?? state.currentVoice;
+    _vocalSourceReady = false;
     state = state.copyWith(
       playlist: filtered,
       originalPlaylist: List.of(filtered),
@@ -305,11 +354,13 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
   }) async {
     if (index < 0 || index >= state.playlist.length) return;
 
+    final epoch = ++_loadEpoch;
     final song = state.playlist[index];
     final selectedVoice = voice ?? state.currentVoice;
     final activeMode = modeOverride ?? state.audioMode;
 
     if (activeMode == JukeboxAudioMode.piano) {
+      _vocalSourceReady = false;
       await _player.stop();
       final canto = _findCantoForVocalSong(song);
       if (canto != null &&
@@ -331,17 +382,21 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
             }
           };
           final localMidi = await OfflineFiles.ensureMidi(canto);
+          if (epoch != _loadEpoch) return;
           final loaded = await _midi.loadMidi(localMidi.path, canto.nombre);
+          if (epoch != _loadEpoch) return;
           if (!loaded) {
             throw const FormatException('No se pudo preparar el MIDI');
           }
+          _applyVoiceToMidiTracks(selectedVoice);
           final totalSecs = _midi.state.tiempoTotal;
           if (seekTo != null && seekTo > Duration.zero && totalSecs > 0) {
             final pct =
                 (seekTo.inMilliseconds / 1000.0 / totalSecs).clamp(0.0, 1.0);
             _midi.seek(pct);
           }
-          _midi.play();
+          await _midi.play();
+          if (epoch != _loadEpoch) return;
           state = state.copyWith(
             isLoading: false,
             isPlaying: true,
@@ -351,7 +406,9 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
           return;
         } catch (e) {
           debugPrint('⚠️ [Jukebox] Error al reproducir Piano MIDI: $e');
-          state = state.copyWith(isLoading: false, isPlaying: false);
+          if (epoch == _loadEpoch) {
+            state = state.copyWith(isLoading: false, isPlaying: false);
+          }
           return;
         }
       }
@@ -361,6 +418,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     // Modo Vocal: detener MIDI si estaba sonando
     _jukeboxControlsMidi = false;
     _midi.stop();
+    _vocalSourceReady = false;
 
     final track = song.voces[selectedVoice] ??
         song.voces['Ensamble'] ??
@@ -382,27 +440,24 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     try {
       final sourceUri = await _vocalService.resolvePlaybackSource(track.r2Path);
       final isLocal = await _vocalService.isLocalFileAvailable(track.r2Path);
+      if (epoch != _loadEpoch) return;
 
       state = state.copyWith(isOffline: isLocal);
 
-      Source source;
-      if (isLocal) {
-        source = DeviceFileSource(sourceUri);
-      } else {
-        source = UrlSource(sourceUri);
-      }
+      final Source source =
+          isLocal ? DeviceFileSource(sourceUri) : UrlSource(sourceUri);
 
-      await _player.setSource(source);
+      await _player.play(source, position: seekTo);
+      if (epoch != _loadEpoch) return;
 
-      if (seekTo != null && seekTo > Duration.zero) {
-        await _player.seek(seekTo);
-      }
-
-      await _player.resume();
+      _vocalSourceReady = true;
       state = state.copyWith(isLoading: false, isPlaying: true);
     } catch (e) {
       debugPrint('⚠️ [Jukebox] Error al reproducir pista: $e');
-      state = state.copyWith(isLoading: false, isPlaying: false);
+      if (epoch == _loadEpoch) {
+        _vocalSourceReady = false;
+        state = state.copyWith(isLoading: false, isPlaying: false);
+      }
     }
   }
 
@@ -410,8 +465,11 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     if (mode == state.audioMode) return;
     final wasPlaying = state.isPlaying;
     final currentIdx = state.currentIndex >= 0 ? state.currentIndex : 0;
+    final currentPos = state.position;
 
+    _loadEpoch++;
     if (mode == JukeboxAudioMode.piano) {
+      _vocalSourceReady = false;
       await _player.stop();
     } else {
       _jukeboxControlsMidi = false;
@@ -420,13 +478,14 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
     state = state.copyWith(
       audioMode: mode,
-      position: Duration.zero,
       isPlaying: false,
+      isLoading: false,
     );
 
     if (wasPlaying && state.playlist.isNotEmpty) {
       await playSongAtIndex(
         currentIdx,
+        seekTo: currentPos,
         modeOverride: mode,
       );
     }
@@ -442,6 +501,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
     if (state.audioMode == JukeboxAudioMode.piano) {
       if (state.isPlaying) {
+        _loadEpoch++;
         _midi.pause();
       } else {
         if (!_jukeboxControlsMidi || !_midi.state.isLoaded) {
@@ -452,26 +512,30 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
           );
         } else {
           await _player.stop();
-          _midi.play();
+          _applyVoiceToMidiTracks(state.currentVoice);
+          await _midi.play();
         }
       }
       return;
     }
 
     if (state.isPlaying) {
+      _loadEpoch++;
       await _player.pause();
     } else {
       _jukeboxControlsMidi = false;
       _midi.stop();
-      if (state.duration == Duration.zero) {
-        await playSongAtIndex(
-          state.currentIndex >= 0 ? state.currentIndex : 0,
-          seekTo: state.position,
-          modeOverride: JukeboxAudioMode.vocal,
-        );
-      } else {
-        await _player.resume();
+      if (_vocalSourceReady && !state.isLoading) {
+        try {
+          await _player.resume();
+          return;
+        } catch (_) {}
       }
+      await playSongAtIndex(
+        state.currentIndex >= 0 ? state.currentIndex : 0,
+        seekTo: state.position,
+        modeOverride: JukeboxAudioMode.vocal,
+      );
     }
   }
 
@@ -524,13 +588,21 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
   Future<void> setVoice(String voice) async {
     ref.read(userVoiceProvider.notifier).setVoice(voice);
-    if (voice == state.currentVoice &&
-        state.audioMode == JukeboxAudioMode.vocal) {
+    if (voice == state.currentVoice) return;
+
+    state = state.copyWith(currentVoice: voice);
+
+    if (state.audioMode == JukeboxAudioMode.piano) {
+      // En modo Piano: aplicar solo/ensamble al instante sobre las pistas MIDI
+      if (_jukeboxControlsMidi && _midi.state.isLoaded) {
+        _applyVoiceToMidiTracks(voice);
+      }
       return;
     }
-    final currentPos =
-        state.audioMode == JukeboxAudioMode.vocal ? state.position : Duration.zero;
+
+    final currentPos = state.position;
     final wasPlaying = state.isPlaying;
+    _vocalSourceReady = false;
 
     if (state.currentIndex >= 0 && state.currentIndex < state.playlist.length) {
       if (wasPlaying) {
@@ -541,18 +613,8 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
           modeOverride: JukeboxAudioMode.vocal,
         );
       } else {
-        _jukeboxControlsMidi = false;
-        _midi.stop();
-        state = state.copyWith(
-          currentVoice: voice,
-          audioMode: JukeboxAudioMode.vocal,
-        );
+        await _player.stop();
       }
-    } else {
-      state = state.copyWith(
-        currentVoice: voice,
-        audioMode: JukeboxAudioMode.vocal,
-      );
     }
   }
 
@@ -636,6 +698,8 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
   }
 
   Future<void> stop() async {
+    _loadEpoch++;
+    _vocalSourceReady = false;
     await _player.stop();
     if (_jukeboxControlsMidi) {
       _jukeboxControlsMidi = false;
@@ -643,6 +707,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     }
     state = state.copyWith(
       isPlaying: false,
+      isLoading: false,
       position: Duration.zero,
     );
   }

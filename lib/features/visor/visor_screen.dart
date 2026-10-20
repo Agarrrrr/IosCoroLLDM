@@ -88,6 +88,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
   bool _hasMidi = false;
   String? _midiError;
   bool _midiIniciado = false;
+  Future<bool>? _midiLoadFuture;
   bool _idiomaVerificado = false;
   bool _pdfAdRegistered = false;
 
@@ -113,7 +114,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     });
   }
 
-  void _initMidi(Canto canto) async {
+  void _initMidi(Canto canto) {
     debugPrint('🎵 [MidiEngine] Inicializando para el canto: ${canto.nombre}');
     debugPrint('🎵 [MidiEngine] midiArchivo del canto: "${canto.midiArchivo}"');
 
@@ -124,29 +125,46 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
     setState(() {
       _hasMidi = true;
+      _midiError = null;
     });
 
+    _midiLoadFuture = _loadMidiFile(canto);
+  }
+
+  Future<bool> _loadMidiFile(Canto canto) async {
     try {
-      // Descarga bajo demanda (si ya existe en disco, se usa al instante)
       final localMidi = await OfflineFiles.ensureMidi(canto);
-      if (!mounted) return;
+      if (!mounted) return false;
       debugPrint('🎵 [NativeMidiEngine] Cargando MIDI: ${localMidi.path}');
       final loaded = await _midi.loadMidi(localMidi.path, canto.nombre);
       if (!loaded) throw const FormatException('No se pudo preparar el audio');
-      if (!mounted) return;
+      if (!mounted) return false;
       ref.read(syncManagerProvider.notifier).refresh();
+      if (_midiError != null) {
+        setState(() => _midiError = null);
+      }
+      return true;
     } catch (e) {
       debugPrint('🎵 [MidiEngine] No se pudo obtener el archivo MIDI: $e');
-      if (!mounted) return;
+      if (!mounted) return false;
       final strings = AppStrings.of(context);
       final message = strings.t(
         'No se pudo abrir el audio de este canto. Puedes seguir consultando la partitura.',
         'Could not open this song’s audio. You can still view the score.',
       );
       setState(() => _midiError = message);
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text(message)));
+      return false;
     }
+  }
+
+  Future<bool> _ensureMidiReadyForPlay(Canto canto) async {
+    if (_midi.state.isLoaded && _midi.state.isReady) return true;
+    if (_midiLoadFuture != null) {
+      final ok = await _midiLoadFuture!;
+      if (ok && _midi.state.isLoaded) return true;
+    }
+    _midiLoadFuture = _loadMidiFile(canto);
+    return _midiLoadFuture!;
   }
 
   void _initVocalSong(Canto canto) async {
@@ -266,31 +284,10 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     final hasVocal = _vocalSong != null;
     final hasMidi = _hasMidi;
 
-    if (hasVocal && hasMidi) {
-      final choice = await _showAudioModeDialog(canto);
-      if (!mounted || choice == null) return;
-      if (choice == 'vocal') {
-        _midi.stop();
-        setState(() {
-          _showVocal = true;
-          _showMidi = false;
-          _showTools = false;
-          _showDrawingPalette = false;
-        });
-        ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
-      } else if (choice == 'midi') {
-        setState(() {
-          _showMidi = true;
-          _showVocal = false;
-          _showTools = false;
-          _showDrawingPalette = false;
-        });
-        ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
-      }
-      return;
-    }
-
+    // Por defecto abrir Voces Cantadas si existen; desde ahí el usuario puede
+    // alternar a Piano con un toque (sin modales intermedios).
     if (hasVocal) {
+      _midi.stop();
       setState(() {
         _showVocal = true;
         _showMidi = false;
@@ -303,163 +300,6 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     }
   }
 
-  Future<String?> _showAudioModeDialog(Canto canto) {
-    final strings = AppStrings.of(context);
-    final scheme = Theme.of(context).colorScheme;
-    final userVoice = ref.read(userVoiceProvider);
-
-    return showDialog<String>(
-      context: context,
-      builder: (dialogContext) {
-        return AlertDialog(
-          scrollable: true,
-          insetPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
-          titlePadding: const EdgeInsets.fromLTRB(20, 20, 20, 12),
-          contentPadding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
-          actionsPadding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-          title: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SingingIcon(size: 24, color: scheme.primary),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  strings.t('Reproductor de estudio', 'Study Player'),
-                ),
-              ),
-            ],
-          ),
-          content: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 420),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  strings.t(
-                    'Elige el modo de audio para repasar este canto:',
-                    'Choose the audio mode to practice this song:',
-                  ),
-                  style: Theme.of(dialogContext).textTheme.bodyMedium?.copyWith(
-                        color: scheme.onSurfaceVariant,
-                      ),
-                ),
-                const SizedBox(height: 16),
-                Material(
-                  color: scheme.primary,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(12),
-                    onTap: () => Navigator.pop(dialogContext, 'vocal'),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SingingIcon(size: 24, color: scheme.onPrimary),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  strings.t('Voces Cantadas', 'Sung Voices'),
-                                  style: Theme.of(dialogContext)
-                                      .textTheme
-                                      .titleMedium
-                                      ?.copyWith(
-                                        color: scheme.onPrimary,
-                                        fontWeight: FontWeight.w700,
-                                      ),
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  strings.t(
-                                    'Ensamble y voces individuales ($userVoice)',
-                                    'Ensemble and individual voices ($userVoice)',
-                                  ),
-                                  style: Theme.of(dialogContext)
-                                      .textTheme
-                                      .bodyMedium
-                                      ?.copyWith(color: scheme.onPrimary),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Material(
-                  color: scheme.surfaceContainerHighest,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(12),
-                    onTap: () => Navigator.pop(dialogContext, 'midi'),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Icon(
-                            Icons.piano_rounded,
-                            size: 24,
-                            color: scheme.onSurface,
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  strings.t('Piano (MIDI)', 'Piano (MIDI)'),
-                                  style: Theme.of(dialogContext)
-                                      .textTheme
-                                      .titleMedium
-                                      ?.copyWith(
-                                        color: scheme.onSurface,
-                                        fontWeight: FontWeight.w700,
-                                      ),
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  strings.t(
-                                    'Acompañamiento instrumental y control de tempo',
-                                    'Instrumental accompaniment and tempo control',
-                                  ),
-                                  style: Theme.of(dialogContext)
-                                      .textTheme
-                                      .bodyMedium
-                                      ?.copyWith(color: scheme.onSurfaceVariant),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(dialogContext),
-              child: Text(strings.t('Cerrar', 'Close')),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   Future<void> _handlePlay(Canto canto, MidiState midiState) async {
     if (_audioAccessPending) return;
     _audioAccessPending = true;
@@ -468,6 +308,9 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         _midi.pause();
         return;
       }
+      final ready = await _ensureMidiReadyForPlay(canto);
+      if (!mounted || !ready) return;
+
       final allowed = await ref
           .read(monetizationProvider.notifier)
           .consumeAudioAccess(canto.id);

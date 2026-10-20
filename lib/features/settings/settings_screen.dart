@@ -230,7 +230,7 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                           'vocal_audio',
                           strings.t('Estudio Coral (Voces Cantadas)',
                               'Choral Study (Sung Voices)'),
-                          '$userVoice · ${strings.t('Voz y descargas', 'Voice and downloads')}',
+                          '${strings.voiceLabel(userVoice)} · ${strings.t('Voz y descargas', 'Voice and downloads')}',
                           Icons.record_voice_over_outlined,
                           [
                             _heading(strings.t('Tu voz en el coro', 'Your voice in the choir')),
@@ -239,7 +239,7 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                                 'The choral player will automatically select your voice.')),
                             for (final voz in ['Ensamble', 'Soprano', 'Contralto', 'Tenor', 'Bajo'])
                               _choice(
-                                voz,
+                                strings.voiceLabel(voz),
                                 voz == 'Ensamble'
                                     ? Icons.groups_outlined
                                     : Icons.person_outline_rounded,
@@ -294,7 +294,7 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                             ] else ...[
                               if (userVoice != 'Ensamble')
                                 _actionCard(
-                                  title: '${strings.t("Descargar mi voz", "Download my voice")} ($userVoice)',
+                                  title: '${strings.t("Descargar mi voz", "Download my voice")} (${strings.voiceLabel(userVoice)})',
                                   subtitle: '$userVoiceFormatted · ${language == "es" ? "Español" : "English"}',
                                   icon: Icons.download_rounded,
                                   onTap: () => ref.read(vocalDownloadProvider.notifier).downloadVoice(

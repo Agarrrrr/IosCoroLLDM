@@ -126,11 +126,11 @@ class _PlayerOptionsSheetState extends State<PlayerOptionsSheet> {
                                           IconButton(
                                               tooltip: voice.activa
                                                   ? strings.t(
-                                                      'Silenciar ${voice.nombre}',
-                                                      'Mute ${voice.nombre}')
+                                                      'Silenciar ${strings.voiceLabel(voice.nombre)}',
+                                                      'Mute ${strings.voiceLabel(voice.nombre)}')
                                                   : strings.t(
-                                                      'Activar ${voice.nombre}',
-                                                      'Unmute ${voice.nombre}'),
+                                                      'Activar ${strings.voiceLabel(voice.nombre)}',
+                                                      'Unmute ${strings.voiceLabel(voice.nombre)}'),
                                               onPressed: () {
                                                 final muted = voice.activa;
                                                 setState(() =>
@@ -141,7 +141,7 @@ class _PlayerOptionsSheetState extends State<PlayerOptionsSheet> {
                                               icon: Icon(voice.activa
                                                   ? Icons.volume_up_rounded
                                                   : Icons.volume_off_rounded)),
-                                          Text(voice.nombre),
+                                          Text(strings.voiceLabel(voice.nombre)),
                                           Text(
                                               '${(voice.volumen * 100).round()}%'),
                                           TextButton(

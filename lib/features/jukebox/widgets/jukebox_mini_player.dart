@@ -54,11 +54,8 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
       return false;
     }
     if (result == RewardPromptResult.premium) {
-      return confirmAccessAfterPrompt(
-        prompt: () => showPremiumDialog(context),
-        isCurrent: () => mounted,
-        checkAccess: () async => ref.read(monetizationProvider).isPremium,
-      );
+      await showPremiumDialog(context);
+      return mounted && ref.read(monetizationProvider).isPremium;
     }
     final earned = await AdsService.instance.showRewarded();
     if (!mounted) return false;
@@ -164,7 +161,12 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
     final isDark = theme.brightness == Brightness.dark;
     final accentColor = scheme.primary;
     final onAccent = scheme.onPrimary;
+    final strings = AppStrings.of(context);
     final isPiano = jukebox.audioMode == JukeboxAudioMode.piano;
+    final voiceDisplay = strings.voiceLabel(jukebox.currentVoice);
+    final badgeText = isPiano
+        ? '${strings.t('Piano', 'Piano')} · $voiceDisplay'
+        : voiceDisplay;
 
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
@@ -261,7 +263,9 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              currentSong?.canto ?? 'Selecciona un canto',
+                              currentSong?.canto ??
+                                  strings.t(
+                                      'Selecciona un canto', 'Select a song'),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.inter(
@@ -283,7 +287,7 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                                     borderRadius: BorderRadius.circular(6),
                                   ),
                                   child: Text(
-                                    isPiano ? 'Piano' : jukebox.currentVoice,
+                                    badgeText,
                                     style: GoogleFonts.inter(
                                       fontSize: 10.5,
                                       fontWeight: FontWeight.w700,

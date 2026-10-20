@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 
 class JukeboxCoverCard extends StatelessWidget {
@@ -23,6 +24,11 @@ class JukeboxCoverCard extends StatelessWidget {
     final theme = Theme.of(context);
     final scheme = theme.colorScheme;
     final isDark = theme.brightness == Brightness.dark;
+    final strings = AppStrings.of(context);
+    final voiceDisplay = strings.voiceLabel(voice);
+    final pillText = isPianoMode
+        ? '${strings.t('Piano', 'Piano')} · $voiceDisplay'
+        : voiceDisplay;
 
     final topSurface = Color.alphaBlend(
       scheme.primary.withValues(alpha: isDark ? 0.24 : 0.16),
@@ -129,7 +135,7 @@ class JukeboxCoverCard extends StatelessWidget {
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: Text(
-                            isPianoMode ? 'Piano' : voice,
+                            pillText,
                             textAlign: TextAlign.center,
                             style: GoogleFonts.inter(
                               fontSize: 11.5,
@@ -148,7 +154,10 @@ class JukeboxCoverCard extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Text(
-                            title.isNotEmpty ? title : 'Selecciona un canto',
+                            title.isNotEmpty
+                                ? title
+                                : strings.t(
+                                    'Selecciona un canto', 'Select a song'),
                             textAlign: TextAlign.center,
                             maxLines: 3,
                             overflow: TextOverflow.ellipsis,
@@ -206,7 +215,7 @@ class JukeboxCoverCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(14),
                         ),
                         child: Text(
-                          'Coro LLDM · Repertorio Coral',
+                          '${strings.appTitle} · ${strings.t('Repertorio Coral', 'Choral Repertoire')}',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.inter(
                             fontSize: 11.5,

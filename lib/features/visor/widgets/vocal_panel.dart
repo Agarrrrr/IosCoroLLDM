@@ -41,7 +41,9 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   bool _isPlaying = false;
   bool _isLoading = false;
   bool _isOffline = false;
+  bool _sourceReady = false;
   bool _accessPending = false;
+  int _loadEpoch = 0;
   Duration _position = Duration.zero;
   Duration _duration = Duration.zero;
   bool _isDragging = false;
@@ -125,8 +127,10 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     final track = widget.song.voces[voiceKey];
     if (track == null) return;
 
+    final epoch = ++_loadEpoch;
     setState(() {
       _isLoading = true;
+      _sourceReady = false;
       _selectedVoice = voiceKey;
     });
 
@@ -134,32 +138,44 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
       final sourceUri = await _vocalService.resolvePlaybackSource(track.r2Path);
       final isLocal = await _vocalService.isLocalFileAvailable(track.r2Path);
 
-      if (!mounted) return;
+      if (!mounted || epoch != _loadEpoch) return;
       setState(() {
         _isOffline = isLocal;
       });
 
-      Source source;
-      if (isLocal) {
-        source = DeviceFileSource(sourceUri);
-      } else {
-        source = UrlSource(sourceUri);
-      }
-
-      await _player.setSource(source);
-
-      if (seekTo != null && seekTo > Duration.zero) {
-        await _player.seek(seekTo);
-      }
+      final Source source =
+          isLocal ? DeviceFileSource(sourceUri) : UrlSource(sourceUri);
 
       if (autoPlay) {
         widget.onPlaybackStarted?.call();
-        await _player.resume();
+        await _player.play(source, position: seekTo);
+        if (mounted && epoch == _loadEpoch) {
+          setState(() {
+            _sourceReady = true;
+            _isPlaying = true;
+          });
+        }
+      } else {
+        await _player.setSource(source);
+        if (seekTo != null && seekTo > Duration.zero) {
+          await _player.seek(seekTo);
+        }
+        if (mounted && epoch == _loadEpoch) {
+          setState(() {
+            _sourceReady = true;
+          });
+        }
       }
     } catch (e) {
       debugPrint('⚠️ [VocalPanel] Error al preparar pista ($voiceKey): $e');
+      if (mounted && epoch == _loadEpoch) {
+        setState(() {
+          _sourceReady = false;
+          _isPlaying = false;
+        });
+      }
     } finally {
-      if (mounted) {
+      if (mounted && epoch == _loadEpoch) {
         setState(() {
           _isLoading = false;
         });
@@ -170,6 +186,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   Future<void> _togglePlay() async {
     if (_accessPending) return;
     if (_isPlaying) {
+      _loadEpoch++;
       await _player.pause();
       return;
     }
@@ -181,7 +198,19 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
         if (!mounted || !allowed) return;
       }
       widget.onPlaybackStarted?.call();
-      await _player.resume();
+
+      if (_sourceReady && !_isLoading) {
+        try {
+          await _player.resume();
+          return;
+        } catch (_) {}
+      }
+
+      await _loadVoiceTrack(
+        _selectedVoice,
+        autoPlay: true,
+        seekTo: _position,
+      );
     } finally {
       _accessPending = false;
     }
@@ -199,6 +228,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   }
 
   Future<void> _stop() async {
+    _loadEpoch++;
     await _player.stop();
     if (!mounted) return;
     setState(() {
@@ -218,7 +248,6 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   }
 
   void _onVoiceSelected(String voiceKey) {
-    // Persistir la voz seleccionada globalmente para que se mantenga al salir
     ref.read(userVoiceProvider.notifier).setVoice(voiceKey);
     if (voiceKey == _selectedVoice) return;
     final currentPos = _position;
@@ -234,6 +263,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
 
   @override
   void dispose() {
+    _loadEpoch++;
     _stateSub?.cancel();
     _posSub?.cancel();
     _durSub?.cancel();
@@ -280,7 +310,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
               if (widget.onClose != null)
                 PlayerDismissHandle(onClose: _handleClose),
 
-              // Cabecera con icono de voz cantando y selector elegante Piano / Voces
+              // Cabecera con icono de voz cantando y botón directo a Piano
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 4, 12, 6),
                 child: Row(
@@ -402,7 +432,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                 ),
               ),
 
-              // Selector de Voces (Solo color de resalte, 0 palomitas, 0 iconos extra)
+              // Selector de Voces (Solo color de resalte, traducido a EN/ES)
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
@@ -431,7 +461,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                                 borderRadius: BorderRadius.circular(18),
                               ),
                               child: Text(
-                                voice,
+                                strings.voiceLabel(voice),
                                 style: GoogleFonts.inter(
                                   fontSize: 12.5,
                                   fontWeight: isSelected
@@ -572,7 +602,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                                 color: onAccent,
                                 size: 30,
                               ),
-                        onPressed: _isLoading ? null : _togglePlay,
+                        onPressed: _togglePlay,
                       ),
                     ),
                     const SizedBox(width: 10),

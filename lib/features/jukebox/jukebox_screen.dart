@@ -1,7 +1,9 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
+import 'package:coro_lldm/core/monetization/ad_banner.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/core/monetization/usage_quota.dart';
@@ -27,6 +29,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
   late final TabController _tabController;
   bool _accessPending = false;
   bool _quotaToastShown = false;
+  bool _exitAdTriggered = false;
 
   static const List<String> _kVoces = [
     'Ensamble',
@@ -49,6 +52,14 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
   void dispose() {
     _tabController.dispose();
     super.dispose();
+  }
+
+  void _closeJukebox() {
+    if (!_exitAdTriggered) {
+      _exitAdTriggered = true;
+      unawaited(AdsService.instance.onPdfOpened());
+    }
+    Navigator.of(context).pop();
   }
 
   void _checkAndInitPlaylist() {
@@ -131,11 +142,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
       return false;
     }
     if (result == RewardPromptResult.premium) {
-      return confirmAccessAfterPrompt(
-        prompt: () => showPremiumDialog(context),
-        isCurrent: () => mounted,
-        checkAccess: () async => ref.read(monetizationProvider).isPremium,
-      );
+      await showPremiumDialog(context);
+      return mounted && ref.read(monetizationProvider).isPremium;
     }
     final earned = await AdsService.instance.showRewarded();
     if (!mounted) return false;
@@ -179,7 +187,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
     }
   }
 
-  Future<void> _handlePlayAtIndex(int index, {bool switchTabOnPhone = false}) async {
+  Future<void> _handlePlayAtIndex(int index,
+      {bool switchTabOnPhone = false}) async {
     if (_accessPending) return;
     final jukebox = ref.read(jukeboxProvider);
     if (index < 0 || index >= jukebox.playlist.length) return;
@@ -343,72 +352,49 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
 
         const SizedBox(height: 12),
 
-        // Barra de Selección de Voces (Solo color de resalte, 0 palomitas)
-        if (!isPiano)
-          SizedBox(
-            height: 36,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              itemCount: _kVoces.length,
-              separatorBuilder: (_, __) => const SizedBox(width: 8),
-              itemBuilder: (context, index) {
-                final voz = _kVoces[index];
-                final isSelected = jukebox.currentVoice == voz;
-                return Material(
-                  color: isSelected
-                      ? accentColor
-                      : scheme.surfaceContainerHighest,
+        // Barra de Selección de Voces siempre disponible (para Voces Cantadas Y para Voces en Piano)
+        SizedBox(
+          height: 36,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            itemCount: _kVoces.length,
+            separatorBuilder: (_, __) => const SizedBox(width: 8),
+            itemBuilder: (context, index) {
+              final voz = _kVoces[index];
+              final isSelected = jukebox.currentVoice == voz;
+              return Material(
+                color: isSelected
+                    ? accentColor
+                    : scheme.surfaceContainerHighest,
+                borderRadius: BorderRadius.circular(18),
+                child: InkWell(
                   borderRadius: BorderRadius.circular(18),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(18),
-                    onTap: () {
-                      ref.read(userVoiceProvider.notifier).setVoice(voz);
-                      ref.read(jukeboxProvider.notifier).setVoice(voz);
-                    },
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 180),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 15,
-                        vertical: 7,
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        voz,
-                        style: GoogleFonts.inter(
-                          fontSize: 12,
-                          fontWeight:
-                              isSelected ? FontWeight.w700 : FontWeight.w500,
-                          color: isSelected ? onAccent : scheme.onSurface,
-                        ),
+                  onTap: () {
+                    ref.read(userVoiceProvider.notifier).setVoice(voz);
+                    ref.read(jukeboxProvider.notifier).setVoice(voz);
+                  },
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 15,
+                      vertical: 7,
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      strings.voiceLabel(voz),
+                      style: GoogleFonts.inter(
+                        fontSize: 12,
+                        fontWeight:
+                            isSelected ? FontWeight.w700 : FontWeight.w500,
+                        color: isSelected ? onAccent : scheme.onSurface,
                       ),
                     ),
                   ),
-                );
-              },
-            ),
-          )
-        else
-          Container(
-            height: 36,
-            alignment: Alignment.center,
-            padding: const EdgeInsets.symmetric(horizontal: 14),
-            decoration: BoxDecoration(
-              color: scheme.surfaceContainerHighest.withValues(alpha: 0.65),
-              borderRadius: BorderRadius.circular(18),
-            ),
-            child: Text(
-              strings.t(
-                'Acompañamiento instrumental de piano',
-                'Instrumental piano accompaniment',
-              ),
-              textAlign: TextAlign.center,
-              style: GoogleFonts.inter(
-                fontSize: 12,
-                fontWeight: FontWeight.w600,
-                color: scheme.onSurfaceVariant,
-              ),
-            ),
+                ),
+              );
+            },
           ),
+        ),
       ],
     );
   }
@@ -480,8 +466,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                         const SizedBox(height: 4),
                         Text(
                           songTemas.isNotEmpty
-                              ? 'Coro LLDM · ${songTemas.join(' · ')}'
-                              : 'Coro LLDM · Repertorio Coral',
+                              ? '${strings.appTitle} · ${songTemas.join(' · ')}'
+                              : '${strings.appTitle} · ${strings.t('Repertorio Coral', 'Choral Repertoire')}',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.inter(
@@ -1116,88 +1102,94 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
     final isCurrentFav = currentSong != null &&
         favorites.contains(currentSong.id ?? currentSong.canto);
 
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final isTablet = constraints.maxWidth >= 700;
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+        if (didPop) return;
+        _closeJukebox();
+      },
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final isTablet = constraints.maxWidth >= 700;
 
-        return Scaffold(
-          backgroundColor: theme.scaffoldBackgroundColor,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: Icon(
-                Icons.keyboard_arrow_down_rounded,
-                size: 30,
-                color: scheme.onSurface,
+          return Scaffold(
+            backgroundColor: theme.scaffoldBackgroundColor,
+            appBar: AppBar(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              leading: IconButton(
+                icon: Icon(
+                  Icons.keyboard_arrow_down_rounded,
+                  size: 30,
+                  color: scheme.onSurface,
+                ),
+                onPressed: _closeJukebox,
+                tooltip: strings.t('Minimizar', 'Minimize'),
               ),
-              onPressed: () => Navigator.of(context).pop(),
-              tooltip: strings.t('Minimizar', 'Minimize'),
-            ),
-            centerTitle: true,
-            title: isTablet
-                ? Text(
-                    strings.t('Reproductor', 'Player'),
-                    style: GoogleFonts.inter(
-                      fontSize: 17,
-                      fontWeight: FontWeight.w800,
-                      color: scheme.onSurface,
-                    ),
-                  )
-                : Container(
-                    height: 38,
-                    padding: const EdgeInsets.all(3),
-                    decoration: BoxDecoration(
-                      color: scheme.surfaceContainerHighest,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: TabBar(
-                      controller: _tabController,
-                      isScrollable: true,
-                      tabAlignment: TabAlignment.center,
-                      dividerColor: Colors.transparent,
-                      indicatorSize: TabBarIndicatorSize.tab,
-                      indicator: BoxDecoration(
-                        color: scheme.surface,
-                        borderRadius: BorderRadius.circular(16),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withValues(alpha: 0.08),
-                            blurRadius: 4,
-                            offset: const Offset(0, 2),
-                          ),
-                        ],
+              centerTitle: true,
+              title: isTablet
+                  ? Text(
+                      strings.t('Reproductor', 'Player'),
+                      style: GoogleFonts.inter(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w800,
+                        color: scheme.onSurface,
                       ),
-                      labelColor: scheme.onSurface,
-                      unselectedLabelColor: scheme.onSurfaceVariant,
-                      labelStyle: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
+                    )
+                  : Container(
+                      height: 38,
+                      padding: const EdgeInsets.all(3),
+                      decoration: BoxDecoration(
+                        color: scheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(20),
                       ),
-                      unselectedLabelStyle: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      tabs: [
-                        Tab(text: strings.t('Reproductor', 'Player')),
-                        Tab(
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(strings.t('Lista', 'Queue')),
-                              if (jukebox.playlist.isNotEmpty) ...[
-                                const SizedBox(width: 6),
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 6,
-                                    vertical: 1.5,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: accentColor.withValues(alpha: 0.16),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Text(
-                                    '${jukebox.playlist.length}',
+                      child: TabBar(
+                        controller: _tabController,
+                        isScrollable: true,
+                        tabAlignment: TabAlignment.center,
+                        dividerColor: Colors.transparent,
+                        indicatorSize: TabBarIndicatorSize.tab,
+                        indicator: BoxDecoration(
+                          color: scheme.surface,
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withValues(alpha: 0.08),
+                              blurRadius: 4,
+                              offset: const Offset(0, 2),
+                            ),
+                          ],
+                        ),
+                        labelColor: scheme.onSurface,
+                        unselectedLabelColor: scheme.onSurfaceVariant,
+                        labelStyle: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        unselectedLabelStyle: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        tabs: [
+                          Tab(text: strings.t('Reproductor', 'Player')),
+                          Tab(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(strings.t('Lista', 'Queue')),
+                                if (jukebox.playlist.isNotEmpty) ...[
+                                  const SizedBox(width: 6),
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 6,
+                                      vertical: 1.5,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: accentColor.withValues(alpha: 0.16),
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: Text(
+                                      '${jukebox.playlist.length}',
                                     style: TextStyle(
                                       fontSize: 10,
                                       fontWeight: FontWeight.w700,
@@ -1212,93 +1204,102 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                       ],
                     ),
                   ),
-            actions: [
-              IconButton(
-                icon: Icon(
-                  jukebox.isShuffle
-                      ? Icons.shuffle_on_rounded
-                      : Icons.shuffle_rounded,
-                  color:
-                      jukebox.isShuffle ? accentColor : scheme.onSurfaceVariant,
-                ),
-                tooltip: strings.t('Modo aleatorio', 'Shuffle mode'),
-                onPressed: () {
-                  ref.read(jukeboxProvider.notifier).toggleShuffle();
-                },
-              ),
-            ],
-          ),
-          body: SafeArea(
-            child: isTablet
-                ? Row(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Expanded(
-                        flex: 5,
-                        child: Center(
-                          child: _buildPlayerPane(
-                            context: context,
-                            jukebox: jukebox,
-                            strings: strings,
-                            scheme: scheme,
-                            accentColor: accentColor,
-                            onAccent: onAccent,
-                            songTemas: songTemas,
-                            isCurrentFav: isCurrentFav,
-                            isTablet: true,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        flex: 6,
-                        child: Padding(
-                          padding: const EdgeInsets.only(
-                            right: 16,
-                            bottom: 12,
-                          ),
-                          child: _buildQueuePane(
-                            context: context,
-                            jukebox: jukebox,
-                            strings: strings,
-                            scheme: scheme,
-                            accentColor: accentColor,
-                            onAccent: onAccent,
-                            favorites: favorites,
-                            isTablet: true,
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
-                : TabBarView(
-                    controller: _tabController,
-                    children: [
-                      _buildPlayerPane(
-                        context: context,
-                        jukebox: jukebox,
-                        strings: strings,
-                        scheme: scheme,
-                        accentColor: accentColor,
-                        onAccent: onAccent,
-                        songTemas: songTemas,
-                        isCurrentFav: isCurrentFav,
-                        isTablet: false,
-                      ),
-                      _buildQueuePane(
-                        context: context,
-                        jukebox: jukebox,
-                        strings: strings,
-                        scheme: scheme,
-                        accentColor: accentColor,
-                        onAccent: onAccent,
-                        favorites: favorites,
-                        isTablet: false,
-                      ),
-                    ],
+              actions: [
+                IconButton(
+                  icon: Icon(
+                    jukebox.isShuffle
+                        ? Icons.shuffle_on_rounded
+                        : Icons.shuffle_rounded,
+                    color: jukebox.isShuffle
+                        ? accentColor
+                        : scheme.onSurfaceVariant,
                   ),
-          ),
-        );
-      },
+                  tooltip: strings.t('Modo aleatorio', 'Shuffle mode'),
+                  onPressed: () {
+                    ref.read(jukeboxProvider.notifier).toggleShuffle();
+                  },
+                ),
+              ],
+            ),
+            body: SafeArea(
+              child: Column(
+                children: [
+                  Expanded(
+                    child: isTablet
+                        ? Row(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Expanded(
+                                flex: 5,
+                                child: Center(
+                                  child: _buildPlayerPane(
+                                    context: context,
+                                    jukebox: jukebox,
+                                    strings: strings,
+                                    scheme: scheme,
+                                    accentColor: accentColor,
+                                    onAccent: onAccent,
+                                    songTemas: songTemas,
+                                    isCurrentFav: isCurrentFav,
+                                    isTablet: true,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 6,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                    right: 16,
+                                    bottom: 12,
+                                  ),
+                                  child: _buildQueuePane(
+                                    context: context,
+                                    jukebox: jukebox,
+                                    strings: strings,
+                                    scheme: scheme,
+                                    accentColor: accentColor,
+                                    onAccent: onAccent,
+                                    favorites: favorites,
+                                    isTablet: true,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )
+                        : TabBarView(
+                            controller: _tabController,
+                            children: [
+                              _buildPlayerPane(
+                                context: context,
+                                jukebox: jukebox,
+                                strings: strings,
+                                scheme: scheme,
+                                accentColor: accentColor,
+                                onAccent: onAccent,
+                                songTemas: songTemas,
+                                isCurrentFav: isCurrentFav,
+                                isTablet: false,
+                              ),
+                              _buildQueuePane(
+                                context: context,
+                                jukebox: jukebox,
+                                strings: strings,
+                                scheme: scheme,
+                                accentColor: accentColor,
+                                onAccent: onAccent,
+                                favorites: favorites,
+                                isTablet: false,
+                              ),
+                            ],
+                          ),
+                  ),
+                  const MonetizationBanner(),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }

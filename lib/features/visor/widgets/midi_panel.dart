@@ -295,6 +295,102 @@ class _MidiPanelState extends State<MidiPanel> {
                 ),
                 const SizedBox(height: 12),
 
+                // ── Selector de voces en Piano (Ensamble / Soprano / Contralto / Tenor / Bajo) ──
+                if (widget.midiState.voces.isNotEmpty) ...[
+                  Builder(
+                    builder: (context) {
+                      final voces = widget.midiState.voces;
+                      final activeTracks =
+                          voces.where((v) => !v.isMuted).toList();
+                      final isEnsemble = activeTracks.length == voces.length ||
+                          activeTracks.isEmpty;
+                      final soloTrackIndex = activeTracks.length == 1
+                          ? activeTracks.first.trackIndex
+                          : null;
+
+                      return SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 8),
+                              child: Material(
+                                color: isEnsemble
+                                    ? widget.accentColor
+                                    : theme.colorScheme.surfaceContainerHighest,
+                                borderRadius: BorderRadius.circular(20),
+                                child: InkWell(
+                                  borderRadius: BorderRadius.circular(20),
+                                  onTap: () {
+                                    for (final v in voces) {
+                                      widget.onVozToggle(v.trackIndex, false);
+                                    }
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 14,
+                                      vertical: 7,
+                                    ),
+                                    child: Text(
+                                      strings.voiceLabel('Ensamble'),
+                                      style: GoogleFonts.inter(
+                                        fontSize: 12,
+                                        fontWeight: isEnsemble
+                                            ? FontWeight.w700
+                                            : FontWeight.w600,
+                                        color: isEnsemble
+                                            ? theme.colorScheme.onPrimary
+                                            : theme.colorScheme.onSurface,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            ...voces.map((v) {
+                              final isSelected =
+                                  !isEnsemble && soloTrackIndex == v.trackIndex;
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 8),
+                                child: Material(
+                                  color: isSelected
+                                      ? widget.accentColor
+                                      : theme
+                                          .colorScheme.surfaceContainerHighest,
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: InkWell(
+                                    borderRadius: BorderRadius.circular(20),
+                                    onTap: () => widget.onVozSolo(v.trackIndex),
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 14,
+                                        vertical: 7,
+                                      ),
+                                      child: Text(
+                                        strings.voiceLabel(v.nombre),
+                                        style: GoogleFonts.inter(
+                                          fontSize: 12,
+                                          fontWeight: isSelected
+                                              ? FontWeight.w700
+                                              : FontWeight.w600,
+                                          color: isSelected
+                                              ? theme.colorScheme.onPrimary
+                                              : theme.colorScheme.onSurface,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              );
+                            }),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 10),
+                ],
+
                 // ── Barra de progreso ──────────────────────────────────────────
                 Column(
                   children: [
@@ -408,22 +504,21 @@ class _MidiPanelState extends State<MidiPanel> {
                             onPressed:
                                 loading ? null : () => _showOptions(true)),
                         GestureDetector(
-                          onTap: loading ? null : widget.onPlay,
+                          onTap: widget.onPlay,
                           child: AnimatedContainer(
                             duration: const Duration(milliseconds: 200),
                             width: 52,
                             height: 52,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: loading
-                                  ? Colors.grey.withValues(alpha: 0.2)
-                                  : theme.colorScheme.primaryContainer,
+                              color: theme.colorScheme.primaryContainer,
                             ),
                             child: loading
                                 ? Padding(
                                     padding: const EdgeInsets.all(14),
                                     child: CircularProgressIndicator(
-                                        color: theme.colorScheme.primary,
+                                        color:
+                                            theme.colorScheme.onPrimaryContainer,
                                         strokeWidth: 2.5))
                                 : Padding(
                                     padding: EdgeInsets.only(

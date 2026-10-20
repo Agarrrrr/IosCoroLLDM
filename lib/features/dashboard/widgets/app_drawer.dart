@@ -64,7 +64,7 @@ class AppDrawer extends ConsumerWidget {
                 children: [
                   Expanded(
                     child: Text(
-                      'Coro LLDM',
+                      strings.appTitle,
                       style: GoogleFonts.inter(
                         fontSize: 20,
                         fontWeight: FontWeight.w800,

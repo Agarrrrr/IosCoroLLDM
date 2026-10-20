@@ -82,7 +82,7 @@ class _PremiumDialogState extends ConsumerState<PremiumDialog> {
           const SizedBox(width: 10),
           Expanded(
             child: Text(
-              state.isPremium ? 'Premium' : 'Coro LLDM Premium',
+              state.isPremium ? 'Premium' : '${strings.appTitle} Premium',
             ),
           ),
         ],
