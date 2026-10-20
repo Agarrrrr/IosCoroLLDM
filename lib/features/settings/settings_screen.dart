@@ -237,10 +237,12 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                             _description(strings.t(
                                 'El reproductor de estudio coral seleccionará tu voz automáticamente.',
                                 'The choral player will automatically select your voice.')),
-                            for (final voz in ['Soprano', 'Contralto', 'Tenor', 'Bajo'])
+                            for (final voz in ['Ensamble', 'Soprano', 'Contralto', 'Tenor', 'Bajo'])
                               _choice(
                                 voz,
-                                Icons.person_outline_rounded,
+                                voz == 'Ensamble'
+                                    ? Icons.groups_outlined
+                                    : Icons.person_outline_rounded,
                                 userVoice == voz,
                                 () => ref.read(userVoiceProvider.notifier).setVoice(voz),
                               ),
@@ -290,15 +292,16 @@ class _SettingsDialogState extends ConsumerState<SettingsDialog> {
                                 ),
                               ),
                             ] else ...[
-                              _actionCard(
-                                title: '${strings.t("Descargar mi voz", "Download my voice")} ($userVoice)',
-                                subtitle: '$userVoiceFormatted · ${language == "es" ? "Español" : "English"}',
-                                icon: Icons.download_rounded,
-                                onTap: () => ref.read(vocalDownloadProvider.notifier).downloadVoice(
-                                  lang: language,
-                                  voz: userVoice,
+                              if (userVoice != 'Ensamble')
+                                _actionCard(
+                                  title: '${strings.t("Descargar mi voz", "Download my voice")} ($userVoice)',
+                                  subtitle: '$userVoiceFormatted · ${language == "es" ? "Español" : "English"}',
+                                  icon: Icons.download_rounded,
+                                  onTap: () => ref.read(vocalDownloadProvider.notifier).downloadVoice(
+                                    lang: language,
+                                    voz: userVoice,
+                                  ),
                                 ),
-                              ),
                               _actionCard(
                                 title: strings.t('Descargar Ensamble', 'Download Ensemble'),
                                 subtitle: '$ensambleFormatted · ${language == "es" ? "Español" : "English"}',

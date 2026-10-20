@@ -46,12 +46,14 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
     final jukebox = ref.read(jukeboxProvider);
     final currentLang = ref.read(languageFilterProvider);
     final favorites = ref.read(favoritosProvider);
+    final savedVoice = ref.read(userVoiceProvider);
 
     if (jukebox.playlist.isEmpty || jukebox.language != currentLang) {
       ref.read(jukeboxProvider.notifier).initializePlaylist(
             language: currentLang,
             mode: JukeboxPlaylistMode.allSongs,
             favoriteIds: favorites,
+            startVoice: savedVoice,
           );
     }
   }
@@ -79,9 +81,11 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
       final found = cantos.where((c) => c.id == songId).firstOrNull;
       if (found != null && found.temas.isNotEmpty) return found.temas;
     }
-    final cleanTarget = songTitle.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
+    final cleanTarget =
+        songTitle.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
     final match = cantos.where((c) {
-      final cleanName = c.nombre.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
+      final cleanName =
+          c.nombre.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
       return cleanName == cleanTarget;
     }).firstOrNull;
     return match?.temas ?? [];
@@ -91,8 +95,9 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
   Widget build(BuildContext context) {
     final jukebox = ref.watch(jukeboxProvider);
     final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-    final accentColor = theme.colorScheme.primary;
+    final scheme = theme.colorScheme;
+    final accentColor = scheme.primary;
+    final onAccent = scheme.onPrimary;
     final strings = AppStrings.of(context);
     final favorites = ref.watch(favoritosProvider);
 
@@ -104,31 +109,35 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
         favorites.contains(currentSong.id ?? currentSong.canto);
 
     return Scaffold(
-      backgroundColor: isDark ? const Color(0xFF0F172A) : const Color(0xFFFAF8F5),
+      backgroundColor: theme.scaffoldBackgroundColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.keyboard_arrow_down_rounded, size: 30),
+          icon: Icon(
+            Icons.keyboard_arrow_down_rounded,
+            size: 30,
+            color: scheme.onSurface,
+          ),
           onPressed: () => Navigator.of(context).pop(),
           tooltip: strings.t('Minimizar', 'Minimize'),
         ),
         centerTitle: true,
         title: Container(
-          height: 36,
+          height: 38,
           padding: const EdgeInsets.all(3),
           decoration: BoxDecoration(
-            color: isDark
-                ? const Color(0xFF1E293B)
-                : Colors.black.withValues(alpha: 0.06),
+            color: scheme.surfaceContainerHighest,
             borderRadius: BorderRadius.circular(20),
           ),
           child: TabBar(
             controller: _tabController,
             isScrollable: true,
             tabAlignment: TabAlignment.center,
+            dividerColor: Colors.transparent,
+            indicatorSize: TabBarIndicatorSize.tab,
             indicator: BoxDecoration(
-              color: isDark ? const Color(0xFF334155) : Colors.white,
+              color: scheme.surface,
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
@@ -138,10 +147,16 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                 ),
               ],
             ),
-            labelColor: theme.colorScheme.onSurface,
-            unselectedLabelColor: theme.colorScheme.onSurfaceVariant,
-            labelStyle: GoogleFonts.inter(fontSize: 12, fontWeight: FontWeight.w700),
-            unselectedLabelStyle: GoogleFonts.inter(fontSize: 12, fontWeight: FontWeight.w500),
+            labelColor: scheme.onSurface,
+            unselectedLabelColor: scheme.onSurfaceVariant,
+            labelStyle: GoogleFonts.inter(
+              fontSize: 12,
+              fontWeight: FontWeight.w700,
+            ),
+            unselectedLabelStyle: GoogleFonts.inter(
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+            ),
             tabs: [
               Tab(text: strings.t('Reproductor', 'Player')),
               Tab(
@@ -152,9 +167,12 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     if (jukebox.playlist.isNotEmpty) ...[
                       const SizedBox(width: 6),
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1.5),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 1.5,
+                        ),
                         decoration: BoxDecoration(
-                          color: accentColor.withValues(alpha: 0.15),
+                          color: accentColor.withValues(alpha: 0.16),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
@@ -176,10 +194,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
         actions: [
           IconButton(
             icon: Icon(
-              jukebox.isShuffle ? Icons.shuffle_on_rounded : Icons.shuffle_rounded,
-              color: jukebox.isShuffle
-                  ? accentColor
-                  : theme.colorScheme.onSurfaceVariant,
+              jukebox.isShuffle
+                  ? Icons.shuffle_on_rounded
+                  : Icons.shuffle_rounded,
+              color: jukebox.isShuffle ? accentColor : scheme.onSurfaceVariant,
             ),
             tooltip: strings.t('Modo aleatorio', 'Shuffle mode'),
             onPressed: () {
@@ -207,7 +225,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                       maxHeight: 340,
                     ),
                     child: JukeboxCoverCard(
-                      title: currentSong?.canto ?? strings.t('Selecciona un canto', 'Select a song'),
+                      title: currentSong?.canto ??
+                          strings.t('Selecciona un canto', 'Select a song'),
                       temas: songTemas,
                       voice: jukebox.currentVoice,
                       isPlaying: jukebox.isPlaying,
@@ -224,27 +243,28 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              currentSong?.canto ?? strings.t('Sin reproducción', 'Not playing'),
+                              currentSong?.canto ??
+                                  strings.t('Sin reproducción', 'Not playing'),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.inter(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w800,
-                                color: theme.colorScheme.onSurface,
+                                color: scheme.onSurface,
                                 letterSpacing: -0.3,
                               ),
                             ),
                             const SizedBox(height: 4),
                             Text(
                               songTemas.isNotEmpty
-                                  ? 'Coro LLDM • ${songTemas.join(', ')}'
-                                  : 'Coro LLDM • Repertorio Coral',
+                                  ? 'Coro LLDM · ${songTemas.join(' · ')}'
+                                  : 'Coro LLDM · Repertorio Coral',
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.inter(
                                 fontSize: 13,
                                 fontWeight: FontWeight.w500,
-                                color: theme.colorScheme.onSurfaceVariant,
+                                color: scheme.onSurfaceVariant,
                               ),
                             ),
                           ],
@@ -259,7 +279,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                 : Icons.favorite_border_rounded,
                             color: isCurrentFav
                                 ? Colors.redAccent
-                                : theme.colorScheme.onSurfaceVariant,
+                                : scheme.onSurfaceVariant,
                           ),
                           onPressed: () {
                             ref
@@ -287,31 +307,28 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                             voz,
                             style: GoogleFonts.inter(
                               fontSize: 12,
-                              fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
-                              color: isSelected ? Colors.white : theme.colorScheme.onSurface,
+                              fontWeight: isSelected
+                                  ? FontWeight.w700
+                                  : FontWeight.w500,
+                              color: isSelected ? onAccent : scheme.onSurface,
                             ),
                           ),
                           selected: isSelected,
                           selectedColor: accentColor,
-                          backgroundColor: isDark
-                              ? const Color(0xFF1E293B)
-                              : Colors.black.withValues(alpha: 0.05),
+                          backgroundColor: scheme.surfaceContainerHighest,
                           showCheckmark: false,
-                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                          side: BorderSide.none,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 4,
+                          ),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
-                            side: BorderSide(
-                              color: isSelected
-                                  ? accentColor
-                                  : isDark
-                                      ? Colors.white.withValues(alpha: 0.1)
-                                      : Colors.black.withValues(alpha: 0.08),
-                            ),
                           ),
                           onSelected: (val) {
                             if (val) {
-                              ref.read(jukeboxProvider.notifier).setVoice(voz);
                               ref.read(userVoiceProvider.notifier).setVoice(voz);
+                              ref.read(jukeboxProvider.notifier).setVoice(voz);
                             }
                           },
                         );
@@ -325,12 +342,14 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
                       trackHeight: 3.5,
-                      thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
-                      overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
+                      thumbShape: const RoundSliderThumbShape(
+                        enabledThumbRadius: 6,
+                      ),
+                      overlayShape: const RoundSliderOverlayShape(
+                        overlayRadius: 14,
+                      ),
                       activeTrackColor: accentColor,
-                      inactiveTrackColor: isDark
-                          ? Colors.white.withValues(alpha: 0.12)
-                          : Colors.black.withValues(alpha: 0.08),
+                      inactiveTrackColor: scheme.surfaceContainerHighest,
                       thumbColor: accentColor,
                     ),
                     child: Slider(
@@ -362,7 +381,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                           style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
-                            color: theme.colorScheme.onSurfaceVariant,
+                            color: scheme.onSurfaceVariant,
                           ),
                         ),
                         Text(
@@ -370,7 +389,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                           style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
-                            color: theme.colorScheme.onSurfaceVariant,
+                            color: scheme.onSurfaceVariant,
                           ),
                         ),
                       ],
@@ -392,7 +411,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                               : Icons.shuffle_rounded,
                           color: jukebox.isShuffle
                               ? accentColor
-                              : theme.colorScheme.onSurfaceVariant,
+                              : scheme.onSurfaceVariant,
                         ),
                         onPressed: () {
                           ref.read(jukeboxProvider.notifier).toggleShuffle();
@@ -403,7 +422,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                       IconButton(
                         iconSize: 34,
                         icon: const Icon(Icons.skip_previous_rounded),
-                        color: theme.colorScheme.onSurface,
+                        color: scheme.onSurface,
                         onPressed: jukebox.playlist.isEmpty
                             ? null
                             : () => ref.read(jukeboxProvider.notifier).previous(),
@@ -413,7 +432,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                       GestureDetector(
                         onTap: jukebox.playlist.isEmpty
                             ? null
-                            : () => ref.read(jukeboxProvider.notifier).togglePlay(),
+                            : () =>
+                                ref.read(jukeboxProvider.notifier).togglePlay(),
                         child: Container(
                           width: 64,
                           height: 64,
@@ -422,7 +442,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
-                                color: accentColor.withValues(alpha: 0.35),
+                                color: accentColor.withValues(alpha: 0.30),
                                 blurRadius: 18,
                                 offset: const Offset(0, 6),
                               ),
@@ -430,19 +450,19 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                           ),
                           child: Center(
                             child: jukebox.isLoading
-                                ? const SizedBox(
+                                ? SizedBox(
                                     width: 26,
                                     height: 26,
                                     child: CircularProgressIndicator(
                                       strokeWidth: 3,
-                                      color: Colors.white,
+                                      color: onAccent,
                                     ),
                                   )
                                 : Icon(
                                     jukebox.isPlaying
                                         ? Icons.pause_rounded
                                         : Icons.play_arrow_rounded,
-                                    color: Colors.white,
+                                    color: onAccent,
                                     size: 36,
                                   ),
                           ),
@@ -453,7 +473,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                       IconButton(
                         iconSize: 34,
                         icon: const Icon(Icons.skip_next_rounded),
-                        color: theme.colorScheme.onSurface,
+                        color: scheme.onSurface,
                         onPressed: jukebox.playlist.isEmpty
                             ? null
                             : () => ref.read(jukeboxProvider.notifier).next(),
@@ -468,7 +488,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                               : Icons.repeat_rounded,
                           color: jukebox.repeatMode != JukeboxRepeatMode.off
                               ? accentColor
-                              : theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.4),
+                              : scheme.onSurfaceVariant.withValues(alpha: 0.45),
                         ),
                         onPressed: () {
                           ref.read(jukeboxProvider.notifier).toggleRepeatMode();
@@ -480,64 +500,60 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                   const SizedBox(height: 20),
 
                   // 6. Botón de acceso directo a la cola
-                  InkWell(
+                  Material(
+                    color: scheme.surface,
                     borderRadius: BorderRadius.circular(16),
-                    onTap: () => _tabController.animateTo(1),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                      decoration: BoxDecoration(
-                        color: isDark
-                            ? const Color(0xFF1E293B).withValues(alpha: 0.6)
-                            : Colors.white,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: isDark
-                              ? Colors.white.withValues(alpha: 0.06)
-                              : Colors.black.withValues(alpha: 0.04),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(16),
+                      onTap: () => _tabController.animateTo(1),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 12,
                         ),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.queue_music_rounded,
-                                size: 18,
-                                color: accentColor,
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                strings.t(
-                                  'Ver cola de reproducción',
-                                  'View playback queue',
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.queue_music_rounded,
+                                  size: 18,
+                                  color: accentColor,
                                 ),
-                                style: GoogleFonts.inter(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w600,
-                                  color: theme.colorScheme.onSurface,
+                                const SizedBox(width: 8),
+                                Text(
+                                  strings.t(
+                                    'Ver cola de reproducción',
+                                    'View playback queue',
+                                  ),
+                                  style: GoogleFonts.inter(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w600,
+                                    color: scheme.onSurface,
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                '${jukebox.playlist.length} ${strings.t('cantos', 'songs')}',
-                                style: GoogleFonts.inter(
-                                  fontSize: 12,
-                                  color: theme.colorScheme.onSurfaceVariant,
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  '${jukebox.playlist.length} ${strings.t('cantos', 'songs')}',
+                                  style: GoogleFonts.inter(
+                                    fontSize: 12,
+                                    color: scheme.onSurfaceVariant,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 4),
-                              Icon(
-                                Icons.chevron_right_rounded,
-                                size: 18,
-                                color: theme.colorScheme.onSurfaceVariant,
-                              ),
-                            ],
-                          ),
-                        ],
+                                const SizedBox(width: 4),
+                                Icon(
+                                  Icons.chevron_right_rounded,
+                                  size: 18,
+                                  color: scheme.onSurfaceVariant,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -550,32 +566,37 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
               children: [
                 // Selector de modo de lista: "Todos los cantos" vs "Mi Playlist"
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 8,
+                  ),
                   child: Container(
                     padding: const EdgeInsets.all(4),
                     decoration: BoxDecoration(
-                      color: isDark
-                          ? const Color(0xFF1E293B)
-                          : Colors.black.withValues(alpha: 0.05),
-                      borderRadius: BorderRadius.circular(12),
+                      color: scheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(14),
                     ),
                     child: Row(
                       children: [
                         Expanded(
                           child: GestureDetector(
-                            onTap: () => _switchPlaylistMode(JukeboxPlaylistMode.allSongs),
+                            onTap: () => _switchPlaylistMode(
+                              JukeboxPlaylistMode.allSongs,
+                            ),
                             child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.symmetric(vertical: 9),
                               decoration: BoxDecoration(
-                                color: jukebox.playlistMode == JukeboxPlaylistMode.allSongs
-                                    ? (isDark ? const Color(0xFF334155) : Colors.white)
+                                color: jukebox.playlistMode ==
+                                        JukeboxPlaylistMode.allSongs
+                                    ? scheme.surface
                                     : Colors.transparent,
-                                borderRadius: BorderRadius.circular(8),
+                                borderRadius: BorderRadius.circular(10),
                                 boxShadow: jukebox.playlistMode ==
                                         JukeboxPlaylistMode.allSongs
                                     ? [
                                         BoxShadow(
-                                          color: Colors.black.withValues(alpha: 0.06),
+                                          color: Colors.black
+                                              .withValues(alpha: 0.06),
                                           blurRadius: 4,
                                           offset: const Offset(0, 2),
                                         )
@@ -593,8 +614,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                       : FontWeight.w500,
                                   color: jukebox.playlistMode ==
                                           JukeboxPlaylistMode.allSongs
-                                      ? theme.colorScheme.onSurface
-                                      : theme.colorScheme.onSurfaceVariant,
+                                      ? scheme.onSurface
+                                      : scheme.onSurfaceVariant,
                                 ),
                               ),
                             ),
@@ -602,19 +623,23 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                         ),
                         Expanded(
                           child: GestureDetector(
-                            onTap: () => _switchPlaylistMode(JukeboxPlaylistMode.favorites),
+                            onTap: () => _switchPlaylistMode(
+                              JukeboxPlaylistMode.favorites,
+                            ),
                             child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.symmetric(vertical: 9),
                               decoration: BoxDecoration(
-                                color: jukebox.playlistMode == JukeboxPlaylistMode.favorites
-                                    ? (isDark ? const Color(0xFF334155) : Colors.white)
+                                color: jukebox.playlistMode ==
+                                        JukeboxPlaylistMode.favorites
+                                    ? scheme.surface
                                     : Colors.transparent,
-                                borderRadius: BorderRadius.circular(8),
+                                borderRadius: BorderRadius.circular(10),
                                 boxShadow: jukebox.playlistMode ==
                                         JukeboxPlaylistMode.favorites
                                     ? [
                                         BoxShadow(
-                                          color: Colors.black.withValues(alpha: 0.06),
+                                          color: Colors.black
+                                              .withValues(alpha: 0.06),
                                           blurRadius: 4,
                                           offset: const Offset(0, 2),
                                         )
@@ -630,9 +655,9 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                     color: jukebox.playlistMode ==
                                             JukeboxPlaylistMode.favorites
                                         ? Colors.redAccent
-                                        : theme.colorScheme.onSurfaceVariant,
+                                        : scheme.onSurfaceVariant,
                                   ),
-                                  const SizedBox(width: 4),
+                                  const SizedBox(width: 5),
                                   Text(
                                     strings.t('Mi Playlist', 'My Playlist'),
                                     style: GoogleFonts.inter(
@@ -643,8 +668,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                           : FontWeight.w500,
                                       color: jukebox.playlistMode ==
                                               JukeboxPlaylistMode.favorites
-                                          ? theme.colorScheme.onSurface
-                                          : theme.colorScheme.onSurfaceVariant,
+                                          ? scheme.onSurface
+                                          : scheme.onSurfaceVariant,
                                     ),
                                   ),
                                 ],
@@ -659,7 +684,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
 
                 // Encabezado de la lista reordenable
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 6,
+                  ),
                   child: Row(
                     children: [
                       Text(
@@ -667,15 +695,18 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                         style: GoogleFonts.inter(
                           fontSize: 11,
                           fontWeight: FontWeight.w800,
-                          color: theme.colorScheme.onSurfaceVariant,
+                          color: scheme.onSurfaceVariant,
                           letterSpacing: 1,
                         ),
                       ),
                       const SizedBox(width: 8),
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 2,
+                        ),
                         decoration: BoxDecoration(
-                          color: theme.colorScheme.secondary.withValues(alpha: 0.1),
+                          color: scheme.secondary.withValues(alpha: 0.12),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
@@ -683,7 +714,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                           style: GoogleFonts.inter(
                             fontSize: 10,
                             fontWeight: FontWeight.w700,
-                            color: theme.colorScheme.secondary,
+                            color: scheme.secondary,
                           ),
                         ),
                       ),
@@ -693,15 +724,18 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                           Icon(
                             Icons.drag_handle_rounded,
                             size: 14,
-                            color: theme.colorScheme.onSurfaceVariant,
+                            color: scheme.onSurfaceVariant,
                           ),
                           const SizedBox(width: 4),
                           Text(
-                            strings.t('Arrastra para ordenar', 'Drag to arrange'),
+                            strings.t(
+                              'Arrastra para ordenar',
+                              'Drag to arrange',
+                            ),
                             style: GoogleFonts.inter(
                               fontSize: 10,
                               fontWeight: FontWeight.w500,
-                              color: theme.colorScheme.onSurfaceVariant,
+                              color: scheme.onSurfaceVariant,
                             ),
                           ),
                         ],
@@ -718,15 +752,18 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
-                                jukebox.playlistMode == JukeboxPlaylistMode.favorites
+                                jukebox.playlistMode ==
+                                        JukeboxPlaylistMode.favorites
                                     ? Icons.favorite_border_rounded
                                     : Icons.music_off_rounded,
                                 size: 44,
-                                color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.4),
+                                color: scheme.onSurfaceVariant
+                                    .withValues(alpha: 0.4),
                               ),
                               const SizedBox(height: 12),
                               Text(
-                                jukebox.playlistMode == JukeboxPlaylistMode.favorites
+                                jukebox.playlistMode ==
+                                        JukeboxPlaylistMode.favorites
                                     ? strings.t(
                                         'No tienes cantos en tu lista de favoritos',
                                         'You have no songs in your favorites list',
@@ -738,47 +775,54 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                 style: GoogleFonts.inter(
                                   fontSize: 13,
                                   fontWeight: FontWeight.w500,
-                                  color: theme.colorScheme.onSurfaceVariant,
+                                  color: scheme.onSurfaceVariant,
                                 ),
                               ),
                             ],
                           ),
                         )
                       : ReorderableListView.builder(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 4,
+                          ),
                           physics: const BouncingScrollPhysics(),
                           itemCount: jukebox.playlist.length,
                           onReorder: (oldIndex, newIndex) {
-                            ref.read(jukeboxProvider.notifier).reorderPlaylist(oldIndex, newIndex);
+                            ref
+                                .read(jukeboxProvider.notifier)
+                                .reorderPlaylist(oldIndex, newIndex);
                           },
                           itemBuilder: (context, index) {
                             final song = jukebox.playlist[index];
                             final isCurrent = jukebox.currentIndex == index;
-                            final isFav = favorites.contains(song.id ?? song.canto);
-                            final songTemasItem = _getTemasForSong(song.canto, song.id);
+                            final isFav =
+                                favorites.contains(song.id ?? song.canto);
+                            final songTemasItem =
+                                _getTemasForSong(song.canto, song.id);
 
                             return Container(
-                              key: ValueKey('jukebox_item_${song.canto}_$index'),
-                              margin: const EdgeInsets.symmetric(vertical: 3),
+                              key: ValueKey(
+                                'jukebox_item_${song.canto}_$index',
+                              ),
+                              margin: const EdgeInsets.symmetric(vertical: 4),
                               decoration: BoxDecoration(
                                 color: isCurrent
-                                    ? accentColor.withValues(alpha: isDark ? 0.15 : 0.08)
-                                    : (isDark
-                                        ? const Color(0xFF1E293B)
-                                        : Colors.white),
-                                borderRadius: BorderRadius.circular(14),
-                                border: Border.all(
-                                  color: isCurrent
-                                      ? accentColor.withValues(alpha: 0.4)
-                                      : isDark
-                                          ? Colors.white.withValues(alpha: 0.05)
-                                          : Colors.black.withValues(alpha: 0.04),
-                                ),
+                                    ? Color.alphaBlend(
+                                        accentColor.withValues(alpha: 0.12),
+                                        scheme.surface,
+                                      )
+                                    : scheme.surface,
+                                borderRadius: BorderRadius.circular(16),
                               ),
                               child: ListTile(
                                 dense: true,
                                 contentPadding: const EdgeInsets.only(
-                                    left: 12, right: 6, top: 0, bottom: 0),
+                                  left: 12,
+                                  right: 6,
+                                  top: 2,
+                                  bottom: 2,
+                                ),
                                 onTap: () {
                                   ref
                                       .read(jukeboxProvider.notifier)
@@ -791,23 +835,24 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                   decoration: BoxDecoration(
                                     color: isCurrent
                                         ? accentColor
-                                        : (isDark
-                                            ? const Color(0xFF334155)
-                                            : Colors.grey.shade100),
+                                        : scheme.surfaceContainerHighest,
                                     shape: BoxShape.circle,
                                   ),
                                   child: Center(
                                     child: isCurrent && jukebox.isPlaying
-                                        ? const Icon(Icons.volume_up_rounded,
-                                            size: 16, color: Colors.white)
+                                        ? Icon(
+                                            Icons.volume_up_rounded,
+                                            size: 16,
+                                            color: onAccent,
+                                          )
                                         : Text(
                                             '${index + 1}',
                                             style: GoogleFonts.inter(
                                               fontSize: 11,
                                               fontWeight: FontWeight.w700,
                                               color: isCurrent
-                                                  ? Colors.white
-                                                  : theme.colorScheme.onSurfaceVariant,
+                                                  ? onAccent
+                                                  : scheme.onSurfaceVariant,
                                             ),
                                           ),
                                   ),
@@ -817,22 +862,24 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: GoogleFonts.inter(
-                                    fontSize: 13,
-                                    fontWeight: isCurrent ? FontWeight.w700 : FontWeight.w500,
+                                    fontSize: 13.5,
+                                    fontWeight: isCurrent
+                                        ? FontWeight.w700
+                                        : FontWeight.w600,
                                     color: isCurrent
                                         ? accentColor
-                                        : theme.colorScheme.onSurface,
+                                        : scheme.onSurface,
                                   ),
                                 ),
                                 subtitle: Text(
                                   songTemasItem.isNotEmpty
-                                      ? songTemasItem.take(2).join(' • ')
+                                      ? songTemasItem.take(2).join(' · ')
                                       : '${song.voces.length} ${strings.t('voces', 'voices')}',
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: GoogleFonts.inter(
                                     fontSize: 11,
-                                    color: theme.colorScheme.onSurfaceVariant,
+                                    color: scheme.onSurfaceVariant,
                                   ),
                                 ),
                                 trailing: Row(
@@ -846,7 +893,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                         size: 18,
                                         color: isFav
                                             ? Colors.redAccent
-                                            : theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.4),
+                                            : scheme.onSurfaceVariant
+                                                .withValues(alpha: 0.45),
                                       ),
                                       onPressed: () {
                                         ref
@@ -861,7 +909,7 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                         child: Icon(
                                           Icons.drag_handle_rounded,
                                           size: 20,
-                                          color: theme.colorScheme.onSurfaceVariant,
+                                          color: scheme.onSurfaceVariant,
                                         ),
                                       ),
                                     ),

@@ -19,6 +19,7 @@ class ScoreCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(vocalManifestProvider);
     final hasAudio = canto.midiArchivo != null && canto.midiArchivo!.isNotEmpty;
     final vocalService = ref.watch(vocalAudioServiceProvider);
     final hasVocal = vocalService.findSong(
@@ -102,6 +103,11 @@ class ScoreCard extends ConsumerWidget {
                                   const SizedBox(height: 3),
                                    Row(
                                      children: [
+                                       if (hasAudio) ...[
+                                         Icon(Icons.piano_rounded,
+                                             size: 19, color: audioColor),
+                                         const SizedBox(width: 5),
+                                       ],
                                        if (hasVocal) ...[
                                          SingingIcon(
                                            size: 18,
@@ -109,16 +115,11 @@ class ScoreCard extends ConsumerWidget {
                                          ),
                                          const SizedBox(width: 5),
                                        ],
-                                       if (hasAudio) ...[
-                                         Icon(Icons.piano_rounded,
-                                             size: 19, color: audioColor),
-                                         const SizedBox(width: 4),
-                                       ],
                                        Flexible(
                                          child: Text(
                                            (() {
                                              final audioLabel = hasVocal && hasAudio
-                                                 ? strings.t('Voces · Piano', 'Voices · Piano')
+                                                 ? strings.t('Piano · Voces', 'Piano · Voices')
                                                  : hasVocal
                                                      ? strings.t('Voces cantadas', 'Choral voices')
                                                      : hasAudio
@@ -126,7 +127,7 @@ class ScoreCard extends ConsumerWidget {
                                                          : strings.t('Partitura', 'Score');
                                              return canto.temas.isEmpty
                                                  ? audioLabel
-                                                  : '$audioLabel · ' + canto.temas.join(' · ');
+                                                 : '$audioLabel · ${canto.temas.join(' · ')}';
                                            })(),
                                            maxLines: 1,
                                            overflow: TextOverflow.ellipsis,

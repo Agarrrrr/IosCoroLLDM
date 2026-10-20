@@ -167,12 +167,17 @@ class AppDrawer extends ConsumerWidget {
                       context: context,
                       ref: ref,
                       id: 'jukebox',
-                      label: strings.t('Modo Jukebox (Voces)', 'Jukebox Mode (Voces)'),
+                      label: strings.t(
+                        'Reproductor Coral (Jukebox)',
+                        'Choral Player (Jukebox)',
+                      ),
                       icon: Icons.headphones_rounded,
                       isActiveOverride: false,
+                      closeDrawer: false,
                       onTap: () {
-                        Navigator.pop(context);
-                        Navigator.of(context).push(
+                        final navigator = Navigator.of(context);
+                        navigator.pop();
+                        navigator.push(
                           PageRouteBuilder(
                             pageBuilder: (context, anim, secAnim) =>
                                 const JukeboxScreen(),
@@ -312,6 +317,7 @@ class AppDrawer extends ConsumerWidget {
     bool isTema = false,
     IconData? icon,
     bool? isActiveOverride,
+    bool closeDrawer = true,
     VoidCallback? onTap,
   }) {
     final activeCategory = ref.watch(categoryFilterProvider);
@@ -332,8 +338,9 @@ class AppDrawer extends ConsumerWidget {
                 ref.read(soloFavoritosProvider.notifier).set(false);
                 ref.read(categoryFilterProvider.notifier).set(id);
               }
-              Navigator.pop(
-                  context); // Cierra sidebar (comportamiento móvil web)
+              if (closeDrawer) {
+                Navigator.pop(context);
+              }
             },
             borderRadius: BorderRadius.circular(12),
             child: Container(

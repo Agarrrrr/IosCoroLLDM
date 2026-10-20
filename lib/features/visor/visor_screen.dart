@@ -237,6 +237,228 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
     });
   }
 
+  Future<void> _onAudioButtonTap(Canto canto) async {
+    if (_showMidi || _showVocal) {
+      if (_showMidi) _midi.stop();
+      setState(() {
+        _showMidi = false;
+        _showVocal = false;
+      });
+      return;
+    }
+
+    if (_vocalSong == null) {
+      try {
+        final vocalService = ref.read(vocalAudioServiceProvider);
+        await vocalService.ensureManifestLoaded();
+        if (!mounted) return;
+        _vocalSong = vocalService.findSong(
+          cantoId: canto.id,
+          cantoNombre: canto.nombre,
+          lang: canto.idioma,
+        );
+      } catch (_) {}
+    }
+
+    if (!mounted) return;
+
+    final hasVocal = _vocalSong != null;
+    final hasMidi = _hasMidi;
+
+    if (hasVocal && hasMidi) {
+      final choice = await _showAudioModeDialog(canto);
+      if (!mounted || choice == null) return;
+      if (choice == 'vocal') {
+        _midi.stop();
+        setState(() {
+          _showVocal = true;
+          _showMidi = false;
+          _showTools = false;
+          _showDrawingPalette = false;
+        });
+        ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
+      } else if (choice == 'midi') {
+        setState(() {
+          _showMidi = true;
+          _showVocal = false;
+          _showTools = false;
+          _showDrawingPalette = false;
+        });
+        ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
+      }
+      return;
+    }
+
+    if (hasVocal) {
+      setState(() {
+        _showVocal = true;
+        _showMidi = false;
+        _showTools = false;
+        _showDrawingPalette = false;
+      });
+      ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
+    } else if (hasMidi) {
+      _toggleMidi();
+    }
+  }
+
+  Future<String?> _showAudioModeDialog(Canto canto) {
+    final strings = AppStrings.of(context);
+    final scheme = Theme.of(context).colorScheme;
+    final userVoice = ref.read(userVoiceProvider);
+
+    return showDialog<String>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          scrollable: true,
+          insetPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+          titlePadding: const EdgeInsets.fromLTRB(20, 20, 20, 12),
+          contentPadding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+          actionsPadding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+          title: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SingingIcon(size: 24, color: scheme.primary),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  strings.t('Reproductor de estudio', 'Study Player'),
+                ),
+              ),
+            ],
+          ),
+          content: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 420),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  strings.t(
+                    'Elige el modo de audio para repasar este canto:',
+                    'Choose the audio mode to practice this song:',
+                  ),
+                  style: Theme.of(dialogContext).textTheme.bodyMedium?.copyWith(
+                        color: scheme.onSurfaceVariant,
+                      ),
+                ),
+                const SizedBox(height: 16),
+                Material(
+                  color: scheme.primary,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(12),
+                    onTap: () => Navigator.pop(dialogContext, 'vocal'),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SingingIcon(size: 24, color: scheme.onPrimary),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  strings.t('Voces Cantadas', 'Sung Voices'),
+                                  style: Theme.of(dialogContext)
+                                      .textTheme
+                                      .titleMedium
+                                      ?.copyWith(
+                                        color: scheme.onPrimary,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  strings.t(
+                                    'Ensamble y voces individuales ($userVoice)',
+                                    'Ensemble and individual voices ($userVoice)',
+                                  ),
+                                  style: Theme.of(dialogContext)
+                                      .textTheme
+                                      .bodyMedium
+                                      ?.copyWith(color: scheme.onPrimary),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Material(
+                  color: scheme.surfaceContainerHighest,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(12),
+                    onTap: () => Navigator.pop(dialogContext, 'midi'),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(
+                            Icons.piano_rounded,
+                            size: 24,
+                            color: scheme.onSurface,
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  strings.t('Piano (MIDI)', 'Piano (MIDI)'),
+                                  style: Theme.of(dialogContext)
+                                      .textTheme
+                                      .titleMedium
+                                      ?.copyWith(
+                                        color: scheme.onSurface,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  strings.t(
+                                    'Acompañamiento instrumental y control de tempo',
+                                    'Instrumental accompaniment and tempo control',
+                                  ),
+                                  style: Theme.of(dialogContext)
+                                      .textTheme
+                                      .bodyMedium
+                                      ?.copyWith(color: scheme.onSurfaceVariant),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext),
+              child: Text(strings.t('Cerrar', 'Close')),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   Future<void> _handlePlay(Canto canto, MidiState midiState) async {
     if (_audioAccessPending) return;
     _audioAccessPending = true;
@@ -1206,42 +1428,32 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                         color: accentColor)),
                                 onPressed: () => _cambiarIdioma(canto),
                               ),
-                            if (_vocalSong != null)
+                            if (_hasMidi || _vocalSong != null)
                               _TopBarBtn(
-                                isActive: _showVocal,
+                                isActive: _showMidi || _showVocal,
                                 activeColor: accentColor,
-                                onTap: () {
-                                  setState(() {
-                                    _showVocal = !_showVocal;
-                                    if (_showVocal) {
-                                      _showMidi = false;
-                                      _showTools = false;
-                                      _showDrawingPalette = false;
-                                      ref.read(pdfEngineProvider.notifier).setDrawingMode(false);
-                                    }
-                                  });
-                                },
+                                onTap: () => _onAudioButtonTap(canto),
                                 tooltip: strings.t(
-                                  'Voces cantadas (Estudio coral)',
-                                  'Choral singing voices',
+                                  'Reproductor de estudio',
+                                  'Study player',
                                 ),
-                                child: SingingIcon(
-                                  size: 22,
-                                  color: _showVocal
-                                      ? accentColor
-                                      : Theme.of(context).colorScheme.onSurfaceVariant,
-                                ),
-                              ),
-                            if (_hasMidi)
-                              _TopBarBtn(
-                                icon: Icons.piano_rounded,
-                                isActive: _showMidi,
-                                activeColor: accentColor,
-                                onTap: _toggleMidi,
-                                tooltip: strings.t(
-                                  'Acompañamiento de piano (MIDI)',
-                                  'Piano accompaniment (MIDI)',
-                                ),
+                                child: _showVocal || (!_hasMidi && _vocalSong != null)
+                                    ? SingingIcon(
+                                        size: 22,
+                                        color: (_showMidi || _showVocal)
+                                            ? accentColor
+                                            : Theme.of(context)
+                                                .colorScheme
+                                                .onSurfaceVariant,
+                                      )
+                                    : Icon(
+                                        Icons.piano_rounded,
+                                        color: (_showMidi || _showVocal)
+                                            ? accentColor
+                                            : Theme.of(context)
+                                                .colorScheme
+                                                .onSurfaceVariant,
+                                      ),
                               ),
                             SizedBox(
                               key: _shareButtonKey,
@@ -1627,7 +1839,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               : -MediaQuery.of(context).size.height * 2,
                           left: 12,
                           right: 12,
-                          child: _vocalSong != null
+                          child: _showVocal && _vocalSong != null
                               ? VocalPanel(
                                   onClose: () =>
                                       setState(() => _showVocal = false),

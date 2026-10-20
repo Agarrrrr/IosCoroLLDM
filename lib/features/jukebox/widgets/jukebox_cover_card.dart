@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 
 class JukeboxCoverCard extends StatelessWidget {
   final String title;
@@ -15,92 +16,56 @@ class JukeboxCoverCard extends StatelessWidget {
     this.isPlaying = false,
   });
 
-  // Genera una paleta sobria y solemne basada en el hash del título
-  List<Color> _getGradientForTitle(String text, bool isDark) {
-    final hash = text.codeUnits.fold<int>(0, (prev, elem) => prev + elem);
-    final palettes = [
-      // Oro y Carbón
-      [const Color(0xFF1E170E), const Color(0xFF2C2214), const Color(0xFF0F0B06)],
-      // Borgoña Sacro
-      [const Color(0xFF231114), const Color(0xFF35171C), const Color(0xFF120709)],
-      // Zafiro Nocturno
-      [const Color(0xFF0F172A), const Color(0xFF1E293B), const Color(0xFF070B14)],
-      // Bronce y Ébano
-      [const Color(0xFF241A14), const Color(0xFF38291F), const Color(0xFF100B08)],
-      // Esmeralda Profundo
-      [const Color(0xFF0D1E1A), const Color(0xFF152F29), const Color(0xFF050E0C)],
-    ];
-    return palettes[hash % palettes.length];
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
     final isDark = theme.brightness == Brightness.dark;
-    final gradientColors = _getGradientForTitle(title, isDark);
-    final goldAccent = const Color(0xFFD4AF37);
+
+    final topSurface = Color.alphaBlend(
+      scheme.primary.withValues(alpha: isDark ? 0.18 : 0.12),
+      scheme.surface,
+    );
+    final bottomSurface = Color.alphaBlend(
+      scheme.primary.withValues(alpha: isDark ? 0.06 : 0.04),
+      scheme.surfaceContainerHighest,
+    );
 
     return AspectRatio(
       aspectRatio: 1.0,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(28),
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: gradientColors,
+            colors: [topSurface, bottomSurface],
           ),
           boxShadow: [
             BoxShadow(
-              color: gradientColors[1].withValues(alpha: 0.6),
+              color: Colors.black.withValues(alpha: isDark ? 0.35 : 0.08),
               blurRadius: 28,
               offset: const Offset(0, 12),
               spreadRadius: -4,
             ),
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.4),
-              blurRadius: 16,
-              offset: const Offset(0, 6),
-            ),
           ],
-          border: Border.all(
-            color: Colors.white.withValues(alpha: 0.12),
-            width: 1.2,
-          ),
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(28),
           child: Stack(
             children: [
-              // 1. Marcas de agua decorativas y resplandor de fondo
+              // Resplandor ambiental suave del color de acento del tema
               Positioned(
-                top: -60,
-                right: -60,
+                top: -50,
+                right: -50,
                 child: Container(
-                  width: 180,
-                  height: 180,
+                  width: 200,
+                  height: 200,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     gradient: RadialGradient(
                       colors: [
-                        goldAccent.withValues(alpha: 0.25),
-                        Colors.transparent,
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                bottom: -50,
-                left: -50,
-                child: Container(
-                  width: 160,
-                  height: 160,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: RadialGradient(
-                      colors: [
-                        Colors.white.withValues(alpha: 0.08),
+                        scheme.primary.withValues(alpha: isDark ? 0.22 : 0.16),
                         Colors.transparent,
                       ],
                     ),
@@ -108,201 +73,125 @@ class JukeboxCoverCard extends StatelessWidget {
                 ),
               ),
 
-              // 2. Líneas sutiles de fondo (estilo Spotify Canvas)
-              Positioned.fill(
-                child: CustomPaint(
-                  painter: _CoverBackgroundPainter(
-                    accentColor: goldAccent.withValues(alpha: 0.1),
-                  ),
-                ),
-              ),
-
-              // 3. Contenido principal del gráfico
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+                padding: const EdgeInsets.all(24),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Fila Superior: Marca y Voz
+                    // Fila superior: Identidad y pastilla de voz activa
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Row(
                           children: [
-                            Icon(
-                              Icons.auto_awesome,
-                              size: 13,
-                              color: goldAccent,
+                            Container(
+                              padding: const EdgeInsets.all(7),
+                              decoration: BoxDecoration(
+                                color: scheme.primary.withValues(alpha: 0.14),
+                                shape: BoxShape.circle,
+                              ),
+                              child: SingingIcon(
+                                size: 16,
+                                color: scheme.primary,
+                              ),
                             ),
-                            const SizedBox(width: 5),
+                            const SizedBox(width: 8),
                             Text(
-                              'CORO LLDM',
-                              style: GoogleFonts.cinzel(
-                                fontSize: 11,
+                              'Coro LLDM',
+                              style: GoogleFonts.inter(
+                                fontSize: 12,
                                 fontWeight: FontWeight.w700,
-                                color: goldAccent,
-                                letterSpacing: 2.2,
+                                color: scheme.onSurfaceVariant,
+                                letterSpacing: 0.2,
                               ),
                             ),
                           ],
                         ),
                         Container(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 8, vertical: 3),
+                            horizontal: 10,
+                            vertical: 5,
+                          ),
                           decoration: BoxDecoration(
-                            color: Colors.black.withValues(alpha: 0.35),
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: goldAccent.withValues(alpha: 0.4),
-                              width: 0.8,
-                            ),
+                            color: scheme.primary,
+                            borderRadius: BorderRadius.circular(14),
                           ),
                           child: Text(
-                            voice.toUpperCase(),
+                            voice,
                             style: GoogleFonts.inter(
-                              fontSize: 9.5,
-                              fontWeight: FontWeight.w800,
-                              color: Colors.white,
-                              letterSpacing: 0.8,
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700,
+                              color: scheme.onPrimary,
+                              letterSpacing: 0.2,
                             ),
                           ),
                         ),
                       ],
                     ),
 
-                    const Spacer(flex: 3),
+                    const Spacer(),
 
-                    // Centro: Título de la Alabanza
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      child: Text(
-                        title.isNotEmpty ? title : 'Selecciona un Canto',
-                        textAlign: TextAlign.center,
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                        style: GoogleFonts.cinzel(
-                          fontSize: title.length > 28 ? 19 : 23,
-                          fontWeight: FontWeight.w700,
-                          color: const Color(0xFFFAF8F5),
-                          height: 1.25,
-                          letterSpacing: 0.5,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black.withValues(alpha: 0.8),
-                              offset: const Offset(0, 2),
-                              blurRadius: 8,
-                            ),
-                          ],
-                        ),
+                    // Título principal del canto (Estilo Spotify moderno)
+                    Text(
+                      title.isNotEmpty ? title : 'Selecciona un canto',
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: GoogleFonts.inter(
+                        fontSize: title.length > 28 ? 22 : 26,
+                        fontWeight: FontWeight.w800,
+                        color: scheme.onSurface,
+                        height: 1.2,
+                        letterSpacing: -0.5,
                       ),
                     ),
 
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 14),
 
-                    // Divisor ornamental con estrella
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 32,
-                          height: 1,
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [
-                                Colors.transparent,
-                                goldAccent.withValues(alpha: 0.7),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Text(
-                            '✦',
-                            style: TextStyle(
-                              color: goldAccent,
-                              fontSize: 10,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          width: 32,
-                          height: 1,
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [
-                                goldAccent.withValues(alpha: 0.7),
-                                Colors.transparent,
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-
-                    const SizedBox(height: 12),
-
-                    // Temas de la Alabanza (Píldoras Spotify-Style)
+                    // Píldoras limpias de temas del canto
                     if (temas.isNotEmpty)
                       Wrap(
-                        alignment: WrapAlignment.center,
-                        spacing: 6,
-                        runSpacing: 6,
+                        spacing: 8,
+                        runSpacing: 8,
                         children: temas.take(3).map((tema) {
                           return Container(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 4),
+                              horizontal: 12,
+                              vertical: 6,
+                            ),
                             decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.12),
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                color: Colors.white.withValues(alpha: 0.2),
-                                width: 0.7,
-                              ),
+                              color: scheme.onSurface.withValues(alpha: 0.07),
+                              borderRadius: BorderRadius.circular(14),
                             ),
                             child: Text(
                               tema,
                               style: GoogleFonts.inter(
-                                fontSize: 10.5,
+                                fontSize: 11.5,
                                 fontWeight: FontWeight.w600,
-                                color: const Color(0xFFF1F5F9),
-                                letterSpacing: 0.3,
+                                color: scheme.onSurfaceVariant,
                               ),
                             ),
                           );
                         }).toList(),
                       )
                     else
-                      Text(
-                        'Repertorio Sagrado',
-                        style: GoogleFonts.inter(
-                          fontSize: 11,
-                          fontStyle: FontStyle.italic,
-                          color: Colors.white.withValues(alpha: 0.6),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          color: scheme.onSurface.withValues(alpha: 0.07),
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                        child: Text(
+                          'Repertorio Coral',
+                          style: GoogleFonts.inter(
+                            fontSize: 11.5,
+                            fontWeight: FontWeight.w600,
+                            color: scheme.onSurfaceVariant,
+                          ),
                         ),
                       ),
-
-                    const Spacer(flex: 4),
-
-                    // Pie de carátula: Onda sonora sutil tipo Spotify
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        _SoundWaveBar(height: 10, isPlaying: isPlaying),
-                        const SizedBox(width: 3),
-                        _SoundWaveBar(height: 16, isPlaying: isPlaying),
-                        const SizedBox(width: 3),
-                        _SoundWaveBar(height: 8, isPlaying: isPlaying),
-                        const SizedBox(width: 3),
-                        _SoundWaveBar(height: 20, isPlaying: isPlaying),
-                        const SizedBox(width: 3),
-                        _SoundWaveBar(height: 14, isPlaying: isPlaying),
-                        const SizedBox(width: 3),
-                        _SoundWaveBar(height: 18, isPlaying: isPlaying),
-                        const SizedBox(width: 3),
-                        _SoundWaveBar(height: 9, isPlaying: isPlaying),
-                      ],
-                    ),
                   ],
                 ),
               ),
@@ -312,46 +201,4 @@ class JukeboxCoverCard extends StatelessWidget {
       ),
     );
   }
-}
-
-class _SoundWaveBar extends StatelessWidget {
-  final double height;
-  final bool isPlaying;
-
-  const _SoundWaveBar({required this.height, required this.isPlaying});
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 350),
-      width: 2.8,
-      height: isPlaying ? height : 4.0,
-      decoration: BoxDecoration(
-        color: const Color(0xFFD4AF37).withValues(alpha: 0.8),
-        borderRadius: BorderRadius.circular(2),
-      ),
-    );
-  }
-}
-
-class _CoverBackgroundPainter extends CustomPainter {
-  final Color accentColor;
-
-  _CoverBackgroundPainter({required this.accentColor});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = accentColor
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0;
-
-    // Curvas suaves de vinilo concéntricas
-    final center = Offset(size.width * 0.5, size.height * 0.5);
-    canvas.drawCircle(center, size.width * 0.35, paint);
-    canvas.drawCircle(center, size.width * 0.48, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant _CoverBackgroundPainter oldDelegate) => false;
 }

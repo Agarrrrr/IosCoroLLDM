@@ -129,6 +129,11 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     });
 
     final defaultVoice = ref.read(userVoiceProvider);
+    ref.listen<String>(userVoiceProvider, (previous, nextVoice) {
+      if (nextVoice != state.currentVoice && !state.isPlaying) {
+        state = state.copyWith(currentVoice: nextVoice);
+      }
+    });
     return JukeboxState(currentVoice: defaultVoice);
   }
 
@@ -341,6 +346,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
   }
 
   Future<void> setVoice(String voice) async {
+    ref.read(userVoiceProvider.notifier).setVoice(voice);
     if (voice == state.currentVoice) return;
     final currentPos = state.position;
     final wasPlaying = state.isPlaying;

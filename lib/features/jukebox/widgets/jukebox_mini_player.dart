@@ -18,36 +18,34 @@ class JukeboxMiniPlayer extends ConsumerWidget {
     }
 
     final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
     final isDark = theme.brightness == Brightness.dark;
-    final accentColor = theme.colorScheme.primary;
+    final accentColor = scheme.primary;
+    final onAccent = scheme.onPrimary;
 
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1E293B) : Colors.white,
-        borderRadius: BorderRadius.circular(16),
+        color: scheme.surface,
+        borderRadius: BorderRadius.circular(18),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: isDark ? 0.4 : 0.08),
+            color: Colors.black.withValues(alpha: isDark ? 0.35 : 0.08),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
         ],
-        border: Border.all(
-          color: isDark
-              ? Colors.white.withValues(alpha: 0.1)
-              : Colors.black.withValues(alpha: 0.05),
-        ),
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(18),
         child: Material(
           color: Colors.transparent,
           child: InkWell(
             onTap: () {
               Navigator.of(context).push(
                 PageRouteBuilder(
-                  pageBuilder: (context, anim, secAnim) => const JukeboxScreen(),
+                  pageBuilder: (context, anim, secAnim) =>
+                      const JukeboxScreen(),
                   transitionsBuilder: (context, anim, secAnim, child) {
                     return SlideTransition(
                       position: Tween<Offset>(
@@ -66,7 +64,6 @@ class JukeboxMiniPlayer extends ConsumerWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Barra de progreso delgada arriba
                 if (jukebox.duration.inMilliseconds > 0)
                   LinearProgressIndicator(
                     value: (jukebox.position.inMilliseconds /
@@ -77,7 +74,10 @@ class JukeboxMiniPlayer extends ConsumerWidget {
                     valueColor: AlwaysStoppedAnimation(accentColor),
                   ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 9,
+                  ),
                   child: Row(
                     children: [
                       // Icono / Carátula
@@ -85,29 +85,22 @@ class JukeboxMiniPlayer extends ConsumerWidget {
                         width: 44,
                         height: 44,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [
-                              accentColor.withValues(alpha: 0.8),
-                              accentColor,
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
+                          color: accentColor,
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Center(
                           child: jukebox.isLoading
-                              ? const SizedBox(
+                              ? SizedBox(
                                   width: 20,
                                   height: 20,
                                   child: CircularProgressIndicator(
                                     strokeWidth: 2,
-                                    color: Colors.white,
+                                    color: onAccent,
                                   ),
                                 )
-                              : const SingingIcon(
+                              : SingingIcon(
                                   size: 22,
-                                  color: Colors.white,
+                                  color: onAccent,
                                 ),
                         ),
                       ),
@@ -125,7 +118,7 @@ class JukeboxMiniPlayer extends ConsumerWidget {
                               style: GoogleFonts.inter(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w700,
-                                color: theme.colorScheme.onSurface,
+                                color: scheme.onSurface,
                               ),
                             ),
                             const SizedBox(height: 2),
@@ -133,18 +126,19 @@ class JukeboxMiniPlayer extends ConsumerWidget {
                               children: [
                                 Container(
                                   padding: const EdgeInsets.symmetric(
-                                      horizontal: 6, vertical: 2),
+                                    horizontal: 7,
+                                    vertical: 2,
+                                  ),
                                   decoration: BoxDecoration(
-                                    color: accentColor.withValues(alpha: 0.12),
+                                    color: accentColor.withValues(alpha: 0.14),
                                     borderRadius: BorderRadius.circular(6),
                                   ),
                                   child: Text(
-                                    jukebox.currentVoice.toUpperCase(),
+                                    jukebox.currentVoice,
                                     style: GoogleFonts.inter(
-                                      fontSize: 10,
+                                      fontSize: 10.5,
                                       fontWeight: FontWeight.w700,
                                       color: accentColor,
-                                      letterSpacing: 0.5,
                                     ),
                                   ),
                                 ),
@@ -164,13 +158,14 @@ class JukeboxMiniPlayer extends ConsumerWidget {
                       // Controles
                       IconButton(
                         icon: const Icon(Icons.skip_previous_rounded, size: 22),
-                        color: theme.colorScheme.onSurfaceVariant,
+                        color: scheme.onSurfaceVariant,
                         onPressed: jukebox.playlist.isEmpty
                             ? null
                             : () => ref.read(jukeboxProvider.notifier).previous(),
                       ),
                       GestureDetector(
-                        onTap: () => ref.read(jukeboxProvider.notifier).togglePlay(),
+                        onTap: () =>
+                            ref.read(jukeboxProvider.notifier).togglePlay(),
                         child: Container(
                           width: 36,
                           height: 36,
@@ -182,14 +177,14 @@ class JukeboxMiniPlayer extends ConsumerWidget {
                             jukebox.isPlaying
                                 ? Icons.pause_rounded
                                 : Icons.play_arrow_rounded,
-                            color: Colors.white,
+                            color: onAccent,
                             size: 20,
                           ),
                         ),
                       ),
                       IconButton(
                         icon: const Icon(Icons.skip_next_rounded, size: 22),
-                        color: theme.colorScheme.onSurfaceVariant,
+                        color: scheme.onSurfaceVariant,
                         onPressed: jukebox.playlist.isEmpty
                             ? null
                             : () => ref.read(jukeboxProvider.notifier).next(),

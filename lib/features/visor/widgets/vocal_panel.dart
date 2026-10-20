@@ -1,13 +1,15 @@
 import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
+import 'package:coro_lldm/core/providers/vocal_audio_provider.dart';
 import 'package:coro_lldm/features/visor/widgets/player_dismiss_handle.dart';
 import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 
-class VocalPanel extends StatefulWidget {
+class VocalPanel extends ConsumerStatefulWidget {
   final VoidCallback? onClose;
   final VocalSong song;
   final String initialVoice;
@@ -22,10 +24,10 @@ class VocalPanel extends StatefulWidget {
   });
 
   @override
-  State<VocalPanel> createState() => _VocalPanelState();
+  ConsumerState<VocalPanel> createState() => _VocalPanelState();
 }
 
-class _VocalPanelState extends State<VocalPanel> {
+class _VocalPanelState extends ConsumerState<VocalPanel> {
   final AudioPlayer _player = AudioPlayer();
   final VocalAudioService _vocalService = VocalAudioService();
 
@@ -46,9 +48,11 @@ class _VocalPanelState extends State<VocalPanel> {
   @override
   void initState() {
     super.initState();
-    // Prioriza la voz solicitada si existe en el canto; sino Ensamble o la primera disponible
-    if (widget.song.voces.containsKey(widget.initialVoice)) {
-      _selectedVoice = widget.initialVoice;
+    final savedVoice = ref.read(userVoiceProvider);
+    final preferred = savedVoice.isNotEmpty ? savedVoice : widget.initialVoice;
+
+    if (widget.song.voces.containsKey(preferred)) {
+      _selectedVoice = preferred;
     } else if (widget.song.voces.containsKey('Ensamble')) {
       _selectedVoice = 'Ensamble';
     } else if (widget.song.voces.isNotEmpty) {
@@ -59,6 +63,20 @@ class _VocalPanelState extends State<VocalPanel> {
 
     _setupPlayer();
     _loadVoiceTrack(_selectedVoice, autoPlay: false);
+  }
+
+  @override
+  void didUpdateWidget(covariant VocalPanel oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.initialVoice != oldWidget.initialVoice &&
+        widget.initialVoice != _selectedVoice &&
+        widget.song.voces.containsKey(widget.initialVoice)) {
+      _loadVoiceTrack(
+        widget.initialVoice,
+        autoPlay: _isPlaying,
+        seekTo: _position,
+      );
+    }
   }
 
   void _setupPlayer() {
@@ -92,7 +110,11 @@ class _VocalPanelState extends State<VocalPanel> {
     });
   }
 
-  Future<void> _loadVoiceTrack(String voiceKey, {required bool autoPlay, Duration? seekTo}) async {
+  Future<void> _loadVoiceTrack(
+    String voiceKey, {
+    required bool autoPlay,
+    Duration? seekTo,
+  }) async {
     final track = widget.song.voces[voiceKey];
     if (track == null) return;
 
@@ -158,13 +180,21 @@ class _VocalPanelState extends State<VocalPanel> {
 
   Future<void> _stop() async {
     await _player.stop();
+    if (!mounted) return;
     setState(() {
       _position = Duration.zero;
       _isPlaying = false;
     });
   }
 
+  Future<void> _handleClose() async {
+    await _stop();
+    widget.onClose?.call();
+  }
+
   void _onVoiceSelected(String voiceKey) {
+    // Persistir la voz seleccionada globalmente para que se mantenga al salir
+    ref.read(userVoiceProvider.notifier).setVoice(voiceKey);
     if (voiceKey == _selectedVoice) return;
     final currentPos = _position;
     final wasPlaying = _isPlaying;
@@ -191,47 +221,54 @@ class _VocalPanelState extends State<VocalPanel> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final strings = AppStrings.of(context);
+    final onAccent = theme.colorScheme.onPrimary;
 
     // Lista ordenada de voces estándar
     const voiceOrder = ['Ensamble', 'Soprano', 'Contralto', 'Tenor', 'Bajo'];
-    final availableVoices = voiceOrder.where((v) => widget.song.voces.containsKey(v)).toList();
+    final availableVoices =
+        voiceOrder.where((v) => widget.song.voces.containsKey(v)).toList();
     for (final v in widget.song.voces.keys) {
       if (!availableVoices.contains(v)) availableVoices.add(v);
     }
 
-    final double totalSecs = _duration.inMilliseconds > 0 ? _duration.inMilliseconds / 1000.0 : 1.0;
-    final double currentSecs = _isDragging ? _dragValue : (_position.inMilliseconds / 1000.0).clamp(0.0, totalSecs);
+    final double totalSecs =
+        _duration.inMilliseconds > 0 ? _duration.inMilliseconds / 1000.0 : 1.0;
+    final double currentSecs = _isDragging
+        ? _dragValue
+        : (_position.inMilliseconds / 1000.0).clamp(0.0, totalSecs);
 
     return Material(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-        side: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.3), width: 0.75),
+        borderRadius: BorderRadius.circular(22),
       ),
-      elevation: 12,
+      elevation: 14,
+      shadowColor: Colors.black.withValues(alpha: 0.25),
       color: theme.colorScheme.surface,
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.75),
+        constraints: BoxConstraints(
+          maxHeight: MediaQuery.sizeOf(context).height * 0.75,
+        ),
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               if (widget.onClose != null)
-                PlayerDismissHandle(onClose: widget.onClose!),
+                PlayerDismissHandle(onClose: _handleClose),
 
-              // Cabecera con icono de humano cantando
+              // Cabecera con icono de voz cantando
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                padding: const EdgeInsets.fromLTRB(16, 4, 12, 6),
                 child: Row(
                   children: [
                     Container(
-                      padding: const EdgeInsets.all(6),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: widget.accentColor.withValues(alpha: 0.15),
+                        color: widget.accentColor.withValues(alpha: 0.14),
                         shape: BoxShape.circle,
                       ),
                       child: SingingIcon(size: 20, color: widget.accentColor),
                     ),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: 12),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -240,23 +277,32 @@ class _VocalPanelState extends State<VocalPanel> {
                             widget.song.canto,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: GoogleFonts.inter(fontSize: 14, fontWeight: FontWeight.bold),
+                            style: GoogleFonts.inter(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w700,
+                              color: theme.colorScheme.onSurface,
+                            ),
                           ),
+                          const SizedBox(height: 2),
                           Row(
                             children: [
                               Text(
-                                strings.t('Estudio Coral', 'Choral Study'),
+                                strings.t('Voces Cantadas', 'Sung Voices'),
                                 style: TextStyle(
-                                  fontSize: 11,
+                                  fontSize: 11.5,
+                                  fontWeight: FontWeight.w500,
                                   color: theme.colorScheme.onSurfaceVariant,
                                 ),
                               ),
                               const SizedBox(width: 6),
                               Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1.5),
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 7,
+                                  vertical: 2,
+                                ),
                                 decoration: BoxDecoration(
                                   color: _isOffline
-                                      ? Colors.green.withValues(alpha: 0.15)
+                                      ? Colors.green.withValues(alpha: 0.14)
                                       : widget.accentColor.withValues(alpha: 0.12),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
@@ -266,8 +312,10 @@ class _VocalPanelState extends State<VocalPanel> {
                                       : strings.t('Streaming', 'Streaming'),
                                   style: TextStyle(
                                     fontSize: 10,
-                                    fontWeight: FontWeight.w600,
-                                    color: _isOffline ? Colors.green.shade700 : widget.accentColor,
+                                    fontWeight: FontWeight.w700,
+                                    color: _isOffline
+                                        ? Colors.green.shade600
+                                        : widget.accentColor,
                                   ),
                                 ),
                               ),
@@ -279,43 +327,63 @@ class _VocalPanelState extends State<VocalPanel> {
                     if (widget.onClose != null)
                       IconButton(
                         tooltip: strings.t('Cerrar reproductor', 'Close player'),
-                        icon: const Icon(Icons.close_rounded, size: 20),
-                        onPressed: widget.onClose,
+                        icon: Icon(
+                          Icons.close_rounded,
+                          size: 20,
+                          color: theme.colorScheme.onSurfaceVariant,
+                        ),
+                        onPressed: _handleClose,
                       ),
                   ],
                 ),
               ),
 
-              const Divider(height: 8, thickness: 0.5),
-
-              // Selector de Voces (Ensamble o SATB)
+              // Selector de Voces (Ensamble o Soprano/Contralto/Tenor/Bajo)
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: availableVoices.map((voice) {
                       final isSelected = voice == _selectedVoice;
                       return Padding(
-                        padding: const EdgeInsets.only(right: 6),
+                        padding: const EdgeInsets.only(right: 8),
                         child: ChoiceChip(
                           avatar: voice == 'Ensamble'
-                              ? Icon(Icons.groups_rounded, size: 16, color: isSelected ? Colors.white : widget.accentColor)
+                              ? Icon(
+                                  Icons.groups_rounded,
+                                  size: 16,
+                                  color: isSelected
+                                      ? onAccent
+                                      : widget.accentColor,
+                                )
                               : null,
                           label: Text(
                             voice,
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                              color: isSelected ? Colors.white : theme.colorScheme.onSurface,
+                            style: GoogleFonts.inter(
+                              fontSize: 12.5,
+                              fontWeight: isSelected
+                                  ? FontWeight.w700
+                                  : FontWeight.w500,
+                              color: isSelected
+                                  ? onAccent
+                                  : theme.colorScheme.onSurface,
                             ),
                           ),
                           selected: isSelected,
+                          showCheckmark: false,
                           selectedColor: widget.accentColor,
-                          backgroundColor: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
+                          backgroundColor:
+                              theme.colorScheme.surfaceContainerHighest,
+                          side: BorderSide.none,
                           onSelected: (_) => _onVoiceSelected(voice),
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 10,
+                            vertical: 4,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18),
+                          ),
                         ),
                       );
                     }).toList(),
@@ -330,12 +398,17 @@ class _VocalPanelState extends State<VocalPanel> {
                   children: [
                     SliderTheme(
                       data: SliderTheme.of(context).copyWith(
-                        trackHeight: 3,
-                        thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
-                        overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
+                        trackHeight: 3.5,
+                        thumbShape: const RoundSliderThumbShape(
+                          enabledThumbRadius: 6,
+                        ),
+                        overlayShape: const RoundSliderOverlayShape(
+                          overlayRadius: 14,
+                        ),
                         activeTrackColor: widget.accentColor,
                         thumbColor: widget.accentColor,
-                        inactiveTrackColor: theme.colorScheme.outline.withValues(alpha: 0.25),
+                        inactiveTrackColor:
+                            theme.colorScheme.surfaceContainerHighest,
                       ),
                       child: Slider(
                         value: currentSecs.clamp(0.0, totalSecs),
@@ -349,22 +422,38 @@ class _VocalPanelState extends State<VocalPanel> {
                         },
                         onChangeEnd: (val) async {
                           _isDragging = false;
-                          await _player.seek(Duration(milliseconds: (val * 1000).round()));
+                          await _player.seek(
+                            Duration(milliseconds: (val * 1000).round()),
+                          );
                         },
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      padding: const EdgeInsets.symmetric(horizontal: 6),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            _formatDuration(_isDragging ? Duration(milliseconds: (_dragValue * 1000).round()) : _position),
-                            style: TextStyle(fontSize: 11, color: theme.colorScheme.onSurfaceVariant),
+                            _formatDuration(
+                              _isDragging
+                                  ? Duration(
+                                      milliseconds: (_dragValue * 1000).round(),
+                                    )
+                                  : _position,
+                            ),
+                            style: TextStyle(
+                              fontSize: 11,
+                              fontWeight: FontWeight.w500,
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
                           ),
                           Text(
                             _formatDuration(_duration),
-                            style: TextStyle(fontSize: 11, color: theme.colorScheme.onSurfaceVariant),
+                            style: TextStyle(
+                              fontSize: 11,
+                              fontWeight: FontWeight.w500,
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
                           ),
                         ],
                       ),
@@ -375,57 +464,77 @@ class _VocalPanelState extends State<VocalPanel> {
 
               // Controles de Reproducción
               Padding(
-                padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
+                padding: const EdgeInsets.fromLTRB(16, 4, 16, 14),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton(
-                      tooltip: strings.t('Retroceder 10 segundos', 'Rewind 10 seconds'),
-                      icon: const Icon(Icons.replay_10_rounded),
+                      tooltip: strings.t(
+                        'Retroceder 10 segundos',
+                        'Rewind 10 seconds',
+                      ),
+                      icon: Icon(
+                        Icons.replay_10_rounded,
+                        color: theme.colorScheme.onSurface,
+                      ),
                       iconSize: 26,
                       onPressed: () => _seekRelative(-10),
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: 10),
                     Container(
-                      width: 52,
-                      height: 52,
+                      width: 54,
+                      height: 54,
                       decoration: BoxDecoration(
                         color: widget.accentColor,
                         shape: BoxShape.circle,
                         boxShadow: [
                           BoxShadow(
-                            color: widget.accentColor.withValues(alpha: 0.35),
-                            blurRadius: 8,
-                            offset: const Offset(0, 3),
+                            color: widget.accentColor.withValues(alpha: 0.30),
+                            blurRadius: 10,
+                            offset: const Offset(0, 4),
                           ),
                         ],
                       ),
                       child: IconButton(
                         icon: _isLoading
-                            ? const SizedBox(
+                            ? SizedBox(
                                 width: 22,
                                 height: 22,
-                                child: CircularProgressIndicator(strokeWidth: 2.5, color: Colors.white),
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2.5,
+                                  color: onAccent,
+                                ),
                               )
                             : Icon(
-                                _isPlaying ? Icons.pause_rounded : Icons.play_arrow_rounded,
-                                color: Colors.white,
+                                _isPlaying
+                                    ? Icons.pause_rounded
+                                    : Icons.play_arrow_rounded,
+                                color: onAccent,
                                 size: 30,
                               ),
                         onPressed: _isLoading ? null : _togglePlay,
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: 10),
                     IconButton(
-                      tooltip: strings.t('Adelantar 10 segundos', 'Forward 10 seconds'),
-                      icon: const Icon(Icons.forward_10_rounded),
+                      tooltip: strings.t(
+                        'Adelantar 10 segundos',
+                        'Forward 10 seconds',
+                      ),
+                      icon: Icon(
+                        Icons.forward_10_rounded,
+                        color: theme.colorScheme.onSurface,
+                      ),
                       iconSize: 26,
                       onPressed: () => _seekRelative(10),
                     ),
                     const SizedBox(width: 12),
                     IconButton(
                       tooltip: strings.t('Detener', 'Stop'),
-                      icon: const Icon(Icons.stop_rounded),
+                      icon: Icon(
+                        Icons.stop_rounded,
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
                       iconSize: 26,
                       onPressed: _stop,
                     ),
