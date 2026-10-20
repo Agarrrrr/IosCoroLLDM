@@ -5,7 +5,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
+import 'package:coro_lldm/core/midi/midi_engine.dart';
+import 'package:coro_lldm/core/offline/offline_files.dart';
+import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/vocal_audio_provider.dart';
+import 'package:coro_lldm/models/canto.dart';
 
 enum JukeboxPlaylistMode {
   allSongs,
@@ -18,11 +22,17 @@ enum JukeboxRepeatMode {
   one,
 }
 
+enum JukeboxAudioMode {
+  vocal,
+  piano,
+}
+
 class JukeboxState {
   final List<VocalSong> playlist;
   final List<VocalSong> originalPlaylist;
   final int currentIndex;
   final String currentVoice;
+  final JukeboxAudioMode audioMode;
   final bool isPlaying;
   final bool isLoading;
   final Duration position;
@@ -38,6 +48,7 @@ class JukeboxState {
     this.originalPlaylist = const [],
     this.currentIndex = -1,
     this.currentVoice = 'Ensamble',
+    this.audioMode = JukeboxAudioMode.vocal,
     this.isPlaying = false,
     this.isLoading = false,
     this.position = Duration.zero,
@@ -57,7 +68,8 @@ class JukeboxState {
   }
 
   bool get hasPrevious =>
-      currentIndex > 0 || (repeatMode == JukeboxRepeatMode.all && playlist.isNotEmpty);
+      currentIndex > 0 ||
+      (repeatMode == JukeboxRepeatMode.all && playlist.isNotEmpty);
 
   bool get hasNext =>
       currentIndex < playlist.length - 1 ||
@@ -68,6 +80,7 @@ class JukeboxState {
     List<VocalSong>? originalPlaylist,
     int? currentIndex,
     String? currentVoice,
+    JukeboxAudioMode? audioMode,
     bool? isPlaying,
     bool? isLoading,
     Duration? position,
@@ -83,6 +96,7 @@ class JukeboxState {
       originalPlaylist: originalPlaylist ?? this.originalPlaylist,
       currentIndex: currentIndex ?? this.currentIndex,
       currentVoice: currentVoice ?? this.currentVoice,
+      audioMode: audioMode ?? this.audioMode,
       isPlaying: isPlaying ?? this.isPlaying,
       isLoading: isLoading ?? this.isLoading,
       position: position ?? this.position,
@@ -99,14 +113,17 @@ class JukeboxState {
 class JukeboxNotifier extends Notifier<JukeboxState> {
   final AudioPlayer _player = AudioPlayer();
   final VocalAudioService _vocalService = VocalAudioService();
+  final MidiEngine _midi = MidiEngine();
 
   StreamSubscription<PlayerState>? _stateSub;
   StreamSubscription<Duration>? _posSub;
   StreamSubscription<Duration>? _durSub;
   StreamSubscription<void>? _completeSub;
+  StreamSubscription<MidiState>? _midiSub;
 
   static const String _kCustomOrderBox = 'cache';
   static const String _kCustomOrderPrefix = 'jukebox_custom_order_';
+  bool _jukeboxControlsMidi = false;
 
   @override
   JukeboxState build() {
@@ -125,6 +142,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
       _posSub?.cancel();
       _durSub?.cancel();
       _completeSub?.cancel();
+      _midiSub?.cancel();
       _player.dispose();
     });
 
@@ -139,28 +157,50 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
   void _setupListeners() {
     _stateSub = _player.onPlayerStateChanged.listen((pState) {
+      if (state.audioMode != JukeboxAudioMode.vocal) return;
       state = state.copyWith(
         isPlaying: pState == PlayerState.playing,
       );
     });
 
     _posSub = _player.onPositionChanged.listen((pos) {
+      if (state.audioMode != JukeboxAudioMode.vocal) return;
       state = state.copyWith(position: pos);
     });
 
     _durSub = _player.onDurationChanged.listen((dur) {
+      if (state.audioMode != JukeboxAudioMode.vocal) return;
       state = state.copyWith(duration: dur);
     });
 
     _completeSub = _player.onPlayerComplete.listen((_) {
+      if (state.audioMode != JukeboxAudioMode.vocal) return;
       _onTrackCompleted();
+    });
+
+    _midiSub = _midi.stateStream.listen((mState) {
+      if (state.audioMode != JukeboxAudioMode.piano || !_jukeboxControlsMidi) {
+        return;
+      }
+      final posMs = (mState.tiempoActual * 1000).round();
+      final durMs = (mState.tiempoTotal * 1000).round();
+      state = state.copyWith(
+        isPlaying: mState.isPlaying,
+        position: Duration(milliseconds: posMs),
+        duration: Duration(milliseconds: durMs),
+      );
     });
   }
 
   void _onTrackCompleted() {
     if (state.repeatMode == JukeboxRepeatMode.one) {
-      _player.seek(Duration.zero);
-      _player.resume();
+      if (state.audioMode == JukeboxAudioMode.piano) {
+        _midi.seek(0.0);
+        _midi.play();
+      } else {
+        _player.seek(Duration.zero);
+        _player.resume();
+      }
       return;
     }
 
@@ -172,6 +212,22 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
         position: Duration.zero,
       );
     }
+  }
+
+  Canto? _findCantoForVocalSong(VocalSong song) {
+    final cantos = ref.read(cantosBaseProvider).valueOrNull ?? [];
+    if (song.id != null) {
+      final byId = cantos.where((c) => c.id == song.id).firstOrNull;
+      if (byId != null) return byId;
+    }
+    final cleanTarget = VocalAudioService.cleanString(song.canto);
+    return cantos.where((c) {
+      return c.idioma == state.language &&
+          VocalAudioService.cleanString(c.nombre) == cleanTarget;
+    }).firstOrNull ??
+        cantos.where((c) {
+          return VocalAudioService.cleanString(c.nombre) == cleanTarget;
+        }).firstOrNull;
   }
 
   Future<void> initializePlaylist({
@@ -188,10 +244,10 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
       filtered = allSongs.where((song) {
         if (song.id != null && favoriteIds.contains(song.id)) return true;
         final clean = VocalAudioService.cleanString(song.canto);
-        return favoriteIds.any((fav) => VocalAudioService.cleanString(fav) == clean);
+        return favoriteIds
+            .any((fav) => VocalAudioService.cleanString(fav) == clean);
       }).toList();
 
-      // Aplicar orden personalizado guardado si existe
       filtered = _applySavedOrder(filtered, language);
     } else {
       filtered = List.of(allSongs);
@@ -241,11 +297,70 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     } catch (_) {}
   }
 
-  Future<void> playSongAtIndex(int index, {String? voice, Duration? seekTo}) async {
+  Future<void> playSongAtIndex(
+    int index, {
+    String? voice,
+    Duration? seekTo,
+    JukeboxAudioMode? modeOverride,
+  }) async {
     if (index < 0 || index >= state.playlist.length) return;
 
     final song = state.playlist[index];
     final selectedVoice = voice ?? state.currentVoice;
+    final activeMode = modeOverride ?? state.audioMode;
+
+    if (activeMode == JukeboxAudioMode.piano) {
+      await _player.stop();
+      final canto = _findCantoForVocalSong(song);
+      if (canto != null &&
+          canto.midiArchivo != null &&
+          canto.midiArchivo!.isNotEmpty) {
+        state = state.copyWith(
+          currentIndex: index,
+          currentVoice: selectedVoice,
+          audioMode: JukeboxAudioMode.piano,
+          isLoading: true,
+          position: seekTo ?? Duration.zero,
+        );
+        try {
+          _jukeboxControlsMidi = true;
+          _midi.onSongComplete = () {
+            if (_jukeboxControlsMidi &&
+                state.audioMode == JukeboxAudioMode.piano) {
+              _onTrackCompleted();
+            }
+          };
+          final localMidi = await OfflineFiles.ensureMidi(canto);
+          final loaded = await _midi.loadMidi(localMidi.path, canto.nombre);
+          if (!loaded) {
+            throw const FormatException('No se pudo preparar el MIDI');
+          }
+          final totalSecs = _midi.state.tiempoTotal;
+          if (seekTo != null && seekTo > Duration.zero && totalSecs > 0) {
+            final pct =
+                (seekTo.inMilliseconds / 1000.0 / totalSecs).clamp(0.0, 1.0);
+            _midi.seek(pct);
+          }
+          _midi.play();
+          state = state.copyWith(
+            isLoading: false,
+            isPlaying: true,
+            isOffline: true,
+            duration: Duration(milliseconds: (totalSecs * 1000).round()),
+          );
+          return;
+        } catch (e) {
+          debugPrint('⚠️ [Jukebox] Error al reproducir Piano MIDI: $e');
+          state = state.copyWith(isLoading: false, isPlaying: false);
+          return;
+        }
+      }
+      // Si el canto no tiene MIDI, cae con gracia a modo vocal
+    }
+
+    // Modo Vocal: detener MIDI si estaba sonando
+    _jukeboxControlsMidi = false;
+    _midi.stop();
 
     final track = song.voces[selectedVoice] ??
         song.voces['Ensamble'] ??
@@ -259,6 +374,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     state = state.copyWith(
       currentIndex: index,
       currentVoice: selectedVoice,
+      audioMode: JukeboxAudioMode.vocal,
       isLoading: true,
       position: seekTo ?? Duration.zero,
     );
@@ -290,6 +406,32 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     }
   }
 
+  Future<void> setAudioMode(JukeboxAudioMode mode) async {
+    if (mode == state.audioMode) return;
+    final wasPlaying = state.isPlaying;
+    final currentIdx = state.currentIndex >= 0 ? state.currentIndex : 0;
+
+    if (mode == JukeboxAudioMode.piano) {
+      await _player.stop();
+    } else {
+      _jukeboxControlsMidi = false;
+      _midi.stop();
+    }
+
+    state = state.copyWith(
+      audioMode: mode,
+      position: Duration.zero,
+      isPlaying: false,
+    );
+
+    if (wasPlaying && state.playlist.isNotEmpty) {
+      await playSongAtIndex(
+        currentIdx,
+        modeOverride: mode,
+      );
+    }
+  }
+
   Future<void> togglePlay() async {
     if (state.currentSong == null) {
       if (state.playlist.isNotEmpty) {
@@ -298,10 +440,38 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
       return;
     }
 
+    if (state.audioMode == JukeboxAudioMode.piano) {
+      if (state.isPlaying) {
+        _midi.pause();
+      } else {
+        if (!_jukeboxControlsMidi || !_midi.state.isLoaded) {
+          await playSongAtIndex(
+            state.currentIndex >= 0 ? state.currentIndex : 0,
+            seekTo: state.position,
+            modeOverride: JukeboxAudioMode.piano,
+          );
+        } else {
+          await _player.stop();
+          _midi.play();
+        }
+      }
+      return;
+    }
+
     if (state.isPlaying) {
       await _player.pause();
     } else {
-      await _player.resume();
+      _jukeboxControlsMidi = false;
+      _midi.stop();
+      if (state.duration == Duration.zero) {
+        await playSongAtIndex(
+          state.currentIndex >= 0 ? state.currentIndex : 0,
+          seekTo: state.position,
+          modeOverride: JukeboxAudioMode.vocal,
+        );
+      } else {
+        await _player.resume();
+      }
     }
   }
 
@@ -310,7 +480,15 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     if (clamped < Duration.zero) clamped = Duration.zero;
     if (clamped > state.duration) clamped = state.duration;
     state = state.copyWith(position: clamped);
-    await _player.seek(clamped);
+
+    if (state.audioMode == JukeboxAudioMode.piano) {
+      final totalMs = state.duration.inMilliseconds;
+      if (totalMs > 0) {
+        _midi.seek((clamped.inMilliseconds / totalMs).clamp(0.0, 1.0));
+      }
+    } else {
+      await _player.seek(clamped);
+    }
   }
 
   Future<void> next() async {
@@ -328,7 +506,6 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
   Future<void> previous() async {
     if (state.playlist.isEmpty) return;
-    // Si ya lleva más de 3 segundos, reiniciar la pista actual
     if (state.position.inSeconds > 3) {
       await seek(Duration.zero);
       return;
@@ -347,17 +524,35 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
   Future<void> setVoice(String voice) async {
     ref.read(userVoiceProvider.notifier).setVoice(voice);
-    if (voice == state.currentVoice) return;
-    final currentPos = state.position;
+    if (voice == state.currentVoice &&
+        state.audioMode == JukeboxAudioMode.vocal) {
+      return;
+    }
+    final currentPos =
+        state.audioMode == JukeboxAudioMode.vocal ? state.position : Duration.zero;
     final wasPlaying = state.isPlaying;
 
     if (state.currentIndex >= 0 && state.currentIndex < state.playlist.length) {
-      await playSongAtIndex(state.currentIndex, voice: voice, seekTo: currentPos);
-      if (!wasPlaying) {
-        await _player.pause();
+      if (wasPlaying) {
+        await playSongAtIndex(
+          state.currentIndex,
+          voice: voice,
+          seekTo: currentPos,
+          modeOverride: JukeboxAudioMode.vocal,
+        );
+      } else {
+        _jukeboxControlsMidi = false;
+        _midi.stop();
+        state = state.copyWith(
+          currentVoice: voice,
+          audioMode: JukeboxAudioMode.vocal,
+        );
       }
     } else {
-      state = state.copyWith(currentVoice: voice);
+      state = state.copyWith(
+        currentVoice: voice,
+        audioMode: JukeboxAudioMode.vocal,
+      );
     }
   }
 
@@ -365,17 +560,17 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     if (state.playlist.isEmpty) return;
 
     if (state.isShuffle) {
-      // Restaurar orden original
       final current = state.currentSong;
       final restored = List.of(state.originalPlaylist);
-      final newIndex = current != null ? restored.indexWhere((s) => s.canto == current.canto) : 0;
+      final newIndex = current != null
+          ? restored.indexWhere((s) => s.canto == current.canto)
+          : 0;
       state = state.copyWith(
         isShuffle: false,
         playlist: restored,
         currentIndex: newIndex >= 0 ? newIndex : 0,
       );
     } else {
-      // Activar shuffle manteniendo el canto actual en primer lugar
       final current = state.currentSong;
       final remaining = List.of(state.playlist);
       if (current != null) {
@@ -423,7 +618,6 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     final item = list.removeAt(oldIndex);
     list.insert(newIndex, item);
 
-    // Actualizar el índice del canto en reproducción
     final current = state.currentSong;
     int currentIdx = state.currentIndex;
     if (current != null) {
@@ -443,6 +637,10 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
   Future<void> stop() async {
     await _player.stop();
+    if (_jukeboxControlsMidi) {
+      _jukeboxControlsMidi = false;
+      _midi.stop();
+    }
     state = state.copyWith(
       isPlaying: false,
       position: Duration.zero,

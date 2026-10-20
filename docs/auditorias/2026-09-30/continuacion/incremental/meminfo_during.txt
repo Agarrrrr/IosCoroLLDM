@@ -1,0 +1,62 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 421208201 Realtime: 1411539926
+
+** MEMINFO in pid 10594 [com.lldm.coro.perfaudit] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    53064    53036        4       19    54820    66748    40748    14591
+  Dalvik Heap     6088     5984        0       14    12720     9522     3378     6144
+ Dalvik Other     9518     2492        0        0    16956                           
+        Stack     1300     1300        0        0     1308                           
+       Ashmem        7        0        0        0      476                           
+    Other dev   104812   104792       20        0   105228                           
+     .so mmap     5426      232     1108        0    46304                           
+    .jar mmap     2734        0      696        0    43288                           
+    .apk mmap    31893      924    29728        0    39572                           
+    .ttf mmap     8560        0     6748        0    11872                           
+    .dex mmap    30153    29624       20        0    33184                           
+    .oat mmap       27        0        0        0     1852                           
+    .art mmap     7585     7300       20       15    20996                           
+   Other mmap     4398        8     3232        0     7716                           
+   EGL mtrack    59464    59464        0        0    59464                           
+    GL mtrack      768      768        0        0      768                           
+      Unknown    37077    36992       80        0    37752                           
+        TOTAL   362922   302916    41656       48   494276    76270    44126    20735
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    13304                          33716
+         Native Heap:    53036                          54820
+                Code:    69140                         190192
+               Stack:     1300                           1308
+            Graphics:    60232                          60232
+       Private Other:   147560
+              System:    18350
+             Unknown:                                  154008
+ 
+           TOTAL PSS:   362922            TOTAL RSS:   494276       TOTAL SWAP PSS:       48
+ 
+ Objects
+               Views:        8         ViewRootImpl:        1
+         AppContexts:        5           Activities:        1
+              Assets:       26        AssetManagers:        0
+       Local Binders:       17        Proxy Binders:       45
+       Parcel memory:        9         Parcel count:       29
+    Death Recipients:        0      OpenSSL Sockets:        0
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:      313
+  PAGECACHE_OVERFLOW:      143          MALLOC_SIZE:       46
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4       96            108        8/81/10  /data/user/0/com.lldm.coro.perfaudit/no_backup/androidx.work.workdb
+         4        8                         0/0/0    (attached) temp
+         4       96             25         2/14/2  /data/user/0/com.lldm.coro.perfaudit/no_backup/androidx.work.workdb (2)
+ 
+ Asset Allocations
+    : 7189K
+    : 7K

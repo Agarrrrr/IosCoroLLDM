@@ -1,0 +1,142 @@
+[
+  {
+    "file": "annotations_dense.png",
+    "bytes": 720692,
+    "sha256": "4ae9b24490890a02a8260fdfbe3b041e53ccbfb8f9c71f7e3b9cf302239a35cc"
+  },
+  {
+    "file": "battery_before_profile.txt",
+    "bytes": 48,
+    "sha256": "476d376caecfad60b42f5ff70c9526aed19ea18cce39d5fb0c21afd00458820c"
+  },
+  {
+    "file": "build_focused.log",
+    "bytes": 419,
+    "sha256": "9a495d8e7f572ae41e4d6b42f9b44de0f2d984bd089d3fc67422fea1901c9274"
+  },
+  {
+    "file": "build_run2.log",
+    "bytes": 419,
+    "sha256": "73e5787d8e40c2de8099b2b96c7e07fb85a6ee0c5e48c7bb0ae529828b73dc2e"
+  },
+  {
+    "file": "device.json",
+    "bytes": 471,
+    "sha256": "e5ded8e6819baca8faa604638bc19fe100b31dc17d3535353f23c9bed7bb838e"
+  },
+  {
+    "file": "pdf_asset_inventory.json",
+    "bytes": 842,
+    "sha256": "8730384b1271861d348f8f65de7fa5746b92d52d38fbd0e1bf72619c0e1404ab"
+  },
+  {
+    "file": "pdf_fit.png",
+    "bytes": 688653,
+    "sha256": "a075ac56e3e99af2c334289141a1a386a97facefddaad473b6d596670a0b7e24"
+  },
+  {
+    "file": "pdf_zoom.png",
+    "bytes": 398252,
+    "sha256": "afc74e6f60744a1df9e32c0b78de3b2f5e5345bd4a93663a78b1e09a32db3b76"
+  },
+  {
+    "file": "profile_meminfo_after.txt",
+    "bytes": 47,
+    "sha256": "c90994cfd0c258b5431d6f1436c9f201b2b61d352c3733bb3aa60a2a27a5568b"
+  },
+  {
+    "file": "profile_meminfo_dense_run2.txt",
+    "bytes": 3609,
+    "sha256": "8b9ee232414dfcaab60d04e3848a2aa3e564271048b2e8d9f96dffcd0255b509"
+  },
+  {
+    "file": "profile_meminfo_run2.txt",
+    "bytes": 3609,
+    "sha256": "eb2b66d1547572f27c6125f2592f7f79563016b9301f6f4d438159dfb0c78b71"
+  },
+  {
+    "file": "release_meminfo.txt",
+    "bytes": 3695,
+    "sha256": "eece0e3a966487096b7e2776b3ff58d589ccdd51f99ac9ecbbd94ff912e390aa"
+  },
+  {
+    "file": "release_start_1.txt",
+    "bytes": 165,
+    "sha256": "ad9ba4df5bf783a35a2bafe486042bb0a83c3b1ac3ad8b07a303ee62dcb94834"
+  },
+  {
+    "file": "release_start_2.txt",
+    "bytes": 165,
+    "sha256": "f055642cc1e0fd9a262272ed231a6900b50ac5577659b3c515fde9123eb3fd4b"
+  },
+  {
+    "file": "release_start_3.txt",
+    "bytes": 165,
+    "sha256": "45f29646b97ad0bfe333c8cf45263086d5742922688ab77bbadca1c99cd9a835"
+  },
+  {
+    "file": "results_focused_summary.json",
+    "bytes": 5060,
+    "sha256": "4e02a2fcbf092bd31f913d6f01a66e42523e6bf4ce0893f9adbe3f541064e34f"
+  },
+  {
+    "file": "results_focused.json",
+    "bytes": 232884,
+    "sha256": "b1f0ee81c28e758f6bffd64121c49fe693d388ebce26473b6d146578421d7ed5"
+  },
+  {
+    "file": "results_run1_summary.json",
+    "bytes": 24220,
+    "sha256": "d6accabb5a4e11d9f94cbf05bbe79a4ba068ab80bf4fb49478add570706e4117"
+  },
+  {
+    "file": "results_run1.json",
+    "bytes": 291596,
+    "sha256": "96ed9b216c1368b318846ffe01490f5d93c4f893fdfd625ed15fcb0ff2519002"
+  },
+  {
+    "file": "results_summary.json",
+    "bytes": 28302,
+    "sha256": "ee9eb89acdeba27761718957abbab8a46b157a5d15bf90ca297359e17f5bcec9"
+  },
+  {
+    "file": "results.json",
+    "bytes": 387487,
+    "sha256": "8ed5ca80445dc0103b0f75194f3e534b42805a0650d6ee38ce146afe998bcfc8"
+  },
+  {
+    "file": "run_focused_interrupted.log",
+    "bytes": 3451,
+    "sha256": "a5b50ccfb33f5094075e5bd2d93c177f5b23075003f8eb91bd29fb9ba1dcccfc"
+  },
+  {
+    "file": "run_focused.log",
+    "bytes": 18148,
+    "sha256": "8e052ad46d9745202edebd32a51491dae476aab7f88495887d5ce4aa9e8169c8"
+  },
+  {
+    "file": "run2.log",
+    "bytes": 46794,
+    "sha256": "0acaf20ca6aa7a684aef30db1a1a7d74d6ab13f00533bdc98ac3dec4e1203e02"
+  },
+  {
+    "file": "summary_run1.txt",
+    "bytes": 4511,
+    "sha256": "c20aaf75a459c20f5f74ecc0e40934e90ef2cf1bf1d105df9a453f88dea24ca4"
+  },
+  {
+    "file": "thermal_after.txt",
+    "bytes": 1042,
+    "sha256": "31afa3139a1fc730b651db0f89aec05a6cf3589d9c7419c14d920a2abbcf15b7"
+  },
+  {
+    "file": "thermal_final.txt",
+    "bytes": 1042,
+    "sha256": "2a5e9f081af0b9a39d57f879d503a682d15549bcae82c02ef1ffab72f616fecc"
+  },
+  {
+    "file": "thermal_run2.txt",
+    "bytes": 1042,
+    "sha256": "98f3b2d3c803a7f901dc69d3d4a13139c27c7e3f489d49ddc3d95372d59debee"
+  }
+]

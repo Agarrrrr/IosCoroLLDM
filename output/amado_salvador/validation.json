@@ -1,0 +1,38 @@
+{
+  "title": "Amado Salvador",
+  "issues": [],
+  "staves": 4,
+  "bars": 97,
+  "noteHeads": 1526,
+  "lyricNotes": 1359,
+  "slurs": 75,
+  "ties": 5,
+  "dynamics": {},
+  "midiComparison": [
+    {
+      "role": 0,
+      "expectedAttacks": 318,
+      "actualAttacks": 318,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 1,
+      "expectedAttacks": 417,
+      "actualAttacks": 417,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 2,
+      "expectedAttacks": 387,
+      "actualAttacks": 387,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 3,
+      "expectedAttacks": 399,
+      "actualAttacks": 399,
+      "exactPitchAndAttackMatch": true
+    }
+  ],
+  "sha256": "6e2b24def669f2a174f733c283077bcaee5fd1a6306d96dd0ad95ba8745a9a38"
+}

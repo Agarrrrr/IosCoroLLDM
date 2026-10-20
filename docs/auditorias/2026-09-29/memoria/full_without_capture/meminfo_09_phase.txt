@@ -1,0 +1,18 @@
+I/flutter (16210): AUDIT START annotations_save_2000
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 159KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3374KB/9518KB, paused 27us,15us total 9.977ms
+I/flutter (16210): AUDIT END annotations_save_2000 440.32 ms, 20 frames, error=null
+I/flutter (16210): AUDIT START annotations_load_2000
+I/flutter (16210): AUDIT END annotations_load_2000 219.243 ms, 13 frames, error=null
+I/flutter (16210): AUDIT START viewer_reopen_heavy
+I/flutter (16210): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (16210): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (16210): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(16210): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(16210): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (16210): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (8 ms)
+I/flutter (16210): PdfViewer: Loaded page 9 of 9 in 161 ms
+I/flutter (16210): AUDIT END viewer_reopen_heavy 2523.287 ms, 93 frames, error=null
+I/flutter (16210): AUDIT COMPLETE /storage/emulated/0/Android/data/com.lldm.coro.perfaudit/files
+I/flutter (16210): 02:10 +1: (tearDownAll)
+I/flutter (16210): 02:10 +2: All tests passed!
+All tests passed.

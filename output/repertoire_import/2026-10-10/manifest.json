@@ -1,0 +1,122 @@
+{
+  "records": [
+    {
+      "id": "usmc_084c52a2ac07c757f6",
+      "name": "El Cantico de Los 144 Mil",
+      "sourceMidi": "El Cántico de los 144 Mil (Final).mid",
+      "midiHash": "e65392a9581acad38ed81c0b0527a51b575ce4dcd598350646889422ba0d9eeb",
+      "midiKey": "global/assets/midi/e65392a9581acad38ed81c0b0527a51b575ce4dcd598350646889422ba0d9eeb.enc",
+      "notes": [
+        297,
+        334,
+        336,
+        280
+      ],
+      "existingPdf": "El Cantico de los 144 mil.pdf",
+      "newWork": false,
+      "pdfHash": "4612f89e1679556d5f71fa0bde47ef30d311e1cceee68b758eca39209dc8c20e"
+    },
+    {
+      "id": "usmc_64b54d4f21b21cae02605d3c",
+      "name": "Hay Apóstol",
+      "sourceMidi": "Hay Apóstol (SATB).mid",
+      "midiHash": "fdbe519a92b7826752a94c62811ea9d02f4075231524f806928f7f9a0db29e4d",
+      "midiKey": "global/assets/midi/fdbe519a92b7826752a94c62811ea9d02f4075231524f806928f7f9a0db29e4d.enc",
+      "notes": [
+        232,
+        266,
+        246,
+        242
+      ],
+      "existingPdf": "64b54d4f21b21cae02605d3c_hay_apóstol.pdf",
+      "newWork": false,
+      "pdfHash": "41b5aca56aeeb42f66dece43b6bdb6bc6b9d9d60114ee262540eaeb174c86003"
+    },
+    {
+      "id": "usmc_47d16b904344db4db6db6432",
+      "name": "A Dónde Iré",
+      "sourceMidi": "a-donde-ire.mid",
+      "midiHash": "7aae8cdfc9e5900c4b5f00b082552a2823b396db6e9d332cf661e1f7474205e9",
+      "midiKey": "global/assets/midi/7aae8cdfc9e5900c4b5f00b082552a2823b396db6e9d332cf661e1f7474205e9.enc",
+      "notes": [
+        184,
+        200,
+        208,
+        194
+      ],
+      "existingPdf": "usmc_47d16b904344db4db6db6432_a_donde_ire.pdf",
+      "newWork": false,
+      "pdfHash": "f633ce5579c1f3b753341fc11d4024a712dbd616eb7aaed840a3c652ecdb4dc8"
+    },
+    {
+      "id": "usmc_67ff3fd3631be412cc5bdc83",
+      "name": "Tiempo de Agradecer",
+      "sourceMidi": "tiempo-de-agradecer.mid",
+      "midiHash": "0dd793b19b38e75882cd84e6a498aad70dc80b882b5fa53fedbf6725b20b927a",
+      "midiKey": "global/assets/midi/0dd793b19b38e75882cd84e6a498aad70dc80b882b5fa53fedbf6725b20b927a.enc",
+      "notes": [
+        273,
+        285,
+        303,
+        306
+      ],
+      "existingPdf": "67ff3fd3631be412cc5bdc83_tiempo_de_agradecer.pdf",
+      "newWork": false,
+      "pdfHash": "b46c151b47841bae7821c72c899c5e6830337452ecb4bda0b9a3c3d3fc2a6538"
+    },
+    {
+      "id": "3ad4f5e6-ca67-4792-8747-4a86fd4e4633",
+      "name": "Al Gran Señor",
+      "sourceMidi": "Al Gran Señor (Adoración).mid",
+      "sourcePdf": "C:\\Users\\Huri_\\AppData\\Local\\Temp\\Al Gran Señor.pdf",
+      "pdfHash": "00dc2874937c1945a12796b18a27f6f3d66e3894221d5c12536e2e41b05da3df",
+      "pdfKey": "global/assets/pdf/00dc2874937c1945a12796b18a27f6f3d66e3894221d5c12536e2e41b05da3df.enc",
+      "pages": 8,
+      "midiHash": "0f1c2471e6474cd91487f76af47cc60b81b90c9dbcbb99a98dd266ee3d22d338",
+      "midiKey": "global/assets/midi/0f1c2471e6474cd91487f76af47cc60b81b90c9dbcbb99a98dd266ee3d22d338.enc",
+      "notes": [
+        431,
+        453,
+        438,
+        420
+      ],
+      "newWork": true
+    },
+    {
+      "id": "2f2f7e13-a98d-44ec-9694-155223a5bc4c",
+      "name": "Salmo 23 - Jehová es mi Pastor",
+      "sourceMidi": "jehova-es-mi-pastor.mid",
+      "sourcePdf": "E:\\proyectos\\IosCoroLLDM\\output\\repertoire_import\\2026-10-10\\salmo-23-jehova-es-mi-pastor.pdf",
+      "pdfHash": "3dda4ef161dd9790e3a3457f94c54bd1d82e61bb7f5149cf9e513b70b31fa960",
+      "pdfKey": "global/assets/pdf/3dda4ef161dd9790e3a3457f94c54bd1d82e61bb7f5149cf9e513b70b31fa960.enc",
+      "pages": 4,
+      "midiHash": "b1af402d04ff449898fb686ed34becd09756ab264278b240275774d955ff0deb",
+      "midiKey": "global/assets/midi/b1af402d04ff449898fb686ed34becd09756ab264278b240275774d955ff0deb.enc",
+      "notes": [
+        235,
+        250,
+        234,
+        239
+      ],
+      "newWork": true
+    }
+  ],
+  "beforeCount": 1343,
+  "afterCount": 1345,
+  "unrelatedEntriesUnchanged": true,
+  "existingPdfsUnchanged": true,
+  "preservedSimilarWorks": [
+    {
+      "id": "74cb3514-e85a-4490-a931-2162c056152b",
+      "name": "Jehova es mi Pastor",
+      "pdfKey": "jehova-es-mi-pastor-1781309465627.pdf",
+      "pdfHash": "4e6e8f32cb9bb6cd3555a496f62e8d2a0e0ebaa22364a812178f139de17de641"
+    },
+    {
+      "id": "usmc_01718ce61be5d58ce4",
+      "name": "Salmo 23",
+      "pdfKey": "01718ce61be5d58ce4_salmo-23.pdf",
+      "pdfHash": "745981aaff8b2f0fb70031637068362ed2fb09c4c6b446769f093cdc5abbcadc"
+    }
+  ]
+}

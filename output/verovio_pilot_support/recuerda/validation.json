@@ -1,0 +1,79 @@
+{
+  "measures": 88,
+  "quarterBeats": 349,
+  "parts": 4,
+  "staves": 4,
+  "pdfNoteColumnsAndPitchesVerified": true,
+  "checks": [
+    {
+      "file": "Recuerda - SATB extendido - Cantai.musicxml",
+      "attacks": [
+        513,
+        537,
+        508,
+        527
+      ],
+      "pitchOnsetAndWrittenDurationMatch": true,
+      "lyricTextAndPositionsPreserved": true,
+      "counts": {
+        "dynamics": 96,
+        "writtenNotes": 2248,
+        "articulations": 171,
+        "lyricNotes": 2014,
+        "tieLinks": 163,
+        "slurstart": 29,
+        "slurstop": 29
+      },
+      "tempoEvents": 66
+    },
+    {
+      "file": "render/exported.musicxml",
+      "attacks": [
+        513,
+        537,
+        508,
+        527
+      ],
+      "pitchOnsetAndWrittenDurationMatch": true,
+      "lyricTextAndPositionsPreserved": true,
+      "counts": {
+        "dynamics": 96,
+        "writtenNotes": 2248,
+        "articulations": 171,
+        "lyricNotes": 2014,
+        "tieLinks": 163,
+        "slurstart": 29,
+        "slurstop": 29
+      },
+      "tempoEvents": 1
+    },
+    {
+      "file": "render/reimport.musicxml",
+      "attacks": [
+        513,
+        537,
+        508,
+        527
+      ],
+      "pitchOnsetAndWrittenDurationMatch": true,
+      "lyricTextAndPositionsPreserved": true,
+      "counts": {
+        "dynamics": 96,
+        "writtenNotes": 2248,
+        "articulations": 171,
+        "lyricNotes": 2014,
+        "tieLinks": 163,
+        "slurstart": 29,
+        "slurstop": 29
+      },
+      "tempoEvents": 1
+    }
+  ],
+  "nativePlaybackMidiReferenceAttacks": true,
+  "nativePlaybackTempoEventsMatched": 66,
+  "tempoRange": [
+    47.131868684329596,
+    62.99999685000016
+  ],
+  "musescoreExportLimitation": "MuseScore 4.7.5 omits some invisible tempo events from its own MusicXML export. The delivered canonical MusicXML and native MSCZ retain all 66 real tempo changes; verified in native MIDI playback."
+}

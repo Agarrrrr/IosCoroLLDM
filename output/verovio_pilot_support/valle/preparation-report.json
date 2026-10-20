@@ -1,0 +1,183 @@
+{
+  "source": "C:\\Users\\Huri_\\Downloads\\musescore\\D__Documents and Settings_Salvador_Mis documentos_chava_midis_archivos sibelius_huesos secos.sib - Valle de Los Huesos Secos.musicxml",
+  "pdf": "original-2.pdf",
+  "sourcePdfSha256": "48408ec8edabbf09bca891e6b72352cb93ad5a04fb1f9bcf9509edabe528e3c7",
+  "output": "output\\verovio_pilot_support\\valle\\Valle de los Huesos Secos - SATB con letra.musicxml",
+  "parts": 4,
+  "measures": 148,
+  "validatedTieLinks": 54,
+  "roles": [
+    {
+      "role": 0,
+      "notes": 641,
+      "lyricNotes": 625,
+      "verifiedMidiAttacks": 627,
+      "unlabeledNonTies": [
+        {
+          "measure": "87",
+          "index": 361,
+          "page": 9
+        },
+        {
+          "measure": "110",
+          "index": 472,
+          "page": 11
+        }
+      ]
+    },
+    {
+      "role": 1,
+      "notes": 547,
+      "lyricNotes": 530,
+      "verifiedMidiAttacks": 535,
+      "unlabeledNonTies": [
+        {
+          "measure": "55",
+          "index": 284,
+          "page": 7
+        },
+        {
+          "measure": "129",
+          "index": 481,
+          "page": 12
+        },
+        {
+          "measure": "129",
+          "index": 483,
+          "page": 12
+        },
+        {
+          "measure": "140",
+          "index": 520,
+          "page": 13
+        },
+        {
+          "measure": "140",
+          "index": 522,
+          "page": 13
+        }
+      ]
+    },
+    {
+      "role": 2,
+      "notes": 660,
+      "lyricNotes": 646,
+      "verifiedMidiAttacks": 646,
+      "unlabeledNonTies": [
+        {
+          "measure": "66",
+          "index": 318,
+          "page": 8
+        },
+        {
+          "measure": "72",
+          "index": 343,
+          "page": 8
+        }
+      ]
+    },
+    {
+      "role": 3,
+      "notes": 603,
+      "lyricNotes": 587,
+      "verifiedMidiAttacks": 590,
+      "unlabeledNonTies": [
+        {
+          "measure": "66",
+          "index": 318,
+          "page": 8
+        },
+        {
+          "measure": "95",
+          "index": 421,
+          "page": 9
+        },
+        {
+          "measure": "101",
+          "index": 444,
+          "page": 10
+        }
+      ]
+    }
+  ],
+  "repairs": [
+    {
+      "role": 0,
+      "measure": 15,
+      "old": 0.5,
+      "new": 0.25,
+      "rest": true
+    },
+    {
+      "role": 1,
+      "measure": 15,
+      "old": 0.5,
+      "new": 0.25,
+      "rest": true
+    },
+    {
+      "role": 2,
+      "measure": 15,
+      "old": 0.75,
+      "new": 0.5,
+      "rest": false
+    },
+    {
+      "role": 2,
+      "measure": 100,
+      "restored": "Ab2 dotted half from PDF; absent in source MIDI"
+    },
+    {
+      "role": 3,
+      "measure": 14,
+      "old": 0.5,
+      "new": 0.25,
+      "rest": false
+    },
+    {
+      "role": 3,
+      "measure": 14,
+      "addedTailRest": 0.25
+    },
+    {
+      "role": 3,
+      "measure": 15,
+      "old": 0.5,
+      "new": 0.25,
+      "rest": false
+    },
+    {
+      "role": 3,
+      "measure": 15,
+      "old": 0.5,
+      "new": 0.25,
+      "rest": true
+    },
+    {
+      "role": 3,
+      "measure": 15,
+      "addedTailRest": 0.25
+    },
+    {
+      "role": 3,
+      "measure": "110",
+      "pdfTypo": "lglo",
+      "text": "glo"
+    },
+    {
+      "role": 0,
+      "measure": 87,
+      "restored": "PDF phrase slur E5 to Eb5; pitches differ, so not a sound tie"
+    },
+    {
+      "role": 2,
+      "measure": 66,
+      "restored": "PDF sustain tie across page 7/8; source MIDI reattacks this continuation"
+    },
+    {
+      "role": 3,
+      "measure": 66,
+      "restored": "PDF sustain tie across page 7/8; source MIDI reattacks this continuation"
+    }
+  ]
+}

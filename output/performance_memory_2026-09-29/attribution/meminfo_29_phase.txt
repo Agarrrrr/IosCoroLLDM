@@ -1,0 +1,18 @@
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 31us,19us total 11.193ms
+I/flutter (14782): AUDIT END heavy_capture_closed 5001.816 ms, 301 frames, error=null
+I/flutter (14782): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (14782): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (14782): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(14782): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(14782): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (14782): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (10 ms)
+I/flutter (14782): AUDIT START heavy_navigation_capture_fit
+I/flutter (14782): PdfViewer: Loaded page 9 of 9 in 163 ms
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 33us,14us total 10.108ms
+I/flutter (14782): AUDIT END heavy_navigation_capture_fit 5000.386 ms, 287 frames, error=null
+I/flutter (14782): AUDIT START heavy_navigation_capture_capture_fit
+I/flutter (14782): AUDIT END heavy_navigation_capture_capture_fit 754.968 ms, 46 frames, error=null
+I/flutter (14782): AUDIT START heavy_navigation_capture_navigation
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 34us,19us total 10.744ms
+I/flutter (14782): AUDIT END heavy_navigation_capture_navigation 15403.733 ms, 927 frames, error=null
+I/flutter (14782): AUDIT START heavy_navigation_capture_zoom_pdf_only

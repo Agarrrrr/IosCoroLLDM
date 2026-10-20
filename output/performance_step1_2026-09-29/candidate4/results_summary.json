@@ -1,0 +1,1192 @@
+{
+  "input": "results.json",
+  "device": {
+    "os": "TP1A.220624.014.G986USQU3HWB4",
+    "physicalWidth": 1080,
+    "physicalHeight": 2265,
+    "devicePixelRatio": 2.8125,
+    "refreshRate": 60.000003814697266,
+    "date": "2026-09-29T21:51:39.852767"
+  },
+  "budgetMs": 16.666665607028605,
+  "note": "UI/raster duration thresholds are not a count of display-dropped frames. Timers include scheduling delays. RSS includes test instrumentation and graphics allocations.",
+  "pdfSamples": [
+    {
+      "id": "f3d5fa56-01b0-4608-8db4-2852e16effb0",
+      "name": "Canten a Cristo Rey",
+      "bytes": 51230,
+      "pages": 1
+    },
+    {
+      "id": "usmc_caf436a80759ce7a19568e1e",
+      "name": "The Holy City",
+      "bytes": 12492044,
+      "pages": 9
+    },
+    {
+      "id": "usmc_074a029baa78d58c5b",
+      "name": "El Llamado a mi Ser",
+      "bytes": 7361367,
+      "pages": 2
+    }
+  ],
+  "catalogCount": 1650,
+  "rssAtEndMiB": 502.109375,
+  "screenshotRss": {
+    "pdf_fit": 422858752,
+    "pdf_zoom": 449593344,
+    "annotations_dense": 1294716928
+  },
+  "scenarios": {
+    "catalog_first_load": {
+      "rssBefore": 271736832,
+      "elapsedMs": 199.53,
+      "rssAfter": 282562560,
+      "frameCount": 11,
+      "uiMs": {
+        "p50": 0.57,
+        "p95": 1.136,
+        "p99": 1.136,
+        "max": 1.136
+      },
+      "rasterMs": {
+        "p50": 5.45,
+        "p95": 7.248,
+        "p99": 7.248,
+        "max": 7.248
+      },
+      "totalSpanMs": {
+        "p50": 6.917,
+        "p95": 27.56,
+        "p99": 27.56,
+        "max": 27.56
+      },
+      "timerGapsMs": {
+        "p50": 16.227,
+        "p95": 30.538,
+        "p99": 30.538,
+        "max": 30.538
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 269.47265625
+    },
+    "pdf_cold_Canten a Cristo Rey": {
+      "rssBefore": 284966912,
+      "elapsedMs": 71.314,
+      "rssAfter": 281034752,
+      "frameCount": 5,
+      "uiMs": {
+        "p50": 0.39,
+        "p95": 0.57,
+        "p99": 0.57,
+        "max": 0.57
+      },
+      "rasterMs": {
+        "p50": 4.433,
+        "p95": 6.274,
+        "p99": 6.274,
+        "max": 6.274
+      },
+      "totalSpanMs": {
+        "p50": 6.741,
+        "p95": 7.409,
+        "p99": 7.409,
+        "max": 7.409
+      },
+      "timerGapsMs": {
+        "p50": 16.053,
+        "p95": 16.368,
+        "p99": 16.368,
+        "max": 16.368
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 268.015625
+    },
+    "pdf_warm_Canten a Cristo Rey": {
+      "rssBefore": 286904320,
+      "elapsedMs": 2.522,
+      "rssAfter": 286904320,
+      "frameCount": 0,
+      "uiMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "rasterMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "totalSpanMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "timerGapsMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "overBudget": 0,
+      "overBudgetPercent": null,
+      "rssAfterMiB": 273.61328125
+    },
+    "native_render_Canten a Cristo Rey_1800": {
+      "rssBefore": 291258368,
+      "imageSize": "1271x1800",
+      "elapsedMs": 20.868,
+      "rssAfter": 300081152,
+      "frameCount": 1,
+      "uiMs": {
+        "p50": 0.48,
+        "p95": 0.48,
+        "p99": 0.48,
+        "max": 0.48
+      },
+      "rasterMs": {
+        "p50": 5.566,
+        "p95": 5.566,
+        "p99": 5.566,
+        "max": 5.566
+      },
+      "totalSpanMs": {
+        "p50": 6.695,
+        "p95": 6.695,
+        "p99": 6.695,
+        "max": 6.695
+      },
+      "timerGapsMs": {
+        "p50": 16.363,
+        "p95": 16.363,
+        "p99": 16.363,
+        "max": 16.363
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 286.1796875
+    },
+    "native_render_Canten a Cristo Rey_3600": {
+      "rssBefore": 291033088,
+      "imageSize": "2543x3600",
+      "elapsedMs": 56.979,
+      "rssAfter": 291917824,
+      "frameCount": 3,
+      "uiMs": {
+        "p50": 0.437,
+        "p95": 0.524,
+        "p99": 0.524,
+        "max": 0.524
+      },
+      "rasterMs": {
+        "p50": 2.582,
+        "p95": 2.588,
+        "p99": 2.588,
+        "max": 2.588
+      },
+      "totalSpanMs": {
+        "p50": 4.005,
+        "p95": 4.047,
+        "p99": 4.047,
+        "max": 4.047
+      },
+      "timerGapsMs": {
+        "p50": 15.993,
+        "p95": 16.251,
+        "p99": 16.251,
+        "max": 16.251
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 278.39453125
+    },
+    "pdf_cold_The Holy City": {
+      "rssBefore": 288559104,
+      "elapsedMs": 201.663,
+      "rssAfter": 314490880,
+      "frameCount": 9,
+      "uiMs": {
+        "p50": 0.489,
+        "p95": 0.587,
+        "p99": 0.587,
+        "max": 0.587
+      },
+      "rasterMs": {
+        "p50": 3.017,
+        "p95": 4.653,
+        "p99": 4.653,
+        "max": 4.653
+      },
+      "totalSpanMs": {
+        "p50": 4.396,
+        "p95": 69.723,
+        "p99": 69.723,
+        "max": 69.723
+      },
+      "timerGapsMs": {
+        "p50": 15.972,
+        "p95": 66.34,
+        "p99": 66.34,
+        "max": 66.34
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 299.921875
+    },
+    "pdf_warm_The Holy City": {
+      "rssBefore": 306266112,
+      "elapsedMs": 3.628,
+      "rssAfter": 306266112,
+      "frameCount": 0,
+      "uiMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "rasterMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "totalSpanMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "timerGapsMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "overBudget": 0,
+      "overBudgetPercent": null,
+      "rssAfterMiB": 292.078125
+    },
+    "native_render_The Holy City_1800": {
+      "rssBefore": 315723776,
+      "imageSize": "1272x1800",
+      "elapsedMs": 77.018,
+      "rssAfter": 340606976,
+      "frameCount": 4,
+      "uiMs": {
+        "p50": 0.374,
+        "p95": 0.626,
+        "p99": 0.626,
+        "max": 0.626
+      },
+      "rasterMs": {
+        "p50": 3.197,
+        "p95": 5.976,
+        "p99": 5.976,
+        "max": 5.976
+      },
+      "totalSpanMs": {
+        "p50": 4.739,
+        "p95": 7.229,
+        "p99": 7.229,
+        "max": 7.229
+      },
+      "timerGapsMs": {
+        "p50": 15.957,
+        "p95": 16.665,
+        "p99": 16.665,
+        "max": 16.665
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 324.828125
+    },
+    "native_render_The Holy City_3600": {
+      "rssBefore": 320942080,
+      "imageSize": "2545x3600",
+      "elapsedMs": 122.459,
+      "rssAfter": 339816448,
+      "frameCount": 7,
+      "uiMs": {
+        "p50": 0.634,
+        "p95": 0.804,
+        "p99": 0.804,
+        "max": 0.804
+      },
+      "rasterMs": {
+        "p50": 5.893,
+        "p95": 7.121,
+        "p99": 7.121,
+        "max": 7.121
+      },
+      "totalSpanMs": {
+        "p50": 7.088,
+        "p95": 8.767,
+        "p99": 8.767,
+        "max": 8.767
+      },
+      "timerGapsMs": {
+        "p50": 15.994,
+        "p95": 17.1,
+        "p99": 17.1,
+        "max": 17.1
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 324.07421875
+    },
+    "pdf_cold_El Llamado a mi Ser": {
+      "rssBefore": 316956672,
+      "elapsedMs": 8018.892,
+      "rssAfter": 319418368,
+      "frameCount": 482,
+      "uiMs": {
+        "p50": 0.614,
+        "p95": 0.753,
+        "p99": 0.807,
+        "max": 1.585
+      },
+      "rasterMs": {
+        "p50": 4.227,
+        "p95": 6.525,
+        "p99": 7.032,
+        "max": 22.019
+      },
+      "totalSpanMs": {
+        "p50": 5.686,
+        "p95": 7.942,
+        "p99": 9.915,
+        "max": 23.215
+      },
+      "timerGapsMs": {
+        "p50": 15.997,
+        "p95": 16.585,
+        "p99": 18.691,
+        "max": 30.911
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.2074688796680498,
+      "rssAfterMiB": 304.62109375
+    },
+    "pdf_warm_El Llamado a mi Ser": {
+      "rssBefore": 305983488,
+      "elapsedMs": 3.902,
+      "rssAfter": 306253824,
+      "frameCount": 0,
+      "uiMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "rasterMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "totalSpanMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "timerGapsMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "overBudget": 0,
+      "overBudgetPercent": null,
+      "rssAfterMiB": 292.06640625
+    },
+    "native_render_El Llamado a mi Ser_1800": {
+      "rssBefore": 319250432,
+      "imageSize": "1350x1800",
+      "elapsedMs": 308.718,
+      "rssAfter": 349650944,
+      "frameCount": 18,
+      "uiMs": {
+        "p50": 0.515,
+        "p95": 0.672,
+        "p99": 0.672,
+        "max": 0.672
+      },
+      "rasterMs": {
+        "p50": 5.059,
+        "p95": 6.469,
+        "p99": 6.469,
+        "max": 6.469
+      },
+      "totalSpanMs": {
+        "p50": 6.127,
+        "p95": 7.601,
+        "p99": 7.601,
+        "max": 7.601
+      },
+      "timerGapsMs": {
+        "p50": 16,
+        "p95": 16.867,
+        "p99": 16.867,
+        "max": 16.867
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 333.453125
+    },
+    "native_render_El Llamado a mi Ser_3600": {
+      "rssBefore": 317157376,
+      "imageSize": "2700x3600",
+      "elapsedMs": 494.509,
+      "rssAfter": 354185216,
+      "frameCount": 30,
+      "uiMs": {
+        "p50": 0.548,
+        "p95": 0.7,
+        "p99": 0.93,
+        "max": 0.93
+      },
+      "rasterMs": {
+        "p50": 6.044,
+        "p95": 6.873,
+        "p99": 8.586,
+        "max": 8.586
+      },
+      "totalSpanMs": {
+        "p50": 7.237,
+        "p95": 9.66,
+        "p99": 14.579,
+        "max": 14.579
+      },
+      "timerGapsMs": {
+        "p50": 16.005,
+        "p95": 16.605,
+        "p99": 16.874,
+        "max": 16.874
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 337.77734375
+    },
+    "decrypt_encrypted_pdf_isolated": {
+      "rssBefore": 330887168,
+      "encrypted": true,
+      "inputBytes": 7361395,
+      "outputBytes": 7361367,
+      "elapsedMs": 7920.865,
+      "rssAfter": 314556416,
+      "frameCount": 476,
+      "uiMs": {
+        "p50": 0.618,
+        "p95": 0.75,
+        "p99": 0.805,
+        "max": 1.036
+      },
+      "rasterMs": {
+        "p50": 4.379,
+        "p95": 6.519,
+        "p99": 6.973,
+        "max": 8.793
+      },
+      "totalSpanMs": {
+        "p50": 5.768,
+        "p95": 8.011,
+        "p99": 8.67,
+        "max": 9.924
+      },
+      "timerGapsMs": {
+        "p50": 16.003,
+        "p95": 16.528,
+        "p99": 19.646,
+        "max": 21.686
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 299.984375
+    },
+    "viewer_open_heavy_warm_file": {
+      "rssBefore": 312942592,
+      "documentReadyMs": 51.22,
+      "pages": 9,
+      "elapsedMs": 2094.192,
+      "rssAfter": 495603712,
+      "frameCount": 121,
+      "uiMs": {
+        "p50": 0.975,
+        "p95": 2.871,
+        "p99": 4.519,
+        "max": 29.121
+      },
+      "rasterMs": {
+        "p50": 1.782,
+        "p95": 4.582,
+        "p99": 18.506,
+        "max": 54.925
+      },
+      "totalSpanMs": {
+        "p50": 3.925,
+        "p95": 9.504,
+        "p99": 41.187,
+        "max": 85.686
+      },
+      "timerGapsMs": {
+        "p50": 15.996,
+        "p95": 18.141,
+        "p99": 22.074,
+        "max": 50.168
+      },
+      "overBudget": 2,
+      "overBudgetPercent": 1.6528925619834711,
+      "rssAfterMiB": 472.64453125
+    },
+    "page_changes_vertical": {
+      "rssBefore": 422858752,
+      "pageChanges": 16,
+      "elapsedMs": 6109.345,
+      "rssAfter": 496017408,
+      "frameCount": 368,
+      "uiMs": {
+        "p50": 1.871,
+        "p95": 3.962,
+        "p99": 4.769,
+        "max": 5.075
+      },
+      "rasterMs": {
+        "p50": 2.794,
+        "p95": 4.212,
+        "p99": 4.604,
+        "max": 12.593
+      },
+      "totalSpanMs": {
+        "p50": 6.118,
+        "p95": 9.498,
+        "p99": 11.254,
+        "max": 14.314
+      },
+      "timerGapsMs": {
+        "p50": 16.013,
+        "p95": 17.902,
+        "p99": 21.266,
+        "max": 25.894
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 473.0390625
+    },
+    "page_changes_carousel": {
+      "rssBefore": 466563072,
+      "pageChanges": 16,
+      "elapsedMs": 6116.149,
+      "rssAfter": 469909504,
+      "frameCount": 367,
+      "uiMs": {
+        "p50": 1.736,
+        "p95": 2.867,
+        "p99": 4.206,
+        "max": 4.615
+      },
+      "rasterMs": {
+        "p50": 2.342,
+        "p95": 3.958,
+        "p99": 4.68,
+        "max": 46.025
+      },
+      "totalSpanMs": {
+        "p50": 5.133,
+        "p95": 9.187,
+        "p99": 12.005,
+        "max": 48.067
+      },
+      "timerGapsMs": {
+        "p50": 16.011,
+        "p95": 18.139,
+        "p99": 22.004,
+        "max": 24.422
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.2724795640326975,
+      "rssAfterMiB": 448.140625
+    },
+    "zoom_pdf": {
+      "rssBefore": 497909760,
+      "elapsedMs": 1716.665,
+      "rssAfter": 496046080,
+      "frameCount": 103,
+      "uiMs": {
+        "p50": 1.9,
+        "p95": 2.654,
+        "p99": 2.911,
+        "max": 3.11
+      },
+      "rasterMs": {
+        "p50": 2.65,
+        "p95": 3.171,
+        "p99": 4.204,
+        "max": 39.45
+      },
+      "totalSpanMs": {
+        "p50": 5.911,
+        "p95": 6.981,
+        "p99": 29.808,
+        "max": 43.153
+      },
+      "timerGapsMs": {
+        "p50": 16.015,
+        "p95": 17.02,
+        "p99": 18.134,
+        "max": 19.511
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.9708737864077669,
+      "rssAfterMiB": 473.06640625
+    },
+    "draw_5_strokes_empty_page": {
+      "rssBefore": 1749209088,
+      "moveEvents": 600,
+      "newStrokes": 5,
+      "elapsedMs": 6844.754,
+      "rssAfter": 1212833792,
+      "frameCount": 406,
+      "uiMs": {
+        "p50": 1.984,
+        "p95": 2.409,
+        "p99": 4.942,
+        "max": 6.971
+      },
+      "rasterMs": {
+        "p50": 4.41,
+        "p95": 6.616,
+        "p99": 13.754,
+        "max": 60.172
+      },
+      "totalSpanMs": {
+        "p50": 7.403,
+        "p95": 11.813,
+        "p99": 21.632,
+        "max": 69.342
+      },
+      "timerGapsMs": {
+        "p50": 16.008,
+        "p95": 17.262,
+        "p99": 21.528,
+        "max": 88.38
+      },
+      "overBudget": 3,
+      "overBudgetPercent": 0.7389162561576355,
+      "rssAfterMiB": 1156.6484375
+    },
+    "draw_5_strokes_warm_page": {
+      "rssBefore": 1215692800,
+      "moveEvents": 600,
+      "newStrokes": 5,
+      "elapsedMs": 6942.599,
+      "rssAfter": 1216155648,
+      "frameCount": 418,
+      "uiMs": {
+        "p50": 2.011,
+        "p95": 2.508,
+        "p99": 5.854,
+        "max": 6.961
+      },
+      "rasterMs": {
+        "p50": 4.616,
+        "p95": 7.538,
+        "p99": 9.104,
+        "max": 17.858
+      },
+      "totalSpanMs": {
+        "p50": 7.682,
+        "p95": 11.542,
+        "p99": 14.736,
+        "max": 20.931
+      },
+      "timerGapsMs": {
+        "p50": 16.013,
+        "p95": 17.365,
+        "p99": 21.165,
+        "max": 22.48
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.23923444976076555,
+      "rssAfterMiB": 1159.81640625
+    },
+    "draw_5_strokes_100_saved": {
+      "rssBefore": 1233256448,
+      "moveEvents": 600,
+      "newStrokes": 5,
+      "elapsedMs": 6727.737,
+      "rssAfter": 1229717504,
+      "frameCount": 405,
+      "uiMs": {
+        "p50": 2.024,
+        "p95": 2.319,
+        "p99": 6.649,
+        "max": 8.332
+      },
+      "rasterMs": {
+        "p50": 4.544,
+        "p95": 6.864,
+        "p99": 17.025,
+        "max": 21.901
+      },
+      "totalSpanMs": {
+        "p50": 7.547,
+        "p95": 9.883,
+        "p99": 25.248,
+        "max": 30.264
+      },
+      "timerGapsMs": {
+        "p50": 16.005,
+        "p95": 17.203,
+        "p99": 20.728,
+        "max": 29.164
+      },
+      "overBudget": 5,
+      "overBudgetPercent": 1.2345679012345678,
+      "rssAfterMiB": 1172.75
+    },
+    "draw_5_strokes_500_saved": {
+      "rssBefore": 1287880704,
+      "moveEvents": 600,
+      "newStrokes": 5,
+      "elapsedMs": 7044.246,
+      "rssAfter": 1302396928,
+      "frameCount": 406,
+      "uiMs": {
+        "p50": 2.02,
+        "p95": 3.348,
+        "p99": 9.207,
+        "max": 16.871
+      },
+      "rasterMs": {
+        "p50": 4.586,
+        "p95": 13.975,
+        "p99": 31.116,
+        "max": 45.474
+      },
+      "totalSpanMs": {
+        "p50": 7.744,
+        "p95": 31.294,
+        "p99": 55.544,
+        "max": 64.476
+      },
+      "timerGapsMs": {
+        "p50": 16.002,
+        "p95": 18.961,
+        "p99": 31.802,
+        "max": 39.845
+      },
+      "overBudget": 20,
+      "overBudgetPercent": 4.926108374384237,
+      "rssAfterMiB": 1242.0625
+    },
+    "eraser_500_saved": {
+      "rssBefore": 1289580544,
+      "moveEvents": 600,
+      "newStrokes": 5,
+      "elapsedMs": 6926.715,
+      "rssAfter": 1293082624,
+      "frameCount": 393,
+      "uiMs": {
+        "p50": 1.951,
+        "p95": 3.056,
+        "p99": 9.573,
+        "max": 26.122
+      },
+      "rasterMs": {
+        "p50": 3.199,
+        "p95": 19.82,
+        "p99": 46.158,
+        "max": 59.182
+      },
+      "totalSpanMs": {
+        "p50": 6.283,
+        "p95": 36.328,
+        "p99": 68.44,
+        "max": 79.073
+      },
+      "timerGapsMs": {
+        "p50": 16.029,
+        "p95": 18.949,
+        "p99": 25.715,
+        "max": 36.841
+      },
+      "overBudget": 22,
+      "overBudgetPercent": 5.597964376590331,
+      "rssAfterMiB": 1233.1796875
+    },
+    "undo_redo_500_saved": {
+      "rssBefore": 1276080128,
+      "elapsedMs": 2024.909,
+      "rssAfter": 1257926656,
+      "frameCount": 93,
+      "uiMs": {
+        "p50": 1.503,
+        "p95": 10.045,
+        "p99": 11.224,
+        "max": 11.224
+      },
+      "rasterMs": {
+        "p50": 20.058,
+        "p95": 31.705,
+        "p99": 38.995,
+        "max": 38.995
+      },
+      "totalSpanMs": {
+        "p50": 33.602,
+        "p95": 50.584,
+        "p99": 56.146,
+        "max": 56.146
+      },
+      "timerGapsMs": {
+        "p50": 16.006,
+        "p95": 23.624,
+        "p99": 25.709,
+        "max": 26.669
+      },
+      "overBudget": 77,
+      "overBudgetPercent": 82.79569892473118,
+      "rssAfterMiB": 1199.65234375
+    },
+    "two_finger_gestures": {
+      "rssBefore": 1294716928,
+      "unexpectedSavedStrokes": 0,
+      "elapsedMs": 2939.107,
+      "rssAfter": 1291870208,
+      "frameCount": 177,
+      "uiMs": {
+        "p50": 1.894,
+        "p95": 3.07,
+        "p99": 3.516,
+        "max": 3.522
+      },
+      "rasterMs": {
+        "p50": 2.957,
+        "p95": 4.674,
+        "p99": 5.14,
+        "max": 14.72
+      },
+      "totalSpanMs": {
+        "p50": 6.138,
+        "p95": 9.678,
+        "p99": 10.497,
+        "max": 16.805
+      },
+      "timerGapsMs": {
+        "p50": 16.024,
+        "p95": 17.193,
+        "p99": 19.619,
+        "max": 23.527
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1232.0234375
+    },
+    "annotations_save_10": {
+      "rssBefore": 1238495232,
+      "elapsedMs": 6.158,
+      "rssAfter": 1238966272,
+      "frameCount": 1,
+      "uiMs": {
+        "p50": 0.54,
+        "p95": 0.54,
+        "p99": 0.54,
+        "max": 0.54
+      },
+      "rasterMs": {
+        "p50": 3.171,
+        "p95": 3.171,
+        "p99": 3.171,
+        "max": 3.171
+      },
+      "totalSpanMs": {
+        "p50": 4.944,
+        "p95": 4.944,
+        "p99": 4.944,
+        "max": 4.944
+      },
+      "timerGapsMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1181.5703125
+    },
+    "annotations_load_10": {
+      "rssBefore": 1237471232,
+      "strokeCount": 10,
+      "elapsedMs": 1.818,
+      "rssAfter": 1237692416,
+      "frameCount": 0,
+      "uiMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "rasterMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "totalSpanMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "timerGapsMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "overBudget": 0,
+      "overBudgetPercent": null,
+      "rssAfterMiB": 1180.35546875
+    },
+    "annotations_save_100": {
+      "rssBefore": 1222213632,
+      "elapsedMs": 20.696,
+      "rssAfter": 1224503296,
+      "frameCount": 1,
+      "uiMs": {
+        "p50": 0.39,
+        "p95": 0.39,
+        "p99": 0.39,
+        "max": 0.39
+      },
+      "rasterMs": {
+        "p50": 2.036,
+        "p95": 2.036,
+        "p99": 2.036,
+        "max": 2.036
+      },
+      "totalSpanMs": {
+        "p50": 3.375,
+        "p95": 3.375,
+        "p99": 3.375,
+        "max": 3.375
+      },
+      "timerGapsMs": {
+        "p50": 20.526,
+        "p95": 20.526,
+        "p99": 20.526,
+        "max": 20.526
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1167.77734375
+    },
+    "annotations_load_100": {
+      "rssBefore": 1228087296,
+      "strokeCount": 100,
+      "elapsedMs": 12.405,
+      "rssAfter": 1230639104,
+      "frameCount": 1,
+      "uiMs": {
+        "p50": 0.401,
+        "p95": 0.401,
+        "p99": 0.401,
+        "max": 0.401
+      },
+      "rasterMs": {
+        "p50": 1.204,
+        "p95": 1.204,
+        "p99": 1.204,
+        "max": 1.204
+      },
+      "totalSpanMs": {
+        "p50": 4.876,
+        "p95": 4.876,
+        "p99": 4.876,
+        "max": 4.876
+      },
+      "timerGapsMs": {
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1173.62890625
+    },
+    "annotations_save_500": {
+      "rssBefore": 1230123008,
+      "elapsedMs": 89.029,
+      "rssAfter": 1239416832,
+      "frameCount": 5,
+      "uiMs": {
+        "p50": 0.389,
+        "p95": 0.901,
+        "p99": 0.901,
+        "max": 0.901
+      },
+      "rasterMs": {
+        "p50": 1.194,
+        "p95": 1.896,
+        "p99": 1.896,
+        "max": 1.896
+      },
+      "totalSpanMs": {
+        "p50": 2.137,
+        "p95": 23.197,
+        "p99": 23.197,
+        "max": 23.197
+      },
+      "timerGapsMs": {
+        "p50": 16.001,
+        "p95": 37.723,
+        "p99": 37.723,
+        "max": 37.723
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1182
+    },
+    "annotations_load_500": {
+      "rssBefore": 1223110656,
+      "strokeCount": 500,
+      "elapsedMs": 29.562,
+      "rssAfter": 1234681856,
+      "frameCount": 1,
+      "uiMs": {
+        "p50": 0.445,
+        "p95": 0.445,
+        "p99": 0.445,
+        "max": 0.445
+      },
+      "rasterMs": {
+        "p50": 1.106,
+        "p95": 1.106,
+        "p99": 1.106,
+        "max": 1.106
+      },
+      "totalSpanMs": {
+        "p50": 2.257,
+        "p95": 2.257,
+        "p99": 2.257,
+        "max": 2.257
+      },
+      "timerGapsMs": {
+        "p50": 17.099,
+        "p95": 17.099,
+        "p99": 17.099,
+        "max": 17.099
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1177.484375
+    },
+    "annotations_save_2000": {
+      "rssBefore": 1203347456,
+      "elapsedMs": 389.566,
+      "rssAfter": 1260650496,
+      "frameCount": 18,
+      "uiMs": {
+        "p50": 0.508,
+        "p95": 11.239,
+        "p99": 11.239,
+        "max": 11.239
+      },
+      "rasterMs": {
+        "p50": 1.653,
+        "p95": 4.752,
+        "p99": 4.752,
+        "max": 4.752
+      },
+      "totalSpanMs": {
+        "p50": 3.263,
+        "p95": 86.15,
+        "p99": 86.15,
+        "max": 86.15
+      },
+      "timerGapsMs": {
+        "p50": 15.927,
+        "p95": 97.224,
+        "p99": 97.224,
+        "max": 97.224
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1202.25
+    },
+    "annotations_load_2000": {
+      "rssBefore": 1212821504,
+      "strokeCount": 2000,
+      "elapsedMs": 222.531,
+      "rssAfter": 1208373248,
+      "frameCount": 13,
+      "uiMs": {
+        "p50": 0.475,
+        "p95": 9.44,
+        "p99": 9.44,
+        "max": 9.44
+      },
+      "rasterMs": {
+        "p50": 3.173,
+        "p95": 7.865,
+        "p99": 7.865,
+        "max": 7.865
+      },
+      "totalSpanMs": {
+        "p50": 5.131,
+        "p95": 22.187,
+        "p99": 22.187,
+        "max": 22.187
+      },
+      "timerGapsMs": {
+        "p50": 15.906,
+        "p95": 32.174,
+        "p99": 32.174,
+        "max": 32.174
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 1152.39453125
+    },
+    "viewer_reopen_heavy": {
+      "rssBefore": 1216794624,
+      "elapsedMs": 2508.582,
+      "rssAfter": 1410236416,
+      "frameCount": 93,
+      "uiMs": {
+        "p50": 1.865,
+        "p95": 8.867,
+        "p99": 23.352,
+        "max": 23.352
+      },
+      "rasterMs": {
+        "p50": 3.081,
+        "p95": 107.259,
+        "p99": 159.054,
+        "max": 159.054
+      },
+      "totalSpanMs": {
+        "p50": 6.315,
+        "p95": 191.866,
+        "p99": 306.896,
+        "max": 306.896
+      },
+      "timerGapsMs": {
+        "p50": 16.001,
+        "p95": 17.402,
+        "p99": 27.139,
+        "max": 30.441
+      },
+      "overBudget": 11,
+      "overBudgetPercent": 11.827956989247312,
+      "rssAfterMiB": 1344.90625
+    }
+  }
+}

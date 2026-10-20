@@ -1,0 +1,2 @@
+# Preserve benchmark logs alongside the measured evidence.
+!*.log

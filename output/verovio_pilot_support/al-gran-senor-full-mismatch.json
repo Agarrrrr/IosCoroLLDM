@@ -1,0 +1,2333 @@
+{
+  "missing": [
+    {
+      "part": 0,
+      "measure": 53,
+      "onset": 212.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 53,
+      "onset": 214.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 70,
+      "onset": 287.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 70,
+      "onset": 288.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 75
+    },
+    {
+      "part": 0,
+      "measure": 71,
+      "onset": 289.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 71,
+      "onset": 291.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 71,
+      "onset": 293.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 77
+    },
+    {
+      "part": 0,
+      "measure": 72,
+      "onset": 296.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 75
+    },
+    {
+      "part": 0,
+      "measure": 72,
+      "onset": 297.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 77
+    },
+    {
+      "part": 0,
+      "measure": 72,
+      "onset": 298.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 79
+    },
+    {
+      "part": 0,
+      "measure": 73,
+      "onset": 299.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 77
+    },
+    {
+      "part": 0,
+      "measure": 73,
+      "onset": 301.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 75
+    },
+    {
+      "part": 0,
+      "measure": 73,
+      "onset": 302.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 74,
+      "onset": 303.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 75,
+      "onset": 307.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 75,
+      "onset": 307.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 75,
+      "onset": 307.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 75,
+      "onset": 308.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 75,
+      "onset": 309.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 75,
+      "onset": 309.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 75,
+      "onset": 310.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 311.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 311.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 312.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 312.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 313.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 313.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 314.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 76,
+      "onset": 314.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 315.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 63
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 315.5,
+      "local": 0.5,
+      "duration": 0.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 316.0,
+      "local": 1.0,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 316.5,
+      "local": 1.5,
+      "duration": 0.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 317.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 317.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 318.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 77,
+      "onset": 318.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 78,
+      "onset": 319.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 78,
+      "onset": 319.5,
+      "local": 0.5,
+      "duration": 0.5,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 78,
+      "onset": 320.0,
+      "local": 1.0,
+      "duration": 0.5,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 78,
+      "onset": 321.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 77
+    },
+    {
+      "part": 0,
+      "measure": 78,
+      "onset": 322.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 78,
+      "onset": 322.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 79,
+      "onset": 323.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 79,
+      "onset": 323.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 79,
+      "onset": 324.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 75
+    },
+    {
+      "part": 0,
+      "measure": 80,
+      "onset": 327.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 80,
+      "onset": 327.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 80,
+      "onset": 328.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 81,
+      "onset": 331.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 81,
+      "onset": 331.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 81,
+      "onset": 332.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 81,
+      "onset": 333.5,
+      "local": 2.5,
+      "duration": 1.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 82,
+      "onset": 335.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 82,
+      "onset": 336.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 82,
+      "onset": 337.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 82,
+      "onset": 338.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 83,
+      "onset": 339.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 83,
+      "onset": 339.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 83,
+      "onset": 340.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 75
+    },
+    {
+      "part": 0,
+      "measure": 84,
+      "onset": 343.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 84,
+      "onset": 343.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 84,
+      "onset": 344.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 85,
+      "onset": 347.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 85,
+      "onset": 347.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 85,
+      "onset": 348.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 85,
+      "onset": 349.5,
+      "local": 2.5,
+      "duration": 1.5,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 86,
+      "onset": 351.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 67
+    },
+    {
+      "part": 0,
+      "measure": 86,
+      "onset": 353.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 69
+    },
+    {
+      "part": 0,
+      "measure": 87,
+      "onset": 355.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 70
+    },
+    {
+      "part": 0,
+      "measure": 87,
+      "onset": 357.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 72
+    },
+    {
+      "part": 0,
+      "measure": 88,
+      "onset": 359.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 74
+    },
+    {
+      "part": 0,
+      "measure": 88,
+      "onset": 361.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 78
+    },
+    {
+      "part": 0,
+      "measure": 89,
+      "onset": 363.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 79
+    },
+    {
+      "part": 0,
+      "measure": 90,
+      "onset": 367.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 79
+    },
+    {
+      "part": 1,
+      "measure": 70,
+      "onset": 287.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 66
+    },
+    {
+      "part": 1,
+      "measure": 70,
+      "onset": 288.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 71,
+      "onset": 289.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 70
+    },
+    {
+      "part": 1,
+      "measure": 71,
+      "onset": 290.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 71,
+      "onset": 291.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 72,
+      "onset": 294.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 70
+    },
+    {
+      "part": 1,
+      "measure": 72,
+      "onset": 295.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 70
+    },
+    {
+      "part": 1,
+      "measure": 72,
+      "onset": 297.0,
+      "local": 3.0,
+      "duration": 2.0,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 73,
+      "onset": 299.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 74,
+      "onset": 303.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 307.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 307.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 307.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 308.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 308.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 309.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 309.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 310.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 70
+    },
+    {
+      "part": 1,
+      "measure": 75,
+      "onset": 310.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 72
+    },
+    {
+      "part": 1,
+      "measure": 76,
+      "onset": 311.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 76,
+      "onset": 312.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 76,
+      "onset": 312.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 76,
+      "onset": 313.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 76,
+      "onset": 314.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 76,
+      "onset": 314.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 77,
+      "onset": 315.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 1,
+      "measure": 77,
+      "onset": 315.5,
+      "local": 0.5,
+      "duration": 0.5,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 77,
+      "onset": 316.5,
+      "local": 1.5,
+      "duration": 0.5,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 77,
+      "onset": 317.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 1,
+      "measure": 77,
+      "onset": 317.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 77,
+      "onset": 318.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 77,
+      "onset": 318.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 78,
+      "onset": 319.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 78,
+      "onset": 320.0,
+      "local": 1.0,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 78,
+      "onset": 320.5,
+      "local": 1.5,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 78,
+      "onset": 321.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 78,
+      "onset": 321.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 78,
+      "onset": 322.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 78,
+      "onset": 322.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 79,
+      "onset": 325.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 79,
+      "onset": 326.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 80,
+      "onset": 327.5,
+      "local": 0.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 80,
+      "onset": 328.5,
+      "local": 1.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 80,
+      "onset": 329.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 80,
+      "onset": 330.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 81,
+      "onset": 331.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 81,
+      "onset": 332.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 81,
+      "onset": 333.5,
+      "local": 2.5,
+      "duration": 1.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 82,
+      "onset": 336.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 82,
+      "onset": 337.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 82,
+      "onset": 338.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 83,
+      "onset": 341.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 83,
+      "onset": 342.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 84,
+      "onset": 343.5,
+      "local": 0.5,
+      "duration": 0.5,
+      "pitch": 65
+    },
+    {
+      "part": 1,
+      "measure": 84,
+      "onset": 344.5,
+      "local": 1.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 84,
+      "onset": 345.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 84,
+      "onset": 346.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 85,
+      "onset": 347.5,
+      "local": 0.5,
+      "duration": 1.0,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 85,
+      "onset": 348.5,
+      "local": 1.5,
+      "duration": 1.0,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 85,
+      "onset": 349.5,
+      "local": 2.5,
+      "duration": 1.5,
+      "pitch": 62
+    },
+    {
+      "part": 1,
+      "measure": 86,
+      "onset": 353.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 60
+    },
+    {
+      "part": 1,
+      "measure": 86,
+      "onset": 354.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 63
+    },
+    {
+      "part": 1,
+      "measure": 87,
+      "onset": 357.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 87,
+      "onset": 358.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 67
+    },
+    {
+      "part": 1,
+      "measure": 88,
+      "onset": 359.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 70
+    },
+    {
+      "part": 1,
+      "measure": 88,
+      "onset": 361.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 69
+    },
+    {
+      "part": 1,
+      "measure": 88,
+      "onset": 362.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 72
+    },
+    {
+      "part": 1,
+      "measure": 89,
+      "onset": 363.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 70
+    },
+    {
+      "part": 1,
+      "measure": 90,
+      "onset": 367.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 70
+    },
+    {
+      "part": 2,
+      "measure": 24,
+      "onset": 98.5,
+      "local": 2.5,
+      "duration": 1.5,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 70,
+      "onset": 287.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 70,
+      "onset": 288.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 71,
+      "onset": 289.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 71,
+      "onset": 290.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 71,
+      "onset": 291.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 71,
+      "onset": 292.0,
+      "local": 3.0,
+      "duration": 2.0,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 72,
+      "onset": 294.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 67
+    },
+    {
+      "part": 2,
+      "measure": 72,
+      "onset": 295.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 67
+    },
+    {
+      "part": 2,
+      "measure": 72,
+      "onset": 296.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 65
+    },
+    {
+      "part": 2,
+      "measure": 72,
+      "onset": 297.0,
+      "local": 3.0,
+      "duration": 2.0,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 73,
+      "onset": 299.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 74,
+      "onset": 303.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 307.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 307.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 307.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 308.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 308.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 309.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 309.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 75,
+      "onset": 310.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 311.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 311.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 311.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 312.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 312.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 313.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 313.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 314.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 76,
+      "onset": 314.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 77,
+      "onset": 315.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 77,
+      "onset": 317.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 78,
+      "onset": 319.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 323.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 325.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 325.5,
+      "local": 2.5,
+      "duration": 0.25,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 325.75,
+      "local": 2.75,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 326.0,
+      "local": 3.0,
+      "duration": 0.25,
+      "pitch": 65
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 326.25,
+      "local": 3.25,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 326.5,
+      "local": 3.5,
+      "duration": 0.25,
+      "pitch": 65
+    },
+    {
+      "part": 2,
+      "measure": 79,
+      "onset": 326.75,
+      "local": 3.75,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 80,
+      "onset": 329.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 80,
+      "onset": 329.5,
+      "local": 2.5,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 80,
+      "onset": 329.75,
+      "local": 2.75,
+      "duration": 0.25,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 80,
+      "onset": 330.0,
+      "local": 3.0,
+      "duration": 0.25,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 80,
+      "onset": 330.25,
+      "local": 3.25,
+      "duration": 0.25,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 80,
+      "onset": 330.5,
+      "local": 3.5,
+      "duration": 0.25,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 80,
+      "onset": 330.75,
+      "local": 3.75,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 81,
+      "onset": 332.5,
+      "local": 1.5,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 81,
+      "onset": 332.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 81,
+      "onset": 333.5,
+      "local": 2.5,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 81,
+      "onset": 333.75,
+      "local": 2.75,
+      "duration": 0.25,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 81,
+      "onset": 334.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 81,
+      "onset": 334.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 82,
+      "onset": 335.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 82,
+      "onset": 336.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 82,
+      "onset": 337.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 82,
+      "onset": 338.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 339.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 341.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 341.5,
+      "local": 2.5,
+      "duration": 0.25,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 341.75,
+      "local": 2.75,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 342.0,
+      "local": 3.0,
+      "duration": 0.25,
+      "pitch": 65
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 342.25,
+      "local": 3.25,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 342.5,
+      "local": 3.5,
+      "duration": 0.25,
+      "pitch": 65
+    },
+    {
+      "part": 2,
+      "measure": 83,
+      "onset": 342.75,
+      "local": 3.75,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 84,
+      "onset": 345.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 84,
+      "onset": 345.5,
+      "local": 2.5,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 84,
+      "onset": 345.75,
+      "local": 2.75,
+      "duration": 0.25,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 84,
+      "onset": 346.0,
+      "local": 3.0,
+      "duration": 0.25,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 84,
+      "onset": 346.25,
+      "local": 3.25,
+      "duration": 0.25,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 84,
+      "onset": 346.5,
+      "local": 3.5,
+      "duration": 0.25,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 84,
+      "onset": 346.75,
+      "local": 3.75,
+      "duration": 0.25,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 85,
+      "onset": 348.5,
+      "local": 1.5,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 85,
+      "onset": 348.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 85,
+      "onset": 349.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 85,
+      "onset": 349.5,
+      "local": 2.5,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 2,
+      "measure": 85,
+      "onset": 349.75,
+      "local": 2.75,
+      "duration": 0.25,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 85,
+      "onset": 350.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 85,
+      "onset": 350.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 86,
+      "onset": 351.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 58
+    },
+    {
+      "part": 2,
+      "measure": 86,
+      "onset": 352.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 86,
+      "onset": 353.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 57
+    },
+    {
+      "part": 2,
+      "measure": 87,
+      "onset": 355.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 87,
+      "onset": 356.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 60
+    },
+    {
+      "part": 2,
+      "measure": 87,
+      "onset": 357.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 63
+    },
+    {
+      "part": 2,
+      "measure": 88,
+      "onset": 359.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 65
+    },
+    {
+      "part": 2,
+      "measure": 88,
+      "onset": 361.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 89,
+      "onset": 363.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 62
+    },
+    {
+      "part": 2,
+      "measure": 90,
+      "onset": 367.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 62
+    },
+    {
+      "part": 3,
+      "measure": 43,
+      "onset": 175.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 54
+    },
+    {
+      "part": 3,
+      "measure": 70,
+      "onset": 287.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 50
+    },
+    {
+      "part": 3,
+      "measure": 70,
+      "onset": 288.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 50
+    },
+    {
+      "part": 3,
+      "measure": 71,
+      "onset": 289.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 71,
+      "onset": 291.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 71,
+      "onset": 292.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 71,
+      "onset": 293.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 72,
+      "onset": 296.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 51
+    },
+    {
+      "part": 3,
+      "measure": 72,
+      "onset": 297.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 51
+    },
+    {
+      "part": 3,
+      "measure": 72,
+      "onset": 298.0,
+      "local": 4.0,
+      "duration": 1.0,
+      "pitch": 51
+    },
+    {
+      "part": 3,
+      "measure": 73,
+      "onset": 299.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 73,
+      "onset": 301.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 74,
+      "onset": 303.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 307.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 307.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 307.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 308.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 309.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 309.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 57
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 310.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 58
+    },
+    {
+      "part": 3,
+      "measure": 75,
+      "onset": 310.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 60
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 311.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 311.5,
+      "local": 0.5,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 311.75,
+      "local": 0.75,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 312.25,
+      "local": 1.25,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 312.75,
+      "local": 1.75,
+      "duration": 0.25,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 313.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 313.5,
+      "local": 2.5,
+      "duration": 0.5,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 76,
+      "onset": 314.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 77,
+      "onset": 315.0,
+      "local": 0.0,
+      "duration": 0.5,
+      "pitch": 51
+    },
+    {
+      "part": 3,
+      "measure": 77,
+      "onset": 316.0,
+      "local": 1.0,
+      "duration": 0.5,
+      "pitch": 46
+    },
+    {
+      "part": 3,
+      "measure": 77,
+      "onset": 316.5,
+      "local": 1.5,
+      "duration": 0.5,
+      "pitch": 50
+    },
+    {
+      "part": 3,
+      "measure": 77,
+      "onset": 317.0,
+      "local": 2.0,
+      "duration": 0.5,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 77,
+      "onset": 318.0,
+      "local": 3.0,
+      "duration": 0.5,
+      "pitch": 50
+    },
+    {
+      "part": 3,
+      "measure": 77,
+      "onset": 318.5,
+      "local": 3.5,
+      "duration": 0.5,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 78,
+      "onset": 319.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 79,
+      "onset": 326.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 46
+    },
+    {
+      "part": 3,
+      "measure": 80,
+      "onset": 327.0,
+      "local": 0.0,
+      "duration": 3.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 80,
+      "onset": 330.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 50
+    },
+    {
+      "part": 3,
+      "measure": 81,
+      "onset": 331.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 82,
+      "onset": 335.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 51
+    },
+    {
+      "part": 3,
+      "measure": 82,
+      "onset": 336.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 51
+    },
+    {
+      "part": 3,
+      "measure": 82,
+      "onset": 337.0,
+      "local": 2.0,
+      "duration": 1.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 82,
+      "onset": 338.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 83,
+      "onset": 342.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 46
+    },
+    {
+      "part": 3,
+      "measure": 84,
+      "onset": 343.0,
+      "local": 0.0,
+      "duration": 3.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 84,
+      "onset": 346.0,
+      "local": 3.0,
+      "duration": 1.0,
+      "pitch": 50
+    },
+    {
+      "part": 3,
+      "measure": 85,
+      "onset": 347.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 86,
+      "onset": 351.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 51
+    },
+    {
+      "part": 3,
+      "measure": 86,
+      "onset": 353.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 87,
+      "onset": 355.0,
+      "local": 0.0,
+      "duration": 2.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 87,
+      "onset": 357.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 53
+    },
+    {
+      "part": 3,
+      "measure": 88,
+      "onset": 359.0,
+      "local": 0.0,
+      "duration": 1.0,
+      "pitch": 58
+    },
+    {
+      "part": 3,
+      "measure": 88,
+      "onset": 360.0,
+      "local": 1.0,
+      "duration": 1.0,
+      "pitch": 46
+    },
+    {
+      "part": 3,
+      "measure": 88,
+      "onset": 361.0,
+      "local": 2.0,
+      "duration": 2.0,
+      "pitch": 50
+    },
+    {
+      "part": 3,
+      "measure": 89,
+      "onset": 363.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 55
+    },
+    {
+      "part": 3,
+      "measure": 90,
+      "onset": 367.0,
+      "local": 0.0,
+      "duration": 4.0,
+      "pitch": 55
+    }
+  ],
+  "ambiguous": []
+}

@@ -1,0 +1,617 @@
+[
+  {
+    "index": 1,
+    "name": "A Dónde Iré - SATB - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 72,
+    "lyrics": 778,
+    "markers": {
+      "single": 242,
+      "begin": 228,
+      "middle": 80,
+      "end": 228
+    },
+    "issues": []
+  },
+  {
+    "index": 2,
+    "name": "Al Gran Señor (Adoración) - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 92,
+    "lyrics": 1576,
+    "markers": {
+      "single": 325,
+      "begin": 467,
+      "end": 443,
+      "middle": 341
+    },
+    "issues": []
+  },
+  {
+    "index": 3,
+    "name": "Al Huerto Van a Visitar - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 86,
+    "lyrics": 746,
+    "markers": {
+      "single": 213,
+      "begin": 222,
+      "middle": 89,
+      "end": 222
+    },
+    "issues": []
+  },
+  {
+    "index": 4,
+    "name": "Alabad a Jehová - SATB revisado contra PDF",
+    "changed": true,
+    "staves": 4,
+    "bars": 138,
+    "lyrics": 897,
+    "markers": {
+      "begin": 256,
+      "middle": 201,
+      "end": 256,
+      "single": 184
+    },
+    "issues": []
+  },
+  {
+    "index": 5,
+    "name": "Aleluya al Rey - SATB con letra - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 70,
+    "lyrics": 1253,
+    "markers": {
+      "begin": 391,
+      "middle": 308,
+      "end": 391,
+      "single": 163
+    },
+    "issues": []
+  },
+  {
+    "index": 6,
+    "name": "Apocalipsis 10 - SATB y Barítono - Cantai",
+    "changed": true,
+    "staves": 5,
+    "bars": 114,
+    "lyrics": 1905,
+    "markers": {
+      "begin": 513,
+      "end": 513,
+      "single": 607,
+      "middle": 272
+    },
+    "issues": []
+  },
+  {
+    "index": 7,
+    "name": "Apóstol, Padre y Maestro - SATB extendido - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 95,
+    "lyrics": 1351,
+    "markers": {
+      "single": 390,
+      "begin": 376,
+      "middle": 209,
+      "end": 376
+    },
+    "issues": []
+  },
+  {
+    "index": 8,
+    "name": "Como la Aurora - SATB extendido - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 89,
+    "lyrics": 1508,
+    "markers": {
+      "begin": 464,
+      "end": 464,
+      "middle": 300,
+      "single": 280
+    },
+    "issues": []
+  },
+  {
+    "index": 9,
+    "name": "Cuando Oí Su Voz - SATB extendido - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 128,
+    "lyrics": 1920,
+    "markers": {
+      "single": 523,
+      "begin": 516,
+      "middle": 365,
+      "end": 516
+    },
+    "issues": []
+  },
+  {
+    "index": 10,
+    "name": "Cuán Amables Son Tus Moradas - Oficial - SATB y solista - Cantai",
+    "changed": false,
+    "staves": 5,
+    "bars": 91,
+    "lyrics": 882,
+    "markers": {
+      "single": 220,
+      "begin": 285,
+      "middle": 92,
+      "end": 285
+    },
+    "issues": []
+  },
+  {
+    "index": 11,
+    "name": "Dios Poderoso - SATB con letra",
+    "changed": false,
+    "staves": 4,
+    "bars": 103,
+    "lyrics": 1783,
+    "markers": {
+      "single": 338,
+      "begin": 525,
+      "middle": 395,
+      "end": 525
+    },
+    "issues": []
+  },
+  {
+    "index": 12,
+    "name": "El Aliento de mi Ser - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 73,
+    "lyrics": 1605,
+    "markers": {
+      "begin": 436,
+      "end": 436,
+      "single": 543,
+      "middle": 190
+    },
+    "issues": []
+  },
+  {
+    "index": 13,
+    "name": "El Cántico de los 144 Mil - SATB desarrollado - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 110,
+    "lyrics": 1115,
+    "markers": {
+      "begin": 355,
+      "end": 355,
+      "single": 243,
+      "middle": 162
+    },
+    "issues": []
+  },
+  {
+    "index": 14,
+    "name": "El Cántico de Moisés - SATB extendido - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 122,
+    "lyrics": 1976,
+    "markers": {
+      "begin": 622,
+      "end": 622,
+      "single": 460,
+      "middle": 272
+    },
+    "issues": []
+  },
+  {
+    "index": 15,
+    "name": "Elección Apostólica - SATB extendido - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 106,
+    "lyrics": 1019,
+    "markers": {
+      "single": 310,
+      "begin": 297,
+      "middle": 115,
+      "end": 297
+    },
+    "issues": []
+  },
+  {
+    "index": 16,
+    "name": "En su Corazón - SATB - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 117,
+    "lyrics": 1252,
+    "markers": {
+      "single": 404,
+      "begin": 366,
+      "end": 366,
+      "middle": 116
+    },
+    "issues": []
+  },
+  {
+    "index": 17,
+    "name": "Es Dios - SATB - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 90,
+    "lyrics": 1260,
+    "markers": {
+      "begin": 360,
+      "end": 360,
+      "single": 448,
+      "middle": 92
+    },
+    "issues": []
+  },
+  {
+    "index": 18,
+    "name": "Firmes y Adelante - SATB desarrollado - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 150,
+    "lyrics": 1468,
+    "markers": {
+      "begin": 450,
+      "end": 450,
+      "middle": 204,
+      "single": 364
+    },
+    "issues": []
+  },
+  {
+    "index": 19,
+    "name": "Glory Unto Jesus Christ - SATB - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 171,
+    "lyrics": 2099,
+    "markers": {
+      "begin": 401,
+      "end": 406,
+      "single": 1164,
+      "middle": 128
+    },
+    "issues": []
+  },
+  {
+    "index": 20,
+    "name": "Guerrero Celestial - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 106,
+    "lyrics": 1564,
+    "markers": {
+      "begin": 466,
+      "middle": 252,
+      "end": 466,
+      "single": 380
+    },
+    "issues": []
+  },
+  {
+    "index": 21,
+    "name": "Imagínate Tú (variante SATB) - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 99,
+    "lyrics": 1602,
+    "markers": {
+      "begin": 486,
+      "end": 486,
+      "middle": 306,
+      "single": 324
+    },
+    "issues": []
+  },
+  {
+    "index": 22,
+    "name": "Imagínate Tú - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 99,
+    "lyrics": 1602,
+    "markers": {
+      "begin": 486,
+      "end": 486,
+      "middle": 306,
+      "single": 324
+    },
+    "issues": []
+  },
+  {
+    "index": 23,
+    "name": "Jehová es mi Pastor - SATB - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 91,
+    "lyrics": 908,
+    "markers": {
+      "begin": 266,
+      "middle": 176,
+      "end": 266,
+      "single": 200
+    },
+    "issues": []
+  },
+  {
+    "index": 24,
+    "name": "La Fiesta Universal - SATB desarrollado - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 92,
+    "lyrics": 2273,
+    "markers": {
+      "begin": 678,
+      "end": 678,
+      "single": 513,
+      "middle": 404
+    },
+    "issues": []
+  },
+  {
+    "index": 25,
+    "name": "La Restauración - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 154,
+    "lyrics": 1661,
+    "markers": {
+      "begin": 461,
+      "middle": 296,
+      "end": 461,
+      "single": 443
+    },
+    "issues": []
+  },
+  {
+    "index": 26,
+    "name": "La Vida Se Va Como El Viento (reducción) - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 68,
+    "lyrics": 1070,
+    "markers": {
+      "single": 398,
+      "begin": 270,
+      "end": 270,
+      "middle": 132
+    },
+    "issues": []
+  },
+  {
+    "index": 27,
+    "name": "Mi Padre en la Fe - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 96,
+    "lyrics": 1194,
+    "markers": {
+      "single": 402,
+      "begin": 346,
+      "middle": 100,
+      "end": 346
+    },
+    "issues": []
+  },
+  {
+    "index": 28,
+    "name": "Mi Torre Fuerte - SATB extendido - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 65,
+    "lyrics": 1261,
+    "markers": {
+      "single": 365,
+      "begin": 380,
+      "middle": 136,
+      "end": 380
+    },
+    "issues": []
+  },
+  {
+    "index": 29,
+    "name": "Nardo, Justicia y Gloria - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 156,
+    "lyrics": 1627,
+    "markers": {
+      "single": 527,
+      "begin": 453,
+      "middle": 194,
+      "end": 453
+    },
+    "issues": []
+  },
+  {
+    "index": 30,
+    "name": "No Hay Amigo Mejor - SATB desarrollado - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 109,
+    "lyrics": 1394,
+    "markers": {
+      "single": 308,
+      "begin": 452,
+      "middle": 182,
+      "end": 452
+    },
+    "issues": []
+  },
+  {
+    "index": 31,
+    "name": "No Hay Amigo Mejor - SATB desarrollado",
+    "changed": true,
+    "staves": 4,
+    "bars": 109,
+    "lyrics": 1392,
+    "markers": {
+      "single": 308,
+      "begin": 452,
+      "middle": 180,
+      "end": 452
+    },
+    "issues": []
+  },
+  {
+    "index": 32,
+    "name": "Para Siempre Es Su Misericordia - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 51,
+    "lyrics": 1076,
+    "markers": {
+      "begin": 316,
+      "middle": 200,
+      "end": 316,
+      "single": 244
+    },
+    "issues": []
+  },
+  {
+    "index": 33,
+    "name": "Recuerda - SATB extendido - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 88,
+    "lyrics": 2026,
+    "markers": {
+      "begin": 561,
+      "middle": 378,
+      "end": 561,
+      "single": 526
+    },
+    "issues": []
+  },
+  {
+    "index": 34,
+    "name": "Restauración - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 154,
+    "lyrics": 1661,
+    "markers": {
+      "begin": 461,
+      "middle": 296,
+      "end": 461,
+      "single": 443
+    },
+    "issues": []
+  },
+  {
+    "index": 35,
+    "name": "Salmo 135 - SATB - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 45,
+    "lyrics": 593,
+    "markers": {
+      "begin": 179,
+      "middle": 113,
+      "end": 179,
+      "single": 122
+    },
+    "issues": []
+  },
+  {
+    "index": 36,
+    "name": "Salmo 150 - SATB con letra",
+    "changed": false,
+    "staves": 4,
+    "bars": 73,
+    "lyrics": 1060,
+    "markers": {
+      "begin": 280,
+      "middle": 384,
+      "end": 280,
+      "single": 116
+    },
+    "issues": []
+  },
+  {
+    "index": 37,
+    "name": "Santo Varón - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 60,
+    "lyrics": 1118,
+    "markers": {
+      "begin": 306,
+      "end": 306,
+      "middle": 282,
+      "single": 224
+    },
+    "issues": []
+  },
+  {
+    "index": 38,
+    "name": "Tú Eres mi Esperanza - SATB extendido - Cantai",
+    "changed": false,
+    "staves": 4,
+    "bars": 69,
+    "lyrics": 1296,
+    "markers": {
+      "begin": 460,
+      "end": 460,
+      "single": 256,
+      "middle": 120
+    },
+    "issues": []
+  },
+  {
+    "index": 39,
+    "name": "Valle de los Huesos Secos - SATB con letra",
+    "changed": true,
+    "staves": 4,
+    "bars": 148,
+    "lyrics": 2388,
+    "markers": {
+      "begin": 781,
+      "end": 781,
+      "single": 409,
+      "middle": 417
+    },
+    "issues": []
+  },
+  {
+    "index": 40,
+    "name": "Valle de los Huesos Secos",
+    "changed": true,
+    "staves": 4,
+    "bars": 148,
+    "lyrics": 2388,
+    "markers": {
+      "begin": 781,
+      "end": 781,
+      "single": 409,
+      "middle": 417
+    },
+    "issues": []
+  },
+  {
+    "index": 41,
+    "name": "Ángel Poderoso - SATB - Cantai",
+    "changed": true,
+    "staves": 4,
+    "bars": 90,
+    "lyrics": 1758,
+    "markers": {
+      "begin": 509,
+      "end": 509,
+      "single": 419,
+      "middle": 321
+    },
+    "issues": []
+  }
+]

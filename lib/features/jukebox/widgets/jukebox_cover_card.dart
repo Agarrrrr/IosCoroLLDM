@@ -6,6 +6,7 @@ class JukeboxCoverCard extends StatelessWidget {
   final String title;
   final List<String> temas;
   final String voice;
+  final bool isPianoMode;
   final bool isPlaying;
 
   const JukeboxCoverCard({
@@ -13,6 +14,7 @@ class JukeboxCoverCard extends StatelessWidget {
     required this.title,
     required this.temas,
     required this.voice,
+    this.isPianoMode = false,
     this.isPlaying = false,
   });
 
@@ -23,11 +25,15 @@ class JukeboxCoverCard extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
 
     final topSurface = Color.alphaBlend(
-      scheme.primary.withValues(alpha: isDark ? 0.18 : 0.12),
+      scheme.primary.withValues(alpha: isDark ? 0.24 : 0.16),
+      scheme.surface,
+    );
+    final midSurface = Color.alphaBlend(
+      scheme.primary.withValues(alpha: isDark ? 0.12 : 0.08),
       scheme.surface,
     );
     final bottomSurface = Color.alphaBlend(
-      scheme.primary.withValues(alpha: isDark ? 0.06 : 0.04),
+      scheme.primary.withValues(alpha: isDark ? 0.06 : 0.03),
       scheme.surfaceContainerHighest,
     );
 
@@ -35,37 +41,43 @@ class JukeboxCoverCard extends StatelessWidget {
       aspectRatio: 1.0,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(32),
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [topSurface, bottomSurface],
+            colors: [topSurface, midSurface, bottomSurface],
           ),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withValues(alpha: isDark ? 0.35 : 0.08),
-              blurRadius: 28,
-              offset: const Offset(0, 12),
+              color: Colors.black.withValues(alpha: isDark ? 0.40 : 0.10),
+              blurRadius: 32,
+              offset: const Offset(0, 14),
               spreadRadius: -4,
+            ),
+            BoxShadow(
+              color: scheme.primary.withValues(alpha: isDark ? 0.16 : 0.10),
+              blurRadius: 24,
+              offset: const Offset(0, 6),
+              spreadRadius: -6,
             ),
           ],
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(32),
           child: Stack(
+            alignment: Alignment.center,
             children: [
-              // Resplandor ambiental suave del color de acento del tema
+              // Resplandor ambiental central del color de acento del tema
               Positioned(
-                top: -50,
-                right: -50,
+                top: -40,
                 child: Container(
-                  width: 200,
-                  height: 200,
+                  width: 240,
+                  height: 240,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     gradient: RadialGradient(
                       colors: [
-                        scheme.primary.withValues(alpha: isDark ? 0.22 : 0.16),
+                        scheme.primary.withValues(alpha: isDark ? 0.28 : 0.18),
                         Colors.transparent,
                       ],
                     ),
@@ -74,96 +86,106 @@ class JukeboxCoverCard extends StatelessWidget {
               ),
 
               Padding(
-                padding: const EdgeInsets.all(24),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 26,
+                  vertical: 24,
+                ),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // Fila superior: Identidad y pastilla de voz activa
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    // Emblema superior centrado y pastilla de modo/voz activa
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        Row(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.all(7),
-                              decoration: BoxDecoration(
-                                color: scheme.primary.withValues(alpha: 0.14),
-                                shape: BoxShape.circle,
-                              ),
-                              child: SingingIcon(
-                                size: 16,
-                                color: scheme.primary,
-                              ),
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              'Coro LLDM',
-                              style: GoogleFonts.inter(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w700,
-                                color: scheme.onSurfaceVariant,
-                                letterSpacing: 0.2,
-                              ),
-                            ),
-                          ],
+                        Container(
+                          width: 48,
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: scheme.primary.withValues(alpha: 0.15),
+                            shape: BoxShape.circle,
+                          ),
+                          child: Center(
+                            child: isPianoMode
+                                ? Icon(
+                                    Icons.piano_rounded,
+                                    size: 24,
+                                    color: scheme.primary,
+                                  )
+                                : SingingIcon(
+                                    size: 24,
+                                    color: scheme.primary,
+                                  ),
+                          ),
                         ),
+                        const SizedBox(height: 10),
                         Container(
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 10,
+                            horizontal: 14,
                             vertical: 5,
                           ),
                           decoration: BoxDecoration(
                             color: scheme.primary,
-                            borderRadius: BorderRadius.circular(14),
+                            borderRadius: BorderRadius.circular(16),
                           ),
                           child: Text(
-                            voice,
+                            isPianoMode ? 'Piano' : voice,
+                            textAlign: TextAlign.center,
                             style: GoogleFonts.inter(
-                              fontSize: 11,
+                              fontSize: 11.5,
                               fontWeight: FontWeight.w700,
                               color: scheme.onPrimary,
-                              letterSpacing: 0.2,
+                              letterSpacing: 0.3,
                             ),
                           ),
                         ),
                       ],
                     ),
 
-                    const Spacer(),
-
-                    // Título principal del canto (Estilo Spotify moderno)
-                    Text(
-                      title.isNotEmpty ? title : 'Selecciona un canto',
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                      style: GoogleFonts.inter(
-                        fontSize: title.length > 28 ? 22 : 26,
-                        fontWeight: FontWeight.w800,
-                        color: scheme.onSurface,
-                        height: 1.2,
-                        letterSpacing: -0.5,
+                    // Título principal del canto (100% centrado y equilibrado)
+                    Flexible(
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          child: Text(
+                            title.isNotEmpty ? title : 'Selecciona un canto',
+                            textAlign: TextAlign.center,
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                            style: GoogleFonts.inter(
+                              fontSize: title.length > 30
+                                  ? 20
+                                  : (title.length > 20 ? 23 : 26),
+                              fontWeight: FontWeight.w800,
+                              color: scheme.onSurface,
+                              height: 1.22,
+                              letterSpacing: -0.4,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
 
-                    const SizedBox(height: 14),
-
-                    // Píldoras limpias de temas del canto
+                    // Píldoras limpias de temas del canto centradas abajo
                     if (temas.isNotEmpty)
                       Wrap(
+                        alignment: WrapAlignment.center,
+                        runAlignment: WrapAlignment.center,
                         spacing: 8,
-                        runSpacing: 8,
+                        runSpacing: 6,
                         children: temas.take(3).map((tema) {
                           return Container(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 12,
-                              vertical: 6,
+                              vertical: 5,
                             ),
                             decoration: BoxDecoration(
-                              color: scheme.onSurface.withValues(alpha: 0.07),
+                              color: scheme.onSurface.withValues(alpha: 0.08),
                               borderRadius: BorderRadius.circular(14),
                             ),
                             child: Text(
                               tema,
+                              textAlign: TextAlign.center,
                               style: GoogleFonts.inter(
                                 fontSize: 11.5,
                                 fontWeight: FontWeight.w600,
@@ -177,14 +199,15 @@ class JukeboxCoverCard extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 12,
-                          vertical: 6,
+                          vertical: 5,
                         ),
                         decoration: BoxDecoration(
-                          color: scheme.onSurface.withValues(alpha: 0.07),
+                          color: scheme.onSurface.withValues(alpha: 0.08),
                           borderRadius: BorderRadius.circular(14),
                         ),
                         child: Text(
-                          'Repertorio Coral',
+                          'Coro LLDM · Repertorio Coral',
+                          textAlign: TextAlign.center,
                           style: GoogleFonts.inter(
                             fontSize: 11.5,
                             fontWeight: FontWeight.w600,

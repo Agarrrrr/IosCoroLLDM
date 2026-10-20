@@ -1,0 +1,512 @@
+{
+  "record": {
+    "index": 8,
+    "title": "Guerrero Celestial",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Guerrero Celestial.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Guerrero Celestial.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Guerrero Celestial.musicxml.xml",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Guerrero Celestial.mxl"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        106,
+        106,
+        106,
+        106
+      ],
+      "notes": 1673,
+      "lyrics": 1564,
+      "dynamics": {},
+      "voices": {
+        "1": 424
+      }
+    },
+    "catalog": {
+      "id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+      "nombre": "Guerrero Celestial",
+      "archivo": "global/assets/pdf/4df104af0bba1def16f0724a5eca60ea6bbcf10d1e8591680d8499755b194633.enc",
+      "midi_archivo": "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc",
+      "vinculo_idioma": null,
+      "temas": [
+        "Elección",
+        "Lucha"
+      ],
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es",
+      "external_id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+      "version": 5
+    },
+    "pdfReview": {
+      "pages": 9,
+      "dynamics": []
+    },
+    "finalName": "Guerrero Celestial - SATB - Cantai",
+    "sourceMeasures": 106,
+    "expandedMeasures": 106,
+    "parts": 4,
+    "sourceNotes": 1673,
+    "finalNotes": 1673,
+    "split": false,
+    "filledLyrics": 0
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      28,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      33,
+      1
+    ],
+    [
+      34,
+      1
+    ],
+    [
+      35,
+      1
+    ],
+    [
+      36,
+      1
+    ],
+    [
+      37,
+      1
+    ],
+    [
+      38,
+      1
+    ],
+    [
+      39,
+      1
+    ],
+    [
+      40,
+      1
+    ],
+    [
+      41,
+      1
+    ],
+    [
+      42,
+      1
+    ],
+    [
+      43,
+      1
+    ],
+    [
+      44,
+      1
+    ],
+    [
+      45,
+      1
+    ],
+    [
+      46,
+      1
+    ],
+    [
+      47,
+      1
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      49,
+      1
+    ],
+    [
+      50,
+      1
+    ],
+    [
+      51,
+      1
+    ],
+    [
+      52,
+      1
+    ],
+    [
+      53,
+      1
+    ],
+    [
+      54,
+      1
+    ],
+    [
+      55,
+      1
+    ],
+    [
+      56,
+      1
+    ],
+    [
+      57,
+      1
+    ],
+    [
+      58,
+      1
+    ],
+    [
+      59,
+      1
+    ],
+    [
+      60,
+      1
+    ],
+    [
+      61,
+      1
+    ],
+    [
+      62,
+      1
+    ],
+    [
+      63,
+      1
+    ],
+    [
+      64,
+      1
+    ],
+    [
+      65,
+      1
+    ],
+    [
+      66,
+      1
+    ],
+    [
+      67,
+      1
+    ],
+    [
+      68,
+      1
+    ],
+    [
+      69,
+      1
+    ],
+    [
+      70,
+      1
+    ],
+    [
+      71,
+      1
+    ],
+    [
+      72,
+      1
+    ],
+    [
+      73,
+      1
+    ],
+    [
+      74,
+      1
+    ],
+    [
+      75,
+      1
+    ],
+    [
+      76,
+      1
+    ],
+    [
+      77,
+      1
+    ],
+    [
+      78,
+      1
+    ],
+    [
+      79,
+      1
+    ],
+    [
+      80,
+      1
+    ],
+    [
+      81,
+      1
+    ],
+    [
+      82,
+      1
+    ],
+    [
+      83,
+      1
+    ],
+    [
+      84,
+      1
+    ],
+    [
+      85,
+      1
+    ],
+    [
+      86,
+      1
+    ],
+    [
+      87,
+      1
+    ],
+    [
+      88,
+      1
+    ],
+    [
+      89,
+      1
+    ],
+    [
+      90,
+      1
+    ],
+    [
+      91,
+      1
+    ],
+    [
+      92,
+      1
+    ],
+    [
+      93,
+      1
+    ],
+    [
+      94,
+      1
+    ],
+    [
+      95,
+      1
+    ],
+    [
+      96,
+      1
+    ],
+    [
+      97,
+      1
+    ],
+    [
+      98,
+      1
+    ],
+    [
+      99,
+      1
+    ],
+    [
+      100,
+      1
+    ],
+    [
+      101,
+      1
+    ],
+    [
+      102,
+      1
+    ],
+    [
+      103,
+      1
+    ],
+    [
+      104,
+      1
+    ],
+    [
+      105,
+      1
+    ]
+  ],
+  "editorialLyricFills": []
+}

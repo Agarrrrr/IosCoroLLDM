@@ -1,0 +1,137 @@
+[
+  {
+    "file": ".gitignore",
+    "bytes": 66,
+    "sha256": "e6fe4f6a23618b4f065c2d102489ac7b097401e4cab8d540342de49206c4a8ea"
+  },
+  {
+    "file": "analyze.log",
+    "bytes": 99,
+    "sha256": "0f04b4a365d0105432a17227d6b3cf3ce472d29a99e541f1481dcb4ae8677074"
+  },
+  {
+    "file": "build.log",
+    "bytes": 419,
+    "sha256": "a0f0aa08b8209923af337896bf6b79075d777be9807020f9745a9ed56f21c783"
+  },
+  {
+    "file": "fuentes/annotation_layer.dart",
+    "bytes": 30404,
+    "sha256": "75730f2d07dbde575b4bec7615509f6f0e253ea000d5eb461d0647fc04a40206"
+  },
+  {
+    "file": "fuentes/annotation_store.dart",
+    "bytes": 6305,
+    "sha256": "2f3cb22b549454aa7c17ad858f25e973f623fd3677dba713325896c207bf5278"
+  },
+  {
+    "file": "fuentes/file_crypto.dart",
+    "bytes": 1927,
+    "sha256": "02fc2fca15937ad0ed5e90df3637734c93a69ec0d42b96f446ebbda3325ae8f4"
+  },
+  {
+    "file": "fuentes/LOCAL_PATCHES.md",
+    "bytes": 1070,
+    "sha256": "89ddf1ce4c0e62b5cc21d6c5bb0d37c0ce8bcf740973eac6bae4526a371e6318"
+  },
+  {
+    "file": "fuentes/pdfrx_pdf_viewer.dart",
+    "bytes": 85807,
+    "sha256": "ba8ddcc3ad2c306db7c2544c9af22d292e350deacb089d70ab589dc1ed282248"
+  },
+  {
+    "file": "incremental_repeat/results_summary.json",
+    "bytes": 26033,
+    "sha256": "6b3112df456826a2bb2a83b856bf4c4836170b1f236c1e87ca41ab3b68e1d9af"
+  },
+  {
+    "file": "incremental_repeat/results.json",
+    "bytes": 404472,
+    "sha256": "17836c032dd67b72dff3a8784009a7fa2fe4c08c08ae8f3a7920078e48f9f972"
+  },
+  {
+    "file": "incremental_repeat/run.log",
+    "bytes": 19469,
+    "sha256": "53e9f874e005b9ea5f0b0877dfa86b066b90f646bbb46118b060a8261b9cfd5d"
+  },
+  {
+    "file": "incremental/meminfo_during.txt",
+    "bytes": 3609,
+    "sha256": "e203b9afadb70ff93e401e7fe82f1049a7f609083de865e64691631d6beb8d91"
+  },
+  {
+    "file": "incremental/meminfo_phase.txt",
+    "bytes": 654,
+    "sha256": "710feaab4f3e0e1d5272a6309b279ea78654f76cfa9cd2cbeabbe7db47167416"
+  },
+  {
+    "file": "incremental/results_summary.json",
+    "bytes": 26030,
+    "sha256": "1cd3044d0389f5815ab79667357e14b930674affecf9eaa8bad9faf1c7bd4934"
+  },
+  {
+    "file": "incremental/results.json",
+    "bytes": 402932,
+    "sha256": "3447990adbfa7ba399d4a7d632ae6033e2016493f9ffeaf920caaeb5f25bd8ce"
+  },
+  {
+    "file": "incremental/run.log",
+    "bytes": 19635,
+    "sha256": "6f09e51555d8b9b185d13f3f5566ff7a2568717d36a1c45de2049bcbaf0a4f30"
+  },
+  {
+    "file": "incremental/thermal.txt",
+    "bytes": 1041,
+    "sha256": "fcb6b3d3feba0093f7ae798ce7436c4560a8141caf5d5279172e8a88294cc372"
+  },
+  {
+    "file": "previo_final_repeat/results_summary.json",
+    "bytes": 26094,
+    "sha256": "eb649de96bb51389d5054b548d8dcab4affbf067e2f0ac1260d8d4fe4a6a0ad4"
+  },
+  {
+    "file": "previo_final_repeat/results.json",
+    "bytes": 402682,
+    "sha256": "3903ddf3cd9229f4f1e70d9dae2750e324db9884f6d93cabb6d80d132e2ee1cb"
+  },
+  {
+    "file": "previo_final_repeat/run.log",
+    "bytes": 19779,
+    "sha256": "50864f7739aaf6594b72a121e4da7f4591316657ce6976393c771d00f40b3c06"
+  },
+  {
+    "file": "previo_final/meminfo_phase.txt",
+    "bytes": 1179,
+    "sha256": "0feeb7c219cbb32fb6453ba79bc02b0b5ad8b6816f344b75a1e6bb6b578c686d"
+  },
+  {
+    "file": "previo_final/meminfo.txt",
+    "bytes": 3609,
+    "sha256": "dd2cd4ebb0fdb6481dca84e29ac07d5bf4f1d330dfeee21483d13033ce23246a"
+  },
+  {
+    "file": "previo_final/performance_final_run.log",
+    "bytes": 19523,
+    "sha256": "33ed050380b2c35353d5d6fc11a4c7f10a4188e33628a0d2f56fa6583ee3520d"
+  },
+  {
+    "file": "previo_final/results_summary.json",
+    "bytes": 26064,
+    "sha256": "d77cf1bebcc35464b9272936e7fd3a4510c403db6ae90c80dd76a281247b9aae"
+  },
+  {
+    "file": "previo_final/results.json",
+    "bytes": 402641,
+    "sha256": "d851554c52524fd3385c3357f5d00377a13cf81516e01eeaf59cd4c4911ab53c"
+  },
+  {
+    "file": "previo_final/thermal.txt",
+    "bytes": 1041,
+    "sha256": "aeb8461ee37eae396b2bf1b2c9746dfac91f7d7c5929e9f9adf46ad264bf9b96"
+  },
+  {
+    "file": "tests.log",
+    "bytes": 2348,
+    "sha256": "06341ee2ba460be79049e4481ceed0295e78e760f1c256d232bf7b160a75dc07"
+  }
+]

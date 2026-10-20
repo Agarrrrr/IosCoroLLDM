@@ -1,0 +1,125 @@
+{
+  "dynamics": [],
+  "arcs": [
+    {
+      "start": "aurora-0-81-0",
+      "end": "aurora-0-81-1",
+      "role": 0,
+      "measure": 18,
+      "onset": 0.0,
+      "toMeasure": 18,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 3.2766865736000312
+    },
+    {
+      "start": "aurora-1-81-0",
+      "end": "aurora-1-81-1",
+      "role": 1,
+      "measure": 18,
+      "onset": 0.0,
+      "toMeasure": 18,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 3.276686573600017
+    },
+    {
+      "start": "aurora-0-92-0",
+      "end": "aurora-0-92-1",
+      "role": 0,
+      "measure": 21,
+      "onset": 0.0,
+      "toMeasure": 21,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 3.2766865735999886
+    },
+    {
+      "start": "aurora-1-92-0",
+      "end": "aurora-1-92-1",
+      "role": 1,
+      "measure": 21,
+      "onset": 0.0,
+      "toMeasure": 21,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 3.2766865736000454
+    },
+    {
+      "start": "aurora-0-126-0",
+      "end": "aurora-0-126-1",
+      "role": 0,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 30,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 3.1593217874000743
+    },
+    {
+      "start": "aurora-1-126-0",
+      "end": "aurora-1-126-1",
+      "role": 1,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 30,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 3.1593217873999038
+    },
+    {
+      "start": "aurora-2-122-0",
+      "end": "aurora-2-123-0",
+      "role": 2,
+      "measure": 29,
+      "onset": 1.0,
+      "toMeasure": 29,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 3.1593217874000175
+    },
+    {
+      "start": "aurora-3-122-0",
+      "end": "aurora-3-122-1",
+      "role": 3,
+      "measure": 29,
+      "onset": 1.0,
+      "toMeasure": 29,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 3.1593217873999038
+    }
+  ],
+  "partial": [],
+  "articulations": [
+    {
+      "id": "aurora-0-126-1",
+      "role": 0,
+      "measure": 30,
+      "onset": 1.5,
+      "kind": "fermata"
+    },
+    {
+      "id": "aurora-1-126-1",
+      "role": 1,
+      "measure": 30,
+      "onset": 1.5,
+      "kind": "fermata"
+    },
+    {
+      "id": "aurora-2-127-0",
+      "role": 2,
+      "measure": 30,
+      "onset": 1.5,
+      "kind": "fermata"
+    },
+    {
+      "id": "aurora-3-126-0",
+      "role": 3,
+      "measure": 30,
+      "onset": 1.5,
+      "kind": "fermata"
+    }
+  ],
+  "wedges": []
+}

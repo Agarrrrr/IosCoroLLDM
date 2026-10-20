@@ -1,0 +1,6 @@
+I/flutter (13745): AUDIT END small_fit 5001.642 ms, 299 frames, error=null
+I/flutter (13745): AUDIT START small_zoom_pdf_only
+I/flutter (13745): AUDIT END small_zoom_pdf_only 6209.211 ms, 373 frames, error=null
+I/flutter (13745): AUDIT START small_drawing_enabled
+I/flutter (13745): AUDIT END small_drawing_enabled 5001.26 ms, 301 frames, error=null
+I/flutter (13745): AUDIT START small_zoom_draw

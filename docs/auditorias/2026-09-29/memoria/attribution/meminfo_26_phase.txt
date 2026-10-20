@@ -1,0 +1,18 @@
+I/flutter (14782): AUDIT END heavy_capture_zoom_pdf_only 7117.968 ms, 428 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_capture_zoom
+I/flutter (14782): AUDIT END heavy_capture_capture_zoom 747.107 ms, 45 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_return_to_page
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 34us,22us total 13.174ms
+I/flutter (14782): AUDIT END heavy_capture_return_to_page 3002.593 ms, 180 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_drawing_enabled
+I/flutter (14782): AUDIT END heavy_capture_drawing_enabled 5002.506 ms, 301 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_zoom_draw
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 32us,20us total 11.817ms
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 159KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 31us,18us total 10.345ms
+I/flutter (14782): AUDIT END heavy_capture_zoom_draw 9903.491 ms, 596 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_500_saved_settle
+I/flutter (14782): AUDIT END heavy_capture_500_saved_settle 5001.663 ms, 284 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_500_saved_draw
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 26us,22us total 17.326ms
+I/flutter (14782): AUDIT END heavy_capture_500_saved_draw 9988.146 ms, 576 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_closed

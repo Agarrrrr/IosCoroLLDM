@@ -1,0 +1,50 @@
+[
+  {
+    "key": "acercame",
+    "layout": "closed",
+    "matched": 90,
+    "perVoice": {
+      "0": 20,
+      "1": 24,
+      "2": 22,
+      "3": 24
+    },
+    "lyricSyllables": 93
+  },
+  {
+    "key": "acercame",
+    "layout": "open",
+    "matched": 90,
+    "perVoice": {
+      "0": 20,
+      "1": 24,
+      "2": 22,
+      "3": 24
+    },
+    "lyricSyllables": 93
+  },
+  {
+    "key": "al-gran-senor",
+    "layout": "closed",
+    "matched": 160,
+    "perVoice": {
+      "2": 29,
+      "3": 32,
+      "0": 46,
+      "1": 53
+    },
+    "lyricSyllables": 155
+  },
+  {
+    "key": "al-gran-senor",
+    "layout": "open",
+    "matched": 160,
+    "perVoice": {
+      "2": 29,
+      "3": 32,
+      "0": 46,
+      "1": 53
+    },
+    "lyricSyllables": 155
+  }
+]

@@ -1,0 +1,5089 @@
+[
+  {
+    "name": "A Dónde Iré - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\01\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\01\\reference.pdf",
+    "batch": 1,
+    "candidates": []
+  },
+  {
+    "name": "Al Gran Señor (Adoración) - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\02\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\02\\reference.pdf",
+    "batch": 2,
+    "candidates": [
+      {
+        "role": 0,
+        "bar": 7,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "jes",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "de ma jes tad a",
+        "source": "Gran ma jes tad de"
+      },
+      {
+        "role": 0,
+        "bar": 9,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "bar",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "bad",
+        "source": "de be a la bar"
+      },
+      {
+        "role": 0,
+        "bar": 30,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "7/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "le lu",
+        "source": "con sen ti mien to hoy a la"
+      },
+      {
+        "role": 0,
+        "bar": 30,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "7/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "le lu",
+        "source": "con sen ti mien to hoy a la"
+      },
+      {
+        "role": 0,
+        "bar": 35,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/2",
+            "text": "a",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "lu",
+        "source": "be mos con a mor con a"
+      },
+      {
+        "role": 0,
+        "bar": 69,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "A",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "le",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "lu",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "ya",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A",
+        "source": "mén A le lu ya A"
+      },
+      {
+        "role": 0,
+        "bar": 70,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "mén A"
+      },
+      {
+        "role": 0,
+        "bar": 70,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "mén A"
+      },
+      {
+        "role": 0,
+        "bar": 70,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "mén A"
+      },
+      {
+        "role": 0,
+        "bar": 71,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "gran",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mén al gran Se ñor can",
+        "source": "mén al gran Se ñor can"
+      },
+      {
+        "role": 0,
+        "bar": 71,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "gran",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mén al gran Se ñor can",
+        "source": "mén al gran Se ñor can"
+      },
+      {
+        "role": 0,
+        "bar": 71,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "gran",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mén al gran Se ñor can",
+        "source": "mén al gran Se ñor can"
+      },
+      {
+        "role": 1,
+        "bar": 18,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "te mos aDios de",
+        "source": "a la bad al Se ñor"
+      },
+      {
+        "role": 1,
+        "bar": 26,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "ver",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "dad",
+        "source": "en ver dad"
+      },
+      {
+        "role": 1,
+        "bar": 30,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "7/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "le lu",
+        "source": "con sen ti mien to hoy a la"
+      },
+      {
+        "role": 1,
+        "bar": 30,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "7/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "le lu",
+        "source": "con sen ti mien to hoy a la"
+      },
+      {
+        "role": 1,
+        "bar": 68,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "A mén"
+      },
+      {
+        "role": 2,
+        "bar": 13,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A",
+        "source": "dad A"
+      },
+      {
+        "role": 2,
+        "bar": 13,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A",
+        "source": "dad A"
+      },
+      {
+        "role": 2,
+        "bar": 19,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "ción",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "de la crea ción can",
+        "source": "la cre a ción can"
+      },
+      {
+        "role": 2,
+        "bar": 21,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "rra_hay",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "paz can",
+        "source": "tie rra_hay san ta paz"
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "dad",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "in men si dad",
+        "source": "su in men si dad"
+      },
+      {
+        "role": 2,
+        "bar": 54,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "11/4",
+            "text": "es",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "oh A le lu ya",
+        "source": "Oh cuan gran de es nues tro"
+      },
+      {
+        "role": 2,
+        "bar": 55,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "11/4",
+            "text": "y",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A le lu ya",
+        "source": "Dios ma jes tuo so y sin i"
+      },
+      {
+        "role": 2,
+        "bar": 56,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "11/4",
+            "text": "y",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A le lu ya",
+        "source": "gual Dios de vi da y de a"
+      },
+      {
+        "role": 2,
+        "bar": 59,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "mos",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "vá can te",
+        "source": "vá can te mos"
+      },
+      {
+        "role": 2,
+        "bar": 59,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "mos",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "vá can te",
+        "source": "vá can te mos"
+      },
+      {
+        "role": 2,
+        "bar": 59,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "mos",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "vá can te",
+        "source": "vá can te mos"
+      },
+      {
+        "role": 2,
+        "bar": 66,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "11/4",
+            "text": "su",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mor gran a mor A",
+        "source": "mor gran a mor por su in fi ni to_a"
+      },
+      {
+        "role": 2,
+        "bar": 69,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A",
+        "source": "mén A"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "7/2",
+            "text": "Los",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "to dos de be mos a do rar",
+        "source": "To dos de be mos a la bad Los"
+      },
+      {
+        "role": 3,
+        "bar": 13,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A",
+        "source": "dad A"
+      },
+      {
+        "role": 3,
+        "bar": 13,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "A",
+        "source": "dad A"
+      },
+      {
+        "role": 3,
+        "bar": 54,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "le",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "temos a Dios per",
+        "source": "A le lu ya per"
+      },
+      {
+        "role": 3,
+        "bar": 55,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "Se",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "fec toSe ñor el",
+        "source": "fec to Se ñor el"
+      }
+    ]
+  },
+  {
+    "name": "Ángel Poderoso - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\03\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\03\\reference.pdf",
+    "batch": 3,
+    "candidates": [
+      {
+        "role": 0,
+        "bar": 54,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "Ah",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ah"
+      },
+      {
+        "role": 0,
+        "bar": 54,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "Ah,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ah,"
+      },
+      {
+        "role": 0,
+        "bar": 54,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fín",
+            "syllabic": "end"
+          },
+          {
+            "onset": "1",
+            "text": "en",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "fín en su con"
+      },
+      {
+        "role": 1,
+        "bar": 57,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "Dios,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "pue blo de Dios,",
+        "source": "Dios de Dios,"
+      },
+      {
+        "role": 1,
+        "bar": 58,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "sa",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "su luz her mo sa nos",
+        "source": "su luz her mo sa nues tro"
+      },
+      {
+        "role": 1,
+        "bar": 59,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "i",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "i lu mi nó,",
+        "source": "ser i lu mi nó,"
+      },
+      {
+        "role": 1,
+        "bar": 59,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "nó,",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "i lu mi nó,",
+        "source": "nos i lu mi nó,"
+      },
+      {
+        "role": 2,
+        "bar": 52,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "Ah,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Ah,",
+        "source": "Ah,"
+      },
+      {
+        "role": 3,
+        "bar": 32,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "3/2",
+            "text": "de",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ción, Naa són, va",
+        "source": "es gue rre ro de Dios va lien te,"
+      },
+      {
+        "role": 3,
+        "bar": 57,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "Dios,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "sue lo de Dios",
+        "source": "Dios de Dios,"
+      }
+    ]
+  },
+  {
+    "name": "Apocalipsis 10 - SATB y Barítono - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\04\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\04\\reference.pdf",
+    "batch": 4,
+    "candidates": [
+      {
+        "role": 0,
+        "bar": 104,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "gel",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "des",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Án gel con po der des dió del",
+        "source": "Án que con po der cen dió del gel des"
+      },
+      {
+        "role": 0,
+        "bar": 104,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "gel",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "des",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Án gel con po der des dió del",
+        "source": "Án que con po der cen dió del gel des"
+      },
+      {
+        "role": 0,
+        "bar": 104,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "gel",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "des",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Án gel con po der des dió del",
+        "source": "Án que con po der cen dió del gel des"
+      },
+      {
+        "role": 0,
+        "bar": 104,
+        "donor": 4,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "gel",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "des",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Án gel con po der des dió del",
+        "source": "Án que con po der cen dió del gel des"
+      },
+      {
+        "role": 1,
+        "bar": 111,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "pós",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "¡Es A pós"
+      },
+      {
+        "role": 2,
+        "bar": 59,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "voz,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "voz,",
+        "source": "nues tra voz,"
+      },
+      {
+        "role": 2,
+        "bar": 59,
+        "donor": 4,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "voz,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "voz,",
+        "source": "nues tra voz,"
+      },
+      {
+        "role": 4,
+        "bar": 111,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "pós",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "pós",
+        "source": "¡Es A pós"
+      }
+    ]
+  },
+  {
+    "name": "En su Corazón - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\05\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\05\\reference.pdf",
+    "batch": 5,
+    "candidates": []
+  },
+  {
+    "name": "Firmes y Adelante - SATB desarrollado - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\06\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\06\\reference.pdf",
+    "batch": 6,
+    "candidates": [
+      {
+        "role": 3,
+        "bar": 17,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 19,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 27,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      },
+      {
+        "role": 3,
+        "bar": 53,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 55,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      },
+      {
+        "role": 3,
+        "bar": 61,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 63,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      },
+      {
+        "role": 3,
+        "bar": 89,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 91,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      },
+      {
+        "role": 3,
+        "bar": 97,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 99,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      },
+      {
+        "role": 3,
+        "bar": 125,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 127,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      },
+      {
+        "role": 3,
+        "bar": 133,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "mes",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "fir mes",
+        "source": "fir mes y_a de"
+      },
+      {
+        "role": 3,
+        "bar": 135,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "tes",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "hues tes de",
+        "source": "hues tes de la"
+      }
+    ]
+  },
+  {
+    "name": "Glory Unto Jesus Christ - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\07\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\07\\reference.pdf",
+    "batch": 7,
+    "candidates": [
+      {
+        "role": 0,
+        "bar": 101,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "name",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "let his",
+        "source": "King, let his name"
+      },
+      {
+        "role": 0,
+        "bar": 101,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "his",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "let his",
+        "source": "nor, let his"
+      },
+      {
+        "role": 1,
+        "bar": 85,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "to",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Praise Je sus Christ the",
+        "source": "ry to Je sus Christ the"
+      },
+      {
+        "role": 1,
+        "bar": 87,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/2",
+            "text": "our",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "vior Lord",
+        "source": "Christ, our Sa vior"
+      },
+      {
+        "role": 1,
+        "bar": 88,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "who",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "who suf fered and",
+        "source": "Lord who suf fered and"
+      },
+      {
+        "role": 1,
+        "bar": 102,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "be",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "be praised! Glor ry to",
+        "source": "name be praised! Glo ry to"
+      },
+      {
+        "role": 1,
+        "bar": 102,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "be",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "be praised! Glor ry to",
+        "source": "name be praised! Glo ry to"
+      },
+      {
+        "role": 1,
+        "bar": 102,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "be",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "be praised! Glor ry to",
+        "source": "name be praised! Glo ry to"
+      },
+      {
+        "role": 2,
+        "bar": 160,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "on",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "fill our souls.",
+        "source": "name on high"
+      },
+      {
+        "role": 2,
+        "bar": 160,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "on",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "fill our souls.",
+        "source": "name on high"
+      },
+      {
+        "role": 3,
+        "bar": 83,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "is",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "of kings, my",
+        "source": "ry, Je sus Christ is"
+      },
+      {
+        "role": 3,
+        "bar": 84,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "of",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "my",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Sa vior Lord,",
+        "source": "King of kings, my Lord,"
+      },
+      {
+        "role": 3,
+        "bar": 160,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "on",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "fill our souls.",
+        "source": "name on high"
+      },
+      {
+        "role": 3,
+        "bar": 160,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "on",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "fill our souls.",
+        "source": "name on high"
+      }
+    ]
+  },
+  {
+    "name": "Guerrero Celestial - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\08\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\08\\reference.pdf",
+    "batch": 8,
+    "candidates": [
+      {
+        "role": 0,
+        "bar": 22,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "ción",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ción",
+        "source": "ción de sal va ción"
+      },
+      {
+        "role": 0,
+        "bar": 27,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "los",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cie los res ca tan do",
+        "source": "cie los res ca tan do las"
+      },
+      {
+        "role": 0,
+        "bar": 27,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "los",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cie los res ca tan do",
+        "source": "cie los res ca tan do"
+      },
+      {
+        "role": 0,
+        "bar": 27,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "los",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cie los res ca tan do",
+        "source": "cie los res ca tan do las"
+      },
+      {
+        "role": 1,
+        "bar": 35,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "se",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "pue blo se ve",
+        "source": "pue blo se ve"
+      },
+      {
+        "role": 1,
+        "bar": 35,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "se",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "pue blo se ve",
+        "source": "pue blo se ve"
+      },
+      {
+        "role": 1,
+        "bar": 73,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "7/4",
+            "text": "Se",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ñor so lo",
+        "source": "ñor del Se ñor So lo"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "te",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ter na y per dón",
+        "source": "a la gen te"
+      },
+      {
+        "role": 2,
+        "bar": 77,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "llón",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Dios",
+        "source": "tán del ba ta llón"
+      },
+      {
+        "role": 3,
+        "bar": 34,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "3/2",
+            "text": "do",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mun do to do‿el mun do‿el",
+        "source": "en to do‿el mun do por do quie ra su"
+      },
+      {
+        "role": 3,
+        "bar": 34,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3/2",
+            "text": "do‿el",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mun do to do‿el mun do‿el",
+        "source": "en to do‿el mun do su"
+      },
+      {
+        "role": 3,
+        "bar": 34,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "3/2",
+            "text": "do‿el",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mun do to do‿el mun do‿el",
+        "source": "en to do‿el mun do su"
+      },
+      {
+        "role": 3,
+        "bar": 74,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "es",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "el es muy va",
+        "source": "El es nues tro"
+      }
+    ]
+  },
+  {
+    "name": "Jehová es mi Pastor - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\09\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\09\\reference.pdf",
+    "batch": 9,
+    "candidates": []
+  },
+  {
+    "name": "La Restauración - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\10\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\10\\reference.pdf",
+    "batch": 10,
+    "candidates": [
+      {
+        "role": 0,
+        "bar": 79,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "po",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "nen",
+        "source": "Im po"
+      },
+      {
+        "role": 0,
+        "bar": 99,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "lo",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "nom bre y se",
+        "source": "fue lo que_el Se ñor le di jo"
+      },
+      {
+        "role": 0,
+        "bar": 100,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "se",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "rás de ben di",
+        "source": "y se rás de gran de ben di"
+      },
+      {
+        "role": 0,
+        "bar": 107,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "ta",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "e le gi do, fue",
+        "source": "e ta rá_al fren te del pue blo le gi do, fue"
+      },
+      {
+        "role": 1,
+        "bar": 83,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "mo",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "jer ci",
+        "source": "te mo e"
+      },
+      {
+        "role": 1,
+        "bar": 88,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "de",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "gi da de",
+        "source": "gi da de"
+      },
+      {
+        "role": 1,
+        "bar": 107,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "ta",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "e le gi do, fue",
+        "source": "e ta rá_al fren te del pue blo le gi do, fue"
+      },
+      {
+        "role": 2,
+        "bar": 107,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "ta",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "e le gi do, fue",
+        "source": "e ta rá_al fren te del pue blo le gi do, fue"
+      },
+      {
+        "role": 2,
+        "bar": 153,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "A"
+      },
+      {
+        "role": 2,
+        "bar": 153,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "A"
+      },
+      {
+        "role": 3,
+        "bar": 77,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "dor.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "dor.",
+        "source": "dor."
+      },
+      {
+        "role": 3,
+        "bar": 77,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "dor.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "dor.",
+        "source": "dor."
+      },
+      {
+        "role": 3,
+        "bar": 81,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Tú,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Tú,",
+        "source": "Tú,"
+      },
+      {
+        "role": 3,
+        "bar": 81,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Tú,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Tú,",
+        "source": "Tú,"
+      },
+      {
+        "role": 3,
+        "bar": 81,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Tú,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Tú,",
+        "source": "Tú,"
+      },
+      {
+        "role": 3,
+        "bar": 83,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "te",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "te mo e",
+        "source": "te"
+      },
+      {
+        "role": 3,
+        "bar": 83,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "te",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "te mo e",
+        "source": "te"
+      },
+      {
+        "role": 3,
+        "bar": 84,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "mi",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mi ci to_os mi",
+        "source": "mi"
+      },
+      {
+        "role": 3,
+        "bar": 84,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "mi",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mi ci to_os mi",
+        "source": "mi"
+      },
+      {
+        "role": 3,
+        "bar": 90,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "quien",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "te",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "her mo mo",
+        "source": "quien te"
+      },
+      {
+        "role": 3,
+        "bar": 90,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "her",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "mo",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "her mo mo",
+        "source": "her mo"
+      },
+      {
+        "role": 3,
+        "bar": 90,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "her",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "mo",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "her mo mo",
+        "source": "her mo"
+      },
+      {
+        "role": 3,
+        "bar": 106,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Naa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/4",
+            "text": "són",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Joa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Naa són són Joa mi_e le gi do_el quín es mi",
+        "source": "Naa són Joa quín es mi"
+      },
+      {
+        "role": 3,
+        "bar": 106,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Naa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/4",
+            "text": "són",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Joa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Naa són són Joa mi_e le gi do_el quín es mi",
+        "source": "Naa són Joa quín es mi"
+      },
+      {
+        "role": 3,
+        "bar": 106,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Naa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/4",
+            "text": "són",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Joa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Naa són són Joa mi_e le gi do_el quín es mi",
+        "source": "Naa són Joa quín es mi"
+      },
+      {
+        "role": 3,
+        "bar": 107,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "e",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "e ta rá_al fren te del pue blo le gi do, fue",
+        "source": "e le gi do, fue"
+      },
+      {
+        "role": 3,
+        "bar": 107,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "e",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "e ta rá_al fren te del pue blo le gi do, fue",
+        "source": "e le gi do, fue"
+      },
+      {
+        "role": 3,
+        "bar": 107,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "e",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "e ta rá_al fren te del pue blo le gi do, fue",
+        "source": "e le gi do, fue"
+      }
+    ]
+  },
+  {
+    "name": "Para Siempre Es Su Misericordia - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\11\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\11\\reference.pdf",
+    "batch": 11,
+    "candidates": [
+      {
+        "role": 1,
+        "bar": 11,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 1,
+        "bar": 11,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia su mi"
+      },
+      {
+        "role": 1,
+        "bar": 12,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 1,
+        "bar": 15,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 1,
+        "bar": 16,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 1,
+        "bar": 28,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 1,
+        "bar": 28,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia su mi"
+      },
+      {
+        "role": 1,
+        "bar": 29,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 1,
+        "bar": 32,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 1,
+        "bar": 33,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 1,
+        "bar": 45,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 1,
+        "bar": 45,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia su mi"
+      },
+      {
+        "role": 1,
+        "bar": 46,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 1,
+        "bar": 49,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia, su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 1,
+        "bar": 50,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 2,
+        "bar": 12,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 2,
+        "bar": 15,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 2,
+        "bar": 16,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 2,
+        "bar": 29,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 2,
+        "bar": 32,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 2,
+        "bar": 33,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 2,
+        "bar": 46,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      },
+      {
+        "role": 2,
+        "bar": 49,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "cor dia su mi",
+        "source": "cor _ dia, su mi"
+      },
+      {
+        "role": 2,
+        "bar": 50,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "_",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "se ri cor dia",
+        "source": "se ri cor _ dia"
+      }
+    ]
+  },
+  {
+    "name": "Restauración - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\12\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\12\\reference.pdf",
+    "batch": 12,
+    "candidates": [
+      {
+        "role": 0,
+        "bar": 79,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "po",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "nen",
+        "source": "Im po"
+      },
+      {
+        "role": 0,
+        "bar": 99,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "lo",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "nom bre y se",
+        "source": "fue lo que_el Se ñor le di jo"
+      },
+      {
+        "role": 0,
+        "bar": 100,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "se",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "rás de ben di",
+        "source": "y se rás de gran de ben di"
+      },
+      {
+        "role": 0,
+        "bar": 107,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "ta",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "e le gi do, fue",
+        "source": "e ta rá_al fren te del pue blo le gi do, fue"
+      },
+      {
+        "role": 1,
+        "bar": 83,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "mo",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "jer ci",
+        "source": "te mo e"
+      },
+      {
+        "role": 1,
+        "bar": 88,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "de",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "gi da de",
+        "source": "gi da de"
+      },
+      {
+        "role": 1,
+        "bar": 107,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "ta",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "e le gi do, fue",
+        "source": "e ta rá_al fren te del pue blo le gi do, fue"
+      },
+      {
+        "role": 2,
+        "bar": 107,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "3/4",
+            "text": "ta",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "e le gi do, fue",
+        "source": "e ta rá_al fren te del pue blo le gi do, fue"
+      },
+      {
+        "role": 2,
+        "bar": 153,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "A"
+      },
+      {
+        "role": 2,
+        "bar": 153,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "A"
+      },
+      {
+        "role": 3,
+        "bar": 77,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "dor.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "dor.",
+        "source": "dor."
+      },
+      {
+        "role": 3,
+        "bar": 77,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "dor.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "dor.",
+        "source": "dor."
+      },
+      {
+        "role": 3,
+        "bar": 81,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Tú,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Tú,",
+        "source": "Tú,"
+      },
+      {
+        "role": 3,
+        "bar": 81,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Tú,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Tú,",
+        "source": "Tú,"
+      },
+      {
+        "role": 3,
+        "bar": 81,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Tú,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Tú,",
+        "source": "Tú,"
+      },
+      {
+        "role": 3,
+        "bar": 83,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "te",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "te mo e",
+        "source": "te"
+      },
+      {
+        "role": 3,
+        "bar": 83,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "te",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "te mo e",
+        "source": "te"
+      },
+      {
+        "role": 3,
+        "bar": 84,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "mi",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mi ci to_os mi",
+        "source": "mi"
+      },
+      {
+        "role": 3,
+        "bar": 84,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "mi",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "mi ci to_os mi",
+        "source": "mi"
+      },
+      {
+        "role": 3,
+        "bar": 90,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "quien",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "te",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "her mo mo",
+        "source": "quien te"
+      },
+      {
+        "role": 3,
+        "bar": 90,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "her",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "mo",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "her mo mo",
+        "source": "her mo"
+      },
+      {
+        "role": 3,
+        "bar": 90,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "her",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "mo",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "her mo mo",
+        "source": "her mo"
+      },
+      {
+        "role": 3,
+        "bar": 106,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Naa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/4",
+            "text": "són",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Joa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Naa són són Joa mi_e le gi do_el quín es mi",
+        "source": "Naa són Joa quín es mi"
+      },
+      {
+        "role": 3,
+        "bar": 106,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Naa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/4",
+            "text": "són",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Joa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Naa són són Joa mi_e le gi do_el quín es mi",
+        "source": "Naa són Joa quín es mi"
+      },
+      {
+        "role": 3,
+        "bar": 106,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Naa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/4",
+            "text": "són",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Joa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Naa són són Joa mi_e le gi do_el quín es mi",
+        "source": "Naa són Joa quín es mi"
+      },
+      {
+        "role": 3,
+        "bar": 107,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "e",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "e ta rá_al fren te del pue blo le gi do, fue",
+        "source": "e le gi do, fue"
+      },
+      {
+        "role": 3,
+        "bar": 107,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "e",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "e ta rá_al fren te del pue blo le gi do, fue",
+        "source": "e le gi do, fue"
+      },
+      {
+        "role": 3,
+        "bar": 107,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "e",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "e ta rá_al fren te del pue blo le gi do, fue",
+        "source": "e le gi do, fue"
+      }
+    ]
+  },
+  {
+    "name": "Santo Varón - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\13\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\13\\reference.pdf",
+    "batch": 13,
+    "candidates": []
+  },
+  {
+    "name": "Al Huerto Van a Visitar - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\14\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\14\\reference.pdf",
+    "batch": 14,
+    "candidates": [
+      {
+        "role": 2,
+        "bar": 39,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "(ven",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/4",
+            "text": "ce",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dor)",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "(ven ce dor) ven ce"
+      },
+      {
+        "role": 2,
+        "bar": 40,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "(ven",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/4",
+            "text": "ce",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dor)",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Del se",
+        "source": "(ven ce dor) Del se"
+      },
+      {
+        "role": 2,
+        "bar": 43,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Re",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "su",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/4",
+            "text": "ci",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "tó,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Re su ci tó,"
+      },
+      {
+        "role": 2,
+        "bar": 46,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Je",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "sús.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Y Je",
+        "source": "Je sús."
+      },
+      {
+        "role": 2,
+        "bar": 46,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Je",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "sús.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Y Je",
+        "source": "Je sús."
+      },
+      {
+        "role": 2,
+        "bar": 71,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "a",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ci do la",
+        "source": "ci do a la"
+      },
+      {
+        "role": 2,
+        "bar": 71,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "a",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ci do la",
+        "source": "ci do a la"
+      },
+      {
+        "role": 2,
+        "bar": 73,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "la ba",
+        "source": "ñor A la ba"
+      },
+      {
+        "role": 2,
+        "bar": 73,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "Al",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Se",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ñor",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "la ba",
+        "source": "Al Se ñor A la ba"
+      },
+      {
+        "role": 2,
+        "bar": 79,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "a",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "la",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/2",
+            "text": "ba",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ñor Se ñor a la ba"
+      },
+      {
+        "role": 2,
+        "bar": 80,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "por",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/2",
+            "text": "que",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "re mos",
+        "source": "Sal ve por que"
+      },
+      {
+        "role": 2,
+        "bar": 80,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "por",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/2",
+            "text": "que",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "re mos",
+        "source": "Sal ve por que"
+      },
+      {
+        "role": 3,
+        "bar": 39,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "(ven",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/4",
+            "text": "ce",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dor)",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "(ven ce dor) ven ce"
+      },
+      {
+        "role": 3,
+        "bar": 40,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "(ven",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/4",
+            "text": "ce",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dor)",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Del se",
+        "source": "(ven ce dor) Del se"
+      },
+      {
+        "role": 3,
+        "bar": 46,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Je",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "sús.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Y Je",
+        "source": "Je sús."
+      },
+      {
+        "role": 3,
+        "bar": 46,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Je",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "sús.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Y Je",
+        "source": "Je sús."
+      },
+      {
+        "role": 3,
+        "bar": 71,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "a",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ci do la",
+        "source": "ci do a la"
+      },
+      {
+        "role": 3,
+        "bar": 71,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "2",
+            "text": "a",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "ci do la",
+        "source": "ci do a la"
+      },
+      {
+        "role": 3,
+        "bar": 73,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "la ba",
+        "source": "ñor A la ba"
+      },
+      {
+        "role": 3,
+        "bar": 73,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1",
+            "text": "Al",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Se",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ñor",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "A",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "la ba",
+        "source": "Al Se ñor A la ba"
+      },
+      {
+        "role": 3,
+        "bar": 80,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "por",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/2",
+            "text": "que",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "re mos",
+        "source": "Sal ve por que"
+      },
+      {
+        "role": 3,
+        "bar": 80,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "3",
+            "text": "por",
+            "syllabic": "single"
+          },
+          {
+            "onset": "7/2",
+            "text": "que",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "re mos",
+        "source": "Sal ve por que"
+      }
+    ]
+  },
+  {
+    "name": "El Aliento de mi Ser - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\15\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\15\\reference.pdf",
+    "batch": 15,
+    "candidates": [
+      {
+        "role": 1,
+        "bar": 23,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "11/2",
+            "text": "mi",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "y mi ser se_i lu",
+        "source": "y mi ser se_i lu mi"
+      },
+      {
+        "role": 1,
+        "bar": 23,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "11/2",
+            "text": "que_es",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "y mi ser se_i lu",
+        "source": "vir, Sa ber que_es"
+      },
+      {
+        "role": 1,
+        "bar": 23,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "11/2",
+            "text": "que_es",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "y mi ser se_i lu",
+        "source": "vir, Sa ber que_es"
+      }
+    ]
+  },
+  {
+    "name": "Es Dios - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\16\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\16\\reference.pdf",
+    "batch": 16,
+    "candidates": []
+  },
+  {
+    "name": "Imagínate Tú - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\17\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\17\\reference.pdf",
+    "batch": 17,
+    "candidates": []
+  },
+  {
+    "name": "Imagínate Tú (variante SATB) - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\18\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\18\\reference.pdf",
+    "batch": 18,
+    "candidates": []
+  },
+  {
+    "name": "La Fiesta Universal - SATB desarrollado - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\19\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\19\\reference.pdf",
+    "batch": 19,
+    "candidates": []
+  },
+  {
+    "name": "La Vida Se Va Como El Viento (reducción) - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\20\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\20\\reference.pdf",
+    "batch": 20,
+    "candidates": [
+      {
+        "role": 1,
+        "bar": 18,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 18,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 19,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 19,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 20,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 20,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 21,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 21,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 22,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, La‿I"
+      },
+      {
+        "role": 1,
+        "bar": 22,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, La‿I"
+      },
+      {
+        "role": 1,
+        "bar": 27,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Án",
+            "syllabic": "begin"
+          },
+          {
+            "onset": "11/4",
+            "text": "ge",
+            "syllabic": "middle"
+          },
+          {
+            "onset": "3",
+            "text": "les",
+            "syllabic": "end"
+          },
+          {
+            "onset": "15/4",
+            "text": "ob",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "",
+        "source": "Án ge les ob"
+      },
+      {
+        "role": 1,
+        "bar": 28,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ser",
+            "syllabic": "middle"
+          },
+          {
+            "onset": "2",
+            "text": "van,",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "",
+        "source": "ser van,"
+      },
+      {
+        "role": 1,
+        "bar": 29,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "sal",
+            "syllabic": "begin"
+          },
+          {
+            "onset": "11/4",
+            "text": "vos",
+            "syllabic": "end"
+          },
+          {
+            "onset": "3",
+            "text": "can",
+            "syllabic": "begin"
+          },
+          {
+            "onset": "15/4",
+            "text": "ta",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "",
+        "source": "sal vos can ta"
+      },
+      {
+        "role": 1,
+        "bar": 30,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "rán;",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "",
+        "source": "rán;"
+      },
+      {
+        "role": 1,
+        "bar": 52,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 52,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 53,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 53,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 54,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 54,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 55,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 55,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, ven,"
+      },
+      {
+        "role": 1,
+        "bar": 56,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, La‿I"
+      },
+      {
+        "role": 1,
+        "bar": 56,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "ven,",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "ven,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "ven, ven, ven, La‿I"
+      },
+      {
+        "role": 1,
+        "bar": 61,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Án",
+            "syllabic": "begin"
+          },
+          {
+            "onset": "11/4",
+            "text": "ge",
+            "syllabic": "middle"
+          },
+          {
+            "onset": "3",
+            "text": "les",
+            "syllabic": "end"
+          },
+          {
+            "onset": "15/4",
+            "text": "ob",
+            "syllabic": "begin"
+          }
+        ],
+        "existing": "",
+        "source": "Án ge les ob"
+      },
+      {
+        "role": 1,
+        "bar": 62,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "ser",
+            "syllabic": "middle"
+          },
+          {
+            "onset": "2",
+            "text": "van,",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "",
+        "source": "ser van,"
+      },
+      {
+        "role": 1,
+        "bar": 63,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "sal",
+            "syllabic": "begin"
+          },
+          {
+            "onset": "11/4",
+            "text": "vos",
+            "syllabic": "end"
+          },
+          {
+            "onset": "3",
+            "text": "can",
+            "syllabic": "begin"
+          },
+          {
+            "onset": "15/4",
+            "text": "ta",
+            "syllabic": "middle"
+          }
+        ],
+        "existing": "",
+        "source": "sal vos can ta"
+      },
+      {
+        "role": 1,
+        "bar": 64,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "rán;",
+            "syllabic": "end"
+          }
+        ],
+        "existing": "",
+        "source": "rán;"
+      }
+    ]
+  },
+  {
+    "name": "Mi Padre en la Fe - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\21\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\21\\reference.pdf",
+    "batch": 21,
+    "candidates": [
+      {
+        "role": 1,
+        "bar": 18,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Mi",
+        "source": "fe,"
+      },
+      {
+        "role": 1,
+        "bar": 18,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Mi",
+        "source": "fe,"
+      },
+      {
+        "role": 1,
+        "bar": 20,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "Sa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "es Sa",
+        "source": "Que se lla ma Sa"
+      },
+      {
+        "role": 1,
+        "bar": 26,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Mi",
+        "source": "fe,"
+      },
+      {
+        "role": 1,
+        "bar": 26,
+        "donor": 3,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Mi",
+        "source": "fe,"
+      },
+      {
+        "role": 1,
+        "bar": 28,
+        "donor": 2,
+        "missing": [
+          {
+            "onset": "5/2",
+            "text": "Sa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "es Sa",
+        "source": "Que se lla ma Sa"
+      },
+      {
+        "role": 2,
+        "bar": 1,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Del",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "A",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pós",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "tol",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "de",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Del A pós tol de"
+      },
+      {
+        "role": 2,
+        "bar": 1,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Del",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "A",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pós",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "tol",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "de",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Del A pós tol de"
+      },
+      {
+        "role": 2,
+        "bar": 2,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Dios,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Yo les",
+        "source": "Dios,"
+      },
+      {
+        "role": 2,
+        "bar": 2,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Dios,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Yo les",
+        "source": "Dios,"
+      },
+      {
+        "role": 2,
+        "bar": 9,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Y",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "no",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pue",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "do",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "ca",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Y no pue do ca"
+      },
+      {
+        "role": 2,
+        "bar": 9,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Y",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "no",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pue",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "do",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "ca",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Y no pue do ca"
+      },
+      {
+        "role": 2,
+        "bar": 10,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "llar,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Es te_her",
+        "source": "llar,"
+      },
+      {
+        "role": 2,
+        "bar": 10,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "llar,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Es te_her",
+        "source": "llar,"
+      },
+      {
+        "role": 2,
+        "bar": 23,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre_en la"
+      },
+      {
+        "role": 2,
+        "bar": 23,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre_en la"
+      },
+      {
+        "role": 2,
+        "bar": 24,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "fe."
+      },
+      {
+        "role": 2,
+        "bar": 24,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "fe."
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Ten",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "go_un",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "11/4",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ten go_un Pa dre_en la"
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Ten",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "go_un",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "11/4",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ten go_un Pa dre_en la"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "Sa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre Sa"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "Sa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre Sa"
+      },
+      {
+        "role": 2,
+        "bar": 32,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "muel.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "muel."
+      },
+      {
+        "role": 2,
+        "bar": 32,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "muel.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "muel."
+      },
+      {
+        "role": 3,
+        "bar": 1,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Del",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "A",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pós",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "tol",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "de",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Del A pós tol de"
+      },
+      {
+        "role": 3,
+        "bar": 1,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Del",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "A",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pós",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "tol",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "de",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Del A pós tol de"
+      },
+      {
+        "role": 3,
+        "bar": 2,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Dios,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Yo les",
+        "source": "Dios,"
+      },
+      {
+        "role": 3,
+        "bar": 2,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "Dios,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Yo les",
+        "source": "Dios,"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Y",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "no",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pue",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "do",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "ca",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Y no pue do ca"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Y",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "no",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "pue",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "do",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "ca",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Y no pue do ca"
+      },
+      {
+        "role": 3,
+        "bar": 10,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "llar,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Es te_her",
+        "source": "llar,"
+      },
+      {
+        "role": 3,
+        "bar": 10,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "llar,",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "Es te_her",
+        "source": "llar,"
+      },
+      {
+        "role": 3,
+        "bar": 23,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre_en la"
+      },
+      {
+        "role": 3,
+        "bar": 23,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre_en la"
+      },
+      {
+        "role": 3,
+        "bar": 24,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "fe."
+      },
+      {
+        "role": 3,
+        "bar": 24,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "fe.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "fe."
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Ten",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "go_un",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "11/4",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ten go_un Pa dre_en la"
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Ten",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "go_un",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "dre_en",
+            "syllabic": "single"
+          },
+          {
+            "onset": "11/4",
+            "text": "la",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Ten go_un Pa dre_en la"
+      },
+      {
+        "role": 3,
+        "bar": 31,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "Sa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre Sa"
+      },
+      {
+        "role": 3,
+        "bar": 31,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "1/2",
+            "text": "Es",
+            "syllabic": "single"
+          },
+          {
+            "onset": "1",
+            "text": "mi",
+            "syllabic": "single"
+          },
+          {
+            "onset": "3/2",
+            "text": "Pa",
+            "syllabic": "single"
+          },
+          {
+            "onset": "2",
+            "text": "dre",
+            "syllabic": "single"
+          },
+          {
+            "onset": "5/2",
+            "text": "Sa",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "Es mi Pa dre Sa"
+      },
+      {
+        "role": 3,
+        "bar": 32,
+        "donor": 0,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "muel.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "muel."
+      },
+      {
+        "role": 3,
+        "bar": 32,
+        "donor": 1,
+        "missing": [
+          {
+            "onset": "0",
+            "text": "muel.",
+            "syllabic": "single"
+          }
+        ],
+        "existing": "",
+        "source": "muel."
+      }
+    ]
+  },
+  {
+    "name": "Nardo, Justicia y Gloria - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\22\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\22\\reference.pdf",
+    "batch": 22,
+    "candidates": []
+  },
+  {
+    "name": "Alabad a Jehová - SATB revisado contra PDF",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Alabad a Jehová - SATB revisado contra PDF.musicxml",
+    "pdf": "output\\verovio_pilot_support\\alabad\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Alabad a Jehová - SATB revisado contra PDF.mscz"
+  },
+  {
+    "name": "Aleluya al Rey - SATB con letra - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Aleluya al Rey - SATB con letra - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\aleluya_al_rey\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Aleluya al Rey - SATB con letra - Cantai.mscz"
+  },
+  {
+    "name": "Apóstol, Padre y Maestro - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Apóstol, Padre y Maestro - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\apostol_padre_maestro\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Apóstol, Padre y Maestro - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "Como la Aurora - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Como la Aurora - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\como_la_aurora\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Como la Aurora - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "Cuando Oí Su Voz - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Cuando Oí Su Voz - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\cuando_oi_su_voz\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Cuando Oí Su Voz - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "Cuán Amables Son Tus Moradas - Oficial - SATB y solista - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Cuán Amables Son Tus Moradas - Oficial - SATB y solista - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\cuan_amables_oficial\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Cuán Amables Son Tus Moradas - Oficial - SATB y solista - Cantai.mscz"
+  },
+  {
+    "name": "Dios Poderoso - SATB con letra",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Dios Poderoso - SATB con letra.musicxml",
+    "pdf": "output\\verovio_pilot_support\\dios_poderoso\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Dios Poderoso - SATB con letra.mscz"
+  },
+  {
+    "name": "El Cántico de los 144 Mil - SATB desarrollado - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\El Cántico de los 144 Mil - SATB desarrollado - Cantai.musicxml",
+    "pdf": "output\\cantico_144_mil\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\El Cántico de los 144 Mil - SATB desarrollado - Cantai.mscz"
+  },
+  {
+    "name": "El Cántico de Moisés - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\El Cántico de Moisés - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\cantico_moises\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\El Cántico de Moisés - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "Elección Apostólica - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Elección Apostólica - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\eleccion_apostolica\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Elección Apostólica - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "Mi Torre Fuerte - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Mi Torre Fuerte - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\mi_torre_fuerte\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Mi Torre Fuerte - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "No Hay Amigo Mejor - SATB desarrollado - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\No Hay Amigo Mejor - SATB desarrollado - Cantai.musicxml",
+    "mscz": "E:\\MusescoreCantai\\No Hay Amigo Mejor - SATB desarrollado - Cantai.mscz"
+  },
+  {
+    "name": "No Hay Amigo Mejor - SATB desarrollado",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\No Hay Amigo Mejor - SATB desarrollado.musicxml",
+    "pdf": "output\\verovio_pilot_support\\no_hay_amigo_mejor\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\No Hay Amigo Mejor - SATB desarrollado.mscz"
+  },
+  {
+    "name": "Recuerda - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Recuerda - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\recuerda\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Recuerda - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "Salmo 150 - SATB con letra",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Salmo 150 - SATB con letra.musicxml",
+    "pdf": "output\\verovio_pilot_support\\salmo150\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Salmo 150 - SATB con letra.mscz"
+  },
+  {
+    "name": "Tú Eres mi Esperanza - SATB extendido - Cantai",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Tú Eres mi Esperanza - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\tu_eres_mi_esperanza\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Tú Eres mi Esperanza - SATB extendido - Cantai.mscz"
+  },
+  {
+    "name": "Valle de los Huesos Secos - SATB con letra",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Valle de los Huesos Secos - SATB con letra.musicxml",
+    "pdf": "output\\verovio_pilot_support\\valle\\original.pdf",
+    "mscz": "E:\\MusescoreCantai\\Valle de los Huesos Secos - SATB con letra.mscz"
+  },
+  {
+    "name": "Valle de los Huesos Secos",
+    "xml": "output\\underlay_revision_2026_10_19\\current_exports\\Valle de los Huesos Secos.musicxml",
+    "mscz": "E:\\MusescoreCantai\\Valle de los Huesos Secos.mscz"
+  }
+]

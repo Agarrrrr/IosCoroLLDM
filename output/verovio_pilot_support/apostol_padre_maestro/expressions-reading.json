@@ -1,0 +1,2322 @@
+{
+  "dynamics": [
+    {
+      "role": 0,
+      "measure": 1,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 2,
+      "onset": 0.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 1,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 1,
+      "onset": 0.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 4,
+      "onset": 0.0,
+      "value": "sfz",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 1,
+      "onset": 0.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 15,
+      "onset": 0.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 17,
+      "onset": 2.0,
+      "value": "fp",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 20,
+      "onset": 2.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 21,
+      "onset": 0.5,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 23,
+      "onset": 2.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 21,
+      "onset": 2.0,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 23,
+      "onset": 2.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 21,
+      "onset": 2.0,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 23,
+      "onset": 1.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 21,
+      "onset": 2.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 34,
+      "onset": 2.5,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 33,
+      "onset": 2.5,
+      "value": "mf",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 34,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 2,
+      "measure": 34,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 3,
+      "measure": 34,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 0,
+      "measure": 43,
+      "onset": 0.0,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 1,
+      "measure": 43,
+      "onset": 0.0,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 2,
+      "measure": 43,
+      "onset": 0.0,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 3,
+      "measure": 43,
+      "onset": 0.0,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 0,
+      "measure": 53,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    },
+    {
+      "role": 1,
+      "measure": 53,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    },
+    {
+      "role": 2,
+      "measure": 53,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    },
+    {
+      "role": 3,
+      "measure": 53,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    },
+    {
+      "role": 0,
+      "measure": 62,
+      "onset": 3.0,
+      "value": "f",
+      "page": 6
+    },
+    {
+      "role": 3,
+      "measure": 62,
+      "onset": 3.0,
+      "value": "f",
+      "page": 6
+    },
+    {
+      "role": 1,
+      "measure": 63,
+      "onset": 0.0,
+      "value": "f",
+      "page": 6
+    },
+    {
+      "role": 2,
+      "measure": 63,
+      "onset": 0.0,
+      "value": "f",
+      "page": 6
+    },
+    {
+      "role": 0,
+      "measure": 69,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 7
+    },
+    {
+      "role": 1,
+      "measure": 69,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 7
+    },
+    {
+      "role": 2,
+      "measure": 69,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 7
+    },
+    {
+      "role": 3,
+      "measure": 69,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 7
+    },
+    {
+      "role": 0,
+      "measure": 71,
+      "onset": 2.0,
+      "value": "sfz",
+      "page": 7
+    },
+    {
+      "role": 0,
+      "measure": 72,
+      "onset": 0.0,
+      "value": "f",
+      "page": 7
+    },
+    {
+      "role": 1,
+      "measure": 71,
+      "onset": 2.0,
+      "value": "sfz",
+      "page": 7
+    },
+    {
+      "role": 1,
+      "measure": 72,
+      "onset": 0.0,
+      "value": "f",
+      "page": 7
+    },
+    {
+      "role": 2,
+      "measure": 71,
+      "onset": 2.0,
+      "value": "sfz",
+      "page": 7
+    },
+    {
+      "role": 2,
+      "measure": 72,
+      "onset": 0.0,
+      "value": "f",
+      "page": 7
+    },
+    {
+      "role": 3,
+      "measure": 72,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 7
+    },
+    {
+      "role": 0,
+      "measure": 73,
+      "onset": 2.0,
+      "value": "sfz",
+      "page": 8
+    },
+    {
+      "role": 0,
+      "measure": 74,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 8
+    },
+    {
+      "role": 0,
+      "measure": 76,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 8
+    },
+    {
+      "role": 1,
+      "measure": 73,
+      "onset": 2.0,
+      "value": "sfz",
+      "page": 8
+    },
+    {
+      "role": 1,
+      "measure": 74,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 8
+    },
+    {
+      "role": 1,
+      "measure": 76,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 8
+    },
+    {
+      "role": 2,
+      "measure": 73,
+      "onset": 2.0,
+      "value": "sfz",
+      "page": 8
+    },
+    {
+      "role": 2,
+      "measure": 73,
+      "onset": 3.0,
+      "value": "mp",
+      "page": 8
+    },
+    {
+      "role": 2,
+      "measure": 76,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 8
+    },
+    {
+      "role": 3,
+      "measure": 76,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 8
+    },
+    {
+      "role": 0,
+      "measure": 78,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 8
+    },
+    {
+      "role": 1,
+      "measure": 79,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 8
+    },
+    {
+      "role": 2,
+      "measure": 79,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 8
+    },
+    {
+      "role": 3,
+      "measure": 79,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 8
+    },
+    {
+      "role": 0,
+      "measure": 80,
+      "onset": 0.0,
+      "value": "f",
+      "page": 8
+    },
+    {
+      "role": 1,
+      "measure": 80,
+      "onset": 0.0,
+      "value": "f",
+      "page": 8
+    },
+    {
+      "role": 2,
+      "measure": 80,
+      "onset": 0.0,
+      "value": "f",
+      "page": 8
+    },
+    {
+      "role": 3,
+      "measure": 80,
+      "onset": 0.0,
+      "value": "f",
+      "page": 8
+    },
+    {
+      "role": 0,
+      "measure": 84,
+      "onset": 0.0,
+      "value": "p",
+      "page": 9
+    },
+    {
+      "role": 0,
+      "measure": 85,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 9
+    },
+    {
+      "role": 1,
+      "measure": 84,
+      "onset": 0.0,
+      "value": "p",
+      "page": 9
+    },
+    {
+      "role": 1,
+      "measure": 85,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 9
+    },
+    {
+      "role": 2,
+      "measure": 84,
+      "onset": 0.0,
+      "value": "p",
+      "page": 9
+    },
+    {
+      "role": 2,
+      "measure": 85,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 9
+    },
+    {
+      "role": 3,
+      "measure": 84,
+      "onset": 0.0,
+      "value": "p",
+      "page": 9
+    },
+    {
+      "role": 3,
+      "measure": 85,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 9
+    },
+    {
+      "role": 0,
+      "measure": 86,
+      "onset": 3.75,
+      "value": "fff",
+      "page": 9
+    },
+    {
+      "role": 1,
+      "measure": 86,
+      "onset": 3.75,
+      "value": "fff",
+      "page": 9
+    },
+    {
+      "role": 2,
+      "measure": 86,
+      "onset": 3.75,
+      "value": "fff",
+      "page": 9
+    },
+    {
+      "role": 3,
+      "measure": 86,
+      "onset": 3.75,
+      "value": "fff",
+      "page": 9
+    }
+  ],
+  "arcs": [
+    {
+      "start": "apostol-0-21-3.00000-64",
+      "end": "apostol-0-22-0.00000-64",
+      "role": 0,
+      "measure": 21,
+      "onset": 3.0,
+      "toMeasure": 22,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-1-21-2.00000-59",
+      "end": "apostol-1-22-0.00000-59",
+      "role": 1,
+      "measure": 21,
+      "onset": 2.0,
+      "toMeasure": 22,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-1-22-2.00000-60",
+      "end": "apostol-1-23-0.00000-60",
+      "role": 1,
+      "measure": 22,
+      "onset": 2.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679951999311
+    },
+    {
+      "start": "apostol-1-23-2.00000-59",
+      "end": "apostol-1-24-0.00000-59",
+      "role": 1,
+      "measure": 23,
+      "onset": 2.0,
+      "toMeasure": 24,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-2-21-2.00000-55",
+      "end": "apostol-2-22-0.00000-55",
+      "role": 2,
+      "measure": 21,
+      "onset": 2.0,
+      "toMeasure": 22,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-2-22-2.00000-57",
+      "end": "apostol-2-23-0.00000-57",
+      "role": 2,
+      "measure": 22,
+      "onset": 2.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679951999311
+    },
+    {
+      "start": "apostol-2-23-2.00000-55",
+      "end": "apostol-2-24-0.00000-55",
+      "role": 2,
+      "measure": 23,
+      "onset": 2.0,
+      "toMeasure": 24,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-3-21-2.00000-52",
+      "end": "apostol-3-22-0.00000-52",
+      "role": 3,
+      "measure": 21,
+      "onset": 2.0,
+      "toMeasure": 22,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-3-22-0.00000-52",
+      "end": "apostol-3-22-2.00000-52",
+      "role": 3,
+      "measure": 22,
+      "onset": 0.0,
+      "toMeasure": 22,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "apostol-3-22-2.00000-52",
+      "end": "apostol-3-23-0.00000-52",
+      "role": 3,
+      "measure": 22,
+      "onset": 2.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "apostol-3-23-0.00000-52",
+      "end": "apostol-3-23-2.00000-52",
+      "role": 3,
+      "measure": 23,
+      "onset": 0.0,
+      "toMeasure": 23,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952001585
+    },
+    {
+      "start": "apostol-3-23-2.00000-52",
+      "end": "apostol-3-24-0.00000-52",
+      "role": 3,
+      "measure": 23,
+      "onset": 2.0,
+      "toMeasure": 24,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-0-1-3.00000-64",
+      "end": "apostol-0-2-1.00000-64",
+      "role": 0,
+      "measure": 1,
+      "onset": 3.0,
+      "toMeasure": 2,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 4.960373497799907
+    },
+    {
+      "start": "apostol-0-3-3.00000-75",
+      "end": "apostol-0-4-0.00000-71",
+      "role": 0,
+      "measure": 3,
+      "onset": 3.0,
+      "toMeasure": 4,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 6.001112578999937
+    },
+    {
+      "start": "apostol-1-1-3.00000-60",
+      "end": "apostol-1-2-1.00000-60",
+      "role": 1,
+      "measure": 1,
+      "onset": 3.0,
+      "toMeasure": 2,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 4.960373497799964
+    },
+    {
+      "start": "apostol-1-3-3.00000-71",
+      "end": "apostol-1-4-0.00000-67",
+      "role": 1,
+      "measure": 3,
+      "onset": 3.0,
+      "toMeasure": 4,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 5.3810500718000185
+    },
+    {
+      "start": "apostol-2-13-0.00000-55",
+      "end": "apostol-2-13-1.00000-52",
+      "role": 2,
+      "measure": 13,
+      "onset": 0.0,
+      "toMeasure": 13,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.156106195400042
+    },
+    {
+      "start": "apostol-0-27-0.00000-69",
+      "end": "apostol-0-27-2.00000-69",
+      "role": 0,
+      "measure": 27,
+      "onset": 0.0,
+      "toMeasure": 27,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-0-28-0.00000-71",
+      "end": "apostol-0-28-2.00000-71",
+      "role": 0,
+      "measure": 28,
+      "onset": 0.0,
+      "toMeasure": 28,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "apostol-0-30-0.00000-71",
+      "end": "apostol-0-30-2.00000-71",
+      "role": 0,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 30,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000022
+    },
+    {
+      "start": "apostol-0-31-1.00000-66",
+      "end": "apostol-0-31-3.00000-66",
+      "role": 0,
+      "measure": 31,
+      "onset": 1.0,
+      "toMeasure": 31,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-1-30-0.00000-67",
+      "end": "apostol-1-30-2.00000-67",
+      "role": 1,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 30,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952001158
+    },
+    {
+      "start": "apostol-1-31-1.00000-63",
+      "end": "apostol-1-31-3.00000-63",
+      "role": 1,
+      "measure": 31,
+      "onset": 1.0,
+      "toMeasure": 31,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-2-31-3.00000-59",
+      "end": "apostol-2-32-0.00000-59",
+      "role": 2,
+      "measure": 31,
+      "onset": 3.0,
+      "toMeasure": 32,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-3-31-3.00000-47",
+      "end": "apostol-3-32-0.00000-47",
+      "role": 3,
+      "measure": 31,
+      "onset": 3.0,
+      "toMeasure": 32,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-2-32-2.00000-59",
+      "end": "apostol-2-32-3.00000-57",
+      "role": 2,
+      "measure": 32,
+      "onset": 2.0,
+      "toMeasure": 32,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 6.045449869799995
+    },
+    {
+      "start": "apostol-3-32-3.00000-47",
+      "end": "apostol-3-32-3.50000-51",
+      "role": 3,
+      "measure": 32,
+      "onset": 3.0,
+      "toMeasure": 32,
+      "toOnset": 3.5,
+      "kind": "slur",
+      "cost": 7.595551111800091
+    },
+    {
+      "start": "apostol-0-37-0.00000-71",
+      "end": "apostol-0-37-2.00000-71",
+      "role": 0,
+      "measure": 37,
+      "onset": 0.0,
+      "toMeasure": 37,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-0-38-0.00000-69",
+      "end": "apostol-0-38-2.00000-69",
+      "role": 0,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 38,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000874
+    },
+    {
+      "start": "apostol-0-40-1.00000-63",
+      "end": "apostol-0-40-3.00000-63",
+      "role": 0,
+      "measure": 40,
+      "onset": 1.0,
+      "toMeasure": 40,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 9.021114557600129
+    },
+    {
+      "start": "apostol-1-38-0.00000-64",
+      "end": "apostol-1-38-2.00000-64",
+      "role": 1,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 38,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "apostol-1-36-0.00000-66",
+      "end": "apostol-1-37-0.00000-64",
+      "role": 1,
+      "measure": 36,
+      "onset": 0.0,
+      "toMeasure": 37,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 12.943648013699999
+    },
+    {
+      "start": "apostol-2-41-0.00000-59",
+      "end": "apostol-2-41-3.00000-59",
+      "role": 2,
+      "measure": 41,
+      "onset": 0.0,
+      "toMeasure": 41,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679951999595
+    },
+    {
+      "start": "apostol-3-44-0.00000-59",
+      "end": "apostol-3-44-2.00000-59",
+      "role": 3,
+      "measure": 44,
+      "onset": 0.0,
+      "toMeasure": 44,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "apostol-1-48-0.00000-64",
+      "end": "apostol-1-48-2.00000-64",
+      "role": 1,
+      "measure": 48,
+      "onset": 0.0,
+      "toMeasure": 48,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-2-46-3.50000-62",
+      "end": "apostol-2-47-0.00000-59",
+      "role": 2,
+      "measure": 46,
+      "onset": 3.5,
+      "toMeasure": 47,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 5.425409373000008
+    },
+    {
+      "start": "apostol-0-54-0.00000-79",
+      "end": "apostol-0-54-2.00000-79",
+      "role": 0,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999311
+    },
+    {
+      "start": "apostol-1-54-0.00000-71",
+      "end": "apostol-1-54-2.00000-71",
+      "role": 1,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "apostol-2-54-0.00000-62",
+      "end": "apostol-2-54-2.00000-62",
+      "role": 2,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "apostol-3-54-0.00000-55",
+      "end": "apostol-3-54-2.00000-55",
+      "role": 3,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "apostol-0-50-1.50000-71",
+      "end": "apostol-0-50-1.75000-69",
+      "role": 0,
+      "measure": 50,
+      "onset": 1.5,
+      "toMeasure": 50,
+      "toOnset": 1.75,
+      "kind": "slur",
+      "cost": 6.820500490799986
+    },
+    {
+      "start": "apostol-3-50-1.50000-55",
+      "end": "apostol-3-50-1.75000-54",
+      "role": 3,
+      "measure": 50,
+      "onset": 1.5,
+      "toMeasure": 50,
+      "toOnset": 1.75,
+      "kind": "slur",
+      "cost": 6.82050049079993
+    },
+    {
+      "start": "apostol-0-72-0.75000-79",
+      "end": "apostol-0-72-1.50000-79",
+      "role": 0,
+      "measure": 69,
+      "onset": 0.75,
+      "toMeasure": 69,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-1-72-0.75000-71",
+      "end": "apostol-1-72-1.50000-71",
+      "role": 1,
+      "measure": 69,
+      "onset": 0.75,
+      "toMeasure": 69,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-2-72-0.75000-62",
+      "end": "apostol-2-72-1.50000-62",
+      "role": 2,
+      "measure": 69,
+      "onset": 0.75,
+      "toMeasure": 69,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-3-72-0.75000-55",
+      "end": "apostol-3-72-1.50000-55",
+      "role": 3,
+      "measure": 69,
+      "onset": 0.75,
+      "toMeasure": 69,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-1-74-2.00000-66",
+      "end": "apostol-1-74-3.00000-67",
+      "role": 1,
+      "measure": 71,
+      "onset": 2.0,
+      "toMeasure": 71,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 13.674284307500045
+    },
+    {
+      "start": "apostol-2-74-2.00000-63",
+      "end": "apostol-2-74-3.00000-64",
+      "role": 2,
+      "measure": 71,
+      "onset": 2.0,
+      "toMeasure": 71,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 13.68547583740002
+    },
+    {
+      "start": "apostol-0-77-0.00000-71",
+      "end": "apostol-0-78-0.00000-71",
+      "role": 0,
+      "measure": 74,
+      "onset": 0.0,
+      "toMeasure": 75,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.6211805888000583
+    },
+    {
+      "start": "apostol-1-77-0.00000-66",
+      "end": "apostol-1-78-0.00000-66",
+      "role": 1,
+      "measure": 74,
+      "onset": 0.0,
+      "toMeasure": 75,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.6211805888000583
+    },
+    {
+      "start": "apostol-2-77-0.00000-63",
+      "end": "apostol-2-78-0.00000-62",
+      "role": 2,
+      "measure": 74,
+      "onset": 0.0,
+      "toMeasure": 75,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 6.621180588800058,
+      "carriedAccidental": true
+    },
+    {
+      "start": "apostol-1-76-2.00000-66",
+      "end": "apostol-1-76-3.00000-67",
+      "role": 1,
+      "measure": 73,
+      "onset": 2.0,
+      "toMeasure": 73,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 19.87468927550003
+    },
+    {
+      "start": "apostol-2-76-2.00000-63",
+      "end": "apostol-2-76-3.00000-64",
+      "role": 2,
+      "measure": 73,
+      "onset": 2.0,
+      "toMeasure": 73,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 6.045449869799995
+    },
+    {
+      "start": "apostol-0-82-0.00000-66",
+      "end": "apostol-0-82-1.00000-64",
+      "role": 0,
+      "measure": 79,
+      "onset": 0.0,
+      "toMeasure": 79,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.3555141389999505
+    },
+    {
+      "start": "apostol-0-86-0.00000-66",
+      "end": "apostol-0-86-2.00000-66",
+      "role": 0,
+      "measure": 83,
+      "onset": 0.0,
+      "toMeasure": 83,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999595
+    },
+    {
+      "start": "apostol-0-89-0.00000-71",
+      "end": "apostol-0-89-3.00000-71",
+      "role": 0,
+      "measure": 86,
+      "onset": 0.0,
+      "toMeasure": 86,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952000306
+    },
+    {
+      "start": "apostol-0-91-0.00000-71",
+      "end": "apostol-0-91-3.00000-71",
+      "role": 0,
+      "measure": 88,
+      "onset": 0.0,
+      "toMeasure": 88,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "apostol-1-89-0.00000-67",
+      "end": "apostol-1-89-3.00000-67",
+      "role": 1,
+      "measure": 86,
+      "onset": 0.0,
+      "toMeasure": 86,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "apostol-1-91-0.00000-66",
+      "end": "apostol-1-91-3.00000-66",
+      "role": 1,
+      "measure": 88,
+      "onset": 0.0,
+      "toMeasure": 88,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "apostol-2-89-0.00000-64",
+      "end": "apostol-2-89-3.00000-64",
+      "role": 2,
+      "measure": 86,
+      "onset": 0.0,
+      "toMeasure": 86,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "apostol-2-91-0.00000-63",
+      "end": "apostol-2-91-3.00000-63",
+      "role": 2,
+      "measure": 88,
+      "onset": 0.0,
+      "toMeasure": 88,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "apostol-3-89-0.00000-59",
+      "end": "apostol-3-89-3.00000-59",
+      "role": 3,
+      "measure": 86,
+      "onset": 0.0,
+      "toMeasure": 86,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952000306
+    },
+    {
+      "start": "apostol-3-91-0.00000-47",
+      "end": "apostol-3-91-3.00000-47",
+      "role": 3,
+      "measure": 88,
+      "onset": 0.0,
+      "toMeasure": 88,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-0-94-0.00000-76",
+      "end": "apostol-0-95-0.00000-76",
+      "role": 0,
+      "measure": 91,
+      "onset": 0.0,
+      "toMeasure": 92,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.62118058880003
+    },
+    {
+      "start": "apostol-1-94-0.00000-67",
+      "end": "apostol-1-95-0.00000-67",
+      "role": 1,
+      "measure": 91,
+      "onset": 0.0,
+      "toMeasure": 92,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.62118058880003
+    },
+    {
+      "start": "apostol-2-94-0.00000-59",
+      "end": "apostol-2-94-3.00000-59",
+      "role": 2,
+      "measure": 91,
+      "onset": 0.0,
+      "toMeasure": 91,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-3-94-0.00000-52",
+      "end": "apostol-3-94-3.00000-52",
+      "role": 3,
+      "measure": 91,
+      "onset": 0.0,
+      "toMeasure": 91,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "apostol-0-93-0.00000-79",
+      "end": "apostol-0-93-2.00000-78",
+      "role": 0,
+      "measure": 90,
+      "onset": 0.0,
+      "toMeasure": 90,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 8.17143590360007
+    },
+    {
+      "start": "apostol-1-93-0.00000-67",
+      "end": "apostol-1-93-3.00000-69",
+      "role": 1,
+      "measure": 90,
+      "onset": 0.0,
+      "toMeasure": 90,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 14.294335809500012
+    },
+    {
+      "start": "apostol-2-93-0.00000-64",
+      "end": "apostol-2-93-3.75000-63",
+      "role": 2,
+      "measure": 90,
+      "onset": 0.0,
+      "toMeasure": 90,
+      "toOnset": 3.75,
+      "kind": "slur",
+      "cost": 5.580424999800073
+    },
+    {
+      "start": "apostol-3-93-0.00000-48",
+      "end": "apostol-3-93-2.00000-47",
+      "role": 3,
+      "measure": 90,
+      "onset": 0.0,
+      "toMeasure": 90,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 4.650358751999988
+    },
+    {
+      "start": "apostol-0-75-0.00000-71",
+      "end": "apostol-0-76-0.00000-71",
+      "role": 0,
+      "measure": 72,
+      "onset": 0,
+      "toMeasure": 73,
+      "toOnset": 0,
+      "kind": "tie",
+      "manualBoundary": true
+    },
+    {
+      "start": "apostol-1-75-0.00000-67",
+      "end": "apostol-1-76-0.00000-67",
+      "role": 1,
+      "measure": 72,
+      "onset": 0,
+      "toMeasure": 73,
+      "toOnset": 0,
+      "kind": "tie",
+      "manualBoundary": true
+    },
+    {
+      "start": "apostol-2-75-0.00000-64",
+      "end": "apostol-2-76-0.00000-64",
+      "role": 2,
+      "measure": 72,
+      "onset": 0,
+      "toMeasure": 73,
+      "toOnset": 0,
+      "kind": "tie",
+      "manualBoundary": true
+    },
+    {
+      "start": "apostol-3-13-0.00000-55",
+      "end": "apostol-3-13-1.00000-52",
+      "role": 3,
+      "measure": 13,
+      "onset": 0.0,
+      "toMeasure": 13,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.156106195400042
+    }
+  ],
+  "partial": [
+    {
+      "page": 7,
+      "start": [
+        381.4934575548,
+        593.8437858102001
+      ],
+      "end": [
+        550.30547514,
+        593.8437858102001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-0-75-0.00000-71",
+            "cost": 3.93065280159999
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        381.4934575548,
+        593.8437858102001
+      ],
+      "end": [
+        550.30547514,
+        593.8437858102001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-0-75-0.00000-71",
+            "cost": 3.93065280159999
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        381.4934575548,
+        654.4527443724
+      ],
+      "end": [
+        550.30547514,
+        654.4527443724
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-1-75-0.00000-67",
+            "cost": 3.93065280159999
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        381.4934575548,
+        654.4527443724
+      ],
+      "end": [
+        550.30547514,
+        654.4527443724
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-1-75-0.00000-67",
+            "cost": 3.93065280159999
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        381.4934575548,
+        690.8801235594001
+      ],
+      "end": [
+        550.30547514,
+        690.8801235594001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-2-75-0.00000-64",
+            "cost": 3.93065280159999
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        381.4934575548,
+        690.8801235594001
+      ],
+      "end": [
+        550.30547514,
+        690.8801235594001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-2-75-0.00000-64",
+            "cost": 3.93065280159999
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 8,
+      "start": [
+        83.0883759648,
+        102.61670222040004
+      ],
+      "end": [
+        94.559532348,
+        102.61670222040004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-0-76-0.00000-71",
+            "cost": 12.500871576799995
+          }
+        ],
+        [
+          {
+            "id": "apostol-0-76-0.00000-71",
+            "cost": 2.690527787199997
+          }
+        ]
+      ]
+    },
+    {
+      "page": 8,
+      "start": [
+        83.0883759648,
+        102.61670222040004
+      ],
+      "end": [
+        94.559532348,
+        102.61670222040004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-0-76-0.00000-71",
+            "cost": 12.500871576799995
+          }
+        ],
+        [
+          {
+            "id": "apostol-0-76-0.00000-71",
+            "cost": 2.690527787199997
+          }
+        ]
+      ]
+    },
+    {
+      "page": 8,
+      "start": [
+        83.0883759648,
+        163.3806709068
+      ],
+      "end": [
+        94.559532348,
+        163.3806709068
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-1-76-0.00000-67",
+            "cost": 12.500871576799995
+          }
+        ],
+        [
+          {
+            "id": "apostol-1-76-0.00000-67",
+            "cost": 2.690527787199997
+          }
+        ]
+      ]
+    },
+    {
+      "page": 8,
+      "start": [
+        83.0883759648,
+        163.3806709068
+      ],
+      "end": [
+        94.559532348,
+        163.3806709068
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-1-76-0.00000-67",
+            "cost": 12.500871576799995
+          }
+        ],
+        [
+          {
+            "id": "apostol-1-76-0.00000-67",
+            "cost": 2.690527787199997
+          }
+        ]
+      ]
+    },
+    {
+      "page": 8,
+      "start": [
+        83.0883759648,
+        199.963060218
+      ],
+      "end": [
+        94.559532348,
+        199.963060218
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-2-76-0.00000-64",
+            "cost": 12.500871576799995
+          }
+        ],
+        [
+          {
+            "id": "apostol-2-76-0.00000-64",
+            "cost": 2.690527787199997
+          }
+        ]
+      ]
+    },
+    {
+      "page": 8,
+      "start": [
+        83.0883759648,
+        199.963060218
+      ],
+      "end": [
+        94.559532348,
+        199.963060218
+      ],
+      "nearest": [
+        [
+          {
+            "id": "apostol-2-76-0.00000-64",
+            "cost": 12.500871576799995
+          }
+        ],
+        [
+          {
+            "id": "apostol-2-76-0.00000-64",
+            "cost": 2.690527787199997
+          }
+        ]
+      ]
+    }
+  ],
+  "articulations": [
+    {
+      "id": "apostol-2-1-0.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 0.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-1-0.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-1-1.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 1.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-1-1.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-1-2.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 2.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-1-2.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-1-3.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 3.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-1-3.00000-55",
+      "role": 2,
+      "measure": 1,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-0.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 0.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-0.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-1.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 1.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-1.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-2.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 2.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-2.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-3.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 3.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-2-3.00000-60",
+      "role": 2,
+      "measure": 2,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-0.00000-59",
+      "role": 2,
+      "measure": 3,
+      "onset": 0.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-0.00000-59",
+      "role": 2,
+      "measure": 3,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-1.00000-59",
+      "role": 2,
+      "measure": 3,
+      "onset": 1.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-1.00000-59",
+      "role": 2,
+      "measure": 3,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-2.00000-63",
+      "role": 2,
+      "measure": 3,
+      "onset": 2.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-2.00000-63",
+      "role": 2,
+      "measure": 3,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-3.00000-63",
+      "role": 2,
+      "measure": 3,
+      "onset": 3.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-3-3.00000-63",
+      "role": 2,
+      "measure": 3,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-34-0.00000-52",
+      "role": 3,
+      "measure": 34,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-34-1.00000-52",
+      "role": 3,
+      "measure": 34,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-34-2.00000-52",
+      "role": 3,
+      "measure": 34,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-34-3.00000-52",
+      "role": 3,
+      "measure": 34,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-35-0.00000-47",
+      "role": 3,
+      "measure": 35,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-35-1.00000-47",
+      "role": 3,
+      "measure": 35,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-35-2.00000-47",
+      "role": 3,
+      "measure": 35,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-35-3.00000-47",
+      "role": 3,
+      "measure": 35,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-36-0.00000-54",
+      "role": 3,
+      "measure": 36,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-36-1.00000-54",
+      "role": 3,
+      "measure": 36,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-36-2.00000-54",
+      "role": 3,
+      "measure": 36,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-36-3.00000-54",
+      "role": 3,
+      "measure": 36,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-37-0.00000-52",
+      "role": 3,
+      "measure": 37,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-37-1.00000-52",
+      "role": 3,
+      "measure": 37,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-37-2.00000-52",
+      "role": 3,
+      "measure": 37,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-37-3.00000-52",
+      "role": 3,
+      "measure": 37,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-38-0.00000-45",
+      "role": 3,
+      "measure": 38,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-38-1.00000-52",
+      "role": 3,
+      "measure": 38,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-38-2.00000-57",
+      "role": 3,
+      "measure": 38,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-38-3.00000-52",
+      "role": 3,
+      "measure": 38,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-39-1.00000-47",
+      "role": 3,
+      "measure": 39,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-39-2.00000-55",
+      "role": 3,
+      "measure": 39,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-39-3.00000-50",
+      "role": 3,
+      "measure": 39,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-40-0.00000-47",
+      "role": 3,
+      "measure": 40,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-40-1.00000-47",
+      "role": 3,
+      "measure": 40,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-40-2.00000-47",
+      "role": 3,
+      "measure": 40,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-40-3.00000-47",
+      "role": 3,
+      "measure": 40,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-42-0.00000-52",
+      "role": 3,
+      "measure": 42,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": true
+    },
+    {
+      "id": "apostol-0-42-0.00000-64",
+      "role": 0,
+      "measure": 42,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": false
+    },
+    {
+      "id": "apostol-2-42-0.00000-59",
+      "role": 2,
+      "measure": 42,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-41-0.00000-47",
+      "role": 3,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-41-1.00000-54",
+      "role": 3,
+      "measure": 41,
+      "onset": 1.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-41-2.00000-59",
+      "role": 3,
+      "measure": 41,
+      "onset": 2.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-41-3.00000-47",
+      "role": 3,
+      "measure": 41,
+      "onset": 3.0,
+      "kind": "accent",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-55-0.00000-48",
+      "role": 3,
+      "measure": 55,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": true
+    },
+    {
+      "id": "apostol-0-55-0.00000-72",
+      "role": 0,
+      "measure": 55,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-74-0.00000-48",
+      "role": 3,
+      "measure": 71,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": true
+    },
+    {
+      "id": "apostol-0-74-0.00000-72",
+      "role": 0,
+      "measure": 71,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-75-2.00000-54",
+      "role": 3,
+      "measure": 72,
+      "onset": 2.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-75-2.50000-54",
+      "role": 3,
+      "measure": 72,
+      "onset": 2.5,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-78-0.00000-59",
+      "role": 3,
+      "measure": 75,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": true
+    },
+    {
+      "id": "apostol-0-78-0.00000-71",
+      "role": 0,
+      "measure": 75,
+      "onset": 0.0,
+      "kind": "fermata",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-76-0.00000-55",
+      "role": 3,
+      "measure": 73,
+      "onset": 0.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-76-0.50000-55",
+      "role": 3,
+      "measure": 73,
+      "onset": 0.5,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-76-1.50000-55",
+      "role": 3,
+      "measure": 73,
+      "onset": 1.5,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-76-2.00000-57",
+      "role": 3,
+      "measure": 73,
+      "onset": 2.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-76-2.50000-57",
+      "role": 3,
+      "measure": 73,
+      "onset": 2.5,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-76-3.50000-54",
+      "role": 3,
+      "measure": 73,
+      "onset": 3.5,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-77-0.00000-59",
+      "role": 3,
+      "measure": 74,
+      "onset": 0.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-77-1.00000-60",
+      "role": 3,
+      "measure": 74,
+      "onset": 1.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-77-2.00000-59",
+      "role": 3,
+      "measure": 74,
+      "onset": 2.0,
+      "kind": "staccato",
+      "inverted": false
+    },
+    {
+      "id": "apostol-3-77-3.00000-60",
+      "role": 3,
+      "measure": 74,
+      "onset": 3.0,
+      "kind": "staccato",
+      "inverted": false
+    }
+  ],
+  "wedges": [
+    {
+      "role": 0,
+      "measure": 1,
+      "onset": 0.0,
+      "toMeasure": 2,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 3,
+      "onset": 3.0,
+      "toMeasure": 4,
+      "toOnset": 0.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 0,
+      "measure": 15,
+      "onset": 0.5,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 18,
+      "onset": 0.0,
+      "toMeasure": 20,
+      "toOnset": 2.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 1,
+      "measure": 21,
+      "onset": 2.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 2,
+      "measure": 21,
+      "onset": 2.0,
+      "toMeasure": 23,
+      "toOnset": 1.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 3,
+      "measure": 23,
+      "onset": 0.0,
+      "toMeasure": 24,
+      "toOnset": 0.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 0,
+      "measure": 32,
+      "onset": 0,
+      "toMeasure": 33,
+      "toOnset": 2,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 1,
+      "measure": 32,
+      "onset": 0,
+      "toMeasure": 33,
+      "toOnset": 2,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 2,
+      "measure": 32,
+      "onset": 0,
+      "toMeasure": 33,
+      "toOnset": 2,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 3,
+      "measure": 32,
+      "onset": 0,
+      "toMeasure": 33,
+      "toOnset": 2,
+      "kind": "diminuendo"
+    }
+  ]
+}

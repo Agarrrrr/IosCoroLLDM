@@ -1,0 +1,57 @@
+[
+  {
+    "key": "acercame",
+    "title": "Acércame a Ti",
+    "layout": "closed",
+    "layoutLabel": "Cerrado · 2",
+    "measures": 28,
+    "verses": 3,
+    "notes": 405,
+    "events": 1171,
+    "slursAddedFromBundledPdf": 10,
+    "duration": 205.33204711041665,
+    "lyrics": "Tres estrofas y coro transcritos del PDF de la app; letra compartida y respuestas distintas."
+  },
+  {
+    "key": "al-gran-senor",
+    "title": "Al Gran Señor",
+    "layout": "open",
+    "layoutLabel": "Abierto · 4",
+    "measures": 91,
+    "verses": 1,
+    "notes": 1746,
+    "events": 1746,
+    "nativeNotes": [
+      431,
+      453,
+      438,
+      420
+    ],
+    "warnings": [
+      {
+        "role": 2,
+        "measure": 73,
+        "written": 65,
+        "midi": 67
+      }
+    ],
+    "duration": 245.33206711041666,
+    "lyrics": "Texto y notación del editable propio completo. Disposición abierta bloqueada."
+  },
+  {
+    "key": "app-sample",
+    "title": "Ven a la Cena",
+    "layout": "mixed",
+    "layoutLabel": "Original · 2/3",
+    "measures": 16,
+    "verses": 4,
+    "notes": 284,
+    "events": 284,
+    "duration": 41.99863211041667,
+    "lyrics": "Cuatro estrofas y coro transcritos del PDF empaquetado; MIDI empaquetado sin eventos de letra. Audio: una vuelta.",
+    "catalogId": "ccc7dcfd-adf1-4ee8-b538-57a3f8bf9788",
+    "pdfSha256": "ccccca1b35a5ef8e2460f1160e3ff80f579cffedafc46cb80b94a6450af32aec",
+    "midiSha256": "6d66bf9b7e30f25fec1408a3a9ce648b0b030a5fe1ca7ec6471dc701c4f21940",
+    "notation": "Ritmo y voces del MIDI de la app; ligaduras y letra cotejadas con su PDF. El PDF y el MIDI tienen pequeñas variantes rítmicas, conservadas en los originales."
+  }
+]

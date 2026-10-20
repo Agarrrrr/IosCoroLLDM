@@ -1,0 +1,7 @@
+
+tmp\performance_residual_final_run.log:204:I/flutter (18530): AUDIT END annotations_load_2000 249.336 ms, 15 frames, error=null
+tmp\performance_residual_final_run.log:205:I/flutter (18530): AUDIT START viewer_reopen_heavy
+tmp\performance_residual_final_run.log:213:I/flutter (18530): AUDIT END viewer_reopen_heavy 2513.853 ms, 124 frames, error=null
+tmp\performance_residual_final_run.log:214:I/flutter (18530): AUDIT START viewer_reopen_without_annotations
+tmp\performance_residual_final_run.log:222:I/flutter (18530): AUDIT END viewer_reopen_without_annotations 2519.091 ms, 151 frames, error=null
+

@@ -1,0 +1,29 @@
+{
+  "parts": 4,
+  "measuresPerPart": 73,
+  "notes": 1118,
+  "tripletGroups": 106,
+  "tripletNotes": 318,
+  "hyphenatedSyllables": 944,
+  "ties": 25,
+  "slurs": 31,
+  "playbackTempos": [
+    [
+      0.0,
+      100
+    ],
+    [
+      2.0,
+      112.0
+    ],
+    [
+      288.0,
+      56.0
+    ],
+    [
+      291.99791666666664,
+      112.0
+    ]
+  ],
+  "errors": []
+}

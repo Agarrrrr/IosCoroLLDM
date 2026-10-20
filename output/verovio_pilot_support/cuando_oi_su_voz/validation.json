@@ -1,0 +1,463 @@
+{
+  "originalMeasures": 47,
+  "expandedMeasures": 128,
+  "quarterBeats": 506,
+  "parts": 4,
+  "pages": 12,
+  "checks": [
+    {
+      "file": "Cuando Oí Su Voz - SATB extendido - Cantai.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 2015,
+        "cueNotes": 6,
+        "lyrics": 1707,
+        "ties": 48,
+        "slurstart": 12,
+        "slurstop": 12
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          78.0
+        ]
+      ]
+    },
+    {
+      "file": "render/exported.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 2015,
+        "cueNotes": 6,
+        "lyrics": 1707,
+        "ties": 48,
+        "slurstart": 12,
+        "slurstop": 12
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          78.0
+        ]
+      ]
+    },
+    {
+      "file": "render/reimport.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 2015,
+        "cueNotes": 6,
+        "lyrics": 1707,
+        "ties": 48,
+        "slurstart": 12,
+        "slurstop": 12
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          78.0
+        ]
+      ]
+    }
+  ],
+  "attacks": [
+    515,
+    517,
+    499,
+    430
+  ],
+  "pdfGeometryVerified": true,
+  "nativePlaybackAttacksMatchWrittenTies": true,
+  "cueNotesExcludedFromPlayback": true,
+  "nativeMidiValidated": [
+    "playback",
+    "playback-reimport"
+  ],
+  "referenceOnsetDifferences": [
+    {
+      "kind": "referenceAttack",
+      "role": 0,
+      "beat": 90.5,
+      "pitch": 71
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 125.0,
+      "pitch": 64
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 165.0,
+      "pitch": 62
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 165.33333333333334,
+      "pitch": 62
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 165.66666666666666,
+      "pitch": 62
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 291.0,
+      "pitch": 64
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 331.0,
+      "pitch": 62
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 331.3333333333333,
+      "pitch": 62
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 331.6666666666667,
+      "pitch": 62
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 457.0,
+      "pitch": 64
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 90.5,
+      "pitch": 66
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 125.0,
+      "pitch": 66
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 165.0,
+      "pitch": 64
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 165.33333333333334,
+      "pitch": 64
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 165.66666666666666,
+      "pitch": 64
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 291.0,
+      "pitch": 66
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 331.0,
+      "pitch": 64
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 331.3333333333333,
+      "pitch": 64
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 331.6666666666667,
+      "pitch": 64
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 457.0,
+      "pitch": 66
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 13.5,
+      "pitch": 55
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 13.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 14.0,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 15.0,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 15.5,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 15.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 179.5,
+      "pitch": 55
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 179.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 180.0,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 181.0,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 181.5,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 181.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 199.0,
+      "pitch": 55
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 345.5,
+      "pitch": 55
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 345.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 346.0,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 347.0,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 347.5,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 2,
+      "beat": 347.75,
+      "pitch": 57
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 2,
+      "beat": 90.5,
+      "pitch": 57
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 2,
+      "beat": 256.5,
+      "pitch": 57
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 2,
+      "beat": 422.5,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 13.5,
+      "pitch": 55
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 13.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 14.0,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 15.0,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 15.5,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 15.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 179.5,
+      "pitch": 55
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 179.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 180.0,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 181.0,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 181.5,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 181.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 199.0,
+      "pitch": 52
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 345.5,
+      "pitch": 55
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 345.75,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 346.0,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 347.0,
+      "pitch": 57
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 347.5,
+      "pitch": 59
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 3,
+      "beat": 347.75,
+      "pitch": 57
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 3,
+      "beat": 90.5,
+      "pitch": 50
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 3,
+      "beat": 256.5,
+      "pitch": 50
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 3,
+      "beat": 422.5,
+      "pitch": 50
+    }
+  ],
+  "tempo": 78
+}

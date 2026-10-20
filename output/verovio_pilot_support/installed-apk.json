@@ -1,0 +1,11 @@
+{
+  "apk": "E:\\proyectos\\IosCoroLLDM\\output\\verovio_pilot_support\\Coro-Prueba-Lector-0.1.0.apk",
+  "bytes": 47170834,
+  "sha256": "0aa888228dba2e6e6a428708ffa53f723c11de2be954f7129d8d51169954d286",
+  "sourceFilesUnchanged": true,
+  "wordGapSp": 1,
+  "lyricSize": 3.6,
+  "lyricWordSpace": 2.5,
+  "package": "com.lldm.veroviopilot.coro_lldm",
+  "startupTestsPassed": 3
+}

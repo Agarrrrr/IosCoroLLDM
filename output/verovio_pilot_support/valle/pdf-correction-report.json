@@ -1,0 +1,14 @@
+{
+  "source": "output\\verovio_pilot_support\\valle\\Valle de los Huesos Secos - SATB con letra.musicxml",
+  "output": "output\\verovio_pilot_support\\valle\\Valle de los Huesos Secos - SATB revisado contra PDF.musicxml",
+  "reference": "open digital PDF, not MIDI",
+  "correctedBassMeasures": [
+    14,
+    15
+  ],
+  "bassNotesChecked": 603,
+  "bassMeasuresChecked": 148,
+  "independentPitchChecks": 2451,
+  "bassRhythmMatches": true,
+  "hiddenRestEvidence": "The bass PDF leaves the sixteenth rest unprinted; note columns align with the other staves, whose rest is explicit."
+}

@@ -1,0 +1,18 @@
+I/flutter (14782): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(14782): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(14782): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (14782): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (13 ms)
+I/flutter (14782): AUDIT START heavy_capture_fit
+I/flutter (14782): PdfViewer: Loaded page 9 of 9 in 58 ms
+I/flutter (14782): AUDIT END heavy_capture_fit 5001.705 ms, 286 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_capture_fit
+I/flutter (14782): AUDIT END heavy_capture_capture_fit 759.315 ms, 46 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_zoom_pdf_only
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 58us,142us total 24.924ms
+I/flutter (14782): AUDIT END heavy_capture_zoom_pdf_only 7117.968 ms, 428 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_capture_zoom
+I/flutter (14782): AUDIT END heavy_capture_capture_zoom 747.107 ms, 45 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_return_to_page
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 34us,22us total 13.174ms
+I/flutter (14782): AUDIT END heavy_capture_return_to_page 3002.593 ms, 180 frames, error=null
+I/flutter (14782): AUDIT START heavy_capture_drawing_enabled

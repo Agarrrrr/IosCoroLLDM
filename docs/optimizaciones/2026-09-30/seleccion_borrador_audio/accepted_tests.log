@@ -1,0 +1,9 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart
+00:00 +0: layout resolves a cache miss to an existing physical image
+00:00 +1: reopening reuses only the matching page and releases on pressure
+00:00 +2: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: true))
+00:05 +3: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: false, translucent: false))
+00:10 +4: dense raster history preserves pixels, erasing and fractional offsets ((initialErasers: true, translucent: false))
+00:15 +5: viewport changes reveal the full saved stroke without losing input
+00:15 +6: saved erasing preserves the PDF background and stroke order at zoom
+00:15 +7: All tests passed!

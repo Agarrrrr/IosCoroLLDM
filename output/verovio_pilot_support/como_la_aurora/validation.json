@@ -1,0 +1,94 @@
+{
+  "originalMeasures": 47,
+  "expandedMeasures": 89,
+  "quarterBeats": 320.5,
+  "parts": 4,
+  "pages": 8,
+  "checks": [
+    {
+      "file": "Como la Aurora - SATB extendido - Cantai.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 1532,
+        "cueNotes": 0,
+        "fermatas": 12,
+        "lyrics": 1508,
+        "ties": 24
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          90.0
+        ]
+      ]
+    },
+    {
+      "file": "render/exported.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 1532,
+        "cueNotes": 0,
+        "fermatas": 12,
+        "lyrics": 1508,
+        "ties": 24
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          90.0
+        ]
+      ]
+    },
+    {
+      "file": "render/reimport.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 1532,
+        "cueNotes": 0,
+        "fermatas": 12,
+        "lyrics": 1508,
+        "ties": 24
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          90.0
+        ]
+      ]
+    }
+  ],
+  "attacks": [
+    377,
+    377,
+    377,
+    377
+  ],
+  "pdfGeometryVerified": true,
+  "nativePlaybackAttacksMatchWrittenTies": true,
+  "printedFermataPlaybackVerified": true,
+  "nativeMidiValidated": [
+    "playback",
+    "playback-reimport"
+  ],
+  "referenceOnsetDifferences": [
+    {
+      "kind": "referenceAttack",
+      "role": 2,
+      "beat": 103.5,
+      "pitch": 62
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 2,
+      "beat": 210.0,
+      "pitch": 62
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 2,
+      "beat": 316.5,
+      "pitch": 62
+    }
+  ],
+  "tempo": 90
+}

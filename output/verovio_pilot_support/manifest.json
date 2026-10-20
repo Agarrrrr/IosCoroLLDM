@@ -1,0 +1,42 @@
+[
+  {
+    "key": "acercame",
+    "sourceXml": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Acércame a ti.musicxml",
+    "sourceXmlSha256": "7516a32bbcd642546c5e185e58786f24facd7a87f975914e2e343d3f522a67bb",
+    "sourceMidiSha256": "2a3f6c1611d4d26b03dc1ca8e9d3adc59a7d120bf3225f9f67c66adcb120f514",
+    "measures": 8,
+    "matchedNotes": 90,
+    "layouts": {
+      "closed": {
+        "notes": 90,
+        "lyrics": 88
+      },
+      "open": {
+        "notes": 90,
+        "lyrics": 88
+      }
+    },
+    "lyricsSource": "PDF propio, página 1; transcripción manual de estrofa 1",
+    "status": "piloto: no equivale a revisión musical completa"
+  },
+  {
+    "key": "al-gran-senor",
+    "sourceXml": "C:\\Users\\Huri_\\Downloads\\musescore\\Al Gran Señor (Adoración).musicxml",
+    "sourceXmlSha256": "afb8153d069d31bd12c020ee2d28866590ccf0c7c473d10c9f802bb6ec1ace78",
+    "sourceMidiSha256": "b204559ef27f96de3eacda80214dca5a66748f5ced8bbc58c13e091ce8168b98",
+    "measures": 8,
+    "matchedNotes": 160,
+    "layouts": {
+      "closed": {
+        "notes": 160,
+        "lyrics": 155
+      },
+      "open": {
+        "notes": 160,
+        "lyrics": 155
+      }
+    },
+    "lyricsSource": "MusicXML propio; conserva sílabas originales",
+    "status": "piloto: no equivale a revisión musical completa"
+  }
+]

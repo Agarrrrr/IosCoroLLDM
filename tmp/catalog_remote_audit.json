@@ -1,0 +1,626 @@
+{
+  "checkedRows": 51,
+  "remoteRows": 51,
+  "migrations": [
+    {
+      "oldId": "usmc_e267758cd6c26b7d4a7265bf",
+      "id": "5bcd554d-a357-49a2-97ab-e9d5f2473259",
+      "name": "Adorno en tu Corona"
+    },
+    {
+      "oldId": "usmc_1342f19672712e9373bbaff2",
+      "id": "acd9b129-271f-558c-82a1-7686f0f4019e",
+      "name": "A Jesucristo Rendid"
+    },
+    {
+      "oldId": "usmc_661dd419d6b0cc15aeab118a",
+      "id": "43a441a6-84a6-5781-adf5-0fbaf9868027",
+      "name": "A Los Pies Del Salvador"
+    },
+    {
+      "oldId": "usmc_d7b6eb3d070c7f1e1f796aa6",
+      "id": "25b2d341-6705-51b9-ba9a-2c458c4959b0",
+      "name": "Amor Celestial"
+    },
+    {
+      "oldId": "usmc_64b5edbb21b21cae02606774",
+      "id": "8b821175-3104-5f2b-960b-6e79f8a02acf",
+      "name": "Amor Sin Condición"
+    },
+    {
+      "oldId": "usmc_64b53d7721b21cae02605974",
+      "id": "e85a0f52-5a31-5c49-997b-ad89b38e455a",
+      "name": "Ángel Poderoso"
+    },
+    {
+      "oldId": "usmc_64b5323721b21cae02605726",
+      "id": "6e8bb24f-1552-5dbb-8f6e-90c43ba5fb3a",
+      "name": "A Veces me Pregunto"
+    },
+    {
+      "oldId": "usmc_6f4eeb050b8653c907068afe",
+      "id": "320df700-41b9-5bf3-96b7-19294e5d2c1e",
+      "name": "Bendice a mi Señor"
+    },
+    {
+      "oldId": "usmc_661dce6dd6b0cc15aeab1070",
+      "id": "e9645dbc-f991-5905-880c-a59670808990",
+      "name": "Como en Jericó"
+    },
+    {
+      "oldId": "usmc_4ca469494e297d2b16f73225",
+      "id": "43994b2b-23bc-5614-85f0-9aa11515b0bc",
+      "name": "Como la Aurora"
+    },
+    {
+      "oldId": "local_apk_1781321071900_101",
+      "id": "ed9747e7-c7ca-50a1-b1bd-9f9767ed715c",
+      "name": "Del Cielo Descienden"
+    },
+    {
+      "oldId": "usmc_64b5fac621b21cae02606b60",
+      "id": "7950cfc4-f0d7-54e8-a3ad-3c32602b9a52",
+      "name": "De su Mano"
+    },
+    {
+      "oldId": "usmc_64b594c021b21cae0260642e",
+      "id": "8c7946cc-a162-53fb-a5a3-819b74c68daa",
+      "name": "Digno no Soy"
+    },
+    {
+      "oldId": "usmc_661dd45ad6b0cc15aeab119a",
+      "id": "3104615c-5de2-5753-a919-fbf264b6648c",
+      "name": "Él es la Luz Del Mundo"
+    },
+    {
+      "oldId": "usmc_bbc408c9db1bdf5b94f2f7a3",
+      "id": "39fa7291-acb9-46d8-84cf-b002d53448ee",
+      "name": "El Hijo Pródigo"
+    },
+    {
+      "oldId": "usmc_6105cf61da32223f623f88c6",
+      "id": "3945b678-d571-50f2-99b8-ede61102a4d4",
+      "name": "El Pescador"
+    },
+    {
+      "oldId": "usmc_04e333e474ec3f72fcbc4452",
+      "id": "abc50a30-b08f-5323-91c4-83bff158281c",
+      "name": "El Valle de Los Huesos Secos"
+    },
+    {
+      "oldId": "usmc_5dda6476d336d617d77af11f",
+      "id": "12ccd8d4-c86d-5e11-8240-a4130ca3e5eb",
+      "name": "En Nuestro México"
+    },
+    {
+      "oldId": "usmc_64b54bd521b21cae02605c5c",
+      "id": "f5ef2e61-9b32-48c6-9b05-9dcfe1e929e5",
+      "name": "Eres el Más Hermoso"
+    },
+    {
+      "oldId": "usmc_64b54c0921b21cae02605c7c",
+      "id": "43f85a38-d3ed-541f-933b-6cbe0d23107b",
+      "name": "Es Honorable"
+    },
+    {
+      "oldId": "usmc_9237ea180edad58c92",
+      "id": "ec231848-a924-5db7-b987-9393fa8a782a",
+      "name": "Hijo Prodigo"
+    },
+    {
+      "oldId": "usmc_595c514cc4e9d58c9e",
+      "id": "9d9da006-13de-5b0f-8326-8dd191864256",
+      "name": "Imaginate tu"
+    },
+    {
+      "oldId": "usmc_64b5f74b21b21cae026069e6",
+      "id": "536e3a2a-b0bb-4c58-8ddf-cbba608da0fc",
+      "name": "Isaías 12"
+    },
+    {
+      "oldId": "local_apk_1781321071999_821",
+      "id": "cfdf316c-980a-59c1-b4bb-237c73a4f146",
+      "name": "Le Saludamos de Corazón"
+    },
+    {
+      "oldId": "usmc_a84621411143c864d6",
+      "id": "15d71867-d14c-508b-99f5-54b82438b194",
+      "name": "Mi Ejemplo a Seguir"
+    },
+    {
+      "oldId": "local_apk_1781321072021_331",
+      "id": "d513251c-3d3f-5f55-8310-e7b099f0d7fc",
+      "name": "Mujer Bendita de Dios"
+    },
+    {
+      "oldId": "local_apk_1781321072023_685",
+      "id": "8fad5f5e-b9dd-5ebf-80d7-20c7bd4dba24",
+      "name": "Mujer de Gran Valor"
+    },
+    {
+      "oldId": "local_apk_1781321072037_125",
+      "id": "4a6cb159-6079-583e-b29d-c22e38324768",
+      "name": "Nuestros Deseos"
+    },
+    {
+      "oldId": "usmc_64b5fb7921b21cae02606bb3",
+      "id": "41c7944f-56f9-4b7f-baa8-832928225fd7",
+      "name": "Ocasos"
+    },
+    {
+      "oldId": "usmc_68149dfb520c8624329efcc1",
+      "id": "b1e13154-1899-5211-916e-f747f9c9491b",
+      "name": "Oh Salvador, Las Gracias te Doy"
+    },
+    {
+      "oldId": "usmc_64b5956d21b21cae026064ae",
+      "id": "45d26fb9-b9fb-49d8-b953-c46a14d51634",
+      "name": "Quiero Ser"
+    },
+    {
+      "oldId": "usmc_64b3e3009631ba687d63049b",
+      "id": "c037109b-346d-53c0-a9d2-633a42b1221b",
+      "name": "Regresa al Hogar"
+    },
+    {
+      "oldId": "usmc_8fd68204efefc8cfec",
+      "id": "4952c7d8-2e3e-5725-a3b9-89756522ddc6",
+      "name": "Salmo 125"
+    },
+    {
+      "oldId": "local_apk_1781321072128_193",
+      "id": "c89d7913-ca1c-550d-94a2-1291d8b1f103",
+      "name": "Siempre Feliz"
+    },
+    {
+      "oldId": "local_apk_1781321072150_144",
+      "id": "6c2aa892-cafc-5f3a-bcc5-b4e05c0c5319",
+      "name": "Una Hermosura de Dios"
+    },
+    {
+      "oldId": "usmc_b531fd532939d58c9c",
+      "id": "21a57ea9-9696-5dd0-8e8a-2c14708b2ca1",
+      "name": "Valle de Los Huesos Secos"
+    },
+    {
+      "oldId": "usmc_feabeaba2fd1c92173",
+      "id": "1a9a76d2-fdef-50bd-9436-f04c4bc7eb8b",
+      "name": "Vamos!"
+    },
+    {
+      "oldId": "usmc_64b5ea7621b21cae026066c9",
+      "id": "aee16528-1068-4d94-bd67-18920f9a596f",
+      "name": "Yo te Seguiré"
+    },
+    {
+      "oldId": "usmc_a5b1174b142ac7e3da",
+      "id": "be6a34b1-f8b2-590f-834e-d5a9e2cd9049",
+      "name": "Glory Unto Jesus Christ"
+    }
+  ],
+  "unmappedRemoved": [],
+  "differences": [
+    {
+      "id": "41c7944f-56f9-4b7f-baa8-832928225fd7",
+      "name": "Ocasos",
+      "field": "archivo",
+      "local": "ocasos-1781287442185.pdf",
+      "remote": "global/assets/pdf/019d987e1a48d6ecc5585d044c14733b2900ae12662a96f85ab3d1698ff9cc17.enc"
+    },
+    {
+      "id": "b1e13154-1899-5211-916e-f747f9c9491b",
+      "name": "Oh Salvador, Las Gracias te Doy",
+      "field": "archivo",
+      "local": "68149dfb520c8624329efcc1_oh_salvador_las_gracias_te_doy.pdf",
+      "remote": "global/assets/pdf/cf5cd1303deab8199eb692e2a78fec408dab4372a522529f9fa0810eeb57b8c1.enc"
+    },
+    {
+      "id": "45d26fb9-b9fb-49d8-b953-c46a14d51634",
+      "name": "Quiero Ser",
+      "field": "archivo",
+      "local": "64b5956d21b21cae026064ae_quiero_ser.pdf",
+      "remote": "global/assets/pdf/f39412304fc89775347144f5c4bd1e1c9c2f4deeaecd522064bee56582b72c83.enc"
+    },
+    {
+      "id": "4952c7d8-2e3e-5725-a3b9-89756522ddc6",
+      "name": "Salmo 125",
+      "field": "archivo",
+      "local": "Salmo 125.pdf",
+      "remote": "global/assets/pdf/5244518981363422c46b613a1288c29ea0a87dc4033e246ab1a10573479f5779.enc"
+    },
+    {
+      "id": "21a57ea9-9696-5dd0-8e8a-2c14708b2ca1",
+      "name": "Valle de Los Huesos Secos",
+      "field": "archivo",
+      "local": "b531fd532939d58c9c_huesos-secos.pdf",
+      "remote": "global/assets/pdf/3b4ebfc65b08bad1f4c62bf29a84cee39aeb39b1e03483f59d8bdb5d9cc13fda.enc"
+    },
+    {
+      "id": "aee16528-1068-4d94-bd67-18920f9a596f",
+      "name": "Yo te Seguiré",
+      "field": "archivo",
+      "local": "64b5ea7621b21cae026066c9_yo_te_seguiré.pdf",
+      "remote": "global/assets/pdf/9bd7c7ae7861c14af7d3f1ec828803defeba968c5d420fe34706402dd8e113ec.enc"
+    },
+    {
+      "id": "c35b5fd9-8d99-445f-89e3-21dd998a3e92",
+      "name": "Pecador, Ven al Dulce Jesús",
+      "field": "archivo",
+      "local": "pecador-ven-al-dulce-jesus-1777250932709.pdf",
+      "remote": "global/assets/pdf/a9cd9a4d914b34e5115f9037b22c02d92412614e50cfe5a3c8441475a7acfcdf.enc"
+    },
+    {
+      "id": "c35b5fd9-8d99-445f-89e3-21dd998a3e92",
+      "name": "Pecador, Ven al Dulce Jesús",
+      "field": "midi_archivo",
+      "local": "pecador-ven-al-dulce-jesus-1779936344085.mid",
+      "remote": "global/assets/midi/89ab5539be0f50c263981f87476284376b2d24654486db5e542632be5e906ce4.enc"
+    },
+    {
+      "id": "a6f00c5d-bcf7-4c5a-b33d-2c19820f81ee",
+      "name": "Yo Tengo un Padre",
+      "field": "archivo",
+      "local": "yo-tengo-un-padre-1781575930352.pdf",
+      "remote": "global/assets/pdf/edc658605bffc99bce3ece20317282404ba8f7500fafa109813fda6513954d60.enc"
+    }
+  ],
+  "remote": [
+    {
+      "id": "5bcd554d-a357-49a2-97ab-e9d5f2473259",
+      "nombre": "Adorno en tu Corona",
+      "archivo": "global/assets/pdf/6e90a25d3be905ccba636213478b1947f512c522ce982ead33bbc9d6606fc9b6.enc",
+      "midi_archivo": "global/assets/midi/52e4b69cce62582bb617ef3897a35c91b3f7698b52eab8e0ee9c347a48e7d816.enc",
+      "version": 9
+    },
+    {
+      "id": "acd9b129-271f-558c-82a1-7686f0f4019e",
+      "nombre": "A Jesucristo Rendid",
+      "archivo": "global/assets/pdf/e1e9928074f02bd7c7cf558ca7f966507268f760e5875b2496b8fa8d6dbba96b.enc",
+      "midi_archivo": "global/assets/midi/8af6b0dc554c790e166f8f7ac18e138968ad4b25b0ae46b388b5e997d47d15e2.enc",
+      "version": 7
+    },
+    {
+      "id": "e85a0f52-5a31-5c49-997b-ad89b38e455a",
+      "nombre": "Ángel Poderoso",
+      "archivo": "global/assets/pdf/2c4d87da1f9a6ac4fb0794d7fad765a5403134ec11355c71b70e3154e5f50911.enc",
+      "midi_archivo": "global/assets/midi/e26c1badf6f81009432ac5369e3cd8f12ac27b72cc424a586f5a95158235321a.enc",
+      "version": 5
+    },
+    {
+      "id": "25b2d341-6705-51b9-ba9a-2c458c4959b0",
+      "nombre": "Amor Celestial",
+      "archivo": "global/assets/pdf/a41b38b81f279f1c2beb2768bc4f2d380b8daf9589412b3239f1d0e9e4f66ee9.enc",
+      "midi_archivo": "global/assets/midi/c02171c25e459b7db7c13c2aff163f159a65c50d4ca1de3a83cb5590c49bac06.enc",
+      "version": 5
+    },
+    {
+      "id": "8b821175-3104-5f2b-960b-6e79f8a02acf",
+      "nombre": "Amor Sin Condición",
+      "archivo": "global/assets/pdf/9057b4eac835f7abb2e6a6682f62bd2b5edb86b9d0eb07db91d9ad2e423dae9a.enc",
+      "midi_archivo": "global/assets/midi/45c195f25b4b04728ece326db4f2d1d311616d914998d53386812bc1f811b9d5.enc",
+      "version": 5
+    },
+    {
+      "id": "6e8bb24f-1552-5dbb-8f6e-90c43ba5fb3a",
+      "nombre": "A Veces me Pregunto",
+      "archivo": "global/assets/pdf/0fcb22ccb0beb9771c27beb6f7fa18918a0d38c3013b88638d2eb60700c2796f.enc",
+      "midi_archivo": "global/assets/midi/c3d799154741b3f928d8f72f3d91f64cdc454b59b8759c45035fa99bb7e3505f.enc",
+      "version": 5
+    },
+    {
+      "id": "320df700-41b9-5bf3-96b7-19294e5d2c1e",
+      "nombre": "Bendice a mi Señor",
+      "archivo": "global/assets/pdf/af5d42c6483ccf155c8e0b3a183b457e137aaf707ada7bfe4247dec1fae428fb.enc",
+      "midi_archivo": "global/assets/midi/8c34916d60cefff8dce75199ea48bfb819d4cb108a062ba08b0777ba06971279.enc",
+      "version": 5
+    },
+    {
+      "id": "536e3a2a-b0bb-4c58-8ddf-cbba608da0fc",
+      "nombre": "Isaías 12",
+      "archivo": "global/assets/pdf/d263b00da5ea81df5b77a2e1c2fe2d0fa27675ac8b330bc96d23cb6381bbc670.enc",
+      "midi_archivo": "global/assets/midi/2f2c8124240aee484132ee08c0582592aac6bfba569d933a8348855f25b0d1ef.enc",
+      "version": 7
+    },
+    {
+      "id": "e9645dbc-f991-5905-880c-a59670808990",
+      "nombre": "Como en Jericó",
+      "archivo": "global/assets/pdf/cf0d247d716e00b95bbba63a77228586456914275a3d1360d39dda9820664544.enc",
+      "midi_archivo": "global/assets/midi/abef96d1e12a23894abfb3fea3579afcfbe124ff8efd2cfd743d1254fff0afba.enc",
+      "version": 5
+    },
+    {
+      "id": "39fa7291-acb9-46d8-84cf-b002d53448ee",
+      "nombre": "El Hijo Pródigo",
+      "archivo": "global/assets/pdf/885bfa9d5d42667b961ad84fc5147a643b76ba13bfa6f3d7c56e7b58821fc899.enc",
+      "midi_archivo": "global/assets/midi/c17fd7295cc6bcea64e46ae9b042b3353821f9c9484a99c748d72f92d672117e.enc",
+      "version": 7
+    },
+    {
+      "id": "f5ef2e61-9b32-48c6-9b05-9dcfe1e929e5",
+      "nombre": "Eres el Más Hermoso",
+      "archivo": "global/assets/pdf/e54ab21e6f656a77d46944817a4da8939cbb6fccfc59e9c93408b829b44b5e4a.enc",
+      "midi_archivo": null,
+      "version": 7
+    },
+    {
+      "id": "41c7944f-56f9-4b7f-baa8-832928225fd7",
+      "nombre": "Ocasos",
+      "archivo": "global/assets/pdf/019d987e1a48d6ecc5585d044c14733b2900ae12662a96f85ab3d1698ff9cc17.enc",
+      "midi_archivo": "global/assets/midi/5c370c2e065aa8c211ab1911e22fb37853cc285f697ba42c0e5f5cd949e7f31d.enc",
+      "version": 9
+    },
+    {
+      "id": "ed9747e7-c7ca-50a1-b1bd-9f9767ed715c",
+      "nombre": "Del Cielo Descienden",
+      "archivo": "global/assets/pdf/a0ae33af1f46891fe54fb40d65d1c39db5e6f8419de01a76fc8b221ca8678d63.enc",
+      "midi_archivo": "global/assets/midi/d80b12dde7282210378c8ad8ab413814c5ce5d69da2890fda10fe686b4ce4c7e.enc",
+      "version": 5
+    },
+    {
+      "id": "7950cfc4-f0d7-54e8-a3ad-3c32602b9a52",
+      "nombre": "De su Mano",
+      "archivo": "global/assets/pdf/9ef6d0091b7167bc630a4e54dd892f7221c097c6583247950f4f7187a4b19761.enc",
+      "midi_archivo": "global/assets/midi/d2aeeac6b2ed63d688f6814ff3d75b2ec858d4f38a4ca536b34bd84b125867a4.enc",
+      "version": 5
+    },
+    {
+      "id": "58a3f3e0-704b-471f-96c7-ce9bb5c71a7f",
+      "nombre": "Divino Redentor",
+      "archivo": "global/assets/pdf/ab7918dac148618dba2c4543bb28072c1f39b4f9f24a99be7d279f844731b717.enc",
+      "midi_archivo": null,
+      "version": 5
+    },
+    {
+      "id": "8c7946cc-a162-53fb-a5a3-819b74c68daa",
+      "nombre": "Digno no Soy",
+      "archivo": "global/assets/pdf/df8656714e441206b042356615fc791972c2b6b8a40e439054cd3586f9415c9e.enc",
+      "midi_archivo": "global/assets/midi/ba2fce781ff4e98d3a2549c1f4329854ae7c83a77386a59790a3b6ab36dd8869.enc",
+      "version": 5
+    },
+    {
+      "id": "add2c20d-883f-40c3-87b8-1f1ef1874a50",
+      "nombre": "El Pueblo Feliz",
+      "archivo": "global/assets/pdf/d5727cea24c8c4149d8ad87ab20435fcb71b72484973b3859894bfb9dfc083c2.enc",
+      "midi_archivo": "global/assets/midi/39feef8acfc3da03a2f08f92c0cdb71534213a5d46a9fa995ae9b5ab47c30ca4.enc",
+      "version": 11
+    },
+    {
+      "id": "3104615c-5de2-5753-a919-fbf264b6648c",
+      "nombre": "Él es la Luz Del Mundo",
+      "archivo": "global/assets/pdf/72a88d2c5d4cdfbbf7cbd62dc6d39c0c4fbd467058173f1f5db74f92e1e57f72.enc",
+      "midi_archivo": "global/assets/midi/81915a47d17ca2285f2c83300f1bb4fc604003c00ebc26e402f76b8817cc7257.enc",
+      "version": 5
+    },
+    {
+      "id": "3945b678-d571-50f2-99b8-ede61102a4d4",
+      "nombre": "El Pescador",
+      "archivo": "global/assets/pdf/c3ec50177873ef0b065f720e14ce2951948ddb09507bc2b31ad7e550c27b8285.enc",
+      "midi_archivo": "global/assets/midi/e9dd00aacb27cd45725ae69d9cfc75e68f43a3ab795b55996f82fcb2e74836be.enc",
+      "version": 5
+    },
+    {
+      "id": "abc50a30-b08f-5323-91c4-83bff158281c",
+      "nombre": "El Valle de Los Huesos Secos",
+      "archivo": "global/assets/pdf/4bb920d938acded8b91b26da16fdd981e03e21d305ed2c35481435903a061e04.enc",
+      "midi_archivo": "global/assets/midi/ffbb5e2fb1695bf43fed7f3f9986a4c483394ff6e63c56d92b05f3fc67491109.enc",
+      "version": 5
+    },
+    {
+      "id": "43f85a38-d3ed-541f-933b-6cbe0d23107b",
+      "nombre": "Es Honorable",
+      "archivo": "global/assets/pdf/445e73c5a4c15b4966159d36fe3761a587ff090d420806a309ab2529ea4dfc34.enc",
+      "midi_archivo": "global/assets/midi/e63928b445b1699e657f700d531ef9798c786c57134c2440863dec6ddb0d7320.enc",
+      "version": 5
+    },
+    {
+      "id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+      "nombre": "Guerrero Celestial",
+      "archivo": "global/assets/pdf/4df104af0bba1def16f0724a5eca60ea6bbcf10d1e8591680d8499755b194633.enc",
+      "midi_archivo": "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc",
+      "version": 5
+    },
+    {
+      "id": "ec231848-a924-5db7-b987-9393fa8a782a",
+      "nombre": "Hijo Prodigo",
+      "archivo": "global/assets/pdf/111bff8c2c5cefef4c406a6e5156aebb47c725f0347adb36dafc0655a3365f80.enc",
+      "midi_archivo": "global/assets/midi/c17fd7295cc6bcea64e46ae9b042b3353821f9c9484a99c748d72f92d672117e.enc",
+      "version": 5
+    },
+    {
+      "id": "9d9da006-13de-5b0f-8326-8dd191864256",
+      "nombre": "Imaginate tu",
+      "archivo": "global/assets/pdf/c2ab1956d4cf0434ee7fa7dbd09ed3233436db382658857a20e711d2c7cf3bc6.enc",
+      "midi_archivo": "global/assets/midi/a78e4a0bd7b283862bb440ffe329040fb0404ac3eeda16644ae086876ebae6fa.enc",
+      "version": 5
+    },
+    {
+      "id": "cfdf316c-980a-59c1-b4bb-237c73a4f146",
+      "nombre": "Le Saludamos de Corazón",
+      "archivo": "global/assets/pdf/2d9e337413c2a92c056fb6cc8b1d6b2fd9c4e8a37d5a3267c956d3526b6a6b68.enc",
+      "midi_archivo": "global/assets/midi/d087acfcc8949f7bbab0a7973f6d6a02bdf519cae12f4803592a8021009b2915.enc",
+      "version": 5
+    },
+    {
+      "id": "12ccd8d4-c86d-5e11-8240-a4130ca3e5eb",
+      "nombre": "En Nuestro México",
+      "archivo": "global/assets/pdf/dd841f5cbb4bd61eb3f9ac9177354886fe7db452fe5890c3515023918a2f0eaf.enc",
+      "midi_archivo": "global/assets/midi/7ac2e859f98e095c530f0c0a4dcda08d1b2862115260eedd276766ed211ec3d4.enc",
+      "version": 5
+    },
+    {
+      "id": "d513251c-3d3f-5f55-8310-e7b099f0d7fc",
+      "nombre": "Mujer Bendita de Dios",
+      "archivo": "global/assets/pdf/920b01177db8af62014179ff34afbcd3000db592bc26c40f9cb07b9ea12b8592.enc",
+      "midi_archivo": "global/assets/midi/d71e4bd278e39c5ff286bfede8fd6ece791c984c87e402895ab460777020a125.enc",
+      "version": 5
+    },
+    {
+      "id": "8fad5f5e-b9dd-5ebf-80d7-20c7bd4dba24",
+      "nombre": "Mujer de Gran Valor",
+      "archivo": "global/assets/pdf/4286a546bee2873ed3331f2f7632b7dca7e838ac9707364a532210d1498cd2f0.enc",
+      "midi_archivo": "global/assets/midi/b671d25cd33d1f5fefc94670b369c61fb184269870b3893bb416e97905b1c053.enc",
+      "version": 5
+    },
+    {
+      "id": "4a6cb159-6079-583e-b29d-c22e38324768",
+      "nombre": "Nuestros Deseos",
+      "archivo": "global/assets/pdf/d5ce7126ab0e76863af7e031957a5537645c306368851de7ff2747cc0a3ed7e2.enc",
+      "midi_archivo": "global/assets/midi/cc11b4eb3b9ae916be24eedc9b4a7a19a9161a463b50dea0c6f6eb48ea03886f.enc",
+      "version": 4
+    },
+    {
+      "id": "c35b5fd9-8d99-445f-89e3-21dd998a3e92",
+      "nombre": "Pecador, Ven al Dulce Jesús",
+      "archivo": "global/assets/pdf/a9cd9a4d914b34e5115f9037b22c02d92412614e50cfe5a3c8441475a7acfcdf.enc",
+      "midi_archivo": "global/assets/midi/89ab5539be0f50c263981f87476284376b2d24654486db5e542632be5e906ce4.enc",
+      "version": 5
+    },
+    {
+      "id": "45d26fb9-b9fb-49d8-b953-c46a14d51634",
+      "nombre": "Quiero Ser",
+      "archivo": "global/assets/pdf/f39412304fc89775347144f5c4bd1e1c9c2f4deeaecd522064bee56582b72c83.enc",
+      "midi_archivo": "global/assets/midi/cd06a9742fcb85fd69f8d054a4093c8dfcee6234f7102bf4ec5660622e12234a.enc",
+      "version": 7
+    },
+    {
+      "id": "10c9e50d-d4aa-4ae1-8170-91c7f5f83813",
+      "nombre": "Señor Jesus tu Eres mi Esperanza",
+      "archivo": "global/assets/pdf/9fbb4bf348bc16aa1f4a237156adb1e06ddbb4f13fb7840785e05f8c63014d57.enc",
+      "midi_archivo": "global/assets/midi/e2c92300b36a9cf84761425d836a469a681aec60a17ccbfb8eb20f5b9a3b1a81.enc",
+      "version": 4
+    },
+    {
+      "id": "4952c7d8-2e3e-5725-a3b9-89756522ddc6",
+      "nombre": "Salmo 125",
+      "archivo": "global/assets/pdf/5244518981363422c46b613a1288c29ea0a87dc4033e246ab1a10573479f5779.enc",
+      "midi_archivo": "global/assets/midi/4cdd0a644f141d0ac6be8077dfaef71cc107659256ad02db64f86df306391463.enc",
+      "version": 5
+    },
+    {
+      "id": "7c176f6b-f16a-49f7-a685-132802dee92e",
+      "nombre": "Si Fui Motivo",
+      "archivo": "global/assets/pdf/10823851474972af77a21fe55f0f0930dd98b5ad937169f178a5446d87905577.enc",
+      "midi_archivo": "global/assets/midi/8a884c31b324316bc7c5489e72cee9dec5902a5b5eb2b5c6038b76795a29a6b3.enc",
+      "version": 4
+    },
+    {
+      "id": "21a57ea9-9696-5dd0-8e8a-2c14708b2ca1",
+      "nombre": "Valle de Los Huesos Secos",
+      "archivo": "global/assets/pdf/3b4ebfc65b08bad1f4c62bf29a84cee39aeb39b1e03483f59d8bdb5d9cc13fda.enc",
+      "midi_archivo": "global/assets/midi/ffbb5e2fb1695bf43fed7f3f9986a4c483394ff6e63c56d92b05f3fc67491109.enc",
+      "version": 5
+    },
+    {
+      "id": "6c2aa892-cafc-5f3a-bcc5-b4e05c0c5319",
+      "nombre": "Una Hermosura de Dios",
+      "archivo": "global/assets/pdf/86cb16583e957f4f2e93a42a7240b8a710fe5b01c1f3c67cd668cabfdc5de21f.enc",
+      "midi_archivo": "global/assets/midi/41caf60172de39fb1467c98b526e248ba9514e05233ab1ef88e566e2ea13bde0.enc",
+      "version": 4
+    },
+    {
+      "id": "1a9a76d2-fdef-50bd-9436-f04c4bc7eb8b",
+      "nombre": "Vamos!",
+      "archivo": "global/assets/pdf/8fed24c5097a7569f2b1b8e5ed18f007e57b2910cde7c2447ce9e9fc61d6c1b3.enc",
+      "midi_archivo": "global/assets/midi/e1755cd023233d5cf18aadceac567d35c3f07fa994f8c21e278c43f1f9d5aed9.enc",
+      "version": 4
+    },
+    {
+      "id": "a6f00c5d-bcf7-4c5a-b33d-2c19820f81ee",
+      "nombre": "Yo Tengo un Padre",
+      "archivo": "global/assets/pdf/edc658605bffc99bce3ece20317282404ba8f7500fafa109813fda6513954d60.enc",
+      "midi_archivo": "global/assets/midi/a00d0190092e0bf21b4a5efd395a363dee599227c16ad1924bd7361d93c19609.enc",
+      "version": 5
+    },
+    {
+      "id": "308bd1de-102f-4bb2-a16c-4d1b993ad470",
+      "nombre": "Yo Tengo un Himno de Loor",
+      "archivo": "global/assets/pdf/419ec567c345b7d21e899ae2e74ed86c8921098465a7e88545f70b481656767f.enc",
+      "midi_archivo": "global/assets/midi/bfc2001f5c4239edc788b8f88d7229ec175515f3936decd388f74fb006e7be57.enc",
+      "version": 4
+    },
+    {
+      "id": "be6a34b1-f8b2-590f-834e-d5a9e2cd9049",
+      "nombre": "Glory Unto Jesus Christ",
+      "archivo": "global/assets/pdf/a815a9d86455585292befb9088cf0bbc54f6ad1ba432dd3e57bcce991c464a69.enc",
+      "midi_archivo": "global/assets/midi/32f6ce9093623453f444e9fba9e464a67a5217a5252a605c92ed137229d66d7b.enc",
+      "version": 4
+    },
+    {
+      "id": "43a441a6-84a6-5781-adf5-0fbaf9868027",
+      "nombre": "A Los Pies Del Salvador",
+      "archivo": "global/assets/pdf/8da91949e7e9b24d75cac79c0d04a522b3c536647d31d1aa71f687970fc67e77.enc",
+      "midi_archivo": "global/assets/midi/3ede2026af2399f3369e56910dbc074b2fc23d8292f755a5cfde9cead830ca07.enc",
+      "version": 5
+    },
+    {
+      "id": "15d71867-d14c-508b-99f5-54b82438b194",
+      "nombre": "Mi Ejemplo a Seguir",
+      "archivo": "global/assets/pdf/bf030618ba62b2b68a42ba6e01460db7e1e00ada0d2c0b39593871482dbb03a6.enc",
+      "midi_archivo": "global/assets/midi/4329b6bd083065976c06fc767b92eaf4caa30fcee269fbefb392c0d9ea6a96ac.enc",
+      "version": 5
+    },
+    {
+      "id": "aee16528-1068-4d94-bd67-18920f9a596f",
+      "nombre": "Yo te Seguiré",
+      "archivo": "global/assets/pdf/9bd7c7ae7861c14af7d3f1ec828803defeba968c5d420fe34706402dd8e113ec.enc",
+      "midi_archivo": "global/assets/midi/07a06d76482931344a8fa8eb582923b6514796c3c2cb86cb958a437a3f0a7713.enc",
+      "version": 11
+    },
+    {
+      "id": "b1e13154-1899-5211-916e-f747f9c9491b",
+      "nombre": "Oh Salvador, Las Gracias te Doy",
+      "archivo": "global/assets/pdf/cf5cd1303deab8199eb692e2a78fec408dab4372a522529f9fa0810eeb57b8c1.enc",
+      "midi_archivo": "global/assets/midi/8437f397e7c95a36eadcab6f4c9c3d844983eea9d0eb445cb24a2ef9f2614371.enc",
+      "version": 5
+    },
+    {
+      "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
+      "nombre": "La Vida se va Como el Viento",
+      "archivo": "global/assets/pdf/e6e1295d099bf1e9d86b7274eade60c17ce0b0595ca209406711a12529324809.enc",
+      "midi_archivo": "global/assets/midi/7c5d03657ae81557310c610e626d2c2f2cbae102cbd36a839b0fd8f7a176ad02.enc",
+      "version": 4
+    },
+    {
+      "id": "43994b2b-23bc-5614-85f0-9aa11515b0bc",
+      "nombre": "Como la Aurora",
+      "archivo": "global/assets/pdf/a8f352c1492718a92d24c1d04b9169562964cb16d07b902a09579bed5512bd80.enc",
+      "midi_archivo": "global/assets/midi/1c1a47f08433cdac18eccb14c55ce12ed5e54e58d13632d0c641de259dda6c07.enc",
+      "version": 5
+    },
+    {
+      "id": "ec27b68e-da9c-4962-8061-caac106b0cd8",
+      "nombre": "Joya Perfecta",
+      "archivo": "global/assets/pdf/2fdff72df14c2c575919d07a835be7532ca342d181eb4fa8164754c1f3f046ff.enc",
+      "midi_archivo": "global/assets/midi/133c46524b82e264e8a3759925d1b37c3d8f5e6ddda5b48ff77fb5ee7ffdca9c.enc",
+      "version": 1
+    },
+    {
+      "id": "c89d7913-ca1c-550d-94a2-1291d8b1f103",
+      "nombre": "Siempre Feliz",
+      "archivo": "global/assets/pdf/084a264417c2fc96e51cf36e9fb92e613f227e3a2ce377ce9b9142edfaae2d90.enc",
+      "midi_archivo": "global/assets/midi/427af1266e8eb3ee445307e250d7b57665c8ef794e7c25588a92b8c0773b5a47.enc",
+      "version": 4
+    },
+    {
+      "id": "35ecfe71-7d8a-48f3-9719-660e8b163865",
+      "nombre": "Si Fui Motivo de Dolor",
+      "archivo": "global/assets/pdf/5853bef0f52f84ee532b0ed6be4e61e5ab4e564b80ea31e4b50e85cb49ea989d.enc",
+      "midi_archivo": "global/assets/midi/8a884c31b324316bc7c5489e72cee9dec5902a5b5eb2b5c6038b76795a29a6b3.enc",
+      "version": 2
+    },
+    {
+      "id": "d98201e5-8059-4ac9-b2ba-e6c9aaed685a",
+      "nombre": "A ti Solo Nuestro Rey",
+      "archivo": "global/assets/pdf/6fc2dda816c29cb4cd47cac75b3b17318720896c811d0cb32e6f4ec696f8e25c.enc",
+      "midi_archivo": "global/assets/midi/0637e7f94c8d0e56778c79fd8257cd5af100267e666a32e60f3fbb11ca3a7bb9.enc",
+      "version": 7
+    },
+    {
+      "id": "c037109b-346d-53c0-a9d2-633a42b1221b",
+      "nombre": "Regresa al Hogar",
+      "archivo": "global/assets/pdf/98d9512b0dc49a884761154e58e76c741286d26c7b8b6e1af4a732b7b81d7eee.enc",
+      "midi_archivo": "global/assets/midi/e1e9bdea9596580fbf3fdf7eee729a54a87913ce70609e2d0d955701be2d5341.enc",
+      "version": 4
+    }
+  ]
+}

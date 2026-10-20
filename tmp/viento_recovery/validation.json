@@ -1,0 +1,76 @@
+[
+  {
+    "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
+    "name": "La Vida se va Como el Viento",
+    "type": "pdf",
+    "sha256": "19d61581a345a7e453defcd819750e481c66c3abef671d7733e653a7dc3f149e",
+    "encryptedSha256": "e6e1295d099bf1e9d86b7274eade60c17ce0b0595ca209406711a12529324809",
+    "encryptedBytes": 149947,
+    "clearBytes": 149919
+  },
+  {
+    "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
+    "name": "La Vida se va Como el Viento",
+    "type": "midi",
+    "sha256": "7c5d03657ae81557310c610e626d2c2f2cbae102cbd36a839b0fd8f7a176ad02",
+    "encryptedSha256": "afa28c731719eca707dd5231d77992358aaedcbb3310d3a484e7407522541a10",
+    "encryptedBytes": 11678,
+    "clearBytes": 11650,
+    "tracks": [
+      {
+        "name": "Soprano",
+        "notes": 299
+      },
+      {
+        "name": "Alto",
+        "notes": 288
+      },
+      {
+        "name": "Tenor",
+        "notes": 305
+      },
+      {
+        "name": "Bajo",
+        "notes": 298
+      }
+    ],
+    "durationSeconds": 215.9984214125
+  },
+  {
+    "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
+    "name": "La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá",
+    "type": "pdf",
+    "sha256": "0d63e82724212947869feb409ee8fce25ab8858b1d2cceebaa3fbcd025470818",
+    "encryptedSha256": "933d7b514551607d7f4d27e4dc19a4e2c89c3dafde33fa07c10783029ef1dc50",
+    "encryptedBytes": 83187,
+    "clearBytes": 83159
+  },
+  {
+    "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
+    "name": "La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá",
+    "type": "midi",
+    "sha256": "354d3ed82b163a02fe3cd06a59a4179df8b568e5ba068cdf062a102db24066f2",
+    "encryptedSha256": "8f8ec264aea98d2c2020941409dc8d78c2e5e4008d5b64832d36f4852ecfe983",
+    "encryptedBytes": 16732,
+    "clearBytes": 16704,
+    "tracks": [
+      {
+        "name": "Soprano",
+        "notes": 250
+      },
+      {
+        "name": "Alto",
+        "notes": 266
+      },
+      {
+        "name": "Tenor",
+        "notes": 276
+      },
+      {
+        "name": "Bajo",
+        "notes": 276
+      }
+    ],
+    "durationSeconds": 158.99875
+  }
+]

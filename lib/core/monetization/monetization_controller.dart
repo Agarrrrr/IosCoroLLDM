@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
@@ -177,7 +178,10 @@ class MonetizationController extends StateNotifier<MonetizationState>
       Purchases.addCustomerInfoUpdateListener(_customerInfoListener);
       WidgetsBinding.instance.addObserver(this);
 
-      state = state.copyWith(appUserId: persistentUserId);
+      state = state.copyWith(
+        appUserId: persistentUserId,
+        revenueCatConfigured: true,
+      );
 
       if (Platform.isAndroid && !state.isPremium) {
         try {
@@ -215,6 +219,23 @@ class MonetizationController extends StateNotifier<MonetizationState>
         error: error.toString(),
       );
     }
+  }
+
+  Future<void> reloadOfferings() async {
+    if (!_purchasesConfigured) return;
+    try {
+      final results = await Future.wait([
+        Purchases.getCustomerInfo(),
+        Purchases.getOfferings(),
+      ]).timeout(const Duration(seconds: 8));
+      _applyCustomerInfo(results[0] as CustomerInfo);
+      final offering = (results[1] as Offerings).current;
+      state = state.copyWith(
+        revenueCatConfigured: true,
+        packages: offering?.availablePackages ?? state.packages,
+        clearError: true,
+      );
+    } catch (_) {}
   }
 
   @override
@@ -282,6 +303,7 @@ class MonetizationController extends StateNotifier<MonetizationState>
   }
 
   Future<bool> purchase(Package package) async {
+    AdsService.instance.suspendForExternalAction();
     state = state.copyWith(isBusy: true, clearError: true);
     try {
       final result = await Purchases.purchase(
@@ -306,6 +328,7 @@ class MonetizationController extends StateNotifier<MonetizationState>
   Future<RestoreResult> restore() async {
     if (state.isBusy) return RestoreResult.busy;
     if (!state.revenueCatConfigured) return RestoreResult.unavailable;
+    AdsService.instance.suspendForExternalAction();
     state = state.copyWith(isBusy: true, clearError: true);
     try {
       final info = await Purchases.restorePurchases();

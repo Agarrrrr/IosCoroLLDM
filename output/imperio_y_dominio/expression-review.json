@@ -1,0 +1,3668 @@
+{
+  "expressions": [
+    {
+      "role": 0,
+      "bar": 1,
+      "onset": 2.5,
+      "value": "mp"
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": 0.0,
+      "value": "p"
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": 0.0,
+      "value": "p"
+    },
+    {
+      "role": 0,
+      "bar": 4,
+      "onset": 0.0,
+      "value": "mf"
+    },
+    {
+      "role": 0,
+      "bar": 5,
+      "onset": 3.5,
+      "value": "f"
+    },
+    {
+      "role": 1,
+      "bar": 4,
+      "onset": 0.0,
+      "value": "mp"
+    },
+    {
+      "role": 1,
+      "bar": 5,
+      "onset": 3.0,
+      "value": "f"
+    },
+    {
+      "role": 2,
+      "bar": 4,
+      "onset": 0.0,
+      "value": "mp"
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 3,
+      "bar": 4,
+      "onset": 0.0,
+      "value": "mf"
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 0,
+      "bar": 9,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 1,
+      "bar": 11,
+      "onset": 1.0,
+      "value": "mf"
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": 1.0,
+      "value": "mf"
+    },
+    {
+      "role": 0,
+      "bar": 13,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 1,
+      "bar": 13,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 2,
+      "bar": 13,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 3,
+      "bar": 13,
+      "onset": 1.5,
+      "value": "f"
+    },
+    {
+      "role": 0,
+      "bar": 28,
+      "onset": 1.0,
+      "value": "cresc."
+    },
+    {
+      "role": 0,
+      "bar": 28,
+      "onset": 1.0,
+      "value": "mp"
+    },
+    {
+      "role": 0,
+      "bar": 30,
+      "onset": 0.0,
+      "value": "mf"
+    },
+    {
+      "role": 0,
+      "bar": 31,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 1,
+      "bar": 28,
+      "onset": 0.0,
+      "value": "p"
+    },
+    {
+      "role": 1,
+      "bar": 30,
+      "onset": 0.0,
+      "value": "mf"
+    },
+    {
+      "role": 1,
+      "bar": 31,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 2,
+      "bar": 28,
+      "onset": 0.0,
+      "value": "p"
+    },
+    {
+      "role": 2,
+      "bar": 30,
+      "onset": 1.0,
+      "value": "mf"
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 3,
+      "bar": 28,
+      "onset": 0.0,
+      "value": "p"
+    },
+    {
+      "role": 3,
+      "bar": 30,
+      "onset": 0.0,
+      "value": "mf"
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": 1.0,
+      "value": "f"
+    },
+    {
+      "role": 2,
+      "bar": 34,
+      "onset": 0.5,
+      "value": "mp"
+    },
+    {
+      "role": 3,
+      "bar": 34,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 0,
+      "bar": 38,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 1,
+      "bar": 38,
+      "onset": 0.5,
+      "value": "mp"
+    },
+    {
+      "role": 2,
+      "bar": 38,
+      "onset": 0.0,
+      "value": "mf"
+    },
+    {
+      "role": 3,
+      "bar": 38,
+      "onset": 0.0,
+      "value": "mp"
+    },
+    {
+      "role": 0,
+      "bar": 42,
+      "onset": 2.0,
+      "value": "mp"
+    },
+    {
+      "role": 1,
+      "bar": 42,
+      "onset": 2.0,
+      "value": "mp"
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": 1.0,
+      "value": "mp"
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": 0.0,
+      "value": "mp"
+    },
+    {
+      "role": 0,
+      "bar": 46,
+      "onset": 2.0,
+      "value": "f"
+    },
+    {
+      "role": 1,
+      "bar": 46,
+      "onset": 2.0,
+      "value": "f"
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": 1.0,
+      "value": "f"
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 0,
+      "bar": 59,
+      "onset": 0,
+      "value": "mf"
+    },
+    {
+      "role": 0,
+      "bar": 61,
+      "onset": 0,
+      "value": "ff"
+    },
+    {
+      "role": 1,
+      "bar": 59,
+      "onset": 0,
+      "value": "mf"
+    },
+    {
+      "role": 1,
+      "bar": 61,
+      "onset": 0,
+      "value": "ff"
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": 0,
+      "value": "mf"
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": 0,
+      "value": "ff"
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": 0,
+      "value": "mf"
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": 0,
+      "value": "ff"
+    },
+    {
+      "role": 0,
+      "bar": 70,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 1,
+      "bar": 70,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 2,
+      "bar": 70,
+      "onset": 0.0,
+      "value": "f"
+    },
+    {
+      "role": 3,
+      "bar": 70,
+      "onset": 0.0,
+      "value": "f"
+    }
+  ],
+  "articulations": [
+    {
+      "role": 0,
+      "bar": 9,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 9,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 9,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 9,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 10,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 10,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 24,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 24,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 24,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 24,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 24,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 24,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 24,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 24,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 24,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 24,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 24,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 24,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 24,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 24,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 24,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 24,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 25,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 25,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 26,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 26,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 26,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 26,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 27,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 27,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 25,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 25,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 26,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 26,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 26,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 26,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 27,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 1,
+      "bar": 27,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": 2.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": 2.5,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": 0.0,
+      "symbol": ">"
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": 0.5,
+      "symbol": ">"
+    },
+    {
+      "role": 0,
+      "bar": 69,
+      "onset": 2.0,
+      "symbol": "U"
+    },
+    {
+      "role": 3,
+      "bar": 69,
+      "onset": 2.0,
+      "symbol": "u"
+    }
+  ],
+  "curves": [
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 4.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 1,
+        "system": 0,
+        "role": 3,
+        "measure": 2,
+        "x": 243.0645028224,
+        "y": 270.492666729,
+        "pitch": 43,
+        "step": "G",
+        "alter": 0,
+        "octave": 2,
+        "glyph": "w"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 8.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 1,
+        "system": 0,
+        "role": 3,
+        "measure": 3,
+        "x": 403.9707234408,
+        "y": 270.492666729,
+        "pitch": 43,
+        "step": "G",
+        "alter": 0,
+        "octave": 2,
+        "glyph": "w"
+      },
+      "kind": "arc",
+      "start": [
+        248.3350341336,
+        274.2129097098
+      ],
+      "end": [
+        408.0011297376,
+        274.2129097098
+      ],
+      "page": 1
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 4.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 1,
+        "system": 0,
+        "role": 2,
+        "measure": 2,
+        "x": 243.0645028224,
+        "y": 202.59823232940005,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 8.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 1,
+        "system": 0,
+        "role": 2,
+        "measure": 3,
+        "x": 403.9707234408,
+        "y": 207.55855630380006,
+        "pitch": 55,
+        "step": "G",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "w"
+      },
+      "kind": "arc",
+      "start": [
+        247.249924746,
+        209.4186777942
+      ],
+      "end": [
+        407.8461141108,
+        215.30906251379997
+      ],
+      "page": 1
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 20.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 1,
+        "system": 1,
+        "role": 1,
+        "measure": 6,
+        "x": 402.8856140532,
+        "y": 392.95066484700004,
+        "pitch": 70,
+        "step": "B",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 1.5,
+        "absolute": 21.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 1,
+        "system": 1,
+        "role": 1,
+        "measure": 6,
+        "x": 463.9617710124,
+        "y": 395.43082683420005,
+        "pitch": 69,
+        "step": "A",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        407.0710359768,
+        386.90527000320003
+      ],
+      "end": [
+        468.147192936,
+        374.50446006720006
+      ],
+      "page": 1
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 26.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 0,
+        "measure": 7,
+        "x": 206.4808148976,
+        "y": 589.5035023326001,
+        "pitch": 77,
+        "step": "F",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 2,
+        "onset": 3.0,
+        "absolute": 27.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 0,
+        "measure": 7,
+        "x": 285.5387845656,
+        "y": 591.9836643198,
+        "pitch": 75,
+        "step": "E",
+        "alter": -1,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        210.6662368212,
+        585.0082087308001
+      ],
+      "end": [
+        288.1740502212,
+        587.488370718
+      ],
+      "page": 1
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 24.0,
+        "duration": 0.25,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 1,
+        "measure": 7,
+        "x": 95.4896261088,
+        "y": 648.4073495286001,
+        "pitch": 74,
+        "step": "D",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 1.0,
+        "absolute": 25.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 1,
+        "measure": 7,
+        "x": 156.8758143216,
+        "y": 653.3676735030001,
+        "pitch": 70,
+        "step": "B",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        642.3619546848
+      ],
+      "end": [
+        161.0612362452,
+        640.966863567
+      ],
+      "page": 1
+    },
+    {
+      "a": {
+        "index": 6,
+        "onset": 3.0,
+        "absolute": 27.0,
+        "duration": 0.25,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 1,
+        "measure": 7,
+        "x": 285.5387845656,
+        "y": 653.3676735030001,
+        "pitch": 70,
+        "step": "B",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 7,
+        "onset": 3.25,
+        "absolute": 27.25,
+        "duration": 0.25,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 1,
+        "measure": 7,
+        "x": 302.4354878868,
+        "y": 655.8478354902,
+        "pitch": 69,
+        "step": "A",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        289.7242064892,
+        659.4130683468001
+      ],
+      "end": [
+        305.0707535424,
+        660.343129092
+      ],
+      "page": 1
+    },
+    {
+      "a": {
+        "index": 8,
+        "onset": 3.5,
+        "absolute": 27.5,
+        "duration": 0.25,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 1,
+        "measure": 7,
+        "x": 319.332191208,
+        "y": 658.3279974774001,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 9,
+        "onset": 3.75,
+        "absolute": 27.75,
+        "duration": 0.25,
+        "chord": false,
+        "page": 1,
+        "system": 2,
+        "role": 1,
+        "measure": 7,
+        "x": 334.058675754,
+        "y": 660.8081594646001,
+        "pitch": 65,
+        "step": "F",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        323.5176131316,
+        664.3733923212001
+      ],
+      "end": [
+        336.69394140960003,
+        665.3034530664
+      ],
+      "page": 1
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 60.0,
+        "duration": 0.25,
+        "chord": false,
+        "page": 2,
+        "system": 2,
+        "role": 2,
+        "measure": 16,
+        "x": 326.307894414,
+        "y": 700.9557816324001,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 11,
+        "onset": 3.5,
+        "absolute": 63.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 2,
+        "system": 2,
+        "role": 2,
+        "measure": 16,
+        "x": 534.1838499528,
+        "y": 700.9557816324001,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "open",
+      "start": [
+        330.4933163376,
+        696.4604880306001
+      ],
+      "end": [
+        550.30547514,
+        696.1504677822
+      ],
+      "page": 2
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 56.0,
+        "duration": 0.25,
+        "chord": false,
+        "page": 2,
+        "system": 2,
+        "role": 3,
+        "measure": 15,
+        "x": 95.4896261088,
+        "y": 763.2698515608,
+        "pitch": 55,
+        "step": "G",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 60.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 2,
+        "system": 2,
+        "role": 3,
+        "measure": 16,
+        "x": 326.307894414,
+        "y": 768.2301755352,
+        "pitch": 51,
+        "step": "E",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        758.774557959
+      ],
+      "end": [
+        328.9431600696,
+        763.7348819334001
+      ],
+      "page": 2
+    },
+    {
+      "a": {
+        "index": 8,
+        "onset": 2.0,
+        "absolute": 70.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 0,
+        "role": 1,
+        "measure": 18,
+        "x": 433.8887394132,
+        "y": 159.660427926,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 6,
+        "onset": 3.75,
+        "absolute": 71.75,
+        "duration": 0.25,
+        "chord": true,
+        "page": 3,
+        "system": 0,
+        "role": 3,
+        "measure": 18,
+        "x": 540.3844750248,
+        "y": 263.82723138840004,
+        "pitch": 55,
+        "step": "G",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "kind": "open",
+      "start": [
+        437.91914571,
+        163.3806709068
+      ],
+      "end": [
+        550.30547514,
+        163.3806709068
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 68.0,
+        "duration": 0.25,
+        "chord": false,
+        "page": 3,
+        "system": 0,
+        "role": 1,
+        "measure": 18,
+        "x": 314.2166755236,
+        "y": 159.660427926,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 6,
+        "onset": 3.75,
+        "absolute": 71.75,
+        "duration": 0.25,
+        "chord": true,
+        "page": 3,
+        "system": 0,
+        "role": 3,
+        "measure": 18,
+        "x": 540.3844750248,
+        "y": 263.82723138840004,
+        "pitch": 55,
+        "step": "G",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "kind": "open",
+      "start": [
+        323.3625975048,
+        137.3389700412
+      ],
+      "end": [
+        550.30547514,
+        144.00440538179998
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 72.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 1,
+        "measure": 19,
+        "x": 95.4896261088,
+        "y": 402.25127229900005,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 72.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 1,
+        "measure": 19,
+        "x": 95.4896261088,
+        "y": 402.25127229900005,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "˙"
+      },
+      "kind": "close",
+      "start": [
+        88.0488760224,
+        405.97151527980003
+      ],
+      "end": [
+        98.2799073912,
+        405.97151527980003
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 76.0,
+        "duration": 0.25,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 0,
+        "measure": 20,
+        "x": 347.0799884052,
+        "y": 332.18669616060004,
+        "pitch": 74,
+        "step": "D",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 15,
+        "onset": 3.75,
+        "absolute": 79.75,
+        "duration": 0.25,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 0,
+        "measure": 20,
+        "x": 542.2446625464,
+        "y": 329.7065341734001,
+        "pitch": 75,
+        "step": "E",
+        "alter": -1,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "kind": "open",
+      "start": [
+        351.2654103288,
+        326.1413013168001
+      ],
+      "end": [
+        550.30547514,
+        323.50612920540004
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 64.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 3,
+        "system": 0,
+        "role": 1,
+        "measure": 17,
+        "x": 95.4896261088,
+        "y": 159.660427926,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 2,
+        "onset": 1.0,
+        "absolute": 65.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 3,
+        "system": 0,
+        "role": 1,
+        "measure": 17,
+        "x": 162.1463456328,
+        "y": 159.660427926,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        165.70582276980008
+      ],
+      "end": [
+        164.7816112884,
+        165.70582276980008
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 64.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 3,
+        "system": 0,
+        "role": 2,
+        "measure": 17,
+        "x": 95.4896261088,
+        "y": 206.78350568280007,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 64.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 3,
+        "system": 0,
+        "role": 2,
+        "measure": 17,
+        "x": 95.4896261088,
+        "y": 206.78350568280007,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "close",
+      "start": [
+        88.0488760224,
+        200.42809059060005
+      ],
+      "end": [
+        98.1248917644,
+        200.738110839
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 72.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 1,
+        "measure": 19,
+        "x": 95.4896261088,
+        "y": 402.25127229900005,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 72.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 1,
+        "measure": 19,
+        "x": 95.4896261088,
+        "y": 402.25127229900005,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "˙"
+      },
+      "kind": "close",
+      "start": [
+        88.0488760224,
+        386.5952497548
+      ],
+      "end": [
+        99.8300636592,
+        388.30036112100004
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 72.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 2,
+        "measure": 19,
+        "x": 95.4896261088,
+        "y": 450.6144310494,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 2,
+        "onset": 1.0,
+        "absolute": 73.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 3,
+        "system": 1,
+        "role": 2,
+        "measure": 19,
+        "x": 153.6204861588,
+        "y": 450.6144310494,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        444.56903620560007
+      ],
+      "end": [
+        157.8059080824,
+        430.77313515180003
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 80.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 0,
+        "measure": 21,
+        "x": 95.4896261088,
+        "y": 575.3975810304,
+        "pitch": 77,
+        "step": "F",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 80.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 0,
+        "measure": 21,
+        "x": 95.4896261088,
+        "y": 575.3975810304,
+        "pitch": 77,
+        "step": "F",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "˙"
+      },
+      "kind": "close",
+      "start": [
+        88.0488760224,
+        571.6773380496
+      ],
+      "end": [
+        98.1248917644,
+        570.9022874286001
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 4,
+        "onset": 2.0,
+        "absolute": 86.0,
+        "duration": 0.25,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 0,
+        "measure": 22,
+        "x": 295.1497534272,
+        "y": 582.8380669920001,
+        "pitch": 72,
+        "step": "C",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 11,
+        "onset": 3.75,
+        "absolute": 87.75,
+        "duration": 0.25,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 0,
+        "measure": 22,
+        "x": 376.8429887508,
+        "y": 585.3182289792001,
+        "pitch": 70,
+        "step": "B",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        299.3351753508,
+        588.5734415874001
+      ],
+      "end": [
+        379.4782544064,
+        592.7587149408
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 84.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 1,
+        "measure": 22,
+        "x": 228.8030651568,
+        "y": 642.5169648090001,
+        "pitch": 70,
+        "step": "B",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 1,
+        "onset": 1.0,
+        "absolute": 85.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 1,
+        "measure": 22,
+        "x": 265.5417687084,
+        "y": 652.4376127578,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        232.9884870804,
+        636.4715699652
+      ],
+      "end": [
+        269.727190632,
+        640.0368028218
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 80.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 2,
+        "measure": 21,
+        "x": 95.4896261088,
+        "y": 700.8007715082001,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 6,
+        "onset": 2.5,
+        "absolute": 82.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 2,
+        "measure": 21,
+        "x": 176.8728301788,
+        "y": 703.2809334954001,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        694.7553766644
+      ],
+      "end": [
+        179.5080958344,
+        698.7856398936001
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 80.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 3,
+        "measure": 21,
+        "x": 95.4896261088,
+        "y": 758.4645377106001,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 84.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 3,
+        "system": 2,
+        "role": 3,
+        "measure": 22,
+        "x": 228.8030651568,
+        "y": 768.3851856594001,
+        "pitch": 51,
+        "step": "E",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "˙"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        753.9692441088001
+      ],
+      "end": [
+        231.4383308124,
+        763.8898920576
+      ],
+      "page": 3
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 112.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 4,
+        "system": 1,
+        "role": 0,
+        "measure": 29,
+        "x": 178.4229864468,
+        "y": 383.80506751920007,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "w"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 116.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 4,
+        "system": 1,
+        "role": 0,
+        "measure": 30,
+        "x": 261.3563467848,
+        "y": 383.80506751920007,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "w"
+      },
+      "kind": "arc",
+      "start": [
+        183.693517758,
+        387.52531050000005
+      ],
+      "end": [
+        265.3867530816,
+        387.52531050000005
+      ],
+      "page": 4
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 108.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 4,
+        "system": 1,
+        "role": 2,
+        "measure": 28,
+        "x": 95.4896261088,
+        "y": 497.58249868200005,
+        "pitch": 55,
+        "step": "G",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "w"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 112.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 4,
+        "system": 1,
+        "role": 2,
+        "measure": 29,
+        "x": 178.4229864468,
+        "y": 497.58249868200005,
+        "pitch": 55,
+        "step": "G",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "w"
+      },
+      "kind": "arc",
+      "start": [
+        100.76015742,
+        501.30274166280003
+      ],
+      "end": [
+        182.4533927436,
+        501.30274166280003
+      ],
+      "page": 4
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 108.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 4,
+        "system": 1,
+        "role": 3,
+        "measure": 28,
+        "x": 95.4896261088,
+        "y": 554.7812345118001,
+        "pitch": 48,
+        "step": "C",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "w"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 112.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 4,
+        "system": 1,
+        "role": 3,
+        "measure": 29,
+        "x": 178.4229864468,
+        "y": 554.7812345118001,
+        "pitch": 48,
+        "step": "C",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "w"
+      },
+      "kind": "arc",
+      "start": [
+        100.76015742,
+        558.5014774926001
+      ],
+      "end": [
+        182.4533927436,
+        558.5014774926001
+      ],
+      "page": 4
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 144.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 4,
+        "system": 2,
+        "role": 2,
+        "measure": 37,
+        "x": 461.0164741032,
+        "y": 709.3263283392,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 1,
+        "onset": 0.5,
+        "absolute": 144.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 4,
+        "system": 2,
+        "role": 2,
+        "measure": 37,
+        "x": 475.4329273956,
+        "y": 711.8064903264001,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        465.2018960268,
+        704.8310347374
+      ],
+      "end": [
+        478.0681930512,
+        705.7610954826001
+      ],
+      "page": 4
+    },
+    {
+      "a": {
+        "index": 2,
+        "onset": 1.0,
+        "absolute": 145.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 4,
+        "system": 2,
+        "role": 2,
+        "measure": 37,
+        "x": 489.849380688,
+        "y": 714.2866523136,
+        "pitch": 57,
+        "step": "A",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 1.5,
+        "absolute": 145.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 4,
+        "system": 2,
+        "role": 2,
+        "measure": 37,
+        "x": 504.4208496072,
+        "y": 709.3263283392,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        494.0348026116,
+        709.7913587118001
+      ],
+      "end": [
+        507.0561152628,
+        704.8310347374
+      ],
+      "page": 4
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 298.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 3,
+        "measure": 75,
+        "x": 479.6183493192,
+        "y": 523.1591691750001,
+        "pitch": 50,
+        "step": "D",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 299.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 1,
+        "measure": 75,
+        "x": 534.4938812064,
+        "y": 414.3420619866,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "open",
+      "start": [
+        483.8037712428,
+        529.2045640188
+      ],
+      "end": [
+        550.30547514,
+        529.6695943914001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 284.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 0,
+        "measure": 72,
+        "x": 416.3719735848,
+        "y": 99.82651998480003,
+        "pitch": 74,
+        "step": "D",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 3.0,
+        "absolute": 287.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 0,
+        "measure": 72,
+        "x": 514.4968653492,
+        "y": 107.26700594639999,
+        "pitch": 69,
+        "step": "A",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        420.5573955084,
+        93.78112514099996
+      ],
+      "end": [
+        517.1321310048,
+        102.77171234460002
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 276.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 1,
+        "measure": 70,
+        "x": 95.4896261088,
+        "y": 166.9459037634,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 279.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 1,
+        "measure": 70,
+        "x": 229.423127664,
+        "y": 164.46574177620005,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        171.44119736519997
+      ],
+      "end": [
+        232.05839331960001,
+        168.96103537800002
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 282.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 1,
+        "measure": 71,
+        "x": 332.3535038592,
+        "y": 159.50541780180004,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 283.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 1,
+        "measure": 71,
+        "x": 389.864301402,
+        "y": 166.9459037634,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        336.5389257828,
+        165.5508126456
+      ],
+      "end": [
+        392.4995670576,
+        171.44119736519997
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 286.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 1,
+        "measure": 72,
+        "x": 476.3630211564,
+        "y": 161.98557978899998,
+        "pitch": 65,
+        "step": "F",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 287.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 1,
+        "measure": 72,
+        "x": 533.7188030724,
+        "y": 164.46574177620005,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        480.54844308,
+        166.48087339080007
+      ],
+      "end": [
+        536.354068728,
+        168.96103537800002
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 284.0,
+        "duration": 1.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 2,
+        "measure": 72,
+        "x": 416.3719735848,
+        "y": 219.80435611560006,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 3.0,
+        "absolute": 287.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 2,
+        "measure": 72,
+        "x": 514.4968653492,
+        "y": 217.3241941284,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        420.5573955084,
+        225.8497509594
+      ],
+      "end": [
+        512.0166153204,
+        230.81007493380002
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 276.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 2,
+        "measure": 70,
+        "x": 95.4896261088,
+        "y": 219.80435611560006,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 1.5,
+        "absolute": 277.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 2,
+        "measure": 70,
+        "x": 152.8454080248,
+        "y": 217.3241941284,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        213.7589612718
+      ],
+      "end": [
+        155.4806736804,
+        212.82890052660002
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 280.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 2,
+        "measure": 71,
+        "x": 255.9307998468,
+        "y": 217.3241941284,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 1.5,
+        "absolute": 281.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 2,
+        "measure": 71,
+        "x": 313.2865817628,
+        "y": 214.84403214120005,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        260.1162217704,
+        212.82890052660002
+      ],
+      "end": [
+        315.9218474184,
+        208.7986372974001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 280.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 3,
+        "measure": 71,
+        "x": 255.9307998468,
+        "y": 276.53806157279996,
+        "pitch": 53,
+        "step": "F",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 2,
+        "onset": 3.0,
+        "absolute": 283.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 0,
+        "role": 3,
+        "measure": 71,
+        "x": 370.6423636788,
+        "y": 276.53806157279996,
+        "pitch": 53,
+        "step": "F",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        260.1162217704,
+        270.492666729
+      ],
+      "end": [
+        373.2776293344,
+        270.492666729
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 1.0,
+        "absolute": 293.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 0,
+        "measure": 74,
+        "x": 265.851799962,
+        "y": 347.22267820800005,
+        "pitch": 72,
+        "step": "C",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 296.0,
+        "duration": 4.0,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 0,
+        "measure": 75,
+        "x": 406.4509734696,
+        "y": 344.74251622080004,
+        "pitch": 74,
+        "step": "D",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "w"
+      },
+      "kind": "arc",
+      "start": [
+        270.0372218856,
+        342.7273846062
+      ],
+      "end": [
+        410.3263641396,
+        338.69712137700003
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 2,
+        "onset": 2.5,
+        "absolute": 290.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 1,
+        "measure": 73,
+        "x": 156.7207986948,
+        "y": 411.86189999940007,
+        "pitch": 65,
+        "step": "F",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 291.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 1,
+        "measure": 73,
+        "x": 193.3044866196,
+        "y": 406.90157602500005,
+        "pitch": 69,
+        "step": "A",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        160.9062206184,
+        416.35719360120004
+      ],
+      "end": [
+        195.9397522752,
+        411.3968696268
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 298.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 1,
+        "measure": 75,
+        "x": 479.6183493192,
+        "y": 411.86189999940007,
+        "pitch": 65,
+        "step": "F",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 299.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 1,
+        "measure": 75,
+        "x": 534.4938812064,
+        "y": 414.3420619866,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        483.8037712428,
+        416.35719360120004
+      ],
+      "end": [
+        537.129146862,
+        418.83735558840004
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 290.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 2,
+        "measure": 73,
+        "x": 138.4289547324,
+        "y": 461.00010937080003,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 2,
+        "onset": 3.0,
+        "absolute": 291.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 2,
+        "measure": 73,
+        "x": 175.0126426572,
+        "y": 458.5199473836,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        142.614376656,
+        456.50481576900006
+      ],
+      "end": [
+        177.6479083128,
+        452.4745525398001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 1.0,
+        "absolute": 293.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 2,
+        "measure": 74,
+        "x": 265.851799962,
+        "y": 465.96043334520004,
+        "pitch": 57,
+        "step": "A",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 1.5,
+        "absolute": 297.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 1,
+        "role": 2,
+        "measure": 75,
+        "x": 461.3265053568,
+        "y": 461.00010937080003,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        270.0372218856,
+        461.4651397434001
+      ],
+      "end": [
+        463.9617710124,
+        456.50481576900006
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 304.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 0,
+        "measure": 77,
+        "x": 243.9945965832,
+        "y": 591.6736440714001,
+        "pitch": 74,
+        "step": "D",
+        "alter": 0,
+        "octave": 5,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 3.0,
+        "absolute": 307.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 0,
+        "measure": 77,
+        "x": 334.3687070076,
+        "y": 599.114130033,
+        "pitch": 69,
+        "step": "A",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        248.1800185068,
+        585.6282492276
+      ],
+      "end": [
+        337.0039726632,
+        594.6188364312001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 302.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 1,
+        "measure": 76,
+        "x": 166.0217363028,
+        "y": 651.3525418884001,
+        "pitch": 67,
+        "step": "G",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 303.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 1,
+        "measure": 76,
+        "x": 218.8820650416,
+        "y": 658.79302785,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        170.2071582264,
+        657.3979367322
+      ],
+      "end": [
+        221.5173306972,
+        663.2883214518
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 306.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 1,
+        "measure": 77,
+        "x": 299.180159724,
+        "y": 653.8327038756,
+        "pitch": 65,
+        "step": "F",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 307.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 1,
+        "measure": 77,
+        "x": 352.0404884628,
+        "y": 656.3128658628001,
+        "pitch": 63,
+        "step": "E",
+        "alter": -1,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        303.3655816476,
+        658.3279974774001
+      ],
+      "end": [
+        354.6757541184,
+        660.8081594646001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 2,
+        "onset": 2.5,
+        "absolute": 310.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 1,
+        "measure": 78,
+        "x": 436.0589581884,
+        "y": 653.8327038756,
+        "pitch": 65,
+        "step": "F",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 4,
+        "onset": 3.5,
+        "absolute": 311.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 1,
+        "measure": 78,
+        "x": 471.247505472,
+        "y": 648.8723799012,
+        "pitch": 69,
+        "step": "A",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        440.244380112,
+        658.3279974774001
+      ],
+      "end": [
+        473.8827711276,
+        653.3676735030001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 304.0,
+        "duration": 1.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 2,
+        "measure": 77,
+        "x": 243.9945965832,
+        "y": 707.4662068488001,
+        "pitch": 58,
+        "step": "B",
+        "alter": -1,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 3.0,
+        "absolute": 307.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 2,
+        "measure": 77,
+        "x": 334.3687070076,
+        "y": 704.9860448616,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        248.1800185068,
+        713.5116016926
+      ],
+      "end": [
+        331.8884569788,
+        718.471925667
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 1,
+        "onset": 2.0,
+        "absolute": 310.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 2,
+        "measure": 78,
+        "x": 418.3871767332,
+        "y": 704.9860448616,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 2,
+        "onset": 3.0,
+        "absolute": 311.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 2,
+        "measure": 78,
+        "x": 453.7307396436,
+        "y": 702.5058828744001,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        422.5725986568,
+        700.4907512598
+      ],
+      "end": [
+        456.3660052992,
+        696.4604880306001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 300.0,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 2,
+        "measure": 76,
+        "x": 95.4896261088,
+        "y": 704.9860448616,
+        "pitch": 60,
+        "step": "C",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "b": {
+        "index": 3,
+        "onset": 1.5,
+        "absolute": 301.5,
+        "duration": 0.5,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 2,
+        "measure": 76,
+        "x": 148.3499548476,
+        "y": 702.5058828744001,
+        "pitch": 62,
+        "step": "D",
+        "alter": 0,
+        "octave": 4,
+        "glyph": "œ"
+      },
+      "kind": "arc",
+      "start": [
+        99.6750480324,
+        700.4907512598
+      ],
+      "end": [
+        150.9852205032,
+        696.4604880306001
+      ],
+      "page": 8
+    },
+    {
+      "a": {
+        "index": 0,
+        "onset": 0.0,
+        "absolute": 300.0,
+        "duration": 2.0,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 3,
+        "measure": 76,
+        "x": 95.4896261088,
+        "y": 765.9050236722001,
+        "pitch": 53,
+        "step": "F",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "˙"
+      },
+      "b": {
+        "index": 2,
+        "onset": 3.0,
+        "absolute": 303.0,
+        "duration": 1.0,
+        "chord": false,
+        "page": 8,
+        "system": 2,
+        "role": 3,
+        "measure": 76,
+        "x": 201.2102835864,
+        "y": 765.9050236722001,
+        "pitch": 53,
+        "step": "F",
+        "alter": 0,
+        "octave": 3,
+        "glyph": "œ"
+      },
+      "kind": "close",
+      "start": [
+        88.0488760224,
+        777.3757728630001
+      ],
+      "end": [
+        198.7300335576,
+        778.3058336082
+      ],
+      "page": 8
+    }
+  ],
+  "connections": [
+    {
+      "a": [
+        2,
+        2,
+        0.0,
+        58
+      ],
+      "b": [
+        2,
+        3,
+        0.0,
+        55
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        6,
+        0.0,
+        70
+      ],
+      "b": [
+        1,
+        6,
+        1.5,
+        69
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        7,
+        0.0,
+        74
+      ],
+      "b": [
+        1,
+        7,
+        1.0,
+        70
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        0,
+        7,
+        2.0,
+        77
+      ],
+      "b": [
+        0,
+        7,
+        3.0,
+        75
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        7,
+        3.0,
+        70
+      ],
+      "b": [
+        1,
+        7,
+        3.25,
+        69
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        7,
+        3.5,
+        67
+      ],
+      "b": [
+        1,
+        7,
+        3.75,
+        65
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        3,
+        15,
+        0.0,
+        55
+      ],
+      "b": [
+        3,
+        16,
+        0.0,
+        51
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        16,
+        0.0,
+        63
+      ],
+      "b": [
+        2,
+        17,
+        0.0,
+        62
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        17,
+        0.0,
+        67
+      ],
+      "b": [
+        1,
+        17,
+        1.0,
+        67
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        18,
+        0.0,
+        67
+      ],
+      "b": [
+        1,
+        19,
+        0.0,
+        67
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        19,
+        0.0,
+        58
+      ],
+      "b": [
+        2,
+        19,
+        1.0,
+        58
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        0,
+        20,
+        0.0,
+        74
+      ],
+      "b": [
+        0,
+        21,
+        0.0,
+        77
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        21,
+        0.0,
+        62
+      ],
+      "b": [
+        2,
+        21,
+        2.5,
+        60
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        3,
+        21,
+        0.0,
+        58
+      ],
+      "b": [
+        3,
+        22,
+        0.0,
+        51
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        22,
+        0.0,
+        70
+      ],
+      "b": [
+        1,
+        22,
+        1.0,
+        63
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        0,
+        22,
+        2.0,
+        72
+      ],
+      "b": [
+        0,
+        22,
+        3.75,
+        70
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        37,
+        0.0,
+        60
+      ],
+      "b": [
+        2,
+        37,
+        0.5,
+        58
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        37,
+        1.0,
+        57
+      ],
+      "b": [
+        2,
+        37,
+        1.5,
+        60
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        70,
+        0.0,
+        62
+      ],
+      "b": [
+        1,
+        70,
+        3.5,
+        63
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        70,
+        0.0,
+        58
+      ],
+      "b": [
+        2,
+        70,
+        1.5,
+        60
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        71,
+        0.0,
+        60
+      ],
+      "b": [
+        2,
+        71,
+        1.5,
+        62
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        3,
+        71,
+        0.0,
+        53
+      ],
+      "b": [
+        3,
+        71,
+        3.0,
+        53
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        71,
+        2.0,
+        67
+      ],
+      "b": [
+        1,
+        71,
+        3.5,
+        62
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        0,
+        72,
+        0.0,
+        74
+      ],
+      "b": [
+        0,
+        72,
+        3.0,
+        69
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        72,
+        0.0,
+        58
+      ],
+      "b": [
+        2,
+        72,
+        3.0,
+        60
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        72,
+        2.0,
+        65
+      ],
+      "b": [
+        1,
+        72,
+        3.5,
+        63
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        73,
+        2.0,
+        60
+      ],
+      "b": [
+        2,
+        73,
+        3.0,
+        62
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        73,
+        2.5,
+        65
+      ],
+      "b": [
+        1,
+        73,
+        3.5,
+        69
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        0,
+        74,
+        1.0,
+        72
+      ],
+      "b": [
+        0,
+        75,
+        0.0,
+        74
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        74,
+        1.0,
+        57
+      ],
+      "b": [
+        2,
+        75,
+        1.5,
+        60
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        75,
+        2.0,
+        65
+      ],
+      "b": [
+        1,
+        75,
+        3.5,
+        63
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        3,
+        75,
+        2.0,
+        50
+      ],
+      "b": [
+        3,
+        76,
+        3.0,
+        53
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        76,
+        0.0,
+        60
+      ],
+      "b": [
+        2,
+        76,
+        1.5,
+        62
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        76,
+        2.0,
+        67
+      ],
+      "b": [
+        1,
+        76,
+        3.5,
+        62
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        0,
+        77,
+        0.0,
+        74
+      ],
+      "b": [
+        0,
+        77,
+        3.0,
+        69
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        77,
+        0.0,
+        58
+      ],
+      "b": [
+        2,
+        77,
+        3.0,
+        60
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        77,
+        2.0,
+        65
+      ],
+      "b": [
+        1,
+        77,
+        3.5,
+        63
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        2,
+        78,
+        2.0,
+        60
+      ],
+      "b": [
+        2,
+        78,
+        3.0,
+        62
+      ],
+      "tie": false
+    },
+    {
+      "a": [
+        1,
+        78,
+        2.5,
+        65
+      ],
+      "b": [
+        1,
+        78,
+        3.5,
+        69
+      ],
+      "tie": false
+    }
+  ],
+  "unpaired": []
+}

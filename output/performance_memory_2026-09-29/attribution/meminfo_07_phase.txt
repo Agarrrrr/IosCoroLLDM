@@ -1,0 +1,18 @@
+I/flutter (14782): AUDIT START small_500_saved_settle
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 159KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3410KB/9554KB, paused 28us,38us total 10.965ms
+I/flutter (14782): AUDIT END small_500_saved_settle 5001.145 ms, 284 frames, error=null
+I/flutter (14782): AUDIT START small_500_saved_draw
+W/libc    (14782): Access denied finding property "sys.perf.boostopt"
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 175KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3410KB/9554KB, paused 28us,33us total 10.757ms
+I/flutter (14782): AUDIT END small_500_saved_draw 9819.71 ms, 573 frames, error=null
+I/flutter (14782): AUDIT START small_closed
+I/flutter (14782): AUDIT END small_closed 5001.978 ms, 301 frames, error=null
+I/flutter (14782): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (14782): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (14782): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(14782): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(14782): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (14782): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/f3d5fa56-01b0-4608-8db4-2852e16effb0.pdf (86 ms)
+I/flutter (14782): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (3 ms)
+I/flutter (14782): AUDIT START heavy_fit
+I/flutter (14782): PdfViewer: Loaded page 9 of 9 in 148 ms

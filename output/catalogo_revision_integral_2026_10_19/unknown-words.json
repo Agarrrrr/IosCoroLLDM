@@ -1,0 +1,331 @@
+[
+  {
+    "index": 2,
+    "part": 0,
+    "bar": 65,
+    "token": "dor",
+    "context": "de mos al crea a dor por su in fi ni to a"
+  },
+  {
+    "index": 2,
+    "part": 1,
+    "bar": 61,
+    "token": "dor",
+    "context": "te mos al crea a dor Je ho vá Al gran Se ñor"
+  },
+  {
+    "index": 2,
+    "part": 1,
+    "bar": 65,
+    "token": "dor",
+    "context": "de mos al crea a dor por su in fi ni to a"
+  },
+  {
+    "index": 2,
+    "part": 2,
+    "bar": 65,
+    "token": "dor",
+    "context": "de mos al crea a dor por su in fi ni to a"
+  },
+  {
+    "index": 2,
+    "part": 3,
+    "bar": 61,
+    "token": "dor",
+    "context": "te mos al crea a dor Se ñor Jeho vá Al gran Se"
+  },
+  {
+    "index": 2,
+    "part": 3,
+    "bar": 65,
+    "token": "dor",
+    "context": "de mos al crea a dor por su in fi ni to mor"
+  },
+  {
+    "index": 4,
+    "part": 0,
+    "bar": 99,
+    "token": "ci",
+    "context": "de Sión sea ben de ci do Je ho vá, ro so es"
+  },
+  {
+    "index": 4,
+    "part": 0,
+    "bar": 101,
+    "token": "ro",
+    "context": "ci do Je ho vá, ro so es su Nom bre Je ho"
+  },
+  {
+    "index": 4,
+    "part": 1,
+    "bar": 99,
+    "token": "ci",
+    "context": "de Sión sea ben de ci do Je ho vá, ro so es"
+  },
+  {
+    "index": 4,
+    "part": 1,
+    "bar": 101,
+    "token": "ro",
+    "context": "ci do Je ho vá, ro so es su Nom bre Je ho"
+  },
+  {
+    "index": 4,
+    "part": 2,
+    "bar": 99,
+    "token": "ci",
+    "context": "de Sión sea ben de ci do Je ho vá, ro so es"
+  },
+  {
+    "index": 4,
+    "part": 2,
+    "bar": 101,
+    "token": "ro",
+    "context": "ci do Je ho vá, ro so es su Nom bre Je ho"
+  },
+  {
+    "index": 4,
+    "part": 2,
+    "bar": 97,
+    "token": "Po",
+    "context": "to dos ex al tad; Po de"
+  },
+  {
+    "index": 4,
+    "part": 3,
+    "bar": 99,
+    "token": "ci",
+    "context": "de Sión sea ben de ci do Je ho vá, ro so es"
+  },
+  {
+    "index": 4,
+    "part": 3,
+    "bar": 101,
+    "token": "ro",
+    "context": "ci do Je ho vá, ro so es su Nom bre Je ho"
+  },
+  {
+    "index": 21,
+    "part": 0,
+    "bar": 1,
+    "token": "I",
+    "context": "I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 21,
+    "part": 0,
+    "bar": 1,
+    "token": "ma",
+    "context": "I ma (I ma gi na te tú) Cúan"
+  },
+  {
+    "index": 21,
+    "part": 0,
+    "bar": 34,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 21,
+    "part": 0,
+    "bar": 34,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Gran"
+  },
+  {
+    "index": 21,
+    "part": 0,
+    "bar": 67,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 21,
+    "part": 0,
+    "bar": 67,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Pre"
+  },
+  {
+    "index": 21,
+    "part": 2,
+    "bar": 1,
+    "token": "I",
+    "context": "I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 21,
+    "part": 2,
+    "bar": 1,
+    "token": "ma",
+    "context": "I ma (I ma gi na te tú) Cúan"
+  },
+  {
+    "index": 21,
+    "part": 2,
+    "bar": 34,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 21,
+    "part": 2,
+    "bar": 34,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Gran"
+  },
+  {
+    "index": 21,
+    "part": 2,
+    "bar": 67,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 21,
+    "part": 2,
+    "bar": 67,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Pre"
+  },
+  {
+    "index": 22,
+    "part": 0,
+    "bar": 1,
+    "token": "I",
+    "context": "I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 22,
+    "part": 0,
+    "bar": 1,
+    "token": "ma",
+    "context": "I ma (I ma gi na te tú) Cúan"
+  },
+  {
+    "index": 22,
+    "part": 0,
+    "bar": 34,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 22,
+    "part": 0,
+    "bar": 34,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Gran"
+  },
+  {
+    "index": 22,
+    "part": 0,
+    "bar": 67,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 22,
+    "part": 0,
+    "bar": 67,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Pre"
+  },
+  {
+    "index": 22,
+    "part": 2,
+    "bar": 1,
+    "token": "I",
+    "context": "I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 22,
+    "part": 2,
+    "bar": 1,
+    "token": "ma",
+    "context": "I ma (I ma gi na te tú) Cúan"
+  },
+  {
+    "index": 22,
+    "part": 2,
+    "bar": 34,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 22,
+    "part": 2,
+    "bar": 34,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Gran"
+  },
+  {
+    "index": 22,
+    "part": 2,
+    "bar": 67,
+    "token": "I",
+    "context": "ra siem pre ja más. I ma (I ma gi na te tú)"
+  },
+  {
+    "index": 22,
+    "part": 2,
+    "bar": 67,
+    "token": "ma",
+    "context": "siem pre ja más. I ma (I ma gi na te tú) Pre"
+  },
+  {
+    "index": 25,
+    "part": 0,
+    "bar": 142,
+    "token": "ren",
+    "context": "siem pre. da crea a ren le ¡Oh, sí, a do rar! ¡A"
+  },
+  {
+    "index": 25,
+    "part": 1,
+    "bar": 141,
+    "token": "To",
+    "context": "do rén le siem pre. To la ción dó le ¡Oh, sí, a"
+  },
+  {
+    "index": 25,
+    "part": 2,
+    "bar": 141,
+    "token": "To",
+    "context": "do rén le siem pre. To la ción dó le, ¡Oh, sí, a"
+  },
+  {
+    "index": 25,
+    "part": 3,
+    "bar": 141,
+    "token": "To",
+    "context": "rén le por siem pre. To la ción dó le, ¡Oh, sí, a"
+  },
+  {
+    "index": 34,
+    "part": 0,
+    "bar": 142,
+    "token": "ren",
+    "context": "siem pre. da crea a ren le ¡Oh, sí, a do rar! ¡A"
+  },
+  {
+    "index": 34,
+    "part": 1,
+    "bar": 141,
+    "token": "To",
+    "context": "do rén le siem pre. To la ción dó le ¡Oh, sí, a"
+  },
+  {
+    "index": 34,
+    "part": 2,
+    "bar": 141,
+    "token": "To",
+    "context": "do rén le siem pre. To la ción dó le, ¡Oh, sí, a"
+  },
+  {
+    "index": 34,
+    "part": 3,
+    "bar": 141,
+    "token": "To",
+    "context": "rén le por siem pre. To la ción dó le, ¡Oh, sí, a"
+  }
+]

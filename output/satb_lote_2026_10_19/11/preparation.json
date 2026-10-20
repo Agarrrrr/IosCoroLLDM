@@ -1,0 +1,287 @@
+{
+  "record": {
+    "index": 11,
+    "title": "PARA SIEMPRE ES SU MISERICORDIA",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\PARA SIEMPRE ES SU MISERICORDIA.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\PARA SIEMPRE ES SU MISERICORDIA.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\PARA SIEMPRE ES SU MISERICORDIA.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        17,
+        17,
+        17,
+        17
+      ],
+      "notes": 370,
+      "lyrics": 698,
+      "dynamics": {},
+      "voices": {
+        "1": 68
+      }
+    },
+    "catalog": {
+      "id": "82818c5f-1176-4e01-942a-f5db22553d39",
+      "nombre": "Para Siempre es su Misericordia",
+      "archivo": "para-siempre-es-su-misericordia.pdf",
+      "midi_archivo": "para-siempre-es-su-misericordia-1778990571647.mid",
+      "temas": [
+        "Salmo"
+      ],
+      "es_privado": false,
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 1,
+      "dynamics": []
+    },
+    "finalName": "PARA SIEMPRE ES SU MISERICORDIA - SATB - Cantai",
+    "sourceMeasures": 17,
+    "expandedMeasures": 51,
+    "parts": 4,
+    "sourceNotes": 370,
+    "finalNotes": 1110,
+    "split": false,
+    "filledLyrics": 0
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      10,
+      3
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      16,
+      3
+    ]
+  ],
+  "editorialLyricFills": []
+}

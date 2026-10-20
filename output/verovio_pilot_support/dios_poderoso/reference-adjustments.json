@@ -1,0 +1,23 @@
+[
+  {
+    "role": "Tenor",
+    "measure": 42,
+    "pdfPitch": 55,
+    "midiPitch": 58
+  },
+  {
+    "role": "Bajo",
+    "measure": 74,
+    "word": "corazón",
+    "pdfOnsets": [
+      2.25,
+      2.75,
+      3
+    ],
+    "midiOnsets": [
+      2.25,
+      2.5,
+      2.75
+    ]
+  }
+]

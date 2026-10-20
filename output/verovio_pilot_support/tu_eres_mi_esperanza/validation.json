@@ -1,0 +1,256 @@
+{
+  "originalMeasures": 26,
+  "expandedMeasures": 69,
+  "quarterBeats": 411,
+  "parts": 4,
+  "pages": 9,
+  "checks": [
+    {
+      "file": "Tú Eres mi Esperanza - SATB extendido - Cantai.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "fermatas": 4,
+        "articulations": 0,
+        "notes": 1561,
+        "cueNotes": 0,
+        "lyrics": 1296,
+        "ties": 218,
+        "slurstart": 6,
+        "slurstop": 6
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          85.0
+        ],
+        [
+          400.5,
+          85.0
+        ],
+        [
+          401.0,
+          83.333333
+        ],
+        [
+          401.5,
+          81.666667
+        ],
+        [
+          402.0,
+          80.0
+        ],
+        [
+          402.5,
+          78.333333
+        ],
+        [
+          403.0,
+          76.666667
+        ],
+        [
+          403.5,
+          75.0
+        ],
+        [
+          404.0,
+          73.333333
+        ],
+        [
+          404.5,
+          71.666667
+        ],
+        [
+          405.0,
+          70.0
+        ],
+        [
+          405.5,
+          68.333333
+        ],
+        [
+          406.0,
+          66.666667
+        ],
+        [
+          406.5,
+          65.0
+        ],
+        [
+          407.0,
+          63.333333
+        ],
+        [
+          407.5,
+          61.666667
+        ],
+        [
+          408.0,
+          60.0
+        ]
+      ]
+    },
+    {
+      "file": "render/exported.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "fermatas": 4,
+        "articulations": 0,
+        "notes": 1561,
+        "cueNotes": 0,
+        "lyrics": 1296,
+        "ties": 218,
+        "slurstart": 6,
+        "slurstop": 6
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          85.0
+        ],
+        [
+          400.5,
+          85.0
+        ]
+      ]
+    },
+    {
+      "file": "render/reimport.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "fermatas": 4,
+        "articulations": 0,
+        "notes": 1561,
+        "cueNotes": 0,
+        "lyrics": 1296,
+        "ties": 218,
+        "slurstart": 6,
+        "slurstop": 6
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          85.0
+        ],
+        [
+          400.5,
+          85.0
+        ]
+      ]
+    }
+  ],
+  "attacks": [
+    326,
+    326,
+    362,
+    329
+  ],
+  "pdfGeometryVerified": true,
+  "nativePlaybackAttacksMatchWrittenTies": true,
+  "printedTemposPreserved": true,
+  "nativeMidiValidated": [
+    "playback",
+    "playback-reimport"
+  ],
+  "referenceChecks": [
+    {
+      "role": 0,
+      "attacks": 326,
+      "documentedCorrections": [
+        "soprano Db from PDF",
+        "soprano Db from PDF",
+        "soprano Db from PDF"
+      ]
+    },
+    {
+      "role": 1,
+      "attacks": 326,
+      "documentedCorrections": []
+    },
+    {
+      "role": 2,
+      "attacks": 362,
+      "documentedCorrections": [
+        "tenor lower divisi D tied from PDF",
+        "tenor lower divisi D tied from PDF",
+        "tenor lower divisi D tied from PDF"
+      ]
+    },
+    {
+      "role": 3,
+      "attacks": 329,
+      "documentedCorrections": []
+    }
+  ],
+  "canonicalTempos": [
+    [
+      0.0,
+      85.0
+    ],
+    [
+      400.5,
+      85.0
+    ],
+    [
+      401.0,
+      83.333333
+    ],
+    [
+      401.5,
+      81.666667
+    ],
+    [
+      402.0,
+      80.0
+    ],
+    [
+      402.5,
+      78.333333
+    ],
+    [
+      403.0,
+      76.666667
+    ],
+    [
+      403.5,
+      75.0
+    ],
+    [
+      404.0,
+      73.333333
+    ],
+    [
+      404.5,
+      71.666667
+    ],
+    [
+      405.0,
+      70.0
+    ],
+    [
+      405.5,
+      68.333333
+    ],
+    [
+      406.0,
+      66.666667
+    ],
+    [
+      406.5,
+      65.0
+    ],
+    [
+      407.0,
+      63.333333
+    ],
+    [
+      407.5,
+      61.666667
+    ],
+    [
+      408.0,
+      60.0
+    ]
+  ],
+  "musescoreReexportTemposPreserved": false,
+  "ritardandoDestinationEditorial": 60
+}

@@ -1,0 +1,149 @@
+{
+  "input": "results.json",
+  "device": {
+    "refreshRate": 60.000003814697266,
+    "devicePixelRatio": 2.8125,
+    "date": "2026-09-30T09:37:43.492546"
+  },
+  "budgetMs": 16.666665607028605,
+  "note": "UI/raster duration thresholds are not a count of display-dropped frames. Timers include scheduling delays. RSS includes test instrumentation and graphics allocations.",
+  "rssAtEndMiB": 475.203125,
+  "scenarios": {
+    "viewer_reopen_dense_1": {
+      "rssBefore": 371879936,
+      "elapsedMs": 2718.473,
+      "rssAfter": 432091136,
+      "frameCount": 152,
+      "uiMs": {
+        "p50": 0.973,
+        "p95": 1.79,
+        "p99": 12.264,
+        "max": 15.764
+      },
+      "rasterMs": {
+        "p50": 1.671,
+        "p95": 2.83,
+        "p99": 10.003,
+        "max": 38.158
+      },
+      "totalSpanMs": {
+        "p50": 3.307,
+        "p95": 6.355,
+        "p99": 105.838,
+        "max": 112.356
+      },
+      "timerGapsMs": {
+        "p50": 15.998,
+        "p95": 16.96,
+        "p99": 23.891,
+        "max": 44.178
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.6578947368421052,
+      "rssAfterMiB": 412.07421875
+    },
+    "viewer_reopen_dense_2": {
+      "rssBefore": 414834688,
+      "elapsedMs": 2706.701,
+      "rssAfter": 448962560,
+      "frameCount": 152,
+      "uiMs": {
+        "p50": 1.656,
+        "p95": 2.238,
+        "p99": 5.906,
+        "max": 10.586
+      },
+      "rasterMs": {
+        "p50": 2.515,
+        "p95": 3.409,
+        "p99": 5.228,
+        "max": 10.037
+      },
+      "totalSpanMs": {
+        "p50": 5.293,
+        "p95": 7.837,
+        "p99": 105.468,
+        "max": 111.976
+      },
+      "timerGapsMs": {
+        "p50": 15.999,
+        "p95": 17.378,
+        "p99": 22.759,
+        "max": 56.937
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 428.1640625
+    },
+    "eraser_500_saved": {
+      "rssBefore": 442683392,
+      "newStrokes": 0,
+      "moveEvents": 120,
+      "error": "Expected: <1>\n  Actual: <0>\n",
+      "stack": "#0      fail (package:matcher/src/expect/expect.dart:149)\n#1      _expect (package:matcher/src/expect/expect.dart:144)\n#2      expect (package:matcher/src/expect/expect.dart:56)\n#3      expect (package:flutter_test/src/widget_tester.dart:474)\n#4      main.<anonymous closure>.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_optimization_test.dart:115)\n<asynchronous suspension>\n#5      IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:304)\n<asynchronous suspension>\n#6      measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:67)\n<asynchronous suspension>\n#7      main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_optimization_test.dart:86)\n<asynchronous suspension>\n#8      LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)\n<asynchronous suspension>\n#9      main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_optimization_test.dart:20)\n<asynchronous suspension>\n#10     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)\n<asynchronous suspension>\n#11     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)\n<asynchronous suspension>\n#12     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)\n<asynchronous suspension>\n",
+      "elapsedMs": 1397.57,
+      "rssAfter": 444784640,
+      "frameCount": 83,
+      "uiMs": {
+        "p50": 1.522,
+        "p95": 1.845,
+        "p99": 2.701,
+        "max": 2.701
+      },
+      "rasterMs": {
+        "p50": 2.48,
+        "p95": 3.217,
+        "p99": 6.19,
+        "max": 6.19
+      },
+      "totalSpanMs": {
+        "p50": 5.077,
+        "p95": 6.845,
+        "p99": 30.043,
+        "max": 30.043
+      },
+      "timerGapsMs": {
+        "p50": 16.021,
+        "p95": 17.128,
+        "p99": 53.48,
+        "max": 53.48
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 424.1796875
+    },
+    "viewer_reopen_empty": {
+      "rssBefore": 428916736,
+      "elapsedMs": 2721.865,
+      "rssAfter": 467103744,
+      "frameCount": 157,
+      "uiMs": {
+        "p50": 1.694,
+        "p95": 2.12,
+        "p99": 12.297,
+        "max": 38.475
+      },
+      "rasterMs": {
+        "p50": 2.394,
+        "p95": 2.982,
+        "p99": 3.206,
+        "max": 5.712
+      },
+      "totalSpanMs": {
+        "p50": 5.157,
+        "p95": 7.235,
+        "p99": 42.541,
+        "max": 78.498
+      },
+      "timerGapsMs": {
+        "p50": 16.013,
+        "p95": 17.512,
+        "p99": 21.363,
+        "max": 43.515
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.6369426751592357,
+      "rssAfterMiB": 445.46484375
+    }
+  }
+}

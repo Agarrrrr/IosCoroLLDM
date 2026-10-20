@@ -1,0 +1,2041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead xml:id="m1g6ybk6">
+      <fileDesc xml:id="f949zv5">
+         <titleStmt xml:id="te2owxm">
+            <title>Acércame a Ti</title>
+            <respStmt />
+         </titleStmt>
+         <pubStmt xml:id="p11vq2no" />
+      </fileDesc>
+      <encodingDesc xml:id="eqx3y69">
+         <appInfo xml:id="afxm6zk">
+            <application xml:id="a1l8cc8x" isodate="2026-10-17T04:12:16" version="6.3.0-425dd7b">
+               <name xml:id="n8tr3rn">Verovio</name>
+               <p xml:id="pvg9fop">Transcoded from MusicXML</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="p11304fp">
+            <score xml:id="qenvbe4">
+               <scoreDef xml:id="r19tugkd">
+                  <staffGrp xml:id="t1dx100z">
+                     <staffGrp xml:id="P1" bar.thru="true">
+                        <grpSym xml:id="p18cgiwk" symbol="brace" />
+                        <label xml:id="u27nokn">SATB</label>
+                        <staffDef xml:id="xn6cqop" n="1" lines="5" ppq="480">
+                           <clef xml:id="e14xc47h" shape="G" line="2" />
+                           <meterSig xml:id="f1p39tex" count="4" unit="4" />
+                        </staffDef>
+                        <staffDef xml:id="g1eewm74" n="2" lines="5" ppq="480">
+                           <clef xml:id="n1gyn33d" shape="F" line="4" />
+                           <meterSig xml:id="o1xz7lnv" count="4" unit="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="swna03c">
+                  <expansion plist="#q8tr2wy #r1v7q2o6 #q8tr2wy #r1v7q2o6 #q8tr2wy #s1pvov1j #t128jqjk" xml:id="uhqqd0y" />
+                  <section xml:id="q8tr2wy">
+                     <measure xml:id="q14jxq14" n="1">
+                        <staff xml:id="z110dn9n" n="1">
+                           <layer xml:id="drh8k8j" n="1">
+                              <note xml:id="acercame-0-0-0" dur.ppq="960" dur="2" oct="4" pname="e" stem.dir="up">
+                                 <verse xml:id="ffju64p" n="1">
+                                    <syl xml:id="g1rrqu87" con="s" wordpos="s">Quie</syl>
+                                 </verse>
+                                 <verse xml:id="iqa3cwg" n="2">
+                                    <syl xml:id="j1wel2an" con="s" wordpos="s">Con</syl>
+                                 </verse>
+                                 <verse xml:id="l13bodyj" n="3">
+                                    <syl xml:id="m1sphx88" con="s" wordpos="s">Dul</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-0-1" dur.ppq="480" dur="4" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="p1jb68bp" n="1">
+                                    <syl xml:id="q179y354" con="s" wordpos="s">ro</syl>
+                                 </verse>
+                                 <verse xml:id="sydnyoy" n="2">
+                                    <syl xml:id="t1htzcz4" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                                 <verse xml:id="v1muvrve" n="3">
+                                    <syl xml:id="w15floyg" con="b" wordpos="s">ce</syl>
+                                    <syl xml:id="y6eyk6" con="s" wordpos="s">o</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-0-2" dur.ppq="480" dur="4" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:id="bkf6q9d" n="1">
+                                    <syl xml:id="c1l6gtew" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                                 <verse xml:id="e1m0sro4" n="2">
+                                    <syl xml:id="fd8ut9t" con="s" wordpos="s">te</syl>
+                                 </verse>
+                                 <verse xml:id="h1npprxp" n="3">
+                                    <syl xml:id="i1qpv1la" con="s" wordpos="s">ra</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="k1z0kt4r" n="2">
+                              <note xml:id="acercame-1-0-0" dur.ppq="960" dur="2" oct="4" pname="c" stem.dir="down" />
+                              <note xml:id="acercame-1-0-1" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-0-2" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="annx3e3" n="2">
+                           <layer xml:id="o1nliz4b" n="1">
+                              <note xml:id="acercame-2-0-0" dur.ppq="960" dur="2" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-0-1" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-0-2" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="sncm42a" n="2">
+                              <note xml:id="acercame-3-0-0" dur.ppq="960" dur="2" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-0-1" dur.ppq="480" dur="4" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-0-2" dur.ppq="480" dur="4" oct="2" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <tempo xml:id="b12urixj" staff="1" tstamp="1" xml:lang="it" midi.bpm="90">Estrofas 1, 2 y 3</tempo>
+                     </measure>
+                     <measure xml:id="wrgg9r1" n="2">
+                        <staff xml:id="f1x7z07u" n="1">
+                           <layer xml:id="hl21plw" n="1">
+                              <note xml:id="acercame-0-1-0" dots="1" dur.ppq="1440" dur="2" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="j13xx5a1" n="1">
+                                    <syl xml:id="kxoxlt7" con="s" wordpos="s">ñor,</syl>
+                                 </verse>
+                                 <verse xml:id="m1oroyhq" n="2">
+                                    <syl xml:id="nlu8old" con="s" wordpos="s">mor</syl>
+                                 </verse>
+                                 <verse xml:id="pyp5rf0" n="3">
+                                    <syl xml:id="qcnbpao" con="s" wordpos="s">ción</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="s1ky4xok" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-0-1-1" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="up">
+                                 <verse xml:id="u1spv3wr" n="1">
+                                    <syl xml:id="v12mfewd" con="s" wordpos="s">es</syl>
+                                 </verse>
+                                 <verse xml:id="x6m5qxq" n="2">
+                                    <syl xml:id="ybt2cij" con="b" wordpos="s">me</syl>
+                                    <syl xml:id="a1ehw0jd" con="s" wordpos="s">a</syl>
+                                 </verse>
+                                 <verse xml:id="c16m6h22" n="3">
+                                    <syl xml:id="d1y1vrb0" con="s" wordpos="s">su</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="f165gbcb" n="2">
+                              <note xml:id="acercame-1-1-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="f" stem.dir="down" />
+                              <rest xml:id="h18xdggz" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-1-1-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="g1fv4kg3" n="2">
+                           <layer xml:id="jtxvhgq" n="1">
+                              <note xml:id="acercame-2-1-0" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                              <beam xml:id="l1lb9dpu">
+                                 <note xml:id="acercame-2-1-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up">
+                                    <verse xml:id="n1328a74" n="1">
+                                       <syl xml:id="oen0cu5" con="s" wordpos="s">Quie</syl>
+                                    </verse>
+                                    <verse xml:id="q1yzilxj" n="2">
+                                       <syl xml:id="r1tkiw6o" con="s" wordpos="s">Me</syl>
+                                    </verse>
+                                    <verse xml:id="tmcw5ak" n="3">
+                                       <syl xml:id="u19x8cn0" con="s" wordpos="s">Y</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-2-1-2" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up">
+                                    <verse xml:id="x1r80fr1" n="1">
+                                       <syl xml:id="y9wtny0" con="b" wordpos="s">ro</syl>
+                                       <syl xml:id="ajk1uv6" con="s" wordpos="s">es</syl>
+                                    </verse>
+                                    <verse xml:id="c7vfglv" n="2">
+                                       <syl xml:id="d1sipsfm" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                    <verse xml:id="fjitk55" n="3">
+                                       <syl xml:id="gsgb7k9" con="s" wordpos="s">su</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-2-1-3" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up">
+                                 <verse xml:id="jf8hskv" n="1">
+                                    <syl xml:id="k1mka0io" con="s" wordpos="s">tar</syl>
+                                 </verse>
+                                 <verse xml:id="m672d32" n="2">
+                                    <syl xml:id="n1gh8btq" con="s" wordpos="s">cer</syl>
+                                 </verse>
+                                 <verse xml:id="p11qf97c" n="3">
+                                    <syl xml:id="qa0nxcf" con="s" wordpos="s">bli</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="srb1zsz">
+                                 <note xml:id="acercame-2-1-4" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up">
+                                    <verse xml:id="ubyq5l" n="1">
+                                       <syl xml:id="vwodiym" con="s" wordpos="s">jun</syl>
+                                    </verse>
+                                    <verse xml:id="x1v90esl" n="2">
+                                       <syl xml:id="yzsq5gp" con="s" wordpos="s">co</syl>
+                                    </verse>
+                                    <verse xml:id="a1bbm5kv" n="3">
+                                       <syl xml:id="b3jztzz" con="b" wordpos="s">me</syl>
+                                       <syl xml:id="ddqsdrm" con="s" wordpos="s">ex</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-2-1-5" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up">
+                                    <verse xml:id="g8v1zyb" n="1">
+                                       <syl xml:id="hcrx94k" con="b" wordpos="s">to</syl>
+                                       <syl xml:id="j1xklhyw" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                    <verse xml:id="l41nr24" n="2">
+                                       <syl xml:id="m11jr1p9" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                    <verse xml:id="orn2yhx" n="3">
+                                       <syl xml:id="p1utlcpi" con="s" wordpos="s">pia</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="r1tdmq15" n="2">
+                              <note xml:id="acercame-3-1-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="d" stem.dir="down" />
+                              <rest xml:id="t1s8vddz" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-3-1-1" dur.ppq="240" dur="8" oct="3" pname="d" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="v1tv1rz9" n="3">
+                        <staff xml:id="exueygr" n="1">
+                           <layer xml:id="g1eizy1h" n="1">
+                              <note xml:id="acercame-0-2-0" dur.ppq="960" dur="2" oct="4" pname="g" stem.dir="up">
+                                 <verse xml:id="i688qwv" n="1">
+                                    <syl xml:id="j1irgf6f" con="s" wordpos="s">tar</syl>
+                                 </verse>
+                                 <verse xml:id="lvq54sr" n="2">
+                                    <syl xml:id="m17dqs7z" con="s" wordpos="s">cer</syl>
+                                 </verse>
+                                 <verse xml:id="o10vg6w1" n="3">
+                                    <syl xml:id="p1d971kn" con="s" wordpos="s">bli</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-2-1" dur.ppq="480" dur="4" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="smyaba" n="1">
+                                    <syl xml:id="tnbapjx" con="s" wordpos="s">jun</syl>
+                                 </verse>
+                                 <verse xml:id="v11b1utm" n="2">
+                                    <syl xml:id="wbwbi5k" con="b" wordpos="s">co</syl>
+                                    <syl xml:id="y1sn1ofp" con="s" wordpos="s">has</syl>
+                                 </verse>
+                                 <verse xml:id="avxa29p" n="3">
+                                    <syl xml:id="b1q9zbcd" con="b" wordpos="s">me</syl>
+                                    <syl xml:id="d1qi3i9u" con="s" wordpos="s">ex</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-2-2" dur.ppq="480" dur="4" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="g1tiqy6f" n="1">
+                                    <syl xml:id="h1trtfr3" con="b" wordpos="s">to</syl>
+                                    <syl xml:id="jpamxsn" con="s" wordpos="s">a</syl>
+                                 </verse>
+                                 <verse xml:id="l8f5pud" n="2">
+                                    <syl xml:id="m196wsng" con="b" wordpos="s">ta</syl>
+                                    <syl xml:id="o8e5zvc" con="s" wordpos="s">a</syl>
+                                 </verse>
+                                 <verse xml:id="ql1fpf5" n="3">
+                                    <syl xml:id="rm9j6ji" con="s" wordpos="s">pia</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="t1g13u0y" n="2">
+                              <note xml:id="acercame-1-2-0" dur.ppq="960" dur="2" oct="4" pname="d" stem.dir="down" />
+                              <note xml:id="acercame-1-2-1" dur.ppq="480" dur="4" oct="4" pname="b" stem.dir="down" />
+                              <note xml:id="acercame-1-2-2" dur.ppq="480" dur="4" oct="4" pname="g" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="f1w90mfe" n="2">
+                           <layer xml:id="x1eoouzx" n="1">
+                              <note xml:id="acercame-2-2-0" dur.ppq="1920" dur="1" oct="3" pname="b" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="avhvv7b" n="2">
+                              <note xml:id="acercame-3-2-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="g" stem.dir="down" />
+                              <beam xml:id="c8fn44b">
+                                 <note xml:id="acercame-3-2-1" dur.ppq="240" dur="8" oct="2" pname="g" stem.dir="down" />
+                                 <note xml:id="acercame-3-2-2" dur.ppq="240" dur="8" oct="2" pname="b" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <slur xml:id="znio8ss" startid="#acercame-2-2-0" endid="#acercame-2-3-0" />
+                     </measure>
+                     <measure xml:id="f84htqz" n="4">
+                        <staff xml:id="ogkzsas" n="1">
+                           <layer xml:id="q3jfy9o" n="1">
+                              <note xml:id="acercame-0-3-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="g" stem.dir="up">
+                                 <verse xml:id="sjzisyn" n="1">
+                                    <syl xml:id="t1okjb8y" con="s" wordpos="s">Ti,</syl>
+                                 </verse>
+                                 <verse xml:id="v115bqer" n="2">
+                                    <syl xml:id="wnap6mf" con="s" wordpos="s">quí,</syl>
+                                 </verse>
+                                 <verse xml:id="ym3pdoa" n="3">
+                                    <syl xml:id="zh590oo" con="s" wordpos="s">ción,</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="bwdm250" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-0-3-1" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="up">
+                                 <verse xml:id="d1ei83er" n="1">
+                                    <syl xml:id="e4njn10" con="s" wordpos="s">Tu</syl>
+                                 </verse>
+                                 <verse xml:id="gz64j2l" n="2">
+                                    <syl xml:id="h1dngzgk" con="s" wordpos="s">Con</syl>
+                                 </verse>
+                                 <verse xml:id="jvn589y" n="3">
+                                    <syl xml:id="k1y47f7y" con="s" wordpos="s">A</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="mitwfs6" n="2">
+                              <note xml:id="acercame-1-3-0" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down">
+                                 <verse xml:id="o1fp8vj0" n="1">
+                                    <syl xml:id="pgbhygp" con="s" wordpos="s">Ti,</syl>
+                                 </verse>
+                                 <verse xml:id="r1ti6xa9" n="2">
+                                    <syl xml:id="sdv81n5" con="s" wordpos="s">quí,</syl>
+                                 </verse>
+                                 <verse xml:id="uqtawyn" n="3">
+                                    <syl xml:id="v16spasb" con="s" wordpos="s">ción,</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="xwydh8h">
+                                 <note xml:id="acercame-1-3-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="down">
+                                    <verse xml:id="zben5j7" n="1">
+                                       <syl xml:id="a17he6g7" con="s" wordpos="s">mi</syl>
+                                    </verse>
+                                    <verse xml:id="c1ilk78q" n="2">
+                                       <syl xml:id="d17514f6" con="s" wordpos="s">oh</syl>
+                                    </verse>
+                                    <verse xml:id="f19uutze" n="3">
+                                       <syl xml:id="ggtw214" con="s" wordpos="s">con</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-3-2" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down">
+                                    <verse xml:id="j1mx08wv" n="1">
+                                       <syl xml:id="k15dm6wv" con="s" wordpos="s">Se</syl>
+                                    </verse>
+                                    <verse xml:id="mfcqihy" n="2">
+                                       <syl xml:id="nhp2anp" con="s" wordpos="s">Se</syl>
+                                    </verse>
+                                    <verse xml:id="p1l6db7p" n="3">
+                                       <syl xml:id="qxo4ui7" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-1-3-3" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down">
+                                 <verse xml:id="t1ynw553" n="1">
+                                    <syl xml:id="u6ubwhw" con="s" wordpos="s">ñor,</syl>
+                                 </verse>
+                                 <verse xml:id="wtirkdz" n="2">
+                                    <syl xml:id="xkig6jq" con="s" wordpos="s">ñor,</syl>
+                                 </verse>
+                                 <verse xml:id="z19oj3sd" n="3">
+                                    <syl xml:id="a1hmuxus" con="s" wordpos="s">mor,</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="c17q75ji">
+                                 <note xml:id="acercame-1-3-4" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down">
+                                    <verse xml:id="e13ptol7" n="1">
+                                       <syl xml:id="fdrn5y0" con="s" wordpos="s">Tu</syl>
+                                    </verse>
+                                    <verse xml:id="h11n2es1" n="2">
+                                       <syl xml:id="i1wc4pw4" con="s" wordpos="s">Con</syl>
+                                    </verse>
+                                    <verse xml:id="kmspape" n="3">
+                                       <syl xml:id="lwhoqqq" con="s" wordpos="s">Tu</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-3-5" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="down">
+                                    <verse xml:id="p10o7xbr" n="1">
+                                       <syl xml:id="q1kgfto2" con="s" wordpos="s">Tu</syl>
+                                    </verse>
+                                    <verse xml:id="skb7ju8" n="2">
+                                       <syl xml:id="t118us5u" con="s" wordpos="s">Con</syl>
+                                    </verse>
+                                    <verse xml:id="v1rweepo" n="3">
+                                       <syl xml:id="w1lx82q8" con="s" wordpos="s">A</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="p1yttpp0" n="2">
+                           <layer xml:id="ya5uopv" n="1">
+                              <note xml:id="acercame-2-3-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="c" stem.dir="up" />
+                              <rest xml:id="a64vrrh" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-2-3-1" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="c16tqt8v" n="2">
+                              <note xml:id="acercame-3-3-0" dur.ppq="480" dur="4" oct="3" pname="c" stem.dir="down" />
+                              <beam xml:id="e1hx6zqd">
+                                 <note xml:id="acercame-3-3-1" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-3-3-2" dur.ppq="240" dur="8" oct="3" pname="f" stem.dir="down" />
+                              </beam>
+                              <note xml:id="acercame-3-3-3" dur.ppq="480" dur="4" oct="3" pname="g" stem.dir="down" />
+                              <beam xml:id="iqqk9if">
+                                 <note xml:id="acercame-3-3-4" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="down">
+                                    <accid xml:id="ki4nz90" accid="s" />
+                                 </note>
+                                 <note xml:id="acercame-3-3-5" dur.ppq="240" dur="8" oct="3" pname="f" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <slur xml:id="n193geca" startid="#acercame-1-3-4" endid="#acercame-1-3-5" />
+                        <slur xml:id="l1a4icyn" startid="#acercame-3-3-4" endid="#acercame-3-3-5" />
+                     </measure>
+                     <measure xml:id="n1ub0x91" n="5">
+                        <staff xml:id="w19tjnv6" n="1">
+                           <layer xml:id="yq36wdq" n="1">
+                              <note xml:id="acercame-0-4-0" dur.ppq="960" dur="2" oct="4" pname="e" stem.dir="up">
+                                 <verse xml:id="awc1muc" n="1">
+                                    <syl xml:id="b1kxti6o" con="s" wordpos="s">ma</syl>
+                                 </verse>
+                                 <verse xml:id="d1amkrxg" n="2">
+                                    <syl xml:id="eafdwiy" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                                 <verse xml:id="gsf74xg" n="3">
+                                    <syl xml:id="h1xmzhcp" con="s" wordpos="s">pós</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-4-1" dur.ppq="480" dur="4" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="k1tiz5o3" n="1">
+                                    <syl xml:id="l134lkz7" con="s" wordpos="s">no</syl>
+                                 </verse>
+                                 <verse xml:id="n123wkim" n="2">
+                                    <syl xml:id="o1j57qm2" con="s" wordpos="s">de</syl>
+                                 </verse>
+                                 <verse xml:id="q1s8yads" n="3">
+                                    <syl xml:id="r3f5xfw" con="s" wordpos="s">tol</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="t1qj8oyu">
+                                 <note xml:id="acercame-0-4-2" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                    <verse xml:id="v585ttj" n="1">
+                                       <syl xml:id="w1av0ut6" con="s" wordpos="s">so</syl>
+                                    </verse>
+                                    <verse xml:id="y1qrq8f1" n="2">
+                                       <syl xml:id="z3sqigf" con="s" wordpos="s">tem</syl>
+                                    </verse>
+                                    <verse xml:id="b1r1oe4c" n="3">
+                                       <syl xml:id="c1hsrz7c" con="s" wordpos="s">de</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-4-3" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                    <verse xml:id="f1eml9lk" n="1">
+                                       <syl xml:id="gw9rr1a" con="s" wordpos="s">bre</syl>
+                                    </verse>
+                                    <verse xml:id="i13jl68" n="3">
+                                       <syl xml:id="jr05ye6" con="s" wordpos="s">bon</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="lj90ju2" n="2">
+                              <note xml:id="acercame-1-4-0" dur.ppq="960" dur="2" oct="3" pname="b" stem.dir="down" />
+                              <note xml:id="acercame-1-4-1" dur.ppq="480" dur="4" oct="4" pname="g" stem.dir="down">
+                                 <accid xml:id="olqh2e4" accid="s" />
+                              </note>
+                              <beam xml:id="pujzrqu">
+                                 <note xml:id="acercame-1-4-2" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-1-4-3" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="x7gz2gi" n="2">
+                           <layer xml:id="s13xsr12" n="1">
+                              <note xml:id="acercame-2-4-0" dur.ppq="960" dur="2" oct="3" pname="g" stem.dir="up">
+                                 <accid xml:id="uvvtc81" accid="s" />
+                              </note>
+                              <note xml:id="acercame-2-4-1" dur.ppq="480" dur="4" oct="4" pname="d" stem.dir="up" />
+                              <beam xml:id="w1d1y1qx">
+                                 <note xml:id="acercame-2-4-2" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up" />
+                                 <note xml:id="acercame-2-4-3" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="z1f77sf1" n="2">
+                              <note xml:id="acercame-3-4-0" dur.ppq="960" dur="2" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-3-4-1" dur.ppq="480" dur="4" oct="3" pname="e" stem.dir="down" />
+                              <beam xml:id="c1iepmxm">
+                                 <note xml:id="acercame-3-4-2" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-3-4-3" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="f1xorqrm" n="6">
+                        <staff xml:id="o9cd4bx" n="1">
+                           <layer xml:id="qrrm6qd" n="1">
+                              <note xml:id="acercame-0-5-0" dots="1" dur.ppq="1440" dur="2" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="sczxvdc" n="1">
+                                    <syl xml:id="t1qszj2o" con="s" wordpos="s">mí,</syl>
+                                 </verse>
+                                 <verse xml:id="v1nu3dxj" n="2">
+                                    <syl xml:id="w65gsnd" con="s" wordpos="s">blor,</syl>
+                                 </verse>
+                                 <verse xml:id="yv6ajeg" n="3">
+                                    <syl xml:id="z1abyjo5" con="s" wordpos="s">dad,</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="b1hrdrb4" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-0-5-1" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="dgn449t" n="1">
+                                    <syl xml:id="e1lw8cnj" con="s" wordpos="s">de</syl>
+                                 </verse>
+                                 <verse xml:id="g1262efr" n="2">
+                                    <syl xml:id="h1ruokah" con="s" wordpos="s">me</syl>
+                                 </verse>
+                                 <verse xml:id="j41bboc" n="3">
+                                    <syl xml:id="kbg9mje" con="s" wordpos="s">pro</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="mmwiacj" n="2">
+                              <note xml:id="acercame-1-5-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="a" stem.dir="down" />
+                              <rest xml:id="o17063mw" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-1-5-1" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="p8bu3p" n="2">
+                           <layer xml:id="qbjl0fp" n="1">
+                              <note xml:id="acercame-2-5-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="e" stem.dir="up" />
+                              <rest xml:id="s1fei0hm" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-2-5-1" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="u9z7148" n="2">
+                              <note xml:id="acercame-3-5-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="a" stem.dir="down" />
+                              <rest xml:id="w1qwdu6r" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-3-5-1" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="y14fcxhr" n="7">
+                        <staff xml:id="hckyqro" n="1">
+                           <layer xml:id="j12wleh7" n="1">
+                              <note xml:id="acercame-0-6-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:id="lp5n8m" n="1">
+                                    <syl xml:id="m66wlfo" con="s" wordpos="s">nue</syl>
+                                 </verse>
+                                 <verse xml:id="oxja45j" n="2">
+                                    <syl xml:id="pb7341i" con="s" wordpos="s">pos</syl>
+                                 </verse>
+                                 <verse xml:id="r17hgecb" n="3">
+                                    <syl xml:id="sziv4f7" con="s" wordpos="s">pi</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="u1kql7jw">
+                                 <note xml:id="acercame-0-6-1" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="w1lyjfxs" n="1">
+                                       <syl xml:id="x1j08j4c" con="s" wordpos="s">vo</syl>
+                                    </verse>
+                                    <verse xml:id="zcz089d" n="2">
+                                       <syl xml:id="a1773wye" con="b" wordpos="s">tro</syl>
+                                       <syl xml:id="c4ewymv" con="s" wordpos="s">an</syl>
+                                    </verse>
+                                    <verse xml:id="eub27qi" n="3">
+                                       <syl xml:id="f15l3hv6" con="s" wordpos="s">cio</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-6-2" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="up">
+                                    <verse xml:id="i1otqsb6" n="1">
+                                       <syl xml:id="jdixlco" con="s" wordpos="s">sen</syl>
+                                    </verse>
+                                    <verse xml:id="l1mt42rp" n="2">
+                                       <syl xml:id="m147aim5" con="s" wordpos="s">te</syl>
+                                    </verse>
+                                    <verse xml:id="o98j6ck" n="3">
+                                       <syl xml:id="p562upu" con="s" wordpos="s">se</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="r1p8v6bu" n="2">
+                              <note xml:id="acercame-1-6-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="f" stem.dir="down" />
+                              <beam xml:id="tqx3j3p">
+                                 <note xml:id="acercame-1-6-1" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" />
+                                 <note xml:id="acercame-1-6-2" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="iv3ivv2" n="2">
+                           <layer xml:id="whobzfn" n="1">
+                              <note xml:id="acercame-2-6-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="c" stem.dir="up" />
+                              <beam xml:id="y18w0jy">
+                                 <note xml:id="acercame-2-6-1" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="up" />
+                                 <note xml:id="acercame-2-6-2" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="b198l936" n="2">
+                              <note xml:id="acercame-3-6-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="f" stem.dir="down" />
+                              <beam xml:id="dd818s7">
+                                 <note xml:id="acercame-3-6-1" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="down" />
+                                 <note xml:id="acercame-3-6-2" dur.ppq="240" dur="8" oct="3" pname="f" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="glx0kfc" n="8">
+                        <staff xml:id="p3j32b6" n="1">
+                           <layer xml:id="r1xqd2or" n="1">
+                              <note xml:id="acercame-0-7-0" dur.ppq="1920" dur="1" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="t1gk0727" n="1">
+                                    <syl xml:id="u1nsmcdf" con="s" wordpos="s">tir;</syl>
+                                 </verse>
+                                 <verse xml:id="w1yv6k3n" n="2">
+                                    <syl xml:id="xrkmk45" con="s" wordpos="s">Ti;</syl>
+                                 </verse>
+                                 <verse xml:id="zom1l29" n="3">
+                                    <syl xml:id="a15y6nte" con="s" wordpos="s">rá;</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="c1wybhdk" n="2">
+                              <note xml:id="acercame-1-7-0" dur.ppq="1920" dur="1" oct="4" pname="g" stem.dir="down">
+                                 <accid xml:id="ehyzwq1" accid="s" />
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="q25rsda" n="2">
+                           <layer xml:id="f1qasuq9" n="1">
+                              <note xml:id="acercame-2-7-0" dur.ppq="1920" dur="1" oct="4" pname="d" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="hlx2hc2" n="2">
+                              <note xml:id="acercame-3-7-0" dur.ppq="1920" dur="1" oct="3" pname="e" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="j7oe43k" n="9">
+                        <staff xml:id="sr8zgd4" n="1">
+                           <layer xml:id="u1sacvr9" n="1">
+                              <note xml:id="acercame-0-8-0" dur.ppq="960" dur="2" oct="4" pname="e" stem.dir="up">
+                                 <verse xml:id="w1yekzae" n="1">
+                                    <syl xml:id="x18jj1n" con="s" wordpos="s">Quie</syl>
+                                 </verse>
+                                 <verse xml:id="z162vkeg" n="2">
+                                    <syl xml:id="au7ojbm" con="s" wordpos="s">Gra</syl>
+                                 </verse>
+                                 <verse xml:id="c1fcejbk" n="3">
+                                    <syl xml:id="duwc6te" con="s" wordpos="s">En</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-8-1" dur.ppq="480" dur="4" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="g5vv343" n="1">
+                                    <syl xml:id="h12n1hp5" con="s" wordpos="s">ro</syl>
+                                 </verse>
+                                 <verse xml:id="j1pxj3ee" n="2">
+                                    <syl xml:id="k1i05j13" con="b" wordpos="s">ve</syl>
+                                    <syl xml:id="manox6r" con="s" wordpos="s">e</syl>
+                                 </verse>
+                                 <verse xml:id="o7fhwns" n="3">
+                                    <syl xml:id="p13ej51p" con="s" wordpos="s">e</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-8-2" dur.ppq="480" dur="4" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:id="s1qvrzbj" n="1">
+                                    <syl xml:id="tihc1tb" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                                 <verse xml:id="vc28jpm" n="2">
+                                    <syl xml:id="w73fcxq" con="s" wordpos="s">rror</syl>
+                                 </verse>
+                                 <verse xml:id="yyulw2z" n="3">
+                                    <syl xml:id="z8bs2z3" con="s" wordpos="s">lla</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="bemzcw2" n="2">
+                              <beam xml:id="c15apbsy">
+                                 <note xml:id="acercame-1-8-0" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="down">
+                                    <verse xml:id="e1pez8b1" n="1">
+                                       <syl xml:id="f1t3hbq8" con="s" wordpos="s">Yo</syl>
+                                    </verse>
+                                    <verse xml:id="h1xe50db" n="2">
+                                       <syl xml:id="icwtv4x" con="s" wordpos="s">Fue</syl>
+                                    </verse>
+                                    <verse xml:id="klujtaj" n="3">
+                                       <syl xml:id="ldn8lkw" con="s" wordpos="s">Que</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-8-1" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="down">
+                                    <verse xml:id="o8931hq" n="1">
+                                       <syl xml:id="pa46wmz" con="s" wordpos="s">quie</syl>
+                                    </verse>
+                                    <verse xml:id="rhmwj26" n="2">
+                                       <syl xml:id="s1xfcoo1" con="s" wordpos="s">muy</syl>
+                                    </verse>
+                                    <verse xml:id="uwqcmb8" n="3">
+                                       <syl xml:id="v151u8s9" con="s" wordpos="s">en</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <beam xml:id="x1t5y6vu">
+                                 <note xml:id="acercame-1-8-2" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="down">
+                                    <verse xml:id="z19kaj9r" n="1">
+                                       <syl xml:id="ahukt8t" con="s" wordpos="s">ro</syl>
+                                    </verse>
+                                    <verse xml:id="c7tb636" n="2">
+                                       <syl xml:id="dx8y7yn" con="s" wordpos="s">gra</syl>
+                                    </verse>
+                                    <verse xml:id="f1yam7l1" n="3">
+                                       <syl xml:id="gizn37p" con="s" wordpos="s">e</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-8-3" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down">
+                                    <verse xml:id="j1jb3pdq" n="1">
+                                       <syl xml:id="kqsmc1i" con="s" wordpos="s">vol</syl>
+                                    </verse>
+                                    <verse xml:id="mcvprpx" n="2">
+                                       <syl xml:id="n7jk87r" con="s" wordpos="s">ve</syl>
+                                    </verse>
+                                    <verse xml:id="p18dw0tr" n="3">
+                                       <syl xml:id="q14oy7mq" con="b" wordpos="s">lla</syl>
+                                       <syl xml:id="s18ybm9m" con="s" wordpos="s">en</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-1-8-4" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down">
+                                 <verse xml:id="v181cya0" n="1">
+                                    <syl xml:id="w19ou5f4" con="s" wordpos="s">ver</syl>
+                                 </verse>
+                                 <verse xml:id="ymnpbs5" n="2">
+                                    <syl xml:id="zbi1sg6" con="s" wordpos="s">mi</syl>
+                                 </verse>
+                                 <verse xml:id="b1b34z6o" n="3">
+                                    <syl xml:id="cvlyxtz" con="s" wordpos="s">cuen</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="ec8tisp">
+                                 <note xml:id="acercame-1-8-5" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down">
+                                    <verse xml:id="g6da7ep" n="1">
+                                       <syl xml:id="h1kbde6f" con="s" wordpos="s">oh</syl>
+                                    </verse>
+                                    <verse xml:id="jvql19w" n="2">
+                                       <syl xml:id="k1s3x8xh" con="s" wordpos="s">e</syl>
+                                    </verse>
+                                    <verse xml:id="mzi22qq" n="3">
+                                       <syl xml:id="nodg9js" con="s" wordpos="s">tre</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-8-6" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down">
+                                    <verse xml:id="r1lua0m4" n="1">
+                                       <syl xml:id="s1nc1h11" con="s" wordpos="s">Se</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="tty5vuo" n="2">
+                           <layer xml:id="uft4f8v" n="1">
+                              <note xml:id="acercame-2-8-0" dur.ppq="960" dur="2" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-8-1" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-8-2" dur.ppq="480" dur="4" oct="4" pname="c" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="y7g7mr8" n="2">
+                              <note xml:id="acercame-3-8-0" dur.ppq="960" dur="2" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-8-1" dur.ppq="480" dur="4" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-8-2" dur.ppq="480" dur="4" oct="2" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <slur xml:id="p1yr17sy" startid="#acercame-1-8-5" endid="#acercame-1-8-6" />
+                     </measure>
+                     <measure xml:id="cwrq4cs" n="10">
+                        <staff xml:id="l1hjtqv5" n="1">
+                           <layer xml:id="n14jzigd" n="1">
+                              <note xml:id="acercame-0-9-0" dots="1" dur.ppq="1440" dur="2" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="pwgz565" n="1">
+                                    <syl xml:id="q1ulr807" con="s" wordpos="s">ñor,</syl>
+                                 </verse>
+                                 <verse xml:id="s18tgwxm" n="2">
+                                    <syl xml:id="tymqhqc" con="s" wordpos="s">rror,</syl>
+                                 </verse>
+                                 <verse xml:id="v114xq17" n="3">
+                                    <syl xml:id="w1hkf8c3" con="s" wordpos="s">yo,</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="y9vjhnd" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-0-9-1" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="up">
+                                 <verse xml:id="a1qj6h99" n="1">
+                                    <syl xml:id="byqjaj2" con="s" wordpos="s">Vol</syl>
+                                 </verse>
+                                 <verse xml:id="d1qugike" n="2">
+                                    <syl xml:id="e1ltokme" con="b" wordpos="s">Me</syl>
+                                    <syl xml:id="g51phxy" con="s" wordpos="s">a</syl>
+                                 </verse>
+                                 <verse xml:id="i1bt9djl" n="3">
+                                    <syl xml:id="jls6kjn" con="s" wordpos="s">En</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="lb01bdk" n="2">
+                              <note xml:id="acercame-1-9-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="f" stem.dir="down" />
+                              <rest xml:id="nfxwdtf" dur.ppq="480" dur="4" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="m1niorhg" n="2">
+                           <layer xml:id="o1hlzztw" n="1">
+                              <note xml:id="acercame-2-9-0" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                              <beam xml:id="q85n05h">
+                                 <note xml:id="acercame-2-9-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" />
+                                 <note xml:id="acercame-2-9-2" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up" />
+                              </beam>
+                              <note xml:id="acercame-2-9-3" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                              <beam xml:id="u1wxy86m">
+                                 <note xml:id="acercame-2-9-4" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up" />
+                                 <note xml:id="acercame-2-9-5" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="x1n1u2ib" n="2">
+                              <note xml:id="acercame-3-9-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="d" stem.dir="down" />
+                              <rest xml:id="z1vl9ie9" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-3-9-1" dur.ppq="240" dur="8" oct="3" pname="d" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="b1gdmrsx" n="11">
+                        <staff xml:id="k6j8b95" n="1">
+                           <layer xml:id="mom1bb2" n="1">
+                              <note xml:id="acercame-0-10-0" dur.ppq="960" dur="2" oct="4" pname="g" stem.dir="up">
+                                 <verse xml:id="o1h3v5zs" n="1">
+                                    <syl xml:id="p7ieklw" con="s" wordpos="s">ver</syl>
+                                 </verse>
+                                 <verse xml:id="r1jipae1" n="2">
+                                    <syl xml:id="s4iuc4j" con="s" wordpos="s">par</syl>
+                                 </verse>
+                                 <verse xml:id="u1jgtgkv" n="3">
+                                    <syl xml:id="vpb43wg" con="s" wordpos="s">cuen</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-10-1" dur.ppq="480" dur="4" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="y1pealm1" n="1">
+                                    <syl xml:id="zm41rnx" con="s" wordpos="s">ha</syl>
+                                 </verse>
+                                 <verse xml:id="be2tvkf" n="2">
+                                    <syl xml:id="c9jr50u" con="s" wordpos="s">to</syl>
+                                 </verse>
+                                 <verse xml:id="e1pqyfy9" n="3">
+                                    <syl xml:id="fsajhdg" con="s" wordpos="s">tre</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-10-2" dur.ppq="480" dur="4" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="i16d85c5" n="1">
+                                    <syl xml:id="jcmqxsv" con="s" wordpos="s">cia</syl>
+                                 </verse>
+                                 <verse xml:id="l1qjq8it" n="2">
+                                    <syl xml:id="m1tw6y9v" con="s" wordpos="s">de</syl>
+                                 </verse>
+                                 <verse xml:id="o145aqgh" n="3">
+                                    <syl xml:id="p1oope3q" con="s" wordpos="s">per</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="r1s2uwp6" n="2">
+                              <beam xml:id="s1vr7lpo">
+                                 <note xml:id="acercame-1-10-0" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down">
+                                    <verse xml:id="us3qhuh" n="1">
+                                       <syl xml:id="v7cn478" con="s" wordpos="s">Yo</syl>
+                                    </verse>
+                                    <verse xml:id="x1p7eziq" n="2">
+                                       <syl xml:id="ymuqorj" con="s" wordpos="s">Que</syl>
+                                    </verse>
+                                    <verse xml:id="akm8hud" n="3">
+                                       <syl xml:id="bpebvzv" con="s" wordpos="s">Que</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-10-1" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="down">
+                                    <verse xml:id="e1eahc7e" n="1">
+                                       <syl xml:id="f2q0hf3" con="s" wordpos="s">quie</syl>
+                                    </verse>
+                                    <verse xml:id="hdpkf47" n="2">
+                                       <syl xml:id="i1e36yfh" con="s" wordpos="s">me</syl>
+                                    </verse>
+                                    <verse xml:id="k1mdz7ri" n="3">
+                                       <syl xml:id="l1ppxk3l" con="s" wordpos="s">en</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <beam xml:id="n14ojl4h">
+                                 <note xml:id="acercame-1-10-2" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="down">
+                                    <verse xml:id="pe2rpqm" n="1">
+                                       <syl xml:id="q1c674tc" con="s" wordpos="s">ro</syl>
+                                    </verse>
+                                    <verse xml:id="s1a6q1z2" n="2">
+                                       <syl xml:id="t1exyfe9" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                    <verse xml:id="v14koiwx" n="3">
+                                       <syl xml:id="wvj5sih" con="s" wordpos="s">e</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-10-3" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="down">
+                                    <verse xml:id="zg72rhg" n="1">
+                                       <syl xml:id="a1fqmcs4" con="s" wordpos="s">vol</syl>
+                                    </verse>
+                                    <verse xml:id="c1825l02" n="2">
+                                       <syl xml:id="d3v5bfr" con="s" wordpos="s">par</syl>
+                                    </verse>
+                                    <verse xml:id="fjklmpt" n="3">
+                                       <syl xml:id="g4rhtqc" con="b" wordpos="s">lla</syl>
+                                       <syl xml:id="i1nhcfdd" con="s" wordpos="s">en</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-1-10-4" dur.ppq="480" dur="4" oct="4" pname="f" stem.dir="down">
+                                 <verse xml:id="l1vxyhu" n="1">
+                                    <syl xml:id="m1nsxxju" con="s" wordpos="s">ver</syl>
+                                 </verse>
+                                 <verse xml:id="o1nd5ddl" n="2">
+                                    <syl xml:id="p3nl23t" con="s" wordpos="s">tó</syl>
+                                 </verse>
+                                 <verse xml:id="rz094q6" n="3">
+                                    <syl xml:id="s1otski1" con="s" wordpos="s">cuen</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="u1bmckz0">
+                                 <note xml:id="acercame-1-10-5" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down">
+                                    <verse xml:id="w1h1zvom" n="1">
+                                       <syl xml:id="xcwe7e5" con="s" wordpos="s">ha</syl>
+                                    </verse>
+                                    <verse xml:id="z1mmwfsr" n="2">
+                                       <syl xml:id="a1ho30ed" con="s" wordpos="s">de</syl>
+                                    </verse>
+                                    <verse xml:id="c1vc8tnn" n="3">
+                                       <syl xml:id="d1c3u5ep" con="s" wordpos="s">tre</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-1-10-6" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down">
+                                    <verse xml:id="he8hdgc" n="1">
+                                       <syl xml:id="iyqiylw" con="s" wordpos="s">cia</syl>
+                                    </verse>
+                                    <verse xml:id="k1yxxi50" n="3">
+                                       <syl xml:id="lj5x8x2" con="s" wordpos="s">per</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="l79vf0q" n="2">
+                           <layer xml:id="n1hg04jo" n="1">
+                              <note xml:id="acercame-2-10-0" dur.ppq="1920" dur="1" oct="3" pname="b" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="q1ayofyo" n="2">
+                              <note xml:id="acercame-3-10-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="g" stem.dir="down" />
+                              <beam xml:id="s1qtanl1">
+                                 <note xml:id="acercame-3-10-1" dur.ppq="240" dur="8" oct="2" pname="g" stem.dir="down" />
+                                 <note xml:id="acercame-3-10-2" dur.ppq="240" dur="8" oct="2" pname="b" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <slur xml:id="f1u5ga6l" startid="#acercame-1-10-5" endid="#acercame-1-10-6" />
+                        <slur xml:id="p1otgxv8" startid="#acercame-2-10-0" endid="#acercame-2-11-0" />
+                     </measure>
+                     <measure xml:id="v1p9qcrn" n="12">
+                        <staff xml:id="e7tb54a" n="1">
+                           <layer xml:id="gisybz5" n="1">
+                              <note xml:id="acercame-0-11-0" dur.ppq="480" dur="4" oct="4" pname="g" stem.dir="up">
+                                 <verse xml:id="i1vjmfl6" n="1">
+                                    <syl xml:id="jn8drzb" con="s" wordpos="s">Ti,</syl>
+                                 </verse>
+                                 <verse xml:id="lvd7osf" n="2">
+                                    <syl xml:id="m1stojkl" con="s" wordpos="s">Ti</syl>
+                                 </verse>
+                                 <verse xml:id="o12r9cwv" n="3">
+                                    <syl xml:id="p1ratxs7" con="s" wordpos="s">dón,</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="r6s5x9u">
+                                 <note xml:id="acercame-0-11-1" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up">
+                                    <verse xml:id="t1awc4kp" n="1">
+                                       <syl xml:id="uh9iys9" con="s" wordpos="s">ha</syl>
+                                    </verse>
+                                    <verse xml:id="w18kijq4" n="2">
+                                       <syl xml:id="x1j2qw0n" con="b" wordpos="s">me</syl>
+                                       <syl xml:id="zag2tg9" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                    <verse xml:id="b110ev9e" n="3">
+                                       <syl xml:id="c9yqjg3" con="s" wordpos="s">el</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-11-2" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="f1jsh8b8" n="1">
+                                       <syl xml:id="ggshjwf" con="s" wordpos="s">cia</syl>
+                                    </verse>
+                                    <verse xml:id="i19py7pf" n="2">
+                                       <syl xml:id="j1cj7ive" con="s" wordpos="s">par</syl>
+                                    </verse>
+                                    <verse xml:id="lgtmhzd" n="3">
+                                       <syl xml:id="m6vxdj1" con="s" wordpos="s">per</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-11-3" dur.ppq="480" dur="4" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:id="p1km4tkm" n="1">
+                                    <syl xml:id="q11f53kn" con="s" wordpos="s">Ti;</syl>
+                                 </verse>
+                                 <verse xml:id="s1sp6csx" n="2">
+                                    <syl xml:id="tw2tctn" con="s" wordpos="s">tó;</syl>
+                                 </verse>
+                                 <verse xml:id="v111u7ih" n="3">
+                                    <syl xml:id="w163xc2y" con="s" wordpos="s">dón;</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="y1k18n3o">
+                                 <note xml:id="acercame-0-11-4" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="up">
+                                    <accid xml:id="a1m5hxuy" accid="s" />
+                                    <verse xml:id="b1d1lyyk" n="1">
+                                       <syl xml:id="c1cxafgq" con="s" wordpos="s">Per</syl>
+                                    </verse>
+                                    <verse xml:id="e15bchsh" n="2">
+                                       <syl xml:id="f12d7xcs" con="s" wordpos="s">Su</syl>
+                                    </verse>
+                                    <verse xml:id="h1a60sdd" n="3">
+                                       <syl xml:id="i1963fsu" con="s" wordpos="s">En</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-11-5" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="l1q2lhty" n="2">
+                              <note xml:id="acercame-1-11-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="e" stem.dir="down" />
+                              <rest xml:id="ny86pqt" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-1-11-1" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="f10e0d4l" n="2">
+                           <layer xml:id="p19zlqpu" n="1">
+                              <note xml:id="acercame-2-11-0" dur.ppq="480" dur="4" oct="4" pname="c" stem.dir="up" />
+                              <beam xml:id="r1yn7i13">
+                                 <note xml:id="acercame-2-11-1" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="up" />
+                                 <note xml:id="acercame-2-11-2" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="up" />
+                              </beam>
+                              <note xml:id="acercame-2-11-3" dur.ppq="480" dur="4" oct="4" pname="c" stem.dir="up" />
+                              <beam xml:id="v2g6he2">
+                                 <note xml:id="acercame-2-11-4" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up" />
+                                 <note xml:id="acercame-2-11-5" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="yr7z3pc" n="2">
+                              <note xml:id="acercame-3-11-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="c" stem.dir="down" />
+                              <rest xml:id="a9hmgqn" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-3-11-1" dur.ppq="240" dur="8" oct="3" pname="f" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="ce0iwa" n="13">
+                        <staff xml:id="l1g2vxt" n="1">
+                           <layer xml:id="n1sdd275" n="1">
+                              <note xml:id="acercame-0-12-0" dur.ppq="960" dur="2" oct="4" pname="g" stem.dir="up">
+                                 <accid xml:id="p1ltugt7" accid="s" />
+                                 <verse xml:id="q16qraq2" n="1">
+                                    <syl xml:id="r1a4drti" con="s" wordpos="s">do</syl>
+                                 </verse>
+                                 <verse xml:id="tbxcmip" n="2">
+                                    <syl xml:id="u1o319ip" con="s" wordpos="s">pli</syl>
+                                 </verse>
+                                 <verse xml:id="w1vjhtyi" n="3">
+                                    <syl xml:id="x84ojhi" con="s" wordpos="s">cuen</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-12-1" dur.ppq="480" dur="4" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="at1ppmg" n="1">
+                                    <syl xml:id="b16ncxps" con="s" wordpos="s">na</syl>
+                                 </verse>
+                                 <verse xml:id="d1ucodsz" n="2">
+                                    <syl xml:id="e11e2kg5" con="s" wordpos="s">co</syl>
+                                 </verse>
+                                 <verse xml:id="g1q5dmvp" n="3">
+                                    <syl xml:id="h150obvg" con="s" wordpos="s">tre</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="j1c7ij1r">
+                                 <note xml:id="acercame-0-12-2" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                    <verse xml:id="lao49vr" n="1">
+                                       <syl xml:id="mc1tnfe" con="s" wordpos="s">mi</syl>
+                                    </verse>
+                                    <verse xml:id="o3bsmcf" n="2">
+                                       <syl xml:id="p52rdn3" con="s" wordpos="s">tu</syl>
+                                    </verse>
+                                    <verse xml:id="r1w22phn" n="3">
+                                       <syl xml:id="s1hb5ui" con="s" wordpos="s">co</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-12-3" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                    <verse xml:id="vudhojh" n="1">
+                                       <syl xml:id="wapc1jl" con="s" wordpos="s">mal</syl>
+                                    </verse>
+                                    <verse xml:id="y1awr5gn" n="2">
+                                       <syl xml:id="zh67eth" con="s" wordpos="s">per</syl>
+                                    </verse>
+                                    <verse xml:id="b1owr8qo" n="3">
+                                       <syl xml:id="cgu9k6r" con="s" wordpos="s">mu</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="e1jytp52" n="2">
+                              <note xml:id="acercame-1-12-0" dur.ppq="960" dur="2" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-12-1" dur.ppq="480" dur="4" oct="4" pname="g" stem.dir="down">
+                                 <accid xml:id="h7melp5" accid="s" />
+                              </note>
+                              <beam xml:id="iahjune">
+                                 <note xml:id="acercame-1-12-2" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-1-12-3" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down">
+                                    <accid xml:id="lh68lcn" accid="s" />
+                                 </note>
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="m17rlhis" n="2">
+                           <layer xml:id="mahk808" n="1">
+                              <note xml:id="acercame-2-12-0" dur.ppq="960" dur="2" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="acercame-2-12-1" dur.ppq="480" dur="4" oct="3" pname="b" stem.dir="up" />
+                              <beam xml:id="p170rbls">
+                                 <note xml:id="acercame-2-12-2" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up">
+                                    <accid xml:id="rw5en0l" accid="s" />
+                                 </note>
+                                 <note xml:id="acercame-2-12-3" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="t1wcjfpt" n="2">
+                              <note xml:id="acercame-3-12-0" dur.ppq="960" dur="2" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-3-12-1" dur.ppq="480" dur="4" oct="3" pname="e" stem.dir="down" />
+                              <beam xml:id="w1mk5k22">
+                                 <note xml:id="acercame-3-12-2" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-3-12-3" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="zb6cwzi" n="14">
+                        <staff xml:id="ibab7v7" n="1">
+                           <layer xml:id="k6uh4kz" n="1">
+                              <note xml:id="acercame-0-13-0" dots="1" dur.ppq="1440" dur="2" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="m15dxtnw" n="1">
+                                    <syl xml:id="njei0kg" con="s" wordpos="s">dad,</syl>
+                                 </verse>
+                                 <verse xml:id="prj16x0" n="2">
+                                    <syl xml:id="q1b5tul2" con="s" wordpos="s">dón,</syl>
+                                 </verse>
+                                 <verse xml:id="srmxycb" n="3">
+                                    <syl xml:id="te295j3" con="s" wordpos="s">nión,</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="vm0ww6h" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-0-13-1" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="x1vtgdzk" n="1">
+                                    <syl xml:id="y10dbkyg" con="s" wordpos="s">A</syl>
+                                 </verse>
+                                 <verse xml:id="a2s9vds" n="2">
+                                    <syl xml:id="b37fynm" con="s" wordpos="s">A</syl>
+                                 </verse>
+                                 <verse xml:id="d14pu6pg" n="3">
+                                    <syl xml:id="es1fj2i" con="s" wordpos="s">A</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="g1hucsw8" n="2">
+                              <note xml:id="acercame-1-13-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="a" stem.dir="down" />
+                              <rest xml:id="i1jipdsy" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-1-13-1" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="j1smk0fs" n="2">
+                           <layer xml:id="k167a22e" n="1">
+                              <note xml:id="acercame-2-13-0" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="up" />
+                              <beam xml:id="me22o4j">
+                                 <note xml:id="acercame-2-13-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" />
+                                 <note xml:id="acercame-2-13-2" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="up" />
+                              </beam>
+                              <note xml:id="acercame-2-13-3" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="up" />
+                              <rest xml:id="qdmse6x" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-2-13-4" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="sjqjdt7" n="2">
+                              <note xml:id="acercame-3-13-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="a" stem.dir="down" />
+                              <rest xml:id="u1pu83cx" dur.ppq="240" dur="8" />
+                              <note xml:id="acercame-3-13-1" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="wh0orml" n="15">
+                        <staff xml:id="fdfi8ru" n="1">
+                           <layer xml:id="h14ldxel" n="1">
+                              <note xml:id="acercame-0-14-0" dots="1" dur.ppq="1440" dur="2" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="jw83qoj" n="1">
+                                    <syl xml:id="k1qkghco" con="s" wordpos="s">cer</syl>
+                                 </verse>
+                                 <verse xml:id="m1dsq2h4" n="2">
+                                    <syl xml:id="n505ch5" con="s" wordpos="s">cer</syl>
+                                 </verse>
+                                 <verse xml:id="p159e1wr" n="3">
+                                    <syl xml:id="qlxagjw" con="s" wordpos="s">cer</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="s1n2meju">
+                                 <note xml:id="acercame-0-14-1" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                    <verse xml:id="uj5vb3a" n="1">
+                                       <syl xml:id="v1kduzjg" con="s" wordpos="s">ca</syl>
+                                    </verse>
+                                    <verse xml:id="x78qtzk" n="2">
+                                       <syl xml:id="y1v9y41" con="s" wordpos="s">ca</syl>
+                                    </verse>
+                                    <verse xml:id="axw0wep" n="3">
+                                       <syl xml:id="bu5py3e" con="s" wordpos="s">ca</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-14-2" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up">
+                                    <verse xml:id="e7vrewx" n="1">
+                                       <syl xml:id="f1up5np6" con="b" wordpos="s">me</syl>
+                                       <syl xml:id="hafhjkn" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                    <verse xml:id="jg84d0k" n="2">
+                                       <syl xml:id="k1qxv95f" con="b" wordpos="s">me</syl>
+                                       <syl xml:id="mx589s4" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                    <verse xml:id="o1kb2dfg" n="3">
+                                       <syl xml:id="p1r5jdtb" con="b" wordpos="s">me</syl>
+                                       <syl xml:id="r1sccq5c" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="t1kp3ec3" n="2">
+                              <note xml:id="acercame-1-14-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="a" stem.dir="down" />
+                              <beam xml:id="v17s89se">
+                                 <note xml:id="acercame-1-14-1" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" />
+                                 <note xml:id="acercame-1-14-2" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="g143z66t" n="2">
+                           <layer xml:id="ym19v7f" n="1">
+                              <note xml:id="acercame-2-14-0" dots="1" dur.ppq="1440" dur="2" oct="4" pname="c" stem.dir="up" />
+                              <beam xml:id="ad5wkw3">
+                                 <note xml:id="acercame-2-14-1" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up" />
+                                 <note xml:id="acercame-2-14-2" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="dpg9xrp" n="2">
+                              <note xml:id="acercame-3-14-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="f" stem.dir="down" />
+                              <beam xml:id="fdvgpwx">
+                                 <note xml:id="acercame-3-14-1" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="down" />
+                                 <note xml:id="acercame-3-14-2" dur.ppq="240" dur="8" oct="3" pname="f" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="i8lg9e1" right="dbl" n="16">
+                        <staff xml:id="rqjgvct" n="1">
+                           <layer xml:id="ttmlste" n="1">
+                              <note xml:id="acercame-0-15-0" dur.ppq="1920" dur="1" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="vu3vsyu" n="1">
+                                    <syl xml:id="w3z0nne" con="s" wordpos="s">Ti.</syl>
+                                 </verse>
+                                 <verse xml:id="y19ibdjs" n="2">
+                                    <syl xml:id="zpqjuff" con="s" wordpos="s">Ti.</syl>
+                                 </verse>
+                                 <verse xml:id="b1fi3wdu" n="3">
+                                    <syl xml:id="c1wggga7" con="s" wordpos="s">Ti.</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="ek8mkk5" n="2">
+                              <note xml:id="acercame-1-15-0" dur.ppq="960" dur="2" oct="4" pname="g" stem.dir="down">
+                                 <accid xml:id="g1bm5i9e" accid="s" />
+                              </note>
+                              <note xml:id="acercame-1-15-1" dur.ppq="480" dur="4" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                              <note xml:id="acercame-1-15-2" dur.ppq="480" dur="4" oct="4" pname="f" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="s9feumu" n="2">
+                           <layer xml:id="ltjsj4t" n="1">
+                              <note xml:id="acercame-2-15-0" dur.ppq="960" dur="2" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="acercame-2-15-1" dur.ppq="960" dur="2" oct="4" pname="d" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="ptaty4t" n="2">
+                              <note xml:id="acercame-3-15-0" dur.ppq="1920" dur="1" oct="3" pname="e" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <slur xml:id="hthwcg7" startid="#acercame-1-15-0" endid="#acercame-1-15-2" />
+                        <slur xml:id="n1ncrczb" startid="#acercame-2-15-0" endid="#acercame-2-15-1" />
+                     </measure>
+                     <scoreDef xml:id="csefr9w" ppq="480">
+                        <keySig xml:id="dgqcxka" sig="3s" />
+                     </scoreDef>
+                     <measure xml:id="r1ckdeb2" n="17">
+                        <staff xml:id="akddgze" n="1">
+                           <layer xml:id="g18drw7k" n="1">
+                              <beam xml:id="h1aqs9yf">
+                                 <note xml:id="acercame-0-16-0" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="k1pwt43t" n="1">
+                                       <syl xml:id="lm5y75s" con="s" wordpos="s">Quie</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-16-1" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="up">
+                                    <verse xml:id="oo5ucjz" n="1">
+                                       <syl xml:id="p1f8jds2" con="s" wordpos="s">ro</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-16-2" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="s11o8kgf" n="1">
+                                    <syl xml:id="tmjweu9" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-16-3" dur.ppq="480" dur="4" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="x4kgtt9" n="1">
+                                    <syl xml:id="yxz24u" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-16-4" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="cecyqcy" n="1">
+                                    <syl xml:id="d11r18do" con="s" wordpos="s">es</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="f11x4w1j">
+                                 <note xml:id="acercame-0-16-5" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="h40x0ku" n="1">
+                                       <syl xml:id="i1rebqqm" con="s" wordpos="s">tar</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-16-6" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="up">
+                                    <verse xml:id="lweq970" n="1">
+                                       <syl xml:id="myb4j47" con="s" wordpos="s">muy</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="obdwk4a" n="2">
+                              <beam xml:id="p19cnjb4">
+                                 <note xml:id="acercame-1-16-0" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-1-16-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="down" accid.ges="s" />
+                              </beam>
+                              <note xml:id="acercame-1-16-2" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                              <note xml:id="acercame-1-16-3" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-16-4" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <beam xml:id="wk7nuwh">
+                                 <note xml:id="acercame-1-16-5" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                                 <note xml:id="acercame-1-16-6" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="b35l38f" n="2">
+                           <layer xml:id="z1w2a3n2" n="1">
+                              <beam xml:id="a1xkoqhu">
+                                 <note xml:id="acercame-2-16-0" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                                 <note xml:id="acercame-2-16-1" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              </beam>
+                              <note xml:id="acercame-2-16-2" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-16-3" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-16-4" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              <beam xml:id="g1p718y3">
+                                 <note xml:id="acercame-2-16-5" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                                 <note xml:id="acercame-2-16-6" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="k1hteig5" n="2">
+                              <beam xml:id="l1whzbmp">
+                                 <note xml:id="acercame-3-16-0" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                                 <note xml:id="acercame-3-16-1" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                              </beam>
+                              <note xml:id="acercame-3-16-2" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-16-3" dur.ppq="480" dur="4" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-16-4" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                              <beam xml:id="r1jmpt7e">
+                                 <note xml:id="acercame-3-16-5" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                                 <note xml:id="acercame-3-16-6" dur.ppq="240" dur="8" oct="2" pname="b" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <dir xml:id="e15oasi3" staff="1" tstamp="1">CORO</dir>
+                     </measure>
+                     <measure xml:id="u1wwk2ki" n="18">
+                        <staff xml:id="dfm1xy" n="1">
+                           <layer xml:id="f1bhpbwo" n="1">
+                              <beam xml:id="ghnpa7u">
+                                 <note xml:id="acercame-0-17-0" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                    <verse xml:id="ih3416" n="1">
+                                       <syl xml:id="jds6w7i" con="s" wordpos="s">cer</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-17-1" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="n9y3xie" n="1">
+                                       <syl xml:id="o1cg35jk" con="s" wordpos="s">ca</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-17-2" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="rpiwbmz" n="1">
+                                    <syl xml:id="s9zicrj" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-17-3" dur.ppq="480" dur="4" oct="5" pname="e" stem.dir="up">
+                                 <verse xml:id="va0q8p7" n="1">
+                                    <syl xml:id="w1nvwunt" con="s" wordpos="s">Ti,</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-17-4" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                 <verse xml:id="z19sfuor" n="1">
+                                    <syl xml:id="a12jwcd5" con="s" wordpos="s">Sen</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="cyz9tlx">
+                                 <note xml:id="acercame-0-17-5" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                    <verse xml:id="e1qktd00" n="1">
+                                       <syl xml:id="f1bcmg0v" con="s" wordpos="s">tir</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-17-6" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="j1rq575t" n="1">
+                                       <syl xml:id="k2mxtqs" con="s" wordpos="s">en</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="m1p53sy9" n="2">
+                              <beam xml:id="n1j2dwlt">
+                                 <note xml:id="acercame-1-17-0" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-17-1" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              </beam>
+                              <note xml:id="acercame-1-17-2" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note xml:id="acercame-1-17-3" dur.ppq="480" dur="4" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                              <note xml:id="acercame-1-17-4" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                              <beam xml:id="x1vf2jr6">
+                                 <note xml:id="acercame-1-17-5" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-17-6" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="e2yvak3" n="2">
+                           <layer xml:id="b3tgik0" n="1">
+                              <note xml:id="acercame-2-17-0" dur.ppq="960" dur="2" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              <beam xml:id="f12ly5ba">
+                                 <note xml:id="acercame-2-17-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                                 <note xml:id="acercame-2-17-2" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              </beam>
+                              <beam xml:id="kh5mx34">
+                                 <note xml:id="acercame-2-17-3" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                                 <note xml:id="acercame-2-17-4" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="pmnakup" n="2">
+                              <note xml:id="acercame-3-17-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="c" stem.dir="down" accid.ges="s" />
+                              <beam xml:id="s1u8ehqr">
+                                 <note xml:id="acercame-3-17-1" dur.ppq="240" dur="8" oct="3" pname="c" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-3-17-2" dur.ppq="240" dur="8" oct="3" pname="c" stem.dir="down" accid.ges="s" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <tie xml:id="e1rsy8wx" startid="#acercame-2-17-0" endid="#acercame-2-17-1" />
+                     </measure>
+                     <measure xml:id="xa1a9j2" n="19">
+                        <staff xml:id="g1nxaaa3" n="1">
+                           <layer xml:id="i1nm4oej" n="1">
+                              <beam xml:id="j2bgtbe">
+                                 <note xml:id="acercame-0-18-0" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                    <verse xml:id="l6x5oc5" n="1">
+                                       <syl xml:id="m1shzrq" con="s" wordpos="s">mi</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-18-1" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="p1dxgfmz" n="1">
+                                       <syl xml:id="qeegq5t" con="s" wordpos="s">co</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-18-2" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="uov5339" n="1">
+                                    <syl xml:id="vcv0sq7" con="s" wordpos="s">ra</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-18-3" dur.ppq="480" dur="4" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="y1slpzr6" n="1">
+                                    <syl xml:id="zd1bzab" con="s" wordpos="s">zón</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-18-4" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="cymjoai" n="1">
+                                    <syl xml:id="dfe6w4b" con="s" wordpos="s">que</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="fabq9v8">
+                                 <note xml:id="acercame-0-18-5" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="i1860ykf" n="1">
+                                       <syl xml:id="jk4dyk4" con="s" wordpos="s">lle</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-18-6" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="m8n0tjo" n="1">
+                                       <syl xml:id="nj13zss" con="s" wordpos="s">na</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="pcyhrmu" n="2">
+                              <beam xml:id="qce97lr">
+                                 <note xml:id="acercame-1-18-0" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-18-1" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              </beam>
+                              <note xml:id="acercame-1-18-2" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-18-3" dur.ppq="480" dur="4" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note xml:id="acercame-1-18-4" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <beam xml:id="a1g92ri5">
+                                 <note xml:id="acercame-1-18-5" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-18-6" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="h9swrx6" n="2">
+                           <layer xml:id="fa2i3vt" n="1">
+                              <note xml:id="acercame-2-18-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="a" stem.dir="up" />
+                              <beam xml:id="h1f8j9i3">
+                                 <note xml:id="acercame-2-18-1" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                                 <note xml:id="acercame-2-18-2" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="k19qypnv" n="2">
+                              <note xml:id="acercame-3-18-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="d" stem.dir="down" />
+                              <beam xml:id="mdgvhp8">
+                                 <note xml:id="acercame-3-18-1" dur.ppq="240" dur="8" oct="3" pname="d" stem.dir="down" />
+                                 <note xml:id="acercame-3-18-2" dur.ppq="240" dur="8" oct="3" pname="d" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="p1q7psc3" n="20">
+                        <staff xml:id="y1vbyel9" n="1">
+                           <layer xml:id="a1fkw28p" n="1">
+                              <beam xml:id="b5soi0y">
+                                 <note xml:id="acercame-0-19-0" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                    <verse xml:id="d1f58xqk" n="1">
+                                       <syl xml:id="eo8r49y" con="s" wordpos="s">to</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-19-1" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="hykeh73" n="1">
+                                       <syl xml:id="i1fj9w4o" con="s" wordpos="s">do</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-19-2" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="m19y2f0d" n="1">
+                                    <syl xml:id="nbd9k1e" con="s" wordpos="s">mi</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-19-3" dur.ppq="480" dur="4" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="q1p359m8" n="1">
+                                    <syl xml:id="r1ikeuho" con="s" wordpos="s">ser;</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-19-4" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="u1ky7zxf" n="1">
+                                    <syl xml:id="vegigaa" con="s" wordpos="s">De</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="x1g116z6">
+                                 <note xml:id="acercame-0-19-5" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="z18u8u53" n="1">
+                                       <syl xml:id="armq7d2" con="s" wordpos="s">tu</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-19-6" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="d1pgr9jf" n="1">
+                                       <syl xml:id="e132j251" con="s" wordpos="s">pre</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="g1lguf7" n="2">
+                              <beam xml:id="hv7a7xy">
+                                 <note xml:id="acercame-1-19-0" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-19-1" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                              </beam>
+                              <note xml:id="acercame-1-19-2" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-19-3" dur.ppq="480" dur="4" oct="4" pname="d" stem.dir="down" />
+                              <note xml:id="acercame-1-19-4" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                              <beam xml:id="os2kzkk">
+                                 <note xml:id="acercame-1-19-5" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                                 <note xml:id="acercame-1-19-6" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="z118k785" n="2">
+                           <layer xml:id="r5u2laf" n="1">
+                              <note xml:id="acercame-2-19-0" dots="1" dur.ppq="720" dur="4" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="acercame-2-19-1" dur.ppq="480" dur="4" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note xml:id="acercame-2-19-2" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <beam xml:id="yq90wet">
+                                 <note xml:id="acercame-2-19-3" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                                 <note xml:id="acercame-2-19-4" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="d5bkp0h" n="2">
+                              <note xml:id="acercame-3-19-0" dots="1" dur.ppq="720" dur="4" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-3-19-1" dur.ppq="480" dur="4" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-3-19-2" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <beam xml:id="i5luiwk">
+                                 <note xml:id="acercame-3-19-3" dur.ppq="240" dur="8" oct="2" pname="b" stem.dir="down" />
+                                 <note xml:id="acercame-3-19-4" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <slur xml:id="t116qxdl" startid="#acercame-2-19-0" endid="#acercame-2-19-1" />
+                        <tie xml:id="f1ncnu8b" startid="#acercame-3-19-0" endid="#acercame-3-19-1" />
+                     </measure>
+                     <measure xml:id="ly5v0u0" n="21">
+                        <staff xml:id="u1fab04a" n="1">
+                           <layer xml:id="w16wm927" n="1">
+                              <beam xml:id="x7q0480">
+                                 <note xml:id="acercame-0-20-0" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="a1xpi15z" n="1">
+                                       <syl xml:id="bedbax7" con="s" wordpos="s">sen</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-20-1" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="up">
+                                    <verse xml:id="e65khj" n="1">
+                                       <syl xml:id="f126qas7" con="s" wordpos="s">cia</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-20-2" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="i1jf3un9" n="1">
+                                    <syl xml:id="jskv1bt" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-20-3" dur.ppq="480" dur="4" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="n1t54zz" n="1">
+                                    <syl xml:id="o1dvkg73" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-20-4" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="s9zmxhm" n="1">
+                                    <syl xml:id="tz4n9ch" con="s" wordpos="s">que</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="va0c4iu">
+                                 <note xml:id="acercame-0-20-5" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="xdtm8pl" n="1">
+                                       <syl xml:id="ybmc61i" con="b" wordpos="s">mi</syl>
+                                       <syl xml:id="ax5wtiu" con="s" wordpos="s">al</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-20-6" dur.ppq="240" dur="8" oct="4" pname="a" stem.dir="up">
+                                    <verse xml:id="d1y4u27w" n="1">
+                                       <syl xml:id="ez1v08b" con="s" wordpos="s">ma</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="g1ujcxqm" n="2">
+                              <beam xml:id="h1whhpu9">
+                                 <note xml:id="acercame-1-20-0" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-1-20-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="down" accid.ges="s" />
+                              </beam>
+                              <note xml:id="acercame-1-20-2" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                              <note xml:id="acercame-1-20-3" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-20-4" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <beam xml:id="o1z0k3kc">
+                                 <note xml:id="acercame-1-20-5" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                                 <note xml:id="acercame-1-20-6" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="vvlvlb3" n="2">
+                           <layer xml:id="r1hn6ajy" n="1">
+                              <beam xml:id="s19cgdk2">
+                                 <note xml:id="acercame-2-20-0" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                                 <note xml:id="acercame-2-20-1" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              </beam>
+                              <note xml:id="acercame-2-20-2" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-20-3" dur.ppq="480" dur="4" oct="3" pname="a" stem.dir="up" />
+                              <note xml:id="acercame-2-20-4" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              <beam xml:id="yzitz7s">
+                                 <note xml:id="acercame-2-20-5" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                                 <note xml:id="acercame-2-20-6" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="cho63fi" n="2">
+                              <beam xml:id="dsdwcih">
+                                 <note xml:id="acercame-3-20-0" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                                 <note xml:id="acercame-3-20-1" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                              </beam>
+                              <note xml:id="acercame-3-20-2" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-20-3" dur.ppq="480" dur="4" oct="2" pname="a" stem.dir="down" />
+                              <note xml:id="acercame-3-20-4" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                              <beam xml:id="j1rpoei4">
+                                 <note xml:id="acercame-3-20-5" dur.ppq="240" dur="8" oct="2" pname="a" stem.dir="down" />
+                                 <note xml:id="acercame-3-20-6" dur.ppq="240" dur="8" oct="2" pname="b" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="meog6er" n="22">
+                        <staff xml:id="vj14b0m" n="1">
+                           <layer xml:id="x1yxmf1t" n="1">
+                              <beam xml:id="yh9nqqn">
+                                 <note xml:id="acercame-0-21-0" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                    <verse xml:id="a1c1dsbb" n="1">
+                                       <syl xml:id="b47br17" con="s" wordpos="s">vuel</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-21-1" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="fhlj4zi" n="1">
+                                       <syl xml:id="gm4q8l2" con="b" wordpos="s">va</syl>
+                                       <syl xml:id="i2bwk98" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-21-2" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="l1gddzn2" n="1">
+                                    <syl xml:id="mxqvwy0" con="s" wordpos="s">sen</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-21-3" dur.ppq="480" dur="4" oct="5" pname="e" stem.dir="up">
+                                 <verse xml:id="p1ot3j94" n="1">
+                                    <syl xml:id="q1b703b4" con="s" wordpos="s">tir</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-21-4" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                 <verse xml:id="t1ujp2qq" n="1">
+                                    <syl xml:id="u1q1vcv2" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="w1o282fo">
+                                 <note xml:id="acercame-0-21-5" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                    <verse xml:id="y1frtwxf" n="1">
+                                       <syl xml:id="zptauzp" con="s" wordpos="s">co</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-21-6" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="d1fd9jtd" n="1">
+                                       <syl xml:id="eqybu0g" con="s" wordpos="s">mu</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="gpfmj17" n="2">
+                              <beam xml:id="h11fbr5y">
+                                 <note xml:id="acercame-1-21-0" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-21-1" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              </beam>
+                              <note xml:id="acercame-1-21-2" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note xml:id="acercame-1-21-3" dur.ppq="480" dur="4" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                              <note xml:id="acercame-1-21-4" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                              <beam xml:id="r1rconk9">
+                                 <note xml:id="acercame-1-21-5" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-21-6" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="w1arb077" n="2">
+                           <layer xml:id="v1fr52rm" n="1">
+                              <note xml:id="acercame-2-21-0" dur.ppq="960" dur="2" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              <beam xml:id="ztc04g9">
+                                 <note xml:id="acercame-2-21-1" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                                 <note xml:id="acercame-2-21-2" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              </beam>
+                              <beam xml:id="eo0ozyp">
+                                 <note xml:id="acercame-2-21-3" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                                 <note xml:id="acercame-2-21-4" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="j1jb1na3" n="2">
+                              <note xml:id="acercame-3-21-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="c" stem.dir="down" accid.ges="s" />
+                              <beam xml:id="m1fh84o5">
+                                 <note xml:id="acercame-3-21-1" dur.ppq="240" dur="8" oct="3" pname="c" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-3-21-2" dur.ppq="240" dur="8" oct="3" pname="c" stem.dir="down" accid.ges="s" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <tie xml:id="yggt8yd" startid="#acercame-2-21-0" endid="#acercame-2-21-1" />
+                     </measure>
+                     <measure xml:id="rpjlfnu" n="23">
+                        <staff xml:id="arvqjki" n="1">
+                           <layer xml:id="c1orjv67" n="1">
+                              <beam xml:id="d1p321f9">
+                                 <note xml:id="acercame-0-22-0" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                    <verse xml:id="fxfm7wy" n="1">
+                                       <syl xml:id="gjijqsw" con="s" wordpos="s">nión</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-22-1" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="jf5a8jb" n="1">
+                                       <syl xml:id="kvk7pi0" con="s" wordpos="s">de</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-22-2" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="o1fp4okf" n="1">
+                                    <syl xml:id="p1rcq7t0" con="b" wordpos="s">tu</syl>
+                                    <syl xml:id="ryj90zs" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-22-3" dur.ppq="480" dur="4" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="u1k44zfw" n="1">
+                                    <syl xml:id="v1ro2oxj" con="s" wordpos="s">mor,</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-22-4" dur.ppq="240" dur="8" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:id="ytypjk9" n="1">
+                                    <syl xml:id="z1fof7em" con="s" wordpos="s">Que</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="b1hkwbte">
+                                 <note xml:id="acercame-0-22-5" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                    <verse xml:id="extlgy2" n="1">
+                                       <syl xml:id="fysrznt" con="s" wordpos="s">vuel</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-22-6" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="i1nu2nak" n="1">
+                                       <syl xml:id="j1rwmg82" con="b" wordpos="s">ve</syl>
+                                       <syl xml:id="l18cjltn" con="s" wordpos="s">a</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="n1brawju" n="2">
+                              <beam xml:id="omtpxam">
+                                 <note xml:id="acercame-1-22-0" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-22-1" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              </beam>
+                              <note xml:id="acercame-1-22-2" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-22-3" dur.ppq="480" dur="4" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note xml:id="acercame-1-22-4" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <beam xml:id="y8ho5ym">
+                                 <note xml:id="acercame-1-22-5" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-22-6" dur.ppq="240" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="b1waidew" n="2">
+                           <layer xml:id="drad24f" n="1">
+                              <note xml:id="acercame-2-22-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="a" stem.dir="up" />
+                              <beam xml:id="fbbsyn5">
+                                 <note xml:id="acercame-2-22-1" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                                 <note xml:id="acercame-2-22-2" dur.ppq="240" dur="8" oct="3" pname="a" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="i1xy7e4w" n="2">
+                              <note xml:id="acercame-3-22-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="d" stem.dir="down" />
+                              <beam xml:id="ke0zoyl">
+                                 <note xml:id="acercame-3-22-1" dur.ppq="240" dur="8" oct="3" pname="d" stem.dir="down" />
+                                 <note xml:id="acercame-3-22-2" dur.ppq="240" dur="8" oct="3" pname="d" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="ncvikc6" right="dbl" n="24">
+                        <staff xml:id="waqi23i" n="1">
+                           <layer xml:id="y1hyfz6e" n="1">
+                              <beam xml:id="zkfpqu">
+                                 <note xml:id="acercame-0-23-0" dur.ppq="240" dur="8" oct="5" pname="e" stem.dir="up">
+                                    <verse xml:id="brt2bcg" n="1">
+                                       <syl xml:id="cdx446s" con="s" wordpos="s">ser</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-23-1" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="f1gd75x9" n="1">
+                                       <syl xml:id="g18jg2of" con="s" wordpos="s">u</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                              <note xml:id="acercame-0-23-2" dur.ppq="240" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                                 <verse xml:id="k1v17m77" n="1">
+                                    <syl xml:id="ltnom05" con="b" wordpos="s">no</syl>
+                                    <syl xml:id="n1lthm2u" con="s" wordpos="s">en</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-23-3" dur.ppq="480" dur="4" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="q1mqmgb8" n="1">
+                                    <syl xml:id="r2ajvk" con="s" wordpos="s">Ti,</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-0-23-4" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:id="u1mzl797" n="1">
+                                    <syl xml:id="vwv1ts3" con="s" wordpos="s">quie</syl>
+                                 </verse>
+                              </note>
+                              <beam xml:id="x7l3my9">
+                                 <note xml:id="acercame-0-23-5" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="z25tcnr" n="1">
+                                       <syl xml:id="a1hf3tu5" con="s" wordpos="s">ro</syl>
+                                    </verse>
+                                 </note>
+                                 <note xml:id="acercame-0-23-6" dur.ppq="240" dur="8" oct="4" pname="b" stem.dir="up">
+                                    <verse xml:id="d1nf5j4z" n="1">
+                                       <syl xml:id="e1xrfb2x" con="s" wordpos="s">Se</syl>
+                                    </verse>
+                                 </note>
+                              </beam>
+                           </layer>
+                           <layer xml:id="g6qcgju" n="2">
+                              <beam xml:id="h2xz46w">
+                                 <note xml:id="acercame-1-23-0" dur.ppq="240" dur="8" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                                 <note xml:id="acercame-1-23-1" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="down" />
+                              </beam>
+                              <note xml:id="acercame-1-23-2" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-23-3" dur.ppq="480" dur="4" oct="4" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-1-23-4" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <beam xml:id="oawfnff">
+                                 <note xml:id="acercame-1-23-5" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                                 <note xml:id="acercame-1-23-6" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff xml:id="xicjc1z" n="2">
+                           <layer xml:id="rn6r4ln" n="1">
+                              <note xml:id="acercame-2-23-0" dots="1" dur.ppq="720" dur="4" oct="3" pname="b" stem.dir="up" />
+                              <note xml:id="acercame-2-23-1" dur.ppq="480" dur="4" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note xml:id="acercame-2-23-2" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <beam xml:id="y1p6l15">
+                                 <note xml:id="acercame-2-23-3" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                                 <note xml:id="acercame-2-23-4" dur.ppq="240" dur="8" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="dqrhql3" n="2">
+                              <note xml:id="acercame-3-23-0" dots="1" dur.ppq="720" dur="4" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-3-23-1" dur.ppq="480" dur="4" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="acercame-3-23-2" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <beam xml:id="i1r1557g">
+                                 <note xml:id="acercame-3-23-3" dur.ppq="240" dur="8" oct="2" pname="b" stem.dir="down" />
+                                 <note xml:id="acercame-3-23-4" dur.ppq="240" dur="8" oct="3" pname="e" stem.dir="down" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <slur xml:id="tzfympk" startid="#acercame-2-23-0" endid="#acercame-2-23-1" />
+                        <tie xml:id="f6nbblo" startid="#acercame-3-23-0" endid="#acercame-3-23-1" />
+                     </measure>
+                  </section>
+                  <scoreDef xml:id="w1femlyh" ppq="480">
+                     <keySig xml:id="xd36gcl" sig="0" />
+                  </scoreDef>
+                  <ending xml:id="r1v7q2o6" lendsym="angledown" n="1, 2">
+                     <measure xml:id="l136k12q" right="rptend" n="25">
+                        <staff xml:id="u1wha3q9" n="1">
+                           <layer xml:id="y78qlsj" n="1">
+                              <note xml:id="acercame-0-24-0" dur.ppq="1920" dur="1" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:id="a1jojk7c" n="1">
+                                    <syl xml:id="bl2a6w2" con="s" wordpos="s">ñor.</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="dqmtgq7" n="2">
+                              <note xml:id="acercame-1-24-0" dur.ppq="1920" dur="1" oct="4" pname="e" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="v8xl6ju" n="2">
+                           <layer xml:id="f2k4fhg" n="1">
+                              <note xml:id="acercame-2-24-0" dur.ppq="1920" dur="1" oct="4" pname="c" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="hcva316" n="2">
+                              <note xml:id="acercame-3-24-0" dur.ppq="1920" dur="1" oct="2" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </ending>
+                  <ending xml:id="s1pvov1j" lendsym="none" n="3">
+                     <measure xml:id="j1t1owtt" n="26">
+                        <staff xml:id="snqie5p" n="1">
+                           <layer xml:id="utxx12i" n="1">
+                              <note xml:id="acercame-0-25-0" dur.ppq="1920" dur="1" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:id="wv71wga" n="1">
+                                    <syl xml:id="xcecsoi" con="s" wordpos="s">ñor.</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="z1899kq5" n="2">
+                              <note xml:id="acercame-1-25-0" dur.ppq="1920" dur="1" oct="4" pname="e" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="t1xv4w4w" n="2">
+                           <layer xml:id="baf3sze" n="1">
+                              <note xml:id="acercame-2-25-0" dur.ppq="1920" dur="1" oct="4" pname="c" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="d15np3d" n="2">
+                              <note xml:id="acercame-3-25-0" dur.ppq="1920" dur="1" oct="2" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </ending>
+                  <section xml:id="t128jqjk">
+                     <measure xml:id="f13t89j0" n="27">
+                        <staff xml:id="otj3y4d" n="1">
+                           <layer xml:id="qhxyvbb" n="1">
+                              <note xml:id="acercame-0-26-0" dur.ppq="1920" dur="1" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="smtounx" n="1">
+                                    <syl xml:id="thunay" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="vw1t768" n="2">
+                              <note xml:id="acercame-1-26-0" dots="1" dur.ppq="720" dur="4" oct="4" pname="a" stem.dir="down">
+                                 <verse xml:id="xqiwec4" n="1">
+                                    <syl xml:id="yc6xlpn" con="s" wordpos="s">Quie</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-1-26-1" dots="1" dur.ppq="720" dur="4" oct="4" pname="e" stem.dir="down">
+                                 <verse xml:id="b1wb3wg6" n="1">
+                                    <syl xml:id="c1v1dp18" con="s" wordpos="s">ro</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="acercame-1-26-2" dur.ppq="480" dur="4" oct="4" pname="f" stem.dir="down">
+                                 <verse xml:id="fy0rwid" n="1">
+                                    <syl xml:id="g1nuefq1" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="pzgl4rb" n="2">
+                           <layer xml:id="i1h68q2v" n="1">
+                              <beam xml:id="j1khggm">
+                                 <note xml:id="acercame-2-26-0" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="up" />
+                                 <note xml:id="acercame-2-26-1" dur.ppq="240" dur="8" oct="4" pname="e" stem.dir="up" />
+                              </beam>
+                              <note xml:id="acercame-2-26-2" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="up" />
+                              <note xml:id="acercame-2-26-3" dur.ppq="480" dur="4" oct="4" pname="c" stem.dir="up" />
+                              <note xml:id="acercame-2-26-4" dur.ppq="240" dur="8" oct="3" pname="b" stem.dir="up" />
+                              <beam xml:id="p9din28">
+                                 <note xml:id="acercame-2-26-5" dur.ppq="240" dur="8" oct="4" pname="c" stem.dir="up" />
+                                 <note xml:id="acercame-2-26-6" dur.ppq="240" dur="8" oct="4" pname="d" stem.dir="up" />
+                              </beam>
+                           </layer>
+                           <layer xml:id="sgjsaqf" n="2">
+                              <note xml:id="acercame-3-26-0" dur.ppq="1920" dur="1" oct="3" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="u17rqhpo" right="end" n="28">
+                        <staff xml:id="d1hcktan" n="1">
+                           <layer xml:id="fo61s8e" n="1">
+                              <note xml:id="acercame-0-27-0" dur.ppq="1920" dur="1" oct="5" pname="c" stem.dir="up">
+                                 <verse xml:id="h33hghf" n="1">
+                                    <syl xml:id="i1ozk7m9" con="s" wordpos="s">ñor.</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="kyfhd6z" n="2">
+                              <note xml:id="acercame-1-27-0" dur.ppq="1920" dur="1" oct="4" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="e15cq1zo" n="2">
+                           <layer xml:id="m46b6gn" n="1">
+                              <note xml:id="acercame-2-27-0" dur.ppq="1920" dur="1" oct="4" pname="e" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="olo6r57" n="2">
+                              <note xml:id="acercame-3-27-0" dur.ppq="1920" dur="1" oct="3" pname="a" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

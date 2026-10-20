@@ -1,0 +1,696 @@
+{
+  "record": {
+    "index": 4,
+    "title": "Apocalipsis 10_2",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Apocalipsis 10_2.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Apocalipsis 10_2.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Baritono"
+        },
+        {
+          "id": "P5",
+          "name": "Bajo"
+        }
+      ],
+      "bars": [
+        114,
+        114,
+        114,
+        114,
+        114
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 2048,
+      "lyrics": 1907,
+      "dynamics": {
+        "f": 15,
+        "mf": 13,
+        "ff": 5,
+        "p": 4
+      },
+      "voices": {
+        "1:1": 2352,
+        "1:2": 180,
+        "1:3": 137,
+        "1:4": 63
+      }
+    },
+    "catalog": {
+      "id": "c1dbe3b9-b27c-4aac-9db5-98228fc8b5be",
+      "nombre": "Apocalipsis 10",
+      "archivo": "apocalipsis-10-1780194776227.pdf",
+      "midi_archivo": "apocalipsis-10-1780194776829.mid",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 14,
+      "dynamics": [
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        }
+      ]
+    },
+    "finalName": "Apocalipsis 10_2 - SATB y barítono - Cantai",
+    "sourceMeasures": 114,
+    "expandedMeasures": 114,
+    "parts": 5,
+    "sourceNotes": 2048,
+    "finalNotes": 2048,
+    "split": false,
+    "filledLyrics": 0
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      28,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      33,
+      1
+    ],
+    [
+      34,
+      1
+    ],
+    [
+      35,
+      1
+    ],
+    [
+      36,
+      1
+    ],
+    [
+      37,
+      1
+    ],
+    [
+      38,
+      1
+    ],
+    [
+      39,
+      1
+    ],
+    [
+      40,
+      1
+    ],
+    [
+      41,
+      1
+    ],
+    [
+      42,
+      1
+    ],
+    [
+      43,
+      1
+    ],
+    [
+      44,
+      1
+    ],
+    [
+      45,
+      1
+    ],
+    [
+      46,
+      1
+    ],
+    [
+      47,
+      1
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      49,
+      1
+    ],
+    [
+      50,
+      1
+    ],
+    [
+      51,
+      1
+    ],
+    [
+      52,
+      1
+    ],
+    [
+      53,
+      1
+    ],
+    [
+      54,
+      1
+    ],
+    [
+      55,
+      1
+    ],
+    [
+      56,
+      1
+    ],
+    [
+      57,
+      1
+    ],
+    [
+      58,
+      1
+    ],
+    [
+      59,
+      1
+    ],
+    [
+      60,
+      1
+    ],
+    [
+      61,
+      1
+    ],
+    [
+      62,
+      1
+    ],
+    [
+      63,
+      1
+    ],
+    [
+      64,
+      1
+    ],
+    [
+      65,
+      1
+    ],
+    [
+      66,
+      1
+    ],
+    [
+      67,
+      1
+    ],
+    [
+      68,
+      1
+    ],
+    [
+      69,
+      1
+    ],
+    [
+      70,
+      1
+    ],
+    [
+      71,
+      1
+    ],
+    [
+      72,
+      1
+    ],
+    [
+      73,
+      1
+    ],
+    [
+      74,
+      1
+    ],
+    [
+      75,
+      1
+    ],
+    [
+      76,
+      1
+    ],
+    [
+      77,
+      1
+    ],
+    [
+      78,
+      1
+    ],
+    [
+      79,
+      1
+    ],
+    [
+      80,
+      1
+    ],
+    [
+      81,
+      1
+    ],
+    [
+      82,
+      1
+    ],
+    [
+      83,
+      1
+    ],
+    [
+      84,
+      1
+    ],
+    [
+      85,
+      1
+    ],
+    [
+      86,
+      1
+    ],
+    [
+      87,
+      1
+    ],
+    [
+      88,
+      1
+    ],
+    [
+      89,
+      1
+    ],
+    [
+      90,
+      1
+    ],
+    [
+      91,
+      1
+    ],
+    [
+      92,
+      1
+    ],
+    [
+      93,
+      1
+    ],
+    [
+      94,
+      1
+    ],
+    [
+      95,
+      1
+    ],
+    [
+      96,
+      1
+    ],
+    [
+      97,
+      1
+    ],
+    [
+      98,
+      1
+    ],
+    [
+      99,
+      1
+    ],
+    [
+      100,
+      1
+    ],
+    [
+      101,
+      1
+    ],
+    [
+      102,
+      1
+    ],
+    [
+      103,
+      1
+    ],
+    [
+      104,
+      1
+    ],
+    [
+      105,
+      1
+    ],
+    [
+      106,
+      1
+    ],
+    [
+      107,
+      1
+    ],
+    [
+      108,
+      1
+    ],
+    [
+      109,
+      1
+    ],
+    [
+      110,
+      1
+    ],
+    [
+      111,
+      1
+    ],
+    [
+      112,
+      1
+    ],
+    [
+      113,
+      1
+    ]
+  ],
+  "editorialLyricFills": []
+}

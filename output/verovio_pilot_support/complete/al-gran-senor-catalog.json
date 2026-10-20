@@ -1,0 +1,16 @@
+{
+  "id": "3ad4f5e6-ca67-4792-8747-4a86fd4e4633",
+  "nombre": "Al Gran Señor",
+  "archivo": "global/assets/pdf/00dc2874937c1945a12796b18a27f6f3d66e3894221d5c12536e2e41b05da3df.enc",
+  "temas": [
+    "Adoración"
+  ],
+  "es_privado": false,
+  "midi_archivo": "global/assets/midi/0f1c2471e6474cd91487f76af47cc60b81b90c9dbcbb99a98dd266ee3d22d338.enc",
+  "vinculo_idioma": null,
+  "coro_id": "local",
+  "version": 1,
+  "cifrado_version": 1,
+  "_idioma": "es",
+  "idioma": "es"
+}

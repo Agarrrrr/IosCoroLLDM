@@ -1,0 +1,46 @@
+[
+  {
+    "file": ".gitignore",
+    "sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787"
+  },
+  {
+    "file": "annotation_layer.dart",
+    "sha256": "d4a47a72c8b2066b86a13079c63cf7e20dcd7b3fdb3ce40483d22e6ae0a65ae0"
+  },
+  {
+    "file": "annotation_rendering_test.dart",
+    "sha256": "303e3527b88e39de530490596ac77442e8103dbd77a0b039866888f172230731"
+  },
+  {
+    "file": "optimization_cold_analyze.log",
+    "sha256": "e17f11f85502dda828a84d1343c702d17abc2c063254629ce50fa17a83692213"
+  },
+  {
+    "file": "optimization_cold_build.log",
+    "sha256": "d372b505af9a74432cd741205608fb8210e47abbc65cdac3e79a0f417adcee89"
+  },
+  {
+    "file": "optimization_cold_first_paint_tests.log",
+    "sha256": "73e245cee1774ffbfff7395fb273ebf03f6fdb3adf68b7838d8bbf88ad4934a2"
+  },
+  {
+    "file": "optimization_cold_run.log",
+    "sha256": "4b4339c27b5ad584f441b9f512f326fc475610f21a34619eade9266cdc636c0a"
+  },
+  {
+    "file": "optimization_cold_tests.log",
+    "sha256": "581ad13ba3d78613e162f069c0b727b3b3c0df04eadc886a7ead72c16f1c774f"
+  },
+  {
+    "file": "performance_audit_reopen_test.dart",
+    "sha256": "37b0cb32798b05058cc71ae049f3dfb901ce417268a7cabe99e3169bf1bf4fe6"
+  },
+  {
+    "file": "results_summary.json",
+    "sha256": "29a08654e8033c82c337ecb803ddb719f453f597a0111af989961fe178ebdad1"
+  },
+  {
+    "file": "results.json",
+    "sha256": "d0869ee88f1d8bddfa63ffd640777931ffed429270a67cf512c82014ce06e45a"
+  }
+]

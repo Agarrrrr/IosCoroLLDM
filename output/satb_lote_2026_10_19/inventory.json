@@ -1,0 +1,1063 @@
+[
+  {
+    "index": 1,
+    "title": "A Dónde Iré SATB",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\A Dónde Iré SATB.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\A Dónde Iré SATB.mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Bajo",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        72,
+        72,
+        72,
+        72
+      ],
+      "notes": 952,
+      "lyrics": 778,
+      "dynamics": {},
+      "voices": {
+        "1": 288
+      }
+    }
+  },
+  {
+    "index": 2,
+    "title": "Al Gran Señor (Adoración)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Al Gran Señor (Adoración).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Al Gran Señor (Adoración).mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Al Gran Señor (Adoración).musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "S",
+          "staffs": 1,
+          "instruments": [
+            "S"
+          ]
+        },
+        {
+          "name": "A",
+          "staffs": 1,
+          "instruments": [
+            "A"
+          ]
+        },
+        {
+          "name": "T",
+          "staffs": 1,
+          "instruments": [
+            "T"
+          ]
+        },
+        {
+          "name": "B",
+          "staffs": 1,
+          "instruments": [
+            "B"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        92,
+        92,
+        92,
+        92
+      ],
+      "notes": 1746,
+      "lyrics": 1576,
+      "dynamics": {},
+      "voices": {
+        "1": 368
+      }
+    }
+  },
+  {
+    "index": 3,
+    "title": "Ángel Poderoso",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Ángel Poderoso.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Ángel Poderoso.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Ángel Poderoso.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "notes": 1881,
+      "lyrics": 1758,
+      "dynamics": {
+        "ppp": 1,
+        "mf": 21,
+        "f": 32,
+        "mp": 14,
+        "p": 3,
+        "ff": 8
+      },
+      "voices": {
+        "1": 360
+      }
+    }
+  },
+  {
+    "index": 4,
+    "title": "Apocalipsis 10_2",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Apocalipsis 10_2.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Apocalipsis 10_2.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Baritono"
+        },
+        {
+          "id": "P5",
+          "name": "Bajo"
+        }
+      ],
+      "bars": [
+        114,
+        114,
+        114,
+        114,
+        114
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 2048,
+      "lyrics": 1907,
+      "dynamics": {
+        "f": 15,
+        "mf": 13,
+        "ff": 5,
+        "p": 4
+      },
+      "voices": {
+        "1:1": 2352,
+        "1:2": 180,
+        "1:3": 137,
+        "1:4": 63
+      }
+    }
+  },
+  {
+    "index": 5,
+    "title": "En su Corazón VOCES",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\En su Corazón VOCES.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\En su Corazón VOCES.mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Bajo",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        117,
+        117,
+        117,
+        117
+      ],
+      "notes": 1440,
+      "lyrics": 1252,
+      "dynamics": {
+        "p": 12,
+        "mf": 12,
+        "f": 12
+      },
+      "voices": {
+        "1": 468
+      }
+    }
+  },
+  {
+    "index": 6,
+    "title": "firmes y adelante desenrrollada",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\firmes y adelante desenrrollada.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\firmes y adelante desenrrollada.mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "SOPRANO",
+          "staffs": 1,
+          "instruments": [
+            "SOPRANO"
+          ]
+        },
+        {
+          "name": "CONTRALTO",
+          "staffs": 1,
+          "instruments": [
+            "CONTRALTO"
+          ]
+        },
+        {
+          "name": "TENOR",
+          "staffs": 1,
+          "instruments": [
+            "TENOR"
+          ]
+        },
+        {
+          "name": "BAJO",
+          "staffs": 1,
+          "instruments": [
+            "BAJO"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "notes": 1696,
+      "lyrics": 1468,
+      "dynamics": {},
+      "voices": {
+        "1": 600
+      }
+    }
+  },
+  {
+    "index": 7,
+    "title": "glory_unto_jesus_christ",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\glory_unto_jesus_christ.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\glory_unto_jesus_christ.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\glory_unto_jesus_christ.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Tenor",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Bajo",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        171,
+        171,
+        171,
+        171
+      ],
+      "notes": 2229,
+      "lyrics": 2099,
+      "dynamics": {
+        "mf": 16,
+        "p": 18,
+        "f": 24,
+        "ff": 13
+      },
+      "voices": {
+        "1": 684
+      }
+    }
+  },
+  {
+    "index": 8,
+    "title": "Guerrero Celestial",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Guerrero Celestial.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Guerrero Celestial.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Guerrero Celestial.musicxml.xml",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Guerrero Celestial.mxl"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        106,
+        106,
+        106,
+        106
+      ],
+      "notes": 1673,
+      "lyrics": 1564,
+      "dynamics": {},
+      "voices": {
+        "1": 424
+      }
+    }
+  },
+  {
+    "index": 9,
+    "title": "Jehova es mi Pastor Voces",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Jehova es mi Pastor Voces.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Jehova es mi Pastor Voces.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Jehova es mi Pastor Voces.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "S",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "A",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "T",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "B",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        75,
+        75,
+        75,
+        75
+      ],
+      "notes": 819,
+      "lyrics": 768,
+      "dynamics": {},
+      "voices": {
+        "1": 300
+      }
+    }
+  },
+  {
+    "index": 10,
+    "title": "LA RESTAURACION",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\LA RESTAURACION.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\LA RESTAURACION.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\LA RESTAURACION.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "SOPRANO",
+          "staffs": 1,
+          "instruments": [
+            "SOPRANO"
+          ]
+        },
+        {
+          "name": "ALTO",
+          "staffs": 1,
+          "instruments": [
+            "ALTO"
+          ]
+        },
+        {
+          "name": "TENOR",
+          "staffs": 1,
+          "instruments": [
+            "TENOR"
+          ]
+        },
+        {
+          "name": "BASS",
+          "staffs": 1,
+          "instruments": [
+            "BASS"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        154,
+        154,
+        154,
+        154
+      ],
+      "notes": 1876,
+      "lyrics": 1597,
+      "dynamics": {},
+      "voices": {
+        "1": 601,
+        "2": 15
+      }
+    }
+  },
+  {
+    "index": 11,
+    "title": "PARA SIEMPRE ES SU MISERICORDIA",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\PARA SIEMPRE ES SU MISERICORDIA.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\PARA SIEMPRE ES SU MISERICORDIA.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\PARA SIEMPRE ES SU MISERICORDIA.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        17,
+        17,
+        17,
+        17
+      ],
+      "notes": 370,
+      "lyrics": 698,
+      "dynamics": {},
+      "voices": {
+        "1": 68
+      }
+    }
+  },
+  {
+    "index": 12,
+    "title": "Restauración",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Restauración.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Restauración.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Bajo"
+        }
+      ],
+      "bars": [
+        154,
+        154,
+        154,
+        154
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 1872,
+      "lyrics": 1666,
+      "dynamics": {},
+      "voices": {
+        "1:1": 2132,
+        "1:2": 58
+      }
+    }
+  },
+  {
+    "index": 13,
+    "title": "Santo Varón",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Santo Varón.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Santo Varón.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Bass"
+        }
+      ],
+      "bars": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 752,
+      "lyrics": 1086,
+      "dynamics": {},
+      "voices": {
+        "1:1": 790
+      }
+    }
+  },
+  {
+    "index": 14,
+    "title": "Al huerto van J.( santa Cena )_2",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Al huerto van J.( santa Cena )_2.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Al huerto van J.( santa Cena )_2.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "SOPRANO ALTO"
+        },
+        {
+          "id": "P2",
+          "name": "TENOR BASS"
+        }
+      ],
+      "bars": [
+        86,
+        86
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 643,
+      "lyrics": 290,
+      "dynamics": {
+        "p": 1,
+        "f": 4,
+        "ff": 4,
+        "mf": 1
+      },
+      "voices": {
+        "1:1": 672,
+        "1:2": 62
+      }
+    }
+  },
+  {
+    "index": 15,
+    "title": "El aliento de mi ser J.",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\El aliento de mi ser J..mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\El aliento de mi ser J..mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\El aliento de mi ser J..musicxml.xml",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\El aliento de mi ser J..mxl"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "SA",
+          "staffs": 1,
+          "instruments": [
+            "SA"
+          ]
+        },
+        {
+          "name": "TB",
+          "staffs": 1,
+          "instruments": [
+            "TB"
+          ]
+        }
+      ],
+      "staves": 2,
+      "bars": [
+        73,
+        73
+      ],
+      "notes": 1589,
+      "lyrics": 493,
+      "dynamics": {},
+      "voices": {
+        "1": 133,
+        "2": 13
+      }
+    }
+  },
+  {
+    "index": 16,
+    "title": "Es Dios (Ensamble)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Es Dios (Ensamble).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Es Dios (Ensamble).mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Piano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Piano"
+          ]
+        }
+      ],
+      "staves": 2,
+      "bars": [
+        43,
+        43
+      ],
+      "notes": 627,
+      "lyrics": 54,
+      "dynamics": {},
+      "voices": {
+        "1": 4,
+        "2": 82
+      }
+    }
+  },
+  {
+    "index": 17,
+    "title": "Imaginate Tú",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Tú.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Tú.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "P1"
+        },
+        {
+          "id": "P2",
+          "name": "P2"
+        }
+      ],
+      "bars": [
+        33,
+        33
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 536,
+      "lyrics": 332,
+      "dynamics": {},
+      "voices": {
+        "1:1": 488,
+        "1:2": 54
+      }
+    }
+  },
+  {
+    "index": 18,
+    "title": "Imaginate Túsatb",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Túsatb.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Túsatb.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "P1"
+        },
+        {
+          "id": "P2",
+          "name": "P2"
+        }
+      ],
+      "bars": [
+        33,
+        33
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 536,
+      "lyrics": 332,
+      "dynamics": {},
+      "voices": {
+        "1:1": 488,
+        "1:2": 54
+      }
+    }
+  },
+  {
+    "index": 19,
+    "title": "La Fiesta Universal (closed)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Fiesta Universal (closed).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Fiesta Universal (closed).mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\La Fiesta Universal (closed).musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "S"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Tenor",
+          "staffs": 1,
+          "instruments": [
+            "T"
+          ]
+        },
+        {
+          "name": "Bass",
+          "staffs": 1,
+          "instruments": [
+            "Bass"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "notes": 1258,
+      "lyrics": 383,
+      "dynamics": {
+        "f": 1
+      },
+      "voices": {
+        "1": 122,
+        "2": 10
+      }
+    }
+  },
+  {
+    "index": 20,
+    "title": "La Vida Se Va Como El Viento (reducción)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Vida Se Va Como El Viento (reducción).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Vida Se Va Como El Viento (reducción).mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "S"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "T"
+          ]
+        }
+      ],
+      "staves": 2,
+      "bars": [
+        34,
+        34
+      ],
+      "notes": 519,
+      "lyrics": 235,
+      "dynamics": {},
+      "voices": {
+        "1": 59,
+        "2": 9
+      }
+    }
+  },
+  {
+    "index": 21,
+    "title": "Mi Padre en la Fe",
+    "source": "E:\\Respaldo\\musescoreactual\\MINA DE ORO\\Mi Padre en la Fe.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\MINA DE ORO\\Mi Padre en la Fe.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "S A"
+        },
+        {
+          "id": "P2",
+          "name": "T B"
+        }
+      ],
+      "bars": [
+        27,
+        27
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 385,
+      "lyrics": 358,
+      "dynamics": {},
+      "voices": {
+        "1:1": 381,
+        "1:2": 26
+      }
+    }
+  },
+  {
+    "index": 22,
+    "title": "Nardo, Justicia y Gloria ",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Nardo, Justicia y Gloria .musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Nardo, Justicia y Gloria .musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "S A"
+        },
+        {
+          "id": "P2",
+          "name": "T B"
+        }
+      ],
+      "bars": [
+        62,
+        62
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 629,
+      "lyrics": 380,
+      "dynamics": {},
+      "voices": {
+        "1:1": 631,
+        "1:2": 33
+      }
+    }
+  }
+]

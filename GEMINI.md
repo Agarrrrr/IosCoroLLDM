@@ -57,7 +57,7 @@ Sistema de gestión de partituras PWA (Progressive Web App) diseñado para coros
 - Los conteos globales (`count: 'exact', head: true`) en tablas protegidas (como `coros` o `perfiles`) arrojarán un HTTP 403/400 si se hacen con credenciales menores a `superadmin`. Estas peticiones deben estar estrictamente bloqueadas mediante validación de rol antes de ejecutarse (Implementado en `superPanel.js` -> `API.obtenerMetricas`).
 
 ### 6. Unificación de Dominios (TWA/PWA)
-**EL DOMINIO OFICIAL ES `www.lldmcorobc.com`.** 
+**EL DOMINIO OFICIAL ES `www.lldmcoro.com`.** 
 - Todas las configuraciones en `app/build.gradle`, `twa-manifest.json` y el `manifest.json` de la PWA deben incluir las **www**.
 - Android TWA solo delega permisos de notificación si el dominio de la APK y el de la PWA coinciden exactamente. **NUNCA** usar la versión sin www en los manifiestos.
 
@@ -73,3 +73,22 @@ Sistema de gestión de partituras PWA (Progressive Web App) diseñado para coros
 - **Detección Táctil**: `pdfEngine.js` bloquea la creación de trazos cuando detecta Gestos (Pinch-to-zoom) mediante validación estricta de `e.touches.length > 1`.
 - **Unit Testing (Vitest)**: La lógica base (`pdfEngine.js`, `anotacionesManager.js`, `midiEngine.js`) se testea en terminal pura mediante `jsdom` (Mock de API Canvas `getContext('2d')` e inyección virtual).
 - **E2E Testing (Playwright)**: Las interacciones de trazado y teclado se testean usando Chromium headless. El entorno de tests evita dependencias de red mediante la interceptación de Supabase y el uso del **Pase de Invitado** (`/?ev=ID`) junto a mocks de `localStorage` para forzar la UI de la partitura directa sin logins.
+
+### 9. Comunicación, Redes Sociales y Creación de Contenido (v4.2.x)
+- **Documento Maestro**: Ver guía técnica completa en `docs/GUIA_WORKFLOW_RECURSOS_MULTIMEDIA.md`.
+- **Identidad Institucional**: Somos miembros de la Iglesia La Luz del Mundo. Se debe hablar siempre con reverencia, solemnidad y dignidad cristiana.
+- **Terminología Sagrada**: PROHIBIDO usar la palabra "grupos" o "cuerdas". Usar siempre **"coro"**, **"el coro"**, **"cuerpo coral"**, **"hermanos del coro"** o **"voces"** (Soprano, Contralto, Tenor, Bajo).
+- **Prohibido Términos Ajenos**: NO utilizar la palabra "litúrgica" ni terminología de tradición católica.
+- **No Proclamar Oficialidad Institucional**: NO presentarse como "la aplicación oficial" de la Iglesia ni titular "Aplicación Oficial". Mantener una presentación sobria, digna y profesional (ej. *"Coro LLDM"*, *"Repertorio Coral"*, *"Herramienta de estudio coral"*).
+- **Recorte de Video MuseScore a 4:3**: Quitar la pantalla de título inicial (corte habitual a 2.960s) y la pantalla negra final (doble barra del último compás). Aplicar crop exacto `crop=1904:1428:324:4` (0 píxeles negros en bordes). Guardar en `social-media/alabanzas/<slug>/videos-4x3/` y en `Downloads/musescore/<Nombre>_4_3.mp4`.
+- **Metadatos Limpios en Gráficos**: En las tarjetas y píldoras de datos de las portadas y fondos, incluir **ÚNICAMENTE Autor y Arreglo/Compositores**. PROHIBIDO incluir tonalidad (ej. Sol Mayor), compás/tempo (ej. 4/4, q=78) o etiquetas redundantes de ensamble (ej. CORO S · A · T · B).
+- **Formatos de la Suite Gráfica (JPG Calidad 96, 4:4:4)**:
+  - Fondo de Video 9:16 (1080 × 1920 px): Fondo blanco con zona central y=555 a 1365 px 100% libre para superponer el video 4:3.
+  - Portadas TikTok 3:4 (1080 × 1440 px).
+  - Portadas Feed Facebook/Instagram 1:1 (1080 × 1080 px).
+  - Portadas YouTube 16:9 (1920 × 1080 px): Master/Ensamble y por voces individuales (Soprano, Contralto, Tenor, Bajo).
+- **Pie de Página Oficial**: Debe leerse estrictamente: `• CORO LLDM • WWW.LLDMCORO.COM •` (sin lemas adicionales).
+- **Estilo Visual e Iconografía**: Cero emojis. Paleta marfil y oro (`#FAF8F5`, `#FFFFFF`, `#C59B27`, `#2E2422`, `#8C6D3B`), tipografía `Cinzel`, `Playfair Display` y `Montserrat`, vectores SVG oficiales de tiendas y emblema sacro.
+- **Descripción para Redes Sociales**: Redactar en párrafos separados (sin numeraciones 1, 2, 3 ni recuadros toscos), destacando el reproductor continuo tipo streaming con pantalla apagada para repasar voces, y disponibilidad en App Store, Google Play y `www.lldmcoro.com`.
+
+

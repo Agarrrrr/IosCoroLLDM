@@ -1,0 +1,537 @@
+[
+  {
+    "index": 1,
+    "name": "A Dónde Iré - SATB - Cantai",
+    "staves": 4,
+    "bars": 72,
+    "markers": {
+      "single": 242,
+      "begin": 228,
+      "middle": 80,
+      "end": 228
+    },
+    "longChains": []
+  },
+  {
+    "index": 2,
+    "name": "Al Gran Señor (Adoración) - SATB - Cantai",
+    "staves": 4,
+    "bars": 92,
+    "markers": {
+      "single": 323,
+      "begin": 468,
+      "end": 443,
+      "middle": 342
+    },
+    "longChains": []
+  },
+  {
+    "index": 3,
+    "name": "Al Huerto Van a Visitar - SATB - Cantai",
+    "staves": 4,
+    "bars": 86,
+    "markers": {
+      "single": 213,
+      "begin": 222,
+      "middle": 89,
+      "end": 222
+    },
+    "longChains": []
+  },
+  {
+    "index": 4,
+    "name": "Alabad a Jehová - SATB revisado contra PDF",
+    "staves": 4,
+    "bars": 138,
+    "markers": {
+      "begin": 252,
+      "middle": 201,
+      "end": 252,
+      "single": 192
+    },
+    "longChains": []
+  },
+  {
+    "index": 5,
+    "name": "Aleluya al Rey - SATB con letra - Cantai",
+    "staves": 4,
+    "bars": 70,
+    "markers": {
+      "begin": 391,
+      "middle": 308,
+      "end": 391,
+      "single": 163
+    },
+    "longChains": []
+  },
+  {
+    "index": 6,
+    "name": "Apocalipsis 10 - SATB y Barítono - Cantai",
+    "staves": 5,
+    "bars": 114,
+    "markers": {
+      "begin": 513,
+      "end": 513,
+      "single": 607,
+      "middle": 272
+    },
+    "longChains": []
+  },
+  {
+    "index": 7,
+    "name": "Apóstol, Padre y Maestro - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 95,
+    "markers": {
+      "single": 390,
+      "begin": 376,
+      "middle": 209,
+      "end": 376
+    },
+    "longChains": []
+  },
+  {
+    "index": 8,
+    "name": "Como la Aurora - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 89,
+    "markers": {
+      "begin": 464,
+      "end": 464,
+      "middle": 300,
+      "single": 280
+    },
+    "longChains": []
+  },
+  {
+    "index": 9,
+    "name": "Cuando Oí Su Voz - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 128,
+    "markers": {
+      "single": 518,
+      "begin": 514,
+      "middle": 372,
+      "end": 516
+    },
+    "longChains": []
+  },
+  {
+    "index": 10,
+    "name": "Cuán Amables Son Tus Moradas - Oficial - SATB y solista - Cantai",
+    "staves": 5,
+    "bars": 91,
+    "markers": {
+      "single": 220,
+      "begin": 285,
+      "middle": 92,
+      "end": 285
+    },
+    "longChains": []
+  },
+  {
+    "index": 11,
+    "name": "Dios Poderoso - SATB con letra",
+    "staves": 4,
+    "bars": 103,
+    "markers": {
+      "single": 338,
+      "begin": 525,
+      "middle": 395,
+      "end": 525
+    },
+    "longChains": []
+  },
+  {
+    "index": 12,
+    "name": "El Aliento de mi Ser - SATB - Cantai",
+    "staves": 4,
+    "bars": 73,
+    "markers": {
+      "begin": 436,
+      "end": 436,
+      "single": 543,
+      "middle": 190
+    },
+    "longChains": []
+  },
+  {
+    "index": 13,
+    "name": "El Cántico de los 144 Mil - SATB desarrollado - Cantai",
+    "staves": 4,
+    "bars": 110,
+    "markers": {
+      "begin": 355,
+      "end": 355,
+      "single": 243,
+      "middle": 162
+    },
+    "longChains": []
+  },
+  {
+    "index": 14,
+    "name": "El Cántico de Moisés - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 122,
+    "markers": {
+      "begin": 622,
+      "end": 622,
+      "single": 460,
+      "middle": 272
+    },
+    "longChains": []
+  },
+  {
+    "index": 15,
+    "name": "Elección Apostólica - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 106,
+    "markers": {
+      "single": 310,
+      "begin": 297,
+      "middle": 115,
+      "end": 297
+    },
+    "longChains": []
+  },
+  {
+    "index": 16,
+    "name": "En su Corazón - SATB - Cantai",
+    "staves": 4,
+    "bars": 117,
+    "markers": {
+      "single": 404,
+      "begin": 366,
+      "end": 366,
+      "middle": 116
+    },
+    "longChains": []
+  },
+  {
+    "index": 17,
+    "name": "Es Dios - SATB - Cantai",
+    "staves": 4,
+    "bars": 90,
+    "markers": {
+      "begin": 360,
+      "end": 360,
+      "single": 448,
+      "middle": 92
+    },
+    "longChains": []
+  },
+  {
+    "index": 18,
+    "name": "Firmes y Adelante - SATB desarrollado - Cantai",
+    "staves": 4,
+    "bars": 150,
+    "markers": {
+      "begin": 359,
+      "end": 407,
+      "middle": 203,
+      "single": 499
+    },
+    "longChains": []
+  },
+  {
+    "index": 19,
+    "name": "Glory Unto Jesus Christ - SATB - Cantai",
+    "staves": 4,
+    "bars": 171,
+    "markers": {
+      "begin": 401,
+      "end": 406,
+      "single": 1164,
+      "middle": 128
+    },
+    "longChains": []
+  },
+  {
+    "index": 20,
+    "name": "Guerrero Celestial - SATB - Cantai",
+    "staves": 4,
+    "bars": 106,
+    "markers": {
+      "begin": 466,
+      "middle": 252,
+      "end": 466,
+      "single": 380
+    },
+    "longChains": []
+  },
+  {
+    "index": 21,
+    "name": "Imagínate Tú (variante SATB) - Cantai",
+    "staves": 4,
+    "bars": 99,
+    "markers": {
+      "begin": 486,
+      "end": 486,
+      "middle": 306,
+      "single": 324
+    },
+    "longChains": []
+  },
+  {
+    "index": 22,
+    "name": "Imagínate Tú - SATB - Cantai",
+    "staves": 4,
+    "bars": 99,
+    "markers": {
+      "begin": 486,
+      "end": 486,
+      "middle": 306,
+      "single": 324
+    },
+    "longChains": []
+  },
+  {
+    "index": 23,
+    "name": "Jehová es mi Pastor - SATB - Cantai",
+    "staves": 4,
+    "bars": 91,
+    "markers": {
+      "begin": 266,
+      "middle": 176,
+      "end": 266,
+      "single": 200
+    },
+    "longChains": []
+  },
+  {
+    "index": 24,
+    "name": "La Fiesta Universal - SATB desarrollado - Cantai",
+    "staves": 4,
+    "bars": 92,
+    "markers": {
+      "begin": 678,
+      "end": 678,
+      "single": 513,
+      "middle": 404
+    },
+    "longChains": []
+  },
+  {
+    "index": 25,
+    "name": "La Restauración - SATB - Cantai",
+    "staves": 4,
+    "bars": 154,
+    "markers": {
+      "begin": 461,
+      "middle": 296,
+      "end": 461,
+      "single": 443
+    },
+    "longChains": []
+  },
+  {
+    "index": 26,
+    "name": "La Vida Se Va Como El Viento (reducción) - SATB - Cantai",
+    "staves": 4,
+    "bars": 68,
+    "markers": {
+      "single": 398,
+      "begin": 262,
+      "end": 262,
+      "middle": 148
+    },
+    "longChains": []
+  },
+  {
+    "index": 27,
+    "name": "Mi Padre en la Fe - SATB - Cantai",
+    "staves": 4,
+    "bars": 96,
+    "markers": {
+      "single": 402,
+      "begin": 346,
+      "middle": 100,
+      "end": 346
+    },
+    "longChains": []
+  },
+  {
+    "index": 28,
+    "name": "Mi Torre Fuerte - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 65,
+    "markers": {
+      "single": 365,
+      "begin": 380,
+      "middle": 136,
+      "end": 380
+    },
+    "longChains": []
+  },
+  {
+    "index": 29,
+    "name": "Nardo, Justicia y Gloria - SATB - Cantai",
+    "staves": 4,
+    "bars": 156,
+    "markers": {
+      "single": 525,
+      "begin": 453,
+      "middle": 194,
+      "end": 453
+    },
+    "longChains": []
+  },
+  {
+    "index": 30,
+    "name": "No Hay Amigo Mejor - SATB desarrollado - Cantai",
+    "staves": 4,
+    "bars": 109,
+    "markers": {
+      "single": 308,
+      "begin": 452,
+      "middle": 182,
+      "end": 452
+    },
+    "longChains": []
+  },
+  {
+    "index": 31,
+    "name": "No Hay Amigo Mejor - SATB desarrollado",
+    "staves": 4,
+    "bars": 109,
+    "markers": {
+      "single": 154,
+      "begin": 226,
+      "middle": 90,
+      "end": 226
+    },
+    "longChains": []
+  },
+  {
+    "index": 32,
+    "name": "Para Siempre Es Su Misericordia - SATB - Cantai",
+    "staves": 4,
+    "bars": 51,
+    "markers": {
+      "begin": 316,
+      "middle": 200,
+      "end": 316,
+      "single": 244
+    },
+    "longChains": []
+  },
+  {
+    "index": 33,
+    "name": "Recuerda - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 88,
+    "markers": {
+      "begin": 561,
+      "middle": 378,
+      "end": 561,
+      "single": 526
+    },
+    "longChains": []
+  },
+  {
+    "index": 34,
+    "name": "Restauración - SATB - Cantai",
+    "staves": 4,
+    "bars": 154,
+    "markers": {
+      "begin": 461,
+      "middle": 296,
+      "end": 461,
+      "single": 443
+    },
+    "longChains": []
+  },
+  {
+    "index": 35,
+    "name": "Salmo 135 - SATB - Cantai",
+    "staves": 4,
+    "bars": 45,
+    "markers": {
+      "begin": 179,
+      "middle": 113,
+      "end": 179,
+      "single": 122
+    },
+    "longChains": []
+  },
+  {
+    "index": 36,
+    "name": "Salmo 150 - SATB con letra",
+    "staves": 4,
+    "bars": 73,
+    "markers": {
+      "begin": 280,
+      "middle": 384,
+      "end": 280,
+      "single": 116
+    },
+    "longChains": []
+  },
+  {
+    "index": 37,
+    "name": "Santo Varón - SATB - Cantai",
+    "staves": 4,
+    "bars": 60,
+    "markers": {
+      "begin": 306,
+      "end": 306,
+      "middle": 282,
+      "single": 224
+    },
+    "longChains": []
+  },
+  {
+    "index": 38,
+    "name": "Tú Eres mi Esperanza - SATB extendido - Cantai",
+    "staves": 4,
+    "bars": 69,
+    "markers": {
+      "begin": 460,
+      "end": 460,
+      "single": 256,
+      "middle": 120
+    },
+    "longChains": []
+  },
+  {
+    "index": 39,
+    "name": "Valle de los Huesos Secos - SATB con letra",
+    "staves": 4,
+    "bars": 148,
+    "markers": {
+      "begin": 743,
+      "end": 704,
+      "single": 541,
+      "middle": 400
+    },
+    "longChains": []
+  },
+  {
+    "index": 40,
+    "name": "Valle de los Huesos Secos",
+    "staves": 4,
+    "bars": 148,
+    "markers": {
+      "begin": 734,
+      "end": 734,
+      "single": 511,
+      "middle": 410
+    },
+    "longChains": [
+      "gloglogloglogloglogloglogloglogloglogloglogloglogloglogloglogloglogloglogloglogloglogloglogloglo"
+    ]
+  },
+  {
+    "index": 41,
+    "name": "Ángel Poderoso - SATB - Cantai",
+    "staves": 4,
+    "bars": 90,
+    "markers": {
+      "begin": 504,
+      "end": 507,
+      "single": 424,
+      "middle": 323
+    },
+    "longChains": []
+  }
+]

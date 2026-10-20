@@ -4,12 +4,14 @@ import 'package:coro_lldm/core/midi/midi_engine.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/app/accessible_colors.dart';
 import 'package:coro_lldm/features/shared/content_notice.dart';
+import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 import 'player_options_sheet.dart';
 import 'player_dismiss_handle.dart';
 import 'metronome_motion.dart';
 
 class MidiPanel extends StatefulWidget {
   final VoidCallback? onClose;
+  final VoidCallback? onSwitchToVocal;
   final String? errorMessage;
   final String cantoId;
   final MidiState midiState;
@@ -29,6 +31,7 @@ class MidiPanel extends StatefulWidget {
   const MidiPanel({
     super.key,
     this.onClose,
+    this.onSwitchToVocal,
     this.errorMessage,
     required this.cantoId,
     required this.midiState,
@@ -80,6 +83,7 @@ class _MidiPanelState extends State<MidiPanel> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final strings = AppStrings.of(context);
     final bool loading = !widget.isReady || !widget.isLoaded;
 
     if (widget.errorMessage != null) {
@@ -131,106 +135,161 @@ class _MidiPanelState extends State<MidiPanel> {
               children: [
                 if (widget.onClose != null)
                   PlayerDismissHandle(onClose: widget.onClose!),
-                // Indicador metrónomo (flash en cada beat)
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  crossAxisAlignment: WrapCrossAlignment.center,
+                // Indicador metrónomo (flash en cada beat) y selector a Voces
+                Row(
                   children: [
-                    Icon(Icons.piano_rounded,
-                        color: widget.accentColor, size: 18),
-                    const SizedBox(width: 8),
-                    Text(
-                      '♩ = ${widget.midiState.tempoBpm}',
-                      style: GoogleFonts.inter(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w700,
-                        color: theme.colorScheme.onSurfaceVariant,
+                    Expanded(
+                      child: Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          Icon(Icons.piano_rounded,
+                              color: widget.accentColor, size: 18),
+                          const SizedBox(width: 8),
+                          Text(
+                            '♩ = ${widget.midiState.tempoBpm}',
+                            style: GoogleFonts.inter(
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700,
+                              color: theme.colorScheme.onSurfaceVariant,
+                            ),
+                          ),
+                          // Metrónomo Visual (Row de bolitas)
+                          if (widget.midiState.metronomoActivo &&
+                              widget.midiState.beatIndex != null &&
+                              widget.midiState.beatNumerator != null) ...[
+                            Builder(
+                              builder: (context) {
+                                final beats = widget.midiState.beatNumerator!;
+                                final dotSize = beats > 8 ? 6.0 : 8.0;
+                                final numerator =
+                                    widget.midiState.timeSignatureNumerator ??
+                                        beats;
+                                final denominator =
+                                    widget.midiState.timeSignatureDenominator ??
+                                        4;
+                                final groups = widget.midiState.beatGroups;
+                                final groupStarts = <int>[];
+                                var groupOffset = 0;
+                                for (final group in groups) {
+                                  groupStarts.add(groupOffset);
+                                  groupOffset += group;
+                                }
+                                return Wrap(
+                                  crossAxisAlignment: WrapCrossAlignment.center,
+                                  children: [
+                                    Text(
+                                      '$numerator/$denominator',
+                                      style: GoogleFonts.inter(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w700,
+                                        color:
+                                            theme.colorScheme.onSurfaceVariant,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 7),
+                                    ...List.generate(beats, (index) {
+                                      final isCurrent =
+                                          index == widget.midiState.beatIndex;
+                                      final isFirst = index == 0;
+                                      final isGroupStart =
+                                          groupStarts.contains(index);
+                                      return AnimatedContainer(
+                                        duration:
+                                            const Duration(milliseconds: 90),
+                                        margin: EdgeInsets.only(
+                                          left: isGroupStart && index > 0
+                                              ? 5
+                                              : 2,
+                                          right: 2,
+                                        ),
+                                        width: isCurrent ? dotSize + 2 : dotSize,
+                                        height:
+                                            isCurrent ? dotSize + 2 : dotSize,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: isCurrent
+                                              ? (isFirst
+                                                  ? AccessibleColors.against(
+                                                      Colors.redAccent,
+                                                      [
+                                                        theme.colorScheme
+                                                            .surface
+                                                      ],
+                                                      minimum: 3.1)
+                                                  : widget.accentColor)
+                                              : Colors.grey
+                                                  .withValues(alpha: 0.3),
+                                          boxShadow: isCurrent
+                                              ? [
+                                                  BoxShadow(
+                                                    color: isFirst
+                                                        ? Colors.redAccent
+                                                            .withValues(
+                                                                alpha: 0.5)
+                                                        : widget.accentColor
+                                                            .withValues(
+                                                                alpha: 0.5),
+                                                    blurRadius: 4,
+                                                    spreadRadius: 1,
+                                                  )
+                                                ]
+                                              : [],
+                                        ),
+                                      );
+                                    }),
+                                  ],
+                                );
+                              },
+                            ),
+                            const SizedBox(width: 12),
+                          ],
+                          if (!widget.isReady)
+                            SizedBox(
+                              width: 14,
+                              height: 14,
+                              child: CircularProgressIndicator(
+                                  strokeWidth: 2, color: widget.accentColor),
+                            ),
+                        ],
                       ),
                     ),
-                    // Metrónomo Visual (Row de bolitas)
-                    if (widget.midiState.metronomoActivo &&
-                        widget.midiState.beatIndex != null &&
-                        widget.midiState.beatNumerator != null) ...[
-                      Builder(
-                        builder: (context) {
-                          final beats = widget.midiState.beatNumerator!;
-                          final dotSize = beats > 8 ? 6.0 : 8.0;
-                          final numerator =
-                              widget.midiState.timeSignatureNumerator ?? beats;
-                          final denominator =
-                              widget.midiState.timeSignatureDenominator ?? 4;
-                          final groups = widget.midiState.beatGroups;
-                          final groupStarts = <int>[];
-                          var groupOffset = 0;
-                          for (final group in groups) {
-                            groupStarts.add(groupOffset);
-                            groupOffset += group;
-                          }
-                          return Wrap(
-                            crossAxisAlignment: WrapCrossAlignment.center,
-                            children: [
-                              Text(
-                                '$numerator/$denominator',
-                                style: GoogleFonts.inter(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w700,
-                                  color: theme.colorScheme.onSurfaceVariant,
+                    if (widget.onSwitchToVocal != null)
+                      Material(
+                        color: theme.colorScheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(14),
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(14),
+                          onTap: () {
+                            widget.onStop();
+                            widget.onSwitchToVocal?.call();
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 6,
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                SingingIcon(
+                                  size: 15,
+                                  color: widget.accentColor,
                                 ),
-                              ),
-                              const SizedBox(width: 7),
-                              ...List.generate(beats, (index) {
-                                final isCurrent =
-                                    index == widget.midiState.beatIndex;
-                                final isFirst = index == 0;
-                                final isGroupStart =
-                                    groupStarts.contains(index);
-                                return AnimatedContainer(
-                                  duration: const Duration(milliseconds: 90),
-                                  margin: EdgeInsets.only(
-                                    left: isGroupStart && index > 0 ? 5 : 2,
-                                    right: 2,
+                                const SizedBox(width: 5),
+                                Text(
+                                  strings.t('Voces', 'Voices'),
+                                  style: GoogleFonts.inter(
+                                    fontSize: 11.5,
+                                    fontWeight: FontWeight.w700,
+                                    color: theme.colorScheme.onSurface,
                                   ),
-                                  width: isCurrent ? dotSize + 2 : dotSize,
-                                  height: isCurrent ? dotSize + 2 : dotSize,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: isCurrent
-                                        ? (isFirst
-                                            ? AccessibleColors.against(
-                                                Colors.redAccent,
-                                                [theme.colorScheme.surface],
-                                                minimum: 3.1)
-                                            : widget.accentColor)
-                                        : Colors.grey.withValues(alpha: 0.3),
-                                    boxShadow: isCurrent
-                                        ? [
-                                            BoxShadow(
-                                              color: isFirst
-                                                  ? Colors.redAccent
-                                                      .withValues(alpha: 0.5)
-                                                  : widget.accentColor
-                                                      .withValues(alpha: 0.5),
-                                              blurRadius: 4,
-                                              spreadRadius: 1,
-                                            )
-                                          ]
-                                        : [],
-                                  ),
-                                );
-                              }),
-                            ],
-                          );
-                        },
-                      ),
-                      const SizedBox(width: 12),
-                    ],
-                    if (!widget.isReady)
-                      SizedBox(
-                        width: 14,
-                        height: 14,
-                        child: CircularProgressIndicator(
-                            strokeWidth: 2, color: widget.accentColor),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                       ),
                   ],
                 ),

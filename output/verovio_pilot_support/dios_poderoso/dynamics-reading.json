@@ -1,0 +1,590 @@
+[
+  {
+    "page": 1,
+    "staff": 0,
+    "role": 0,
+    "x": 98.279907,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 0,
+    "role": 0,
+    "x": 246.3198312,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 0,
+    "role": 0,
+    "x": 403.1956452,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 1,
+    "role": 1,
+    "x": 248.3350338,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 1,
+    "role": 1,
+    "x": 405.5208798,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 1,
+    "role": 1,
+    "x": 97.34981339999999,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 2,
+    "role": 2,
+    "x": 250.350237,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 2,
+    "role": 2,
+    "x": 405.2108484,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 2,
+    "role": 2,
+    "x": 97.34981339999999,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 3,
+    "role": 3,
+    "x": 97.34981339999999,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 3,
+    "role": 3,
+    "x": 250.81528379999997,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 3,
+    "role": 3,
+    "x": 405.2108484,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 4,
+    "role": 0,
+    "x": 232.2134088,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 4,
+    "role": 0,
+    "x": 391.72448879999996,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 5,
+    "role": 1,
+    "x": 391.72448879999996,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 5,
+    "role": 1,
+    "x": 232.2134088,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 6,
+    "role": 2,
+    "x": 233.2985184,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 6,
+    "role": 2,
+    "x": 391.72448879999996,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 7,
+    "role": 3,
+    "x": 233.2985184,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 7,
+    "role": 3,
+    "x": 390.4843638,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 8,
+    "role": 0,
+    "x": 86.18868839999999,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 8,
+    "role": 0,
+    "x": 382.1135202,
+    "value": "f"
+  },
+  {
+    "page": 1,
+    "staff": 9,
+    "role": 1,
+    "x": 85.2585948,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 9,
+    "role": 1,
+    "x": 384.12872339999996,
+    "value": "f"
+  },
+  {
+    "page": 1,
+    "staff": 10,
+    "role": 2,
+    "x": 83.7084384,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 10,
+    "role": 2,
+    "x": 390.9494106,
+    "value": "f"
+  },
+  {
+    "page": 1,
+    "staff": 11,
+    "role": 3,
+    "x": 84.3285006,
+    "value": "sfz"
+  },
+  {
+    "page": 1,
+    "staff": 11,
+    "role": 3,
+    "x": 390.9494106,
+    "value": "f"
+  },
+  {
+    "page": 4,
+    "staff": 0,
+    "role": 0,
+    "x": 514.6518809999999,
+    "value": "sfz"
+  },
+  {
+    "page": 4,
+    "staff": 0,
+    "role": 0,
+    "x": 362.8915824,
+    "value": "p"
+  },
+  {
+    "page": 4,
+    "staff": 1,
+    "role": 1,
+    "x": 370.3323324,
+    "value": "p"
+  },
+  {
+    "page": 4,
+    "staff": 1,
+    "role": 1,
+    "x": 515.1169278,
+    "value": "sfz"
+  },
+  {
+    "page": 4,
+    "staff": 2,
+    "role": 2,
+    "x": 363.82167599999997,
+    "value": "p"
+  },
+  {
+    "page": 4,
+    "staff": 2,
+    "role": 2,
+    "x": 515.1169278,
+    "value": "sfz"
+  },
+  {
+    "page": 4,
+    "staff": 3,
+    "role": 3,
+    "x": 364.7517702,
+    "value": "p"
+  },
+  {
+    "page": 4,
+    "staff": 3,
+    "role": 3,
+    "x": 516.2020374,
+    "value": "sfz"
+  },
+  {
+    "page": 4,
+    "staff": 6,
+    "role": 2,
+    "x": 165.86672040000002,
+    "value": "mf"
+  },
+  {
+    "page": 4,
+    "staff": 7,
+    "role": 3,
+    "x": 88.6689384,
+    "value": "mf"
+  },
+  {
+    "page": 4,
+    "staff": 9,
+    "role": 1,
+    "x": 231.1282992,
+    "value": "mf"
+  },
+  {
+    "page": 5,
+    "staff": 0,
+    "role": 0,
+    "x": 406.140942,
+    "value": "mf"
+  },
+  {
+    "page": 6,
+    "staff": 0,
+    "role": 0,
+    "x": 221.51733059999998,
+    "value": "mp"
+  },
+  {
+    "page": 6,
+    "staff": 1,
+    "role": 1,
+    "x": 223.9975806,
+    "value": "mp"
+  },
+  {
+    "page": 6,
+    "staff": 2,
+    "role": 2,
+    "x": 223.9975806,
+    "value": "mp"
+  },
+  {
+    "page": 6,
+    "staff": 3,
+    "role": 3,
+    "x": 223.067487,
+    "value": "mp"
+  },
+  {
+    "page": 7,
+    "staff": 0,
+    "role": 0,
+    "x": 423.657708,
+    "value": "f"
+  },
+  {
+    "page": 7,
+    "staff": 1,
+    "role": 1,
+    "x": 424.1227548,
+    "value": "f"
+  },
+  {
+    "page": 7,
+    "staff": 2,
+    "role": 2,
+    "x": 423.03764579999995,
+    "value": "f"
+  },
+  {
+    "page": 7,
+    "staff": 3,
+    "role": 3,
+    "x": 421.6425048,
+    "value": "f"
+  },
+  {
+    "page": 7,
+    "staff": 8,
+    "role": 0,
+    "x": 455.2808958,
+    "value": "p"
+  },
+  {
+    "page": 7,
+    "staff": 8,
+    "role": 0,
+    "x": 544.569897,
+    "value": "mf"
+  },
+  {
+    "page": 7,
+    "staff": 9,
+    "role": 1,
+    "x": 455.7459432,
+    "value": "p"
+  },
+  {
+    "page": 7,
+    "staff": 9,
+    "role": 1,
+    "x": 545.6550066,
+    "value": "mf"
+  },
+  {
+    "page": 7,
+    "staff": 10,
+    "role": 2,
+    "x": 456.5210208,
+    "value": "p"
+  },
+  {
+    "page": 7,
+    "staff": 10,
+    "role": 2,
+    "x": 545.6550066,
+    "value": "mf"
+  },
+  {
+    "page": 7,
+    "staff": 11,
+    "role": 3,
+    "x": 453.26569259999997,
+    "value": "p"
+  },
+  {
+    "page": 7,
+    "staff": 11,
+    "role": 3,
+    "x": 548.445288,
+    "value": "mf"
+  },
+  {
+    "page": 8,
+    "staff": 4,
+    "role": 0,
+    "x": 503.8007874,
+    "value": "sfz"
+  },
+  {
+    "page": 8,
+    "staff": 5,
+    "role": 1,
+    "x": 506.28103739999995,
+    "value": "sfz"
+  },
+  {
+    "page": 8,
+    "staff": 6,
+    "role": 2,
+    "x": 501.32053740000003,
+    "value": "sfz"
+  },
+  {
+    "page": 8,
+    "staff": 7,
+    "role": 3,
+    "x": 481.168506,
+    "value": "sfz"
+  },
+  {
+    "page": 8,
+    "staff": 8,
+    "role": 0,
+    "x": 88.6689384,
+    "value": "f"
+  },
+  {
+    "page": 8,
+    "staff": 9,
+    "role": 1,
+    "x": 89.2890006,
+    "value": "f"
+  },
+  {
+    "page": 8,
+    "staff": 10,
+    "role": 2,
+    "x": 88.6689384,
+    "value": "f"
+  },
+  {
+    "page": 8,
+    "staff": 11,
+    "role": 3,
+    "x": 89.2890006,
+    "value": "f"
+  },
+  {
+    "page": 9,
+    "staff": 4,
+    "role": 0,
+    "x": 102.000282,
+    "value": "f"
+  },
+  {
+    "page": 9,
+    "staff": 4,
+    "role": 0,
+    "x": 327.54801960000003,
+    "value": "mp"
+  },
+  {
+    "page": 9,
+    "staff": 5,
+    "role": 1,
+    "x": 99.520032,
+    "value": "f"
+  },
+  {
+    "page": 9,
+    "staff": 5,
+    "role": 1,
+    "x": 322.4325036,
+    "value": "mp"
+  },
+  {
+    "page": 9,
+    "staff": 6,
+    "role": 2,
+    "x": 324.2926914,
+    "value": "mp"
+  },
+  {
+    "page": 9,
+    "staff": 6,
+    "role": 2,
+    "x": 97.6598448,
+    "value": "f"
+  },
+  {
+    "page": 9,
+    "staff": 7,
+    "role": 3,
+    "x": 100.1400948,
+    "value": "f"
+  },
+  {
+    "page": 9,
+    "staff": 7,
+    "role": 3,
+    "x": 317.4720036,
+    "value": "mp"
+  },
+  {
+    "page": 10,
+    "staff": 0,
+    "role": 0,
+    "x": 86.0336724,
+    "value": "ff"
+  },
+  {
+    "page": 10,
+    "staff": 1,
+    "role": 1,
+    "x": 84.4835166,
+    "value": "ff"
+  },
+  {
+    "page": 10,
+    "staff": 2,
+    "role": 2,
+    "x": 82.6233288,
+    "value": "ff"
+  },
+  {
+    "page": 10,
+    "staff": 3,
+    "role": 3,
+    "x": 82.6233288,
+    "value": "ff"
+  },
+  {
+    "page": 11,
+    "staff": 8,
+    "role": 0,
+    "x": 322.2774882,
+    "value": "mp"
+  },
+  {
+    "page": 11,
+    "staff": 9,
+    "role": 1,
+    "x": 326.3078946,
+    "value": "mp"
+  },
+  {
+    "page": 11,
+    "staff": 10,
+    "role": 2,
+    "x": 322.2774882,
+    "value": "mp"
+  },
+  {
+    "page": 11,
+    "staff": 11,
+    "role": 3,
+    "x": 321.81244139999995,
+    "value": "mp"
+  },
+  {
+    "page": 12,
+    "staff": 8,
+    "role": 0,
+    "x": 375.6028638,
+    "value": "f"
+  },
+  {
+    "page": 12,
+    "staff": 9,
+    "role": 1,
+    "x": 376.8429888,
+    "value": "f"
+  },
+  {
+    "page": 12,
+    "staff": 10,
+    "role": 2,
+    "x": 378.7031766,
+    "value": "f"
+  },
+  {
+    "page": 12,
+    "staff": 11,
+    "role": 3,
+    "x": 378.7031766,
+    "value": "f"
+  }
+]

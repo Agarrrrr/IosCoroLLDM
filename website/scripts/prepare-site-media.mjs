@@ -5,7 +5,7 @@ import sharp from 'sharp'
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url))
 const publicDirectory = resolve(scriptDirectory, '..', 'public')
-const sourceDirectory = resolve(publicDirectory, 'social-kit')
+const sourceDirectory = resolve(scriptDirectory, '..', 'source-assets')
 const targetDirectory = resolve(publicDirectory, 'site-media')
 
 const assets = [

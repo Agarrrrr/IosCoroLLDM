@@ -1,0 +1,18 @@
+I/flutter (16210): AUDIT END native_render_El Llamado a mi Ser_1800 306.185 ms, 18 frames, error=null
+I/flutter (16210): AUDIT START native_render_El Llamado a mi Ser_3600
+I/flutter (16210): AUDIT END native_render_El Llamado a mi Ser_3600 485.649 ms, 29 frames, error=null
+I/flutter (16210): AUDIT START decrypt_encrypted_pdf_isolated
+I/flutter (16210): AUDIT END decrypt_encrypted_pdf_isolated 7832.732 ms, 471 frames, error=null
+I/flutter (16210): AUDIT START viewer_open_heavy_warm_file
+I/flutter (16210): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (16210): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (16210): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+I/flutter (16210): 🎧 [NativeMidiEngine] Cambio de salida: {outputs: [{name: SM-G986U, type: 1}, {name: SM-G986U, type: 2}, {name: SM-G986U, type: 18}]}
+W/OnBackInvokedCallback(16210): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(16210): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (16210): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (4 ms)
+I/flutter (16210): PdfViewer: Loaded page 9 of 9 in 146 ms
+I/flutter (16210): AUDIT END viewer_open_heavy_warm_file 2136.985 ms, 125 frames, error=null
+I/flutter (16210): AUDIT START page_changes_vertical
+I/flutter (16210): AUDIT END page_changes_vertical 6115.896 ms, 368 frames, error=null
+I/flutter (16210): AUDIT START page_changes_carousel

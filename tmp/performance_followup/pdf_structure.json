@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "/Title": "Untitled",
+    "/Producer": "iOS Version 17.3.1 (Build 21D61) Quartz PDFContext",
+    "/Creator": "Camera",
+    "/CreationDate": "D:20240304231929Z00'00'",
+    "/ModDate": "D:20240304231929Z00'00'"
+  },
+  "pages": [
+    {
+      "size": [
+        0,
+        0,
+        3024,
+        4032
+      ],
+      "images": [
+        {
+          "name": "Im1.jpg",
+          "width": 4032,
+          "height": 3024,
+          "filter": "/DCTDecode",
+          "bits": 8,
+          "colorSpace": "['/ICCBased', IndirectObject(7, 0, 2278337596064)]",
+          "encodedBytes": 3754602
+        }
+      ],
+      "contentBytes": 59
+    },
+    {
+      "size": [
+        0,
+        0,
+        3024,
+        4032
+      ],
+      "images": [
+        {
+          "name": "Im2.jpg",
+          "width": 4032,
+          "height": 3024,
+          "filter": "/DCTDecode",
+          "bits": 8,
+          "colorSpace": "['/ICCBased', IndirectObject(7, 0, 2278337596064)]",
+          "encodedBytes": 3585293
+        }
+      ],
+      "contentBytes": 59
+    }
+  ]
+}

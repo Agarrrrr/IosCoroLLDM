@@ -1,0 +1,138 @@
+{
+  "pdfAndMidiHashes": [
+    {
+      "id": 14,
+      "title": "A él Oíd",
+      "pdfSameBytes": false,
+      "theirPdfHash": "037dc57e3f2075adc406476afc2bc96a4a537c71e33a49e1a103f7bad84a93a8",
+      "ourPdfHash": "6dda9384f7dc966aa3f0343a979950b26fd4a09e784c7067f8875bd89dd1a558",
+      "ourMidiHash": "3bcb4ad611e67532fba7fb00e86fd69ac448862e4f6d9766955d89042bc1d848",
+      "remoteXmlParts": [
+        {
+          "part": "P1",
+          "voices": {
+            "1": 205,
+            "2": 3
+          }
+        },
+        {
+          "part": "P2",
+          "voices": {
+            "1": 192,
+            "2": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Acepto el Reto",
+      "pdfSameBytes": false,
+      "theirPdfHash": "df6d3216bf7c1ffb3f2254644c4d2f85206cd6c31b7a65cfe734ddf01b3acafa",
+      "ourPdfHash": "c7bb4fecf3905ea22663bb6b1a2e6de0da3f49d5d56bfce0d53d0ae8d89d34d6",
+      "ourMidiHash": "e5b343e297530a8e1280b3c2b923f3f4d810da042ccf3b5172806dc00940b1eb",
+      "remoteXmlParts": [
+        {
+          "part": "P1",
+          "voices": {
+            "1": 492,
+            "2": 4
+          }
+        },
+        {
+          "part": "P2",
+          "voices": {
+            "1": 476,
+            "2": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Acércame a ti",
+      "pdfSameBytes": null,
+      "theirPdfHash": null,
+      "ourPdfHash": "c5a7ba634e0f9e5efabcb0f71cffcb0be2c62e402c918dcf2b258867def53a27",
+      "ourMidiHash": "2a3f6c1611d4d26b03dc1ca8e9d3adc59a7d120bf3225f9f67c66adcb120f514",
+      "remoteXmlParts": [
+        {
+          "part": "P1",
+          "voices": {
+            "1": 188,
+            "2": 28,
+            "3": 1
+          }
+        },
+        {
+          "part": "P2",
+          "voices": {
+            "1": 146,
+            "2": 37,
+            "3": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Adelante Juventud",
+      "pdfSameBytes": false,
+      "theirPdfHash": "4fe4f8863c23e64914e7c4ad1b8e9c0d504a920e6b2d47309d8a028f470ec2f0",
+      "ourPdfHash": "68fe0d5d78f97c972d11b487766a7e2d17feebb2cb3ac91af51c6bfad0299beb",
+      "ourMidiHash": "4553283c8fdbc41c192834ebf788f4312fdfdf29147b6554b907ae7cd3a0a87e",
+      "remoteXmlParts": [
+        {
+          "part": "P1",
+          "voices": {
+            "1": 249
+          }
+        },
+        {
+          "part": "P2",
+          "voices": {
+            "1": 250
+          }
+        },
+        {
+          "part": "P3",
+          "voices": {
+            "1": 226
+          }
+        },
+        {
+          "part": "P4",
+          "voices": {
+            "1": 217
+          }
+        }
+      ]
+    }
+  ],
+  "normalizedXmlComparison": [
+    {
+      "id": 15,
+      "title": "Acepto el Reto",
+      "localPitchedEvents": 976,
+      "remotePitchedEvents": 976,
+      "matchingPitchOnsetDurationMeasureEvents": 969,
+      "identicalNormalizedEvents": false
+    },
+    {
+      "id": 16,
+      "title": "Acércame a ti",
+      "localPitchedEvents": 405,
+      "remotePitchedEvents": 403,
+      "matchingPitchOnsetDurationMeasureEvents": 391,
+      "identicalNormalizedEvents": false
+    },
+    {
+      "id": 17,
+      "title": "Adelante Juventud",
+      "localPitchedEvents": 945,
+      "remotePitchedEvents": 942,
+      "matchingPitchOnsetDurationMeasureEvents": 937,
+      "identicalNormalizedEvents": false
+    }
+  ]
+}

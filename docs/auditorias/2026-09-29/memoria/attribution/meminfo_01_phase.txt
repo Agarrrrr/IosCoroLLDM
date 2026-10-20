@@ -1,0 +1,18 @@
+I/AAudio  (14782): AAudioStreamBuilder_openStream() returns 0 = AAUDIO_OK for s#1 ----------------
+I/fluidsynth(14782): Using Oboe driver
+D/AAudio  (14782): AAudioStream_requestStart(s#1) called --------------
+D/AAudioStream(14782): setState(s#1) from 2 to 3
+I/flutter (14782): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/f3d5fa56-01b0-4608-8db4-2852e16effb0.pdf (41 ms)
+D/AAudio  (14782): AAudioStream_requestStart(s#1) returned 0 ---------
+D/AudioStreamInternalPlay_Client(14782): callbackLoop() entering >>>>>>>>>>>>>>>
+I/flutter (14782): AUDIT START small_fit
+D/AudioStreamInternal_Client(14782): onEventFromServer - got AAUDIO_SERVICE_EVENT_STARTED
+D/AAudioStream(14782): setState(s#1) from 3 to 4
+I/flutter (14782): 🎵 [NativeMidiEngine] Cargando SoundFont desde assets...
+W/fluidsynth(14782): Instrument 'CM-64/32': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(14782): Instrument 'Laughing': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(14782): Instrument 'Machine Gun': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(14782): Some invalid sample loops were sanitized! If you experience audible glitches, start fluidsynth in verbose mode for detailed information.
+I/flutter (14782): 🎵 [NativeMidiEngine] SoundFont cargado √ (sfId=1) — Piano Acústico activo
+I/flutter (14782): 🎵 [NativeMidiEngine] Metrónomo inicializado √
+I/flutter (14782): 🎵 [NativeMidiEngine] MIDI cargado: "Canten a Cristo Rey", duración: 104.20921921041666s

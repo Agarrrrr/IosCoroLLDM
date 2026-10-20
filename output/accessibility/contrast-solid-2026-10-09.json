@@ -1,0 +1,122 @@
+[
+  {
+    "mode": "claro",
+    "base": "fff6d96b",
+    "beforeAccentOnSurface": 2.5492809207598492,
+    "beforeSelectedWhite": 2.5492809207598492,
+    "afterAccentOnSurface": 5.518240716815325,
+    "afterSelectedText": 5.518240716815325
+  },
+  {
+    "mode": "claro",
+    "base": "ff3b82f6",
+    "beforeAccentOnSurface": 6.293942222810354,
+    "beforeSelectedWhite": 6.293942222810354,
+    "afterAccentOnSurface": 6.293942222810354,
+    "afterSelectedText": 6.293942222810354
+  },
+  {
+    "mode": "claro",
+    "base": "fff97316",
+    "beforeAccentOnSurface": 4.471020663833563,
+    "beforeSelectedWhite": 4.471020663833563,
+    "afterAccentOnSurface": 5.56961557700607,
+    "afterSelectedText": 5.56961557700607
+  },
+  {
+    "mode": "oscuro",
+    "base": "fff6d96b",
+    "beforeAccentOnSurface": 12.05888948506773,
+    "beforeSelectedWhite": 1.3824786017785038,
+    "afterAccentOnSurface": 9.238626275658081,
+    "afterSelectedText": 11.637533950340446
+  },
+  {
+    "mode": "oscuro",
+    "base": "ff3b82f6",
+    "beforeAccentOnSurface": 4.84115835653596,
+    "beforeSelectedWhite": 3.44362969490773,
+    "afterAccentOnSurface": 5.485635920790355,
+    "afterSelectedText": 6.910039692330498
+  },
+  {
+    "mode": "oscuro",
+    "base": "fff97316",
+    "beforeAccentOnSurface": 6.259940573298051,
+    "beforeSelectedWhite": 2.663149350878699,
+    "afterAccentOnSurface": 5.501347634698804,
+    "afterSelectedText": 6.929831120035434
+  },
+  {
+    "mode": "sepia",
+    "base": "fff6d96b",
+    "beforeAccentOnSurface": 2.4133669306152314,
+    "beforeSelectedWhite": 2.6150863911699482,
+    "afterAccentOnSurface": 5.450856149673195,
+    "afterSelectedText": 5.906461863054349
+  },
+  {
+    "mode": "sepia",
+    "base": "ff3b82f6",
+    "beforeAccentOnSurface": 4.119087964098987,
+    "beforeSelectedWhite": 4.463378834896514,
+    "afterAccentOnSurface": 5.43677072638195,
+    "afterSelectedText": 5.891199120246561
+  },
+  {
+    "mode": "sepia",
+    "base": "fff97316",
+    "beforeAccentOnSurface": 3.56818061481256,
+    "beforeSelectedWhite": 3.866424308985621,
+    "afterAccentOnSurface": 5.472476997620435,
+    "afterSelectedText": 5.92988987332296
+  },
+  {
+    "mode": "quiet",
+    "base": "fff6d96b",
+    "beforeAccentOnSurface": 5.686795366889874,
+    "beforeSelectedWhite": 1.4941173271545605,
+    "afterAccentOnSurface": 5.671806352067874,
+    "afterSelectedText": 14.01807522549161
+  },
+  {
+    "mode": "quiet",
+    "base": "ff3b82f6",
+    "beforeAccentOnSurface": 2.9900570984466923,
+    "beforeSelectedWhite": 2.8416646284334894,
+    "afterAccentOnSurface": 5.664151180728804,
+    "afterSelectedText": 13.999155191725649
+  },
+  {
+    "mode": "quiet",
+    "base": "fff97316",
+    "beforeAccentOnSurface": 3.48519121647366,
+    "beforeSelectedWhite": 2.4379550405987467,
+    "afterAccentOnSurface": 5.633399791349723,
+    "afterSelectedText": 13.92315201692629
+  },
+  {
+    "mode": "oscuroNormal",
+    "base": "fff6d96b",
+    "beforeAccentOnSurface": 11.222156996804463,
+    "beforeSelectedWhite": 1.2540311840542304,
+    "afterAccentOnSurface": 8.739845919005734,
+    "afterSelectedText": 11.725664875210763
+  },
+  {
+    "mode": "oscuroNormal",
+    "base": "ff3b82f6",
+    "beforeAccentOnSurface": 5.1179971177729655,
+    "beforeSelectedWhite": 2.278739773810819,
+    "afterAccentOnSurface": 5.485763880040235,
+    "afterSelectedText": 7.359881334064225
+  },
+  {
+    "mode": "oscuroNormal",
+    "base": "fff97316",
+    "beforeAccentOnSurface": 6.277047955767307,
+    "beforeSelectedWhite": 1.9948447374175138,
+    "afterAccentOnSurface": 5.826045659839004,
+    "afterSelectedText": 7.816414567033913
+  }
+]

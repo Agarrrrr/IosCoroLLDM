@@ -1,0 +1,317 @@
+{
+  "record": {
+    "index": 13,
+    "title": "Santo Varón",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Santo Varón.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Santo Varón.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Bass"
+        }
+      ],
+      "bars": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 752,
+      "lyrics": 1086,
+      "dynamics": {},
+      "voices": {
+        "1:1": 790
+      }
+    },
+    "catalog": {
+      "id": "1af3806e-9f37-49ef-96b3-09d0d1ed2bf6",
+      "nombre": "Santo Varón",
+      "archivo": "santo-varon-1780195582239.pdf",
+      "midi_archivo": "santo-varon-1780195582790.mid",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    },
+    "finalName": "Santo Varón - SATB - Cantai",
+    "sourceMeasures": 40,
+    "expandedMeasures": 60,
+    "parts": 4,
+    "sourceNotes": 752,
+    "finalNotes": 1150,
+    "split": false,
+    "filledLyrics": 0
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      28,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      33,
+      1
+    ],
+    [
+      34,
+      1
+    ],
+    [
+      35,
+      1
+    ],
+    [
+      36,
+      1
+    ],
+    [
+      37,
+      1
+    ],
+    [
+      38,
+      1
+    ],
+    [
+      39,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      19,
+      2
+    ]
+  ],
+  "editorialLyricFills": []
+}

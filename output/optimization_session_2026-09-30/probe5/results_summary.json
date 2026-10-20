@@ -1,0 +1,180 @@
+{
+  "input": "results.json",
+  "device": {
+    "refreshRate": 60.000003814697266,
+    "devicePixelRatio": 2.8125,
+    "date": "2026-09-30T10:25:36.909640"
+  },
+  "budgetMs": 16.666665607028605,
+  "note": "UI/raster duration thresholds are not a count of display-dropped frames. Timers include scheduling delays. RSS includes test instrumentation and graphics allocations.",
+  "rssAtEndMiB": 507.05078125,
+  "scenarios": {
+    "viewer_reopen_dense_1": {
+      "rssBefore": 361738240,
+      "elapsedMs": 2772.359,
+      "rssAfter": 449454080,
+      "frameCount": 158,
+      "uiMs": {
+        "p50": 1.598,
+        "p95": 2.041,
+        "p99": 3.071,
+        "max": 4.913
+      },
+      "rasterMs": {
+        "p50": 2.711,
+        "p95": 3.431,
+        "p99": 4.577,
+        "max": 55.67
+      },
+      "totalSpanMs": {
+        "p50": 5.213,
+        "p95": 7.54,
+        "p99": 58.691,
+        "max": 129.296
+      },
+      "timerGapsMs": {
+        "p50": 16.011,
+        "p95": 17.156,
+        "p99": 22.938,
+        "max": 60.574
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.6329113924050633,
+      "rssAfterMiB": 428.6328125
+    },
+    "viewer_reopen_dense_2": {
+      "rssBefore": 437665792,
+      "elapsedMs": 2765.909,
+      "rssAfter": 476987392,
+      "frameCount": 158,
+      "uiMs": {
+        "p50": 1.623,
+        "p95": 1.91,
+        "p99": 2.733,
+        "max": 4.242
+      },
+      "rasterMs": {
+        "p50": 2.667,
+        "p95": 3.392,
+        "p99": 3.868,
+        "max": 53.05
+      },
+      "totalSpanMs": {
+        "p50": 5.408,
+        "p95": 6.878,
+        "p99": 57.327,
+        "max": 124.242
+      },
+      "timerGapsMs": {
+        "p50": 16.023,
+        "p95": 17.283,
+        "p99": 27.651,
+        "max": 56.143
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.6329113924050633,
+      "rssAfterMiB": 454.890625
+    },
+    "eraser_tool_selection": {
+      "rssBefore": 475295744,
+      "elapsedMs": 500.747,
+      "rssAfter": 468492288,
+      "frameCount": 30,
+      "uiMs": {
+        "p50": 0.95,
+        "p95": 1.11,
+        "p99": 4.837,
+        "max": 4.837
+      },
+      "rasterMs": {
+        "p50": 1.744,
+        "p95": 2.291,
+        "p99": 3.293,
+        "max": 3.293
+      },
+      "totalSpanMs": {
+        "p50": 3.318,
+        "p95": 8.682,
+        "p99": 9.64,
+        "max": 9.64
+      },
+      "timerGapsMs": {
+        "p50": 16.006,
+        "p95": 16.733,
+        "p99": 20.967,
+        "max": 20.967
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 446.7890625
+    },
+    "eraser_500_saved": {
+      "rssBefore": 506306560,
+      "newStrokes": 1,
+      "moveEvents": 120,
+      "elapsedMs": 1481.797,
+      "rssAfter": 520663040,
+      "frameCount": 81,
+      "uiMs": {
+        "p50": 1.714,
+        "p95": 2.292,
+        "p99": 4.581,
+        "max": 4.581
+      },
+      "rasterMs": {
+        "p50": 2.629,
+        "p95": 3.823,
+        "p99": 26.673,
+        "max": 26.673
+      },
+      "totalSpanMs": {
+        "p50": 5.474,
+        "p95": 13.208,
+        "p99": 31.547,
+        "max": 31.547
+      },
+      "timerGapsMs": {
+        "p50": 16.013,
+        "p95": 17.678,
+        "p99": 53.825,
+        "max": 53.825
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 1.2345679012345678,
+      "rssAfterMiB": 496.54296875
+    },
+    "viewer_reopen_empty": {
+      "rssBefore": 474923008,
+      "elapsedMs": 2766.272,
+      "rssAfter": 542535680,
+      "frameCount": 158,
+      "uiMs": {
+        "p50": 1.702,
+        "p95": 1.996,
+        "p99": 3.405,
+        "max": 6.305
+      },
+      "rasterMs": {
+        "p50": 2.666,
+        "p95": 3.274,
+        "p99": 4.005,
+        "max": 4.915
+      },
+      "totalSpanMs": {
+        "p50": 5.378,
+        "p95": 7.039,
+        "p99": 38.986,
+        "max": 122.993
+      },
+      "timerGapsMs": {
+        "p50": 16.019,
+        "p95": 17.204,
+        "p99": 23.292,
+        "max": 54.559
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 517.40234375
+    }
+  }
+}

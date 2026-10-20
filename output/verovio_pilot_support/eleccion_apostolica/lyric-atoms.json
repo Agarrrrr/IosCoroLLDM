@@ -1,0 +1,7290 @@
+{
+  "eleccion-2-0-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-1-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-2-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-3-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-4-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-5-0": [
+    {
+      "text": "Án",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-6-0": [
+    {
+      "text": "gel",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-7-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-2-8-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-9-0": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-10-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-11-0": [
+    {
+      "text": "vio,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-12-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-13-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-14-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-15-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-16-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-17-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-18-0": [
+    {
+      "text": "tol,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-19-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-20-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-21-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-22-0": [
+    {
+      "text": "li",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-23-0": [
+    {
+      "text": "gió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-24-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-25-0": [
+    {
+      "text": "ró",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-27-0": [
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-28-0": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-29-0": [
+    {
+      "text": "rón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-30-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-31-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-32-0": [
+    {
+      "text": "do",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-33-0": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-34-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-35-0": [
+    {
+      "text": "rue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-36-0": [
+    {
+      "text": "go",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-37-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-38-0": [
+    {
+      "text": "do",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-39-0": [
+    {
+      "text": "lor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-40-0": [
+    {
+      "text": "cuan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-41-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-42-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-43-0": [
+    {
+      "text": "voz.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-44-0": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-45-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-46-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-47-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-48-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-49-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-50-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-51-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-52-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-53-0": [
+    {
+      "text": "quien",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-54-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-55-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-56-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-57-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-58-0": [
+    {
+      "text": "fer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-59-0": [
+    {
+      "text": "vor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-60-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-61-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-62-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-2-63-0": [
+    {
+      "text": "Rey,''",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-64-0": [
+    {
+      "text": "Tú",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-65-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-66-0": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-67-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-68-0": [
+    {
+      "text": "rás''",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-69-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-70-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-71-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-72-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-73-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-74-0": [
+    {
+      "text": "Él;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-75-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-76-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-77-0": [
+    {
+      "text": "be",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-78-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-79-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-80-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-81-0": [
+    {
+      "text": "Vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-82-0": [
+    {
+      "text": "vo.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-83-0": [
+    {
+      "text": "Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-84-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-2-85-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-86-0": [
+    {
+      "text": "vi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-87-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-88-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-89-0": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-90-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-91-0": [
+    {
+      "text": "mu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-92-0": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-2-93-0": [
+    {
+      "text": "mor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-94-0": [
+    {
+      "text": "Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-95-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-96-0": [
+    {
+      "text": "vio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-97-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-98-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-99-0": [
+    {
+      "text": "mor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-100-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-101-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-102-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-103-0": [
+    {
+      "text": "voz:",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-104-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-105-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-106-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-107-0": [
+    {
+      "text": "En",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-108-0": [
+    {
+      "text": "via",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-109-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-110-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-111-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-112-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-113-0": [
+    {
+      "text": "Un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-114-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-115-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-116-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-117-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-118-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-119-0": [
+    {
+      "text": "vio,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-120-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-121-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-122-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-123-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-124-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-125-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-126-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-127-0": [
+    {
+      "text": "quín;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-128-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-129-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-2-130-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-131-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-132-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-133-0": [
+    {
+      "text": "Crea",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-134-0": [
+    {
+      "text": "dor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-135-0": [
+    {
+      "text": "¡Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-136-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-137-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-138-0": [
+    {
+      "text": "Dios!.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-139-0": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-140-0": [
+    {
+      "text": "fe",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-141-0": [
+    {
+      "text": "mar",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-142-0": [
+    {
+      "text": "chan",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-143-0": [
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-144-0": [
+    {
+      "text": "sen",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-145-0": [
+    {
+      "text": "tir;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-146-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-147-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-148-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-149-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-150-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-151-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-152-0": [
+    {
+      "text": "ter",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-153-0": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-154-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-155-0": [
+    {
+      "text": "Di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-156-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-157-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-158-0": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-159-0": [
+    {
+      "text": "gu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-160-0": [
+    {
+      "text": "ri",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-161-0": [
+    {
+      "text": "dad;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-162-0": [
+    {
+      "text": "Di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-163-0": [
+    {
+      "text": "ga",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-164-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-165-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-166-0": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-167-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-168-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-169-0": [
+    {
+      "text": "bon",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-170-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-171-0": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-172-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-173-0": [
+    {
+      "text": "pi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-2-174-0": [
+    {
+      "text": "tán",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-175-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-176-0": [
+    {
+      "text": "fren",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-177-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-178-0": [
+    {
+      "text": "va,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-179-0": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-180-0": [
+    {
+      "text": "der",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-181-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-182-0": [
+    {
+      "text": "Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-183-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-184-0": [
+    {
+      "text": "tá",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-185-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-186-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-2-187-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-188-0": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-189-0": [
+    {
+      "text": "da",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-190-0": [
+    {
+      "text": "rá;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-191-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-192-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-193-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-194-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-2-195-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-196-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-2-197-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-2-198-0": [
+    {
+      "text": "quín.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-0-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-1-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-2-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-3-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-4-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-5-0": [
+    {
+      "text": "Án",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-6-0": [
+    {
+      "text": "gel",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-7-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-3-8-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-9-0": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-10-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-11-0": [
+    {
+      "text": "vio,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-12-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-13-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-14-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-15-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-16-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-17-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-18-0": [
+    {
+      "text": "tol,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-19-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-20-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-21-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-22-0": [
+    {
+      "text": "li",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-23-0": [
+    {
+      "text": "gió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-24-0": [
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-26-0": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-28-0": [
+    {
+      "text": "rón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-30-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-32-0": [
+    {
+      "text": "ró",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-34-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-36-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-38-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-40-0": [
+    {
+      "text": "do",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-42-0": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-44-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-46-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-48-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-50-0": [
+    {
+      "text": "cu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-52-0": [
+    {
+      "text": "chó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-54-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-56-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-58-0": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-60-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-62-0": [
+    {
+      "text": "yó.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-64-0": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-65-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-66-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-67-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-68-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-69-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-70-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-71-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-72-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-73-0": [
+    {
+      "text": "quien",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-74-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-75-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-76-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-77-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-78-0": [
+    {
+      "text": "fer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-79-0": [
+    {
+      "text": "vor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-80-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-81-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-82-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-3-83-0": [
+    {
+      "text": "Rey,''",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-84-0": [
+    {
+      "text": "Tú",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-85-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-86-0": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-87-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-88-0": [
+    {
+      "text": "rás''",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-89-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-90-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-91-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-92-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-93-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-94-0": [
+    {
+      "text": "Él;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-95-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-96-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-97-0": [
+    {
+      "text": "be",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-98-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-100-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-101-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-102-0": [
+    {
+      "text": "Vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-103-0": [
+    {
+      "text": "vo.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-104-0": [
+    {
+      "text": "Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-105-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-106-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-107-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-108-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-109-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-110-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-111-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-112-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-113-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-114-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-115-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-116-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-117-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-118-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-119-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-120-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-121-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-122-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-123-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-124-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-125-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-126-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-127-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-128-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-129-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-130-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-131-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-132-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-133-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-134-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-135-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-136-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-137-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-138-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-139-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-140-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-141-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-142-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-143-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-144-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-145-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-146-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-147-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-148-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-149-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-150-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-151-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-152-0": [
+    {
+      "text": "Dios:",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-153-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-154-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-155-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-156-0": [
+    {
+      "text": "En",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-157-0": [
+    {
+      "text": "via",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-158-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-159-0": [
+    {
+      "text": "es,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-160-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-161-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-162-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-163-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-164-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-165-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-166-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-167-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-168-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-169-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-170-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-171-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-172-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-173-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-174-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-175-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-176-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-177-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-178-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-179-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-180-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-181-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-182-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-183-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-184-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-185-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-186-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-187-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-188-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-189-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-190-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-191-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-192-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-193-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-194-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-195-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-196-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-197-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-198-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-199-0": [
+    {
+      "text": "ria,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-200-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-201-0": [
+    {
+      "text": "¡Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-202-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-203-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-205-0": [
+    {
+      "text": "Dios!.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-206-0": [
+    {
+      "text": "Mar",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-207-0": [
+    {
+      "text": "chan",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-208-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-209-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-210-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-211-0": [
+    {
+      "text": "fe,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-212-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-213-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-214-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-215-0": [
+    {
+      "text": "da",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-216-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-217-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-218-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-219-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-220-0": [
+    {
+      "text": "blo;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-221-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-222-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-223-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-225-0": [
+    {
+      "text": "triun",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-226-0": [
+    {
+      "text": "fa",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-227-0": [
+    {
+      "text": "re",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-229-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-230-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-231-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-232-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-233-0": [
+    {
+      "text": "ter",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-234-0": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-235-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-236-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-237-0": [
+    {
+      "text": "gu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-238-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-239-0": [
+    {
+      "text": "se",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "ha",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-3-240-0": [
+    {
+      "text": "lla",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-241-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-242-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-243-0": [
+    {
+      "text": "pris",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-244-0": [
+    {
+      "text": "co,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-245-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-246-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-247-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-248-0": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-249-0": [
+    {
+      "text": "gu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-250-0": [
+    {
+      "text": "ri",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-251-0": [
+    {
+      "text": "dad;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-252-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-253-0": [
+    {
+      "text": "ga",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-255-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-256-0": [
+    {
+      "text": "muy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-257-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-258-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-259-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-260-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-3-261-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-262-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-263-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-264-0": [
+    {
+      "text": "bon",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-265-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-266-0": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-267-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-268-0": [
+    {
+      "text": "pi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-3-269-0": [
+    {
+      "text": "tán",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-270-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-271-0": [
+    {
+      "text": "fren",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-272-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-273-0": [
+    {
+      "text": "va,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-274-0": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-275-0": [
+    {
+      "text": "der",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-276-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-277-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-278-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-279-0": [
+    {
+      "text": "tá",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-280-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-281-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-3-282-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-283-0": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-284-0": [
+    {
+      "text": "da",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-285-0": [
+    {
+      "text": "rá",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-286-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-287-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-288-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-289-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-3-290-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-291-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-3-292-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-3-293-0": [
+    {
+      "text": "quín.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-0-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-1-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-2-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-3-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-4-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-5-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-6-0": [
+    {
+      "text": "tol,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-7-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-8-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-9-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-10-0": [
+    {
+      "text": "li",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-11-0": [
+    {
+      "text": "gió.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-12-0": [
+    {
+      "text": "Dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-13-0": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-14-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-15-0": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-16-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-17-0": [
+    {
+      "text": "Di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-18-0": [
+    {
+      "text": "ciem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-19-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-20-0": [
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-21-0": [
+    {
+      "text": "hom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-22-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-0-23-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-24-0": [
+    {
+      "text": "do",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-25-0": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-26-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-27-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-28-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-29-0": [
+    {
+      "text": "su",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-30-0": [
+    {
+      "text": "pli",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-31-0": [
+    {
+      "text": "ca",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-32-0": [
+    {
+      "text": "ba:''",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-33-0": [
+    {
+      "text": "Da",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-34-0": [
+    {
+      "text": "me",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-35-0": [
+    {
+      "text": "tu",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-36-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-37-0": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-38-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-39-0": [
+    {
+      "text": "ción'';",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-40-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-41-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-42-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-43-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-44-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-45-0": [
+    {
+      "text": "rue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-46-0": [
+    {
+      "text": "go",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-47-0": [
+    {
+      "text": "Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-48-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-49-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-50-0": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-51-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-52-0": [
+    {
+      "text": "yó,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-53-0": [
+    {
+      "text": "des",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-54-0": [
+    {
+      "text": "con",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-55-0": [
+    {
+      "text": "cer",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-56-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-57-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-0-58-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-59-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-60-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-61-0": [
+    {
+      "text": "sa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-62-0": [
+    {
+      "text": "bí",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-63-0": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-64-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-65-0": [
+    {
+      "text": "plan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-66-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-67-0": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-68-0": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-69-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-70-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-71-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-72-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-73-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-74-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-75-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-76-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-77-0": [
+    {
+      "text": "quien",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-78-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-79-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-80-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-81-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-82-0": [
+    {
+      "text": "fer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-83-0": [
+    {
+      "text": "vor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-84-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-85-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-86-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-0-87-0": [
+    {
+      "text": "Rey,''",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-88-0": [
+    {
+      "text": "Tú",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-89-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-90-0": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-91-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-92-0": [
+    {
+      "text": "rás''",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-93-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-94-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-95-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-96-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-97-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-98-0": [
+    {
+      "text": "Él;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-99-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-100-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-101-0": [
+    {
+      "text": "be",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-102-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-103-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-104-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-105-0": [
+    {
+      "text": "Vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-108-0": [
+    {
+      "text": "vo.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-109-0": [
+    {
+      "text": "Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-110-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-111-0": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-112-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-113-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-114-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-115-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-116-0": [
+    {
+      "text": "bon",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-117-0": [
+    {
+      "text": "dad,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-118-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-119-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-120-0": [
+    {
+      "text": "vis",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-121-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-122-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-123-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-124-0": [
+    {
+      "text": "jos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-125-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-0-126-0": [
+    {
+      "text": "mor;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-127-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-128-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-129-0": [
+    {
+      "text": "ga",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-130-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-131-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-132-0": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-133-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-134-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-135-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-136-0": [
+    {
+      "text": "voz:",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-137-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-138-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-139-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-140-0": [
+    {
+      "text": "En",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-141-0": [
+    {
+      "text": "via",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-142-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-143-0": [
+    {
+      "text": "es,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-144-0": [
+    {
+      "text": "muy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-145-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-146-0": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-147-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-148-0": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-149-0": [
+    {
+      "text": "ce",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-150-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-151-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-152-0": [
+    {
+      "text": "voz,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-153-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-154-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-155-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-156-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-157-0": [
+    {
+      "text": "te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-158-0": [
+    {
+      "text": "ne",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-159-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-160-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-161-0": [
+    {
+      "text": "quí;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-162-0": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-163-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-164-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-165-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-166-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-167-0": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-168-0": [
+    {
+      "text": "tro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-169-0": [
+    {
+      "text": "Re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-170-0": [
+    {
+      "text": "den",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-171-0": [
+    {
+      "text": "tor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-172-0": [
+    {
+      "text": "¡Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-173-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-174-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-175-0": [
+    {
+      "text": "Dios!.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-176-0": [
+    {
+      "text": "Mar",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-177-0": [
+    {
+      "text": "chan",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-178-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-179-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-180-0": [
+    {
+      "text": "fe",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-181-0": [
+    {
+      "text": "has",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-182-0": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-0-183-0": [
+    {
+      "text": "cie",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-184-0": [
+    {
+      "text": "lo,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-185-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-186-0": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-187-0": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-188-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-189-0": [
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-190-0": [
+    {
+      "text": "mis",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-191-0": [
+    {
+      "text": "mo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-192-0": [
+    {
+      "text": "sen",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-193-0": [
+    {
+      "text": "tir;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-194-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-195-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-196-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-197-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-198-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-199-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-200-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-201-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-202-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-203-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-204-0": [
+    {
+      "text": "triun",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-205-0": [
+    {
+      "text": "fa",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-206-0": [
+    {
+      "text": "re",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-207-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-208-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-209-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-0-210-0": [
+    {
+      "text": "ter",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-211-0": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-212-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-213-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-214-0": [
+    {
+      "text": "gu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-215-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-216-0": [
+    {
+      "text": "se",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-217-0": [
+    {
+      "text": "ha",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-217-1": [
+    {
+      "text": "lla",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-218-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-219-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-220-0": [
+    {
+      "text": "pris",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-221-0": [
+    {
+      "text": "co,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-222-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-223-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-224-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-225-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-226-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-227-0": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-228-0": [
+    {
+      "text": "gu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-229-0": [
+    {
+      "text": "ri",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-230-0": [
+    {
+      "text": "dad;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-231-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-232-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-233-0": [
+    {
+      "text": "ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-234-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "em",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-0-235-0": [
+    {
+      "text": "pu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-236-0": [
+    {
+      "text": "ña",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-237-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-238-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-239-0": [
+    {
+      "text": "ga",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-240-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-241-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-242-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-0-243-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-244-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-245-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-246-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-247-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-248-0": [
+    {
+      "text": "bon",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-249-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-250-0": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-251-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-252-0": [
+    {
+      "text": "pi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-253-0": [
+    {
+      "text": "tán",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-254-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-255-0": [
+    {
+      "text": "fren",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-256-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-257-0": [
+    {
+      "text": "va,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-258-0": [
+    {
+      "text": "va",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-259-0": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-260-0": [
+    {
+      "text": "rro",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-261-0": [
+    {
+      "text": "tan",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-262-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-263-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-264-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-265-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-266-0": [
+    {
+      "text": "mal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-267-0": [
+    {
+      "text": "dad,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-268-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-269-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-270-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-271-0": [
+    {
+      "text": "tá",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-272-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-273-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-0-274-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-275-0": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-276-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-277-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-278-0": [
+    {
+      "text": "vic",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-279-0": [
+    {
+      "text": "to",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-0-280-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-0-281-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-282-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-283-0": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-284-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-285-0": [
+    {
+      "text": "da;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-286-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-287-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-288-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-289-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-0-290-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-291-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-0-292-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-0-293-0": [
+    {
+      "text": "quín.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-0-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-1-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-2-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-3-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-4-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-5-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-6-0": [
+    {
+      "text": "tol,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-7-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-8-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-9-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-10-0": [
+    {
+      "text": "li",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-11-0": [
+    {
+      "text": "gió.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-12-0": [
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-13-0": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-14-0": [
+    {
+      "text": "rón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-15-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-16-0": [
+    {
+      "text": "ró",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-17-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-18-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-19-0": [
+    {
+      "text": "do",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-20-0": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-21-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-22-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-23-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-24-0": [
+    {
+      "text": "su",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-25-0": [
+    {
+      "text": "pli",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-26-0": [
+    {
+      "text": "ca",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-27-0": [
+    {
+      "text": "ba:''",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-28-0": [
+    {
+      "text": "Da",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-29-0": [
+    {
+      "text": "me",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-30-0": [
+    {
+      "text": "tu",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-31-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-32-0": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-33-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-34-0": [
+    {
+      "text": "ción'';",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-35-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-36-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-37-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-38-0": [
+    {
+      "text": "cu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-39-0": [
+    {
+      "text": "chó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-40-0": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-41-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-42-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-43-0": [
+    {
+      "text": "to,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-44-0": [
+    {
+      "text": "des",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-45-0": [
+    {
+      "text": "con",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-46-0": [
+    {
+      "text": "cer",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-47-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-48-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-1-49-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-50-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-51-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-52-0": [
+    {
+      "text": "sa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-53-0": [
+    {
+      "text": "bí",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-54-0": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-55-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-56-0": [
+    {
+      "text": "plan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-57-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-58-0": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-59-0": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-60-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-61-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-62-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-63-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-64-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-65-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-66-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-67-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-68-0": [
+    {
+      "text": "quien",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-69-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-70-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-71-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-72-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-73-0": [
+    {
+      "text": "fer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-74-0": [
+    {
+      "text": "vor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-75-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-76-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-77-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-1-78-0": [
+    {
+      "text": "Rey,''",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-79-0": [
+    {
+      "text": "Tú",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-80-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-81-0": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-82-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-83-0": [
+    {
+      "text": "rás''",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-84-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-85-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-86-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-87-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-88-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-89-0": [
+    {
+      "text": "Él;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-90-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-91-0": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-92-0": [
+    {
+      "text": "be",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-93-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-94-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-95-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-96-0": [
+    {
+      "text": "Vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-98-0": [
+    {
+      "text": "vo.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-99-0": [
+    {
+      "text": "Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-100-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-101-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-102-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-103-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-104-0": [
+    {
+      "text": "bon",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-105-0": [
+    {
+      "text": "dad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-106-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-107-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-108-0": [
+    {
+      "text": "vi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-109-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-110-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-111-0": [
+    {
+      "text": "ñor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-112-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-113-0": [
+    {
+      "text": "sus",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-114-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-115-0": [
+    {
+      "text": "jos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-116-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-1-117-0": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-118-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-1-119-0": [
+    {
+      "text": "na,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-120-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-1-121-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-122-0": [
+    {
+      "text": "voz:",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-123-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-124-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-125-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-126-0": [
+    {
+      "text": "En",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-127-0": [
+    {
+      "text": "via",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-128-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-129-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-130-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-131-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-132-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-133-0": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-134-0": [
+    {
+      "text": "ce",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-135-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-136-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-137-0": [
+    {
+      "text": "voz,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-138-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-139-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-140-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-141-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-142-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-143-0": [
+    {
+      "text": "vio;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-144-0": [
+    {
+      "text": "Na",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-145-0": [
+    {
+      "text": "a",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-146-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-147-0": [
+    {
+      "text": "Jo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-148-0": [
+    {
+      "text": "a",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-149-0": [
+    {
+      "text": "quín",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-150-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-151-0": [
+    {
+      "text": "Crea",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-152-0": [
+    {
+      "text": "dor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-153-0": [
+    {
+      "text": "¡Glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-154-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-155-0": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-156-0": [
+    {
+      "text": "Dios!.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-157-0": [
+    {
+      "text": "Mar",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-158-0": [
+    {
+      "text": "chan",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-159-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-160-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-161-0": [
+    {
+      "text": "fe",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-162-0": [
+    {
+      "text": "has",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-163-0": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-1-164-0": [
+    {
+      "text": "cie",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-165-0": [
+    {
+      "text": "lo,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-166-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-167-0": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-168-0": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-169-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-170-0": [
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-171-0": [
+    {
+      "text": "mis",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-172-0": [
+    {
+      "text": "mo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-173-0": [
+    {
+      "text": "sen",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-174-0": [
+    {
+      "text": "tir;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-175-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-176-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-177-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-178-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-179-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-180-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-181-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-182-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-183-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-184-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-185-0": [
+    {
+      "text": "triun",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-186-0": [
+    {
+      "text": "fa",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-187-0": [
+    {
+      "text": "re",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-188-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-189-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-190-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-1-191-0": [
+    {
+      "text": "ter",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-192-0": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-193-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-194-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-195-0": [
+    {
+      "text": "gu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-196-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-197-0": [
+    {
+      "text": "se",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-198-0": [
+    {
+      "text": "ha",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-198-1": [
+    {
+      "text": "lla",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-199-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-200-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-201-0": [
+    {
+      "text": "pris",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-202-0": [
+    {
+      "text": "co,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-203-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-204-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-205-0": [
+    {
+      "text": "jo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-206-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-207-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-208-0": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-209-0": [
+    {
+      "text": "gu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-210-0": [
+    {
+      "text": "ri",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-211-0": [
+    {
+      "text": "dad;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-212-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-213-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-214-0": [
+    {
+      "text": "ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-215-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "em",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "eleccion-1-216-0": [
+    {
+      "text": "pu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-217-0": [
+    {
+      "text": "ña",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-218-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-219-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-220-0": [
+    {
+      "text": "ga",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-221-0": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-222-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-223-0": [
+    {
+      "text": "ria",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-1-224-0": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-225-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-226-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-227-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-228-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-229-0": [
+    {
+      "text": "bon",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-230-0": [
+    {
+      "text": "dad.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-231-0": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-232-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-233-0": [
+    {
+      "text": "pi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "eleccion-1-234-0": [
+    {
+      "text": "tán",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-235-0": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-236-0": [
+    {
+      "text": "fren",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-237-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-238-0": [
+    {
+      "text": "va,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-239-0": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-240-0": [
+    {
+      "text": "der",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-241-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-242-0": [
+    {
+      "text": "Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-243-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-244-0": [
+    {
+      "text": "tá",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-245-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-246-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "eleccion-1-247-0": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-248-0": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-249-0": [
+    {
+      "text": "da",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-250-0": [
+    {
+      "text": "rá;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-251-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-252-0": [
+    {
+      "text": "nom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-253-0": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-254-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "eleccion-1-255-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-256-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "eleccion-1-257-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "eleccion-1-258-0": [
+    {
+      "text": "quín.",
+      "syllabic": "end",
+      "join": false
+    }
+  ]
+}

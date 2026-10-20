@@ -1,0 +1,18 @@
+W/fluidsynth(14782): Instrument 'Laughing': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(14782): Instrument 'Machine Gun': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(14782): Some invalid sample loops were sanitized! If you experience audible glitches, start fluidsynth in verbose mode for detailed information.
+I/flutter (14782): 🎵 [NativeMidiEngine] SoundFont cargado √ (sfId=1) — Piano Acústico activo
+I/flutter (14782): 🎵 [NativeMidiEngine] Metrónomo inicializado √
+I/flutter (14782): 🎵 [NativeMidiEngine] MIDI cargado: "Canten a Cristo Rey", duración: 104.20921921041666s
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 3785KB AllocSpace bytes, 0(0B) LOS objects, 62% free, 3655KB/9799KB, paused 274us,25us total 17.774ms
+I/flutter (14782): AUDIT END small_fit 5000.59 ms, 300 frames, error=null
+I/flutter (14782): AUDIT START small_zoom_pdf_only
+I/ViewRootImpl@92af765[MainActivity](14782): ViewPostIme key 0
+D/Activity(14782): onKeyDown(KEYCODE_BACK)
+I/ViewRootImpl@92af765[MainActivity](14782): ViewPostIme key 1
+D/Activity(14782): onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 5813KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3410KB/9554KB, paused 32us,23us total 12.067ms
+I/flutter (14782): AUDIT END small_zoom_pdf_only 7121.563 ms, 428 frames, error=null
+I/flutter (14782): AUDIT START small_return_to_page
+I/flutter (14782): AUDIT END small_return_to_page 3001.42 ms, 181 frames, error=null
+I/flutter (14782): AUDIT START small_drawing_enabled

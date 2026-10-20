@@ -1,0 +1,44 @@
+[
+  {
+    "source": "D:\\GITHUB NO TOCAR\\proyectos\\IosCoroLLDM\\output\\underlay_revision_2026_10_19\\score-1\\Mi Padre en la Fe - SATB - Cantai.mscz",
+    "destination": "E:\\MusescoreCantai\\Mi Padre en la Fe - SATB - Cantai.mscz",
+    "originalHash": "5c0152ea50a778e53c37b8eff61d7f46f431fd33ffed2dee8f91ea8a2a35a83e",
+    "sha256": "1ba827654e26351216589ab7a86f8fa00530be7580b97a5d083e8c71ee622589",
+    "changes": 60
+  },
+  {
+    "source": "D:\\GITHUB NO TOCAR\\proyectos\\IosCoroLLDM\\output\\underlay_revision_2026_10_19\\score-2\\Recuerda - SATB extendido - Cantai.mscz",
+    "destination": "E:\\MusescoreCantai\\Recuerda - SATB extendido - Cantai.mscz",
+    "originalHash": "7ef086be64e15110b843309b8c437a1dd9da39295fb273523a87686b5171b8cb",
+    "sha256": "a05bc45ccce44cc86c8865c11b1fd8003480abfd62533a0656535777315ff219",
+    "changes": 12
+  },
+  {
+    "source": "D:\\GITHUB NO TOCAR\\proyectos\\IosCoroLLDM\\output\\underlay_revision_2026_10_19\\score-3\\La Vida Se Va Como El Viento (reducción) - SATB - Cantai.mscz",
+    "destination": "E:\\MusescoreCantai\\La Vida Se Va Como El Viento (reducción) - SATB - Cantai.mscz",
+    "originalHash": "6340e3516edff0f5a571b6556a04a4b7a6bb09261f8f769d013db1426a9bbe56",
+    "sha256": "484cd87c7a4d1151721ef169ce386216188cb2b5bb98360bcc548a57812b799d",
+    "changes": 62
+  },
+  {
+    "source": "D:\\GITHUB NO TOCAR\\proyectos\\IosCoroLLDM\\output\\underlay_revision_2026_10_19\\score-4\\Al Huerto Van a Visitar - SATB - Cantai.mscz",
+    "destination": "E:\\MusescoreCantai\\Al Huerto Van a Visitar - SATB - Cantai.mscz",
+    "originalHash": "1ad6240b26262db0d3691c76be225f9b675f268ddfc94f8791f2c35ccf6d0f9e",
+    "sha256": "f1eb23afca0fd3272a223e06d52597b995115085f9e8e29aebed9a1d5bcb7a70",
+    "changes": 41
+  },
+  {
+    "source": "D:\\GITHUB NO TOCAR\\proyectos\\IosCoroLLDM\\output\\underlay_revision_2026_10_19\\score-5\\Mi Torre Fuerte - SATB extendido - Cantai.mscz",
+    "destination": "E:\\MusescoreCantai\\Mi Torre Fuerte - SATB extendido - Cantai.mscz",
+    "originalHash": "1b882f739281eda04c0e9fdc8f5e29fbeff80395b605460beef8853126ebb025",
+    "sha256": "b4918083caffa7df413c028b4acc287e6021bca4c07bd440ff9a345ebba90118",
+    "changes": 10
+  },
+  {
+    "source": "D:\\GITHUB NO TOCAR\\proyectos\\IosCoroLLDM\\output\\underlay_revision_2026_10_19\\score-7\\Alabad a Jehová - SATB revisado contra PDF.mscz",
+    "destination": "E:\\MusescoreCantai\\Alabad a Jehová - SATB revisado contra PDF.mscz",
+    "originalHash": "ff5aa25383b2de2af419175fac298bded37b8d490baf81abbf36d4dcc64d13cd",
+    "sha256": "0564b406bda00336f95fbae335208e29ec1723f5ab5679dbcc3f98470d2a5587",
+    "changes": 2
+  }
+]

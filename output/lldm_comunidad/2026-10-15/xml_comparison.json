@@ -1,0 +1,160 @@
+[
+  {
+    "id": 15,
+    "title": "Acepto el Reto",
+    "sameXmlBytes": false,
+    "local": {
+      "parts": [
+        [
+          "P1",
+          "Piano"
+        ],
+        [
+          "P2",
+          "Piano"
+        ]
+      ],
+      "software": [
+        "Sheet Music Scanner"
+      ],
+      "notesWithPitch": 976,
+      "measureCount": [
+        120,
+        120
+      ]
+    },
+    "remote": {
+      "parts": [
+        [
+          "P1",
+          "S A"
+        ],
+        [
+          "P2",
+          "T B"
+        ]
+      ],
+      "software": [
+        "Audiveris 5.11.0",
+        "ProxyMusic 4.0.3"
+      ],
+      "notesWithPitch": 976,
+      "measureCount": [
+        120,
+        120
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "title": "Acércame a ti",
+    "sameXmlBytes": false,
+    "local": {
+      "parts": [
+        [
+          "P1",
+          "Piano"
+        ],
+        [
+          "P2",
+          "Piano"
+        ]
+      ],
+      "software": [
+        "Sheet Music Scanner"
+      ],
+      "notesWithPitch": 405,
+      "measureCount": [
+        28,
+        28
+      ]
+    },
+    "remote": {
+      "parts": [
+        [
+          "P1",
+          "S A"
+        ],
+        [
+          "P2",
+          "T B"
+        ]
+      ],
+      "software": [
+        "Audiveris 5.11.0",
+        "ProxyMusic 4.0.3"
+      ],
+      "notesWithPitch": 403,
+      "measureCount": [
+        28,
+        28
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "title": "Adelante Juventud",
+    "sameXmlBytes": false,
+    "local": {
+      "parts": [
+        [
+          "P1",
+          "Piano"
+        ],
+        [
+          "P2",
+          "Piano"
+        ],
+        [
+          "P3",
+          "Piano"
+        ],
+        [
+          "P4",
+          "Piano"
+        ]
+      ],
+      "software": [
+        "Sheet Music Scanner"
+      ],
+      "notesWithPitch": 945,
+      "measureCount": [
+        55,
+        55,
+        55,
+        55
+      ]
+    },
+    "remote": {
+      "parts": [
+        [
+          "P1",
+          "S"
+        ],
+        [
+          "P2",
+          "A"
+        ],
+        [
+          "P3",
+          "T"
+        ],
+        [
+          "P4",
+          "B"
+        ]
+      ],
+      "software": [
+        "Audiveris 5.11.0",
+        "ProxyMusic 4.0.3"
+      ],
+      "notesWithPitch": 942,
+      "measureCount": [
+        55,
+        55,
+        55,
+        55
+      ]
+    }
+  }
+]

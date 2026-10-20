@@ -1,0 +1,38 @@
+{
+  "title": "La Vida Se Va Como El Viento — Israel Gómez Morales",
+  "issues": [],
+  "staves": 4,
+  "bars": 105,
+  "noteHeads": 1339,
+  "lyricNotes": 1142,
+  "slurs": 61,
+  "ties": 131,
+  "dynamics": {},
+  "midiComparison": [
+    {
+      "role": 0,
+      "expectedAttacks": 298,
+      "actualAttacks": 298,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 1,
+      "expectedAttacks": 298,
+      "actualAttacks": 298,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 2,
+      "expectedAttacks": 310,
+      "actualAttacks": 310,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 3,
+      "expectedAttacks": 302,
+      "actualAttacks": 302,
+      "exactPitchAndAttackMatch": true
+    }
+  ],
+  "sha256": "714a6f6b5e7dac63c963fe6ff2ff9f9a1905fae74deeae281031d853951162e5"
+}

@@ -1,0 +1,455 @@
+// Run on a physical Android device with the performanceAudit Gradle property.
+// A separate application ID keeps test annotations out of the installed app.
+import 'dart:async';
+import 'dart:convert';
+import 'dart:isolate';
+import 'dart:developer' as developer;
+import 'dart:io';
+import 'dart:math';
+import 'dart:ui' as ui;
+
+import 'package:coro_lldm/core/pdf/annotation_store.dart';
+import 'package:coro_lldm/core/pdf/pdf_engine.dart';
+import 'package:coro_lldm/core/offline/offline_files.dart';
+import 'package:coro_lldm/core/security/file_crypto.dart';
+import 'package:coro_lldm/core/providers/cantos_provider.dart';
+import 'package:coro_lldm/core/providers/theme_provider.dart';
+import 'package:coro_lldm/features/visor/visor_screen.dart';
+import 'package:coro_lldm/features/visor/widgets/annotation_layer.dart';
+import 'package:coro_lldm/models/canto.dart';
+import 'package:coro_lldm/models/trazo.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:integration_test/integration_test.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:pdfrx/pdfrx.dart';
+
+final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+final report = <String, dynamic>{'scenarios': <String, dynamic>{}};
+final timings = <ui.FrameTiming>[];
+late Directory output;
+final captureKey = GlobalKey();
+// Captures are a separate pass: their extra composition and image allocations
+// must not be included in the production performance/memory measurement.
+const captureEnabled =
+    bool.fromEnvironment('AUDIT_CAPTURE', defaultValue: false);
+const traceResidual = bool.fromEnvironment('AUDIT_TRACE_RESIDUAL');
+const reopenControl = bool.fromEnvironment('AUDIT_REOPEN_CONTROL');
+
+Future<void> pause([int ms = 500]) =>
+    Future<void>.delayed(Duration(milliseconds: ms));
+
+// Keep the closure scope limited to sendable bytes (not the test binding).
+Future<Uint8List> decryptInWorker(Uint8List bytes) =>
+    Isolate.run(() => FileCrypto.decryptIfNeeded(bytes));
+
+Future<void> measure(
+    String name, Future<void> Function(Map<String, dynamic>) action) async {
+  debugPrint('AUDIT START $name');
+  final details = <String, dynamic>{'rssBefore': ProcessInfo.currentRss};
+  final start = developer.Timeline.now;
+  var lastTick = start;
+  final timerGaps = <double>[];
+  final heartbeat = Timer.periodic(const Duration(milliseconds: 16), (_) {
+    final now = developer.Timeline.now;
+    timerGaps.add((now - lastTick) / 1000);
+    lastTick = now;
+  });
+  final sw = Stopwatch()..start();
+  try {
+    if (traceResidual &&
+        (name == 'eraser_500_saved' || name.startsWith('viewer_reopen_'))) {
+      final timeline = await binding.traceTimeline(() => action(details));
+      details['timeline'] = timeline.toJson();
+    } else {
+      await action(details);
+    }
+  } catch (error, stack) {
+    details['error'] = '$error';
+    details['stack'] = '$stack';
+  }
+  sw.stop();
+  final end = developer.Timeline.now;
+  heartbeat.cancel();
+  details['timerGapsMs'] = timerGaps;
+  details['elapsedMs'] = sw.elapsedMicroseconds / 1000;
+  details['rssAfter'] = ProcessInfo.currentRss;
+  await pause(
+      1200); // Engine batches FrameTiming callbacks; outside measured interval.
+  final frames = timings.where((f) {
+    final timestamp = f.timestampInMicroseconds(ui.FramePhase.vsyncStart);
+    return timestamp >= start && timestamp <= end;
+  }).toList();
+  details['frames'] = [
+    for (final f in frames)
+      [
+        f.buildDuration.inMicroseconds,
+        f.rasterDuration.inMicroseconds,
+        f.totalSpan.inMicroseconds,
+        f.timestampInMicroseconds(ui.FramePhase.vsyncStart),
+      ]
+  ];
+  details['frameCount'] = frames.length;
+  (report['scenarios'] as Map<String, dynamic>)[name] = details;
+  binding.reportData = report;
+  await File('${output.path}/performance_audit.json')
+      .writeAsString(jsonEncode(report));
+  debugPrint(
+      'AUDIT END $name ${details['elapsedMs']} ms, ${frames.length} frames, error=${details['error']}');
+}
+
+Widget app(ProviderContainer container, Widget child) =>
+    UncontrolledProviderScope(
+      container: container,
+      child: MaterialApp(
+        locale: const Locale('es'),
+        supportedLocales: const [Locale('es'), Locale('en')],
+        localizationsDelegates: GlobalMaterialLocalizations.delegates,
+        theme: AppTheme.getTheme(AppThemeMode.claro, Colors.amber),
+        home: captureEnabled
+            ? RepaintBoundary(key: captureKey, child: child)
+            : child,
+      ),
+    );
+
+Future<void> snapshot(String name, {bool forceCapture = false}) async {
+  if (!captureEnabled && !forceCapture) {
+    report['captureInstrumentation'] = false;
+    return;
+  }
+  report['captureInstrumentation'] = true;
+  await pause(500);
+  final boundary =
+      captureKey.currentContext!.findRenderObject()! as RenderRepaintBoundary;
+  final image = await boundary.toImage(pixelRatio: 2);
+  final data = await image.toByteData(format: ui.ImageByteFormat.png);
+  await File('${output.path}/$name.png')
+      .writeAsBytes(data!.buffer.asUint8List());
+  (report['screenshots'] ??= <String, String>{})[name] =
+      base64Encode(data.buffer.asUint8List());
+  (report['screenshotRss'] ??= <String, int>{})[name] = ProcessInfo.currentRss;
+  image.dispose();
+}
+
+// Route scripted gestures through the regular input path, without the live-test
+// binding's pointer crosshair repainting the root surface on every move.
+Future<TestGesture> startGesture(Offset position, {int pointer = 1}) async {
+  final gesture = TestGesture(
+      pointer: pointer,
+      dispatcher: (event) async {
+        binding.handlePointerEventForSource(event,
+            source: TestBindingEventSource.device);
+      });
+  await gesture.down(position);
+  return gesture;
+}
+
+List<Trazo> strokes(int count, {bool erasers = false}) => List.generate(
+    count,
+    (s) => Trazo(
+          tool: erasers && s % 5 == 4 ? ToolType.eraser : ToolType.pencil,
+          color: Colors.red,
+          size: erasers && s % 5 == 4 ? 20 : 3,
+          points: List.generate(
+              60,
+              (p) => PointNormalized(
+                    .08 + p / 60 * .8,
+                    .1 + (s % 40) / 50 + sin(p / 8) * .015,
+                  )),
+        ));
+
+void main() {
+  binding.framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.fullyLive;
+  testWidgets('physical device PDF and annotation performance audit',
+      (tester) async {
+    binding.shouldPropagateDevicePointerEvents = true;
+    addTearDown(() {
+      binding.shouldPropagateDevicePointerEvents = false;
+    });
+    await tester.runAsync(() async {
+      output = (await getExternalStorageDirectory())!;
+      await Hive.initFlutter('performance_audit');
+      for (final name in [
+        'cache',
+        'settings',
+        'annotations',
+        'favoritos_box',
+        'monetization'
+      ]) {
+        await Hive.openBox(name);
+      }
+      final container = ProviderContainer();
+      binding.addTimingsCallback(timings.addAll);
+      final view = binding.platformDispatcher.views.first;
+      report['device'] = {
+        'os': Platform.operatingSystemVersion,
+        'physicalWidth': view.physicalSize.width,
+        'physicalHeight': view.physicalSize.height,
+        'devicePixelRatio': view.devicePixelRatio,
+        'refreshRate': view.display.refreshRate,
+        'date': DateTime.now().toIso8601String(),
+      };
+      await tester.pumpWidget(app(container,
+          const Scaffold(body: Center(child: CircularProgressIndicator()))));
+      await pause(2000);
+      late List<Canto> catalog;
+      await measure('catalog_first_load', (_) async {
+        catalog = await container.read(cantosBaseProvider.future);
+      });
+      report['catalogCount'] = catalog.length;
+      final ids = [
+        'f3d5fa56-01b0-4608-8db4-2852e16effb0',
+        'usmc_caf436a80759ce7a19568e1e',
+        'usmc_074a029baa78d58c5b',
+      ];
+      final samples = <Map<String, dynamic>>[];
+      for (final id in ids) {
+        final song = catalog.firstWhere((s) => s.id == id);
+        late File file;
+        await measure('pdf_cold_${song.nombre}', (_) async {
+          file = await OfflineFiles.ensurePdf(song);
+        });
+        await measure('pdf_warm_${song.nombre}', (_) async {
+          await OfflineFiles.ensurePdf(song);
+        });
+        final document = await PdfDocument.openFile(file.path);
+        samples.add({
+          'id': id,
+          'name': song.nombre,
+          'bytes': await file.length(),
+          'pages': document.pages.length
+        });
+        for (final dimension in [1800, 3600]) {
+          await measure('native_render_${song.nombre}_$dimension',
+              (data) async {
+            final page = document.pages.first;
+            final scale = dimension / max(page.width, page.height);
+            final image = await page.render(
+                fullWidth: page.width * scale, fullHeight: page.height * scale);
+            data['imageSize'] = '${image?.width}x${image?.height}';
+            image?.dispose();
+          });
+        }
+        await document.dispose();
+      }
+      report['pdfSamples'] = samples;
+      final encryptedSong = catalog.firstWhere((s) => s.id == ids[2]);
+      final encryptedAsset = await rootBundle
+          .load('assets/offline_assets/pdfs/${encryptedSong.archivo}');
+      final encryptedBytes = encryptedAsset.buffer.asUint8List(
+          encryptedAsset.offsetInBytes, encryptedAsset.lengthInBytes);
+      await measure('decrypt_encrypted_pdf_isolated', (data) async {
+        data['encrypted'] = !FileCrypto.isPlainFile(encryptedBytes);
+        data['inputBytes'] = encryptedBytes.length;
+        final clear = await decryptInWorker(encryptedBytes);
+        data['outputBytes'] = clear.length;
+      });
+      final heavyId = ids[1];
+      late PdfViewerController controller;
+      await measure('viewer_open_heavy_warm_file', (data) async {
+        await tester.pumpWidget(app(container,
+            VisorScreen(cantoId: heavyId, ignorePreferredLanguage: true)));
+        final wait = Stopwatch()..start();
+        while (wait.elapsedMilliseconds < 30000) {
+          await pause(50);
+          final viewer = find.byType(PdfViewer);
+          if (viewer.evaluate().isNotEmpty) {
+            controller = tester.widget<PdfViewer>(viewer).controller!;
+            if (controller.isReady) break;
+          }
+        }
+        if (!controller.isReady) {
+          throw StateError('PDF viewer did not become ready');
+        }
+        data['documentReadyMs'] = wait.elapsedMicroseconds / 1000;
+        data['pages'] = controller.pageCount;
+        await pause(2000);
+      });
+      await snapshot('pdf_fit');
+      Future<void> flip(Map<String, dynamic> data) async {
+        final count = min(8, controller.pageCount);
+        for (var round = 0; round < 2; round++) {
+          for (var page = 1; page <= count; page++) {
+            await controller.goToPage(
+                pageNumber: page, duration: const Duration(milliseconds: 150));
+            await pause(200);
+          }
+        }
+        data['pageChanges'] = count * 2;
+      }
+
+      await measure('page_changes_vertical', flip);
+      container.read(pdfNavModeProvider.notifier).set(true);
+      await pause(1200);
+      await measure('page_changes_carousel', flip);
+      container.read(pdfNavModeProvider.notifier).set(false);
+      await pause(800);
+      await controller.goToPage(pageNumber: 1, duration: Duration.zero);
+      await measure('zoom_pdf', (_) async {
+        for (var n = 0; n < 4; n++) {
+          await controller.zoomUp();
+          await pause(200);
+        }
+      });
+      await snapshot('pdf_zoom');
+      await controller.goToPage(pageNumber: 1, duration: Duration.zero);
+      await pause(800);
+      final pdf = container.read(pdfEngineProvider.notifier);
+      final regions = find.byType(AnnotationLayer);
+      Rect drawArea() {
+        final screen =
+            Offset.zero & (view.physicalSize / view.devicePixelRatio);
+        for (final element in regions.evaluate()) {
+          final box = element.renderObject as RenderBox?;
+          if (box == null || !box.hasSize) continue;
+          final rect = (box.localToGlobal(Offset.zero) & box.size)
+              .intersect(screen.deflate(70));
+          if (rect.width > 100 && rect.height > 100) return rect.deflate(12);
+        }
+        throw StateError('No visible annotation surface');
+      }
+
+      pdf.setDrawingMode(true);
+      await pause(500);
+      Future<void> draw(Map<String, dynamic> data) async {
+        final rect = drawArea();
+        final before = container
+            .read(pdfEngineProvider)
+            .trazos
+            .values
+            .fold<int>(0, (v, p) => v + p.length);
+        var events = 0;
+        for (var s = 0; s < 5; s++) {
+          final start = Offset(rect.left, rect.top + rect.height * .3);
+          final gesture = await startGesture(start);
+          for (var p = 1; p <= 120; p++) {
+            await gesture.moveTo(Offset(rect.left + rect.width * p / 120,
+                rect.center.dy + sin(p / 10) * rect.height * .2));
+            events++;
+            await pause(8);
+          }
+          await gesture.up();
+          await pause(200); // Includes debounce save and commit repaint.
+        }
+        data['moveEvents'] = events;
+        data['newStrokes'] = container
+                .read(pdfEngineProvider)
+                .trazos
+                .values
+                .fold<int>(0, (v, p) => v + p.length) -
+            before;
+      }
+
+      await measure('draw_5_strokes_empty_page', draw);
+      await measure('draw_5_strokes_warm_page', draw);
+      pdf.clearAllGlobal();
+      for (final stroke in strokes(100)) {
+        pdf.addTrazo(1, stroke);
+      }
+      await pause(1500);
+      await measure('draw_5_strokes_100_saved', draw);
+      pdf.clearAllGlobal();
+      for (final stroke in strokes(500)) {
+        pdf.addTrazo(1, stroke);
+      }
+      await pause(1500);
+      await measure('draw_5_strokes_500_saved', draw);
+      pdf.setTool(ToolType.eraser);
+      await measure('eraser_500_saved', draw);
+      pdf.setTool(ToolType.pencil);
+      await measure('undo_redo_500_saved', (_) async {
+        for (var n = 0; n < 10; n++) {
+          pdf.undo();
+          await pause(100);
+          pdf.redo();
+          await pause(100);
+        }
+      });
+      await snapshot('annotations_dense');
+      await measure('two_finger_gestures', (data) async {
+        final before = container
+            .read(pdfEngineProvider)
+            .trazos
+            .values
+            .fold<int>(0, (v, p) => v + p.length);
+        final rect = drawArea();
+        for (var n = 0; n < 10; n++) {
+          final first = await startGesture(rect.center - const Offset(25, 0),
+              pointer: 11);
+          await pause(30);
+          final second = await startGesture(rect.center + const Offset(25, 0),
+              pointer: 12);
+          for (var step = 1; step < 10; step++) {
+            await first.moveTo(rect.center - Offset(25 + step * 3, 0));
+            await second.moveTo(rect.center + Offset(25 + step * 3, 0));
+            await pause(16);
+          }
+          await second.up();
+          await first.up();
+          await pause(100);
+        }
+        data['unexpectedSavedStrokes'] = container
+                .read(pdfEngineProvider)
+                .trazos
+                .values
+                .fold<int>(0, (v, p) => v + p.length) -
+            before;
+      });
+      await tester.pumpWidget(app(container,
+          const Scaffold(body: Center(child: CircularProgressIndicator()))));
+      await pause(1500);
+      for (final count in [10, 100, 500, 2000]) {
+        final pages = <int, List<Trazo>>{
+          for (var page = 1; page <= 5; page++) page: strokes(count ~/ 5)
+        };
+        await measure('annotations_save_$count', (data) async {
+          await AnnotationStore.save('audit_$count', pages);
+          final stored = Hive.box('annotations').get('audit_$count');
+          data['compressed'] = stored is Uint8List;
+          data['storedBytes'] = stored is Uint8List
+              ? stored.length
+              : utf8.encode(stored as String).length;
+        });
+        await measure('annotations_load_$count', (data) async {
+          final result = await AnnotationStore.load('audit_$count');
+          data['strokeCount'] =
+              result.values.fold<int>(0, (n, p) => n + p.length);
+        });
+      }
+      await measure('viewer_reopen_heavy', (_) async {
+        await tester.pumpWidget(app(container,
+            VisorScreen(cantoId: heavyId, ignorePreferredLanguage: true)));
+        await pause(2500);
+      });
+      if (traceResidual || reopenControl) {
+        pdf.clearAllGlobal();
+        await pause(1500);
+        await tester.pumpWidget(app(container,
+            const Scaffold(body: Center(child: Text('Control sin notas')))));
+        await pause(1500);
+        await measure('viewer_reopen_without_annotations', (_) async {
+          await tester.pumpWidget(app(container,
+              VisorScreen(cantoId: heavyId, ignorePreferredLanguage: true)));
+          await pause(2500);
+        });
+      }
+      await tester.pumpWidget(app(container,
+          const Scaffold(body: Center(child: Text('Auditoría terminada')))));
+      await pause(2000);
+      report['rssAtEnd'] = ProcessInfo.currentRss;
+      await File('${output.path}/performance_audit.json')
+          .writeAsString(jsonEncode(report));
+      binding.reportData = report;
+      debugPrint('AUDIT COMPLETE ${output.path}');
+      final scenarios = report['scenarios'] as Map<String, dynamic>;
+      expect(scenarios.values.where((s) => s['error'] != null), isEmpty,
+          reason: 'A collected scenario error must fail the audit.');
+      expect(scenarios['two_finger_gestures']['unexpectedSavedStrokes'], 0);
+    });
+  }, timeout: const Timeout(Duration(minutes: 20)));
+}

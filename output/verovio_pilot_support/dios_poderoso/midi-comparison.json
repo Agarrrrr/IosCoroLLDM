@@ -1,0 +1,256 @@
+{
+  "matchedAttacks": 1905,
+  "heldContinuations": [
+    {
+      "id": "dios_poderoso-2-210",
+      "role": 2,
+      "measure": 32,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-2-220",
+      "role": 2,
+      "measure": 34,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-191",
+      "role": 0,
+      "measure": 38,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-3-257",
+      "role": 3,
+      "measure": 42,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-2-265",
+      "role": 2,
+      "measure": 47,
+      "onset": 2.0
+    },
+    {
+      "id": "dios_poderoso-2-266",
+      "role": 2,
+      "measure": 48,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-3-263",
+      "role": 3,
+      "measure": 48,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-205",
+      "role": 0,
+      "measure": 50,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-206",
+      "role": 0,
+      "measure": 50,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-0-213",
+      "role": 0,
+      "measure": 52,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-214",
+      "role": 0,
+      "measure": 52,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-1-249",
+      "role": 1,
+      "measure": 51,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-1-257",
+      "role": 1,
+      "measure": 53,
+      "onset": 3.5
+    },
+    {
+      "id": "dios_poderoso-2-271",
+      "role": 2,
+      "measure": 50,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-220",
+      "role": 0,
+      "measure": 54,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-0-226",
+      "role": 0,
+      "measure": 55,
+      "onset": 2.5
+    },
+    {
+      "id": "dios_poderoso-1-259",
+      "role": 1,
+      "measure": 54,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-1-267",
+      "role": 1,
+      "measure": 57,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-2-285",
+      "role": 2,
+      "measure": 56,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-230",
+      "role": 0,
+      "measure": 58,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-231",
+      "role": 0,
+      "measure": 58,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-0-236",
+      "role": 0,
+      "measure": 60,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-237",
+      "role": 0,
+      "measure": 60,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-0-242",
+      "role": 0,
+      "measure": 62,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-243",
+      "role": 0,
+      "measure": 62,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-0-248",
+      "role": 0,
+      "measure": 63,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-0-253",
+      "role": 0,
+      "measure": 64,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-2-310",
+      "role": 2,
+      "measure": 64,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-3-290",
+      "role": 3,
+      "measure": 61,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-3-299",
+      "role": 3,
+      "measure": 63,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-3-304",
+      "role": 3,
+      "measure": 64,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-0-275",
+      "role": 0,
+      "measure": 68,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-2-332",
+      "role": 2,
+      "measure": 68,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-3-326",
+      "role": 3,
+      "measure": 68,
+      "onset": 2
+    },
+    {
+      "id": "dios_poderoso-2-426",
+      "role": 2,
+      "measure": 82,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-0-378",
+      "role": 0,
+      "measure": 90,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-1-459",
+      "role": 1,
+      "measure": 90,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-2-469",
+      "role": 2,
+      "measure": 90,
+      "onset": 0
+    },
+    {
+      "id": "dios_poderoso-3-474",
+      "role": 3,
+      "measure": 90,
+      "onset": 0
+    }
+  ],
+  "pitchDifferences": [],
+  "unmatched": [
+    {
+      "id": "dios_poderoso-2-255",
+      "role": 2,
+      "measure": 42,
+      "onset": 0,
+      "pdf": 55
+    },
+    {
+      "id": "dios_poderoso-3-372",
+      "role": 3,
+      "measure": 74,
+      "onset": 3.0,
+      "pdf": 48
+    }
+  ]
+}

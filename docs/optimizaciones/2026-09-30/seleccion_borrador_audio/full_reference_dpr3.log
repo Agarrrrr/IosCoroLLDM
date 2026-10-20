@@ -1,0 +1,29 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart
+00:00 +0: cold stripes preserve all ink on every preparation frame
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than or equal to <2>
+  Actual: <6>
+   Which: is not a value less than or equal to <2>
+Preparation frame 0
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart:75:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart line 75
+The test description was:
+  cold stripes preserve all ink on every preparation frame
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:00 +0 -1: cold stripes preserve all ink on every preparation frame [E]
+  Test failed. See exception logs above.
+  The test description was: cold stripes preserve all ink on every preparation frame
+  
+00:00 +0 -1: Some tests failed.

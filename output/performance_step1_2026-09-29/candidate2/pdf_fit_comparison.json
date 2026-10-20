@@ -1,0 +1,7 @@
+{
+  "shape_equal": true,
+  "max_channel_difference": 2,
+  "mean_channel_difference": 0.005991523122284296,
+  "pixels_changed_percent": 0.7367965032071178,
+  "pixels_difference_over_5_percent": 0.0
+}

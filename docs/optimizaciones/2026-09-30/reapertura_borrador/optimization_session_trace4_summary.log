@@ -1,0 +1,5783 @@
+{
+  "viewer_reopen_dense_1": {
+    "eventCount": 17980,
+    "longest": [
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 71.786,
+        "ts": 434727536268,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 63.319,
+        "ts": 434727696120,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 59.452,
+        "ts": 434727623834,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 56.222,
+        "ts": 434727773904,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Dart_NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 16.098,
+        "ts": 434729348735,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 16.092,
+        "ts": 434729348738,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ConcurrentMark",
+        "thread": "DartWorker (465529789488)",
+        "tid": 465529789488,
+        "ms": 16.082,
+        "ts": 434729354735,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ConcurrentMark",
+        "thread": "DartWorker (464669260848)",
+        "tid": 464669260848,
+        "ms": 15.397,
+        "ts": 434729355145,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "StartConcurrentMarking",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 10.154,
+        "ts": 434729354673,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ConcurrentMark",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 10.062,
+        "ts": 434729354719,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.182,
+        "ts": 434727608098,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.17,
+        "ts": 434727608105,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.166,
+        "ts": 434727608107,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.74,
+        "ts": 434727830339,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.73,
+        "ts": 434727830343,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.724,
+        "ts": 434727830345,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.356,
+        "ts": 434727616425,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.345,
+        "ts": 434727616432,
+        "args": {}
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 6.1,
+        "ts": 434727608056,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.057,
+        "ts": 434727689242,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.045,
+        "ts": 434727689250,
+        "args": {}
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.984,
+        "ts": 434727837587,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.968,
+        "ts": 434727837598,
+        "args": {}
+      },
+      {
+        "name": "CollectNewGeneration",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.912,
+        "ts": 434729348756,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.867,
+        "ts": 434727484059,
+        "args": {
+          "StartTime": "434727483500019",
+          "TargetTime": "434727500166685"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.852,
+        "ts": 434727484065,
+        "args": {
+          "frame_number": "364"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.788,
+        "ts": 434727484124,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "DartWorker (465529789488)",
+        "tid": 465529789488,
+        "ms": 5.721,
+        "ts": 434729348879,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.685,
+        "ts": 434727763208,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.672,
+        "ts": 434727763216,
+        "args": {}
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.232,
+        "ts": 434728132329,
+        "args": {
+          "StartTime": "434728131737101",
+          "TargetTime": "434728148403767"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.188,
+        "ts": 434728132342,
+        "args": {
+          "frame_number": "403"
+        }
+      },
+      {
+        "name": "Dart_NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.125,
+        "ts": 434727767897,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.123,
+        "ts": 434727767898,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.869,
+        "ts": 434728132649,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.2,
+        "ts": 434727684895,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.191,
+        "ts": 434727684899,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.186,
+        "ts": 434727684901,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.972,
+        "ts": 434729596487,
+        "args": {
+          "StartTime": "434729594746050",
+          "TargetTime": "434729611412716"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.941,
+        "ts": 434729412498,
+        "args": {
+          "StartTime": "434729411846409",
+          "TargetTime": "434729428513075"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.918,
+        "ts": 434729412509,
+        "args": {
+          "frame_number": "480"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.917,
+        "ts": 434729596511,
+        "args": {
+          "frame_number": "491"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.598,
+        "ts": 434729596819,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.596,
+        "ts": 434727759484,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.579,
+        "ts": 434727759497,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.573,
+        "ts": 434727759500,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.573,
+        "ts": 434729412848,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.518,
+        "ts": 434728284840,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.499,
+        "ts": 434728284852,
+        "args": {
+          "frame_number": "412"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.47,
+        "ts": 434728284859,
+        "args": {}
+      }
+    ],
+    "raster": [
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.518,
+        "ts": 434728284840,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.499,
+            "ts": 434728284852,
+            "args": {
+              "frame_number": "412"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.47,
+            "ts": 434728284859,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.764,
+            "ts": 434728286217,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.311,
+            "ts": 434728284902,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.056,
+            "ts": 434728285152,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.499,
+        "ts": 434728284852,
+        "args": {
+          "frame_number": "412"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.47,
+            "ts": 434728284859,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.764,
+            "ts": 434728286217,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.311,
+            "ts": 434728284902,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.056,
+            "ts": 434728285152,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.47,
+        "ts": 434728284859,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.764,
+            "ts": 434728286217,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.311,
+            "ts": 434728284902,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.056,
+            "ts": 434728285152,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.467,
+        "ts": 434729315450,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.449,
+            "ts": 434729315460,
+            "args": {
+              "frame_number": "474"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.437,
+            "ts": 434729315465,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.903,
+            "ts": 434729316883,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.376,
+            "ts": 434729315504,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.062,
+            "ts": 434729317717,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.001,
+            "ts": 434729315873,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.449,
+        "ts": 434729315460,
+        "args": {
+          "frame_number": "474"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.437,
+            "ts": 434729315465,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.903,
+            "ts": 434729316883,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.376,
+            "ts": 434729315504,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.062,
+            "ts": 434729317717,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.001,
+            "ts": 434729315873,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.437,
+        "ts": 434729315465,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.903,
+            "ts": 434729316883,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.376,
+            "ts": 434729315504,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.062,
+            "ts": 434729317717,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.001,
+            "ts": 434729315873,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.399,
+        "ts": 434729946451,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.373,
+            "ts": 434729946466,
+            "args": {
+              "frame_number": "512"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.357,
+            "ts": 434729946473,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.955,
+            "ts": 434729947739,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.212,
+            "ts": 434729946524,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.068,
+            "ts": 434729947740,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.06,
+            "ts": 434729947742,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.39,
+        "ts": 434727767511,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.38,
+            "ts": 434727767516,
+            "args": {
+              "frame_number": "381"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.373,
+            "ts": 434727767518,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.982,
+            "ts": 434727767850,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.628,
+            "ts": 434727767851,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.625,
+            "ts": 434727767852,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.38,
+        "ts": 434727767516,
+        "args": {
+          "frame_number": "381"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.373,
+            "ts": 434727767518,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.982,
+            "ts": 434727767850,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.628,
+            "ts": 434727767851,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.625,
+            "ts": 434727767852,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.373,
+        "ts": 434727767518,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.982,
+            "ts": 434727767850,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.628,
+            "ts": 434727767851,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.625,
+            "ts": 434727767852,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.373,
+        "ts": 434729946466,
+        "args": {
+          "frame_number": "512"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.357,
+            "ts": 434729946473,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.955,
+            "ts": 434729947739,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.212,
+            "ts": 434729946524,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.068,
+            "ts": 434729947740,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.06,
+            "ts": 434729947742,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.357,
+        "ts": 434729946473,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.955,
+            "ts": 434729947739,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.212,
+            "ts": 434729946524,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.068,
+            "ts": 434729947740,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.06,
+            "ts": 434729947742,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.327,
+        "ts": 434729963174,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.303,
+            "ts": 434729963188,
+            "args": {
+              "frame_number": "513"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.288,
+            "ts": 434729963195,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.909,
+            "ts": 434729964440,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.194,
+            "ts": 434729963242,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.303,
+        "ts": 434729963188,
+        "args": {
+          "frame_number": "513"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.288,
+            "ts": 434729963195,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.909,
+            "ts": 434729964440,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.194,
+            "ts": 434729963242,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.288,
+        "ts": 434729963195,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.909,
+            "ts": 434729964440,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.194,
+            "ts": 434729963242,
+            "args": {}
+          }
+        ]
+      }
+    ]
+  },
+  "viewer_reopen_dense_2": {
+    "eventCount": 17873,
+    "longest": [
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 69.707,
+        "ts": 434733040367,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 59.751,
+        "ts": 434733192503,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 58.99,
+        "ts": 434733118753,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 56.542,
+        "ts": 434733263017,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Dart_NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 10.709,
+        "ts": 434734055223,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 10.705,
+        "ts": 434734055225,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "CollectNewGeneration",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 9.318,
+        "ts": 434734055239,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Dart_NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.603,
+        "ts": 434735285592,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.597,
+        "ts": 434735285595,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "DartWorker (465529789488)",
+        "tid": 465529789488,
+        "ms": 7.719,
+        "ts": 434734055390,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 7.662,
+        "ts": 434733177799,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 7.644,
+        "ts": 434733177809,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 7.635,
+        "ts": 434733177813,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.833,
+        "ts": 434734057693,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 6.278,
+        "ts": 434733110077,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "CollectNewGeneration",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.886,
+        "ts": 434735285612,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.562,
+        "ts": 434732986988,
+        "args": {
+          "StartTime": "434732986541749",
+          "TargetTime": "434733003208415"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.542,
+        "ts": 434732986993,
+        "args": {
+          "frame_number": "686"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.497,
+        "ts": 434732987031,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.405,
+        "ts": 434733325101,
+        "args": {}
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.394,
+        "ts": 434733186024,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.39,
+        "ts": 434733325111,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.377,
+        "ts": 434733186035,
+        "args": {}
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.203,
+        "ts": 434733256656,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 5.188,
+        "ts": 434733256665,
+        "args": {}
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 4.968,
+        "ts": 434733113126,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 4.956,
+        "ts": 434733113134,
+        "args": {}
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.781,
+        "ts": 434734005586,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.751,
+        "ts": 434734005602,
+        "args": {
+          "frame_number": "747"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.696,
+        "ts": 434734005612,
+        "args": {}
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.471,
+        "ts": 434735019811,
+        "args": {}
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.467,
+        "ts": 434733719606,
+        "args": {
+          "StartTime": "434733718020689",
+          "TargetTime": "434733734687355"
+        }
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.45,
+        "ts": 434735019827,
+        "args": {
+          "frame_number": "808"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.432,
+        "ts": 434735019837,
+        "args": {}
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.391,
+        "ts": 434733738712,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.36,
+        "ts": 434733738727,
+        "args": {
+          "frame_number": "731"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.343,
+        "ts": 434733719632,
+        "args": {
+          "frame_number": "730"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.34,
+        "ts": 434733738737,
+        "args": {}
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.319,
+        "ts": 434733722983,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.287,
+        "ts": 434733723000,
+        "args": {
+          "frame_number": "730"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.267,
+        "ts": 434733723010,
+        "args": {}
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.259,
+        "ts": 434735016582,
+        "args": {
+          "StartTime": "434735014938425",
+          "TargetTime": "434735031605091"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.254,
+        "ts": 434734536257,
+        "args": {}
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.25,
+        "ts": 434734002393,
+        "args": {
+          "StartTime": "434734000693724",
+          "TargetTime": "434734017360390"
+        }
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.232,
+        "ts": 434734536275,
+        "args": {
+          "frame_number": "779"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.221,
+        "ts": 434734604303,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.218,
+        "ts": 434734536284,
+        "args": {}
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.203,
+        "ts": 434733252297,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.202,
+        "ts": 434734604317,
+        "args": {
+          "frame_number": "783"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.195,
+        "ts": 434733755114,
+        "args": {}
+      }
+    ],
+    "raster": [
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.781,
+        "ts": 434734005586,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.751,
+            "ts": 434734005602,
+            "args": {
+              "frame_number": "747"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.696,
+            "ts": 434734005612,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.768,
+            "ts": 434734007358,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.567,
+            "ts": 434734007360,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.559,
+            "ts": 434734005794,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.559,
+            "ts": 434734007362,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.183,
+            "ts": 434734008932,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.136,
+            "ts": 434734006209,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.751,
+        "ts": 434734005602,
+        "args": {
+          "frame_number": "747"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.696,
+            "ts": 434734005612,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.768,
+            "ts": 434734007358,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.567,
+            "ts": 434734007360,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.559,
+            "ts": 434734005794,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.559,
+            "ts": 434734007362,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.183,
+            "ts": 434734008932,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.136,
+            "ts": 434734006209,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.696,
+        "ts": 434734005612,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.768,
+            "ts": 434734007358,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.567,
+            "ts": 434734007360,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.559,
+            "ts": 434734005794,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.559,
+            "ts": 434734007362,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.183,
+            "ts": 434734008932,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.136,
+            "ts": 434734006209,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.471,
+        "ts": 434735019811,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.45,
+            "ts": 434735019827,
+            "args": {
+              "frame_number": "808"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.432,
+            "ts": 434735019837,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.492,
+            "ts": 434735021433,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.528,
+            "ts": 434735019899,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.293,
+            "ts": 434735021435,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.275,
+            "ts": 434735021445,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.181,
+            "ts": 434735022732,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.005,
+            "ts": 434735020416,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.45,
+        "ts": 434735019827,
+        "args": {
+          "frame_number": "808"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.432,
+            "ts": 434735019837,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.492,
+            "ts": 434735021433,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.528,
+            "ts": 434735019899,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.293,
+            "ts": 434735021435,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.275,
+            "ts": 434735021445,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.181,
+            "ts": 434735022732,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.005,
+            "ts": 434735020416,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.432,
+        "ts": 434735019837,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.492,
+            "ts": 434735021433,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.528,
+            "ts": 434735019899,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.293,
+            "ts": 434735021435,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.275,
+            "ts": 434735021445,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.181,
+            "ts": 434735022732,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.005,
+            "ts": 434735020416,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.391,
+        "ts": 434733738712,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.36,
+            "ts": 434733738727,
+            "args": {
+              "frame_number": "731"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.34,
+            "ts": 434733738737,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.484,
+            "ts": 434733740412,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.605,
+            "ts": 434733738803,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.258,
+            "ts": 434733740415,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.248,
+            "ts": 434733740417,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.207,
+            "ts": 434733741678,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.198,
+            "ts": 434733739202,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.36,
+        "ts": 434733738727,
+        "args": {
+          "frame_number": "731"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.34,
+            "ts": 434733738737,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.484,
+            "ts": 434733740412,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.605,
+            "ts": 434733738803,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.258,
+            "ts": 434733740415,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.248,
+            "ts": 434733740417,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.207,
+            "ts": 434733741678,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.198,
+            "ts": 434733739202,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.34,
+        "ts": 434733738737,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.484,
+            "ts": 434733740412,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.605,
+            "ts": 434733738803,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.258,
+            "ts": 434733740415,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.248,
+            "ts": 434733740417,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.207,
+            "ts": 434733741678,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.198,
+            "ts": 434733739202,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.319,
+        "ts": 434733722983,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.287,
+            "ts": 434733723000,
+            "args": {
+              "frame_number": "730"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.267,
+            "ts": 434733723010,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.501,
+            "ts": 434733724589,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.506,
+            "ts": 434733723078,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.31,
+            "ts": 434733724591,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.293,
+            "ts": 434733724594,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.173,
+            "ts": 434733725907,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.09,
+            "ts": 434733723487,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.287,
+        "ts": 434733723000,
+        "args": {
+          "frame_number": "730"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.267,
+            "ts": 434733723010,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.501,
+            "ts": 434733724589,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.506,
+            "ts": 434733723078,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.31,
+            "ts": 434733724591,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.293,
+            "ts": 434733724594,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.173,
+            "ts": 434733725907,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.09,
+            "ts": 434733723487,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.267,
+        "ts": 434733723010,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.501,
+            "ts": 434733724589,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.506,
+            "ts": 434733723078,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.31,
+            "ts": 434733724591,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.293,
+            "ts": 434733724594,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.173,
+            "ts": 434733725907,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.09,
+            "ts": 434733723487,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.254,
+        "ts": 434734536257,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.232,
+            "ts": 434734536275,
+            "args": {
+              "frame_number": "779"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.218,
+            "ts": 434734536284,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.263,
+            "ts": 434734538107,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.756,
+            "ts": 434734536345,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.206,
+            "ts": 434734539159,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.047,
+            "ts": 434734538109,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.039,
+            "ts": 434734538112,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.232,
+        "ts": 434734536275,
+        "args": {
+          "frame_number": "779"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.218,
+            "ts": 434734536284,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.263,
+            "ts": 434734538107,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.756,
+            "ts": 434734536345,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.206,
+            "ts": 434734539159,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.047,
+            "ts": 434734538109,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.039,
+            "ts": 434734538112,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.221,
+        "ts": 434734604303,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.202,
+            "ts": 434734604317,
+            "args": {
+              "frame_number": "783"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.187,
+            "ts": 434734604327,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.488,
+            "ts": 434734605956,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.562,
+            "ts": 434734604390,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.306,
+            "ts": 434734605964,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.295,
+            "ts": 434734605967,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.164,
+            "ts": 434734607275,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.138,
+            "ts": 434734604807,
+            "args": {}
+          }
+        ]
+      }
+    ]
+  },
+  "eraser_500_saved": {
+    "eventCount": 11468,
+    "longest": [
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 27.247,
+        "ts": 434740685553,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 27.232,
+        "ts": 434740685563,
+        "args": {
+          "frame_number": "1126"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 27.217,
+        "ts": 434740685569,
+        "args": {}
+      },
+      {
+        "name": "SurfaceFrame::Submit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 26.124,
+        "ts": 434740686602,
+        "args": {}
+      },
+      {
+        "name": "SurfaceFrame::Encode",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 25.704,
+        "ts": 434740686604,
+        "args": {}
+      },
+      {
+        "name": "GrDirectContext::flushAndSubmit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 25.701,
+        "ts": 434740686605,
+        "args": {}
+      },
+      {
+        "name": "shader_compile",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 18.327,
+        "ts": 434740687789,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 17.994,
+        "ts": 434740688108,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "cache_miss",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 17.842,
+        "ts": 434740688173,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 14.543,
+        "ts": 434741585302,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 14.53,
+        "ts": 434741585311,
+        "args": {
+          "frame_number": "1180"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 14.517,
+        "ts": 434741585315,
+        "args": {}
+      },
+      {
+        "name": "driver_link_program",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 10.045,
+        "ts": 434740695967,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "ConcurrentSweep",
+        "thread": "DartWorker (464833997872)",
+        "tid": 464833997872,
+        "ms": 9.756,
+        "ts": 434740454370,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Sweep",
+        "thread": "DartWorker (464833997872)",
+        "tid": 464833997872,
+        "ms": 9.749,
+        "ts": 434740454375,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 9.061,
+        "ts": 434740447489,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 9.054,
+        "ts": 434740447492,
+        "args": {
+          "frame_number": "1111"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 9.041,
+        "ts": 434740447494,
+        "args": {}
+      },
+      {
+        "name": "SurfaceFrame::Submit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 8.692,
+        "ts": 434741591070,
+        "args": {}
+      },
+      {
+        "name": "SurfaceFrame::Submit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 8.523,
+        "ts": 434740447901,
+        "args": {}
+      },
+      {
+        "name": "CollectNewGeneration",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 8.331,
+        "ts": 434741743323,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 8.275,
+        "ts": 434741743353,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "SurfaceFrame::Encode",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 8.205,
+        "ts": 434741591070,
+        "args": {}
+      },
+      {
+        "name": "GrDirectContext::flushAndSubmit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 8.202,
+        "ts": 434741591071,
+        "args": {}
+      },
+      {
+        "name": "AndroidContextGL::SwapBuffers",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 8.034,
+        "ts": 434740448385,
+        "args": {}
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "DartWorker (464833997872)",
+        "tid": 464833997872,
+        "ms": 7.726,
+        "ts": 434741743364,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.574,
+        "ts": 434741603029,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.566,
+        "ts": 434741603032,
+        "args": {
+          "frame_number": "1181"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.55,
+        "ts": 434741603034,
+        "args": {}
+      },
+      {
+        "name": "SurfaceFrame::Submit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.228,
+        "ts": 434741603287,
+        "args": {}
+      },
+      {
+        "name": "shader_compile",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.117,
+        "ts": 434741591548,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 6.951,
+        "ts": 434741591695,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "SurfaceFrame::Encode",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 6.67,
+        "ts": 434741603288,
+        "args": {}
+      },
+      {
+        "name": "GrDirectContext::flushAndSubmit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 6.668,
+        "ts": 434741603288,
+        "args": {}
+      },
+      {
+        "name": "cache_miss",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 6.462,
+        "ts": 434741591721,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.022,
+        "ts": 434741580662,
+        "args": {
+          "StartTime": "434741580092154",
+          "TargetTime": "434741596758820"
+        }
+      },
+      {
+        "name": "shader_compile",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 6.015,
+        "ts": 434740706182,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.996,
+        "ts": 434741580668,
+        "args": {
+          "frame_number": "1180"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.866,
+        "ts": 434741580792,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.84,
+        "ts": 434740706345,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "shader_compile",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.798,
+        "ts": 434741603689,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "cache_miss",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.744,
+        "ts": 434740706369,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.744,
+        "ts": 434741746958,
+        "args": {
+          "StartTime": "434741746344170",
+          "TargetTime": "434741763010836"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.728,
+        "ts": 434741746966,
+        "args": {
+          "frame_number": "1190"
+        }
+      },
+      {
+        "name": "CompositorContext::ScopedFrame::Raster",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.72,
+        "ts": 434741585348,
+        "args": {}
+      },
+      {
+        "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.675,
+        "ts": 434741603798,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "cache_miss",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.552,
+        "ts": 434741603821,
+        "args": {
+          "devtoolsTag": "shaders"
+        }
+      },
+      {
+        "name": "LayerTree::Paint",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.547,
+        "ts": 434741585520,
+        "args": {}
+      },
+      {
+        "name": "Dart_NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.463,
+        "ts": 434740768318,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.461,
+        "ts": 434740768319,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      }
+    ],
+    "raster": [
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 27.247,
+        "ts": 434740685553,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 27.232,
+            "ts": 434740685563,
+            "args": {
+              "frame_number": "1126"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 27.217,
+            "ts": 434740685569,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 26.124,
+            "ts": 434740686602,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 25.704,
+            "ts": 434740686604,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 25.701,
+            "ts": 434740686605,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 18.327,
+            "ts": 434740687789,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 17.994,
+            "ts": 434740688108,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 17.842,
+            "ts": 434740688173,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 10.045,
+            "ts": 434740695967,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.015,
+            "ts": 434740706182,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.84,
+            "ts": 434740706345,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.744,
+            "ts": 434740706369,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.455,
+            "ts": 434740691491,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.243,
+            "ts": 434740708868,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.007,
+            "ts": 434740688557,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 27.232,
+        "ts": 434740685563,
+        "args": {
+          "frame_number": "1126"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 27.217,
+            "ts": 434740685569,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 26.124,
+            "ts": 434740686602,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 25.704,
+            "ts": 434740686604,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 25.701,
+            "ts": 434740686605,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 18.327,
+            "ts": 434740687789,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 17.994,
+            "ts": 434740688108,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 17.842,
+            "ts": 434740688173,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 10.045,
+            "ts": 434740695967,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.015,
+            "ts": 434740706182,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.84,
+            "ts": 434740706345,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.744,
+            "ts": 434740706369,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.455,
+            "ts": 434740691491,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.243,
+            "ts": 434740708868,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.007,
+            "ts": 434740688557,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.191,
+            "ts": 434740706679,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 27.217,
+        "ts": 434740685569,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 26.124,
+            "ts": 434740686602,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 25.704,
+            "ts": 434740686604,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 25.701,
+            "ts": 434740686605,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 18.327,
+            "ts": 434740687789,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 17.994,
+            "ts": 434740688108,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 17.842,
+            "ts": 434740688173,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 10.045,
+            "ts": 434740695967,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.015,
+            "ts": 434740706182,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.84,
+            "ts": 434740706345,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.744,
+            "ts": 434740706369,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.455,
+            "ts": 434740691491,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.243,
+            "ts": 434740708868,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.007,
+            "ts": 434740688557,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.191,
+            "ts": 434740706679,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 14.543,
+        "ts": 434741585302,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 14.53,
+            "ts": 434741585311,
+            "args": {
+              "frame_number": "1180"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 14.517,
+            "ts": 434741585315,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.692,
+            "ts": 434741591070,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.205,
+            "ts": 434741591070,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.202,
+            "ts": 434741591071,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.117,
+            "ts": 434741591548,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.951,
+            "ts": 434741591695,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.462,
+            "ts": 434741591721,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.72,
+            "ts": 434741585348,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.547,
+            "ts": 434741585520,
+            "args": {}
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.292,
+            "ts": 434741594889,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.584,
+            "ts": 434741592036,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.083,
+            "ts": 434741593796,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 14.53,
+        "ts": 434741585311,
+        "args": {
+          "frame_number": "1180"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 14.517,
+            "ts": 434741585315,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.692,
+            "ts": 434741591070,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.205,
+            "ts": 434741591070,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.202,
+            "ts": 434741591071,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.117,
+            "ts": 434741591548,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.951,
+            "ts": 434741591695,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.462,
+            "ts": 434741591721,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.72,
+            "ts": 434741585348,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.547,
+            "ts": 434741585520,
+            "args": {}
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.292,
+            "ts": 434741594889,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.584,
+            "ts": 434741592036,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.083,
+            "ts": 434741593796,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 14.517,
+        "ts": 434741585315,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.692,
+            "ts": 434741591070,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.205,
+            "ts": 434741591070,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.202,
+            "ts": 434741591071,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.117,
+            "ts": 434741591548,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.951,
+            "ts": 434741591695,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.462,
+            "ts": 434741591721,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.72,
+            "ts": 434741585348,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.547,
+            "ts": 434741585520,
+            "args": {}
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.292,
+            "ts": 434741594889,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.584,
+            "ts": 434741592036,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.083,
+            "ts": 434741593796,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 9.061,
+        "ts": 434740447489,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 9.054,
+            "ts": 434740447492,
+            "args": {
+              "frame_number": "1111"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 9.041,
+            "ts": 434740447494,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.523,
+            "ts": 434740447901,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.034,
+            "ts": 434740448385,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 9.054,
+        "ts": 434740447492,
+        "args": {
+          "frame_number": "1111"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 9.041,
+            "ts": 434740447494,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.523,
+            "ts": 434740447901,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.034,
+            "ts": 434740448385,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 9.041,
+        "ts": 434740447494,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.523,
+            "ts": 434740447901,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 8.034,
+            "ts": 434740448385,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.574,
+        "ts": 434741603029,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.566,
+            "ts": 434741603032,
+            "args": {
+              "frame_number": "1181"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.55,
+            "ts": 434741603034,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.228,
+            "ts": 434741603287,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.67,
+            "ts": 434741603288,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.668,
+            "ts": 434741603288,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.798,
+            "ts": 434741603689,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.675,
+            "ts": 434741603798,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.552,
+            "ts": 434741603821,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.588,
+            "ts": 434741606783,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.336,
+            "ts": 434741604252,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.022,
+            "ts": 434741605753,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.566,
+        "ts": 434741603032,
+        "args": {
+          "frame_number": "1181"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.55,
+            "ts": 434741603034,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.228,
+            "ts": 434741603287,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.67,
+            "ts": 434741603288,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.668,
+            "ts": 434741603288,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.798,
+            "ts": 434741603689,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.675,
+            "ts": 434741603798,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.552,
+            "ts": 434741603821,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.588,
+            "ts": 434741606783,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.336,
+            "ts": 434741604252,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.022,
+            "ts": 434741605753,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 7.55,
+        "ts": 434741603034,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 7.228,
+            "ts": 434741603287,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.67,
+            "ts": 434741603288,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 6.668,
+            "ts": 434741603288,
+            "args": {}
+          },
+          {
+            "name": "shader_compile",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.798,
+            "ts": 434741603689,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "sk_sp<GrGLProgram> GrGLProgramBuilder::finalize(const GrGLPrecompiledProgram *)",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.675,
+            "ts": 434741603798,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "cache_miss",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.552,
+            "ts": 434741603821,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_link_program",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.588,
+            "ts": 434741606783,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.336,
+            "ts": 434741604252,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          },
+          {
+            "name": "driver_compile_shader",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.022,
+            "ts": 434741605753,
+            "args": {
+              "devtoolsTag": "shaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.801,
+        "ts": 434741350266,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.775,
+            "ts": 434741350283,
+            "args": {
+              "frame_number": "1166"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.761,
+            "ts": 434741350289,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.856,
+            "ts": 434741352066,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.736,
+            "ts": 434741350327,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.322,
+            "ts": 434741350734,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.049,
+            "ts": 434741352068,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.043,
+            "ts": 434741352070,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.775,
+        "ts": 434741350283,
+        "args": {
+          "frame_number": "1166"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.761,
+            "ts": 434741350289,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.856,
+            "ts": 434741352066,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.736,
+            "ts": 434741350327,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.322,
+            "ts": 434741350734,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.049,
+            "ts": 434741352068,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.043,
+            "ts": 434741352070,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.761,
+        "ts": 434741350289,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.856,
+            "ts": 434741352066,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.736,
+            "ts": 434741350327,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.322,
+            "ts": 434741350734,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.049,
+            "ts": 434741352068,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.043,
+            "ts": 434741352070,
+            "args": {}
+          }
+        ]
+      }
+    ]
+  },
+  "viewer_reopen_empty": {
+    "eventCount": 18018,
+    "longest": [
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 76.411,
+        "ts": 434744857420,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 59.959,
+        "ts": 434744948035,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 58.261,
+        "ts": 434745015972,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 56.562,
+        "ts": 434745091697,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 11.509,
+        "ts": 434744804348,
+        "args": {
+          "StartTime": "434744803604016",
+          "TargetTime": "434744820270682"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 11.473,
+        "ts": 434744804357,
+        "args": {
+          "frame_number": "1359"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 11.353,
+        "ts": 434744804469,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 9.624,
+        "ts": 434745074273,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 9.604,
+        "ts": 434745074281,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 9.593,
+        "ts": 434745074283,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.24,
+        "ts": 434744933868,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.227,
+        "ts": 434744933875,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 8.222,
+        "ts": 434744933877,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "DartIsolate::HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.251,
+        "ts": 434745148313,
+        "args": {}
+      },
+      {
+        "name": "Dart_HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.234,
+        "ts": 434745148323,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 6.228,
+        "ts": 434745148326,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.207,
+        "ts": 434745084694,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.177,
+        "ts": 434745084719,
+        "args": {}
+      },
+      {
+        "name": "HandleMessage",
+        "thread": "DartWorker (464812096560)",
+        "tid": 464812096560,
+        "ms": 6.083,
+        "ts": 434744933833,
+        "args": {
+          "isolateId": "isolates/2605544723844695",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.068,
+        "ts": 434745155095,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 6.053,
+        "ts": 434745155105,
+        "args": {}
+      },
+      {
+        "name": "Dart_NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.993,
+        "ts": 434746268938,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.989,
+        "ts": 434746268940,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "BUILD",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.909,
+        "ts": 434744804485,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Dart_NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.735,
+        "ts": 434744888256,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "NotifyIdle",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 5.732,
+        "ts": 434744888257,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.075,
+        "ts": 434746268274,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.06,
+        "ts": 434746268285,
+        "args": {
+          "frame_number": "1447"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.038,
+        "ts": 434746268293,
+        "args": {}
+      },
+      {
+        "name": "CollectNewGeneration",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.714,
+        "ts": 434746268953,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "UploadRasterImage",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 4.598,
+        "ts": 434744942265,
+        "args": {}
+      },
+      {
+        "name": "MakeCrossContextImageFromPixmap",
+        "thread": "1.io (465539083312)",
+        "tid": 465539083312,
+        "ms": 4.584,
+        "ts": 434744942275,
+        "args": {}
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "DartWorker (464833997872)",
+        "tid": 464833997872,
+        "ms": 4.51,
+        "ts": 434746269125,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.447,
+        "ts": 434746948208,
+        "args": {
+          "StartTime": "434746946430660",
+          "TargetTime": "434746963097326"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.414,
+        "ts": 434746964843,
+        "args": {
+          "StartTime": "434746963044335",
+          "TargetTime": "434746979711001"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.367,
+        "ts": 434746948243,
+        "args": {
+          "frame_number": "1488"
+        }
+      },
+      {
+        "name": "Animator::BeginFrame",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.339,
+        "ts": 434746964870,
+        "args": {
+          "frame_number": "1489"
+        }
+      },
+      {
+        "name": "SurfaceFrame::Submit",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.298,
+        "ts": 434746268961,
+        "args": {}
+      },
+      {
+        "name": "CollectNewGeneration",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.274,
+        "ts": 434744888263,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.225,
+        "ts": 434746968190,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.195,
+        "ts": 434746968206,
+        "args": {
+          "frame_number": "1489"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.135,
+        "ts": 434746968217,
+        "args": {}
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.072,
+        "ts": 434746951592,
+        "args": {}
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.041,
+        "ts": 434746951608,
+        "args": {
+          "frame_number": "1488"
+        }
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.023,
+        "ts": 434744888310,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 4.02,
+        "ts": 434746948577,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.013,
+        "ts": 434746951618,
+        "args": {}
+      },
+      {
+        "name": "Dart_InvokeClosure",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.986,
+        "ts": 434746965208,
+        "args": {
+          "isolateId": "isolates/193019858598935",
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "ParallelScavenge",
+        "thread": "DartWorker (464833997872)",
+        "tid": 464833997872,
+        "ms": 3.948,
+        "ts": 434744888463,
+        "args": {
+          "isolateGroupId": "isolateGroups/3172266728272226"
+        }
+      },
+      {
+        "name": "VsyncProcessCallback",
+        "thread": "1.ui (481366193408)",
+        "tid": 481366193408,
+        "ms": 3.882,
+        "ts": 434745136379,
+        "args": {
+          "StartTime": "434745135745734",
+          "TargetTime": "434745152412400"
+        }
+      }
+    ],
+    "raster": [
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.075,
+        "ts": 434746268274,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.06,
+            "ts": 434746268285,
+            "args": {
+              "frame_number": "1447"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.038,
+            "ts": 434746268293,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.298,
+            "ts": 434746268961,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.737,
+            "ts": 434746268961,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.734,
+            "ts": 434746268962,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.06,
+        "ts": 434746268285,
+        "args": {
+          "frame_number": "1447"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 5.038,
+            "ts": 434746268293,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.298,
+            "ts": 434746268961,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.737,
+            "ts": 434746268961,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.734,
+            "ts": 434746268962,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 5.038,
+        "ts": 434746268293,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.298,
+            "ts": 434746268961,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.737,
+            "ts": 434746268961,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.734,
+            "ts": 434746268962,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.225,
+        "ts": 434746968190,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.195,
+            "ts": 434746968206,
+            "args": {
+              "frame_number": "1489"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.135,
+            "ts": 434746968217,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.308,
+            "ts": 434746969662,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.371,
+            "ts": 434746968286,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.177,
+            "ts": 434746969664,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.167,
+            "ts": 434746969667,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.116,
+            "ts": 434746970845,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.195,
+        "ts": 434746968206,
+        "args": {
+          "frame_number": "1489"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.135,
+            "ts": 434746968217,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.308,
+            "ts": 434746969662,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.371,
+            "ts": 434746968286,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.177,
+            "ts": 434746969664,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.167,
+            "ts": 434746969667,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.116,
+            "ts": 434746970845,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.135,
+        "ts": 434746968217,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.308,
+            "ts": 434746969662,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.371,
+            "ts": 434746968286,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.177,
+            "ts": 434746969664,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.167,
+            "ts": 434746969667,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.116,
+            "ts": 434746970845,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.072,
+        "ts": 434746951592,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.041,
+            "ts": 434746951608,
+            "args": {
+              "frame_number": "1488"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.013,
+            "ts": 434746951618,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.382,
+            "ts": 434746953067,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.385,
+            "ts": 434746951676,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.211,
+            "ts": 434746953069,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.2,
+            "ts": 434746953073,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.155,
+            "ts": 434746954284,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.041,
+        "ts": 434746951608,
+        "args": {
+          "frame_number": "1488"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 4.013,
+            "ts": 434746951618,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.382,
+            "ts": 434746953067,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.385,
+            "ts": 434746951676,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.211,
+            "ts": 434746953069,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.2,
+            "ts": 434746953073,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.155,
+            "ts": 434746954284,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 4.013,
+        "ts": 434746951618,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 2.382,
+            "ts": 434746953067,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.385,
+            "ts": 434746951676,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Encode",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.211,
+            "ts": 434746953069,
+            "args": {}
+          },
+          {
+            "name": "GrDirectContext::flushAndSubmit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.2,
+            "ts": 434746953073,
+            "args": {}
+          },
+          {
+            "name": "AndroidContextGL::SwapBuffers",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.155,
+            "ts": 434746954284,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.303,
+        "ts": 434745139307,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.273,
+            "ts": 434745139327,
+            "args": {
+              "frame_number": "1379"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.258,
+            "ts": 434745139333,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.586,
+            "ts": 434745140870,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.485,
+            "ts": 434745139382,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.084,
+            "ts": 434745139778,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.279,
+        "ts": 434746700461,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.256,
+            "ts": 434746700473,
+            "args": {
+              "frame_number": "1473"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.239,
+            "ts": 434746700479,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.784,
+            "ts": 434746701796,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.266,
+            "ts": 434746700526,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.273,
+        "ts": 434745139327,
+        "args": {
+          "frame_number": "1379"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.258,
+            "ts": 434745139333,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.586,
+            "ts": 434745140870,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.485,
+            "ts": 434745139382,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.084,
+            "ts": 434745139778,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DrawToSurfaces",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.258,
+        "ts": 434745139333,
+        "args": {},
+        "nested": [
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.586,
+            "ts": 434745140870,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.485,
+            "ts": 434745139382,
+            "args": {}
+          },
+          {
+            "name": "LayerTree::Paint",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.084,
+            "ts": 434745139778,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "Rasterizer::DoDraw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.256,
+        "ts": 434746700473,
+        "args": {
+          "frame_number": "1473"
+        },
+        "nested": [
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.239,
+            "ts": 434746700479,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.784,
+            "ts": 434746701796,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.266,
+            "ts": 434746700526,
+            "args": {}
+          }
+        ]
+      },
+      {
+        "name": "GPURasterizer::Draw",
+        "thread": "1.raster (465545309232)",
+        "tid": 465545309232,
+        "ms": 3.246,
+        "ts": 434747049768,
+        "args": {},
+        "nested": [
+          {
+            "name": "Rasterizer::DoDraw",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.221,
+            "ts": 434747049781,
+            "args": {
+              "frame_number": "1494"
+            }
+          },
+          {
+            "name": "Rasterizer::DrawToSurfaces",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 3.029,
+            "ts": 434747049788,
+            "args": {}
+          },
+          {
+            "name": "SurfaceFrame::Submit",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.649,
+            "ts": 434747051043,
+            "args": {}
+          },
+          {
+            "name": "CompositorContext::ScopedFrame::Raster",
+            "thread": "1.raster (465545309232)",
+            "tid": 465545309232,
+            "ms": 1.204,
+            "ts": 434747049831,
+            "args": {}
+          }
+        ]
+      }
+    ]
+  }
+}

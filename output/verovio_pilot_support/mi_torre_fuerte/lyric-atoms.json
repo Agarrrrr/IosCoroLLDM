@@ -1,0 +1,8974 @@
+{
+  "torre-0-0-0": [
+    {
+      "text": "Le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-1-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-2-0": [
+    {
+      "text": "tem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-3-0": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-4-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-5-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-6-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-7-0": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-8-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-9-0": [
+    {
+      "text": "cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-10-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-11-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-12-0": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-13-0": [
+    {
+      "text": "no",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-14-0": [
+    {
+      "text": "cí,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-15-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-16-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-17-0": [
+    {
+      "text": "mi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-18-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-19-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-20-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-21-0": [
+    {
+      "text": "rio",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-22-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-23-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-24-0": [
+    {
+      "text": "si",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-25-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-26-0": [
+    {
+      "text": "tan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-27-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-28-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-29-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-30-0": [
+    {
+      "text": "he",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-31-0": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-32-0": [
+    {
+      "text": "mí;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-33-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-34-0": [
+    {
+      "text": "dio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-35-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-36-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-37-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-38-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-39-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-40-0": [
+    {
+      "text": "pe",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-41-0": [
+    {
+      "text": "ran",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-42-0": [
+    {
+      "text": "za,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-43-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-44-0": [
+    {
+      "text": "dio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-45-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-46-0": [
+    {
+      "text": "paz,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-47-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-48-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-49-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-50-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-51-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-52-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-53-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-54-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-55-0": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-56-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-57-0": [
+    {
+      "text": "dio.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-58-0": [
+    {
+      "text": "Cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-59-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-60-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-61-0": [
+    {
+      "text": "tris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-62-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-63-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-64-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-65-0": [
+    {
+      "text": "con",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-66-0": [
+    {
+      "text": "tra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-67-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-68-0": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-69-0": [
+    {
+      "text": "gó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-70-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-71-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-74-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-75-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-76-0": [
+    {
+      "text": "sus",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-77-0": [
+    {
+      "text": "bra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-78-0": [
+    {
+      "text": "zos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-79-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-80-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-81-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-82-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-83-0": [
+    {
+      "text": "mó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-86-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-87-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-89-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-91-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-93-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-95-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-97-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-99-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-101-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-102-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-103-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-104-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-105-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-106-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-107-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-108-0": [
+    {
+      "text": "ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-109-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-110-0": [
+    {
+      "text": "te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-111-0": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-112-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-113-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-114-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-116-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-117-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-119-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-121-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-123-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-125-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-127-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-129-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-131-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-133-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-134-0": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-135-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-136-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-137-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-138-0": [
+    {
+      "text": "de,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-139-0": [
+    {
+      "text": "ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-140-0": [
+    {
+      "text": "prue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-141-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-142-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-143-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-144-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-145-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-146-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-147-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-148-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-149-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-150-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-151-0": [
+    {
+      "text": "Gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-152-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-153-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-154-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-155-0": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-156-0": [
+    {
+      "text": "der",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-157-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-158-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-159-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-160-0": [
+    {
+      "text": "quín;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-161-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-162-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-163-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-164-0": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-165-0": [
+    {
+      "text": "tra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-166-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-167-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-168-0": [
+    {
+      "text": "es.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-169-0": [
+    {
+      "text": "Hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-170-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-171-0": [
+    {
+      "text": "fe",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-172-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-173-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-174-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-175-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-176-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-177-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-178-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-179-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-180-0": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "torre-0-181-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-182-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-183-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-184-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-185-0": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-186-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-187-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-188-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-189-0": [
+    {
+      "text": "sen",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-190-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-191-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-192-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-193-0": [
+    {
+      "text": "ter",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-194-0": [
+    {
+      "text": "nu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-195-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-196-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-197-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-198-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-199-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-200-0": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-201-0": [
+    {
+      "text": "ñó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-202-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-203-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-204-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-205-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-206-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-207-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-208-0": [
+    {
+      "text": "tra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-209-0": [
+    {
+      "text": "ba",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-210-0": [
+    {
+      "text": "ja",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-211-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-212-0": [
+    {
+      "text": "sin",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-213-0": [
+    {
+      "text": "des",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-214-0": [
+    {
+      "text": "can",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-215-0": [
+    {
+      "text": "sar,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-216-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-217-0": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-218-0": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-219-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-220-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-221-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-222-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-223-0": [
+    {
+      "text": "tre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-224-0": [
+    {
+      "text": "gó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-225-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-226-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-227-0": [
+    {
+      "text": "mor.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-228-0": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-229-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-230-0": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-231-0": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-232-0": [
+    {
+      "text": "cia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-233-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-234-0": [
+    {
+      "text": "das",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-235-0": [
+    {
+      "text": "las",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-236-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-237-0": [
+    {
+      "text": "rras",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-238-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-239-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-240-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-241-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-244-0": [
+    {
+      "text": "pues",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-245-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-246-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-247-0": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-248-0": [
+    {
+      "text": "ma",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-249-0": [
+    {
+      "text": "mo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-250-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-251-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-252-0": [
+    {
+      "text": "Dios;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-255-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-256-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-258-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-260-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-262-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-264-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-266-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-268-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-270-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-271-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-272-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-273-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-274-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-275-0": [
+    {
+      "text": "mí",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-276-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-277-0": [
+    {
+      "text": "ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-278-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-279-0": [
+    {
+      "text": "te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-280-0": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-281-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-282-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-283-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-285-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-286-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-288-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-290-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-292-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-294-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-296-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-298-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-300-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-302-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-0-303-0": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-304-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-305-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-306-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-307-0": [
+    {
+      "text": "de,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-308-0": [
+    {
+      "text": "ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-309-0": [
+    {
+      "text": "pru",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-310-0": [
+    {
+      "text": "eba,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-311-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-312-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-313-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-314-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-315-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-316-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-317-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-318-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-319-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-320-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-321-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-322-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-323-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-324-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-325-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-326-0": [
+    {
+      "text": "gó",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-327-0": [
+    {
+      "text": "za",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-328-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-329-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-330-0": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-331-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-332-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-333-0": [
+    {
+      "text": "re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-334-0": [
+    {
+      "text": "ju",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-335-0": [
+    {
+      "text": "ve",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-336-0": [
+    {
+      "text": "ne",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-337-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-338-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-339-0": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-340-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-341-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-342-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-344-0": [
+    {
+      "text": "to,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-345-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-346-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-347-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-348-0": [
+    {
+      "text": "tiem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-349-0": [
+    {
+      "text": "po",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "torre-0-350-0": [
+    {
+      "text": "cep",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-351-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-353-0": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-354-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-355-0": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-356-0": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-357-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-358-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-359-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-360-0": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-361-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-362-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-363-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-365-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-366-0": [
+    {
+      "text": "rre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-367-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-368-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-369-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-370-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-371-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-372-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-373-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-374-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-375-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-0-376-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-377-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-0-378-0": [
+    {
+      "text": "Na",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-0-379-0": [
+    {
+      "text": "a",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-0-380-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-0-0": [
+    {
+      "text": "Le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-1-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-2-0": [
+    {
+      "text": "tem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-3-0": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-4-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-5-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-6-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-7-0": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-8-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-9-0": [
+    {
+      "text": "cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-10-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-11-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-12-0": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-13-0": [
+    {
+      "text": "no",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-14-0": [
+    {
+      "text": "cí,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-15-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-16-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-17-0": [
+    {
+      "text": "mi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-18-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-19-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-20-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-21-0": [
+    {
+      "text": "rio",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-22-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-23-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-24-0": [
+    {
+      "text": "si",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-25-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-26-0": [
+    {
+      "text": "tan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-27-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-28-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-29-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-30-0": [
+    {
+      "text": "he",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-31-0": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-32-0": [
+    {
+      "text": "mí;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-33-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-34-0": [
+    {
+      "text": "dio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-35-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-36-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-37-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-38-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-39-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-40-0": [
+    {
+      "text": "pe",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-41-0": [
+    {
+      "text": "ran",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-42-0": [
+    {
+      "text": "za,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-43-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-44-0": [
+    {
+      "text": "dio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-45-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-46-0": [
+    {
+      "text": "paz,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-47-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-48-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-49-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-50-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-51-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-52-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-53-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-54-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-55-0": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-56-0": [
+    {
+      "text": "Cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-57-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-58-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-59-0": [
+    {
+      "text": "tris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-60-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-61-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-62-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-63-0": [
+    {
+      "text": "con",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-64-0": [
+    {
+      "text": "tra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-65-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-66-0": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-67-0": [
+    {
+      "text": "gó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-68-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-69-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-72-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-73-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-74-0": [
+    {
+      "text": "sus",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-75-0": [
+    {
+      "text": "bra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-76-0": [
+    {
+      "text": "zos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-77-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-78-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-79-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-80-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-81-0": [
+    {
+      "text": "mó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-84-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-85-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-86-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-88-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-89-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-90-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-92-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-93-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-94-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-95-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-96-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-97-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-98-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-99-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-100-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-101-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-102-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-103-0": [
+    {
+      "text": "mí",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-104-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-106-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-107-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-108-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-109-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-110-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-111-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-112-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-113-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-114-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-115-0": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-116-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-117-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-118-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-119-0": [
+    {
+      "text": "de,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-120-0": [
+    {
+      "text": "ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-121-0": [
+    {
+      "text": "prue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-122-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-123-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-124-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-125-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-126-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-127-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-128-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-129-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-130-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-131-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-132-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-133-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-134-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-135-0": [
+    {
+      "text": "Gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-136-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-137-0": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-138-0": [
+    {
+      "text": "der,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-139-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-140-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-141-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-142-0": [
+    {
+      "text": "quín;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-143-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-144-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-145-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-146-0": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-147-0": [
+    {
+      "text": "tra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-148-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-149-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-150-0": [
+    {
+      "text": "es.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-151-0": [
+    {
+      "text": "Uh,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-153-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-154-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-155-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-156-0": [
+    {
+      "text": "de,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-157-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-158-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-159-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-160-0": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-161-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-162-0": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-163-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-164-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-165-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-166-0": [
+    {
+      "text": "sen",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-167-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-168-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-169-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-170-0": [
+    {
+      "text": "ter",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-171-0": [
+    {
+      "text": "nu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-172-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-173-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-174-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-175-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-176-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-177-0": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-178-0": [
+    {
+      "text": "ñó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-179-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-180-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-181-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-182-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-183-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-184-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-185-0": [
+    {
+      "text": "tra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-186-0": [
+    {
+      "text": "ba",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-187-0": [
+    {
+      "text": "ja",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-188-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-189-0": [
+    {
+      "text": "sin",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-190-0": [
+    {
+      "text": "des",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-191-0": [
+    {
+      "text": "can",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-192-0": [
+    {
+      "text": "sar,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-193-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-194-0": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-195-0": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-196-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-197-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-198-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-199-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-200-0": [
+    {
+      "text": "tre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-201-0": [
+    {
+      "text": "gó.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-202-0": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-203-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-204-0": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-205-0": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-206-0": [
+    {
+      "text": "cia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-207-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-208-0": [
+    {
+      "text": "das",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-209-0": [
+    {
+      "text": "las",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-210-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-211-0": [
+    {
+      "text": "rras",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-212-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-213-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-214-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-215-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-218-0": [
+    {
+      "text": "pues",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-219-0": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-220-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-221-0": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-222-0": [
+    {
+      "text": "ma",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-223-0": [
+    {
+      "text": "mo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-224-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-225-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-226-0": [
+    {
+      "text": "Dios;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-229-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-230-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-231-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-233-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-234-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-235-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-237-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-238-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-239-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-240-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-241-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-242-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-243-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-244-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-245-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-246-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-247-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-248-0": [
+    {
+      "text": "mí",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-249-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-251-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-252-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-253-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-254-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-255-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-256-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-257-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-258-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-259-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-1-260-0": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-261-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-262-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-263-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-264-0": [
+    {
+      "text": "de,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-265-0": [
+    {
+      "text": "ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-266-0": [
+    {
+      "text": "pru",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-267-0": [
+    {
+      "text": "eba,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-268-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-269-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-270-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-271-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-272-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-273-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-274-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-275-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-276-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-277-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-278-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-279-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-280-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-281-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-282-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-283-0": [
+    {
+      "text": "gó",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-284-0": [
+    {
+      "text": "za",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-285-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-286-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-287-0": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-288-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-289-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-290-0": [
+    {
+      "text": "re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-291-0": [
+    {
+      "text": "ju",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-292-0": [
+    {
+      "text": "ve",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-293-0": [
+    {
+      "text": "ne",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-294-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-295-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-296-0": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-297-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-298-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-299-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-300-0": [
+    {
+      "text": "to,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-301-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-302-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-303-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-304-0": [
+    {
+      "text": "tiem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-305-0": [
+    {
+      "text": "po",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "torre-1-306-0": [
+    {
+      "text": "cep",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-307-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-309-0": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-310-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-311-0": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-312-0": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-313-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-314-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-315-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-316-0": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-317-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-318-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-319-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-320-0": [
+    {
+      "text": "por",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-321-0": [
+    {
+      "text": "que",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-322-0": [
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-323-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-324-0": [
+    {
+      "text": "rre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-325-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-326-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-327-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-328-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-329-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-1-330-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-331-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-332-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-333-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-1-334-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-335-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-1-336-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-1-337-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-0-0": [
+    {
+      "text": "Le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-1-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-2-0": [
+    {
+      "text": "tem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-3-0": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-4-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-5-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-6-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-7-0": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-8-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-9-0": [
+    {
+      "text": "cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-10-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-11-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-12-0": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-13-0": [
+    {
+      "text": "no",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-14-0": [
+    {
+      "text": "cí,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-15-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-16-0": [
+    {
+      "text": "mi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-17-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-18-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-19-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-20-0": [
+    {
+      "text": "rio",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-21-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-22-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-23-0": [
+    {
+      "text": "tan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-24-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-25-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-26-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-2-27-0": [
+    {
+      "text": "he",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-28-0": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-2-29-0": [
+    {
+      "text": "mí;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-30-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-31-0": [
+    {
+      "text": "dio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-32-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-33-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-34-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-35-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-36-0": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-37-0": [
+    {
+      "text": "pe",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-38-0": [
+    {
+      "text": "ran",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-39-0": [
+    {
+      "text": "za,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-40-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-41-0": [
+    {
+      "text": "dio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-42-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-43-0": [
+    {
+      "text": "paz,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-46-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-47-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-48-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-49-0": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-50-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-51-0": [
+    {
+      "text": "dio.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-52-0": [
+    {
+      "text": "Cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-53-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-54-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-55-0": [
+    {
+      "text": "tris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-56-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-57-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-58-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-59-0": [
+    {
+      "text": "con",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-60-0": [
+    {
+      "text": "tra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-61-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-62-0": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-63-0": [
+    {
+      "text": "gó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-64-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-65-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-68-0": [
+    {
+      "text": "bra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-69-0": [
+    {
+      "text": "zos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-70-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-71-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-72-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-73-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-74-0": [
+    {
+      "text": "mó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-75-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-76-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-77-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-78-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-79-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-80-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-81-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-82-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-83-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-84-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-85-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-2-86-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-87-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-2-88-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-89-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-91-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-92-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-93-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-94-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-95-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-96-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-97-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-98-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-99-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-100-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-101-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-102-0": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-103-0": [
+    {
+      "text": "cha,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-104-0": [
+    {
+      "text": "prue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-105-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-106-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-107-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-108-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-109-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-110-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-111-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-112-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-113-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-114-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-115-0": [
+    {
+      "text": "Gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-116-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-118-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-119-0": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-120-0": [
+    {
+      "text": "der",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-121-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-122-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-123-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-124-0": [
+    {
+      "text": "quín;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-125-0": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-126-0": [
+    {
+      "text": "tra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-127-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-128-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-129-0": [
+    {
+      "text": "es.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-130-0": [
+    {
+      "text": "Uh,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-132-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-133-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-134-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-135-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-136-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-137-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-138-0": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-139-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-2-140-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-141-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-142-0": [
+    {
+      "text": "sen",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-143-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-144-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-145-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-146-0": [
+    {
+      "text": "ter",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-147-0": [
+    {
+      "text": "nu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-148-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-149-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-150-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-151-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-152-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-153-0": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-154-0": [
+    {
+      "text": "ñó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-155-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-156-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-157-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-158-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-159-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-160-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-161-0": [
+    {
+      "text": "tra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-162-0": [
+    {
+      "text": "ba",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-163-0": [
+    {
+      "text": "ja",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-164-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-165-0": [
+    {
+      "text": "sin",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-166-0": [
+    {
+      "text": "des",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-167-0": [
+    {
+      "text": "can",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-168-0": [
+    {
+      "text": "sar,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-169-0": [
+    {
+      "text": "sin",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-170-0": [
+    {
+      "text": "des",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-171-0": [
+    {
+      "text": "can",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-172-0": [
+    {
+      "text": "sar,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-173-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-174-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-175-0": [
+    {
+      "text": "tre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-176-0": [
+    {
+      "text": "gó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-177-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-178-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-179-0": [
+    {
+      "text": "mor.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-180-0": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-181-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-182-0": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-183-0": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-184-0": [
+    {
+      "text": "cia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-185-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-186-0": [
+    {
+      "text": "das",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-187-0": [
+    {
+      "text": "las",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-188-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-189-0": [
+    {
+      "text": "rras",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-190-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-191-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-192-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-193-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-196-0": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-197-0": [
+    {
+      "text": "ma",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-198-0": [
+    {
+      "text": "mo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-199-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-200-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-201-0": [
+    {
+      "text": "Dios;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-202-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-203-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-204-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-205-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-206-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-207-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-208-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-209-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-210-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-211-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-212-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-2-213-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-214-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-2-215-0": [
+    {
+      "text": "mí",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-216-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-218-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-219-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-220-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-221-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-222-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-223-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-224-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-225-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-226-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-227-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-228-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-229-0": [
+    {
+      "text": "Lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-230-0": [
+    {
+      "text": "cha,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-231-0": [
+    {
+      "text": "prue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-232-0": [
+    {
+      "text": "ba,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-233-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-234-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-235-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-236-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-237-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-238-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-239-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-240-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-241-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-242-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-243-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-244-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-245-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-246-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-247-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-248-0": [
+    {
+      "text": "gó",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-249-0": [
+    {
+      "text": "za",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-250-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-251-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-252-0": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-253-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-254-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-255-0": [
+    {
+      "text": "re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-256-0": [
+    {
+      "text": "ju",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-257-0": [
+    {
+      "text": "ve",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-258-0": [
+    {
+      "text": "ne",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-259-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-260-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-261-0": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-262-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-263-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-264-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-265-0": [
+    {
+      "text": "to,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-266-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-267-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-268-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-269-0": [
+    {
+      "text": "tiem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-270-0": [
+    {
+      "text": "po",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "torre-2-271-0": [
+    {
+      "text": "cep",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-272-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-274-0": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-275-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-276-0": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-277-0": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-278-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-279-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-280-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-281-0": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-282-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-283-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-284-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-285-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-286-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-287-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-288-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-289-0": [
+    {
+      "text": "rre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-290-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-291-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-292-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-293-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-294-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-2-295-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-296-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-297-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-298-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-2-299-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-300-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-2-301-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-2-302-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-0-0": [
+    {
+      "text": "Le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-1-0": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-2-0": [
+    {
+      "text": "tem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-3-0": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-4-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-5-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-6-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-7-0": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-8-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-9-0": [
+    {
+      "text": "cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-10-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-11-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-12-0": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-13-0": [
+    {
+      "text": "no",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-14-0": [
+    {
+      "text": "cí,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-15-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-16-0": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-17-0": [
+    {
+      "text": "mi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-18-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-19-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-20-0": [
+    {
+      "text": "glo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-21-0": [
+    {
+      "text": "rio",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-22-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-23-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-24-0": [
+    {
+      "text": "si",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-25-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-26-0": [
+    {
+      "text": "tan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-27-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-28-0": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-29-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-30-0": [
+    {
+      "text": "he",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-31-0": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-32-0": [
+    {
+      "text": "mí;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-33-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-34-0": [
+    {
+      "text": "dio",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-35-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-46-0": [
+    {
+      "text": "paz,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-47-0": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-48-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-49-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-50-0": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-51-0": [
+    {
+      "text": "Cuan",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-52-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-53-0": [
+    {
+      "text": "más",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-54-0": [
+    {
+      "text": "tris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-55-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-56-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-57-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-58-0": [
+    {
+      "text": "con",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-59-0": [
+    {
+      "text": "tra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-60-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-61-0": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-62-0": [
+    {
+      "text": "gó",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-63-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-64-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-67-0": [
+    {
+      "text": "bra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-68-0": [
+    {
+      "text": "zos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-69-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-70-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-71-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-72-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-73-0": [
+    {
+      "text": "mó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-74-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-75-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-76-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-77-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-78-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-79-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-80-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-81-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-82-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-83-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-84-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-85-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-86-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-87-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-88-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-89-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-90-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-91-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-92-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-93-0": [
+    {
+      "text": "ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-94-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-95-0": [
+    {
+      "text": "te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-96-0": [
+    {
+      "text": "mor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-97-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-98-0": [
+    {
+      "text": "res,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-99-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-100-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-101-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-102-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-103-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-104-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-105-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-106-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-107-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-108-0": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-109-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-110-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-111-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-112-0": [
+    {
+      "text": "de,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-113-0": [
+    {
+      "text": "ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-114-0": [
+    {
+      "text": "prue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-115-0": [
+    {
+      "text": "ba",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-116-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-117-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-118-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-119-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-120-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-121-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-122-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-123-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-124-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-125-0": [
+    {
+      "text": "Gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-126-0": [
+    {
+      "text": "de",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-127-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-128-0": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-129-0": [
+    {
+      "text": "der",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-130-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-131-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-132-0": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-133-0": [
+    {
+      "text": "quín;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-134-0": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-135-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-136-0": [
+    {
+      "text": "da,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-137-0": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-138-0": [
+    {
+      "text": "tra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-139-0": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-140-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-141-0": [
+    {
+      "text": "es.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-142-0": [
+    {
+      "text": "Uh,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-144-0": [
+    {
+      "text": "Uh,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-147-0": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-148-0": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-149-0": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-150-0": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-151-0": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-152-0": [
+    {
+      "text": "no",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-153-0": [
+    {
+      "text": "u",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-154-0": [
+    {
+      "text": "na",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-155-0": [
+    {
+      "text": "sen",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-156-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-157-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-158-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-159-0": [
+    {
+      "text": "ter",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-160-0": [
+    {
+      "text": "nu",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-161-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-162-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-163-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-164-0": [
+    {
+      "text": "me",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-165-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-166-0": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-167-0": [
+    {
+      "text": "ñó;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-168-0": [
+    {
+      "text": "ben",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-169-0": [
+    {
+      "text": "di",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-170-0": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-171-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-172-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-173-0": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-174-0": [
+    {
+      "text": "tra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-175-0": [
+    {
+      "text": "ba",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-176-0": [
+    {
+      "text": "ja",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-177-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-178-0": [
+    {
+      "text": "sin",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-179-0": [
+    {
+      "text": "des",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-180-0": [
+    {
+      "text": "can",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-181-0": [
+    {
+      "text": "sar,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-182-0": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-183-0": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-184-0": [
+    {
+      "text": "tre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-185-0": [
+    {
+      "text": "gó.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-186-0": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-187-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-188-0": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-189-0": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-190-0": [
+    {
+      "text": "cia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-191-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-192-0": [
+    {
+      "text": "das",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-193-0": [
+    {
+      "text": "las",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-194-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-195-0": [
+    {
+      "text": "rras",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-196-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-197-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-198-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-199-0": [
+    {
+      "text": "ted,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-202-0": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-204-0": [
+    {
+      "text": "ma",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-205-0": [
+    {
+      "text": "mo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-206-0": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-207-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-208-0": [
+    {
+      "text": "Dios;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-209-0": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-210-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-211-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-212-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-213-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-214-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-215-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-216-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-217-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-218-0": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-219-0": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-220-0": [
+    {
+      "text": "so,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-221-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-222-0": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-223-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-224-0": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-225-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-226-0": [
+    {
+      "text": "mí",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-227-0": [
+    {
+      "text": "ser,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-228-0": [
+    {
+      "text": "ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-229-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-230-0": [
+    {
+      "text": "te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-231-0": [
+    {
+      "text": "mor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-232-0": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-233-0": [
+    {
+      "text": "res,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-234-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-235-0": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-236-0": [
+    {
+      "text": "rre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-237-0": [
+    {
+      "text": "fuer",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-238-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-239-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-240-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-241-0": [
+    {
+      "text": "ted;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-242-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "torre-3-243-0": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-244-0": [
+    {
+      "text": "cha",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-245-0": [
+    {
+      "text": "tan",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-246-0": [
+    {
+      "text": "gran",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-247-0": [
+    {
+      "text": "de,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-248-0": [
+    {
+      "text": "ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-249-0": [
+    {
+      "text": "pru",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-250-0": [
+    {
+      "text": "eba,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-251-0": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-252-0": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-253-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-254-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-255-0": [
+    {
+      "text": "no",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-256-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-257-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-258-0": [
+    {
+      "text": "ven",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-259-0": [
+    {
+      "text": "cer.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-260-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-261-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-262-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-263-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-264-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-265-0": [
+    {
+      "text": "oh",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-266-0": [
+    {
+      "text": "gó",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-267-0": [
+    {
+      "text": "za",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-268-0": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-269-0": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-270-0": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-271-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-272-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-273-0": [
+    {
+      "text": "re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-274-0": [
+    {
+      "text": "ju",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-275-0": [
+    {
+      "text": "ve",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-276-0": [
+    {
+      "text": "ne",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-277-0": [
+    {
+      "text": "ce",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-278-0": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-279-0": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-280-0": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-281-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-282-0": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-283-0": [
+    {
+      "text": "to,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-284-0": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-285-0": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-286-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-287-0": [
+    {
+      "text": "tiem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-288-0": [
+    {
+      "text": "po",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "torre-3-289-0": [
+    {
+      "text": "cep",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-290-0": [
+    {
+      "text": "ta",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-292-0": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-293-0": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-294-0": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-295-0": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-296-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-297-0": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-298-0": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-299-0": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-300-0": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-301-0": [
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-302-0": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-303-0": [
+    {
+      "text": "gue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-304-0": [
+    {
+      "text": "rre",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-305-0": [
+    {
+      "text": "ro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-306-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-307-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-308-0": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-309-0": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "torre-3-310-0": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-311-0": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-312-0": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-313-0": [
+    {
+      "text": "mi",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "torre-3-314-0": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-315-0": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "torre-3-316-0": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "torre-3-317-0": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ]
+}

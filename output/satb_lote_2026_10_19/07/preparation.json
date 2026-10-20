@@ -1,0 +1,867 @@
+{
+  "record": {
+    "index": 7,
+    "title": "glory_unto_jesus_christ",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\glory_unto_jesus_christ.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\glory_unto_jesus_christ.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\glory_unto_jesus_christ.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Tenor",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Bajo",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        171,
+        171,
+        171,
+        171
+      ],
+      "notes": 2229,
+      "lyrics": 2099,
+      "dynamics": {
+        "mf": 16,
+        "p": 18,
+        "f": 24,
+        "ff": 13
+      },
+      "voices": {
+        "1": 684
+      }
+    },
+    "catalog": {
+      "id": "be6a34b1-f8b2-590f-834e-d5a9e2cd9049",
+      "nombre": "Glory Unto Jesus Christ",
+      "archivo": "global/assets/pdf/a815a9d86455585292befb9088cf0bbc54f6ad1ba432dd3e57bcce991c464a69.enc",
+      "temas": [],
+      "es_privado": false,
+      "midi_archivo": "global/assets/midi/32f6ce9093623453f444e9fba9e464a67a5217a5252a605c92ed137229d66d7b.enc",
+      "coro_id": "local",
+      "vinculo_idioma": null,
+      "_idioma": "en",
+      "idioma": "en",
+      "external_id": "usmc_a5b1174b142ac7e3da",
+      "version": 4
+    },
+    "pdfReview": {
+      "pages": 14,
+      "dynamics": [
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QWEAAA+OpusTextStd"
+        }
+      ]
+    },
+    "finalName": "glory_unto_jesus_christ - SATB - Cantai",
+    "sourceMeasures": 171,
+    "expandedMeasures": 171,
+    "parts": 4,
+    "sourceNotes": 2229,
+    "finalNotes": 2229,
+    "split": false,
+    "filledLyrics": 0
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      28,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      33,
+      1
+    ],
+    [
+      34,
+      1
+    ],
+    [
+      35,
+      1
+    ],
+    [
+      36,
+      1
+    ],
+    [
+      37,
+      1
+    ],
+    [
+      38,
+      1
+    ],
+    [
+      39,
+      1
+    ],
+    [
+      40,
+      1
+    ],
+    [
+      41,
+      1
+    ],
+    [
+      42,
+      1
+    ],
+    [
+      43,
+      1
+    ],
+    [
+      44,
+      1
+    ],
+    [
+      45,
+      1
+    ],
+    [
+      46,
+      1
+    ],
+    [
+      47,
+      1
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      49,
+      1
+    ],
+    [
+      50,
+      1
+    ],
+    [
+      51,
+      1
+    ],
+    [
+      52,
+      1
+    ],
+    [
+      53,
+      1
+    ],
+    [
+      54,
+      1
+    ],
+    [
+      55,
+      1
+    ],
+    [
+      56,
+      1
+    ],
+    [
+      57,
+      1
+    ],
+    [
+      58,
+      1
+    ],
+    [
+      59,
+      1
+    ],
+    [
+      60,
+      1
+    ],
+    [
+      61,
+      1
+    ],
+    [
+      62,
+      1
+    ],
+    [
+      63,
+      1
+    ],
+    [
+      64,
+      1
+    ],
+    [
+      65,
+      1
+    ],
+    [
+      66,
+      1
+    ],
+    [
+      67,
+      1
+    ],
+    [
+      68,
+      1
+    ],
+    [
+      69,
+      1
+    ],
+    [
+      70,
+      1
+    ],
+    [
+      71,
+      1
+    ],
+    [
+      72,
+      1
+    ],
+    [
+      73,
+      1
+    ],
+    [
+      74,
+      1
+    ],
+    [
+      75,
+      1
+    ],
+    [
+      76,
+      1
+    ],
+    [
+      77,
+      1
+    ],
+    [
+      78,
+      1
+    ],
+    [
+      79,
+      1
+    ],
+    [
+      80,
+      1
+    ],
+    [
+      81,
+      1
+    ],
+    [
+      82,
+      1
+    ],
+    [
+      83,
+      1
+    ],
+    [
+      84,
+      1
+    ],
+    [
+      85,
+      1
+    ],
+    [
+      86,
+      1
+    ],
+    [
+      87,
+      1
+    ],
+    [
+      88,
+      1
+    ],
+    [
+      89,
+      1
+    ],
+    [
+      90,
+      1
+    ],
+    [
+      91,
+      1
+    ],
+    [
+      92,
+      1
+    ],
+    [
+      93,
+      1
+    ],
+    [
+      94,
+      1
+    ],
+    [
+      95,
+      1
+    ],
+    [
+      96,
+      1
+    ],
+    [
+      97,
+      1
+    ],
+    [
+      98,
+      1
+    ],
+    [
+      99,
+      1
+    ],
+    [
+      100,
+      1
+    ],
+    [
+      101,
+      1
+    ],
+    [
+      102,
+      1
+    ],
+    [
+      103,
+      1
+    ],
+    [
+      104,
+      1
+    ],
+    [
+      105,
+      1
+    ],
+    [
+      106,
+      1
+    ],
+    [
+      107,
+      1
+    ],
+    [
+      108,
+      1
+    ],
+    [
+      109,
+      1
+    ],
+    [
+      110,
+      1
+    ],
+    [
+      111,
+      1
+    ],
+    [
+      112,
+      1
+    ],
+    [
+      113,
+      1
+    ],
+    [
+      114,
+      1
+    ],
+    [
+      115,
+      1
+    ],
+    [
+      116,
+      1
+    ],
+    [
+      117,
+      1
+    ],
+    [
+      118,
+      1
+    ],
+    [
+      119,
+      1
+    ],
+    [
+      120,
+      1
+    ],
+    [
+      121,
+      1
+    ],
+    [
+      122,
+      1
+    ],
+    [
+      123,
+      1
+    ],
+    [
+      124,
+      1
+    ],
+    [
+      125,
+      1
+    ],
+    [
+      126,
+      1
+    ],
+    [
+      127,
+      1
+    ],
+    [
+      128,
+      1
+    ],
+    [
+      129,
+      1
+    ],
+    [
+      130,
+      1
+    ],
+    [
+      131,
+      1
+    ],
+    [
+      132,
+      1
+    ],
+    [
+      133,
+      1
+    ],
+    [
+      134,
+      1
+    ],
+    [
+      135,
+      1
+    ],
+    [
+      136,
+      1
+    ],
+    [
+      137,
+      1
+    ],
+    [
+      138,
+      1
+    ],
+    [
+      139,
+      1
+    ],
+    [
+      140,
+      1
+    ],
+    [
+      141,
+      1
+    ],
+    [
+      142,
+      1
+    ],
+    [
+      143,
+      1
+    ],
+    [
+      144,
+      1
+    ],
+    [
+      145,
+      1
+    ],
+    [
+      146,
+      1
+    ],
+    [
+      147,
+      1
+    ],
+    [
+      148,
+      1
+    ],
+    [
+      149,
+      1
+    ],
+    [
+      150,
+      1
+    ],
+    [
+      151,
+      1
+    ],
+    [
+      152,
+      1
+    ],
+    [
+      153,
+      1
+    ],
+    [
+      154,
+      1
+    ],
+    [
+      155,
+      1
+    ],
+    [
+      156,
+      1
+    ],
+    [
+      157,
+      1
+    ],
+    [
+      158,
+      1
+    ],
+    [
+      159,
+      1
+    ],
+    [
+      160,
+      1
+    ],
+    [
+      161,
+      1
+    ],
+    [
+      162,
+      1
+    ],
+    [
+      163,
+      1
+    ],
+    [
+      164,
+      1
+    ],
+    [
+      165,
+      1
+    ],
+    [
+      166,
+      1
+    ],
+    [
+      167,
+      1
+    ],
+    [
+      168,
+      1
+    ],
+    [
+      169,
+      1
+    ],
+    [
+      170,
+      1
+    ]
+  ],
+  "editorialLyricFills": []
+}

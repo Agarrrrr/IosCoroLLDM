@@ -25,6 +25,7 @@ import 'package:coro_lldm/core/midi/midi_engine.dart';
 import 'package:coro_lldm/core/midi/midi_export_service.dart';
 import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
 import 'package:coro_lldm/core/providers/vocal_audio_provider.dart';
+import 'package:coro_lldm/core/providers/jukebox_provider.dart';
 import 'widgets/vocal_panel.dart';
 import 'widgets/singing_icon.dart';
 import 'package:coro_lldm/core/storage/android_file_saver.dart';
@@ -472,6 +473,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           .consumeAudioAccess(canto.id);
       if (!mounted) return;
       if (allowed) {
+        unawaited(ref.read(jukeboxProvider.notifier).stop());
         _midi.play();
         if (!_quotaToastShown && !ref.read(monetizationProvider).isPremium) {
           _quotaToastShown = true;
@@ -483,13 +485,36 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         }
         return;
       }
-      await _showAudioLimitDialog(canto);
+      final unlocked = await _showAudioLimitDialog(canto);
+      if (unlocked && mounted) {
+        unawaited(ref.read(jukeboxProvider.notifier).stop());
+        _midi.play();
+      }
     } finally {
       _audioAccessPending = false;
     }
   }
 
-  Future<void> _showAudioLimitDialog(Canto canto) async {
+  Future<bool> _requestVocalPlayAccess(Canto canto) async {
+    final allowed = await ref
+        .read(monetizationProvider.notifier)
+        .consumeAudioAccess(canto.id);
+    if (!mounted) return false;
+    if (allowed) {
+      if (!_quotaToastShown && !ref.read(monetizationProvider).isPremium) {
+        _quotaToastShown = true;
+        final remaining = currentUsageQuota().newSongsRemaining;
+        AppNotificationBanner.show(
+            context,
+            AppStrings.of(context).t('$remaining cantos disponibles hoy',
+                '$remaining songs available today'));
+      }
+      return true;
+    }
+    return _showAudioLimitDialog(canto);
+  }
+
+  Future<bool> _showAudioLimitDialog(Canto canto) async {
     final strings = AppStrings.of(context);
     final accentColor = Theme.of(context).colorScheme.primary;
     final result = await showRewardOrPremiumDialog(
@@ -498,7 +523,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       accentColor: accentColor,
     );
     if (!mounted || result == null || result == RewardPromptResult.dismiss) {
-      return;
+      return false;
     }
     if (result == RewardPromptResult.premium) {
       final allowed = await confirmAccessAfterPrompt(
@@ -506,12 +531,11 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
         isCurrent: () => mounted && widget.cantoId == canto.id,
         checkAccess: () async => ref.read(monetizationProvider).isPremium,
       );
-      if (allowed) _midi.play();
-      return;
+      return allowed;
     }
     // RewardPromptResult.rewarded
     final earned = await AdsService.instance.showRewarded();
-    if (!mounted) return;
+    if (!mounted) return false;
     if (!earned) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -523,12 +547,24 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
           ),
         ),
       );
-      return;
+      return false;
     }
     final controller = ref.read(monetizationProvider.notifier);
     await controller.grantRewardedAudio();
     final allowed = await controller.consumeAudioAccess(canto.id);
-    if (mounted && allowed && widget.cantoId == canto.id) _midi.play();
+    return mounted && allowed && widget.cantoId == canto.id;
+  }
+
+  void _closeScore() {
+    if (!_pdfAdRegistered) {
+      _pdfAdRegistered = true;
+      unawaited(AdsService.instance.onPdfOpened());
+    }
+    if (context.canPop()) {
+      context.pop();
+    } else {
+      context.go('/');
+    }
   }
 
   void _ajustarZoomAlAncho() {
@@ -1323,20 +1359,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       }
     }
 
-    final preferredLanguage = ref.read(languageFilterProvider);
-    final willRedirect = !widget.ignorePreferredLanguage &&
-        preferredLanguage != canto.idioma &&
-        canto.vinculoIdioma != null &&
-        canto.vinculoIdioma!.isNotEmpty;
-    if (!_pdfAdRegistered &&
-        canto.id == widget.cantoId &&
-        canto.id.isNotEmpty &&
-        !willRedirect) {
-      _pdfAdRegistered = true;
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        AdsService.instance.onPdfOpened();
-      });
-    }
+
 
     final orientation = MediaQuery.of(context).orientation;
     if (_lastOrientation != null && _lastOrientation != orientation) {
@@ -1370,11 +1393,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
       canPop: false,
       onPopInvokedWithResult: (didPop, result) {
         if (didPop) return;
-        if (context.canPop()) {
-          context.pop();
-        } else {
-          context.go('/');
-        }
+        _closeScore();
       },
       child: Scaffold(
         backgroundColor: PdfThemePalette.background(themeMode),
@@ -1405,13 +1424,7 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               icon: Icon(Icons.arrow_back_ios_new_rounded,
                                   size: 20,
                                   color: theme.colorScheme.onSurfaceVariant),
-                              onPressed: () {
-                                if (context.canPop()) {
-                                  context.pop();
-                                } else {
-                                  context.go('/');
-                                }
-                              },
+                              onPressed: _closeScore,
                             ),
                             Expanded(
                                 child: ScoreTitleButton(title: canto.nombre)),
@@ -1799,6 +1812,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               child: MidiPanel(
                                 onClose: () =>
                                     setState(() => _showMidi = false),
+                                onSwitchToVocal: _vocalSong != null
+                                    ? () => setState(() {
+                                          _showMidi = false;
+                                          _showVocal = true;
+                                        })
+                                    : null,
                                 cantoId: canto.id,
                                 errorMessage: _midiError,
                                 midiState: currentMidiState,
@@ -1843,6 +1862,19 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                               ? VocalPanel(
                                   onClose: () =>
                                       setState(() => _showVocal = false),
+                                  onSwitchToMidi: _hasMidi
+                                      ? () => setState(() {
+                                            _showVocal = false;
+                                            _showMidi = true;
+                                          })
+                                      : null,
+                                  onRequestPlayAccess: () =>
+                                      _requestVocalPlayAccess(canto),
+                                  onPlaybackStarted: () {
+                                    _midi.stop();
+                                    unawaited(
+                                        ref.read(jukeboxProvider.notifier).stop());
+                                  },
                                   song: _vocalSong!,
                                   initialVoice: ref.watch(userVoiceProvider),
                                   accentColor: accentColor,

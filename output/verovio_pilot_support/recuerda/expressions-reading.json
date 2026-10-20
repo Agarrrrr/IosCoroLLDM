@@ -1,0 +1,4036 @@
+{
+  "dynamics": [
+    {
+      "role": 0,
+      "measure": 1,
+      "onset": 0.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 1,
+      "onset": 0.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 1,
+      "onset": 0.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 1,
+      "onset": 0.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 4,
+      "onset": 2.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 4,
+      "onset": 2.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 5,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 5,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 4,
+      "onset": 2.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 4,
+      "onset": 2.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 5,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 5,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 7,
+      "onset": 1.75,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 7,
+      "onset": 1.75,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 9,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 9,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 7,
+      "onset": 1.75,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 7,
+      "onset": 1.75,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 9,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 9,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 11,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 11,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 13,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 13,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 11,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 11,
+      "onset": 3.5,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 13,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 13,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 15,
+      "onset": 3.5,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 1,
+      "measure": 15,
+      "onset": 3.5,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 0,
+      "measure": 17,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 1,
+      "measure": 17,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 2,
+      "measure": 15,
+      "onset": 3.5,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 3,
+      "measure": 15,
+      "onset": 3.5,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 2,
+      "measure": 17,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 3,
+      "measure": 17,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 0,
+      "measure": 29,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 3
+    },
+    {
+      "role": 0,
+      "measure": 31,
+      "onset": 0.0,
+      "value": "p",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 29,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 31,
+      "onset": 0.0,
+      "value": "p",
+      "page": 3
+    },
+    {
+      "role": 2,
+      "measure": 29,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 3
+    },
+    {
+      "role": 2,
+      "measure": 31,
+      "onset": 0.0,
+      "value": "p",
+      "page": 3
+    },
+    {
+      "role": 3,
+      "measure": 29,
+      "onset": 3.5,
+      "value": "mp",
+      "page": 3
+    },
+    {
+      "role": 3,
+      "measure": 31,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 3
+    },
+    {
+      "role": 0,
+      "measure": 35,
+      "onset": 2.0,
+      "value": "mp",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 35,
+      "onset": 0.0,
+      "value": "mp",
+      "page": 3
+    },
+    {
+      "role": 2,
+      "measure": 35,
+      "onset": 0.0,
+      "value": "p",
+      "page": 3
+    },
+    {
+      "role": 3,
+      "measure": 35,
+      "onset": 0.0,
+      "value": "p",
+      "page": 3
+    },
+    {
+      "role": 0,
+      "measure": 39,
+      "onset": 0.0,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 1,
+      "measure": 38,
+      "onset": 3.5,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 2,
+      "measure": 38,
+      "onset": 2.0,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 3,
+      "measure": 38,
+      "onset": 3.0,
+      "value": "f",
+      "page": 4
+    },
+    {
+      "role": 0,
+      "measure": 42,
+      "onset": 0.5,
+      "value": "ff",
+      "page": 4
+    },
+    {
+      "role": 1,
+      "measure": 42,
+      "onset": 0.5,
+      "value": "ff",
+      "page": 4
+    },
+    {
+      "role": 2,
+      "measure": 42,
+      "onset": 0.5,
+      "value": "ff",
+      "page": 4
+    },
+    {
+      "role": 3,
+      "measure": 42,
+      "onset": 0.5,
+      "value": "ff",
+      "page": 4
+    },
+    {
+      "role": 0,
+      "measure": 56,
+      "onset": 3.5,
+      "value": "fp",
+      "page": 5
+    },
+    {
+      "role": 1,
+      "measure": 56,
+      "onset": 3.5,
+      "value": "fp",
+      "page": 5
+    },
+    {
+      "role": 2,
+      "measure": 56,
+      "onset": 3.5,
+      "value": "fp",
+      "page": 5
+    },
+    {
+      "role": 3,
+      "measure": 56,
+      "onset": 3.5,
+      "value": "fp",
+      "page": 5
+    },
+    {
+      "role": 0,
+      "measure": 61,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    },
+    {
+      "role": 1,
+      "measure": 61,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    },
+    {
+      "role": 2,
+      "measure": 61,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    },
+    {
+      "role": 3,
+      "measure": 61,
+      "onset": 0.0,
+      "value": "f",
+      "page": 5
+    }
+  ],
+  "arcs": [
+    {
+      "start": "recuerda-1-5-0",
+      "end": "recuerda-1-5-1",
+      "role": 1,
+      "measure": 2,
+      "onset": 1.75,
+      "toMeasure": 2,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-5-0",
+      "end": "recuerda-0-5-1",
+      "role": 0,
+      "measure": 2,
+      "onset": 1.75,
+      "toMeasure": 2,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-1-12-0",
+      "end": "recuerda-1-12-1",
+      "role": 1,
+      "measure": 3,
+      "onset": 1.75,
+      "toMeasure": 3,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-12-0",
+      "end": "recuerda-0-12-1",
+      "role": 0,
+      "measure": 3,
+      "onset": 1.75,
+      "toMeasure": 3,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-3-5-0",
+      "end": "recuerda-3-5-1",
+      "role": 3,
+      "measure": 2,
+      "onset": 1.75,
+      "toMeasure": 2,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-2-5-0",
+      "end": "recuerda-2-5-1",
+      "role": 2,
+      "measure": 2,
+      "onset": 1.75,
+      "toMeasure": 2,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-3-12-0",
+      "end": "recuerda-3-12-1",
+      "role": 3,
+      "measure": 3,
+      "onset": 1.75,
+      "toMeasure": 3,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-2-12-0",
+      "end": "recuerda-2-12-1",
+      "role": 2,
+      "measure": 3,
+      "onset": 1.75,
+      "toMeasure": 3,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-1-17-0",
+      "end": "recuerda-1-17-1",
+      "role": 1,
+      "measure": 4,
+      "onset": 0.75,
+      "toMeasure": 4,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-17-0",
+      "end": "recuerda-0-17-1",
+      "role": 0,
+      "measure": 4,
+      "onset": 0.75,
+      "toMeasure": 4,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-0-23-0",
+      "end": "recuerda-0-23-1",
+      "role": 0,
+      "measure": 4,
+      "onset": 3.75,
+      "toMeasure": 5,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 11.811361898000001
+    },
+    {
+      "start": "recuerda-3-17-0",
+      "end": "recuerda-3-17-1",
+      "role": 3,
+      "measure": 4,
+      "onset": 0.75,
+      "toMeasure": 4,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-2-17-0",
+      "end": "recuerda-2-17-1",
+      "role": 2,
+      "measure": 4,
+      "onset": 0.75,
+      "toMeasure": 4,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-3-23-0",
+      "end": "recuerda-3-23-1",
+      "role": 3,
+      "measure": 4,
+      "onset": 3.75,
+      "toMeasure": 5,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 4.432724182399994
+    },
+    {
+      "start": "recuerda-2-23-0",
+      "end": "recuerda-2-23-1",
+      "role": 2,
+      "measure": 4,
+      "onset": 3.75,
+      "toMeasure": 5,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121599988
+    },
+    {
+      "start": "recuerda-1-47-0",
+      "end": "recuerda-1-47-1",
+      "role": 1,
+      "measure": 8,
+      "onset": 0.75,
+      "toMeasure": 8,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-45-0",
+      "end": "recuerda-0-45-1",
+      "role": 0,
+      "measure": 8,
+      "onset": 0.75,
+      "toMeasure": 8,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-1-53-0",
+      "end": "recuerda-1-53-1",
+      "role": 1,
+      "measure": 8,
+      "onset": 3.75,
+      "toMeasure": 9,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121599959
+    },
+    {
+      "start": "recuerda-0-51-0",
+      "end": "recuerda-0-51-1",
+      "role": 0,
+      "measure": 8,
+      "onset": 3.75,
+      "toMeasure": 9,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121599959
+    },
+    {
+      "start": "recuerda-3-45-0",
+      "end": "recuerda-3-45-1",
+      "role": 3,
+      "measure": 8,
+      "onset": 0.75,
+      "toMeasure": 8,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-2-45-0",
+      "end": "recuerda-2-45-1",
+      "role": 2,
+      "measure": 8,
+      "onset": 0.75,
+      "toMeasure": 8,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-3-51-0",
+      "end": "recuerda-3-51-1",
+      "role": 3,
+      "measure": 8,
+      "onset": 3.75,
+      "toMeasure": 9,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 4.432724182399966
+    },
+    {
+      "start": "recuerda-2-51-0",
+      "end": "recuerda-2-51-1",
+      "role": 2,
+      "measure": 8,
+      "onset": 3.75,
+      "toMeasure": 9,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121599959
+    },
+    {
+      "start": "recuerda-1-24-0",
+      "end": "recuerda-1-25-0",
+      "role": 1,
+      "measure": 5,
+      "onset": 0.0,
+      "toMeasure": 5,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 21.834772817999948
+    },
+    {
+      "start": "recuerda-2-68-0",
+      "end": "recuerda-2-71-0",
+      "role": 2,
+      "measure": 13,
+      "onset": 0.0,
+      "toMeasure": 13,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 18.597044386400057
+    },
+    {
+      "start": "recuerda-1-96-0",
+      "end": "recuerda-1-96-1",
+      "role": 1,
+      "measure": 18,
+      "onset": 1.75,
+      "toMeasure": 18,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.432724182399966
+    },
+    {
+      "start": "recuerda-0-94-0",
+      "end": "recuerda-0-94-1",
+      "role": 0,
+      "measure": 18,
+      "onset": 1.75,
+      "toMeasure": 18,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121599959
+    },
+    {
+      "start": "recuerda-1-105-0",
+      "end": "recuerda-1-105-1",
+      "role": 1,
+      "measure": 19,
+      "onset": 1.75,
+      "toMeasure": 19,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.432724182399994
+    },
+    {
+      "start": "recuerda-0-103-0",
+      "end": "recuerda-0-103-1",
+      "role": 0,
+      "measure": 19,
+      "onset": 1.75,
+      "toMeasure": 19,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.6374031216001015
+    },
+    {
+      "start": "recuerda-1-108-0",
+      "end": "recuerda-1-108-1",
+      "role": 1,
+      "measure": 19,
+      "onset": 3.75,
+      "toMeasure": 20,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121599959
+    },
+    {
+      "start": "recuerda-0-106-0",
+      "end": "recuerda-0-106-1",
+      "role": 0,
+      "measure": 19,
+      "onset": 3.75,
+      "toMeasure": 20,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121600073
+    },
+    {
+      "start": "recuerda-1-111-0",
+      "end": "recuerda-1-111-1",
+      "role": 1,
+      "measure": 20,
+      "onset": 0.75,
+      "toMeasure": 20,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121599959
+    },
+    {
+      "start": "recuerda-0-109-0",
+      "end": "recuerda-0-109-1",
+      "role": 0,
+      "measure": 20,
+      "onset": 0.75,
+      "toMeasure": 20,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600073
+    },
+    {
+      "start": "recuerda-2-110-0",
+      "end": "recuerda-2-110-1",
+      "role": 2,
+      "measure": 20,
+      "onset": 0.75,
+      "toMeasure": 20,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.185656631399922
+    },
+    {
+      "start": "recuerda-3-107-0",
+      "end": "recuerda-3-107-1",
+      "role": 3,
+      "measure": 20,
+      "onset": 0.75,
+      "toMeasure": 20,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.185656631399922
+    },
+    {
+      "start": "recuerda-2-114-0",
+      "end": "recuerda-2-114-1",
+      "role": 2,
+      "measure": 20,
+      "onset": 2.75,
+      "toMeasure": 20,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.185656631400036
+    },
+    {
+      "start": "recuerda-3-111-0",
+      "end": "recuerda-3-111-1",
+      "role": 3,
+      "measure": 20,
+      "onset": 2.75,
+      "toMeasure": 20,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.185656631399922
+    },
+    {
+      "start": "recuerda-1-127-0",
+      "end": "recuerda-1-127-1",
+      "role": 1,
+      "measure": 22,
+      "onset": 1.75,
+      "toMeasure": 22,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-125-0",
+      "end": "recuerda-0-125-1",
+      "role": 0,
+      "measure": 22,
+      "onset": 1.75,
+      "toMeasure": 22,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-3-116-0",
+      "end": "recuerda-3-116-1",
+      "role": 3,
+      "measure": 21,
+      "onset": 1.75,
+      "toMeasure": 21,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121599988
+    },
+    {
+      "start": "recuerda-2-119-0",
+      "end": "recuerda-2-119-1",
+      "role": 2,
+      "measure": 21,
+      "onset": 1.75,
+      "toMeasure": 21,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.432724182399994
+    },
+    {
+      "start": "recuerda-1-136-0",
+      "end": "recuerda-1-136-1",
+      "role": 1,
+      "measure": 23,
+      "onset": 1.75,
+      "toMeasure": 23,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-134-0",
+      "end": "recuerda-0-134-1",
+      "role": 0,
+      "measure": 23,
+      "onset": 1.75,
+      "toMeasure": 23,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-1-139-0",
+      "end": "recuerda-1-139-1",
+      "role": 1,
+      "measure": 23,
+      "onset": 3.75,
+      "toMeasure": 24,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-0-137-0",
+      "end": "recuerda-0-137-1",
+      "role": 0,
+      "measure": 23,
+      "onset": 3.75,
+      "toMeasure": 24,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-1-142-0",
+      "end": "recuerda-1-142-1",
+      "role": 1,
+      "measure": 24,
+      "onset": 0.75,
+      "toMeasure": 24,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-0-140-0",
+      "end": "recuerda-0-140-1",
+      "role": 0,
+      "measure": 24,
+      "onset": 0.75,
+      "toMeasure": 24,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-2-141-0",
+      "end": "recuerda-2-141-1",
+      "role": 2,
+      "measure": 24,
+      "onset": 0.75,
+      "toMeasure": 24,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.185656631400093
+    },
+    {
+      "start": "recuerda-3-138-0",
+      "end": "recuerda-3-138-1",
+      "role": 3,
+      "measure": 24,
+      "onset": 0.75,
+      "toMeasure": 24,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.185656631399979
+    },
+    {
+      "start": "recuerda-2-145-0",
+      "end": "recuerda-2-145-1",
+      "role": 2,
+      "measure": 24,
+      "onset": 2.75,
+      "toMeasure": 24,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.185656631400036
+    },
+    {
+      "start": "recuerda-3-142-0",
+      "end": "recuerda-3-142-1",
+      "role": 3,
+      "measure": 24,
+      "onset": 2.75,
+      "toMeasure": 24,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.185656631400093
+    },
+    {
+      "start": "recuerda-1-158-0",
+      "end": "recuerda-1-158-1",
+      "role": 1,
+      "measure": 26,
+      "onset": 2.75,
+      "toMeasure": 26,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-0-156-0",
+      "end": "recuerda-0-156-1",
+      "role": 0,
+      "measure": 26,
+      "onset": 2.75,
+      "toMeasure": 26,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-3-147-0",
+      "end": "recuerda-3-147-1",
+      "role": 3,
+      "measure": 25,
+      "onset": 1.75,
+      "toMeasure": 25,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121599988
+    },
+    {
+      "start": "recuerda-2-150-0",
+      "end": "recuerda-2-150-1",
+      "role": 2,
+      "measure": 25,
+      "onset": 1.75,
+      "toMeasure": 25,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.432724182399994
+    },
+    {
+      "start": "recuerda-3-155-0",
+      "end": "recuerda-3-155-1",
+      "role": 3,
+      "measure": 26,
+      "onset": 2.75,
+      "toMeasure": 26,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-2-158-0",
+      "end": "recuerda-2-158-1",
+      "role": 2,
+      "measure": 26,
+      "onset": 2.75,
+      "toMeasure": 26,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-3-352-0",
+      "end": "recuerda-3-352-1",
+      "role": 3,
+      "measure": 31,
+      "onset": 0.75,
+      "toMeasure": 31,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.8187117008000087
+    },
+    {
+      "start": "recuerda-3-354-0",
+      "end": "recuerda-3-354-1",
+      "role": 3,
+      "measure": 31,
+      "onset": 1.75,
+      "toMeasure": 31,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.8187117007999518
+    },
+    {
+      "start": "recuerda-3-359-0",
+      "end": "recuerda-3-359-1",
+      "role": 3,
+      "measure": 32,
+      "onset": 0.75,
+      "toMeasure": 32,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.8187117007999802
+    },
+    {
+      "start": "recuerda-3-361-0",
+      "end": "recuerda-3-361-1",
+      "role": 3,
+      "measure": 32,
+      "onset": 1.75,
+      "toMeasure": 32,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.8187117007999802
+    },
+    {
+      "start": "recuerda-1-367-0",
+      "end": "recuerda-1-367-1",
+      "role": 1,
+      "measure": 35,
+      "onset": 0.75,
+      "toMeasure": 35,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.8187117008000797
+    },
+    {
+      "start": "recuerda-1-376-0",
+      "end": "recuerda-1-376-1",
+      "role": 1,
+      "measure": 36,
+      "onset": 0.75,
+      "toMeasure": 36,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.8187117008000655
+    },
+    {
+      "start": "recuerda-1-379-0",
+      "end": "recuerda-1-379-1",
+      "role": 1,
+      "measure": 36,
+      "onset": 2.25,
+      "toMeasure": 36,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.8187117007999518
+    },
+    {
+      "start": "recuerda-0-353-0",
+      "end": "recuerda-0-355-0",
+      "role": 0,
+      "measure": 33,
+      "onset": 0.0,
+      "toMeasure": 34,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 6.249102497599949
+    },
+    {
+      "start": "recuerda-1-358-0",
+      "end": "recuerda-1-360-0",
+      "role": 1,
+      "measure": 33,
+      "onset": 0.0,
+      "toMeasure": 33,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 5.872804758600012
+    },
+    {
+      "start": "recuerda-1-359-0",
+      "end": "recuerda-1-361-0",
+      "role": 1,
+      "measure": 33,
+      "onset": 0.0,
+      "toMeasure": 33,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 24.921607803200004
+    },
+    {
+      "start": "recuerda-1-362-0",
+      "end": "recuerda-1-364-0",
+      "role": 1,
+      "measure": 34,
+      "onset": 0.0,
+      "toMeasure": 34,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 25.97570238199995
+    },
+    {
+      "start": "recuerda-2-358-0",
+      "end": "recuerda-2-360-0",
+      "role": 2,
+      "measure": 33,
+      "onset": 0.0,
+      "toMeasure": 34,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 7.4537814367999715
+    },
+    {
+      "start": "recuerda-0-356-0",
+      "end": "recuerda-0-360-0",
+      "role": 0,
+      "measure": 35,
+      "onset": 2.0,
+      "toMeasure": 36,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 22.587710843999957
+    },
+    {
+      "start": "recuerda-1-378-0",
+      "end": "recuerda-1-379-1",
+      "role": 1,
+      "measure": 36,
+      "onset": 1.75,
+      "toMeasure": 36,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 7.755115601099874
+    },
+    {
+      "start": "recuerda-2-361-0",
+      "end": "recuerda-2-362-0",
+      "role": 2,
+      "measure": 35,
+      "onset": 0.0,
+      "toMeasure": 36,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 8.733913183199945
+    },
+    {
+      "start": "recuerda-2-363-0",
+      "end": "recuerda-2-365-0",
+      "role": 2,
+      "measure": 36,
+      "onset": 2.0,
+      "toMeasure": 37,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 15.811238028499986
+    },
+    {
+      "start": "recuerda-3-373-0",
+      "end": "recuerda-3-377-0",
+      "role": 3,
+      "measure": 35,
+      "onset": 0.0,
+      "toMeasure": 36,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 20.8561472703999
+    },
+    {
+      "start": "recuerda-3-374-0",
+      "end": "recuerda-3-378-0",
+      "role": 3,
+      "measure": 35,
+      "onset": 0.0,
+      "toMeasure": 36,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 8.73391723919994
+    },
+    {
+      "start": "recuerda-3-379-0",
+      "end": "recuerda-3-383-0",
+      "role": 3,
+      "measure": 36,
+      "onset": 2.0,
+      "toMeasure": 37,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 10.842268291299945
+    },
+    {
+      "start": "recuerda-3-380-0",
+      "end": "recuerda-3-384-0",
+      "role": 3,
+      "measure": 36,
+      "onset": 2.0,
+      "toMeasure": 37,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 13.92892718600001
+    },
+    {
+      "start": "recuerda-1-425-0",
+      "end": "recuerda-1-425-1",
+      "role": 1,
+      "measure": 43,
+      "onset": 1.75,
+      "toMeasure": 43,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.432724182399994
+    },
+    {
+      "start": "recuerda-0-403-0",
+      "end": "recuerda-0-403-1",
+      "role": 0,
+      "measure": 43,
+      "onset": 1.75,
+      "toMeasure": 43,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121599988
+    },
+    {
+      "start": "recuerda-1-434-0",
+      "end": "recuerda-1-434-1",
+      "role": 1,
+      "measure": 44,
+      "onset": 1.75,
+      "toMeasure": 44,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-412-0",
+      "end": "recuerda-0-412-1",
+      "role": 0,
+      "measure": 44,
+      "onset": 1.75,
+      "toMeasure": 44,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-1-440-0",
+      "end": "recuerda-1-440-1",
+      "role": 1,
+      "measure": 45,
+      "onset": 0.75,
+      "toMeasure": 45,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121599988
+    },
+    {
+      "start": "recuerda-0-418-0",
+      "end": "recuerda-0-418-1",
+      "role": 0,
+      "measure": 45,
+      "onset": 0.75,
+      "toMeasure": 45,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121599988
+    },
+    {
+      "start": "recuerda-1-447-0",
+      "end": "recuerda-1-447-1",
+      "role": 1,
+      "measure": 45,
+      "onset": 3.75,
+      "toMeasure": 46,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 4.432724182399966
+    },
+    {
+      "start": "recuerda-0-425-0",
+      "end": "recuerda-0-425-1",
+      "role": 0,
+      "measure": 45,
+      "onset": 3.75,
+      "toMeasure": 46,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 4.432724182399966
+    },
+    {
+      "start": "recuerda-2-411-0",
+      "end": "recuerda-2-411-1",
+      "role": 2,
+      "measure": 45,
+      "onset": 0.75,
+      "toMeasure": 45,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.185656631399951
+    },
+    {
+      "start": "recuerda-3-428-0",
+      "end": "recuerda-3-428-1",
+      "role": 3,
+      "measure": 45,
+      "onset": 0.75,
+      "toMeasure": 45,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.1856566314000645
+    },
+    {
+      "start": "recuerda-2-415-0",
+      "end": "recuerda-2-415-1",
+      "role": 2,
+      "measure": 45,
+      "onset": 2.75,
+      "toMeasure": 45,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.18565663140015
+    },
+    {
+      "start": "recuerda-3-432-0",
+      "end": "recuerda-3-432-1",
+      "role": 3,
+      "measure": 45,
+      "onset": 2.75,
+      "toMeasure": 45,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.185656631400036
+    },
+    {
+      "start": "recuerda-3-437-0",
+      "end": "recuerda-3-437-1",
+      "role": 3,
+      "measure": 46,
+      "onset": 1.75,
+      "toMeasure": 46,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-2-420-0",
+      "end": "recuerda-2-420-1",
+      "role": 2,
+      "measure": 46,
+      "onset": 1.75,
+      "toMeasure": 46,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-2-373-0",
+      "end": "recuerda-2-374-0",
+      "role": 2,
+      "measure": 39,
+      "onset": 2.0,
+      "toMeasure": 39,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 7.5292382999999745
+    },
+    {
+      "start": "recuerda-2-375-0",
+      "end": "recuerda-2-376-0",
+      "role": 2,
+      "measure": 39,
+      "onset": 3.0,
+      "toMeasure": 39,
+      "toOnset": 3.5,
+      "kind": "slur",
+      "cost": 7.529238300000088
+    },
+    {
+      "start": "recuerda-2-378-0",
+      "end": "recuerda-2-379-0",
+      "role": 2,
+      "measure": 40,
+      "onset": 2.0,
+      "toMeasure": 40,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 7.529238300000003
+    },
+    {
+      "start": "recuerda-2-380-0",
+      "end": "recuerda-2-381-0",
+      "role": 2,
+      "measure": 40,
+      "onset": 3.0,
+      "toMeasure": 40,
+      "toOnset": 3.5,
+      "kind": "slur",
+      "cost": 8.733917239200025
+    },
+    {
+      "start": "recuerda-1-456-0",
+      "end": "recuerda-1-456-1",
+      "role": 1,
+      "measure": 47,
+      "onset": 1.75,
+      "toMeasure": 47,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.432724182399994
+    },
+    {
+      "start": "recuerda-0-434-0",
+      "end": "recuerda-0-434-1",
+      "role": 0,
+      "measure": 47,
+      "onset": 1.75,
+      "toMeasure": 47,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121599988
+    },
+    {
+      "start": "recuerda-1-465-0",
+      "end": "recuerda-1-465-1",
+      "role": 1,
+      "measure": 48,
+      "onset": 1.75,
+      "toMeasure": 48,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-0-443-0",
+      "end": "recuerda-0-443-1",
+      "role": 0,
+      "measure": 48,
+      "onset": 1.75,
+      "toMeasure": 48,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-1-471-0",
+      "end": "recuerda-1-471-1",
+      "role": 1,
+      "measure": 49,
+      "onset": 0.75,
+      "toMeasure": 49,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-0-449-0",
+      "end": "recuerda-0-449-1",
+      "role": 0,
+      "measure": 49,
+      "onset": 0.75,
+      "toMeasure": 49,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-1-487-0",
+      "end": "recuerda-1-487-1",
+      "role": 1,
+      "measure": 51,
+      "onset": 2.75,
+      "toMeasure": 51,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600073
+    },
+    {
+      "start": "recuerda-0-465-0",
+      "end": "recuerda-0-465-1",
+      "role": 0,
+      "measure": 51,
+      "onset": 2.75,
+      "toMeasure": 51,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 4.432724182400079
+    },
+    {
+      "start": "recuerda-2-442-0",
+      "end": "recuerda-2-442-1",
+      "role": 2,
+      "measure": 49,
+      "onset": 0.75,
+      "toMeasure": 49,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.1856566314000645
+    },
+    {
+      "start": "recuerda-3-459-0",
+      "end": "recuerda-3-459-1",
+      "role": 3,
+      "measure": 49,
+      "onset": 0.75,
+      "toMeasure": 49,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 5.185656631400093
+    },
+    {
+      "start": "recuerda-2-446-0",
+      "end": "recuerda-2-446-1",
+      "role": 2,
+      "measure": 49,
+      "onset": 2.75,
+      "toMeasure": 49,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.185656631400093
+    },
+    {
+      "start": "recuerda-3-463-0",
+      "end": "recuerda-3-463-1",
+      "role": 3,
+      "measure": 49,
+      "onset": 2.75,
+      "toMeasure": 49,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.185656631400093
+    },
+    {
+      "start": "recuerda-3-468-0",
+      "end": "recuerda-3-468-1",
+      "role": 3,
+      "measure": 50,
+      "onset": 1.75,
+      "toMeasure": 50,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.637403121599959
+    },
+    {
+      "start": "recuerda-2-451-0",
+      "end": "recuerda-2-451-1",
+      "role": 2,
+      "measure": 50,
+      "onset": 1.75,
+      "toMeasure": 50,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 4.432724182399966
+    },
+    {
+      "start": "recuerda-3-476-0",
+      "end": "recuerda-3-476-1",
+      "role": 3,
+      "measure": 51,
+      "onset": 2.75,
+      "toMeasure": 51,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600073
+    },
+    {
+      "start": "recuerda-2-459-0",
+      "end": "recuerda-2-459-1",
+      "role": 2,
+      "measure": 51,
+      "onset": 2.75,
+      "toMeasure": 51,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600187
+    },
+    {
+      "start": "recuerda-1-504-0",
+      "end": "recuerda-1-504-1",
+      "role": 1,
+      "measure": 53,
+      "onset": 2.75,
+      "toMeasure": 53,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-0-482-0",
+      "end": "recuerda-0-482-1",
+      "role": 0,
+      "measure": 53,
+      "onset": 2.75,
+      "toMeasure": 53,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 4.4327241824000225
+    },
+    {
+      "start": "recuerda-3-493-0",
+      "end": "recuerda-3-493-1",
+      "role": 3,
+      "measure": 53,
+      "onset": 2.75,
+      "toMeasure": 53,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-2-476-0",
+      "end": "recuerda-2-476-1",
+      "role": 2,
+      "measure": 53,
+      "onset": 2.75,
+      "toMeasure": 53,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 5.637403121600016
+    },
+    {
+      "start": "recuerda-1-532-0",
+      "end": "recuerda-1-532-1",
+      "role": 1,
+      "measure": 58,
+      "onset": 1.75,
+      "toMeasure": 58,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 5.1856566314000645
+    },
+    {
+      "start": "recuerda-0-508-0",
+      "end": "recuerda-0-509-0",
+      "role": 0,
+      "measure": 58,
+      "onset": 3.0,
+      "toMeasure": 58,
+      "toOnset": 3.5,
+      "kind": "slur",
+      "cost": 21.458156867000042
+    },
+    {
+      "start": "recuerda-2-500-0",
+      "end": "recuerda-2-504-0",
+      "role": 2,
+      "measure": 58,
+      "onset": 0.0,
+      "toMeasure": 58,
+      "toOnset": 3.5,
+      "kind": "slur",
+      "cost": 20.47935472190005
+    },
+    {
+      "start": "recuerda-3-522-0",
+      "end": "recuerda-3-523-0",
+      "role": 3,
+      "measure": 59,
+      "onset": 2.75,
+      "toMeasure": 59,
+      "toOnset": 3.25,
+      "kind": "slur",
+      "cost": 6.324559360800038
+    }
+  ],
+  "partial": [
+    {
+      "page": 2,
+      "start": [
+        549.3317467392,
+        266.83638503279997
+      ],
+      "end": [
+        556.8609647591999,
+        266.83638503279997
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-118-0",
+            "cost": 4.329218019999985
+          },
+          {
+            "id": "recuerda-0-116-0",
+            "cost": 6.738575898399972
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        549.3317467392,
+        266.83638503279997
+      ],
+      "end": [
+        556.8609647591999,
+        266.83638503279997
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-118-0",
+            "cost": 4.329218019999985
+          },
+          {
+            "id": "recuerda-0-116-0",
+            "cost": 6.738575898399972
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        549.3317467392,
+        262.017669276
+      ],
+      "end": [
+        556.8609647591999,
+        262.017669276
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-116-0",
+            "cost": 4.329218019999985
+          },
+          {
+            "id": "recuerda-1-118-0",
+            "cost": 6.738575898399972
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        549.3317467392,
+        262.017669276
+      ],
+      "end": [
+        556.8609647591999,
+        262.017669276
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-116-0",
+            "cost": 4.329218019999985
+          },
+          {
+            "id": "recuerda-1-118-0",
+            "cost": 6.738575898399972
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        81.46613897639999,
+        412.75312154339997
+      ],
+      "end": [
+        87.79068211319999,
+        412.75312154339997
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        81.46613897639999,
+        412.75312154339997
+      ],
+      "end": [
+        87.79068211319999,
+        412.75312154339997
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        81.46613897639999,
+        407.9344057866
+      ],
+      "end": [
+        87.79068211319999,
+        407.9344057866
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        81.46613897639999,
+        407.9344057866
+      ],
+      "end": [
+        87.79068211319999,
+        407.9344057866
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-116-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-1-118-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        403.71667023239996,
+        86.7368836224
+      ],
+      "end": [
+        556.8609647591999,
+        86.7368836224
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-352-0",
+            "cost": 3.726886662400034
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        403.71667023239996,
+        86.7368836224
+      ],
+      "end": [
+        556.8609647591999,
+        86.7368836224
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-352-0",
+            "cost": 3.726886662400034
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        408.53536976519996,
+        154.80124368719999
+      ],
+      "end": [
+        556.8609647591999,
+        154.80124368719999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-356-0",
+            "cost": 6.73856778640004
+          },
+          {
+            "id": "recuerda-1-357-0",
+            "cost": 9.147925664800027
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        408.53536976519996,
+        154.80124368719999
+      ],
+      "end": [
+        556.8609647591999,
+        154.80124368719999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-356-0",
+            "cost": 6.73856778640004
+          },
+          {
+            "id": "recuerda-1-357-0",
+            "cost": 9.147925664800027
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        408.53536976519996,
+        149.9825279304
+      ],
+      "end": [
+        556.8609647591999,
+        149.9825279304
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-357-0",
+            "cost": 6.73856778640004
+          },
+          {
+            "id": "recuerda-1-356-0",
+            "cost": 9.147925664800027
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        408.53536976519996,
+        149.9825279304
+      ],
+      "end": [
+        556.8609647591999,
+        149.9825279304
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-357-0",
+            "cost": 6.73856778640004
+          },
+          {
+            "id": "recuerda-1-356-0",
+            "cost": 9.147925664800027
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        348.1522134288
+      ],
+      "end": [
+        92.60938164599999,
+        348.1522134288
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-352-1",
+            "cost": 12.235067708000017
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-352-1",
+            "cost": 2.5222117792000205
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        348.1522134288
+      ],
+      "end": [
+        92.60938164599999,
+        348.1522134288
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-352-1",
+            "cost": 12.235067708000017
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-352-1",
+            "cost": 2.5222117792000205
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        407.33206631699994
+      ],
+      "end": [
+        87.79068211319999,
+        407.33206631699994
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        407.33206631699994
+      ],
+      "end": [
+        87.79068211319999,
+        407.33206631699994
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        402.51335056019997
+      ],
+      "end": [
+        87.79068211319999,
+        402.51335056019997
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        402.51335056019997
+      ],
+      "end": [
+        87.79068211319999,
+        402.51335056019997
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 10.428049299199998
+          },
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 12.837407177599985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-357-1",
+            "cost": 4.103506162399995
+          },
+          {
+            "id": "recuerda-1-356-1",
+            "cost": 6.5128640407999825
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        403.86725459279995,
+        201.93430718340005
+      ],
+      "end": [
+        556.8609647591999,
+        198.16968549839999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-356-0",
+            "cost": 4.47981049240002
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        403.86725459279995,
+        201.93430718340005
+      ],
+      "end": [
+        556.8609647591999,
+        198.16968549839999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-356-0",
+            "cost": 4.47981049240002
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        450.85109299559997
+      ],
+      "end": [
+        92.45879728559999,
+        449.79699892379995
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-357-0",
+            "cost": 13.515039080899996
+          }
+        ],
+        [
+          {
+            "id": "recuerda-2-357-0",
+            "cost": 4.178645827600008
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        81.46613897639999,
+        450.85109299559997
+      ],
+      "end": [
+        92.45879728559999,
+        449.79699892379995
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-357-0",
+            "cost": 13.515039080899996
+          }
+        ],
+        [
+          {
+            "id": "recuerda-2-357-0",
+            "cost": 4.178645827600008
+          }
+        ]
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        350.56039101119995,
+        587.4315677274
+      ],
+      "end": [
+        556.8609647591999,
+        579.75173949
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-361-0",
+            "cost": 4.479814548399986
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        350.56039101119995,
+        587.4315677274
+      ],
+      "end": [
+        556.8609647591999,
+        579.75173949
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-361-0",
+            "cost": 4.479814548399986
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        494.66962391399994,
+        729.4330976855999
+      ],
+      "end": [
+        556.8609647591999,
+        729.7342674204
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-366-0",
+            "cost": 3.0492583080999793
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        494.66962391399994,
+        729.4330976855999
+      ],
+      "end": [
+        556.8609647591999,
+        729.7342674204
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-366-0",
+            "cost": 3.0492583080999793
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        494.66962391399994,
+        788.6129505737999
+      ],
+      "end": [
+        556.8609647591999,
+        788.6129505737999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-385-0",
+            "cost": 3.2751356091999924
+          },
+          {
+            "id": "recuerda-3-386-0",
+            "cost": 5.68449348759998
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        494.66962391399994,
+        788.6129505737999
+      ],
+      "end": [
+        556.8609647591999,
+        788.6129505737999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-385-0",
+            "cost": 3.2751356091999924
+          },
+          {
+            "id": "recuerda-3-386-0",
+            "cost": 5.68449348759998
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        499.0365703655999,
+        763.3146928506
+      ],
+      "end": [
+        556.8609647591999,
+        760.4535803699999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-386-0",
+            "cost": 13.063137287199993
+          },
+          {
+            "id": "recuerda-3-385-0",
+            "cost": 15.47249516559998
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        499.0365703655999,
+        763.3146928506
+      ],
+      "end": [
+        556.8609647591999,
+        760.4535803699999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-386-0",
+            "cost": 13.063137287199993
+          },
+          {
+            "id": "recuerda-3-385-0",
+            "cost": 15.47249516559998
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        548.7294092975999,
+        573.4271750592
+      ],
+      "end": [
+        556.8609647591999,
+        573.4271750592
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-437-0",
+            "cost": 4.931557489599868
+          },
+          {
+            "id": "recuerda-0-415-0",
+            "cost": 7.340915367999855
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        548.7294092975999,
+        573.4271750592
+      ],
+      "end": [
+        556.8609647591999,
+        573.4271750592
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-437-0",
+            "cost": 4.931557489599868
+          },
+          {
+            "id": "recuerda-0-415-0",
+            "cost": 7.340915367999855
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        548.7294092975999,
+        566.199101424
+      ],
+      "end": [
+        556.8609647591999,
+        566.199101424
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-415-0",
+            "cost": 4.931557489599868
+          },
+          {
+            "id": "recuerda-1-437-0",
+            "cost": 7.340915367999855
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        548.7294092975999,
+        566.199101424
+      ],
+      "end": [
+        556.8609647591999,
+        566.199101424
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-415-0",
+            "cost": 4.931557489599868
+          },
+          {
+            "id": "recuerda-1-437-0",
+            "cost": 7.340915367999855
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        707.2971221777999
+      ],
+      "end": [
+        87.79068211319999,
+        707.2971221777999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        707.2971221777999
+      ],
+      "end": [
+        87.79068211319999,
+        707.2971221777999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        700.0690485426
+      ],
+      "end": [
+        87.79068211319999,
+        700.0690485426
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        700.0690485426
+      ],
+      "end": [
+        87.79068211319999,
+        700.0690485426
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-415-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-1-437-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        66.70909625820002
+      ],
+      "end": [
+        93.51288780839998,
+        67.46202059519999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-367-0",
+            "cost": 18.634924572499997
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-367-0",
+            "cost": 9.44911263760001
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        66.70909625820002
+      ],
+      "end": [
+        93.51288780839998,
+        67.46202059519999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-367-0",
+            "cost": 18.634924572499997
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-367-0",
+            "cost": 9.44911263760001
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        212.62583276880002
+      ],
+      "end": [
+        91.25412240239999,
+        211.27056896219995
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-367-0",
+            "cost": 13.515039080900024
+          }
+        ],
+        [
+          {
+            "id": "recuerda-2-367-0",
+            "cost": 3.0494237515999885
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        212.62583276880002
+      ],
+      "end": [
+        91.25412240239999,
+        211.27056896219995
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-2-367-0",
+            "cost": 13.515039080900024
+          }
+        ],
+        [
+          {
+            "id": "recuerda-2-367-0",
+            "cost": 3.0494237515999885
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        280.38902309879995
+      ],
+      "end": [
+        86.88717595079999,
+        279.6360987618
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 18.634924572499997
+          },
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 21.044282450899985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 12.837425429600017
+          },
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 15.246783308000005
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        280.38902309879995
+      ],
+      "end": [
+        86.88717595079999,
+        279.6360987618
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 18.634924572499997
+          },
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 21.044282450899985
+          }
+        ],
+        [
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 12.837425429600017
+          },
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 15.246783308000005
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        251.62731342539996
+      ],
+      "end": [
+        91.25412240239999,
+        251.92848316020002
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 14.192670984200007
+          },
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 16.602028862599994
+          }
+        ],
+        [
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 4.254102690799982
+          },
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 6.6634605691999695
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        81.46613897639999,
+        251.62731342539996
+      ],
+      "end": [
+        91.25412240239999,
+        251.92848316020002
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 14.192670984200007
+          },
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 16.602028862599994
+          }
+        ],
+        [
+          {
+            "id": "recuerda-3-388-0",
+            "cost": 4.254102690799982
+          },
+          {
+            "id": "recuerda-3-387-0",
+            "cost": 6.6634605691999695
+          }
+        ]
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        549.6329154599999,
+        86.7368836224
+      ],
+      "end": [
+        556.8609647591999,
+        86.7368836224
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-468-0",
+            "cost": 4.931557489599982
+          },
+          {
+            "id": "recuerda-0-446-0",
+            "cost": 7.340915367999969
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        549.6329154599999,
+        86.7368836224
+      ],
+      "end": [
+        556.8609647591999,
+        86.7368836224
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-468-0",
+            "cost": 4.931557489599982
+          },
+          {
+            "id": "recuerda-0-446-0",
+            "cost": 7.340915367999969
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        549.6329154599999,
+        79.50880998720004
+      ],
+      "end": [
+        556.8609647591999,
+        79.50880998720004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-446-0",
+            "cost": 4.931557489599982
+          },
+          {
+            "id": "recuerda-1-468-0",
+            "cost": 7.340915367999969
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        549.6329154599999,
+        79.50880998720004
+      ],
+      "end": [
+        556.8609647591999,
+        79.50880998720004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-446-0",
+            "cost": 4.931557489599982
+          },
+          {
+            "id": "recuerda-1-468-0",
+            "cost": 7.340915367999969
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        81.46613897639999,
+        236.26765695059999
+      ],
+      "end": [
+        87.79068211319999,
+        236.26765695059999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        81.46613897639999,
+        236.26765695059999
+      ],
+      "end": [
+        87.79068211319999,
+        236.26765695059999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        81.46613897639999,
+        229.03958331540002
+      ],
+      "end": [
+        87.79068211319999,
+        229.03958331540002
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    },
+    {
+      "page": 5,
+      "start": [
+        81.46613897639999,
+        229.03958331540002
+      ],
+      "end": [
+        87.79068211319999,
+        229.03958331540002
+      ],
+      "nearest": [
+        [
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 11.030388768799995
+          },
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 13.439746647199982
+          }
+        ],
+        [
+          {
+            "id": "recuerda-0-446-1",
+            "cost": 4.705845631999992
+          },
+          {
+            "id": "recuerda-1-468-1",
+            "cost": 7.115203510399979
+          }
+        ]
+      ]
+    }
+  ],
+  "articulations": [
+    {
+      "id": "recuerda-1-56-0",
+      "role": 1,
+      "measure": 10,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-57-0",
+      "role": 1,
+      "measure": 10,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-58-0",
+      "role": 1,
+      "measure": 10,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-61-0",
+      "role": 1,
+      "measure": 11,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-62-0",
+      "role": 1,
+      "measure": 11,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-63-0",
+      "role": 1,
+      "measure": 11,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-66-0",
+      "role": 1,
+      "measure": 12,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-67-0",
+      "role": 1,
+      "measure": 12,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-68-0",
+      "role": 1,
+      "measure": 12,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-69-0",
+      "role": 1,
+      "measure": 12,
+      "onset": 3.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-73-0",
+      "role": 1,
+      "measure": 14,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-74-0",
+      "role": 1,
+      "measure": 14,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-75-0",
+      "role": 1,
+      "measure": 14,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-54-0",
+      "role": 2,
+      "measure": 10,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-55-0",
+      "role": 2,
+      "measure": 10,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-56-0",
+      "role": 2,
+      "measure": 10,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-59-0",
+      "role": 2,
+      "measure": 11,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-60-0",
+      "role": 2,
+      "measure": 11,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-61-0",
+      "role": 2,
+      "measure": 11,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-64-0",
+      "role": 2,
+      "measure": 12,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-65-0",
+      "role": 2,
+      "measure": 12,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-66-0",
+      "role": 2,
+      "measure": 12,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-67-0",
+      "role": 2,
+      "measure": 12,
+      "onset": 3.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-74-0",
+      "role": 2,
+      "measure": 14,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-75-0",
+      "role": 2,
+      "measure": 14,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-76-0",
+      "role": 2,
+      "measure": 14,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-78-0",
+      "role": 1,
+      "measure": 15,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-79-0",
+      "role": 1,
+      "measure": 15,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-80-0",
+      "role": 1,
+      "measure": 15,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-79-0",
+      "role": 2,
+      "measure": 15,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-80-0",
+      "role": 2,
+      "measure": 15,
+      "onset": 1.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-81-0",
+      "role": 2,
+      "measure": 15,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-3-350-0",
+      "role": 3,
+      "measure": 31,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-357-0",
+      "role": 3,
+      "measure": 32,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-364-0",
+      "role": 3,
+      "measure": 33,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-3-365-0",
+      "role": 3,
+      "measure": 33,
+      "onset": 0.5,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-365-0",
+      "role": 1,
+      "measure": 35,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-373-0",
+      "role": 1,
+      "measure": 36,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-374-0",
+      "role": 1,
+      "measure": 36,
+      "onset": 0.25,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-382-0",
+      "role": 1,
+      "measure": 37,
+      "onset": 0.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-383-0",
+      "role": 1,
+      "measure": 37,
+      "onset": 0.5,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-386-0",
+      "role": 1,
+      "measure": 37,
+      "onset": 2.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-387-0",
+      "role": 1,
+      "measure": 37,
+      "onset": 2.5,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-388-0",
+      "role": 1,
+      "measure": 37,
+      "onset": 3.0,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-389-0",
+      "role": 1,
+      "measure": 37,
+      "onset": 3.5,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-0-385-0",
+      "role": 0,
+      "measure": 40,
+      "onset": 3.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-0-386-0",
+      "role": 0,
+      "measure": 40,
+      "onset": 3.75,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-0-387-0",
+      "role": 0,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-0-388-0",
+      "role": 0,
+      "measure": 41,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-0-390-0",
+      "role": 0,
+      "measure": 41,
+      "onset": 2.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-0-393-0",
+      "role": 0,
+      "measure": 41,
+      "onset": 3.25,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-0-394-0",
+      "role": 0,
+      "measure": 42,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-407-0",
+      "role": 1,
+      "measure": 40,
+      "onset": 3.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-408-0",
+      "role": 1,
+      "measure": 40,
+      "onset": 3.75,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-409-0",
+      "role": 1,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-410-0",
+      "role": 1,
+      "measure": 41,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-412-0",
+      "role": 1,
+      "measure": 41,
+      "onset": 2.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-1-415-0",
+      "role": 1,
+      "measure": 41,
+      "onset": 3.25,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-1-416-0",
+      "role": 1,
+      "measure": 42,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-2-382-0",
+      "role": 2,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-2-383-0",
+      "role": 2,
+      "measure": 41,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-2-385-0",
+      "role": 2,
+      "measure": 41,
+      "onset": 2.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-2-388-0",
+      "role": 2,
+      "measure": 41,
+      "onset": 3.25,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-2-389-0",
+      "role": 2,
+      "measure": 42,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-397-0",
+      "role": 3,
+      "measure": 40,
+      "onset": 3.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-398-0",
+      "role": 3,
+      "measure": 40,
+      "onset": 3.75,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-399-0",
+      "role": 3,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-400-0",
+      "role": 3,
+      "measure": 41,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-402-0",
+      "role": 3,
+      "measure": 41,
+      "onset": 2.0,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-3-405-0",
+      "role": 3,
+      "measure": 41,
+      "onset": 3.25,
+      "kind": "tenuto"
+    },
+    {
+      "id": "recuerda-3-406-0",
+      "role": 3,
+      "measure": 42,
+      "onset": 0.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-0-503-0",
+      "role": 0,
+      "measure": 56,
+      "onset": 3.5,
+      "kind": "accent"
+    },
+    {
+      "id": "recuerda-2-497-0",
+      "role": 2,
+      "measure": 56,
+      "onset": 3.5,
+      "kind": "accent"
+    }
+  ],
+  "wedges": [
+    {
+      "role": 0,
+      "measure": 4,
+      "onset": 0.0,
+      "toMeasure": 4,
+      "toOnset": 2.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 1,
+      "measure": 4,
+      "onset": 0.0,
+      "toMeasure": 4,
+      "toOnset": 2.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 4,
+      "onset": 0.0,
+      "toMeasure": 4,
+      "toOnset": 2.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 4,
+      "onset": 0.0,
+      "toMeasure": 4,
+      "toOnset": 2.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 1.75,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 1,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 1.75,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 2,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 1.75,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 3,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 1.75,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 0,
+      "measure": 10,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 3.5,
+      "kind": "crescendo"
+    },
+    {
+      "role": 1,
+      "measure": 10,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 3.5,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 14,
+      "onset": 0.0,
+      "toMeasure": 14,
+      "toOnset": 3.75,
+      "kind": "crescendo"
+    },
+    {
+      "role": 1,
+      "measure": 14,
+      "onset": 0.0,
+      "toMeasure": 14,
+      "toOnset": 3.75,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 10,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 3.5,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 10,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 3.5,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 14,
+      "onset": 0.0,
+      "toMeasure": 14,
+      "toOnset": 3.75,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 14,
+      "onset": 0.0,
+      "toMeasure": 14,
+      "toOnset": 3.75,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 1,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 31,
+      "toOnset": 0.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 1,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 31,
+      "toOnset": 0.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 2,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 31,
+      "toOnset": 0.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 3,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 31,
+      "toOnset": 0.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 0,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 56,
+      "toOnset": 3.5,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 1,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 56,
+      "toOnset": 3.5,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 2,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 56,
+      "toOnset": 3.5,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 3,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 56,
+      "toOnset": 3.5,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 0,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 61,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 1,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 61,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 61,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 61,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    }
+  ]
+}

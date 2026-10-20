@@ -1,0 +1,889 @@
+{
+  "checked": 2451,
+  "changes": [],
+  "ambiguous": [],
+  "keys": [
+    {
+      "role": 0,
+      "page": 2,
+      "staff": 0,
+      "firstMeasure": 1,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 2,
+      "staff": 4,
+      "firstMeasure": 8,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 2,
+      "staff": 8,
+      "firstMeasure": 12,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 3,
+      "staff": 0,
+      "firstMeasure": 15,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 3,
+      "staff": 4,
+      "firstMeasure": 18,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 4,
+      "staff": 8,
+      "firstMeasure": 33,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 5,
+      "staff": 0,
+      "firstMeasure": 34,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 5,
+      "staff": 4,
+      "firstMeasure": 37,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 5,
+      "staff": 8,
+      "firstMeasure": 40,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 6,
+      "staff": 0,
+      "firstMeasure": 43,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 6,
+      "staff": 4,
+      "firstMeasure": 46,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 6,
+      "staff": 8,
+      "firstMeasure": 49,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 7,
+      "staff": 0,
+      "firstMeasure": 52,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 7,
+      "staff": 4,
+      "firstMeasure": 57,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 7,
+      "staff": 8,
+      "firstMeasure": 61,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 8,
+      "staff": 0,
+      "firstMeasure": 66,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 8,
+      "staff": 4,
+      "firstMeasure": 71,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 9,
+      "staff": 0,
+      "firstMeasure": 86,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 9,
+      "staff": 4,
+      "firstMeasure": 90,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 9,
+      "staff": 8,
+      "firstMeasure": 96,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 10,
+      "staff": 0,
+      "firstMeasure": 102,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 10,
+      "staff": 4,
+      "firstMeasure": 103,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 10,
+      "staff": 8,
+      "firstMeasure": 105,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 11,
+      "staff": 0,
+      "firstMeasure": 108,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 11,
+      "staff": 4,
+      "firstMeasure": 111,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 11,
+      "staff": 8,
+      "firstMeasure": 115,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 12,
+      "staff": 0,
+      "firstMeasure": 120,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 12,
+      "staff": 4,
+      "firstMeasure": 125,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 12,
+      "staff": 8,
+      "firstMeasure": 129,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 13,
+      "staff": 0,
+      "firstMeasure": 134,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 13,
+      "staff": 4,
+      "firstMeasure": 139,
+      "fifths": -5
+    },
+    {
+      "role": 0,
+      "page": 13,
+      "staff": 8,
+      "firstMeasure": 144,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 2,
+      "staff": 1,
+      "firstMeasure": 1,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 2,
+      "staff": 5,
+      "firstMeasure": 8,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 2,
+      "staff": 9,
+      "firstMeasure": 12,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 3,
+      "staff": 1,
+      "firstMeasure": 15,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 3,
+      "staff": 5,
+      "firstMeasure": 18,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 4,
+      "staff": 9,
+      "firstMeasure": 33,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 5,
+      "staff": 1,
+      "firstMeasure": 34,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 5,
+      "staff": 5,
+      "firstMeasure": 37,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 5,
+      "staff": 9,
+      "firstMeasure": 40,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 6,
+      "staff": 1,
+      "firstMeasure": 43,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 6,
+      "staff": 5,
+      "firstMeasure": 46,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 6,
+      "staff": 9,
+      "firstMeasure": 49,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 7,
+      "staff": 1,
+      "firstMeasure": 52,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 7,
+      "staff": 5,
+      "firstMeasure": 57,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 7,
+      "staff": 9,
+      "firstMeasure": 61,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 8,
+      "staff": 1,
+      "firstMeasure": 66,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 8,
+      "staff": 5,
+      "firstMeasure": 71,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 8,
+      "staff": 9,
+      "firstMeasure": 78,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 10,
+      "staff": 1,
+      "firstMeasure": 101,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 10,
+      "staff": 5,
+      "firstMeasure": 103,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 10,
+      "staff": 9,
+      "firstMeasure": 105,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 11,
+      "staff": 1,
+      "firstMeasure": 108,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 11,
+      "staff": 5,
+      "firstMeasure": 111,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 11,
+      "staff": 9,
+      "firstMeasure": 115,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 12,
+      "staff": 1,
+      "firstMeasure": 120,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 12,
+      "staff": 5,
+      "firstMeasure": 125,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 12,
+      "staff": 9,
+      "firstMeasure": 129,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 13,
+      "staff": 1,
+      "firstMeasure": 134,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 13,
+      "staff": 5,
+      "firstMeasure": 139,
+      "fifths": -5
+    },
+    {
+      "role": 1,
+      "page": 13,
+      "staff": 9,
+      "firstMeasure": 144,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 2,
+      "staff": 2,
+      "firstMeasure": 1,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 2,
+      "staff": 6,
+      "firstMeasure": 8,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 2,
+      "staff": 10,
+      "firstMeasure": 12,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 3,
+      "staff": 2,
+      "firstMeasure": 15,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 3,
+      "staff": 6,
+      "firstMeasure": 18,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 3,
+      "staff": 10,
+      "firstMeasure": 22,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 4,
+      "staff": 2,
+      "firstMeasure": 25,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 4,
+      "staff": 6,
+      "firstMeasure": 28,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 4,
+      "staff": 10,
+      "firstMeasure": 31,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 6,
+      "staff": 6,
+      "firstMeasure": 47,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 6,
+      "staff": 10,
+      "firstMeasure": 49,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 7,
+      "staff": 2,
+      "firstMeasure": 52,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 7,
+      "staff": 6,
+      "firstMeasure": 57,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 7,
+      "staff": 10,
+      "firstMeasure": 61,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 8,
+      "staff": 2,
+      "firstMeasure": 66,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 8,
+      "staff": 6,
+      "firstMeasure": 71,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 8,
+      "staff": 10,
+      "firstMeasure": 77,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 9,
+      "staff": 2,
+      "firstMeasure": 83,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 9,
+      "staff": 6,
+      "firstMeasure": 90,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 9,
+      "staff": 10,
+      "firstMeasure": 96,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 10,
+      "staff": 2,
+      "firstMeasure": 101,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 10,
+      "staff": 6,
+      "firstMeasure": 103,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 10,
+      "staff": 10,
+      "firstMeasure": 105,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 11,
+      "staff": 2,
+      "firstMeasure": 108,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 11,
+      "staff": 6,
+      "firstMeasure": 111,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 11,
+      "staff": 10,
+      "firstMeasure": 115,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 12,
+      "staff": 2,
+      "firstMeasure": 120,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 12,
+      "staff": 6,
+      "firstMeasure": 125,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 12,
+      "staff": 10,
+      "firstMeasure": 129,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 13,
+      "staff": 2,
+      "firstMeasure": 134,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 13,
+      "staff": 6,
+      "firstMeasure": 139,
+      "fifths": -5
+    },
+    {
+      "role": 2,
+      "page": 13,
+      "staff": 10,
+      "firstMeasure": 144,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 2,
+      "staff": 3,
+      "firstMeasure": 1,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 2,
+      "staff": 7,
+      "firstMeasure": 8,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 2,
+      "staff": 11,
+      "firstMeasure": 12,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 3,
+      "staff": 3,
+      "firstMeasure": 15,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 3,
+      "staff": 7,
+      "firstMeasure": 18,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 3,
+      "staff": 11,
+      "firstMeasure": 22,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 4,
+      "staff": 3,
+      "firstMeasure": 25,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 4,
+      "staff": 7,
+      "firstMeasure": 28,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 4,
+      "staff": 11,
+      "firstMeasure": 31,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 6,
+      "staff": 7,
+      "firstMeasure": 47,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 6,
+      "staff": 11,
+      "firstMeasure": 49,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 7,
+      "staff": 3,
+      "firstMeasure": 52,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 7,
+      "staff": 7,
+      "firstMeasure": 57,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 7,
+      "staff": 11,
+      "firstMeasure": 61,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 8,
+      "staff": 3,
+      "firstMeasure": 66,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 8,
+      "staff": 7,
+      "firstMeasure": 71,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 8,
+      "staff": 11,
+      "firstMeasure": 77,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 9,
+      "staff": 3,
+      "firstMeasure": 83,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 9,
+      "staff": 7,
+      "firstMeasure": 90,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 9,
+      "staff": 11,
+      "firstMeasure": 96,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 10,
+      "staff": 3,
+      "firstMeasure": 101,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 10,
+      "staff": 7,
+      "firstMeasure": 103,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 10,
+      "staff": 11,
+      "firstMeasure": 105,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 11,
+      "staff": 3,
+      "firstMeasure": 108,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 11,
+      "staff": 7,
+      "firstMeasure": 111,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 11,
+      "staff": 11,
+      "firstMeasure": 115,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 12,
+      "staff": 3,
+      "firstMeasure": 120,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 12,
+      "staff": 7,
+      "firstMeasure": 125,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 12,
+      "staff": 11,
+      "firstMeasure": 129,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 13,
+      "staff": 3,
+      "firstMeasure": 134,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 13,
+      "staff": 7,
+      "firstMeasure": 139,
+      "fifths": -5
+    },
+    {
+      "role": 3,
+      "page": 13,
+      "staff": 11,
+      "firstMeasure": 144,
+      "fifths": -5
+    }
+  ]
+}

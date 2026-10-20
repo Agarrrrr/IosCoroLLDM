@@ -1,0 +1,31 @@
+{
+  "row": {
+    "id": "ccc7dcfd-adf1-4ee8-b538-57a3f8bf9788",
+    "nombre": "Ven a la Cena",
+    "archivo": "ven-a-la-cena-1781223731334.pdf",
+    "midi_archivo": "all-things-are-ready-1781398015307.mid",
+    "vinculo_idioma": "usmc_64adc0c5970ee4295057e334",
+    "temas": [
+      "Santa Cena"
+    ],
+    "coro_id": "local",
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  "info": {
+    "lyrics": 0,
+    "notes": [
+      59,
+      75,
+      75,
+      71
+    ],
+    "total": 280,
+    "quarters": 63.0
+  },
+  "pages": 1,
+  "candidateCount": 11,
+  "seed": 20261017,
+  "pdfSha256": "ccccca1b35a5ef8e2460f1160e3ff80f579cffedafc46cb80b94a6450af32aec",
+  "midSha256": "6d66bf9b7e30f25fec1408a3a9ce648b0b030a5fe1ca7ec6471dc701c4f21940"
+}

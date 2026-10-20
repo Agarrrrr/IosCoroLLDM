@@ -1,0 +1,55 @@
+    final region = prefix.key.region;
+    Rect? bounds;
+    for (final stroke in tail.trazos) {
+      if (stroke.oculto) continue;
+      if (stroke.tool == ToolType.text) {
+        bounds = region;
+        break;
+      }
+      Rect? pathBounds;
+      for (final point in stroke.points) {
+        final position = Offset(point.x * size.width, point.y * size.height);
+        final pointRect = Rect.fromPoints(position, position);
+        pathBounds = pathBounds?.expandToInclude(pointRect) ?? pointRect;
+      }
+      if (pathBounds != null) {
+        final strokeBounds =
+            pathBounds.inflate(stroke.size / 2 + 1 / prefix.key.ratio);
+        bounds = bounds?.expandToInclude(strokeBounds) ?? strokeBounds;
+      }
+    }
+    final affected = bounds?.intersect(region);
+    if (affected == null || affected.isEmpty) {
+      _AnnotationRasterPainter(prefix).paint(canvas, size);
+      return;
+    }
+    final ratio = prefix.key.ratio;
+    final damage = Rect.fromLTRB(
+            region.left +
+                ((affected.left - region.left) * ratio).floor() / ratio,
+            region.top + ((affected.top - region.top) * ratio).floor() / ratio,
+            region.left +
+                ((affected.right - region.left) * ratio).ceil() / ratio,
+            region.top +
+                ((affected.bottom - region.top) * ratio).ceil() / ratio)
+        .intersect(region);
+    // The two clips partition physical pixels. Composite the unaffected
+    // prefix directly and allocate an erasing layer only for the edited area.
+    canvas.save();
+    canvas.clipPath(
+        Path()
+          ..fillType = PathFillType.evenOdd
+          ..addRect(region)
+          ..addRect(damage),
+        doAntiAlias: false);
+    _AnnotationRasterPainter(prefix).paint(canvas, size);
+    canvas.restore();
+    canvas.save();
+    canvas.clipRect(damage, doAntiAlias: false);
+    canvas.saveLayer(damage, Paint());
+    _AnnotationRasterPainter(prefix).paint(canvas, size);
+    tail.paint(canvas, size);
+    canvas.restore();
+    canvas.restore();
+  }
+

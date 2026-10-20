@@ -1,0 +1,97 @@
+{
+  "notes": 1946,
+  "crossSystemArcs": 8,
+  "ties": 40,
+  "slurs": 52,
+  "triplets": 0,
+  "syllabifiedWords": 906,
+  "pitchChanges": [],
+  "midiTempos": [
+    {
+      "bpm": 97.9999836666694,
+      "ticks": 0,
+      "time": 0
+    }
+  ],
+  "playbackTempos": [
+    {
+      "ticks": 0,
+      "bpm": 98
+    },
+    {
+      "ticks": 171600,
+      "bpm": 94
+    },
+    {
+      "ticks": 172800,
+      "bpm": 88
+    },
+    {
+      "ticks": 173520,
+      "bpm": 82
+    },
+    {
+      "ticks": 174240,
+      "bpm": 78
+    },
+    {
+      "ticks": 174720,
+      "bpm": 74
+    },
+    {
+      "ticks": 176400,
+      "bpm": 72
+    },
+    {
+      "ticks": 176640,
+      "bpm": 70
+    },
+    {
+      "ticks": 177360,
+      "bpm": 68
+    },
+    {
+      "ticks": 178080,
+      "bpm": 66
+    },
+    {
+      "ticks": 178560,
+      "bpm": 64
+    },
+    {
+      "ticks": 180480,
+      "bpm": 60
+    }
+  ],
+  "expressions": {
+    "dynamics": 84,
+    "fermatas": 13,
+    "accents": 42,
+    "tenutos": 12,
+    "upBows": 16,
+    "wedges": 3
+  },
+  "referenceAdjustments": [
+    {
+      "role": "Tenor",
+      "measure": 42,
+      "pdfPitch": 55,
+      "midiPitch": 58
+    },
+    {
+      "role": "Bajo",
+      "measure": 74,
+      "word": "corazón",
+      "pdfOnsets": [
+        2.25,
+        2.75,
+        3
+      ],
+      "midiOnsets": [
+        2.25,
+        2.5,
+        2.75
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+import{b as s,o as e}from"./chunk-T2S575GI.js";var n=(()=>{let t=class t{constructor(){this._scrollTop=new s,this.scrollTop$=this._scrollTop.asObservable()}requestScrollTop(r){this._scrollTop.next(r)}};t.\u0275fac=function(c){return new(c||t)},t.\u0275prov=e({token:t,factory:t.\u0275fac,providedIn:"root"});let o=t;return o})();export{n as a};

@@ -1,0 +1,2093 @@
+{
+  "dynamics": [],
+  "arcs": [
+    {
+      "start": "torre-0-3-0",
+      "end": "torre-0-3-1",
+      "role": 0,
+      "measure": 2,
+      "onset": 1.0,
+      "toMeasure": 2,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-0-7-0",
+      "end": "torre-0-7-1",
+      "role": 0,
+      "measure": 2,
+      "onset": 3.5,
+      "toMeasure": 2,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440001335
+    },
+    {
+      "start": "torre-0-14-0",
+      "end": "torre-0-14-1",
+      "role": 0,
+      "measure": 3,
+      "onset": 3.0,
+      "toMeasure": 3,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-3-0",
+      "end": "torre-1-3-1",
+      "role": 1,
+      "measure": 2,
+      "onset": 1.0,
+      "toMeasure": 2,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-7-0",
+      "end": "torre-1-7-1",
+      "role": 1,
+      "measure": 2,
+      "onset": 3.5,
+      "toMeasure": 2,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-14-0",
+      "end": "torre-1-14-1",
+      "role": 1,
+      "measure": 3,
+      "onset": 3.0,
+      "toMeasure": 3,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-2-3-0",
+      "end": "torre-2-3-1",
+      "role": 2,
+      "measure": 2,
+      "onset": 1.0,
+      "toMeasure": 2,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-7-0",
+      "end": "torre-2-7-1",
+      "role": 2,
+      "measure": 2,
+      "onset": 3.5,
+      "toMeasure": 2,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-3-3-0",
+      "end": "torre-3-3-1",
+      "role": 3,
+      "measure": 2,
+      "onset": 1.0,
+      "toMeasure": 2,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-14-0",
+      "end": "torre-3-14-1",
+      "role": 3,
+      "measure": 3,
+      "onset": 3.0,
+      "toMeasure": 3,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440001335
+    },
+    {
+      "start": "torre-0-18-0",
+      "end": "torre-0-18-1",
+      "role": 0,
+      "measure": 4,
+      "onset": 1.0,
+      "toMeasure": 4,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999488
+    },
+    {
+      "start": "torre-0-22-0",
+      "end": "torre-0-22-1",
+      "role": 0,
+      "measure": 4,
+      "onset": 4.0,
+      "toMeasure": 4,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-18-0",
+      "end": "torre-1-18-1",
+      "role": 1,
+      "measure": 4,
+      "onset": 1.0,
+      "toMeasure": 4,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999488
+    },
+    {
+      "start": "torre-1-22-0",
+      "end": "torre-1-22-1",
+      "role": 1,
+      "measure": 4,
+      "onset": 4.0,
+      "toMeasure": 4,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-46-0",
+      "end": "torre-0-46-1",
+      "role": 0,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-49-0",
+      "end": "torre-0-49-1",
+      "role": 0,
+      "measure": 7,
+      "onset": 5.5,
+      "toMeasure": 8,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-51-0",
+      "end": "torre-0-51-1",
+      "role": 0,
+      "measure": 8,
+      "onset": 1.0,
+      "toMeasure": 8,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-46-0",
+      "end": "torre-1-46-1",
+      "role": 1,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-49-0",
+      "end": "torre-1-49-1",
+      "role": 1,
+      "measure": 7,
+      "onset": 5.5,
+      "toMeasure": 8,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-51-0",
+      "end": "torre-1-51-1",
+      "role": 1,
+      "measure": 8,
+      "onset": 1.0,
+      "toMeasure": 8,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999062
+    },
+    {
+      "start": "torre-3-46-0",
+      "end": "torre-3-46-1",
+      "role": 3,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-43-0",
+      "end": "torre-2-45-0",
+      "role": 2,
+      "measure": 7,
+      "onset": 0.0,
+      "toMeasure": 7,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 7.053179162400056
+    },
+    {
+      "start": "torre-0-55-0",
+      "end": "torre-0-55-1",
+      "role": 0,
+      "measure": 9,
+      "onset": 0.0,
+      "toMeasure": 9,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-73-0",
+      "end": "torre-0-73-1",
+      "role": 0,
+      "measure": 11,
+      "onset": 1.0,
+      "toMeasure": 11,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-73-1",
+      "end": "torre-0-73-2",
+      "role": 0,
+      "measure": 11,
+      "onset": 1.5,
+      "toMeasure": 11,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-55-0",
+      "end": "torre-1-55-1",
+      "role": 1,
+      "measure": 9,
+      "onset": 0.0,
+      "toMeasure": 9,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-1-71-0",
+      "end": "torre-1-71-1",
+      "role": 1,
+      "measure": 11,
+      "onset": 1.0,
+      "toMeasure": 11,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-71-1",
+      "end": "torre-1-71-2",
+      "role": 1,
+      "measure": 11,
+      "onset": 1.5,
+      "toMeasure": 11,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-49-0",
+      "end": "torre-2-49-1",
+      "role": 2,
+      "measure": 9,
+      "onset": 0.0,
+      "toMeasure": 9,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-65-0",
+      "end": "torre-2-65-1",
+      "role": 2,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-65-1",
+      "end": "torre-2-65-2",
+      "role": 2,
+      "measure": 11,
+      "onset": 1.5,
+      "toMeasure": 11,
+      "toOnset": 2.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-3-50-0",
+      "end": "torre-3-50-1",
+      "role": 3,
+      "measure": 9,
+      "onset": 0.0,
+      "toMeasure": 9,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-3-64-0",
+      "end": "torre-3-64-1",
+      "role": 3,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-64-1",
+      "end": "torre-3-64-2",
+      "role": 3,
+      "measure": 11,
+      "onset": 1.5,
+      "toMeasure": 11,
+      "toOnset": 2.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-0-78-0",
+      "end": "torre-0-78-1",
+      "role": 0,
+      "measure": 12,
+      "onset": 1.5,
+      "toMeasure": 12,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999772
+    },
+    {
+      "start": "torre-0-83-0",
+      "end": "torre-0-83-1",
+      "role": 0,
+      "measure": 13,
+      "onset": 0.0,
+      "toMeasure": 13,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-99-0",
+      "end": "torre-0-99-1",
+      "role": 0,
+      "measure": 14,
+      "onset": 3.5,
+      "toMeasure": 14,
+      "toOnset": 5.0,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-0-100-0",
+      "end": "torre-0-100-1",
+      "role": 0,
+      "measure": 14,
+      "onset": 3.5,
+      "toMeasure": 14,
+      "toOnset": 5.0,
+      "kind": "tie",
+      "cost": 5.212290032000112
+    },
+    {
+      "start": "torre-1-76-0",
+      "end": "torre-1-76-1",
+      "role": 1,
+      "measure": 12,
+      "onset": 1.5,
+      "toMeasure": 12,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569440000341
+    },
+    {
+      "start": "torre-1-81-0",
+      "end": "torre-1-81-1",
+      "role": 1,
+      "measure": 13,
+      "onset": 0.0,
+      "toMeasure": 13,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-69-0",
+      "end": "torre-2-69-1",
+      "role": 2,
+      "measure": 12,
+      "onset": 1.5,
+      "toMeasure": 12,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999772
+    },
+    {
+      "start": "torre-3-73-0",
+      "end": "torre-3-73-1",
+      "role": 3,
+      "measure": 13,
+      "onset": 0.0,
+      "toMeasure": 13,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-3-85-0",
+      "end": "torre-3-85-1",
+      "role": 3,
+      "measure": 14,
+      "onset": 3.5,
+      "toMeasure": 14,
+      "toOnset": 5.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-98-0",
+      "end": "torre-1-98-1",
+      "role": 1,
+      "measure": 15,
+      "onset": 0.0,
+      "toMeasure": 15,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-1-105-0",
+      "end": "torre-1-105-1",
+      "role": 1,
+      "measure": 16,
+      "onset": 1.5,
+      "toMeasure": 16,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-83-0",
+      "end": "torre-2-83-1",
+      "role": 2,
+      "measure": 15,
+      "onset": 0.0,
+      "toMeasure": 15,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-2-90-0",
+      "end": "torre-2-90-1",
+      "role": 2,
+      "measure": 16,
+      "onset": 1.5,
+      "toMeasure": 16,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-96-0",
+      "end": "torre-3-96-1",
+      "role": 3,
+      "measure": 16,
+      "onset": 1.5,
+      "toMeasure": 16,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-71-0",
+      "end": "torre-0-73-0",
+      "role": 0,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 9.500192434799999
+    },
+    {
+      "start": "torre-1-69-0",
+      "end": "torre-1-71-0",
+      "role": 1,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 11,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 8.492595752400064
+    },
+    {
+      "start": "torre-0-114-0",
+      "end": "torre-0-115-0",
+      "role": 0,
+      "measure": 16,
+      "onset": 3.0,
+      "toMeasure": 16,
+      "toOnset": 3.25,
+      "kind": "slur",
+      "cost": 24.835482840800125
+    },
+    {
+      "start": "torre-0-125-0",
+      "end": "torre-0-125-1",
+      "role": 0,
+      "measure": 17,
+      "onset": 1.0,
+      "toMeasure": 17,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-0-126-0",
+      "end": "torre-0-126-1",
+      "role": 0,
+      "measure": 17,
+      "onset": 1.0,
+      "toMeasure": 17,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 4.06074960319998
+    },
+    {
+      "start": "torre-0-131-0",
+      "end": "torre-0-131-1",
+      "role": 0,
+      "measure": 17,
+      "onset": 3.0,
+      "toMeasure": 17,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-132-0",
+      "end": "torre-0-132-1",
+      "role": 0,
+      "measure": 17,
+      "onset": 3.0,
+      "toMeasure": 17,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 9.386602019599962
+    },
+    {
+      "start": "torre-0-141-0",
+      "end": "torre-0-141-1",
+      "role": 0,
+      "measure": 18,
+      "onset": 3.25,
+      "toMeasure": 18,
+      "toOnset": 3.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-141-1",
+      "end": "torre-0-141-2",
+      "role": 0,
+      "measure": 18,
+      "onset": 3.5,
+      "toMeasure": 18,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-141-2",
+      "end": "torre-0-141-3",
+      "role": 0,
+      "measure": 18,
+      "onset": 4.5,
+      "toMeasure": 18,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-110-0",
+      "end": "torre-1-110-1",
+      "role": 1,
+      "measure": 17,
+      "onset": 1.0,
+      "toMeasure": 17,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-1-113-0",
+      "end": "torre-1-113-1",
+      "role": 1,
+      "measure": 17,
+      "onset": 3.0,
+      "toMeasure": 17,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-1-122-0",
+      "end": "torre-1-122-1",
+      "role": 1,
+      "measure": 18,
+      "onset": 3.25,
+      "toMeasure": 18,
+      "toOnset": 3.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-1-122-1",
+      "end": "torre-1-122-2",
+      "role": 1,
+      "measure": 18,
+      "onset": 3.5,
+      "toMeasure": 18,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-1-122-2",
+      "end": "torre-1-122-3",
+      "role": 1,
+      "measure": 18,
+      "onset": 4.5,
+      "toMeasure": 18,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.6061569440001335
+    },
+    {
+      "start": "torre-2-95-0",
+      "end": "torre-2-95-1",
+      "role": 2,
+      "measure": 17,
+      "onset": 1.0,
+      "toMeasure": 17,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-2-105-0",
+      "end": "torre-2-105-1",
+      "role": 2,
+      "measure": 18,
+      "onset": 4.5,
+      "toMeasure": 18,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-3-103-0",
+      "end": "torre-3-103-1",
+      "role": 3,
+      "measure": 17,
+      "onset": 1.0,
+      "toMeasure": 17,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-3-106-0",
+      "end": "torre-3-106-1",
+      "role": 3,
+      "measure": 17,
+      "onset": 3.0,
+      "toMeasure": 17,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-115-0",
+      "end": "torre-3-115-1",
+      "role": 3,
+      "measure": 18,
+      "onset": 3.25,
+      "toMeasure": 18,
+      "toOnset": 3.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-115-1",
+      "end": "torre-3-115-2",
+      "role": 3,
+      "measure": 18,
+      "onset": 3.5,
+      "toMeasure": 18,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-115-2",
+      "end": "torre-3-115-3",
+      "role": 3,
+      "measure": 18,
+      "onset": 4.5,
+      "toMeasure": 18,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-0-171-0",
+      "end": "torre-0-171-1",
+      "role": 0,
+      "measure": 29,
+      "onset": 0.0,
+      "toMeasure": 29,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-0-175-0",
+      "end": "torre-0-175-1",
+      "role": 0,
+      "measure": 29,
+      "onset": 3.5,
+      "toMeasure": 29,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-0-182-0",
+      "end": "torre-0-182-1",
+      "role": 0,
+      "measure": 30,
+      "onset": 3.0,
+      "toMeasure": 30,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-157-0",
+      "end": "torre-1-157-1",
+      "role": 1,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 30,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-159-0",
+      "end": "torre-1-159-1",
+      "role": 1,
+      "measure": 30,
+      "onset": 3.0,
+      "toMeasure": 30,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-2-131-0",
+      "end": "torre-2-131-1",
+      "role": 2,
+      "measure": 29,
+      "onset": 0.0,
+      "toMeasure": 29,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-2-134-0",
+      "end": "torre-2-134-1",
+      "role": 2,
+      "measure": 30,
+      "onset": 0.0,
+      "toMeasure": 30,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-186-0",
+      "end": "torre-0-186-1",
+      "role": 0,
+      "measure": 31,
+      "onset": 1.0,
+      "toMeasure": 31,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-190-0",
+      "end": "torre-0-190-1",
+      "role": 0,
+      "measure": 31,
+      "onset": 4.0,
+      "toMeasure": 31,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-1-163-0",
+      "end": "torre-1-163-1",
+      "role": 1,
+      "measure": 31,
+      "onset": 1.0,
+      "toMeasure": 31,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-167-0",
+      "end": "torre-1-167-1",
+      "role": 1,
+      "measure": 31,
+      "onset": 4.0,
+      "toMeasure": 31,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-0-215-0",
+      "end": "torre-0-215-1",
+      "role": 0,
+      "measure": 34,
+      "onset": 0.0,
+      "toMeasure": 34,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-218-0",
+      "end": "torre-0-218-1",
+      "role": 0,
+      "measure": 34,
+      "onset": 5.5,
+      "toMeasure": 35,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6061569439999062
+    },
+    {
+      "start": "torre-0-220-0",
+      "end": "torre-0-220-1",
+      "role": 0,
+      "measure": 35,
+      "onset": 1.0,
+      "toMeasure": 35,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-1-192-0",
+      "end": "torre-1-192-1",
+      "role": 1,
+      "measure": 34,
+      "onset": 0.0,
+      "toMeasure": 34,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-195-0",
+      "end": "torre-1-195-1",
+      "role": 1,
+      "measure": 34,
+      "onset": 5.5,
+      "toMeasure": 35,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6061569439999062
+    },
+    {
+      "start": "torre-1-197-0",
+      "end": "torre-1-197-1",
+      "role": 1,
+      "measure": 35,
+      "onset": 1.0,
+      "toMeasure": 35,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-181-0",
+      "end": "torre-3-181-1",
+      "role": 3,
+      "measure": 34,
+      "onset": 0.0,
+      "toMeasure": 34,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-224-0",
+      "end": "torre-0-224-1",
+      "role": 0,
+      "measure": 36,
+      "onset": 0.0,
+      "toMeasure": 36,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-1-201-0",
+      "end": "torre-1-201-1",
+      "role": 1,
+      "measure": 36,
+      "onset": 0.0,
+      "toMeasure": 36,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-2-176-0",
+      "end": "torre-2-176-1",
+      "role": 2,
+      "measure": 36,
+      "onset": 0.0,
+      "toMeasure": 36,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-3-185-0",
+      "end": "torre-3-185-1",
+      "role": 3,
+      "measure": 36,
+      "onset": 0.0,
+      "toMeasure": 36,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-0-243-0",
+      "end": "torre-0-243-1",
+      "role": 0,
+      "measure": 38,
+      "onset": 1.0,
+      "toMeasure": 38,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-0-243-1",
+      "end": "torre-0-243-2",
+      "role": 0,
+      "measure": 38,
+      "onset": 1.5,
+      "toMeasure": 38,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-0-252-0",
+      "end": "torre-0-252-1",
+      "role": 0,
+      "measure": 40,
+      "onset": 0.0,
+      "toMeasure": 40,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-1-217-0",
+      "end": "torre-1-217-1",
+      "role": 1,
+      "measure": 38,
+      "onset": 1.0,
+      "toMeasure": 38,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-217-1",
+      "end": "torre-1-217-2",
+      "role": 1,
+      "measure": 38,
+      "onset": 1.5,
+      "toMeasure": 38,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-1-226-0",
+      "end": "torre-1-226-1",
+      "role": 1,
+      "measure": 40,
+      "onset": 0.0,
+      "toMeasure": 40,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-2-193-0",
+      "end": "torre-2-193-1",
+      "role": 2,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 38,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-2-193-1",
+      "end": "torre-2-193-2",
+      "role": 2,
+      "measure": 38,
+      "onset": 1.5,
+      "toMeasure": 38,
+      "toOnset": 2.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-3-199-0",
+      "end": "torre-3-199-1",
+      "role": 3,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 38,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-3-199-1",
+      "end": "torre-3-199-2",
+      "role": 3,
+      "measure": 38,
+      "onset": 1.5,
+      "toMeasure": 38,
+      "toOnset": 2.5,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-3-208-0",
+      "end": "torre-3-208-1",
+      "role": 3,
+      "measure": 40,
+      "onset": 0.0,
+      "toMeasure": 40,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-0-268-0",
+      "end": "torre-0-268-1",
+      "role": 0,
+      "measure": 41,
+      "onset": 3.5,
+      "toMeasure": 41,
+      "toOnset": 5.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-0-269-0",
+      "end": "torre-0-269-1",
+      "role": 0,
+      "measure": 41,
+      "onset": 3.5,
+      "toMeasure": 41,
+      "toOnset": 5.0,
+      "kind": "tie",
+      "cost": 5.21229003199997
+    },
+    {
+      "start": "torre-1-243-0",
+      "end": "torre-1-243-1",
+      "role": 1,
+      "measure": 42,
+      "onset": 0.0,
+      "toMeasure": 42,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-210-0",
+      "end": "torre-2-210-1",
+      "role": 2,
+      "measure": 42,
+      "onset": 0.0,
+      "toMeasure": 42,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-220-0",
+      "end": "torre-3-220-1",
+      "role": 3,
+      "measure": 41,
+      "onset": 3.5,
+      "toMeasure": 41,
+      "toOnset": 5.0,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-0-252-1",
+      "end": "torre-0-254-0",
+      "role": 0,
+      "measure": 40,
+      "onset": 1.5,
+      "toMeasure": 40,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 8.348650216799996
+    },
+    {
+      "start": "torre-1-226-1",
+      "end": "torre-1-228-0",
+      "role": 1,
+      "measure": 40,
+      "onset": 1.5,
+      "toMeasure": 40,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 7.772882984399985
+    },
+    {
+      "start": "torre-0-295-0",
+      "end": "torre-0-295-1",
+      "role": 0,
+      "measure": 44,
+      "onset": 1.0,
+      "toMeasure": 44,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-294-0",
+      "end": "torre-0-294-1",
+      "role": 0,
+      "measure": 44,
+      "onset": 1.0,
+      "toMeasure": 44,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 5.212290032000112
+    },
+    {
+      "start": "torre-0-301-0",
+      "end": "torre-0-301-1",
+      "role": 0,
+      "measure": 44,
+      "onset": 3.0,
+      "toMeasure": 44,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-300-0",
+      "end": "torre-0-300-1",
+      "role": 0,
+      "measure": 44,
+      "onset": 3.0,
+      "toMeasure": 44,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 9.386602019600048
+    },
+    {
+      "start": "torre-1-250-0",
+      "end": "torre-1-250-1",
+      "role": 1,
+      "measure": 43,
+      "onset": 1.5,
+      "toMeasure": 43,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-1-255-0",
+      "end": "torre-1-255-1",
+      "role": 1,
+      "measure": 44,
+      "onset": 1.0,
+      "toMeasure": 44,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-258-0",
+      "end": "torre-1-258-1",
+      "role": 1,
+      "measure": 44,
+      "onset": 3.0,
+      "toMeasure": 44,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-217-0",
+      "end": "torre-2-217-1",
+      "role": 2,
+      "measure": 43,
+      "onset": 1.5,
+      "toMeasure": 43,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-2-222-0",
+      "end": "torre-2-222-1",
+      "role": 2,
+      "measure": 44,
+      "onset": 1.0,
+      "toMeasure": 44,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-231-0",
+      "end": "torre-3-231-1",
+      "role": 3,
+      "measure": 43,
+      "onset": 1.5,
+      "toMeasure": 43,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-3-238-0",
+      "end": "torre-3-238-1",
+      "role": 3,
+      "measure": 44,
+      "onset": 1.0,
+      "toMeasure": 44,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-241-0",
+      "end": "torre-3-241-1",
+      "role": 3,
+      "measure": 44,
+      "onset": 3.0,
+      "toMeasure": 44,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-310-0",
+      "end": "torre-0-310-1",
+      "role": 0,
+      "measure": 45,
+      "onset": 3.25,
+      "toMeasure": 45,
+      "toOnset": 3.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-0-310-1",
+      "end": "torre-0-310-2",
+      "role": 0,
+      "measure": 45,
+      "onset": 3.5,
+      "toMeasure": 45,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-0-310-2",
+      "end": "torre-0-310-3",
+      "role": 0,
+      "measure": 45,
+      "onset": 4.5,
+      "toMeasure": 45,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-267-0",
+      "end": "torre-1-267-1",
+      "role": 1,
+      "measure": 45,
+      "onset": 3.25,
+      "toMeasure": 45,
+      "toOnset": 3.5,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-1-267-1",
+      "end": "torre-1-267-2",
+      "role": 1,
+      "measure": 45,
+      "onset": 3.5,
+      "toMeasure": 45,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569439999346
+    },
+    {
+      "start": "torre-1-267-2",
+      "end": "torre-1-267-3",
+      "role": 1,
+      "measure": 45,
+      "onset": 4.5,
+      "toMeasure": 45,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-232-0",
+      "end": "torre-2-232-1",
+      "role": 2,
+      "measure": 45,
+      "onset": 4.5,
+      "toMeasure": 45,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-250-0",
+      "end": "torre-3-250-1",
+      "role": 3,
+      "measure": 45,
+      "onset": 3.25,
+      "toMeasure": 45,
+      "toOnset": 3.5,
+      "kind": "tie",
+      "cost": 0.6061569440001051
+    },
+    {
+      "start": "torre-3-250-1",
+      "end": "torre-3-250-2",
+      "role": 3,
+      "measure": 45,
+      "onset": 3.5,
+      "toMeasure": 45,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-3-250-2",
+      "end": "torre-3-250-3",
+      "role": 3,
+      "measure": 45,
+      "onset": 4.5,
+      "toMeasure": 45,
+      "toOnset": 6.0,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-0-283-0",
+      "end": "torre-0-284-0",
+      "role": 0,
+      "measure": 43,
+      "onset": 3.0,
+      "toMeasure": 43,
+      "toOnset": 3.25,
+      "kind": "slur",
+      "cost": 6.333466394399949
+    },
+    {
+      "start": "torre-0-321-0",
+      "end": "torre-0-321-1",
+      "role": 0,
+      "measure": 47,
+      "onset": 0.0,
+      "toMeasure": 47,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999772
+    },
+    {
+      "start": "torre-1-278-0",
+      "end": "torre-1-278-1",
+      "role": 1,
+      "measure": 47,
+      "onset": 0.0,
+      "toMeasure": 47,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999772
+    },
+    {
+      "start": "torre-2-243-0",
+      "end": "torre-2-243-1",
+      "role": 2,
+      "measure": 47,
+      "onset": 0.0,
+      "toMeasure": 47,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.6061569439999772
+    },
+    {
+      "start": "torre-3-262-0",
+      "end": "torre-3-262-1",
+      "role": 3,
+      "measure": 47,
+      "onset": 3.0,
+      "toMeasure": 47,
+      "toOnset": 4.5,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-0-342-0",
+      "end": "torre-0-343-0",
+      "role": 0,
+      "measure": 52,
+      "onset": 0.0,
+      "toMeasure": 52,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.333466394399977
+    },
+    {
+      "start": "torre-0-353-0",
+      "end": "torre-0-353-1",
+      "role": 0,
+      "measure": 54,
+      "onset": 1.0,
+      "toMeasure": 54,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-0-364-0",
+      "end": "torre-0-364-1",
+      "role": 0,
+      "measure": 58,
+      "onset": 0.0,
+      "toMeasure": 58,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-1-309-0",
+      "end": "torre-1-309-1",
+      "role": 1,
+      "measure": 54,
+      "onset": 1.0,
+      "toMeasure": 54,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-1-322-0",
+      "end": "torre-1-322-1",
+      "role": 1,
+      "measure": 58,
+      "onset": 0.0,
+      "toMeasure": 58,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-2-274-0",
+      "end": "torre-2-274-1",
+      "role": 2,
+      "measure": 54,
+      "onset": 1.0,
+      "toMeasure": 54,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569440000483
+    },
+    {
+      "start": "torre-2-287-0",
+      "end": "torre-2-287-1",
+      "role": 2,
+      "measure": 57,
+      "onset": 1.5,
+      "toMeasure": 58,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6061569440000198
+    },
+    {
+      "start": "torre-2-287-1",
+      "end": "torre-2-287-2",
+      "role": 2,
+      "measure": 58,
+      "onset": 0.0,
+      "toMeasure": 58,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-3-292-0",
+      "end": "torre-3-292-1",
+      "role": 3,
+      "measure": 54,
+      "onset": 1.0,
+      "toMeasure": 54,
+      "toOnset": 1.5,
+      "kind": "tie",
+      "cost": 0.6061569439999914
+    },
+    {
+      "start": "torre-3-302-0",
+      "end": "torre-3-302-1",
+      "role": 3,
+      "measure": 57,
+      "onset": 0.0,
+      "toMeasure": 58,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6061569440000767
+    },
+    {
+      "start": "torre-3-302-1",
+      "end": "torre-3-302-2",
+      "role": 3,
+      "measure": 58,
+      "onset": 0.0,
+      "toMeasure": 58,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6061569440001335
+    },
+    {
+      "start": "torre-0-369-0",
+      "end": "torre-0-369-1",
+      "role": 0,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 60,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-374-0",
+      "end": "torre-0-374-1",
+      "role": 0,
+      "measure": 62,
+      "onset": 0.0,
+      "toMeasure": 62,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-377-0",
+      "end": "torre-0-377-1",
+      "role": 0,
+      "measure": 63,
+      "onset": 1.5,
+      "toMeasure": 64,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-327-0",
+      "end": "torre-1-327-1",
+      "role": 1,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 60,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-332-0",
+      "end": "torre-1-332-1",
+      "role": 1,
+      "measure": 62,
+      "onset": 0.0,
+      "toMeasure": 62,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-1-335-0",
+      "end": "torre-1-335-1",
+      "role": 1,
+      "measure": 63,
+      "onset": 1.5,
+      "toMeasure": 64,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 4.606156943999963
+    },
+    {
+      "start": "torre-2-292-0",
+      "end": "torre-2-292-1",
+      "role": 2,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 60,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-297-0",
+      "end": "torre-2-297-1",
+      "role": 2,
+      "measure": 62,
+      "onset": 0.0,
+      "toMeasure": 62,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-2-300-0",
+      "end": "torre-2-300-1",
+      "role": 2,
+      "measure": 63,
+      "onset": 1.5,
+      "toMeasure": 64,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-307-0",
+      "end": "torre-3-307-1",
+      "role": 3,
+      "measure": 60,
+      "onset": 0.0,
+      "toMeasure": 60,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-312-0",
+      "end": "torre-3-312-1",
+      "role": 3,
+      "measure": 62,
+      "onset": 0.0,
+      "toMeasure": 62,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-3-315-0",
+      "end": "torre-3-315-1",
+      "role": 3,
+      "measure": 63,
+      "onset": 1.5,
+      "toMeasure": 64,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.606156943999963
+    },
+    {
+      "start": "torre-0-363-0",
+      "end": "torre-0-364-0",
+      "role": 0,
+      "measure": 57,
+      "onset": 0.0,
+      "toMeasure": 58,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 6.333466394400006
+    }
+  ],
+  "partial": [
+    {
+      "page": 3,
+      "start": [
+        474.8645168028,
+        693.9470509056
+      ],
+      "end": [
+        537.0474423132,
+        693.9470509056
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-1-151-0",
+            "cost": 2.269801530400059
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        474.8645168028,
+        693.9470509056
+      ],
+      "end": [
+        537.0474423132,
+        693.9470509056
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-1-151-0",
+            "cost": 2.269801530400059
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        474.8645168028,
+        737.2737595392
+      ],
+      "end": [
+        537.0474423132,
+        737.2737595392
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-2-130-0",
+            "cost": 2.2698015304000023
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        474.8645168028,
+        737.2737595392
+      ],
+      "end": [
+        537.0474423132,
+        737.2737595392
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-2-130-0",
+            "cost": 2.2698015304000023
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        474.8645168028,
+        796.5780916223999
+      ],
+      "end": [
+        537.0474423132,
+        796.5780916223999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-3-142-0",
+            "cost": 2.2698015304000023
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 3,
+      "start": [
+        474.8645168028,
+        796.5780916223999
+      ],
+      "end": [
+        537.0474423132,
+        796.5780916223999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-3-142-0",
+            "cost": 2.2698015304000023
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        106.2291644136,
+        178.20088135679998
+      ],
+      "end": [
+        115.7293335888,
+        178.20088135679998
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-1-152-0",
+            "cost": 11.836524588799989
+          }
+        ],
+        [
+          {
+            "id": "torre-1-152-0",
+            "cost": 2.336355413599989
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        106.2291644136,
+        178.20088135679998
+      ],
+      "end": [
+        115.7293335888,
+        178.20088135679998
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-1-152-0",
+            "cost": 11.836524588799989
+          }
+        ],
+        [
+          {
+            "id": "torre-1-152-0",
+            "cost": 2.336355413599989
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        106.2291644136,
+        221.38364743679995
+      ],
+      "end": [
+        115.7293335888,
+        221.38364743679995
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-2-131-0",
+            "cost": 11.836524588799989
+          }
+        ],
+        [
+          {
+            "id": "torre-2-131-0",
+            "cost": 2.336355413599989
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        106.2291644136,
+        221.38364743679995
+      ],
+      "end": [
+        115.7293335888,
+        221.38364743679995
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-2-131-0",
+            "cost": 11.836524588799989
+          }
+        ],
+        [
+          {
+            "id": "torre-2-131-0",
+            "cost": 2.336355413599989
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        106.2291644136,
+        280.68797952
+      ],
+      "end": [
+        115.7293335888,
+        280.68797952
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-3-143-0",
+            "cost": 11.836524588799989
+          }
+        ],
+        [
+          {
+            "id": "torre-3-143-0",
+            "cost": 2.336355413599989
+          }
+        ]
+      ]
+    },
+    {
+      "page": 4,
+      "start": [
+        106.2291644136,
+        280.68797952
+      ],
+      "end": [
+        115.7293335888,
+        280.68797952
+      ],
+      "nearest": [
+        [
+          {
+            "id": "torre-3-143-0",
+            "cost": 11.836524588799989
+          }
+        ],
+        [
+          {
+            "id": "torre-3-143-0",
+            "cost": 2.336355413599989
+          }
+        ]
+      ]
+    }
+  ],
+  "articulations": [
+    {
+      "id": "torre-1-134-0",
+      "role": 1,
+      "measure": 19,
+      "onset": 6.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "torre-0-319-0",
+      "role": 0,
+      "measure": 46,
+      "onset": 4.5,
+      "kind": "fermata"
+    },
+    {
+      "id": "torre-1-276-0",
+      "role": 1,
+      "measure": 46,
+      "onset": 4.5,
+      "kind": "fermata"
+    },
+    {
+      "id": "torre-2-241-0",
+      "role": 2,
+      "measure": 46,
+      "onset": 4.5,
+      "kind": "fermata"
+    },
+    {
+      "id": "torre-3-259-0",
+      "role": 3,
+      "measure": 46,
+      "onset": 4.5,
+      "kind": "fermata"
+    },
+    {
+      "id": "torre-0-380-0",
+      "role": 0,
+      "measure": 65,
+      "onset": 0.0,
+      "kind": "fermata"
+    }
+  ],
+  "wedges": []
+}

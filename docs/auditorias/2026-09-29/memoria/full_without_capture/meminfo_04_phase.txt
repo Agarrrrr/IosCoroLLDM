@@ -1,0 +1,18 @@
+W/OnBackInvokedCallback(16210): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (16210): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (4 ms)
+I/flutter (16210): PdfViewer: Loaded page 9 of 9 in 146 ms
+I/flutter (16210): AUDIT END viewer_open_heavy_warm_file 2136.985 ms, 125 frames, error=null
+I/flutter (16210): AUDIT START page_changes_vertical
+I/flutter (16210): AUDIT END page_changes_vertical 6115.896 ms, 368 frames, error=null
+I/flutter (16210): AUDIT START page_changes_carousel
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 4062KB AllocSpace bytes, 0(0B) LOS objects, 64% free, 3377KB/9521KB, paused 32us,23us total 15.099ms
+I/flutter (16210): AUDIT END page_changes_carousel 6110.532 ms, 368 frames, error=null
+I/flutter (16210): AUDIT START zoom_pdf
+I/flutter (16210): AUDIT END zoom_pdf 1719.929 ms, 103 frames, error=null
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 175KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3377KB/9521KB, paused 53us,29us total 20.996ms
+I/flutter (16210): AUDIT START draw_5_strokes_empty_page
+I/flutter (16210): AUDIT END draw_5_strokes_empty_page 7008.766 ms, 404 frames, error=null
+I/flutter (16210): AUDIT START draw_5_strokes_warm_page
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3377KB/9521KB, paused 25us,21us total 10.524ms
+I/flutter (16210): AUDIT END draw_5_strokes_warm_page 7056.381 ms, 420 frames, error=null
+I/flutter (16210): AUDIT START draw_5_strokes_100_saved

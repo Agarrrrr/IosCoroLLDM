@@ -1,0 +1,18 @@
+I/flutter (14782): AUDIT START heavy_fit
+I/flutter (14782): PdfViewer: Loaded page 9 of 9 in 148 ms
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 5123KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 32us,15us total 10.770ms
+I/flutter (14782): AUDIT END heavy_fit 5000.466 ms, 300 frames, error=null
+I/flutter (14782): AUDIT START heavy_zoom_pdf_only
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 29us,17us total 10.975ms
+I/flutter (14782): AUDIT END heavy_zoom_pdf_only 7128.549 ms, 429 frames, error=null
+I/flutter (14782): AUDIT START heavy_return_to_page
+I/flutter (14782): AUDIT END heavy_return_to_page 3000.953 ms, 181 frames, error=null
+I/flutter (14782): AUDIT START heavy_drawing_enabled
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 35us,16us total 10.757ms
+I/flutter (14782): AUDIT END heavy_drawing_enabled 5001.661 ms, 300 frames, error=null
+I/flutter (14782): AUDIT START heavy_zoom_draw
+I/.coro.perfaudit(14782): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3408KB/9552KB, paused 34us,23us total 11.596ms
+I/flutter (14782): AUDIT END heavy_zoom_draw 9807.774 ms, 590 frames, error=null
+I/flutter (14782): AUDIT START heavy_500_saved_settle
+I/flutter (14782): AUDIT END heavy_500_saved_settle 5001.688 ms, 283 frames, error=null
+I/flutter (14782): AUDIT START heavy_500_saved_draw

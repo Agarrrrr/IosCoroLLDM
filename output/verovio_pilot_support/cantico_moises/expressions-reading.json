@@ -1,0 +1,1661 @@
+{
+  "dynamics": [],
+  "arcs": [
+    {
+      "start": "moises-0-2-0.00000-78",
+      "end": "moises-0-2-2.00000-78",
+      "role": 0,
+      "measure": 2,
+      "onset": 0.0,
+      "toMeasure": 2,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "moises-0-1-0.00000-66",
+      "end": "moises-0-1-3.66667-76",
+      "role": 0,
+      "measure": 1,
+      "onset": 0.0,
+      "toMeasure": 1,
+      "toOnset": 3.6666666666666665,
+      "kind": "slur",
+      "cost": 20.38406244150002
+    },
+    {
+      "start": "moises-1-1-0.00000-62",
+      "end": "moises-1-1-3.66667-73",
+      "role": 1,
+      "measure": 1,
+      "onset": 0.0,
+      "toMeasure": 1,
+      "toOnset": 3.6666666666666665,
+      "kind": "slur",
+      "cost": 24.336820608599965
+    },
+    {
+      "start": "moises-2-19-2.00000-61",
+      "end": "moises-2-20-0.00000-62",
+      "role": 2,
+      "measure": 15,
+      "onset": 2.0,
+      "toMeasure": 16,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 6.820500490799986
+    },
+    {
+      "start": "moises-0-23-3.50000-73",
+      "end": "moises-0-24-0.00000-69",
+      "role": 0,
+      "measure": 19,
+      "onset": 3.5,
+      "toMeasure": 20,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 10.961431050800059
+    },
+    {
+      "start": "moises-0-24-3.50000-78",
+      "end": "moises-0-24-3.75000-76",
+      "role": 0,
+      "measure": 20,
+      "onset": 3.5,
+      "toMeasure": 20,
+      "toOnset": 3.75,
+      "kind": "slur",
+      "cost": 6.045449869800052
+    },
+    {
+      "start": "moises-2-24-0.00000-57",
+      "end": "moises-2-24-3.00000-55",
+      "role": 2,
+      "measure": 20,
+      "onset": 0.0,
+      "toMeasure": 20,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 5.580474523200053
+    },
+    {
+      "start": "moises-3-23-1.50000-55",
+      "end": "moises-3-23-3.00000-49",
+      "role": 3,
+      "measure": 19,
+      "onset": 1.5,
+      "toMeasure": 19,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 6.045449869799967
+    },
+    {
+      "start": "moises-3-24-2.00000-55",
+      "end": "moises-3-24-2.50000-47",
+      "role": 3,
+      "measure": 20,
+      "onset": 2.0,
+      "toMeasure": 20,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 6.82050049079993
+    },
+    {
+      "start": "moises-3-23-0.50000-55",
+      "end": "moises-3-23-1.00000-59",
+      "role": 3,
+      "measure": 19,
+      "onset": 0.5,
+      "toMeasure": 19,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.045449869799967
+    },
+    {
+      "start": "moises-0-25-2.00000-76",
+      "end": "moises-0-25-2.50000-73",
+      "role": 0,
+      "measure": 21,
+      "onset": 2.0,
+      "toMeasure": 21,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 6.045449869800024
+    },
+    {
+      "start": "moises-2-25-2.00000-64",
+      "end": "moises-2-25-2.50000-66",
+      "role": 2,
+      "measure": 21,
+      "onset": 2.0,
+      "toMeasure": 21,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 6.045449869799995
+    },
+    {
+      "start": "moises-1-37-0.00000-66",
+      "end": "moises-1-37-2.00000-69",
+      "role": 1,
+      "measure": 33,
+      "onset": 0.0,
+      "toMeasure": 33,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 8.138086546500006
+    },
+    {
+      "start": "moises-1-36-1.00000-70",
+      "end": "moises-1-36-1.50000-71",
+      "role": 1,
+      "measure": 32,
+      "onset": 1.0,
+      "toMeasure": 32,
+      "toOnset": 1.5,
+      "kind": "slur",
+      "cost": 6.820500490800015
+    },
+    {
+      "start": "moises-2-37-0.00000-62",
+      "end": "moises-2-37-2.00000-63",
+      "role": 2,
+      "measure": 33,
+      "onset": 0.0,
+      "toMeasure": 33,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 7.828066298100055
+    },
+    {
+      "start": "moises-1-41-0.00000-66",
+      "end": "moises-1-41-2.00000-69",
+      "role": 1,
+      "measure": 37,
+      "onset": 0.0,
+      "toMeasure": 37,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 13.829305436899972
+    },
+    {
+      "start": "moises-2-41-0.00000-62",
+      "end": "moises-2-41-2.00000-63",
+      "role": 2,
+      "measure": 37,
+      "onset": 0.0,
+      "toMeasure": 37,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 7.98307642230003
+    },
+    {
+      "start": "moises-0-46-0.00000-66",
+      "end": "moises-0-46-2.00000-66",
+      "role": 0,
+      "measure": 42,
+      "onset": 0.0,
+      "toMeasure": 42,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000732
+    },
+    {
+      "start": "moises-0-47-0.00000-64",
+      "end": "moises-0-47-2.00000-64",
+      "role": 0,
+      "measure": 43,
+      "onset": 0.0,
+      "toMeasure": 43,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999311
+    },
+    {
+      "start": "moises-1-46-0.00000-62",
+      "end": "moises-1-46-2.00000-62",
+      "role": 1,
+      "measure": 42,
+      "onset": 0.0,
+      "toMeasure": 42,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999595
+    },
+    {
+      "start": "moises-1-47-0.00000-61",
+      "end": "moises-1-47-2.00000-61",
+      "role": 1,
+      "measure": 43,
+      "onset": 0.0,
+      "toMeasure": 43,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999311
+    },
+    {
+      "start": "moises-1-48-0.00000-62",
+      "end": "moises-1-49-0.00000-62",
+      "role": 1,
+      "measure": 44,
+      "onset": 0.0,
+      "toMeasure": 45,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.621180588799973
+    },
+    {
+      "start": "moises-2-47-0.00000-57",
+      "end": "moises-2-47-2.00000-57",
+      "role": 2,
+      "measure": 43,
+      "onset": 0.0,
+      "toMeasure": 43,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "moises-2-48-0.00000-59",
+      "end": "moises-2-49-0.00000-59",
+      "role": 2,
+      "measure": 44,
+      "onset": 0.0,
+      "toMeasure": 45,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.621180588799973
+    },
+    {
+      "start": "moises-3-47-0.00000-45",
+      "end": "moises-3-47-2.00000-45",
+      "role": 3,
+      "measure": 43,
+      "onset": 0.0,
+      "toMeasure": 43,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951998174
+    },
+    {
+      "start": "moises-3-48-0.00000-47",
+      "end": "moises-3-49-0.00000-47",
+      "role": 3,
+      "measure": 44,
+      "onset": 0.0,
+      "toMeasure": 45,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.621180588799973
+    },
+    {
+      "start": "moises-0-50-0.00000-67",
+      "end": "moises-0-50-2.00000-67",
+      "role": 0,
+      "measure": 46,
+      "onset": 0.0,
+      "toMeasure": 46,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000164
+    },
+    {
+      "start": "moises-0-51-0.00000-71",
+      "end": "moises-0-51-2.00000-71",
+      "role": 0,
+      "measure": 47,
+      "onset": 0.0,
+      "toMeasure": 47,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "moises-0-52-0.50000-74",
+      "end": "moises-0-52-2.50000-74",
+      "role": 0,
+      "measure": 48,
+      "onset": 0.5,
+      "toMeasure": 48,
+      "toOnset": 2.5,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "moises-1-51-0.00000-67",
+      "end": "moises-1-51-2.00000-67",
+      "role": 1,
+      "measure": 47,
+      "onset": 0.0,
+      "toMeasure": 47,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-2-51-0.00000-64",
+      "end": "moises-2-51-2.00000-64",
+      "role": 2,
+      "measure": 47,
+      "onset": 0.0,
+      "toMeasure": 47,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-3-51-0.00000-52",
+      "end": "moises-3-51-2.00000-52",
+      "role": 3,
+      "measure": 47,
+      "onset": 0.0,
+      "toMeasure": 47,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-0-55-0.00000-73",
+      "end": "moises-0-55-2.00000-73",
+      "role": 0,
+      "measure": 51,
+      "onset": 0.0,
+      "toMeasure": 51,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "moises-0-56-0.00000-74",
+      "end": "moises-0-56-2.00000-74",
+      "role": 0,
+      "measure": 52,
+      "onset": 0.0,
+      "toMeasure": 52,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-1-55-0.00000-69",
+      "end": "moises-1-55-2.00000-69",
+      "role": 1,
+      "measure": 51,
+      "onset": 0.0,
+      "toMeasure": 51,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "moises-1-56-0.00000-71",
+      "end": "moises-1-56-2.00000-71",
+      "role": 1,
+      "measure": 52,
+      "onset": 0.0,
+      "toMeasure": 52,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-2-55-0.00000-66",
+      "end": "moises-2-55-2.00000-66",
+      "role": 2,
+      "measure": 51,
+      "onset": 0.0,
+      "toMeasure": 51,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "moises-2-56-0.00000-66",
+      "end": "moises-2-56-2.00000-66",
+      "role": 2,
+      "measure": 52,
+      "onset": 0.0,
+      "toMeasure": 52,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-3-55-0.00000-54",
+      "end": "moises-3-55-2.00000-54",
+      "role": 3,
+      "measure": 51,
+      "onset": 0.0,
+      "toMeasure": 51,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "moises-0-46-0.00000-66",
+      "end": "moises-0-46-2.50000-67",
+      "role": 0,
+      "measure": 42,
+      "onset": 0.0,
+      "toMeasure": 42,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 23.517427194199968
+    },
+    {
+      "start": "moises-1-46-0.00000-62",
+      "end": "moises-1-46-2.50000-64",
+      "role": 1,
+      "measure": 42,
+      "onset": 0.0,
+      "toMeasure": 42,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 26.617717719800027
+    },
+    {
+      "start": "moises-0-50-0.00000-67",
+      "end": "moises-0-50-2.50000-69",
+      "role": 0,
+      "measure": 46,
+      "onset": 0.0,
+      "toMeasure": 46,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 23.79430718429994
+    },
+    {
+      "start": "moises-2-50-0.00000-62",
+      "end": "moises-2-50-1.00000-59",
+      "role": 2,
+      "measure": 46,
+      "onset": 0.0,
+      "toMeasure": 46,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 11.193946237100022
+    },
+    {
+      "start": "moises-3-50-0.00000-43",
+      "end": "moises-3-50-1.00000-55",
+      "role": 3,
+      "measure": 46,
+      "onset": 0.0,
+      "toMeasure": 46,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.8205004908000575
+    },
+    {
+      "start": "moises-0-58-0.00000-69",
+      "end": "moises-0-58-1.00000-67",
+      "role": 0,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.820500490799986
+    },
+    {
+      "start": "moises-3-56-0.00000-47",
+      "end": "moises-3-56-1.00000-59",
+      "role": 3,
+      "measure": 52,
+      "onset": 0.0,
+      "toMeasure": 52,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.820500490799958
+    },
+    {
+      "start": "moises-2-67-0.00000-64",
+      "end": "moises-2-68-0.00000-64",
+      "role": 2,
+      "measure": 63,
+      "onset": 0.0,
+      "toMeasure": 64,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 2.62118058880003
+    },
+    {
+      "start": "moises-1-61-2.00000-66",
+      "end": "moises-1-61-2.50000-64",
+      "role": 1,
+      "measure": 57,
+      "onset": 2.0,
+      "toMeasure": 57,
+      "toOnset": 2.5,
+      "kind": "slur",
+      "cost": 6.045449869800024
+    },
+    {
+      "start": "moises-1-61-3.50000-62",
+      "end": "moises-1-61-3.75000-64",
+      "role": 1,
+      "measure": 57,
+      "onset": 3.5,
+      "toMeasure": 57,
+      "toOnset": 3.75,
+      "kind": "slur",
+      "cost": 6.045449869799967
+    },
+    {
+      "start": "moises-3-61-0.00000-45",
+      "end": "moises-3-63-0.00000-45",
+      "role": 3,
+      "measure": 57,
+      "onset": 0.0,
+      "toMeasure": 59,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 15.966444482400078
+    },
+    {
+      "start": "moises-2-65-0.00000-60",
+      "end": "moises-2-66-0.00000-59",
+      "role": 2,
+      "measure": 61,
+      "onset": 0.0,
+      "toMeasure": 62,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 17.749071915900018
+    },
+    {
+      "start": "moises-3-65-0.00000-48",
+      "end": "moises-3-66-0.00000-47",
+      "role": 3,
+      "measure": 61,
+      "onset": 0.0,
+      "toMeasure": 62,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 17.749071915900018
+    },
+    {
+      "start": "moises-3-67-0.00000-52",
+      "end": "moises-3-68-0.00000-57",
+      "role": 3,
+      "measure": 63,
+      "onset": 0.0,
+      "toMeasure": 64,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 8.215745681400023
+    },
+    {
+      "start": "moises-0-73-1.50000-78",
+      "end": "moises-0-73-1.75000-76",
+      "role": 0,
+      "measure": 69,
+      "onset": 1.5,
+      "toMeasure": 69,
+      "toOnset": 1.75,
+      "kind": "slur",
+      "cost": 6.045449869799995
+    },
+    {
+      "start": "moises-1-73-1.50000-69",
+      "end": "moises-1-73-1.75000-67",
+      "role": 1,
+      "measure": 69,
+      "onset": 1.5,
+      "toMeasure": 69,
+      "toOnset": 1.75,
+      "kind": "slur",
+      "cost": 6.820500490799986
+    },
+    {
+      "start": "moises-1-80-0.00000-66",
+      "end": "moises-1-80-2.00000-69",
+      "role": 1,
+      "measure": 76,
+      "onset": 0.0,
+      "toMeasure": 76,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 6.045449869799967
+    },
+    {
+      "start": "moises-2-80-0.00000-62",
+      "end": "moises-2-80-2.00000-63",
+      "role": 2,
+      "measure": 76,
+      "onset": 0.0,
+      "toMeasure": 76,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 7.828066298099969
+    },
+    {
+      "start": "moises-1-84-0.00000-66",
+      "end": "moises-1-84-2.00000-69",
+      "role": 1,
+      "measure": 80,
+      "onset": 0.0,
+      "toMeasure": 80,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 8.138086546500034
+    },
+    {
+      "start": "moises-2-84-0.00000-62",
+      "end": "moises-2-84-2.00000-63",
+      "role": 2,
+      "measure": 80,
+      "onset": 0.0,
+      "toMeasure": 80,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 7.9830764223000585
+    },
+    {
+      "start": "moises-1-99-0.00000-71",
+      "end": "moises-1-99-1.00000-71",
+      "role": 1,
+      "measure": 95,
+      "onset": 0.0,
+      "toMeasure": 95,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-1-99-2.00000-67",
+      "end": "moises-1-99-3.00000-67",
+      "role": 1,
+      "measure": 95,
+      "onset": 2.0,
+      "toMeasure": 95,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-2-100-0.00000-59",
+      "end": "moises-2-100-1.00000-59",
+      "role": 2,
+      "measure": 96,
+      "onset": 0.0,
+      "toMeasure": 96,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "moises-2-100-2.00000-59",
+      "end": "moises-2-100-3.00000-59",
+      "role": 2,
+      "measure": 96,
+      "onset": 2.0,
+      "toMeasure": 96,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952001585
+    },
+    {
+      "start": "moises-3-98-0.00000-62",
+      "end": "moises-3-98-1.00000-62",
+      "role": 3,
+      "measure": 94,
+      "onset": 0.0,
+      "toMeasure": 94,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-3-98-2.00000-59",
+      "end": "moises-3-98-3.00000-59",
+      "role": 3,
+      "measure": 94,
+      "onset": 2.0,
+      "toMeasure": 94,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-2-100-0.00000-59",
+      "end": "moises-2-100-3.75000-57",
+      "role": 2,
+      "measure": 96,
+      "onset": 0.0,
+      "toMeasure": 96,
+      "toOnset": 3.75,
+      "kind": "slur",
+      "cost": 11.504093045299953
+    },
+    {
+      "start": "moises-3-96-0.00000-47",
+      "end": "moises-3-96-2.00000-57",
+      "role": 3,
+      "measure": 92,
+      "onset": 0.0,
+      "toMeasure": 92,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 18.56829474969993
+    },
+    {
+      "start": "moises-1-99-0.00000-71",
+      "end": "moises-1-100-0.00000-71",
+      "role": 1,
+      "measure": 95,
+      "onset": 0.0,
+      "toMeasure": 96,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 7.983076422299945
+    },
+    {
+      "start": "moises-1-100-2.50000-64",
+      "end": "moises-1-100-3.00000-67",
+      "role": 1,
+      "measure": 96,
+      "onset": 2.5,
+      "toMeasure": 96,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 6.8205004908001
+    },
+    {
+      "start": "moises-3-98-0.00000-62",
+      "end": "moises-3-99-0.00000-55",
+      "role": 3,
+      "measure": 94,
+      "onset": 0.0,
+      "toMeasure": 95,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 7.440540987600031
+    },
+    {
+      "start": "moises-3-99-2.50000-54",
+      "end": "moises-3-99-3.00000-54",
+      "role": 3,
+      "measure": 95,
+      "onset": 2.5,
+      "toMeasure": 95,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 7.595551111799921,
+      "interveningOrnament": true
+    },
+    {
+      "start": "moises-0-101-0.00000-79",
+      "end": "moises-0-101-1.00000-79",
+      "role": 0,
+      "measure": 97,
+      "onset": 0.0,
+      "toMeasure": 97,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "moises-0-101-2.00000-76",
+      "end": "moises-0-101-3.00000-76",
+      "role": 0,
+      "measure": 97,
+      "onset": 2.0,
+      "toMeasure": 97,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952001016
+    },
+    {
+      "start": "moises-3-103-0.00000-57",
+      "end": "moises-3-103-1.00000-57",
+      "role": 3,
+      "measure": 99,
+      "onset": 0.0,
+      "toMeasure": 99,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.9603679951998743
+    },
+    {
+      "start": "moises-3-103-2.00000-57",
+      "end": "moises-3-103-3.00000-57",
+      "role": 3,
+      "measure": 99,
+      "onset": 2.0,
+      "toMeasure": 99,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679951999311
+    },
+    {
+      "start": "moises-3-103-0.00000-57",
+      "end": "moises-3-103-3.75000-56",
+      "role": 3,
+      "measure": 99,
+      "onset": 0.0,
+      "toMeasure": 99,
+      "toOnset": 3.75,
+      "kind": "slur",
+      "cost": 12.976689225199948
+    },
+    {
+      "start": "moises-1-104-0.00000-69",
+      "end": "moises-1-104-1.00000-69",
+      "role": 1,
+      "measure": 100,
+      "onset": 0.0,
+      "toMeasure": 100,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "moises-1-104-2.00000-69",
+      "end": "moises-1-104-3.00000-69",
+      "role": 1,
+      "measure": 100,
+      "onset": 2.0,
+      "toMeasure": 100,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679952000164
+    },
+    {
+      "start": "moises-2-105-0.00000-61",
+      "end": "moises-2-105-1.00000-61",
+      "role": 2,
+      "measure": 101,
+      "onset": 0.0,
+      "toMeasure": 101,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.9603679952000448
+    },
+    {
+      "start": "moises-2-105-2.00000-57",
+      "end": "moises-2-105-3.00000-57",
+      "role": 2,
+      "measure": 101,
+      "onset": 2.0,
+      "toMeasure": 101,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.9603679951999311
+    },
+    {
+      "start": "moises-2-105-0.00000-61",
+      "end": "moises-2-105-3.75000-56",
+      "role": 2,
+      "measure": 101,
+      "onset": 0.0,
+      "toMeasure": 101,
+      "toOnset": 3.75,
+      "kind": "slur",
+      "cost": 26.385285072499983
+    },
+    {
+      "start": "moises-0-106-0.00000-74",
+      "end": "moises-0-106-1.00000-74",
+      "role": 0,
+      "measure": 102,
+      "onset": 0.0,
+      "toMeasure": 102,
+      "toOnset": 1.0,
+      "kind": "tie",
+      "cost": 0.9603679951999737
+    },
+    {
+      "start": "moises-0-106-2.00000-71",
+      "end": "moises-0-106-3.00000-71",
+      "role": 0,
+      "measure": 102,
+      "onset": 2.0,
+      "toMeasure": 102,
+      "toOnset": 3.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-0-101-0.00000-79",
+      "end": "moises-0-102-0.00000-72",
+      "role": 0,
+      "measure": 97,
+      "onset": 0.0,
+      "toMeasure": 98,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 7.440540987600031
+    },
+    {
+      "start": "moises-0-102-2.75000-71",
+      "end": "moises-0-102-3.00000-72",
+      "role": 0,
+      "measure": 98,
+      "onset": 2.75,
+      "toMeasure": 98,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 17.71568954320003
+    },
+    {
+      "start": "moises-2-101-2.50000-63",
+      "end": "moises-2-101-3.00000-59",
+      "role": 2,
+      "measure": 97,
+      "onset": 2.5,
+      "toMeasure": 97,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 14.836684155800071
+    },
+    {
+      "start": "moises-1-104-0.00000-69",
+      "end": "moises-1-105-0.00000-69",
+      "role": 1,
+      "measure": 100,
+      "onset": 0.0,
+      "toMeasure": 101,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 20.72724495860001
+    },
+    {
+      "start": "moises-3-104-2.50000-55",
+      "end": "moises-3-104-3.00000-52",
+      "role": 3,
+      "measure": 100,
+      "onset": 2.5,
+      "toMeasure": 100,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 6.045449869800024
+    },
+    {
+      "start": "moises-0-106-0.00000-74",
+      "end": "moises-0-107-0.00000-71",
+      "role": 0,
+      "measure": 102,
+      "onset": 0.0,
+      "toMeasure": 103,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 13.530465713199902
+    },
+    {
+      "start": "moises-0-107-2.75000-71",
+      "end": "moises-0-107-3.00000-72",
+      "role": 0,
+      "measure": 103,
+      "onset": 2.75,
+      "toMeasure": 103,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 19.498349992300007
+    },
+    {
+      "start": "moises-2-106-2.50000-61",
+      "end": "moises-2-106-3.00000-57",
+      "role": 2,
+      "measure": 102,
+      "onset": 2.5,
+      "toMeasure": 102,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 6.045449869799967
+    },
+    {
+      "start": "moises-3-120-2.00000-47",
+      "end": "moises-3-121-0.00000-47",
+      "role": 3,
+      "measure": 116,
+      "onset": 2.0,
+      "toMeasure": 117,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.960367995199988
+    },
+    {
+      "start": "moises-0-120-2.00000-71",
+      "end": "moises-0-121-0.00000-78",
+      "role": 0,
+      "measure": 116,
+      "onset": 2.0,
+      "toMeasure": 117,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 15.888774342299996
+    },
+    {
+      "start": "moises-1-120-2.00000-66",
+      "end": "moises-1-121-0.00000-71",
+      "role": 1,
+      "measure": 116,
+      "onset": 2.0,
+      "toMeasure": 117,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 19.874689275499975
+    },
+    {
+      "start": "moises-2-120-2.00000-59",
+      "end": "moises-2-121-0.00000-63",
+      "role": 2,
+      "measure": 116,
+      "onset": 2.0,
+      "toMeasure": 117,
+      "toOnset": 0.0,
+      "kind": "slur",
+      "cost": 16.35380471489998
+    },
+    {
+      "start": "moises-3-60-0.00000-47",
+      "end": "moises-3-63-0.00000-45",
+      "role": 3,
+      "measure": 56,
+      "onset": 0,
+      "toMeasure": 59,
+      "toOnset": 0,
+      "kind": "slur",
+      "manualBoundary": true
+    },
+    {
+      "start": "moises-2-64-0.00000-62",
+      "end": "moises-2-66-0.00000-59",
+      "role": 2,
+      "measure": 60,
+      "onset": 0,
+      "toMeasure": 62,
+      "toOnset": 0,
+      "kind": "slur",
+      "manualBoundary": true
+    },
+    {
+      "start": "moises-3-64-0.00000-50",
+      "end": "moises-3-66-0.00000-47",
+      "role": 3,
+      "measure": 60,
+      "onset": 0,
+      "toMeasure": 62,
+      "toOnset": 0,
+      "kind": "slur",
+      "manualBoundary": true
+    },
+    {
+      "start": "moises-2-94-2.00000-61",
+      "end": "moises-2-95-0.00000-62",
+      "role": 2,
+      "measure": 90,
+      "onset": 2,
+      "toMeasure": 91,
+      "toOnset": 0,
+      "kind": "slur",
+      "manualBoundary": true
+    },
+    {
+      "start": "moises-2-100-0.00000-59",
+      "end": "moises-2-101-0.00000-55",
+      "role": 2,
+      "measure": 96,
+      "onset": 0,
+      "toMeasure": 97,
+      "toOnset": 0,
+      "kind": "slur",
+      "manualBoundary": true
+    },
+    {
+      "start": "moises-3-103-0.00000-57",
+      "end": "moises-3-104-0.00000-57",
+      "role": 3,
+      "measure": 99,
+      "onset": 0,
+      "toMeasure": 100,
+      "toOnset": 0,
+      "kind": "slur",
+      "manualBoundary": true
+    },
+    {
+      "start": "moises-2-105-0.00000-61",
+      "end": "moises-2-106-0.00000-54",
+      "role": 2,
+      "measure": 101,
+      "onset": 0,
+      "toMeasure": 102,
+      "toOnset": 0,
+      "kind": "slur",
+      "manualBoundary": true
+    }
+  ],
+  "partial": [
+    {
+      "page": 6,
+      "start": [
+        444.5848176624,
+        781.8710664648
+      ],
+      "end": [
+        550.30547514,
+        781.5610462164001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-3-60-0.00000-47",
+            "cost": 5.248244359899957
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 6,
+      "start": [
+        444.5848176624,
+        781.8710664648
+      ],
+      "end": [
+        550.30547514,
+        781.5610462164001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-3-60-0.00000-47",
+            "cost": 5.248244359899957
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        457.9161615672,
+        196.24281723720003
+      ],
+      "end": [
+        550.30547514,
+        198.5679691002
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-64-0.00000-62",
+            "cost": 5.248244359899957
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        457.9161615672,
+        196.24281723720003
+      ],
+      "end": [
+        550.30547514,
+        198.5679691002
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-64-0.00000-62",
+            "cost": 5.248244359899957
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        457.9161615672,
+        259.48694791080004
+      ],
+      "end": [
+        550.30547514,
+        261.8120997738
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-3-64-0.00000-50",
+            "cost": 5.248244359899957
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 7,
+      "start": [
+        457.9161615672,
+        259.48694791080004
+      ],
+      "end": [
+        550.30547514,
+        261.8120997738
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-3-64-0.00000-50",
+            "cost": 5.248244359899957
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 10,
+      "start": [
+        455.745942792,
+        200.738110839
+      ],
+      "end": [
+        550.30547514,
+        197.63790835500004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-94-2.00000-61",
+            "cost": 3.2330687245000718
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 10,
+      "start": [
+        455.745942792,
+        200.738110839
+      ],
+      "end": [
+        550.30547514,
+        197.63790835500004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-94-2.00000-61",
+            "cost": 3.2330687245000718
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 10,
+      "start": [
+        89.2890010368,
+        449.37435005580005
+      ],
+      "end": [
+        99.3650167788,
+        448.4442893106
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-95-0.00000-62",
+            "cost": 13.198417135699998
+          }
+        ],
+        [
+          {
+            "id": "moises-2-95-0.00000-62",
+            "cost": 3.587431766300014
+          }
+        ]
+      ]
+    },
+    {
+      "page": 10,
+      "start": [
+        89.2890010368,
+        449.37435005580005
+      ],
+      "end": [
+        99.3650167788,
+        448.4442893106
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-95-0.00000-62",
+            "cost": 13.198417135699998
+          }
+        ],
+        [
+          {
+            "id": "moises-2-95-0.00000-62",
+            "cost": 3.587431766300014
+          }
+        ]
+      ]
+    },
+    {
+      "page": 11,
+      "start": [
+        83.0883759648,
+        218.40926499780005
+      ],
+      "end": [
+        93.1643917068,
+        218.56427512200003
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-101-0.00000-55",
+            "cost": 13.58594244620005
+          }
+        ],
+        [
+          {
+            "id": "moises-2-101-0.00000-55",
+            "cost": 3.5874317663000284
+          }
+        ]
+      ]
+    },
+    {
+      "page": 11,
+      "start": [
+        83.0883759648,
+        218.40926499780005
+      ],
+      "end": [
+        93.1643917068,
+        218.56427512200003
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-101-0.00000-55",
+            "cost": 13.58594244620005
+          }
+        ],
+        [
+          {
+            "id": "moises-2-101-0.00000-55",
+            "cost": 3.5874317663000284
+          }
+        ]
+      ]
+    },
+    {
+      "page": 11,
+      "start": [
+        83.0883759648,
+        499.28761004820007
+      ],
+      "end": [
+        93.1643917068,
+        499.907650545
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-3-104-0.00000-57",
+            "cost": 13.198417135699998
+          }
+        ],
+        [
+          {
+            "id": "moises-3-104-0.00000-57",
+            "cost": 2.8123811453000087
+          }
+        ]
+      ]
+    },
+    {
+      "page": 11,
+      "start": [
+        83.0883759648,
+        499.28761004820007
+      ],
+      "end": [
+        93.1643917068,
+        499.907650545
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-3-104-0.00000-57",
+            "cost": 13.198417135699998
+          }
+        ],
+        [
+          {
+            "id": "moises-3-104-0.00000-57",
+            "cost": 2.8123811453000087
+          }
+        ]
+      ]
+    },
+    {
+      "page": 11,
+      "start": [
+        83.0883759648,
+        695.6854374096001
+      ],
+      "end": [
+        94.7145479748,
+        694.6003665402001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-106-0.00000-54",
+            "cost": 22.42151952559996
+          }
+        ],
+        [
+          {
+            "id": "moises-2-106-0.00000-54",
+            "cost": 13.308726797499986
+          }
+        ]
+      ]
+    },
+    {
+      "page": 11,
+      "start": [
+        83.0883759648,
+        695.6854374096001
+      ],
+      "end": [
+        94.7145479748,
+        694.6003665402001
+      ],
+      "nearest": [
+        [
+          {
+            "id": "moises-2-106-0.00000-54",
+            "cost": 22.42151952559996
+          }
+        ],
+        [
+          {
+            "id": "moises-2-106-0.00000-54",
+            "cost": 13.308726797499986
+          }
+        ]
+      ]
+    }
+  ],
+  "articulations": [
+    {
+      "id": "moises-0-45-0.00000-71",
+      "role": 0,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-1-45-0.00000-66",
+      "role": 1,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-2-45-0.00000-62",
+      "role": 2,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-3-45-0.00000-47",
+      "role": 3,
+      "measure": 41,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-0-68-0.00000-73",
+      "role": 0,
+      "measure": 64,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-1-68-0.00000-69",
+      "role": 1,
+      "measure": 64,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-2-68-0.00000-64",
+      "role": 2,
+      "measure": 64,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-3-68-0.00000-57",
+      "role": 3,
+      "measure": 64,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-0-96-2.00000-72",
+      "role": 0,
+      "measure": 92,
+      "onset": 2.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-1-96-0.00000-66",
+      "role": 1,
+      "measure": 92,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-2-96-0.00000-62",
+      "role": 2,
+      "measure": 92,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-3-96-2.00000-57",
+      "role": 3,
+      "measure": 92,
+      "onset": 2.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-0-108-2.00000-76",
+      "role": 0,
+      "measure": 104,
+      "onset": 2.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-1-108-2.00000-67",
+      "role": 1,
+      "measure": 104,
+      "onset": 2.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-2-108-2.00000-59",
+      "role": 2,
+      "measure": 104,
+      "onset": 2.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-3-108-2.00000-52",
+      "role": 3,
+      "measure": 104,
+      "onset": 2.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-0-121-1.00000-83",
+      "role": 0,
+      "measure": 117,
+      "onset": 1.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-0-122-0.00000-79",
+      "role": 0,
+      "measure": 118,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-1-121-1.00000-71",
+      "role": 1,
+      "measure": 117,
+      "onset": 1.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-1-122-0.00000-71",
+      "role": 1,
+      "measure": 118,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-2-121-1.00000-63",
+      "role": 2,
+      "measure": 117,
+      "onset": 1.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-2-122-0.00000-64",
+      "role": 2,
+      "measure": 118,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-3-121-1.00000-47",
+      "role": 3,
+      "measure": 117,
+      "onset": 1.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "moises-3-122-0.00000-52",
+      "role": 3,
+      "measure": 118,
+      "onset": 0.0,
+      "kind": "fermata"
+    }
+  ],
+  "wedges": []
+}

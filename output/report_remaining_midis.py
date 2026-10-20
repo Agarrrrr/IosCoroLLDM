@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,hashlib
+out=Path('output/remaining_midis/2026-10-12');docs=Path('docs/repertorio/2026-10-12')
+manifest=json.loads((docs/'incorporados_30.json').read_text(encoding='utf-8'))
+baseline=json.loads((out/'baseline.json').read_text(encoding='utf-8'))
+assert all(hashlib.sha256(Path(f).read_bytes()).hexdigest()==h for f,h in baseline['assets'].items())
+for f,v in baseline['catalogs'].items():
+ if Path(f).name=='catalogo_en.json':assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==v['sha256']
+for r in manifest['records']:assert hashlib.sha256(Path(r['sourceMidi']).read_bytes()).hexdigest()==r['midiHash']
+manifest.update(cloudMidiValidated=30,cloudNewPdfsValidated=6,testsPassed=109,newBatchTestsPassed=60,englishCatalogsUnchanged=True,originalMidiFilesUnchanged=True,existingPdfsPreserved=True)
+(docs/'incorporados_30.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+(docs/'pruebas_incorporacion_30.txt').write_bytes((out/'flutter-tests.log').read_bytes())
+lines=['# Incorporaci\u00f3n de 30 MIDI \u2014 2026-10-12','','## Resultado','','- 24 cantos existentes recibieron MIDI; sus IDs, nombres, PDF y otros campos se conservaron.','- Seis cantos nuevos con PDF y MIDI: El Latido de tu Coraz\u00f3n, Hoy Se Cumplen, Lluvias Tard\u00edas, Salmo 148, Somos La Luz del Mundo, Te Prometo mi Se\u00f1or.','- T\u00edtulos sin MOD, autor de correcci\u00f3n ni subt\u00edtulos a\u00f1adidos.','- Lluvias Tard\u00edas usa expresamente Lluvias Tard\u00edas MOD by Caleb.mid y el PDF de Lluvias Tard\u00edas CJ4S. Las otras variantes no se incorporaron.','- Excluidos: Coronadle Rey, Remembranza Gloriosa y Perfect (CMG).','- Los cinco MIDI con identidad pendiente de la auditor\u00eda anterior no forman parte de esta tanda.','- Sin push a GitHub ni compilaci\u00f3n de una versi\u00f3n distribuible en esta operaci\u00f3n.','','## Verificaci\u00f3n','','- 4.278 archivos anteriores intactos por SHA256.','- Cat\u00e1logos ingleses sin cambios byte a byte.','- 24 PDF actuales: hash de nube id\u00e9ntico al PDF offline previo.','- 30 MIDI y seis PDF nuevos recuperados desde Worker y validados contra sus hashes originales.','- 109 pruebas Flutter aprobadas: 60 de esta tanda m\u00e1s 49 de incorporaciones anteriores. Red bloqueada durante las pruebas offline.','- Aislamiento de todas las pistas conserva notas, velocidades, posiciones y duraciones.','- Ning\u00fan MIDI original se renombr\u00f3, transpus\u00f3 o recuantiz\u00f3. Se preservaron tambi\u00e9n las etiquetas y programas originales.','','## Alcance musical de la validaci\u00f3n','','Las pruebas verifican integridad, apertura offline y exportaci\u00f3n. No equivalen a una revisi\u00f3n nota por nota de la correspondencia con cada PDF. El usuario autoriz\u00f3 incorporar los pendientes despu\u00e9s de conocer la auditor\u00eda. Las observaciones previas de comp\u00e1s/arreglo en A lo Largo de la Vida, Fue por M\u00ed, Linaje de Bendici\u00f3n, Recordando la Muerte de Cristo y Ven a la Fiesta se conservan en los informes anteriores; esta incorporaci\u00f3n no las resuelve ni reemplaza sus PDF.','','## Registros','','| Canto | Operaci\u00f3n | Pistas originales con notas |','|---|---|---:|']
+for r in manifest['records']:lines.append('| '+r['name']+' | '+('PDF + MIDI nuevos' if r['newWork'] else 'A\u00f1adir MIDI; conservar PDF')+' | '+str(r['activeTracks'])+' |')
+(docs/'incorporacion_30.md').write_text('\n'.join(lines),encoding='utf-8')
+temp=Path('E:/proyectos/CoroLLDM/public/__remaining_midis_payload.json')
+assert temp.resolve()==Path('E:/proyectos/CoroLLDM/public/__remaining_midis_payload.json').resolve()
+if temp.exists():temp.unlink()
+print(json.dumps({'records':len(manifest['records']),'originalAssetsUnchanged':len(baseline['assets']),'temporaryPayloadRemoved':not temp.exists()}))

@@ -1,0 +1,50 @@
+[
+  {
+    "file": ".gitignore",
+    "sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787"
+  },
+  {
+    "file": "annotation_layer.dart",
+    "sha256": "a8370a686fdcd644b8d76d74b0f17c0679d9fba5e3345b6bbaf5c7475658c3c2"
+  },
+  {
+    "file": "annotation_rendering_test.dart",
+    "sha256": "9aad20584e2ec70df0931dd19a94c929030903115aec63b6a3c5adbbf842043d"
+  },
+  {
+    "file": "baseline_summary.json",
+    "sha256": "29a08654e8033c82c337ecb803ddb719f453f597a0111af989961fe178ebdad1"
+  },
+  {
+    "file": "optimization_opaque_target_analyze.log",
+    "sha256": "f040540cb4fdcf52aa26c7024eab17d4046ef7a01c598eb7355a29139d0c7e65"
+  },
+  {
+    "file": "optimization_opaque_target_build.log",
+    "sha256": "21ece92954ddd28d3338e7e9d1922962675aefceb82647822fd42ce4c599d0c4"
+  },
+  {
+    "file": "optimization_opaque_target_run.log",
+    "sha256": "1bf3dd2e8a334599bd9123b116f1f6a5b6a21ab9aab639ae1e4d6fa6334858d1"
+  },
+  {
+    "file": "optimization_opaque_target_tests.log",
+    "sha256": "94ba17528afaf21dec31a14b41ede97e8d9e3b307c8395c6bcbcf4ea52c005a8"
+  },
+  {
+    "file": "optimization_single_target_tests.log",
+    "sha256": "c8bb1314e9468216accdf44720da861018c092d4450e96374896e1f5006f73d1"
+  },
+  {
+    "file": "performance_audit_reopen_test.dart",
+    "sha256": "37b0cb32798b05058cc71ae049f3dfb901ce417268a7cabe99e3169bf1bf4fe6"
+  },
+  {
+    "file": "results_summary.json",
+    "sha256": "bc292aecf27d34a002b6c47dcc83158e2d21cb44d0847758e80da67c8336f1f7"
+  },
+  {
+    "file": "results.json",
+    "sha256": "d105592e8abcd6b625ecffe89128dafec3898f2d898908dfba0e0396dd3a9042"
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "corrected": 23,
+  "verified": 41,
+  "directory": "E:\\MusescoreCantai",
+  "time": "2026-10-19T16:00:55.4665259-07:00",
+  "files": [
+    {
+      "destination": "E:\\MusescoreCantai\\Al Gran Señor (Adoración) - SATB - Cantai.mscz",
+      "sha256": "aa37b595ad4afc619d85a0dfc5608ac30ba88246bd2ff416ad612eb9356f4af6"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Al Huerto Van a Visitar - SATB - Cantai.mscz",
+      "sha256": "33b3d0f15c0b1ad5e03d6a3b8e8f6ea1e27fa76567507d1ac2db1f5b16cf3e44"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Alabad a Jehová - SATB revisado contra PDF.mscz",
+      "sha256": "927ca6a56b74d274c73e96b039ddbb46fbff74c2ebe3b262e736566d1e5bd704"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Apocalipsis 10 - SATB y Barítono - Cantai.mscz",
+      "sha256": "0d29adf02feed3c605b0e053898c95576539b2f045f94d72badc714414072270"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Cuando Oí Su Voz - SATB extendido - Cantai.mscz",
+      "sha256": "5f97a449712ada01fd73949a6523ba35b8575ec1d01dfac451eea8535ac7d8aa"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\El Aliento de mi Ser - SATB - Cantai.mscz",
+      "sha256": "d8d1a261fca7fd9d4c6f7330fd28a3b7e18c3c86c31d2e12ef717053adc5f076"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Firmes y Adelante - SATB desarrollado - Cantai.mscz",
+      "sha256": "c26d3b5c242f9b574fdf5d3ddcb8d28bbd70b80d7a9093ac681695eda7645a67"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Guerrero Celestial - SATB - Cantai.mscz",
+      "sha256": "04d7040938031a368149e72d14e765ec487c04d87f6eadfb9512dddb60f4e3fc"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Imagínate Tú (variante SATB) - Cantai.mscz",
+      "sha256": "3395c27d3973eb66f30ab6b242e0b94052f359f62737b9e1291016342dc741be"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Imagínate Tú - SATB - Cantai.mscz",
+      "sha256": "2d7cc93a95c5c6e2d78e8d54793ad0b842896d61c8bc9a4045491b6865a06baf"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\La Fiesta Universal - SATB desarrollado - Cantai.mscz",
+      "sha256": "a9f0c62930e9531b4ecd6842fbbb19092d3469fb246696bdd29f8391a16f496b"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\La Restauración - SATB - Cantai.mscz",
+      "sha256": "a7dd7f4617f90984b042686ae6b253498c4ff412004e1177742487b2116ddcff"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\La Vida Se Va Como El Viento (reducción) - SATB - Cantai.mscz",
+      "sha256": "5fd678689ce28c6ccf51ed2d051345b1e3716a43932a950ae58d5d96d283e224"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Mi Padre en la Fe - SATB - Cantai.mscz",
+      "sha256": "7b72cceaec88b07a605de5639d5cc0ea58257e6ece79563e4e3b6c7dda3aacc2"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Nardo, Justicia y Gloria - SATB - Cantai.mscz",
+      "sha256": "deb38f8cccf919f3b5f231ae3ffbeb4c1d807d6f3f889edbb67867d57c773693"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\No Hay Amigo Mejor - SATB desarrollado - Cantai.mscz",
+      "sha256": "686b0e58b5644977daa76816c478ddc384077ff52fc22adbbe594f154d40e9f5"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\No Hay Amigo Mejor - SATB desarrollado.mscz",
+      "sha256": "a80b9dbbdf696d9a264a4ce74d5f7f976bd4c29c889e89d9c0bf99c5d539ccc4"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Para Siempre Es Su Misericordia - SATB - Cantai.mscz",
+      "sha256": "77654260eea51a8af16beec0db2df81bf8ce38c4cead23806337e84e5488e648"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Restauración - SATB - Cantai.mscz",
+      "sha256": "444157401dffd66d18c9a90f37c1a88459f5d1dd6f63bac60adcb31b997eed0c"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Santo Varón - SATB - Cantai.mscz",
+      "sha256": "96ceda5347365d8f5aee3b2476196c23b95818a194f53b16cface448c0e46d3c"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Valle de los Huesos Secos - SATB con letra.mscz",
+      "sha256": "9ab8ed0dca253ffb0781968b195192412e3351854e57b5b670a4d23d40543298"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Valle de los Huesos Secos.mscz",
+      "sha256": "2af53eb1456fc35f02e2a74268d59274672b560807068db86118ccaea672a8ba"
+    },
+    {
+      "destination": "E:\\MusescoreCantai\\Ángel Poderoso - SATB - Cantai.mscz",
+      "sha256": "a0272f31bf3de3245a6c9fe1ac5eb9b717f232b38fd0beee3f1411a5fc8d7621"
+    }
+  ]
+}

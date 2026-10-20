@@ -1,0 +1,15 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart
+lib/features/visor/widgets/annotation_layer.dart:824:9: Error: The getter 'defaultTargetPlatform' isn't defined for the class '_AnnotationReopenCache'.
+ - '_AnnotationReopenCache' is from 'package:coro_lldm/features/visor/widgets/annotation_layer.dart' ('lib/features/visor/widgets/annotation_layer.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'defaultTargetPlatform'.
+        defaultTargetPlatform != TargetPlatform.android) return;
+        ^^^^^^^^^^^^^^^^^^^^^
+00:00 +0 -1: loading E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart [E]
+  Failed to load "E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart":
+  Compilation failed for testPath=E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: lib/features/visor/widgets/annotation_layer.dart:824:9: Error: The getter 'defaultTargetPlatform' isn't defined for the class '_AnnotationReopenCache'.
+   - '_AnnotationReopenCache' is from 'package:coro_lldm/features/visor/widgets/annotation_layer.dart' ('lib/features/visor/widgets/annotation_layer.dart').
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'defaultTargetPlatform'.
+          defaultTargetPlatform != TargetPlatform.android) return;
+          ^^^^^^^^^^^^^^^^^^^^^
+  .
+00:00 +0 -1: Some tests failed.

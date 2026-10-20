@@ -1,0 +1,15 @@
+I/flutter (20994): AUDIT END annotations_save_500 107.968 ms, 6 frames, error=null
+I/flutter (20994): AUDIT START annotations_load_500
+I/flutter (20994): AUDIT END annotations_load_500 60.545 ms, 3 frames, error=null
+I/flutter (20994): AUDIT START annotations_save_2000
+I/flutter (20994): AUDIT END annotations_save_2000 396.725 ms, 24 frames, error=null
+I/flutter (20994): AUDIT START annotations_load_2000
+I/flutter (20994): AUDIT END annotations_load_2000 270.386 ms, 16 frames, error=null
+I/flutter (20994): AUDIT START viewer_reopen_heavy
+I/flutter (20994): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (20994): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (20994): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(20994): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(20994): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (20994): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (7 ms)
+I/flutter (20994): PdfViewer: Loaded page 9 of 9 in 47 ms

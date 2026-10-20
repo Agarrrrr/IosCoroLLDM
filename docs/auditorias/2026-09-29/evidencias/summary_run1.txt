@@ -1,0 +1,33 @@
+catalog_first_load: 185.5 ms; UI p95/max 0.729/0.729; raster p50/p95/max 3.34/6.401/6.401; over 0/10; timer max null; RSS 275 MiB
+pdf_cold_Canten a Cristo Rey: 63.5 ms; UI p95/max 0.546/0.546; raster p50/p95/max 3.126/3.464/3.464; over 0/3; timer max null; RSS 269 MiB
+pdf_warm_Canten a Cristo Rey: 2.5 ms; UI p95/max null/null; raster p50/p95/max null/null/null; over 0/0; timer max null; RSS 273 MiB
+native_render_Canten a Cristo Rey_1800: 18.8 ms; UI p95/max 0.391/0.391; raster p50/p95/max 2.893/2.893/2.893; over 0/1; timer max null; RSS 295 MiB
+native_render_Canten a Cristo Rey_3600: 56.5 ms; UI p95/max 0.512/0.512; raster p50/p95/max 2.826/3.54/3.54; over 0/4; timer max null; RSS 274 MiB
+pdf_cold_The Holy City: 212.6 ms; UI p95/max 0.729/0.729; raster p50/p95/max 3.088/9.258/9.258; over 0/10; timer max null; RSS 304 MiB
+pdf_warm_The Holy City: 3.9 ms; UI p95/max null/null; raster p50/p95/max null/null/null; over 0/0; timer max null; RSS 295 MiB
+native_render_The Holy City_1800: 70.9 ms; UI p95/max 0.637/0.637; raster p50/p95/max 2.58/6.151/6.151; over 0/4; timer max null; RSS 334 MiB
+native_render_The Holy City_3600: 129.7 ms; UI p95/max 0.628/0.628; raster p50/p95/max 6.251/6.708/6.708; over 0/7; timer max null; RSS 320 MiB
+pdf_cold_El Llamado a mi Ser: 7967.5 ms; UI p95/max 0.77/2.193; raster p50/p95/max 3.881/6.509/14.698; over 0/480; timer max null; RSS 300 MiB
+pdf_warm_El Llamado a mi Ser: 2.4 ms; UI p95/max null/null; raster p50/p95/max null/null/null; over 0/0; timer max null; RSS 295 MiB
+native_render_El Llamado a mi Ser_1800: 312.5 ms; UI p95/max 0.65/0.65; raster p50/p95/max 5.22/6.386/6.386; over 0/19; timer max null; RSS 334 MiB
+native_render_El Llamado a mi Ser_3600: 494.8 ms; UI p95/max 1.065/1.079; raster p50/p95/max 5.998/6.847/7.06; over 0/30; timer max null; RSS 333 MiB
+viewer_open_heavy_warm_file: 2130.2 ms; UI p95/max 2.634/4.656; raster p50/p95/max 1.996/4.155/22.872; over 1/124; timer max null; RSS 470 MiB
+page_changes_vertical: 6109.4 ms; UI p95/max 3.6/5.129; raster p50/p95/max 3.052/4.983/5.793; over 0/368; timer max null; RSS 457 MiB
+page_changes_carousel: 6108.8 ms; UI p95/max 2.937/4.481; raster p50/p95/max 2.847/3.911/7.405; over 0/368; timer max null; RSS 431 MiB
+zoom_pdf: 1722.6 ms; UI p95/max 2.702/4.052; raster p50/p95/max 2.554/3.231/33.999; over 1/103; timer max null; RSS 442 MiB
+draw_5_strokes_empty_page: 6994.1 ms; UI p95/max 3.389/6.59; raster p50/p95/max 5.394/9.044/763.057; over 2/371; timer max null; RSS 1110 MiB
+draw_5_strokes_100_saved: 6637.4 ms; UI p95/max 2.061/6.042; raster p50/p95/max 10.509/14.243/37.997; over 17/391; timer max null; RSS 1127 MiB
+draw_5_strokes_500_saved: 6900.6 ms; UI p95/max 1.909/24.863; raster p50/p95/max 22.36/87.756/92.508; over 265/265; timer max null; RSS 1198 MiB
+eraser_500_saved: 6888.6 ms; UI p95/max 1.837/25.91; raster p50/p95/max 22.587/91.813/111.619; over 255/255; timer max null; RSS 1203 MiB
+undo_redo_500_saved: 2028.3 ms; UI p95/max 28.384/37.566; raster p50/p95/max 101.843/104.896/107.24; over 21/21; timer max null; RSS 1210 MiB
+two_finger_gestures: 2939.5 ms; UI p95/max 1.852/1.971; raster p50/p95/max 22.707/22.991/24.949; over 129/129; timer max null; RSS 1226 MiB
+annotations_save_10: 7.0 ms; UI p95/max 0.755/0.755; raster p50/p95/max 3.717/3.717/3.717; over 0/1; timer max null; RSS 1160 MiB
+annotations_load_10: 1.7 ms; UI p95/max null/null; raster p50/p95/max null/null/null; over 0/0; timer max null; RSS 1152 MiB
+annotations_save_100: 19.0 ms; UI p95/max 0.517/0.517; raster p50/p95/max 3.192/3.192/3.192; over 0/1; timer max null; RSS 1149 MiB
+annotations_load_100: 7.7 ms; UI p95/max 0.342/0.342; raster p50/p95/max 1.842/1.842/1.842; over 0/1; timer max null; RSS 1154 MiB
+annotations_save_500: 122.0 ms; UI p95/max 0.546/0.546; raster p50/p95/max 1.722/3.266/3.266; over 0/6; timer max null; RSS 1152 MiB
+annotations_load_500: 34.4 ms; UI p95/max 0.416/0.416; raster p50/p95/max 1.23/1.259/1.259; over 0/3; timer max null; RSS 1160 MiB
+annotations_save_2000: 356.8 ms; UI p95/max 16.902/16.902; raster p50/p95/max 1.568/8.004/8.004; over 1/17; timer max null; RSS 1198 MiB
+annotations_load_2000: 202.4 ms; UI p95/max 12.316/12.316; raster p50/p95/max 1.432/16.533/16.533; over 0/12; timer max null; RSS 1160 MiB
+viewer_reopen_heavy: 2532.4 ms; UI p95/max 11.104/23.795; raster p50/p95/max 22.727/129.757/173.736; over 68/71; timer max null; RSS 1295 MiB
+Written output/performance_audit_2026-09-29/results_run1_summary.json

@@ -1,0 +1,18 @@
+I/flutter (16210): AUDIT START draw_5_strokes_empty_page
+I/flutter (16210): AUDIT END draw_5_strokes_empty_page 7008.766 ms, 404 frames, error=null
+I/flutter (16210): AUDIT START draw_5_strokes_warm_page
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3377KB/9521KB, paused 25us,21us total 10.524ms
+I/flutter (16210): AUDIT END draw_5_strokes_warm_page 7056.381 ms, 420 frames, error=null
+I/flutter (16210): AUDIT START draw_5_strokes_100_saved
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 159KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3377KB/9521KB, paused 26us,20us total 11.494ms
+I/flutter (16210): AUDIT END draw_5_strokes_100_saved 6804.703 ms, 408 frames, error=null
+I/flutter (16210): AUDIT START draw_5_strokes_500_saved
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3377KB/9521KB, paused 27us,22us total 9.837ms
+W/libc    (16210): Access denied finding property "sys.perf.boostopt"
+I/flutter (16210): AUDIT END draw_5_strokes_500_saved 7123.043 ms, 405 frames, error=null
+I/flutter (16210): AUDIT START eraser_500_saved
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 195KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3374KB/9518KB, paused 31us,18us total 9.983ms
+I/flutter (16210): AUDIT END eraser_500_saved 6877.057 ms, 393 frames, error=null
+I/flutter (16210): AUDIT START undo_redo_500_saved
+I/flutter (16210): AUDIT END undo_redo_500_saved 2028.098 ms, 93 frames, error=null
+I/flutter (16210): AUDIT START two_finger_gestures

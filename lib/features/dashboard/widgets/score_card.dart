@@ -23,16 +23,18 @@ class ScoreCard extends ConsumerWidget {
     final hasAudio = canto.midiArchivo != null && canto.midiArchivo!.isNotEmpty;
     final vocalService = ref.watch(vocalAudioServiceProvider);
     final hasVocal = vocalService.findSong(
-      cantoId: canto.id,
-      cantoNombre: canto.nombre,
-      lang: canto.idioma,
-    ) != null;
+          cantoId: canto.id,
+          cantoNombre: canto.nombre,
+          lang: canto.idioma,
+        ) !=
+        null;
     final hasAnyAudio = hasAudio || hasVocal;
     final isFavorite = ref.watch(favoritosProvider).contains(canto.id);
     final strings = AppStrings.of(context);
 
     final cardBg = Theme.of(context).colorScheme.surface;
     final audioColor = Theme.of(context).colorScheme.primary;
+    final hasSubtitleRow = hasAudio || hasVocal || canto.temas.isNotEmpty;
 
     return RepaintBoundary(
       child: Padding(
@@ -87,63 +89,57 @@ class ScoreCard extends ConsumerWidget {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Tooltip(
-                                      message: canto.nombre,
-                                      child: Text(
-                                        canto.nombre,
-                                        maxLines: 2,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w600,
-                                          color: Theme.of(context)
-                                              .colorScheme
-                                              .onSurface,
-                                        ),
-                                      )),
-                                  const SizedBox(height: 3),
-                                   Row(
-                                     children: [
-                                       if (hasAudio) ...[
-                                         Icon(Icons.piano_rounded,
-                                             size: 19, color: audioColor),
-                                         const SizedBox(width: 5),
-                                       ],
-                                       if (hasVocal) ...[
-                                         SingingIcon(
-                                           size: 18,
-                                           color: audioColor,
-                                         ),
-                                         const SizedBox(width: 5),
-                                       ],
-                                       Flexible(
-                                         child: Text(
-                                           (() {
-                                             final audioLabel = hasVocal && hasAudio
-                                                 ? strings.t('Piano · Voces', 'Piano · Voices')
-                                                 : hasVocal
-                                                     ? strings.t('Voces cantadas', 'Choral voices')
-                                                     : hasAudio
-                                                         ? strings.t('Con piano', 'With piano')
-                                                         : strings.t('Partitura', 'Score');
-                                             return canto.temas.isEmpty
-                                                 ? audioLabel
-                                                 : '$audioLabel · ${canto.temas.join(' · ')}';
-                                           })(),
-                                           maxLines: 1,
-                                           overflow: TextOverflow.ellipsis,
-                                           style: TextStyle(
-                                             fontSize: 12,
-                                             color: Theme.of(context)
-                                                 .colorScheme
-                                                 .onSurfaceVariant,
-                                           ),
-                                         ),
-                                       ),
-                                     ],
-                                   ),
-                                 ],
-                               ),
-                             ),
+                                    message: canto.nombre,
+                                    child: Text(
+                                      canto.nombre,
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w600,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onSurface,
+                                      ),
+                                    ),
+                                  ),
+                                  if (hasSubtitleRow) ...[
+                                    const SizedBox(height: 5),
+                                    Row(
+                                      children: [
+                                        if (hasAudio) ...[
+                                          Icon(Icons.piano_rounded,
+                                              size: 18, color: audioColor),
+                                          const SizedBox(width: 6),
+                                        ],
+                                        if (hasVocal) ...[
+                                          SingingIcon(
+                                            size: 17,
+                                            color: audioColor,
+                                          ),
+                                          if (canto.temas.isNotEmpty)
+                                            const SizedBox(width: 6),
+                                        ],
+                                        if (canto.temas.isNotEmpty)
+                                          Flexible(
+                                            child: Text(
+                                              canto.temas.join(' · '),
+                                              maxLines: 1,
+                                              overflow: TextOverflow.ellipsis,
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .onSurfaceVariant,
+                                              ),
+                                            ),
+                                          ),
+                                      ],
+                                    ),
+                                  ],
+                                ],
+                              ),
+                            ),
                             IconButton(
                               tooltip: isFavorite
                                   ? strings.t('Quitar de favoritos',

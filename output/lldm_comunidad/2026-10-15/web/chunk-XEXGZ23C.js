@@ -1,0 +1,1 @@
+var N=(function(E){return E.NOT_REQUIRED="NOT_REQUIRED",E.OBTAINED="OBTAINED",E.REQUIRED="REQUIRED",E.UNKNOWN="UNKNOWN",E})(N||{});export{N as a};

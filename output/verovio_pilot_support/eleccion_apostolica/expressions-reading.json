@@ -1,0 +1,1920 @@
+{
+  "dynamics": [
+    {
+      "role": 0,
+      "measure": 9,
+      "onset": 1.0,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 9,
+      "onset": 1.0,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 1,
+      "onset": 1.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 9,
+      "onset": 1.0,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 1,
+      "onset": 1.0,
+      "value": "mf",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 9,
+      "onset": 1.0,
+      "value": "f",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 18,
+      "onset": 0.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 1,
+      "measure": 20,
+      "onset": 0.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 2,
+      "measure": 20,
+      "onset": 1.5,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 3,
+      "measure": 20,
+      "onset": 0.0,
+      "value": "p",
+      "page": 1
+    },
+    {
+      "role": 0,
+      "measure": 50,
+      "onset": 0.0,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 0,
+      "measure": 51,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 0,
+      "measure": 52,
+      "onset": 3.0,
+      "value": "p",
+      "page": 2
+    },
+    {
+      "role": 1,
+      "measure": 50,
+      "onset": 0.0,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 1,
+      "measure": 51,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 1,
+      "measure": 52,
+      "onset": 3.0,
+      "value": "p",
+      "page": 2
+    },
+    {
+      "role": 2,
+      "measure": 50,
+      "onset": 0.0,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 2,
+      "measure": 51,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 2,
+      "measure": 52,
+      "onset": 3.0,
+      "value": "p",
+      "page": 2
+    },
+    {
+      "role": 3,
+      "measure": 50,
+      "onset": 0.0,
+      "value": "f",
+      "page": 2
+    },
+    {
+      "role": 3,
+      "measure": 51,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 2
+    },
+    {
+      "role": 3,
+      "measure": 52,
+      "onset": 3.0,
+      "value": "p",
+      "page": 2
+    },
+    {
+      "role": 0,
+      "measure": 57,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 0,
+      "measure": 58,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 57,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 58,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 3
+    },
+    {
+      "role": 2,
+      "measure": 57,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 2,
+      "measure": 58,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 3
+    },
+    {
+      "role": 3,
+      "measure": 57,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 3,
+      "measure": 58,
+      "onset": 0.0,
+      "value": "ff",
+      "page": 3
+    },
+    {
+      "role": 0,
+      "measure": 60,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 1,
+      "measure": 60,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 2,
+      "measure": 60,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    },
+    {
+      "role": 3,
+      "measure": 60,
+      "onset": 0.0,
+      "value": "f",
+      "page": 3
+    }
+  ],
+  "arcs": [
+    {
+      "start": "eleccion-2-3-0",
+      "end": "eleccion-2-3-1",
+      "role": 2,
+      "measure": 3,
+      "onset": 0.0,
+      "toMeasure": 4,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999665
+    },
+    {
+      "start": "eleccion-3-3-0",
+      "end": "eleccion-3-3-1",
+      "role": 3,
+      "measure": 3,
+      "onset": 0.0,
+      "toMeasure": 4,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999665
+    },
+    {
+      "start": "eleccion-0-3-0",
+      "end": "eleccion-0-3-1",
+      "role": 0,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 12,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999807
+    },
+    {
+      "start": "eleccion-0-11-0",
+      "end": "eleccion-0-11-1",
+      "role": 0,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999949
+    },
+    {
+      "start": "eleccion-1-3-0",
+      "end": "eleccion-1-3-1",
+      "role": 1,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 12,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999807
+    },
+    {
+      "start": "eleccion-1-11-0",
+      "end": "eleccion-1-11-1",
+      "role": 1,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584000517
+    },
+    {
+      "start": "eleccion-2-15-0",
+      "end": "eleccion-2-15-1",
+      "role": 2,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 12,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584000375
+    },
+    {
+      "start": "eleccion-2-23-0",
+      "end": "eleccion-2-23-1",
+      "role": 2,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584000517
+    },
+    {
+      "start": "eleccion-3-15-0",
+      "end": "eleccion-3-15-1",
+      "role": 3,
+      "measure": 11,
+      "onset": 0.0,
+      "toMeasure": 12,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999807
+    },
+    {
+      "start": "eleccion-3-23-0",
+      "end": "eleccion-3-23-1",
+      "role": 3,
+      "measure": 16,
+      "onset": 0.0,
+      "toMeasure": 17,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999949
+    },
+    {
+      "start": "eleccion-0-19-0",
+      "end": "eleccion-0-19-1",
+      "role": 0,
+      "measure": 20,
+      "onset": 1.0,
+      "toMeasure": 21,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999665
+    },
+    {
+      "start": "eleccion-0-25-0",
+      "end": "eleccion-0-25-1",
+      "role": 0,
+      "measure": 24,
+      "onset": 0.0,
+      "toMeasure": 25,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.676932358399938
+    },
+    {
+      "start": "eleccion-1-16-0",
+      "end": "eleccion-1-16-1",
+      "role": 1,
+      "measure": 22,
+      "onset": 0.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999949
+    },
+    {
+      "start": "eleccion-2-29-0",
+      "end": "eleccion-2-29-1",
+      "role": 2,
+      "measure": 22,
+      "onset": 0.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584001086
+    },
+    {
+      "start": "eleccion-3-33-0",
+      "end": "eleccion-3-33-1",
+      "role": 3,
+      "measure": 22,
+      "onset": 0.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999949
+    },
+    {
+      "start": "eleccion-3-32-0",
+      "end": "eleccion-3-32-1",
+      "role": 3,
+      "measure": 22,
+      "onset": 0.0,
+      "toMeasure": 23,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.499674694800035
+    },
+    {
+      "start": "eleccion-2-25-0",
+      "end": "eleccion-2-26-0",
+      "role": 2,
+      "measure": 21,
+      "onset": 0.0,
+      "toMeasure": 21,
+      "toOnset": 0.5,
+      "kind": "slur",
+      "cost": 4.019237689799979
+    },
+    {
+      "start": "eleccion-0-32-0",
+      "end": "eleccion-0-32-1",
+      "role": 0,
+      "measure": 28,
+      "onset": 1.0,
+      "toMeasure": 29,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999807
+    },
+    {
+      "start": "eleccion-0-39-0",
+      "end": "eleccion-0-39-1",
+      "role": 0,
+      "measure": 32,
+      "onset": 0.0,
+      "toMeasure": 33,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584000517
+    },
+    {
+      "start": "eleccion-1-27-0",
+      "end": "eleccion-1-27-1",
+      "role": 1,
+      "measure": 28,
+      "onset": 1.0,
+      "toMeasure": 29,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999807
+    },
+    {
+      "start": "eleccion-1-34-0",
+      "end": "eleccion-1-34-1",
+      "role": 1,
+      "measure": 32,
+      "onset": 0.0,
+      "toMeasure": 33,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.676932358399938
+    },
+    {
+      "start": "eleccion-0-52-0",
+      "end": "eleccion-0-52-1",
+      "role": 0,
+      "measure": 40,
+      "onset": 0.0,
+      "toMeasure": 41,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584001086
+    },
+    {
+      "start": "eleccion-1-39-0",
+      "end": "eleccion-1-39-1",
+      "role": 1,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 39,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584000233
+    },
+    {
+      "start": "eleccion-2-39-0",
+      "end": "eleccion-2-39-1",
+      "role": 2,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 39,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323583999665
+    },
+    {
+      "start": "eleccion-3-53-0",
+      "end": "eleccion-3-53-1",
+      "role": 3,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 39,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 0.6769323584000233
+    },
+    {
+      "start": "eleccion-3-52-0",
+      "end": "eleccion-3-52-1",
+      "role": 3,
+      "measure": 38,
+      "onset": 0.0,
+      "toMeasure": 39,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 5.49967469479995
+    },
+    {
+      "start": "eleccion-0-83-0",
+      "end": "eleccion-0-83-1",
+      "role": 0,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6769323584000801
+    },
+    {
+      "start": "eleccion-1-74-0",
+      "end": "eleccion-1-74-1",
+      "role": 1,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6769323583999665
+    },
+    {
+      "start": "eleccion-2-59-0",
+      "end": "eleccion-2-59-1",
+      "role": 2,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6769323583999665
+    },
+    {
+      "start": "eleccion-3-79-0",
+      "end": "eleccion-3-79-1",
+      "role": 3,
+      "measure": 54,
+      "onset": 0.0,
+      "toMeasure": 54,
+      "toOnset": 2.0,
+      "kind": "tie",
+      "cost": 0.6769323584000801
+    },
+    {
+      "start": "eleccion-0-105-0",
+      "end": "eleccion-0-106-0",
+      "role": 0,
+      "measure": 61,
+      "onset": 0.0,
+      "toMeasure": 61,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 11.472902275800038
+    },
+    {
+      "start": "eleccion-0-106-0",
+      "end": "eleccion-0-107-0",
+      "role": 0,
+      "measure": 61,
+      "onset": 2.0,
+      "toMeasure": 61,
+      "toOnset": 3.0,
+      "kind": "slur",
+      "cost": 7.557465583400017
+    },
+    {
+      "start": "eleccion-1-96-0",
+      "end": "eleccion-1-97-0",
+      "role": 1,
+      "measure": 61,
+      "onset": 0.0,
+      "toMeasure": 61,
+      "toOnset": 2.0,
+      "kind": "slur",
+      "cost": 15.522693927199981
+    },
+    {
+      "start": "eleccion-3-98-0",
+      "end": "eleccion-3-99-0",
+      "role": 3,
+      "measure": 60,
+      "onset": 1.0,
+      "toMeasure": 60,
+      "toOnset": 1.5,
+      "kind": "slur",
+      "cost": 6.430790438399953
+    },
+    {
+      "start": "eleccion-1-144-0",
+      "end": "eleccion-1-145-0",
+      "role": 1,
+      "measure": 74,
+      "onset": 1.0,
+      "toMeasure": 74,
+      "toOnset": 1.5,
+      "kind": "slur",
+      "cost": 5.700009200400018
+    },
+    {
+      "start": "eleccion-0-180-0",
+      "end": "eleccion-0-180-1",
+      "role": 0,
+      "measure": 78,
+      "onset": 2.0,
+      "toMeasure": 78,
+      "toOnset": 2.5,
+      "kind": "tie",
+      "cost": 0.6769323583999949
+    },
+    {
+      "start": "eleccion-1-161-0",
+      "end": "eleccion-1-161-1",
+      "role": 1,
+      "measure": 78,
+      "onset": 2.0,
+      "toMeasure": 78,
+      "toOnset": 2.5,
+      "kind": "tie",
+      "cost": 0.6769323583999949
+    },
+    {
+      "start": "eleccion-3-203-0",
+      "end": "eleccion-3-204-0",
+      "role": 3,
+      "measure": 76,
+      "onset": 3.0,
+      "toMeasure": 76,
+      "toOnset": 3.5,
+      "kind": "slur",
+      "cost": 6.43079043840001
+    },
+    {
+      "start": "eleccion-3-223-0",
+      "end": "eleccion-3-224-0",
+      "role": 3,
+      "measure": 82,
+      "onset": 0.0,
+      "toMeasure": 82,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 5.700009200400018
+    },
+    {
+      "start": "eleccion-3-227-0",
+      "end": "eleccion-3-228-0",
+      "role": 3,
+      "measure": 83,
+      "onset": 0.0,
+      "toMeasure": 83,
+      "toOnset": 1.0,
+      "kind": "slur",
+      "cost": 6.68052809780005
+    },
+    {
+      "start": "eleccion-0-293-0",
+      "end": "eleccion-0-293-1",
+      "role": 0,
+      "measure": 98,
+      "onset": 0.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 1.8766180624000413
+    },
+    {
+      "start": "eleccion-1-258-0",
+      "end": "eleccion-1-258-1",
+      "role": 1,
+      "measure": 98,
+      "onset": 0.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 1.8766180624000413
+    },
+    {
+      "start": "eleccion-2-198-0",
+      "end": "eleccion-2-198-1",
+      "role": 2,
+      "measure": 98,
+      "onset": 0.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 1.8766180624000413
+    },
+    {
+      "start": "eleccion-3-293-0",
+      "end": "eleccion-3-293-1",
+      "role": 3,
+      "measure": 98,
+      "onset": 0.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "tie",
+      "cost": 1.8766180624000413
+    }
+  ],
+  "partial": [
+    {
+      "page": 2,
+      "start": [
+        531.539555874,
+        84.62446736039999
+      ],
+      "end": [
+        551.8541003519999,
+        84.62446736039999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-46-0",
+            "cost": 2.353717823200043
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        531.539555874,
+        84.62446736039999
+      ],
+      "end": [
+        551.8541003519999,
+        84.62446736039999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-46-0",
+            "cost": 2.353717823200043
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        73.07390099999999,
+        331.1900570616
+      ],
+      "end": [
+        82.719655932,
+        331.1900570616
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-46-1",
+            "cost": 11.968969467199997
+          }
+        ],
+        [
+          {
+            "id": "eleccion-0-46-1",
+            "cost": 2.3232145351999947
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        73.07390099999999,
+        331.1900570616
+      ],
+      "end": [
+        82.719655932,
+        331.1900570616
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-46-1",
+            "cost": 11.968969467199997
+          }
+        ],
+        [
+          {
+            "id": "eleccion-0-46-1",
+            "cost": 2.3232145351999947
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        534.90095532,
+        328.85155710000004
+      ],
+      "end": [
+        551.8541003519999,
+        328.85155710000004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-59-0",
+            "cost": 2.353717823199986
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        534.90095532,
+        328.85155710000004
+      ],
+      "end": [
+        551.8541003519999,
+        328.85155710000004
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-59-0",
+            "cost": 2.353717823199986
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        534.90095532,
+        393.0141497964
+      ],
+      "end": [
+        551.8541003519999,
+        393.0141497964
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-1-50-0",
+            "cost": 2.3537178231999576
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        534.90095532,
+        393.0141497964
+      ],
+      "end": [
+        551.8541003519999,
+        393.0141497964
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-1-50-0",
+            "cost": 2.3537178231999576
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        73.07390099999999,
+        594.2713027415999
+      ],
+      "end": [
+        82.719655932,
+        594.2713027415999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-59-1",
+            "cost": 11.968969467199997
+          }
+        ],
+        [
+          {
+            "id": "eleccion-0-59-1",
+            "cost": 2.3232145351999947
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        73.07390099999999,
+        594.2713027415999
+      ],
+      "end": [
+        82.719655932,
+        594.2713027415999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-0-59-1",
+            "cost": 11.968969467199997
+          }
+        ],
+        [
+          {
+            "id": "eleccion-0-59-1",
+            "cost": 2.3232145351999947
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        73.07390099999999,
+        659.7493016663999
+      ],
+      "end": [
+        82.719655932,
+        659.7493016663999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-1-50-1",
+            "cost": 11.968969467199997
+          }
+        ],
+        [
+          {
+            "id": "eleccion-1-50-1",
+            "cost": 2.3232145351999947
+          }
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "start": [
+        73.07390099999999,
+        659.7493016663999
+      ],
+      "end": [
+        82.719655932,
+        659.7493016663999
+      ],
+      "nearest": [
+        [
+          {
+            "id": "eleccion-1-50-1",
+            "cost": 11.968969467199997
+          }
+        ],
+        [
+          {
+            "id": "eleccion-1-50-1",
+            "cost": 2.3232145351999947
+          }
+        ]
+      ]
+    }
+  ],
+  "articulations": [
+    {
+      "id": "eleccion-0-11-1",
+      "role": 0,
+      "measure": 17,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-2-23-1",
+      "role": 2,
+      "measure": 17,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-3-23-1",
+      "role": 3,
+      "measure": 17,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-0-175-0",
+      "role": 0,
+      "measure": 77,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-0-176-0",
+      "role": 0,
+      "measure": 77,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-177-0",
+      "role": 0,
+      "measure": 78,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-178-0",
+      "role": 0,
+      "measure": 78,
+      "onset": 1.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-179-0",
+      "role": 0,
+      "measure": 78,
+      "onset": 1.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-180-1",
+      "role": 0,
+      "measure": 78,
+      "onset": 2.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-181-0",
+      "role": 0,
+      "measure": 78,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-182-0",
+      "role": 0,
+      "measure": 78,
+      "onset": 3.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-183-0",
+      "role": 0,
+      "measure": 79,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-185-0",
+      "role": 0,
+      "measure": 79,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-156-0",
+      "role": 1,
+      "measure": 77,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-1-157-0",
+      "role": 1,
+      "measure": 77,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-158-0",
+      "role": 1,
+      "measure": 78,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-159-0",
+      "role": 1,
+      "measure": 78,
+      "onset": 1.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-160-0",
+      "role": 1,
+      "measure": 78,
+      "onset": 1.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-161-0",
+      "role": 1,
+      "measure": 78,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-161-1",
+      "role": 1,
+      "measure": 78,
+      "onset": 2.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-162-0",
+      "role": 1,
+      "measure": 78,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-163-0",
+      "role": 1,
+      "measure": 78,
+      "onset": 3.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-164-0",
+      "role": 1,
+      "measure": 79,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-166-0",
+      "role": 1,
+      "measure": 79,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-2-138-0",
+      "role": 2,
+      "measure": 77,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-2-139-0",
+      "role": 2,
+      "measure": 78,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-2-140-0",
+      "role": 2,
+      "measure": 78,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-2-141-0",
+      "role": 2,
+      "measure": 79,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-2-142-0",
+      "role": 2,
+      "measure": 79,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-205-0",
+      "role": 3,
+      "measure": 77,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-3-206-0",
+      "role": 3,
+      "measure": 77,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-207-0",
+      "role": 3,
+      "measure": 78,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-208-0",
+      "role": 3,
+      "measure": 78,
+      "onset": 1.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-209-0",
+      "role": 3,
+      "measure": 78,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-210-0",
+      "role": 3,
+      "measure": 78,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-211-0",
+      "role": 3,
+      "measure": 79,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-212-0",
+      "role": 3,
+      "measure": 79,
+      "onset": 1.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-213-0",
+      "role": 3,
+      "measure": 79,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-3-214-0",
+      "role": 3,
+      "measure": 79,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-186-0",
+      "role": 0,
+      "measure": 80,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-187-0",
+      "role": 0,
+      "measure": 80,
+      "onset": 1.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-188-0",
+      "role": 0,
+      "measure": 80,
+      "onset": 1.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-189-0",
+      "role": 0,
+      "measure": 80,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-190-0",
+      "role": 0,
+      "measure": 80,
+      "onset": 2.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-191-0",
+      "role": 0,
+      "measure": 80,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-192-0",
+      "role": 0,
+      "measure": 80,
+      "onset": 3.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-0-194-0",
+      "role": 0,
+      "measure": 81,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-195-0",
+      "role": 0,
+      "measure": 81,
+      "onset": 3.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-196-0",
+      "role": 0,
+      "measure": 82,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-197-0",
+      "role": 0,
+      "measure": 82,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-198-0",
+      "role": 0,
+      "measure": 82,
+      "onset": 1.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-199-0",
+      "role": 0,
+      "measure": 82,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-200-0",
+      "role": 0,
+      "measure": 82,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-201-0",
+      "role": 0,
+      "measure": 82,
+      "onset": 3.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-167-0",
+      "role": 1,
+      "measure": 80,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-168-0",
+      "role": 1,
+      "measure": 80,
+      "onset": 1.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-169-0",
+      "role": 1,
+      "measure": 80,
+      "onset": 1.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-170-0",
+      "role": 1,
+      "measure": 80,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-171-0",
+      "role": 1,
+      "measure": 80,
+      "onset": 2.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-172-0",
+      "role": 1,
+      "measure": 80,
+      "onset": 3.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-173-0",
+      "role": 1,
+      "measure": 80,
+      "onset": 3.5,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-1-175-0",
+      "role": 1,
+      "measure": 81,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-176-0",
+      "role": 1,
+      "measure": 81,
+      "onset": 3.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-177-0",
+      "role": 1,
+      "measure": 82,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-178-0",
+      "role": 1,
+      "measure": 82,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-179-0",
+      "role": 1,
+      "measure": 82,
+      "onset": 1.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-180-0",
+      "role": 1,
+      "measure": 82,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-181-0",
+      "role": 1,
+      "measure": 82,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-182-0",
+      "role": 1,
+      "measure": 82,
+      "onset": 3.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-2-143-0",
+      "role": 2,
+      "measure": 80,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-2-144-0",
+      "role": 2,
+      "measure": 80,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-2-145-0",
+      "role": 2,
+      "measure": 81,
+      "onset": 0.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-2-146-0",
+      "role": 2,
+      "measure": 81,
+      "onset": 2.0,
+      "kind": "staccato"
+    },
+    {
+      "id": "eleccion-2-147-0",
+      "role": 2,
+      "measure": 82,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-2-148-0",
+      "role": 2,
+      "measure": 82,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-215-0",
+      "role": 3,
+      "measure": 80,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-216-0",
+      "role": 3,
+      "measure": 80,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-217-0",
+      "role": 3,
+      "measure": 80,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-218-0",
+      "role": 3,
+      "measure": 80,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-219-0",
+      "role": 3,
+      "measure": 81,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-220-0",
+      "role": 3,
+      "measure": 81,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-221-0",
+      "role": 3,
+      "measure": 81,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-222-0",
+      "role": 3,
+      "measure": 81,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-223-0",
+      "role": 3,
+      "measure": 82,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-224-0",
+      "role": 3,
+      "measure": 82,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-225-0",
+      "role": 3,
+      "measure": 82,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-226-0",
+      "role": 3,
+      "measure": 82,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-202-0",
+      "role": 0,
+      "measure": 83,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-204-0",
+      "role": 0,
+      "measure": 83,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-205-0",
+      "role": 0,
+      "measure": 83,
+      "onset": 3.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-206-0",
+      "role": 0,
+      "measure": 84,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-207-0",
+      "role": 0,
+      "measure": 84,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-208-0",
+      "role": 0,
+      "measure": 84,
+      "onset": 1.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-213-0",
+      "role": 0,
+      "measure": 85,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-183-0",
+      "role": 1,
+      "measure": 83,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-185-0",
+      "role": 1,
+      "measure": 83,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-186-0",
+      "role": 1,
+      "measure": 83,
+      "onset": 3.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-187-0",
+      "role": 1,
+      "measure": 84,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-188-0",
+      "role": 1,
+      "measure": 84,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-189-0",
+      "role": 1,
+      "measure": 84,
+      "onset": 1.5,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-1-194-0",
+      "role": 1,
+      "measure": 85,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-2-149-0",
+      "role": 2,
+      "measure": 83,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-2-150-0",
+      "role": 2,
+      "measure": 83,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-2-151-0",
+      "role": 2,
+      "measure": 83,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-2-152-0",
+      "role": 2,
+      "measure": 84,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-227-0",
+      "role": 3,
+      "measure": 83,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-228-0",
+      "role": 3,
+      "measure": 83,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-229-0",
+      "role": 3,
+      "measure": 83,
+      "onset": 2.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-230-0",
+      "role": 3,
+      "measure": 83,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-231-0",
+      "role": 3,
+      "measure": 84,
+      "onset": 0.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-232-0",
+      "role": 3,
+      "measure": 84,
+      "onset": 1.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-3-236-0",
+      "role": 3,
+      "measure": 85,
+      "onset": 3.0,
+      "kind": "staccatissimo"
+    },
+    {
+      "id": "eleccion-0-249-0",
+      "role": 0,
+      "measure": 86,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-1-230-0",
+      "role": 1,
+      "measure": 86,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-2-170-0",
+      "role": 2,
+      "measure": 86,
+      "onset": 0.0,
+      "kind": "fermata"
+    },
+    {
+      "id": "eleccion-3-265-0",
+      "role": 3,
+      "measure": 86,
+      "onset": 0.0,
+      "kind": "fermata"
+    }
+  ],
+  "wedges": [
+    {
+      "role": 0,
+      "measure": 49,
+      "onset": 0.0,
+      "toMeasure": 50,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 51,
+      "onset": 0.0,
+      "toMeasure": 52,
+      "toOnset": 3.0,
+      "kind": "diminuendo"
+    },
+    {
+      "role": 1,
+      "measure": 49,
+      "onset": 0.0,
+      "toMeasure": 50,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 49,
+      "onset": 0.0,
+      "toMeasure": 50,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 49,
+      "onset": 0.0,
+      "toMeasure": 50,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 57,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 1,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 57,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 57,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 56,
+      "onset": 0.0,
+      "toMeasure": 57,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 0,
+      "measure": 97,
+      "onset": 2.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 1,
+      "measure": 97,
+      "onset": 2.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 2,
+      "measure": 97,
+      "onset": 2.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    },
+    {
+      "role": 3,
+      "measure": 97,
+      "onset": 2.0,
+      "toMeasure": 99,
+      "toOnset": 0.0,
+      "kind": "crescendo"
+    }
+  ]
+}

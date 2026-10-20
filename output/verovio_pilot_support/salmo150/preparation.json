@@ -1,0 +1,57 @@
+{
+  "notes": 1118,
+  "crossSystemArcs": 7,
+  "ties": 25,
+  "slurs": 31,
+  "triplets": 106,
+  "syllabifiedWords": 424,
+  "pitchChanges": [
+    {
+      "id": "salmo150-3-115",
+      "role": 3,
+      "measure": 35,
+      "pdf": 52,
+      "midi": 57
+    },
+    {
+      "id": "salmo150-3-123",
+      "role": 3,
+      "measure": 37,
+      "pdf": 52,
+      "midi": 57
+    },
+    {
+      "id": "salmo150-0-141",
+      "role": 0,
+      "measure": 44,
+      "pdf": 76,
+      "midi": 73
+    },
+    {
+      "id": "salmo150-1-243",
+      "role": 1,
+      "measure": 65,
+      "pdf": 67,
+      "midi": 66
+    },
+    {
+      "id": "salmo150-3-285",
+      "role": 3,
+      "measure": 73,
+      "pdf": 50,
+      "midi": 62
+    }
+  ],
+  "midiTempos": [
+    {
+      "bpm": 100,
+      "ticks": 0,
+      "time": 0
+    },
+    {
+      "bpm": 112.00005973336519,
+      "ticks": 1920,
+      "time": 1.2
+    }
+  ]
+}

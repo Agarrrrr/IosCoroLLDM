@@ -1,0 +1,1 @@
+import{Db as s,K as o,s as n}from"./chunk-T2S575GI.js";var m=(()=>{let t=class t{constructor(){this.i18n=n(s)}transform(e,i){return this.i18n.t(e,i)}};t.\u0275fac=function(i){return new(i||t)},t.\u0275pipe=o({name:"t",type:t,pure:!1});let r=t;return r})();export{m as a};

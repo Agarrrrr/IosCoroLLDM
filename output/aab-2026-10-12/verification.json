@@ -1,0 +1,14 @@
+{
+  "file": "E:\\proyectos\\IosCoroLLDM\\build\\app\\outputs\\bundle\\release\\app-release.aab",
+  "version": "3.1.1",
+  "versionCode": 36,
+  "package": "com.lldm.coro",
+  "sizeBytes": 398204473,
+  "sha256": "0b8b3cd5f8150705856498738ed1e3c7021591137a5a12ef6dafa8f35cfca4aa",
+  "signatureVerified": true,
+  "zipIntegrityVerified": true,
+  "spanishCatalogSongs": 1351,
+  "englishCatalogSongs": 308,
+  "octoberSongsWithMidiVerified": 52,
+  "catalogFilesMatchWorkspace": true
+}

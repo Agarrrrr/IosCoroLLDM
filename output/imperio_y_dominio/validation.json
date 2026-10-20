@@ -1,0 +1,44 @@
+{
+  "title": "Imperio y Dominio",
+  "issues": [],
+  "staves": 4,
+  "bars": 79,
+  "noteHeads": 1275,
+  "lyricNotes": 1062,
+  "slurs": 39,
+  "ties": 5,
+  "dynamics": {
+    "mp": 11,
+    "mf": 13,
+    "f": 24,
+    "ff": 4,
+    "p": 5
+  },
+  "midiComparison": [
+    {
+      "role": 0,
+      "expectedAttacks": 301,
+      "actualAttacks": 301,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 1,
+      "expectedAttacks": 289,
+      "actualAttacks": 289,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 2,
+      "expectedAttacks": 303,
+      "actualAttacks": 303,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 3,
+      "expectedAttacks": 377,
+      "actualAttacks": 377,
+      "exactPitchAndAttackMatch": true
+    }
+  ],
+  "sha256": "4701e26be848dddbac584f27bf16a8d86e6c0bc407f3abc0d1d5869882e7b7a8"
+}

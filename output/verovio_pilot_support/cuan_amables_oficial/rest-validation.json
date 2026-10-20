@@ -1,0 +1,38 @@
+{
+  "changed": [
+    {
+      "role": 0,
+      "measure": 2,
+      "before": [
+        3.0
+      ],
+      "after": [
+        2,
+        1
+      ]
+    },
+    {
+      "role": 4,
+      "measure": 62,
+      "before": [
+        2.0
+      ],
+      "after": [
+        1,
+        1
+      ]
+    },
+    {
+      "role": 0,
+      "measure": 66,
+      "before": [
+        3.0
+      ],
+      "after": [
+        2,
+        1
+      ]
+    }
+  ],
+  "unresolved": []
+}

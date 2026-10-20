@@ -1,0 +1,40 @@
+{
+  "title": "Oh Señor",
+  "issues": [],
+  "staves": 4,
+  "bars": 85,
+  "noteHeads": 1151,
+  "lyricNotes": 1009,
+  "slurs": 47,
+  "ties": 8,
+  "dynamics": {
+    "ff": 4
+  },
+  "midiComparison": [
+    {
+      "role": 0,
+      "referenceAttacks": 261,
+      "actualAttacks": 261,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 1,
+      "referenceAttacks": 260,
+      "actualAttacks": 260,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 2,
+      "referenceAttacks": 303,
+      "actualAttacks": 303,
+      "exactPitchAndAttackMatch": true
+    },
+    {
+      "role": 3,
+      "referenceAttacks": 319,
+      "actualAttacks": 319,
+      "exactPitchAndAttackMatch": true
+    }
+  ],
+  "sha256": "a8692a635156162b2fc26dc023be35c4d9f56ce54113133c21442cafea4942e5"
+}

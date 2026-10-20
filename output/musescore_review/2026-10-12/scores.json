@@ -1,0 +1,2393 @@
+[
+  {
+    "index": 0,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\10-in-sempiterna-saecula-gioacchino-rossini-10-in-sempiterna-saecula-amen.mscz",
+    "sha256": "a0d5258dbac0ef40da3b39c9375d9b7359a9bb9796549917718f57af5fd94498",
+    "title": "10 In sempiterna saecula, amen",
+    "parts": 7,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bass",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 10,
+    "matches": [],
+    "nearbyMidi": [],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\000.mid"
+  },
+  {
+    "index": 1,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\A Los Pies Del Salvador.mscz",
+    "sha256": "d0306ace3b159a37dad0633af41bf362e4ea2a4a5ea1aaca08a3367d714d8534",
+    "title": "A Los Pies Del Salvador",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "43a441a6-84a6-5781-adf5-0fbaf9868027",
+        "name": "A Los Pies Del Salvador",
+        "midi": "global/assets/midi/3ede2026af2399f3369e56910dbc074b2fc23d8292f755a5cfde9cead830ca07.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\A Los Pies Del Salvador.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 2,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\A Veces me Pregunto.mscz",
+    "sha256": "653736d4c2a66fcc0db8b551383eb03373a7c3af0b7f8b760b116bd671d07466",
+    "title": "A Veces me Pregunto",
+    "parts": 6,
+    "labels": [
+      "Soprano 1",
+      "Soprano 2",
+      "Alto",
+      "Tenor 1",
+      "Bajo",
+      "Bajo 2"
+    ],
+    "staffCount": 6,
+    "matches": [
+      {
+        "id": "6e8bb24f-1552-5dbb-8f6e-90c43ba5fb3a",
+        "name": "A Veces me Pregunto",
+        "midi": "global/assets/midi/c3d799154741b3f928d8f72f3d91f64cdc454b59b8759c45035fa99bb7e3505f.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\A Veces me Pregunto.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 3,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Adorno en tu Corona.mscz",
+    "sha256": "a83f03accb96543828bfdd70e54902e9069a6cf529fc15214dc2eb61d1bce1aa",
+    "title": "Adorno en tu Corona",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "5bcd554d-a357-49a2-97ab-e9d5f2473259",
+        "name": "Adorno en tu Corona",
+        "midi": "global/assets/midi/52e4b69cce62582bb617ef3897a35c91b3f7698b52eab8e0ee9c347a48e7d816.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Adorno en tu Corona.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 4,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Como en Jericó.mscz",
+    "sha256": "231887733a426d4eb1d9bfa771fb8f57a876dd6ac4e7d363bf137f6af075dc48",
+    "title": "Como en Jericó",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "e9645dbc-f991-5905-880c-a59670808990",
+        "name": "Como en Jericó",
+        "midi": "global/assets/midi/abef96d1e12a23894abfb3fea3579afcfbe124ff8efd2cfd743d1254fff0afba.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Como en Jericó.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 5,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Como la Aurora.mscz",
+    "sha256": "d67962f0febd11b92d13dc3caca94eac5f68420b74f74923e3b078c71ab366fd",
+    "title": "Como la Aurora",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "43994b2b-23bc-5614-85f0-9aa11515b0bc",
+        "name": "Como la Aurora",
+        "midi": "global/assets/midi/1c1a47f08433cdac18eccb14c55ce12ed5e54e58d13632d0c641de259dda6c07.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Como la Aurora.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 6,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\El Pescador.mscz",
+    "sha256": "5d84d14b1b801f43611fa0af15378127890c941b9fc4d44de8645d0c65d33620",
+    "title": "El Pescador",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "3945b678-d571-50f2-99b8-ede61102a4d4",
+        "name": "El Pescador",
+        "midi": "global/assets/midi/e9dd00aacb27cd45725ae69d9cfc75e68f43a3ab795b55996f82fcb2e74836be.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\El Pescador.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 7,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\El Pueblo Feliz.mscz",
+    "sha256": "7f0f9d135919bfad4143bcecd5691ec98eb1268810d8f8aaa6fcf300b03c22e6",
+    "title": "El Pueblo Feliz",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "add2c20d-883f-40c3-87b8-1f1ef1874a50",
+        "name": "El Pueblo Feliz",
+        "midi": "global/assets/midi/39feef8acfc3da03a2f08f92c0cdb71534213a5d46a9fa995ae9b5ab47c30ca4.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\El Pueblo Feliz.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 8,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Es Honorable.mscz",
+    "sha256": "5a8057787db7090bd0a4631672141d8af1ec009d93828f991d128a69dec26f3c",
+    "title": "Es Honorable",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "43f85a38-d3ed-541f-933b-6cbe0d23107b",
+        "name": "Es Honorable",
+        "midi": "global/assets/midi/e63928b445b1699e657f700d531ef9798c786c57134c2440863dec6ddb0d7320.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Es Honorable.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 9,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\HijoProdigo.mscz",
+    "sha256": "9a26642a49a195c8c0bdef4e81dae4eb010349ef4a592ef0405666d895a1b663",
+    "title": "Partitura sin título",
+    "parts": 4,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bass"
+    ],
+    "staffCount": 4,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\HijoProdigo.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\009.mid"
+  },
+  {
+    "index": 10,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Joya Perfecta.mscz",
+    "sha256": "7f78debc00e82448198d8e8ba3d6fa27be6f574546469b58a314122cd05c9f8d",
+    "title": "Joya Perfecta",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "ec27b68e-da9c-4962-8061-caac106b0cd8",
+        "name": "Joya Perfecta",
+        "midi": "global/assets/midi/133c46524b82e264e8a3759925d1b37c3d8f5e6ddda5b48ff77fb5ee7ffdca9c.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Joya Perfecta.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 11,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Le Saludamos de Corazón.mscz",
+    "sha256": "bdf55587d41c9bbde66d17be841d22ab9bca0462bf374c231fc54e1ed3d39106",
+    "title": "Le Saludamos de Corazón",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "cfdf316c-980a-59c1-b4bb-237c73a4f146",
+        "name": "Le Saludamos de Corazón",
+        "midi": "global/assets/midi/d087acfcc8949f7bbab0a7973f6d6a02bdf519cae12f4803592a8021009b2915.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Le Saludamos de Corazón.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 12,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Mujer Bendita de Dios.mscz",
+    "sha256": "9ee79ef38c67d2f36a84f2b850076ab90cad32360e971c6e591e51294d7240f8",
+    "title": "Mujer Bendita de Dios",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "d513251c-3d3f-5f55-8310-e7b099f0d7fc",
+        "name": "Mujer Bendita de Dios",
+        "midi": "global/assets/midi/d71e4bd278e39c5ff286bfede8fd6ece791c984c87e402895ab460777020a125.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Mujer Bendita de Dios.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 13,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Mujer de Gran Valor.mscz",
+    "sha256": "ebc8aa32330d84ea5a31776408cf722fecb5fb22147376700fce97b3206b783b",
+    "title": "Mujer de Gran Valor",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "8fad5f5e-b9dd-5ebf-80d7-20c7bd4dba24",
+        "name": "Mujer de Gran Valor",
+        "midi": "global/assets/midi/b671d25cd33d1f5fefc94670b369c61fb184269870b3893bb416e97905b1c053.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Mujer de Gran Valor.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 14,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Nuestros Deseos.mscz",
+    "sha256": "a95a4f94863d896ece2cac379c9b960213e6e1fced922be26664d1676faffe8c",
+    "title": "Nuestros Deseos",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "4a6cb159-6079-583e-b29d-c22e38324768",
+        "name": "Nuestros Deseos",
+        "midi": "global/assets/midi/cc11b4eb3b9ae916be24eedc9b4a7a19a9161a463b50dea0c6f6eb48ea03886f.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Nuestros Deseos.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 15,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Siempre Feliz.mscz",
+    "sha256": "1ac3d4fc27b29b2bd1a75d3baed7b543228586ca0e9f1b6266556cdcf8fb3c34",
+    "title": "Siempre Feliz",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "c89d7913-ca1c-550d-94a2-1291d8b1f103",
+        "name": "Siempre Feliz",
+        "midi": "global/assets/midi/427af1266e8eb3ee445307e250d7b57665c8ef794e7c25588a92b8c0773b5a47.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Siempre Feliz.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 16,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Tiempo de Agradecer.mscz",
+    "sha256": "74f1645a3fcafb3c055524f7e1e85d1f0dc9fcecbe17873cb664c443b22c92b0",
+    "title": "Tiempo de Agradecer",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_67ff3fd3631be412cc5bdc83",
+        "name": "Tiempo de Agradecer",
+        "midi": "global/assets/midi/0dd793b19b38e75882cd84e6a498aad70dc80b882b5fa53fedbf6725b20b927a.enc"
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": false
+  },
+  {
+    "index": 17,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Una Hermosura de Dios.mscz",
+    "sha256": "db4bf915c074727608675e0079e0ff7dc425202341c76d2e2984f2c4d3e81a22",
+    "title": "Una Hermosura de Dios",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "6c2aa892-cafc-5f3a-bcc5-b4e05c0c5319",
+        "name": "Una Hermosura de Dios",
+        "midi": "global/assets/midi/41caf60172de39fb1467c98b526e248ba9514e05233ab1ef88e566e2ea13bde0.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\3.0.0\\Una Hermosura de Dios.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 18,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\_ay__sandunga.mscz",
+    "sha256": "846b4952c9b68684110ed1ed5158834f8e8b3bcccd278708f2adbf06d53bc465",
+    "title": "_ay__sandunga",
+    "parts": 2,
+    "labels": [
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\_ay__sandunga.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\018.mid"
+  },
+  {
+    "index": 19,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\A Dónde Iré SATB.mscz",
+    "sha256": "1f08d136223278d415a6d46359f8b37051c2c4bd68ad56df073cc486bf2d9abb",
+    "title": "A Dónde Iré ",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_47d16b904344db4db6db6432",
+        "name": "A Dónde Iré",
+        "midi": "global/assets/midi/7aae8cdfc9e5900c4b5f00b082552a2823b396db6e9d332cf661e1f7474205e9.enc"
+      },
+      {
+        "id": "usmc_5392bae9d05ad58c1c",
+        "name": "A Donde Ire (te Amo Tanto)",
+        "midi": null
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\019.mid"
+  },
+  {
+    "index": 20,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\A Jesucristo Rendid (1).mscz",
+    "sha256": "dfb58b14e54c708dddd54fdaf71099ec5d82b296946242a4f363269033eb4866",
+    "title": "A Jesucristo Rendid (1)",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "acd9b129-271f-558c-82a1-7686f0f4019e",
+        "name": "A Jesucristo Rendid",
+        "midi": "global/assets/midi/8af6b0dc554c790e166f8f7ac18e138968ad4b25b0ae46b388b5e997d47d15e2.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\A Jesucristo Rendid (1).mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 21,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\A ti Solo Nuestro Rey.mscz",
+    "sha256": "42ee61a7167ee281019bfabb24292192672ac2e618ce8eb52a41ccf48789e4c0",
+    "title": "A ti Solo Nuestro Rey",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "d98201e5-8059-4ac9-b2ba-e6c9aaed685a",
+        "name": "A ti Solo Nuestro Rey",
+        "midi": "global/assets/midi/0637e7f94c8d0e56778c79fd8257cd5af100267e666a32e60f3fbb11ca3a7bb9.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\A ti Solo Nuestro Rey.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 22,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\A_Firm_Hope[1].mscz",
+    "sha256": "8876b2c1c94e14383ff01dc9235564c4fcc1ec8bb3537b6c63e5ee350201f79d",
+    "title": "A Firm Hope",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b1f730ea321fbb1d6b85b6",
+        "name": "A Firm Hope",
+        "midi": "una-firme-esperanza-1779937934891.midi"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\A_Firm_Hope[1].mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 23,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Al Gran Señor (Adoración).mscz",
+    "sha256": "e963ebf8be6a421744de2eedbccc1db380a0d32876feac699a31d7c2fc1f5d42",
+    "title": "",
+    "parts": 4,
+    "labels": [
+      "S",
+      "A",
+      "T",
+      "B"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "3ad4f5e6-ca67-4792-8747-4a86fd4e4633",
+        "name": "Al Gran Señor",
+        "midi": "global/assets/midi/0f1c2471e6474cd91487f76af47cc60b81b90c9dbcbb99a98dd266ee3d22d338.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Al Gran Señor (Adoración).mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 24,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\alas__and_did_my_savior_bleed.mscz",
+    "sha256": "ae58085ac720876116613e0feb718c318ebdf0ffffa54b75e3bf2a471fc422ac",
+    "title": "alas__and_did_my_savior_bleed",
+    "parts": 6,
+    "labels": [
+      "Voz",
+      "Soprano",
+      "Soprano 2",
+      "Alto",
+      "Tenor",
+      "Bajo"
+    ],
+    "staffCount": 6,
+    "matches": [
+      {
+        "id": "usmc_644e8ac7fc2bf23dfa3369f9",
+        "name": "Alas! And Did my Savior Bleed",
+        "midi": "alas-and-did-my-savior-bleed-1782505859595.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\alas__and_did_my_savior_bleed.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 25,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Amen ROSSINI.mscz",
+    "sha256": "bbe2a25bb339b063f51d9093cb47861d01483457746d7011260860f88077e495",
+    "title": "",
+    "parts": 7,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bass",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 10,
+    "matches": [],
+    "nearbyMidi": [],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\025.mid"
+  },
+  {
+    "index": 26,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Amor Celestial.mscz",
+    "sha256": "c567c650a5d1edd9eb9a69a01fedfe0413d282bae1397e0cd0c938d364f9c494",
+    "title": "Amor Celestial",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "25b2d341-6705-51b9-ba9a-2c458c4959b0",
+        "name": "Amor Celestial",
+        "midi": "global/assets/midi/c02171c25e459b7db7c13c2aff163f159a65c50d4ca1de3a83cb5590c49bac06.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Amor Celestial.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 27,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Amor Sin Condición.mscz",
+    "sha256": "f3ccf2abe0b54ce701ce4a5adabb8165f38acc613181defc881e20d9b7f381e9",
+    "title": "Amor Sin Condición",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "8b821175-3104-5f2b-960b-6e79f8a02acf",
+        "name": "Amor Sin Condición",
+        "midi": "global/assets/midi/45c195f25b4b04728ece326db4f2d1d311616d914998d53386812bc1f811b9d5.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Amor Sin Condición.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 28,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Apóstol, Padre y Maestro - Orquesta Completa.mscz",
+    "sha256": "db2dcc709abfc01725c2c12e604f6669d630b4c7a2c5bc0a38268ed6a540acec",
+    "title": "Apóstol, Padre y Maestro",
+    "parts": 22,
+    "labels": [
+      "Flautín",
+      "Flauta",
+      "Oboe",
+      "Clarinete en Si♭",
+      "Corno en Fa",
+      "Trompeta en Si♭",
+      "Trombón",
+      "Tuba",
+      "Timbales",
+      "Percusión Orquestal",
+      "Taiko Drum",
+      "Campanas Tubulares",
+      "Arpa",
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bajo",
+      "Violines I",
+      "Violines II",
+      "Violas",
+      "Violonchelos",
+      "Contrabajos"
+    ],
+    "staffCount": 23,
+    "matches": [
+      {
+        "id": "usmc_64b53da621b21cae02605994",
+        "name": "Apóstol, Padre y Maestro",
+        "midi": "ap-stol-padre-y-maestro-1783483201702.mid"
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": false
+  },
+  {
+    "index": 29,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Apóstol, Padre y Maestro.mscz",
+    "sha256": "ba377bf4a6dbfcfc8d18a866973d551193bf6d3a87aab5e8b30871493b44b17b",
+    "title": "Apóstol, Padre y Maestro",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b53da621b21cae02605994",
+        "name": "Apóstol, Padre y Maestro",
+        "midi": "ap-stol-padre-y-maestro-1783483201702.mid"
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": false
+  },
+  {
+    "index": 30,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Aarón Será tu Nombre.mscz",
+    "sha256": "85ba3325fe803843dfef73f5e6b66d80cb0698b6307d8c0add29067601a10cf6",
+    "title": "Aarón Será tu Nombre",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_78cdb8f3a13161909584d574",
+        "name": "Aarón Será tu Nombre",
+        "midi": "aar-n-ser-tu-nombre-1784232119017.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Aarón Será tu Nombre.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 31,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Acepto el Reto.mscz",
+    "sha256": "dee2d5f6c5ccbd11d726aa9b971a0db23a518f770b01b6437eb0a29478375ecb",
+    "title": "Acepto el Reto",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b3e9a19631ba687d63072b",
+        "name": "Acepto el Reto",
+        "midi": "acepto-el-reto-1784232125485.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Acepto el Reto.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 32,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Acércame a ti.mscz",
+    "sha256": "7e107a86749653c1aa2b4bd0a1c159b643845f941f01575ea071231a8c9f9be4",
+    "title": "Acércame a ti",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b52d5521b21cae026054cb",
+        "name": "Acércame a ti",
+        "midi": "ac-rcame-a-ti-1784232131859.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Acércame a ti.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 33,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Acércate.mscz",
+    "sha256": "42c4a2aee7aa92eb6d3f025f9ce75c6e2d51bdbf92bea2a6f5b954281eb48b71",
+    "title": "Acércate",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_3c29938233ef5028ae56173a",
+        "name": "Acércate",
+        "midi": "ac-rcate-1784232137737.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Acércate.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 34,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Adelante Juventud.mscz",
+    "sha256": "e477735ccc4dcfb34ae9dcc66ea5d86c20177d196f867ef053255758d0dda490",
+    "title": "Adelante Juventud",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b3ebcb9631ba687d630851",
+        "name": "Adelante Juventud",
+        "midi": "adelante-juventud-1784232188838.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Adelante Juventud.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 35,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Adorad a Dios.mscz",
+    "sha256": "a1eb6e5bc4122a9bed33d781c1b7345c17ca97351471ff51196f3033176ad2b8",
+    "title": "Adorad a Dios",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_e36e6cff5c4cc6c188",
+        "name": "Adorad a Dios",
+        "midi": "adorad-a-dios-1784232194689.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Adorad a Dios.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 36,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\En Gólgota Jesús Murió.mscz",
+    "sha256": "aa946d5a7aeaa9984708d5c70fa515cb4a891dd74b737b0c9eb4b4cea6310b70",
+    "title": "En Gólgota Jesús Murió",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b3e5b49631ba687d6305a2",
+        "name": "En Gólgota Jesús Murió",
+        "midi": "en-g-lgota-jes-s-muri--1784232203894.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\En Gólgota Jesús Murió.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 37,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Eres el Fiel Ejemplo a Seguir.mscz",
+    "sha256": "481c6370f696bb06bd7397a8a20ac728d0138e128e731bf50ff7c558838d55f6",
+    "title": "Eres el Fiel Ejemplo a Seguir",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_68149f7f520c8624329efd31",
+        "name": "Eres el Fiel Ejemplo a Seguir",
+        "midi": "eres-el-fiel-ejemplo-a-seguir-1784232214037.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Eres el Fiel Ejemplo a Seguir.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 38,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Lazos Inquebrantables.mscz",
+    "sha256": "0ef7c827594dbde0df8096af1ee9c7f40831eb624142c10b936e1c17b68ede1e",
+    "title": "Lazos Inquebrantables",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b561bf21b21cae02605ea9",
+        "name": "Lazos Inquebrantables",
+        "midi": "lazos-inquebrantables-1784232221575.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Lazos Inquebrantables.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 39,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\No es de Todos.mscz",
+    "sha256": "f661638e1bc8820dfe00c604ecfa68995e3497f388e955ad6704f6e01079200b",
+    "title": "No es de Todos",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b5645f21b21cae02605fb2",
+        "name": "No es de Todos",
+        "midi": "no-es-de-todos-1784232231252.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\No es de Todos.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 40,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Onward to Battle.mscz",
+    "sha256": "31a2d64ad54538b5a23897ae6120d525d6bb3d45975903fc5c4a83522c474e25",
+    "title": "Onward to Battle",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_465d6081f0d5fc56b27b60c2",
+        "name": "Onward to Battle",
+        "midi": "onward-to-battle-1784230870710.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Onward to Battle.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 41,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Señor tu Eres el Mismo.mscz",
+    "sha256": "5ef4e5e2d663d0621497bd95f91c168c50254a2b70a0c89e89f5f0072cbd3b8b",
+    "title": "Señor tu Eres el Mismo",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b5383221b21cae026058ee",
+        "name": "Señor tu Eres el Mismo",
+        "midi": "se-or-tu-eres-el-mismo-1784232244254.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\Señor tu Eres el Mismo.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 42,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\What Blessed Love.mscz",
+    "sha256": "5c97448913c40f3200651797fa67436213ffed2daaab94308ede6dba55aa6375",
+    "title": "What Blessed Love",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_0ae2ad29266d64f20097d86d",
+        "name": "What Blessed Love",
+        "midi": "what-blessed-love-1784230662501.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\AudiosJulio\\What Blessed Love.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 43,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Bendice a mi Señor.mscz",
+    "sha256": "9f9ff2713ca63de68656f6dd7f53611db059af46ec748f902b508f7d3f833e84",
+    "title": "Bendice a mi Señor",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "320df700-41b9-5bf3-96b7-19294e5d2c1e",
+        "name": "Bendice a mi Señor",
+        "midi": "global/assets/midi/8c34916d60cefff8dce75199ea48bfb819d4cb108a062ba08b0777ba06971279.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Bendice a mi Señor.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 44,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\caballo_prieto_azabache.mscz",
+    "sha256": "24aed0bd3eddfdc60aee6f32ff417fdf2c2cb81cd2b61b41c98472cf464c21c6",
+    "title": "caballo_prieto_azabache",
+    "parts": 2,
+    "labels": [
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\caballo_prieto_azabache.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\044.mid"
+  },
+  {
+    "index": 45,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\canci_n_mixteca.mscz",
+    "sha256": "9e6f6569819e8855122c477c18289a5061e785cd5091e6876ac18b02d4c5e62a",
+    "title": "canci_n_mixteca",
+    "parts": 2,
+    "labels": [
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\canci_n_mixteca.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\045.mid"
+  },
+  {
+    "index": 46,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Cantos Jubilosos.mscz",
+    "sha256": "bf3fa99c3fdf972a6eee6a5b35af856c4a2b3df15e872115f20cd33e76c5b9ee",
+    "title": "Cantos Jubilosos",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_85a0d369ba4b73a012bc4b2c",
+        "name": "Cantos Jubilosos",
+        "midi": "cantos-jubilosos-1784597349308.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Cantos Jubilosos.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 47,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\De su Mano.mscz",
+    "sha256": "91f4830684f78b08827a7244db8080d887d20577cbbd964ef339cbae49793e0c",
+    "title": "De su Mano",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "7950cfc4-f0d7-54e8-a3ad-3c32602b9a52",
+        "name": "De su Mano",
+        "midi": "global/assets/midi/d2aeeac6b2ed63d688f6814ff3d75b2ec858d4f38a4ca536b34bd84b125867a4.enc"
+      },
+      {
+        "id": "usmc_8312f3e023c0d58c4e",
+        "name": "De su Mano [ 2007 ]",
+        "midi": null
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\De su Mano.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\047.mid"
+  },
+  {
+    "index": 48,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Del Cielo Descienden.mscz",
+    "sha256": "598d076958a3406fae7d4a9b1cb4ba4729c49f4c6c03a35e8d502ea32b9c92fc",
+    "title": "Del Cielo Descienden",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "ed9747e7-c7ca-50a1-b1bd-9f9767ed715c",
+        "name": "Del Cielo Descienden",
+        "midi": "global/assets/midi/d80b12dde7282210378c8ad8ab413814c5ce5d69da2890fda10fe686b4ce4c7e.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Del Cielo Descienden.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 49,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Digno no Soy.mscz",
+    "sha256": "7efdb83c3238fc3fd4a7f82d14302e36ce068f57fb39ea36d423852c10163381",
+    "title": "Digno no Soy",
+    "parts": 5,
+    "labels": [
+      "Soprano 1",
+      "Soprano 2",
+      "Alto",
+      "Tenor",
+      "Bajo"
+    ],
+    "staffCount": 5,
+    "matches": [
+      {
+        "id": "8c7946cc-a162-53fb-a5a3-819b74c68daa",
+        "name": "Digno no Soy",
+        "midi": "global/assets/midi/ba2fce781ff4e98d3a2549c1f4329854ae7c83a77386a59790a3b6ab36dd8869.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Digno no Soy.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 50,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\dos_arbolitos.mscz",
+    "sha256": "6bac18f4f3af522ea8e06da31d5e2ea9f4174746c5a0d2966ca26ac151e32adf",
+    "title": "dos_arbolitos",
+    "parts": 2,
+    "labels": [
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\dos_arbolitos.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\050.mid"
+  },
+  {
+    "index": 51,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\El aliento de mi ser J..mscz",
+    "sha256": "daa6a47af182d38d0e567c6df55ed4c94a3b2f41226e3a4f55f8762b97d92351",
+    "title": "",
+    "parts": 2,
+    "labels": [
+      "SA",
+      "TB"
+    ],
+    "staffCount": 2,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\El aliento de mi ser J..mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\051.mid"
+  },
+  {
+    "index": 52,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\El Juicio Final (1).mscz",
+    "sha256": "e701b143972518506e5623653dce66c49e26e2e2fbc39b139ec25d7ec0969017",
+    "title": "El Juicio Final (1)",
+    "parts": 6,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 6,
+    "matches": [
+      {
+        "id": "usmc_b4667bcd15ab9011315ab57a",
+        "name": "El Juicio Final",
+        "midi": null
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\052.mid"
+  },
+  {
+    "index": 53,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\El Ángel Del Apocalipsis 14 6 - Orquesta y Coro (Piano).mscz",
+    "sha256": "eef3539f4d570ecea63bd764576ac3fd5671937e7550e3324671146273673258",
+    "title": "El Ángel Del Apocalipsis 14 6",
+    "parts": 15,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bajo",
+      "Flauta",
+      "Piano",
+      "Arpa",
+      "Campanas",
+      "Timbales",
+      "Percusión",
+      "Violines I",
+      "Violines II",
+      "Violas",
+      "Violonchelos",
+      "Contrabajos"
+    ],
+    "staffCount": 17,
+    "matches": [
+      {
+        "id": "ab84f530-8f61-4e08-998a-5aac565b7e02",
+        "name": "El Ángel Del Apocalipsis 14:6",
+        "midi": "el-angel-del-apocalipsis-14-6-1780342136902.mid"
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": false
+  },
+  {
+    "index": 54,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\El_Valle_De_Los_Huesos_Secos.mscz",
+    "sha256": "d27db7252dcd22ecedbb3ca6f27d35204d65b8622521473eb9c69b8f46989604",
+    "title": "D__Documents and Settings_Salvador_Mis documentos_chava_midis_archivos sibelius_huesos secos.sib - Valle de Los Huesos Secos",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "abc50a30-b08f-5323-91c4-83bff158281c",
+        "name": "El Valle de Los Huesos Secos",
+        "midi": "global/assets/midi/ffbb5e2fb1695bf43fed7f3f9986a4c483394ff6e63c56d92b05f3fc67491109.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\El_Valle_De_Los_Huesos_Secos.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 55,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\En Nuestro México.mscz",
+    "sha256": "bca2c828169eb92464ed3597327916a648eb292820f5f26615d93d0bfc8feebc",
+    "title": "En Nuestro México",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "12ccd8d4-c86d-5e11-8240-a4130ca3e5eb",
+        "name": "En Nuestro México",
+        "midi": "global/assets/midi/7ac2e859f98e095c530f0c0a4dcda08d1b2862115260eedd276766ed211ec3d4.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\En Nuestro México.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 56,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\En su Corazón VOCES.mscz",
+    "sha256": "2be140e2381ade021005302f838074e9ca82428373f684e206433d2af21d3b13",
+    "title": "En su Corazón",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "8779a1ff-b6d4-4a0a-a6c2-746b82a7dcf7",
+        "name": "En su Corazón",
+        "midi": "en-su-corazon-1779949381444.midi"
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": false
+  },
+  {
+    "index": 57,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Es Dios (Ensamble).mscz",
+    "sha256": "6eab5c0be8910f962ce9fe6aba7c07b2d9ba504858a090c026e042dfe6edd9f3",
+    "title": "Es  Dios",
+    "parts": 2,
+    "labels": [
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [
+      {
+        "id": "f4a09e28-b7f1-42de-a8ff-301698c05359",
+        "name": "Es Dios",
+        "midi": "es-dios-1779934548005.mid"
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": false
+  },
+  {
+    "index": 58,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Es Dios.mscz",
+    "sha256": "fdb9fc538079996b6628d56aec2681d9af734ecce590b0581a3112c61a9fcb98",
+    "title": "Es  Dios",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "f4a09e28-b7f1-42de-a8ff-301698c05359",
+        "name": "Es Dios",
+        "midi": "es-dios-1779934548005.mid"
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": false
+  },
+  {
+    "index": 59,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Él es la Luz Del Mundo.mscz",
+    "sha256": "807fc3541e8d4a9e21defd33a5bdc45f690d1309a2df875c9cac88cd3350c5f3",
+    "title": "Él es la Luz Del Mundo",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "3104615c-5de2-5753-a919-fbf264b6648c",
+        "name": "Él es la Luz Del Mundo",
+        "midi": "global/assets/midi/81915a47d17ca2285f2c83300f1bb4fc604003c00ebc26e402f76b8817cc7257.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Él es la Luz Del Mundo.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 60,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\firmes y adelante bc.mscz",
+    "sha256": "6223f2784001e4ad96cda965d3ebca42646f40063ed55fcfbe78073e7e9a2827",
+    "title": "Firmes y Adelante",
+    "parts": 5,
+    "labels": [
+      "SOPRANO",
+      "CONTRALTO",
+      "TENOR",
+      "BAJO",
+      "PIANO"
+    ],
+    "staffCount": 6,
+    "matches": [
+      {
+        "id": "6bbf3754-705a-411c-b527-dd1378955921",
+        "name": "Firmes y Adelante",
+        "midi": "firmes-y-adelante-1779949358546.mid"
+      },
+      {
+        "id": "local_apk_1781321071951_927",
+        "name": "Firmes y Adelante (5 Voces)",
+        "midi": null
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\060.mid"
+  },
+  {
+    "index": 61,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\firmes y adelante desenrrollada.mscz",
+    "sha256": "62405716b49a5049ef9adf2f86d087167755eb727001b8d4b7aaf062bedc2a1c",
+    "title": "Firmes y Adelante",
+    "parts": 4,
+    "labels": [
+      "SOPRANO",
+      "CONTRALTO",
+      "TENOR",
+      "BAJO"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "6bbf3754-705a-411c-b527-dd1378955921",
+        "name": "Firmes y Adelante",
+        "midi": "firmes-y-adelante-1779949358546.mid"
+      },
+      {
+        "id": "local_apk_1781321071951_927",
+        "name": "Firmes y Adelante (5 Voces)",
+        "midi": null
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\061.mid"
+  },
+  {
+    "index": 62,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\glory_unto_jesus_christ.mscz",
+    "sha256": "070aee8a725b422d91bec6b3a29d9129a78cfbbf28c2dc6ef2edc00d5b6861b9",
+    "title": "Glory unto Jesus Christ",
+    "parts": 4,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "be6a34b1-f8b2-590f-834e-d5a9e2cd9049",
+        "name": "Glory Unto Jesus Christ",
+        "midi": "global/assets/midi/32f6ce9093623453f444e9fba9e464a67a5217a5252a605c92ed137229d66d7b.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\glory_unto_jesus_christ.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 63,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Guerrero Celestial - Orquesta y Coro Arreglo 2.mscz",
+    "sha256": "e4423ad3ad3b2643c095498ddf5f0838856011d1204fd1b025c8161f88cbeed1",
+    "title": "Guerrero Celestial",
+    "parts": 15,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bajo",
+      "Flauta",
+      "Trompas en Fa",
+      "Trompetas en Si♭",
+      "Trombón y Tuba",
+      "Timbales",
+      "Percusión",
+      "Violines I",
+      "Violines II",
+      "Violas",
+      "Violonchelos",
+      "Contrabajos"
+    ],
+    "staffCount": 15,
+    "matches": [
+      {
+        "id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+        "name": "Guerrero Celestial",
+        "midi": "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Guerrero Celestial.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 64,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Guerrero Celestial - Orquesta y Coro.mscz",
+    "sha256": "1ae962d17fa17172da77b72b1310187d026a6703f456ff4895895e8cef2655b0",
+    "title": "Guerrero Celestial",
+    "parts": 15,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bajo",
+      "Flauta",
+      "Trompas en Fa",
+      "Trompetas en Si♭",
+      "Trombón y Tuba",
+      "Timbales",
+      "Percusión Épica",
+      "Violines I",
+      "Violines II",
+      "Violas",
+      "Violonchelos",
+      "Contrabajos"
+    ],
+    "staffCount": 15,
+    "matches": [
+      {
+        "id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+        "name": "Guerrero Celestial",
+        "midi": "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Guerrero Celestial.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 65,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Guerrero Celestial.mscz",
+    "sha256": "29bc3cd8be6cb58982050846ec831102b4547721b41c29f456d5f873305094bb",
+    "title": "Guerrero Celestial",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+        "name": "Guerrero Celestial",
+        "midi": "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Guerrero Celestial.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 66,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\how_great_thou_art__advanced_.mscz",
+    "sha256": "af286ca0436c80b48ed6bce94e3b49577e0a0072bf454b520b20d988c6f00462",
+    "title": "how_great_thou_art__advanced_",
+    "parts": 5,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor 1",
+      "Tenor 2",
+      "Bajo"
+    ],
+    "staffCount": 5,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\how_great_thou_art__advanced_.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\066.mid"
+  },
+  {
+    "index": 67,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\i_am_still_here.mscz",
+    "sha256": "8060f56695c34d857d7843936e07448cf4e1bbcf40d0bee86bbb3005a4d38809",
+    "title": "i_am_still_here",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_644eb29dfc2bf23dfa336b80",
+        "name": "I am Still Here",
+        "midi": "i-am-still-here-1782494111545.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\i_am_still_here.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 68,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\ineffable_gift.mscz",
+    "sha256": "55d4c13b7fce97ad45deb0fecb9087d9d8d91087a8d9384c7001a42fde3e3ddd",
+    "title": "ineffable_gift",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_647b6ee0f16057b9e8d4bde4",
+        "name": "Ineffable Gift",
+        "midi": "ineffable-gift-1782507396456.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\ineffable_gift.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 69,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\into_the_garden.mscz",
+    "sha256": "6cd6a65ebee13c45e4233099268cb09198122023243a0ff3dcda672adbc72f70",
+    "title": "into_the_garden",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_647b6f54f16057b9e8d4bdf9",
+        "name": "Into The Garden",
+        "midi": "into-the-garden-1782508472433.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\into_the_garden.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 70,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Isaías 12.mscz",
+    "sha256": "dd5704998309c3a3e0b3df79b69e8f406456ba766422085aa1467c368a7026d5",
+    "title": "Isaías 12",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "536e3a2a-b0bb-4c58-8ddf-cbba608da0fc",
+        "name": "Isaías 12",
+        "midi": "global/assets/midi/2f2c8124240aee484132ee08c0582592aac6bfba569d933a8348855f25b0d1ef.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Isaías 12.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 71,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\it_s_a_time_of_acceptance_now.mscz",
+    "sha256": "29aba2e88589e3d67a7d65383dec601fa8d888189d8a2e556f13c089eb0c50f8",
+    "title": "it_s_a_time_of_acceptance_now",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64adc459970ee4295057e49c",
+        "name": "It's a Time of Acceptance Now",
+        "midi": "it-s-a-time-of-acceptance-now-1782509013943.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\it_s_a_time_of_acceptance_now.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 72,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\it_seems_like_yesterday.mscz",
+    "sha256": "057f0a056a73505b7efae97fde8a9473fa413d73a978d045122e25af0b20070d",
+    "title": "it_seems_like_yesterday",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_6826a8f1d1859a2d28e3e31a",
+        "name": "It Seems Like Yesterday",
+        "midi": "it-seems-like-yesterday-1782509201972.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\it_seems_like_yesterday.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 73,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Jehova es mi Pastor Voces.mscz",
+    "sha256": "28c6078b7d11b62419d60aeb7ecb73dda386ef859c3d07903a0a87be1d694b2b",
+    "title": "",
+    "parts": 4,
+    "labels": [
+      "S",
+      "A",
+      "T",
+      "B"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "74cb3514-e85a-4490-a931-2162c056152b",
+        "name": "Jehova es mi Pastor",
+        "midi": null
+      }
+    ],
+    "nearbyMidi": [],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\073.mid"
+  },
+  {
+    "index": 74,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\jerusalem__city_of_god.mscz",
+    "sha256": "7c4c07b2ad1f4da4a4f0b9feec284c4a72db1e22706f0558fb7c37225f1de49b",
+    "title": "jerusalem__city_of_god",
+    "parts": 4,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_644eb2c8fc2bf23dfa336b90",
+        "name": "Jerusalem, City of God",
+        "midi": "jerusalem-city-of-god-1782511635811.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\jerusalem__city_of_god.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 75,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\La Fiesta Universal (closed).mscz",
+    "sha256": "e2ba5df1653702be4020a16f78192866937a36eae4aa99ea4f2da24acfa76ac3",
+    "title": "La Fiesta Universal",
+    "parts": 4,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bass"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "La_Fiesta_Universal_0",
+        "name": "La Fiesta Universal",
+        "midi": "la-fiesta-universal-1783371085429.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\La Fiesta Universal.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 76,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\La Fiesta Universal.mscz",
+    "sha256": "d9f85bbbc00cb8ba32e7d93b4a341452156a32dbd3ec450dce94793262df9ad7",
+    "title": "La Fiesta Universal",
+    "parts": 4,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bass"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "La_Fiesta_Universal_0",
+        "name": "La Fiesta Universal",
+        "midi": "la-fiesta-universal-1783371085429.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\La Fiesta Universal.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 77,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\La Vida Se Va Como El Viento (reducción).mscz",
+    "sha256": "cabd5569a5112c02a8bbd13939b21f840ed50a84357ccbcfd1a72fc48eff0900",
+    "title": "La Vida Se Va Como El Viento",
+    "parts": 2,
+    "labels": [
+      "Soprano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [
+      {
+        "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
+        "name": "La Vida se va Como el Viento",
+        "midi": "global/assets/midi/7c5d03657ae81557310c610e626d2c2f2cbae102cbd36a839b0fd8f7a176ad02.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\La Vida Se Va Como El Viento.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 78,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\La Vida Se Va Como El Viento.mscz",
+    "sha256": "ef5f9ecd66e9817a9111b3d2bd5ed205b285d54145a1d7044a4305d59b3f6fd8",
+    "title": "La Vida se va Como el Viento",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
+        "name": "La Vida se va Como el Viento",
+        "midi": "global/assets/midi/7c5d03657ae81557310c610e626d2c2f2cbae102cbd36a839b0fd8f7a176ad02.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\La Vida Se Va Como El Viento.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 79,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\loving_angel.mscz",
+    "sha256": "644cd8aa12cbd0c57625f8333080781e1a2071e9c0c202a6e9b51898d47178dc",
+    "title": "loving_angel",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_647b6fa5f16057b9e8d4be23",
+        "name": "Loving Angel",
+        "midi": "loving-angel-1782517670212.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\loving_angel.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 80,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\may_he_be_happy.mscz",
+    "sha256": "5fce8324b4e83205082915bc8e458b5f3b1d4ae2971cf4890dab9f1f0abce487",
+    "title": "may_he_be_happy",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_647b6980fc5d9756c985e504",
+        "name": "May he be Happy",
+        "midi": "may-he-be-happy-1782518246433.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\may_he_be_happy.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 81,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Mi Ejemplo a Seguir.mscz",
+    "sha256": "2fa2e006e0e713d569c3b6c28e37cfeba19b11bdef45c2ea1fc2eee37e865fe5",
+    "title": "Mi Ejemplo a Seguir",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "15d71867-d14c-508b-99f5-54b82438b194",
+        "name": "Mi Ejemplo a Seguir",
+        "midi": "global/assets/midi/4329b6bd083065976c06fc767b92eaf4caa30fcee269fbefb392c0d9ea6a96ac.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Mi Ejemplo a Seguir.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 82,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\my_gentle_lord.mscz",
+    "sha256": "561845828be1fcd1eaa0f06fa5e9e7efb61cb9b388d434be40660c58b59e3d8f",
+    "title": "my_gentle_lord",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_6595dbe3ccdb4bbe806745bb",
+        "name": "My Gentle Lord",
+        "midi": "my-gentle-lord-1782518540161.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\my_gentle_lord.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 83,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\my_hope.mscz",
+    "sha256": "e9196b02368167d2733d48289ef24b61e9e47e3447ea6298f203e420feefb25b",
+    "title": "my_hope",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_644eb34bfc2bf23dfa336bd0",
+        "name": "My Hope",
+        "midi": "my-hope-1782518863081.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\my_hope.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 84,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\my_savior_lives_and_reigns.mscz",
+    "sha256": "118a52618ef2838c9799339c8fff2c936ffe9b9ffdb2c3c160c4dc879c995530",
+    "title": "my_savior_lives_and_reigns",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_66a3a94633d672363fe34c88",
+        "name": "My Savior Lives And Reigns",
+        "midi": "my-savior-lives-and-reigns-1782519141525.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\my_savior_lives_and_reigns.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 85,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\nailed_to_the_cross.mscz",
+    "sha256": "0aacf404c9ff14ed5c842287b8671df45704fd378ba40495c0bea82c6120c699",
+    "title": "nailed_to_the_cross",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_647b6aa2fc5d9756c985e555",
+        "name": "Nailed to The Cross",
+        "midi": "nailed-to-the-cross-1782519305573.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\nailed_to_the_cross.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 86,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\oh_happy_day.mscz",
+    "sha256": "bb7a89cd7522df1e369e88246f11c1378a211461ef1264ae8a7b388de354e6af",
+    "title": "oh_happy_day",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "usmc_64b1f8cfea321fbb1d6b866c",
+        "name": "Oh Happy Day",
+        "midi": "oh-happy-day-1782838483181.mid"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\oh_happy_day.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 87,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Quiero Ser.mscz",
+    "sha256": "72e2c490144b4980775129fdc01bc6667547b5d88bae1d9ad7f7fa8ab3c3dd5b",
+    "title": "Quiero Ser",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "45d26fb9-b9fb-49d8-b953-c46a14d51634",
+        "name": "Quiero Ser",
+        "midi": "global/assets/midi/cd06a9742fcb85fd69f8d054a4093c8dfcee6234f7102bf4ec5660622e12234a.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Quiero Ser.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 88,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Regresa al Hogar.mscz",
+    "sha256": "5b911e137003e44afb04881248346f846c1865d1c059ec898222dec1c1c85f61",
+    "title": "Regresa al Hogar",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "c037109b-346d-53c0-a9d2-633a42b1221b",
+        "name": "Regresa al Hogar",
+        "midi": "global/assets/midi/e1e9bdea9596580fbf3fdf7eee729a54a87913ce70609e2d0d955701be2d5341.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Regresa al Hogar.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 89,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\rodalla.mscz",
+    "sha256": "55d00474bfab5e52af9c7c93cf6d0723f024f35df0e2b275ccd43fe53ea57c0e",
+    "title": "rodalla",
+    "parts": 2,
+    "labels": [
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\rodalla.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\089.mid"
+  },
+  {
+    "index": 90,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Salmo 125.mscz",
+    "sha256": "4e22010bc9b2b0521c18cc998b068ea7e0f5dde91f06d92a1bd72d2a93838d9f",
+    "title": "Salmo 125",
+    "parts": 4,
+    "labels": [
+      "Soprano",
+      "Alto",
+      "Tenor",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "4952c7d8-2e3e-5725-a3b9-89756522ddc6",
+        "name": "Salmo 125",
+        "midi": "global/assets/midi/4cdd0a644f141d0ac6be8077dfaef71cc107659256ad02db64f86df306391463.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Salmo 125.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 91,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Te Alabaré.mscz",
+    "sha256": "ca9bf69c72781ea7c1417e275ee352baa714105f71b30da5e2308ad1d93608f2",
+    "title": "Te Alabaré",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "87c4186a-22bd-545f-b87d-7db68dd2a441",
+        "name": "Te Alabaré",
+        "midi": "global/assets/midi/cd1901acd030fa08b8ad7c17e87126cc88beb664199ea880b6463e9a1a4a1195.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Te Alabaré.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 92,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Vamos!.mscz",
+    "sha256": "679448b0528894eea92867548d4efd505dd2c3a5db6830e7605a80b151cf5744",
+    "title": "Vamos!",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "1a9a76d2-fdef-50bd-9436-f04c4bc7eb8b",
+        "name": "Vamos!",
+        "midi": "global/assets/midi/e1755cd023233d5cf18aadceac567d35c3f07fa994f8c21e278c43f1f9d5aed9.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Vamos!.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 93,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\vereda_tropical.mscz",
+    "sha256": "0096c480d78752e226e84879a55ae54fb96a0cb427e0b1cc329119f90647380a",
+    "title": "vereda_tropical",
+    "parts": 2,
+    "labels": [
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 2,
+    "matches": [],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\vereda_tropical.mid"
+    ],
+    "needsReview": true,
+    "temporaryMidi": "E:\\proyectos\\IosCoroLLDM\\output\\musescore_review\\2026-10-12\\093.mid"
+  },
+  {
+    "index": 94,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Yo Tengo un Padre.mscz",
+    "sha256": "9af11d39e33ef72827697d95cfa9622a976cc7e1a4122c64cab0168b96c465ff",
+    "title": "Yo Tengo un Padre",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Alto",
+      "Piano",
+      "Bajo"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "a6f00c5d-bcf7-4c5a-b33d-2c19820f81ee",
+        "name": "Yo Tengo un Padre",
+        "midi": "global/assets/midi/a00d0190092e0bf21b4a5efd395a363dee599227c16ad1924bd7361d93c19609.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Yo Tengo un Padre.mid"
+    ],
+    "needsReview": false
+  },
+  {
+    "index": 95,
+    "source": "C:\\Users\\Huri_\\Downloads\\musescore\\Ángel Poderoso.mscz",
+    "sha256": "5a1cf52206242f1d233317f9313a258ccc53d05b03ae08d2e750b4304f8da540",
+    "title": "Ángel Poderoso",
+    "parts": 4,
+    "labels": [
+      "Piano",
+      "Piano",
+      "Piano",
+      "Piano"
+    ],
+    "staffCount": 4,
+    "matches": [
+      {
+        "id": "e85a0f52-5a31-5c49-997b-ad89b38e455a",
+        "name": "Ángel Poderoso",
+        "midi": "global/assets/midi/e26c1badf6f81009432ac5369e3cd8f12ac27b72cc424a586f5a95158235321a.enc"
+      }
+    ],
+    "nearbyMidi": [
+      "C:\\Users\\Huri_\\Downloads\\musescore\\Ángel Poderoso.mid"
+    ],
+    "needsReview": false
+  }
+]

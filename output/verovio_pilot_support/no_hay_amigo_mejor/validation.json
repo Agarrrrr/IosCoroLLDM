@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "file": "No Hay Amigo Mejor - SATB desarrollado.musicxml",
+      "attacks": [
+        360,
+        360,
+        354,
+        360
+      ],
+      "exactMidiReference": true,
+      "lyricsAndSections": true
+    },
+    {
+      "file": "exported.musicxml",
+      "attacks": [
+        360,
+        360,
+        354,
+        360
+      ],
+      "exactMidiReference": true,
+      "lyricsAndSections": true
+    },
+    {
+      "file": "reimport.musicxml",
+      "attacks": [
+        360,
+        360,
+        354,
+        360
+      ],
+      "exactMidiReference": true,
+      "lyricsAndSections": true
+    }
+  ],
+  "measures": 109,
+  "quarterBeats": 318,
+  "stanzas": 3,
+  "choruses": 3,
+  "staves": 2,
+  "voices": 4,
+  "lyricLinesPerStaff": 1,
+  "lyricsOnBothStaves": true
+}

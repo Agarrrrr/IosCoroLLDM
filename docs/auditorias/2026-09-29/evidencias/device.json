@@ -1,0 +1,19 @@
+{
+  "Model": "SM-G986U",
+  "Android": "13",
+  "Soc": "SM8250",
+  "Screen": [
+    "Physical size: 1440x3200",
+    "Override size: 1080x2400"
+  ],
+  "Density": "Physical density: 450",
+  "Memory": [
+    "MemTotal:       10856084 kB",
+    "MemFree:          369312 kB",
+    "MemAvailable:    3320420 kB"
+  ],
+  "Battery": [
+    "USB connected; initial battery 28%; initial temperature 33.0 C"
+  ],
+  "Commit": "e6a2c22d1345e8ce3e4ffde3a0ef136cb955ffd6"
+}

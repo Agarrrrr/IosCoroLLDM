@@ -1,0 +1,8655 @@
+{
+  "noteCount": 603,
+  "issues": [],
+  "invalidTotals": [],
+  "noteDurationDifferences": [],
+  "rhythmDifferences": [],
+  "measures": {
+    "1": [
+      {
+        "kind": "N",
+        "index": 0,
+        "measure": 1,
+        "x": 159.84175869223748,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 1,
+        "measure": 1,
+        "x": 184.69686190072747,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 2,
+        "measure": 1,
+        "x": 204.4938619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "2": [
+      {
+        "kind": "N",
+        "index": 3,
+        "measure": 2,
+        "x": 239.9947586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 4,
+        "measure": 2,
+        "x": 265.1937586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 2
+      }
+    ],
+    "3": [
+      {
+        "kind": "N",
+        "index": 5,
+        "measure": 3,
+        "x": 296.3887586922375,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 6,
+        "measure": 3,
+        "x": 326.0448619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "4": [
+      {
+        "kind": "N",
+        "index": 7,
+        "measure": 4,
+        "x": 348.39835561794996,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "5": [
+      {
+        "kind": "N",
+        "index": 8,
+        "measure": 5,
+        "x": 388.1817586922375,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 416.48748859341,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 2,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "6": [
+      {
+        "kind": "N",
+        "index": 9,
+        "measure": 6,
+        "x": 438.6977586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 10,
+        "measure": 6,
+        "x": 463.6738619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 11,
+        "measure": 6,
+        "x": 485.2718619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "7": [
+      {
+        "kind": "N",
+        "index": 12,
+        "measure": 7,
+        "x": 506.6117586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 13,
+        "measure": 7,
+        "x": 531.6897586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 3,
+        "onset": 2
+      }
+    ],
+    "8": [
+      {
+        "kind": "N",
+        "index": 14,
+        "measure": 8,
+        "x": 103.9237586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 15,
+        "measure": 8,
+        "x": 139.0998619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 7,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 16,
+        "measure": 8,
+        "x": 159.8618619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "9": [
+      {
+        "kind": "N",
+        "index": 17,
+        "measure": 9,
+        "x": 200.27975869223752,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 18,
+        "measure": 9,
+        "x": 242.05286190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 19,
+        "measure": 9,
+        "x": 257.0528619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "10": [
+      {
+        "kind": "N",
+        "index": 20,
+        "measure": 10,
+        "x": 278.2908619007275,
+        "duration": 0.75,
+        "xmlDuration": 0.75,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 21,
+        "measure": 10,
+        "x": 297.4868619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 7,
+        "onset": 0.75
+      },
+      {
+        "kind": "N",
+        "index": 22,
+        "measure": 10,
+        "x": 310.0878619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 23,
+        "measure": 10,
+        "x": 325.6858619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 24,
+        "measure": 10,
+        "x": 341.6428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 25,
+        "measure": 10,
+        "x": 356.6428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 26,
+        "measure": 10,
+        "x": 371.6428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 27,
+        "measure": 10,
+        "x": 386.63886190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "11": [
+      {
+        "kind": "N",
+        "index": 28,
+        "measure": 11,
+        "x": 412.6778619007275,
+        "duration": 0.75,
+        "xmlDuration": 0.75,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 29,
+        "measure": 11,
+        "x": 430.4358619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 7,
+        "onset": 0.75
+      },
+      {
+        "kind": "N",
+        "index": 30,
+        "measure": 11,
+        "x": 443.6348619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 31,
+        "measure": 11,
+        "x": 458.51386190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 32,
+        "measure": 11,
+        "x": 490.5528619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 33,
+        "measure": 11,
+        "x": 510.34986190072743,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 34,
+        "measure": 11,
+        "x": 526.4278619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 35,
+        "measure": 11,
+        "x": 541.4278619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "12": [
+      {
+        "kind": "N",
+        "index": 36,
+        "measure": 12,
+        "x": 103.8218619007275,
+        "duration": 0.75,
+        "xmlDuration": 0.75,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 37,
+        "measure": 12,
+        "x": 122.6618619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 11,
+        "onset": 0.75
+      },
+      {
+        "kind": "N",
+        "index": 38,
+        "measure": 12,
+        "x": 141.25986190072751,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 39,
+        "measure": 12,
+        "x": 157.81886190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 40,
+        "measure": 12,
+        "x": 174.7368619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 41,
+        "measure": 12,
+        "x": 191.65786190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 42,
+        "measure": 12,
+        "x": 207.4938619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 43,
+        "measure": 12,
+        "x": 223.33386190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "13": [
+      {
+        "kind": "N",
+        "index": 44,
+        "measure": 13,
+        "x": 260.2908619007275,
+        "duration": 0.75,
+        "xmlDuration": 0.75,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 45,
+        "measure": 13,
+        "x": 279.0098619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 11,
+        "onset": 0.75
+      },
+      {
+        "kind": "N",
+        "index": 46,
+        "measure": 13,
+        "x": 291.12686190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 47,
+        "measure": 13,
+        "x": 306.9668619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 48,
+        "measure": 13,
+        "x": 322.6858619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 2,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 49,
+        "measure": 13,
+        "x": 344.6428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 50,
+        "measure": 13,
+        "x": 360.4828619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "14": [
+      {
+        "kind": "N",
+        "index": 51,
+        "measure": 14,
+        "x": 382.6818619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 394.6818328657275,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 2,
+        "staff": 11,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 52,
+        "measure": 14,
+        "x": 406.7988619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 53,
+        "measure": 14,
+        "x": 419.0368619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 11,
+        "onset": 0.75
+      },
+      {
+        "kind": "R",
+        "x": 431.1579349532275,
+        "duration": 0.25,
+        "evidence": "unprinted bass rest inferred from identical SATB columns and printed soprano sixteenth rest",
+        "page": 2,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 54,
+        "measure": 14,
+        "x": 443.27586190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 11,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 55,
+        "measure": 14,
+        "x": 458.0328619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 2,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "R",
+        "x": 470.03283286572747,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 2,
+        "staff": 11,
+        "onset": 1.75
+      },
+      {
+        "kind": "N",
+        "index": 56,
+        "measure": 14,
+        "x": 482.1548619007275,
+        "duration": 0.75,
+        "xmlDuration": 0.75,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 500.9907716057275,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 2,
+        "staff": 11,
+        "onset": 2.75
+      },
+      {
+        "kind": "N",
+        "index": 57,
+        "measure": 14,
+        "x": 513.1118619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 58,
+        "measure": 14,
+        "x": 528.9468619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 2,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "15": [
+      {
+        "kind": "N",
+        "index": 59,
+        "measure": 15,
+        "x": 103.8218619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 112.46248089297751,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 60,
+        "measure": 15,
+        "x": 121.10386190072751,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 61,
+        "measure": 15,
+        "x": 129.73986190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0.75
+      },
+      {
+        "kind": "R",
+        "x": 138.38048089297752,
+        "duration": 0.25,
+        "evidence": "unprinted bass rest inferred from identical SATB columns and printed soprano sixteenth rest",
+        "page": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 62,
+        "measure": 15,
+        "x": 147.13886190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 63,
+        "measure": 15,
+        "x": 161.54086190072752,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "R",
+        "x": 170.17757373097749,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 1.75
+      },
+      {
+        "kind": "N",
+        "index": 64,
+        "measure": 15,
+        "x": 182.41586190072752,
+        "duration": 0.75,
+        "xmlDuration": 0.75,
+        "levels": 1,
+        "page": 3,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 198.13461384072752,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 2.75
+      },
+      {
+        "kind": "N",
+        "index": 65,
+        "measure": 15,
+        "x": 206.89686190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 66,
+        "measure": 15,
+        "x": 220.81486190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "16": [
+      {
+        "kind": "N",
+        "index": 67,
+        "measure": 16,
+        "x": 260.7718619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 272.5296286907275,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 68,
+        "measure": 16,
+        "x": 281.1698619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 69,
+        "measure": 16,
+        "x": 292.2088619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0.75
+      },
+      {
+        "kind": "R",
+        "x": 300.8494808929775,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 70,
+        "measure": 16,
+        "x": 309.4868619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 71,
+        "measure": 16,
+        "x": 323.0448619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "R",
+        "x": 331.5643887727275,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 1.75
+      },
+      {
+        "kind": "N",
+        "index": 72,
+        "measure": 16,
+        "x": 343.8028619007275,
+        "duration": 0.75,
+        "xmlDuration": 0.75,
+        "levels": 1,
+        "page": 3,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 357.24429656072755,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 2.75
+      },
+      {
+        "kind": "N",
+        "index": 73,
+        "measure": 16,
+        "x": 365.8808619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 74,
+        "measure": 16,
+        "x": 378.4828619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "17": [
+      {
+        "kind": "N",
+        "index": 75,
+        "measure": 17,
+        "x": 417.7168619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 429.5957307782275,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 76,
+        "measure": 17,
+        "x": 438.2368619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 77,
+        "measure": 17,
+        "x": 461.7558619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 0.75
+      },
+      {
+        "kind": "R",
+        "x": 471.2324241832275,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 78,
+        "measure": 17,
+        "x": 480.8338619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 79,
+        "measure": 17,
+        "x": 494.75186190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "R",
+        "x": 503.3924808929775,
+        "duration": 0.25,
+        "glyph": "0xf0c5",
+        "page": 3,
+        "staff": 3,
+        "onset": 1.75
+      },
+      {
+        "kind": "N",
+        "index": 80,
+        "measure": 17,
+        "x": 515.6308619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 3,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 530.6196015615726,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 3,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 81,
+        "measure": 17,
+        "x": 542.6268619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "18": [
+      {
+        "kind": "N",
+        "index": 82,
+        "measure": 18,
+        "x": 103.9237586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 3,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 83,
+        "measure": 18,
+        "x": 139.6817586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 3,
+        "staff": 7,
+        "onset": 2
+      }
+    ],
+    "19": [
+      {
+        "kind": "N",
+        "index": 84,
+        "measure": 19,
+        "x": 181.79875869223747,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 3,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 85,
+        "measure": 19,
+        "x": 217.5567586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 3,
+        "staff": 7,
+        "onset": 2
+      }
+    ],
+    "20": [
+      {
+        "kind": "N",
+        "index": 86,
+        "measure": 20,
+        "x": 259.67375869223747,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 3,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 294.5994099540725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 3,
+        "staff": 7,
+        "onset": 2
+      },
+      {
+        "kind": "R",
+        "x": 309.95488281306064,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 3,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 87,
+        "measure": 20,
+        "x": 325.9238619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 88,
+        "measure": 20,
+        "x": 337.4438619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 89,
+        "measure": 20,
+        "x": 352.2048619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "21": [
+      {
+        "kind": "N",
+        "index": 90,
+        "measure": 21,
+        "x": 389.8808619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 91,
+        "measure": 21,
+        "x": 401.5178619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 92,
+        "measure": 21,
+        "x": 416.2798619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 93,
+        "measure": 21,
+        "x": 431.5178619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 94,
+        "measure": 21,
+        "x": 443.1548619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 95,
+        "measure": 21,
+        "x": 457.7948619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 96,
+        "measure": 21,
+        "x": 473.1548619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 97,
+        "measure": 21,
+        "x": 484.7908619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 98,
+        "measure": 21,
+        "x": 499.5528619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 99,
+        "measure": 21,
+        "x": 514.9078619007274,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 100,
+        "measure": 21,
+        "x": 526.4278619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 7,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 101,
+        "measure": 21,
+        "x": 541.1898619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "22": [
+      {
+        "kind": "N",
+        "index": 102,
+        "measure": 22,
+        "x": 103.8218619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 103,
+        "measure": 22,
+        "x": 113.30286190072749,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 104,
+        "measure": 22,
+        "x": 128.0608619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 105,
+        "measure": 22,
+        "x": 140.41986190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 106,
+        "measure": 22,
+        "x": 156.8618619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 107,
+        "measure": 22,
+        "x": 174.85786190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 108,
+        "measure": 22,
+        "x": 190.9358619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 109,
+        "measure": 22,
+        "x": 203.17786190072752,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 110,
+        "measure": 22,
+        "x": 212.53286190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 111,
+        "measure": 22,
+        "x": 227.29486190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "23": [
+      {
+        "kind": "N",
+        "index": 112,
+        "measure": 23,
+        "x": 260.2908619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 113,
+        "measure": 23,
+        "x": 269.65086190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 114,
+        "measure": 23,
+        "x": 284.4078619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 115,
+        "measure": 23,
+        "x": 296.7678619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 116,
+        "measure": 23,
+        "x": 306.2478619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 117,
+        "measure": 23,
+        "x": 321.0058619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 118,
+        "measure": 23,
+        "x": 333.36486190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 119,
+        "measure": 23,
+        "x": 342.7248619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 120,
+        "measure": 23,
+        "x": 357.4828619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 121,
+        "measure": 23,
+        "x": 369.7208619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 122,
+        "measure": 23,
+        "x": 379.2008619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 123,
+        "measure": 23,
+        "x": 393.9588619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "24": [
+      {
+        "kind": "N",
+        "index": 124,
+        "measure": 24,
+        "x": 427.4358619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 125,
+        "measure": 24,
+        "x": 436.9158619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 126,
+        "measure": 24,
+        "x": 451.5568619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 127,
+        "measure": 24,
+        "x": 463.9158619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 128,
+        "measure": 24,
+        "x": 476.2718619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 129,
+        "measure": 24,
+        "x": 491.6308619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 130,
+        "measure": 24,
+        "x": 507.7088619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 131,
+        "measure": 24,
+        "x": 519.9508619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 132,
+        "measure": 24,
+        "x": 529.3108619007276,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 133,
+        "measure": 24,
+        "x": 544.0688619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 3,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "25": [
+      {
+        "kind": "N",
+        "index": 134,
+        "measure": 25,
+        "x": 103.8218619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 135,
+        "measure": 25,
+        "x": 113.30286190072749,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 136,
+        "measure": 25,
+        "x": 128.0608619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 137,
+        "measure": 25,
+        "x": 140.30286190072752,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 138,
+        "measure": 25,
+        "x": 149.6618619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 139,
+        "measure": 25,
+        "x": 164.41986190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 140,
+        "measure": 25,
+        "x": 176.65786190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 141,
+        "measure": 25,
+        "x": 186.13886190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 142,
+        "measure": 25,
+        "x": 200.89686190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 143,
+        "measure": 25,
+        "x": 213.13486190072751,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 144,
+        "measure": 25,
+        "x": 222.37286190072751,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 145,
+        "measure": 25,
+        "x": 237.25186190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "26": [
+      {
+        "kind": "N",
+        "index": 146,
+        "measure": 26,
+        "x": 255.8498619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 147,
+        "measure": 26,
+        "x": 265.2088619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 148,
+        "measure": 26,
+        "x": 280.0878619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 149,
+        "measure": 26,
+        "x": 292.3298619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 150,
+        "measure": 26,
+        "x": 301.5688619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 151,
+        "measure": 26,
+        "x": 316.4468619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 152,
+        "measure": 26,
+        "x": 328.6858619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 153,
+        "measure": 26,
+        "x": 338.0448619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 154,
+        "measure": 26,
+        "x": 352.8028619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 155,
+        "measure": 26,
+        "x": 365.1618619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 156,
+        "measure": 26,
+        "x": 374.40086190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 157,
+        "measure": 26,
+        "x": 389.1618619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "27": [
+      {
+        "kind": "N",
+        "index": 158,
+        "measure": 27,
+        "x": 407.87686190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 159,
+        "measure": 27,
+        "x": 417.2368619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 160,
+        "measure": 27,
+        "x": 431.9978619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 161,
+        "measure": 27,
+        "x": 444.3578619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 162,
+        "measure": 27,
+        "x": 453.5958619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 163,
+        "measure": 27,
+        "x": 468.3538619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 164,
+        "measure": 27,
+        "x": 480.7128619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 165,
+        "measure": 27,
+        "x": 493.0718619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 166,
+        "measure": 27,
+        "x": 507.8298619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 167,
+        "measure": 27,
+        "x": 520.0688619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 168,
+        "measure": 27,
+        "x": 529.4278619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 169,
+        "measure": 27,
+        "x": 544.1858619007276,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "28": [
+      {
+        "kind": "N",
+        "index": 170,
+        "measure": 28,
+        "x": 103.8218619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 171,
+        "measure": 28,
+        "x": 113.30286190072749,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 172,
+        "measure": 28,
+        "x": 127.2208619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 173,
+        "measure": 28,
+        "x": 137.78286190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 174,
+        "measure": 28,
+        "x": 147.13886190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 175,
+        "measure": 28,
+        "x": 161.2988619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 176,
+        "measure": 28,
+        "x": 172.2168619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 177,
+        "measure": 28,
+        "x": 183.85786190072747,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 178,
+        "measure": 28,
+        "x": 197.89686190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 179,
+        "measure": 28,
+        "x": 208.4548619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 180,
+        "measure": 28,
+        "x": 217.69386190072748,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 181,
+        "measure": 28,
+        "x": 231.8538619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "29": [
+      {
+        "kind": "N",
+        "index": 182,
+        "measure": 29,
+        "x": 265.3298619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 183,
+        "measure": 29,
+        "x": 274.8108619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 184,
+        "measure": 29,
+        "x": 288.8498619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 185,
+        "measure": 29,
+        "x": 299.1658619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 186,
+        "measure": 29,
+        "x": 308.6468619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 187,
+        "measure": 29,
+        "x": 322.6858619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 188,
+        "measure": 29,
+        "x": 333.2438619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 189,
+        "measure": 29,
+        "x": 342.6038619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 190,
+        "measure": 29,
+        "x": 356.6428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 191,
+        "measure": 29,
+        "x": 367.0838619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 192,
+        "measure": 29,
+        "x": 376.5608619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 193,
+        "measure": 29,
+        "x": 390.4788619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "30": [
+      {
+        "kind": "N",
+        "index": 194,
+        "measure": 30,
+        "x": 420.9588619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 195,
+        "measure": 30,
+        "x": 430.3188619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 196,
+        "measure": 30,
+        "x": 444.4748619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 197,
+        "measure": 30,
+        "x": 454.9158619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 198,
+        "measure": 30,
+        "x": 464.3928619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 199,
+        "measure": 30,
+        "x": 478.3148619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 200,
+        "measure": 30,
+        "x": 488.75186190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 201,
+        "measure": 30,
+        "x": 498.3498619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 202,
+        "measure": 30,
+        "x": 512.2718619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 203,
+        "measure": 30,
+        "x": 522.8298619007276,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 204,
+        "measure": 30,
+        "x": 532.3068619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.25
+      },
+      {
+        "kind": "N",
+        "index": 205,
+        "measure": 30,
+        "x": 546.2288619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "31": [
+      {
+        "kind": "N",
+        "index": 206,
+        "measure": 31,
+        "x": 103.8218619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 207,
+        "measure": 31,
+        "x": 116.6618619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 208,
+        "measure": 31,
+        "x": 131.41986190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 209,
+        "measure": 31,
+        "x": 147.9788619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 210,
+        "measure": 31,
+        "x": 160.5798619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 211,
+        "measure": 31,
+        "x": 175.3378619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 212,
+        "measure": 31,
+        "x": 192.0178619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 213,
+        "measure": 31,
+        "x": 204.7368619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 214,
+        "measure": 31,
+        "x": 219.7368619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.5
+      }
+    ],
+    "32": [
+      {
+        "kind": "N",
+        "index": 215,
+        "measure": 32,
+        "x": 257.0528619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 216,
+        "measure": 32,
+        "x": 269.65086190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 217,
+        "measure": 32,
+        "x": 284.4078619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 4,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 218,
+        "measure": 32,
+        "x": 315.36486190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 219,
+        "measure": 32,
+        "x": 328.2048619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 220,
+        "measure": 32,
+        "x": 342.9628619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.5
+      }
+    ],
+    "33": [
+      {
+        "kind": "N",
+        "index": 221,
+        "measure": 33,
+        "x": 380.2798619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 222,
+        "measure": 33,
+        "x": 392.8808619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 0.25
+      },
+      {
+        "kind": "N",
+        "index": 223,
+        "measure": 33,
+        "x": 407.63886190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 224,
+        "measure": 33,
+        "x": 424.1968619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 225,
+        "measure": 33,
+        "x": 437.0368619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 1.25
+      },
+      {
+        "kind": "N",
+        "index": 226,
+        "measure": 33,
+        "x": 451.7948619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 4,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 227,
+        "measure": 33,
+        "x": 468.3538619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 228,
+        "measure": 33,
+        "x": 480.9508619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.25
+      },
+      {
+        "kind": "N",
+        "index": 229,
+        "measure": 33,
+        "x": 495.7128619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 4,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "R",
+        "x": 539.1386015615726,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 4,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "47": [
+      {
+        "kind": "R",
+        "x": 276.595522036599,
+        "duration": 2,
+        "glyph": "0xf0ee",
+        "page": 6,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 328.2920100692682,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 6,
+        "staff": 7,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 230,
+        "measure": 47,
+        "x": 350.6428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 3
+      },
+      {
+        "kind": "N",
+        "index": 231,
+        "measure": 47,
+        "x": 366.00186190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "48": [
+      {
+        "kind": "N",
+        "index": 232,
+        "measure": 48,
+        "x": 403.6778619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 6,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 233,
+        "measure": 48,
+        "x": 425.0368619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 234,
+        "measure": 48,
+        "x": 440.3968619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 235,
+        "measure": 48,
+        "x": 455.8728619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 236,
+        "measure": 48,
+        "x": 471.2328619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 237,
+        "measure": 48,
+        "x": 486.7128619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 238,
+        "measure": 48,
+        "x": 502.0718619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "46": [
+      {
+        "kind": "R",
+        "x": 181.17936646663497,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 6,
+        "staff": 7,
+        "onset": 0
+      }
+    ],
+    "49": [
+      {
+        "kind": "N",
+        "index": 239,
+        "measure": 49,
+        "x": 103.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 6,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 240,
+        "measure": 49,
+        "x": 121.34186190072751,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 241,
+        "measure": 49,
+        "x": 133.82186190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 242,
+        "measure": 49,
+        "x": 146.41986190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 6,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 243,
+        "measure": 49,
+        "x": 163.69686190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 244,
+        "measure": 49,
+        "x": 176.2988619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "50": [
+      {
+        "kind": "N",
+        "index": 245,
+        "measure": 50,
+        "x": 234.8538619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 246,
+        "measure": 50,
+        "x": 252.25186190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 247,
+        "measure": 50,
+        "x": 265.8108619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 248,
+        "measure": 50,
+        "x": 278.2908619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 249,
+        "measure": 50,
+        "x": 292.8068619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 250,
+        "measure": 50,
+        "x": 307.8068619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 251,
+        "measure": 50,
+        "x": 320.4048619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 252,
+        "measure": 50,
+        "x": 337.9238619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "51": [
+      {
+        "kind": "N",
+        "index": 253,
+        "measure": 51,
+        "x": 398.1578619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 254,
+        "measure": 51,
+        "x": 412.6778619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 255,
+        "measure": 51,
+        "x": 425.2798619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 256,
+        "measure": 51,
+        "x": 437.7558619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 257,
+        "measure": 51,
+        "x": 452.6348619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 6,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 258,
+        "measure": 51,
+        "x": 470.0328619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 259,
+        "measure": 51,
+        "x": 482.51386190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 6,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "52": [
+      {
+        "kind": "N",
+        "index": 260,
+        "measure": 52,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 261,
+        "measure": 52,
+        "x": 120.1428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 262,
+        "measure": 52,
+        "x": 137.78286190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 263,
+        "measure": 52,
+        "x": 153.73986190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 264,
+        "measure": 52,
+        "x": 170.2988619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 265,
+        "measure": 52,
+        "x": 186.0178619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 266,
+        "measure": 52,
+        "x": 198.85786190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "53": [
+      {
+        "kind": "N",
+        "index": 267,
+        "measure": 53,
+        "x": 233.53286190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 268,
+        "measure": 53,
+        "x": 245.1738619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 269,
+        "measure": 53,
+        "x": 256.6898619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 270,
+        "measure": 53,
+        "x": 269.4118619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 271,
+        "measure": 53,
+        "x": 284.5298619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 272,
+        "measure": 53,
+        "x": 300.12686190072753,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 7,
+        "staff": 3,
+        "onset": 3.5
+      },
+      {
+        "kind": "N",
+        "index": 273,
+        "measure": 53,
+        "x": 310.0878619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 7,
+        "staff": 3,
+        "onset": 3.75
+      }
+    ],
+    "54": [
+      {
+        "kind": "N",
+        "index": 274,
+        "measure": 54,
+        "x": 327.12686190072753,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 275,
+        "measure": 54,
+        "x": 342.6038619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 276,
+        "measure": 54,
+        "x": 352.5648619007275,
+        "duration": 0.25,
+        "xmlDuration": 0.25,
+        "levels": 2,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.75
+      },
+      {
+        "kind": "N",
+        "index": 277,
+        "measure": 54,
+        "x": 367.4438619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 379.40948859341,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 7,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "55": [
+      {
+        "kind": "R",
+        "x": 406.88612825206735,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 7,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 278,
+        "measure": 55,
+        "x": 422.87686190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 1
+      },
+      {
+        "kind": "N",
+        "index": 279,
+        "measure": 55,
+        "x": 443.3968619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 280,
+        "measure": 55,
+        "x": 459.7128619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 281,
+        "measure": 55,
+        "x": 477.5918619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "56": [
+      {
+        "kind": "N",
+        "index": 282,
+        "measure": 56,
+        "x": 497.15086190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 283,
+        "measure": 56,
+        "x": 512.0298619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 284,
+        "measure": 56,
+        "x": 526.9078619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 285,
+        "measure": 56,
+        "x": 541.5488619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "57": [
+      {
+        "kind": "N",
+        "index": 286,
+        "measure": 57,
+        "x": 103.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 124.90874713841,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 7,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 148.30713754486544,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 7,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 287,
+        "measure": 57,
+        "x": 164.90086190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 288,
+        "measure": 57,
+        "x": 175.93986190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "58": [
+      {
+        "kind": "N",
+        "index": 289,
+        "measure": 58,
+        "x": 213.13486190072751,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 290,
+        "measure": 58,
+        "x": 228.37286190072751,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 291,
+        "measure": 58,
+        "x": 243.8538619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 292,
+        "measure": 58,
+        "x": 259.0918619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "59": [
+      {
+        "kind": "N",
+        "index": 293,
+        "measure": 59,
+        "x": 305.4078619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 294,
+        "measure": 59,
+        "x": 327.8458619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 295,
+        "measure": 59,
+        "x": 343.2048619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 364.29174713841,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 7,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "60": [
+      {
+        "kind": "R",
+        "x": 435.9472692081005,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 7,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 296,
+        "measure": 60,
+        "x": 447.7168619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 297,
+        "measure": 60,
+        "x": 461.0328619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 298,
+        "measure": 60,
+        "x": 472.1938619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 299,
+        "measure": 60,
+        "x": 487.3108619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 7,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 519.8186015615725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 7,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "61": [
+      {
+        "kind": "R",
+        "x": 103.09206018182249,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 7,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 300,
+        "measure": 61,
+        "x": 114.1428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 301,
+        "measure": 61,
+        "x": 126.0218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 302,
+        "measure": 61,
+        "x": 137.41986190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 303,
+        "measure": 61,
+        "x": 151.0998619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 7,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 178.0886015615725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 7,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "62": [
+      {
+        "kind": "R",
+        "x": 209.28396462638733,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 7,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 304,
+        "measure": 62,
+        "x": 220.09586190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 305,
+        "measure": 62,
+        "x": 235.33386190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 306,
+        "measure": 62,
+        "x": 250.8108619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 307,
+        "measure": 62,
+        "x": 268.2088619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 7,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 302.9986015615725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 7,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "63": [
+      {
+        "kind": "R",
+        "x": 319.1978308026592,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 7,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 308,
+        "measure": 63,
+        "x": 330.12686190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 309,
+        "measure": 63,
+        "x": 341.0448619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 310,
+        "measure": 63,
+        "x": 359.0408619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 311,
+        "measure": 63,
+        "x": 377.2828619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 312,
+        "measure": 63,
+        "x": 398.40086190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "64": [
+      {
+        "kind": "N",
+        "index": 313,
+        "measure": 64,
+        "x": 414.4788619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 314,
+        "measure": 64,
+        "x": 427.0758619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 315,
+        "measure": 64,
+        "x": 436.4358619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 7,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 316,
+        "measure": 64,
+        "x": 450.4557586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 11,
+        "onset": 2.0
+      }
+    ],
+    "65": [
+      {
+        "kind": "N",
+        "index": 317,
+        "measure": 65,
+        "x": 501.50335561795,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 7,
+        "staff": 11,
+        "onset": 0
+      }
+    ],
+    "66": [
+      {
+        "kind": "N",
+        "index": 318,
+        "measure": 66,
+        "x": 103.9237586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 319,
+        "measure": 66,
+        "x": 142.93986190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 320,
+        "measure": 66,
+        "x": 153.73986190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 321,
+        "measure": 66,
+        "x": 164.41986190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 322,
+        "measure": 66,
+        "x": 174.9788619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "67": [
+      {
+        "kind": "N",
+        "index": 323,
+        "measure": 67,
+        "x": 193.13252255137175,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "68": [
+      {
+        "kind": "N",
+        "index": 324,
+        "measure": 68,
+        "x": 293.32335561795,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "69": [
+      {
+        "kind": "N",
+        "index": 325,
+        "measure": 69,
+        "x": 355.5648619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 326,
+        "measure": 69,
+        "x": 366.1228619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 327,
+        "measure": 69,
+        "x": 375.7208619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 328,
+        "measure": 69,
+        "x": 386.2798619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 329,
+        "measure": 69,
+        "x": 401.1427586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 3,
+        "onset": 2.0
+      }
+    ],
+    "70": [
+      {
+        "kind": "N",
+        "index": 330,
+        "measure": 70,
+        "x": 451.4358619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 331,
+        "measure": 70,
+        "x": 462.2328619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 332,
+        "measure": 70,
+        "x": 473.0328619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 333,
+        "measure": 70,
+        "x": 483.4708619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 334,
+        "measure": 70,
+        "x": 498.33475869223753,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 3,
+        "onset": 2.0
+      }
+    ],
+    "71": [
+      {
+        "kind": "N",
+        "index": 335,
+        "measure": 71,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 336,
+        "measure": 71,
+        "x": 115.34186190072751,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 337,
+        "measure": 71,
+        "x": 126.6228619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 338,
+        "measure": 71,
+        "x": 138.02186190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 339,
+        "measure": 71,
+        "x": 153.00275869223748,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 7,
+        "onset": 2.0
+      }
+    ],
+    "72": [
+      {
+        "kind": "N",
+        "index": 340,
+        "measure": 72,
+        "x": 209.41586190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 341,
+        "measure": 72,
+        "x": 220.69386190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 342,
+        "measure": 72,
+        "x": 232.0918619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 343,
+        "measure": 72,
+        "x": 243.4938619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 8,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 344,
+        "measure": 72,
+        "x": 261.83475869223753,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 7,
+        "onset": 2.0
+      }
+    ],
+    "73": [
+      {
+        "kind": "N",
+        "index": 345,
+        "measure": 73,
+        "x": 318.87835561795,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 7,
+        "onset": 0
+      }
+    ],
+    "74": [
+      {
+        "kind": "N",
+        "index": 346,
+        "measure": 74,
+        "x": 395.67535561795,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 7,
+        "onset": 0
+      }
+    ],
+    "75": [
+      {
+        "kind": "N",
+        "index": 347,
+        "measure": 75,
+        "x": 449.78835561794995,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 7,
+        "onset": 0
+      }
+    ],
+    "76": [
+      {
+        "kind": "N",
+        "index": 348,
+        "measure": 76,
+        "x": 508.6507586922375,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 539.23729873591,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 8,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "77": [
+      {
+        "kind": "N",
+        "index": 349,
+        "measure": 77,
+        "x": 103.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 350,
+        "measure": 77,
+        "x": 119.30286190072749,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 351,
+        "measure": 77,
+        "x": 134.6618619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 352,
+        "measure": 77,
+        "x": 150.13886190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "78": [
+      {
+        "kind": "N",
+        "index": 353,
+        "measure": 78,
+        "x": 172.0998619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 354,
+        "measure": 78,
+        "x": 187.45886190072747,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 355,
+        "measure": 78,
+        "x": 202.81486190072752,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 356,
+        "measure": 78,
+        "x": 218.29486190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "79": [
+      {
+        "kind": "N",
+        "index": 357,
+        "measure": 79,
+        "x": 264.6118619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 358,
+        "measure": 79,
+        "x": 280.6898619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 359,
+        "measure": 79,
+        "x": 296.6468619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 360,
+        "measure": 79,
+        "x": 312.8458619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "80": [
+      {
+        "kind": "N",
+        "index": 361,
+        "measure": 80,
+        "x": 346.6858619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 362,
+        "measure": 80,
+        "x": 362.76386190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 363,
+        "measure": 80,
+        "x": 379.2008619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 364,
+        "measure": 80,
+        "x": 395.8808619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "81": [
+      {
+        "kind": "N",
+        "index": 365,
+        "measure": 81,
+        "x": 417.7168619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 366,
+        "measure": 81,
+        "x": 436.6778619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 367,
+        "measure": 81,
+        "x": 457.4358619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 368,
+        "measure": 81,
+        "x": 472.9118619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "82": [
+      {
+        "kind": "N",
+        "index": 369,
+        "measure": 82,
+        "x": 494.6308619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 370,
+        "measure": 82,
+        "x": 510.22886190072745,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 371,
+        "measure": 82,
+        "x": 525.5878619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 372,
+        "measure": 82,
+        "x": 541.0688619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 8,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "83": [
+      {
+        "kind": "N",
+        "index": 373,
+        "measure": 83,
+        "x": 103.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 374,
+        "measure": 83,
+        "x": 118.46286190072749,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 375,
+        "measure": 83,
+        "x": 130.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 376,
+        "measure": 83,
+        "x": 145.45886190072747,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "84": [
+      {
+        "kind": "N",
+        "index": 377,
+        "measure": 84,
+        "x": 179.2988619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 378,
+        "measure": 84,
+        "x": 193.9358619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 379,
+        "measure": 84,
+        "x": 207.37686190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 380,
+        "measure": 84,
+        "x": 225.13486190072751,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "85": [
+      {
+        "kind": "N",
+        "index": 381,
+        "measure": 85,
+        "x": 245.53286190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 382,
+        "measure": 85,
+        "x": 260.1698619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 383,
+        "measure": 85,
+        "x": 273.3688619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 384,
+        "measure": 85,
+        "x": 289.3298619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "86": [
+      {
+        "kind": "N",
+        "index": 385,
+        "measure": 86,
+        "x": 305.7678619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 386,
+        "measure": 86,
+        "x": 321.12686190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 387,
+        "measure": 86,
+        "x": 333.9668619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 388,
+        "measure": 86,
+        "x": 349.4438619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "87": [
+      {
+        "kind": "N",
+        "index": 389,
+        "measure": 87,
+        "x": 365.76386190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 390,
+        "measure": 87,
+        "x": 381.23986190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 391,
+        "measure": 87,
+        "x": 406.3188619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 392,
+        "measure": 87,
+        "x": 421.6778619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "88": [
+      {
+        "kind": "N",
+        "index": 393,
+        "measure": 88,
+        "x": 437.9978619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 394,
+        "measure": 88,
+        "x": 453.4748619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 395,
+        "measure": 88,
+        "x": 466.4358619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 396,
+        "measure": 88,
+        "x": 482.0328619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "89": [
+      {
+        "kind": "N",
+        "index": 397,
+        "measure": 89,
+        "x": 500.2718619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 398,
+        "measure": 89,
+        "x": 515.6308619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 399,
+        "measure": 89,
+        "x": 528.5878619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 400,
+        "measure": 89,
+        "x": 543.9468619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "90": [
+      {
+        "kind": "N",
+        "index": 401,
+        "measure": 90,
+        "x": 103.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 402,
+        "measure": 90,
+        "x": 118.5838619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 403,
+        "measure": 90,
+        "x": 130.94386190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 404,
+        "measure": 90,
+        "x": 145.7008619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "91": [
+      {
+        "kind": "N",
+        "index": 405,
+        "measure": 91,
+        "x": 171.49786190072751,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 406,
+        "measure": 91,
+        "x": 186.2558619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 407,
+        "measure": 91,
+        "x": 212.53286190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 408,
+        "measure": 91,
+        "x": 227.8928619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "92": [
+      {
+        "kind": "N",
+        "index": 409,
+        "measure": 92,
+        "x": 253.8108619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 410,
+        "measure": 92,
+        "x": 268.4508619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 411,
+        "measure": 92,
+        "x": 290.65086190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 412,
+        "measure": 92,
+        "x": 318.9668619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "93": [
+      {
+        "kind": "N",
+        "index": 413,
+        "measure": 93,
+        "x": 345.36486190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 414,
+        "measure": 93,
+        "x": 367.0838619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 415,
+        "measure": 93,
+        "x": 391.4398619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 416,
+        "measure": 93,
+        "x": 416.7598619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "94": [
+      {
+        "kind": "N",
+        "index": 417,
+        "measure": 94,
+        "x": 443.1548619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 418,
+        "measure": 94,
+        "x": 458.51386190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 419,
+        "measure": 94,
+        "x": 472.4318619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 420,
+        "measure": 94,
+        "x": 487.7908619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "95": [
+      {
+        "kind": "N",
+        "index": 421,
+        "measure": 95,
+        "x": 503.3928619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 422,
+        "measure": 95,
+        "x": 513.2288619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 423,
+        "measure": 95,
+        "x": 528.7088619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 424,
+        "measure": 95,
+        "x": 543.1078619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "96": [
+      {
+        "kind": "N",
+        "index": 425,
+        "measure": 96,
+        "x": 103.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 426,
+        "measure": 96,
+        "x": 126.3808619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 427,
+        "measure": 96,
+        "x": 148.82186190072747,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 428,
+        "measure": 96,
+        "x": 171.25986190072751,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "97": [
+      {
+        "kind": "N",
+        "index": 429,
+        "measure": 97,
+        "x": 199.9358619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 430,
+        "measure": 97,
+        "x": 222.37286190072751,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 431,
+        "measure": 97,
+        "x": 244.8108619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 432,
+        "measure": 97,
+        "x": 267.3688619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "98": [
+      {
+        "kind": "N",
+        "index": 433,
+        "measure": 98,
+        "x": 296.1698619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 434,
+        "measure": 98,
+        "x": 318.6078619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 435,
+        "measure": 98,
+        "x": 340.9238619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 436,
+        "measure": 98,
+        "x": 363.3618619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "99": [
+      {
+        "kind": "N",
+        "index": 437,
+        "measure": 99,
+        "x": 392.5218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 438,
+        "measure": 99,
+        "x": 414.8378619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 439,
+        "measure": 99,
+        "x": 437.27586190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 440,
+        "measure": 99,
+        "x": 459.7128619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "100": [
+      {
+        "kind": "N",
+        "index": 441,
+        "measure": 100,
+        "x": 488.61575869223753,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 9,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 532.75648859341,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 9,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "101": [
+      {
+        "kind": "N",
+        "index": 442,
+        "measure": 101,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 132.6111673275725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 443,
+        "measure": 101,
+        "x": 165.3808619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 191.28731967557246,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 444,
+        "measure": 101,
+        "x": 224.05286190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 252.72107520732254,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 445,
+        "measure": 101,
+        "x": 285.48986190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 314.27526016557255,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "102": [
+      {
+        "kind": "N",
+        "index": 446,
+        "measure": 102,
+        "x": 358.3218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 379.91192232507257,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 447,
+        "measure": 102,
+        "x": 415.9198619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 437.2677281173225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 448,
+        "measure": 102,
+        "x": 460.4358619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 481.7837281173225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 449,
+        "measure": 102,
+        "x": 511.9078619007274,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 533.3768202375725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "103": [
+      {
+        "kind": "N",
+        "index": 450,
+        "measure": 103,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 128.05254586757252,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 451,
+        "measure": 103,
+        "x": 149.18186190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 174.36958127807247,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 452,
+        "measure": 103,
+        "x": 205.33386190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 232.20128218257247,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 453,
+        "measure": 103,
+        "x": 263.1698619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 290.15838427007253,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "104": [
+      {
+        "kind": "N",
+        "index": 454,
+        "measure": 104,
+        "x": 332.4048619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 359.2722821825725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 455,
+        "measure": 104,
+        "x": 391.4398619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 418.30729214982256,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 456,
+        "measure": 104,
+        "x": 445.3148619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 468.46350120757256,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 457,
+        "measure": 104,
+        "x": 496.7908619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 520.5371474848225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "105": [
+      {
+        "kind": "N",
+        "index": 458,
+        "measure": 105,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 121.4509371750725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 459,
+        "measure": 105,
+        "x": 140.54086190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 158.0488350875725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 460,
+        "measure": 105,
+        "x": 177.13886190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 194.6468450548225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 461,
+        "measure": 105,
+        "x": 213.7368619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 231.6042341880725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "106": [
+      {
+        "kind": "N",
+        "index": 462,
+        "measure": 106,
+        "x": 257.0528619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 274.67803001307254,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 463,
+        "measure": 106,
+        "x": 293.6468619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 311.27594714232254,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 464,
+        "measure": 106,
+        "x": 330.2438619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 347.87293717507254,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 465,
+        "measure": 106,
+        "x": 366.9628619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 384.59193717507253,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "107": [
+      {
+        "kind": "N",
+        "index": 466,
+        "measure": 107,
+        "x": 409.9198619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 427.5450599148225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 467,
+        "measure": 107,
+        "x": 446.51386190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 464.1429371750726,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 468,
+        "measure": 107,
+        "x": 483.2328619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 500.86194714232255,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 469,
+        "measure": 107,
+        "x": 519.8298619007276,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 10,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 537.3378450548225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 10,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "108": [
+      {
+        "kind": "N",
+        "index": 470,
+        "measure": 108,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 122.05256038507251,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 471,
+        "measure": 108,
+        "x": 140.0608619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 156.4907872948225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 472,
+        "measure": 108,
+        "x": 174.37686190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 191.28719877757248,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 473,
+        "measure": 108,
+        "x": 209.29486190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 225.60368520732248,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "109": [
+      {
+        "kind": "N",
+        "index": 474,
+        "measure": 109,
+        "x": 272.1698619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 290.3966731575725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 475,
+        "measure": 109,
+        "x": 308.4078619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 324.9549024823225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 476,
+        "measure": 109,
+        "x": 342.7248619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 359.6313115500725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 477,
+        "measure": 109,
+        "x": 377.6428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 394.3110045698225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "110": [
+      {
+        "kind": "N",
+        "index": 478,
+        "measure": 110,
+        "x": 418.5568619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 435.10788938232247,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 479,
+        "measure": 110,
+        "x": 453.11486190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 469.42368520732254,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 480,
+        "measure": 110,
+        "x": 487.4318619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 503.9789921875725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 481,
+        "measure": 110,
+        "x": 521.9898619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 3,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 538.4158701655726,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 3,
+        "onset": 3.5
+      }
+    ],
+    "111": [
+      {
+        "kind": "N",
+        "index": 482,
+        "measure": 111,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 117.7322259708225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 483,
+        "measure": 111,
+        "x": 130.5798619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 144.25193892507247,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 484,
+        "measure": 111,
+        "x": 157.22086190072747,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 170.7679496100725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 485,
+        "measure": 111,
+        "x": 183.6188619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 197.40422668857246,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "112": [
+      {
+        "kind": "N",
+        "index": 486,
+        "measure": 112,
+        "x": 214.9358619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 228.84231880882248,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 487,
+        "measure": 112,
+        "x": 243.01386190072748,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 256.8031338505725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 488,
+        "measure": 112,
+        "x": 269.5298619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 283.19804173032253,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 489,
+        "measure": 112,
+        "x": 296.1698619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 309.7169496100725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "113": [
+      {
+        "kind": "N",
+        "index": 490,
+        "measure": 113,
+        "x": 327.36486190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 341.1541338505726,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 491,
+        "measure": 113,
+        "x": 355.3218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 368.99004173032256,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 492,
+        "measure": 113,
+        "x": 381.8418619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 395.63113385057255,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 493,
+        "measure": 113,
+        "x": 408.4788619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 422.02594961007253,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "114": [
+      {
+        "kind": "N",
+        "index": 494,
+        "measure": 114,
+        "x": 439.7948619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 455.14274263482247,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 495,
+        "measure": 114,
+        "x": 473.8728619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 487.66213385057256,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 496,
+        "measure": 114,
+        "x": 500.5098619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 514.9006972570726,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 497,
+        "measure": 114,
+        "x": 532.5488619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 7,
+        "onset": 3.0
+      },
+      {
+        "kind": "R",
+        "x": 546.3381338505726,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "115": [
+      {
+        "kind": "N",
+        "index": 498,
+        "measure": 115,
+        "x": 103.8218619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 120.7321987775725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 11,
+        "onset": 0.5
+      },
+      {
+        "kind": "N",
+        "index": 499,
+        "measure": 115,
+        "x": 141.1428619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "R",
+        "x": 156.01022151232252,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 500,
+        "measure": 115,
+        "x": 169.93986190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 185.6470619973225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 11,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 501,
+        "measure": 115,
+        "x": 198.7368619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "116": [
+      {
+        "kind": "N",
+        "index": 502,
+        "measure": 116,
+        "x": 231.71675869223748,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 503,
+        "measure": 116,
+        "x": 263.2908619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "117": [
+      {
+        "kind": "N",
+        "index": 504,
+        "measure": 117,
+        "x": 302.8697586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 505,
+        "measure": 117,
+        "x": 342.4828619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 506,
+        "measure": 117,
+        "x": 354.1228619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 507,
+        "measure": 117,
+        "x": 371.76386190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 508,
+        "measure": 117,
+        "x": 387.1188619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "118": [
+      {
+        "kind": "N",
+        "index": 509,
+        "measure": 118,
+        "x": 406.9198619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 510,
+        "measure": 118,
+        "x": 424.0607586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 511,
+        "measure": 118,
+        "x": 450.5958619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "119": [
+      {
+        "kind": "N",
+        "index": 512,
+        "measure": 119,
+        "x": 480.0957586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 11,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 513,
+        "measure": 119,
+        "x": 506.75186190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 514,
+        "measure": 119,
+        "x": 518.2718619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 2.5
+      },
+      {
+        "kind": "N",
+        "index": 515,
+        "measure": 119,
+        "x": 533.7478619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 3.0
+      },
+      {
+        "kind": "N",
+        "index": 516,
+        "measure": 119,
+        "x": 545.0298619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 11,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "120": [
+      {
+        "kind": "N",
+        "index": 517,
+        "measure": 120,
+        "x": 103.8218619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 518,
+        "measure": 120,
+        "x": 119.7637586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 519,
+        "measure": 120,
+        "x": 146.6618619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "121": [
+      {
+        "kind": "N",
+        "index": 520,
+        "measure": 121,
+        "x": 187.45886190072747,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 521,
+        "measure": 121,
+        "x": 208.81486190072752,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 12,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 522,
+        "measure": 121,
+        "x": 225.73286190072747,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 523,
+        "measure": 121,
+        "x": 241.57186190072747,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "122": [
+      {
+        "kind": "N",
+        "index": 524,
+        "measure": 122,
+        "x": 285.1308619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 525,
+        "measure": 122,
+        "x": 304.0878619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 526,
+        "measure": 122,
+        "x": 323.7678619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 527,
+        "measure": 122,
+        "x": 339.8458619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "123": [
+      {
+        "kind": "N",
+        "index": 528,
+        "measure": 123,
+        "x": 379.4398619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 529,
+        "measure": 123,
+        "x": 395.40086190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 530,
+        "measure": 123,
+        "x": 417.3578619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 531,
+        "measure": 123,
+        "x": 433.1968619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "124": [
+      {
+        "kind": "N",
+        "index": 532,
+        "measure": 124,
+        "x": 472.5528619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 533,
+        "measure": 124,
+        "x": 492.2328619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 534,
+        "measure": 124,
+        "x": 512.0298619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 535,
+        "measure": 124,
+        "x": 527.9898619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "125": [
+      {
+        "kind": "N",
+        "index": 536,
+        "measure": 125,
+        "x": 103.8218619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 128.0524960313225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 537,
+        "measure": 125,
+        "x": 142.0998619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 183.48672476632254,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "126": [
+      {
+        "kind": "N",
+        "index": 538,
+        "measure": 126,
+        "x": 219.9748619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 246.1236015615725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 539,
+        "measure": 126,
+        "x": 263.7718619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 306.83848547432257,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "127": [
+      {
+        "kind": "N",
+        "index": 540,
+        "measure": 127,
+        "x": 341.76386190072753,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 367.7916015615725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 541,
+        "measure": 127,
+        "x": 381.8418619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 433.06468614932254,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "128": [
+      {
+        "kind": "N",
+        "index": 542,
+        "measure": 128,
+        "x": 453.5958619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 479.7446015615725,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 543,
+        "measure": 128,
+        "x": 495.8298619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 542.3769694363225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 7,
+        "onset": 3.5
+      }
+    ],
+    "129": [
+      {
+        "kind": "N",
+        "index": 544,
+        "measure": 129,
+        "x": 103.8218619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 125.4118724888225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 545,
+        "measure": 129,
+        "x": 138.50186190072748,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "R",
+        "x": 179.28718129432247,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 12,
+        "staff": 11,
+        "onset": 3.5
+      }
+    ],
+    "130": [
+      {
+        "kind": "N",
+        "index": 546,
+        "measure": 130,
+        "x": 219.3577586922375,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 547,
+        "measure": 130,
+        "x": 250.2128619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "131": [
+      {
+        "kind": "N",
+        "index": 548,
+        "measure": 131,
+        "x": 291.0098619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 549,
+        "measure": 131,
+        "x": 311.52586190072753,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 12,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 550,
+        "measure": 131,
+        "x": 328.4468619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 551,
+        "measure": 131,
+        "x": 345.7248619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "132": [
+      {
+        "kind": "N",
+        "index": 552,
+        "measure": 132,
+        "x": 385.4398619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 553,
+        "measure": 132,
+        "x": 400.6778619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 554,
+        "measure": 132,
+        "x": 416.0368619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 555,
+        "measure": 132,
+        "x": 431.3968619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "133": [
+      {
+        "kind": "N",
+        "index": 556,
+        "measure": 133,
+        "x": 469.9118619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 557,
+        "measure": 133,
+        "x": 490.6738619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 12,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 558,
+        "measure": 133,
+        "x": 502.9118619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 559,
+        "measure": 133,
+        "x": 518.1508619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 12,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "134": [
+      {
+        "kind": "N",
+        "index": 560,
+        "measure": 134,
+        "x": 103.9237586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 561,
+        "measure": 134,
+        "x": 131.6618619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 562,
+        "measure": 134,
+        "x": 150.50186190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "135": [
+      {
+        "kind": "N",
+        "index": 563,
+        "measure": 135,
+        "x": 192.47875869223748,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 224.38148859340998,
+        "duration": 1,
+        "glyph": "0xf0ce",
+        "page": 13,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "136": [
+      {
+        "kind": "N",
+        "index": 564,
+        "measure": 136,
+        "x": 248.4118619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 271.4394489563225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 13,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 565,
+        "measure": 136,
+        "x": 286.0878619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 566,
+        "measure": 136,
+        "x": 315.9668619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "137": [
+      {
+        "kind": "N",
+        "index": 567,
+        "measure": 137,
+        "x": 346.8028619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 369.8304489563225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 13,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 568,
+        "measure": 137,
+        "x": 387.4828619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 569,
+        "measure": 137,
+        "x": 413.1578619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "138": [
+      {
+        "kind": "N",
+        "index": 570,
+        "measure": 138,
+        "x": 445.1968619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 468.4626462968225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 13,
+        "staff": 3,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 571,
+        "measure": 138,
+        "x": 480.9508619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 572,
+        "measure": 138,
+        "x": 504.7088619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 3,
+        "onset": 3.0
+      }
+    ],
+    "139": [
+      {
+        "kind": "N",
+        "index": 573,
+        "measure": 139,
+        "x": 103.8218619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 126.8533361838225,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 13,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 574,
+        "measure": 139,
+        "x": 143.6618619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 575,
+        "measure": 139,
+        "x": 167.17786190072752,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "140": [
+      {
+        "kind": "N",
+        "index": 576,
+        "measure": 140,
+        "x": 223.33386190072747,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "R",
+        "x": 246.24034686882248,
+        "duration": 0.5,
+        "glyph": "0xf0e4",
+        "page": 13,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 577,
+        "measure": 140,
+        "x": 258.8498619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 578,
+        "measure": 140,
+        "x": 289.9278619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "141": [
+      {
+        "kind": "N",
+        "index": 579,
+        "measure": 141,
+        "x": 323.9867586922375,
+        "duration": 3.0,
+        "xmlDuration": 3.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 580,
+        "measure": 141,
+        "x": 356.76386190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "142": [
+      {
+        "kind": "N",
+        "index": 581,
+        "measure": 142,
+        "x": 379.3218619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 582,
+        "measure": 142,
+        "x": 401.2798619007275,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 13,
+        "staff": 7,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 583,
+        "measure": 142,
+        "x": 413.0368619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 584,
+        "measure": 142,
+        "x": 429.2368619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "143": [
+      {
+        "kind": "N",
+        "index": 585,
+        "measure": 143,
+        "x": 471.8338619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 586,
+        "measure": 143,
+        "x": 488.0328619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 1.0
+      },
+      {
+        "kind": "N",
+        "index": 587,
+        "measure": 143,
+        "x": 504.2328619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 588,
+        "measure": 143,
+        "x": 520.5488619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 7,
+        "onset": 3.0
+      }
+    ],
+    "144": [
+      {
+        "kind": "N",
+        "index": 589,
+        "measure": 144,
+        "x": 103.8218619007275,
+        "duration": 1.5,
+        "xmlDuration": 1.5,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 590,
+        "measure": 144,
+        "x": 125.90086190072749,
+        "duration": 0.5,
+        "xmlDuration": 0.5,
+        "levels": 1,
+        "page": 13,
+        "staff": 11,
+        "onset": 1.5
+      },
+      {
+        "kind": "N",
+        "index": 591,
+        "measure": 144,
+        "x": 142.82186190072747,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 2.0
+      },
+      {
+        "kind": "N",
+        "index": 592,
+        "measure": 144,
+        "x": 159.13886190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "145": [
+      {
+        "kind": "N",
+        "index": 593,
+        "measure": 145,
+        "x": 210.23675869223752,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 594,
+        "measure": 145,
+        "x": 237.8538619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 595,
+        "measure": 145,
+        "x": 254.16986190072748,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "146": [
+      {
+        "kind": "N",
+        "index": 596,
+        "measure": 146,
+        "x": 308.7487586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 597,
+        "measure": 146,
+        "x": 336.2438619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 598,
+        "measure": 146,
+        "x": 352.5648619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "147": [
+      {
+        "kind": "N",
+        "index": 599,
+        "measure": 147,
+        "x": 406.4207586922375,
+        "duration": 2,
+        "xmlDuration": 2.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 0
+      },
+      {
+        "kind": "N",
+        "index": 600,
+        "measure": 147,
+        "x": 434.0368619007275,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 2
+      },
+      {
+        "kind": "N",
+        "index": 601,
+        "measure": 147,
+        "x": 453.11486190072753,
+        "duration": 1.0,
+        "xmlDuration": 1.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 3.0
+      }
+    ],
+    "148": [
+      {
+        "kind": "N",
+        "index": 602,
+        "measure": 148,
+        "x": 512.66335561795,
+        "duration": 4,
+        "xmlDuration": 4.0,
+        "levels": 0,
+        "page": 13,
+        "staff": 11,
+        "onset": 0
+      }
+    ],
+    "34": [
+      {
+        "kind": "R",
+        "x": 173.49960034163496,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "35": [
+      {
+        "kind": "R",
+        "x": 324.0896417825328,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "36": [
+      {
+        "kind": "R",
+        "x": 474.43750851560856,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "37": [
+      {
+        "kind": "R",
+        "x": 167.14029549663502,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 7,
+        "onset": 0
+      }
+    ],
+    "38": [
+      {
+        "kind": "R",
+        "x": 318.0896929555915,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 7,
+        "onset": 0
+      }
+    ],
+    "39": [
+      {
+        "kind": "R",
+        "x": 475.0352071109538,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 7,
+        "onset": 0
+      }
+    ],
+    "40": [
+      {
+        "kind": "R",
+        "x": 171.58170209663496,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 11,
+        "onset": 0
+      }
+    ],
+    "41": [
+      {
+        "kind": "R",
+        "x": 325.5272048819571,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 11,
+        "onset": 0
+      }
+    ],
+    "42": [
+      {
+        "kind": "R",
+        "x": 478.035113767059,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 5,
+        "staff": 11,
+        "onset": 0
+      }
+    ],
+    "43": [
+      {
+        "kind": "R",
+        "x": 185.85899034163498,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 6,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "44": [
+      {
+        "kind": "R",
+        "x": 353.7263120949967,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 6,
+        "staff": 3,
+        "onset": 0
+      }
+    ],
+    "45": [
+      {
+        "kind": "R",
+        "x": 491.8358646837639,
+        "duration": 4,
+        "glyph": "0xf0b7",
+        "page": 6,
+        "staff": 3,
+        "onset": 0
+      }
+    ]
+  }
+}

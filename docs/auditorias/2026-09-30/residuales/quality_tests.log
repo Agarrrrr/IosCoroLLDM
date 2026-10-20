@@ -1,0 +1,6 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart
+00:00 +0: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets
+00:01 +1: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: dense raster history preserves pixels, erasing and fractional offsets
+00:05 +2: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: viewport changes reveal the full saved stroke without losing input
+00:05 +3: E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart: saved erasing preserves the PDF background and stroke order at zoom
+00:05 +4: All tests passed!

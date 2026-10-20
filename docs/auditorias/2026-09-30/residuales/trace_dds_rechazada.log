@@ -1,0 +1,486 @@
+Resolving dependencies...
+Downloading packages...
+  archive 4.0.9 (4.3.0 available)
+  async 2.13.0 (2.13.1 available)
+  audioplayers 6.6.0 (6.8.1 available)
+  audioplayers_android 5.2.1 (5.3.0 available)
+  audioplayers_darwin 6.4.0 (6.5.0 available)
+  audioplayers_linux 4.2.1 (4.3.0 available)
+  audioplayers_platform_interface 7.1.1 (7.2.0 available)
+  audioplayers_web 5.2.0 (5.3.0 available)
+  audioplayers_windows 4.3.0 (4.4.1 available)
+  characters 1.4.0 (1.4.1 available)
+  cli_util 0.4.2 (0.6.0 available)
+  clock 1.1.2 (1.1.3 available)
+  cross_file 0.3.5+2 (0.4.0 available)
+  cupertino_icons 1.0.8 (2.0.0 available)
+  dart_pubspec_licenses 3.0.4 (3.2.0 available)
+  dio 5.10.0 (5.11.1 available)
+  dio_web_adapter 2.2.0 (2.2.2 available)
+  equatable 2.1.0 (3.0.0 available)
+  flutter_lints 5.0.0 (6.0.0 available)
+  flutter_native_splash 2.4.7 (2.4.8 available)
+  flutter_riverpod 2.6.1 (3.4.3 available)
+  go_router 14.8.1 (18.0.2 available)
+  google_fonts 6.3.2 (9.0.0 available)
+  google_mobile_ads 6.0.0 (9.1.0 available)
+  html 0.15.6 (0.15.7 available)
+  image 4.8.0 (4.10.1 available)
+  intl 0.20.2 (0.20.3 available)
+  json_annotation 4.9.0 (4.12.0 available)
+  leak_tracker 10.0.9 (11.0.2 available)
+  leak_tracker_flutter_testing 3.0.9 (3.0.10 available)
+  leak_tracker_testing 3.0.1 (3.0.2 available)
+  lints 5.1.1 (6.1.0 available)
+  matcher 0.12.17 (0.12.20 available)
+  material_color_utilities 0.11.1 (0.13.1 available)
+  meta 1.16.0 (1.19.0 available)
+  mime 2.0.0 (2.1.0 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_android 2.2.19 (2.3.1 available)
+  path_provider_foundation 2.4.2 (2.6.0 available)
+  path_provider_linux 2.2.1 (2.2.2 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  petitparser 7.0.2 (7.1.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.3 (5.0.6 available)
+  purchases_flutter 10.6.0 (10.13.2 available)
+  riverpod 2.6.1 (3.4.3 available)
+  share_plus 10.1.4 (13.3.0 available)
+  share_plus_platform_interface 5.0.2 (7.2.0 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  synchronized 3.4.0 (3.4.2 available)
+  test_api 0.7.4 (0.7.14 available)
+  url_launcher_android 6.3.20 (6.3.33 available)
+  url_launcher_ios 6.3.4 (6.4.2 available)
+  url_launcher_linux 3.2.2 (3.2.3 available)
+  url_launcher_macos 3.2.3 (3.2.6 available)
+  url_launcher_web 2.4.1 (2.4.3 available)
+  url_launcher_windows 3.1.5 (3.1.6 available)
+  vector_math 2.1.4 (2.4.3 available)
+  vm_service 15.0.0 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  webview_flutter 4.13.1 (4.14.1 available)
+  webview_flutter_android 4.10.1 (4.14.1 available)
+  webview_flutter_platform_interface 2.14.0 (2.15.1 available)
+  webview_flutter_wkwebview 3.23.0 (3.26.2 available)
+  win32 5.15.0 (6.4.0 available)
+  xml 6.6.1 (7.1.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+68 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Installing build\app\outputs\flutter-apk\app-profile.apk...        16.6s
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:53361/kA0bKFeMIPI=/
+VMServiceFlutterDriver: Isolate found with number: 7838694381895251
+VMServiceFlutterDriver: Isolate 7838694381895251 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter (14016): 00:00 +0: physical device PDF and annotation performance audit
+I/BLASTBufferQueue(14016): [SurfaceView[com.lldm.coro.perfaudit/com.lldm.coro.MainActivity]@0#1](f:0,a:0) onFrameAvailable the first frame is available
+D/SurfaceView@f7166f5(14016):  setAlpha: mUseAlpha = false alpha=1.0
+D/SurfaceView@f7166f5(14016):  updateSurfaceAlpha: setUseAlpha() is not called, ignored.
+I/ViewRootImpl@92af765[MainActivity](14016): Setup new sync id=0
+I/ViewRootImpl@92af765[MainActivity](14016): Setting syncFrameCallback
+I/ViewRootImpl@92af765[MainActivity](14016): registerCallbacksForSync syncBuffer=false
+D/SurfaceView@f7166f5(14016): updateSurfacePosition RenderWorker, frameNr = 1, position = [0, 0, 1080, 2265] surfaceSize = 1080x2265
+I/SurfaceView@f7166f5(14016): uSP: rtp = Rect(0, 0 - 1080, 2265) rtsw = 1080 rtsh = 2265
+I/SurfaceView@f7166f5(14016): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@f7166f5(14016): aOrMT: ViewRootImpl@92af765[MainActivity] t = android.view.SurfaceControl$Transaction@d470df9 fN = 1 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:373 
+I/ViewRootImpl@92af765[MainActivity](14016): mWNT: t=0xb400006d9b863f50 mBlastBufferQueue=0xb400006ddb861170 fn= 1 caller= android.view.SurfaceView.applyOrMergeTransaction:1455 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537 
+I/ViewRootImpl@92af765[MainActivity](14016): mWNT: t=0xb400006d9b864bb0 mBlastBufferQueue=0xb400006ddb861170 fn= 1 caller= android.view.ViewRootImpl.lambda$applyTransactionOnDraw$11$android-view-ViewRootImpl:12865 android.view.ViewRootImpl$$ExternalSyntheticLambda1.onFrameDraw:4 android.graphics.HardwareRenderer$FrameDrawingCallback.onFrameDraw:924 
+I/ViewRootImpl@92af765[MainActivity](14016): Received frameDrawingCallback syncResult=0 frameNum=1.
+I/ViewRootImpl@92af765[MainActivity](14016): Setting up sync and frameCommitCallback
+I/BLASTBufferQueue(14016): [ViewRootImpl@92af765[MainActivity]#0](f:0,a:0) onFrameAvailable the first frame is available
+I/ViewRootImpl@92af765[MainActivity](14016): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+D/OpenGLRenderer(14016): CFMS:: SetUp Pid : 14016    Tid : 14038
+W/Parcel  (14016): Expecting binder but got null!
+I/ViewRootImpl@92af765[MainActivity](14016): onSyncComplete
+I/ViewRootImpl@92af765[MainActivity](14016): setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+I/ViewRootImpl@92af765[MainActivity](14016): reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb400006d9b864f10
+VMServiceFlutterDriver: Connected to Flutter application.
+I/DecorView(14016): notifyKeepScreenOnChanged: keepScreenOn=false
+I/ViewRootImpl@92af765[MainActivity](14016): performTraversals params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x1030001
+I/ViewRootImpl@92af765[MainActivity](14016):   fl=81810100
+I/ViewRootImpl@92af765[MainActivity](14016):   pfl=16020040
+I/ViewRootImpl@92af765[MainActivity](14016):   vsysui=2500
+I/ViewRootImpl@92af765[MainActivity](14016):   apr=LIGHT_STATUS_BARS
+I/ViewRootImpl@92af765[MainActivity](14016):   bhv=DEFAULT
+I/ViewRootImpl@92af765[MainActivity](14016):   fitSides= naviIconColor=0}
+I/ViewRootImpl@92af765[MainActivity](14016): performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x1030001
+I/ViewRootImpl@92af765[MainActivity](14016):   fl=81810100
+I/ViewRootImpl@92af765[MainActivity](14016):   pfl=16020040
+I/ViewRootImpl@92af765[MainActivity](14016):   vsysui=2500
+I/ViewRootImpl@92af765[MainActivity](14016):   apr=LIGHT_STATUS_BARS
+I/ViewRootImpl@92af765[MainActivity](14016):   bhv=DEFAULT
+I/ViewRootImpl@92af765[MainActivity](14016):   fitSides= naviIconColor=0}
+I/ViewRootImpl@92af765[MainActivity](14016): updateBlastSurfaceIfNeeded mBlastBufferQueue=0xb400006ddb861170 isSameSurfaceControl=true
+I/BLASTBufferQueue(14016): update, w= 1080 h= 2400 mName = ViewRootImpl@92af765[MainActivity] mNativeObject= 0xb400006ddb861170 sc.mNativeObject= 0xb400006d6b861fa0 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+I/ViewRootImpl@92af765[MainActivity](14016): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=6 res=0x0 s={true 0xb400006e6b85bf00} ch=false seqId=0
+I/ViewRootImpl@92af765[MainActivity](14016): updateBoundsLayer: t = android.view.SurfaceControl$Transaction@519013e sc = Surface(name=Bounds for - com.lldm.coro.perfaudit/com.lldm.coro.MainActivity@0)/@0xdfa9b9f frame = 2
+I/ViewRootImpl@92af765[MainActivity](14016): mWNT: t=0xb400006d9b8629f0 mBlastBufferQueue=0xb400006ddb861170 fn= 2 caller= android.view.ViewRootImpl.prepareSurfaces:2985 android.view.ViewRootImpl.performTraversals:4233 android.view.ViewRootImpl.doTraversal:3116 
+I/ViewRootImpl@92af765[MainActivity](14016): MSG_WINDOW_FOCUS_CHANGED 1 0
+I/ViewRootImpl@92af765[MainActivity](14016): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400006e6b85bf00}
+D/InputMethodManager(14016): startInputInner - Id : 0
+I/InputMethodManager(14016): startInputInner - mService.startInputOrWindowGainedFocus
+D/InputMethodManager(14016): startInputInner - Id : 0
+D/InsetsController(14016): onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 73 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(692, 0 - 748, 73), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1440 physicalDisplayHeight=3200 density={2.8125} cutoutSpec={M 0,0 H -9.866666666666667 V 25.86666666666667 H 9.866666666666667 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=68, center=Point(68, 68)}, RoundedCorner{position=TopRight, radius=68, center=Point(1012, 68)}, RoundedCorner{position=BottomRight, radius=68, center=Point(1012, 2332)}, RoundedCorner{position=BottomLeft, radius=68, center=Point(68, 2332)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 73) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,107], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1392][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=com.lldm.coro.perfaudit/com.lldm.coro.MainActivity from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6740
+W/libc    (14016): Access denied finding property "sys.perf.boostopt"
+D/ProfileInstaller(14016): Installing profile for com.lldm.coro.perfaudit
+I/flutter (14016): AUDIT START catalog_first_load
+I/flutter (14016): AUDIT END catalog_first_load 188.688 ms, 10 frames, error=null
+I/flutter (14016): AUDIT START pdf_cold_Canten a Cristo Rey
+I/flutter (14016): AUDIT END pdf_cold_Canten a Cristo Rey 13.224 ms, 1 frames, error=null
+I/flutter (14016): AUDIT START pdf_warm_Canten a Cristo Rey
+I/flutter (14016): AUDIT END pdf_warm_Canten a Cristo Rey 1.321 ms, 0 frames, error=null
+I/flutter (14016): AUDIT START native_render_Canten a Cristo Rey_1800
+I/flutter (14016): AUDIT END native_render_Canten a Cristo Rey_1800 21.604 ms, 1 frames, error=null
+I/flutter (14016): AUDIT START native_render_Canten a Cristo Rey_3600
+I/flutter (14016): AUDIT END native_render_Canten a Cristo Rey_3600 59.278 ms, 4 frames, error=null
+I/flutter (14016): AUDIT START pdf_cold_The Holy City
+I/flutter (14016): AUDIT END pdf_cold_The Holy City 206.973 ms, 10 frames, error=null
+I/flutter (14016): AUDIT START pdf_warm_The Holy City
+I/flutter (14016): AUDIT END pdf_warm_The Holy City 1.869 ms, 0 frames, error=null
+I/flutter (14016): AUDIT START native_render_The Holy City_1800
+I/flutter (14016): AUDIT END native_render_The Holy City_1800 68.198 ms, 4 frames, error=null
+I/flutter (14016): AUDIT START native_render_The Holy City_3600
+I/flutter (14016): AUDIT END native_render_The Holy City_3600 121.906 ms, 7 frames, error=null
+I/flutter (14016): AUDIT START pdf_cold_El Llamado a mi Ser
+I/flutter (14016): AUDIT END pdf_cold_El Llamado a mi Ser 1006.406 ms, 60 frames, error=null
+I/flutter (14016): AUDIT START pdf_warm_El Llamado a mi Ser
+I/flutter (14016): AUDIT END pdf_warm_El Llamado a mi Ser 2.064 ms, 0 frames, error=null
+I/flutter (14016): AUDIT START native_render_El Llamado a mi Ser_1800
+I/flutter (14016): AUDIT END native_render_El Llamado a mi Ser_1800 312.275 ms, 19 frames, error=null
+I/flutter (14016): AUDIT START native_render_El Llamado a mi Ser_3600
+I/flutter (14016): AUDIT END native_render_El Llamado a mi Ser_3600 494.002 ms, 29 frames, error=null
+I/flutter (14016): AUDIT START decrypt_encrypted_pdf_isolated
+I/flutter (14016): AUDIT END decrypt_encrypted_pdf_isolated 892.502 ms, 53 frames, error=null
+I/flutter (14016): AUDIT START viewer_open_heavy_warm_file
+I/flutter (14016): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (14016): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (14016): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+I/flutter (14016): 🎧 [NativeMidiEngine] Cambio de salida: {outputs: [{name: SM-G986U, type: 1}, {name: SM-G986U, type: 2}, {name: SM-G986U, type: 18}]}
+W/OnBackInvokedCallback(14016): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(14016): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (14016): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (3 ms)
+I/flutter (14016): PdfViewer: Loaded page 9 of 9 in 23 ms
+I/flutter (14016): AUDIT END viewer_open_heavy_warm_file 2142.009 ms, 126 frames, error=null
+I/flutter (14016): AUDIT START page_changes_vertical
+I/flutter (14016): AUDIT END page_changes_vertical 6105.119 ms, 367 frames, error=null
+I/flutter (14016): AUDIT START page_changes_carousel
+W/libc    (14016): Access denied finding property "sys.perf.boostopt"
+I/flutter (14016): AUDIT END page_changes_carousel 6100.981 ms, 367 frames, error=null
+I/flutter (14016): AUDIT START zoom_pdf
+I/flutter (14016): AUDIT END zoom_pdf 1727.52 ms, 104 frames, error=null
+I/flutter (14016): AUDIT START draw_5_strokes_empty_page
+I/flutter (14016): AUDIT END draw_5_strokes_empty_page 6631.533 ms, 399 frames, error=null
+I/flutter (14016): AUDIT START draw_5_strokes_warm_page
+I/flutter (14016): AUDIT END draw_5_strokes_warm_page 6713.059 ms, 404 frames, error=null
+I/flutter (14016): AUDIT START draw_5_strokes_100_saved
+I/flutter (14016): AUDIT END draw_5_strokes_100_saved 6708.171 ms, 404 frames, error=null
+I/flutter (14016): AUDIT START draw_5_strokes_500_saved
+I/flutter (14016): AUDIT END draw_5_strokes_500_saved 6698.978 ms, 403 frames, error=null
+I/flutter (14016): AUDIT START eraser_500_saved
+I/flutter (14016): AUDIT END eraser_500_saved 132.572 ms, 8 frames, error=Bad state: Failed to connect to VM Service at ws://localhost:53361/kA0bKFeMIPI=/ws.
+I/flutter (14016): This may happen if DDS is enabled. If this test was launched via `flutter drive`, try adding `--no-dds`.
+I/flutter (14016): The original exception was:
+I/flutter (14016): SocketException: Connection refused (OS Error: Connection refused, errno = 111), address = localhost, port = 38638
+I/flutter (14016): #0      _NativeSocket.startConnect (dart:io-patch/socket_patch.dart:822)
+I/flutter (14016): #1      _RawSocket.startConnect (dart:io-patch/socket_patch.dart:2295)
+I/flutter (14016): #2      RawSocket.startConnect (dart:io-patch/socket_patch.dart:41)
+I/flutter (14016): #3      Socket._startConnect (dart:io-patch/socket_patch.dart:2575)
+I/flutter (14016): #4      Socket.startConnect (dart:io/socket.dart:897)
+I/flutter (14016): #5      _ConnectionTarget.connect (dart:_http/http_impl.dart:2711)
+I/flutter (14016): #6      _HttpClient._getConnection.connect (dart:_http/http_impl.dart:3225)
+I/flutter (14016): #7      _HttpClient._getConnection (dart:_http/http_impl.dart:3230)
+I/flutter (14016): #8      _HttpClient._openUrl (dart:_http/http_impl.dart:3053)
+I/flutter (14016): #9      _HttpClient.openUrl (dart:_http/http_impl.dart:2875)
+I/flutter (14016): #10     _WebSocketImpl.connect (dart:_http/websocket_impl.dart:1097)
+I/flutter (14016): #11     WebSocket.connect (dart:_http/websocket.dart:332)
+I/flutter (14016): #12     _vmServiceConnectUri (package:integration_test/integration_test.dart:469)
+I/flutter (14016): #13     IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:264)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #14     IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:296)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #15     measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:66)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #16     main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:362)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #17     LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #18     main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:173)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #19     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #20     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #21     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): 
+I/flutter (14016): AUDIT START undo_redo_500_saved
+I/flutter (14016): AUDIT END undo_redo_500_saved 2023.944 ms, 122 frames, error=null
+I/flutter (14016): AUDIT START two_finger_gestures
+I/flutter (14016): AUDIT END two_finger_gestures 2895.009 ms, 174 frames, error=null
+I/flutter (14016): AUDIT START annotations_save_10
+I/flutter (14016): AUDIT END annotations_save_10 2.729 ms, 0 frames, error=null
+I/flutter (14016): AUDIT START annotations_load_10
+I/flutter (14016): AUDIT END annotations_load_10 0.772 ms, 0 frames, error=null
+I/flutter (14016): AUDIT START annotations_save_100
+I/flutter (14016): AUDIT END annotations_save_100 25.12 ms, 1 frames, error=null
+I/flutter (14016): AUDIT START annotations_load_100
+I/flutter (14016): AUDIT END annotations_load_100 7.925 ms, 0 frames, error=null
+I/flutter (14016): AUDIT START annotations_save_500
+I/flutter (14016): AUDIT END annotations_save_500 108.335 ms, 7 frames, error=null
+I/flutter (14016): AUDIT START annotations_load_500
+I/flutter (14016): AUDIT END annotations_load_500 55.901 ms, 3 frames, error=null
+I/flutter (14016): AUDIT START annotations_save_2000
+I/flutter (14016): AUDIT END annotations_save_2000 391.247 ms, 24 frames, error=null
+I/flutter (14016): AUDIT START annotations_load_2000
+I/flutter (14016): AUDIT END annotations_load_2000 206.062 ms, 13 frames, error=null
+I/flutter (14016): AUDIT START viewer_reopen_heavy
+I/flutter (14016): AUDIT END viewer_reopen_heavy 14.825 ms, 1 frames, error=Bad state: Failed to connect to VM Service at ws://localhost:53361/kA0bKFeMIPI=/ws.
+I/flutter (14016): This may happen if DDS is enabled. If this test was launched via `flutter drive`, try adding `--no-dds`.
+I/flutter (14016): The original exception was:
+I/flutter (14016): SocketException: Connection refused (OS Error: Connection refused, errno = 111), address = localhost, port = 38640
+I/flutter (14016): #0      _NativeSocket.startConnect (dart:io-patch/socket_patch.dart:822)
+I/flutter (14016): #1      _RawSocket.startConnect (dart:io-patch/socket_patch.dart:2295)
+I/flutter (14016): #2      RawSocket.startConnect (dart:io-patch/socket_patch.dart:41)
+I/flutter (14016): #3      Socket._startConnect (dart:io-patch/socket_patch.dart:2575)
+I/flutter (14016): #4      Socket.startConnect (dart:io/socket.dart:897)
+I/flutter (14016): #5      _ConnectionTarget.connect (dart:_http/http_impl.dart:2711)
+I/flutter (14016): #6      _HttpClient._getConnection.connect (dart:_http/http_impl.dart:3225)
+I/flutter (14016): #7      _HttpClient._getConnection (dart:_http/http_impl.dart:3230)
+I/flutter (14016): #8      _HttpClient._openUrl (dart:_http/http_impl.dart:3053)
+I/flutter (14016): #9      _HttpClient.openUrl (dart:_http/http_impl.dart:2875)
+I/flutter (14016): #10     _WebSocketImpl.connect (dart:_http/websocket_impl.dart:1097)
+I/flutter (14016): #11     WebSocket.connect (dart:_http/websocket.dart:332)
+I/flutter (14016): #12     _vmServiceConnectUri (package:integration_test/integration_test.dart:469)
+I/flutter (14016): #13     IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:264)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #14     IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:296)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #15     measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:66)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #16     main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:423)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #17     LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #18     main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:173)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #19     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #20     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #21     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): 
+I/flutter (14016): AUDIT START viewer_reopen_without_annotations
+I/flutter (14016): AUDIT END viewer_reopen_without_annotations 20.824 ms, 1 frames, error=Bad state: Failed to connect to VM Service at ws://localhost:53361/kA0bKFeMIPI=/ws.
+I/flutter (14016): This may happen if DDS is enabled. If this test was launched via `flutter drive`, try adding `--no-dds`.
+I/flutter (14016): The original exception was:
+I/flutter (14016): SocketException: Connection refused (OS Error: Connection refused, errno = 111), address = localhost, port = 38642
+I/flutter (14016): #0      _NativeSocket.startConnect (dart:io-patch/socket_patch.dart:822)
+I/flutter (14016): #1      _RawSocket.startConnect (dart:io-patch/socket_patch.dart:2295)
+I/flutter (14016): #2      RawSocket.startConnect (dart:io-patch/socket_patch.dart:41)
+I/flutter (14016): #3      Socket._startConnect (dart:io-patch/socket_patch.dart:2575)
+I/flutter (14016): #4      Socket.startConnect (dart:io/socket.dart:897)
+I/flutter (14016): #5      _ConnectionTarget.connect (dart:_http/http_impl.dart:2711)
+I/flutter (14016): #6      _HttpClient._getConnection.connect (dart:_http/http_impl.dart:3225)
+I/flutter (14016): #7      _HttpClient._getConnection (dart:_http/http_impl.dart:3230)
+I/flutter (14016): #8      _HttpClient._openUrl (dart:_http/http_impl.dart:3053)
+I/flutter (14016): #9      _HttpClient.openUrl (dart:_http/http_impl.dart:2875)
+I/flutter (14016): #10     _WebSocketImpl.connect (dart:_http/websocket_impl.dart:1097)
+I/flutter (14016): #11     WebSocket.connect (dart:_http/websocket.dart:332)
+I/flutter (14016): #12     _vmServiceConnectUri (package:integration_test/integration_test.dart:469)
+I/flutter (14016): #13     IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:264)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #14     IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:296)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #15     measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:66)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #16     main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:434)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #17     LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #18     main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:173)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #19     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #20     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): #21     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)
+I/flutter (14016): <asynchronous suspension>
+I/flutter (14016): 
+I/flutter (14016): AUDIT COMPLETE /storage/emulated/0/Android/data/com.lldm.coro.perfaudit/files
+I/flutter (14016): Expected: empty
+I/flutter (14016):   Actual: WhereIterable<dynamic>:[
+I/flutter (14016):             {
+I/flutter (14016):               'rssBefore': 580419584,
+I/flutter (14016):               'error': 'Bad state: Failed to connect to VM Service at ws://localhost:53361/kA0bKFeMIPI=/ws.\n'
+I/flutter (14016):                 'This may happen if DDS is enabled. If this test was launched via `flutter drive`, try adding `--no-dds`.\n'
+I/flutter (14016):                 'The original exception was:\n'
+I/flutter (14016):                 'SocketException: Connection refused (OS Error: Connection refused, errno = 111), address = localhost, port = 38638\n'
+I/flutter (14016):                 '#0      _NativeSocket.startConnect (dart:io-patch/socket_patch.dart:822)\n'
+I/flutter (14016):                 '#1      _RawSocket.startConnect (dart:io-patch/socket_patch.dart:2295)\n'
+I/flutter (14016):                 '#2      RawSocket.startConnect (dart:io-patch/socket_patch.dart:41)\n'
+I/flutter (14016):                 '#3      Socket._startConnect (dart:io-patch/socket_patch.dart:2575)\n'
+I/flutter (14016):                 '#4      Socket.startConnect (dart:io/socket.dart:897)\n'
+I/flutter (14016):                 '#5      _ConnectionTarget.connect (dart:_http/http_impl.dart:2711)\n'
+I/flutter (14016):                 '#6      _HttpClient._getConnection.connect (dart:_http/http_impl.dart:3225)\n'
+I/flutter (14016):                 '#7      _HttpClient._getConnection (dart:_http/http_impl.dart:3230)\n'
+I/flutter (14016):                 '#8      _HttpClient._openUrl (dart:_http/http_impl.dart:3053)\n'
+I/flutter (14016):                 '#9      _HttpClient.openUrl (dart:_http/http_impl.dart:2875)\n'
+I/flutter (14016):                 '#10     _WebSocketImpl.connect (dart:_http/websocket_impl.dart:1097)\n'
+I/flutter (14016):                 '#11     WebSocket.connect (dart:_http/websocket.dart:332)\n'
+I/flutter (14016):                 '#12     _vmServiceConnectUri (package:integration_test/integration_test.dart:469)\n'
+I/flutter (14016):                 '#13     IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:264)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#14     IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:296)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#15     measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:66)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#16     main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:362)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#17     LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#18     main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:173)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#19     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#20     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#21     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '',
+I/flutter (14016):               'stack': '#0      IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:266)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#1      IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:296)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#2      measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:66)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#3      main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:362)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#4      LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#5      main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:173)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#8      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '',
+I/flutter (14016):               'timerGapsMs': [16.591, 16.04, 16.002, 16.081, 15.99, 16.087, 16.017, 15.989],
+I/flutter (14016):               'elapsedMs': 132.572,
+I/flutter (14016):               'rssAfter': 582025216,
+I/flutter (14016):               'frames': [
+I/flutter (14016):                 [3016, 1358, 5682, 422169325181],
+I/flutter (14016):                 [821, 1691, 3042, 422169341796],
+I/flutter (14016):                 [942, 1511, 3040, 422169358418],
+I/flutter (14016):                 [1067, 1828, 3500, 422169375043],
+I/flutter (14016):                 [987, 1656, 3235, 422169391655],
+I/flutter (14016):                 [1959, 3043, 5918, 422169408267],
+I/flutter (14016):                 [1744, 2696, 5251, 422169424879],
+I/flutter (14016):                 [1764, 2799, 5288, 422169441490]
+I/flutter (14016):               ],
+I/flutter (14016):               'frameCount': 8
+I/flutter (14016):             },
+I/flutter (14016):             {
+I/flutter (14016):               'rssBefore': 437092352,
+I/flutter (14016):               'error': 'Bad state: Failed to connect to VM Service at ws://localhost:53361/kA0bKFeMIPI=/ws.\n'
+I/flutter (14016):                 'This may happen if DDS is enabled. If this test was launched via `flutter drive`, try adding `--no-dds`.\n'
+I/flutter (14016):                 'The original exception was:\n'
+I/flutter (14016):                 'SocketException: Connection refused (OS Error: Connection refused, errno = 111), address = localhost, port = 38640\n'
+I/flutter (14016):                 '#0      _NativeSocket.startConnect (dart:io-patch/socket_patch.dart:822)\n'
+I/flutter (14016):                 '#1      _RawSocket.startConnect (dart:io-patch/socket_patch.dart:2295)\n'
+I/flutter (14016):                 '#2      RawSocket.startConnect (dart:io-patch/socket_patch.dart:41)\n'
+I/flutter (14016):                 '#3      Socket._startConnect (dart:io-patch/socket_patch.dart:2575)\n'
+I/flutter (14016):                 '#4      Socket.startConnect (dart:io/socket.dart:897)\n'
+I/flutter (14016):                 '#5      _ConnectionTarget.connect (dart:_http/http_impl.dart:2711)\n'
+I/flutter (14016):                 '#6      _HttpClient._getConnection.connect (dart:_http/http_impl.dart:3225)\n'
+I/flutter (14016):                 '#7      _HttpClient._getConnection (dart:_http/http_impl.dart:3230)\n'
+I/flutter (14016):                 '#8      _HttpClient._openUrl (dart:_http/http_impl.dart:3053)\n'
+I/flutter (14016):                 '#9      _HttpClient.openUrl (dart:_http/http_impl.dart:2875)\n'
+I/flutter (14016):                 '#10     _WebSocketImpl.connect (dart:_http/websocket_impl.dart:1097)\n'
+I/flutter (14016):                 '#11     WebSocket.connect (dart:_http/websocket.dart:332)\n'
+I/flutter (14016):                 '#12     _vmServiceConnectUri (package:integration_test/integration_test.dart:469)\n'
+I/flutter (14016):                 '#13     IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:264)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#14     IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:296)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#15     measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:66)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#16     main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:423)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#17     LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#18     main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:173)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#19     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#20     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#21     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '',
+I/flutter (14016):               'stack': '#0      IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:266)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#1      IntegrationTestWidgetsFlutterBinding.traceTimeline (package:integration_test/integration_test.dart:296)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#2      measure (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:66)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#3      main.<anonymous closure>.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:423)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#4      LiveTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2121)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#5      main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/integration_test/performance_audit_test.dart:173)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '#8      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:814)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016):                 '',
+I/flutter (14016):               'timerGapsMs': [],
+I/flutter (14016):               'elapsedMs': 14.825,
+I/flutter (14016):               'rssAfter': 437092352,
+I/flutter (14016):               'frames': [[326, 1127, 2920, 422190032231]],
+I/flutter (14016):               'frameCount': 1
+I/flutter (14016):             },
+I/flutter (14016):             {
+I/flutter (14016):               'rssBefore': 417951744,
+I/flutter (14016):               'error': 'Bad state: Failed to connect to VM Service at ws://localhost:53361/kA0bKFeMIPI=/ws.\n'
+I/flutter (14016):                 'This may happen if DDS is enabled. If this test was launched via `flutter drive`, try adding `--no-dds`.\n'
+I/flutter (14016):                 'The original exception was:\n'
+I/flutter (14016):                 'SocketException: Connection refused (OS Error: Connection refused, errno = 111), address = localhost, port = 38642\n'
+I/flutter (14016):                 '#0      _NativeSocket.startConnect (dart:io-patch/socket_patch.dart:822)\n'
+I/flutter (14016):                 '#1      _RawSocket.startConnect (dart:io-patch/socket_patch.dart:2295)\n'
+I/flutter (14016):                 '#2      RawSocket.startConnect (dart:io-patch/socket_patch.dart:41)\n'
+I/flutter (14016):                 '#3      Socket._startConnect (dart:io-patch/socket_patch.dart:2575)\n'
+I/flutter (14016):                 '#4      Socket.startConnect (dart:io/socket.dart:897)\n'
+I/flutter (14016):                 '#5      _ConnectionTarget.connect (dart:_http/http_impl.dart:2711)\n'
+I/flutter (14016):                 '#6      _HttpClient._getConnection.connect (dart:_http/http_impl.dart:3225)\n'
+I/flutter (14016):                 '#7      _HttpClient._getConnection (dart:_http/http_impl.dart:3230)\n'
+I/flutter (14016):                 '#8      _HttpClient._openUrl (dart:_http/http_impl.dart:3053)\n'
+I/flutter (14016):                 '#9      _HttpClient.openUrl (dart:_http/http_impl.dart:2875)\n'
+I/flutter (14016):                 '#10     _WebSocketImpl.connect (dart:_http/websocket_impl.dart:1097)\n'
+I/flutter (14016):                 '#11     WebSocket.connect (dart:_http/websocket.dart:332)\n'
+I/flutter (14016):                 '#12     _vmServiceConnectUri (package:integration_test/integration_test.dart:469)\n'
+I/flutter (14016):                 '#13     IntegrationTestWidgetsFlutterBinding.enableTimeline (package:integration_test/integration_test.dart:264)\n'
+I/flutter (14016):                 '<asynchronous suspension>\n'
+I/flutter (14016): 01:49 +0: physical device PDF and annotation performance audit [E]
+I/flutter (14016):   Test failed. See exception logs above.
+I/flutter (14016):   The test description was: physical device PDF and annotation performance audit
+I/flutter (14016):   
+I/flutter (14016): 01:49 +0 -1: (tearDownAll)
+I/flutter (14016): 01:49 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: physical device PDF and annotation performance audit
+Instance of 'FlutterErrorDetails'
+end of failure 1
+
+
+

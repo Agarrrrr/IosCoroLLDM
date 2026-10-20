@@ -1,0 +1,75 @@
+{
+  "measures": 70,
+  "quarterBeats": 280,
+  "staves": 4,
+  "voices": [
+    "Soprano",
+    "Alto",
+    "Tenor",
+    "Bajo"
+  ],
+  "baseTempo": 90,
+  "checks": [
+    {
+      "file": "Aleluya al Rey - SATB con letra - Cantai.musicxml",
+      "attacks": [
+        398,
+        286,
+        363,
+        321
+      ],
+      "midiPitchAndOnsetMatch": true,
+      "notatedDurationsMatch": true,
+      "lyricsOnAllFourStaves": true,
+      "counts": {
+        "writtenNotes": 1375,
+        "lyricNotes": 1253,
+        "slurstart": 34,
+        "slurstop": 34,
+        "tripletNotes": 12,
+        "tieLinks": 7
+      }
+    },
+    {
+      "file": "render/exported.musicxml",
+      "attacks": [
+        398,
+        286,
+        363,
+        321
+      ],
+      "midiPitchAndOnsetMatch": true,
+      "notatedDurationsMatch": true,
+      "lyricsOnAllFourStaves": true,
+      "counts": {
+        "writtenNotes": 1375,
+        "lyricNotes": 1253,
+        "slurstart": 34,
+        "slurstop": 34,
+        "tripletNotes": 12,
+        "tieLinks": 7
+      }
+    },
+    {
+      "file": "render/reimport.musicxml",
+      "attacks": [
+        398,
+        286,
+        363,
+        321
+      ],
+      "midiPitchAndOnsetMatch": true,
+      "notatedDurationsMatch": true,
+      "lyricsOnAllFourStaves": true,
+      "counts": {
+        "writtenNotes": 1375,
+        "lyricNotes": 1253,
+        "slurstart": 34,
+        "slurstop": 34,
+        "tripletNotes": 12,
+        "tieLinks": 7
+      }
+    }
+  ],
+  "referenceCorrection": "Soprano bar 54 last note: MIDI overlap removed; eighth note as printed in PDF."
+}

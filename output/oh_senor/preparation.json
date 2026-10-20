@@ -1,0 +1,36 @@
+{
+  "title": "Oh Señor",
+  "staves": 4,
+  "writtenBars": 60,
+  "expandedBars": 85,
+  "quarters": 328.0,
+  "referenceChecks": [
+    {
+      "role": 0,
+      "attacks": 261,
+      "referenceMatch": true
+    },
+    {
+      "role": 1,
+      "attacks": 260,
+      "referenceMatch": true
+    },
+    {
+      "role": 2,
+      "attacks": 303,
+      "referenceMatch": true
+    },
+    {
+      "role": 3,
+      "attacks": 319,
+      "referenceMatch": true
+    }
+  ],
+  "lyricNotes": {
+    "0": 241,
+    "1": 241,
+    "2": 259,
+    "3": 268
+  },
+  "tenorBassDivisi": true
+}

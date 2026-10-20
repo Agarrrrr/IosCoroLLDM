@@ -1,0 +1,26 @@
+[
+  {
+    "role": 0,
+    "measure": 32,
+    "onset": 0.0,
+    "pitch": 68,
+    "before": 2.0,
+    "after": 1.0
+  },
+  {
+    "role": 1,
+    "measure": 32,
+    "onset": 0.0,
+    "pitch": 64,
+    "before": 3.0,
+    "after": 2.0
+  },
+  {
+    "role": 3,
+    "measure": 16,
+    "onset": 3.0,
+    "pitch": 50,
+    "before": 2.0,
+    "after": 1.0
+  }
+]

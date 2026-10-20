@@ -1,0 +1,8 @@
+{
+  "version": "0.3.1+4",
+  "sha256": "f3b3163e48b474748b778181ae8b7f2ab60f85c03647217416253c7aa173c274",
+  "bytes": 68517700,
+  "device": "R5CN30027WW",
+  "cursor": "vsync reads engine musical clock",
+  "compiledVectorCacheLimit": 6
+}

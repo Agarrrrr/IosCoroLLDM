@@ -1,0 +1,30 @@
+00:00 +0: loading E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart
+00:00 +0: cold stripes preserve all ink on every preparation frame
+STRIPE_DIFF frame=0 max=64 rows={0: 2, 1: 4, 2: 6, 7: 2, 8: 4, 9: 4, 10: 2, 11: 2, 15: 2, 16: 4, 17: 4, 18: 2, 19: 2, 25: 4, 26: 2, 27: 4, 33: 2, 34: 2, 35: 4, 41: 4, 42: 2, 43: 11, 49: 2, 50: 2, 51: 4, 56: 2, 57: 4, 58: 4, 59: 2, 60: 2, 62: 4, 63: 4, 64: 4, 66: 4, 67: 2, 68: 4, 70: 2, 71: 3, 72: 4, 73: 4, 74: 4, 75: 2, 76: 5, 78: 2, 79: 3, 80: 4, 81: 4, 82: 2, 83: 2, 84: 4, 87: 4, 88: 2, 89: 2, 90: 2, 91: 2, 92: 4, 95: 4, 96: 3, 97: 4, 98: 4, 99: 4, 100: 2, 101: 2, 103: 4, 104: 2, 105: 4, 106: 6, 107: 4, 108: 2, 109: 2, 111: 4, 112: 4, 113: 4, 114: 2, 115: 4, 116: 2, 117: 4, 119: 2, 120: 3, 121: 4, 122: 4, 123: 2, 124: 2, 125: 4, 128: 4, 129: 2, 130: 2, 131: 4, 132: 2, 133: 10, 136: 4, 137: 2, 138: 3, 139: 3, 140: 5, 141: 15, 142: 11, 143: 15, 144: 28, 145: 32, 146: 34, 147: 31, 148: 43, 149: 44, 150: 49, 151: 50, 152: 54, 153: 57, 154: 59, 155: 58, 156: 62, 157: 68, 158: 77, 159: 78, 160: 86, 161: 86, 162: 100, 163: 105, 164: 112, 165: 121, 166: 123, 167: 124, 168: 124, 169: 127, 170: 132, 171: 126, 172: 143, 173: 135, 174: 152, 175: 158, 176: 162, 177: 178, 178: 182, 179: 189, 180: 203, 181: 204, 182: 212, 183: 211, 184: 212, 185: 214, 186: 223, 187: 242, 188: 239, 189: 252, 190: 256, 191: 271, 192: 330, 193: 303, 194: 294, 195: 286, 196: 286, 197: 276, 198: 255, 199: 240, 200: 221, 201: 213, 202: 211, 203: 199, 204: 186, 205: 184, 206: 186, 207: 182, 208: 182, 209: 179, 210: 179, 211: 175, 212: 164, 213: 157, 214: 151, 215: 147, 216: 148, 217: 143, 218: 134, 219: 125, 220: 107, 221: 104, 222: 102, 223: 97, 224: 88, 225: 84, 226: 72, 227: 66, 228: 56, 229: 56, 230: 57, 231: 50, 232: 47, 233: 50, 234: 48, 235: 46, 236: 41, 237: 40, 238: 36, 239: 31, 240: 27, 241: 27, 242: 23, 243: 24, 244: 17, 245: 15, 246: 10, 247: 5, 248: 3, 249: 4}
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than or equal to <2>
+  Actual: <64>
+   Which: is not a value less than or equal to <2>
+Preparation frame 0
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart:74:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///E:/proyectos/IosCoroLLDM/test/annotation_rendering_test.dart line 74
+The test description was:
+  cold stripes preserve all ink on every preparation frame
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:00 +0 -1: cold stripes preserve all ink on every preparation frame [E]
+  Test failed. See exception logs above.
+  The test description was: cold stripes preserve all ink on every preparation frame
+  
+00:00 +0 -1: Some tests failed.

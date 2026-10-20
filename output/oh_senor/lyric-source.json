@@ -1,0 +1,1389 @@
+{
+  "words": [
+    "Oh",
+    "Señor",
+    "oh",
+    "Señor",
+    "mi",
+    "Señor",
+    "Eterno",
+    "eres",
+    "Tú",
+    "oh",
+    "Señor",
+    "solo",
+    "a",
+    "Ti",
+    "se",
+    "ha",
+    "de",
+    "alabar",
+    "Oh",
+    "Señor",
+    "oh",
+    "Señor",
+    "mi",
+    "Señor",
+    "Tú",
+    "eres",
+    "grande",
+    "en",
+    "victoria",
+    "Magnífico",
+    "en",
+    "santidad",
+    "Oh",
+    "Señor",
+    "Rey",
+    "de",
+    "reyes",
+    "por",
+    "siempre",
+    "Señor",
+    "de",
+    "señores",
+    "bendito",
+    "Salvador",
+    "Oh",
+    "Señor",
+    "Magnífico",
+    "en",
+    "poder",
+    "y",
+    "gloria",
+    "tu",
+    "poder",
+    "será",
+    "exaltado",
+    "¿Quién",
+    "como",
+    "Tú,",
+    "oh",
+    "Jehová?",
+    "¿Quién",
+    "como",
+    "Tú",
+    "entre",
+    "los",
+    "dioses?",
+    "Magnífico",
+    "en",
+    "santidad",
+    "Magnífico",
+    "en",
+    "gran",
+    "poder",
+    "¿Quién",
+    "como",
+    "Tú,",
+    "oh",
+    "Jehová?",
+    "¿Quién",
+    "como",
+    "Tú",
+    "entre",
+    "los",
+    "Dioses?",
+    "Magnífico",
+    "en",
+    "santidad",
+    "Magnífico",
+    "en",
+    "gran",
+    "poder",
+    "Oh",
+    "Señor",
+    "solo",
+    "a",
+    "Ti",
+    "se",
+    "ha",
+    "de",
+    "alabar",
+    "solo",
+    "a",
+    "Ti",
+    "se",
+    "ha",
+    "de",
+    "adorar",
+    "Aleluya",
+    "Aleluya",
+    "solo",
+    "a",
+    "Ti",
+    "se",
+    "ha",
+    "de",
+    "alabar",
+    "solo",
+    "a",
+    "Ti",
+    "se",
+    "ha",
+    "de",
+    "adorar",
+    "Aleluya",
+    "Aleluya",
+    "¿Quién",
+    "como",
+    "Tú,",
+    "oh",
+    "Jehová?",
+    "¿Quién",
+    "como",
+    "Tú",
+    "entre",
+    "los",
+    "dioses?",
+    "Magnífico",
+    "en",
+    "santidad",
+    "Magnífico",
+    "en",
+    "gran",
+    "poder",
+    "¿Quién",
+    "como",
+    "Tú,",
+    "oh",
+    "Jehová?",
+    "¿Quién",
+    "como",
+    "Tú",
+    "entre",
+    "los",
+    "Dioses?",
+    "Magnífico",
+    "en",
+    "santidad",
+    "Magnífico",
+    "en",
+    "gran",
+    "poder",
+    "Oh",
+    "Señor",
+    "solo",
+    "a",
+    "Ti",
+    "se",
+    "ha",
+    "de",
+    "alabar",
+    "solo",
+    "a",
+    "Ti",
+    "se",
+    "ha",
+    "de",
+    "adorar",
+    "Aleluya",
+    "Aleluya",
+    "Amén",
+    "Amén",
+    "Amén",
+    "Amén"
+  ],
+  "positions": [
+    {
+      "measure": 0,
+      "onset": 0.0,
+      "text": "Oh",
+      "kind": "single"
+    },
+    {
+      "measure": 0,
+      "onset": 1.0,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 1,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 1,
+      "onset": 1.0,
+      "text": "oh",
+      "kind": "single"
+    },
+    {
+      "measure": 1,
+      "onset": 1.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 1,
+      "onset": 2.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 1,
+      "onset": 3.0,
+      "text": "mi",
+      "kind": "single"
+    },
+    {
+      "measure": 1,
+      "onset": 3.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 2,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 2,
+      "onset": 3.5,
+      "text": "E",
+      "kind": "begin"
+    },
+    {
+      "measure": 3,
+      "onset": 0.0,
+      "text": "ter",
+      "kind": "middle"
+    },
+    {
+      "measure": 3,
+      "onset": 1.0,
+      "text": "no",
+      "kind": "end"
+    },
+    {
+      "measure": 3,
+      "onset": 2.0,
+      "text": "e",
+      "kind": "begin"
+    },
+    {
+      "measure": 3,
+      "onset": 3.0,
+      "text": "res",
+      "kind": "end"
+    },
+    {
+      "measure": 4,
+      "onset": 0.0,
+      "text": "Tú",
+      "kind": "single"
+    },
+    {
+      "measure": 4,
+      "onset": 3.0,
+      "text": "oh",
+      "kind": "single"
+    },
+    {
+      "measure": 4,
+      "onset": 3.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 5,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 5,
+      "onset": 3.0,
+      "text": "so",
+      "kind": "begin"
+    },
+    {
+      "measure": 5,
+      "onset": 3.5,
+      "text": "lo‿a",
+      "kind": "end"
+    },
+    {
+      "measure": 6,
+      "onset": 0.0,
+      "text": "Ti",
+      "kind": "single"
+    },
+    {
+      "measure": 6,
+      "onset": 0.5,
+      "text": "se‿ha",
+      "kind": "single"
+    },
+    {
+      "measure": 6,
+      "onset": 1.0,
+      "text": "de‿a",
+      "kind": "begin"
+    },
+    {
+      "measure": 6,
+      "onset": 1.75,
+      "text": "la",
+      "kind": "middle"
+    },
+    {
+      "measure": 6,
+      "onset": 2.0,
+      "text": "bar",
+      "kind": "end"
+    },
+    {
+      "measure": 7,
+      "onset": 2.0,
+      "text": "Oh",
+      "kind": "single"
+    },
+    {
+      "measure": 7,
+      "onset": 3.0,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 8,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 8,
+      "onset": 1.0,
+      "text": "oh",
+      "kind": "single"
+    },
+    {
+      "measure": 8,
+      "onset": 1.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 8,
+      "onset": 2.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 8,
+      "onset": 3.0,
+      "text": "mi",
+      "kind": "single"
+    },
+    {
+      "measure": 8,
+      "onset": 3.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 9,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 9,
+      "onset": 3.5,
+      "text": "Tú",
+      "kind": "single"
+    },
+    {
+      "measure": 10,
+      "onset": 0.0,
+      "text": "e",
+      "kind": "begin"
+    },
+    {
+      "measure": 10,
+      "onset": 1.0,
+      "text": "res",
+      "kind": "end"
+    },
+    {
+      "measure": 10,
+      "onset": 2.0,
+      "text": "gran",
+      "kind": "begin"
+    },
+    {
+      "measure": 10,
+      "onset": 3.0,
+      "text": "de‿en",
+      "kind": "end"
+    },
+    {
+      "measure": 10,
+      "onset": 3.5,
+      "text": "vic",
+      "kind": "begin"
+    },
+    {
+      "measure": 11,
+      "onset": 0.0,
+      "text": "to",
+      "kind": "middle"
+    },
+    {
+      "measure": 11,
+      "onset": 1.0,
+      "text": "ria",
+      "kind": "end"
+    },
+    {
+      "measure": 11,
+      "onset": 3.5,
+      "text": "Mag",
+      "kind": "begin"
+    },
+    {
+      "measure": 12,
+      "onset": 0.0,
+      "text": "ní",
+      "kind": "middle"
+    },
+    {
+      "measure": 12,
+      "onset": 0.5,
+      "text": "fi",
+      "kind": "middle"
+    },
+    {
+      "measure": 12,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "end"
+    },
+    {
+      "measure": 12,
+      "onset": 3.5,
+      "text": "en",
+      "kind": "single"
+    },
+    {
+      "measure": 13,
+      "onset": 0.0,
+      "text": "san",
+      "kind": "begin"
+    },
+    {
+      "measure": 13,
+      "onset": 0.5,
+      "text": "ti",
+      "kind": "middle"
+    },
+    {
+      "measure": 13,
+      "onset": 1.0,
+      "text": "dad",
+      "kind": "end"
+    },
+    {
+      "measure": 13,
+      "onset": 3.0,
+      "text": "Oh",
+      "kind": "single"
+    },
+    {
+      "measure": 13,
+      "onset": 3.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 14,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 14,
+      "onset": 1.0,
+      "text": "Rey",
+      "kind": "single"
+    },
+    {
+      "measure": 14,
+      "onset": 1.5,
+      "text": "de",
+      "kind": "single"
+    },
+    {
+      "measure": 14,
+      "onset": 2.0,
+      "text": "re",
+      "kind": "begin"
+    },
+    {
+      "measure": 14,
+      "onset": 3.0,
+      "text": "yes",
+      "kind": "end"
+    },
+    {
+      "measure": 15,
+      "onset": 0.0,
+      "text": "por siem",
+      "kind": "begin"
+    },
+    {
+      "measure": 15,
+      "onset": 1.0,
+      "text": "pre",
+      "kind": "end"
+    },
+    {
+      "measure": 15,
+      "onset": 1.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 15,
+      "onset": 2.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 15,
+      "onset": 3.0,
+      "text": "de",
+      "kind": "single"
+    },
+    {
+      "measure": 15,
+      "onset": 3.5,
+      "text": "se",
+      "kind": "begin"
+    },
+    {
+      "measure": 16,
+      "onset": 0.0,
+      "text": "ño",
+      "kind": "middle"
+    },
+    {
+      "measure": 16,
+      "onset": 1.0,
+      "text": "res",
+      "kind": "end"
+    },
+    {
+      "measure": 16,
+      "onset": 1.5,
+      "text": "ben",
+      "kind": "begin"
+    },
+    {
+      "measure": 16,
+      "onset": 2.0,
+      "text": "di",
+      "kind": "middle"
+    },
+    {
+      "measure": 16,
+      "onset": 3.0,
+      "text": "to",
+      "kind": "end"
+    },
+    {
+      "measure": 17,
+      "onset": 0.0,
+      "text": "Sal",
+      "kind": "begin"
+    },
+    {
+      "measure": 17,
+      "onset": 1.5,
+      "text": "va",
+      "kind": "middle"
+    },
+    {
+      "measure": 17,
+      "onset": 2.0,
+      "text": "dor",
+      "kind": "end"
+    },
+    {
+      "measure": 19,
+      "onset": 0.0,
+      "text": "Oh",
+      "kind": "single"
+    },
+    {
+      "measure": 19,
+      "onset": 2.0,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 20,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 20,
+      "onset": 2.0,
+      "text": "Mag",
+      "kind": "begin"
+    },
+    {
+      "measure": 21,
+      "onset": 0.0,
+      "text": "ní",
+      "kind": "middle"
+    },
+    {
+      "measure": 21,
+      "onset": 1.5,
+      "text": "fi",
+      "kind": "middle"
+    },
+    {
+      "measure": 21,
+      "onset": 2.0,
+      "text": "co‿en",
+      "kind": "end"
+    },
+    {
+      "measure": 21,
+      "onset": 3.0,
+      "text": "po",
+      "kind": "begin"
+    },
+    {
+      "measure": 22,
+      "onset": 0.0,
+      "text": "der",
+      "kind": "end"
+    },
+    {
+      "measure": 22,
+      "onset": 3.0,
+      "text": "y",
+      "kind": "single"
+    },
+    {
+      "measure": 23,
+      "onset": 0.0,
+      "text": "glo",
+      "kind": "begin"
+    },
+    {
+      "measure": 24,
+      "onset": 0.0,
+      "text": "ria",
+      "kind": "end"
+    },
+    {
+      "measure": 24,
+      "onset": 2.0,
+      "text": "tu",
+      "kind": "single"
+    },
+    {
+      "measure": 24,
+      "onset": 3.0,
+      "text": "po",
+      "kind": "begin"
+    },
+    {
+      "measure": 25,
+      "onset": 0.0,
+      "text": "der",
+      "kind": "end"
+    },
+    {
+      "measure": 25,
+      "onset": 3.0,
+      "text": "se",
+      "kind": "begin"
+    },
+    {
+      "measure": 26,
+      "onset": 0.0,
+      "text": "rá",
+      "kind": "end"
+    },
+    {
+      "measure": 26,
+      "onset": 2.0,
+      "text": "ex",
+      "kind": "begin"
+    },
+    {
+      "measure": 26,
+      "onset": 3.0,
+      "text": "al",
+      "kind": "middle"
+    },
+    {
+      "measure": 27,
+      "onset": 0.0,
+      "text": "ta",
+      "kind": "middle"
+    },
+    {
+      "measure": 28,
+      "onset": 0.0,
+      "text": "do",
+      "kind": "end"
+    },
+    {
+      "measure": 29,
+      "onset": 0.0,
+      "text": "¿Quién",
+      "kind": "single"
+    },
+    {
+      "measure": 29,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "begin"
+    },
+    {
+      "measure": 29,
+      "onset": 1.5,
+      "text": "mo",
+      "kind": "end"
+    },
+    {
+      "measure": 29,
+      "onset": 2.0,
+      "text": "Tú,",
+      "kind": "single"
+    },
+    {
+      "measure": 29,
+      "onset": 3.0,
+      "text": "oh",
+      "kind": "single"
+    },
+    {
+      "measure": 29,
+      "onset": 3.5,
+      "text": "Jeho",
+      "kind": "begin"
+    },
+    {
+      "measure": 30,
+      "onset": 0.0,
+      "text": "vá?",
+      "kind": "end"
+    },
+    {
+      "measure": 31,
+      "onset": 0.0,
+      "text": "¿Quién",
+      "kind": "single"
+    },
+    {
+      "measure": 31,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "begin"
+    },
+    {
+      "measure": 31,
+      "onset": 1.5,
+      "text": "mo",
+      "kind": "end"
+    },
+    {
+      "measure": 31,
+      "onset": 2.0,
+      "text": "Tú",
+      "kind": "single"
+    },
+    {
+      "measure": 31,
+      "onset": 2.5,
+      "text": "en",
+      "kind": "begin"
+    },
+    {
+      "measure": 31,
+      "onset": 3.0,
+      "text": "tre",
+      "kind": "end"
+    },
+    {
+      "measure": 31,
+      "onset": 3.5,
+      "text": "los",
+      "kind": "single"
+    },
+    {
+      "measure": 32,
+      "onset": 0.0,
+      "text": "dio",
+      "kind": "begin"
+    },
+    {
+      "measure": 32,
+      "onset": 2.0,
+      "text": "ses?",
+      "kind": "end"
+    },
+    {
+      "measure": 32,
+      "onset": 3.5,
+      "text": "Mag",
+      "kind": "begin"
+    },
+    {
+      "measure": 33,
+      "onset": 0.0,
+      "text": "ní",
+      "kind": "middle"
+    },
+    {
+      "measure": 33,
+      "onset": 0.5,
+      "text": "fi",
+      "kind": "middle"
+    },
+    {
+      "measure": 33,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "end"
+    },
+    {
+      "measure": 33,
+      "onset": 2.5,
+      "text": "en",
+      "kind": "single"
+    },
+    {
+      "measure": 34,
+      "onset": 0.0,
+      "text": "san",
+      "kind": "begin"
+    },
+    {
+      "measure": 34,
+      "onset": 1.0,
+      "text": "ti",
+      "kind": "middle"
+    },
+    {
+      "measure": 34,
+      "onset": 2.0,
+      "text": "dad",
+      "kind": "end"
+    },
+    {
+      "measure": 34,
+      "onset": 3.5,
+      "text": "Mag",
+      "kind": "begin"
+    },
+    {
+      "measure": 35,
+      "onset": 0.0,
+      "text": "ní",
+      "kind": "middle"
+    },
+    {
+      "measure": 35,
+      "onset": 0.5,
+      "text": "fi",
+      "kind": "middle"
+    },
+    {
+      "measure": 35,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "end"
+    },
+    {
+      "measure": 35,
+      "onset": 2.5,
+      "text": "en",
+      "kind": "single"
+    },
+    {
+      "measure": 36,
+      "onset": 0.0,
+      "text": "gran",
+      "kind": "single"
+    },
+    {
+      "measure": 36,
+      "onset": 1.0,
+      "text": "po",
+      "kind": "begin"
+    },
+    {
+      "measure": 36,
+      "onset": 2.0,
+      "text": "der",
+      "kind": "end"
+    },
+    {
+      "measure": 38,
+      "onset": 0.0,
+      "text": "¿Quién",
+      "kind": "single"
+    },
+    {
+      "measure": 38,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "begin"
+    },
+    {
+      "measure": 38,
+      "onset": 1.5,
+      "text": "mo",
+      "kind": "end"
+    },
+    {
+      "measure": 38,
+      "onset": 2.0,
+      "text": "Tú,",
+      "kind": "single"
+    },
+    {
+      "measure": 38,
+      "onset": 3.0,
+      "text": "oh",
+      "kind": "single"
+    },
+    {
+      "measure": 38,
+      "onset": 3.5,
+      "text": "Jeho",
+      "kind": "begin"
+    },
+    {
+      "measure": 39,
+      "onset": 0.0,
+      "text": "vá?",
+      "kind": "end"
+    },
+    {
+      "measure": 40,
+      "onset": 0.0,
+      "text": "¿Quién",
+      "kind": "single"
+    },
+    {
+      "measure": 40,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "begin"
+    },
+    {
+      "measure": 40,
+      "onset": 1.5,
+      "text": "mo",
+      "kind": "end"
+    },
+    {
+      "measure": 40,
+      "onset": 2.0,
+      "text": "Tú",
+      "kind": "single"
+    },
+    {
+      "measure": 40,
+      "onset": 2.5,
+      "text": "en",
+      "kind": "begin"
+    },
+    {
+      "measure": 40,
+      "onset": 3.0,
+      "text": "tre",
+      "kind": "end"
+    },
+    {
+      "measure": 40,
+      "onset": 3.5,
+      "text": "los",
+      "kind": "single"
+    },
+    {
+      "measure": 41,
+      "onset": 0.0,
+      "text": "Dio",
+      "kind": "begin"
+    },
+    {
+      "measure": 41,
+      "onset": 2.0,
+      "text": "ses?",
+      "kind": "end"
+    },
+    {
+      "measure": 41,
+      "onset": 3.5,
+      "text": "Mag",
+      "kind": "begin"
+    },
+    {
+      "measure": 42,
+      "onset": 0.0,
+      "text": "ní",
+      "kind": "middle"
+    },
+    {
+      "measure": 42,
+      "onset": 0.5,
+      "text": "fi",
+      "kind": "middle"
+    },
+    {
+      "measure": 42,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "end"
+    },
+    {
+      "measure": 42,
+      "onset": 2.5,
+      "text": "en",
+      "kind": "single"
+    },
+    {
+      "measure": 43,
+      "onset": 0.0,
+      "text": "san",
+      "kind": "begin"
+    },
+    {
+      "measure": 43,
+      "onset": 1.0,
+      "text": "ti",
+      "kind": "middle"
+    },
+    {
+      "measure": 43,
+      "onset": 2.0,
+      "text": "dad",
+      "kind": "end"
+    },
+    {
+      "measure": 43,
+      "onset": 3.5,
+      "text": "Mag",
+      "kind": "begin"
+    },
+    {
+      "measure": 44,
+      "onset": 0.0,
+      "text": "ní",
+      "kind": "middle"
+    },
+    {
+      "measure": 44,
+      "onset": 0.5,
+      "text": "fi",
+      "kind": "middle"
+    },
+    {
+      "measure": 44,
+      "onset": 1.0,
+      "text": "co",
+      "kind": "end"
+    },
+    {
+      "measure": 44,
+      "onset": 2.5,
+      "text": "en",
+      "kind": "single"
+    },
+    {
+      "measure": 45,
+      "onset": 0.0,
+      "text": "gran",
+      "kind": "single"
+    },
+    {
+      "measure": 45,
+      "onset": 1.0,
+      "text": "po",
+      "kind": "begin"
+    },
+    {
+      "measure": 45,
+      "onset": 2.0,
+      "text": "der",
+      "kind": "end"
+    },
+    {
+      "measure": 46,
+      "onset": 3.0,
+      "text": "Oh",
+      "kind": "single"
+    },
+    {
+      "measure": 46,
+      "onset": 3.5,
+      "text": "Se",
+      "kind": "begin"
+    },
+    {
+      "measure": 47,
+      "onset": 0.0,
+      "text": "ñor",
+      "kind": "end"
+    },
+    {
+      "measure": 47,
+      "onset": 1.0,
+      "text": "so",
+      "kind": "begin"
+    },
+    {
+      "measure": 47,
+      "onset": 1.5,
+      "text": "lo‿a",
+      "kind": "end"
+    },
+    {
+      "measure": 47,
+      "onset": 2.0,
+      "text": "Ti",
+      "kind": "single"
+    },
+    {
+      "measure": 47,
+      "onset": 2.5,
+      "text": "se‿ha",
+      "kind": "single"
+    },
+    {
+      "measure": 47,
+      "onset": 3.0,
+      "text": "de‿a",
+      "kind": "begin"
+    },
+    {
+      "measure": 47,
+      "onset": 3.75,
+      "text": "la",
+      "kind": "middle"
+    },
+    {
+      "measure": 48,
+      "onset": 0.0,
+      "text": "bar",
+      "kind": "end"
+    },
+    {
+      "measure": 48,
+      "onset": 1.0,
+      "text": "so",
+      "kind": "begin"
+    },
+    {
+      "measure": 48,
+      "onset": 1.5,
+      "text": "lo‿a",
+      "kind": "end"
+    },
+    {
+      "measure": 48,
+      "onset": 2.0,
+      "text": "Ti",
+      "kind": "single"
+    },
+    {
+      "measure": 48,
+      "onset": 2.5,
+      "text": "se‿ha",
+      "kind": "single"
+    },
+    {
+      "measure": 48,
+      "onset": 3.0,
+      "text": "de‿a",
+      "kind": "begin"
+    },
+    {
+      "measure": 48,
+      "onset": 3.75,
+      "text": "do",
+      "kind": "middle"
+    },
+    {
+      "measure": 49,
+      "onset": 0.0,
+      "text": "rar",
+      "kind": "end"
+    },
+    {
+      "measure": 49,
+      "onset": 1.0,
+      "text": "A",
+      "kind": "begin"
+    },
+    {
+      "measure": 49,
+      "onset": 1.5,
+      "text": "le",
+      "kind": "middle"
+    },
+    {
+      "measure": 49,
+      "onset": 2.0,
+      "text": "lu",
+      "kind": "middle"
+    },
+    {
+      "measure": 50,
+      "onset": 0.0,
+      "text": "ya",
+      "kind": "end"
+    },
+    {
+      "measure": 50,
+      "onset": 1.0,
+      "text": "A",
+      "kind": "begin"
+    },
+    {
+      "measure": 50,
+      "onset": 1.5,
+      "text": "le",
+      "kind": "middle"
+    },
+    {
+      "measure": 50,
+      "onset": 2.0,
+      "text": "lu",
+      "kind": "middle"
+    },
+    {
+      "measure": 51,
+      "onset": 0.0,
+      "text": "ya",
+      "kind": "end"
+    },
+    {
+      "measure": 51,
+      "onset": 1.0,
+      "text": "so",
+      "kind": "begin"
+    },
+    {
+      "measure": 51,
+      "onset": 1.5,
+      "text": "lo‿a",
+      "kind": "end"
+    },
+    {
+      "measure": 51,
+      "onset": 2.0,
+      "text": "Ti",
+      "kind": "single"
+    },
+    {
+      "measure": 51,
+      "onset": 2.5,
+      "text": "se‿ha",
+      "kind": "single"
+    },
+    {
+      "measure": 51,
+      "onset": 3.0,
+      "text": "de‿a",
+      "kind": "begin"
+    },
+    {
+      "measure": 51,
+      "onset": 3.75,
+      "text": "la",
+      "kind": "middle"
+    },
+    {
+      "measure": 52,
+      "onset": 0.0,
+      "text": "ya",
+      "kind": "end"
+    },
+    {
+      "measure": 52,
+      "onset": 1.0,
+      "text": "A",
+      "kind": "begin"
+    },
+    {
+      "measure": 52,
+      "onset": 2.0,
+      "text": "le",
+      "kind": "middle"
+    },
+    {
+      "measure": 52,
+      "onset": 3.0,
+      "text": "lu",
+      "kind": "middle"
+    },
+    {
+      "measure": 53,
+      "onset": 0.0,
+      "text": "ya",
+      "kind": "end"
+    },
+    {
+      "measure": 54,
+      "onset": 0.0,
+      "text": "A",
+      "kind": "begin"
+    },
+    {
+      "measure": 54,
+      "onset": 2.0,
+      "text": "mén",
+      "kind": "end"
+    },
+    {
+      "measure": 55,
+      "onset": 0.0,
+      "text": "A",
+      "kind": "begin"
+    },
+    {
+      "measure": 55,
+      "onset": 2.0,
+      "text": "mén",
+      "kind": "end"
+    },
+    {
+      "measure": 56,
+      "onset": 0.0,
+      "text": "A",
+      "kind": "begin"
+    },
+    {
+      "measure": 57,
+      "onset": 0.0,
+      "text": "mén",
+      "kind": "end"
+    },
+    {
+      "measure": 58,
+      "onset": 0.0,
+      "text": "A",
+      "kind": "begin"
+    },
+    {
+      "measure": 59,
+      "onset": 0.0,
+      "text": "mén",
+      "kind": "end"
+    }
+  ]
+}

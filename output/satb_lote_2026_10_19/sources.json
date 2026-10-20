@@ -1,0 +1,1909 @@
+[
+  {
+    "index": 1,
+    "title": "A Dónde Iré SATB",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\A Dónde Iré SATB.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\A Dónde Iré SATB.mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Bajo",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        72,
+        72,
+        72,
+        72
+      ],
+      "notes": 952,
+      "lyrics": 778,
+      "dynamics": {},
+      "voices": {
+        "1": 288
+      }
+    },
+    "catalog": {
+      "id": "usmc_47d16b904344db4db6db6432",
+      "nombre": "A Dónde Iré",
+      "archivo": "usmc_47d16b904344db4db6db6432_a_donde_ire.pdf",
+      "temas": [
+        "Confianza",
+        "Petición"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es",
+      "midi_archivo": "global/assets/midi/7aae8cdfc9e5900c4b5f00b082552a2823b396db6e9d332cf661e1f7474205e9.enc",
+      "version": 2
+    },
+    "pdfReview": {
+      "pages": 1,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 2,
+    "title": "Al Gran Señor (Adoración)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Al Gran Señor (Adoración).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Al Gran Señor (Adoración).mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Al Gran Señor (Adoración).musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "S",
+          "staffs": 1,
+          "instruments": [
+            "S"
+          ]
+        },
+        {
+          "name": "A",
+          "staffs": 1,
+          "instruments": [
+            "A"
+          ]
+        },
+        {
+          "name": "T",
+          "staffs": 1,
+          "instruments": [
+            "T"
+          ]
+        },
+        {
+          "name": "B",
+          "staffs": 1,
+          "instruments": [
+            "B"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        92,
+        92,
+        92,
+        92
+      ],
+      "notes": 1746,
+      "lyrics": 1576,
+      "dynamics": {},
+      "voices": {
+        "1": 368
+      }
+    },
+    "catalog": {
+      "id": "3ad4f5e6-ca67-4792-8747-4a86fd4e4633",
+      "nombre": "Al Gran Señor",
+      "archivo": "global/assets/pdf/00dc2874937c1945a12796b18a27f6f3d66e3894221d5c12536e2e41b05da3df.enc",
+      "temas": [
+        "Adoración"
+      ],
+      "es_privado": false,
+      "midi_archivo": "global/assets/midi/0f1c2471e6474cd91487f76af47cc60b81b90c9dbcbb99a98dd266ee3d22d338.enc",
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "version": 1,
+      "cifrado_version": 1,
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 8,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 3,
+    "title": "Ángel Poderoso",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Ángel Poderoso.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Ángel Poderoso.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Ángel Poderoso.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "notes": 1881,
+      "lyrics": 1758,
+      "dynamics": {
+        "ppp": 1,
+        "mf": 21,
+        "f": 32,
+        "mp": 14,
+        "p": 3,
+        "ff": 8
+      },
+      "voices": {
+        "1": 360
+      }
+    },
+    "catalog": {
+      "id": "e85a0f52-5a31-5c49-997b-ad89b38e455a",
+      "nombre": "Ángel Poderoso",
+      "archivo": "global/assets/pdf/2c4d87da1f9a6ac4fb0794d7fad765a5403134ec11355c71b70e3154e5f50911.enc",
+      "temas": [],
+      "es_privado": false,
+      "_idioma": "es",
+      "idioma": "es",
+      "external_id": "usmc_64b53d7721b21cae02605974",
+      "midi_archivo": "global/assets/midi/e26c1badf6f81009432ac5369e3cd8f12ac27b72cc424a586f5a95158235321a.enc",
+      "vinculo_idioma": null,
+      "version": 5
+    },
+    "pdfReview": {
+      "pages": 9,
+      "dynamics": [
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        }
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "title": "Apocalipsis 10_2",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Apocalipsis 10_2.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Apocalipsis 10_2.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Baritono"
+        },
+        {
+          "id": "P5",
+          "name": "Bajo"
+        }
+      ],
+      "bars": [
+        114,
+        114,
+        114,
+        114,
+        114
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 2048,
+      "lyrics": 1907,
+      "dynamics": {
+        "f": 15,
+        "mf": 13,
+        "ff": 5,
+        "p": 4
+      },
+      "voices": {
+        "1:1": 2352,
+        "1:2": 180,
+        "1:3": 137,
+        "1:4": 63
+      }
+    },
+    "catalog": {
+      "id": "c1dbe3b9-b27c-4aac-9db5-98228fc8b5be",
+      "nombre": "Apocalipsis 10",
+      "archivo": "apocalipsis-10-1780194776227.pdf",
+      "midi_archivo": "apocalipsis-10-1780194776829.mid",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 14,
+      "dynamics": [
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "ff",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "mf",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "p",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        },
+        {
+          "text": "f",
+          "font": "UFQSLH+OpusText"
+        }
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "title": "En su Corazón VOCES",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\En su Corazón VOCES.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\En su Corazón VOCES.mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Bajo",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        117,
+        117,
+        117,
+        117
+      ],
+      "notes": 1440,
+      "lyrics": 1252,
+      "dynamics": {
+        "p": 12,
+        "mf": 12,
+        "f": 12
+      },
+      "voices": {
+        "1": 468
+      }
+    },
+    "catalog": {
+      "id": "8779a1ff-b6d4-4a0a-a6c2-746b82a7dcf7",
+      "nombre": "En su Corazón",
+      "archivo": "en-su-corazon.pdf",
+      "midi_archivo": "en-su-corazon-1779949381444.midi",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": "usmc_64b1f882ea321fbb1d6b8656",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": [
+        {
+          "text": "p",
+          "font": "QBBAAA+OpusTextStd"
+        }
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "title": "firmes y adelante desenrrollada",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\firmes y adelante desenrrollada.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\firmes y adelante desenrrollada.mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "SOPRANO",
+          "staffs": 1,
+          "instruments": [
+            "SOPRANO"
+          ]
+        },
+        {
+          "name": "CONTRALTO",
+          "staffs": 1,
+          "instruments": [
+            "CONTRALTO"
+          ]
+        },
+        {
+          "name": "TENOR",
+          "staffs": 1,
+          "instruments": [
+            "TENOR"
+          ]
+        },
+        {
+          "name": "BAJO",
+          "staffs": 1,
+          "instruments": [
+            "BAJO"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "notes": 1696,
+      "lyrics": 1468,
+      "dynamics": {},
+      "voices": {
+        "1": 600
+      }
+    },
+    "catalog": {
+      "id": "6bbf3754-705a-411c-b527-dd1378955921",
+      "nombre": "Firmes y Adelante",
+      "archivo": "firmes-y-adelante.pdf",
+      "midi_archivo": "firmes-y-adelante-1779949358546.mid",
+      "temas": [
+        "Lucha"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": "usmc_78d40b2a0c600439436eb087",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 1,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 7,
+    "title": "glory_unto_jesus_christ",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\glory_unto_jesus_christ.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\glory_unto_jesus_christ.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\glory_unto_jesus_christ.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Tenor",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Bajo",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        171,
+        171,
+        171,
+        171
+      ],
+      "notes": 2229,
+      "lyrics": 2099,
+      "dynamics": {
+        "mf": 16,
+        "p": 18,
+        "f": 24,
+        "ff": 13
+      },
+      "voices": {
+        "1": 684
+      }
+    },
+    "catalog": {
+      "id": "be6a34b1-f8b2-590f-834e-d5a9e2cd9049",
+      "nombre": "Glory Unto Jesus Christ",
+      "archivo": "global/assets/pdf/a815a9d86455585292befb9088cf0bbc54f6ad1ba432dd3e57bcce991c464a69.enc",
+      "temas": [],
+      "es_privado": false,
+      "midi_archivo": "global/assets/midi/32f6ce9093623453f444e9fba9e464a67a5217a5252a605c92ed137229d66d7b.enc",
+      "coro_id": "local",
+      "vinculo_idioma": null,
+      "_idioma": "en",
+      "idioma": "en",
+      "external_id": "usmc_a5b1174b142ac7e3da",
+      "version": 4
+    },
+    "pdfReview": {
+      "pages": 14,
+      "dynamics": [
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QWEAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QWEAAA+OpusTextStd"
+        }
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "title": "Guerrero Celestial",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Guerrero Celestial.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Guerrero Celestial.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Guerrero Celestial.musicxml.xml",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Guerrero Celestial.mxl"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        106,
+        106,
+        106,
+        106
+      ],
+      "notes": 1673,
+      "lyrics": 1564,
+      "dynamics": {},
+      "voices": {
+        "1": 424
+      }
+    },
+    "catalog": {
+      "id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+      "nombre": "Guerrero Celestial",
+      "archivo": "global/assets/pdf/4df104af0bba1def16f0724a5eca60ea6bbcf10d1e8591680d8499755b194633.enc",
+      "midi_archivo": "global/assets/midi/f4ee80ebc045ca58d506a4eabe4dd8155ddad5c1f0d5dea91dfbeb471f9c6eaf.enc",
+      "vinculo_idioma": null,
+      "temas": [
+        "Elección",
+        "Lucha"
+      ],
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es",
+      "external_id": "3d2d5c84-1198-471a-9f15-8d5c4c077eb6",
+      "version": 5
+    },
+    "pdfReview": {
+      "pages": 9,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 9,
+    "title": "Jehova es mi Pastor Voces",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Jehova es mi Pastor Voces.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Jehova es mi Pastor Voces.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Jehova es mi Pastor Voces.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "S",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "A",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "T",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "B",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        75,
+        75,
+        75,
+        75
+      ],
+      "notes": 819,
+      "lyrics": 768,
+      "dynamics": {},
+      "voices": {
+        "1": 300
+      }
+    },
+    "catalog": {
+      "id": "74cb3514-e85a-4490-a931-2162c056152b",
+      "nombre": "Jehova es mi Pastor",
+      "archivo": "jehova-es-mi-pastor-1781309465627.pdf",
+      "temas": [
+        "Alabanza"
+      ],
+      "es_privado": false,
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 4,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 10,
+    "title": "LA RESTAURACION",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\LA RESTAURACION.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\LA RESTAURACION.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\LA RESTAURACION.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "SOPRANO",
+          "staffs": 1,
+          "instruments": [
+            "SOPRANO"
+          ]
+        },
+        {
+          "name": "ALTO",
+          "staffs": 1,
+          "instruments": [
+            "ALTO"
+          ]
+        },
+        {
+          "name": "TENOR",
+          "staffs": 1,
+          "instruments": [
+            "TENOR"
+          ]
+        },
+        {
+          "name": "BASS",
+          "staffs": 1,
+          "instruments": [
+            "BASS"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        154,
+        154,
+        154,
+        154
+      ],
+      "notes": 1876,
+      "lyrics": 1597,
+      "dynamics": {},
+      "voices": {
+        "1": 601,
+        "2": 15
+      }
+    },
+    "catalog": {
+      "id": "a5b2ddb2-4811-4c5e-95f3-3295418c973e",
+      "nombre": "La Restauración",
+      "archivo": "la-restauraci-n-1781307583269.pdf",
+      "midi_archivo": null,
+      "vinculo_idioma": null,
+      "temas": [
+        "Centenario",
+        "Restauración"
+      ],
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 11,
+      "dynamics": [
+        {
+          "text": "p",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "p",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QXDAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QXDAAA+OpusTextStd"
+        }
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "title": "PARA SIEMPRE ES SU MISERICORDIA",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\PARA SIEMPRE ES SU MISERICORDIA.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\PARA SIEMPRE ES SU MISERICORDIA.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\PARA SIEMPRE ES SU MISERICORDIA.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        17,
+        17,
+        17,
+        17
+      ],
+      "notes": 370,
+      "lyrics": 698,
+      "dynamics": {},
+      "voices": {
+        "1": 68
+      }
+    },
+    "catalog": {
+      "id": "82818c5f-1176-4e01-942a-f5db22553d39",
+      "nombre": "Para Siempre es su Misericordia",
+      "archivo": "para-siempre-es-su-misericordia.pdf",
+      "midi_archivo": "para-siempre-es-su-misericordia-1778990571647.mid",
+      "temas": [
+        "Salmo"
+      ],
+      "es_privado": false,
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 1,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 12,
+    "title": "Restauración",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Restauración.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Restauración.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Bajo"
+        }
+      ],
+      "bars": [
+        154,
+        154,
+        154,
+        154
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 1872,
+      "lyrics": 1666,
+      "dynamics": {},
+      "voices": {
+        "1:1": 2132,
+        "1:2": 58
+      }
+    },
+    "catalog": {
+      "id": "f7ec995c-1add-46a1-a884-5a52cb752135",
+      "nombre": "Restauración",
+      "archivo": "resutaracion.pdf",
+      "midi_archivo": "restauracion-1778890230133.mid",
+      "temas": [
+        "Restauración"
+      ],
+      "es_privado": false,
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 11,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 13,
+    "title": "Santo Varón",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Santo Varón.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Santo Varón.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "Soprano"
+        },
+        {
+          "id": "P2",
+          "name": "Alto"
+        },
+        {
+          "id": "P3",
+          "name": "Tenor"
+        },
+        {
+          "id": "P4",
+          "name": "Bass"
+        }
+      ],
+      "bars": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "staves": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "notes": 752,
+      "lyrics": 1086,
+      "dynamics": {},
+      "voices": {
+        "1:1": 790
+      }
+    },
+    "catalog": {
+      "id": "1af3806e-9f37-49ef-96b3-09d0d1ed2bf6",
+      "nombre": "Santo Varón",
+      "archivo": "santo-varon-1780195582239.pdf",
+      "midi_archivo": "santo-varon-1780195582790.mid",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 14,
+    "title": "Al huerto van J.( santa Cena )_2",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Al huerto van J.( santa Cena )_2.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Al huerto van J.( santa Cena )_2.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "SOPRANO ALTO"
+        },
+        {
+          "id": "P2",
+          "name": "TENOR BASS"
+        }
+      ],
+      "bars": [
+        86,
+        86
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 643,
+      "lyrics": 290,
+      "dynamics": {
+        "p": 1,
+        "f": 4,
+        "ff": 4,
+        "mf": 1
+      },
+      "voices": {
+        "1:1": 672,
+        "1:2": 62
+      }
+    },
+    "catalog": {
+      "id": "a8b5d622-f918-4db8-92d7-1c0288bc4a82",
+      "nombre": "Al Huerto Van",
+      "archivo": "al-huerto-van-1781373411720.pdf",
+      "midi_archivo": "into-the-garden-1782508472433.mid",
+      "vinculo_idioma": "usmc_647b6f54f16057b9e8d4bdf9",
+      "temas": [
+        "Resurrección"
+      ],
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 3,
+      "dynamics": [
+        {
+          "text": "p",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "f",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "f",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "ff",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "mf",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "ff",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "f",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "f",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "ff",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "f",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        },
+        {
+          "text": "ff",
+          "font": "QMBAAA+TimesNewRomanPS-ItalicMT"
+        }
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "title": "El aliento de mi ser J.",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\El aliento de mi ser J..mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\El aliento de mi ser J..mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\El aliento de mi ser J..musicxml.xml",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\El aliento de mi ser J..mxl"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "SA",
+          "staffs": 1,
+          "instruments": [
+            "SA"
+          ]
+        },
+        {
+          "name": "TB",
+          "staffs": 1,
+          "instruments": [
+            "TB"
+          ]
+        }
+      ],
+      "staves": 2,
+      "bars": [
+        73,
+        73
+      ],
+      "notes": 1589,
+      "lyrics": 493,
+      "dynamics": {},
+      "voices": {
+        "1": 133,
+        "2": 13
+      }
+    },
+    "catalog": {
+      "id": "67bdd051-b9b1-45da-b9e1-ca0ff60bb2b7",
+      "nombre": "El Aliento de mi Ser",
+      "archivo": "el-aliento-de-mi-ser.pdf",
+      "midi_archivo": "el-aliento-de-mi-ser-1779949560635.midi",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": "usmc_d719d9ba7cada64a234631ee",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 3,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 16,
+    "title": "Es Dios (Ensamble)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Es Dios (Ensamble).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Es Dios (Ensamble).mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Piano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Piano"
+          ]
+        }
+      ],
+      "staves": 2,
+      "bars": [
+        43,
+        43
+      ],
+      "notes": 627,
+      "lyrics": 54,
+      "dynamics": {},
+      "voices": {
+        "1": 4,
+        "2": 82
+      }
+    },
+    "catalog": {
+      "id": "f4a09e28-b7f1-42de-a8ff-301698c05359",
+      "nombre": "Es Dios",
+      "archivo": "es-dios-1778557126944.pdf",
+      "midi_archivo": "es-dios-1779934548005.mid",
+      "temas": [
+        "Alabanza"
+      ],
+      "es_privado": false,
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 1,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 17,
+    "title": "Imaginate Tú",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Tú.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Tú.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "P1"
+        },
+        {
+          "id": "P2",
+          "name": "P2"
+        }
+      ],
+      "bars": [
+        33,
+        33
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 536,
+      "lyrics": 332,
+      "dynamics": {},
+      "voices": {
+        "1:1": 488,
+        "1:2": 54
+      }
+    },
+    "catalog": {
+      "id": "9d9da006-13de-5b0f-8326-8dd191864256",
+      "external_id": "usmc_595c514cc4e9d58c9e",
+      "nombre": "Imaginate tu",
+      "archivo": "global/assets/pdf/c2ab1956d4cf0434ee7fa7dbd09ed3233436db382658857a20e711d2c7cf3bc6.enc",
+      "midi_archivo": "global/assets/midi/a78e4a0bd7b283862bb440ffe329040fb0404ac3eeda16644ae086876ebae6fa.enc",
+      "temas": [
+        "Adoración",
+        "Alabanza"
+      ],
+      "idioma": "es",
+      "vinculo_idioma": null,
+      "version": 5,
+      "_idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 18,
+    "title": "Imaginate Túsatb",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Túsatb.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Imaginate Túsatb.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "P1"
+        },
+        {
+          "id": "P2",
+          "name": "P2"
+        }
+      ],
+      "bars": [
+        33,
+        33
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 536,
+      "lyrics": 332,
+      "dynamics": {},
+      "voices": {
+        "1:1": 488,
+        "1:2": 54
+      }
+    },
+    "catalog": {
+      "id": "9d9da006-13de-5b0f-8326-8dd191864256",
+      "external_id": "usmc_595c514cc4e9d58c9e",
+      "nombre": "Imaginate tu",
+      "archivo": "global/assets/pdf/c2ab1956d4cf0434ee7fa7dbd09ed3233436db382658857a20e711d2c7cf3bc6.enc",
+      "midi_archivo": "global/assets/midi/a78e4a0bd7b283862bb440ffe329040fb0404ac3eeda16644ae086876ebae6fa.enc",
+      "temas": [
+        "Adoración",
+        "Alabanza"
+      ],
+      "idioma": "es",
+      "vinculo_idioma": null,
+      "version": 5,
+      "_idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 19,
+    "title": "La Fiesta Universal (closed)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Fiesta Universal (closed).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Fiesta Universal (closed).mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\La Fiesta Universal (closed).musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "S"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Tenor",
+          "staffs": 1,
+          "instruments": [
+            "T"
+          ]
+        },
+        {
+          "name": "Bass",
+          "staffs": 1,
+          "instruments": [
+            "Bass"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "notes": 1258,
+      "lyrics": 383,
+      "dynamics": {
+        "f": 1
+      },
+      "voices": {
+        "1": 122,
+        "2": 10
+      }
+    },
+    "catalog": {
+      "id": "La_Fiesta_Universal_0",
+      "nombre": "La Fiesta Universal",
+      "archivo": "la-fiesta-universal-1783371313321.pdf",
+      "temas": [
+        "Santa Cena"
+      ],
+      "es_privado": false,
+      "midi_archivo": "la-fiesta-universal-1783371085429.mid",
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 20,
+    "title": "La Vida Se Va Como El Viento (reducción)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Vida Se Va Como El Viento (reducción).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Vida Se Va Como El Viento (reducción).mscz"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "S"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "T"
+          ]
+        }
+      ],
+      "staves": 2,
+      "bars": [
+        34,
+        34
+      ],
+      "notes": 519,
+      "lyrics": 235,
+      "dynamics": {},
+      "voices": {
+        "1": 59,
+        "2": 9
+      }
+    },
+    "catalog": {
+      "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
+      "nombre": "La Vida se va Como el Viento",
+      "archivo": "global/assets/pdf/e6e1295d099bf1e9d86b7274eade60c17ce0b0595ca209406711a12529324809.enc",
+      "midi_archivo": "global/assets/midi/7c5d03657ae81557310c610e626d2c2f2cbae102cbd36a839b0fd8f7a176ad02.enc",
+      "vinculo_idioma": null,
+      "temas": [
+        "Evangelización"
+      ],
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es",
+      "version": 4
+    },
+    "pdfReview": {
+      "pages": 4,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 21,
+    "title": "Mi Padre en la Fe",
+    "source": "E:\\Respaldo\\musescoreactual\\MINA DE ORO\\Mi Padre en la Fe.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\MINA DE ORO\\Mi Padre en la Fe.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "S A"
+        },
+        {
+          "id": "P2",
+          "name": "T B"
+        }
+      ],
+      "bars": [
+        27,
+        27
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 385,
+      "lyrics": 358,
+      "dynamics": {},
+      "voices": {
+        "1:1": 381,
+        "1:2": 26
+      }
+    },
+    "catalog": {
+      "id": "09f1ea92-becc-4f5f-a629-3bc08713ede6",
+      "nombre": "Mi Padre en la fe",
+      "archivo": "mi-padre-en-la-fe.pdf",
+      "midi_archivo": "mi-padre-en-la-fe-1780507765584.mid",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": "usmc_647b6a3dfc5d9756c985e528",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    }
+  },
+  {
+    "index": 22,
+    "title": "Nardo, Justicia y Gloria ",
+    "source": "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Nardo, Justicia y Gloria .musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Nardo, Justicia y Gloria .musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "S A"
+        },
+        {
+          "id": "P2",
+          "name": "T B"
+        }
+      ],
+      "bars": [
+        62,
+        62
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 629,
+      "lyrics": 380,
+      "dynamics": {},
+      "voices": {
+        "1:1": 631,
+        "1:2": 33
+      }
+    },
+    "catalog": {
+      "id": "a4f49fef-8b5a-4d3a-9833-fbc240acedc8",
+      "nombre": "Nardo, Justicia y Gloria",
+      "archivo": "nardo-justicia-y-gloria.pdf",
+      "midi_archivo": "nardo-justicia-y-gloria-1780208248058.mid",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": "usmc_647b6b43fc5d9756c985e57f",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    }
+  }
+]

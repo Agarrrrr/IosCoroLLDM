@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead xml:id="m64vknb">
+      <fileDesc xml:id="f1evo4ro">
+         <titleStmt xml:id="tidgqr0">
+            <title>Prueba · compases 1–8</title>
+            <respStmt>
+               <persName role="composer">José Adiel Reynoso Cabrera.</persName>
+               <persName role="lyricist">  Arreglo :
+  Benjamin Rangel Valerio</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt xml:id="pzafxgt" />
+      </fileDesc>
+      <encodingDesc xml:id="e1gefc26">
+         <appInfo xml:id="a1s2p1ea">
+            <application xml:id="a1fy6d3k" isodate="2026-10-15T23:59:38" version="6.3.0-425dd7b">
+               <name xml:id="n8qnkcr">Verovio</name>
+               <p xml:id="paic0o4">Transcoded from MusicXML</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="jlvk1ua">
+            <score xml:id="knq70qx">
+               <scoreDef xml:id="l6e27kt">
+                  <staffGrp xml:id="nz8fzbn">
+                     <staffGrp xml:id="P1" bar.thru="true">
+                        <grpSym xml:id="lsi9x26" symbol="brace" />
+                        <label xml:id="oq0ksdc">SATB</label>
+                        <staffDef xml:id="rfl9ept" n="1" lines="5" ppq="480">
+                           <clef xml:id="yckcroz" shape="G" line="2" />
+                           <keySig xml:id="zfryyjg" mode="major" sig="2f" />
+                           <meterSig xml:id="a11d4rat" count="4" unit="4" />
+                        </staffDef>
+                        <staffDef xml:id="bmviniu" n="2" lines="5" ppq="480">
+                           <clef xml:id="i194vr1v" shape="F" line="4" />
+                           <keySig xml:id="j1s98c8r" mode="major" sig="2f" />
+                           <meterSig xml:id="kklt4aa" count="4" unit="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="m198k5fc">
+                  <expansion plist="#thmy8l3" xml:id="u16uwtf2" />
+                  <section xml:id="thmy8l3">
+                     <measure xml:id="m1qnw966" n="1">
+                        <staff xml:id="v1jtotsw" n="1">
+                           <layer xml:id="ct0ja36" n="1">
+                              <rest xml:id="d1ms6dje" dur.ppq="1920" dur="1" />
+                           </layer>
+                           <layer xml:id="e22pp5v" n="2">
+                              <rest xml:id="f1wnt3gp" dur.ppq="1920" dur="1" />
+                           </layer>
+                        </staff>
+                        <staff xml:id="wn1er6g" n="2">
+                           <layer xml:id="gloac4e" n="1">
+                              <rest xml:id="h1384xoc" dur.ppq="480" dur="4" />
+                              <note xml:id="al-gran-senor-closed-2-0-0" dur.ppq="480" dur="4" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="kfe9mq4" color="#000000" n="1">
+                                    <syl xml:id="ltdsg2a" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-0-1" dur.ppq="480" dur="4" oct="3" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="ohtyme0" color="#000000" n="1">
+                                    <syl xml:id="pe98okr" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-0-2" dur.ppq="480" dur="4" oct="4" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="s16hans8" color="#000000" n="1">
+                                    <syl xml:id="t16leq9s" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="v12kqu79" n="2">
+                              <rest xml:id="weph5p" dur.ppq="480" dur="4" />
+                              <note xml:id="al-gran-senor-closed-3-0-0" dur.ppq="480" dur="4" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="zu0e3wu" color="#000000" n="2">
+                                    <syl xml:id="aab9nuz" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-0-1" dur.ppq="480" dur="4" oct="3" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="d1iw15xn" color="#000000" n="2">
+                                    <syl xml:id="e1hbs88" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-0-2" dur.ppq="480" dur="4" oct="3" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="h1f1fwmh" color="#000000" n="2">
+                                    <syl xml:id="ikj4x5e" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <tempo xml:id="x14mdmwa" place="above" staff="1" tstamp="1" midi.bpm="90" mm="90" mm.unit="4">
+                           <rend xml:id="yy5wqu3" glyph.auth="smufl"></rend> = 90</tempo>
+                     </measure>
+                     <measure xml:id="koopc62" n="2">
+                        <staff xml:id="t1qug6om" n="1">
+                           <layer xml:id="v1kz1m2v" n="1">
+                              <note xml:id="al-gran-senor-closed-0-1-0" dur.ppq="240" dur="8" oct="4" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="x1qy591y" color="#000000" n="1">
+                                    <syl xml:id="yrrxrx0" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-1" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="bnbcpj2" color="#000000" n="1">
+                                    <syl xml:id="c2eothg" con="s" wordpos="s">gran Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-2" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up" />
+                              <note xml:id="al-gran-senor-closed-0-1-3" dots="1" dur.ppq="720" dur="4" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="g1utahsg" color="#000000" n="1">
+                                    <syl xml:id="hhfxow7" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-4" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="k17gjtoj" color="#000000" n="1">
+                                    <syl xml:id="lbygksj" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-5" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="o1j6pa8s" color="#000000" n="1">
+                                    <syl xml:id="p8qm8uu" con="s" wordpos="s">do</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-6" dur.ppq="120" dur="16" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="t8xbojh" color="#000000" n="1">
+                                    <syl xml:id="u13qmm2o" con="s" wordpos="s">re</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-7" dur.ppq="120" dur="16" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="y1vaqeo7" color="#000000" n="1">
+                                    <syl xml:id="zyhuloh" con="s" wordpos="s">mos</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-8" dur.ppq="120" dur="16" oct="4" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="c1s9sgzt" color="#000000" n="1">
+                                    <syl xml:id="d1vlo53c" con="s" wordpos="s">to</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-1-9" dur.ppq="120" dur="16" oct="4" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="gn6obrv" color="#000000" n="1">
+                                    <syl xml:id="h1ad2mh9" con="s" wordpos="s">dos</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="j4we1oo" n="2">
+                              <note xml:id="al-gran-senor-closed-1-1-0" dur.ppq="240" dur="8" oct="4" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="l14bgq8g" color="#000000" n="2">
+                                    <syl xml:id="milstee" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-1" dur.ppq="120" dur="16" oct="4" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="p1lia64z" color="#000000" n="2">
+                                    <syl xml:id="qvdu2my" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-2" dur.ppq="120" dur="16" oct="4" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="ti1b97n" color="#000000" n="2">
+                                    <syl xml:id="u35fjda" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-3" dots="1" dur.ppq="720" dur="4" oct="4" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="x1moh847" color="#000000" n="2">
+                                    <syl xml:id="y1bd4663" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-4" dur.ppq="120" dur="16" oct="4" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="b13r893p" color="#000000" n="2">
+                                    <syl xml:id="ccdwm1a" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-5" dur.ppq="120" dur="16" oct="4" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="fq3sxaw" color="#000000" n="2">
+                                    <syl xml:id="gsianti" con="s" wordpos="s">do</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-6" dur.ppq="120" dur="16" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="ji6l8yg" color="#000000" n="2">
+                                    <syl xml:id="k1ar7uh" con="s" wordpos="s">re</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-7" dur.ppq="120" dur="16" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="np6s4w1" color="#000000" n="2">
+                                    <syl xml:id="omhefjd" con="s" wordpos="s">mos</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-8" dur.ppq="120" dur="16" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="r1j3101x" color="#000000" n="2">
+                                    <syl xml:id="s1hzajfc" con="s" wordpos="s">to</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-1-9" dur.ppq="120" dur="16" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="v4zb7ou" color="#000000" n="2">
+                                    <syl xml:id="w1wh7die" con="s" wordpos="s">dos</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="u17txkjc" n="2">
+                           <layer xml:id="ywx52ii" n="1">
+                              <note xml:id="al-gran-senor-closed-2-1-0" dur.ppq="960" dur="2" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="bvmc7iv" color="#000000" n="1">
+                                    <syl xml:id="c1044c9y" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-1-1" dur.ppq="240" dur="8" oct="4" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="fn9j8bb" color="#000000" n="1">
+                                    <syl xml:id="g1vi46zh" con="s" wordpos="s">al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-1-2" dur.ppq="120" dur="16" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="kib1qd5" color="#000000" n="1">
+                                    <syl xml:id="laq1qrq" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-1-3" dur.ppq="120" dur="16" oct="3" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="o4bmg3t" color="#000000" n="1">
+                                    <syl xml:id="pxqvmac" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-1-4" dur.ppq="480" dur="4" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="txqem0e" color="#000000" n="1">
+                                    <syl xml:id="uzfthj7" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="x1ib8tjs" n="2">
+                              <note xml:id="al-gran-senor-closed-3-1-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="zr4rpxk" color="#000000" n="2">
+                                    <syl xml:id="a1xr38gt" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-1-1" dur.ppq="240" dur="8" oct="3" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="d1dbn30c" color="#000000" n="2">
+                                    <syl xml:id="e65zuxl" con="s" wordpos="s">al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-1-2" dur.ppq="120" dur="16" oct="3" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="hv9dkj6" color="#000000" n="2">
+                                    <syl xml:id="i1ikog82" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-1-3" dur.ppq="120" dur="16" oct="3" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="le4ugez" color="#000000" n="2">
+                                    <syl xml:id="mf8thl8" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <slur xml:id="w8lrryk" color="#000000" startid="#al-gran-senor-closed-2-1-4" endid="#al-gran-senor-closed-2-2-0" curvedir="above" />
+                     </measure>
+                     <measure xml:id="o1qzy2fi" n="3">
+                        <staff xml:id="x1362fjc" n="1">
+                           <layer xml:id="z1hfcnno" n="1">
+                              <note xml:id="al-gran-senor-closed-0-2-0" dur.ppq="240" dur="8" oct="4" pname="e" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="c1x8whmx" color="#000000" n="1">
+                                    <syl xml:id="d1q17ka0" con="s" wordpos="s">con</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-1" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="g1op6f8u" color="#000000" n="1">
+                                    <syl xml:id="h85te9a" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-2" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="kuzfzhz" color="#000000" n="1">
+                                    <syl xml:id="l1a7sqbc" con="s" wordpos="s">vo</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-3" dots="1" dur.ppq="720" dur="4" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="o1kdpfnp" color="#000000" n="1">
+                                    <syl xml:id="p1qefmne" con="s" wordpos="s">ción</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-4" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="snyrt1y" color="#000000" n="1">
+                                    <syl xml:id="tdoia4m" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-5" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="w1mkpcps" color="#000000" n="1">
+                                    <syl xml:id="x1gzue0t" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-6" dur.ppq="120" dur="16" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="b7sxdzc" color="#000000" n="1">
+                                    <syl xml:id="ck2lqak" con="s" wordpos="s">ban</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-7" dur.ppq="120" dur="16" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="g1ykj5yd" color="#000000" n="1">
+                                    <syl xml:id="h1owvt2x" con="s" wordpos="s">za</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-8" dur.ppq="120" dur="16" oct="4" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="k487trp" color="#000000" n="1">
+                                    <syl xml:id="l1namu8t" con="s" wordpos="s">demos</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-2-9" dur.ppq="120" dur="16" oct="4" pname="a" color="#000000" stem.dir="up" />
+                           </layer>
+                           <layer xml:id="o17xhuxn" n="2">
+                              <note xml:id="al-gran-senor-closed-1-2-0" dur.ppq="240" dur="8" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="r1juh27o" color="#000000" n="2">
+                                    <syl xml:id="sjszock" con="s" wordpos="s">con</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-1" dur.ppq="120" dur="16" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="w1neybxj" color="#000000" n="2">
+                                    <syl xml:id="x1ixs3m" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-2" dur.ppq="120" dur="16" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="b1wql0yf" color="#000000" n="2">
+                                    <syl xml:id="cgfj6gn" con="s" wordpos="s">voción</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-3" dots="1" dur.ppq="720" dur="4" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f" />
+                              <note xml:id="al-gran-senor-closed-1-2-4" dur.ppq="120" dur="16" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="i1akc2vp" color="#000000" n="2">
+                                    <syl xml:id="j1j7b7ny" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-5" dur.ppq="120" dur="16" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="n1kn9ev" color="#000000" n="2">
+                                    <syl xml:id="olnn2ge" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-6" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="rdqi5bg" color="#000000" n="2">
+                                    <syl xml:id="s1jmayz5" con="s" wordpos="s">ban</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-7" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="vrihiwq" color="#000000" n="2">
+                                    <syl xml:id="w1xlbdv" con="s" wordpos="s">za</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-8" dur.ppq="120" dur="16" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="zses8rk" color="#000000" n="2">
+                                    <syl xml:id="a14taezq" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-2-9" dur.ppq="120" dur="16" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="dfscihk" color="#000000" n="2">
+                                    <syl xml:id="e11nbo72" con="s" wordpos="s">mos</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="yum3c1c" n="2">
+                           <layer xml:id="g1vvqqpc" n="1">
+                              <note xml:id="al-gran-senor-closed-2-2-0" dur.ppq="960" dur="2" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f" />
+                              <note xml:id="al-gran-senor-closed-2-2-1" dur.ppq="240" dur="8" oct="4" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="k6kqmz3" color="#000000" n="1">
+                                    <syl xml:id="l1izco0d" con="s" wordpos="s">al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-2-2" dur.ppq="120" dur="16" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="p1xj33rd" color="#000000" n="1">
+                                    <syl xml:id="qk9fwa2" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-2-3" dur.ppq="120" dur="16" oct="3" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="t19ezbn1" color="#000000" n="1">
+                                    <syl xml:id="u1u3kuv9" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-2-4" dur.ppq="480" dur="4" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="ylko233" color="#000000" n="1">
+                                    <syl xml:id="z1e4mowi" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="bzfh8t7" n="2">
+                              <note xml:id="al-gran-senor-closed-3-2-0" dots="1" dur.ppq="1440" dur="2" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="epk9hpv" color="#000000" n="2">
+                                    <syl xml:id="fu2anjm" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-2-1" dur.ppq="240" dur="8" oct="3" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="iv3s946" color="#000000" n="2">
+                                    <syl xml:id="j17ms4b8" con="s" wordpos="s">al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-2-2" dur.ppq="120" dur="16" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="n109f0mb" color="#000000" n="2">
+                                    <syl xml:id="o1t8f3tj" con="s" wordpos="s">gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-2-3" dur.ppq="120" dur="16" oct="3" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="rupjxtu" color="#000000" n="2">
+                                    <syl xml:id="s1z4b8w" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="u3kfgxb" n="4">
+                        <staff xml:id="d6l5si3" n="1">
+                           <layer xml:id="fuwkvue" n="1">
+                              <note xml:id="al-gran-senor-closed-0-3-0" dur.ppq="240" dur="8" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="hmn4nqk" color="#000000" n="1">
+                                    <syl xml:id="iemg9fc" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-1" dur.ppq="120" dur="16" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="lv5hgre" color="#000000" n="1">
+                                    <syl xml:id="m4p1yfb" con="s" wordpos="s">po</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-2" dur.ppq="120" dur="16" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="p1ndx2yh" color="#000000" n="1">
+                                    <syl xml:id="q1ect9wl" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-3" dur.ppq="240" dur="8" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="tghx91e" color="#000000" n="1">
+                                    <syl xml:id="u1k234hl" con="s" wordpos="s">ro</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-4" dur.ppq="240" dur="8" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="y9jg4x4" color="#000000" n="1">
+                                    <syl xml:id="zwf897h" con="s" wordpos="s">so</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-5" dur.ppq="240" dur="8" oct="5" pname="e" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="d10pgtmm" color="#000000" n="1">
+                                    <syl xml:id="ecxxg87" con="s" wordpos="s">rey</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-6" dur.ppq="240" dur="8" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="hje4dt6" color="#000000" n="1">
+                                    <syl xml:id="i1fzxctb" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-7" dur.ppq="240" dur="8" oct="5" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="l10241l1" color="#000000" n="1">
+                                    <syl xml:id="m1ot61na" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-3-8" dur.ppq="240" dur="8" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="q40d8jq" color="#000000" n="1">
+                                    <syl xml:id="r1op3e1t" con="s" wordpos="s">crea</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="t1yknck1" n="2">
+                              <note xml:id="al-gran-senor-closed-1-3-0" dur.ppq="960" dur="2" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="vqz13ff" color="#000000" n="2">
+                                    <syl xml:id="w15riygg" con="s" wordpos="s">al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-3-1" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="z1ieuqps" color="#000000" n="2">
+                                    <syl xml:id="a1t0ywpk" con="s" wordpos="s">rey</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-3-2" dur.ppq="240" dur="8" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="d1nly5vm" color="#000000" n="2">
+                                    <syl xml:id="e46g2zt" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-3-3" dur.ppq="240" dur="8" oct="4" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="h1ekmlny" color="#000000" n="2">
+                                    <syl xml:id="iuxxagp" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-3-4" dur.ppq="240" dur="8" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="mairng8" color="#000000" n="2">
+                                    <syl xml:id="nesb1s8" con="s" wordpos="s">crea</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="enh07h6" n="2">
+                           <layer xml:id="ptl9n4o" n="1">
+                              <note xml:id="al-gran-senor-closed-2-3-0" dur.ppq="960" dur="2" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="sosyxs6" color="#000000" n="1">
+                                    <syl xml:id="t2zua2w" con="s" wordpos="s">rey</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-3-1" dur.ppq="480" dur="4" oct="3" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="w1j65yeu" color="#000000" n="1">
+                                    <syl xml:id="xengtwa" con="s" wordpos="s">La</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-3-2" dur.ppq="480" dur="4" oct="3" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="a7vq7r3" color="#000000" n="1">
+                                    <syl xml:id="b10u8e98" con="s" wordpos="s">crea</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="d1ef5ko8" n="2">
+                              <note xml:id="al-gran-senor-closed-3-3-0" dur.ppq="960" dur="2" oct="2" pname="b" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="ghop4k5" color="#000000" n="2">
+                                    <syl xml:id="hldpsdg" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-3-1" dur.ppq="240" dur="8" oct="3" pname="c" color="#000000" stem.dir="down">
+                                 <verse xml:id="k1h5s7a2" color="#000000" n="2">
+                                    <syl xml:id="lcsx9rf" con="s" wordpos="s">rey</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-3-2" dur.ppq="240" dur="8" oct="3" pname="c" color="#000000" stem.dir="down">
+                                 <verse xml:id="oyyvbly" color="#000000" n="2">
+                                    <syl xml:id="px28ggh" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-3-3" dur.ppq="240" dur="8" oct="3" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="s2v8q66" color="#000000" n="2">
+                                    <syl xml:id="t1unn41j" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-3-4" dur.ppq="240" dur="8" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="x1j6vql9" color="#000000" n="2">
+                                    <syl xml:id="yksqoni" con="s" wordpos="s">crea</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="a12wc61p" n="5">
+                        <staff xml:id="j1gjw84f" n="1">
+                           <layer xml:id="l1iyebif" n="1">
+                              <note xml:id="al-gran-senor-closed-0-4-0" dur.ppq="960" dur="2" oct="5" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="n10j4w3f" color="#000000" n="1">
+                                    <syl xml:id="o1m9dxik" con="s" wordpos="s">ción</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="qjz3px" dur.ppq="960" dur="2" />
+                           </layer>
+                           <layer xml:id="r1hqma6a" n="2">
+                              <note xml:id="al-gran-senor-closed-1-4-0" dur.ppq="960" dur="2" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="tvdd012" color="#000000" n="2">
+                                    <syl xml:id="u1a9g2lr" con="s" wordpos="s">ción</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="w12evi6r" dur.ppq="240" dur="8" />
+                              <note xml:id="al-gran-senor-closed-1-4-1" dur.ppq="240" dur="8" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="z10ap2vi" color="#000000" n="2">
+                                    <syl xml:id="a1yjbsio" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-4-2" dur.ppq="240" dur="8" oct="4" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="d9lh29y" color="#000000" n="2">
+                                    <syl xml:id="eyx9a1" con="s" wordpos="s">Gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-4-3" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="h1udgv11" color="#000000" n="2">
+                                    <syl xml:id="iafmzym" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="k1p6w7lz" n="2">
+                           <layer xml:id="kjbmz66" n="1">
+                              <note xml:id="al-gran-senor-closed-2-4-0" dur.ppq="960" dur="2" oct="3" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="mtk5yhp" color="#000000" n="1">
+                                    <syl xml:id="nc7bpux" con="s" wordpos="s">ción</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="p1w5w0fr" dur.ppq="240" dur="8" />
+                              <note xml:id="al-gran-senor-closed-2-4-1" dur.ppq="240" dur="8" oct="3" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="rn19z0e" color="#000000" n="1">
+                                    <syl xml:id="s1y5ot1h" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-4-2" dur.ppq="240" dur="8" oct="3" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="v13m3n7g" color="#000000" n="1">
+                                    <syl xml:id="weqolb" con="s" wordpos="s">Gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-4-3" dur.ppq="240" dur="8" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="al2htx3" color="#000000" n="1">
+                                    <syl xml:id="b1oh4gc" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="duaysn8" n="2">
+                              <note xml:id="al-gran-senor-closed-3-4-0" dur.ppq="960" dur="2" oct="3" pname="f" color="#000000" stem.dir="down">
+                                 <verse xml:id="f1i9s2ca" color="#000000" n="2">
+                                    <syl xml:id="g17vb6tk" con="s" wordpos="s">ción</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="i1tnmzhw" dur.ppq="960" dur="2" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="j1daeiq0" n="6">
+                        <staff xml:id="s1syqbm8" n="1">
+                           <layer xml:id="u1vgxts" n="1">
+                              <note xml:id="al-gran-senor-closed-0-5-0" dur.ppq="480" dur="4" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="w1slxnfh" color="#000000" n="1">
+                                    <syl xml:id="x1f82f5u" con="s" wordpos="s">A</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-5-1" dur.ppq="480" dur="4" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="b1rf3qkk" color="#000000" n="1">
+                                    <syl xml:id="c1me2fdf" con="s" wordpos="s">do</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-5-2" dur.ppq="240" dur="8" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="f18jc7e5" color="#000000" n="1">
+                                    <syl xml:id="ggxr51z" con="s" wordpos="s">rad</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-5-3" dur.ppq="120" dur="16" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="j1cguygm" color="#000000" n="1">
+                                    <syl xml:id="kmp2plv" con="s" wordpos="s">al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-5-4" dur.ppq="120" dur="16" oct="5" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="n16faabk" color="#000000" n="1">
+                                    <syl xml:id="ooruw3" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-5-5" dur.ppq="480" dur="4" oct="4" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="sqqc1sn" color="#000000" n="1">
+                                    <syl xml:id="tm7g1ky" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="v1gjklfv" n="2">
+                              <note xml:id="al-gran-senor-closed-1-5-0" dur.ppq="480" dur="4" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="x1vw5qde" color="#000000" n="2">
+                                    <syl xml:id="ydn498t" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-5-1" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="bby8e2v" color="#000000" n="2">
+                                    <syl xml:id="cahtqb5" con="s" wordpos="s">tri</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-5-2" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="ftagdx2" color="#000000" n="2">
+                                    <syl xml:id="gy2cegl" con="s" wordpos="s">bu</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-5-3" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="j5x3z2l" color="#000000" n="2">
+                                    <syl xml:id="k184xybx" con="s" wordpos="s">te</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-5-4" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="n1jfxvfc" color="#000000" n="2">
+                                    <syl xml:id="oro5b2c" con="s" wordpos="s">mos</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-5-5" dur.ppq="120" dur="16" oct="4" pname="a" color="#000000" stem.dir="down">
+                                 <verse xml:id="rwtb7jt" color="#000000" n="2">
+                                    <syl xml:id="sdurg9u" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-5-6" dur.ppq="240" dur="8" oct="4" pname="b" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="w1k3gdy" color="#000000" n="2">
+                                    <syl xml:id="x66gm6b" con="s" wordpos="s">do</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-5-7" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="a84w5jv" color="#000000" n="2">
+                                    <syl xml:id="b1hedph4" con="s" wordpos="s">ra</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="tjmmak3" n="2">
+                           <layer xml:id="dtj8rr2" n="1">
+                              <note xml:id="al-gran-senor-closed-2-5-0" dots="1" dur.ppq="720" dur="4" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="g1ymb5n1" color="#000000" n="1">
+                                    <syl xml:id="h1g7hmch" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-5-1" dur.ppq="480" dur="4" oct="4" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="k12cijg5" color="#000000" n="1">
+                                    <syl xml:id="l1qrt266" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-5-2" dots="1" dur.ppq="720" dur="4" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="p6krkyr" color="#000000" n="1">
+                                    <syl xml:id="q1mosc7o" con="s" wordpos="s">do</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="sbvrtiy" n="2">
+                              <note xml:id="al-gran-senor-closed-3-5-0" dur.ppq="240" dur="8" oct="2" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="u1qe5rl8" color="#000000" n="2">
+                                    <syl xml:id="v1ih6nuk" con="s" wordpos="s">Al</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-5-1" dur.ppq="120" dur="16" oct="2" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="y1n11x6e" color="#000000" n="2">
+                                    <syl xml:id="z150mkjh" con="s" wordpos="s">Gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-5-2" dur.ppq="120" dur="16" oct="2" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="c10z9eq1" color="#000000" n="2">
+                                    <syl xml:id="d196bdnb" con="s" wordpos="s">Se</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-5-3" dur.ppq="480" dur="4" oct="2" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="g1k4tkr" color="#000000" n="2">
+                                    <syl xml:id="h934x5c" con="s" wordpos="s">ñor</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="j1734x5e" dots="1" dur.ppq="720" dur="4" />
+                              <note xml:id="al-gran-senor-closed-3-5-4" dur.ppq="240" dur="8" oct="3" pname="d" color="#000000" stem.dir="down">
+                                 <verse xml:id="lbq41kv" color="#000000" n="2">
+                                    <syl xml:id="m7z2gbc" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="o1oa8w5b" n="7">
+                        <staff xml:id="xi7luvs" n="1">
+                           <layer xml:id="z1fmycln" n="1">
+                              <note xml:id="al-gran-senor-closed-0-6-0" dur.ppq="240" dur="8" oct="5" pname="e" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="c4ls057" color="#000000" n="1">
+                                    <syl xml:id="d18611x8" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-6-1" dur.ppq="120" dur="16" oct="5" pname="e" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="h1aglwjz" color="#000000" n="1">
+                                    <syl xml:id="ipscy2r" con="s" wordpos="s">ma jes</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-6-2" dur.ppq="120" dur="16" oct="5" pname="d" color="#000000" stem.dir="up" />
+                              <note xml:id="al-gran-senor-closed-0-6-3" dur.ppq="960" dur="2" oct="5" pname="e" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="n1h79p8a" color="#000000" n="1">
+                                    <syl xml:id="o1njy10h" con="s" wordpos="s">tad</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="q56bjbj" dur.ppq="240" dur="8" />
+                              <note xml:id="al-gran-senor-closed-0-6-4" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="s1ayu5p3" color="#000000" n="1">
+                                    <syl xml:id="tf14t2k" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="vda4782" n="2">
+                              <note xml:id="al-gran-senor-closed-1-6-0" dur.ppq="480" dur="4" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="x1mvx85d" color="#000000" n="2">
+                                    <syl xml:id="y1efl81a" con="s" wordpos="s">ción</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-6-1" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="b1c8o7uq" color="#000000" n="2">
+                                    <syl xml:id="ckcm9l7" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-6-2" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="f15ew4h8" color="#000000" n="2">
+                                    <syl xml:id="g1gft53o" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-6-3" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="jkbv73m" color="#000000" n="2">
+                                    <syl xml:id="k51lkem" con="s" wordpos="s">ban</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-6-4" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="n17xrm2q" color="#000000" n="2">
+                                    <syl xml:id="ox7dc8r" con="s" wordpos="s">za</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-6-5" dur.ppq="120" dur="16" oct="4" pname="a" color="#000000" stem.dir="down">
+                                 <verse xml:id="r13q9obp" color="#000000" n="2">
+                                    <syl xml:id="s9jprgk" con="s" wordpos="s">y</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-6-6" dur.ppq="240" dur="8" oct="4" pname="b" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="wx11wgm" color="#000000" n="2">
+                                    <syl xml:id="xe9xft5" con="s" wordpos="s">ma</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-6-7" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="ampo8a6" color="#000000" n="2">
+                                    <syl xml:id="b7rgkzt" con="s" wordpos="s">jes</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="y1vv20jd" n="2">
+                           <layer xml:id="d8eq7q0" n="1">
+                              <note xml:id="al-gran-senor-closed-2-6-0" dots="1" dur.ppq="720" dur="4" oct="3" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="fxf1jtt" color="#000000" n="1">
+                                    <syl xml:id="gpsjtkr" con="s" wordpos="s">rad</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-6-1" dur.ppq="480" dur="4" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="k1nygx9j" color="#000000" n="1">
+                                    <syl xml:id="l1gambbl" con="s" wordpos="s">ma</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-6-2" dots="1" dur.ppq="720" dur="4" oct="3" pname="a" color="#000000" stem.dir="up">
+                                 <verse xml:id="ox17ify" color="#000000" n="1">
+                                    <syl xml:id="p1fq9nph" con="s" wordpos="s">jes</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="r1kjmx4u" n="2">
+                              <note xml:id="al-gran-senor-closed-3-6-0" dur.ppq="240" dur="8" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="u1xln03n" color="#000000" n="2">
+                                    <syl xml:id="vtji2vi" con="s" wordpos="s">Gran</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-6-1" dur.ppq="120" dur="16" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="ziil2uf" color="#000000" n="2">
+                                    <syl xml:id="a19p4rh5" con="s" wordpos="s">ma</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-6-2" dur.ppq="120" dur="16" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="egqintb" color="#000000" n="2">
+                                    <syl xml:id="f1t99jvt" con="s" wordpos="s">jes</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-6-3" dur.ppq="480" dur="4" oct="3" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="jo2e7ip" color="#000000" n="2">
+                                    <syl xml:id="klt1dpe" con="s" wordpos="s">tad</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="m19qvmkw" dots="1" dur.ppq="720" dur="4" />
+                              <note xml:id="al-gran-senor-closed-3-6-4" dur.ppq="240" dur="8" oct="2" pname="b" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="p7j02pc" color="#000000" n="2">
+                                    <syl xml:id="q13jw01h" con="s" wordpos="s">de</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure xml:id="s1pn4xd4" right="end" n="8">
+                        <staff xml:id="b1s5q03t" n="1">
+                           <layer xml:id="d1hj93t8" n="1">
+                              <note xml:id="al-gran-senor-closed-0-7-0" dur.ppq="960" dur="2" oct="5" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="ftg9e2t" color="#000000" n="1">
+                                    <syl xml:id="gdr6mho" con="s" wordpos="s">El</syl>
+                                 </verse>
+                                 <artic xml:id="iy356em" artic="ten" />
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-7-1" dur.ppq="240" dur="8" oct="5" pname="f" color="#000000" stem.dir="up">
+                                 <verse xml:id="k1lnlnld" color="#000000" n="1">
+                                    <syl xml:id="lf5ffrq" con="s" wordpos="s">To</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-7-2" dur.ppq="240" dur="8" oct="5" pname="e" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="p2p5y6r" color="#000000" n="1">
+                                    <syl xml:id="qnbt92i" con="s" wordpos="s">dos</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-7-3" dur.ppq="240" dur="8" oct="5" pname="d" color="#000000" stem.dir="up">
+                                 <verse xml:id="t1bxo0ix" color="#000000" n="1">
+                                    <syl xml:id="uu9bg4y" con="s" wordpos="s">a</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-0-7-4" dur.ppq="240" dur="8" oct="5" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="x94om1j" color="#000000" n="1">
+                                    <syl xml:id="yrwqmc0" con="s" wordpos="s">la</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="af145q7" n="2">
+                              <note xml:id="al-gran-senor-closed-1-7-0" dur.ppq="480" dur="4" oct="4" pname="e" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="d1lmugcl" color="#000000" n="2">
+                                    <syl xml:id="e7sjpt8" con="s" wordpos="s">tad</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-7-1" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="h181ljib" color="#000000" n="2">
+                                    <syl xml:id="iy8objg" con="s" wordpos="s">to</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-7-2" dur.ppq="120" dur="16" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="lwwovim" color="#000000" n="2">
+                                    <syl xml:id="mpoylyi" con="s" wordpos="s">do_el</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-7-3" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="pk52l8f" color="#000000" n="2">
+                                    <syl xml:id="q3zavg9" con="s" wordpos="s">pue</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-7-4" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="tap42nl" color="#000000" n="2">
+                                    <syl xml:id="uzx6i72" con="s" wordpos="s">blo</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-7-5" dur.ppq="120" dur="16" oct="4" pname="a" color="#000000" stem.dir="down">
+                                 <verse xml:id="x1msp84o" color="#000000" n="2">
+                                    <syl xml:id="y4hakx3" con="s" wordpos="s">con</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-7-6" dur.ppq="240" dur="8" oct="4" pname="b" color="#000000" stem.dir="down" accid.ges="f">
+                                 <verse xml:id="c43hdqa" color="#000000" n="2">
+                                    <syl xml:id="d1owixa5" con="s" wordpos="s">go</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-1-7-7" dur.ppq="240" dur="8" oct="4" pname="g" color="#000000" stem.dir="down">
+                                 <verse xml:id="gb0wwab" color="#000000" n="2">
+                                    <syl xml:id="h11nyswp" con="s" wordpos="s">zo</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff xml:id="cwjvxp6" n="2">
+                           <layer xml:id="jlg5y4s" n="1">
+                              <note xml:id="al-gran-senor-closed-2-7-0" dots="1" dur.ppq="720" dur="4" oct="3" pname="g" color="#000000" stem.dir="up">
+                                 <verse xml:id="lxeqtoh" color="#000000" n="1">
+                                    <syl xml:id="me0n3uq" con="s" wordpos="s">tad</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-7-1" dur.ppq="480" dur="4" oct="3" pname="b" color="#000000" stem.dir="up" accid.ges="f">
+                                 <verse xml:id="q1hvyw1h" color="#000000" n="1">
+                                    <syl xml:id="rn5la98" con="s" wordpos="s">glo</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-2-7-2" dots="1" dur.ppq="720" dur="4" oct="4" pname="c" color="#000000" stem.dir="up">
+                                 <verse xml:id="unix2x1" color="#000000" n="1">
+                                    <syl xml:id="v1kdzbhb" con="s" wordpos="s">ria</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                           <layer xml:id="x1jy0yn9" n="2">
+                              <note xml:id="al-gran-senor-closed-3-7-0" dur.ppq="240" dur="8" oct="3" pname="c" color="#000000" stem.dir="down">
+                                 <verse xml:id="zney1fk" color="#000000" n="2">
+                                    <syl xml:id="a1nc7t1c" con="s" wordpos="s">glo</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-7-1" dur.ppq="120" dur="16" oct="3" pname="c" color="#000000" stem.dir="down">
+                                 <verse xml:id="dx4efsz" color="#000000" n="2">
+                                    <syl xml:id="e15a851w" con="s" wordpos="s">ria</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-7-2" dur.ppq="120" dur="16" oct="3" pname="c" color="#000000" stem.dir="down">
+                                 <verse xml:id="hf735mv" color="#000000" n="2">
+                                    <syl xml:id="i1fcq4s1" con="s" wordpos="s">sin</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="al-gran-senor-closed-3-7-3" dur.ppq="480" dur="4" oct="3" pname="c" color="#000000" stem.dir="down">
+                                 <verse xml:id="l15pcy1t" color="#000000" n="2">
+                                    <syl xml:id="m13enghy" con="s" wordpos="s">par</syl>
+                                 </verse>
+                              </note>
+                              <rest xml:id="o1tznvwo" dots="1" dur.ppq="720" dur="4" />
+                              <note xml:id="al-gran-senor-closed-3-7-4" dur.ppq="240" dur="8" oct="3" pname="c" color="#000000" stem.dir="down">
+                                 <verse xml:id="qni24pt" color="#000000" n="2">
+                                    <syl xml:id="roxo1mp" con="s" wordpos="s">hoy</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

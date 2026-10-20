@@ -1,0 +1,9814 @@
+{
+  "apostol-0-1-0.00000-64": [
+    {
+      "text": "¡El",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-1-3.00000-64": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-1-3.50000-66": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-2-0.00000-67": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-2-1.00000-64": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-2-3.00000-67": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-3-0.00000-71": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-3-3.00000-75": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-3-3.50000-72": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-4-0.00000-71": [
+    {
+      "text": "vió!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-15-0.50000-59": [
+    {
+      "text": "¡Qué",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-16-0.00000-64": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-16-0.75000-66": [
+    {
+      "text": "Ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-16-1.00000-67": [
+    {
+      "text": "es",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-16-2.00000-64": [
+    {
+      "text": "tro,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-17-0.00000-71": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-17-2.00000-69": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-18-0.00000-67": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-18-2.00000-67": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-18-3.00000-66": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-19-0.00000-64": [
+    {
+      "text": "vió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-19-2.00000-64": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-19-3.50000-64": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-20-0.00000-66": [
+    {
+      "text": "Sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-20-1.00000-64": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-20-2.00000-63": [
+    {
+      "text": "ción!.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-21-0.50000-59": [
+    {
+      "text": "¡El",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-21-1.00000-59": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-21-1.75000-59": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-21-2.00000-64": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-21-3.00000-64": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-22-1.00000-64": [
+    {
+      "text": "del",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-22-1.75000-64": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-22-2.00000-69": [
+    {
+      "text": "ñor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-22-3.50000-67": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-22-3.75000-66": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-23-0.00000-67": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-23-0.50000-64": [
+    {
+      "text": "ña",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-23-2.50000-59": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-23-3.00000-64": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-23-3.75000-66": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-0-24-0.00000-67": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-24-1.00000-64": [
+    {
+      "text": "ma,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-24-3.00000-64": [
+    {
+      "text": "¡a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-24-3.75000-64": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-25-0.00000-63": [
+    {
+      "text": "char!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-25-3.00000-66": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-25-3.75000-66": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-26-0.00000-64": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-26-3.00000-71": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-26-3.75000-71": [
+    {
+      "text": "pe",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-27-0.00000-69": [
+    {
+      "text": "lear",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-27-2.50000-69": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-27-3.00000-72": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-27-3.75000-72": [
+    {
+      "text": "vo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-28-0.00000-71": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-28-2.50000-71": [
+    {
+      "text": "Por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-28-3.00000-71": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-28-3.75000-71": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-0-29-0.00000-72": [
+    {
+      "text": "mun",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-29-1.00000-69": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-29-2.50000-69": [
+    {
+      "text": "sa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-29-3.00000-74": [
+    {
+      "text": "lió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-29-3.75000-69": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-30-0.00000-71": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-30-2.50000-71": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-30-3.00000-69": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-30-3.75000-67": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-0-31-0.00000-66": [
+    {
+      "text": "hom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-31-1.00000-66": [
+    {
+      "text": "bre:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-31-3.50000-66": [
+    {
+      "text": "Te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-32-0.00000-71": [
+    {
+      "text": "med",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-32-2.00000-71": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-33-0.00000-64": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-34-2.50000-71": [
+    {
+      "text": "De",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-34-3.00000-71": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-34-3.75000-71": [
+    {
+      "text": "tro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-35-0.00000-71": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-36-2.50000-69": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-0-36-3.00000-69": [
+    {
+      "text": "Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-36-3.75000-69": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-37-0.00000-71": [
+    {
+      "text": "dió;",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-37-2.50000-71": [
+    {
+      "text": "Mul",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-37-3.00000-72": [
+    {
+      "text": "ti",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-37-3.75000-71": [
+    {
+      "text": "pli",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-38-0.00000-69": [
+    {
+      "text": "car",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-38-2.50000-72": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-38-3.00000-71": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-38-3.50000-69": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-39-0.00000-67": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-39-1.00000-64": [
+    {
+      "text": "sia,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-39-2.50000-67": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-39-3.00000-66": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-39-3.50000-64": [
+    {
+      "text": "pro",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-40-0.00000-63": [
+    {
+      "text": "me",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-40-1.00000-63": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-40-3.50000-63": [
+    {
+      "text": "se",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-41-0.00000-67": [
+    {
+      "text": "cum",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-41-2.00000-66": [
+    {
+      "text": "ple",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-42-0.00000-64": [
+    {
+      "text": "hoy.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-43-0.00000-64": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-43-0.25000-64": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-43-1.00000-66": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-43-1.25000-66": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-43-2.00000-67": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-43-2.25000-67": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-43-3.00000-72": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-43-3.50000-72": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-44-0.00000-71": [
+    {
+      "text": "ciad,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-45-0.00000-76": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-0-45-0.75000-76": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-45-1.00000-74": [
+    {
+      "text": "tie",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-45-1.75000-74": [
+    {
+      "text": "rra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-45-2.00000-72": [
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-45-2.75000-72": [
+    {
+      "text": "Va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-45-3.00000-71": [
+    {
+      "text": "rón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-45-3.75000-71": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-46-0.00000-69": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-46-0.75000-69": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-46-1.00000-67": [
+    {
+      "text": "vió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-46-1.75000-67": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-46-2.00000-72": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-46-3.50000-71": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-47-0.00000-76": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-48-0.00000-67": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-48-0.50000-71": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-0-48-1.00000-67": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-48-1.50000-71": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-48-2.00000-71": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-49-0.00000-72": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-49-2.00000-74": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-49-3.00000-76": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-50-0.00000-71": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-50-1.50000-71": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-50-2.00000-67": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-50-3.50000-69": [
+    {
+      "text": "Ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-50-3.75000-71": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-51-0.00000-72": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-51-1.00000-72": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-51-2.00000-72": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-51-2.50000-71": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-51-2.75000-72": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-51-3.25000-71": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-52-0.00000-74": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-52-3.00000-74": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-52-3.33333-74": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-52-3.66667-76": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-53-0.00000-77": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-53-1.00000-77": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-53-2.00000-77": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-53-2.50000-76": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-53-2.75000-77": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-53-3.25000-76": [
+    {
+      "text": "ña",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-54-0.00000-79": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-54-2.50000-71": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-54-2.75000-72": [
+    {
+      "text": "ser",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-54-3.00000-74": [
+    {
+      "text": "vir",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-54-3.50000-71": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-55-0.00000-72": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-55-3.00000-67": [
+    {
+      "text": "Su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-55-3.50000-67": [
+    {
+      "text": "la",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-56-0.00000-76": [
+    {
+      "text": "bor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-56-0.50000-74": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-56-0.75000-72": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-56-1.00000-71": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-56-2.00000-69": [
+    {
+      "text": "sia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-56-3.50000-65": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-56-3.75000-67": [
+    {
+      "text": "lo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-57-0.00000-74": [
+    {
+      "text": "a",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-57-1.00000-74": [
+    {
+      "text": "ble",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-57-3.00000-64": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-57-3.50000-65": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-58-0.00000-74": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-58-0.50000-72": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-58-0.75000-71": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-58-1.00000-69": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-58-2.00000-67": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-58-3.50000-64": [
+    {
+      "text": "ad",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-58-3.75000-65": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-59-0.00000-72": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-59-1.00000-72": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-59-3.00000-64": [
+    {
+      "text": "La",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-59-3.50000-65": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-60-0.00000-72": [
+    {
+      "text": "sión",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-60-0.50000-71": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-60-0.75000-69": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-60-1.00000-67": [
+    {
+      "text": "fuer",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-60-2.00000-65": [
+    {
+      "text": "zo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-60-3.50000-60": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-60-3.75000-62": [
+    {
+      "text": "los",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-61-0.00000-64": [
+    {
+      "text": "fru",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-61-1.50000-65": [
+    {
+      "text": "tos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-61-1.75000-64": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-61-2.00000-62": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-61-3.00000-71": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-62-0.00000-72": [
+    {
+      "text": "paz.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-62-3.00000-69": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-62-3.25000-67": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-62-3.50000-69": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-62-3.75000-71": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-63-0.00000-72": [
+    {
+      "text": "zón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-63-1.50000-72": [
+    {
+      "text": "que",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-63-2.00000-74": [
+    {
+      "text": "re",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-63-2.50000-72": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-63-2.75000-74": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-63-3.50000-72": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-64-0.00000-71": [
+    {
+      "text": "cir",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-64-0.75000-67": [
+    {
+      "text": "le",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-64-1.50000-64": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-64-2.00000-69": [
+    {
+      "text": "ted:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-64-3.50000-69": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-64-3.75000-67": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-65-0.00000-65": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-65-1.50000-65": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-65-2.00000-67": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-65-2.50000-65": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-65-2.75000-67": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-65-3.50000-65": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-66-0.00000-67": [
+    {
+      "text": "más.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-66-3.00000-69": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-66-3.25000-67": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-66-3.50000-69": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-66-3.75000-71": [
+    {
+      "text": "vo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-67-0.00000-72": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-67-1.50000-72": [
+    {
+      "text": "ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-67-2.00000-74": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-67-2.50000-72": [
+    {
+      "text": "fes",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-67-2.75000-74": [
+    {
+      "text": "tar",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-67-3.50000-72": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-68-0.00000-71": [
+    {
+      "text": "so",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-68-0.75000-67": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-68-1.50000-64": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-68-2.00000-69": [
+    {
+      "text": "ted:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-68-3.50000-69": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-68-3.75000-67": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-69-0.00000-65": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-69-1.50000-65": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-69-2.00000-67": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-69-2.50000-65": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-69-2.75000-67": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-69-3.50000-65": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-70-0.00000-67": [
+    {
+      "text": "zón.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-70-3.00000-69": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-70-3.50000-71": [
+    {
+      "text": "no",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-71-0.00000-72": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-71-1.50000-72": [
+    {
+      "text": "tros",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-71-2.00000-74": [
+    {
+      "text": "so",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-71-2.50000-72": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-71-2.75000-74": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-71-3.50000-72": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-72-0.00000-76": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-72-0.75000-79": [
+    {
+      "text": "llo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-72-3.50000-77": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-72-3.75000-76": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-73-0.00000-74": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-73-1.50000-74": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-0-73-2.00000-76": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-73-2.50000-74": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-73-2.75000-76": [
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-73-3.50000-74": [
+    {
+      "text": "lec",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-74-0.00000-72": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-74-2.00000-71": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-75-0.00000-71": [
+    {
+      "text": "dre,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-76-2.00000-71": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-77-0.00000-71": [
+    {
+      "text": "dre;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-79-0.00000-76": [
+    {
+      "text": "¡Nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-79-0.50000-76": [
+    {
+      "text": "tro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-79-1.00000-76": [
+    {
+      "text": "tiem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-79-1.75000-76": [
+    {
+      "text": "po",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-79-2.00000-76": [
+    {
+      "text": "ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-79-2.25000-74": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-79-2.50000-74": [
+    {
+      "text": "go!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-79-3.50000-72": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-79-3.75000-74": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-80-0.00000-72": [
+    {
+      "text": "cie",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-80-0.50000-72": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-80-1.00000-72": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-80-1.75000-72": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-80-2.00000-72": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-80-2.25000-71": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-80-2.50000-71": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-81-0.00000-68": [
+    {
+      "text": "¡Has",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-81-1.50000-67": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-81-1.75000-68": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-81-2.00000-69": [
+    {
+      "text": "úl",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-81-3.50000-69": [
+    {
+      "text": "ti",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-81-3.75000-67": [
+    {
+      "text": "mo",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-82-0.00000-66": [
+    {
+      "text": "lien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-82-2.00000-67": [
+    {
+      "text": "to!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-83-0.00000-76": [
+    {
+      "text": "¡Son",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-83-0.50000-76": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-83-1.00000-76": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-83-1.75000-76": [
+    {
+      "text": "bras",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-83-2.00000-76": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-83-2.25000-74": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-83-2.50000-74": [
+    {
+      "text": "da!",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-83-3.50000-72": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-83-3.75000-74": [
+    {
+      "text": "Un",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-84-0.00000-72": [
+    {
+      "text": "gi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-84-0.50000-72": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-84-1.00000-72": [
+    {
+      "text": "San",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-84-1.75000-72": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-84-2.00000-72": [
+    {
+      "text": "del",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-84-2.25000-71": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-84-2.50000-71": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-85-0.00000-69": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-85-1.00000-66": [
+    {
+      "text": "ra",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-0-85-1.50000-67": [
+    {
+      "text": "can",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-85-2.00000-64": [
+    {
+      "text": "zar",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-85-3.50000-64": [
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-85-3.75000-67": [
+    {
+      "text": "fi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-86-0.00000-66": [
+    {
+      "text": "nal",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-86-2.50000-64": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-86-2.75000-66": [
+    {
+      "text": "tra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-86-3.00000-67": [
+    {
+      "text": "Re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-86-3.50000-66": [
+    {
+      "text": "den",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-87-0.00000-64": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-88-0.00000-64": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-88-0.25000-64": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-88-1.00000-66": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-88-1.25000-66": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-88-2.00000-67": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-88-2.25000-67": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-88-3.00000-72": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-88-3.50000-72": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-89-0.00000-71": [
+    {
+      "text": "bad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-89-3.75000-71": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-90-0.00000-71": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-90-0.75000-71": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-90-1.00000-71": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-90-1.75000-71": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-90-2.00000-71": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-91-0.00000-71": [
+    {
+      "text": "En",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-91-3.50000-71": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-0-91-3.75000-71": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-92-0.00000-71": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-0-92-1.00000-71": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-0-93-0.00000-79": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-0-94-0.00000-76": [
+    {
+      "text": "són.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-1-0.00000-59": [
+    {
+      "text": "¡El",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-1-3.00000-60": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-1-3.50000-63": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-2-0.00000-64": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-2-1.00000-60": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-2-3.00000-64": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-3-0.00000-66": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-3-3.00000-71": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-3-3.50000-69": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-4-0.00000-67": [
+    {
+      "text": "vió!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-21-2.00000-59": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-22-2.00000-60": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-23-2.00000-59": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-25-0.00000-59": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-25-1.50000-60": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-25-2.00000-59": [
+    {
+      "text": "char",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-26-0.00000-59": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-26-1.50000-63": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-26-2.00000-64": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-27-0.00000-64": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-27-1.50000-64": [
+    {
+      "text": "pe",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-27-2.00000-64": [
+    {
+      "text": "lead",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-28-0.00000-67": [
+    {
+      "text": "sin",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-28-1.50000-66": [
+    {
+      "text": "te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-28-2.00000-67": [
+    {
+      "text": "mor;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-28-2.50000-67": [
+    {
+      "text": "Por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-28-3.00000-67": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-28-3.75000-67": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-1-29-0.00000-69": [
+    {
+      "text": "mun",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-29-1.00000-64": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-29-2.50000-66": [
+    {
+      "text": "sa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-29-3.00000-69": [
+    {
+      "text": "lió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-29-3.75000-66": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-30-0.00000-67": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-30-2.50000-67": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-30-3.00000-66": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-30-3.75000-64": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-1-31-0.00000-63": [
+    {
+      "text": "hom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-31-1.00000-63": [
+    {
+      "text": "bre:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-31-3.50000-63": [
+    {
+      "text": "Te",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-32-0.00000-63": [
+    {
+      "text": "med",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-32-2.00000-66": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-33-0.00000-64": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-33-2.50000-59": [
+    {
+      "text": "Por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-33-3.00000-59": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-33-3.75000-59": [
+    {
+      "text": "pro",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-34-0.00000-64": [
+    {
+      "text": "me",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-35-0.00000-63": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-35-2.50000-59": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-35-3.00000-59": [
+    {
+      "text": "nues",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-35-3.75000-59": [
+    {
+      "text": "tro",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-36-0.00000-66": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-37-2.50000-67": [
+    {
+      "text": "Mul",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-37-3.00000-69": [
+    {
+      "text": "ti",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-37-3.75000-67": [
+    {
+      "text": "pli",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-38-0.00000-64": [
+    {
+      "text": "car",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-38-2.50000-69": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-38-3.00000-67": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-38-3.50000-66": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-39-0.00000-62": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-39-1.00000-59": [
+    {
+      "text": "sia,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-39-2.50000-62": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-39-3.00000-62": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-39-3.50000-62": [
+    {
+      "text": "pro",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-40-0.00000-59": [
+    {
+      "text": "me",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-40-1.00000-59": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-40-3.00000-59": [
+    {
+      "text": "se",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-41-0.00000-63": [
+    {
+      "text": "cum",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-41-2.00000-63": [
+    {
+      "text": "ple",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-42-0.00000-64": [
+    {
+      "text": "hoy.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-43-0.00000-64": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-43-0.25000-64": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-43-1.00000-66": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-43-1.25000-66": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-43-2.00000-67": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-43-2.25000-67": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-43-3.00000-72": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-43-3.50000-72": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-44-0.00000-67": [
+    {
+      "text": "ciad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-45-0.00000-69": [
+    {
+      "text": "si",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-45-1.50000-67": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-45-1.75000-66": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-45-2.00000-64": [
+    {
+      "text": "ciad,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-45-3.50000-66": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-46-0.00000-64": [
+    {
+      "text": "dá",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-46-2.00000-66": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-46-3.00000-67": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-47-0.00000-71": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-47-1.50000-69": [
+    {
+      "text": "Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-47-2.00000-67": [
+    {
+      "text": "dá",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-47-3.50000-67": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-47-3.75000-66": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-48-0.00000-64": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-49-0.00000-69": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-49-2.00000-66": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-49-3.00000-69": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-50-0.00000-67": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-50-1.50000-66": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-50-2.00000-64": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-50-3.50000-66": [
+    {
+      "text": "Ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-50-3.75000-67": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-51-0.00000-64": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-51-1.00000-64": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-51-2.00000-64": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-51-2.50000-66": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-51-2.75000-64": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-51-3.25000-64": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-52-0.00000-66": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-52-3.00000-66": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-52-3.33333-66": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-52-3.66667-68": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-53-0.00000-69": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-53-1.00000-69": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-53-2.00000-69": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-53-2.50000-69": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-53-2.75000-69": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-53-3.25000-69": [
+    {
+      "text": "ña",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-54-0.00000-71": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-54-2.50000-67": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-54-2.75000-67": [
+    {
+      "text": "ser",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-54-3.00000-67": [
+    {
+      "text": "vir",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-54-3.50000-67": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-55-0.00000-64": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-55-3.00000-67": [
+    {
+      "text": "Su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-55-3.50000-67": [
+    {
+      "text": "la",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-56-0.00000-76": [
+    {
+      "text": "bor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-56-0.50000-74": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-56-0.75000-72": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-56-1.00000-71": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-56-2.00000-69": [
+    {
+      "text": "sia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-56-3.50000-65": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-56-3.75000-67": [
+    {
+      "text": "lo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-57-0.00000-74": [
+    {
+      "text": "a",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-57-1.00000-74": [
+    {
+      "text": "ble",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-57-3.00000-64": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-57-3.50000-65": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-58-0.00000-74": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-58-0.50000-72": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-58-0.75000-71": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-58-1.00000-69": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-58-2.00000-67": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-58-3.50000-64": [
+    {
+      "text": "ad",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-58-3.75000-65": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-59-0.00000-72": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-59-1.00000-72": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-59-3.00000-64": [
+    {
+      "text": "La",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-59-3.50000-65": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-60-0.00000-72": [
+    {
+      "text": "sión",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-60-0.50000-71": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-60-0.75000-69": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-60-1.00000-67": [
+    {
+      "text": "fuer",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-60-2.00000-65": [
+    {
+      "text": "zo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-60-3.50000-60": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-60-3.75000-62": [
+    {
+      "text": "los",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-61-0.00000-60": [
+    {
+      "text": "fru",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-61-1.50000-60": [
+    {
+      "text": "tos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-61-1.75000-60": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-61-2.00000-60": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-61-3.00000-65": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-62-0.00000-64": [
+    {
+      "text": "paz.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-63-0.00000-67": [
+    {
+      "text": "Siem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-63-0.50000-67": [
+    {
+      "text": "pre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-63-1.25000-67": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-63-1.50000-67": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-63-2.00000-67": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-63-2.50000-67": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-63-3.00000-69": [
+    {
+      "text": "zón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-63-3.50000-67": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-64-0.00000-67": [
+    {
+      "text": "cir",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-64-0.75000-64": [
+    {
+      "text": "le",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-64-1.50000-64": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "us",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-64-2.00000-62": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-64-2.50000-64": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-64-3.00000-65": [
+    {
+      "text": "mu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-64-3.50000-64": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-65-0.00000-62": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-65-2.00000-62": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-65-2.25000-60": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-65-2.50000-59": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-65-2.75000-60": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-65-3.00000-59": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-65-3.25000-60": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-65-3.50000-62": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-65-3.75000-60": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-66-0.00000-64": [
+    {
+      "text": "más.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-67-0.00000-67": [
+    {
+      "text": "Siem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-67-0.50000-67": [
+    {
+      "text": "pre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-67-1.25000-67": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-67-1.50000-67": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-67-2.00000-67": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-67-2.50000-67": [
+    {
+      "text": "vo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-67-3.00000-69": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-67-3.50000-67": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-68-0.00000-67": [
+    {
+      "text": "cir",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-68-0.75000-64": [
+    {
+      "text": "lo,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-68-1.50000-64": [
+    {
+      "text": "ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-68-2.00000-62": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-68-2.50000-64": [
+    {
+      "text": "fes",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-68-3.00000-65": [
+    {
+      "text": "tar",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-68-3.50000-64": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-69-0.00000-62": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-69-2.00000-62": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-69-2.25000-60": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-69-2.50000-59": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-69-2.75000-60": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-69-3.00000-59": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-69-3.25000-60": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-69-3.50000-62": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-69-3.75000-60": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-70-0.00000-64": [
+    {
+      "text": "zón.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-70-3.00000-64": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-70-3.50000-66": [
+    {
+      "text": "no",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-71-0.00000-67": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-71-1.50000-67": [
+    {
+      "text": "tros",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-71-2.00000-67": [
+    {
+      "text": "so",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-71-2.50000-69": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-71-2.75000-67": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-71-3.50000-67": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-72-0.00000-71": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-72-0.75000-71": [
+    {
+      "text": "llo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-72-3.50000-69": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-72-3.75000-69": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-1-73-0.00000-65": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-73-1.50000-65": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-1-73-2.00000-65": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-73-2.50000-65": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-73-2.75000-65": [
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-73-3.50000-65": [
+    {
+      "text": "lec",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-74-0.00000-64": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-74-2.00000-66": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-75-0.00000-67": [
+    {
+      "text": "dre,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-76-2.00000-66": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-77-0.00000-66": [
+    {
+      "text": "dre;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-79-0.00000-67": [
+    {
+      "text": "¡La",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-79-2.00000-67": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-80-0.00000-64": [
+    {
+      "text": "del",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-80-2.00000-64": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-81-0.00000-65": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-81-2.00000-64": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-82-0.00000-62": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-82-2.00000-64": [
+    {
+      "text": "íd!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-83-0.00000-67": [
+    {
+      "text": "O",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-83-2.00000-67": [
+    {
+      "text": "íd",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-84-0.00000-64": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-84-2.00000-64": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-85-0.00000-62": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-85-2.00000-60": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-86-0.00000-63": [
+    {
+      "text": "Re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-86-2.00000-63": [
+    {
+      "text": "den",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-87-0.00000-59": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-88-0.00000-64": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-88-0.25000-64": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-88-1.00000-66": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-88-1.25000-66": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-88-2.00000-67": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-88-2.25000-67": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-88-3.00000-72": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-88-3.50000-72": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-89-0.00000-67": [
+    {
+      "text": "bad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-89-3.75000-71": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-90-0.00000-67": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-90-0.75000-71": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-90-1.00000-67": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-90-1.75000-71": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-90-2.00000-67": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-91-0.00000-66": [
+    {
+      "text": "En",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-91-3.50000-66": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-1-91-3.75000-66": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-92-0.00000-67": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-1-92-1.00000-67": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-1-93-0.00000-67": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-1-94-0.00000-67": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-1-0.00000-55": [
+    {
+      "text": "¡Ved!",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-1-1.00000-55": [
+    {
+      "text": "¡Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-1-2.00000-55": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-1-3.00000-55": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-2-0.00000-60": [
+    {
+      "text": "Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-2-1.00000-60": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-2-2.00000-60": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-2-3.00000-60": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-3-0.00000-59": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-3-1.00000-59": [
+    {
+      "text": "Je",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-3-2.00000-63": [
+    {
+      "text": "sús",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-3-3.00000-63": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-4-0.00000-64": [
+    {
+      "text": "vió!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-5-0.00000-52": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-5-0.75000-54": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-5-1.00000-52": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-5-1.75000-54": [
+    {
+      "text": "man",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-5-2.00000-52": [
+    {
+      "text": "da",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-5-2.75000-54": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-2-5-3.00000-52": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-5-3.50000-54": [
+    {
+      "text": "Ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-6-0.00000-59": [
+    {
+      "text": "es",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-6-1.00000-57": [
+    {
+      "text": "tro,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-6-3.00000-59": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-6-3.50000-54": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-7-0.00000-52": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-7-0.75000-54": [
+    {
+      "text": "ña",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-7-1.00000-52": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-7-1.75000-54": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-7-2.00000-52": [
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-7-2.75000-54": [
+    {
+      "text": "van",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-7-3.00000-52": [
+    {
+      "text": "ge",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-7-3.50000-54": [
+    {
+      "text": "lio",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-8-0.00000-51": [
+    {
+      "text": "ter",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-8-1.00000-52": [
+    {
+      "text": "no;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-8-3.00000-52": [
+    {
+      "text": "Pre",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-8-3.50000-54": [
+    {
+      "text": "go",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-9-0.00000-59": [
+    {
+      "text": "nan",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-9-0.50000-57": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-2-9-0.75000-55": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-9-1.00000-54": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-9-1.75000-55": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-9-2.00000-54": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-9-2.75000-55": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-2-9-3.00000-54": [
+    {
+      "text": "mun",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-9-3.50000-55": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-10-0.00000-59": [
+    {
+      "text": "te",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-10-1.00000-59": [
+    {
+      "text": "ro,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-10-3.00000-59": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-10-3.50000-59": [
+    {
+      "text": "las",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-11-0.00000-60": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-11-1.00000-57": [
+    {
+      "text": "mas",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-11-2.50000-57": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-11-3.00000-62": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-11-3.50000-57": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-12-0.00000-59": [
+    {
+      "text": "nue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-12-0.50000-59": [
+    {
+      "text": "va",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-12-0.75000-60": [
+    {
+      "text": "dis",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-12-1.00000-59": [
+    {
+      "text": "pen",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-12-1.50000-60": [
+    {
+      "text": "sa",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-12-2.00000-59": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-12-2.50000-60": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-12-3.00000-59": [
+    {
+      "text": "dar",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-12-3.50000-57": [
+    {
+      "text": "nos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-13-0.00000-55": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-13-1.00000-52": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-13-2.50000-52": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-13-3.00000-55": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-13-3.50000-51": [
+    {
+      "text": "lec",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-14-0.00000-52": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-21-2.00000-55": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-22-1.00000-55": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-22-1.75000-55": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-22-2.00000-57": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-23-1.00000-57": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-23-2.00000-55": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-25-0.00000-54": [
+    {
+      "text": "Va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-25-0.50000-54": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-25-1.00000-54": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-25-1.50000-54": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-25-2.00000-54": [
+    {
+      "text": "char",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-26-0.00000-55": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-26-0.50000-55": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-26-1.00000-55": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-26-1.50000-55": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-26-2.00000-55": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-27-0.00000-60": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-27-0.50000-59": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-27-1.00000-60": [
+    {
+      "text": "mad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-27-1.50000-59": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-27-2.00000-60": [
+    {
+      "text": "pres",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-27-3.00000-60": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-28-0.00000-59": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-28-0.50000-59": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-28-1.00000-59": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-28-1.50000-59": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-28-2.00000-59": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-29-0.00000-60": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-29-0.50000-57": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-29-1.50000-57": [
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-29-1.75000-60": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-29-2.00000-64": [
+    {
+      "text": "dad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-30-0.00000-62": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-30-0.50000-62": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-30-0.75000-64": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-30-1.00000-62": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-30-1.50000-64": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-30-2.00000-62": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-31-0.00000-54": [
+    {
+      "text": "siem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-31-0.50000-54": [
+    {
+      "text": "pre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-31-0.75000-55": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-31-1.00000-54": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-31-1.50000-55": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-2-31-2.00000-59": [
+    {
+      "text": "hom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-31-3.00000-59": [
+    {
+      "text": "bre:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-32-2.00000-59": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-33-0.00000-55": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-34-0.00000-55": [
+    {
+      "text": "Con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-34-0.50000-55": [
+    {
+      "text": "for",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-34-0.75000-55": [
+    {
+      "text": "me",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-34-1.00000-55": [
+    {
+      "text": "que",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-34-1.50000-55": [
+    {
+      "text": "lla",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-34-1.75000-57": [
+    {
+      "text": "pro",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-34-2.00000-59": [
+    {
+      "text": "me",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-34-3.00000-59": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-35-0.00000-54": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-35-0.50000-54": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-35-0.75000-54": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-35-1.00000-54": [
+    {
+      "text": "ciem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-35-1.50000-55": [
+    {
+      "text": "bre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-35-1.75000-57": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-35-2.00000-54": [
+    {
+      "text": "dió,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-36-0.00000-57": [
+    {
+      "text": "Ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-36-0.50000-57": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-36-0.75000-57": [
+    {
+      "text": "ra",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-36-1.00000-57": [
+    {
+      "text": "zón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-36-1.50000-57": [
+    {
+      "text": "ni",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-36-1.75000-59": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-36-2.00000-60": [
+    {
+      "text": "men",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-36-3.00000-60": [
+    {
+      "text": "te",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-37-0.00000-55": [
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-37-0.50000-55": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-37-0.75000-55": [
+    {
+      "text": "gi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-37-1.00000-55": [
+    {
+      "text": "nar",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-37-1.50000-55": [
+    {
+      "text": "lo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-37-1.75000-57": [
+    {
+      "text": "po",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-37-2.00000-59": [
+    {
+      "text": "dran,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-38-0.00000-60": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-38-0.50000-57": [
+    {
+      "text": "mul",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-38-1.50000-60": [
+    {
+      "text": "ti",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-38-1.75000-62": [
+    {
+      "text": "pli",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-38-2.00000-64": [
+    {
+      "text": "car",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-38-3.50000-60": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-38-3.75000-60": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-39-0.00000-59": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-39-0.50000-55": [
+    {
+      "text": "sia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-39-1.50000-59": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-39-1.75000-57": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-39-2.00000-55": [
+    {
+      "text": "dío,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-40-0.00000-54": [
+    {
+      "text": "Es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-40-0.50000-54": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-40-0.75000-54": [
+    {
+      "text": "pro",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-40-1.00000-54": [
+    {
+      "text": "me",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-40-1.50000-54": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-2-40-1.75000-55": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-40-2.00000-57": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-40-3.50000-57": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-41-0.00000-59": [
+    {
+      "text": "cun...",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-41-3.25000-59": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-41-3.50000-62": [
+    {
+      "text": "cum",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-41-3.75000-60": [
+    {
+      "text": "ple",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-42-0.00000-59": [
+    {
+      "text": "hoy.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-43-0.00000-52": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-43-0.25000-52": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-43-1.00000-54": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-43-1.25000-54": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-43-2.00000-55": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-43-2.25000-55": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-43-3.00000-60": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-43-3.50000-60": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-44-0.00000-64": [
+    {
+      "text": "ciad,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-44-0.75000-64": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-44-1.00000-62": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-44-1.75000-62": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-44-2.00000-60": [
+    {
+      "text": "tie",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-44-2.75000-60": [
+    {
+      "text": "rra",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-44-3.00000-59": [
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-44-3.75000-59": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-45-0.00000-57": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-45-0.75000-57": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-45-1.00000-55": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-2-45-1.75000-55": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-45-2.00000-55": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-45-3.50000-59": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-46-0.00000-60": [
+    {
+      "text": "vió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-46-1.50000-59": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-46-2.00000-57": [
+    {
+      "text": "dar",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-46-3.50000-62": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-46-3.75000-60": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-47-0.00000-59": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-47-2.00000-60": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-47-3.00000-62": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-48-0.00000-59": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-48-1.50000-59": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-48-1.75000-60": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-48-2.00000-62": [
+    {
+      "text": "dá",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-48-3.50000-62": [
+    {
+      "text": "siem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-48-3.75000-63": [
+    {
+      "text": "pre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-49-0.00000-64": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-49-2.00000-57": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-49-3.00000-62": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-50-0.00000-62": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-50-1.50000-60": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-50-2.00000-59": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-50-3.50000-59": [
+    {
+      "text": "Ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-50-3.75000-57": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-51-0.00000-55": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-51-1.00000-55": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-51-2.00000-55": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-51-2.50000-55": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-51-2.75000-55": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-51-3.25000-55": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-52-0.00000-57": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-52-3.00000-57": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-52-3.33333-57": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-52-3.66667-59": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-53-0.00000-60": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-53-1.00000-60": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-53-2.00000-60": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-53-2.50000-60": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-53-2.75000-60": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-53-3.25000-60": [
+    {
+      "text": "ña",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-54-0.00000-62": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-54-2.50000-62": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-54-2.75000-62": [
+    {
+      "text": "ser",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-54-3.00000-62": [
+    {
+      "text": "vir",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-54-3.50000-62": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-55-0.00000-55": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-55-3.00000-55": [
+    {
+      "text": "Su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-55-3.50000-55": [
+    {
+      "text": "la",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-56-0.00000-60": [
+    {
+      "text": "bor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-56-0.50000-59": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-56-0.75000-57": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-56-1.00000-55": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-56-2.00000-53": [
+    {
+      "text": "sia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-56-3.50000-50": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-56-3.75000-52": [
+    {
+      "text": "lo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-57-0.00000-53": [
+    {
+      "text": "a",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-57-1.00000-53": [
+    {
+      "text": "ble",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-57-3.00000-52": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-57-3.50000-53": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-58-0.00000-59": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-58-0.50000-57": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-58-0.75000-55": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-58-1.00000-53": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-58-2.00000-52": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-58-3.50000-48": [
+    {
+      "text": "ad",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-58-3.75000-50": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-59-0.00000-52": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-59-1.00000-52": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-59-3.00000-52": [
+    {
+      "text": "La",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-59-3.50000-53": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-60-0.00000-57": [
+    {
+      "text": "sión",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-60-0.50000-55": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-60-0.75000-52": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-60-1.00000-52": [
+    {
+      "text": "fuer",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-60-2.00000-50": [
+    {
+      "text": "zo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-60-3.50000-50": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-60-3.75000-50": [
+    {
+      "text": "los",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-61-0.00000-57": [
+    {
+      "text": "fru",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-61-1.50000-57": [
+    {
+      "text": "tos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-61-1.75000-57": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-61-2.00000-57": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-61-3.00000-62": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-62-0.00000-64": [
+    {
+      "text": "paz.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-63-0.00000-60": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-63-0.25000-59": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-63-0.50000-60": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-63-0.75000-62": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-63-1.00000-64": [
+    {
+      "text": "zón,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-63-2.00000-64": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-63-3.00000-64": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-64-0.00000-62": [
+    {
+      "text": "cir",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-64-0.75000-59": [
+    {
+      "text": "le",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-64-1.50000-55": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "us",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-64-2.00000-57": [
+    {
+      "text": "ted",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-64-2.25000-59": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-64-2.50000-57": [
+    {
+      "text": "mu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-64-2.75000-55": [
+    {
+      "text": "cho",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-64-3.00000-57": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-65-0.00000-57": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-65-0.25000-59": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-65-0.50000-57": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-65-0.75000-55": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-65-1.00000-53": [
+    {
+      "text": "más,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-65-2.00000-53": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-65-3.00000-53": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-66-0.00000-60": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-66-0.50000-55": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-66-1.00000-60": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-66-1.50000-55": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-66-2.00000-60": [
+    {
+      "text": "más.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-67-0.00000-60": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-67-0.25000-59": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-67-0.50000-60": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-67-0.75000-62": [
+    {
+      "text": "vo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-67-1.00000-64": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-67-2.00000-64": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-67-3.00000-64": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-68-0.00000-62": [
+    {
+      "text": "cir",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-68-0.75000-59": [
+    {
+      "text": "lo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-68-1.50000-55": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-68-2.00000-57": [
+    {
+      "text": "sí",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-68-2.25000-59": [
+    {
+      "text": "ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-68-2.50000-57": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-68-2.75000-55": [
+    {
+      "text": "fes",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-68-3.00000-57": [
+    {
+      "text": "tar",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-69-0.00000-57": [
+    {
+      "text": "siem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-69-0.25000-59": [
+    {
+      "text": "pre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-69-0.50000-57": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-69-0.75000-55": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-69-1.00000-53": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-69-2.00000-53": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-69-3.00000-53": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-70-0.00000-60": [
+    {
+      "text": "zón.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-70-3.00000-60": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-70-3.50000-62": [
+    {
+      "text": "no",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-71-0.00000-64": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-71-1.50000-64": [
+    {
+      "text": "tros",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-71-2.00000-64": [
+    {
+      "text": "so",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-71-2.50000-64": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-71-2.75000-64": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-71-3.50000-64": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-72-0.00000-62": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-72-0.75000-62": [
+    {
+      "text": "llo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-72-3.50000-62": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-72-3.75000-60": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-2-73-0.00000-57": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-73-1.50000-57": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-2-73-2.00000-59": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-73-2.50000-59": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-73-2.75000-59": [
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-73-3.50000-59": [
+    {
+      "text": "lec",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-74-0.00000-55": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-74-2.00000-63": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-75-0.00000-64": [
+    {
+      "text": "dre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-76-2.00000-63": [
+    {
+      "text": "Pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-77-0.00000-63": [
+    {
+      "text": "dre;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-79-0.00000-59": [
+    {
+      "text": "¡La",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-79-2.00000-59": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-80-0.00000-60": [
+    {
+      "text": "del",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-80-2.00000-60": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-81-0.00000-62": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-81-2.00000-60": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-82-0.00000-57": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-82-2.00000-59": [
+    {
+      "text": "íd!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-83-0.00000-59": [
+    {
+      "text": "O",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-83-2.00000-59": [
+    {
+      "text": "íd",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-84-0.00000-60": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-84-2.00000-60": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-85-0.00000-57": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-85-2.00000-55": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-86-0.00000-59": [
+    {
+      "text": "Re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-86-2.00000-57": [
+    {
+      "text": "den",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-87-0.00000-55": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-88-0.00000-52": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-88-0.25000-52": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-88-1.00000-54": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-88-1.25000-54": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-88-2.00000-55": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-88-2.25000-55": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-88-3.00000-60": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-88-3.50000-60": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-89-0.00000-64": [
+    {
+      "text": "bad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-89-3.75000-59": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-90-0.00000-64": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-90-0.75000-59": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-90-1.00000-64": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-90-1.75000-59": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-90-2.00000-64": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-91-0.00000-63": [
+    {
+      "text": "En",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-91-3.50000-60": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-2-91-3.75000-63": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-92-0.00000-59": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-2-92-1.00000-59": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-93-0.00000-64": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-94-0.00000-59": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-2-94-3.75000-54": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-2-95-0.00000-59": [
+    {
+      "text": "quín.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-1-0.00000-52": [
+    {
+      "text": "¡Gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-2-0.00000-48": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-3-0.00000-47": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-4-0.00000-52": [
+    {
+      "text": "tol!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-5-0.00000-52": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-5-0.75000-54": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-5-1.00000-52": [
+    {
+      "text": "ha",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-5-1.75000-54": [
+    {
+      "text": "man",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-5-2.00000-52": [
+    {
+      "text": "da",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-5-2.75000-54": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "un",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-3-5-3.00000-52": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-5-3.50000-54": [
+    {
+      "text": "Ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-6-0.00000-59": [
+    {
+      "text": "es",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-6-1.00000-57": [
+    {
+      "text": "tro,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-6-3.00000-59": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-6-3.50000-54": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-7-0.00000-52": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-7-0.75000-54": [
+    {
+      "text": "ña",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-7-1.00000-52": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-7-1.75000-54": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-7-2.00000-52": [
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-7-2.75000-54": [
+    {
+      "text": "van",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-7-3.00000-52": [
+    {
+      "text": "ge",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-7-3.50000-54": [
+    {
+      "text": "lio",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-8-0.00000-51": [
+    {
+      "text": "ter",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-8-1.00000-52": [
+    {
+      "text": "no;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-8-3.00000-52": [
+    {
+      "text": "Pre",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-8-3.50000-54": [
+    {
+      "text": "go",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-9-0.00000-59": [
+    {
+      "text": "nan",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-9-0.50000-57": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-3-9-0.75000-55": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-9-1.00000-54": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-9-1.75000-55": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-9-2.00000-54": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-9-2.75000-55": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-3-9-3.00000-54": [
+    {
+      "text": "mun",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-9-3.50000-55": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-10-0.00000-59": [
+    {
+      "text": "te",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-10-1.00000-59": [
+    {
+      "text": "ro,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-10-3.00000-59": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-10-3.50000-59": [
+    {
+      "text": "las",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-11-0.00000-60": [
+    {
+      "text": "al",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-11-1.00000-57": [
+    {
+      "text": "mas",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-11-2.50000-57": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-11-3.00000-62": [
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-11-3.50000-57": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-12-0.00000-59": [
+    {
+      "text": "nue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-12-0.50000-59": [
+    {
+      "text": "va",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-12-0.75000-60": [
+    {
+      "text": "dis",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-12-1.00000-59": [
+    {
+      "text": "pen",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-12-1.50000-60": [
+    {
+      "text": "sa",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-12-2.00000-59": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-12-2.50000-60": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-12-3.00000-59": [
+    {
+      "text": "dar",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-12-3.50000-57": [
+    {
+      "text": "nos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-13-0.00000-55": [
+    {
+      "text": "vi",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-13-1.00000-52": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-13-2.50000-52": [
+    {
+      "text": "por",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-13-3.00000-55": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-13-3.50000-51": [
+    {
+      "text": "lec",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-14-0.00000-52": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-21-2.00000-52": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-25-0.00000-47": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-25-1.50000-42": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-25-1.75000-45": [
+    {
+      "text": "lu",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-25-2.00000-47": [
+    {
+      "text": "char",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-26-0.00000-52": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-26-1.50000-47": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-26-1.75000-51": [
+    {
+      "text": "va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-26-2.00000-52": [
+    {
+      "text": "lor,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-27-0.00000-45": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-27-1.50000-52": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-27-1.75000-47": [
+    {
+      "text": "pe",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-27-2.00000-45": [
+    {
+      "text": "lear",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-28-0.00000-52": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-28-1.50000-47": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-28-1.75000-51": [
+    {
+      "text": "vo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-28-2.00000-52": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-29-0.00000-45": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-29-0.50000-45": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-29-1.50000-45": [
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-29-1.75000-47": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-29-2.00000-52": [
+    {
+      "text": "dad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-30-0.00000-55": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-30-0.50000-55": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-30-0.75000-57": [
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-30-1.00000-55": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-30-1.50000-57": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-30-2.00000-55": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-31-0.00000-47": [
+    {
+      "text": "siem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-31-0.50000-47": [
+    {
+      "text": "pre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-31-0.75000-48": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-31-1.00000-47": [
+    {
+      "text": "cien",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-31-1.50000-48": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "al",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-3-31-2.00000-47": [
+    {
+      "text": "hom",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-31-3.00000-47": [
+    {
+      "text": "bre:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-32-3.00000-47": [
+    {
+      "text": "A",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-33-0.00000-52": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-34-0.00000-52": [
+    {
+      "text": "Con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-34-1.00000-52": [
+    {
+      "text": "for",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-34-2.00000-52": [
+    {
+      "text": "me",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-34-3.00000-52": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-35-0.00000-47": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-35-1.00000-47": [
+    {
+      "text": "pro",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-35-2.00000-47": [
+    {
+      "text": "me",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-35-3.00000-47": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-36-0.00000-54": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-3-36-1.00000-54": [
+    {
+      "text": "Se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-36-2.00000-54": [
+    {
+      "text": "ñor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-36-3.00000-54": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-37-0.00000-52": [
+    {
+      "text": "Él",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-37-1.00000-52": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-37-2.00000-52": [
+    {
+      "text": "die",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-37-3.00000-52": [
+    {
+      "text": "ra,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-38-0.00000-45": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-38-1.00000-52": [
+    {
+      "text": "mul",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-38-2.00000-57": [
+    {
+      "text": "ti",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-38-3.00000-52": [
+    {
+      "text": "pli",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-39-0.00000-43": [
+    {
+      "text": "car",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-39-1.00000-47": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-39-2.00000-55": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-39-3.00000-50": [
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-40-0.00000-47": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-40-1.00000-47": [
+    {
+      "text": "sia,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-40-2.00000-47": [
+    {
+      "text": "Ve",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-40-3.00000-47": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-41-0.00000-47": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-41-1.00000-54": [
+    {
+      "text": "se",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-41-2.00000-59": [
+    {
+      "text": "cum",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-41-3.00000-47": [
+    {
+      "text": "ple",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-42-0.00000-52": [
+    {
+      "text": "hoy.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-43-0.00000-52": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-43-0.25000-52": [
+    {
+      "text": "do,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-43-1.00000-54": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-43-1.25000-54": [
+    {
+      "text": "do,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-43-2.00000-55": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-43-2.25000-55": [
+    {
+      "text": "do",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-43-3.00000-60": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-43-3.50000-60": [
+    {
+      "text": "nun",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-44-0.00000-59": [
+    {
+      "text": "ciad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-44-2.50000-57": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "hay",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-3-44-2.75000-55": [
+    {
+      "text": "Va",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-44-3.00000-54": [
+    {
+      "text": "rón",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-44-3.50000-47": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-45-0.00000-52": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-46-0.00000-52": [
+    {
+      "text": "Cris",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-46-0.75000-52": [
+    {
+      "text": "to",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-46-1.00000-50": [
+    {
+      "text": "lo",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-46-1.75000-50": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-46-2.00000-48": [
+    {
+      "text": "vió",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-46-2.75000-48": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-46-3.00000-47": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-46-3.75000-47": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-47-0.00000-55": [
+    {
+      "text": "ción;",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-47-2.00000-43": [
+    {
+      "text": "Da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-47-2.50000-47": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-47-3.00000-43": [
+    {
+      "text": "sal",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-47-3.50000-47": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-48-0.00000-52": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-48-2.00000-54": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-48-3.00000-55": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-49-0.00000-57": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-49-2.00000-50": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-49-3.00000-50": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-50-0.00000-55": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-50-1.50000-55": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-50-2.00000-52": [
+    {
+      "text": "Dios",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-50-3.50000-52": [
+    {
+      "text": "Ya",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-50-3.75000-50": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-51-0.00000-48": [
+    {
+      "text": "pue",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-51-1.00000-48": [
+    {
+      "text": "blo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-51-2.00000-48": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-51-2.50000-48": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-51-2.75000-48": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-51-3.25000-48": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-52-0.00000-50": [
+    {
+      "text": "ción",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-52-3.00000-50": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-52-3.33333-50": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-52-3.66667-52": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-53-0.00000-53": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-53-1.00000-53": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-53-2.00000-53": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-53-2.50000-53": [
+    {
+      "text": "en",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-53-2.75000-53": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-53-3.25000-53": [
+    {
+      "text": "ña",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-54-0.00000-55": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-54-2.50000-55": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-54-2.75000-55": [
+    {
+      "text": "ser",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-54-3.00000-55": [
+    {
+      "text": "vir",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-54-3.50000-55": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-55-0.00000-48": [
+    {
+      "text": "Dios.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-55-3.00000-55": [
+    {
+      "text": "Su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-55-3.50000-55": [
+    {
+      "text": "la",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-56-0.00000-60": [
+    {
+      "text": "bor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-56-0.50000-59": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-56-0.75000-57": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "i",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-56-1.00000-55": [
+    {
+      "text": "gle",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-56-2.00000-53": [
+    {
+      "text": "sia",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-56-3.50000-50": [
+    {
+      "text": "es",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-56-3.75000-52": [
+    {
+      "text": "lo",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-57-0.00000-53": [
+    {
+      "text": "a",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-57-1.00000-53": [
+    {
+      "text": "ble",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-57-3.00000-52": [
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-57-3.50000-53": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-58-0.00000-59": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-58-0.50000-57": [
+    {
+      "text": "so",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-58-0.75000-55": [
+    {
+      "text": "e",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-58-1.00000-53": [
+    {
+      "text": "jem",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-58-2.00000-52": [
+    {
+      "text": "plo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-58-3.50000-48": [
+    {
+      "text": "ad",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-58-3.75000-50": [
+    {
+      "text": "mi",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-59-0.00000-52": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-59-1.00000-52": [
+    {
+      "text": "ble,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-59-3.00000-52": [
+    {
+      "text": "La",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-59-3.50000-53": [
+    {
+      "text": "pa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-60-0.00000-57": [
+    {
+      "text": "sión",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-60-0.50000-55": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-60-0.75000-53": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "es",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-60-1.00000-52": [
+    {
+      "text": "fuer",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-60-2.00000-50": [
+    {
+      "text": "zo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-60-3.50000-50": [
+    {
+      "text": "da",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-60-3.75000-50": [
+    {
+      "text": "los",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-61-0.00000-45": [
+    {
+      "text": "fru",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-61-1.50000-45": [
+    {
+      "text": "tos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-61-1.75000-45": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-61-2.00000-50": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-61-3.00000-55": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-62-0.00000-48": [
+    {
+      "text": "paz.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-62-3.00000-48": [
+    {
+      "text": "Con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-62-3.25000-47": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-62-3.50000-45": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-62-3.75000-43": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-63-0.00000-48": [
+    {
+      "text": "zón,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-63-1.50000-48": [
+    {
+      "text": "que",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-63-2.00000-48": [
+    {
+      "text": "re",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-63-2.50000-48": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-63-2.75000-48": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-63-3.50000-48": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-64-0.00000-43": [
+    {
+      "text": "cir",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-64-0.75000-43": [
+    {
+      "text": "le",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-64-1.50000-43": [
+    {
+      "text": "a",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-64-2.00000-45": [
+    {
+      "text": "ted:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-64-3.50000-45": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-64-3.75000-47": [
+    {
+      "text": "le",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-65-0.00000-50": [
+    {
+      "text": "ma",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-65-1.50000-50": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-65-2.00000-43": [
+    {
+      "text": "ca",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-65-2.50000-43": [
+    {
+      "text": "da",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-65-2.75000-43": [
+    {
+      "text": "dí",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-65-3.50000-43": [
+    {
+      "text": "a",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-66-0.00000-48": [
+    {
+      "text": "más.",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-66-3.00000-48": [
+    {
+      "text": "Y",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-66-3.25000-47": [
+    {
+      "text": "con",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-66-3.50000-45": [
+    {
+      "text": "de",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-66-3.75000-43": [
+    {
+      "text": "vo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-67-0.00000-48": [
+    {
+      "text": "ción,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-67-1.50000-48": [
+    {
+      "text": "ma",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-67-2.00000-48": [
+    {
+      "text": "ni",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-67-2.50000-48": [
+    {
+      "text": "fes",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-67-2.75000-48": [
+    {
+      "text": "tar",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-67-3.50000-48": [
+    {
+      "text": "que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-68-0.00000-43": [
+    {
+      "text": "so",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-68-0.75000-43": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-68-1.50000-43": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "Us",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-68-2.00000-45": [
+    {
+      "text": "ted:",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-68-3.50000-45": [
+    {
+      "text": "Le",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-68-3.75000-47": [
+    {
+      "text": "lle",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-69-0.00000-50": [
+    {
+      "text": "va",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-69-1.50000-50": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-69-2.00000-43": [
+    {
+      "text": "en",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-69-2.50000-43": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-69-2.75000-43": [
+    {
+      "text": "co",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-69-3.50000-43": [
+    {
+      "text": "ra",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-70-0.00000-48": [
+    {
+      "text": "zón.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-70-3.00000-48": [
+    {
+      "text": "Que",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-70-3.50000-43": [
+    {
+      "text": "no",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-71-0.00000-48": [
+    {
+      "text": "so",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-71-1.50000-48": [
+    {
+      "text": "tros",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-71-2.00000-48": [
+    {
+      "text": "so",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-71-2.50000-48": [
+    {
+      "text": "mos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-71-2.75000-48": [
+    {
+      "text": "hoy",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-71-3.50000-48": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-72-0.00000-55": [
+    {
+      "text": "se",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-72-0.75000-55": [
+    {
+      "text": "llo",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-72-3.50000-43": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-72-3.75000-43": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    },
+    {
+      "text": "her",
+      "syllabic": "begin",
+      "join": true
+    }
+  ],
+  "apostol-3-73-0.00000-50": [
+    {
+      "text": "mo",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-73-1.50000-50": [
+    {
+      "text": "sa",
+      "syllabic": "end",
+      "join": false
+    },
+    {
+      "text": "y",
+      "syllabic": "single",
+      "join": true
+    }
+  ],
+  "apostol-3-73-2.00000-43": [
+    {
+      "text": "san",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-73-2.50000-43": [
+    {
+      "text": "ta",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-73-2.75000-43": [
+    {
+      "text": "E",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-73-3.50000-43": [
+    {
+      "text": "lec",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-74-0.00000-48": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-75-0.00000-52": [
+    {
+      "text": "Siem",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-75-0.50000-52": [
+    {
+      "text": "pre",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-75-1.50000-52": [
+    {
+      "text": "sus",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-75-2.00000-54": [
+    {
+      "text": "sa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-75-2.50000-54": [
+    {
+      "text": "bios",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-75-3.50000-52": [
+    {
+      "text": "con",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-76-0.00000-55": [
+    {
+      "text": "se",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-76-0.50000-55": [
+    {
+      "text": "jos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-76-1.50000-55": [
+    {
+      "text": "nos",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-76-2.00000-57": [
+    {
+      "text": "di",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-76-2.50000-57": [
+    {
+      "text": "cen",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-76-3.50000-54": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-77-0.00000-59": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-77-1.00000-60": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-77-2.00000-59": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-77-3.00000-60": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-78-0.00000-59": [
+    {
+      "text": "id",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-79-0.00000-52": [
+    {
+      "text": "¡La",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-79-2.00000-52": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-80-0.00000-55": [
+    {
+      "text": "del",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-80-2.00000-55": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-81-0.00000-47": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-81-2.00000-48": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-82-0.00000-50": [
+    {
+      "text": "o",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-82-2.00000-52": [
+    {
+      "text": "íd!",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-83-0.00000-52": [
+    {
+      "text": "O",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-83-2.00000-52": [
+    {
+      "text": "íd",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-84-0.00000-55": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-84-2.00000-55": [
+    {
+      "text": "voz",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-85-0.00000-50": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-85-2.00000-48": [
+    {
+      "text": "la",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-86-0.00000-47": [
+    {
+      "text": "Re",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-86-2.00000-47": [
+    {
+      "text": "den",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-87-0.00000-52": [
+    {
+      "text": "ción.",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-88-0.00000-52": [
+    {
+      "text": "To",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-88-0.25000-52": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-88-1.00000-54": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-88-1.25000-54": [
+    {
+      "text": "dos,",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-88-2.00000-55": [
+    {
+      "text": "to",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-88-2.25000-55": [
+    {
+      "text": "dos",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-88-3.00000-60": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-88-3.50000-60": [
+    {
+      "text": "la",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-89-0.00000-59": [
+    {
+      "text": "bad",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-89-3.75000-59": [
+    {
+      "text": "el",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-90-0.00000-52": [
+    {
+      "text": "gran",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-90-0.75000-59": [
+    {
+      "text": "a",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-90-1.00000-52": [
+    {
+      "text": "mor",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-90-1.75000-59": [
+    {
+      "text": "de",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-90-2.00000-52": [
+    {
+      "text": "Dios,",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-91-0.00000-47": [
+    {
+      "text": "En",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-91-3.50000-45": [
+    {
+      "text": "su",
+      "syllabic": "single",
+      "join": false
+    }
+  ],
+  "apostol-3-91-3.75000-47": [
+    {
+      "text": "A",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-92-0.00000-52": [
+    {
+      "text": "pós",
+      "syllabic": "middle",
+      "join": false
+    }
+  ],
+  "apostol-3-92-1.00000-52": [
+    {
+      "text": "tol",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-93-0.00000-48": [
+    {
+      "text": "Naa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-94-0.00000-52": [
+    {
+      "text": "són",
+      "syllabic": "end",
+      "join": false
+    }
+  ],
+  "apostol-3-94-3.75000-47": [
+    {
+      "text": "Joa",
+      "syllabic": "begin",
+      "join": false
+    }
+  ],
+  "apostol-3-95-0.00000-52": [
+    {
+      "text": "quín.",
+      "syllabic": "end",
+      "join": false
+    }
+  ]
+}

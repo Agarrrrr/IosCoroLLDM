@@ -1,0 +1,1408 @@
+[
+  {
+    "name": "Mi Padre en la Fe - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\21\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\21\\reference.pdf",
+    "batch": 21,
+    "edits": [
+      {
+        "role": 2,
+        "bar": 1,
+        "onset": "1/2",
+        "before": "",
+        "after": "Del"
+      },
+      {
+        "role": 2,
+        "bar": 1,
+        "onset": "1",
+        "before": "",
+        "after": "A"
+      },
+      {
+        "role": 2,
+        "bar": 1,
+        "onset": "3/2",
+        "before": "",
+        "after": "pós"
+      },
+      {
+        "role": 2,
+        "bar": 1,
+        "onset": "2",
+        "before": "",
+        "after": "tol"
+      },
+      {
+        "role": 2,
+        "bar": 1,
+        "onset": "5/2",
+        "before": "",
+        "after": "de"
+      },
+      {
+        "role": 2,
+        "bar": 2,
+        "onset": "0",
+        "before": "",
+        "after": "Dios,"
+      },
+      {
+        "role": 2,
+        "bar": 9,
+        "onset": "1/2",
+        "before": "",
+        "after": "Y"
+      },
+      {
+        "role": 2,
+        "bar": 9,
+        "onset": "1",
+        "before": "",
+        "after": "no"
+      },
+      {
+        "role": 2,
+        "bar": 9,
+        "onset": "3/2",
+        "before": "",
+        "after": "pue"
+      },
+      {
+        "role": 2,
+        "bar": 9,
+        "onset": "2",
+        "before": "",
+        "after": "do"
+      },
+      {
+        "role": 2,
+        "bar": 9,
+        "onset": "5/2",
+        "before": "",
+        "after": "ca"
+      },
+      {
+        "role": 2,
+        "bar": 10,
+        "onset": "0",
+        "before": "",
+        "after": "llar,"
+      },
+      {
+        "role": 2,
+        "bar": 23,
+        "onset": "1/2",
+        "before": "",
+        "after": "Es"
+      },
+      {
+        "role": 2,
+        "bar": 23,
+        "onset": "1",
+        "before": "",
+        "after": "mi"
+      },
+      {
+        "role": 2,
+        "bar": 23,
+        "onset": "3/2",
+        "before": "",
+        "after": "Pa"
+      },
+      {
+        "role": 2,
+        "bar": 23,
+        "onset": "2",
+        "before": "",
+        "after": "dre_en"
+      },
+      {
+        "role": 2,
+        "bar": 23,
+        "onset": "5/2",
+        "before": "",
+        "after": "la"
+      },
+      {
+        "role": 2,
+        "bar": 24,
+        "onset": "0",
+        "before": "",
+        "after": "fe."
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "onset": "1/2",
+        "before": "",
+        "after": "Ten"
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "onset": "1",
+        "before": "",
+        "after": "go_un"
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "onset": "3/2",
+        "before": "",
+        "after": "Pa"
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "onset": "5/2",
+        "before": "",
+        "after": "dre_en"
+      },
+      {
+        "role": 2,
+        "bar": 25,
+        "onset": "11/4",
+        "before": "",
+        "after": "la"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "onset": "1/2",
+        "before": "",
+        "after": "Es"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "onset": "1",
+        "before": "",
+        "after": "mi"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "onset": "3/2",
+        "before": "",
+        "after": "Pa"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "onset": "2",
+        "before": "",
+        "after": "dre"
+      },
+      {
+        "role": 2,
+        "bar": 31,
+        "onset": "5/2",
+        "before": "",
+        "after": "Sa"
+      },
+      {
+        "role": 2,
+        "bar": 32,
+        "onset": "0",
+        "before": "",
+        "after": "muel."
+      },
+      {
+        "role": 3,
+        "bar": 1,
+        "onset": "1/2",
+        "before": "",
+        "after": "Del"
+      },
+      {
+        "role": 3,
+        "bar": 1,
+        "onset": "1",
+        "before": "",
+        "after": "A"
+      },
+      {
+        "role": 3,
+        "bar": 1,
+        "onset": "3/2",
+        "before": "",
+        "after": "pós"
+      },
+      {
+        "role": 3,
+        "bar": 1,
+        "onset": "2",
+        "before": "",
+        "after": "tol"
+      },
+      {
+        "role": 3,
+        "bar": 1,
+        "onset": "5/2",
+        "before": "",
+        "after": "de"
+      },
+      {
+        "role": 3,
+        "bar": 2,
+        "onset": "0",
+        "before": "",
+        "after": "Dios,"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "onset": "1/2",
+        "before": "",
+        "after": "Y"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "onset": "1",
+        "before": "",
+        "after": "no"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "onset": "3/2",
+        "before": "",
+        "after": "pue"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "onset": "2",
+        "before": "",
+        "after": "do"
+      },
+      {
+        "role": 3,
+        "bar": 9,
+        "onset": "5/2",
+        "before": "",
+        "after": "ca"
+      },
+      {
+        "role": 3,
+        "bar": 10,
+        "onset": "0",
+        "before": "",
+        "after": "llar,"
+      },
+      {
+        "role": 3,
+        "bar": 23,
+        "onset": "1/2",
+        "before": "",
+        "after": "Es"
+      },
+      {
+        "role": 3,
+        "bar": 23,
+        "onset": "1",
+        "before": "",
+        "after": "mi"
+      },
+      {
+        "role": 3,
+        "bar": 23,
+        "onset": "3/2",
+        "before": "",
+        "after": "Pa"
+      },
+      {
+        "role": 3,
+        "bar": 23,
+        "onset": "2",
+        "before": "",
+        "after": "dre_en"
+      },
+      {
+        "role": 3,
+        "bar": 23,
+        "onset": "5/2",
+        "before": "",
+        "after": "la"
+      },
+      {
+        "role": 3,
+        "bar": 24,
+        "onset": "0",
+        "before": "",
+        "after": "fe."
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "onset": "1/2",
+        "before": "",
+        "after": "Ten"
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "onset": "1",
+        "before": "",
+        "after": "go_un"
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "onset": "3/2",
+        "before": "",
+        "after": "Pa"
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "onset": "5/2",
+        "before": "",
+        "after": "dre_en"
+      },
+      {
+        "role": 3,
+        "bar": 25,
+        "onset": "11/4",
+        "before": "",
+        "after": "la"
+      },
+      {
+        "role": 3,
+        "bar": 31,
+        "onset": "1/2",
+        "before": "",
+        "after": "Es"
+      },
+      {
+        "role": 3,
+        "bar": 31,
+        "onset": "1",
+        "before": "",
+        "after": "mi"
+      },
+      {
+        "role": 3,
+        "bar": 31,
+        "onset": "3/2",
+        "before": "",
+        "after": "Pa"
+      },
+      {
+        "role": 3,
+        "bar": 31,
+        "onset": "2",
+        "before": "",
+        "after": "dre"
+      },
+      {
+        "role": 3,
+        "bar": 31,
+        "onset": "5/2",
+        "before": "",
+        "after": "Sa"
+      },
+      {
+        "role": 3,
+        "bar": 32,
+        "onset": "0",
+        "before": "",
+        "after": "muel."
+      },
+      {
+        "role": 1,
+        "bar": 18,
+        "onset": "0",
+        "before": "",
+        "after": "fe,"
+      },
+      {
+        "role": 1,
+        "bar": 26,
+        "onset": "0",
+        "before": "",
+        "after": "fe,"
+      }
+    ],
+    "sourceMscz": "E:\\MusescoreCantai\\Mi Padre en la Fe - SATB - Cantai.mscz",
+    "originalHash": "5c0152ea50a778e53c37b8eff61d7f46f431fd33ffed2dee8f91ea8a2a35a83e",
+    "work": "output\\underlay_revision_2026_10_19\\score-1",
+    "correctedXml": "output\\underlay_revision_2026_10_19\\score-1\\corrected.musicxml",
+    "style": "output\\satb_lote_2026_10_19\\choral.mss"
+  },
+  {
+    "name": "Recuerda - SATB extendido - Cantai",
+    "xml": "output\\verovio_pilot_support\\recuerda\\Recuerda - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\recuerda\\original.pdf",
+    "edits": [
+      {
+        "role": 2,
+        "bar": 17,
+        "onset": "11/4",
+        "before": "",
+        "after": "Re"
+      },
+      {
+        "role": 2,
+        "bar": 17,
+        "onset": "3",
+        "before": "",
+        "after": "cuer"
+      },
+      {
+        "role": 2,
+        "bar": 17,
+        "onset": "13/4",
+        "before": "",
+        "after": "da"
+      },
+      {
+        "role": 2,
+        "bar": 45,
+        "onset": "11/4",
+        "before": "",
+        "after": "Re"
+      },
+      {
+        "role": 2,
+        "bar": 45,
+        "onset": "3",
+        "before": "",
+        "after": "cuer"
+      },
+      {
+        "role": 2,
+        "bar": 45,
+        "onset": "13/4",
+        "before": "",
+        "after": "da"
+      },
+      {
+        "role": 3,
+        "bar": 17,
+        "onset": "11/4",
+        "before": "",
+        "after": "Re"
+      },
+      {
+        "role": 3,
+        "bar": 17,
+        "onset": "3",
+        "before": "",
+        "after": "cuer"
+      },
+      {
+        "role": 3,
+        "bar": 17,
+        "onset": "13/4",
+        "before": "",
+        "after": "da"
+      },
+      {
+        "role": 3,
+        "bar": 45,
+        "onset": "11/4",
+        "before": "",
+        "after": "Re"
+      },
+      {
+        "role": 3,
+        "bar": 45,
+        "onset": "3",
+        "before": "",
+        "after": "cuer"
+      },
+      {
+        "role": 3,
+        "bar": 45,
+        "onset": "13/4",
+        "before": "",
+        "after": "da"
+      }
+    ],
+    "sourceMscz": "E:\\MusescoreCantai\\Recuerda - SATB extendido - Cantai.mscz",
+    "originalHash": "7ef086be64e15110b843309b8c437a1dd9da39295fb273523a87686b5171b8cb",
+    "work": "output\\underlay_revision_2026_10_19\\score-2",
+    "correctedXml": "output\\underlay_revision_2026_10_19\\score-2\\corrected.musicxml",
+    "style": "output\\verovio_pilot_support\\recuerda\\choral-spacing.mss",
+    "skip": false,
+    "nativePatch": true
+  },
+  {
+    "name": "La Vida Se Va Como El Viento (reducción) - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\20\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\20\\reference.pdf",
+    "batch": 20,
+    "edits": [
+      {
+        "role": 1,
+        "bar": 18,
+        "onset": "0",
+        "before": "",
+        "after": "Ven,"
+      },
+      {
+        "role": 1,
+        "bar": 18,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 18,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 18,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 19,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 19,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 19,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 19,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 20,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 20,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 20,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 20,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 21,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 21,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 21,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 21,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 22,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 22,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 22,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 27,
+        "onset": "0",
+        "before": "",
+        "after": "Án"
+      },
+      {
+        "role": 1,
+        "bar": 27,
+        "onset": "11/4",
+        "before": "",
+        "after": "ge"
+      },
+      {
+        "role": 1,
+        "bar": 27,
+        "onset": "3",
+        "before": "",
+        "after": "les"
+      },
+      {
+        "role": 1,
+        "bar": 27,
+        "onset": "15/4",
+        "before": "",
+        "after": "ob"
+      },
+      {
+        "role": 1,
+        "bar": 28,
+        "onset": "0",
+        "before": "",
+        "after": "ser"
+      },
+      {
+        "role": 1,
+        "bar": 28,
+        "onset": "2",
+        "before": "",
+        "after": "van,"
+      },
+      {
+        "role": 1,
+        "bar": 29,
+        "onset": "0",
+        "before": "",
+        "after": "sal"
+      },
+      {
+        "role": 1,
+        "bar": 29,
+        "onset": "11/4",
+        "before": "",
+        "after": "vos"
+      },
+      {
+        "role": 1,
+        "bar": 29,
+        "onset": "3",
+        "before": "",
+        "after": "can"
+      },
+      {
+        "role": 1,
+        "bar": 29,
+        "onset": "15/4",
+        "before": "",
+        "after": "ta"
+      },
+      {
+        "role": 1,
+        "bar": 30,
+        "onset": "0",
+        "before": "",
+        "after": "rán;"
+      },
+      {
+        "role": 1,
+        "bar": 22,
+        "onset": "3",
+        "before": "rest",
+        "after": "La‿I",
+        "noteCorrection": "shared unison visible in PDF"
+      },
+      {
+        "role": 1,
+        "bar": 52,
+        "onset": "0",
+        "before": "",
+        "after": "Ven,"
+      },
+      {
+        "role": 1,
+        "bar": 52,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 52,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 52,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 53,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 53,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 53,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 53,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 54,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 54,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 54,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 54,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 55,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 55,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 55,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 55,
+        "onset": "3",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 56,
+        "onset": "0",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 56,
+        "onset": "1",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 56,
+        "onset": "2",
+        "before": "",
+        "after": "ven,"
+      },
+      {
+        "role": 1,
+        "bar": 61,
+        "onset": "0",
+        "before": "",
+        "after": "Án"
+      },
+      {
+        "role": 1,
+        "bar": 61,
+        "onset": "11/4",
+        "before": "",
+        "after": "ge"
+      },
+      {
+        "role": 1,
+        "bar": 61,
+        "onset": "3",
+        "before": "",
+        "after": "les"
+      },
+      {
+        "role": 1,
+        "bar": 61,
+        "onset": "15/4",
+        "before": "",
+        "after": "ob"
+      },
+      {
+        "role": 1,
+        "bar": 62,
+        "onset": "0",
+        "before": "",
+        "after": "ser"
+      },
+      {
+        "role": 1,
+        "bar": 62,
+        "onset": "2",
+        "before": "",
+        "after": "van,"
+      },
+      {
+        "role": 1,
+        "bar": 63,
+        "onset": "0",
+        "before": "",
+        "after": "sal"
+      },
+      {
+        "role": 1,
+        "bar": 63,
+        "onset": "11/4",
+        "before": "",
+        "after": "vos"
+      },
+      {
+        "role": 1,
+        "bar": 63,
+        "onset": "3",
+        "before": "",
+        "after": "can"
+      },
+      {
+        "role": 1,
+        "bar": 63,
+        "onset": "15/4",
+        "before": "",
+        "after": "ta"
+      },
+      {
+        "role": 1,
+        "bar": 64,
+        "onset": "0",
+        "before": "",
+        "after": "rán;"
+      },
+      {
+        "role": 1,
+        "bar": 56,
+        "onset": "3",
+        "before": "rest",
+        "after": "La‿I",
+        "noteCorrection": "shared unison visible in PDF"
+      }
+    ],
+    "sourceMscz": "E:\\MusescoreCantai\\La Vida Se Va Como El Viento (reducción) - SATB - Cantai.mscz",
+    "originalHash": "6340e3516edff0f5a571b6556a04a4b7a6bb09261f8f769d013db1426a9bbe56",
+    "work": "output\\underlay_revision_2026_10_19\\score-3",
+    "correctedXml": "output\\underlay_revision_2026_10_19\\score-3\\corrected.musicxml",
+    "style": "output\\satb_lote_2026_10_19\\choral.mss"
+  },
+  {
+    "name": "Al Huerto Van a Visitar - SATB - Cantai",
+    "xml": "output\\satb_lote_2026_10_19\\14\\prepared.musicxml",
+    "pdf": "output\\satb_lote_2026_10_19\\14\\reference.pdf",
+    "batch": 14,
+    "edits": [
+      {
+        "role": 2,
+        "bar": 39,
+        "onset": "1",
+        "before": "",
+        "after": "(ven"
+      },
+      {
+        "role": 2,
+        "bar": 39,
+        "onset": "7/4",
+        "before": "",
+        "after": "ce"
+      },
+      {
+        "role": 2,
+        "bar": 39,
+        "onset": "2",
+        "before": "",
+        "after": "dor)"
+      },
+      {
+        "role": 2,
+        "bar": 40,
+        "onset": "1",
+        "before": "",
+        "after": "(ven"
+      },
+      {
+        "role": 2,
+        "bar": 40,
+        "onset": "7/4",
+        "before": "",
+        "after": "ce"
+      },
+      {
+        "role": 2,
+        "bar": 40,
+        "onset": "2",
+        "before": "",
+        "after": "dor)"
+      },
+      {
+        "role": 2,
+        "bar": 73,
+        "onset": "1",
+        "before": "",
+        "after": "Al"
+      },
+      {
+        "role": 2,
+        "bar": 73,
+        "onset": "3/2",
+        "before": "",
+        "after": "Se"
+      },
+      {
+        "role": 2,
+        "bar": 73,
+        "onset": "2",
+        "before": "",
+        "after": "ñor"
+      },
+      {
+        "role": 2,
+        "bar": 73,
+        "onset": "5/2",
+        "before": "",
+        "after": "A"
+      },
+      {
+        "role": 2,
+        "bar": 46,
+        "onset": "0",
+        "before": "",
+        "after": "Je"
+      },
+      {
+        "role": 2,
+        "bar": 46,
+        "onset": "2",
+        "before": "",
+        "after": "sús."
+      },
+      {
+        "role": 2,
+        "bar": 71,
+        "onset": "2",
+        "before": "",
+        "after": "a"
+      },
+      {
+        "role": 2,
+        "bar": 80,
+        "onset": "3",
+        "before": "",
+        "after": "por"
+      },
+      {
+        "role": 2,
+        "bar": 80,
+        "onset": "7/2",
+        "before": "",
+        "after": "que"
+      },
+      {
+        "role": 3,
+        "bar": 39,
+        "onset": "1",
+        "before": "",
+        "after": "(ven"
+      },
+      {
+        "role": 3,
+        "bar": 39,
+        "onset": "7/4",
+        "before": "",
+        "after": "ce"
+      },
+      {
+        "role": 3,
+        "bar": 39,
+        "onset": "2",
+        "before": "",
+        "after": "dor)"
+      },
+      {
+        "role": 3,
+        "bar": 40,
+        "onset": "1",
+        "before": "",
+        "after": "(ven"
+      },
+      {
+        "role": 3,
+        "bar": 40,
+        "onset": "7/4",
+        "before": "",
+        "after": "ce"
+      },
+      {
+        "role": 3,
+        "bar": 40,
+        "onset": "2",
+        "before": "",
+        "after": "dor)"
+      },
+      {
+        "role": 3,
+        "bar": 73,
+        "onset": "1",
+        "before": "",
+        "after": "Al"
+      },
+      {
+        "role": 3,
+        "bar": 73,
+        "onset": "3/2",
+        "before": "",
+        "after": "Se"
+      },
+      {
+        "role": 3,
+        "bar": 73,
+        "onset": "2",
+        "before": "",
+        "after": "ñor"
+      },
+      {
+        "role": 3,
+        "bar": 73,
+        "onset": "5/2",
+        "before": "",
+        "after": "A"
+      },
+      {
+        "role": 3,
+        "bar": 46,
+        "onset": "0",
+        "before": "",
+        "after": "Je"
+      },
+      {
+        "role": 3,
+        "bar": 46,
+        "onset": "2",
+        "before": "",
+        "after": "sús."
+      },
+      {
+        "role": 3,
+        "bar": 71,
+        "onset": "2",
+        "before": "",
+        "after": "a"
+      },
+      {
+        "role": 3,
+        "bar": 80,
+        "onset": "3",
+        "before": "",
+        "after": "por"
+      },
+      {
+        "role": 3,
+        "bar": 80,
+        "onset": "7/2",
+        "before": "",
+        "after": "que"
+      },
+      {
+        "role": 2,
+        "bar": 43,
+        "onset": "0",
+        "before": "",
+        "after": "Re"
+      },
+      {
+        "role": 2,
+        "bar": 43,
+        "onset": "1",
+        "before": "",
+        "after": "su"
+      },
+      {
+        "role": 2,
+        "bar": 43,
+        "onset": "7/4",
+        "before": "",
+        "after": "ci"
+      },
+      {
+        "role": 2,
+        "bar": 43,
+        "onset": "2",
+        "before": "",
+        "after": "tó,"
+      },
+      {
+        "role": 2,
+        "bar": 79,
+        "onset": "0",
+        "before": "",
+        "after": "ñor"
+      },
+      {
+        "role": 2,
+        "bar": 79,
+        "onset": "5/2",
+        "before": "",
+        "after": "a"
+      },
+      {
+        "role": 2,
+        "bar": 79,
+        "onset": "3",
+        "before": "",
+        "after": "la"
+      },
+      {
+        "role": 2,
+        "bar": 79,
+        "onset": "7/2",
+        "before": "",
+        "after": "ba"
+      },
+      {
+        "role": 3,
+        "bar": 36,
+        "onset": "0",
+        "before": "",
+        "after": "rei"
+      },
+      {
+        "role": 2,
+        "bar": 78,
+        "onset": "3",
+        "before": "rest",
+        "after": "Al Se",
+        "noteCorrection": "PDF assigns these two eighth notes to tenor; bass rests"
+      },
+      {
+        "role": 3,
+        "bar": 79,
+        "onset": "0",
+        "before": "ñor",
+        "after": "Al"
+      }
+    ],
+    "sourceMscz": "E:\\MusescoreCantai\\Al Huerto Van a Visitar - SATB - Cantai.mscz",
+    "originalHash": "1ad6240b26262db0d3691c76be225f9b675f268ddfc94f8791f2c35ccf6d0f9e",
+    "work": "output\\underlay_revision_2026_10_19\\score-4",
+    "correctedXml": "output\\underlay_revision_2026_10_19\\score-4\\corrected.musicxml",
+    "style": "output\\satb_lote_2026_10_19\\choral.mss"
+  },
+  {
+    "name": "Mi Torre Fuerte - SATB extendido - Cantai",
+    "xml": "output\\verovio_pilot_support\\mi_torre_fuerte\\Mi Torre Fuerte - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\mi_torre_fuerte\\original.pdf",
+    "edits": [
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "0",
+        "before": "",
+        "after": "vi"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "1/2",
+        "before": "",
+        "after": "da,"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "3/2",
+        "before": "",
+        "after": "la"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "2",
+        "before": "",
+        "after": "es"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "5/2",
+        "before": "",
+        "after": "pe"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "3",
+        "before": "",
+        "after": "ran"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "7/2",
+        "before": "",
+        "after": "za,"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "9/2",
+        "before": "",
+        "after": "me"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "5",
+        "before": "",
+        "after": "dio"
+      },
+      {
+        "role": 3,
+        "bar": 6,
+        "onset": "11/2",
+        "before": "",
+        "after": "la"
+      }
+    ],
+    "sourceMscz": "E:\\MusescoreCantai\\Mi Torre Fuerte - SATB extendido - Cantai.mscz",
+    "originalHash": "1b882f739281eda04c0e9fdc8f5e29fbeff80395b605460beef8853126ebb025",
+    "work": "output\\underlay_revision_2026_10_19\\score-5",
+    "correctedXml": "output\\underlay_revision_2026_10_19\\score-5\\corrected.musicxml",
+    "style": "output\\verovio_pilot_support\\mi_torre_fuerte\\choral-spacing.mss",
+    "skip": false,
+    "nativePatch": true
+  },
+  {
+    "name": "Cuando Oí Su Voz - SATB extendido - Cantai",
+    "xml": "output\\verovio_pilot_support\\cuando_oi_su_voz\\Cuando Oí Su Voz - SATB extendido - Cantai.musicxml",
+    "pdf": "output\\verovio_pilot_support\\cuando_oi_su_voz\\original.pdf",
+    "edits": [],
+    "sourceMscz": "E:\\MusescoreCantai\\Cuando Oí Su Voz - SATB extendido - Cantai.mscz",
+    "originalHash": "109cdf11f03b4aad709bf2898ec340eb72f13a4b2ab668883e585ee7421c7982",
+    "work": "output\\underlay_revision_2026_10_19\\score-6",
+    "correctedXml": "output\\underlay_revision_2026_10_19\\score-6\\corrected.musicxml",
+    "style": "output\\verovio_pilot_support\\cuando_oi_su_voz\\choral-spacing.mss",
+    "skip": true,
+    "nativePatch": true
+  },
+  {
+    "name": "Alabad a Jehová - SATB revisado contra PDF",
+    "xml": "output\\verovio_pilot_support\\alabad\\Alabad a Jehová - SATB revisado contra PDF.musicxml",
+    "pdf": "output\\verovio_pilot_support\\alabad\\original.pdf",
+    "edits": [
+      {
+        "role": 3,
+        "bar": 58,
+        "onset": "0",
+        "before": "",
+        "after": "tó,"
+      },
+      {
+        "role": 3,
+        "bar": 58,
+        "onset": "1",
+        "before": "tó,Los",
+        "after": "Los"
+      }
+    ],
+    "sourceMscz": "E:\\MusescoreCantai\\Alabad a Jehová - SATB revisado contra PDF.mscz",
+    "originalHash": "ff5aa25383b2de2af419175fac298bded37b8d490baf81abbf36d4dcc64d13cd",
+    "work": "output\\underlay_revision_2026_10_19\\score-7",
+    "correctedXml": "output\\underlay_revision_2026_10_19\\score-7\\corrected.musicxml",
+    "style": "output\\verovio_pilot_support\\alabad\\choral-spacing.mss",
+    "skip": false,
+    "nativePatch": true
+  }
+]

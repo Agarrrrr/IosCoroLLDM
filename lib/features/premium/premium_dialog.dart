@@ -1,4 +1,6 @@
+import 'dart:async';
 import 'package:coro_lldm/core/localization/app_strings.dart';
+import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:flutter/material.dart';
 import 'subscription_terms.dart';
@@ -9,8 +11,10 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Future<void> showPremiumDialog(BuildContext context) {
+  AdsService.instance.suspendForExternalAction();
   return showDialog<void>(
     context: context,
+    barrierDismissible: false,
     builder: (_) => const PremiumDialog(),
   );
 }
@@ -25,6 +29,29 @@ class PremiumDialog extends ConsumerStatefulWidget {
 class _PremiumDialogState extends ConsumerState<PremiumDialog> {
   String? _purchasingId;
   String? _focusedId;
+  Timer? _adGuardTimer;
+
+  @override
+  void initState() {
+    super.initState();
+    AdsService.instance.suspendForExternalAction();
+    _adGuardTimer = Timer.periodic(const Duration(seconds: 20), (_) {
+      AdsService.instance.suspendForExternalAction();
+    });
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final state = ref.read(monetizationProvider);
+      if (state.packages.isEmpty) {
+        unawaited(ref.read(monetizationProvider.notifier).reloadOfferings());
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _adGuardTimer?.cancel();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {

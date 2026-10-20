@@ -1,0 +1,2599 @@
+[
+  {
+    "index": 2,
+    "edits": [
+      {
+        "part": 1,
+        "bar": 10,
+        "phrase": "a la",
+        "changes": [
+          [
+            "a",
+            "begin",
+            "single"
+          ],
+          [
+            "la",
+            "middle",
+            "single"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "edits": [
+      {
+        "part": 0,
+        "bar": 26,
+        "phrase": "con solo",
+        "changes": [
+          [
+            "con",
+            "begin",
+            "single"
+          ],
+          [
+            "so",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 26,
+        "phrase": "con solo",
+        "changes": [
+          [
+            "con",
+            "begin",
+            "single"
+          ],
+          [
+            "so",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 26,
+        "phrase": "con solo",
+        "changes": [
+          [
+            "con",
+            "begin",
+            "single"
+          ],
+          [
+            "so",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 26,
+        "phrase": "con solo",
+        "changes": [
+          [
+            "con",
+            "begin",
+            "single"
+          ],
+          [
+            "so",
+            "middle",
+            "begin"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "edits": [
+      {
+        "part": 0,
+        "bar": 5,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 11,
+        "phrase": "frente va",
+        "changes": [
+          [
+            "te",
+            "middle",
+            "end"
+          ],
+          [
+            "va",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 21,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 29,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 31,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 33,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 49,
+        "phrase": "averno lleno",
+        "changes": [
+          [
+            "no",
+            "middle",
+            "end"
+          ],
+          [
+            "lle",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 57,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 65,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 67,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 69,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 93,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 101,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 103,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 105,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 129,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 137,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 139,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 141,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 147,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 5,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 11,
+        "phrase": "frente va",
+        "changes": [
+          [
+            "te",
+            "middle",
+            "end"
+          ],
+          [
+            "va",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 21,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 29,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 31,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 33,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 49,
+        "phrase": "averno lleno",
+        "changes": [
+          [
+            "no",
+            "middle",
+            "end"
+          ],
+          [
+            "lle",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 57,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 65,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 67,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 69,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 93,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 101,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 103,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 105,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 129,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 137,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 139,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 141,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 147,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 5,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 11,
+        "phrase": "frente va",
+        "changes": [
+          [
+            "te",
+            "middle",
+            "end"
+          ],
+          [
+            "va",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 21,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 29,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 31,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 33,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 49,
+        "phrase": "averno lleno",
+        "changes": [
+          [
+            "no",
+            "middle",
+            "end"
+          ],
+          [
+            "lle",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 57,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 65,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 67,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 69,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 93,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 101,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 103,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 105,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 129,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 137,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 139,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 141,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 147,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 5,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 11,
+        "phrase": "frente va",
+        "changes": [
+          [
+            "te",
+            "middle",
+            "end"
+          ],
+          [
+            "va",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 21,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 29,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 31,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 33,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 49,
+        "phrase": "averno lleno",
+        "changes": [
+          [
+            "no",
+            "middle",
+            "end"
+          ],
+          [
+            "lle",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 57,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 65,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 67,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 69,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 93,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 101,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 103,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 105,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 129,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 137,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 139,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 141,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 147,
+        "phrase": "temor alguno",
+        "changes": [
+          [
+            "mor",
+            "middle",
+            "end"
+          ],
+          [
+            "al",
+            "middle",
+            "begin"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "edits": [
+      {
+        "part": 0,
+        "bar": 24,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 58,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 24,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 58,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 24,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 58,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 24,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 58,
+        "phrase": "Cordero digno",
+        "changes": [
+          [
+            "ro",
+            "middle",
+            "end"
+          ],
+          [
+            "dig",
+            "middle",
+            "begin"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "edits": [
+      {
+        "part": 0,
+        "bar": 13,
+        "phrase": "le reveló",
+        "changes": [
+          [
+            "le",
+            "begin",
+            "single"
+          ],
+          [
+            "re",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 14,
+        "phrase": "se levantó",
+        "changes": [
+          [
+            "se",
+            "begin",
+            "single"
+          ],
+          [
+            "le",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 46,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 57,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 59,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 60,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 61,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 62,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 69,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 13,
+        "phrase": "le reveló",
+        "changes": [
+          [
+            "le",
+            "begin",
+            "single"
+          ],
+          [
+            "re",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 14,
+        "phrase": "se levantó",
+        "changes": [
+          [
+            "se",
+            "begin",
+            "single"
+          ],
+          [
+            "le",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 46,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 57,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 59,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 60,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 61,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 62,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 69,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 13,
+        "phrase": "le reveló",
+        "changes": [
+          [
+            "le",
+            "begin",
+            "single"
+          ],
+          [
+            "re",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 14,
+        "phrase": "se levantó",
+        "changes": [
+          [
+            "se",
+            "begin",
+            "single"
+          ],
+          [
+            "le",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 56,
+        "phrase": "secos eran",
+        "changes": [
+          [
+            "cos",
+            "middle",
+            "end"
+          ],
+          [
+            "e",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 66,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 69,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 70,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 71,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 13,
+        "phrase": "le reveló",
+        "changes": [
+          [
+            "le",
+            "begin",
+            "single"
+          ],
+          [
+            "re",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 14,
+        "phrase": "se levantó",
+        "changes": [
+          [
+            "se",
+            "begin",
+            "single"
+          ],
+          [
+            "le",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 56,
+        "phrase": "secos eran",
+        "changes": [
+          [
+            "cos",
+            "middle",
+            "end"
+          ],
+          [
+            "e",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 66,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 69,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 70,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 71,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "edits": [
+      {
+        "part": 0,
+        "bar": 35,
+        "phrase": "al gran",
+        "changes": [
+          [
+            "al",
+            "begin",
+            "single"
+          ],
+          [
+            "gran",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 47,
+        "phrase": "al que",
+        "changes": [
+          [
+            "al",
+            "begin",
+            "single"
+          ],
+          [
+            "que",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 59,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 60,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 71,
+        "phrase": "la voz",
+        "changes": [
+          [
+            "la",
+            "begin",
+            "single"
+          ],
+          [
+            "voz",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 75,
+        "phrase": "nuestro Dios",
+        "changes": [
+          [
+            "tro",
+            "middle",
+            "end"
+          ],
+          [
+            "Dios",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 112,
+        "phrase": "todo ser",
+        "changes": [
+          [
+            "do",
+            "middle",
+            "end"
+          ],
+          [
+            "ser",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 0,
+        "bar": 143,
+        "phrase": "tu Señor",
+        "changes": [
+          [
+            "tu",
+            "begin",
+            "single"
+          ],
+          [
+            "Se",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 35,
+        "phrase": "al gran",
+        "changes": [
+          [
+            "al",
+            "begin",
+            "single"
+          ],
+          [
+            "gran",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 57,
+        "phrase": "a la",
+        "changes": [
+          [
+            "a",
+            "begin",
+            "single"
+          ],
+          [
+            "la",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 73,
+        "phrase": "a la",
+        "changes": [
+          [
+            "a",
+            "begin",
+            "single"
+          ],
+          [
+            "la",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 1,
+        "bar": 134,
+        "phrase": "nuestro Dios",
+        "changes": [
+          [
+            "tro",
+            "middle",
+            "end"
+          ],
+          [
+            "Dios",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 13,
+        "phrase": "le reveló",
+        "changes": [
+          [
+            "le",
+            "begin",
+            "single"
+          ],
+          [
+            "re",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 14,
+        "phrase": "se levantó",
+        "changes": [
+          [
+            "se",
+            "begin",
+            "single"
+          ],
+          [
+            "le",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 14,
+        "phrase": "de la",
+        "changes": [
+          [
+            "de",
+            "begin",
+            "single"
+          ],
+          [
+            "la",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 19,
+        "phrase": "nuestro Dios",
+        "changes": [
+          [
+            "tro",
+            "middle",
+            "end"
+          ],
+          [
+            "Dios",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 56,
+        "phrase": "secos eran",
+        "changes": [
+          [
+            "cos",
+            "middle",
+            "end"
+          ],
+          [
+            "e",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 66,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 70,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 71,
+        "phrase": "sí alabad",
+        "changes": [
+          [
+            "si",
+            "begin",
+            "single"
+          ],
+          [
+            "a",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 72,
+        "phrase": "a la",
+        "changes": [
+          [
+            "a",
+            "begin",
+            "single"
+          ],
+          [
+            "la",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 2,
+        "bar": 140,
+        "phrase": "gloria Dios",
+        "changes": [
+          [
+            "ria",
+            "middle",
+            "end"
+          ],
+          [
+            "Dios",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 12,
+        "phrase": "su Siervo",
+        "changes": [
+          [
+            "su",
+            "begin",
+            "single"
+          ],
+          [
+            "Sier",
+            "middle",
+            "begin"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 22,
+        "phrase": "al gran",
+        "changes": [
+          [
+            "al",
+            "begin",
+            "single"
+          ],
+          [
+            "gran",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 97,
+        "phrase": "al gran",
+        "changes": [
+          [
+            "al",
+            "begin",
+            "single"
+          ],
+          [
+            "gran",
+            "end",
+            "single"
+          ]
+        ]
+      },
+      {
+        "part": 3,
+        "bar": 134,
+        "phrase": "nuestro Dios",
+        "changes": [
+          [
+            "tro",
+            "middle",
+            "end"
+          ],
+          [
+            "Dios",
+            "end",
+            "single"
+          ]
+        ]
+      }
+    ]
+  }
+]

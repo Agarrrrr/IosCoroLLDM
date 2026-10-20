@@ -1,0 +1,264 @@
+{
+  "matchedAttacks": 1078,
+  "heldContinuations": [
+    {
+      "id": "salmo150-0-4",
+      "role": 0,
+      "measure": 2,
+      "onset": 2
+    },
+    {
+      "id": "salmo150-1-4",
+      "role": 1,
+      "measure": 2,
+      "onset": 2
+    },
+    {
+      "id": "salmo150-2-4",
+      "role": 2,
+      "measure": 2,
+      "onset": 2
+    },
+    {
+      "id": "salmo150-3-4",
+      "role": 3,
+      "measure": 2,
+      "onset": 2
+    },
+    {
+      "id": "salmo150-3-16",
+      "role": 3,
+      "measure": 6,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-65",
+      "role": 1,
+      "measure": 19,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-66",
+      "role": 1,
+      "measure": 20,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-67",
+      "role": 1,
+      "measure": 21,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-68",
+      "role": 1,
+      "measure": 22,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-3-67",
+      "role": 3,
+      "measure": 19,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-3-68",
+      "role": 3,
+      "measure": 20,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-3-69",
+      "role": 3,
+      "measure": 21,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-3-70",
+      "role": 3,
+      "measure": 22,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-0-174",
+      "role": 0,
+      "measure": 51,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-0-179",
+      "role": 0,
+      "measure": 52,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-0-184",
+      "role": 0,
+      "measure": 53,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-174",
+      "role": 1,
+      "measure": 51,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-179",
+      "role": 1,
+      "measure": 52,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-184",
+      "role": 1,
+      "measure": 53,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-0-196",
+      "role": 0,
+      "measure": 55,
+      "onset": 2.0
+    },
+    {
+      "id": "salmo150-1-196",
+      "role": 1,
+      "measure": 55,
+      "onset": 2.0
+    },
+    {
+      "id": "salmo150-2-202",
+      "role": 2,
+      "measure": 55,
+      "onset": 2.0
+    },
+    {
+      "id": "salmo150-3-205",
+      "role": 3,
+      "measure": 55,
+      "onset": 2.0
+    },
+    {
+      "id": "salmo150-3-228",
+      "role": 3,
+      "measure": 61,
+      "onset": 3.3333333333333335
+    },
+    {
+      "id": "salmo150-3-233",
+      "role": 3,
+      "measure": 62,
+      "onset": 3.3333333333333335
+    },
+    {
+      "id": "salmo150-0-243",
+      "role": 0,
+      "measure": 66,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-246",
+      "role": 1,
+      "measure": 66,
+      "onset": 0
+    },
+    {
+      "id": "salmo150-1-271",
+      "role": 1,
+      "measure": 72,
+      "onset": 3.0
+    },
+    {
+      "id": "salmo150-1-272",
+      "role": 1,
+      "measure": 73,
+      "onset": 0
+    }
+  ],
+  "pitchDifferences": [
+    {
+      "id": "salmo150-3-115",
+      "role": 3,
+      "measure": 35,
+      "onset": 2,
+      "pdf": 52,
+      "midi": 57
+    },
+    {
+      "id": "salmo150-3-123",
+      "role": 3,
+      "measure": 37,
+      "onset": 2,
+      "pdf": 52,
+      "midi": 57
+    },
+    {
+      "id": "salmo150-0-141",
+      "role": 0,
+      "measure": 44,
+      "onset": 1.9999999999999998,
+      "pdf": 76,
+      "midi": 73
+    },
+    {
+      "id": "salmo150-1-243",
+      "role": 1,
+      "measure": 65,
+      "onset": 1.0,
+      "pdf": 67,
+      "midi": 66
+    }
+  ],
+  "unmatched": [
+    {
+      "id": "salmo150-1-161",
+      "role": 1,
+      "measure": 48,
+      "onset": 1.0,
+      "pdf": 66
+    },
+    {
+      "id": "salmo150-0-268",
+      "role": 0,
+      "measure": 72,
+      "onset": 3.0,
+      "pdf": 76
+    },
+    {
+      "id": "salmo150-0-269",
+      "role": 0,
+      "measure": 73,
+      "onset": 0,
+      "pdf": 78
+    },
+    {
+      "id": "salmo150-2-287",
+      "role": 2,
+      "measure": 72,
+      "onset": 3.0,
+      "pdf": 61
+    },
+    {
+      "id": "salmo150-2-288",
+      "role": 2,
+      "measure": 73,
+      "onset": 0,
+      "pdf": 62
+    },
+    {
+      "id": "salmo150-3-284",
+      "role": 3,
+      "measure": 72,
+      "onset": 3.0,
+      "pdf": 57
+    },
+    {
+      "id": "salmo150-3-285",
+      "role": 3,
+      "measure": 73,
+      "onset": 0,
+      "pdf": 50
+    }
+  ]
+}

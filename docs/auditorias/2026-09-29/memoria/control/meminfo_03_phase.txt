@@ -1,0 +1,6 @@
+I/flutter (13745): AUDIT END heavy_drawing_enabled 5000.747 ms, 301 frames, error=null
+I/flutter (13745): AUDIT START heavy_zoom_draw
+I/flutter (13745): AUDIT END heavy_zoom_draw 9905.49 ms, 595 frames, error=null
+I/flutter (13745): AUDIT START heavy_500_saved_settle
+I/flutter (13745): AUDIT END heavy_500_saved_settle 5000.681 ms, 295 frames, error=null
+I/flutter (13745): AUDIT START heavy_500_saved_draw

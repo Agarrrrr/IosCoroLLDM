@@ -1,0 +1,8 @@
+{
+  "version": "0.3.0+3",
+  "apkSha256": "f70ec9df8bbca362623932cdf81e9a4479466bbd8945de3577d10ef5af34a9c9",
+  "noHtmlJsWasmReader": true,
+  "sharedPlayerAndEngineMatch": true,
+  "androidGain": 0.8,
+  "iOSGainAndEffectsUnchanged": true
+}

@@ -1,0 +1,331 @@
+[
+  {
+    "page": 1,
+    "role": 0,
+    "first": 1,
+    "cost": 4.288136312370409,
+    "text": "A la bad, A la bad, A la bad a nues tro Dios, A la"
+  },
+  {
+    "page": 1,
+    "role": 1,
+    "first": 1,
+    "cost": 3.878948615298671,
+    "text": "A la bad, A la bad, A la bad a nues tro Dios,"
+  },
+  {
+    "page": 1,
+    "role": 2,
+    "first": 1,
+    "cost": 8.883323073023627,
+    "text": "A la bad, A la bad, A la bad a . nues tr o Dios,"
+  },
+  {
+    "page": 1,
+    "role": 3,
+    "first": 1,
+    "cost": 7.890898882604268,
+    "text": "A la bad, A la bad, A la bad a . nues tro Dios,"
+  },
+  {
+    "page": 1,
+    "role": 0,
+    "first": 6,
+    "cost": 3.6453370972657524,
+    "text": "bad, A la bad, A la bad a nues tro Dios;"
+  },
+  {
+    "page": 1,
+    "role": 1,
+    "first": 6,
+    "cost": 4.272580304527371,
+    "text": "A la bad, A la bad, A la bad a nues tro Dios; Los"
+  },
+  {
+    "page": 1,
+    "role": 2,
+    "first": 6,
+    "cost": 4.27258031990974,
+    "text": "A la bad, A la bad, A la bad a nues tro Dios; Los"
+  },
+  {
+    "page": 1,
+    "role": 3,
+    "first": 6,
+    "cost": 17.96386239798446,
+    "text": "A la bad, A la bad, A la ba d . . a . nues tro Dios;"
+  },
+  {
+    "page": 1,
+    "role": 0,
+    "first": 10,
+    "cost": 23.650829271142044,
+    "text": "A . la . bad . . le, Con jú bi lo can"
+  },
+  {
+    "page": 1,
+    "role": 1,
+    "first": 10,
+    "cost": 30.128250203726147,
+    "text": "re . di . m i d os de l S e ñor A la bad . le, Con jú bi lo can"
+  },
+  {
+    "page": 1,
+    "role": 2,
+    "first": 10,
+    "cost": 24.343521945502182,
+    "text": "re . di . m i d os de l S e ñor A la bad . le,"
+  },
+  {
+    "page": 1,
+    "role": 3,
+    "first": 10,
+    "cost": 10.012433443214292,
+    "text": "A la bad . le,"
+  },
+  {
+    "page": 2,
+    "role": 0,
+    "first": 15,
+    "cost": 11.1061307516373,
+    "text": "te mos al Se ñor nue va can ción; A la bad, A la bad, A la bad . le con"
+  },
+  {
+    "page": 2,
+    "role": 1,
+    "first": 15,
+    "cost": 14.16556759743673,
+    "text": "te mos al Se ñor nue va can ción; A la bad, A la bad, A la bad . le con"
+  },
+  {
+    "page": 2,
+    "role": 2,
+    "first": 15,
+    "cost": 11.033016865948928,
+    "text": "A la bad le, A la bad . le con"
+  },
+  {
+    "page": 2,
+    "role": 3,
+    "first": 15,
+    "cost": 33.78311775787877,
+    "text": "A la bad . . . . . . . le con"
+  },
+  {
+    "page": 2,
+    "role": 0,
+    "first": 19,
+    "cost": 6.029225130628434,
+    "text": "to . do el co ra zón."
+  },
+  {
+    "page": 2,
+    "role": 1,
+    "first": 19,
+    "cost": 97.92364094627439,
+    "text": "to . do nues tro co ra zón. A la b a d . . . . . . . . . . . . . . . . . . . . . . le"
+  },
+  {
+    "page": 2,
+    "role": 2,
+    "first": 19,
+    "cost": 2.018594551221719,
+    "text": "to do el co ra zón. A la"
+  },
+  {
+    "page": 2,
+    "role": 3,
+    "first": 19,
+    "cost": 5.41429014667361,
+    "text": "to d o nuest ro co ra zón. A la"
+  },
+  {
+    "page": 2,
+    "role": 1,
+    "first": 24,
+    "cost": 5.1593628782919385,
+    "text": "A la bad le, A la bad, A la bad le, A la bad le, A la"
+  },
+  {
+    "page": 2,
+    "role": 2,
+    "first": 24,
+    "cost": 4.750175355174237,
+    "text": "bad le, A la bad le, A la bad, A la bad le, A la"
+  },
+  {
+    "page": 2,
+    "role": 3,
+    "first": 24,
+    "cost": 103.03775692291825,
+    "text": "ba d . . . . . . . . . . . . . . . . . . . . . . . le, A . . la"
+  },
+  {
+    "page": 3,
+    "role": 0,
+    "first": 26,
+    "cost": 24.923660508200108,
+    "text": "A la b ad . . . . . ."
+  },
+  {
+    "page": 3,
+    "role": 1,
+    "first": 26,
+    "cost": 11.70750531006504,
+    "text": "bad . le pa ra siem pre ,A la bad le, A la"
+  },
+  {
+    "page": 3,
+    "role": 2,
+    "first": 26,
+    "cost": 94.81170883065329,
+    "text": "b ad . . . . . . . . . . . . . . . . . . . . . . . le, A la bad le, A la"
+  },
+  {
+    "page": 3,
+    "role": 3,
+    "first": 26,
+    "cost": 4.091697045256636,
+    "text": "bad su San to nom bre A la bad le pa ra siem pre A la bad le A la"
+  },
+  {
+    "page": 3,
+    "role": 0,
+    "first": 29,
+    "cost": 71.95105577498099,
+    "text": ". . . . . . . . . . . . . . . . . le, por que gran de es el Se ñor. La_in"
+  },
+  {
+    "page": 3,
+    "role": 1,
+    "first": 29,
+    "cost": 4.18430920193779,
+    "text": "bad le, A la bad le, por que gran de es el Se ñor."
+  },
+  {
+    "page": 3,
+    "role": 2,
+    "first": 29,
+    "cost": 6.0319087184805005,
+    "text": "bad le, A la bad le, por que gran de es el Se ñor. La_in"
+  },
+  {
+    "page": 3,
+    "role": 3,
+    "first": 29,
+    "cost": 4.18430920193779,
+    "text": "bad le, A la bad le, por que gran de es el Se ñor."
+  },
+  {
+    "page": 3,
+    "role": 0,
+    "first": 33,
+    "cost": 9.594025748105487,
+    "text": "men sa mu che dum bre can te al . gran Se ñor, A la bad, A la bad, A la"
+  },
+  {
+    "page": 3,
+    "role": 1,
+    "first": 33,
+    "cost": 2.4101493883604914,
+    "text": "A la bad, A la bad, A la"
+  },
+  {
+    "page": 3,
+    "role": 2,
+    "first": 33,
+    "cost": 9.1493436168133,
+    "text": "men sa mu che dum bre can te al . gran Se ñor A la bad, A la bad, A la"
+  },
+  {
+    "page": 3,
+    "role": 3,
+    "first": 33,
+    "cost": 1.6590859273764333,
+    "text": "A la bad le, A la"
+  },
+  {
+    "page": 4,
+    "role": 0,
+    "first": 36,
+    "cost": 14.535474087115857,
+    "text": "ba d le; Can tad a Dio scon Fuer te voz. Vi va Jeho va y ben di ta la Ro ca de"
+  },
+  {
+    "page": 4,
+    "role": 1,
+    "first": 36,
+    "cost": 2.724073197810135,
+    "text": "bad le ;Can tad le con fuer te voz."
+  },
+  {
+    "page": 4,
+    "role": 2,
+    "first": 36,
+    "cost": 19.458805002826672,
+    "text": "bad . le ;Can tad a Dio s con fuer te voz."
+  },
+  {
+    "page": 4,
+    "role": 3,
+    "first": 36,
+    "cost": 16.267478468533337,
+    "text": "ba d le; Can tad a Dios c onf uer te voz. Vi va Jeho va y ben di ta la Ro ca de"
+  },
+  {
+    "page": 4,
+    "role": 0,
+    "first": 40,
+    "cost": 4.736521368017961,
+    "text": "mi Sal va ción, A la bad al Se ñor A la bad le por siem pre, A la"
+  },
+  {
+    "page": 4,
+    "role": 1,
+    "first": 40,
+    "cost": 2.2306646301249677,
+    "text": "A la bad le por siem pre, A la"
+  },
+  {
+    "page": 4,
+    "role": 2,
+    "first": 40,
+    "cost": 2.2306646301249677,
+    "text": "A la bad le por siem pre, A la"
+  },
+  {
+    "page": 4,
+    "role": 3,
+    "first": 40,
+    "cost": 4.305072301427228,
+    "text": "mi Sal va ción A la bad al Se ñor A la bad le por siem pre, A la"
+  },
+  {
+    "page": 4,
+    "role": 0,
+    "first": 42,
+    "cost": 17.404116939159103,
+    "text": "bad, A la bad, A la bad . le con to . do el co ra zón."
+  },
+  {
+    "page": 4,
+    "role": 1,
+    "first": 42,
+    "cost": 17.60302813157416,
+    "text": "bad, A la bad, A la bad . le con to . do nues tro co ra zón."
+  },
+  {
+    "page": 4,
+    "role": 2,
+    "first": 42,
+    "cost": 12.233235711158526,
+    "text": "bad le, A la bad . le con to do el co ra zón."
+  },
+  {
+    "page": 4,
+    "role": 3,
+    "first": 42,
+    "cost": 39.6020668430095,
+    "text": "bad . . . . . . . le con to . do nues tro co ra zón."
+  }
+]

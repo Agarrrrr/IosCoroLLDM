@@ -1,0 +1,8 @@
+
+tmp\performance_continuation_run.log:170:I/flutter (10594): AUDIT END page_changes_vertical 6110.832 ms, 368 frames, error=null
+tmp\performance_continuation_run.log:171:I/flutter (10594): AUDIT START page_changes_carousel
+tmp\performance_continuation_run.log:172:I/flutter (10594): AUDIT END page_changes_carousel 6114.909 ms, 368 frames, error=null
+tmp\performance_continuation_run.log:173:I/flutter (10594): AUDIT START zoom_pdf
+tmp\performance_continuation_run.log:174:I/flutter (10594): AUDIT END zoom_pdf 1724.733 ms, 103 frames, error=null
+tmp\performance_continuation_run.log:175:I/flutter (10594): AUDIT START draw_5_strokes_empty_page
+

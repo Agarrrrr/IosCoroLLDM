@@ -1,0 +1,884 @@
+{
+  "words": 906,
+  "unknown": [],
+  "layout": [
+    {
+      "page": 1,
+      "staff": 0,
+      "cost": 6.3631188677291775,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 1,
+      "cost": 6.3631188677291775,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 2,
+      "cost": 6.3631188677291775,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 3,
+      "cost": 6.3631188677291775,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 4,
+      "cost": 6.77703360704582,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 5,
+      "cost": 6.77703360704582,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 6,
+      "cost": 6.77703360704582,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 7,
+      "cost": 6.77703360704582,
+      "characters": 60
+    },
+    {
+      "page": 1,
+      "staff": 8,
+      "cost": 6.61388975234109,
+      "characters": 59
+    },
+    {
+      "page": 1,
+      "staff": 9,
+      "cost": 6.612798347932656,
+      "characters": 59
+    },
+    {
+      "page": 1,
+      "staff": 10,
+      "cost": 6.612798347932656,
+      "characters": 59
+    },
+    {
+      "page": 1,
+      "staff": 11,
+      "cost": 6.612798347932656,
+      "characters": 59
+    },
+    {
+      "page": 2,
+      "staff": 0,
+      "cost": 5.148039791037937,
+      "characters": 52
+    },
+    {
+      "page": 2,
+      "staff": 1,
+      "cost": 5.148039791037937,
+      "characters": 52
+    },
+    {
+      "page": 2,
+      "staff": 2,
+      "cost": 5.148039791037937,
+      "characters": 52
+    },
+    {
+      "page": 2,
+      "staff": 3,
+      "cost": 5.148039791037937,
+      "characters": 52
+    },
+    {
+      "page": 2,
+      "staff": 4,
+      "cost": 4.522898304921435,
+      "characters": 48
+    },
+    {
+      "page": 2,
+      "staff": 5,
+      "cost": 1.8140330156360556,
+      "characters": 20
+    },
+    {
+      "page": 2,
+      "staff": 6,
+      "cost": 1.9464198512997757,
+      "characters": 14
+    },
+    {
+      "page": 2,
+      "staff": 7,
+      "cost": 3.990704850635493,
+      "characters": 40
+    },
+    {
+      "page": 2,
+      "staff": 8,
+      "cost": 4.716842260690379,
+      "characters": 59
+    },
+    {
+      "page": 2,
+      "staff": 9,
+      "cost": 3.6079477648484297,
+      "characters": 29
+    },
+    {
+      "page": 2,
+      "staff": 10,
+      "cost": 3.3157802374926186,
+      "characters": 39
+    },
+    {
+      "page": 2,
+      "staff": 11,
+      "cost": 7.4611200569398815,
+      "characters": 35
+    },
+    {
+      "page": 3,
+      "staff": 0,
+      "cost": 22.113953359399627,
+      "characters": 19
+    },
+    {
+      "page": 3,
+      "staff": 1,
+      "cost": 2.2598657867331635,
+      "characters": 25
+    },
+    {
+      "page": 3,
+      "staff": 2,
+      "cost": 4.950089106043509,
+      "characters": 49
+    },
+    {
+      "page": 3,
+      "staff": 3,
+      "cost": 2.4571843242833378,
+      "characters": 24
+    },
+    {
+      "page": 3,
+      "staff": 4,
+      "cost": 7.180477644356188,
+      "characters": 26
+    },
+    {
+      "page": 3,
+      "staff": 5,
+      "cost": 7.105811210208486,
+      "characters": 24
+    },
+    {
+      "page": 3,
+      "staff": 6,
+      "cost": 4.571340560486641,
+      "characters": 59
+    },
+    {
+      "page": 3,
+      "staff": 7,
+      "cost": 9.92238227457768,
+      "characters": 35
+    },
+    {
+      "page": 3,
+      "staff": 8,
+      "cost": 3.153386456029343,
+      "characters": 34
+    },
+    {
+      "page": 3,
+      "staff": 9,
+      "cost": 4.599298888001737,
+      "characters": 48
+    },
+    {
+      "page": 3,
+      "staff": 10,
+      "cost": 2.85289425605525,
+      "characters": 27
+    },
+    {
+      "page": 3,
+      "staff": 11,
+      "cost": 11.632562801318521,
+      "characters": 10
+    },
+    {
+      "page": 4,
+      "staff": 0,
+      "cost": 1.1513484690000664,
+      "characters": 13
+    },
+    {
+      "page": 4,
+      "staff": 1,
+      "cost": 4.17212852292453,
+      "characters": 58
+    },
+    {
+      "page": 4,
+      "staff": 2,
+      "cost": 2.708781520254866,
+      "characters": 35
+    },
+    {
+      "page": 4,
+      "staff": 3,
+      "cost": 1.5438496081482809,
+      "characters": 15
+    },
+    {
+      "page": 4,
+      "staff": 6,
+      "cost": 5.116156876701285,
+      "characters": 50
+    },
+    {
+      "page": 4,
+      "staff": 7,
+      "cost": 16.420976912867747,
+      "characters": 44
+    },
+    {
+      "page": 4,
+      "staff": 9,
+      "cost": 14.17074102615338,
+      "characters": 28
+    },
+    {
+      "page": 4,
+      "staff": 10,
+      "cost": 14.627126071640216,
+      "characters": 49
+    },
+    {
+      "page": 4,
+      "staff": 11,
+      "cost": 26.829467019370657,
+      "characters": 42
+    },
+    {
+      "page": 5,
+      "staff": 0,
+      "cost": 1.5938372288000269,
+      "characters": 16
+    },
+    {
+      "page": 5,
+      "staff": 1,
+      "cost": 4.130007209914313,
+      "characters": 41
+    },
+    {
+      "page": 5,
+      "staff": 2,
+      "cost": 11.631687257753766,
+      "characters": 47
+    },
+    {
+      "page": 5,
+      "staff": 3,
+      "cost": 5.711510540759999,
+      "characters": 49
+    },
+    {
+      "page": 5,
+      "staff": 4,
+      "cost": 16.833613375413098,
+      "characters": 45
+    },
+    {
+      "page": 5,
+      "staff": 5,
+      "cost": 27.70766895615252,
+      "characters": 26
+    },
+    {
+      "page": 5,
+      "staff": 6,
+      "cost": 37.56630320668909,
+      "characters": 18
+    },
+    {
+      "page": 5,
+      "staff": 7,
+      "cost": 6.743930722803116,
+      "characters": 63
+    },
+    {
+      "page": 5,
+      "staff": 8,
+      "cost": 10.074685359229395,
+      "characters": 13
+    },
+    {
+      "page": 5,
+      "staff": 9,
+      "cost": 2.6209826563202183,
+      "characters": 25
+    },
+    {
+      "page": 5,
+      "staff": 10,
+      "cost": 5.026913682124478,
+      "characters": 29
+    },
+    {
+      "page": 5,
+      "staff": 11,
+      "cost": 5.341840723808385,
+      "characters": 52
+    },
+    {
+      "page": 6,
+      "staff": 0,
+      "cost": 1.8232777141629175,
+      "characters": 18
+    },
+    {
+      "page": 6,
+      "staff": 1,
+      "cost": 4.176152580408682,
+      "characters": 40
+    },
+    {
+      "page": 6,
+      "staff": 2,
+      "cost": 27.392002417303278,
+      "characters": 28
+    },
+    {
+      "page": 6,
+      "staff": 3,
+      "cost": 16.767333802306464,
+      "characters": 23
+    },
+    {
+      "page": 6,
+      "staff": 4,
+      "cost": 11.067705314536495,
+      "characters": 4
+    },
+    {
+      "page": 6,
+      "staff": 5,
+      "cost": 4.150631504122058,
+      "characters": 40
+    },
+    {
+      "page": 6,
+      "staff": 6,
+      "cost": 21.20586133582179,
+      "characters": 30
+    },
+    {
+      "page": 6,
+      "staff": 7,
+      "cost": 16.02487488137106,
+      "characters": 14
+    },
+    {
+      "page": 6,
+      "staff": 8,
+      "cost": 13.907873951167776,
+      "characters": 26
+    },
+    {
+      "page": 6,
+      "staff": 9,
+      "cost": 18.93592964144788,
+      "characters": 29
+    },
+    {
+      "page": 6,
+      "staff": 10,
+      "cost": 1.8092716684990904,
+      "characters": 22
+    },
+    {
+      "page": 6,
+      "staff": 11,
+      "cost": 1.6120763419692978,
+      "characters": 19
+    },
+    {
+      "page": 7,
+      "staff": 0,
+      "cost": 24.310413242325197,
+      "characters": 26
+    },
+    {
+      "page": 7,
+      "staff": 1,
+      "cost": 12.733428130525358,
+      "characters": 25
+    },
+    {
+      "page": 7,
+      "staff": 2,
+      "cost": 7.218578361254542,
+      "characters": 18
+    },
+    {
+      "page": 7,
+      "staff": 3,
+      "cost": 1.8235423124796581,
+      "characters": 16
+    },
+    {
+      "page": 7,
+      "staff": 4,
+      "cost": 10.997310911939103,
+      "characters": 19
+    },
+    {
+      "page": 7,
+      "staff": 5,
+      "cost": 4.603603241006366,
+      "characters": 45
+    },
+    {
+      "page": 7,
+      "staff": 6,
+      "cost": 8.616300229748065,
+      "characters": 19
+    },
+    {
+      "page": 7,
+      "staff": 7,
+      "cost": 2.4158173623842862,
+      "characters": 25
+    },
+    {
+      "page": 7,
+      "staff": 8,
+      "cost": 9.320385732163325,
+      "characters": 29
+    },
+    {
+      "page": 7,
+      "staff": 9,
+      "cost": 15.011353359152157,
+      "characters": 54
+    },
+    {
+      "page": 7,
+      "staff": 10,
+      "cost": 8.47372249631097,
+      "characters": 37
+    },
+    {
+      "page": 7,
+      "staff": 11,
+      "cost": 12.638908873906916,
+      "characters": 40
+    },
+    {
+      "page": 8,
+      "staff": 0,
+      "cost": 3.4240813822017158,
+      "characters": 47
+    },
+    {
+      "page": 8,
+      "staff": 1,
+      "cost": 3.4240813822017158,
+      "characters": 47
+    },
+    {
+      "page": 8,
+      "staff": 2,
+      "cost": 3.4240813822017158,
+      "characters": 47
+    },
+    {
+      "page": 8,
+      "staff": 3,
+      "cost": 3.4240813822017158,
+      "characters": 47
+    },
+    {
+      "page": 8,
+      "staff": 4,
+      "cost": 28.03352512314375,
+      "characters": 22
+    },
+    {
+      "page": 8,
+      "staff": 5,
+      "cost": 33.034371589295944,
+      "characters": 23
+    },
+    {
+      "page": 8,
+      "staff": 6,
+      "cost": 35.02442039638198,
+      "characters": 22
+    },
+    {
+      "page": 8,
+      "staff": 7,
+      "cost": 25.02442039764638,
+      "characters": 22
+    },
+    {
+      "page": 8,
+      "staff": 8,
+      "cost": 4.427382351302939,
+      "characters": 43
+    },
+    {
+      "page": 8,
+      "staff": 9,
+      "cost": 4.427382351302939,
+      "characters": 43
+    },
+    {
+      "page": 8,
+      "staff": 10,
+      "cost": 4.3868239463457375,
+      "characters": 43
+    },
+    {
+      "page": 8,
+      "staff": 11,
+      "cost": 4.3868239463457375,
+      "characters": 43
+    },
+    {
+      "page": 9,
+      "staff": 0,
+      "cost": 2.7468590881696215,
+      "characters": 28
+    },
+    {
+      "page": 9,
+      "staff": 1,
+      "cost": 46.31840840258823,
+      "characters": 19
+    },
+    {
+      "page": 9,
+      "staff": 2,
+      "cost": 4.3769828588287325,
+      "characters": 44
+    },
+    {
+      "page": 9,
+      "staff": 3,
+      "cost": 4.3769828588287325,
+      "characters": 44
+    },
+    {
+      "page": 9,
+      "staff": 4,
+      "cost": 4.422523550619222,
+      "characters": 41
+    },
+    {
+      "page": 9,
+      "staff": 5,
+      "cost": 4.422523550619222,
+      "characters": 41
+    },
+    {
+      "page": 9,
+      "staff": 6,
+      "cost": 4.422523550619222,
+      "characters": 41
+    },
+    {
+      "page": 9,
+      "staff": 7,
+      "cost": 4.422523550619222,
+      "characters": 41
+    },
+    {
+      "page": 9,
+      "staff": 8,
+      "cost": 2.5209226872044357,
+      "characters": 25
+    },
+    {
+      "page": 9,
+      "staff": 9,
+      "cost": 2.7726588800857734,
+      "characters": 26
+    },
+    {
+      "page": 9,
+      "staff": 10,
+      "cost": 2.5857200053323024,
+      "characters": 26
+    },
+    {
+      "page": 9,
+      "staff": 11,
+      "cost": 4.203808783167816,
+      "characters": 43
+    },
+    {
+      "page": 10,
+      "staff": 0,
+      "cost": 1.2092164231327225,
+      "characters": 15
+    },
+    {
+      "page": 10,
+      "staff": 1,
+      "cost": 3.553071587718125,
+      "characters": 39
+    },
+    {
+      "page": 10,
+      "staff": 2,
+      "cost": 2.6061322334134305,
+      "characters": 27
+    },
+    {
+      "page": 10,
+      "staff": 3,
+      "cost": 3.6037419204165904,
+      "characters": 38
+    },
+    {
+      "page": 10,
+      "staff": 4,
+      "cost": 1.5973191783255876,
+      "characters": 18
+    },
+    {
+      "page": 10,
+      "staff": 5,
+      "cost": 3.1595956037559376,
+      "characters": 33
+    },
+    {
+      "page": 10,
+      "staff": 6,
+      "cost": 24.672090401033746,
+      "characters": 23
+    },
+    {
+      "page": 10,
+      "staff": 7,
+      "cost": 3.5764950065284262,
+      "characters": 33
+    },
+    {
+      "page": 10,
+      "staff": 8,
+      "cost": 1.2028970165138764,
+      "characters": 19
+    },
+    {
+      "page": 10,
+      "staff": 9,
+      "cost": 2.3956734415155165,
+      "characters": 22
+    },
+    {
+      "page": 10,
+      "staff": 10,
+      "cost": 3.1654656297637627,
+      "characters": 34
+    },
+    {
+      "page": 10,
+      "staff": 11,
+      "cost": 3.968233595712145,
+      "characters": 37
+    },
+    {
+      "page": 11,
+      "staff": 0,
+      "cost": 3.308648314123245,
+      "characters": 29
+    },
+    {
+      "page": 11,
+      "staff": 1,
+      "cost": 3.709362445320163,
+      "characters": 37
+    },
+    {
+      "page": 11,
+      "staff": 2,
+      "cost": 4.0879314006282685,
+      "characters": 41
+    },
+    {
+      "page": 11,
+      "staff": 3,
+      "cost": 4.290132344764799,
+      "characters": 42
+    },
+    {
+      "page": 11,
+      "staff": 4,
+      "cost": 7.426014631060728,
+      "characters": 31
+    },
+    {
+      "page": 11,
+      "staff": 5,
+      "cost": 7.426014631060728,
+      "characters": 31
+    },
+    {
+      "page": 11,
+      "staff": 6,
+      "cost": 7.426014631060728,
+      "characters": 31
+    },
+    {
+      "page": 11,
+      "staff": 7,
+      "cost": 7.426014631060728,
+      "characters": 31
+    },
+    {
+      "page": 11,
+      "staff": 8,
+      "cost": 6.712591461405935,
+      "characters": 15
+    },
+    {
+      "page": 11,
+      "staff": 9,
+      "cost": 11.712591461405935,
+      "characters": 15
+    },
+    {
+      "page": 11,
+      "staff": 10,
+      "cost": 31.712591637819266,
+      "characters": 15
+    },
+    {
+      "page": 11,
+      "staff": 11,
+      "cost": 1.3970451964178985,
+      "characters": 15
+    },
+    {
+      "page": 12,
+      "staff": 0,
+      "cost": 22.425268032093964,
+      "characters": 15
+    },
+    {
+      "page": 12,
+      "staff": 1,
+      "cost": 50.85038776255487,
+      "characters": 13
+    },
+    {
+      "page": 12,
+      "staff": 2,
+      "cost": 62.225157545322915,
+      "characters": 14
+    },
+    {
+      "page": 12,
+      "staff": 3,
+      "cost": 7.401691607997281,
+      "characters": 15
+    },
+    {
+      "page": 12,
+      "staff": 4,
+      "cost": 10.792705077742463,
+      "characters": 5
+    },
+    {
+      "page": 12,
+      "staff": 5,
+      "cost": 26.959737056715607,
+      "characters": 6
+    },
+    {
+      "page": 12,
+      "staff": 6,
+      "cost": 61.03996854592905,
+      "characters": 6
+    },
+    {
+      "page": 12,
+      "staff": 7,
+      "cost": 5.792705077742466,
+      "characters": 5
+    },
+    {
+      "page": 12,
+      "staff": 8,
+      "cost": 7.201580980738471,
+      "characters": 14
+    },
+    {
+      "page": 12,
+      "staff": 9,
+      "cost": 27.97973630121331,
+      "characters": 14
+    },
+    {
+      "page": 12,
+      "staff": 10,
+      "cost": 32.20158100071926,
+      "characters": 14
+    },
+    {
+      "page": 12,
+      "staff": 11,
+      "cost": 2.178004520169392,
+      "characters": 14
+    }
+  ],
+  "crowdedLabelRepairs": [
+    {
+      "role": 1,
+      "word": "siempre",
+      "measure": 16
+    },
+    {
+      "role": 1,
+      "word": "gloria",
+      "measure": 34
+    },
+    {
+      "role": 1,
+      "word": "mi",
+      "measure": 62
+    },
+    {
+      "role": 1,
+      "word": "amén",
+      "measure": 97
+    },
+    {
+      "role": 2,
+      "word": "gloria",
+      "measure": 30
+    },
+    {
+      "role": 3,
+      "word": "naasón",
+      "measure": 28
+    }
+  ]
+}

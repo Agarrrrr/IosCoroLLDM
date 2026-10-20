@@ -10,13 +10,25 @@ Future<RewardPromptResult?> showRewardOrPremiumDialog({
   required BuildContext context,
   required RewardPromptType type,
   Color? accentColor,
-}) =>
-    showDialog<RewardPromptResult>(
-      context: context,
-      builder: (_) => RewardOrPremiumDialog(
-          type: type,
-          accentColor: accentColor ?? Theme.of(context).colorScheme.primary),
-    );
+}) async {
+  ModalRoute<dynamic>? dialogRoute;
+  final result = await showDialog<RewardPromptResult>(
+    context: context,
+    builder: (dialogContext) {
+      dialogRoute ??= ModalRoute.of(dialogContext);
+      return RewardOrPremiumDialog(
+        type: type,
+        accentColor: accentColor ?? Theme.of(context).colorScheme.primary,
+      );
+    },
+  );
+  if (dialogRoute != null) {
+    try {
+      await dialogRoute!.completed.timeout(const Duration(milliseconds: 350));
+    } catch (_) {}
+  }
+  return result;
+}
 
 class RewardOrPremiumDialog extends StatelessWidget {
   final RewardPromptType type;

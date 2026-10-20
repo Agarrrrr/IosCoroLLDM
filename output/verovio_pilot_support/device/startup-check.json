@@ -1,0 +1,41 @@
+[
+  {
+    "attempt": 1,
+    "pid": "4278",
+    "elapsedSeconds": 2.157,
+    "ready": {
+      "type": "ready",
+      "notes": 90,
+      "lyrics": 93,
+      "pages": 1,
+      "milliseconds": 589,
+      "layout": "closed"
+    }
+  },
+  {
+    "attempt": 2,
+    "pid": "4481",
+    "elapsedSeconds": 2.156,
+    "ready": {
+      "type": "ready",
+      "notes": 90,
+      "lyrics": 93,
+      "pages": 1,
+      "milliseconds": 530,
+      "layout": "closed"
+    }
+  },
+  {
+    "attempt": 3,
+    "pid": "4709",
+    "elapsedSeconds": 1.531,
+    "ready": {
+      "type": "ready",
+      "notes": 90,
+      "lyrics": 93,
+      "pages": 1,
+      "milliseconds": 566,
+      "layout": "closed"
+    }
+  }
+]

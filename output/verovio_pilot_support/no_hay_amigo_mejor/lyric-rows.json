@@ -1,0 +1,3643 @@
+[
+  {
+    "page": 1,
+    "system": 0,
+    "variant": 1,
+    "cost": 2.5384667044992257,
+    "chars": [
+      {
+        "text": "N",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "h",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-1-0",
+        "absolute": 0.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "j",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "q",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-7-0",
+        "absolute": 6.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-7-0",
+        "absolute": 6.75
+      },
+      {
+        "text": "ñ",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "M",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "J",
+        "id": "amigo-0-10-0",
+        "absolute": 9.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-10-0",
+        "absolute": 9.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 0,
+    "variant": 2,
+    "cost": 2.529385932572325,
+    "chars": [
+      {
+        "text": "N",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "h",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-1-0",
+        "absolute": 0.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "b",
+        "id": "amigo-0-7-0",
+        "absolute": 6.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-7-0",
+        "absolute": 6.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-7-0",
+        "absolute": 6.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "Q",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-10-0",
+        "absolute": 9.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-10-0",
+        "absolute": 9.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 0,
+    "variant": 3,
+    "cost": 2.512447992441785,
+    "chars": [
+      {
+        "text": "C",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-0-0",
+        "absolute": 0.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-1-0",
+        "absolute": 0.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-1-0",
+        "absolute": 0.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-2-0",
+        "absolute": 1.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-3-0",
+        "absolute": 3.0
+      },
+      {
+        "text": "ﬂ",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-4-0",
+        "absolute": 3.75
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-5-0",
+        "absolute": 4.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-6-0",
+        "absolute": 6.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-7-0",
+        "absolute": 6.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-7-0",
+        "absolute": 6.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-8-0",
+        "absolute": 7.0
+      },
+      {
+        "text": "C",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-9-0",
+        "absolute": 9.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-10-0",
+        "absolute": 9.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-10-0",
+        "absolute": 9.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 1,
+    "variant": 1,
+    "cost": 2.735275944836434,
+    "chars": [
+      {
+        "text": "s",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "ú",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-14-0",
+        "absolute": 13.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-14-0",
+        "absolute": 13.0
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "á",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "ﬁ",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": ";",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-18-0",
+        "absolute": 18.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-18-0",
+        "absolute": 18.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "É",
+        "id": "amigo-0-20-0",
+        "absolute": 19.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-20-0",
+        "absolute": 19.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-21-0",
+        "absolute": 21.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-21-0",
+        "absolute": 21.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-22-0",
+        "absolute": 21.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-22-0",
+        "absolute": 21.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-22-0",
+        "absolute": 21.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 1,
+    "variant": 2,
+    "cost": 2.7294560388683915,
+    "chars": [
+      {
+        "text": "v",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-14-0",
+        "absolute": 13.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-14-0",
+        "absolute": 13.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-14-0",
+        "absolute": 13.0
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": ";",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "M",
+        "id": "amigo-0-18-0",
+        "absolute": 18.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-18-0",
+        "absolute": 18.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-20-0",
+        "absolute": 19.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-20-0",
+        "absolute": 19.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-20-0",
+        "absolute": 19.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-21-0",
+        "absolute": 21.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-21-0",
+        "absolute": 21.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-22-0",
+        "absolute": 21.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-22-0",
+        "absolute": 21.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 1,
+    "variant": 3,
+    "cost": 2.744062932778598,
+    "chars": [
+      {
+        "text": "v",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-11-0",
+        "absolute": 10.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-12-0",
+        "absolute": 12.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-13-0",
+        "absolute": 12.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-14-0",
+        "absolute": 13.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-15-0",
+        "absolute": 15.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-16-0",
+        "absolute": 15.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": ";",
+        "id": "amigo-0-17-0",
+        "absolute": 16.0
+      },
+      {
+        "text": "C",
+        "id": "amigo-0-18-0",
+        "absolute": 18.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-18-0",
+        "absolute": 18.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-18-0",
+        "absolute": 18.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-19-0",
+        "absolute": 18.75
+      },
+      {
+        "text": "ú",
+        "id": "amigo-0-20-0",
+        "absolute": 19.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-21-0",
+        "absolute": 21.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-21-0",
+        "absolute": 21.0
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-22-0",
+        "absolute": 21.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-22-0",
+        "absolute": 21.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 2,
+    "variant": 1,
+    "cost": 19.251352178501698,
+    "chars": [
+      {
+        "text": "v",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-24-0",
+        "absolute": 24.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-24-0",
+        "absolute": 24.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-25-0",
+        "absolute": 24.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-25-0",
+        "absolute": 24.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": "D",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-32-0",
+        "absolute": 32.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-32-0",
+        "absolute": 32.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-33-0",
+        "absolute": 33.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-33-0",
+        "absolute": 33.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-33-0",
+        "absolute": 33.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-34-0",
+        "absolute": 33.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-34-0",
+        "absolute": 33.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 2,
+    "variant": 2,
+    "cost": 14.520329848588766,
+    "chars": [
+      {
+        "text": "ñ",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "q",
+        "id": "amigo-0-24-0",
+        "absolute": 24.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-24-0",
+        "absolute": 24.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-24-0",
+        "absolute": 24.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-25-0",
+        "absolute": 24.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-25-0",
+        "absolute": 24.75
+      },
+      {
+        "text": "f",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "í",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": "M",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-33-0",
+        "absolute": 33.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-33-0",
+        "absolute": 33.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-34-0",
+        "absolute": 33.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-34-0",
+        "absolute": 33.75
+      }
+    ]
+  },
+  {
+    "page": 1,
+    "system": 2,
+    "variant": 3,
+    "cost": 11.404980098469021,
+    "chars": [
+      {
+        "text": "s",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-23-0",
+        "absolute": 22.0
+      },
+      {
+        "text": "J",
+        "id": "amigo-0-24-0",
+        "absolute": 24.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-24-0",
+        "absolute": 24.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-25-0",
+        "absolute": 24.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-25-0",
+        "absolute": 24.75
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-26-0",
+        "absolute": 25.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": ";",
+        "id": "amigo-0-28-0",
+        "absolute": 28.0
+      },
+      {
+        "text": "P",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-29-0",
+        "absolute": 30.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-30-0",
+        "absolute": 30.75
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-31-0",
+        "absolute": 31.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-32-0",
+        "absolute": 32.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-32-0",
+        "absolute": 32.75
+      },
+      {
+        "text": "É",
+        "id": "amigo-0-33-0",
+        "absolute": 33.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-33-0",
+        "absolute": 33.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-34-0",
+        "absolute": 33.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-34-0",
+        "absolute": 33.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 0,
+    "variant": 1,
+    "cost": 8.388734248947245,
+    "chars": [
+      {
+        "text": "n",
+        "id": "amigo-0-35-0",
+        "absolute": 34.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-35-0",
+        "absolute": 34.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-35-0",
+        "absolute": 34.0
+      },
+      {
+        "text": "b",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-37-0",
+        "absolute": 36.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-37-0",
+        "absolute": 36.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-38-0",
+        "absolute": 36.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-38-0",
+        "absolute": 36.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-38-0",
+        "absolute": 36.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-39-0",
+        "absolute": 37.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-39-0",
+        "absolute": 37.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-39-0",
+        "absolute": 37.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": ".",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": "A",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "h",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 0,
+    "variant": 2,
+    "cost": 4.996971936977946,
+    "chars": [
+      {
+        "text": "m",
+        "id": "amigo-0-35-0",
+        "absolute": 34.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-35-0",
+        "absolute": 34.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-36-0",
+        "absolute": 35.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-37-0",
+        "absolute": 36.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-37-0",
+        "absolute": 36.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-37-0",
+        "absolute": 36.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-38-0",
+        "absolute": 36.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-38-0",
+        "absolute": 36.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-39-0",
+        "absolute": 37.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-39-0",
+        "absolute": 37.0
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "h",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": ".",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": "A",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "h",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 0,
+    "variant": 3,
+    "cost": 10.522472883953313,
+    "chars": [
+      {
+        "text": "d",
+        "id": "amigo-0-35-0",
+        "absolute": 34.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-35-0",
+        "absolute": 34.0
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-37-0",
+        "absolute": 36.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-38-0",
+        "absolute": 36.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-38-0",
+        "absolute": 36.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-39-0",
+        "absolute": 37.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-39-0",
+        "absolute": 37.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-40-0",
+        "absolute": 38.75
+      },
+      {
+        "text": "p",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-41-0",
+        "absolute": 39.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-42-0",
+        "absolute": 39.75
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": "á",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": ".",
+        "id": "amigo-0-43-0",
+        "absolute": 40.0
+      },
+      {
+        "text": "G",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-44-0",
+        "absolute": 41.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-45-0",
+        "absolute": 41.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 1,
+    "variant": 1,
+    "cost": 15.665666343957936,
+    "chars": [
+      {
+        "text": "t",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-47-0",
+        "absolute": 43.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-47-0",
+        "absolute": 43.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "p",
+        "id": "amigo-0-49-0",
+        "absolute": 44.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-49-0",
+        "absolute": 44.75
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "z",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "J",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-53-0",
+        "absolute": 47.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-53-0",
+        "absolute": 47.75
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": "P",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-58-0",
+        "absolute": 53.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 1,
+    "variant": 2,
+    "cost": 16.761906577752498,
+    "chars": [
+      {
+        "text": "c",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "f",
+        "id": "amigo-0-49-0",
+        "absolute": 44.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-49-0",
+        "absolute": 44.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "z",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-53-0",
+        "absolute": 47.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-53-0",
+        "absolute": 47.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-53-0",
+        "absolute": 47.75
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": "P",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "q",
+        "id": "amigo-0-58-0",
+        "absolute": 53.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-58-0",
+        "absolute": 53.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-58-0",
+        "absolute": 53.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 1,
+    "variant": 3,
+    "cost": 15.367496292764178,
+    "chars": [
+      {
+        "text": "g",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-46-0",
+        "absolute": 42.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-47-0",
+        "absolute": 43.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-47-0",
+        "absolute": 43.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-47-0",
+        "absolute": 43.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-47-0",
+        "absolute": 43.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-47-0",
+        "absolute": 43.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-48-0",
+        "absolute": 44.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-49-0",
+        "absolute": 44.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-49-0",
+        "absolute": 44.75
+      },
+      {
+        "text": "ñ",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-50-0",
+        "absolute": 45.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-51-0",
+        "absolute": 46.75
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-52-0",
+        "absolute": 47.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-53-0",
+        "absolute": 47.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-53-0",
+        "absolute": 47.75
+      },
+      {
+        "text": "p",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-54-0",
+        "absolute": 48.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-56-0",
+        "absolute": 51.0
+      },
+      {
+        "text": "E",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-57-0",
+        "absolute": 53.0
+      },
+      {
+        "text": "A",
+        "id": "amigo-0-58-0",
+        "absolute": 53.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 2,
+    "variant": 1,
+    "cost": 38.467959806704926,
+    "chars": [
+      {
+        "text": "m",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-60-0",
+        "absolute": 55.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-60-0",
+        "absolute": 55.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-62-0",
+        "absolute": 56.75
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-62-0",
+        "absolute": 56.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-62-0",
+        "absolute": 56.75
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-66-0",
+        "absolute": 59.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-66-0",
+        "absolute": 59.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": ".",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 2,
+    "variant": 2,
+    "cost": 13.333567878095327,
+    "chars": [
+      {
+        "text": "C",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-60-0",
+        "absolute": 55.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-60-0",
+        "absolute": 55.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-62-0",
+        "absolute": 56.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-62-0",
+        "absolute": 56.75
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "¡",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "G",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-66-0",
+        "absolute": 59.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-66-0",
+        "absolute": 59.75
+      },
+      {
+        "text": "ñ",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "!",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "H",
+        "id": "amigo-0-68-0",
+        "absolute": 62.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-68-0",
+        "absolute": 62.0
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-68-0",
+        "absolute": 62.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-69-0",
+        "absolute": 62.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-69-0",
+        "absolute": 62.75
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-70-0",
+        "absolute": 63.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-70-0",
+        "absolute": 63.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-71-0",
+        "absolute": 64.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-71-0",
+        "absolute": 64.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-71-0",
+        "absolute": 64.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-71-0",
+        "absolute": 64.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-71-0",
+        "absolute": 64.75
+      },
+      {
+        "text": "p",
+        "id": "amigo-0-72-0",
+        "absolute": 65.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-72-0",
+        "absolute": 65.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-73-0",
+        "absolute": 65.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-73-0",
+        "absolute": 65.75
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "system": 2,
+    "variant": 3,
+    "cost": 38.327890005799716,
+    "chars": [
+      {
+        "text": "p",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-59-0",
+        "absolute": 54.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-60-0",
+        "absolute": 55.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-60-0",
+        "absolute": 55.75
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-60-0",
+        "absolute": 55.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-61-0",
+        "absolute": 56.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-62-0",
+        "absolute": 56.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-62-0",
+        "absolute": 56.75
+      },
+      {
+        "text": "ñ",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-63-0",
+        "absolute": 57.0
+      },
+      {
+        "text": "N",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-64-0",
+        "absolute": 58.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-65-0",
+        "absolute": 59.0
+      },
+      {
+        "text": "J",
+        "id": "amigo-0-66-0",
+        "absolute": 59.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-66-0",
+        "absolute": 59.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-66-0",
+        "absolute": 59.75
+      },
+      {
+        "text": "q",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "í",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      },
+      {
+        "text": ".",
+        "id": "amigo-0-67-0",
+        "absolute": 60.0
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "system": 0,
+    "variant": 0,
+    "cost": 12.681256402637105,
+    "chars": [
+      {
+        "text": "t",
+        "id": "amigo-0-74-0",
+        "absolute": 66.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-74-0",
+        "absolute": 66.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-74-0",
+        "absolute": 66.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-75-0",
+        "absolute": 68.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-75-0",
+        "absolute": 68.0
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-76-0",
+        "absolute": 68.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-76-0",
+        "absolute": 68.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-76-0",
+        "absolute": 68.75
+      },
+      {
+        "text": "p",
+        "id": "amigo-0-77-0",
+        "absolute": 69.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-77-0",
+        "absolute": 69.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-77-0",
+        "absolute": 69.0
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-77-0",
+        "absolute": 69.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-78-0",
+        "absolute": 70.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-78-0",
+        "absolute": 70.75
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-79-0",
+        "absolute": 71.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-79-0",
+        "absolute": 71.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-79-0",
+        "absolute": 71.0
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-80-0",
+        "absolute": 71.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-80-0",
+        "absolute": 71.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-81-0",
+        "absolute": 72.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-81-0",
+        "absolute": 72.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-81-0",
+        "absolute": 72.0
+      },
+      {
+        "text": ";",
+        "id": "amigo-0-81-0",
+        "absolute": 72.0
+      },
+      {
+        "text": "P",
+        "id": "amigo-0-82-0",
+        "absolute": 74.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-82-0",
+        "absolute": 74.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-82-0",
+        "absolute": 74.0
+      },
+      {
+        "text": "q",
+        "id": "amigo-0-83-0",
+        "absolute": 74.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-83-0",
+        "absolute": 74.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-83-0",
+        "absolute": 74.75
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-84-0",
+        "absolute": 75.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-84-0",
+        "absolute": 75.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-84-0",
+        "absolute": 75.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-84-0",
+        "absolute": 75.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-85-0",
+        "absolute": 76.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-85-0",
+        "absolute": 76.75
+      },
+      {
+        "text": "s",
+        "id": "amigo-0-85-0",
+        "absolute": 76.75
+      },
+      {
+        "text": "p",
+        "id": "amigo-0-86-0",
+        "absolute": 77.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-86-0",
+        "absolute": 77.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-87-0",
+        "absolute": 77.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-87-0",
+        "absolute": 77.75
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "system": 1,
+    "variant": 0,
+    "cost": 2.3734659054983953,
+    "chars": [
+      {
+        "text": "m",
+        "id": "amigo-0-88-0",
+        "absolute": 78.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-88-0",
+        "absolute": 78.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-89-0",
+        "absolute": 80.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-89-0",
+        "absolute": 80.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-90-0",
+        "absolute": 80.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-90-0",
+        "absolute": 80.75
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-91-0",
+        "absolute": 81.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-91-0",
+        "absolute": 81.0
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-92-0",
+        "absolute": 82.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-92-0",
+        "absolute": 82.75
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-93-0",
+        "absolute": 83.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-93-0",
+        "absolute": 83.0
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-94-0",
+        "absolute": 83.75
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-94-0",
+        "absolute": 83.75
+      },
+      {
+        "text": "v",
+        "id": "amigo-0-95-0",
+        "absolute": 84.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-95-0",
+        "absolute": 84.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-95-0",
+        "absolute": 84.0
+      },
+      {
+        "text": ".",
+        "id": "amigo-0-95-0",
+        "absolute": 84.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-96-0",
+        "absolute": 85.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-96-0",
+        "absolute": 85.0
+      },
+      {
+        "text": "l",
+        "id": "amigo-0-97-0",
+        "absolute": 85.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-97-0",
+        "absolute": 85.75
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "system": 2,
+    "variant": 0,
+    "cost": 5.636277043595416,
+    "chars": [
+      {
+        "text": "t",
+        "id": "amigo-0-98-0",
+        "absolute": 86.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-98-0",
+        "absolute": 86.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-98-0",
+        "absolute": 86.0
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-99-0",
+        "absolute": 87.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-99-0",
+        "absolute": 87.75
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-99-0",
+        "absolute": 87.75
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-99-0",
+        "absolute": 87.75
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-100-0",
+        "absolute": 88.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-100-0",
+        "absolute": 88.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-101-0",
+        "absolute": 88.75
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-101-0",
+        "absolute": 88.75
+      },
+      {
+        "text": "z",
+        "id": "amigo-0-102-0",
+        "absolute": 89.0
+      },
+      {
+        "text": "ó",
+        "id": "amigo-0-102-0",
+        "absolute": 89.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-102-0",
+        "absolute": 89.0
+      },
+      {
+        "text": "q",
+        "id": "amigo-0-103-0",
+        "absolute": 91.0
+      },
+      {
+        "text": "u",
+        "id": "amigo-0-103-0",
+        "absolute": 91.0
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-103-0",
+        "absolute": 91.0
+      },
+      {
+        "text": "d",
+        "id": "amigo-0-104-0",
+        "absolute": 91.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-104-0",
+        "absolute": 91.75
+      },
+      {
+        "text": "c",
+        "id": "amigo-0-105-0",
+        "absolute": 92.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-105-0",
+        "absolute": 92.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-105-0",
+        "absolute": 92.0
+      },
+      {
+        "text": "t",
+        "id": "amigo-0-106-0",
+        "absolute": 93.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-106-0",
+        "absolute": 93.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-107-0",
+        "absolute": 94.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-107-0",
+        "absolute": 94.0
+      },
+      {
+        "text": "S",
+        "id": "amigo-0-108-0",
+        "absolute": 94.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-108-0",
+        "absolute": 94.75
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "system": 3,
+    "variant": 0,
+    "cost": 5.324788609448539,
+    "chars": [
+      {
+        "text": "ñ",
+        "id": "amigo-0-109-0",
+        "absolute": 95.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-109-0",
+        "absolute": 95.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-109-0",
+        "absolute": 95.0
+      },
+      {
+        "text": ":",
+        "id": "amigo-0-109-0",
+        "absolute": 95.0
+      },
+      {
+        "text": "\"",
+        "id": "amigo-0-110-0",
+        "absolute": 97.0
+      },
+      {
+        "text": "C",
+        "id": "amigo-0-110-0",
+        "absolute": 97.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-110-0",
+        "absolute": 97.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-111-0",
+        "absolute": 97.75
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-111-0",
+        "absolute": 97.75
+      },
+      {
+        "text": "T",
+        "id": "amigo-0-112-0",
+        "absolute": 98.0
+      },
+      {
+        "text": "ú",
+        "id": "amigo-0-112-0",
+        "absolute": 98.0
+      },
+      {
+        "text": "n",
+        "id": "amigo-0-113-0",
+        "absolute": 100.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-113-0",
+        "absolute": 100.0
+      },
+      {
+        "text": "_",
+        "id": "amigo-0-113-0",
+        "absolute": 100.0
+      },
+      {
+        "text": "h",
+        "id": "amigo-0-113-0",
+        "absolute": 100.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-113-0",
+        "absolute": 100.0
+      },
+      {
+        "text": "y",
+        "id": "amigo-0-113-0",
+        "absolute": 100.0
+      },
+      {
+        "text": "a",
+        "id": "amigo-0-114-0",
+        "absolute": 100.75
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-115-0",
+        "absolute": 101.0
+      },
+      {
+        "text": "i",
+        "id": "amigo-0-115-0",
+        "absolute": 101.0
+      },
+      {
+        "text": "g",
+        "id": "amigo-0-117-0",
+        "absolute": 103.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-117-0",
+        "absolute": 103.0
+      },
+      {
+        "text": ",",
+        "id": "amigo-0-117-0",
+        "absolute": 103.0
+      },
+      {
+        "text": "m",
+        "id": "amigo-0-118-0",
+        "absolute": 103.75
+      },
+      {
+        "text": "e",
+        "id": "amigo-0-118-0",
+        "absolute": 103.75
+      },
+      {
+        "text": "j",
+        "id": "amigo-0-119-0",
+        "absolute": 104.0
+      },
+      {
+        "text": "o",
+        "id": "amigo-0-119-0",
+        "absolute": 104.0
+      },
+      {
+        "text": "r",
+        "id": "amigo-0-119-0",
+        "absolute": 104.0
+      },
+      {
+        "text": "\"",
+        "id": "amigo-0-119-0",
+        "absolute": 104.0
+      },
+      {
+        "text": ".",
+        "id": "amigo-0-119-0",
+        "absolute": 104.0
+      }
+    ]
+  }
+]

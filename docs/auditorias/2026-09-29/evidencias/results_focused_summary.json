@@ -1,0 +1,223 @@
+{
+  "input": "results_focused.json",
+  "device": {
+    "refreshRate": 60.000003814697266,
+    "devicePixelRatio": 2.8125,
+    "date": "2026-09-29T18:24:38.479572"
+  },
+  "budgetMs": 16.666665607028605,
+  "note": "UI/raster duration thresholds are not a count of display-dropped frames. Timers include scheduling delays. RSS includes test instrumentation and graphics allocations.",
+  "rssAtEndMiB": 369.01953125,
+  "scenarios": {
+    "decrypt_only_repeat_1": {
+      "rssBefore": 282288128,
+      "encrypted": true,
+      "inputBytes": 7361395,
+      "outputBytes": 7361367,
+      "validPdf": true,
+      "elapsedMs": 7672.355,
+      "rssAfter": 305942528,
+      "frameCount": 461,
+      "uiMs": {
+        "p50": 0.589,
+        "p95": 0.692,
+        "p99": 0.809,
+        "max": 1.049
+      },
+      "rasterMs": {
+        "p50": 2.052,
+        "p95": 4.872,
+        "p99": 6.441,
+        "max": 8.333
+      },
+      "totalSpanMs": {
+        "p50": 3.31,
+        "p95": 6.248,
+        "p99": 8.136,
+        "max": 9.044
+      },
+      "timerGapsMs": {
+        "p50": 15.997,
+        "p95": 16.495,
+        "p99": 17.809,
+        "max": 19.076
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 291.76953125
+    },
+    "decrypt_only_repeat_2": {
+      "rssBefore": 302460928,
+      "encrypted": true,
+      "inputBytes": 7361395,
+      "outputBytes": 7361367,
+      "validPdf": true,
+      "elapsedMs": 7784.306,
+      "rssAfter": 303738880,
+      "frameCount": 467,
+      "uiMs": {
+        "p50": 0.551,
+        "p95": 0.69,
+        "p99": 0.75,
+        "max": 0.812
+      },
+      "rasterMs": {
+        "p50": 2.54,
+        "p95": 6.283,
+        "p99": 6.503,
+        "max": 7.035
+      },
+      "totalSpanMs": {
+        "p50": 3.893,
+        "p95": 7.807,
+        "p99": 8.123,
+        "max": 25.87
+      },
+      "timerGapsMs": {
+        "p50": 16.004,
+        "p95": 16.581,
+        "p99": 18.849,
+        "max": 41.01
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 289.66796875
+    },
+    "standalone_first_5_strokes": {
+      "rssBefore": 299556864,
+      "newStrokes": 5,
+      "elapsedMs": 6630.03,
+      "rssAfter": 308260864,
+      "frameCount": 399,
+      "uiMs": {
+        "p50": 0.578,
+        "p95": 0.917,
+        "p99": 1.154,
+        "max": 1.274
+      },
+      "rasterMs": {
+        "p50": 2.291,
+        "p95": 5.058,
+        "p99": 9.006,
+        "max": 15.151
+      },
+      "totalSpanMs": {
+        "p50": 3.953,
+        "p95": 7.085,
+        "p99": 10.484,
+        "max": 17.548
+      },
+      "timerGapsMs": {
+        "p50": 16.002,
+        "p95": 17.239,
+        "p99": 17.883,
+        "max": 19.204
+      },
+      "overBudget": 0,
+      "overBudgetPercent": 0,
+      "rssAfterMiB": 293.98046875
+    },
+    "standalone_500_saved": {
+      "rssBefore": 396337152,
+      "newStrokes": 5,
+      "elapsedMs": 6487.915,
+      "rssAfter": 397627392,
+      "frameCount": 307,
+      "uiMs": {
+        "p50": 0.463,
+        "p95": 0.667,
+        "p99": 11.701,
+        "max": 12.825
+      },
+      "rasterMs": {
+        "p50": 4.627,
+        "p95": 25.739,
+        "p99": 121.148,
+        "max": 128.892
+      },
+      "totalSpanMs": {
+        "p50": 5.858,
+        "p95": 131.418,
+        "p99": 226.27,
+        "max": 235.018
+      },
+      "timerGapsMs": {
+        "p50": 16.004,
+        "p95": 16.524,
+        "p99": 17.809,
+        "max": 18.817
+      },
+      "overBudget": 19,
+      "overBudgetPercent": 6.188925081433225,
+      "rssAfterMiB": 379.20703125
+    },
+    "viewer_no_zoom_first_5_strokes": {
+      "rssBefore": 600059904,
+      "newStrokes": 5,
+      "elapsedMs": 6744.456,
+      "rssAfter": 489345024,
+      "frameCount": 406,
+      "uiMs": {
+        "p50": 1.566,
+        "p95": 2.275,
+        "p99": 3.563,
+        "max": 5.339
+      },
+      "rasterMs": {
+        "p50": 3.486,
+        "p95": 6.276,
+        "p99": 8.217,
+        "max": 20.572
+      },
+      "totalSpanMs": {
+        "p50": 6.218,
+        "p95": 9.764,
+        "p99": 13.033,
+        "max": 23.324
+      },
+      "timerGapsMs": {
+        "p50": 16.023,
+        "p95": 17.41,
+        "p99": 20.137,
+        "max": 21.48
+      },
+      "overBudget": 1,
+      "overBudgetPercent": 0.24630541871921183,
+      "rssAfterMiB": 466.67578125
+    },
+    "viewer_no_zoom_500_saved": {
+      "rssBefore": 532025344,
+      "newStrokes": 5,
+      "elapsedMs": 8213.823,
+      "rssAfter": 437780480,
+      "frameCount": 22,
+      "uiMs": {
+        "p50": 1.061,
+        "p95": 1.864,
+        "p99": 12.671,
+        "max": 12.671
+      },
+      "rasterMs": {
+        "p50": 22.053,
+        "p95": 62.748,
+        "p99": 124.694,
+        "max": 124.694
+      },
+      "totalSpanMs": {
+        "p50": 36.096,
+        "p95": 84.132,
+        "p99": 188.493,
+        "max": 188.493
+      },
+      "timerGapsMs": {
+        "p50": 15.99,
+        "p95": 33.172,
+        "p99": 68.208,
+        "max": 216.95
+      },
+      "overBudget": 22,
+      "overBudgetPercent": 100,
+      "rssAfterMiB": 417.5
+    }
+  }
+}

@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "al-gran-senor-open-2-0-0",
+    "notatedId": "al-gran-senor-open-2-0-0",
+    "q": 1,
+    "duration": 666,
+    "pitch": 58,
+    "time": 666
+  },
+  {
+    "id": "al-gran-senor-open-3-0-0",
+    "notatedId": "al-gran-senor-open-3-0-0",
+    "q": 1,
+    "duration": 666,
+    "pitch": 51,
+    "time": 666
+  },
+  {
+    "id": "al-gran-senor-open-2-0-1",
+    "notatedId": "al-gran-senor-open-2-0-1",
+    "q": 2,
+    "duration": 666,
+    "pitch": 57,
+    "time": 1333
+  },
+  {
+    "id": "al-gran-senor-open-3-0-1",
+    "notatedId": "al-gran-senor-open-3-0-1",
+    "q": 2,
+    "duration": 666,
+    "pitch": 50,
+    "time": 1333
+  },
+  {
+    "id": "al-gran-senor-open-2-0-2",
+    "notatedId": "al-gran-senor-open-2-0-2",
+    "q": 3,
+    "duration": 666,
+    "pitch": 60,
+    "time": 2000
+  },
+  {
+    "id": "al-gran-senor-open-3-0-2",
+    "notatedId": "al-gran-senor-open-3-0-2",
+    "q": 3,
+    "duration": 666,
+    "pitch": 53,
+    "time": 2000
+  },
+  {
+    "id": "al-gran-senor-open-0-1-0",
+    "notatedId": "al-gran-senor-open-0-1-0",
+    "q": 4,
+    "duration": 333,
+    "pitch": 62,
+    "time": 2666
+  },
+  {
+    "id": "al-gran-senor-open-1-1-0",
+    "notatedId": "al-gran-senor-open-1-1-0",
+    "q": 4,
+    "duration": 333,
+    "pitch": 62,
+    "time": 2666
+  },
+  {
+    "id": "al-gran-senor-open-2-1-0",
+    "notatedId": "al-gran-senor-open-2-1-0",
+    "q": 4,
+    "duration": 1333,
+    "pitch": 58,
+    "time": 2666
+  },
+  {
+    "id": "al-gran-senor-open-3-1-0",
+    "notatedId": "al-gran-senor-open-3-1-0",
+    "q": 4,
+    "duration": 2000,
+    "pitch": 55,
+    "time": 2666
+  },
+  {
+    "id": "al-gran-senor-open-0-1-1",
+    "notatedId": "al-gran-senor-open-0-1-1",
+    "q": 4.5,
+    "duration": 166,
+    "pitch": 67,
+    "time": 2999
+  },
+  {
+    "id": "al-gran-senor-open-1-1-1",
+    "notatedId": "al-gran-senor-open-1-1-1",
+    "q": 4.5,
+    "duration": 166,
+    "pitch": 62,
+    "time": 2999
+  },
+  {
+    "id": "al-gran-senor-open-0-1-2",
+    "notatedId": "al-gran-senor-open-0-1-2",
+    "q": 4.75,
+    "duration": 166,
+    "pitch": 67,
+    "time": 3166
+  },
+  {
+    "id": "al-gran-senor-open-1-1-2",
+    "notatedId": "al-gran-senor-open-1-1-2",
+    "q": 4.75,
+    "duration": 166,
+    "pitch": 62,
+    "time": 3166
+  },
+  {
+    "id": "al-gran-senor-open-0-1-3",
+    "notatedId": "al-gran-senor-open-0-1-3",
+    "q": 5,
+    "duration": 999,
+    "pitch": 67,
+    "time": 3332
+  },
+  {
+    "id": "al-gran-senor-open-1-1-3",
+    "notatedId": "al-gran-senor-open-1-1-3",
+    "q": 5,
+    "duration": 999,
+    "pitch": 62,
+    "time": 3332
+  },
+  {
+    "id": "al-gran-senor-open-2-1-1",
+    "notatedId": "al-gran-senor-open-2-1-1",
+    "q": 6,
+    "duration": 333,
+    "pitch": 60,
+    "time": 3999
+  },
+  {
+    "id": "al-gran-senor-open-0-1-4",
+    "notatedId": "al-gran-senor-open-0-1-4",
+    "q": 6.5,
+    "duration": 166,
+    "pitch": 67,
+    "time": 4332
+  },
+  {
+    "id": "al-gran-senor-open-1-1-4",
+    "notatedId": "al-gran-senor-open-1-1-4",
+    "q": 6.5,
+    "duration": 166,
+    "pitch": 62,
+    "time": 4332
+  },
+  {
+    "id": "al-gran-senor-open-2-1-2",
+    "notatedId": "al-gran-senor-open-2-1-2",
+    "q": 6.5,
+    "duration": 166,
+    "pitch": 58,
+    "time": 4332
+  },
+  {
+    "id": "al-gran-senor-open-0-1-5",
+    "notatedId": "al-gran-senor-open-0-1-5",
+    "q": 6.75,
+    "duration": 166,
+    "pitch": 67,
+    "time": 4499
+  },
+  {
+    "id": "al-gran-senor-open-1-1-5",
+    "notatedId": "al-gran-senor-open-1-1-5",
+    "q": 6.75,
+    "duration": 166,
+    "pitch": 62,
+    "time": 4499
+  },
+  {
+    "id": "al-gran-senor-open-2-1-3",
+    "notatedId": "al-gran-senor-open-2-1-3",
+    "q": 6.75,
+    "duration": 166,
+    "pitch": 57,
+    "time": 4499
+  },
+  {
+    "id": "al-gran-senor-open-0-1-6",
+    "notatedId": "al-gran-senor-open-0-1-6",
+    "q": 7,
+    "duration": 166,
+    "pitch": 70,
+    "time": 4666
+  },
+  {
+    "id": "al-gran-senor-open-1-1-6",
+    "notatedId": "al-gran-senor-open-1-1-6",
+    "q": 7,
+    "duration": 166,
+    "pitch": 65,
+    "time": 4666
+  },
+  {
+    "id": "al-gran-senor-open-2-1-4",
+    "notatedId": "al-gran-senor-open-2-1-4",
+    "q": 7,
+    "duration": 666,
+    "pitch": 58,
+    "time": 4666
+  },
+  {
+    "id": "al-gran-senor-open-3-1-1",
+    "notatedId": "al-gran-senor-open-3-1-1",
+    "q": 7,
+    "duration": 333,
+    "pitch": 53,
+    "time": 4666
+  },
+  {
+    "id": "al-gran-senor-open-0-1-7",
+    "notatedId": "al-gran-senor-open-0-1-7",
+    "q": 7.25,
+    "duration": 166,
+    "pitch": 70,
+    "time": 4832
+  },
+  {
+    "id": "al-gran-senor-open-1-1-7",
+    "notatedId": "al-gran-senor-open-1-1-7",
+    "q": 7.25,
+    "duration": 166,
+    "pitch": 65,
+    "time": 4832
+  },
+  {
+    "id": "al-gran-senor-open-0-1-8",
+    "notatedId": "al-gran-senor-open-0-1-8",
+    "q": 7.5,
+    "duration": 166,
+    "pitch": 69,
+    "time": 4999
+  },
+  {
+    "id": "al-gran-senor-open-1-1-8",
+    "notatedId": "al-gran-senor-open-1-1-8",
+    "q": 7.5,
+    "duration": 166,
+    "pitch": 65,
+    "time": 4999
+  },
+  {
+    "id": "al-gran-senor-open-3-1-2",
+    "notatedId": "al-gran-senor-open-3-1-2",
+    "q": 7.5,
+    "duration": 166,
+    "pitch": 53,
+    "time": 4999
+  },
+  {
+    "id": "al-gran-senor-open-0-1-9",
+    "notatedId": "al-gran-senor-open-0-1-9",
+    "q": 7.75,
+    "duration": 166,
+    "pitch": 69,
+    "time": 5166
+  },
+  {
+    "id": "al-gran-senor-open-1-1-9",
+    "notatedId": "al-gran-senor-open-1-1-9",
+    "q": 7.75,
+    "duration": 166,
+    "pitch": 65,
+    "time": 5166
+  },
+  {
+    "id": "al-gran-senor-open-3-1-3",
+    "notatedId": "al-gran-senor-open-3-1-3",
+    "q": 7.75,
+    "duration": 166,
+    "pitch": 53,
+    "time": 5166
+  },
+  {
+    "id": "al-gran-senor-open-0-2-0",
+    "notatedId": "al-gran-senor-open-0-2-0",
+    "q": 8,
+    "duration": 333,
+    "pitch": 63,
+    "time": 5333
+  },
+  {
+    "id": "al-gran-senor-open-1-2-0",
+    "notatedId": "al-gran-senor-open-1-2-0",
+    "q": 8,
+    "duration": 333,
+    "pitch": 63,
+    "time": 5333
+  },
+  {
+    "id": "al-gran-senor-open-2-2-0",
+    "notatedId": "al-gran-senor-open-2-2-0",
+    "q": 8,
+    "duration": 1333,
+    "pitch": 58,
+    "time": 5333
+  },
+  {
+    "id": "al-gran-senor-open-3-2-0",
+    "notatedId": "al-gran-senor-open-3-2-0",
+    "q": 8,
+    "duration": 2000,
+    "pitch": 51,
+    "time": 5333
+  },
+  {
+    "id": "al-gran-senor-open-0-2-1",
+    "notatedId": "al-gran-senor-open-0-2-1",
+    "q": 8.5,
+    "duration": 166,
+    "pitch": 67,
+    "time": 5666
+  },
+  {
+    "id": "al-gran-senor-open-1-2-1",
+    "notatedId": "al-gran-senor-open-1-2-1",
+    "q": 8.5,
+    "duration": 166,
+    "pitch": 63,
+    "time": 5666
+  },
+  {
+    "id": "al-gran-senor-open-0-2-2",
+    "notatedId": "al-gran-senor-open-0-2-2",
+    "q": 8.75,
+    "duration": 166,
+    "pitch": 67,
+    "time": 5833
+  },
+  {
+    "id": "al-gran-senor-open-1-2-2",
+    "notatedId": "al-gran-senor-open-1-2-2",
+    "q": 8.75,
+    "duration": 166,
+    "pitch": 63,
+    "time": 5833
+  },
+  {
+    "id": "al-gran-senor-open-0-2-3",
+    "notatedId": "al-gran-senor-open-0-2-3",
+    "q": 9,
+    "duration": 999,
+    "pitch": 67,
+    "time": 5999
+  },
+  {
+    "id": "al-gran-senor-open-1-2-3",
+    "notatedId": "al-gran-senor-open-1-2-3",
+    "q": 9,
+    "duration": 999,
+    "pitch": 63,
+    "time": 5999
+  },
+  {
+    "id": "al-gran-senor-open-2-2-1",
+    "notatedId": "al-gran-senor-open-2-2-1",
+    "q": 10,
+    "duration": 333,
+    "pitch": 60,
+    "time": 6666
+  },
+  {
+    "id": "al-gran-senor-open-0-2-4",
+    "notatedId": "al-gran-senor-open-0-2-4",
+    "q": 10.5,
+    "duration": 166,
+    "pitch": 67,
+    "time": 6999
+  },
+  {
+    "id": "al-gran-senor-open-1-2-4",
+    "notatedId": "al-gran-senor-open-1-2-4",
+    "q": 10.5,
+    "duration": 166,
+    "pitch": 63,
+    "time": 6999
+  },
+  {
+    "id": "al-gran-senor-open-2-2-2",
+    "notatedId": "al-gran-senor-open-2-2-2",
+    "q": 10.5,
+    "duration": 166,
+    "pitch": 58,
+    "time": 6999
+  },
+  {
+    "id": "al-gran-senor-open-0-2-5",
+    "notatedId": "al-gran-senor-open-0-2-5",
+    "q": 10.75,
+    "duration": 166,
+    "pitch": 67,
+    "time": 7166
+  },
+  {
+    "id": "al-gran-senor-open-1-2-5",
+    "notatedId": "al-gran-senor-open-1-2-5",
+    "q": 10.75,
+    "duration": 166,
+    "pitch": 63,
+    "time": 7166
+  },
+  {
+    "id": "al-gran-senor-open-2-2-3",
+    "notatedId": "al-gran-senor-open-2-2-3",
+    "q": 10.75,
+    "duration": 166,
+    "pitch": 57,
+    "time": 7166
+  },
+  {
+    "id": "al-gran-senor-open-0-2-6",
+    "notatedId": "al-gran-senor-open-0-2-6",
+    "q": 11,
+    "duration": 166,
+    "pitch": 70,
+    "time": 7333
+  },
+  {
+    "id": "al-gran-senor-open-1-2-6",
+    "notatedId": "al-gran-senor-open-1-2-6",
+    "q": 11,
+    "duration": 166,
+    "pitch": 67,
+    "time": 7333
+  },
+  {
+    "id": "al-gran-senor-open-2-2-4",
+    "notatedId": "al-gran-senor-open-2-2-4",
+    "q": 11,
+    "duration": 666,
+    "pitch": 58,
+    "time": 7333
+  },
+  {
+    "id": "al-gran-senor-open-3-2-1",
+    "notatedId": "al-gran-senor-open-3-2-1",
+    "q": 11,
+    "duration": 333,
+    "pitch": 53,
+    "time": 7333
+  },
+  {
+    "id": "al-gran-senor-open-0-2-7",
+    "notatedId": "al-gran-senor-open-0-2-7",
+    "q": 11.25,
+    "duration": 166,
+    "pitch": 70,
+    "time": 7499
+  },
+  {
+    "id": "al-gran-senor-open-1-2-7",
+    "notatedId": "al-gran-senor-open-1-2-7",
+    "q": 11.25,
+    "duration": 166,
+    "pitch": 67,
+    "time": 7499
+  },
+  {
+    "id": "al-gran-senor-open-0-2-8",
+    "notatedId": "al-gran-senor-open-0-2-8",
+    "q": 11.5,
+    "duration": 166,
+    "pitch": 69,
+    "time": 7666
+  },
+  {
+    "id": "al-gran-senor-open-1-2-8",
+    "notatedId": "al-gran-senor-open-1-2-8",
+    "q": 11.5,
+    "duration": 166,
+    "pitch": 65,
+    "time": 7666
+  },
+  {
+    "id": "al-gran-senor-open-3-2-2",
+    "notatedId": "al-gran-senor-open-3-2-2",
+    "q": 11.5,
+    "duration": 166,
+    "pitch": 51,
+    "time": 7666
+  },
+  {
+    "id": "al-gran-senor-open-0-2-9",
+    "notatedId": "al-gran-senor-open-0-2-9",
+    "q": 11.75,
+    "duration": 166,
+    "pitch": 69,
+    "time": 7833
+  },
+  {
+    "id": "al-gran-senor-open-1-2-9",
+    "notatedId": "al-gran-senor-open-1-2-9",
+    "q": 11.75,
+    "duration": 166,
+    "pitch": 65,
+    "time": 7833
+  },
+  {
+    "id": "al-gran-senor-open-3-2-3",
+    "notatedId": "al-gran-senor-open-3-2-3",
+    "q": 11.75,
+    "duration": 166,
+    "pitch": 50,
+    "time": 7833
+  },
+  {
+    "id": "al-gran-senor-open-0-3-0",
+    "notatedId": "al-gran-senor-open-0-3-0",
+    "q": 12,
+    "duration": 333,
+    "pitch": 74,
+    "time": 8000
+  },
+  {
+    "id": "al-gran-senor-open-1-3-0",
+    "notatedId": "al-gran-senor-open-1-3-0",
+    "q": 12,
+    "duration": 1333,
+    "pitch": 65,
+    "time": 8000
+  },
+  {
+    "id": "al-gran-senor-open-2-3-0",
+    "notatedId": "al-gran-senor-open-2-3-0",
+    "q": 12,
+    "duration": 1333,
+    "pitch": 58,
+    "time": 8000
+  },
+  {
+    "id": "al-gran-senor-open-3-3-0",
+    "notatedId": "al-gran-senor-open-3-3-0",
+    "q": 12,
+    "duration": 1333,
+    "pitch": 46,
+    "time": 8000
+  },
+  {
+    "id": "al-gran-senor-open-0-3-1",
+    "notatedId": "al-gran-senor-open-0-3-1",
+    "q": 12.5,
+    "duration": 166,
+    "pitch": 74,
+    "time": 8333
+  },
+  {
+    "id": "al-gran-senor-open-0-3-2",
+    "notatedId": "al-gran-senor-open-0-3-2",
+    "q": 12.75,
+    "duration": 166,
+    "pitch": 74,
+    "time": 8500
+  },
+  {
+    "id": "al-gran-senor-open-0-3-3",
+    "notatedId": "al-gran-senor-open-0-3-3",
+    "q": 13,
+    "duration": 333,
+    "pitch": 74,
+    "time": 8666
+  },
+  {
+    "id": "al-gran-senor-open-0-3-4",
+    "notatedId": "al-gran-senor-open-0-3-4",
+    "q": 13.5,
+    "duration": 333,
+    "pitch": 70,
+    "time": 9000
+  },
+  {
+    "id": "al-gran-senor-open-0-3-5",
+    "notatedId": "al-gran-senor-open-0-3-5",
+    "q": 14,
+    "duration": 333,
+    "pitch": 75,
+    "time": 9333
+  },
+  {
+    "id": "al-gran-senor-open-1-3-1",
+    "notatedId": "al-gran-senor-open-1-3-1",
+    "q": 14,
+    "duration": 333,
+    "pitch": 67,
+    "time": 9333
+  },
+  {
+    "id": "al-gran-senor-open-2-3-1",
+    "notatedId": "al-gran-senor-open-2-3-1",
+    "q": 14,
+    "duration": 666,
+    "pitch": 55,
+    "time": 9333
+  },
+  {
+    "id": "al-gran-senor-open-3-3-1",
+    "notatedId": "al-gran-senor-open-3-3-1",
+    "q": 14,
+    "duration": 333,
+    "pitch": 48,
+    "time": 9333
+  },
+  {
+    "id": "al-gran-senor-open-0-3-6",
+    "notatedId": "al-gran-senor-open-0-3-6",
+    "q": 14.5,
+    "duration": 333,
+    "pitch": 74,
+    "time": 9666
+  },
+  {
+    "id": "al-gran-senor-open-1-3-2",
+    "notatedId": "al-gran-senor-open-1-3-2",
+    "q": 14.5,
+    "duration": 333,
+    "pitch": 65,
+    "time": 9666
+  },
+  {
+    "id": "al-gran-senor-open-3-3-2",
+    "notatedId": "al-gran-senor-open-3-3-2",
+    "q": 14.5,
+    "duration": 333,
+    "pitch": 48,
+    "time": 9666
+  },
+  {
+    "id": "al-gran-senor-open-0-3-7",
+    "notatedId": "al-gran-senor-open-0-3-7",
+    "q": 15,
+    "duration": 333,
+    "pitch": 72,
+    "time": 10000
+  },
+  {
+    "id": "al-gran-senor-open-1-3-3",
+    "notatedId": "al-gran-senor-open-1-3-3",
+    "q": 15,
+    "duration": 333,
+    "pitch": 62,
+    "time": 10000
+  },
+  {
+    "id": "al-gran-senor-open-2-3-2",
+    "notatedId": "al-gran-senor-open-2-3-2",
+    "q": 15,
+    "duration": 666,
+    "pitch": 57,
+    "time": 10000
+  },
+  {
+    "id": "al-gran-senor-open-3-3-3",
+    "notatedId": "al-gran-senor-open-3-3-3",
+    "q": 15,
+    "duration": 333,
+    "pitch": 50,
+    "time": 10000
+  },
+  {
+    "id": "al-gran-senor-open-0-3-8",
+    "notatedId": "al-gran-senor-open-0-3-8",
+    "q": 15.5,
+    "duration": 333,
+    "pitch": 70,
+    "time": 10333
+  },
+  {
+    "id": "al-gran-senor-open-1-3-4",
+    "notatedId": "al-gran-senor-open-1-3-4",
+    "q": 15.5,
+    "duration": 333,
+    "pitch": 63,
+    "time": 10333
+  },
+  {
+    "id": "al-gran-senor-open-3-3-4",
+    "notatedId": "al-gran-senor-open-3-3-4",
+    "q": 15.5,
+    "duration": 333,
+    "pitch": 51,
+    "time": 10333
+  },
+  {
+    "id": "al-gran-senor-open-0-4-0",
+    "notatedId": "al-gran-senor-open-0-4-0",
+    "q": 16,
+    "duration": 1333,
+    "pitch": 72,
+    "time": 10666
+  },
+  {
+    "id": "al-gran-senor-open-1-4-0",
+    "notatedId": "al-gran-senor-open-1-4-0",
+    "q": 16,
+    "duration": 1333,
+    "pitch": 65,
+    "time": 10666
+  },
+  {
+    "id": "al-gran-senor-open-2-4-0",
+    "notatedId": "al-gran-senor-open-2-4-0",
+    "q": 16,
+    "duration": 1333,
+    "pitch": 57,
+    "time": 10666
+  },
+  {
+    "id": "al-gran-senor-open-3-4-0",
+    "notatedId": "al-gran-senor-open-3-4-0",
+    "q": 16,
+    "duration": 1333,
+    "pitch": 53,
+    "time": 10666
+  },
+  {
+    "id": "al-gran-senor-open-1-4-1",
+    "notatedId": "al-gran-senor-open-1-4-1",
+    "q": 18.5,
+    "duration": 333,
+    "pitch": 63,
+    "time": 12332
+  },
+  {
+    "id": "al-gran-senor-open-2-4-1",
+    "notatedId": "al-gran-senor-open-2-4-1",
+    "q": 18.5,
+    "duration": 333,
+    "pitch": 55,
+    "time": 12332
+  },
+  {
+    "id": "al-gran-senor-open-1-4-2",
+    "notatedId": "al-gran-senor-open-1-4-2",
+    "q": 19,
+    "duration": 333,
+    "pitch": 65,
+    "time": 12666
+  },
+  {
+    "id": "al-gran-senor-open-2-4-2",
+    "notatedId": "al-gran-senor-open-2-4-2",
+    "q": 19,
+    "duration": 333,
+    "pitch": 57,
+    "time": 12666
+  },
+  {
+    "id": "al-gran-senor-open-1-4-3",
+    "notatedId": "al-gran-senor-open-1-4-3",
+    "q": 19.5,
+    "duration": 333,
+    "pitch": 67,
+    "time": 12999
+  },
+  {
+    "id": "al-gran-senor-open-2-4-3",
+    "notatedId": "al-gran-senor-open-2-4-3",
+    "q": 19.5,
+    "duration": 333,
+    "pitch": 58,
+    "time": 12999
+  },
+  {
+    "id": "al-gran-senor-open-0-5-0",
+    "notatedId": "al-gran-senor-open-0-5-0",
+    "q": 20,
+    "duration": 666,
+    "pitch": 74,
+    "time": 13333
+  },
+  {
+    "id": "al-gran-senor-open-1-5-0",
+    "notatedId": "al-gran-senor-open-1-5-0",
+    "q": 20,
+    "duration": 666,
+    "pitch": 67,
+    "time": 13333
+  },
+  {
+    "id": "al-gran-senor-open-2-5-0",
+    "notatedId": "al-gran-senor-open-2-5-0",
+    "q": 20,
+    "duration": 1000,
+    "pitch": 58,
+    "time": 13333
+  },
+  {
+    "id": "al-gran-senor-open-3-5-0",
+    "notatedId": "al-gran-senor-open-3-5-0",
+    "q": 20,
+    "duration": 333,
+    "pitch": 43,
+    "time": 13333
+  },
+  {
+    "id": "al-gran-senor-open-3-5-1",
+    "notatedId": "al-gran-senor-open-3-5-1",
+    "q": 20.5,
+    "duration": 166,
+    "pitch": 43,
+    "time": 13666
+  },
+  {
+    "id": "al-gran-senor-open-3-5-2",
+    "notatedId": "al-gran-senor-open-3-5-2",
+    "q": 20.75,
+    "duration": 166,
+    "pitch": 43,
+    "time": 13833
+  },
+  {
+    "id": "al-gran-senor-open-0-5-1",
+    "notatedId": "al-gran-senor-open-0-5-1",
+    "q": 21,
+    "duration": 666,
+    "pitch": 70,
+    "time": 13999
+  },
+  {
+    "id": "al-gran-senor-open-1-5-1",
+    "notatedId": "al-gran-senor-open-1-5-1",
+    "q": 21,
+    "duration": 333,
+    "pitch": 67,
+    "time": 13999
+  },
+  {
+    "id": "al-gran-senor-open-3-5-3",
+    "notatedId": "al-gran-senor-open-3-5-3",
+    "q": 21,
+    "duration": 666,
+    "pitch": 43,
+    "time": 13999
+  },
+  {
+    "id": "al-gran-senor-open-1-5-2",
+    "notatedId": "al-gran-senor-open-1-5-2",
+    "q": 21.5,
+    "duration": 166,
+    "pitch": 67,
+    "time": 14333
+  },
+  {
+    "id": "al-gran-senor-open-2-5-1",
+    "notatedId": "al-gran-senor-open-2-5-1",
+    "q": 21.5,
+    "duration": 666,
+    "pitch": 62,
+    "time": 14333
+  },
+  {
+    "id": "al-gran-senor-open-1-5-3",
+    "notatedId": "al-gran-senor-open-1-5-3",
+    "q": 21.75,
+    "duration": 333,
+    "pitch": 67,
+    "time": 14499
+  },
+  {
+    "id": "al-gran-senor-open-0-5-2",
+    "notatedId": "al-gran-senor-open-0-5-2",
+    "q": 22,
+    "duration": 333,
+    "pitch": 74,
+    "time": 14666
+  },
+  {
+    "id": "al-gran-senor-open-1-5-4",
+    "notatedId": "al-gran-senor-open-1-5-4",
+    "q": 22.25,
+    "duration": 333,
+    "pitch": 67,
+    "time": 14833
+  },
+  {
+    "id": "al-gran-senor-open-0-5-3",
+    "notatedId": "al-gran-senor-open-0-5-3",
+    "q": 22.5,
+    "duration": 166,
+    "pitch": 74,
+    "time": 14999
+  },
+  {
+    "id": "al-gran-senor-open-2-5-2",
+    "notatedId": "al-gran-senor-open-2-5-2",
+    "q": 22.5,
+    "duration": 1000,
+    "pitch": 58,
+    "time": 14999
+  },
+  {
+    "id": "al-gran-senor-open-0-5-4",
+    "notatedId": "al-gran-senor-open-0-5-4",
+    "q": 22.75,
+    "duration": 166,
+    "pitch": 72,
+    "time": 15166
+  },
+  {
+    "id": "al-gran-senor-open-1-5-5",
+    "notatedId": "al-gran-senor-open-1-5-5",
+    "q": 22.75,
+    "duration": 166,
+    "pitch": 69,
+    "time": 15166
+  },
+  {
+    "id": "al-gran-senor-open-0-5-5",
+    "notatedId": "al-gran-senor-open-0-5-5",
+    "q": 23,
+    "duration": 666,
+    "pitch": 70,
+    "time": 15333
+  },
+  {
+    "id": "al-gran-senor-open-1-5-6",
+    "notatedId": "al-gran-senor-open-1-5-6",
+    "q": 23,
+    "duration": 333,
+    "pitch": 70,
+    "time": 15333
+  },
+  {
+    "id": "al-gran-senor-open-1-5-7",
+    "notatedId": "al-gran-senor-open-1-5-7",
+    "q": 23.5,
+    "duration": 333,
+    "pitch": 67,
+    "time": 15666
+  },
+  {
+    "id": "al-gran-senor-open-3-5-4",
+    "notatedId": "al-gran-senor-open-3-5-4",
+    "q": 23.5,
+    "duration": 333,
+    "pitch": 50,
+    "time": 15666
+  },
+  {
+    "id": "al-gran-senor-open-0-6-0",
+    "notatedId": "al-gran-senor-open-0-6-0",
+    "q": 24,
+    "duration": 333,
+    "pitch": 75,
+    "time": 15999
+  },
+  {
+    "id": "al-gran-senor-open-1-6-0",
+    "notatedId": "al-gran-senor-open-1-6-0",
+    "q": 24,
+    "duration": 666,
+    "pitch": 67,
+    "time": 15999
+  },
+  {
+    "id": "al-gran-senor-open-2-6-0",
+    "notatedId": "al-gran-senor-open-2-6-0",
+    "q": 24,
+    "duration": 1000,
+    "pitch": 55,
+    "time": 15999
+  },
+  {
+    "id": "al-gran-senor-open-3-6-0",
+    "notatedId": "al-gran-senor-open-3-6-0",
+    "q": 24,
+    "duration": 333,
+    "pitch": 51,
+    "time": 15999
+  },
+  {
+    "id": "al-gran-senor-open-0-6-1",
+    "notatedId": "al-gran-senor-open-0-6-1",
+    "q": 24.5,
+    "duration": 166,
+    "pitch": 75,
+    "time": 16332
+  },
+  {
+    "id": "al-gran-senor-open-3-6-1",
+    "notatedId": "al-gran-senor-open-3-6-1",
+    "q": 24.5,
+    "duration": 166,
+    "pitch": 51,
+    "time": 16332
+  },
+  {
+    "id": "al-gran-senor-open-0-6-2",
+    "notatedId": "al-gran-senor-open-0-6-2",
+    "q": 24.75,
+    "duration": 166,
+    "pitch": 74,
+    "time": 16499
+  },
+  {
+    "id": "al-gran-senor-open-3-6-2",
+    "notatedId": "al-gran-senor-open-3-6-2",
+    "q": 24.75,
+    "duration": 166,
+    "pitch": 51,
+    "time": 16499
+  },
+  {
+    "id": "al-gran-senor-open-0-6-3",
+    "notatedId": "al-gran-senor-open-0-6-3",
+    "q": 25,
+    "duration": 1333,
+    "pitch": 75,
+    "time": 16665
+  },
+  {
+    "id": "al-gran-senor-open-1-6-1",
+    "notatedId": "al-gran-senor-open-1-6-1",
+    "q": 25,
+    "duration": 333,
+    "pitch": 67,
+    "time": 16665
+  },
+  {
+    "id": "al-gran-senor-open-3-6-3",
+    "notatedId": "al-gran-senor-open-3-6-3",
+    "q": 25,
+    "duration": 666,
+    "pitch": 51,
+    "time": 16665
+  },
+  {
+    "id": "al-gran-senor-open-1-6-2",
+    "notatedId": "al-gran-senor-open-1-6-2",
+    "q": 25.5,
+    "duration": 166,
+    "pitch": 67,
+    "time": 16999
+  },
+  {
+    "id": "al-gran-senor-open-2-6-1",
+    "notatedId": "al-gran-senor-open-2-6-1",
+    "q": 25.5,
+    "duration": 666,
+    "pitch": 58,
+    "time": 16999
+  },
+  {
+    "id": "al-gran-senor-open-1-6-3",
+    "notatedId": "al-gran-senor-open-1-6-3",
+    "q": 25.75,
+    "duration": 333,
+    "pitch": 67,
+    "time": 17165
+  },
+  {
+    "id": "al-gran-senor-open-1-6-4",
+    "notatedId": "al-gran-senor-open-1-6-4",
+    "q": 26.25,
+    "duration": 333,
+    "pitch": 67,
+    "time": 17499
+  },
+  {
+    "id": "al-gran-senor-open-2-6-2",
+    "notatedId": "al-gran-senor-open-2-6-2",
+    "q": 26.5,
+    "duration": 1000,
+    "pitch": 57,
+    "time": 17665
+  },
+  {
+    "id": "al-gran-senor-open-1-6-5",
+    "notatedId": "al-gran-senor-open-1-6-5",
+    "q": 26.75,
+    "duration": 166,
+    "pitch": 69,
+    "time": 17832
+  },
+  {
+    "id": "al-gran-senor-open-1-6-6",
+    "notatedId": "al-gran-senor-open-1-6-6",
+    "q": 27,
+    "duration": 333,
+    "pitch": 70,
+    "time": 17999
+  },
+  {
+    "id": "al-gran-senor-open-0-6-4",
+    "notatedId": "al-gran-senor-open-0-6-4",
+    "q": 27.5,
+    "duration": 333,
+    "pitch": 67,
+    "time": 18332
+  },
+  {
+    "id": "al-gran-senor-open-1-6-7",
+    "notatedId": "al-gran-senor-open-1-6-7",
+    "q": 27.5,
+    "duration": 333,
+    "pitch": 67,
+    "time": 18332
+  },
+  {
+    "id": "al-gran-senor-open-3-6-4",
+    "notatedId": "al-gran-senor-open-3-6-4",
+    "q": 27.5,
+    "duration": 333,
+    "pitch": 46,
+    "time": 18332
+  },
+  {
+    "id": "al-gran-senor-open-0-7-0",
+    "notatedId": "al-gran-senor-open-0-7-0",
+    "q": 28,
+    "duration": 1333,
+    "pitch": 72,
+    "time": 18666
+  },
+  {
+    "id": "al-gran-senor-open-1-7-0",
+    "notatedId": "al-gran-senor-open-1-7-0",
+    "q": 28,
+    "duration": 666,
+    "pitch": 63,
+    "time": 18666
+  },
+  {
+    "id": "al-gran-senor-open-2-7-0",
+    "notatedId": "al-gran-senor-open-2-7-0",
+    "q": 28,
+    "duration": 1000,
+    "pitch": 55,
+    "time": 18666
+  },
+  {
+    "id": "al-gran-senor-open-3-7-0",
+    "notatedId": "al-gran-senor-open-3-7-0",
+    "q": 28,
+    "duration": 333,
+    "pitch": 48,
+    "time": 18666
+  },
+  {
+    "id": "al-gran-senor-open-3-7-1",
+    "notatedId": "al-gran-senor-open-3-7-1",
+    "q": 28.5,
+    "duration": 166,
+    "pitch": 48,
+    "time": 18999
+  },
+  {
+    "id": "al-gran-senor-open-3-7-2",
+    "notatedId": "al-gran-senor-open-3-7-2",
+    "q": 28.75,
+    "duration": 166,
+    "pitch": 48,
+    "time": 19166
+  },
+  {
+    "id": "al-gran-senor-open-1-7-1",
+    "notatedId": "al-gran-senor-open-1-7-1",
+    "q": 29,
+    "duration": 333,
+    "pitch": 67,
+    "time": 19332
+  },
+  {
+    "id": "al-gran-senor-open-3-7-3",
+    "notatedId": "al-gran-senor-open-3-7-3",
+    "q": 29,
+    "duration": 666,
+    "pitch": 48,
+    "time": 19332
+  },
+  {
+    "id": "al-gran-senor-open-1-7-2",
+    "notatedId": "al-gran-senor-open-1-7-2",
+    "q": 29.5,
+    "duration": 166,
+    "pitch": 67,
+    "time": 19666
+  },
+  {
+    "id": "al-gran-senor-open-2-7-1",
+    "notatedId": "al-gran-senor-open-2-7-1",
+    "q": 29.5,
+    "duration": 666,
+    "pitch": 58,
+    "time": 19666
+  },
+  {
+    "id": "al-gran-senor-open-1-7-3",
+    "notatedId": "al-gran-senor-open-1-7-3",
+    "q": 29.75,
+    "duration": 333,
+    "pitch": 67,
+    "time": 19832
+  },
+  {
+    "id": "al-gran-senor-open-0-7-1",
+    "notatedId": "al-gran-senor-open-0-7-1",
+    "q": 30,
+    "duration": 333,
+    "pitch": 77,
+    "time": 19999
+  },
+  {
+    "id": "al-gran-senor-open-1-7-4",
+    "notatedId": "al-gran-senor-open-1-7-4",
+    "q": 30.25,
+    "duration": 333,
+    "pitch": 67,
+    "time": 20166
+  },
+  {
+    "id": "al-gran-senor-open-0-7-2",
+    "notatedId": "al-gran-senor-open-0-7-2",
+    "q": 30.5,
+    "duration": 333,
+    "pitch": 75,
+    "time": 20332
+  },
+  {
+    "id": "al-gran-senor-open-2-7-2",
+    "notatedId": "al-gran-senor-open-2-7-2",
+    "q": 30.5,
+    "duration": 1000,
+    "pitch": 60,
+    "time": 20332
+  },
+  {
+    "id": "al-gran-senor-open-1-7-5",
+    "notatedId": "al-gran-senor-open-1-7-5",
+    "q": 30.75,
+    "duration": 166,
+    "pitch": 69,
+    "time": 20499
+  },
+  {
+    "id": "al-gran-senor-open-0-7-3",
+    "notatedId": "al-gran-senor-open-0-7-3",
+    "q": 31,
+    "duration": 333,
+    "pitch": 74,
+    "time": 20666
+  },
+  {
+    "id": "al-gran-senor-open-1-7-6",
+    "notatedId": "al-gran-senor-open-1-7-6",
+    "q": 31,
+    "duration": 333,
+    "pitch": 70,
+    "time": 20666
+  },
+  {
+    "id": "al-gran-senor-open-0-7-4",
+    "notatedId": "al-gran-senor-open-0-7-4",
+    "q": 31.5,
+    "duration": 333,
+    "pitch": 72,
+    "time": 20999
+  },
+  {
+    "id": "al-gran-senor-open-1-7-7",
+    "notatedId": "al-gran-senor-open-1-7-7",
+    "q": 31.5,
+    "duration": 333,
+    "pitch": 67,
+    "time": 20999
+  },
+  {
+    "id": "al-gran-senor-open-3-7-4",
+    "notatedId": "al-gran-senor-open-3-7-4",
+    "q": 31.5,
+    "duration": 333,
+    "pitch": 48,
+    "time": 20999
+  }
+]

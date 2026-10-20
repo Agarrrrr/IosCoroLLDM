@@ -1,0 +1,659 @@
+{
+  "candidateTitles": 51,
+  "unidentifiedFiles": 5,
+  "midiFiles": 59,
+  "records": [
+    {
+      "title": "A lo Largo de la Vida",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A lo Largo de la Vida\\A lo Largo de la Vida SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\A lo Largo de la Vida\\A lo Largo de la Vida SATB.mid",
+      "sha256": "5335496892546e423c9aa027006fcd9fb4c02b51c953862a6a236879adb5a2e6",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A lo Largo de la Vida\\A lo Largo de la Vida SATB.mid"
+      ]
+    },
+    {
+      "title": "Canten los Ángeles",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Canten los Ángeles\\Canten los Ángeles SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Canten los Ángeles\\Canten los Ángeles SATB.mid",
+      "sha256": "41d61302792f0c61068d30c6d8b80f91cac3ff98027e8e0007c3c51d8010db6b",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Canten los Ángeles\\Canten los Ángeles SATB.mid"
+      ]
+    },
+    {
+      "title": "Como mi Padre",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Como mi Padre\\Como mi Padre SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Como mi Padre\\Como mi Padre SATB.mid",
+      "sha256": "564ec572789dc018fca1c4601b2790d58bc42669b79f3f65f74a3f7975fd36b3",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Como mi Padre\\Como mi Padre SATB.mid"
+      ]
+    },
+    {
+      "title": "Cosas Maravillosas",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Cosas Maravillosas\\Cosas Maravillosas SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Cosas Maravillosas\\Cosas Maravillosas SATB.mid",
+      "sha256": "c5b12d636f30d813750b75cb618c0927a919b648ce9b14a94640b86d6c5a3fc8",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Cosas Maravillosas\\Cosas Maravillosas SATB.mid"
+      ]
+    },
+    {
+      "title": "Cuando Escucho su Nombre",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Cuando Escucho Su Nombre CMG\\Cuando Escucho Su Nombre CMG.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Cuando Escucho su Nombre\\Cuando Escucho Su Nombre CMG.mid",
+      "sha256": "e571f2d23b44717567cfcb14b65c7ba17ae7e85c01b8f55eb84829b6958ba28c",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Cuando Escucho Su Nombre CMG\\Cuando Escucho Su Nombre CMG.mid"
+      ]
+    },
+    {
+      "title": "Cuerdas de Amor",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Cuerdas de Amor\\Cuerdas de Amor SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Cuerdas de Amor\\Cuerdas de Amor SATB.mid",
+      "sha256": "377bca109d5c7df053e3d4a141b8ba94bc44a5f4f981edc400fe219b6e4d7c84",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Cuerdas de Amor\\Cuerdas de Amor SATB.mid"
+      ]
+    },
+    {
+      "title": "Divino Mandamiento",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Divino Mandamiento\\Divino Mandamiento SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Divino Mandamiento\\Divino Mandamiento SATB.mid",
+      "sha256": "ff46841e560274946b29bd5c2eedd495c945b02a815cca16ae026784364121bf",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Divino Mandamiento\\Divino Mandamiento SATB.mid"
+      ]
+    },
+    {
+      "title": "El Cántico de los 144 Mil",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Cántico de los 144 Mil\\El Cántico de los 144 Mil (Final).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\El Cántico de los 144 Mil\\El Cántico de los 144 Mil (Final).mid",
+      "sha256": "a6fbba84725011910f797d02f3a064eef2eb2fd93419e332bbb960afcbd72094",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Cántico de los 144 Mil\\El Cántico de los 144 Mil (Final).mid"
+      ]
+    },
+    {
+      "title": "El Santo Llamamiento",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Santo Llamamiento\\El Santo Llamamiento SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\El Santo Llamamiento\\El Santo Llamamiento SATB.mid",
+      "sha256": "d5c4ca03416612e563bf0faf3c3ad563d179e0911557e086139a4750022051d1",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Santo Llamamiento\\El Santo Llamamiento SATB.mid"
+      ]
+    },
+    {
+      "title": "El Ángel de Cristo",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Ángel de Cristo\\El Ángel de Cristo [SATB].mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\El Ángel de Cristo\\El Ángel de Cristo [SATB].mid",
+      "sha256": "57396924e773439713f898e58b63211efadacfe177dc78c66e0b6164b1a1ec8e",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Ángel de Cristo\\El Ángel de Cristo [SATB].mid"
+      ]
+    },
+    {
+      "title": "Firme Estoy",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Firme Estoy\\Firme Estoy SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Firme Estoy\\Firme Estoy SATB.mid",
+      "sha256": "17aacd54ab4001c5bf6281df2a263bd0f34eedbc9f8fa0acb7720440364064e2",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Firme Estoy\\Firme Estoy SATB.mid"
+      ]
+    },
+    {
+      "title": "Fue por Mí",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fue por Mí\\Fue por mí SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Fue por Mí\\Fue por mí SATB.mid",
+      "sha256": "2e4a1f83a2af8d4a196e6b6eae20295dbf704c868351f285f8363dde3ae1ebd6",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fue por Mí\\Fue por mí SATB.mid"
+      ]
+    },
+    {
+      "title": "Ha Triunfado mi Señor",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ha Triunfado mi Señor\\Ha Triunfado mi Señor SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Ha Triunfado mi Señor\\Ha Triunfado mi Señor SATB.mid",
+      "sha256": "a8962c0cb4b05ead02f92a1b5426bccbb58c4ebc7c3ff10e161603c396c042ea",
+      "activeTracks": 5,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ha Triunfado mi Señor\\Ha Triunfado mi Señor SATB.mid",
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\¡Ha Triunfado mi Señor!\\Ha Triunfado mi Señor SATB.mid"
+      ]
+    },
+    {
+      "title": "Hasta el Final",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hasta El Final\\Hasta El Final SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Hasta el Final\\Hasta El Final SATB.mid",
+      "sha256": "beede97fb6782acec0ab081f0e3d4397c1f7d018520e8418421f3870c2e6e242",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hasta El Final\\Hasta El Final SATB.mid"
+      ]
+    },
+    {
+      "title": "Hay Apóstol",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hay Apóstol\\Hay Apóstol (SATB).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Hay Apóstol\\Hay Apóstol (SATB).mid",
+      "sha256": "ec15a5479636a3afa2fe6d90a4a5520af8fab7b07e79f824a1c324b721b36045",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hay Apóstol\\Hay Apóstol (SATB).mid"
+      ]
+    },
+    {
+      "title": "Linaje de Bendición",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Linaje de Bendición\\Linaje de Bendición SATB2.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Linaje de Bendición\\Linaje de Bendición SATB2.mid",
+      "sha256": "1dae4b2300265199459759be7c3f3636d116795fdd29467fcc102d44c9f38c29",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Linaje de Bendición\\Linaje de Bendición SATB2.mid"
+      ]
+    },
+    {
+      "title": "Mi Plegaria",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Plegaria\\Mi Plegaria SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Mi Plegaria\\Mi Plegaria SATB.mid",
+      "sha256": "c934f888fcd3ced299020ac0923afdc117e338cc954430923e06659f2dbe68f0",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Plegaria\\Mi Plegaria SATB.mid"
+      ]
+    },
+    {
+      "title": "Mi Siervo Amado",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Siervo Amado\\Mi Siervo Amado (Separado).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Mi Siervo Amado\\Mi Siervo Amado (Separado).mid",
+      "sha256": "d1fabfd32fd6c1a55017a1d95d34fb000a068a13254b8ce1c62d83fec6ec984b",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Siervo Amado\\Mi Siervo Amado (Separado).mid"
+      ]
+    },
+    {
+      "title": "Nadie Como Tú",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Nadie como Tú\\Nadie Como Tú [SSATB].mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Nadie Como Tú\\Nadie Como Tú [SSATB].mid",
+      "sha256": "cd0765556e29db7bd0d8cf424b020f68e7a09e356c11b6420d68adc9a66b1226",
+      "activeTracks": 5,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Nadie como Tú\\Nadie Como Tú [SSATB].mid"
+      ]
+    },
+    {
+      "title": "Recordando la Muerte de Cristo",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Recordando la Muerte de Cristo\\Recordando la Muerte de Cristo SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Recordando la Muerte de Cristo\\Recordando la Muerte de Cristo SATB.mid",
+      "sha256": "4890c27dcbbe9e7ea469cc2f612c9ce391ec482bbac5dbea6f664876a0ff22c3",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Recordando la Muerte de Cristo\\Recordando la Muerte de Cristo SATB.mid"
+      ]
+    },
+    {
+      "title": "Ven a la Fiesta",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ven a la Fiesta\\Ven a la Fiesta SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Ven a la Fiesta\\Ven a la Fiesta SATB.mid",
+      "sha256": "d8d9c2f60cf8a04b01c80fb95d915c64497967225c93d951ad615b5304a0276d",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ven a la Fiesta\\Ven a la Fiesta SATB.mid"
+      ]
+    },
+    {
+      "title": "HEME AQUÍ",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\¡HEME AQUÍ!\\¡HEME AQUÍ!.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\HEME AQUÍ\\¡HEME AQUÍ!.mid",
+      "sha256": "8a57f1c9218d255120aacaa59d7ea0a3ab36b7bcf1a2ec73be68e0cf106325b8",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\¡HEME AQUÍ!\\¡HEME AQUÍ!.mid"
+      ]
+    },
+    {
+      "title": "Él Vive",
+      "category": "01 - SATB prioritarios",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Él Vive\\Él Vive SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\01 - SATB prioritarios\\Él Vive\\Él Vive SATB.mid",
+      "sha256": "5bbdf50eee7a9bbf480b695d3188fd353654f859db1d36c4164f140f60e4dd44",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Él Vive\\Él Vive SATB.mid"
+      ]
+    },
+    {
+      "title": "Mi Tiempo Ha Llegado",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Tiempo Ha Llegado\\Mi Tiempo Ha Llegado SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Mi Tiempo Ha Llegado\\Mi Tiempo Ha Llegado SATB.mid",
+      "sha256": "af35a4d516471d705ff240f98413359bf26c4ca18d83b22ed3ab96e1d4ea185e",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Tiempo Ha Llegado\\Mi Tiempo Ha Llegado SATB.mid"
+      ]
+    },
+    {
+      "title": "Más Allá de las Estrellas",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Más Allá de las Estrellas\\Más Allá de las Estrellas SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Más Allá de las Estrellas\\Más Allá de las Estrellas SATB.mid",
+      "sha256": "fb9cc0749f4225d6366ed191f795e5c337b957986b2becf673bd6b96f4d837b6",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Más Allá de las Estrellas\\Más Allá de las Estrellas SATB.mid"
+      ]
+    },
+    {
+      "title": "A la Sombra de Tus Alas",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A la sombra de tus alas\\3.- A La Sombra De Tus Alas (Consagración)(1).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\A la Sombra de Tus Alas\\3.- A La Sombra De Tus Alas (Consagración)(1).mid",
+      "sha256": "ada9cf89c5d547f5edb9776500710ff9266b7596bedff9d0f0574b9f4a9087a2",
+      "activeTracks": 6,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A la sombra de tus alas\\3.- A La Sombra De Tus Alas (Consagración)(1).mid",
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\A la sombra de tus alas\\3.- A La Sombra De Tus Alas (Consagración).mid"
+      ]
+    },
+    {
+      "title": "Ante Tus Pies",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ante tus pies.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Ante Tus Pies\\Ante tus pies.mid",
+      "sha256": "ac8e9fd4e2e064722a0e62d8a39ae49ee8381c13b92387e8c25cb8e02c9c83b6",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ante tus pies.mid"
+      ]
+    },
+    {
+      "title": "Ciertamente Casa de Dios",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ciertamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Ciertamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid",
+      "sha256": "70e38fc61742d75524ff913d3d9502f62d86f3aa2e725d0206d70dd44b840270",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ciertamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid",
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ciértamente Casa de Dios\\Ciertamente Casa de Dios SATB.mid"
+      ]
+    },
+    {
+      "title": "Día Venturoso",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Día Venturoso\\Día Venturoso (Sep.).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Día Venturoso\\Día Venturoso (Sep.).mid",
+      "sha256": "1d50085006f935d56550ede0c875651884109b165e22d972d1e394934f8309c6",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Día Venturoso\\Día Venturoso (Sep.).mid"
+      ]
+    },
+    {
+      "title": "El Alfarero",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Alfarero\\El Alfarero SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Alfarero\\El Alfarero SATB.mid",
+      "sha256": "0da6cd92849ad6a5cf5bfacd0210f8433c42a83ed8b642a44364fe9d21e034c9",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Alfarero\\El Alfarero SATB.mid"
+      ]
+    },
+    {
+      "title": "El Cántico de Moisés",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Cántico de Moisés\\El Cántico de Moisés SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Cántico de Moisés\\El Cántico de Moisés SATB.mid",
+      "sha256": "02c54fce085c6fa5dcaa85ba2a7690d0bbabeeb93ea6ed5be73862df9f5338d4",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Cántico de Moisés\\El Cántico de Moisés SATB.mid"
+      ]
+    },
+    {
+      "title": "El Pacto con Dios",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Pacto con Dios\\El Pacto con Dios (SATB).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Pacto con Dios\\El Pacto con Dios (SATB).mid",
+      "sha256": "52eba12edd362e3231e3689cd6ae8fad8ea2a70bebbe3bbc7eb1761672399347",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Pacto con Dios\\El Pacto con Dios (SATB).mid"
+      ]
+    },
+    {
+      "title": "El Ángel Que Juan Vio",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Ángel que Juan vió\\El Ángel que Juan vió (S).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\El Ángel Que Juan Vio\\El Ángel que Juan vió (S).mid",
+      "sha256": "bd52e6c1eb1f59724a724cc78beece6c744a3f9025ad45ac98917a3d412edfeb",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Ángel que Juan vió\\El Ángel que Juan vió (S).mid"
+      ]
+    },
+    {
+      "title": "Eterno Dios",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Eterno Dios\\Eterno Dios.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Eterno Dios\\Eterno Dios.mid",
+      "sha256": "45d9dae274aad326d5683cd6383cfb759d56c542c4f8227004dd1fd968fbd0e2",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Eterno Dios\\Eterno Dios.mid"
+      ]
+    },
+    {
+      "title": "Fuente de Salvación",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fuente de Salvación\\76 - Fuente de Salvación (Evangelización).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Fuente de Salvación\\76 - Fuente de Salvación (Evangelización).mid",
+      "sha256": "9f8b289366b87256b364545e5508f07608233096d8766e9021c78abd848a9ba8",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Fuente de Salvación\\76 - Fuente de Salvación (Evangelización).mid"
+      ]
+    },
+    {
+      "title": "La Luz de Aquella Ciudad",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\La Luz de Aquella Ciudad\\La Luz de Aquella Ciudad SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\La Luz de Aquella Ciudad\\La Luz de Aquella Ciudad SATB.mid",
+      "sha256": "44a3300d2b989bf5254ebbe06493a80226ba2c502c67a449a2f5ba5dac22f350",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\La Luz de Aquella Ciudad\\La Luz de Aquella Ciudad SATB.mid"
+      ]
+    },
+    {
+      "title": "Mi Esperanza es en Ti",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Esperanza es en Ti\\Mi Esperanza es en Ti SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Mi Esperanza es en Ti\\Mi Esperanza es en Ti SATB.mid",
+      "sha256": "40df2051d188fe775399f3d932de533b9b66d5e4006292ca13c3a05b59284320",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mi Esperanza es en Ti\\Mi Esperanza es en Ti SATB.mid"
+      ]
+    },
+    {
+      "title": "No Puedo Imaginar",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\No Puedo Imaginar.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\No Puedo Imaginar\\No Puedo Imaginar.mid",
+      "sha256": "efe363ad079239e8a810efa9da6a3ad8b5954452cd770c6689e7317bd3069132",
+      "activeTracks": 5,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\No Puedo Imaginar.mid"
+      ]
+    },
+    {
+      "title": "Oh Salvador Rey Nuestro",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Oh Salvador Rey Nuestro.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Oh Salvador Rey Nuestro\\Oh Salvador Rey Nuestro.mid",
+      "sha256": "b19b1b003e48ad41c388d380dde54dae3ca0945368170333a0d751a97fc73cca",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Oh Salvador Rey Nuestro.mid"
+      ]
+    },
+    {
+      "title": "Te Bendecimos",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Bendecimos\\Te Bendecimos corregir.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Te Bendecimos\\Te Bendecimos corregir.mid",
+      "sha256": "64dca746f60e65e90003f89b14a26a4df1840c8ef9c2fe0c21181a3924c3133f",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Bendecimos\\Te Bendecimos corregir.mid"
+      ]
+    },
+    {
+      "title": "Un Gran Consolador",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Un Gran Consolador\\Un Gran Consolador SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Un Gran Consolador\\Un Gran Consolador SATB.mid",
+      "sha256": "a95929404889c2ce5bf15cff25a4edd138d58dabad5bba3c9d516fc82910b5fa",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Un Gran Consolador\\Un Gran Consolador SATB.mid"
+      ]
+    },
+    {
+      "title": "Ángel de Dios",
+      "category": "02 - Revisar voces o solapamientos",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ángel de Dios\\Ángel de Dios (SATB).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\02 - Revisar voces o solapamientos\\Ángel de Dios\\Ángel de Dios (SATB).mid",
+      "sha256": "58e1f9ee39eb65a688e2681045f4b52488064142291f9082c79ab19704c700db",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Ángel de Dios\\Ángel de Dios (SATB).mid"
+      ]
+    },
+    {
+      "title": "Coronadle Rey",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Coronadle Rey\\Coronadle Rey.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Coronadle Rey\\Coronadle Rey.mid",
+      "sha256": "3090aeab55f76a3f4e624e1a5380bcffcc150a6ea3d27976abc315c64b80d2f1",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Coronadle Rey\\Coronadle Rey.mid"
+      ]
+    },
+    {
+      "title": "El Latido de tu Corazón",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Latido de tu Corazón\\El Latido de tu Corazon E.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\El Latido de tu Corazón\\El Latido de tu Corazon E.mid",
+      "sha256": "107ae1ca96dff00f6ad0bb11345533d2833c4ca22f3344545c61ff64bc454cee",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\El Latido de tu Corazón\\El Latido de tu Corazon E.mid"
+      ]
+    },
+    {
+      "title": "Hoy Se Cumplen",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hoy Se Cumplen\\Hoy se cumplen.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Hoy Se Cumplen\\Hoy se cumplen.mid",
+      "sha256": "142fa4f7abc58e22c51c0dc67e338aa3a27e1817124b6721906f3e6b5d51afcc",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Hoy Se Cumplen\\Hoy se cumplen.mid"
+      ]
+    },
+    {
+      "title": "Lluvias Tardías",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías REC\\Lluvias Tardías REC.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Lluvias Tardías\\Lluvias Tardías REC.mid",
+      "sha256": "5246c9f2a858613add7f904c66ea38a88715f097a2260f9f38c2e4911abfd88a",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías REC\\Lluvias Tardías REC.mid"
+      ]
+    },
+    {
+      "title": "Lluvias Tardías",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Lluvias Tardías\\Lluvias Tardías SATB.mid",
+      "sha256": "8e1384c70dc4c7f541f2839f4aa623e7a04df691aa1d9343ecb78d5ec3c96d43",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías\\Lluvias Tardías SATB.mid"
+      ]
+    },
+    {
+      "title": "Lluvias Tardías",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías CJ4S\\Lluvias Tardías MOD by Caleb.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Lluvias Tardías\\Lluvias Tardías MOD by Caleb.mid",
+      "sha256": "6f6945bafaf918ab298d23507f74f2afcf1552db8ab094d1d40ee61c95cd9ec3",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Lluvias Tardías CJ4S\\Lluvias Tardías MOD by Caleb.mid"
+      ]
+    },
+    {
+      "title": "Perfect (CMG)",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Perfect (CMG).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Perfect (CMG)\\Perfect (CMG).mid",
+      "sha256": "4e8d59eb7efd410b46d3bb3c70ab864c79a1da7433cef62c6044c5f17b4fceb1",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Perfect (CMG).mid"
+      ]
+    },
+    {
+      "title": "Remembranza Gloriosa",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Remembranza Gloriosa\\Remembranza-Gloriosa (Separado).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Remembranza Gloriosa\\Remembranza-Gloriosa (Separado).mid",
+      "sha256": "9d0dc2847e2394c4dfb5a510d433194dffb32c4534082a83f5fdc8487e38f637",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Remembranza Gloriosa\\Remembranza-Gloriosa (Separado).mid"
+      ]
+    },
+    {
+      "title": "Salmo 148",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Salmo 148\\Salmo 148_2.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Salmo 148\\Salmo 148_2.mid",
+      "sha256": "9b781e996fb3a145e36be08e67d1cbf7a4eab29cacbd8ad921334ed3767b85c4",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Salmo 148\\Salmo 148_2.mid"
+      ]
+    },
+    {
+      "title": "Somos La Luz del Mundo",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Somos La Luz del Mundo\\Somos La Luz Del Mundo SATB (FINAL).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Somos La Luz del Mundo\\Somos La Luz Del Mundo SATB (FINAL).mid",
+      "sha256": "d59846c01f7d2d5e3cf13482775f9012f5afa8d29bcc952a5810a24719c1782f",
+      "activeTracks": 9,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Somos La Luz del Mundo\\Somos La Luz Del Mundo SATB (FINAL).mid"
+      ]
+    },
+    {
+      "title": "Te Prometo mi Señor",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB) (NEW).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Te Prometo mi Señor\\Te prometo mi Señor (SATB) (NEW).mid",
+      "sha256": "e4c3f0ced33b87354b2f2b33b99a97be68aa6643b0678898d62adf110c7fced7",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB) (NEW).mid"
+      ]
+    },
+    {
+      "title": "Te Prometo mi Señor",
+      "category": "03 - Titulos no encontrados en el catalogo",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\03 - Titulos no encontrados en el catalogo\\Te Prometo mi Señor\\Te prometo mi Señor (SATB).mid",
+      "sha256": "f8fe101d8a4e484597e95792cf485071f7d40d7b8e03b352a8b2f0e04af4787f",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Te Prometo mi Señor\\Te prometo mi Señor (SATB).mid"
+      ]
+    },
+    {
+      "title": "En tu amor",
+      "category": "04 - Identidad pendiente",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\En tu amor\\En tu amor (S).mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\En tu amor\\En tu amor (S).mid",
+      "sha256": "636504398c71c35ce0dfa004ac149afc0d50b8bb3a0ec0a362455f172f6876d5",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\En tu amor\\En tu amor (S).mid"
+      ]
+    },
+    {
+      "title": "Proyecto 2",
+      "category": "04 - Identidad pendiente",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Proyecto 2\\Coro SATB.mid",
+      "sha256": "2a320196aceb52356bbeced48fe14eba4c1e69e0fed918734c4513506a8ebba5",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB.mid"
+      ]
+    },
+    {
+      "title": "Proyecto 2",
+      "category": "04 - Identidad pendiente",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB2.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Proyecto 2\\Coro SATB2.mid",
+      "sha256": "70dd07d51f7d0bb55b947ae2bdcf7d494f4ddb47e350ad4581ad1fb3276a4749",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro SATB2.mid"
+      ]
+    },
+    {
+      "title": "Proyecto 2",
+      "category": "04 - Identidad pendiente",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro STB.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Proyecto 2\\Coro STB.mid",
+      "sha256": "30648e8550d4eeb30440a9cf1dc095ba57800d09654ef4de676d88cb96c47483",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Proyecto 2\\Coro STB.mid"
+      ]
+    },
+    {
+      "title": "Te loamos, Te glorificamos",
+      "category": "04 - Identidad pendiente",
+      "source": "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mensaje de Salvacion\\298.- Te loamos, Te glorificamos (Alabanza) liud.mid",
+      "destination": "E:\\Audios Octubre\\Candidatos revisados - 2026-10-10\\04 - Identidad pendiente\\Te loamos, Te glorificamos\\298.- Te loamos, Te glorificamos (Alabanza) liud.mid",
+      "sha256": "d55ed6cc46bb16c3de564275f73c5bb41da8ff6c4e4a6fd6ac85a91341635ad8",
+      "activeTracks": 4,
+      "identicalSources": [
+        "E:\\MIDIS REVISAR TODOS\\CORO JALISCO 4TA SECCIÓN\\Mensaje de Salvacion\\298.- Te loamos, Te glorificamos (Alabanza) liud.mid"
+      ]
+    }
+  ]
+}

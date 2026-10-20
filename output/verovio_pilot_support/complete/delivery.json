@@ -1,0 +1,7 @@
+{
+  "installedVersion": "0.2.0+2",
+  "internetPermission": false,
+  "apkSha256": "7898d79ab98c815d1ce7eae98444fbb729b7d6e60219f9a014a1d4a4632f5317",
+  "productionDiff": "git diff --stat -- lib assets pubspec.yaml android ios: empty",
+  "usbStayAwakeRestored": 0
+}

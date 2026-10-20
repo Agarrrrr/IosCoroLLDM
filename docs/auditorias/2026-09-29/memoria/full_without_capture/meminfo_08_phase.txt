@@ -1,0 +1,18 @@
+I/flutter (16210): AUDIT START undo_redo_500_saved
+I/flutter (16210): AUDIT END undo_redo_500_saved 2028.098 ms, 93 frames, error=null
+I/flutter (16210): AUDIT START two_finger_gestures
+I/.coro.perfaudit(16210): Explicit concurrent copying GC freed 160KB AllocSpace bytes, 1(20KB) LOS objects, 64% free, 3374KB/9518KB, paused 33us,18us total 10.791ms
+I/flutter (16210): AUDIT END two_finger_gestures 2960.143 ms, 178 frames, error=null
+I/flutter (16210): AUDIT START annotations_save_10
+I/flutter (16210): AUDIT END annotations_save_10 5.58 ms, 0 frames, error=null
+I/flutter (16210): AUDIT START annotations_load_10
+I/flutter (16210): AUDIT END annotations_load_10 0.998 ms, 0 frames, error=null
+I/flutter (16210): AUDIT START annotations_save_100
+I/flutter (16210): AUDIT END annotations_save_100 39.121 ms, 2 frames, error=null
+I/flutter (16210): AUDIT START annotations_load_100
+I/flutter (16210): AUDIT END annotations_load_100 9.922 ms, 1 frames, error=null
+I/flutter (16210): AUDIT START annotations_save_500
+I/flutter (16210): AUDIT END annotations_save_500 119.83 ms, 7 frames, error=null
+I/flutter (16210): AUDIT START annotations_load_500
+I/flutter (16210): AUDIT END annotations_load_500 46.578 ms, 3 frames, error=null
+I/flutter (16210): AUDIT START annotations_save_2000

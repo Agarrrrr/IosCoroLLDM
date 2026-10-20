@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Mi Padre en la Fe - SATB - Cantai",
+    "changes": 60,
+    "issues": [],
+    "sha256": "1ba827654e26351216589ab7a86f8fa00530be7580b97a5d083e8c71ee622589"
+  },
+  {
+    "name": "Recuerda - SATB extendido - Cantai",
+    "changes": 12,
+    "issues": [],
+    "sha256": "a05bc45ccce44cc86c8865c11b1fd8003480abfd62533a0656535777315ff219"
+  },
+  {
+    "name": "La Vida Se Va Como El Viento (reducción) - SATB - Cantai",
+    "changes": 62,
+    "issues": [],
+    "sha256": "484cd87c7a4d1151721ef169ce386216188cb2b5bb98360bcc548a57812b799d"
+  },
+  {
+    "name": "Al Huerto Van a Visitar - SATB - Cantai",
+    "changes": 41,
+    "issues": [],
+    "sha256": "f1eb23afca0fd3272a223e06d52597b995115085f9e8e29aebed9a1d5bcb7a70"
+  },
+  {
+    "name": "Mi Torre Fuerte - SATB extendido - Cantai",
+    "changes": 10,
+    "issues": [],
+    "sha256": "b4918083caffa7df413c028b4acc287e6021bca4c07bd440ff9a345ebba90118"
+  },
+  {
+    "name": "Cuando Oí Su Voz - SATB extendido - Cantai",
+    "changes": 0,
+    "issues": [],
+    "unchanged": true
+  },
+  {
+    "name": "Alabad a Jehová - SATB revisado contra PDF",
+    "changes": 2,
+    "issues": [],
+    "sha256": "0564b406bda00336f95fbae335208e29ec1723f5ab5679dbcc3f98470d2a5587"
+  }
+]

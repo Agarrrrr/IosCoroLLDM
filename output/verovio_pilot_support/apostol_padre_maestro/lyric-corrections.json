@@ -1,0 +1,22 @@
+[
+  {
+    "role": 0,
+    "word": "aliento",
+    "reason": "Las e/en repetidas del PDF se representan como melisma sobre lien, conservando todas las notas."
+  },
+  {
+    "role": 1,
+    "word": "salvación",
+    "reason": "Errata vocálica cián -> ción."
+  },
+  {
+    "role": 2,
+    "word": "envió",
+    "reason": "Acento en el pretérito de envió."
+  },
+  {
+    "role": 2,
+    "word": "salvación",
+    "reason": "S inicial omitida en alvación."
+  }
+]

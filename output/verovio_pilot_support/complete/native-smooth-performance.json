@@ -1,0 +1,16 @@
+{
+  "session": {
+    "reportedFrames": 4663,
+    "over16ms": 6,
+    "batchCount": 37,
+    "maxBatchBuildP95ms": 6.579,
+    "maxBatchRasterP95ms": 13.237
+  },
+  "al-gran-after-ready": {
+    "reportedFrames": 1905,
+    "over16ms": 0,
+    "batchCount": 15,
+    "maxBatchBuildP95ms": 6.579,
+    "maxBatchRasterP95ms": 9.043
+  }
+}

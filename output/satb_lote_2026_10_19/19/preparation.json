@@ -1,0 +1,6265 @@
+{
+  "record": {
+    "index": 19,
+    "title": "La Fiesta Universal (closed)",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Fiesta Universal (closed).mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\La Fiesta Universal (closed).mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\La Fiesta Universal (closed).musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Soprano",
+          "staffs": 1,
+          "instruments": [
+            "S"
+          ]
+        },
+        {
+          "name": "Alto",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Tenor",
+          "staffs": 1,
+          "instruments": [
+            "T"
+          ]
+        },
+        {
+          "name": "Bass",
+          "staffs": 1,
+          "instruments": [
+            "Bass"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "notes": 1258,
+      "lyrics": 383,
+      "dynamics": {
+        "f": 1
+      },
+      "voices": {
+        "1": 122,
+        "2": 10
+      }
+    },
+    "catalog": {
+      "id": "La_Fiesta_Universal_0",
+      "nombre": "La Fiesta Universal",
+      "archivo": "la-fiesta-universal-1783371313321.pdf",
+      "temas": [
+        "Santa Cena"
+      ],
+      "es_privado": false,
+      "midi_archivo": "la-fiesta-universal-1783371085429.mid",
+      "vinculo_idioma": null,
+      "coro_id": "local",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    },
+    "finalName": "La Fiesta Universal (closed) - SATB - Cantai",
+    "sourceMeasures": 33,
+    "expandedMeasures": 92,
+    "parts": 4,
+    "sourceNotes": 838,
+    "finalNotes": 2416,
+    "split": true,
+    "filledLyrics": 968
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      10,
+      3
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      16,
+      3
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      19,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      9,
+      4
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      14,
+      4
+    ],
+    [
+      15,
+      4
+    ],
+    [
+      16,
+      4
+    ],
+    [
+      17,
+      4
+    ],
+    [
+      18,
+      4
+    ],
+    [
+      20,
+      4
+    ],
+    [
+      21,
+      4
+    ],
+    [
+      22,
+      4
+    ],
+    [
+      23,
+      4
+    ],
+    [
+      24,
+      4
+    ],
+    [
+      25,
+      4
+    ],
+    [
+      26,
+      4
+    ],
+    [
+      27,
+      4
+    ],
+    [
+      28,
+      4
+    ],
+    [
+      29,
+      4
+    ],
+    [
+      30,
+      4
+    ],
+    [
+      31,
+      4
+    ],
+    [
+      32,
+      4
+    ]
+  ],
+  "editorialLyricFills": [
+    {
+      "role": 2,
+      "bar": 1,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 1,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 1,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 1,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 1,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 1,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 1,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 2,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 3,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 3,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 3,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 3,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 3,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 3,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 3,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 4,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 4,
+      "onset": "3",
+      "fromRole": 0
+    },
+    {
+      "role": 2,
+      "bar": 5,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 5,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 5,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 5,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 5,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 5,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 5,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 6,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 7,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 8,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 8,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 8,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 8,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 8,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 9,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 10,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 10,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 10,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 10,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 10,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 10,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 11,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 12,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 13,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 13,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 13,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 13,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 13,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 14,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 15,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 15,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 15,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 15,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 15,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 15,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 16,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 16,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 16,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 16,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 16,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 16,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 19,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 20,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 21,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 21,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 21,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 21,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 21,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 21,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 21,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 22,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 22,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 22,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 22,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 22,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 22,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 22,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 23,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 23,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 23,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 23,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 23,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 23,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 23,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 24,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 24,
+      "onset": "3",
+      "fromRole": 0
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 25,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 26,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 27,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 28,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 28,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 28,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 28,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 28,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 29,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 30,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 30,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 30,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 30,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 30,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 30,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 31,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 32,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 33,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 33,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 33,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 33,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 33,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 34,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 35,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 35,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 35,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 35,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 35,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 35,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 36,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 36,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 36,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 36,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 36,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 36,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 39,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 40,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 41,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 41,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 41,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 41,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 41,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 41,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 41,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 42,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 43,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 43,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 43,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 43,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 43,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 43,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 43,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 44,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 44,
+      "onset": "3",
+      "fromRole": 0
+    },
+    {
+      "role": 2,
+      "bar": 45,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 45,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 45,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 45,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 45,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 45,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 45,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 46,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 47,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 48,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 48,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 48,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 48,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 48,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 49,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 50,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 50,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 50,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 50,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 50,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 50,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 51,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 52,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 53,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 53,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 53,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 53,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 53,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 54,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 55,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 55,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 55,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 55,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 55,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 55,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 56,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 56,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 56,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 56,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 56,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 56,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 59,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 60,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 61,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 62,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 62,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 62,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 62,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 62,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 62,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 62,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 63,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 63,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 63,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 63,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 63,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 63,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 63,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 64,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 64,
+      "onset": "3",
+      "fromRole": 0
+    },
+    {
+      "role": 2,
+      "bar": 65,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 65,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 65,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 65,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 65,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 65,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 65,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 66,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 66,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 66,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 66,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 66,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 66,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 66,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 67,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 68,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 68,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 68,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 68,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 68,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 69,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 70,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 70,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 70,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 70,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 70,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 70,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 71,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 72,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 73,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 73,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 73,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 73,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 73,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 74,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 75,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 75,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 75,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 75,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 75,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 75,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 76,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 76,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 76,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 76,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 76,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 76,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 79,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 81,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 81,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 81,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 81,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 81,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 81,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 82,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 83,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 84,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 84,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 84,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 84,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 84,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 85,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 86,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 86,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 86,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 86,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 86,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 86,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 87,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 87,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 87,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 87,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 87,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 87,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 90,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 90,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 90,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 90,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 90,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 90,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 90,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 91,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 91,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 91,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 2,
+      "bar": 92,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 1,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 1,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 1,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 1,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 1,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 1,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 1,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 2,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 3,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 3,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 3,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 3,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 3,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 3,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 3,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 4,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 5,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 5,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 5,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 5,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 5,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 5,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 5,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 6,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 7,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 8,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 8,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 8,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 8,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 8,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 9,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 10,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 11,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 12,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 13,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 13,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 13,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 13,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 13,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 14,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 14,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 14,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 15,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 15,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 15,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 15,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 15,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 15,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 16,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 16,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 16,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 16,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 16,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 16,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 19,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 20,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 21,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 21,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 21,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 21,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 21,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 21,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 21,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 22,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 22,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 22,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 22,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 22,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 22,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 22,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 23,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 23,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 23,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 23,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 23,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 23,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 23,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 24,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 25,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 26,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 27,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 28,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 28,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 28,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 28,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 28,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 29,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 29,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 29,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 30,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 30,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 30,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 30,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 30,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 30,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 31,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 32,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 33,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 33,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 33,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 33,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 33,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 34,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 34,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 34,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 35,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 35,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 35,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 35,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 35,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 35,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 36,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 36,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 36,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 36,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 36,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 36,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 39,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 40,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 41,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 41,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 41,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 41,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 41,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 41,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 41,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 42,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 43,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 43,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 43,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 43,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 43,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 43,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 43,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 44,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 45,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 45,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 45,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 45,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 45,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 45,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 45,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 46,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 47,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 48,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 48,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 48,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 48,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 48,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 49,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 49,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 49,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 50,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 50,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 50,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 50,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 50,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 50,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 51,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 52,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 53,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 53,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 53,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 53,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 53,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 54,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 54,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 54,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 55,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 55,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 55,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 55,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 55,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 55,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 56,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 56,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 56,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 56,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 56,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 56,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 59,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 60,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 61,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 62,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 62,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 62,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 62,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 62,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 62,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 62,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 63,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 63,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 63,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 63,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 63,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 63,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 63,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 64,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 65,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 65,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 65,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 65,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 65,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 65,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 65,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 66,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 66,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 66,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 66,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 66,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 66,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 66,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 67,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 68,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 68,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 68,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 68,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 68,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 69,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 69,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 69,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 70,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 70,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 70,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 70,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 70,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 70,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 71,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 72,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 73,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 73,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 73,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 73,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 73,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 74,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 74,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 74,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 75,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 75,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 75,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 75,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 75,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 75,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 76,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 76,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 76,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 76,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 76,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 76,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 79,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 80,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 80,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 81,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 81,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 81,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 81,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 81,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 81,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 82,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 83,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 84,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 84,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 84,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 84,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 84,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 85,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 85,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 85,
+      "onset": "9/2",
+      "fromRole": 0
+    },
+    {
+      "role": 3,
+      "bar": 86,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 86,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 86,
+      "onset": "4",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 86,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 86,
+      "onset": "5",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 86,
+      "onset": "11/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 87,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 87,
+      "onset": "1/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 87,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 87,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 87,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 87,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 90,
+      "onset": "0",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 90,
+      "onset": "1",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 90,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 90,
+      "onset": "2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 90,
+      "onset": "5/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 90,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 90,
+      "onset": "7/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 91,
+      "onset": "3/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 91,
+      "onset": "3",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 91,
+      "onset": "9/2",
+      "fromRole": 1
+    },
+    {
+      "role": 3,
+      "bar": 92,
+      "onset": "0",
+      "fromRole": 1
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "originalMeasures": 92,
+  "expandedMeasures": 95,
+  "quarterBeats": 377,
+  "parts": 4,
+  "pages": 11,
+  "checks": [
+    {
+      "file": "Apóstol, Padre y Maestro - SATB extendido - Cantai.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 1427,
+        "fermatas": 9,
+        "tripletNotes": 12,
+        "lyrics": 1351,
+        "slurstart": 21,
+        "slurstop": 21,
+        "ties": 54
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          90.0
+        ],
+        [
+          44.0,
+          78.0
+        ],
+        [
+          56.5,
+          90.0
+        ],
+        [
+          210.0,
+          87.0
+        ],
+        [
+          211.0,
+          84.0
+        ],
+        [
+          212.0,
+          81.0
+        ],
+        [
+          213.0,
+          78.0
+        ],
+        [
+          244.0,
+          96.0
+        ],
+        [
+          277.0,
+          90.0
+        ]
+      ]
+    },
+    {
+      "file": "render/exported.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 1427,
+        "fermatas": 9,
+        "tripletNotes": 12,
+        "lyrics": 1351,
+        "slurstart": 21,
+        "slurstop": 21,
+        "ties": 54
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          90.0
+        ]
+      ]
+    },
+    {
+      "file": "render/reimport.musicxml",
+      "notesLyricsTiesAndPhrasesPreserved": true,
+      "counts": {
+        "notes": 1427,
+        "fermatas": 9,
+        "tripletNotes": 12,
+        "lyrics": 1351,
+        "slurstart": 21,
+        "slurstop": 21,
+        "ties": 54
+      },
+      "explicitTempos": [
+        [
+          0.0,
+          90.0
+        ]
+      ]
+    }
+  ],
+  "attacks": [
+    343,
+    277,
+    397,
+    356
+  ],
+  "allReferencePitchesMatch": true,
+  "nativePlaybackAttacksMatchWrittenTies": true,
+  "nativeStaccatoAndClosingSustainVerified": true,
+  "printedDynamicMarks": 76,
+  "regulators": 11,
+  "explicitTempos": [
+    [
+      0,
+      90
+    ],
+    [
+      44,
+      78
+    ],
+    [
+      56.5,
+      90
+    ],
+    [
+      210,
+      87
+    ],
+    [
+      211,
+      84
+    ],
+    [
+      212,
+      81
+    ],
+    [
+      213,
+      78
+    ],
+    [
+      244,
+      96
+    ],
+    [
+      277,
+      90
+    ]
+  ],
+  "referenceOnsetDifferences": [
+    {
+      "kind": "referenceAttack",
+      "role": 0,
+      "beat": 297.0,
+      "pitch": 71
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 247.5,
+      "pitch": 67
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 248.0,
+      "pitch": 69
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 248.5,
+      "pitch": 67
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 263.5,
+      "pitch": 67
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 264.0,
+      "pitch": 69
+    },
+    {
+      "kind": "writtenAttack",
+      "role": 1,
+      "beat": 264.5,
+      "pitch": 67
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 247.75,
+      "pitch": 69
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 248.25,
+      "pitch": 67
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 263.75,
+      "pitch": 69
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 264.25,
+      "pitch": 67
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 1,
+      "beat": 297.0,
+      "pitch": 67
+    },
+    {
+      "kind": "referenceAttack",
+      "role": 2,
+      "beat": 297.0,
+      "pitch": 64
+    }
+  ],
+  "canonicalXmlRecommended": true,
+  "musescoreExportTemposPreserved": false
+}

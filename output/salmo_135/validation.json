@@ -1,0 +1,12 @@
+{
+  "staves": 4,
+  "bars": 45,
+  "notes": 752,
+  "lyrics": 593,
+  "slurs": 46,
+  "ties": 1,
+  "tempo": 90,
+  "reopened": true,
+  "midiVerified": true,
+  "sha256": "9b62c89e1cf5be1925d18dfa73619d1b003b59b6b137c606ea9a29f4acaa5c78"
+}

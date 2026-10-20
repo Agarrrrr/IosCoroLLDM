@@ -1,0 +1,2020 @@
+[
+  {
+    "variant": 1,
+    "word": "No",
+    "groups": [
+      {
+        "id": "amigo-0-0-0",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "hay",
+    "groups": [
+      {
+        "id": "amigo-0-0-0",
+        "text": "hay"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "amigo",
+    "groups": [
+      {
+        "id": "amigo-0-1-0",
+        "text": "a"
+      },
+      {
+        "id": "amigo-0-2-0",
+        "text": "mi"
+      },
+      {
+        "id": "amigo-0-3-0",
+        "text": "go"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "mejor",
+    "groups": [
+      {
+        "id": "amigo-0-4-0",
+        "text": "me"
+      },
+      {
+        "id": "amigo-0-5-0",
+        "text": "jor"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "que",
+    "groups": [
+      {
+        "id": "amigo-0-6-0",
+        "text": "que"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "el",
+    "groups": [
+      {
+        "id": "amigo-0-6-0",
+        "text": "el"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Señor",
+    "groups": [
+      {
+        "id": "amigo-0-7-0",
+        "text": "Se"
+      },
+      {
+        "id": "amigo-0-8-0",
+        "text": "ñor,"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Mi",
+    "groups": [
+      {
+        "id": "amigo-0-9-0",
+        "text": "Mi"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Jesús",
+    "groups": [
+      {
+        "id": "amigo-0-10-0",
+        "text": "Je"
+      },
+      {
+        "id": "amigo-0-11-0",
+        "text": "sús"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "es",
+    "groups": [
+      {
+        "id": "amigo-0-12-0",
+        "text": "es"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-13-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "amigo",
+    "groups": [
+      {
+        "id": "amigo-0-13-0",
+        "text": "a"
+      },
+      {
+        "id": "amigo-0-14-0",
+        "text": "mi"
+      },
+      {
+        "id": "amigo-0-15-0",
+        "text": "go"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "más",
+    "groups": [
+      {
+        "id": "amigo-0-16-0",
+        "text": "más"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "fiel",
+    "groups": [
+      {
+        "id": "amigo-0-17-0",
+        "text": "fiel;"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Sólo",
+    "groups": [
+      {
+        "id": "amigo-0-18-0",
+        "text": "Só"
+      },
+      {
+        "id": "amigo-0-19-0",
+        "text": "lo"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Él",
+    "groups": [
+      {
+        "id": "amigo-0-20-0",
+        "text": "Él"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "me",
+    "groups": [
+      {
+        "id": "amigo-0-21-0",
+        "text": "me"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "salvó",
+    "groups": [
+      {
+        "id": "amigo-0-22-0",
+        "text": "sal"
+      },
+      {
+        "id": "amigo-0-23-0",
+        "text": "vó"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "de",
+    "groups": [
+      {
+        "id": "amigo-0-24-0",
+        "text": "de"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "la",
+    "groups": [
+      {
+        "id": "amigo-0-25-0",
+        "text": "la"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "muerte",
+    "groups": [
+      {
+        "id": "amigo-0-26-0",
+        "text": "muer"
+      },
+      {
+        "id": "amigo-0-28-0",
+        "text": "te,"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "De",
+    "groups": [
+      {
+        "id": "amigo-0-29-0",
+        "text": "De"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "vivir",
+    "groups": [
+      {
+        "id": "amigo-0-30-0",
+        "text": "vi"
+      },
+      {
+        "id": "amigo-0-31-0",
+        "text": "vir"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "en",
+    "groups": [
+      {
+        "id": "amigo-0-32-0",
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "las",
+    "groups": [
+      {
+        "id": "amigo-0-33-0",
+        "text": "las"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "tinieblas",
+    "groups": [
+      {
+        "id": "amigo-0-34-0",
+        "text": "ti"
+      },
+      {
+        "id": "amigo-0-35-0",
+        "text": "nie"
+      },
+      {
+        "id": "amigo-0-36-0",
+        "text": "blas"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "de",
+    "groups": [
+      {
+        "id": "amigo-0-37-0",
+        "text": "de"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "maldad",
+    "groups": [
+      {
+        "id": "amigo-0-38-0",
+        "text": "mal"
+      },
+      {
+        "id": "amigo-0-39-0",
+        "text": "dad"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "me",
+    "groups": [
+      {
+        "id": "amigo-0-40-0",
+        "text": "me"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "rescató",
+    "groups": [
+      {
+        "id": "amigo-0-41-0",
+        "text": "res"
+      },
+      {
+        "id": "amigo-0-42-0",
+        "text": "ca"
+      },
+      {
+        "id": "amigo-0-43-0",
+        "text": "tó."
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Ahora",
+    "groups": [
+      {
+        "id": "amigo-0-44-0",
+        "text": "Aho"
+      },
+      {
+        "id": "amigo-0-45-0",
+        "text": "ra"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "tengo",
+    "groups": [
+      {
+        "id": "amigo-0-46-0",
+        "text": "ten"
+      },
+      {
+        "id": "amigo-0-47-0",
+        "text": "go"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-48-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "esperanza",
+    "groups": [
+      {
+        "id": "amigo-0-48-0",
+        "text": "es"
+      },
+      {
+        "id": "amigo-0-49-0",
+        "text": "pe"
+      },
+      {
+        "id": "amigo-0-50-0",
+        "text": "ran"
+      },
+      {
+        "id": "amigo-0-51-0",
+        "text": "za"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "en",
+    "groups": [
+      {
+        "id": "amigo-0-51-0",
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Jesucristo",
+    "groups": [
+      {
+        "id": "amigo-0-52-0",
+        "text": "Je"
+      },
+      {
+        "id": "amigo-0-53-0",
+        "text": "su"
+      },
+      {
+        "id": "amigo-0-54-0",
+        "text": "cris"
+      },
+      {
+        "id": "amigo-0-56-0",
+        "text": "to,"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Por",
+    "groups": [
+      {
+        "id": "amigo-0-57-0",
+        "text": "Por"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "amor",
+    "groups": [
+      {
+        "id": "amigo-0-58-0",
+        "text": "a"
+      },
+      {
+        "id": "amigo-0-59-0",
+        "text": "mor"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "se",
+    "groups": [
+      {
+        "id": "amigo-0-60-0",
+        "text": "se"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "entregó",
+    "groups": [
+      {
+        "id": "amigo-0-61-0",
+        "text": "en"
+      },
+      {
+        "id": "amigo-0-62-0",
+        "text": "tre"
+      },
+      {
+        "id": "amigo-0-63-0",
+        "text": "gó"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "el",
+    "groups": [
+      {
+        "id": "amigo-0-64-0",
+        "text": "el"
+      }
+    ]
+  },
+  {
+    "variant": 1,
+    "word": "Salvador",
+    "groups": [
+      {
+        "id": "amigo-0-65-0",
+        "text": "Sal"
+      },
+      {
+        "id": "amigo-0-66-0",
+        "text": "va"
+      },
+      {
+        "id": "amigo-0-67-0",
+        "text": "dor."
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "No",
+    "groups": [
+      {
+        "id": "amigo-0-0-0",
+        "text": "No"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "hay",
+    "groups": [
+      {
+        "id": "amigo-0-0-0",
+        "text": "hay"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "amigo",
+    "groups": [
+      {
+        "id": "amigo-0-1-0",
+        "text": "a"
+      },
+      {
+        "id": "amigo-0-2-0",
+        "text": "mi"
+      },
+      {
+        "id": "amigo-0-3-0",
+        "text": "go"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "tan",
+    "groups": [
+      {
+        "id": "amigo-0-4-0",
+        "text": "tan"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "tierno",
+    "groups": [
+      {
+        "id": "amigo-0-5-0",
+        "text": "tier"
+      },
+      {
+        "id": "amigo-0-6-0",
+        "text": "no"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "en",
+    "groups": [
+      {
+        "id": "amigo-0-6-0",
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "bondad",
+    "groups": [
+      {
+        "id": "amigo-0-7-0",
+        "text": "bon"
+      },
+      {
+        "id": "amigo-0-8-0",
+        "text": "dad,"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Que",
+    "groups": [
+      {
+        "id": "amigo-0-9-0",
+        "text": "Que"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "viviendo",
+    "groups": [
+      {
+        "id": "amigo-0-10-0",
+        "text": "vi"
+      },
+      {
+        "id": "amigo-0-11-0",
+        "text": "vien"
+      },
+      {
+        "id": "amigo-0-12-0",
+        "text": "do"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "en",
+    "groups": [
+      {
+        "id": "amigo-0-12-0",
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "maldad",
+    "groups": [
+      {
+        "id": "amigo-0-13-0",
+        "text": "mal"
+      },
+      {
+        "id": "amigo-0-14-0",
+        "text": "dad"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "y",
+    "groups": [
+      {
+        "id": "amigo-0-15-0",
+        "text": "y"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "en",
+    "groups": [
+      {
+        "id": "amigo-0-15-0",
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "dolor",
+    "groups": [
+      {
+        "id": "amigo-0-16-0",
+        "text": "do"
+      },
+      {
+        "id": "amigo-0-17-0",
+        "text": "lor;"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Me",
+    "groups": [
+      {
+        "id": "amigo-0-18-0",
+        "text": "Me"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "miraste",
+    "groups": [
+      {
+        "id": "amigo-0-19-0",
+        "text": "mi"
+      },
+      {
+        "id": "amigo-0-20-0",
+        "text": "ras"
+      },
+      {
+        "id": "amigo-0-21-0",
+        "text": "te"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Señor",
+    "groups": [
+      {
+        "id": "amigo-0-22-0",
+        "text": "Se"
+      },
+      {
+        "id": "amigo-0-23-0",
+        "text": "ñor"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "que",
+    "groups": [
+      {
+        "id": "amigo-0-24-0",
+        "text": "que"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "sufría",
+    "groups": [
+      {
+        "id": "amigo-0-25-0",
+        "text": "su"
+      },
+      {
+        "id": "amigo-0-26-0",
+        "text": "frí"
+      },
+      {
+        "id": "amigo-0-28-0",
+        "text": "a,"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Me",
+    "groups": [
+      {
+        "id": "amigo-0-29-0",
+        "text": "Me"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "tendiste",
+    "groups": [
+      {
+        "id": "amigo-0-30-0",
+        "text": "ten"
+      },
+      {
+        "id": "amigo-0-31-0",
+        "text": "dis"
+      },
+      {
+        "id": "amigo-0-33-0",
+        "text": "te"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "tu",
+    "groups": [
+      {
+        "id": "amigo-0-34-0",
+        "text": "tu"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "mano",
+    "groups": [
+      {
+        "id": "amigo-0-35-0",
+        "text": "ma"
+      },
+      {
+        "id": "amigo-0-36-0",
+        "text": "no"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "y",
+    "groups": [
+      {
+        "id": "amigo-0-36-0",
+        "text": "y"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "diste",
+    "groups": [
+      {
+        "id": "amigo-0-37-0",
+        "text": "dis"
+      },
+      {
+        "id": "amigo-0-38-0",
+        "text": "te"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "dicha",
+    "groups": [
+      {
+        "id": "amigo-0-39-0",
+        "text": "di"
+      },
+      {
+        "id": "amigo-0-40-0",
+        "text": "cha"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "a",
+    "groups": [
+      {
+        "id": "amigo-0-40-0",
+        "text": "a"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-41-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "vivir",
+    "groups": [
+      {
+        "id": "amigo-0-42-0",
+        "text": "vi"
+      },
+      {
+        "id": "amigo-0-43-0",
+        "text": "vir."
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Ahora",
+    "groups": [
+      {
+        "id": "amigo-0-44-0",
+        "text": "Aho"
+      },
+      {
+        "id": "amigo-0-45-0",
+        "text": "ra"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "canto",
+    "groups": [
+      {
+        "id": "amigo-0-46-0",
+        "text": "can"
+      },
+      {
+        "id": "amigo-0-48-0",
+        "text": "to"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "feliz",
+    "groups": [
+      {
+        "id": "amigo-0-49-0",
+        "text": "fe"
+      },
+      {
+        "id": "amigo-0-50-0",
+        "text": "liz"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "con",
+    "groups": [
+      {
+        "id": "amigo-0-51-0",
+        "text": "con"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "los",
+    "groups": [
+      {
+        "id": "amigo-0-52-0",
+        "text": "los"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "salvados",
+    "groups": [
+      {
+        "id": "amigo-0-53-0",
+        "text": "sal"
+      },
+      {
+        "id": "amigo-0-54-0",
+        "text": "va"
+      },
+      {
+        "id": "amigo-0-56-0",
+        "text": "dos,"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Porque",
+    "groups": [
+      {
+        "id": "amigo-0-57-0",
+        "text": "Por"
+      },
+      {
+        "id": "amigo-0-58-0",
+        "text": "que"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Cristo",
+    "groups": [
+      {
+        "id": "amigo-0-59-0",
+        "text": "Cris"
+      },
+      {
+        "id": "amigo-0-60-0",
+        "text": "to"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "me",
+    "groups": [
+      {
+        "id": "amigo-0-61-0",
+        "text": "me"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "escogió",
+    "groups": [
+      {
+        "id": "amigo-0-61-0",
+        "text": "es"
+      },
+      {
+        "id": "amigo-0-62-0",
+        "text": "co"
+      },
+      {
+        "id": "amigo-0-63-0",
+        "text": "gió,"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Gloria",
+    "groups": [
+      {
+        "id": "amigo-0-64-0",
+        "text": "¡Glo"
+      },
+      {
+        "id": "amigo-0-65-0",
+        "text": "ria"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "al",
+    "groups": [
+      {
+        "id": "amigo-0-65-0",
+        "text": "al"
+      }
+    ]
+  },
+  {
+    "variant": 2,
+    "word": "Señor",
+    "groups": [
+      {
+        "id": "amigo-0-66-0",
+        "text": "Se"
+      },
+      {
+        "id": "amigo-0-67-0",
+        "text": "ñor!"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Cuando",
+    "groups": [
+      {
+        "id": "amigo-0-0-0",
+        "text": "Cuan"
+      },
+      {
+        "id": "amigo-0-1-0",
+        "text": "do"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "siento",
+    "groups": [
+      {
+        "id": "amigo-0-2-0",
+        "text": "sien"
+      },
+      {
+        "id": "amigo-0-3-0",
+        "text": "to"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "aflicción",
+    "groups": [
+      {
+        "id": "amigo-0-3-0",
+        "text": "a"
+      },
+      {
+        "id": "amigo-0-4-0",
+        "text": "flic"
+      },
+      {
+        "id": "amigo-0-5-0",
+        "text": "ción"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "en",
+    "groups": [
+      {
+        "id": "amigo-0-6-0",
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-7-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "ser",
+    "groups": [
+      {
+        "id": "amigo-0-8-0",
+        "text": "ser,"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Cuando",
+    "groups": [
+      {
+        "id": "amigo-0-9-0",
+        "text": "Cuan"
+      },
+      {
+        "id": "amigo-0-10-0",
+        "text": "do"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "vienen",
+    "groups": [
+      {
+        "id": "amigo-0-11-0",
+        "text": "vie"
+      },
+      {
+        "id": "amigo-0-12-0",
+        "text": "nen"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "las",
+    "groups": [
+      {
+        "id": "amigo-0-13-0",
+        "text": "las"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "olas",
+    "groups": [
+      {
+        "id": "amigo-0-14-0",
+        "text": "o"
+      },
+      {
+        "id": "amigo-0-15-0",
+        "text": "las"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "del",
+    "groups": [
+      {
+        "id": "amigo-0-16-0",
+        "text": "del"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "mar",
+    "groups": [
+      {
+        "id": "amigo-0-17-0",
+        "text": "mar;"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Clamo",
+    "groups": [
+      {
+        "id": "amigo-0-18-0",
+        "text": "Cla"
+      },
+      {
+        "id": "amigo-0-19-0",
+        "text": "mo"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "al",
+    "groups": [
+      {
+        "id": "amigo-0-19-0",
+        "text": "al"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "único",
+    "groups": [
+      {
+        "id": "amigo-0-20-0",
+        "text": "ú"
+      },
+      {
+        "id": "amigo-0-21-0",
+        "text": "ni"
+      },
+      {
+        "id": "amigo-0-22-0",
+        "text": "co"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "ser",
+    "groups": [
+      {
+        "id": "amigo-0-23-0",
+        "text": "ser"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Jesucristo",
+    "groups": [
+      {
+        "id": "amigo-0-24-0",
+        "text": "Je"
+      },
+      {
+        "id": "amigo-0-25-0",
+        "text": "su"
+      },
+      {
+        "id": "amigo-0-26-0",
+        "text": "cris"
+      },
+      {
+        "id": "amigo-0-28-0",
+        "text": "to;"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Pronto",
+    "groups": [
+      {
+        "id": "amigo-0-29-0",
+        "text": "Pron"
+      },
+      {
+        "id": "amigo-0-30-0",
+        "text": "to"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "ayuda",
+    "groups": [
+      {
+        "id": "amigo-0-30-0",
+        "text": "a"
+      },
+      {
+        "id": "amigo-0-31-0",
+        "text": "yu"
+      },
+      {
+        "id": "amigo-0-32-0",
+        "text": "da"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Él",
+    "groups": [
+      {
+        "id": "amigo-0-33-0",
+        "text": "Él"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "me",
+    "groups": [
+      {
+        "id": "amigo-0-34-0",
+        "text": "me"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "da",
+    "groups": [
+      {
+        "id": "amigo-0-35-0",
+        "text": "da"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "y",
+    "groups": [
+      {
+        "id": "amigo-0-37-0",
+        "text": "y"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "su",
+    "groups": [
+      {
+        "id": "amigo-0-38-0",
+        "text": "su"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "mano",
+    "groups": [
+      {
+        "id": "amigo-0-39-0",
+        "text": "ma"
+      },
+      {
+        "id": "amigo-0-40-0",
+        "text": "no"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "presta",
+    "groups": [
+      {
+        "id": "amigo-0-41-0",
+        "text": "pres"
+      },
+      {
+        "id": "amigo-0-42-0",
+        "text": "ta"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "está",
+    "groups": [
+      {
+        "id": "amigo-0-42-0",
+        "text": "es"
+      },
+      {
+        "id": "amigo-0-43-0",
+        "text": "tá."
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Gloria",
+    "groups": [
+      {
+        "id": "amigo-0-44-0",
+        "text": "Glo"
+      },
+      {
+        "id": "amigo-0-45-0",
+        "text": "ria,"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "gloria",
+    "groups": [
+      {
+        "id": "amigo-0-46-0",
+        "text": "glo"
+      },
+      {
+        "id": "amigo-0-47-0",
+        "text": "ria"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "a",
+    "groups": [
+      {
+        "id": "amigo-0-47-0",
+        "text": "a"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-48-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Señor",
+    "groups": [
+      {
+        "id": "amigo-0-49-0",
+        "text": "Se"
+      },
+      {
+        "id": "amigo-0-50-0",
+        "text": "ñor,"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "tengo",
+    "groups": [
+      {
+        "id": "amigo-0-51-0",
+        "text": "ten"
+      },
+      {
+        "id": "amigo-0-52-0",
+        "text": "go"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "un",
+    "groups": [
+      {
+        "id": "amigo-0-52-0",
+        "text": "un"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "amparo",
+    "groups": [
+      {
+        "id": "amigo-0-53-0",
+        "text": "am"
+      },
+      {
+        "id": "amigo-0-54-0",
+        "text": "pa"
+      },
+      {
+        "id": "amigo-0-56-0",
+        "text": "ro,"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "El",
+    "groups": [
+      {
+        "id": "amigo-0-57-0",
+        "text": "El"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Apóstol",
+    "groups": [
+      {
+        "id": "amigo-0-58-0",
+        "text": "A"
+      },
+      {
+        "id": "amigo-0-59-0",
+        "text": "pós"
+      },
+      {
+        "id": "amigo-0-60-0",
+        "text": "tol"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "del",
+    "groups": [
+      {
+        "id": "amigo-0-61-0",
+        "text": "del"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Señor",
+    "groups": [
+      {
+        "id": "amigo-0-62-0",
+        "text": "Se"
+      },
+      {
+        "id": "amigo-0-63-0",
+        "text": "ñor"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Naasón",
+    "groups": [
+      {
+        "id": "amigo-0-64-0",
+        "text": "Naa"
+      },
+      {
+        "id": "amigo-0-65-0",
+        "text": "són"
+      }
+    ]
+  },
+  {
+    "variant": 3,
+    "word": "Joaquín",
+    "groups": [
+      {
+        "id": "amigo-0-66-0",
+        "text": "Joa"
+      },
+      {
+        "id": "amigo-0-67-0",
+        "text": "quín."
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "Hoy",
+    "groups": [
+      {
+        "id": "amigo-0-68-0",
+        "text": "Hoy"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-69-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "vida",
+    "groups": [
+      {
+        "id": "amigo-0-70-0",
+        "text": "vi"
+      },
+      {
+        "id": "amigo-0-71-0",
+        "text": "da"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "es",
+    "groups": [
+      {
+        "id": "amigo-0-71-0",
+        "text": "es"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "para",
+    "groups": [
+      {
+        "id": "amigo-0-72-0",
+        "text": "pa"
+      },
+      {
+        "id": "amigo-0-73-0",
+        "text": "ra"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "ti",
+    "groups": [
+      {
+        "id": "amigo-0-74-0",
+        "text": "ti,"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "me",
+    "groups": [
+      {
+        "id": "amigo-0-75-0",
+        "text": "me"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "compraste",
+    "groups": [
+      {
+        "id": "amigo-0-76-0",
+        "text": "com"
+      },
+      {
+        "id": "amigo-0-77-0",
+        "text": "pras"
+      },
+      {
+        "id": "amigo-0-78-0",
+        "text": "te"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "Salvador",
+    "groups": [
+      {
+        "id": "amigo-0-79-0",
+        "text": "Sal"
+      },
+      {
+        "id": "amigo-0-80-0",
+        "text": "va"
+      },
+      {
+        "id": "amigo-0-81-0",
+        "text": "dor;"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "Porque",
+    "groups": [
+      {
+        "id": "amigo-0-82-0",
+        "text": "Por"
+      },
+      {
+        "id": "amigo-0-83-0",
+        "text": "que"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "tu",
+    "groups": [
+      {
+        "id": "amigo-0-84-0",
+        "text": "tu"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "eres",
+    "groups": [
+      {
+        "id": "amigo-0-84-0",
+        "text": "e"
+      },
+      {
+        "id": "amigo-0-85-0",
+        "text": "res"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "para",
+    "groups": [
+      {
+        "id": "amigo-0-86-0",
+        "text": "pa"
+      },
+      {
+        "id": "amigo-0-87-0",
+        "text": "ra"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-88-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "el",
+    "groups": [
+      {
+        "id": "amigo-0-89-0",
+        "text": "el"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "motivo",
+    "groups": [
+      {
+        "id": "amigo-0-90-0",
+        "text": "mo"
+      },
+      {
+        "id": "amigo-0-91-0",
+        "text": "ti"
+      },
+      {
+        "id": "amigo-0-92-0",
+        "text": "vo"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "de",
+    "groups": [
+      {
+        "id": "amigo-0-93-0",
+        "text": "de"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "vivir",
+    "groups": [
+      {
+        "id": "amigo-0-94-0",
+        "text": "vi"
+      },
+      {
+        "id": "amigo-0-95-0",
+        "text": "vir."
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "Sólo",
+    "groups": [
+      {
+        "id": "amigo-0-96-0",
+        "text": "Só"
+      },
+      {
+        "id": "amigo-0-97-0",
+        "text": "lo"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "tengo",
+    "groups": [
+      {
+        "id": "amigo-0-98-0",
+        "text": "ten"
+      },
+      {
+        "id": "amigo-0-99-0",
+        "text": "go"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "una",
+    "groups": [
+      {
+        "id": "amigo-0-99-0",
+        "text": "u"
+      },
+      {
+        "id": "amigo-0-100-0",
+        "text": "na"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "razón",
+    "groups": [
+      {
+        "id": "amigo-0-101-0",
+        "text": "ra"
+      },
+      {
+        "id": "amigo-0-102-0",
+        "text": "zón"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "que",
+    "groups": [
+      {
+        "id": "amigo-0-103-0",
+        "text": "que"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "decirte",
+    "groups": [
+      {
+        "id": "amigo-0-104-0",
+        "text": "de"
+      },
+      {
+        "id": "amigo-0-105-0",
+        "text": "cir"
+      },
+      {
+        "id": "amigo-0-106-0",
+        "text": "te"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "mi",
+    "groups": [
+      {
+        "id": "amigo-0-107-0",
+        "text": "mi"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "Señor",
+    "groups": [
+      {
+        "id": "amigo-0-108-0",
+        "text": "Se"
+      },
+      {
+        "id": "amigo-0-109-0",
+        "text": "ñor:"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "Como",
+    "groups": [
+      {
+        "id": "amigo-0-110-0",
+        "text": "\"Co"
+      },
+      {
+        "id": "amigo-0-111-0",
+        "text": "mo"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "Tú",
+    "groups": [
+      {
+        "id": "amigo-0-112-0",
+        "text": "Tú"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "no",
+    "groups": [
+      {
+        "id": "amigo-0-113-0",
+        "text": "no"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "hay",
+    "groups": [
+      {
+        "id": "amigo-0-113-0",
+        "text": "hay"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "amigo",
+    "groups": [
+      {
+        "id": "amigo-0-114-0",
+        "text": "a"
+      },
+      {
+        "id": "amigo-0-115-0",
+        "text": "mi"
+      },
+      {
+        "id": "amigo-0-117-0",
+        "text": "go,"
+      }
+    ]
+  },
+  {
+    "variant": 4,
+    "word": "mejor",
+    "groups": [
+      {
+        "id": "amigo-0-118-0",
+        "text": "me"
+      },
+      {
+        "id": "amigo-0-119-0",
+        "text": "jor\"."
+      }
+    ]
+  }
+]

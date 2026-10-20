@@ -1,0 +1,5 @@
+const fs=require('fs'),crypto=require('crypto');
+const raw={},stats={},hashes={},manifest=JSON.parse(fs.readFileSync('website/public/preview-manifest.json')).previews||{};
+for(const lang of ['es','en']){raw[lang]=fs.readFileSync(`website/public/catalogo${lang==='en'?'_en':''}.json`,'utf8');const c=JSON.parse(raw[lang]);stats[lang]={total:c.length,withMidi:c.filter(s=>s.midi_archivo).length,withPreview:c.filter(s=>{const p=manifest[s.midi_archivo];return typeof p==='string'||Boolean(p?.opus||p?.aac);}).length};hashes[lang]=crypto.createHash('sha256').update(raw[lang]).digest('hex');}
+const meta=JSON.parse(fs.readFileSync('website/public/catalog-meta.json'));if(['es','en'].some(l=>meta.catalogs[l].hash!==hashes[l]))meta.generatedAt=new Date().toISOString();meta.version=crypto.createHash('sha256').update(raw.es).update(raw.en).digest('hex').slice(0,16);for(const lang of ['es','en'])meta.catalogs[lang]={hash:hashes[lang],...stats[lang]};
+fs.writeFileSync('website/public/catalog-stats.json',JSON.stringify(stats,null,2)+'\n');fs.writeFileSync('website/public/catalog-meta.json',JSON.stringify(meta,null,2)+'\n');console.log(stats);

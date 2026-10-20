@@ -1,0 +1,218 @@
+Resolving dependencies...
+Downloading packages...
+  archive 4.0.9 (4.3.0 available)
+  async 2.13.0 (2.13.1 available)
+  audioplayers 6.6.0 (6.8.1 available)
+  audioplayers_android 5.2.1 (5.3.0 available)
+  audioplayers_darwin 6.4.0 (6.5.0 available)
+  audioplayers_linux 4.2.1 (4.3.0 available)
+  audioplayers_platform_interface 7.1.1 (7.2.0 available)
+  audioplayers_web 5.2.0 (5.3.0 available)
+  audioplayers_windows 4.3.0 (4.4.1 available)
+  characters 1.4.0 (1.4.1 available)
+  cli_util 0.4.2 (0.6.0 available)
+  clock 1.1.2 (1.1.3 available)
+  cross_file 0.3.5+2 (0.4.0 available)
+  cupertino_icons 1.0.8 (2.0.0 available)
+  dart_pubspec_licenses 3.0.4 (3.2.0 available)
+  dio 5.10.0 (5.11.1 available)
+  dio_web_adapter 2.2.0 (2.2.2 available)
+  equatable 2.1.0 (3.0.0 available)
+  flutter_lints 5.0.0 (6.0.0 available)
+  flutter_native_splash 2.4.7 (2.4.8 available)
+  flutter_riverpod 2.6.1 (3.4.3 available)
+  go_router 14.8.1 (18.0.2 available)
+  google_fonts 6.3.2 (9.0.0 available)
+  google_mobile_ads 6.0.0 (9.1.0 available)
+  html 0.15.6 (0.15.7 available)
+  image 4.8.0 (4.10.1 available)
+  intl 0.20.2 (0.20.3 available)
+  json_annotation 4.9.0 (4.12.0 available)
+  leak_tracker 10.0.9 (11.0.2 available)
+  leak_tracker_flutter_testing 3.0.9 (3.0.10 available)
+  leak_tracker_testing 3.0.1 (3.0.2 available)
+  lints 5.1.1 (6.1.0 available)
+  matcher 0.12.17 (0.12.20 available)
+  material_color_utilities 0.11.1 (0.13.1 available)
+  meta 1.16.0 (1.19.0 available)
+  mime 2.0.0 (2.1.0 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_android 2.2.19 (2.3.1 available)
+  path_provider_foundation 2.4.2 (2.6.0 available)
+  path_provider_linux 2.2.1 (2.2.2 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  petitparser 7.0.2 (7.1.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.3 (5.0.6 available)
+  purchases_flutter 10.6.0 (10.13.2 available)
+  riverpod 2.6.1 (3.4.3 available)
+  share_plus 10.1.4 (13.3.0 available)
+  share_plus_platform_interface 5.0.2 (7.2.0 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  synchronized 3.4.0 (3.4.2 available)
+  test_api 0.7.4 (0.7.14 available)
+  url_launcher_android 6.3.20 (6.3.33 available)
+  url_launcher_ios 6.3.4 (6.4.2 available)
+  url_launcher_linux 3.2.2 (3.2.3 available)
+  url_launcher_macos 3.2.3 (3.2.6 available)
+  url_launcher_web 2.4.1 (2.4.3 available)
+  url_launcher_windows 3.1.5 (3.1.6 available)
+  vector_math 2.1.4 (2.4.3 available)
+  vm_service 15.0.0 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  webview_flutter 4.13.1 (4.14.1 available)
+  webview_flutter_android 4.10.1 (4.14.1 available)
+  webview_flutter_platform_interface 2.14.0 (2.15.1 available)
+  webview_flutter_wkwebview 3.23.0 (3.26.2 available)
+  win32 5.15.0 (6.4.0 available)
+  xml 6.6.1 (7.1.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+68 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Installing build\app\outputs\flutter-apk\app-profile.apk...        16.5s
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:49603/bYzWNTRoXPM=/
+VMServiceFlutterDriver: Isolate found with number: 8860778791529215
+VMServiceFlutterDriver: Isolate 8860778791529215 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+I/flutter (18187): 00:00 +0: cold annotations, eraser selection, native PDF and audio
+I/BLASTBufferQueue(18187): [SurfaceView[com.lldm.coro.perfaudit/com.lldm.coro.MainActivity]@0#1](f:0,a:0) onFrameAvailable the first frame is available
+VMServiceFlutterDriver: Connected to Flutter application.
+D/SurfaceView@f7166f5(18187):  setAlpha: mUseAlpha = false alpha=1.0
+D/SurfaceView@f7166f5(18187):  updateSurfaceAlpha: setUseAlpha() is not called, ignored.
+I/ViewRootImpl@92af765[MainActivity](18187): Setup new sync id=0
+I/ViewRootImpl@92af765[MainActivity](18187): Setting syncFrameCallback
+I/ViewRootImpl@92af765[MainActivity](18187): registerCallbacksForSync syncBuffer=false
+D/SurfaceView@f7166f5(18187): updateSurfacePosition RenderWorker, frameNr = 1, position = [0, 0, 1080, 2265] surfaceSize = 1080x2265
+I/SurfaceView@f7166f5(18187): uSP: rtp = Rect(0, 0 - 1080, 2265) rtsw = 1080 rtsh = 2265
+I/SurfaceView@f7166f5(18187): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@f7166f5(18187): aOrMT: ViewRootImpl@92af765[MainActivity] t = android.view.SurfaceControl$Transaction@d470df9 fN = 1 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:373 
+I/ViewRootImpl@92af765[MainActivity](18187): mWNT: t=0xb400006d9b864190 mBlastBufferQueue=0xb400006ddb860e50 fn= 1 caller= android.view.SurfaceView.applyOrMergeTransaction:1455 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537 
+I/ViewRootImpl@92af765[MainActivity](18187): mWNT: t=0xb400006d9b861c70 mBlastBufferQueue=0xb400006ddb860e50 fn= 1 caller= android.view.ViewRootImpl.lambda$applyTransactionOnDraw$11$android-view-ViewRootImpl:12865 android.view.ViewRootImpl$$ExternalSyntheticLambda1.onFrameDraw:4 android.graphics.HardwareRenderer$FrameDrawingCallback.onFrameDraw:924 
+I/ViewRootImpl@92af765[MainActivity](18187): Received frameDrawingCallback syncResult=0 frameNum=1.
+I/ViewRootImpl@92af765[MainActivity](18187): Setting up sync and frameCommitCallback
+I/BLASTBufferQueue(18187): [ViewRootImpl@92af765[MainActivity]#0](f:0,a:0) onFrameAvailable the first frame is available
+I/ViewRootImpl@92af765[MainActivity](18187): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+D/OpenGLRenderer(18187): CFMS:: SetUp Pid : 18187    Tid : 18209
+W/Parcel  (18187): Expecting binder but got null!
+I/ViewRootImpl@92af765[MainActivity](18187): onSyncComplete
+I/ViewRootImpl@92af765[MainActivity](18187): setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+I/flutter (18187): 🎧 [NativeMidiEngine] Cambio de salida: {outputs: [{name: SM-G986U, type: 1}, {name: SM-G986U, type: 2}, {name: SM-G986U, type: 18}]}
+I/ViewRootImpl@92af765[MainActivity](18187): reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb400006d9b864a90
+W/OnBackInvokedCallback(18187): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(18187): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/ViewRootImpl@92af765[MainActivity](18187): MSG_WINDOW_FOCUS_CHANGED 1 0
+I/ViewRootImpl@92af765[MainActivity](18187): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400006e6b842640}
+D/InputMethodManager(18187): startInputInner - Id : 0
+I/InputMethodManager(18187): startInputInner - mService.startInputOrWindowGainedFocus
+D/InputMethodManager(18187): startInputInner - Id : 0
+I/DecorView(18187): notifyKeepScreenOnChanged: keepScreenOn=false
+I/ViewRootImpl@92af765[MainActivity](18187): performTraversals params={(0,0)(fillxfill) sim={adjust=resize} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x1030001
+I/ViewRootImpl@92af765[MainActivity](18187):   fl=81810100
+I/ViewRootImpl@92af765[MainActivity](18187):   pfl=16020040
+I/ViewRootImpl@92af765[MainActivity](18187):   vsysui=2500
+I/ViewRootImpl@92af765[MainActivity](18187):   apr=LIGHT_STATUS_BARS
+I/ViewRootImpl@92af765[MainActivity](18187):   bhv=DEFAULT
+I/ViewRootImpl@92af765[MainActivity](18187):   fitSides= naviIconColor=0}
+I/ViewRootImpl@92af765[MainActivity](18187): performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=resize} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x1030001
+I/ViewRootImpl@92af765[MainActivity](18187):   fl=81810100
+I/ViewRootImpl@92af765[MainActivity](18187):   pfl=16020040
+I/ViewRootImpl@92af765[MainActivity](18187):   vsysui=2500
+I/ViewRootImpl@92af765[MainActivity](18187):   apr=LIGHT_STATUS_BARS
+I/ViewRootImpl@92af765[MainActivity](18187):   bhv=DEFAULT
+I/ViewRootImpl@92af765[MainActivity](18187):   fitSides= naviIconColor=0}
+D/InsetsController(18187): onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 73 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(692, 0 - 748, 73), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1440 physicalDisplayHeight=3200 density={2.8125} cutoutSpec={M 0,0 H -9.866666666666667 V 25.86666666666667 H 9.866666666666667 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=68, center=Point(68, 68)}, RoundedCorner{position=TopRight, radius=68, center=Point(1012, 68)}, RoundedCorner{position=BottomRight, radius=68, center=Point(1012, 2332)}, RoundedCorner{position=BottomLeft, radius=68, center=Point(68, 2332)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 73) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,107], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,73], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1392][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=com.lldm.coro.perfaudit/com.lldm.coro.MainActivity from=android.view.ViewRootImpl.relayoutWindow:9802
+I/ViewRootImpl@92af765[MainActivity](18187): updateBlastSurfaceIfNeeded mBlastBufferQueue=0xb400006ddb860e50 isSameSurfaceControl=true
+I/BLASTBufferQueue(18187): update, w= 1080 h= 2400 mName = ViewRootImpl@92af765[MainActivity] mNativeObject= 0xb400006ddb860e50 sc.mNativeObject= 0xb400006d6b8b2120 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+I/ViewRootImpl@92af765[MainActivity](18187): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=7 res=0x0 s={true 0xb400006e6b842640} ch=false seqId=0
+I/ViewRootImpl@92af765[MainActivity](18187): updateBoundsLayer: t = android.view.SurfaceControl$Transaction@dfa9b9f sc = Surface(name=Bounds for - com.lldm.coro.perfaudit/com.lldm.coro.MainActivity@0)/@0xb18e4ec frame = 2
+I/ViewRootImpl@92af765[MainActivity](18187): mWNT: t=0xb400006d9b862c30 mBlastBufferQueue=0xb400006ddb860e50 fn= 2 caller= android.view.ViewRootImpl.prepareSurfaces:2985 android.view.ViewRootImpl.performTraversals:4233 android.view.ViewRootImpl.doTraversal:3116 
+I/flutter (18187): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (18187): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (18187): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+I/flutter (18187): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (29 ms)
+I/flutter (18187): PdfViewer: Loaded page 9 of 9 in 20 ms
+D/ProfileInstaller(18187): Installing profile for com.lldm.coro.perfaudit
+I/flutter (18187): AUDIT START annotations_cold_500
+I/flutter (18187): AUDIT END annotations_cold_500 1013.853 ms, 52 frames, error=null
+I/flutter (18187): AUDIT START viewer_reopen_dense_1
+I/flutter (18187): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (18187): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (18187): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(18187): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(18187): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (18187): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (12 ms)
+I/flutter (18187): PdfViewer: Loaded page 9 of 9 in 38 ms
+W/libc    (18187): Access denied finding property "sys.perf.boostopt"
+I/flutter (18187): AUDIT END viewer_reopen_dense_1 2575.921 ms, 154 frames, error=null
+I/flutter (18187): AUDIT START viewer_reopen_dense_2
+I/flutter (18187): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (18187): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (18187): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(18187): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(18187): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (18187): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (12 ms)
+I/flutter (18187): PdfViewer: Loaded page 9 of 9 in 45 ms
+I/flutter (18187): AUDIT END viewer_reopen_dense_2 2578.047 ms, 154 frames, error=null
+I/flutter (18187): AUDIT START eraser_tool_selection
+I/flutter (18187): AUDIT END eraser_tool_selection 500.746 ms, 30 frames, error=null
+I/flutter (18187): AUDIT START eraser_500_saved
+I/flutter (18187): AUDIT END eraser_500_saved 6841.28 ms, 410 frames, error=null
+I/flutter (18187): AUDIT START viewer_reopen_empty
+I/flutter (18187): 🎵 [MidiEngine] Inicializando para el canto: The Holy City
+I/flutter (18187): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (18187): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+W/OnBackInvokedCallback(18187): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(18187): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (18187): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (12 ms)
+I/flutter (18187): PdfViewer: Loaded page 9 of 9 in 38 ms
+I/flutter (18187): AUDIT END viewer_reopen_empty 2576.459 ms, 154 frames, error=null
+I/flutter (18187): 🎵 [NativeMidiEngine] Inicializando sintetizador...
+I/OboeAudio(18187): openStreamInternal() OUTPUT -------- OboeVersion1.9.0 --------
+I/OboeAudio(18187): openStreamInternal() OUTPUT -------- OboeVersion1.9.0 --------
+I/AAudio  (18187): AAudioStreamBuilder_openStream() called ----------------------------------------
+I/AudioStreamBuilder(18187): rate   =      0, channels  = 2, channelMask = 0x80000003, format   = 1, sharing = SH, dir = OUTPUT
+I/AudioStreamBuilder(18187): device =      0, sessionId = -1, perfMode = 12, callback: ON with frames = 0
+I/AudioStreamBuilder(18187): usage  =      1, contentType = 2, inputPreset = 6, allowedCapturePolicy = 0
+I/AudioStreamBuilder(18187): privacy sensitive = false, opPackageName = (null), attributionTag = (null)
+D/.coro.perfaudit(18187): PlayerBase::PlayerBase()
+D/AudioStreamInternal_Client(18187): configureDataInformation() original HW burst = 96, minMicros = 2000 => SW burst = 96
+D/AAudioStream(18187): setState(s#1) from 0 to 2
+I/AAudioFlowGraph(18187): configure() source format = 0x00000001, channels = 2, sink format = 0x00000005, channels = 2, useMonoBlend = 0, audioBalance = 0.000000, isExclusive 0
+I/AAudio  (18187): AAudioStreamBuilder_openStream() returns 0 = AAUDIO_OK for s#1 ----------------
+I/fluidsynth(18187): Using Oboe driver
+D/AAudio  (18187): AAudioStream_requestStart(s#1) called --------------
+D/AAudioStream(18187): setState(s#1) from 2 to 3
+D/AAudio  (18187): AAudioStream_requestStart(s#1) returned 0 ---------
+I/flutter (18187): 🎵 [NativeMidiEngine] Cargando SoundFont desde assets...
+D/AudioStreamInternalPlay_Client(18187): callbackLoop() entering >>>>>>>>>>>>>>>
+D/AudioStreamInternal_Client(18187): onEventFromServer - got AAUDIO_SERVICE_EVENT_STARTED
+D/AAudioStream(18187): setState(s#1) from 3 to 4
+W/fluidsynth(18187): Instrument 'CM-64/32': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(18187): Instrument 'Laughing': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(18187): Instrument 'Machine Gun': Some invalid generators were discarded, audible glitches are to be expected! Run fluidsynth in verbose mode for detailed information.
+W/fluidsynth(18187): Some invalid sample loops were sanitized! If you experience audible glitches, start fluidsynth in verbose mode for detailed information.
+I/flutter (18187): 🎵 [NativeMidiEngine] SoundFont cargado √ (sfId=1) — Piano Acústico activo
+I/flutter (18187): 🎵 [NativeMidiEngine] Metrónomo inicializado √
+I/flutter (18187): 🎵 [NativeMidiEngine] MIDI cargado: "Canten a Cristo Rey", duración: 104.20921921041666s
+I/flutter (18187): AUDIT START annotations_cold_500_with_audio
+I/flutter (18187): AUDIT END annotations_cold_500_with_audio 1017.333 ms, 53 frames, error=null
+I/flutter (18187): AUDIT START eraser_selection_with_audio
+I/flutter (18187): AUDIT END eraser_selection_with_audio 501.266 ms, 31 frames, error=null
+I/flutter (18187): AUDIT START native_render_Canten a Cristo Rey_1800
+I/flutter (18187): AUDIT END native_render_Canten a Cristo Rey_1800 55.567 ms, 0 frames, error=null
+I/flutter (18187): AUDIT START native_render_Canten a Cristo Rey_3600
+I/flutter (18187): AUDIT END native_render_Canten a Cristo Rey_3600 140.952 ms, 0 frames, error=null
+I/flutter (18187): AUDIT START native_render_The Holy City_1800
+I/flutter (18187): AUDIT END native_render_The Holy City_1800 187.377 ms, 0 frames, error=null
+I/flutter (18187): AUDIT START native_render_The Holy City_3600
+I/flutter (18187): AUDIT END native_render_The Holy City_3600 377.15 ms, 0 frames, error=null
+I/flutter (18187): AUDIT START native_render_El Llamado a mi Ser_1800
+I/flutter (18187): AUDIT END native_render_El Llamado a mi Ser_1800 893.509 ms, 0 frames, error=null
+I/flutter (18187): AUDIT START native_render_El Llamado a mi Ser_3600
+I/flutter (18187): AUDIT END native_render_El Llamado a mi Ser_3600 1454.55 ms, 0 frames, error=null
+I/flutter (18187): 00:52 +1: (tearDownAll)
+I/flutter (18187): 00:52 +2: All tests passed!
+All tests passed.

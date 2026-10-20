@@ -1,0 +1,15 @@
+I/flutter (18054): 🎵 [MidiEngine] midiArchivo del canto: "null"
+I/flutter (18054): 🎵 [MidiEngine] Este canto no tiene archivo MIDI asignado.
+I/flutter (18054): 🎧 [NativeMidiEngine] Cambio de salida: {outputs: [{name: SM-G986U, type: 1}, {name: SM-G986U, type: 2}, {name: SM-G986U, type: 18}]}
+W/OnBackInvokedCallback(18054): OnBackInvokedCallback is not enabled for the application.
+W/OnBackInvokedCallback(18054): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (18054): PdfDocument initial load: /data/user/0/com.lldm.coro.perfaudit/app_flutter/usmc_caf436a80759ce7a19568e1e.pdf (8 ms)
+I/flutter (18054): PdfViewer: Loaded page 9 of 9 in 61 ms
+I/flutter (18054): AUDIT END viewer_open_heavy_warm_file 2097.723 ms, 121 frames, error=null
+I/flutter (18054): AUDIT START page_changes_vertical
+I/flutter (18054): AUDIT END page_changes_vertical 6113.097 ms, 367 frames, error=null
+I/flutter (18054): AUDIT START page_changes_carousel
+I/flutter (18054): AUDIT END page_changes_carousel 6106.028 ms, 368 frames, error=null
+I/flutter (18054): AUDIT START zoom_pdf
+I/flutter (18054): AUDIT END zoom_pdf 1714.48 ms, 102 frames, error=null
+I/flutter (18054): AUDIT START draw_5_strokes_empty_page

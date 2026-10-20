@@ -1,0 +1,556 @@
+{
+  "record": {
+    "index": 3,
+    "title": "Ángel Poderoso",
+    "source": "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Ángel Poderoso.mscz",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\02_MuseScore\\Ángel Poderoso.mscz",
+      "E:\\Respaldo\\musescoreactual\\03_MusicXML\\Ángel Poderoso.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Soprano"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Alto"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Tenor"
+          ]
+        },
+        {
+          "name": "Piano",
+          "staffs": 1,
+          "instruments": [
+            "Bajo"
+          ]
+        }
+      ],
+      "staves": 4,
+      "bars": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "notes": 1881,
+      "lyrics": 1758,
+      "dynamics": {
+        "ppp": 1,
+        "mf": 21,
+        "f": 32,
+        "mp": 14,
+        "p": 3,
+        "ff": 8
+      },
+      "voices": {
+        "1": 360
+      }
+    },
+    "catalog": {
+      "id": "e85a0f52-5a31-5c49-997b-ad89b38e455a",
+      "nombre": "Ángel Poderoso",
+      "archivo": "global/assets/pdf/2c4d87da1f9a6ac4fb0794d7fad765a5403134ec11355c71b70e3154e5f50911.enc",
+      "temas": [],
+      "es_privado": false,
+      "_idioma": "es",
+      "idioma": "es",
+      "external_id": "usmc_64b53d7721b21cae02605974",
+      "midi_archivo": "global/assets/midi/e26c1badf6f81009432ac5369e3cd8f12ac27b72cc424a586f5a95158235321a.enc",
+      "vinculo_idioma": null,
+      "version": 5
+    },
+    "pdfReview": {
+      "pages": 9,
+      "dynamics": [
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mf",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "mp",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "ff",
+          "font": "QUCAAA+OpusTextStd"
+        },
+        {
+          "text": "f",
+          "font": "QUCAAA+OpusTextStd"
+        }
+      ]
+    },
+    "finalName": "Ángel Poderoso - SATB - Cantai",
+    "sourceMeasures": 90,
+    "expandedMeasures": 90,
+    "parts": 4,
+    "sourceNotes": 1881,
+    "finalNotes": 1881,
+    "split": false,
+    "filledLyrics": 0
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      28,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      33,
+      1
+    ],
+    [
+      34,
+      1
+    ],
+    [
+      35,
+      1
+    ],
+    [
+      36,
+      1
+    ],
+    [
+      37,
+      1
+    ],
+    [
+      38,
+      1
+    ],
+    [
+      39,
+      1
+    ],
+    [
+      40,
+      1
+    ],
+    [
+      41,
+      1
+    ],
+    [
+      42,
+      1
+    ],
+    [
+      43,
+      1
+    ],
+    [
+      44,
+      1
+    ],
+    [
+      45,
+      1
+    ],
+    [
+      46,
+      1
+    ],
+    [
+      47,
+      1
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      49,
+      1
+    ],
+    [
+      50,
+      1
+    ],
+    [
+      51,
+      1
+    ],
+    [
+      52,
+      1
+    ],
+    [
+      53,
+      1
+    ],
+    [
+      54,
+      1
+    ],
+    [
+      55,
+      1
+    ],
+    [
+      56,
+      1
+    ],
+    [
+      57,
+      1
+    ],
+    [
+      58,
+      1
+    ],
+    [
+      59,
+      1
+    ],
+    [
+      60,
+      1
+    ],
+    [
+      61,
+      1
+    ],
+    [
+      62,
+      1
+    ],
+    [
+      63,
+      1
+    ],
+    [
+      64,
+      1
+    ],
+    [
+      65,
+      1
+    ],
+    [
+      66,
+      1
+    ],
+    [
+      67,
+      1
+    ],
+    [
+      68,
+      1
+    ],
+    [
+      69,
+      1
+    ],
+    [
+      70,
+      1
+    ],
+    [
+      71,
+      1
+    ],
+    [
+      72,
+      1
+    ],
+    [
+      73,
+      1
+    ],
+    [
+      74,
+      1
+    ],
+    [
+      75,
+      1
+    ],
+    [
+      76,
+      1
+    ],
+    [
+      77,
+      1
+    ],
+    [
+      78,
+      1
+    ],
+    [
+      79,
+      1
+    ],
+    [
+      80,
+      1
+    ],
+    [
+      81,
+      1
+    ],
+    [
+      82,
+      1
+    ],
+    [
+      83,
+      1
+    ],
+    [
+      84,
+      1
+    ],
+    [
+      85,
+      1
+    ],
+    [
+      86,
+      1
+    ],
+    [
+      87,
+      1
+    ],
+    [
+      88,
+      1
+    ],
+    [
+      89,
+      1
+    ]
+  ],
+  "editorialLyricFills": []
+}

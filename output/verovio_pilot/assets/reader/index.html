@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'none';">
+<style>
+html,body{margin:0;background:#fffdf8;color:#24211c;font-family:system-ui,sans-serif}
+#status{padding:24px;color:#635846;font-size:16px}#score{padding:8px 4px 80px;overflow:hidden}
+svg{display:block;max-width:100%;height:auto;margin:auto auto 20px}
+.note{cursor:pointer}.note.playing{fill:#006a62!important;color:#006a62!important;stroke:#006a62!important}
+.note.playing *{fill:#006a62!important;color:#006a62!important}
+.lyric{fill:#24211c}.voice-muted{opacity:.22}
+.barLine.ordinary path{visibility:hidden}
+#play-cursor{position:absolute;z-index:20;width:4px;background:#00695c;
+ box-shadow:0 0 0 3px #f6c34588,0 0 12px #00695c55;border-radius:3px;
+ pointer-events:none;display:none;will-change:transform}
+.note.review>.notehead{fill:#a35300}
+</style></head><body><div id="status">Preparando partitura…</div><main id="score"></main>
+<script src="verovio-toolkit-wasm.js"></script><script src="reader.js"></script></body></html>

@@ -1,0 +1,193 @@
+{
+  "record": {
+    "index": 21,
+    "title": "Mi Padre en la Fe",
+    "source": "E:\\Respaldo\\musescoreactual\\MINA DE ORO\\Mi Padre en la Fe.musicxml.xml",
+    "alternatives": [
+      "E:\\Respaldo\\musescoreactual\\MINA DE ORO\\Mi Padre en la Fe.musicxml.xml"
+    ],
+    "summary": {
+      "parts": [
+        {
+          "id": "P1",
+          "name": "S A"
+        },
+        {
+          "id": "P2",
+          "name": "T B"
+        }
+      ],
+      "bars": [
+        27,
+        27
+      ],
+      "staves": [
+        1,
+        1
+      ],
+      "notes": 385,
+      "lyrics": 358,
+      "dynamics": {},
+      "voices": {
+        "1:1": 381,
+        "1:2": 26
+      }
+    },
+    "catalog": {
+      "id": "09f1ea92-becc-4f5f-a629-3bc08713ede6",
+      "nombre": "Mi Padre en la fe",
+      "archivo": "mi-padre-en-la-fe.pdf",
+      "midi_archivo": "mi-padre-en-la-fe-1780507765584.mid",
+      "temas": [
+        "Elección"
+      ],
+      "es_privado": false,
+      "vinculo_idioma": "usmc_647b6a3dfc5d9756c985e528",
+      "_idioma": "es",
+      "idioma": "es"
+    },
+    "pdfReview": {
+      "pages": 2,
+      "dynamics": []
+    },
+    "finalName": "Mi Padre en la Fe - SATB - Cantai",
+    "sourceMeasures": 27,
+    "expandedMeasures": 32,
+    "parts": 4,
+    "sourceNotes": 385,
+    "finalNotes": 446,
+    "split": true,
+    "filledLyrics": 0
+  },
+  "barMap": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      21,
+      2
+    ],
+    [
+      25,
+      2
+    ],
+    [
+      26,
+      2
+    ]
+  ],
+  "editorialLyricFills": []
+}

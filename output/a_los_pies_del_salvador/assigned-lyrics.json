@@ -1,0 +1,5945 @@
+[
+  {
+    "role": 0,
+    "measure": 1,
+    "onset": 0.0,
+    "text": "A",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 1,
+    "onset": 0.5,
+    "text": "los",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 1,
+    "onset": 1.0,
+    "text": "pies",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 1,
+    "onset": 1.5,
+    "text": "del",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 2,
+    "onset": 0.0,
+    "text": "Sal",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 2,
+    "onset": 1.5,
+    "text": "va",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 2,
+    "onset": 2.0,
+    "text": "dor",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 3,
+    "onset": 1.5,
+    "text": "de",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 3,
+    "onset": 2.0,
+    "text": "se",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 3,
+    "onset": 2.5,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 3,
+    "onset": 3.0,
+    "text": "siem",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 3,
+    "onset": 3.5,
+    "text": "pre‿es",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 4,
+    "onset": 0.0,
+    "text": "tar,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 4,
+    "onset": 2.0,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 4,
+    "onset": 2.5,
+    "text": "sus",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 4,
+    "onset": 3.0,
+    "text": "bra",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 4,
+    "onset": 3.5,
+    "text": "zos",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 5,
+    "onset": 0.0,
+    "text": "des",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 5,
+    "onset": 1.5,
+    "text": "can",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 5,
+    "onset": 2.0,
+    "text": "sar,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 6,
+    "onset": 1.5,
+    "text": "su",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 6,
+    "onset": 2.0,
+    "text": "dul",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 6,
+    "onset": 2.5,
+    "text": "ce",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 6,
+    "onset": 3.0,
+    "text": "voz",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 6,
+    "onset": 3.5,
+    "text": "o",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 7,
+    "onset": 0.0,
+    "text": "ír;",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 7,
+    "onset": 2.0,
+    "text": "gran",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 7,
+    "onset": 2.5,
+    "text": "con",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 7,
+    "onset": 3.0,
+    "text": "sue",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 7,
+    "onset": 3.5,
+    "text": "lo",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 8,
+    "onset": 0.0,
+    "text": "en",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 8,
+    "onset": 1.5,
+    "text": "con",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 8,
+    "onset": 2.0,
+    "text": "tré",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 9,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 9,
+    "onset": 2.0,
+    "text": "bra",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 9,
+    "onset": 2.5,
+    "text": "zos",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 9,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 9,
+    "onset": 3.5,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 10,
+    "onset": 0.0,
+    "text": "sús,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 10,
+    "onset": 2.0,
+    "text": "pues",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 10,
+    "onset": 2.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 10,
+    "onset": 3.0,
+    "text": "lle",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 10,
+    "onset": 3.5,
+    "text": "va",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 11,
+    "onset": 0.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 11,
+    "onset": 1.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 11,
+    "onset": 2.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 12,
+    "onset": 1.5,
+    "text": "al",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 12,
+    "onset": 2.0,
+    "text": "Pa",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 12,
+    "onset": 2.5,
+    "text": "dre",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 12,
+    "onset": 3.0,
+    "text": "Ce",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 12,
+    "onset": 3.5,
+    "text": "les",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 13,
+    "onset": 0.0,
+    "text": "tial.",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 13,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 14,
+    "onset": 0.0,
+    "text": "ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 14,
+    "onset": 1.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 14,
+    "onset": 2.0,
+    "text": "mí",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 15,
+    "onset": 0.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 15,
+    "onset": 2.0,
+    "text": "quie",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 15,
+    "onset": 3.0,
+    "text": "ro",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 16,
+    "onset": 0.0,
+    "text": "siem",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 16,
+    "onset": 0.5,
+    "text": "pre",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 16,
+    "onset": 1.0,
+    "text": "cer",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 16,
+    "onset": 1.5,
+    "text": "ca‿es",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 16,
+    "onset": 2.0,
+    "text": "tar",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 16,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 17,
+    "onset": 0.0,
+    "text": "ti!",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 17,
+    "onset": 3.0,
+    "text": "En",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 17,
+    "onset": 3.5,
+    "text": "tus",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 18,
+    "onset": 0.0,
+    "text": "bra",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 18,
+    "onset": 0.5,
+    "text": "zos",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 18,
+    "onset": 1.0,
+    "text": "des",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 18,
+    "onset": 1.5,
+    "text": "can",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 18,
+    "onset": 2.0,
+    "text": "sar,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 18,
+    "onset": 3.5,
+    "text": "oh",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 19,
+    "onset": 0.0,
+    "text": "Cris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 19,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 19,
+    "onset": 1.5,
+    "text": "con",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 19,
+    "onset": 2.0,
+    "text": "fí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 19,
+    "onset": 3.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 19,
+    "onset": 3.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 20,
+    "onset": 0.0,
+    "text": "ti;",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 20,
+    "onset": 3.0,
+    "text": "¡te",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 21,
+    "onset": 0.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 21,
+    "onset": 1.5,
+    "text": "mo",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 21,
+    "onset": 2.0,
+    "text": "tan",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 22,
+    "onset": 0.0,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 22,
+    "onset": 2.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 22,
+    "onset": 3.0,
+    "text": "ben",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 23,
+    "onset": 0.0,
+    "text": "di",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 23,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 23,
+    "onset": 1.0,
+    "text": "Sal",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 23,
+    "onset": 1.5,
+    "text": "va",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 23,
+    "onset": 2.0,
+    "text": "dor",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 23,
+    "onset": 3.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 24,
+    "onset": 0.0,
+    "text": "sús!",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 24,
+    "onset": 3.0,
+    "text": "Sé",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 24,
+    "onset": 3.5,
+    "text": "que",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 25,
+    "onset": 0.0,
+    "text": "Tú",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 25,
+    "onset": 0.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 25,
+    "onset": 1.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 25,
+    "onset": 1.5,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 25,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 25,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 26,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 26,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 26,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 26,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 26,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 26,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 27,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 27,
+    "onset": 2.0,
+    "text": "A",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 27,
+    "onset": 2.5,
+    "text": "su",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 27,
+    "onset": 3.0,
+    "text": "la",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 27,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 28,
+    "onset": 0.0,
+    "text": "soy",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 28,
+    "onset": 1.5,
+    "text": "fe",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 28,
+    "onset": 2.0,
+    "text": "liz,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 29,
+    "onset": 1.5,
+    "text": "ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 29,
+    "onset": 2.0,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 29,
+    "onset": 2.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 29,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 29,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 30,
+    "onset": 0.0,
+    "text": "lor,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 30,
+    "onset": 2.0,
+    "text": "la",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 30,
+    "onset": 2.5,
+    "text": "tris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 30,
+    "onset": 3.0,
+    "text": "te",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 30,
+    "onset": 3.5,
+    "text": "za",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 31,
+    "onset": 0.0,
+    "text": "ter",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 31,
+    "onset": 1.5,
+    "text": "mi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 31,
+    "onset": 2.0,
+    "text": "nó,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 32,
+    "onset": 1.5,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 32,
+    "onset": 2.0,
+    "text": "sue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 32,
+    "onset": 2.5,
+    "text": "ño",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 32,
+    "onset": 3.0,
+    "text": "se",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 32,
+    "onset": 3.5,
+    "text": "cum",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 33,
+    "onset": 0.0,
+    "text": "plió;",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 33,
+    "onset": 2.0,
+    "text": "cual",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 33,
+    "onset": 2.5,
+    "text": "Ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 33,
+    "onset": 3.0,
+    "text": "rí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 33,
+    "onset": 3.5,
+    "text": "a",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 34,
+    "onset": 0.0,
+    "text": "es",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 34,
+    "onset": 1.5,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 34,
+    "onset": 2.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 35,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 35,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 35,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 35,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 35,
+    "onset": 3.5,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 36,
+    "onset": 0.0,
+    "text": "sús",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 36,
+    "onset": 2.0,
+    "text": "de",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 36,
+    "onset": 2.5,
+    "text": "rra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 36,
+    "onset": 3.0,
+    "text": "man",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 36,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 37,
+    "onset": 0.0,
+    "text": "an",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 37,
+    "onset": 1.5,
+    "text": "te",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 37,
+    "onset": 2.0,
+    "text": "Él",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 38,
+    "onset": 1.5,
+    "text": "per",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 38,
+    "onset": 2.0,
+    "text": "fu",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 38,
+    "onset": 2.5,
+    "text": "me",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 38,
+    "onset": 3.0,
+    "text": "de‿o",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 38,
+    "onset": 3.5,
+    "text": "ra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 39,
+    "onset": 0.0,
+    "text": "ción.",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 39,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 40,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 40,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 40,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 40,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 40,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 40,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 41,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 42,
+    "onset": 2.0,
+    "text": "Más",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 42,
+    "onset": 3.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 43,
+    "onset": 0.0,
+    "text": "llá,",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 44,
+    "onset": 0.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 44,
+    "onset": 1.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 44,
+    "onset": 2.0,
+    "text": "sús",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 45,
+    "onset": 2.0,
+    "text": "pue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 45,
+    "onset": 3.0,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 46,
+    "onset": 0.0,
+    "text": "ver,",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 46,
+    "onset": 2.0,
+    "text": "le",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 46,
+    "onset": 3.0,
+    "text": "ve",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 47,
+    "onset": 0.0,
+    "text": "ré;",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 48,
+    "onset": 2.0,
+    "text": "he",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 48,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 49,
+    "onset": 0.0,
+    "text": "ver,",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 50,
+    "onset": 0.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 50,
+    "onset": 1.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 50,
+    "onset": 2.0,
+    "text": "Rey",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 51,
+    "onset": 0.0,
+    "text": "pron",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 51,
+    "onset": 2.0,
+    "text": "to‿es",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 51,
+    "onset": 3.0,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 52,
+    "onset": 0.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 52,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 52,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 52,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 52,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 52,
+    "onset": 3.5,
+    "text": "Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 53,
+    "onset": 0.0,
+    "text": "ñor.",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 53,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 54,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 54,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 54,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 54,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 54,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 54,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 55,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 55,
+    "onset": 3.0,
+    "text": "Sé",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 55,
+    "onset": 3.5,
+    "text": "que",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 56,
+    "onset": 0.0,
+    "text": "Tú",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 56,
+    "onset": 0.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 56,
+    "onset": 1.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 56,
+    "onset": 1.5,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 56,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 56,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 57,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 57,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 0,
+    "measure": 57,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 57,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 0,
+    "measure": 57,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 0,
+    "measure": 57,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 0,
+    "measure": 58,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 2,
+    "onset": 0.0,
+    "text": "Mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 2,
+    "onset": 2.0,
+    "text": "Sal",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 2,
+    "onset": 3.5,
+    "text": "va",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 3,
+    "onset": 0.0,
+    "text": "dor",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 4,
+    "onset": 0.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 4,
+    "onset": 1.5,
+    "text": "de",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 4,
+    "onset": 2.0,
+    "text": "se",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 4,
+    "onset": 3.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 5,
+    "onset": 0.0,
+    "text": "es,",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 5,
+    "onset": 2.0,
+    "text": "ah",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 6,
+    "onset": 1.5,
+    "text": "sí",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 6,
+    "onset": 2.0,
+    "text": "dul",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 6,
+    "onset": 3.0,
+    "text": "ce",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 7,
+    "onset": 0.0,
+    "text": "es;",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 7,
+    "onset": 3.0,
+    "text": "yo",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 8,
+    "onset": 0.0,
+    "text": "en",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 8,
+    "onset": 2.0,
+    "text": "con",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 9,
+    "onset": 0.0,
+    "text": "tré",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 9,
+    "onset": 2.0,
+    "text": "con",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 10,
+    "onset": 0.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 10,
+    "onset": 2.0,
+    "text": "sús,",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 11,
+    "onset": 0.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 11,
+    "onset": 2.0,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 12,
+    "onset": 0.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 12,
+    "onset": 1.5,
+    "text": "al",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 12,
+    "onset": 2.0,
+    "text": "Pa",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 12,
+    "onset": 2.5,
+    "text": "dre",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 12,
+    "onset": 3.0,
+    "text": "Ce",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 12,
+    "onset": 3.5,
+    "text": "les",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 13,
+    "onset": 0.0,
+    "text": "tial.",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 13,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 14,
+    "onset": 0.0,
+    "text": "ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 14,
+    "onset": 1.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 14,
+    "onset": 2.0,
+    "text": "mí",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 15,
+    "onset": 0.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 15,
+    "onset": 2.0,
+    "text": "quie",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 15,
+    "onset": 3.0,
+    "text": "ro",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 16,
+    "onset": 0.0,
+    "text": "siem",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 16,
+    "onset": 0.5,
+    "text": "pre",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 16,
+    "onset": 1.0,
+    "text": "cer",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 16,
+    "onset": 1.5,
+    "text": "ca‿es",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 16,
+    "onset": 2.0,
+    "text": "tar",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 16,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 17,
+    "onset": 0.0,
+    "text": "ti!",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 17,
+    "onset": 1.0,
+    "text": "(de",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 17,
+    "onset": 2.0,
+    "text": "ti)",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 17,
+    "onset": 3.0,
+    "text": "En",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 17,
+    "onset": 3.5,
+    "text": "tus",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 18,
+    "onset": 0.0,
+    "text": "bra",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 18,
+    "onset": 0.5,
+    "text": "zos",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 18,
+    "onset": 1.0,
+    "text": "des",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 18,
+    "onset": 1.5,
+    "text": "can",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 18,
+    "onset": 2.0,
+    "text": "sar,",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 18,
+    "onset": 3.5,
+    "text": "oh",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 19,
+    "onset": 0.0,
+    "text": "Cris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 19,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 19,
+    "onset": 1.5,
+    "text": "con",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 19,
+    "onset": 2.0,
+    "text": "fí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 19,
+    "onset": 3.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 19,
+    "onset": 3.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 20,
+    "onset": 0.0,
+    "text": "ti;",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 20,
+    "onset": 1.0,
+    "text": "(en",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 20,
+    "onset": 2.0,
+    "text": "ti)",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 20,
+    "onset": 3.0,
+    "text": "¡te",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 21,
+    "onset": 0.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 21,
+    "onset": 1.5,
+    "text": "mo",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 21,
+    "onset": 2.0,
+    "text": "tan",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 22,
+    "onset": 0.0,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 22,
+    "onset": 2.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 22,
+    "onset": 3.0,
+    "text": "ben",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 23,
+    "onset": 0.0,
+    "text": "di",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 23,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 23,
+    "onset": 1.0,
+    "text": "Sal",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 23,
+    "onset": 1.5,
+    "text": "va",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 23,
+    "onset": 2.0,
+    "text": "dor",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 23,
+    "onset": 3.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 24,
+    "onset": 0.0,
+    "text": "sús!",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 24,
+    "onset": 1.0,
+    "text": "(mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 24,
+    "onset": 2.0,
+    "text": "Rey)",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 24,
+    "onset": 3.0,
+    "text": "Sé",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 24,
+    "onset": 3.5,
+    "text": "que",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 25,
+    "onset": 0.0,
+    "text": "Tú",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 25,
+    "onset": 0.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 25,
+    "onset": 1.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 25,
+    "onset": 1.5,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 25,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 25,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 26,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 26,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 26,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 26,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 26,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 26,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 27,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 27,
+    "onset": 2.0,
+    "text": "A",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 27,
+    "onset": 2.5,
+    "text": "su",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 27,
+    "onset": 3.0,
+    "text": "la",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 27,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 28,
+    "onset": 0.0,
+    "text": "soy",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 28,
+    "onset": 1.5,
+    "text": "fe",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 28,
+    "onset": 2.0,
+    "text": "liz,",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 29,
+    "onset": 1.5,
+    "text": "ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 29,
+    "onset": 2.0,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 29,
+    "onset": 2.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 29,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 29,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 30,
+    "onset": 0.0,
+    "text": "lor,",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 30,
+    "onset": 2.0,
+    "text": "la",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 30,
+    "onset": 2.5,
+    "text": "tris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 30,
+    "onset": 3.0,
+    "text": "te",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 30,
+    "onset": 3.5,
+    "text": "za",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 31,
+    "onset": 0.0,
+    "text": "ter",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 31,
+    "onset": 1.5,
+    "text": "mi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 31,
+    "onset": 2.0,
+    "text": "nó,",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 32,
+    "onset": 1.5,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 32,
+    "onset": 2.0,
+    "text": "sue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 32,
+    "onset": 2.5,
+    "text": "ño",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 32,
+    "onset": 3.0,
+    "text": "se",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 32,
+    "onset": 3.5,
+    "text": "cum",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 33,
+    "onset": 0.0,
+    "text": "plió;",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 33,
+    "onset": 2.0,
+    "text": "cual",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 33,
+    "onset": 2.5,
+    "text": "Ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 33,
+    "onset": 3.0,
+    "text": "rí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 33,
+    "onset": 3.5,
+    "text": "a",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 34,
+    "onset": 0.0,
+    "text": "es",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 34,
+    "onset": 1.5,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 34,
+    "onset": 2.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 35,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 35,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 35,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 35,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 35,
+    "onset": 3.5,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 36,
+    "onset": 0.0,
+    "text": "sús",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 36,
+    "onset": 2.0,
+    "text": "de",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 36,
+    "onset": 2.5,
+    "text": "rra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 36,
+    "onset": 3.0,
+    "text": "man",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 36,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 37,
+    "onset": 0.0,
+    "text": "an",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 37,
+    "onset": 1.5,
+    "text": "te",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 37,
+    "onset": 2.0,
+    "text": "Él",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 38,
+    "onset": 1.5,
+    "text": "per",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 38,
+    "onset": 2.0,
+    "text": "fu",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 38,
+    "onset": 2.5,
+    "text": "me",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 38,
+    "onset": 3.0,
+    "text": "de‿o",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 38,
+    "onset": 3.5,
+    "text": "ra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 39,
+    "onset": 0.0,
+    "text": "ción.",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 39,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 40,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 40,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 40,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 40,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 40,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 40,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 41,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 42,
+    "onset": 2.0,
+    "text": "Más",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 42,
+    "onset": 3.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 43,
+    "onset": 0.0,
+    "text": "llá,",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 44,
+    "onset": 0.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 44,
+    "onset": 1.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 44,
+    "onset": 2.0,
+    "text": "sús",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 45,
+    "onset": 2.0,
+    "text": "pue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 45,
+    "onset": 3.0,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 46,
+    "onset": 0.0,
+    "text": "ver,",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 46,
+    "onset": 2.0,
+    "text": "le",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 46,
+    "onset": 3.0,
+    "text": "ve",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 47,
+    "onset": 0.0,
+    "text": "ré;",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 48,
+    "onset": 2.0,
+    "text": "he",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 48,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 49,
+    "onset": 0.0,
+    "text": "ver,",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 50,
+    "onset": 0.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 50,
+    "onset": 1.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 50,
+    "onset": 2.0,
+    "text": "Rey",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 51,
+    "onset": 0.0,
+    "text": "es",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 51,
+    "onset": 2.0,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 51,
+    "onset": 3.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 52,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 52,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 52,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 52,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 52,
+    "onset": 3.5,
+    "text": "Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 53,
+    "onset": 0.0,
+    "text": "ñor.",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 53,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 54,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 54,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 54,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 54,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 54,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 54,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 55,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 55,
+    "onset": 1.5,
+    "text": "(Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 55,
+    "onset": 2.0,
+    "text": "ñor).",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 56,
+    "onset": 0.0,
+    "text": "Me‿a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 56,
+    "onset": 1.0,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 56,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 56,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 57,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 57,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 57,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 57,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 1,
+    "measure": 57,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 57,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 1,
+    "measure": 58,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  },
+  {
+    "role": 1,
+    "measure": 58,
+    "onset": 1.0,
+    "text": "(Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 1,
+    "measure": 58,
+    "onset": 2.0,
+    "text": "ñor).",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 2,
+    "onset": 0.0,
+    "text": "Mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 2,
+    "onset": 2.0,
+    "text": "Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 2,
+    "onset": 3.5,
+    "text": "ñor",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 4,
+    "onset": 0.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 4,
+    "onset": 1.5,
+    "text": "de",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 4,
+    "onset": 2.0,
+    "text": "se",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 4,
+    "onset": 3.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 5,
+    "onset": 0.0,
+    "text": "es,",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 5,
+    "onset": 2.0,
+    "text": "ah",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 6,
+    "onset": 1.5,
+    "text": "sí",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 6,
+    "onset": 2.0,
+    "text": "dul",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 7,
+    "onset": 0.0,
+    "text": "ce",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 7,
+    "onset": 2.0,
+    "text": "es;",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 8,
+    "onset": 0.0,
+    "text": "en",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 8,
+    "onset": 2.0,
+    "text": "con",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 9,
+    "onset": 0.0,
+    "text": "tré",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 9,
+    "onset": 2.0,
+    "text": "con",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 10,
+    "onset": 0.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 10,
+    "onset": 2.0,
+    "text": "sús,",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 11,
+    "onset": 0.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 11,
+    "onset": 2.0,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 12,
+    "onset": 0.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 12,
+    "onset": 1.5,
+    "text": "al",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 12,
+    "onset": 2.0,
+    "text": "Pa",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 12,
+    "onset": 2.5,
+    "text": "dre",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 12,
+    "onset": 3.0,
+    "text": "Ce",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 12,
+    "onset": 3.5,
+    "text": "les",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 13,
+    "onset": 0.0,
+    "text": "tial.",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 13,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 14,
+    "onset": 0.0,
+    "text": "ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 14,
+    "onset": 1.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 14,
+    "onset": 2.0,
+    "text": "mí",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 15,
+    "onset": 0.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 15,
+    "onset": 2.0,
+    "text": "quie",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 15,
+    "onset": 3.0,
+    "text": "ro",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 16,
+    "onset": 0.0,
+    "text": "siem",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 16,
+    "onset": 0.5,
+    "text": "pre",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 16,
+    "onset": 1.0,
+    "text": "cer",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 16,
+    "onset": 1.5,
+    "text": "ca‿es",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 16,
+    "onset": 2.0,
+    "text": "tar",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 16,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 17,
+    "onset": 0.0,
+    "text": "ti!",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 17,
+    "onset": 3.0,
+    "text": "En",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 17,
+    "onset": 3.5,
+    "text": "tus",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 18,
+    "onset": 0.0,
+    "text": "bra",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 18,
+    "onset": 0.5,
+    "text": "zos",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 18,
+    "onset": 1.0,
+    "text": "des",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 18,
+    "onset": 1.5,
+    "text": "can",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 18,
+    "onset": 2.0,
+    "text": "sar,",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 18,
+    "onset": 3.5,
+    "text": "oh",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 19,
+    "onset": 0.0,
+    "text": "Cris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 19,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 19,
+    "onset": 1.5,
+    "text": "con",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 19,
+    "onset": 2.0,
+    "text": "fí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 19,
+    "onset": 3.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 19,
+    "onset": 3.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 20,
+    "onset": 0.0,
+    "text": "ti;",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 20,
+    "onset": 1.0,
+    "text": "(en",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 20,
+    "onset": 2.0,
+    "text": "ti)",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 20,
+    "onset": 3.0,
+    "text": "¡te",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 21,
+    "onset": 0.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 21,
+    "onset": 1.5,
+    "text": "mo",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 21,
+    "onset": 2.0,
+    "text": "tan",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 22,
+    "onset": 0.0,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 22,
+    "onset": 2.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 22,
+    "onset": 3.0,
+    "text": "ben",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 23,
+    "onset": 0.0,
+    "text": "di",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 23,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 23,
+    "onset": 1.0,
+    "text": "Sal",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 23,
+    "onset": 1.5,
+    "text": "va",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 23,
+    "onset": 2.0,
+    "text": "dor",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 23,
+    "onset": 3.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 24,
+    "onset": 0.0,
+    "text": "sús!",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 24,
+    "onset": 3.0,
+    "text": "Sé",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 24,
+    "onset": 3.5,
+    "text": "que",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 25,
+    "onset": 0.0,
+    "text": "Tú",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 25,
+    "onset": 0.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 25,
+    "onset": 1.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 25,
+    "onset": 1.5,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 25,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 25,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 26,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 26,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 26,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 26,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 26,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 26,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 27,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 27,
+    "onset": 2.0,
+    "text": "A",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 27,
+    "onset": 2.5,
+    "text": "su",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 27,
+    "onset": 3.0,
+    "text": "la",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 27,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 28,
+    "onset": 0.0,
+    "text": "soy",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 28,
+    "onset": 1.0,
+    "text": "fe",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 28,
+    "onset": 2.0,
+    "text": "liz,",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 29,
+    "onset": 1.5,
+    "text": "ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 29,
+    "onset": 2.0,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 29,
+    "onset": 2.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 29,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 29,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 30,
+    "onset": 0.0,
+    "text": "lor,",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 30,
+    "onset": 2.0,
+    "text": "la",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 30,
+    "onset": 2.5,
+    "text": "tris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 30,
+    "onset": 3.0,
+    "text": "te",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 30,
+    "onset": 3.5,
+    "text": "za",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 31,
+    "onset": 0.0,
+    "text": "ter",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 31,
+    "onset": 1.0,
+    "text": "mi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 31,
+    "onset": 2.0,
+    "text": "nó,",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 32,
+    "onset": 1.5,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 32,
+    "onset": 2.0,
+    "text": "sue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 32,
+    "onset": 2.5,
+    "text": "ño",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 32,
+    "onset": 3.0,
+    "text": "se",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 32,
+    "onset": 3.5,
+    "text": "cum",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 33,
+    "onset": 0.0,
+    "text": "plió;",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 33,
+    "onset": 2.0,
+    "text": "cual",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 33,
+    "onset": 2.5,
+    "text": "Ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 33,
+    "onset": 3.0,
+    "text": "rí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 33,
+    "onset": 3.5,
+    "text": "a",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 34,
+    "onset": 0.0,
+    "text": "es",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 34,
+    "onset": 1.0,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 34,
+    "onset": 2.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 35,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 35,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 35,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 35,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 35,
+    "onset": 3.5,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 36,
+    "onset": 0.0,
+    "text": "sús",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 36,
+    "onset": 2.0,
+    "text": "de",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 36,
+    "onset": 2.5,
+    "text": "rra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 36,
+    "onset": 3.0,
+    "text": "man",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 36,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 37,
+    "onset": 0.0,
+    "text": "an",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 37,
+    "onset": 1.0,
+    "text": "te",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 37,
+    "onset": 2.0,
+    "text": "Él",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 38,
+    "onset": 1.5,
+    "text": "per",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 38,
+    "onset": 2.0,
+    "text": "fu",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 38,
+    "onset": 2.5,
+    "text": "me",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 38,
+    "onset": 3.0,
+    "text": "de‿o",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 38,
+    "onset": 3.5,
+    "text": "ra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 39,
+    "onset": 0.0,
+    "text": "ción.",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 39,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 40,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 40,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 40,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 40,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 40,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 40,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 41,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 41,
+    "onset": 2.0,
+    "text": "Más",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 41,
+    "onset": 2.5,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 41,
+    "onset": 3.0,
+    "text": "llá",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 41,
+    "onset": 3.5,
+    "text": "del",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 42,
+    "onset": 0.0,
+    "text": "cie",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 42,
+    "onset": 1.5,
+    "text": "lo‿a",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 42,
+    "onset": 2.0,
+    "text": "zul",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 43,
+    "onset": 1.5,
+    "text": "ha",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 43,
+    "onset": 2.0,
+    "text": "bi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 43,
+    "onset": 2.5,
+    "text": "ta",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 43,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 43,
+    "onset": 3.5,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 44,
+    "onset": 0.0,
+    "text": "sús,",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 44,
+    "onset": 2.0,
+    "text": "por",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 44,
+    "onset": 2.5,
+    "text": "la",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 44,
+    "onset": 3.0,
+    "text": "fe",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 44,
+    "onset": 3.5,
+    "text": "yo",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 45,
+    "onset": 0.0,
+    "text": "pue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 45,
+    "onset": 1.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 45,
+    "onset": 2.0,
+    "text": "ver",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 46,
+    "onset": 1.5,
+    "text": "muy",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 46,
+    "onset": 2.0,
+    "text": "pron",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 46,
+    "onset": 2.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 46,
+    "onset": 3.0,
+    "text": "le",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 46,
+    "onset": 3.5,
+    "text": "ve",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 47,
+    "onset": 0.0,
+    "text": "ré;",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 47,
+    "onset": 2.0,
+    "text": "ca",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 47,
+    "onset": 2.5,
+    "text": "ra‿a",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 47,
+    "onset": 3.0,
+    "text": "ca",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 47,
+    "onset": 3.5,
+    "text": "ra",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 48,
+    "onset": 0.0,
+    "text": "he",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 48,
+    "onset": 1.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 48,
+    "onset": 2.0,
+    "text": "ver",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 49,
+    "onset": 1.5,
+    "text": "el",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 49,
+    "onset": 2.0,
+    "text": "ros",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 49,
+    "onset": 2.5,
+    "text": "tro",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 49,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 49,
+    "onset": 3.5,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 50,
+    "onset": 0.0,
+    "text": "Rey,",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 50,
+    "onset": 2.0,
+    "text": "ya",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 50,
+    "onset": 2.5,
+    "text": "muy",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 50,
+    "onset": 3.0,
+    "text": "pron",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 50,
+    "onset": 3.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 51,
+    "onset": 0.0,
+    "text": "es",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 51,
+    "onset": 1.5,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 51,
+    "onset": 2.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 52,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 52,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 52,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 52,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 52,
+    "onset": 3.5,
+    "text": "Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 53,
+    "onset": 0.0,
+    "text": "ñor.",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 53,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 54,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 54,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 54,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 54,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 54,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 54,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 55,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 55,
+    "onset": 1.0,
+    "text": "(Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 55,
+    "onset": 2.0,
+    "text": "ñor.)",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 56,
+    "onset": 0.0,
+    "text": "Tú",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 56,
+    "onset": 1.0,
+    "text": "me‿a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 56,
+    "onset": 1.5,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 2,
+    "measure": 56,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 56,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 57,
+    "onset": 0.0,
+    "text": "no",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 57,
+    "onset": 1.0,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 57,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 2,
+    "measure": 57,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 2,
+    "measure": 57,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 2,
+    "measure": 58,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 2,
+    "onset": 0.0,
+    "text": "Mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 2,
+    "onset": 3.0,
+    "text": "Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 3,
+    "onset": 0.0,
+    "text": "ñor",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 4,
+    "onset": 0.0,
+    "text": "(oh,",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 4,
+    "onset": 1.5,
+    "text": "sí",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 5,
+    "onset": 0.0,
+    "text": "es),",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 5,
+    "onset": 2.0,
+    "text": "ah",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 6,
+    "onset": 1.5,
+    "text": "sí",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 6,
+    "onset": 2.0,
+    "text": "dul",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 7,
+    "onset": 0.0,
+    "text": "ce",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 7,
+    "onset": 2.0,
+    "text": "es;",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 8,
+    "onset": 0.0,
+    "text": "en",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 8,
+    "onset": 2.0,
+    "text": "con",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 9,
+    "onset": 0.0,
+    "text": "tré",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 9,
+    "onset": 2.0,
+    "text": "con",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 10,
+    "onset": 0.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 10,
+    "onset": 2.0,
+    "text": "sús,",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 11,
+    "onset": 0.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 11,
+    "onset": 2.0,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 12,
+    "onset": 0.0,
+    "text": "más",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 12,
+    "onset": 1.5,
+    "text": "al",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 12,
+    "onset": 2.0,
+    "text": "Pa",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 12,
+    "onset": 2.5,
+    "text": "dre",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 12,
+    "onset": 3.0,
+    "text": "Ce",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 12,
+    "onset": 3.5,
+    "text": "les",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 13,
+    "onset": 0.0,
+    "text": "tial.",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 13,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 14,
+    "onset": 0.0,
+    "text": "ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 14,
+    "onset": 1.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 14,
+    "onset": 2.0,
+    "text": "mí",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 15,
+    "onset": 0.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 15,
+    "onset": 1.0,
+    "text": "(sí)",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 15,
+    "onset": 2.0,
+    "text": "quie",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 15,
+    "onset": 3.0,
+    "text": "ro",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 16,
+    "onset": 0.0,
+    "text": "siem",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 16,
+    "onset": 0.5,
+    "text": "pre",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 16,
+    "onset": 1.0,
+    "text": "cer",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 16,
+    "onset": 1.5,
+    "text": "ca‿es",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 16,
+    "onset": 2.0,
+    "text": "tar",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 16,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 17,
+    "onset": 0.0,
+    "text": "ti!",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 17,
+    "onset": 3.0,
+    "text": "En",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 17,
+    "onset": 3.5,
+    "text": "tus",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 18,
+    "onset": 0.0,
+    "text": "bra",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 18,
+    "onset": 0.5,
+    "text": "zos",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 18,
+    "onset": 1.0,
+    "text": "des",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 18,
+    "onset": 1.5,
+    "text": "can",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 18,
+    "onset": 2.0,
+    "text": "sar,",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 18,
+    "onset": 3.5,
+    "text": "oh",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 19,
+    "onset": 0.0,
+    "text": "Cris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 19,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 19,
+    "onset": 1.5,
+    "text": "con",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 19,
+    "onset": 2.0,
+    "text": "fí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 19,
+    "onset": 3.0,
+    "text": "o",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 19,
+    "onset": 3.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 20,
+    "onset": 0.0,
+    "text": "ti;",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 20,
+    "onset": 1.0,
+    "text": "(en",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 20,
+    "onset": 2.0,
+    "text": "ti)",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 20,
+    "onset": 3.0,
+    "text": "¡te",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 21,
+    "onset": 0.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 21,
+    "onset": 1.5,
+    "text": "mo",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 21,
+    "onset": 2.0,
+    "text": "tan",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 22,
+    "onset": 0.0,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 22,
+    "onset": 2.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 22,
+    "onset": 3.0,
+    "text": "ben",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 23,
+    "onset": 0.0,
+    "text": "di",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 23,
+    "onset": 0.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 23,
+    "onset": 1.0,
+    "text": "Sal",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 23,
+    "onset": 1.5,
+    "text": "va",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 23,
+    "onset": 2.0,
+    "text": "dor",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 23,
+    "onset": 3.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 24,
+    "onset": 0.0,
+    "text": "sús!",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 24,
+    "onset": 3.0,
+    "text": "Sé",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 24,
+    "onset": 3.5,
+    "text": "que",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 25,
+    "onset": 0.0,
+    "text": "Tú",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 25,
+    "onset": 0.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 25,
+    "onset": 1.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 25,
+    "onset": 1.5,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 25,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 25,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 26,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 26,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 26,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 26,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 26,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 26,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 27,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 27,
+    "onset": 2.0,
+    "text": "A",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 27,
+    "onset": 2.5,
+    "text": "su",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 27,
+    "onset": 3.0,
+    "text": "la",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 27,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 28,
+    "onset": 0.0,
+    "text": "soy",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 28,
+    "onset": 1.0,
+    "text": "fe",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 28,
+    "onset": 2.0,
+    "text": "liz,",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 29,
+    "onset": 1.5,
+    "text": "ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 29,
+    "onset": 2.0,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 29,
+    "onset": 2.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 29,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 29,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 30,
+    "onset": 0.0,
+    "text": "lor,",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 30,
+    "onset": 2.0,
+    "text": "la",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 30,
+    "onset": 2.5,
+    "text": "tris",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 30,
+    "onset": 3.0,
+    "text": "te",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 30,
+    "onset": 3.5,
+    "text": "za",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 31,
+    "onset": 0.0,
+    "text": "ter",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 31,
+    "onset": 1.0,
+    "text": "mi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 31,
+    "onset": 2.0,
+    "text": "nó,",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 32,
+    "onset": 1.5,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 32,
+    "onset": 2.0,
+    "text": "sue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 32,
+    "onset": 2.5,
+    "text": "ño",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 32,
+    "onset": 3.0,
+    "text": "se",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 32,
+    "onset": 3.5,
+    "text": "cum",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 33,
+    "onset": 0.0,
+    "text": "plió;",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 33,
+    "onset": 2.0,
+    "text": "cual",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 33,
+    "onset": 2.5,
+    "text": "Ma",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 33,
+    "onset": 3.0,
+    "text": "rí",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 33,
+    "onset": 3.5,
+    "text": "a",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 34,
+    "onset": 0.0,
+    "text": "es",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 34,
+    "onset": 1.0,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 34,
+    "onset": 2.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 35,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 35,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 35,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 35,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 35,
+    "onset": 3.5,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 36,
+    "onset": 0.0,
+    "text": "sús",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 36,
+    "onset": 2.0,
+    "text": "de",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 36,
+    "onset": 2.5,
+    "text": "rra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 36,
+    "onset": 3.0,
+    "text": "man",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 36,
+    "onset": 3.5,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 37,
+    "onset": 0.0,
+    "text": "an",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 37,
+    "onset": 1.0,
+    "text": "te",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 37,
+    "onset": 2.0,
+    "text": "Él",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 38,
+    "onset": 1.5,
+    "text": "per",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 38,
+    "onset": 2.0,
+    "text": "fu",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 38,
+    "onset": 2.5,
+    "text": "me",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 38,
+    "onset": 3.0,
+    "text": "de‿o",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 38,
+    "onset": 3.5,
+    "text": "ra",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 39,
+    "onset": 0.0,
+    "text": "ción.",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 39,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 40,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 40,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 40,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 40,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 40,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 40,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 41,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 42,
+    "onset": 2.0,
+    "text": "Más",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 42,
+    "onset": 3.0,
+    "text": "a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 43,
+    "onset": 0.0,
+    "text": "llá",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 44,
+    "onset": 0.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 44,
+    "onset": 1.0,
+    "text": "Je",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 44,
+    "onset": 2.0,
+    "text": "sús",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 45,
+    "onset": 2.0,
+    "text": "pue",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 45,
+    "onset": 3.0,
+    "text": "do",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 46,
+    "onset": 0.0,
+    "text": "ver,",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 46,
+    "onset": 2.0,
+    "text": "le",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 46,
+    "onset": 3.0,
+    "text": "ve",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 47,
+    "onset": 0.0,
+    "text": "ré;",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 47,
+    "onset": 2.0,
+    "text": "ca",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 47,
+    "onset": 2.5,
+    "text": "ra‿a",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 47,
+    "onset": 3.0,
+    "text": "ca",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 47,
+    "onset": 3.5,
+    "text": "ra",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 48,
+    "onset": 0.0,
+    "text": "he",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 48,
+    "onset": 1.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 48,
+    "onset": 2.0,
+    "text": "ver",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 49,
+    "onset": 1.5,
+    "text": "el",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 49,
+    "onset": 2.0,
+    "text": "ros",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 49,
+    "onset": 2.5,
+    "text": "tro",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 49,
+    "onset": 3.0,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 49,
+    "onset": 3.5,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 50,
+    "onset": 0.0,
+    "text": "Rey,",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 50,
+    "onset": 2.0,
+    "text": "ya",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 50,
+    "onset": 2.5,
+    "text": "muy",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 50,
+    "onset": 3.0,
+    "text": "pron",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 50,
+    "onset": 3.5,
+    "text": "to",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 51,
+    "onset": 0.0,
+    "text": "es",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 51,
+    "onset": 1.5,
+    "text": "ta",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 51,
+    "onset": 2.0,
+    "text": "ré",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 52,
+    "onset": 1.5,
+    "text": "en",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 52,
+    "onset": 2.0,
+    "text": "pie",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 52,
+    "onset": 2.5,
+    "text": "de",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 52,
+    "onset": 3.0,
+    "text": "mi",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 52,
+    "onset": 3.5,
+    "text": "Se",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 53,
+    "onset": 0.0,
+    "text": "ñor.",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 53,
+    "onset": 3.0,
+    "text": "¡A",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 54,
+    "onset": 0.0,
+    "text": "nun",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 54,
+    "onset": 0.5,
+    "text": "ca",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 54,
+    "onset": 1.5,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 54,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 54,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 54,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 55,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 56,
+    "onset": 0.0,
+    "text": "Me‿a",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 56,
+    "onset": 1.0,
+    "text": "mas",
+    "syllabic": "end"
+  },
+  {
+    "role": 3,
+    "measure": 56,
+    "onset": 2.0,
+    "text": "más,",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 56,
+    "onset": 3.5,
+    "text": "y",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 57,
+    "onset": 0.0,
+    "text": "no",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 57,
+    "onset": 1.0,
+    "text": "me",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 57,
+    "onset": 2.0,
+    "text": "has",
+    "syllabic": "single"
+  },
+  {
+    "role": 3,
+    "measure": 57,
+    "onset": 3.0,
+    "text": "de‿ol",
+    "syllabic": "begin"
+  },
+  {
+    "role": 3,
+    "measure": 57,
+    "onset": 3.5,
+    "text": "vi",
+    "syllabic": "middle"
+  },
+  {
+    "role": 3,
+    "measure": 58,
+    "onset": 0.0,
+    "text": "dar.",
+    "syllabic": "end"
+  }
+]

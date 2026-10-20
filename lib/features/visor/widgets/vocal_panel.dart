@@ -11,6 +11,9 @@ import 'package:coro_lldm/features/visor/widgets/singing_icon.dart';
 
 class VocalPanel extends ConsumerStatefulWidget {
   final VoidCallback? onClose;
+  final VoidCallback? onSwitchToMidi;
+  final Future<bool> Function()? onRequestPlayAccess;
+  final VoidCallback? onPlaybackStarted;
   final VocalSong song;
   final String initialVoice;
   final Color accentColor;
@@ -18,6 +21,9 @@ class VocalPanel extends ConsumerStatefulWidget {
   const VocalPanel({
     super.key,
     this.onClose,
+    this.onSwitchToMidi,
+    this.onRequestPlayAccess,
+    this.onPlaybackStarted,
     required this.song,
     this.initialVoice = 'Ensamble',
     required this.accentColor,
@@ -35,6 +41,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   bool _isPlaying = false;
   bool _isLoading = false;
   bool _isOffline = false;
+  bool _accessPending = false;
   Duration _position = Duration.zero;
   Duration _duration = Duration.zero;
   bool _isDragging = false;
@@ -146,6 +153,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
       }
 
       if (autoPlay) {
+        widget.onPlaybackStarted?.call();
         await _player.resume();
       }
     } catch (e) {
@@ -160,10 +168,22 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   }
 
   Future<void> _togglePlay() async {
+    if (_accessPending) return;
     if (_isPlaying) {
       await _player.pause();
-    } else {
+      return;
+    }
+
+    _accessPending = true;
+    try {
+      if (widget.onRequestPlayAccess != null) {
+        final allowed = await widget.onRequestPlayAccess!();
+        if (!mounted || !allowed) return;
+      }
+      widget.onPlaybackStarted?.call();
       await _player.resume();
+    } finally {
+      _accessPending = false;
     }
   }
 
@@ -190,6 +210,11 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   Future<void> _handleClose() async {
     await _stop();
     widget.onClose?.call();
+  }
+
+  Future<void> _handleSwitchToMidi() async {
+    await _stop();
+    widget.onSwitchToMidi?.call();
   }
 
   void _onVoiceSelected(String voiceKey) {
@@ -255,7 +280,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
               if (widget.onClose != null)
                 PlayerDismissHandle(onClose: _handleClose),
 
-              // Cabecera con icono de voz cantando
+              // Cabecera con icono de voz cantando y selector elegante Piano / Voces
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 4, 12, 6),
                 child: Row(
@@ -303,7 +328,8 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                                 decoration: BoxDecoration(
                                   color: _isOffline
                                       ? Colors.green.withValues(alpha: 0.14)
-                                      : widget.accentColor.withValues(alpha: 0.12),
+                                      : widget.accentColor
+                                          .withValues(alpha: 0.12),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Text(
@@ -324,9 +350,47 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                         ],
                       ),
                     ),
+                    if (widget.onSwitchToMidi != null)
+                      Padding(
+                        padding: const EdgeInsets.only(right: 4),
+                        child: Material(
+                          color: theme.colorScheme.surfaceContainerHighest,
+                          borderRadius: BorderRadius.circular(14),
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(14),
+                            onTap: _handleSwitchToMidi,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 6,
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    Icons.piano_rounded,
+                                    size: 15,
+                                    color: widget.accentColor,
+                                  ),
+                                  const SizedBox(width: 5),
+                                  Text(
+                                    strings.t('Piano', 'Piano'),
+                                    style: GoogleFonts.inter(
+                                      fontSize: 11.5,
+                                      fontWeight: FontWeight.w700,
+                                      color: theme.colorScheme.onSurface,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                     if (widget.onClose != null)
                       IconButton(
-                        tooltip: strings.t('Cerrar reproductor', 'Close player'),
+                        tooltip:
+                            strings.t('Cerrar reproductor', 'Close player'),
                         icon: Icon(
                           Icons.close_rounded,
                           size: 20,
@@ -338,9 +402,10 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                 ),
               ),
 
-              // Selector de Voces (Ensamble o Soprano/Contralto/Tenor/Bajo)
+              // Selector de Voces (Solo color de resalte, 0 palomitas, 0 iconos extra)
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -348,41 +413,36 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                       final isSelected = voice == _selectedVoice;
                       return Padding(
                         padding: const EdgeInsets.only(right: 8),
-                        child: ChoiceChip(
-                          avatar: voice == 'Ensamble'
-                              ? Icon(
-                                  Icons.groups_rounded,
-                                  size: 16,
+                        child: Material(
+                          color: isSelected
+                              ? widget.accentColor
+                              : theme.colorScheme.surfaceContainerHighest,
+                          borderRadius: BorderRadius.circular(18),
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(18),
+                            onTap: () => _onVoiceSelected(voice),
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 180),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 8,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                              child: Text(
+                                voice,
+                                style: GoogleFonts.inter(
+                                  fontSize: 12.5,
+                                  fontWeight: isSelected
+                                      ? FontWeight.w700
+                                      : FontWeight.w500,
                                   color: isSelected
                                       ? onAccent
-                                      : widget.accentColor,
-                                )
-                              : null,
-                          label: Text(
-                            voice,
-                            style: GoogleFonts.inter(
-                              fontSize: 12.5,
-                              fontWeight: isSelected
-                                  ? FontWeight.w700
-                                  : FontWeight.w500,
-                              color: isSelected
-                                  ? onAccent
-                                  : theme.colorScheme.onSurface,
+                                      : theme.colorScheme.onSurface,
+                                ),
+                              ),
                             ),
-                          ),
-                          selected: isSelected,
-                          showCheckmark: false,
-                          selectedColor: widget.accentColor,
-                          backgroundColor:
-                              theme.colorScheme.surfaceContainerHighest,
-                          side: BorderSide.none,
-                          onSelected: (_) => _onVoiceSelected(voice),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 10,
-                            vertical: 4,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18),
                           ),
                         ),
                       );

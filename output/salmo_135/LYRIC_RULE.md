@@ -1,0 +1,1 @@
+Regla confirmada por el usuario: A-la-bad a nues-tro Dios. Guiones entre sílabas de una misma palabra y espacios entre palabras distintas. Respetar cómo viene articulada la letra en el PDF, incluidas contracciones y melismas. No dividir notas ni cambiar la distribución musical para imponer otra separación silábica.
