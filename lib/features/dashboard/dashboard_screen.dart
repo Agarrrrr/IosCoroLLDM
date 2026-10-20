@@ -14,6 +14,8 @@ import 'package:coro_lldm/core/offline/sync_manager.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:hive/hive.dart';
 import 'package:coro_lldm/core/monetization/ad_banner.dart';
+import 'package:coro_lldm/features/jukebox/jukebox_screen.dart';
+import 'package:coro_lldm/features/jukebox/widgets/jukebox_mini_player.dart';
 
 class DashboardScreen extends ConsumerStatefulWidget {
   const DashboardScreen({super.key});
@@ -185,6 +187,33 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                   ),
                   IconButton(
                     icon: Icon(
+                      Icons.headphones_rounded,
+                      color: theme.colorScheme.primary,
+                    ),
+                    tooltip: strings.t('Reproductor Coral (Jukebox)', 'Choral Player (Jukebox)'),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        PageRouteBuilder(
+                          pageBuilder: (context, anim, secAnim) =>
+                              const JukeboxScreen(),
+                          transitionsBuilder: (context, anim, secAnim, child) {
+                            return SlideTransition(
+                              position: Tween<Offset>(
+                                begin: const Offset(0, 1),
+                                end: Offset.zero,
+                              ).animate(CurvedAnimation(
+                                parent: anim,
+                                curve: Curves.easeOutCubic,
+                              )),
+                              child: child,
+                            );
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  IconButton(
+                    icon: Icon(
                       isDark
                           ? Icons.light_mode_rounded
                           : Icons.dark_mode_rounded,
@@ -280,6 +309,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                               },
                             ),
             ),
+            const JukeboxMiniPlayer(),
             const MonetizationBanner(),
           ],
         ),

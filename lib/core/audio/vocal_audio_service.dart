@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -150,6 +151,34 @@ class VocalAudioService {
     }
 
     return null;
+  }
+
+  List<VocalSong> getSongsForLanguage(String lang) {
+    return _languagesData?[lang]?.cantos ?? [];
+  }
+
+  Future<void> configureGlobalAudioSession() async {
+    try {
+      await AudioPlayer.global.setAudioContext(
+        AudioContext(
+          iOS: AudioContextIOS(
+            category: AVAudioSessionCategory.playback,
+            options: const {
+              AVAudioSessionOptions.defaultToSpeaker,
+            },
+          ),
+          android: const AudioContextAndroid(
+            isSpeakerphoneOn: true,
+            stayAwake: true,
+            contentType: AndroidContentType.music,
+            usageType: AndroidUsageType.media,
+            audioFocus: AndroidAudioFocus.gain,
+          ),
+        ),
+      );
+    } catch (e) {
+      debugPrint('⚠️ [VocalAudioService] Error configurando sesión de audio global: $e');
+    }
   }
 
   String getStreamUrl(String r2Path) {

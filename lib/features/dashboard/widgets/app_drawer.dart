@@ -9,6 +9,7 @@ import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/features/premium/premium_dialog.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
+import 'package:coro_lldm/features/jukebox/jukebox_screen.dart';
 
 class AppDrawer extends ConsumerWidget {
   const AppDrawer({super.key});
@@ -160,6 +161,36 @@ class AppDrawer extends ConsumerWidget {
                       onTap: () {
                         ref.read(soloFavoritosProvider.notifier).set(true);
                         ref.read(categoryFilterProvider.notifier).set('');
+                      },
+                    ),
+                    _buildSidebarBtn(
+                      context: context,
+                      ref: ref,
+                      id: 'jukebox',
+                      label: strings.t('Modo Jukebox (Voces)', 'Jukebox Mode (Voces)'),
+                      icon: Icons.headphones_rounded,
+                      isActiveOverride: false,
+                      onTap: () {
+                        Navigator.pop(context);
+                        Navigator.of(context).push(
+                          PageRouteBuilder(
+                            pageBuilder: (context, anim, secAnim) =>
+                                const JukeboxScreen(),
+                            transitionsBuilder:
+                                (context, anim, secAnim, child) {
+                              return SlideTransition(
+                                position: Tween<Offset>(
+                                  begin: const Offset(0, 1),
+                                  end: Offset.zero,
+                                ).animate(CurvedAnimation(
+                                  parent: anim,
+                                  curve: Curves.easeOutCubic,
+                                )),
+                                child: child,
+                              );
+                            },
+                          ),
+                        );
                       },
                     ),
 
