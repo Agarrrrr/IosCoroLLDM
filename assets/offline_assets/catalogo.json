@@ -16533,5 +16533,16 @@
     "cifrado_version": 1,
     "version": 1,
     "midi_archivo": "global/assets/midi/e4c3f0ced33b87354b2f2b33b99a97be68aa6643b0678898d62adf110c7fced7.enc"
+  },
+  {
+    "id": "hay_un_lugar_vol10",
+    "nombre": "Hay un Lugar",
+    "archivo": "hay_un_lugar.pdf",
+    "temas": [
+      "Esperanza"
+    ],
+    "es_privado": false,
+    "_idioma": "es",
+    "idioma": "es"
   }
 ]

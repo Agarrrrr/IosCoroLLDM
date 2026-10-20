@@ -2475,7 +2475,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "usmc_2ff8227f61dac6f6f1",
@@ -2572,7 +2573,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "usmc_c5c1ed099ba6c7067e",
@@ -2596,7 +2598,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "3fcbf7e7-7628-4504-be11-f96702517487",
@@ -2992,7 +2995,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "7ec3cfd0-276e-4fcc-984a-415fdf9d2ef5",
@@ -6948,7 +6952,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "6bbf3754-705a-411c-b527-dd1378955921",
@@ -7806,7 +7811,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "usmc_64b5376421b21cae026058aa",
@@ -9260,7 +9266,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "ec542b1f-c043-4175-b119-025f3cac0aef",
@@ -9413,7 +9420,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "18990049-2417-4fe9-8b60-61d8fd1754f8",
@@ -9719,8 +9727,22 @@
     "idioma": "es"
   },
   {
-    "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
+    "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
     "nombre": "La Vida se va Como el Viento",
+    "archivo": "global/assets/pdf/e6e1295d099bf1e9d86b7274eade60c17ce0b0595ca209406711a12529324809.enc",
+    "midi_archivo": "global/assets/midi/7c5d03657ae81557310c610e626d2c2f2cbae102cbd36a839b0fd8f7a176ad02.enc",
+    "vinculo_idioma": null,
+    "temas": [
+      "Evangelización"
+    ],
+    "coro_id": "local",
+    "_idioma": "es",
+    "idioma": "es",
+    "version": 4
+  },
+  {
+    "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
+    "nombre": "La Vida Se Va Como El Viento y Pronto en Las Nubes Vendrá",
     "archivo": "global/assets/pdf/933d7b514551607d7f4d27e4dc19a4e2c89c3dafde33fa07c10783029ef1dc50.enc",
     "midi_archivo": "global/assets/midi/8f8ec264aea98d2c2020941409dc8d78c2e5e4008d5b64832d36f4852ecfe983.enc",
     "vinculo_idioma": null,
@@ -12252,7 +12274,7 @@
   {
     "id": "c35b5fd9-8d99-445f-89e3-21dd998a3e92",
     "nombre": "Pecador, Ven al Dulce Jesús",
-    "archivo": "pecador-ven-al-dulce-jesus-1777250932709.pdf",
+    "archivo": "https://mxnhmtztxgeccohlgqpt.supabase.co/storage/v1/object/public/partituras/pecador-ven-al-dulce-jesus-1777250932709.pdf",
     "midi_archivo": "pecador-ven-al-dulce-jesus-1779936344085.mid",
     "temas": [
       "Bautismo",
@@ -12672,7 +12694,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "f1a4b62a-050c-445a-93aa-ca420cfeb62e",
@@ -12685,7 +12708,8 @@
     ],
     "idioma": "es",
     "vinculo_idioma": null,
-    "version": 1
+    "version": 1,
+    "_idioma": "es"
   },
   {
     "id": "f795de73-eaef-488a-80d2-769f756f1808",
@@ -14027,21 +14051,10 @@
     "idioma": "es"
   },
   {
-    "id": "7c176f6b-f16a-49f7-a685-132802dee92e",
-    "nombre": "Si Fui Motivo",
-    "archivo": "si-fui-motivo-1781309498242.pdf",
-    "temas": [
-      "Intercesión"
-    ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
     "id": "35ecfe71-7d8a-48f3-9719-660e8b163865",
     "nombre": "Si Fui Motivo de Dolor",
     "archivo": "global/assets/pdf/5853bef0f52f84ee532b0ed6be4e61e5ab4e564b80ea31e4b50e85cb49ea989d.enc",
-    "midi_archivo": "si-fui-motivo-de-dolor-1781239596037.mid",
+    "midi_archivo": "global/assets/midi/8a884c31b324316bc7c5489e72cee9dec5902a5b5eb2b5c6038b76795a29a6b3.enc",
     "vinculo_idioma": "usmc_647b6e72f16057b9e8d4bda5",
     "temas": [
       "Intercesión"
@@ -16270,6 +16283,17 @@
     "temas": [
       "Elección",
       "Gracia"
+    ],
+    "es_privado": false,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "hay_un_lugar_vol10",
+    "nombre": "Hay un Lugar",
+    "archivo": "hay_un_lugar.pdf",
+    "temas": [
+      "Esperanza"
     ],
     "es_privado": false,
     "_idioma": "es",

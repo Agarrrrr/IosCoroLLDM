@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-14T21:33:48.761Z",
-  "version": "20bcbd5b580a8156",
+  "generatedAt": "2026-09-30T23:41:26.563Z",
+  "version": "e789f77cb4d0a451",
   "dateMeaning": "last-sync-from-application-assets",
   "source": "application-assets",
   "languages": [
@@ -9,15 +9,15 @@
   ],
   "catalogs": {
     "es": {
-      "hash": "50b3b2977252e804d0d5d3fa364ce4df83cba137fa7cb6a3eb32b4c804073ee0",
+      "hash": "1523c2a34ab682424aeeb2236c800e9060fdd5d768d5622e372dbe08ead4eca9",
       "total": 1342,
-      "withMidi": 381,
-      "withPreview": 363
+      "withMidi": 382,
+      "withPreview": 362
     },
     "en": {
-      "hash": "766f4bb536a4d4cf04e95ae020092e5ad26f2e252826d0a533a6370fa56bf307",
-      "total": 303,
-      "withMidi": 234,
+      "hash": "e9f2c01c4304bc3654766e93b1c3789f5a7c9635f52f2867f7b34226df1be194",
+      "total": 308,
+      "withMidi": 237,
       "withPreview": 234
     }
   }

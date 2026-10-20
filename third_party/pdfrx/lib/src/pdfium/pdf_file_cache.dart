@@ -285,16 +285,16 @@ Future<PdfDocument> pdfDocumentFromUri(
   Map<String, String>? headers,
 }) async {
   progressCallback?.call(0);
-  cache ??= await PdfFileCache.fromUri(uri);
+  final actualCache = cache ?? await PdfFileCache.fromUri(uri);
   final httpClientWrapper = _HttpClientWrapper(Pdfrx.createHttpClient ?? () => http.Client());
 
   try {
-    if (!cache.isInitialized) {
-      cache.setBlockSize(blockSize ?? PdfFileCache.defaultBlockSize);
+    if (!actualCache.isInitialized) {
+      actualCache.setBlockSize(blockSize ?? PdfFileCache.defaultBlockSize);
       final result = await _downloadBlock(
         httpClientWrapper,
         uri,
-        cache,
+        actualCache,
         progressCallback,
         0,
         useRangeAccess: useRangeAccess,
@@ -302,20 +302,20 @@ Future<PdfDocument> pdfDocumentFromUri(
       );
       if (result.isFullDownload) {
         return await PdfDocument.openFile(
-          cache.filePath,
+          actualCache.filePath,
           passwordProvider: passwordProvider,
           firstAttemptByEmptyPassword: firstAttemptByEmptyPassword,
         );
       }
     } else {
       // Check if the file is fresh (no-need-to-reload).
-      if (cache.cacheControlState.cacheControl.mustRevalidate && cache.cacheControlState.isFresh(now: DateTime.now())) {
+      if (actualCache.cacheControlState.cacheControl.mustRevalidate && actualCache.cacheControlState.isFresh(now: DateTime.now())) {
         // cache is valid; no need to download.
       } else {
         final result = await _downloadBlock(
           httpClientWrapper,
           uri,
-          cache,
+          actualCache,
           progressCallback,
           0,
           addCacheControlHeaders: true,
@@ -325,10 +325,10 @@ Future<PdfDocument> pdfDocumentFromUri(
         // cached file has expired
         // if the file has fully downloaded again or has not been modified
         if (result.isFullDownload || result.notModified) {
-          cache.close(); // close the cache file before opening it.
+          actualCache.close(); // close the cache file before opening it.
           httpClientWrapper.reset();
           return await PdfDocument.openFile(
-            cache.filePath,
+            actualCache.filePath,
             passwordProvider: passwordProvider,
             firstAttemptByEmptyPassword: firstAttemptByEmptyPassword,
             useProgressiveLoading: useProgressiveLoading,
@@ -343,14 +343,14 @@ Future<PdfDocument> pdfDocumentFromUri(
         final end = position + size;
         int bufferPosition = 0;
         for (int p = position; p < end;) {
-          final blockId = p ~/ cache!.blockSize;
-          final isAvailable = cache.isCached(blockId);
+          final blockId = p ~/ actualCache.blockSize;
+          final isAvailable = actualCache.isCached(blockId);
           if (!isAvailable) {
-            await _downloadBlock(httpClientWrapper, uri, cache, progressCallback, blockId, headers: headers);
+            await _downloadBlock(httpClientWrapper, uri, actualCache, progressCallback, blockId, headers: headers);
           }
-          final readEnd = min(p + size, (blockId + 1) * cache.blockSize);
+          final readEnd = min(p + size, (blockId + 1) * actualCache.blockSize);
           final sizeToRead = readEnd - p;
-          await cache.read(buffer, bufferPosition, p, sizeToRead);
+          await actualCache.read(buffer, bufferPosition, p, sizeToRead);
           p += sizeToRead;
           bufferPosition += sizeToRead;
           size -= sizeToRead;
@@ -360,15 +360,15 @@ Future<PdfDocument> pdfDocumentFromUri(
       passwordProvider: passwordProvider,
       firstAttemptByEmptyPassword: firstAttemptByEmptyPassword,
       useProgressiveLoading: useProgressiveLoading,
-      fileSize: cache.fileSize,
+      fileSize: actualCache.fileSize,
       sourceName: uri.toString(),
       onDispose: () {
-        cache!.close();
+        actualCache.close();
         httpClientWrapper.reset();
       },
     );
   } catch (e) {
-    cache.close();
+    actualCache.close();
     httpClientWrapper.reset();
     rethrow;
   }

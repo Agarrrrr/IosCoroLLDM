@@ -1,5 +1,18 @@
 # Historial de cambios
 
+## 3.5.0
+
+### Estudio Coral y Voces Cantadas
+- Nuevo reproductor de voces cantadas con streaming continuo vía Cloudflare R2 sin consumo forzado de almacenamiento en caché.
+- Icono vectorizado de voz de alta fidelidad y selector inicial entre Voces Cantadas (Estudio Coral) y Acompañamiento en Piano (MIDI).
+- Soporte para alternar fluidamente entre Ensamble y voces individuales (Soprano, Contralto, Tenor, Bajo) conservando el tiempo de reproducción.
+- Nueva sección de Ajustes para configurar la voz del usuario y gestionar descargas opcionales con cálculo dinámico en bytes reales para Español e Inglés.
+- Advertencia con doble verificación y confirmación explícita para descargas completas de repertorio.
+
+### Motor de Audio y Reproducción MIDI
+- Calibración de headroom para Android en FluidSynth (0.80 gain), eliminando saturación y distorsión en el visor principal.
+- Manejo optimizado de lifetimes de notas para prevenir ataques duplicados y notas colgadas.
+
 ## 3.1.0
 
 ### Reproductor y estudio

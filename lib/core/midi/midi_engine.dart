@@ -1,3 +1,4 @@
+import 'midi_note_lifetimes.dart';
 import 'dart:async';
 import 'dart:io';
 import 'dart:math' as math;
@@ -124,6 +125,10 @@ class MidiEngine {
   /// enviarla al sintetizador para preservar los picos de acordes densos.
   static const double playbackMasterBoostDb = 15.0;
   static const double _playbackMasterBoostLinear = 5.623413251903491;
+  // FluidSynth gain is not AVAudioUnitSampler's dB gain. Applying the iOS
+  // boost directly to Android produced a 5.34 synth gain with no peak limiter.
+  static double playbackGain({required bool android}) =>
+      android ? 0.80 : 0.95 * _playbackMasterBoostLinear;
 
   static final MidiEngine _instance = MidiEngine._internal();
   factory MidiEngine() => _instance;
@@ -157,10 +162,8 @@ class MidiEngine {
 
   // Control de Note-Off por canal y altura. Cada línea coral mantiene su canal
   // para que dos voces en la misma nota no se corten ni se fusionen.
-  // - _playbackEpoch: se incrementa en pause/stop/seek para invalidar los stops
-  //   pendientes que ya no corresponden a la reproducción actual.
   final Map<int, int> _activeNoteCounts = {};
-  int _playbackEpoch = 0;
+  final _noteLifetimes = MidiNoteLifetimes();
   int _playRequestEpoch = 0;
   bool _playStartPending = false;
   bool _routeRecoveryPending = false;
@@ -240,7 +243,7 @@ class MidiEngine {
     }
   }
 
-  Future<bool> loadMidi(String filePath, String nombre) async {
+  Future<bool> loadMidi(String filePath, String nombre, {ParsedMidiSong Function(ParsedMidiSong)? prepareSong}) async {
     try {
       _song = null;
       stop();
@@ -258,6 +261,7 @@ class MidiEngine {
 
       final bytes = await file.readAsBytes();
       _song = NativeMidiParser.parse(bytes);
+      if (prepareSong != null) _song = prepareSong(_song!);
       _scheduledNotes = [
         for (final track in _song!.tracks)
           for (final note in track.notes)
@@ -348,6 +352,7 @@ class MidiEngine {
     _playbackTimer = Timer.periodic(const Duration(milliseconds: 20), _onTick);
 
     _emit(_state.copyWith(isPlaying: true));
+    _resumeSoundingNotes(_startOffsetSeconds);
   }
 
   Future<dynamic> _handleAudioRouteCall(MethodCall call) async {
@@ -368,7 +373,6 @@ class MidiEngine {
     if (wasPlaying) {
       _playbackTimer?.cancel();
       _stopwatch.stop();
-      _playbackEpoch++;
       _stopAllNotes();
     }
 
@@ -391,6 +395,7 @@ class MidiEngine {
           resumeAt.clamp(0.0, _song!.durationSeconds).toDouble();
       _playbackCursor = _firstNoteAtOrAfter(_startOffsetSeconds);
       _primeMetronomeAt(_startOffsetSeconds);
+      _resumeSoundingNotes(_startOffsetSeconds);
       _stopwatch.reset();
       _stopwatch.start();
       _playbackTimer =
@@ -403,7 +408,6 @@ class MidiEngine {
     _stopwatch.stop();
     _startOffsetSeconds = _getCurrentTimeSeconds();
     _playbackTimer?.cancel();
-    _playbackEpoch++; // Invalidar stops pendientes
     _stopAllNotes();
     _emit(_state.copyWith(isPlaying: false));
   }
@@ -416,7 +420,6 @@ class MidiEngine {
     _startOffsetSeconds = 0.0;
     _playbackCursor = 0;
     _lastProgressEmitMicros = 0;
-    _playbackEpoch++; // Invalidar stops pendientes
     _lastMetronomePulseKey = null;
     _stopAllNotes();
     _emit(_state.copyWith(
@@ -441,7 +444,6 @@ class MidiEngine {
     _stopwatch.reset();
     _playbackCursor = _firstNoteAtOrAfter(targetTime);
     _lastProgressEmitMicros = 0;
-    _playbackEpoch++; // Invalidar stops pendientes
     _primeMetronomeAt(targetTime);
 
     final total = _song!.durationSeconds;
@@ -456,6 +458,7 @@ class MidiEngine {
 
     // Reiniciar el loop de reproducción si estaba sonando
     if (wasPlaying) {
+      _resumeSoundingNotes(targetTime);
       _stopwatch.start();
       _playbackTimer =
           Timer.periodic(const Duration(milliseconds: 20), _onTick);
@@ -473,6 +476,7 @@ class MidiEngine {
       _stopwatch
         ..reset()
         ..start();
+      _lastProgressEmitMicros = 0;
     }
     _emit(_state.copyWith(speed: selectedSpeed));
   }
@@ -575,6 +579,12 @@ class MidiEngine {
     ));
   }
 
+  /// Live musical position for vsync-driven score cursors. State notifications
+  /// are throttled and can also be emitted by mixer controls.
+  double get playbackPositionSeconds => _state.isPlaying
+      ? _getCurrentTimeSeconds()
+      : _state.tiempoActual;
+
   double _getCurrentTimeSeconds() {
     return _startOffsetSeconds +
         (_stopwatch.elapsedMicroseconds / 1000000.0) * _state.speed;
@@ -610,10 +620,17 @@ class MidiEngine {
     }
 
     // ── Notas MIDI ─────────────────────────────────────────────────────
+    for (final key in _noteLifetimes.advance(currentTime)) {
+      if (_sfId != null && _midiPro.isInitialized) {
+        _midiPro.stopNote(channel: key >> 8, key: key & 255, sfId: _sfId!);
+      }
+    }
+    _activeNoteCounts..clear()..addAll(_noteLifetimes.activeCounts);
     while (_playbackCursor < _scheduledNotes.length &&
         _scheduledNotes[_playbackCursor].note.timeSeconds <= currentTime) {
       final scheduled = _scheduledNotes[_playbackCursor++];
-      if (!(_mutedTracks[scheduled.trackIndex] ?? false)) {
+      if (!(_mutedTracks[scheduled.trackIndex] ?? false) &&
+          scheduled.note.timeSeconds + scheduled.note.durationSeconds > currentTime) {
         _playNativeNote(
           scheduled.note,
           _trackChannels[scheduled.trackIndex] ?? 0,
@@ -635,6 +652,22 @@ class MidiEngine {
       }
     }
     return low;
+  }
+
+  /// Seeking into a sustained note restores only the remaining sound.
+  /// This runs at a transport restart, never on a tied visual continuation.
+  void _resumeSoundingNotes(double seconds) {
+    for (final scheduled in _scheduledNotes) {
+      final note = scheduled.note;
+      if (note.timeSeconds >= seconds) break;
+      final end = note.timeSeconds + note.durationSeconds;
+      if (end <= seconds || (_mutedTracks[scheduled.trackIndex] ?? false)) continue;
+      _playNativeNote(MidiNoteEvent(note: note.note, velocity: note.velocity,
+          timeSeconds: seconds, durationSeconds: end - seconds,
+          trackIndex: note.trackIndex, channel: note.channel),
+          _trackChannels[scheduled.trackIndex] ?? 0,
+          trackIndex: scheduled.trackIndex);
+    }
   }
 
   void _primeMetronomeAt(double currentTime) {
@@ -731,7 +764,6 @@ class MidiEngine {
   /// Reproduce una nota MIDI con Note-Off programado al final de su duración.
   ///
   /// El conteo por altura evita cortar una nota sostenida por otra voz.
-  /// El "epoch" invalida stops pendientes tras pause/stop/seek.
   void _playNativeNote(MidiNoteEvent note, int channel,
       {required int trackIndex}) {
     if (!_midiPro.isInitialized || _sfId == null) return;
@@ -740,12 +772,12 @@ class MidiEngine {
       if (trackVolume <= 0.0) return;
       final pitch = note.note;
       final sfId = _sfId!;
-      final epoch = _playbackEpoch;
       final noteKey = (channel << 8) | pitch;
       final activeNotes =
           _activeNoteCounts.values.fold<int>(0, (sum, count) => sum + count);
       final velocity = masteredVelocity(note.velocity, activeNotes);
       _activeNoteCounts[noteKey] = (_activeNoteCounts[noteKey] ?? 0) + 1;
+      _noteLifetimes.start(noteKey, note.timeSeconds + note.durationSeconds);
       _midiPro.playNote(
         channel: channel,
         key: pitch,
@@ -756,20 +788,8 @@ class MidiEngine {
       // Note-Off exactamente al final de la duración de la nota (ajustado
       // por velocidad de reproducción). Sin margen extra para no alargar
       // el sonido más allá de lo escrito en la partitura.
-      final durMs = ((note.durationSeconds / _state.speed) * 1000)
-          .round()
-          .clamp(40, 120000);
-      Future.delayed(Duration(milliseconds: durMs), () {
-        if (!_midiPro.isInitialized) return;
-        if (_playbackEpoch != epoch) return; // hubo pause/stop/seek
-        final remaining = (_activeNoteCounts[noteKey] ?? 1) - 1;
-        if (remaining <= 0) {
-          _activeNoteCounts.remove(noteKey);
-          _midiPro.stopNote(channel: channel, key: pitch, sfId: sfId);
-        } else {
-          _activeNoteCounts[noteKey] = remaining;
-        }
-      });
+      // _onTick releases the note against the musical clock, including speed
+      // changes made while the note is sounding. No per-note delayed timers.
     } catch (e) {
       debugPrint('❌ [NativeMidiEngine] Error en playMidiNote: $e');
     }
@@ -797,10 +817,9 @@ class MidiEngine {
       (mixGainForControl(control) * 127).round().clamp(0, 127);
 
   Future<void> _configureMastering() async {
-    // +15 dB = x5.623 en amplitud: son +5 dB frente al ajuste anterior.
-    // El plugin admite este margen tanto en Android como en iOS; conservamos
-    // la compresión de velocidad y el 5% de margen para domar acordes densos.
-    await _midiPro.setMasterGain(0.95 * _playbackMasterBoostLinear);
+    // Preserve the existing iOS effects/gain. Android needs separate headroom:
+    // its FluidSynth backend does not implement the AVAudioEngine EQ chain.
+    await _midiPro.setMasterGain(playbackGain(android: Platform.isAndroid));
     await _midiPro.setEqualizer(
       enabled: true,
       bassGain: -1.5,
@@ -883,6 +902,7 @@ class MidiEngine {
   }
 
   void _stopAllNotes() {
+    _noteLifetimes.clear();
     _activeNoteCounts.clear();
     try {
       if (_midiPro.isInitialized && _sfId != null) {

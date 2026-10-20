@@ -1,166 +1,168 @@
 {
-  "generatedAt": "2026-09-14T21:33:48.812Z",
+  "generatedAt": "2026-09-21T01:01:28.287Z",
   "items": [
     {
-      "id": "usmc_36b6c58c5058c8c573",
-      "name": "Redeem my Soul",
-      "language": "en",
+      "id": "9c612422-d480-40e9-ab1c-66569f65d04b",
+      "name": "Cien Años de Bendición",
+      "language": "es",
       "themes": [
-        "Passion"
+        "Centenario"
       ]
     },
     {
-      "id": "usmc_64b5635a21b21cae02605f0c",
-      "name": "Mi Alma Reconoce su Elección",
+      "id": "usmc_3b34ebba4dfbc86fda",
+      "name": "No Dejare de Amarle",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "10c9e50d-d4aa-4ae1-8170-91c7f5f83813",
-      "name": "Señor Jesus tu Eres mi Esperanza",
-      "language": "es",
+      "id": "usmc_64c90f7f5c01cc5b98141ba2",
+      "name": "The Redeemed Nations",
+      "language": "en",
       "themes": [
-        "Gratitud"
+        "Welcoming"
       ]
     },
     {
-      "id": "usmc_6f4eeb050b8653c907068afe",
-      "name": "Bendice a mi Señor",
-      "language": "es",
-      "themes": [
-        "Petición"
-      ]
-    },
-    {
-      "id": "usmc_1342f19672712e9373bbaff2",
-      "name": "A Jesucristo Rendid",
+      "id": "usmc_d4a7bfdd014dd58c22",
+      "name": "Alaba a Jehova",
       "language": "es",
       "themes": [
         "Alabanza"
       ]
     },
     {
-      "id": "usmc_01718ce61be5d58ce4",
-      "name": "Salmo 23",
-      "language": "es",
-      "themes": [
-        "Alabanza",
-        "Adoración"
-      ]
-    },
-    {
-      "id": "usmc_a84621411143c864d6",
-      "name": "Mi Ejemplo a Seguir",
-      "language": "es",
-      "themes": [
-        "Elección"
-      ]
-    },
-    {
-      "id": "usmc_68148c09520c8624329efb4b",
-      "name": "Vamos Todos Con Valor",
-      "language": "es",
-      "themes": [
-        "Lucha"
-      ]
-    },
-    {
-      "id": "34f3f39a-e922-46c7-b266-23c731d68582",
-      "name": "Decreto de Gloria",
-      "language": "es",
-      "themes": [
-        "Elección"
-      ]
-    },
-    {
-      "id": "local_apk_1781321071914_582",
-      "name": "El Amor de un Padre",
-      "language": "es",
-      "themes": [
-        "Oración Apostólica"
-      ]
-    },
-    {
-      "id": "usmc_a22328c1e186a51031b36f08",
-      "name": "Más Esplendente Que el Sol",
-      "language": "es",
-      "themes": [
-        "Elección"
-      ]
-    },
-    {
-      "id": "usmc_d67f0f110f42d58cda",
-      "name": "Que Grato es Llevar",
-      "language": "es",
-      "themes": [
-        "Alabanza",
-        "Adoración"
-      ]
-    },
-    {
-      "id": "usmc_feabeaba2fd1c92173",
-      "name": "Vamos!",
-      "language": "es",
-      "themes": [
-        "Lucha"
-      ]
-    },
-    {
-      "id": "usmc_f7f3a4bd92b3c848c7",
-      "name": "La Oración de tu Amigo",
-      "language": "es",
-      "themes": [
-        "Oración Apostólica"
-      ]
-    },
-    {
-      "id": "usmc_86524a4aaaa6d58cdd",
-      "name": "Que el Señor le Guarde",
-      "language": "es",
-      "themes": [
-        "14 de Febrero"
-      ]
-    },
-    {
-      "id": "usmc_64b5e7bd21b21cae02606632",
-      "name": "Mi Esperanza es en ti",
-      "language": "es",
-      "themes": [
-        "Confianza"
-      ]
-    },
-    {
-      "id": "8675a914-5f93-47ab-bc44-f057c729ecd4",
-      "name": "Hogar de Mis Recuerdos",
+      "id": "usmc_dd49c4dce6edc85a2d",
+      "name": "Mas Alla de Las Estrellas",
       "language": "es",
       "themes": [
         "Esperanza"
       ]
     },
     {
-      "id": "e485ddef-4ea0-43f7-97d5-2d70475a69e0",
-      "name": "La Razón de mi Vivir",
+      "id": "usmc_6559306b6269024850c230fe",
+      "name": "You Gave up Your Life",
+      "language": "en",
+      "themes": [
+        "Passion"
+      ]
+    },
+    {
+      "id": "local_apk_1781321071997_705",
+      "name": "La Voz de Israel",
       "language": "es",
       "themes": [
         "Elección"
       ]
     },
     {
-      "id": "usmc_681486be520c8624329ef9c7",
-      "name": "Busca a tu Creador",
+      "id": "98525f6b-60ac-4d23-9e9b-16cc8248d2d6",
+      "name": "Cien Años de Misericordia",
       "language": "es",
       "themes": [
-        "Exhortación"
+        "Centenario"
       ]
     },
     {
-      "id": "usmc_e0008f54b892c098b19049d8",
-      "name": "The Prayer of The Apostle",
-      "language": "en",
+      "id": "usmc_e5880a3eec8ed58ccd",
+      "name": "Oh Cantádmelas",
+      "language": "es",
       "themes": [
-        "Apostolic Intercession"
+        "Alabanza",
+        "Adoración"
+      ]
+    },
+    {
+      "id": "local_apk_1781321072159_187",
+      "name": "Victoria en Cristo",
+      "language": "es",
+      "themes": [
+        "Gozo"
+      ]
+    },
+    {
+      "id": "usmc_64b5939121b21cae0260639e",
+      "name": "En Presencia Estar de Cristo",
+      "language": "es",
+      "themes": [
+        "Duermen"
+      ]
+    },
+    {
+      "id": "usmc_3e080c39f535c8fb47",
+      "name": "Tiempo de Bendicion",
+      "language": "es",
+      "themes": [
+        "Confianza"
+      ]
+    },
+    {
+      "id": "usmc_9d649edd917b1d608b4ffd02",
+      "name": "Amor en Raudal",
+      "language": "es",
+      "themes": [
+        "Gracia",
+        "Amor",
+        "Elección"
+      ]
+    },
+    {
+      "id": "f1a4b62a-050c-445a-93aa-ca420cfeb62e",
+      "name": "Primer Centenario",
+      "language": "es",
+      "themes": [
+        "Centenario"
+      ]
+    },
+    {
+      "id": "usmc_64b3e0939631ba687d6303e8",
+      "name": "La Multitud de Vestiduras Blancas",
+      "language": "es",
+      "themes": [
+        "Santa Cena"
+      ]
+    },
+    {
+      "id": "usmc_64b532c021b21cae0260578a",
+      "name": "Grandioso Amor",
+      "language": "es",
+      "themes": [
+        "Gracia"
+      ]
+    },
+    {
+      "id": "local_apk_1781321072054_529",
+      "name": "Que Grande Amor",
+      "language": "es",
+      "themes": [
+        "Amor"
+      ]
+    },
+    {
+      "id": "usmc_d3c2a51883d2e1829901ea73",
+      "name": "Alumbres mi Sendero",
+      "language": "es",
+      "themes": [
+        "Consagración"
+      ]
+    },
+    {
+      "id": "local_apk_1781321072055_323",
+      "name": "Que Seas Feliz",
+      "language": "es",
+      "themes": [
+        "Petición",
+        "Elección"
+      ]
+    },
+    {
+      "id": "e2080d98-706d-43e7-ba63-ddd8966e6063",
+      "name": "Preparada Está la Cena",
+      "language": "es",
+      "themes": [
+        "Santa Cena"
       ]
     }
   ]
