@@ -4,6 +4,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:coro_lldm/core/audio/jukebox_cover_generator.dart';
 import 'package:coro_lldm/core/audio/system_media_session.dart';
 import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
 import 'package:coro_lldm/core/midi/midi_engine.dart';
@@ -255,19 +256,34 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
         ? 'Piano · $voiceText'
         : voiceText;
 
-    unawaited(
-      SystemMediaSession.instance.updateMetadata(
+    final cantoId = song.id ?? song.canto;
+    final isPiano = state.audioMode == JukeboxAudioMode.piano;
+
+    unawaited(() async {
+      String? artworkPath;
+      try {
+        artworkPath = await JukeboxCoverGenerator.getCoverPath(
+          cantoId: cantoId,
+          title: song.canto,
+          voice: voiceText,
+          temas: const [],
+          isPianoMode: isPiano,
+        );
+      } catch (_) {}
+
+      await SystemMediaSession.instance.updateMetadata(
         title: song.canto,
         artist: '$appTitle · $modePrefix',
         album: isEn ? 'Choral Repertoire' : 'Repertorio Coral',
+        artworkPath: artworkPath,
         duration: state.duration,
         position: state.position,
         isPlaying: state.isPlaying,
         canSkipNext: state.hasNext,
         canSkipPrevious: state.hasPrevious,
         canSeek: true,
-      ),
-    );
+      );
+    }());
   }
 
   void _syncMediaSessionPlaybackState({bool force = false}) {

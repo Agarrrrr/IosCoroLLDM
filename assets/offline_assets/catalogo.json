@@ -9638,7 +9638,7 @@
     "id": "a5b2ddb2-4811-4c5e-95f3-3295418c973e",
     "nombre": "La Restauración",
     "archivo": "la-restauraci-n-1781307583269.pdf",
-    "midi_archivo": null,
+    "midi_archivo": "la-restauracion-1779081288590.mid",
     "vinculo_idioma": null,
     "temas": [
       "Centenario",
@@ -13494,7 +13494,8 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "salmo-23-1779908510230.mid"
   },
   {
     "id": "2ee1e7f8-a1c1-4a36-96ac-71a4def64f4a",
@@ -16542,6 +16543,126 @@
       "Esperanza"
     ],
     "es_privado": false,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "c10bbe48-3453-43b8-a01d-959b275b9dd1",
+    "nombre": "La Luz de Dios",
+    "archivo": "global/assets/pdf/09503861f1b4c77356d66ee63d70a14f047a212659aa25c9fff7c9f964221fa6.enc",
+    "temas": [
+      "Elección"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "25255a44-d18a-41c2-bc3e-4adc451cae73",
+    "nombre": "Mirad al Rey",
+    "archivo": "global/assets/pdf/f660d65eb5c4ad021e0dec73dbcf9e5e8995aa7a3ec09dda7cb630f0de712618.enc",
+    "temas": [
+      "Alabanza"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "d2efc043-ee9b-471b-9d2c-f40f59081c7a",
+    "nombre": "Pero Yo Creí",
+    "archivo": "global/assets/pdf/1d8a2d75ff25e326cd11df9ce3983ef7d0ae454d572d10d5f2beecc69318de72.enc",
+    "temas": [
+      "Elección"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "53e6ff34-85b2-468a-8ec9-0ce0a9fde53b",
+    "nombre": "Qué Sería de Mí",
+    "archivo": "global/assets/pdf/a5842a9a34becceed01f530aab54bd2d090baab64d3d8a7ab2d3cdcd6349e1f5.enc",
+    "temas": [
+      "Confianza"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "88d00d47-de93-480d-9275-aea8a3a1c04e",
+    "nombre": "Resplandor de la Gloria",
+    "archivo": "global/assets/pdf/57f06e6f2b3755bc3dacf7e1edcb18d29e2f7eebb93565afa4c6a93a2b2ee3b3.enc",
+    "temas": [
+      "12 de Diciembre"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "57747fa5-134c-4c27-bd40-f4894d5f6a1d",
+    "nombre": "Vamos a Jerusalén",
+    "archivo": "global/assets/pdf/bcee42729aa7a55e1c21ad4572ef580f27ceffb4b56c74322cbdce0db262d7ab.enc",
+    "temas": [
+      "1 de Agosto"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "ad37bdf6-03b0-45f6-b852-803b03be9a3d",
+    "nombre": "De Tu Mano Hasta el Final",
+    "archivo": "global/assets/pdf/b0f55dca908c30334a56a905f9e2fda2e40db5c5bc23574f09d77b9faf1e8839.enc",
+    "temas": [
+      "Confianza"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "b0713df8-41fa-4407-9892-ab6ad6bd44d9",
+    "nombre": "Alzad Vuestros Ojos",
+    "archivo": "global/assets/pdf/14b6a69af866401f0edf40ad669fcb18d4383bb1f21b5cb542a25d32157a4d1d.enc",
+    "temas": [
+      "Advenimiento"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
     "_idioma": "es",
     "idioma": "es"
   }

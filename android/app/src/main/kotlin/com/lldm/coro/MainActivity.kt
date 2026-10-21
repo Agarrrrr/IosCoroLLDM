@@ -92,6 +92,7 @@ class MainActivity : FlutterActivity() {
                     val canSkipNext = call.argument<Boolean>("canSkipNext") ?: true
                     val canSkipPrev = call.argument<Boolean>("canSkipPrevious") ?: true
                     val canSeek = call.argument<Boolean>("canSeek") ?: true
+                    val artworkPath = call.argument<String>("artworkPath")
                     MediaPlaybackService.updateMetadata(
                         context = applicationContext,
                         title = title,
@@ -103,6 +104,7 @@ class MainActivity : FlutterActivity() {
                         canSkipNext = canSkipNext,
                         canSkipPrev = canSkipPrev,
                         canSeek = canSeek,
+                        artworkPath = artworkPath,
                     )
                     result.success(null)
                 }

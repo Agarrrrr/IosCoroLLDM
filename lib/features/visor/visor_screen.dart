@@ -26,6 +26,7 @@ import 'package:coro_lldm/core/midi/midi_export_service.dart';
 import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
 import 'package:coro_lldm/core/providers/vocal_audio_provider.dart';
 import 'package:coro_lldm/core/providers/jukebox_provider.dart';
+import 'package:coro_lldm/features/jukebox/widgets/jukebox_mini_player.dart';
 import 'widgets/vocal_panel.dart';
 import 'widgets/singing_icon.dart';
 import 'package:coro_lldm/core/storage/android_file_saver.dart';
@@ -1781,6 +1782,24 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                     .setCurrentColor(color);
                                 _annotationFeedback();
                               }),
+                        ),
+
+                        // ── Mini-Reproductor Jukebox Flotante para Estudio ──
+                        Consumer(
+                          builder: (context, ref, _) {
+                            final jukebox = ref.watch(jukeboxProvider);
+                            final isJukeboxActive = jukebox.currentSong != null;
+                            final isPanelOpen = _showMidi || _showVocal || _showTools;
+                            if (!isJukeboxActive || isPanelOpen) {
+                              return const SizedBox.shrink();
+                            }
+                            return Positioned(
+                              bottom: MediaQuery.paddingOf(context).bottom + 8,
+                              left: 12,
+                              right: 12,
+                              child: const JukeboxMiniPlayer(),
+                            );
+                          },
                         ),
                       ],
                     ),

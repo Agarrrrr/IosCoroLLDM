@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coro_lldm/core/localization/app_strings.dart';
 import 'package:coro_lldm/core/monetization/ad_banner.dart';
-import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/core/providers/jukebox_provider.dart';
@@ -23,7 +23,6 @@ class JukeboxScreen extends ConsumerStatefulWidget {
 class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
     with SingleTickerProviderStateMixin {
   late final TabController _tabController;
-  bool _exitAdTriggered = false;
 
   static const List<String> _kVoces = [
     'Ensamble',
@@ -49,11 +48,30 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
   }
 
   void _closeJukebox() {
-    if (!_exitAdTriggered) {
-      _exitAdTriggered = true;
-      unawaited(AdsService.instance.onPdfOpened());
-    }
     Navigator.of(context).pop();
+  }
+
+  void _openScoreForCurrentSong() {
+    final jukebox = ref.read(jukeboxProvider);
+    final song = jukebox.currentSong;
+    if (song == null) return;
+
+    String? cantoId = song.id;
+    if (cantoId == null) {
+      final cantos = ref.read(cantosBaseProvider).valueOrNull ?? [];
+      final cleanTarget =
+          song.canto.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
+      final match = cantos.where((c) {
+        final cleanTitle =
+            c.nombre.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
+        return cleanTitle == cleanTarget;
+      }).firstOrNull;
+      cantoId = match?.id;
+    }
+
+    if (cantoId != null && mounted) {
+      context.push('/visor/$cantoId');
+    }
   }
 
   void _checkAndInitPlaylist() {
@@ -574,6 +592,62 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                   ),
                 ],
               ),
+
+              const SizedBox(height: 16),
+
+              // Botón directo para estudiar partitura sin pausar el reproductor
+              if (currentSong != null && !jukebox.isPlayingAdSpot) ...[
+                Material(
+                  color: accentColor.withValues(alpha: 0.10),
+                  borderRadius: BorderRadius.circular(16),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: _openScoreForCurrentSong,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 12,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(
+                          color: accentColor.withValues(alpha: 0.35),
+                          width: 1.2,
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.auto_stories_rounded,
+                            size: 20,
+                            color: accentColor,
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              strings.t(
+                                'Estudiar Partitura del Canto',
+                                'Study Song Sheet Music',
+                              ),
+                              style: GoogleFonts.inter(
+                                fontSize: 13.5,
+                                fontWeight: FontWeight.w700,
+                                color: scheme.onSurface,
+                              ),
+                            ),
+                          ),
+                          Icon(
+                            Icons.arrow_forward_ios_rounded,
+                            size: 14,
+                            color: accentColor,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+              ],
 
               if (!isTablet) ...[
                 const SizedBox(height: 18),
@@ -1123,6 +1197,15 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     ),
                   ),
               actions: [
+                if (currentSong != null && !jukebox.isPlayingAdSpot)
+                  IconButton(
+                    icon: Icon(
+                      Icons.auto_stories_rounded,
+                      color: accentColor,
+                    ),
+                    tooltip: strings.t('Estudiar partitura', 'Study sheet music'),
+                    onPressed: _openScoreForCurrentSong,
+                  ),
                 IconButton(
                   icon: Icon(
                     jukebox.isShuffle

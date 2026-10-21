@@ -551,7 +551,11 @@ private final class MediaSessionCoordinator {
         MPNowPlayingInfoPropertyPlaybackRate: isPlaying ? 1.0 : 0.0,
         MPNowPlayingInfoPropertyDefaultPlaybackRate: 1.0,
       ]
-      if let artwork = cachedArtwork {
+      if let artworkPath = args["artworkPath"] as? String,
+         !artworkPath.isEmpty,
+         let img = UIImage(contentsOfFile: artworkPath) {
+        info[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: img.size) { _ in img }
+      } else if let artwork = cachedArtwork {
         info[MPMediaItemPropertyArtwork] = artwork
       }
       currentMetadata = info

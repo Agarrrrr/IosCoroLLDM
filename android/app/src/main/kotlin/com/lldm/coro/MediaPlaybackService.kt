@@ -8,6 +8,7 @@ import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ServiceInfo
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.media.MediaMetadata
 import android.media.session.MediaSession
@@ -17,6 +18,7 @@ import android.os.Build
 import android.os.IBinder
 import android.os.PowerManager
 import android.os.SystemClock
+import java.io.File
 
 class MediaPlaybackService : Service() {
 
@@ -44,6 +46,8 @@ class MediaPlaybackService : Service() {
         private var cachedCanSkipNext: Boolean = true
         private var cachedCanSkipPrev: Boolean = true
         private var cachedCanSeek: Boolean = true
+        private var cachedArtworkPath: String? = null
+        private var cachedArtworkBitmap: Bitmap? = null
 
         fun updateMetadata(
             context: Context,
@@ -56,6 +60,7 @@ class MediaPlaybackService : Service() {
             canSkipNext: Boolean,
             canSkipPrev: Boolean,
             canSeek: Boolean,
+            artworkPath: String? = null,
         ) {
             cachedTitle = title
             cachedArtist = artist
@@ -66,6 +71,20 @@ class MediaPlaybackService : Service() {
             cachedCanSkipNext = canSkipNext
             cachedCanSkipPrev = canSkipPrev
             cachedCanSeek = canSeek
+
+            if (artworkPath != cachedArtworkPath) {
+                cachedArtworkPath = artworkPath
+                cachedArtworkBitmap = if (!artworkPath.isNullOrEmpty()) {
+                    try {
+                        val file = File(artworkPath)
+                        if (file.exists() && file.length() > 0) {
+                            BitmapFactory.decodeFile(artworkPath)
+                        } else null
+                    } catch (_: Exception) {
+                        null
+                    }
+                } else null
+            }
 
             val svc = instance
             if (svc != null) {
@@ -272,12 +291,14 @@ class MediaPlaybackService : Service() {
             .putString(MediaMetadata.METADATA_KEY_ALBUM, cachedAlbum)
             .putLong(MediaMetadata.METADATA_KEY_DURATION, cachedDurationMs.coerceAtLeast(0L))
 
-        try {
-            val bmp = BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
-            if (bmp != null) {
-                metaBuilder.putBitmap(MediaMetadata.METADATA_KEY_ALBUM_ART, bmp)
-            }
+        val bmp = cachedArtworkBitmap ?: try {
+            BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
         } catch (_: Exception) {
+            null
+        }
+        if (bmp != null) {
+            metaBuilder.putBitmap(MediaMetadata.METADATA_KEY_ALBUM_ART, bmp)
+            metaBuilder.putBitmap(MediaMetadata.METADATA_KEY_ART, bmp)
         }
         session.setMetadata(metaBuilder.build())
 
@@ -360,6 +381,15 @@ class MediaPlaybackService : Service() {
             .setVisibility(Notification.VISIBILITY_PUBLIC)
             .setOngoing(cachedIsPlaying)
             .setOnlyAlertOnce(true)
+
+        val artBmp = cachedArtworkBitmap ?: try {
+            BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
+        } catch (_: Exception) {
+            null
+        }
+        if (artBmp != null) {
+            builder.setLargeIcon(artBmp)
+        }
 
         val compactIndices = mutableListOf<Int>()
         var actionIndex = 0
