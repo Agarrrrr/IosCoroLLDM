@@ -35,15 +35,16 @@ class AppDrawer extends ConsumerWidget {
     final soloFavoritos = ref.watch(soloFavoritosProvider);
     final strings = AppStrings.of(context);
 
-    // Lista de temas dinámicos (de todo el catálogo)
-    final temasUnicos = cantosBase
-        .where((c) => c.idioma == language)
-        .expand((c) => c.temas)
-        .map((e) => e.toString().trim())
-        .where((e) => e.isNotEmpty)
-        .toSet()
-        .toList()
-      ..sort();
+    // Lista de temas dinámicos (de todo el catálogo con deduplicación robusta)
+    final temasMap = <String, String>{};
+    for (final canto in cantosBase.where((c) => c.idioma == language)) {
+      for (final rawTema in canto.temas) {
+        final tema = rawTema.trim();
+        if (tema.isEmpty) continue;
+        temasMap.putIfAbsent(tema.toLowerCase(), () => tema);
+      }
+    }
+    final temasUnicos = temasMap.values.toList()..sort();
 
     return Drawer(
       backgroundColor: theme.scaffoldBackgroundColor,
