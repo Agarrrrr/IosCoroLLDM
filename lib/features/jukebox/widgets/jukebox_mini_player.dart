@@ -35,7 +35,7 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
     final jukebox = ref.watch(jukeboxProvider);
     final currentSong = jukebox.currentSong;
 
-    if (currentSong == null && jukebox.playlist.isEmpty) {
+    if (jukebox.isDismissed || currentSong == null) {
       return const SizedBox.shrink();
     }
 
@@ -147,10 +147,8 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                           children: [
                             Text(
                               jukebox.isPlayingAdSpot
-                                  ? '${strings.appTitle} Premium'
-                                  : (currentSong?.canto ??
-                                      strings.t(
-                                          'Selecciona un canto', 'Select a song')),
+                                  ? ' Premium'
+                                  : currentSong.canto,
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.inter(
@@ -230,6 +228,14 @@ class _JukeboxMiniPlayerState extends ConsumerState<JukeboxMiniPlayer> {
                                 jukebox.isPlayingAdSpot)
                             ? null
                             : _handleNext,
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.close_rounded, size: 20),
+                        color: scheme.onSurfaceVariant.withValues(alpha: 0.70),
+                        tooltip:
+                            strings.t('Cerrar reproductor', 'Close player'),
+                        onPressed: () =>
+                            ref.read(jukeboxProvider.notifier).close(),
                       ),
                     ],
                   ),

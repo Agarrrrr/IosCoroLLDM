@@ -2244,7 +2244,8 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                           builder: (context, ref, _) {
                             final jukebox = ref.watch(jukeboxProvider);
 
-                            final isJukeboxActive = jukebox.currentSong != null;
+                            final isJukeboxActive = !jukebox.isDismissed &&
+                                jukebox.currentSong != null;
 
                             final isPanelOpen =
                                 _showMidi || _showVocal || _showTools;

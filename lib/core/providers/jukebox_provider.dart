@@ -49,6 +49,7 @@ class JukeboxState {
   final JukeboxPlaylistMode playlistMode;
   final String language;
   final bool isOffline;
+  final bool isDismissed;
 
   const JukeboxState({
     this.playlist = const [],
@@ -66,6 +67,7 @@ class JukeboxState {
     this.playlistMode = JukeboxPlaylistMode.allSongs,
     this.language = 'es',
     this.isOffline = false,
+    this.isDismissed = false,
   });
 
   VocalSong? get currentSong {
@@ -101,6 +103,7 @@ class JukeboxState {
     JukeboxPlaylistMode? playlistMode,
     String? language,
     bool? isOffline,
+    bool? isDismissed,
   }) {
     return JukeboxState(
       playlist: playlist ?? this.playlist,
@@ -118,6 +121,7 @@ class JukeboxState {
       playlistMode: playlistMode ?? this.playlistMode,
       language: language ?? this.language,
       isOffline: isOffline ?? this.isOffline,
+      isDismissed: isDismissed ?? this.isDismissed,
     );
   }
 }
@@ -1092,6 +1096,14 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     if (state.playlistMode == JukeboxPlaylistMode.favorites) {
       _persistCustomOrder();
     }
+  }
+
+  Future<void> close() async {
+    await stop();
+    state = state.copyWith(
+      currentIndex: -1,
+      isDismissed: true,
+    );
   }
 
   Future<void> stop() async {
