@@ -5,6 +5,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:pointycastle/export.dart';
 
 class VocalTrack {
   final String archivo;
@@ -179,8 +180,27 @@ class VocalAudioService {
     }
   }
 
+  static const String _hmacSecret = 'c0r0-lldm-pr0t3ct-2026';
+
   String getStreamUrl(String r2Path) {
-    return '$baseUrl/$r2Path';
+    try {
+      final now = DateTime.now().toUtc().millisecondsSinceEpoch ~/ 1000;
+      final exp = now + 14400; // Válido por 4 horas
+      final payload = utf8.encode('$r2Path:$exp');
+      final hmac = HMac(SHA256Digest(), 64)
+        ..init(KeyParameter(Uint8List.fromList(utf8.encode(_hmacSecret))));
+      final out = Uint8List(hmac.macSize);
+      hmac.update(Uint8List.fromList(payload), 0, payload.length);
+      hmac.doFinal(out, 0);
+      final sig = out
+          .map((b) => b.toRadixString(16).padLeft(2, '0'))
+          .join()
+          .substring(0, 16);
+      return '$baseUrl/$r2Path?exp=$exp&sig=$sig';
+    } catch (e) {
+      debugPrint('⚠️ [VocalAudioService] Error firmando URL: $e');
+      return '$baseUrl/$r2Path';
+    }
   }
 
   Future<String> getLocalAudioDirectory() async {

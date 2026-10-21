@@ -31,6 +31,39 @@ function getContentType(filename) {
   return 'application/octet-stream'
 }
 
+const HMAC_SECRET = 'c0r0-lldm-pr0t3ct-2026'
+
+async function verifySignature(subPath, expStr, sigStr) {
+  if (!expStr || !sigStr) return false
+  const now = Math.floor(Date.now() / 1000)
+  const exp = parseInt(expStr, 10)
+  // Rechazar si expiró o si el timestamp es absurdo (más de 5 minutos en el pasado)
+  if (isNaN(exp) || exp < now - 300) return false
+
+  const enc = new TextEncoder()
+  const key = await crypto.subtle.importKey(
+    'raw',
+    enc.encode(HMAC_SECRET),
+    { name: 'HMAC', hash: 'SHA-256' },
+    false,
+    ['sign']
+  )
+  const payload = `${subPath}:${exp}`
+  const signatureBytes = await crypto.subtle.sign('HMAC', key, enc.encode(payload))
+  const hex = Array.from(new Uint8Array(signatureBytes))
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('')
+    .substring(0, 16)
+  return hex === sigStr
+}
+
+function isKnownScraper(request) {
+  const ua = (request.headers.get('User-Agent') || '').toLowerCase()
+  if (!ua) return true
+  const scrapers = ['python', 'curl', 'wget', 'scrapy', 'aiohttp', 'bot', 'spider', 'crawler', 'go-http-client', 'postman']
+  return scrapers.some((s) => ua.includes(s))
+}
+
 export default {
   async fetch(request, env) {
     if (request.method === 'OPTIONS') return new Response(null, { headers: corsFor(request) })
@@ -43,15 +76,37 @@ export default {
 
     let r2Key = null
 
-    // 1. Ruta de previews históricas: /previews/...
+    // 1. Ruta de previews históricas: /previews/... (Demos públicos de 30s)
     const previewMatch = rawPath.match(/^\/previews\/([a-z0-9][a-z0-9._-]*\.(opus|m4a))$/i)
     if (previewMatch) {
       r2Key = `previews/${previewMatch[1]}`
     }
 
-    // 2. Ruta de audios completos y manifiestos: /audio/...
+    // 2. Ruta de audios completos y manifiesto: /audio/... (Protegido contra scraping)
     else if (rawPath.startsWith('/audio/')) {
       const subPath = rawPath.replace(/^\/audio\//, '')
+
+      // A) Bloquear manifiesto público (los clientes móviles ya lo llevan empaquetado)
+      if (subPath.toLowerCase() === 'voces_manifest.json') {
+        return new Response('Forbidden', { status: 403, headers: corsFor(request) })
+      }
+
+      // B) Bloquear bots y scrapers comunes
+      if (isKnownScraper(request)) {
+        return new Response('Forbidden', { status: 403, headers: corsFor(request) })
+      }
+
+      // C) Validar firma HMAC y vigencia temporal
+      const exp = url.searchParams.get('exp')
+      const sig = url.searchParams.get('sig')
+      const isValid = await verifySignature(subPath, exp, sig)
+      if (!isValid) {
+        return new Response('Forbidden: Invalid or expired audio signature', {
+          status: 403,
+          headers: corsFor(request),
+        })
+      }
+
       if (subPath) {
         r2Key = `audio/${subPath}`
       }
@@ -88,7 +143,7 @@ export default {
 
     const headers = corsFor(request)
     headers.set('Content-Type', getContentType(r2Key))
-    headers.set('Cache-Control', 'public, max-age=31536000, immutable')
+    headers.set('Cache-Control', 'private, max-age=14400')
     headers.set('Accept-Ranges', 'bytes')
     if (object.httpEtag) {
       headers.set('ETag', object.httpEtag)
