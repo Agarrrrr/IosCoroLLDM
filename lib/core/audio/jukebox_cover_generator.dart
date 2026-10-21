@@ -25,13 +25,15 @@ class JukeboxCoverGenerator {
       _cachedEmblemImage = frame.image;
       return _cachedEmblemImage;
     } catch (e) {
-      debugPrint('⚠️ [JukeboxCoverGenerator] Error cargando emblema oficial: $e');
+      debugPrint(
+          '⚠️ [JukeboxCoverGenerator] Error cargando emblema oficial: $e');
       return null;
     }
   }
 
   /// Obtiene o genera la ruta local de la imagen de carátula para el sistema,
-  /// respetando los colores exactos del tema activo del usuario.
+  /// respetando los colores exactos del tema activo del usuario (Claro, Sepia,
+  /// Azul Oscuro, Gris / Quiet y OLED) y su color de resalte personalizado.
   static Future<String?> getCoverPath({
     required String cantoId,
     required String title,
@@ -42,8 +44,11 @@ class JukeboxCoverGenerator {
     Color? customAccent,
   }) async {
     try {
+      final accentHex = customAccent != null
+          ? customAccent.toARGB32().toRadixString(16)
+          : 'def';
       final safeKey =
-          '${cantoId}_${voice}_${isPianoMode ? 'piano' : 'vocal'}_${themeMode.name}'
+          '${cantoId}_${voice}_${isPianoMode ? 'piano' : 'vocal'}_${themeMode.name}_$accentHex'
               .replaceAll(RegExp(r'[^a-zA-Z0-9_-]'), '_');
 
       if (_memoryPathCache.containsKey(safeKey)) {
@@ -104,11 +109,11 @@ class JukeboxCoverGenerator {
     final isWhite = themeMode == AppThemeMode.claro;
     final isSepia = themeMode == AppThemeMode.sepia;
 
-    // Paleta exacta según el tema del usuario
+    // Paleta exacta según el tema específico del usuario
     final Color bgColor;
     final Color bgCenterGlow;
     final Color bgEdge;
-    final Color goldColor;
+    final Color accentColor;
     final Color titleColor;
     final Color temasColor;
     final Color pillBgColor;
@@ -116,73 +121,110 @@ class JukeboxCoverGenerator {
     final Color pillTextColor;
     final Color footerColor;
 
-    if (isWhite) {
-      // Tema Blanco: fondo blanco inmaculado, resplandor dorado suave, tipografía oscura
-      goldColor = customAccent ?? const Color(0xFFD4AF37);
-      bgColor = const Color(0xFFFFFFFF);
-      bgCenterGlow = const Color(0xFFFAF6EB);
-      bgEdge = const Color(0xFFF7F7F7);
-      titleColor = const Color(0xFF231C18);
-      temasColor = const Color(0xFF8C732A);
-      pillBgColor = const Color(0xFFF6F1DF);
-      pillBorderColor = const Color(0xFFD4AF37);
-      pillTextColor = const Color(0xFF8C732A);
-      footerColor = const Color(0xFF8C732A);
-    } else if (isSepia) {
-      // Tema Sepia: pergamino cálido, dorado antiguo, tipografía café profunda
-      goldColor = customAccent ?? const Color(0xFF9E7B35);
-      bgColor = const Color(0xFFF5ECD7);
-      bgCenterGlow = const Color(0xFFEBDCBF);
-      bgEdge = const Color(0xFFE5D5B5);
-      titleColor = const Color(0xFF3E2723);
-      temasColor = const Color(0xFF795548);
-      pillBgColor = const Color(0xFFEFE2C8);
-      pillBorderColor = const Color(0xFF9E7B35);
-      pillTextColor = const Color(0xFF4E342E);
-      footerColor = const Color(0xFF795548);
-    } else {
-      // Tema Oscuro / OLED / Quiet: obsidiana sagrada, resplandor caoba, tipografía marfil
-      goldColor = customAccent ?? const Color(0xFFD4AF37);
-      bgColor = const Color(0xFF0F0C0A);
-      bgCenterGlow = const Color(0xFF2C221A);
-      bgEdge = const Color(0xFF14100D);
-      titleColor = const Color(0xFFFAF8F2);
-      temasColor = const Color(0xFFC5A55B);
-      pillBgColor = const Color(0x3FD4AF37);
-      pillBorderColor = const Color(0xAAD4AF37);
-      pillTextColor = const Color(0xFFFBF4D8);
-      footerColor = const Color(0x99D4AF37);
+    switch (themeMode) {
+      case AppThemeMode.claro:
+        // Blanco puro con halo celestial cálido y resalte dorado/personalizado
+        accentColor = customAccent ?? const Color(0xFFD4AF37);
+        bgColor = const Color(0xFFFAF9F6);
+        bgCenterGlow = Color.lerp(const Color(0xFFFFFFFF), accentColor, 0.16)!;
+        bgEdge = const Color(0xFFF0EFEB);
+        titleColor = const Color(0xFF231C18);
+        temasColor = Color.lerp(const Color(0xFF6E5D4F), accentColor, 0.45)!;
+        pillBgColor = accentColor.withValues(alpha: 0.14);
+        pillBorderColor = accentColor.withValues(alpha: 0.65);
+        pillTextColor = Color.lerp(const Color(0xFF231C18), accentColor, 0.25)!;
+        footerColor = Color.lerp(const Color(0xFF6E5D4F), accentColor, 0.45)!;
+        break;
+
+      case AppThemeMode.sepia:
+        // Sepia / pergamino cálido con resplandor dorado sacro
+        accentColor = customAccent ?? const Color(0xFF9E7B35);
+        bgColor = const Color(0xFFF5ECD7);
+        bgCenterGlow = Color.lerp(const Color(0xFFFFF9ED), accentColor, 0.20)!;
+        bgEdge = const Color(0xFFE5D5B5);
+        titleColor = const Color(0xFF3E2723);
+        temasColor = Color.lerp(const Color(0xFF795548), accentColor, 0.45)!;
+        pillBgColor = accentColor.withValues(alpha: 0.16);
+        pillBorderColor = accentColor.withValues(alpha: 0.65);
+        pillTextColor = const Color(0xFF3E2723);
+        footerColor = Color.lerp(const Color(0xFF795548), accentColor, 0.45)!;
+        break;
+
+      case AppThemeMode.oscuroNormal:
+        // Azul oscuro / Medianoche con halo celestial oceánico difuminado
+        accentColor = customAccent ?? const Color(0xFFF6D96B);
+        bgColor = const Color(0xFF0F1722);
+        bgCenterGlow = Color.lerp(const Color(0xFF1B2A3D), accentColor, 0.24)!;
+        bgEdge = const Color(0xFF080D14);
+        titleColor = const Color(0xFFF4F7FB);
+        temasColor = Color.lerp(const Color(0xFF8CA5C2), accentColor, 0.45)!;
+        pillBgColor = accentColor.withValues(alpha: 0.20);
+        pillBorderColor = accentColor.withValues(alpha: 0.70);
+        pillTextColor = const Color(0xFFF4F7FB);
+        footerColor = Color.lerp(const Color(0xFF8CA5C2), accentColor, 0.55)!;
+        break;
+
+      case AppThemeMode.quiet:
+        // Gris / Grafito con resplandor moderno y armónico
+        accentColor = customAccent ?? const Color(0xFFF6D96B);
+        bgColor = const Color(0xFF26282B);
+        bgCenterGlow = Color.lerp(const Color(0xFF3A3D42), accentColor, 0.24)!;
+        bgEdge = const Color(0xFF18191B);
+        titleColor = const Color(0xFFF5F6F8);
+        temasColor = Color.lerp(const Color(0xFFA2A7AF), accentColor, 0.45)!;
+        pillBgColor = accentColor.withValues(alpha: 0.20);
+        pillBorderColor = accentColor.withValues(alpha: 0.70);
+        pillTextColor = const Color(0xFFF5F6F8);
+        footerColor = Color.lerp(const Color(0xFFA2A7AF), accentColor, 0.55)!;
+        break;
+
+      case AppThemeMode.oscuro:
+        // OLED Negro puro obsidiana con resplandor sagrado
+        accentColor = customAccent ?? const Color(0xFFF6D96B);
+        bgColor = const Color(0xFF070707);
+        bgCenterGlow = Color.lerp(const Color(0xFF201B14), accentColor, 0.28)!;
+        bgEdge = const Color(0xFF000000);
+        titleColor = const Color(0xFFFFFFFF);
+        temasColor = Color.lerp(const Color(0xFFB8B3A8), accentColor, 0.45)!;
+        pillBgColor = accentColor.withValues(alpha: 0.22);
+        pillBorderColor = accentColor.withValues(alpha: 0.75);
+        pillTextColor = const Color(0xFFFFFFFF);
+        footerColor = Color.lerp(const Color(0xFFB8B3A8), accentColor, 0.60)!;
+        break;
     }
 
-    // 1. Fondo Degradado
+    // 1. Fondo Degradado con difuminado concéntrico hacia el color de resalte
     final bgPaint = Paint()
       ..shader = ui.Gradient.radial(
         const Offset(size / 2, size * 0.35),
-        size * 0.70,
+        size * 0.75,
         [bgCenterGlow, bgColor, bgEdge],
-        const [0.0, 0.60, 1.0],
+        const [0.0, 0.55, 1.0],
       );
     canvas.drawRect(const Rect.fromLTWH(0, 0, size, size), bgPaint);
 
-    // 2. Anillos y Halos Sagrados
+    // 2. Anillos y Halos Sagrados teñidos con el color de resalte
     final haloCenter = const Offset(size / 2, 142);
     final halo1 = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.5
-      ..color = goldColor.withValues(alpha: isWhite ? 0.35 : 0.25);
+      ..color = accentColor.withValues(
+          alpha: isWhite ? 0.35 : (isSepia ? 0.30 : 0.25));
     canvas.drawCircle(haloCenter, 115, halo1);
 
     final halo2 = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.0
-      ..color = goldColor.withValues(alpha: isWhite ? 0.22 : 0.15);
+      ..color = accentColor.withValues(
+          alpha: isWhite ? 0.22 : (isSepia ? 0.18 : 0.15));
     canvas.drawCircle(haloCenter, 90, halo2);
 
-    // Marcos exteriores redondeados estilo iOS / Tarjeta
+    // Marcos exteriores redondeados estilo tarjeta elegante
     final outerFrame = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.6
-      ..color = goldColor.withValues(alpha: isWhite ? 0.45 : 0.35);
+      ..color = accentColor.withValues(
+          alpha: isWhite ? 0.45 : (isSepia ? 0.40 : 0.35));
     canvas.drawRRect(
       RRect.fromRectAndRadius(
         const Rect.fromLTWH(24, 24, size - 48, size - 48),
@@ -194,7 +236,8 @@ class JukeboxCoverGenerator {
     final innerFrame = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 0.8
-      ..color = goldColor.withValues(alpha: isWhite ? 0.22 : 0.16);
+      ..color = accentColor.withValues(
+          alpha: isWhite ? 0.25 : (isSepia ? 0.20 : 0.18));
     canvas.drawRRect(
       RRect.fromRectAndRadius(
         const Rect.fromLTWH(32, 32, size - 64, size - 64),
@@ -203,30 +246,31 @@ class JukeboxCoverGenerator {
       innerFrame,
     );
 
-    // 3. Emblema Oficial de la Aplicación (assets/brand/emblem-transparent.png)
+    // 3. Emblema Oficial con Difuminado / Resplandor (Glow)
     if (emblem != null) {
-      // Halo detrás del logo oficial
+      // Halo difuminado profundo detrás del logo oficial con el color de resalte
       final glowPaint = Paint()
         ..style = PaintingStyle.fill
-        ..color = goldColor.withValues(alpha: isWhite ? 0.15 : 0.25)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 16);
-      canvas.drawCircle(haloCenter, 36, glowPaint);
+        ..color =
+            accentColor.withValues(alpha: isWhite || isSepia ? 0.22 : 0.35)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 24);
+      canvas.drawCircle(haloCenter, 42, glowPaint);
 
       // Círculo contenedor sutil
       final circleBg = Paint()
         ..style = PaintingStyle.fill
-        ..color = goldColor.withValues(alpha: isWhite ? 0.08 : 0.12);
+        ..color = accentColor.withValues(alpha: isWhite ? 0.08 : 0.12);
       canvas.drawCircle(haloCenter, 38, circleBg);
 
       final circleBorder = Paint()
         ..style = PaintingStyle.stroke
         ..strokeWidth = 1.0
-        ..color = goldColor.withValues(alpha: isWhite ? 0.40 : 0.35);
+        ..color = accentColor.withValues(alpha: isWhite ? 0.40 : 0.35);
       canvas.drawCircle(haloCenter, 38, circleBorder);
 
-      // Dibujar emblema oficial tintado
+      // Dibujar emblema oficial tintado con el color de resalte
       final emblemPaint = Paint()
-        ..colorFilter = ColorFilter.mode(goldColor, BlendMode.srcIn);
+        ..colorFilter = ColorFilter.mode(accentColor, BlendMode.srcIn);
       const emblemSize = 52.0;
       final src = Rect.fromLTWH(
         0,
@@ -242,11 +286,10 @@ class JukeboxCoverGenerator {
       canvas.drawImageRect(emblem, src, dst, emblemPaint);
     }
 
-    // 4. Título del Canto (Tipografía elegante)
+    // 4. Título del Canto (Tipografía elegante con sombras acordes al tema)
     final cleanTitle = title.trim();
-    final titleFontSize = cleanTitle.length > 28
-        ? 26.0
-        : (cleanTitle.length > 18 ? 30.0 : 34.0);
+    final titleFontSize =
+        cleanTitle.length > 28 ? 26.0 : (cleanTitle.length > 18 ? 30.0 : 34.0);
 
     final titlePainter = TextPainter(
       text: TextSpan(
@@ -265,6 +308,11 @@ class JukeboxCoverGenerator {
                     offset: const Offset(0, 1),
                     blurRadius: 4,
                   ),
+                  Shadow(
+                    color: accentColor.withValues(alpha: 0.20),
+                    offset: Offset.zero,
+                    blurRadius: 8,
+                  ),
                 ]
               : [
                   const Shadow(
@@ -273,9 +321,9 @@ class JukeboxCoverGenerator {
                     blurRadius: 8,
                   ),
                   Shadow(
-                    color: goldColor.withValues(alpha: 0.25),
-                    offset: const Offset(0, 0),
-                    blurRadius: 14,
+                    color: accentColor.withValues(alpha: 0.35),
+                    offset: Offset.zero,
+                    blurRadius: 16,
                   ),
                 ],
         ),
