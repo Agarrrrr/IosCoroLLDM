@@ -176,8 +176,8 @@ class AppTheme {
   static List<Color> _surfaces(AppThemeMode mode) => switch (mode) {
         AppThemeMode.claro => const [
             Colors.white,
-            Color(0xFFF8F9FA),
-            Color(0xFFECEEF0)
+            Color(0xFFFDFDFD),
+            Color(0xFFFCFCFC)
           ],
         AppThemeMode.oscuro => const [
             Colors.black,
@@ -200,6 +200,9 @@ class AppTheme {
 
   static Color adaptAccent(AppThemeMode mode, Color baseColor) {
     final hsv = HSVColor.fromColor(baseColor);
+    if (mode == AppThemeMode.claro && hsv.hue >= 35 && hsv.hue <= 65) {
+      return const Color(0xFFD4AF37);
+    }
     late final double saturation;
     late final double value;
 
@@ -253,23 +256,43 @@ class AppTheme {
     final selected =
         Color.alphaBlend(original.primary.withValues(alpha: 0.10), surface);
     final accentHue = HSVColor.fromColor(accentColor);
+    final isGold = mode == AppThemeMode.claro &&
+        accentHue.hue >= 35 &&
+        accentHue.hue <= 65;
     final brightGold = mode == AppThemeMode.claro &&
         accentHue.hue >= 35 &&
         accentHue.hue <= 60 &&
         accentHue.saturation >= 0.35;
-    // Gold fills can stay luminous: their labels use onFill for contrast.
-    // Primary text/icons still use the separately contrast-tested foreground.
-    final solidAccent = brightGold
-        ? const Color(0xFFFFD54F)
-        : AccessibleColors.against(accentColor, surfaces, minimum: 3.1);
+    final solidAccent = isGold
+        ? const Color(0xFFD4AF37)
+        : (brightGold
+            ? const Color(0xFFFFD54F)
+            : AccessibleColors.against(accentColor, surfaces, minimum: 3.1));
     final backgrounds = [...surfaces, selected];
-    final primary = AccessibleColors.against(original.primary, backgrounds);
-    final secondary = AccessibleColors.against(original.secondary, backgrounds);
-    final text = AccessibleColors.against(original.onSurface, backgrounds);
-    final muted =
-        AccessibleColors.against(original.onSurfaceVariant, backgrounds);
-    final outline =
-        AccessibleColors.against(original.outline, backgrounds, minimum: 3.2);
+    final primary = isGold
+        ? const Color(0xFFD4AF37)
+        : AccessibleColors.against(original.primary, backgrounds);
+    final secondary = isGold
+        ? const Color(0xFFD4AF37)
+        : AccessibleColors.against(original.secondary, backgrounds);
+    final text = mode == AppThemeMode.claro
+        ? const Color(0xFF333333)
+        : AccessibleColors.against(original.onSurface, backgrounds);
+    final muted = mode == AppThemeMode.claro
+        ? const Color(0xFF666666)
+        : AccessibleColors.against(original.onSurfaceVariant, backgrounds);
+    final outline = mode == AppThemeMode.claro
+        ? const Color(0xFFEAEAEA)
+        : AccessibleColors.against(original.outline, backgrounds, minimum: 3.2);
+    final outlineVariant = mode == AppThemeMode.claro
+        ? const Color(0xFFE0E0E0)
+        : outline;
+    final softAccent = isGold ? const Color(0xFFF6F1DF) : selected;
+    final strongAccent = isGold ? const Color(0xFF8C732A) : primary;
+    final shadowColor = isGold
+        ? const Color(0x66D4AF37)
+        : Colors.black.withValues(alpha: 0.12);
+
     final scheme = original.copyWith(
       primary: primary,
       onPrimary: _onAccent(primary),
@@ -277,21 +300,22 @@ class AppTheme {
       onSecondary: _onAccent(secondary),
       tertiary: secondary,
       onTertiary: _onAccent(secondary),
-      primaryContainer: solidAccent,
-      onPrimaryContainer: _onAccent(solidAccent),
-      secondaryContainer: selected,
+      primaryContainer: isGold ? softAccent : solidAccent,
+      onPrimaryContainer: isGold ? strongAccent : _onAccent(solidAccent),
+      secondaryContainer: softAccent,
       onSecondaryContainer: text,
-      tertiaryContainer: selected,
+      tertiaryContainer: softAccent,
       onTertiaryContainer: text,
       onSurface: text,
       onSurfaceVariant: muted,
       surfaceContainerLowest: surfaces.first,
-      surfaceContainerLow: surface,
-      surfaceContainer: container,
-      surfaceContainerHigh: container,
-      surfaceContainerHighest: container,
+      surfaceContainerLow: mode == AppThemeMode.claro ? const Color(0xFFFCFCFC) : surface,
+      surfaceContainer: mode == AppThemeMode.claro ? const Color(0xFFF5F5F5) : container,
+      surfaceContainerHigh: mode == AppThemeMode.claro ? const Color(0xFFF5F5F5) : container,
+      surfaceContainerHighest: mode == AppThemeMode.claro ? const Color(0xFFF5F5F5) : container,
       outline: outline,
-      outlineVariant: outline,
+      outlineVariant: outlineVariant,
+      shadow: isGold ? const Color(0x66D4AF37) : original.shadow,
     );
     return theme.copyWith(
       colorScheme: scheme,
@@ -299,11 +323,13 @@ class AppTheme {
           foregroundColor: primary,
           backgroundColor:
               theme.appBarTheme.backgroundColor?.withValues(alpha: 1)),
-      shadowColor: Colors.black.withValues(alpha: 0.12),
+      shadowColor: shadowColor,
       inputDecorationTheme: theme.inputDecorationTheme.copyWith(
+        fillColor: mode == AppThemeMode.claro ? const Color(0xFFF5F5F5) : null,
+        filled: mode == AppThemeMode.claro ? true : null,
         hintStyle: TextStyle(color: muted),
         enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: outline),
+            borderSide: BorderSide(color: outlineVariant),
             borderRadius: BorderRadius.circular(12)),
         focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: primary, width: 2),
@@ -317,18 +343,21 @@ class AppTheme {
 
     switch (mode) {
       case AppThemeMode.claro:
+        final hsv = HSVColor.fromColor(accentColor);
+        final isGold = hsv.hue >= 35 && hsv.hue <= 65;
+        final effective = isGold ? const Color(0xFFD4AF37) : effectiveAccent;
         return ThemeData(
           colorScheme: ColorScheme.light(
-            primary: effectiveAccent,
-            onPrimary: _onAccent(effectiveAccent),
-            secondary: effectiveAccent,
+            primary: effective,
+            onPrimary: _onAccent(effective),
+            secondary: effective,
             surface: Colors.white,
           ),
-          scaffoldBackgroundColor: const Color(0xFFF8F9FA),
+          scaffoldBackgroundColor: const Color(0xFFFDFDFD),
           fontFamily: 'Inter',
           appBarTheme: AppBarTheme(
-            backgroundColor: const Color(0xFFF8F9FA),
-            foregroundColor: effectiveAccent,
+            backgroundColor: const Color(0xF2FFFFFF),
+            foregroundColor: effective,
             elevation: 0,
           ),
         );

@@ -4,14 +4,14 @@
   "base_url": "https://coro-lldm-previews.huritolentino.workers.dev/audio",
   "idiomas": {
     "es": {
-      "total_alabanzas": 123,
+      "total_alabanzas": 156,
       "totales_bytes": {
-        "Soprano": 464373440,
-        "Contralto": 463541851,
-        "Tenor": 463693533,
-        "Bajo": 463763190,
-        "Ensamble": 357349109,
-        "total": 2212721123
+        "Soprano": 597645741,
+        "Contralto": 597499396,
+        "Tenor": 597478670,
+        "Bajo": 597621051,
+        "Ensamble": 494819182,
+        "total": 2897816808
       },
       "cantos": [
         {
@@ -1545,6 +1545,341 @@
           }
         },
         {
+          "id": "usmc_47d16b904344db4db6db6432",
+          "canto": "A Dónde Iré",
+          "carpeta": "150. A Dónde Iré",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "A Dónde Iré - Bajo.mp3",
+              "size_bytes": 2289161,
+              "r2_path": "es/150. A Dónde Iré/A Dónde Iré - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "A Dónde Iré - Contralto.mp3",
+              "size_bytes": 2289161,
+              "r2_path": "es/150. A Dónde Iré/A Dónde Iré - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "A Dónde Iré - Ensamble.mp3",
+              "size_bytes": 2289161,
+              "r2_path": "es/150. A Dónde Iré/A Dónde Iré - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "A Dónde Iré - Soprano.mp3",
+              "size_bytes": 2289161,
+              "r2_path": "es/150. A Dónde Iré/A Dónde Iré - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "A Dónde Iré - Tenor.mp3",
+              "size_bytes": 2289161,
+              "r2_path": "es/150. A Dónde Iré/A Dónde Iré - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "43a441a6-84a6-5781-adf5-0fbaf9868027",
+          "canto": "A los Pies del Salvador",
+          "carpeta": "151. A los Pies del Salvador",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "A los Pies del Salvador - Bajo.mp3",
+              "size_bytes": 5334412,
+              "r2_path": "es/151. A los Pies del Salvador/A los Pies del Salvador - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "A los Pies del Salvador - Contralto.mp3",
+              "size_bytes": 5334412,
+              "r2_path": "es/151. A los Pies del Salvador/A los Pies del Salvador - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "A los Pies del Salvador - Ensamble.mp3",
+              "size_bytes": 5334412,
+              "r2_path": "es/151. A los Pies del Salvador/A los Pies del Salvador - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "A los Pies del Salvador - Soprano.mp3",
+              "size_bytes": 5334412,
+              "r2_path": "es/151. A los Pies del Salvador/A los Pies del Salvador - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "A los Pies del Salvador - Tenor.mp3",
+              "size_bytes": 5334412,
+              "r2_path": "es/151. A los Pies del Salvador/A los Pies del Salvador - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "3ad4f5e6-ca67-4792-8747-4a86fd4e4633",
+          "canto": "Al Gran Señor",
+          "carpeta": "152. Al Gran Señor",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Al Gran Señor - Bajo.mp3",
+              "size_bytes": 3974372,
+              "r2_path": "es/152. Al Gran Señor/Al Gran Señor - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Al Gran Señor - Contralto.mp3",
+              "size_bytes": 3974372,
+              "r2_path": "es/152. Al Gran Señor/Al Gran Señor - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Al Gran Señor - Ensamble.mp3",
+              "size_bytes": 3974372,
+              "r2_path": "es/152. Al Gran Señor/Al Gran Señor - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Al Gran Señor - Soprano.mp3",
+              "size_bytes": 3974372,
+              "r2_path": "es/152. Al Gran Señor/Al Gran Señor - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Al Gran Señor - Tenor.mp3",
+              "size_bytes": 3974372,
+              "r2_path": "es/152. Al Gran Señor/Al Gran Señor - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "a8b5d622-f918-4db8-92d7-1c0288bc4a82",
+          "canto": "Al Huerto Van a Visitar",
+          "carpeta": "153. Al Huerto Van a Visitar",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Al Huerto Van a Visitar - Bajo.mp3",
+              "size_bytes": 3550562,
+              "r2_path": "es/153. Al Huerto Van a Visitar/Al Huerto Van a Visitar - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Al Huerto Van a Visitar - Contralto.mp3",
+              "size_bytes": 3550562,
+              "r2_path": "es/153. Al Huerto Van a Visitar/Al Huerto Van a Visitar - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Al Huerto Van a Visitar - Ensamble.mp3",
+              "size_bytes": 3550562,
+              "r2_path": "es/153. Al Huerto Van a Visitar/Al Huerto Van a Visitar - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Al Huerto Van a Visitar - Soprano.mp3",
+              "size_bytes": 3550562,
+              "r2_path": "es/153. Al Huerto Van a Visitar/Al Huerto Van a Visitar - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Al Huerto Van a Visitar - Tenor.mp3",
+              "size_bytes": 3550562,
+              "r2_path": "es/153. Al Huerto Van a Visitar/Al Huerto Van a Visitar - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "5426fdf8-3582-4049-81ac-bdef6a3f0414",
+          "canto": "Alabad a Jehová",
+          "carpeta": "154. Alabad a Jehová",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Alabad a Jehová - Bajo.mp3",
+              "size_bytes": 6123519,
+              "r2_path": "es/154. Alabad a Jehová/Alabad a Jehová - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Alabad a Jehová - Contralto.mp3",
+              "size_bytes": 6123519,
+              "r2_path": "es/154. Alabad a Jehová/Alabad a Jehová - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Alabad a Jehová - Ensamble.mp3",
+              "size_bytes": 6123519,
+              "r2_path": "es/154. Alabad a Jehová/Alabad a Jehová - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Alabad a Jehová - Soprano.mp3",
+              "size_bytes": 6123519,
+              "r2_path": "es/154. Alabad a Jehová/Alabad a Jehová - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Alabad a Jehová - Tenor.mp3",
+              "size_bytes": 6123519,
+              "r2_path": "es/154. Alabad a Jehová/Alabad a Jehová - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "be1d8013-b5ba-4aed-b8f7-ae754e6e21a9",
+          "canto": "Aleluya al Rey",
+          "carpeta": "155. Aleluya al Rey",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Aleluya al Rey - Bajo.mp3",
+              "size_bytes": 3086627,
+              "r2_path": "es/155. Aleluya al Rey/Aleluya al Rey - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Aleluya al Rey - Contralto.mp3",
+              "size_bytes": 3086627,
+              "r2_path": "es/155. Aleluya al Rey/Aleluya al Rey - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Aleluya al Rey - Ensamble.mp3",
+              "size_bytes": 3086627,
+              "r2_path": "es/155. Aleluya al Rey/Aleluya al Rey - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Aleluya al Rey - Soprano.mp3",
+              "size_bytes": 3086627,
+              "r2_path": "es/155. Aleluya al Rey/Aleluya al Rey - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Aleluya al Rey - Tenor.mp3",
+              "size_bytes": 3086627,
+              "r2_path": "es/155. Aleluya al Rey/Aleluya al Rey - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "usmc_90d250c055a0be08625c7290",
+          "canto": "Amado Salvador",
+          "carpeta": "156. Amado Salvador",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Amado Salvador - Bajo.mp3",
+              "size_bytes": 5255835,
+              "r2_path": "es/156. Amado Salvador/Amado Salvador - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Amado Salvador - Contralto.mp3",
+              "size_bytes": 5255835,
+              "r2_path": "es/156. Amado Salvador/Amado Salvador - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Amado Salvador - Ensamble.mp3",
+              "size_bytes": 5255835,
+              "r2_path": "es/156. Amado Salvador/Amado Salvador - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Amado Salvador - Soprano.mp3",
+              "size_bytes": 5255835,
+              "r2_path": "es/156. Amado Salvador/Amado Salvador - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Amado Salvador - Tenor.mp3",
+              "size_bytes": 5255835,
+              "r2_path": "es/156. Amado Salvador/Amado Salvador - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "c1dbe3b9-b27c-4aac-9db5-98228fc8b5be",
+          "canto": "Apocalipsis 10",
+          "carpeta": "157. Apocalipsis 10",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Apocalipsis 10 - Bajo.mp3",
+              "size_bytes": 7548968,
+              "r2_path": "es/157. Apocalipsis 10/Apocalipsis 10 - Bajo.mp3"
+            },
+            "Barítono": {
+              "archivo": "Apocalipsis 10 - Barítono.mp3",
+              "size_bytes": 7570911,
+              "r2_path": "es/157. Apocalipsis 10/Apocalipsis 10 - Barítono.mp3"
+            },
+            "Contralto": {
+              "archivo": "Apocalipsis 10 - Contralto.mp3",
+              "size_bytes": 7648652,
+              "r2_path": "es/157. Apocalipsis 10/Apocalipsis 10 - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Apocalipsis 10 - Ensamble.mp3",
+              "size_bytes": 7505710,
+              "r2_path": "es/157. Apocalipsis 10/Apocalipsis 10 - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Apocalipsis 10 - Soprano.mp3",
+              "size_bytes": 6963408,
+              "r2_path": "es/157. Apocalipsis 10/Apocalipsis 10 - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Apocalipsis 10 - Tenor.mp3",
+              "size_bytes": 7476244,
+              "r2_path": "es/157. Apocalipsis 10/Apocalipsis 10 - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "usmc_64b53da621b21cae02605994",
+          "canto": "Apóstol, Padre y Maestro",
+          "carpeta": "158. Apóstol, Padre y Maestro",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Apóstol, Padre y Maestro - Bajo.mp3",
+              "size_bytes": 4223058,
+              "r2_path": "es/158. Apóstol, Padre y Maestro/Apóstol, Padre y Maestro - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Apóstol, Padre y Maestro - Contralto.mp3",
+              "size_bytes": 4223058,
+              "r2_path": "es/158. Apóstol, Padre y Maestro/Apóstol, Padre y Maestro - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Apóstol, Padre y Maestro - Ensamble.mp3",
+              "size_bytes": 4223058,
+              "r2_path": "es/158. Apóstol, Padre y Maestro/Apóstol, Padre y Maestro - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Apóstol, Padre y Maestro - Soprano.mp3",
+              "size_bytes": 4223058,
+              "r2_path": "es/158. Apóstol, Padre y Maestro/Apóstol, Padre y Maestro - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Apóstol, Padre y Maestro - Tenor.mp3",
+              "size_bytes": 4223058,
+              "r2_path": "es/158. Apóstol, Padre y Maestro/Apóstol, Padre y Maestro - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "43994b2b-23bc-5614-85f0-9aa11515b0bc",
+          "canto": "Como la Aurora",
+          "carpeta": "159. Como la Aurora",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Como la Aurora - Bajo.mp3",
+              "size_bytes": 3499571,
+              "r2_path": "es/159. Como la Aurora/Como la Aurora - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Como la Aurora - Contralto.mp3",
+              "size_bytes": 3499571,
+              "r2_path": "es/159. Como la Aurora/Como la Aurora - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Como la Aurora - Ensamble.mp3",
+              "size_bytes": 3499571,
+              "r2_path": "es/159. Como la Aurora/Como la Aurora - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Como la Aurora - Soprano.mp3",
+              "size_bytes": 3499571,
+              "r2_path": "es/159. Como la Aurora/Como la Aurora - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Como la Aurora - Tenor.mp3",
+              "size_bytes": 3499571,
+              "r2_path": "es/159. Como la Aurora/Como la Aurora - Tenor.mp3"
+            }
+          }
+        },
+        {
           "id": "e3d9b389-7a5f-4f30-ad58-e76981dae9b6",
           "canto": "Estás en mi Corazón",
           "carpeta": "16. Estás en mi Corazón",
@@ -1574,6 +1909,288 @@
               "archivo": "Estás en mi Corazón - Tenor.mp3",
               "size_bytes": 8544164,
               "r2_path": "es/16. Estás en mi Corazón/Estás en mi Corazón - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "c929dbb0-d4c2-4cc6-bbbf-cc97f1c5a6f4",
+          "canto": "Cuando Oí Su Voz",
+          "carpeta": "160. Cuando Oí Su Voz",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Cuando Oí Su Voz - Bajo.mp3",
+              "size_bytes": 6276910,
+              "r2_path": "es/160. Cuando Oí Su Voz/Cuando Oí Su Voz - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Cuando Oí Su Voz - Contralto.mp3",
+              "size_bytes": 6276910,
+              "r2_path": "es/160. Cuando Oí Su Voz/Cuando Oí Su Voz - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Cuando Oí Su Voz - Ensamble.mp3",
+              "size_bytes": 6276910,
+              "r2_path": "es/160. Cuando Oí Su Voz/Cuando Oí Su Voz - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Cuando Oí Su Voz - Soprano.mp3",
+              "size_bytes": 6276910,
+              "r2_path": "es/160. Cuando Oí Su Voz/Cuando Oí Su Voz - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Cuando Oí Su Voz - Tenor.mp3",
+              "size_bytes": 6276910,
+              "r2_path": "es/160. Cuando Oí Su Voz/Cuando Oí Su Voz - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "96c780ad-8268-4dd2-b139-2e1e7fc96fba",
+          "canto": "Cuán Amables Son Tus Moradas",
+          "carpeta": "161. Cuán Amables Son Tus Moradas",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Cuán Amables Son Tus Moradas - Bajo.mp3",
+              "size_bytes": 5181857,
+              "r2_path": "es/161. Cuán Amables Son Tus Moradas/Cuán Amables Son Tus Moradas - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Cuán Amables Son Tus Moradas - Contralto.mp3",
+              "size_bytes": 5181857,
+              "r2_path": "es/161. Cuán Amables Son Tus Moradas/Cuán Amables Son Tus Moradas - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Cuán Amables Son Tus Moradas - Ensamble.mp3",
+              "size_bytes": 5181857,
+              "r2_path": "es/161. Cuán Amables Son Tus Moradas/Cuán Amables Son Tus Moradas - Ensamble.mp3"
+            },
+            "Solista": {
+              "archivo": "Cuán Amables Son Tus Moradas - Solista.mp3",
+              "size_bytes": 5181857,
+              "r2_path": "es/161. Cuán Amables Son Tus Moradas/Cuán Amables Son Tus Moradas - Solista.mp3"
+            },
+            "Soprano": {
+              "archivo": "Cuán Amables Son Tus Moradas - Soprano.mp3",
+              "size_bytes": 5181857,
+              "r2_path": "es/161. Cuán Amables Son Tus Moradas/Cuán Amables Son Tus Moradas - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Cuán Amables Son Tus Moradas - Tenor.mp3",
+              "size_bytes": 5181857,
+              "r2_path": "es/161. Cuán Amables Son Tus Moradas/Cuán Amables Son Tus Moradas - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "8c89e376-bfe3-46d0-894a-992ca03a2d77",
+          "canto": "Dios Poderoso",
+          "carpeta": "162. Dios Poderoso",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Dios Poderoso - Bajo.mp3",
+              "size_bytes": 4536528,
+              "r2_path": "es/162. Dios Poderoso/Dios Poderoso - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Dios Poderoso - Contralto.mp3",
+              "size_bytes": 4536528,
+              "r2_path": "es/162. Dios Poderoso/Dios Poderoso - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Dios Poderoso - Ensamble.mp3",
+              "size_bytes": 4536528,
+              "r2_path": "es/162. Dios Poderoso/Dios Poderoso - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Dios Poderoso - Soprano.mp3",
+              "size_bytes": 4536528,
+              "r2_path": "es/162. Dios Poderoso/Dios Poderoso - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Dios Poderoso - Tenor.mp3",
+              "size_bytes": 4536528,
+              "r2_path": "es/162. Dios Poderoso/Dios Poderoso - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "usmc_64b5f67921b21cae02606966",
+          "canto": "El Cántico de Moisés",
+          "carpeta": "163. El Cántico de Moisés",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "El Cántico de Moisés - Bajo.mp3",
+              "size_bytes": 5579336,
+              "r2_path": "es/163. El Cántico de Moisés/El Cántico de Moisés - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "El Cántico de Moisés - Contralto.mp3",
+              "size_bytes": 5579336,
+              "r2_path": "es/163. El Cántico de Moisés/El Cántico de Moisés - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "El Cántico de Moisés - Ensamble.mp3",
+              "size_bytes": 5579336,
+              "r2_path": "es/163. El Cántico de Moisés/El Cántico de Moisés - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "El Cántico de Moisés - Soprano.mp3",
+              "size_bytes": 5579336,
+              "r2_path": "es/163. El Cántico de Moisés/El Cántico de Moisés - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "El Cántico de Moisés - Tenor.mp3",
+              "size_bytes": 5579336,
+              "r2_path": "es/163. El Cántico de Moisés/El Cántico de Moisés - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "usmc_084c52a2ac07c757f6",
+          "canto": "El Cántico de los 144 Mil",
+          "carpeta": "164. El Cántico de los 144 Mil",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "El Cántico de los 144 Mil - Bajo.mp3",
+              "size_bytes": 5186872,
+              "r2_path": "es/164. El Cántico de los 144 Mil/El Cántico de los 144 Mil - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "El Cántico de los 144 Mil - Contralto.mp3",
+              "size_bytes": 5186872,
+              "r2_path": "es/164. El Cántico de los 144 Mil/El Cántico de los 144 Mil - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "El Cántico de los 144 Mil - Ensamble.mp3",
+              "size_bytes": 5186872,
+              "r2_path": "es/164. El Cántico de los 144 Mil/El Cántico de los 144 Mil - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "El Cántico de los 144 Mil - Soprano.mp3",
+              "size_bytes": 5186872,
+              "r2_path": "es/164. El Cántico de los 144 Mil/El Cántico de los 144 Mil - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "El Cántico de los 144 Mil - Tenor.mp3",
+              "size_bytes": 5186872,
+              "r2_path": "es/164. El Cántico de los 144 Mil/El Cántico de los 144 Mil - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "551f7e38-e926-413e-9496-fdea0f70dd18",
+          "canto": "Elección Apostólica",
+          "carpeta": "165. Elección Apostólica",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Ensamble": {
+              "archivo": "Elección Apostólica - Ensamble.mp3",
+              "size_bytes": 3655470,
+              "r2_path": "es/165. Elección Apostólica/Elección Apostólica - Ensamble.mp3"
+            }
+          }
+        },
+        {
+          "id": "9d9da006-13de-5b0f-8326-8dd191864256",
+          "canto": "Imagínate Tú",
+          "carpeta": "167. Imagínate Tú",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Imagínate Tú - Bajo.mp3",
+              "size_bytes": 3528828,
+              "r2_path": "es/167. Imagínate Tú/Imagínate Tú - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Imagínate Tú - Contralto.mp3",
+              "size_bytes": 3528828,
+              "r2_path": "es/167. Imagínate Tú/Imagínate Tú - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Imagínate Tú - Ensamble.mp3",
+              "size_bytes": 3528828,
+              "r2_path": "es/167. Imagínate Tú/Imagínate Tú - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Imagínate Tú - Soprano.mp3",
+              "size_bytes": 3528828,
+              "r2_path": "es/167. Imagínate Tú/Imagínate Tú - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Imagínate Tú - Tenor.mp3",
+              "size_bytes": 3528828,
+              "r2_path": "es/167. Imagínate Tú/Imagínate Tú - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "3c8263be-e682-49c3-9cab-ab4c6e343559",
+          "canto": "Imperio y Dominio",
+          "carpeta": "168. Imperio y Dominio",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Imperio y Dominio - Bajo.mp3",
+              "size_bytes": 3296861,
+              "r2_path": "es/168. Imperio y Dominio/Imperio y Dominio - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Imperio y Dominio - Contralto.mp3",
+              "size_bytes": 3296861,
+              "r2_path": "es/168. Imperio y Dominio/Imperio y Dominio - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Imperio y Dominio - Ensamble.mp3",
+              "size_bytes": 3296861,
+              "r2_path": "es/168. Imperio y Dominio/Imperio y Dominio - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Imperio y Dominio - Soprano.mp3",
+              "size_bytes": 3296861,
+              "r2_path": "es/168. Imperio y Dominio/Imperio y Dominio - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Imperio y Dominio - Tenor.mp3",
+              "size_bytes": 3296861,
+              "r2_path": "es/168. Imperio y Dominio/Imperio y Dominio - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "usmc_a153c88cad052a4d93208759",
+          "canto": "Jehová te Oiga",
+          "carpeta": "169. Jehová te Oiga",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Jehová te Oiga - Bajo.mp3",
+              "size_bytes": 3147231,
+              "r2_path": "es/169. Jehová te Oiga/Jehová te Oiga - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Jehová te Oiga - Contralto.mp3",
+              "size_bytes": 3147231,
+              "r2_path": "es/169. Jehová te Oiga/Jehová te Oiga - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Jehová te Oiga - Ensamble.mp3",
+              "size_bytes": 3147231,
+              "r2_path": "es/169. Jehová te Oiga/Jehová te Oiga - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Jehová te Oiga - Soprano.mp3",
+              "size_bytes": 3147231,
+              "r2_path": "es/169. Jehová te Oiga/Jehová te Oiga - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Jehová te Oiga - Tenor.mp3",
+              "size_bytes": 3147231,
+              "r2_path": "es/169. Jehová te Oiga/Jehová te Oiga - Tenor.mp3"
             }
           }
         },
@@ -1611,6 +2228,336 @@
           }
         },
         {
+          "id": "eaeafa56-1d25-4517-b13f-1b3f7f6beced",
+          "canto": "La Vida Se Va Como El Viento",
+          "carpeta": "170. La Vida Se Va Como El Viento",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "La Vida Se Va Como El Viento - Bajo.mp3",
+              "size_bytes": 3505004,
+              "r2_path": "es/170. La Vida Se Va Como El Viento/La Vida Se Va Como El Viento - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "La Vida Se Va Como El Viento - Contralto.mp3",
+              "size_bytes": 3505004,
+              "r2_path": "es/170. La Vida Se Va Como El Viento/La Vida Se Va Como El Viento - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "La Vida Se Va Como El Viento - Ensamble.mp3",
+              "size_bytes": 3505004,
+              "r2_path": "es/170. La Vida Se Va Como El Viento/La Vida Se Va Como El Viento - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "La Vida Se Va Como El Viento - Soprano.mp3",
+              "size_bytes": 3505004,
+              "r2_path": "es/170. La Vida Se Va Como El Viento/La Vida Se Va Como El Viento - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "La Vida Se Va Como El Viento - Tenor.mp3",
+              "size_bytes": 3505004,
+              "r2_path": "es/170. La Vida Se Va Como El Viento/La Vida Se Va Como El Viento - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "f034d95c-6ae5-45ad-9d7c-c0ea51075a58",
+          "canto": "La Vida Se Va Como El Viento y pronto en las nubes vendrá",
+          "carpeta": "171. La Vida Se Va Como El Viento y pronto en las nubes vendrá",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "La Vida Se Va Como El Viento y pronto en las nubes vendrá - Bajo.mp3",
+              "size_bytes": 2593017,
+              "r2_path": "es/171. La Vida Se Va Como El Viento y pronto en las nubes vendrá/La Vida Se Va Como El Viento y pronto en las nubes vendrá - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "La Vida Se Va Como El Viento y pronto en las nubes vendrá - Contralto.mp3",
+              "size_bytes": 2593017,
+              "r2_path": "es/171. La Vida Se Va Como El Viento y pronto en las nubes vendrá/La Vida Se Va Como El Viento y pronto en las nubes vendrá - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "La Vida Se Va Como El Viento y pronto en las nubes vendrá - Ensamble.mp3",
+              "size_bytes": 2593017,
+              "r2_path": "es/171. La Vida Se Va Como El Viento y pronto en las nubes vendrá/La Vida Se Va Como El Viento y pronto en las nubes vendrá - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "La Vida Se Va Como El Viento y pronto en las nubes vendrá - Soprano.mp3",
+              "size_bytes": 2593017,
+              "r2_path": "es/171. La Vida Se Va Como El Viento y pronto en las nubes vendrá/La Vida Se Va Como El Viento y pronto en las nubes vendrá - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "La Vida Se Va Como El Viento y pronto en las nubes vendrá - Tenor.mp3",
+              "size_bytes": 2593017,
+              "r2_path": "es/171. La Vida Se Va Como El Viento y pronto en las nubes vendrá/La Vida Se Va Como El Viento y pronto en las nubes vendrá - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "usmc_67ff3e16631be412cc5bdc26",
+          "canto": "Me Libraste de la Muerte",
+          "carpeta": "172. Me Libraste de la Muerte",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Me Libraste de la Muerte - Bajo.mp3",
+              "size_bytes": 3675532,
+              "r2_path": "es/172. Me Libraste de la Muerte/Me Libraste de la Muerte - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Me Libraste de la Muerte - Contralto.mp3",
+              "size_bytes": 3675532,
+              "r2_path": "es/172. Me Libraste de la Muerte/Me Libraste de la Muerte - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Me Libraste de la Muerte - Ensamble.mp3",
+              "size_bytes": 3675532,
+              "r2_path": "es/172. Me Libraste de la Muerte/Me Libraste de la Muerte - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Me Libraste de la Muerte - Soprano.mp3",
+              "size_bytes": 3675532,
+              "r2_path": "es/172. Me Libraste de la Muerte/Me Libraste de la Muerte - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Me Libraste de la Muerte - Tenor.mp3",
+              "size_bytes": 3675532,
+              "r2_path": "es/172. Me Libraste de la Muerte/Me Libraste de la Muerte - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "09f1ea92-becc-4f5f-a629-3bc08713ede6",
+          "canto": "Mi Padre en la Fe",
+          "carpeta": "173. Mi Padre en la Fe",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Mi Padre en la Fe - Bajo.mp3",
+              "size_bytes": 3340328,
+              "r2_path": "es/173. Mi Padre en la Fe/Mi Padre en la Fe - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Mi Padre en la Fe - Contralto.mp3",
+              "size_bytes": 3340328,
+              "r2_path": "es/173. Mi Padre en la Fe/Mi Padre en la Fe - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Mi Padre en la Fe - Ensamble.mp3",
+              "size_bytes": 3340328,
+              "r2_path": "es/173. Mi Padre en la Fe/Mi Padre en la Fe - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Mi Padre en la Fe - Soprano.mp3",
+              "size_bytes": 3340328,
+              "r2_path": "es/173. Mi Padre en la Fe/Mi Padre en la Fe - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Mi Padre en la Fe - Tenor.mp3",
+              "size_bytes": 3340328,
+              "r2_path": "es/173. Mi Padre en la Fe/Mi Padre en la Fe - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "8303db32-75c6-4532-b362-2cae12dd51b8",
+          "canto": "Mi Torre Fuerte",
+          "carpeta": "174. Mi Torre Fuerte",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Mi Torre Fuerte - Bajo.mp3",
+              "size_bytes": 4118568,
+              "r2_path": "es/174. Mi Torre Fuerte/Mi Torre Fuerte - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Mi Torre Fuerte - Contralto.mp3",
+              "size_bytes": 4118568,
+              "r2_path": "es/174. Mi Torre Fuerte/Mi Torre Fuerte - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Mi Torre Fuerte - Ensamble.mp3",
+              "size_bytes": 4118568,
+              "r2_path": "es/174. Mi Torre Fuerte/Mi Torre Fuerte - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Mi Torre Fuerte - Soprano.mp3",
+              "size_bytes": 4118568,
+              "r2_path": "es/174. Mi Torre Fuerte/Mi Torre Fuerte - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Mi Torre Fuerte - Tenor.mp3",
+              "size_bytes": 4118568,
+              "r2_path": "es/174. Mi Torre Fuerte/Mi Torre Fuerte - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "51057ef0-9aa8-436c-9467-6580a67a0e29",
+          "canto": "No Hay Amigo Mejor",
+          "carpeta": "175. No Hay Amigo Mejor",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "No Hay Amigo Mejor - Bajo.mp3",
+              "size_bytes": 3775842,
+              "r2_path": "es/175. No Hay Amigo Mejor/No Hay Amigo Mejor - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "No Hay Amigo Mejor - Contralto.mp3",
+              "size_bytes": 3775842,
+              "r2_path": "es/175. No Hay Amigo Mejor/No Hay Amigo Mejor - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "No Hay Amigo Mejor - Ensamble.mp3",
+              "size_bytes": 3775842,
+              "r2_path": "es/175. No Hay Amigo Mejor/No Hay Amigo Mejor - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "No Hay Amigo Mejor - Soprano.mp3",
+              "size_bytes": 3775842,
+              "r2_path": "es/175. No Hay Amigo Mejor/No Hay Amigo Mejor - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "No Hay Amigo Mejor - Tenor.mp3",
+              "size_bytes": 3775842,
+              "r2_path": "es/175. No Hay Amigo Mejor/No Hay Amigo Mejor - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "6ce642d0-9d2b-4535-9ec8-9c9354b4aa7b",
+          "canto": "Oh Señor",
+          "carpeta": "176. Oh Señor",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Oh Señor - Bajo.mp3",
+              "size_bytes": 4188368,
+              "r2_path": "es/176. Oh Señor/Oh Señor - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Oh Señor - Contralto.mp3",
+              "size_bytes": 4188368,
+              "r2_path": "es/176. Oh Señor/Oh Señor - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Oh Señor - Ensamble.mp3",
+              "size_bytes": 4188368,
+              "r2_path": "es/176. Oh Señor/Oh Señor - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Oh Señor - Soprano.mp3",
+              "size_bytes": 4188368,
+              "r2_path": "es/176. Oh Señor/Oh Señor - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Oh Señor - Tenor.mp3",
+              "size_bytes": 4188368,
+              "r2_path": "es/176. Oh Señor/Oh Señor - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "82818c5f-1176-4e01-942a-f5db22553d39",
+          "canto": "Para Siempre Es Su Misericordia",
+          "carpeta": "177. Para Siempre Es Su Misericordia",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Para Siempre Es Su Misericordia - Bajo.mp3",
+              "size_bytes": 3313161,
+              "r2_path": "es/177. Para Siempre Es Su Misericordia/Para Siempre Es Su Misericordia - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Para Siempre Es Su Misericordia - Contralto.mp3",
+              "size_bytes": 3313161,
+              "r2_path": "es/177. Para Siempre Es Su Misericordia/Para Siempre Es Su Misericordia - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Para Siempre Es Su Misericordia - Ensamble.mp3",
+              "size_bytes": 3313161,
+              "r2_path": "es/177. Para Siempre Es Su Misericordia/Para Siempre Es Su Misericordia - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Para Siempre Es Su Misericordia - Soprano.mp3",
+              "size_bytes": 3313161,
+              "r2_path": "es/177. Para Siempre Es Su Misericordia/Para Siempre Es Su Misericordia - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Para Siempre Es Su Misericordia - Tenor.mp3",
+              "size_bytes": 3313161,
+              "r2_path": "es/177. Para Siempre Es Su Misericordia/Para Siempre Es Su Misericordia - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "95053cdd-2883-4f3f-adc0-68e952460082",
+          "canto": "Recuerda",
+          "carpeta": "178. Recuerda",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Recuerda - Bajo.mp3",
+              "size_bytes": 5551332,
+              "r2_path": "es/178. Recuerda/Recuerda - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Recuerda - Contralto.mp3",
+              "size_bytes": 5551332,
+              "r2_path": "es/178. Recuerda/Recuerda - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Recuerda - Ensamble.mp3",
+              "size_bytes": 5551332,
+              "r2_path": "es/178. Recuerda/Recuerda - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Recuerda - Soprano.mp3",
+              "size_bytes": 5551332,
+              "r2_path": "es/178. Recuerda/Recuerda - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Recuerda - Tenor.mp3",
+              "size_bytes": 5551332,
+              "r2_path": "es/178. Recuerda/Recuerda - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "usmc_64b5f8c121b21cae02606aaa",
+          "canto": "Salmo 135",
+          "carpeta": "179. Salmo 135",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Salmo 135 - Bajo.mp3",
+              "size_bytes": 1969004,
+              "r2_path": "es/179. Salmo 135/Salmo 135 - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Salmo 135 - Contralto.mp3",
+              "size_bytes": 1969004,
+              "r2_path": "es/179. Salmo 135/Salmo 135 - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Salmo 135 - Ensamble.mp3",
+              "size_bytes": 1969004,
+              "r2_path": "es/179. Salmo 135/Salmo 135 - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Salmo 135 - Soprano.mp3",
+              "size_bytes": 1969004,
+              "r2_path": "es/179. Salmo 135/Salmo 135 - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Salmo 135 - Tenor.mp3",
+              "size_bytes": 1969004,
+              "r2_path": "es/179. Salmo 135/Salmo 135 - Tenor.mp3"
+            }
+          }
+        },
+        {
           "id": "usmc_64b53fcf21b21cae02605af0",
           "canto": "Don Inefable",
           "carpeta": "18. Don Inefable",
@@ -1640,6 +2587,138 @@
               "archivo": "Don Inefable - Tenor.mp3",
               "size_bytes": 8500270,
               "r2_path": "es/18. Don Inefable/Don Inefable - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "fc46cd52-34ec-456b-a977-6f51294fe228",
+          "canto": "Salmo 150",
+          "carpeta": "180. Salmo 150",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Salmo 150 - Bajo.mp3",
+              "size_bytes": 2588420,
+              "r2_path": "es/180. Salmo 150/Salmo 150 - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Salmo 150 - Contralto.mp3",
+              "size_bytes": 2588420,
+              "r2_path": "es/180. Salmo 150/Salmo 150 - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Salmo 150 - Ensamble.mp3",
+              "size_bytes": 2588420,
+              "r2_path": "es/180. Salmo 150/Salmo 150 - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Salmo 150 - Soprano.mp3",
+              "size_bytes": 2588420,
+              "r2_path": "es/180. Salmo 150/Salmo 150 - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Salmo 150 - Tenor.mp3",
+              "size_bytes": 2588420,
+              "r2_path": "es/180. Salmo 150/Salmo 150 - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "379a569c-c84f-4a6e-9e45-fdaa318bd3a9",
+          "canto": "Tú Eres mi Esperanza",
+          "carpeta": "181. Tú Eres mi Esperanza",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Tú Eres mi Esperanza - Bajo.mp3",
+              "size_bytes": 4743417,
+              "r2_path": "es/181. Tú Eres mi Esperanza/Tú Eres mi Esperanza - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Tú Eres mi Esperanza - Contralto.mp3",
+              "size_bytes": 4743417,
+              "r2_path": "es/181. Tú Eres mi Esperanza/Tú Eres mi Esperanza - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Tú Eres mi Esperanza - Ensamble.mp3",
+              "size_bytes": 4743417,
+              "r2_path": "es/181. Tú Eres mi Esperanza/Tú Eres mi Esperanza - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Tú Eres mi Esperanza - Soprano.mp3",
+              "size_bytes": 4743417,
+              "r2_path": "es/181. Tú Eres mi Esperanza/Tú Eres mi Esperanza - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Tú Eres mi Esperanza - Tenor.mp3",
+              "size_bytes": 4743417,
+              "r2_path": "es/181. Tú Eres mi Esperanza/Tú Eres mi Esperanza - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "21a57ea9-9696-5dd0-8e8a-2c14708b2ca1",
+          "canto": "Valle de los Huesos Secos",
+          "carpeta": "182. Valle de los Huesos Secos",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Valle de los Huesos Secos - Bajo.mp3",
+              "size_bytes": 4737566,
+              "r2_path": "es/182. Valle de los Huesos Secos/Valle de los Huesos Secos - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Valle de los Huesos Secos - Contralto.mp3",
+              "size_bytes": 4737566,
+              "r2_path": "es/182. Valle de los Huesos Secos/Valle de los Huesos Secos - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Valle de los Huesos Secos - Ensamble.mp3",
+              "size_bytes": 4737566,
+              "r2_path": "es/182. Valle de los Huesos Secos/Valle de los Huesos Secos - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Valle de los Huesos Secos - Soprano.mp3",
+              "size_bytes": 4737566,
+              "r2_path": "es/182. Valle de los Huesos Secos/Valle de los Huesos Secos - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Valle de los Huesos Secos - Tenor.mp3",
+              "size_bytes": 4737566,
+              "r2_path": "es/182. Valle de los Huesos Secos/Valle de los Huesos Secos - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "e85a0f52-5a31-5c49-997b-ad89b38e455a",
+          "canto": "Ángel Poderoso",
+          "carpeta": "183. Ángel Poderoso",
+          "fuente": "Cantai SATB",
+          "voces": {
+            "Bajo": {
+              "archivo": "Ángel Poderoso - Bajo.mp3",
+              "size_bytes": 4137794,
+              "r2_path": "es/183. Ángel Poderoso/Ángel Poderoso - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Ángel Poderoso - Contralto.mp3",
+              "size_bytes": 4137794,
+              "r2_path": "es/183. Ángel Poderoso/Ángel Poderoso - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Ángel Poderoso - Ensamble.mp3",
+              "size_bytes": 4137794,
+              "r2_path": "es/183. Ángel Poderoso/Ángel Poderoso - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Ángel Poderoso - Soprano.mp3",
+              "size_bytes": 4137794,
+              "r2_path": "es/183. Ángel Poderoso/Ángel Poderoso - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Ángel Poderoso - Tenor.mp3",
+              "size_bytes": 4137794,
+              "r2_path": "es/183. Ángel Poderoso/Ángel Poderoso - Tenor.mp3"
             }
           }
         },
@@ -3796,14 +4875,14 @@
       ]
     },
     "en": {
-      "total_alabanzas": 250,
+      "total_alabanzas": 251,
       "totales_bytes": {
-        "Soprano": 1410707299,
-        "Contralto": 1400415077,
-        "Tenor": 1430416905,
-        "Bajo": 1422835969,
-        "Ensamble": 1480438252,
-        "total": 7169550300
+        "Soprano": 1416895601,
+        "Contralto": 1406603379,
+        "Tenor": 1436605207,
+        "Bajo": 1429024271,
+        "Ensamble": 1486626554,
+        "total": 7200491810
       },
       "cantos": [
         {
@@ -12013,6 +13092,39 @@
               "archivo": "’Tis the Church of the Lord - Tenor.mp3",
               "size_bytes": 2970705,
               "r2_path": "en/250. ’Tis the Church of the Lord/’Tis the Church of the Lord - Tenor.mp3"
+            }
+          }
+        },
+        {
+          "id": "be6a34b1-f8b2-590f-834e-d5a9e2cd9049",
+          "canto": "Glory Unto Jesus Christ",
+          "carpeta": "251. Glory Unto Jesus Christ",
+          "fuente": "TLOTW Choir Studio",
+          "voces": {
+            "Bajo": {
+              "archivo": "Glory Unto Jesus Christ - Bajo.mp3",
+              "size_bytes": 6188302,
+              "r2_path": "en/251. Glory Unto Jesus Christ/Glory Unto Jesus Christ - Bajo.mp3"
+            },
+            "Contralto": {
+              "archivo": "Glory Unto Jesus Christ - Contralto.mp3",
+              "size_bytes": 6188302,
+              "r2_path": "en/251. Glory Unto Jesus Christ/Glory Unto Jesus Christ - Contralto.mp3"
+            },
+            "Ensamble": {
+              "archivo": "Glory Unto Jesus Christ - Ensamble.mp3",
+              "size_bytes": 6188302,
+              "r2_path": "en/251. Glory Unto Jesus Christ/Glory Unto Jesus Christ - Ensamble.mp3"
+            },
+            "Soprano": {
+              "archivo": "Glory Unto Jesus Christ - Soprano.mp3",
+              "size_bytes": 6188302,
+              "r2_path": "en/251. Glory Unto Jesus Christ/Glory Unto Jesus Christ - Soprano.mp3"
+            },
+            "Tenor": {
+              "archivo": "Glory Unto Jesus Christ - Tenor.mp3",
+              "size_bytes": 6188302,
+              "r2_path": "en/251. Glory Unto Jesus Christ/Glory Unto Jesus Christ - Tenor.mp3"
             }
           }
         }

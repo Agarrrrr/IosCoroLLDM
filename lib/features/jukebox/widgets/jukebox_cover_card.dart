@@ -163,13 +163,18 @@ class JukeboxCoverCard extends StatelessWidget {
                           ],
                         ),
 
-                        // Logo oficial de la aplicación en medio con halo de resalte
+                        // Logo oficial de la aplicación en medio con halo de resalte dinámico
                         Center(
                           child: Container(
                             width: 68,
                             height: 68,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
+                              color: accent.withValues(alpha: isDark ? 0.12 : 0.08),
+                              border: Border.all(
+                                color: accent.withValues(alpha: isDark ? 0.35 : 0.22),
+                                width: 1.0,
+                              ),
                               boxShadow: [
                                 BoxShadow(
                                   color: accent.withValues(alpha: isDark ? 0.35 : 0.20),
@@ -178,9 +183,12 @@ class JukeboxCoverCard extends StatelessWidget {
                                 ),
                               ],
                             ),
+                            padding: const EdgeInsets.all(12),
                             child: Image.asset(
                               'assets/brand/emblem-transparent.png',
                               fit: BoxFit.contain,
+                              color: accent,
+                              colorBlendMode: BlendMode.srcIn,
                             ),
                           ),
                         ),

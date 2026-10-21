@@ -9638,7 +9638,7 @@
     "id": "a5b2ddb2-4811-4c5e-95f3-3295418c973e",
     "nombre": "La Restauración",
     "archivo": "la-restauraci-n-1781307583269.pdf",
-    "midi_archivo": null,
+    "midi_archivo": "la-restauracion-1779081288590.mid",
     "vinculo_idioma": null,
     "temas": [
       "Centenario",
@@ -13494,7 +13494,8 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "salmo-23-1779908510230.mid"
   },
   {
     "id": "2ee1e7f8-a1c1-4a36-96ac-71a4def64f4a",

@@ -16,7 +16,7 @@ OUT_PATH_WEB = r"d:\GITHUB NO TOCAR\proyectos\IosCoroLLDM\website\public\voces_m
 OUT_PATH_RESPALDO = r"E:\Respaldo\voces_manifest.json"
 
 CAT_ES_PATH = r"d:\GITHUB NO TOCAR\proyectos\IosCoroLLDM\assets\catalogo.json"
-CAT_EN_PATH = r"d:\GITHUB NO TOCAR\proyectos\IosCoroLLDM\build\app\intermediates\flutter\debug\flutter_assets\assets\catalogo_en.json"
+CAT_EN_PATH = r"d:\GITHUB NO TOCAR\proyectos\IosCoroLLDM\assets\catalogo_en.json"
 
 with open(CAT_ES_PATH, "r", encoding="utf-8") as f:
     cat_es = json.load(f)
@@ -86,7 +86,7 @@ for folder in folders_es:
         full_m = os.path.join(fpath, m)
         sz = os.path.getsize(full_m)
         voz_label = "Pista"
-        for v in ["Soprano", "Contralto", "Tenor", "Bajo", "Ensamble"]:
+        for v in ["Soprano", "Contralto", "Tenor", "Bajo", "Ensamble", "Barítono", "Solista"]:
             if v in m:
                 voz_label = v
                 break
@@ -135,7 +135,7 @@ for folder in folders_en:
         full_m = os.path.join(fpath, m)
         sz = os.path.getsize(full_m)
         voz_label = "Pista"
-        for v in ["Soprano", "Contralto", "Tenor", "Bajo", "Ensamble"]:
+        for v in ["Soprano", "Contralto", "Tenor", "Bajo", "Ensamble", "Barítono", "Solista"]:
             if v in m:
                 voz_label = v
                 break

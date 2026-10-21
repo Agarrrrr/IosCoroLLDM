@@ -4,7 +4,7 @@ import 'package:coro_lldm/core/providers/theme_provider.dart';
 /// Shared paper and toolbar palette. Existing filter matrices are unchanged.
 abstract final class PdfThemePalette {
   static Color background(AppThemeMode mode) => switch (mode) {
-        AppThemeMode.claro => Colors.white,
+        AppThemeMode.claro => const Color(0xFFF4F4F4),
         AppThemeMode.oscuro => Colors.black,
         AppThemeMode.oscuroNormal => const Color(0xFF1B2430),
         AppThemeMode.sepia => const Color(0xFFF4ECD8),
