@@ -2161,12 +2161,12 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
                                       : null,
                                   onRequestPlayAccess: () =>
                                       _requestVocalPlayAccess(canto),
-                                  onPlaybackStarted: () {
+                                  onPlaybackStarted: () async {
                                     _midi.stop();
 
-                                    unawaited(ref
+                                    await ref
                                         .read(jukeboxProvider.notifier)
-                                        .stop());
+                                        .stop();
                                   },
                                   song: _vocalSong!,
                                   initialVoice: ref.watch(userVoiceProvider),

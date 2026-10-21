@@ -33,7 +33,8 @@ class VocalPanel extends ConsumerStatefulWidget {
 
   final Future<bool> Function()? onRequestPlayAccess;
 
-  final VoidCallback? onPlaybackStarted;
+  /// Completes the audio handover before this player starts its source.
+  final FutureOr<void> Function()? onPlaybackStarted;
 
   final VocalSong song;
 
@@ -59,7 +60,7 @@ class VocalPanel extends ConsumerStatefulWidget {
 class _VocalPanelState extends ConsumerState<VocalPanel> {
   final AudioPlayer _player = AudioPlayer();
 
-  final VocalAudioService _vocalService = VocalAudioService();
+  late final VocalAudioService _vocalService;
 
   late String _selectedVoice;
 
@@ -69,7 +70,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
 
   bool _isOffline = false;
 
-  bool _sourceReady = false;
+  Future<void> _playerOperations = Future<void>.value();
 
   bool _accessPending = false;
 
@@ -96,6 +97,8 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   @override
   void initState() {
     super.initState();
+
+    _vocalService = ref.read(vocalAudioServiceProvider);
 
     final savedVoice = ref.read(userVoiceProvider);
 
@@ -157,7 +160,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
         onTogglePlayPause: _togglePlay,
         onNext: () {},
         onPrevious: () {},
-        onSeek: (pos) => _player.seek(pos),
+        onSeek: (pos) => _runPlayerOperation(() => _player.seek(pos)),
       ),
     );
   }
@@ -263,8 +266,6 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     setState(() {
       _isLoading = true;
 
-      _sourceReady = false;
-
       _selectedVoice = voiceKey;
     });
 
@@ -282,38 +283,30 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
       final Source source =
           isLocal ? DeviceFileSource(sourceUri) : UrlSource(sourceUri);
 
-      if (autoPlay) {
-        widget.onPlaybackStarted?.call();
+      // Epoch checks alone cannot cancel a native setSource already in flight.
+      // Serialize commands so an old preload cannot replace the playing voice.
+      await _runPlayerOperation(() async {
+        if (!mounted || epoch != _loadEpoch) return;
 
-        await _player.play(source, position: seekTo);
+        if (autoPlay) {
+          await widget.onPlaybackStarted?.call();
+          if (!mounted || epoch != _loadEpoch) return;
 
-        if (mounted && epoch == _loadEpoch) {
-          setState(() {
-            _sourceReady = true;
+          await _player.play(source, position: seekTo);
+        } else {
+          await _player.setSource(source);
+          if (!mounted || epoch != _loadEpoch) return;
 
-            _isPlaying = true;
-          });
+          if (seekTo != null && seekTo > Duration.zero) {
+            await _player.seek(seekTo);
+          }
         }
-      } else {
-        await _player.setSource(source);
-
-        if (seekTo != null && seekTo > Duration.zero) {
-          await _player.seek(seekTo);
-        }
-
-        if (mounted && epoch == _loadEpoch) {
-          setState(() {
-            _sourceReady = true;
-          });
-        }
-      }
+      });
     } catch (e) {
       debugPrint('⚠️ [VocalPanel] Error al preparar pista ($voiceKey): $e');
 
       if (mounted && epoch == _loadEpoch) {
         setState(() {
-          _sourceReady = false;
-
           _isPlaying = false;
         });
         if (!_isOffline) {
@@ -337,22 +330,35 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     }
   }
 
+  Future<void> _runPlayerOperation(Future<void> Function() operation) {
+    final result = _playerOperations.then((_) async {
+      if (mounted) await operation();
+    });
+    // Keep the queue usable after a failure; the caller still receives it.
+    _playerOperations = result.catchError((Object _) {});
+    return result;
+  }
+
   Future<void> _togglePlay() async {
     if (_accessPending) return;
 
     if (_isPlaying) {
       _loadEpoch++;
 
-      await _player.pause();
+      setState(() => _isLoading = false);
+
+      await _runPlayerOperation(_player.pause);
 
       return;
     }
 
     _accessPending = true;
+    final epoch = _loadEpoch;
 
     try {
       if (!_isOffline) {
         final online = await _hasInternetConnection();
+        if (!mounted || epoch != _loadEpoch) return;
         if (!online) {
           if (mounted) {
             final strings = AppStrings.of(context);
@@ -372,19 +378,12 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
       if (widget.onRequestPlayAccess != null) {
         final allowed = await widget.onRequestPlayAccess!();
 
-        if (!mounted || !allowed) return;
+        if (!mounted || epoch != _loadEpoch || !allowed) return;
       }
 
-      widget.onPlaybackStarted?.call();
+      if (!mounted || epoch != _loadEpoch) return;
 
-      if (_sourceReady && !_isLoading) {
-        try {
-          await _player.resume();
-
-          return;
-        } catch (_) {}
-      }
-
+      // Re-establish the selected source after piano has owned the audio session.
       await _loadVoiceTrack(
         _selectedVoice,
         autoPlay: true,
@@ -406,15 +405,18 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
       target = _duration;
     }
 
-    await _player.seek(target);
+    await _runPlayerOperation(() => _player.seek(target));
   }
 
   Future<void> _stop() async {
     _loadEpoch++;
 
-    await _player.stop();
+    if (mounted) setState(() => _isLoading = false);
 
-    await SystemMediaSession.instance.stopSession();
+    await _runPlayerOperation(() async {
+      await _player.stop();
+      await SystemMediaSession.instance.stopSession();
+    });
 
     if (!mounted) return;
 
@@ -469,7 +471,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
 
     _completeSub?.cancel();
 
-    _player.dispose();
+    unawaited(_playerOperations.then((_) => _player.dispose()));
 
     SystemMediaSession.instance.stopSession();
 
@@ -717,9 +719,9 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
                         onChangeEnd: (val) async {
                           _isDragging = false;
 
-                          await _player.seek(
-                            Duration(milliseconds: (val * 1000).round()),
-                          );
+                          await _runPlayerOperation(() => _player.seek(
+                                Duration(milliseconds: (val * 1000).round()),
+                              ));
                         },
                       ),
                     ),
