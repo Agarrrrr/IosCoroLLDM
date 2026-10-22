@@ -18,16 +18,18 @@ const sharp = require(path.join(rootDir, 'website/node_modules/sharp'));
 // CONFIGURACIÓN DE LA OBRA (MODIFICAR SEGÚN EL CANTO)
 // =========================================================================
 const OBRA = {
-  slug: 'amado-salvador',
-  titulo: 'AMADO SALVADOR',
-  subtitulo: '(Esperanza / Gratitud)',
-  autor: 'Miguel Ángel Huerta',
-  arreglo: 'Coreb Efraín López',
-  cita: '«Amado Salvador, ¿por qué no vuelves ya por mí? Mi alma tiene sed de Ti, contigo quiero estar y vivir siempre feliz.»',
-  videoSrc: 'E:/MusescoreCantai/videos/Amado Salvador - SATB desarrollado - Cantai.mp4',
-  videoCorteInicio: 2.960,  // Segundo donde desaparece la pantalla negra de inicio
-  videoCorteFin: 328.360,   // Segundo exacto de la doble barra del último compás
-  videoFiltro: 'crop=1424:1068:243:3,scale=1904:1428:flags=lanczos'
+  slug: 'valle-de-los-huesos-secos',
+  titulo: 'VALLE DE LOS HUESOS SECOS',
+  subtitulo: '(Alabanza)',
+  autor: 'M. Salvador Castro S.',
+  arreglo: '',
+  cita: '«Hijo de hombre, profetiza sobre estos huesos y vivirán. ¡Y un estruendo majestuoso ha salido por la tierra! Es la palabra que a su Siervo el Señor le reveló y su pueblo se levantó.»',
+  videoSrc: 'E:/MusescoreCantai/videos/Valle de los Huesos Secos.mp4',
+  audioSrc: 'E:/SV5/ValledeLosHuesosSecos/ValledeLosHuesosSecos_MixDown.wav',
+  audioDelayMs: 49,
+  videoCorteInicio: 3.000,
+  videoCorteFin: 296.000,
+  videoFiltro: 'crop=1904:1428:324:4'
 };
 
 // =========================================================================
@@ -133,9 +135,22 @@ function getCommonCSS() {
 }
 
 // =========================================================================
-// PART 1: VIDEO 4:3
+// PART 1: VIDEO 4:3 & AUDIO MP3
 // =========================================================================
 function procesarVideo() {
+  const ffmpegBin = process.env.FFMPEG_BIN || 'ffmpeg';
+
+  // 1. Convertir Audio a MP3 si se proveyó audioSrc
+  if (OBRA.audioSrc && fs.existsSync(OBRA.audioSrc)) {
+    console.log(`--- Convirtiendo Audio a MP3 (320k) ---`);
+    const dstMp3Muse = path.join(museDir, `${OBRA.titulo}.mp3`);
+    const dstMp3Proj = path.join(outBaseDir, `${OBRA.titulo}.mp3`);
+    const cmdMp3 = `"${ffmpegBin}" -y -i "${OBRA.audioSrc}" -c:a libmp3lame -b:a 320k "${dstMp3Muse}"`;
+    execSync(cmdMp3, { stdio: 'inherit' });
+    fs.copyFileSync(dstMp3Muse, dstMp3Proj);
+    console.log(`Audio MP3 guardado en: ${dstMp3Muse} y ${dstMp3Proj}`);
+  }
+
   if (!fs.existsSync(OBRA.videoSrc)) {
     console.log(`[Video] Archivo no encontrado: ${OBRA.videoSrc}. Se omite video.`);
     return;
@@ -145,8 +160,16 @@ function procesarVideo() {
 
   console.log(`--- Recortando Video a 4:3 (1904x1428) ---`);
   const vf = OBRA.videoFiltro || 'crop=1904:1428:324:4';
-  const ffmpegBin = process.env.FFMPEG_BIN || 'ffmpeg';
-  const cmd = `"${ffmpegBin}" -y -ss ${OBRA.videoCorteInicio} -to ${OBRA.videoCorteFin} -i "${OBRA.videoSrc}" -vf "${vf}" -c:v libx264 -crf 17 -preset fast -pix_fmt yuv420p -c:a aac -b:a 320k "${dstMuse}"`;
+  let cmd;
+  if (OBRA.audioSrc && fs.existsSync(OBRA.audioSrc)) {
+    console.log(`--- Sincronizando con Audio Externo (${OBRA.audioSrc}) con delay ${OBRA.audioDelayMs || 0}ms ---`);
+    const dur = (OBRA.videoCorteFin - OBRA.videoCorteInicio).toFixed(3);
+    const fadeStart = (dur - 0.2).toFixed(3);
+    const delay = OBRA.audioDelayMs || 0;
+    cmd = `"${ffmpegBin}" -y -ss ${OBRA.videoCorteInicio} -to ${OBRA.videoCorteFin} -i "${OBRA.videoSrc}" -i "${OBRA.audioSrc}" -filter_complex "[0:v]${vf}[vout];[1:a]adelay=${delay}|${delay},atrim=0:${dur},asetpts=PTS-STARTPTS,afade=t=out:st=${fadeStart}:d=0.2[aout]" -map "[vout]" -map "[aout]" -c:v libx264 -crf 17 -preset fast -pix_fmt yuv420p -c:a aac -b:a 320k "${dstMuse}"`;
+  } else {
+    cmd = `"${ffmpegBin}" -y -ss ${OBRA.videoCorteInicio} -to ${OBRA.videoCorteFin} -i "${OBRA.videoSrc}" -vf "${vf}" -c:v libx264 -crf 17 -preset fast -pix_fmt yuv420p -c:a aac -b:a 320k "${dstMuse}"`;
+  }
   execSync(cmd, { stdio: 'inherit' });
   fs.copyFileSync(dstMuse, dstProj);
   console.log(`Video guardado en: ${dstMuse} y ${dstProj}`);

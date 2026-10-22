@@ -12,17 +12,40 @@ class VocalTrack {
   final int sizeBytes;
   final String r2Path;
 
+  /// Metadatos internos de procedencia del audio vocal
+  final bool isAi;
+  final String aiLabelEs;
+  final String aiLabelEn;
+  final String aiShortLabelEs;
+  final String aiShortLabelEn;
+
   const VocalTrack({
     required this.archivo,
     required this.sizeBytes,
     required this.r2Path,
+    this.isAi = true,
+    this.aiLabelEs = 'Voz IA',
+    this.aiLabelEn = 'AI Voice',
+    this.aiShortLabelEs = 'IA',
+    this.aiShortLabelEn = 'AI',
   });
+
+  /// Retorna la etiqueta según el idioma deseado
+  String aiLabel({bool isEnglish = false, bool short = false}) {
+    if (short) return isEnglish ? aiShortLabelEn : aiShortLabelEs;
+    return isEnglish ? aiLabelEn : aiLabelEs;
+  }
 
   factory VocalTrack.fromJson(Map<String, dynamic> json) {
     return VocalTrack(
       archivo: json['archivo'] as String? ?? '',
       sizeBytes: (json['size_bytes'] as num?)?.toInt() ?? 0,
       r2Path: json['r2_path'] as String? ?? '',
+      isAi: json['is_ai'] as bool? ?? (json['ia'] as bool? ?? true),
+      aiLabelEs: json['ai_label_es'] as String? ?? 'Voz IA',
+      aiLabelEn: json['ai_label_en'] as String? ?? 'AI Voice',
+      aiShortLabelEs: json['ai_short_label_es'] as String? ?? 'IA',
+      aiShortLabelEn: json['ai_short_label_en'] as String? ?? 'AI',
     );
   }
 }
@@ -33,19 +56,38 @@ class VocalSong {
   final String carpeta;
   final Map<String, VocalTrack> voces;
 
+  /// Metadatos internos de procedencia del audio vocal
+  final bool isAi;
+  final String aiLabelEs;
+  final String aiLabelEn;
+  final String aiShortLabelEs;
+  final String aiShortLabelEn;
+
   const VocalSong({
     this.id,
     required this.canto,
     required this.carpeta,
     required this.voces,
+    this.isAi = true,
+    this.aiLabelEs = 'Voz IA',
+    this.aiLabelEn = 'AI Voice',
+    this.aiShortLabelEs = 'IA',
+    this.aiShortLabelEn = 'AI',
   });
+
+  /// Retorna la etiqueta según el idioma deseado
+  String aiLabel({bool isEnglish = false, bool short = false}) {
+    if (short) return isEnglish ? aiShortLabelEn : aiShortLabelEs;
+    return isEnglish ? aiLabelEn : aiLabelEs;
+  }
 
   factory VocalSong.fromJson(Map<String, dynamic> json) {
     final rawVoces = json['voces'] as Map<String, dynamic>? ?? {};
     final parsedVoces = <String, VocalTrack>{};
     for (final entry in rawVoces.entries) {
       if (entry.value is Map<String, dynamic>) {
-        parsedVoces[entry.key] = VocalTrack.fromJson(entry.value as Map<String, dynamic>);
+        parsedVoces[entry.key] =
+            VocalTrack.fromJson(entry.value as Map<String, dynamic>);
       }
     }
     return VocalSong(
@@ -53,6 +95,11 @@ class VocalSong {
       canto: json['canto'] as String? ?? '',
       carpeta: json['carpeta'] as String? ?? '',
       voces: parsedVoces,
+      isAi: json['is_ai'] as bool? ?? (json['ia'] as bool? ?? true),
+      aiLabelEs: json['ai_label_es'] as String? ?? 'Voz IA',
+      aiLabelEn: json['ai_label_en'] as String? ?? 'AI Voice',
+      aiShortLabelEs: json['ai_short_label_es'] as String? ?? 'IA',
+      aiShortLabelEn: json['ai_short_label_en'] as String? ?? 'AI',
     );
   }
 }
@@ -79,7 +126,8 @@ class VocalLanguageData {
         .map((c) => VocalSong.fromJson(c as Map<String, dynamic>))
         .toList();
     return VocalLanguageData(
-      totalAlabanzas: (json['total_alabanzas'] as num?)?.toInt() ?? cantos.length,
+      totalAlabanzas:
+          (json['total_alabanzas'] as num?)?.toInt() ?? cantos.length,
       totalesBytes: totales,
       cantos: cantos,
     );
@@ -91,7 +139,8 @@ class VocalAudioService {
   factory VocalAudioService() => _instance;
   VocalAudioService._internal();
 
-  static const String baseUrl = 'https://coro-lldm-previews.huritolentino.workers.dev/audio';
+  static const String baseUrl =
+      'https://coro-lldm-previews.huritolentino.workers.dev/audio';
 
   Map<String, VocalLanguageData>? _languagesData;
   bool _loadingManifest = false;
@@ -121,18 +170,23 @@ class VocalAudioService {
       final map = <String, VocalLanguageData>{};
       for (final entry in rawIdiomas.entries) {
         if (entry.value is Map<String, dynamic>) {
-          map[entry.key] = VocalLanguageData.fromJson(entry.value as Map<String, dynamic>);
+          map[entry.key] =
+              VocalLanguageData.fromJson(entry.value as Map<String, dynamic>);
         }
       }
       _languagesData = map;
     } catch (e) {
-      debugPrint('⚠️ [VocalAudioService] Error cargando voces_manifest.json: $e');
+      debugPrint(
+          '⚠️ [VocalAudioService] Error cargando voces_manifest.json: $e');
     } finally {
       _loadingManifest = false;
     }
   }
 
-  VocalSong? findSong({required String cantoId, required String cantoNombre, required String lang}) {
+  VocalSong? findSong(
+      {required String cantoId,
+      required String cantoNombre,
+      required String lang}) {
     final langData = _languagesData?[lang];
     if (langData == null) return null;
 
@@ -176,7 +230,8 @@ class VocalAudioService {
         ),
       );
     } catch (e) {
-      debugPrint('⚠️ [VocalAudioService] Error configurando sesión de audio global: $e');
+      debugPrint(
+          '⚠️ [VocalAudioService] Error configurando sesión de audio global: $e');
     }
   }
 
@@ -250,7 +305,8 @@ class VocalAudioService {
     if (bytes <= 0) return '0 B';
     if (bytes < 1024) return '$bytes B';
     if (bytes < 1024 * 1024) return '${(bytes / 1024).toStringAsFixed(1)} KB';
-    if (bytes < 1024 * 1024 * 1024) return '${(bytes / (1024 * 1024)).toStringAsFixed(1)} MB';
+    if (bytes < 1024 * 1024 * 1024)
+      return '${(bytes / (1024 * 1024)).toStringAsFixed(1)} MB';
     return '${(bytes / (1024 * 1024 * 1024)).toStringAsFixed(2)} GB';
   }
 

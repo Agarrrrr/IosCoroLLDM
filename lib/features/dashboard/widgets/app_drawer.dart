@@ -10,6 +10,7 @@ import 'package:coro_lldm/core/monetization/monetization_controller.dart';
 import 'package:coro_lldm/features/premium/premium_dialog.dart';
 import 'package:coro_lldm/core/monetization/ads_service.dart';
 import 'package:coro_lldm/features/jukebox/jukebox_screen.dart';
+import 'package:coro_lldm/features/shared/review_dialog.dart';
 
 class AppDrawer extends ConsumerWidget {
   const AppDrawer({super.key});
@@ -286,6 +287,17 @@ class AppDrawer extends ConsumerWidget {
                           showPremiumDialog(rootCtx);
                         },
                       );
+                    },
+                  ),
+                  _buildFooterBtn(
+                    context: context,
+                    icon: Icons.star_rate_rounded,
+                    label: strings.t('Calificar aplicación', 'Rate application'),
+                    onTap: () {
+                      final rootCtx =
+                          Navigator.of(context, rootNavigator: true).context;
+                      _closeDrawerSafely(context);
+                      showReviewDialog(rootCtx, force: true);
                     },
                   ),
                   _buildFooterBtn(

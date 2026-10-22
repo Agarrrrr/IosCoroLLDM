@@ -117,6 +117,7 @@ MEMORY.md
 
 # Antigravity/Scratch
 scratch/
+scratch_*.txt
 .antigravitycli/
 
 # Archivos Temporales y Pruebas Locales

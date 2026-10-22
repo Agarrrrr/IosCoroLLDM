@@ -12,6 +12,10 @@ class AppStrings {
 
   String get appTitle => isEnglish ? 'TLOTW Choir' : 'Coro LLDM';
 
+  /// Etiqueta interna y visual para audios generados por Inteligencia Artificial
+  String get aiVoiceLabel => isEnglish ? 'AI Voice' : 'Voz IA';
+  String get aiShortLabel => isEnglish ? 'AI' : 'IA';
+
   String voiceLabel(String voiceKey) {
     final lower = voiceKey.trim().toLowerCase();
     if (lower == 'ensamble' || lower == 'ensemble') {
