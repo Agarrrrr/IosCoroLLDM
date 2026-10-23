@@ -16665,5 +16665,113 @@
     "cifrado_version": 1,
     "_idioma": "es",
     "idioma": "es"
+  },
+  {
+    "id": "d565b828-1a67-4d24-82f8-6fb3a230dd9a",
+    "nombre": "Como el Ciervo Brama",
+    "archivo": "global/assets/pdf/3e04f847844b27a91cb1374b92c979dc0a9132572552c3d7f0400c80a956ef71.enc",
+    "temas": [
+      "Confianza",
+      "Salmo"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "ae036c7e-ee74-4cc5-b2b8-49eb629ef386",
+    "nombre": "El Jardín de la Oración",
+    "archivo": "global/assets/pdf/00b2e8f312b017f8023c8662310d2c4c9b79ec9577497c75b2caaf1a0b9ffc35.enc",
+    "temas": [
+      "Petición",
+      "Elección"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "b43cc71c-5812-4cd4-83fe-823069712fca",
+    "nombre": "Gloria a Jesucristo",
+    "archivo": "global/assets/pdf/b6ef67d61696e1d807e150830a61c22d9816528c82f74d4d8e14d13c7d64f607.enc",
+    "temas": [
+      "Alabanza"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "d1ab7f1e-bfb5-4ed4-8e88-b8de2d6c8c9a",
+    "nombre": "La Salvación de Dios",
+    "archivo": "global/assets/pdf/343379d79dc530e7be9d599a8d8eef3b654ddfa95a77bc56fc57d37753deb247.enc",
+    "temas": [
+      "Elección"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "e523d9fa-e817-44c9-8df3-e196b3ad959f",
+    "nombre": "No Existe la Distancia",
+    "archivo": "global/assets/pdf/a236ee4a58954e130a2b1303682d7612a2993aae46d236abfc4001a22a4c0a10.enc",
+    "temas": [
+      "Elección"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "7cd50004-6872-47cc-888e-577a62e96cd6",
+    "nombre": "Una Vida Nueva en Cristo",
+    "archivo": "global/assets/pdf/71b5ad6688b15369877df6432288698cff379c478d60ba8f5ee9f779e88f551a.enc",
+    "temas": [
+      "Gratitud",
+      "Gracia"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
+  },
+  {
+    "id": "a3aba9cc-aca2-4eb6-833a-3cb75f576465",
+    "nombre": "¡Vendrás, Oh Salvador!",
+    "archivo": "global/assets/pdf/ac40169bce941ff8656ba41f6a0eeb4f8b0e6382907442d73002ef93ff1a5cfa.enc",
+    "temas": [
+      "Advenimiento"
+    ],
+    "es_privado": false,
+    "vinculo_idioma": null,
+    "coro_id": "local",
+    "version": 1,
+    "cifrado_version": 1,
+    "_idioma": "es",
+    "idioma": "es"
   }
 ]
