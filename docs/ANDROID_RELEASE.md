@@ -27,3 +27,11 @@ de logcat. La compilación y las pruebas de widgets no verifican este arranque.
 Este control exige la pantalla desbloqueada y un catálogo con cantos. Verifica
 el campo de búsqueda y las tarjetas de canciones mediante la jerarquía de
 accesibilidad; guarda capturas, logcat y un informe JSON de tres arranques.
+
+Si Google Play firma la app instalada con otra clave, no se debe desinstalar
+para forzar la actualización local. Generar y verificar los APKs del AAB y
+probar el código en una instalación aislada mediante la propiedad Gradle
+`performanceAudit`. En ese caso el chequeo de arranque admite
+`-Package com.lldm.coro.perfaudit -Activity com.lldm.coro.MainActivity`.
+Registrar esta limitación y completar después la prueba de actualización
+mediante una pista de pruebas de Google Play con el AAB de producción.

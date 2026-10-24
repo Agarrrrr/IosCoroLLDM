@@ -4,27 +4,12 @@ import AVFoundation
 import AudioToolbox
 import MediaPlayer
 import UserNotifications
-import AppTrackingTransparency
-import FBAudienceNetwork
 
 @main
 @objc class AppDelegate: FlutterAppDelegate {
   private var audioRouteObserver: NSObjectProtocol?
   private var fileExport: FileExportCoordinator?
   private var mediaSessionCoordinator: MediaSessionCoordinator?
-
-  private func synchronizeMetaTrackingConsent() {
-    // Meta reads ATT directly on iOS 17+. Earlier versions need the flag.
-    if #available(iOS 17.0, *) { return }
-    FBAdSettings.setAdvertiserTrackingEnabled(
-      ATTrackingManager.trackingAuthorizationStatus == .authorized
-    )
-  }
-
-  override func applicationDidBecomeActive(_ application: UIApplication) {
-    synchronizeMetaTrackingConsent()
-    super.applicationDidBecomeActive(application)
-  }
 
   override func application(
     _ application: UIApplication,
@@ -43,7 +28,6 @@ import FBAudienceNetwork
       UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
     }
 
-    synchronizeMetaTrackingConsent()
     GeneratedPluginRegistrant.register(with: self)
 
     if let controller = window?.rootViewController as? FlutterViewController {

@@ -82,9 +82,26 @@ class AdsService with WidgetsBindingObserver {
     _premium = isPremium;
     if (_initialized || (!Platform.isAndroid && !Platform.isIOS)) return;
 
+    // Only QA builds provide this define; production has no test-device override.
+    final testDeviceIds = const String.fromEnvironment('ADMOB_TEST_DEVICE_IDS')
+        .split(',')
+        .map((id) => id.trim())
+        .where((id) => id.isNotEmpty)
+        .toList();
+    if (testDeviceIds.isNotEmpty) {
+      await MobileAds.instance.updateRequestConfiguration(
+        RequestConfiguration(testDeviceIds: testDeviceIds),
+      );
+    }
     final canRequest = await _requestConsent();
     if (!canRequest) return;
-    await MobileAds.instance.initialize();
+    final initialization = await MobileAds.instance.initialize();
+    if (testDeviceIds.isNotEmpty) {
+      for (final entry in initialization.adapterStatuses.entries) {
+        debugPrint('[Ads QA] ${entry.key}: ${entry.value.state}; '
+            '${entry.value.description}');
+      }
+    }
     WidgetsBinding.instance.addObserver(this);
     _initialized = true;
     ready.value = true;

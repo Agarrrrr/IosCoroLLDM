@@ -64,6 +64,12 @@ App ID de Liftoff: `6adc478ddf651bb9b7aa98cf`.
    usar una compilación de perfil con el dispositivo registrado para esta prueba.
 6. Desactivar los modos de prueba antes de publicar las nuevas versiones.
 
+Para registrar el teléfono solo en una compilación de QA, proporcionar
+`--dart-define=ADMOB_TEST_DEVICE_IDS=HASH_DEL_DISPOSITIVO`. Admite varios hashes
+separados por comas y muestra el estado de los adaptadores en logcat. En la
+compilación de producción se omite ese define. Liftoff también requiere su modo
+de prueba para verificar anuncios de esa red.
+
 Pangle queda fuera de esta integración: el titular es desarrollador individual
 y Pangle exige documentación de una empresa constituida para monetizar. No se
 ha añadido su SDK. Política oficial:

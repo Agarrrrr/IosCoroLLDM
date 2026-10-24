@@ -13,19 +13,6 @@ subprojects {
     project.layout.buildDirectory.value(newSubprojectBuildDir)
 }
 subprojects {
-    if (name == "gma_mediation_meta") {
-        pluginManager.withPlugin("com.android.library") {
-            // Meta 1.5.0 declares API 33, but its AndroidX dependencies need 34+.
-            extensions.findByType(
-                com.android.build.api.variant.LibraryAndroidComponentsExtension::class.java
-            )?.finalizeDsl { libraryDsl ->
-                libraryDsl.compileSdk = 36
-            }
-        }
-    }
-}
-
-subprojects {
     project.evaluationDependsOn(":app")
 }
 

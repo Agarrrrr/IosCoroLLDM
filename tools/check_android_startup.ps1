@@ -1,6 +1,7 @@
 param(
     [Parameter(Mandatory = $true)][string]$AdbPath,
     [string]$Package = 'com.lldm.coro',
+    [string]$Activity = '.MainActivity',
     [string]$EvidenceDir = 'build/releases/startup-check',
     [int]$Attempts = 3
 )
@@ -19,7 +20,7 @@ $report = @()
 for ($attempt = 1; $attempt -le $Attempts; $attempt++) {
     Invoke-Adb @('shell', 'am', 'force-stop', $Package) | Out-Null
     $watch = [Diagnostics.Stopwatch]::StartNew()
-    Invoke-Adb @('shell', 'am', 'start', '-W', '-n', "$Package/.MainActivity") | Out-Null
+    Invoke-Adb @('shell', 'am', 'start', '-W', '-n', "$Package/$Activity") | Out-Null
     $appProcessId = (Invoke-Adb @('shell', 'pidof', $Package)).Trim()
     $ready = $false
     for ($poll = 0; $poll -lt 5; $poll++) {
