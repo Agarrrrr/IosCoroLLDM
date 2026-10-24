@@ -16,10 +16,10 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 3.5.1+45
+version: 3.5.1+46
 
 environment:
-  sdk: ^3.5.0
+  sdk: ^3.6.0
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -55,6 +55,10 @@ dependencies:
   ffi: ^2.1.4
   flutter_lame: ^1.0.3
   google_mobile_ads: ^6.0.0
+  # Last Liftoff adapter compatible with google_mobile_ads 6.x.
+  gma_mediation_liftoffmonetize: 1.4.1
+  # Meta bidding adapter compatible with google_mobile_ads 6.x.
+  gma_mediation_meta: 1.5.0
   purchases_flutter: ^10.6.0
   url_launcher: ^6.3.2
   wakelock_plus: 1.4.0
