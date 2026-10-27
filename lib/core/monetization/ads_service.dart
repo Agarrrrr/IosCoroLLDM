@@ -60,6 +60,27 @@ class AdsService with WidgetsBindingObserver {
   bool _showingFullScreen = false;
   int _externalActions = 0;
 
+  /// Cooldown global de 30 segundos entre anuncios de pantalla completa no recompensados
+  /// (App Open e Intersticiales). Si salta un App Open al volver a la app, no puede
+  /// saltar un Intersticial al salir de la partitura (ni viceversa) durante 30 segundos.
+  /// Los anuncios Rewarded están exentos para no afectar las recompensas del usuario.
+  static const Duration fullScreenAdCooldown = Duration(seconds: 30);
+  DateTime? _lastNonRewardedAdTime;
+
+  bool get isInFullScreenCooldown {
+    if (_showingFullScreen) return true;
+    final last = _lastNonRewardedAdTime;
+    if (last == null) return false;
+    return DateTime.now().difference(last) < fullScreenAdCooldown;
+  }
+
+  bool get hasRecentFullScreenAd {
+    if (_showingFullScreen) return true;
+    final last = _lastNonRewardedAdTime;
+    if (last == null) return false;
+    return DateTime.now().difference(last) < const Duration(seconds: 60);
+  }
+
   /// Returning from a share target or Files must not present an app-open ad.
   VoidCallback suspendForExternalAction() {
     _externalActions++;
@@ -176,7 +197,12 @@ class AdsService with WidgetsBindingObserver {
   }
 
   Future<void> showAppOpenIfAvailable() async {
-    if (_premium || _showingFullScreen || _externalActions > 0) return;
+    if (_premium ||
+        _showingFullScreen ||
+        _externalActions > 0 ||
+        isInFullScreenCooldown) {
+      return;
+    }
     final loadedAt = _appOpenLoadedAt;
     if (loadedAt == null ||
         DateTime.now().difference(loadedAt) > const Duration(hours: 4)) {
@@ -189,10 +215,12 @@ class AdsService with WidgetsBindingObserver {
     if (ad == null) return;
     _appOpen = null;
     _showingFullScreen = true;
+    _lastNonRewardedAdTime = DateTime.now();
     ad.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
         ad.dispose();
         _showingFullScreen = false;
+        _lastNonRewardedAdTime = DateTime.now();
         _loadAppOpen();
       },
       onAdFailedToShowFullScreenContent: (ad, _) {
@@ -216,24 +244,30 @@ class AdsService with WidgetsBindingObserver {
     );
   }
 
-  Future<void> onPdfOpened() async {
+  Future<bool> onPdfOpened() async {
     if (_premium ||
         !_initialized ||
         _showingFullScreen ||
-        _externalActions > 0) {
-      return;
+        _externalActions > 0 ||
+        isInFullScreenCooldown) {
+      if (!_premium && _initialized && _interstitial == null) {
+        _loadInterstitial();
+      }
+      return false;
     }
     final ad = _interstitial;
     if (ad == null) {
       _loadInterstitial();
-      return;
+      return false;
     }
     _interstitial = null;
     _showingFullScreen = true;
+    _lastNonRewardedAdTime = DateTime.now();
     ad.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
         ad.dispose();
         _showingFullScreen = false;
+        _lastNonRewardedAdTime = DateTime.now();
         _loadInterstitial();
       },
       onAdFailedToShowFullScreenContent: (ad, _) {
@@ -243,6 +277,7 @@ class AdsService with WidgetsBindingObserver {
       },
     );
     await ad.show();
+    return true;
   }
 
   /// Llamar cuando un export de audio fue exitoso (no si fue cancelado).
@@ -251,7 +286,11 @@ class AdsService with WidgetsBindingObserver {
     if (_premium ||
         !_initialized ||
         _showingFullScreen ||
-        _externalActions > 0) {
+        _externalActions > 0 ||
+        isInFullScreenCooldown) {
+      if (!_premium && _initialized && _interstitial == null) {
+        _loadInterstitial();
+      }
       return;
     }
     final ad = _interstitial;
@@ -261,10 +300,12 @@ class AdsService with WidgetsBindingObserver {
     }
     _interstitial = null;
     _showingFullScreen = true;
+    _lastNonRewardedAdTime = DateTime.now();
     ad.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
         ad.dispose();
         _showingFullScreen = false;
+        _lastNonRewardedAdTime = DateTime.now();
         _loadInterstitial();
       },
       onAdFailedToShowFullScreenContent: (ad, _) {
@@ -304,6 +345,7 @@ class AdsService with WidgetsBindingObserver {
       onAdDismissedFullScreenContent: (ad) {
         ad.dispose();
         _showingFullScreen = false;
+        _lastNonRewardedAdTime = DateTime.now();
         if (!completer.isCompleted) completer.complete(earned);
         _loadRewarded();
       },

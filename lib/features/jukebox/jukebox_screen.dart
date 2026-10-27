@@ -107,20 +107,33 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
         );
   }
 
+  String? _cachedTemasKey;
+  List<String> _cachedTemasValue = const [];
+  static final RegExp _cleanRegex = RegExp(r'[^a-z0-9]');
+
   List<String> _getTemasForSong(String songTitle, String? songId) {
+    final key = '${songId ?? ''}::$songTitle';
+    if (_cachedTemasKey == key) return _cachedTemasValue;
+
     final cantos = ref.read(cantosBaseProvider).valueOrNull ?? [];
+    if (cantos.isEmpty) return const [];
+
     if (songId != null) {
       final found = cantos.where((c) => c.id == songId).firstOrNull;
-      if (found != null && found.temas.isNotEmpty) return found.temas;
+      if (found != null && found.temas.isNotEmpty) {
+        _cachedTemasKey = key;
+        _cachedTemasValue = found.temas;
+        return found.temas;
+      }
     }
-    final cleanTarget =
-        songTitle.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
+    final cleanTarget = songTitle.toLowerCase().replaceAll(_cleanRegex, '');
     final match = cantos.where((c) {
-      final cleanName =
-          c.nombre.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]'), '');
+      final cleanName = c.nombre.toLowerCase().replaceAll(_cleanRegex, '');
       return cleanName == cleanTarget;
     }).firstOrNull;
-    return match?.temas ?? [];
+    _cachedTemasKey = key;
+    _cachedTemasValue = match?.temas ?? const [];
+    return _cachedTemasValue;
   }
 
   Future<void> _handleTogglePlay() async {

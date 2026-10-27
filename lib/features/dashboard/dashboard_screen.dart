@@ -4,7 +4,6 @@ import 'package:coro_lldm/features/shared/content_notice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
@@ -39,11 +38,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                 ?.toDouble() ??
             0;
     _scrollController = ScrollController(initialScrollOffset: savedOffset);
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) {
-        showReviewDialog(context);
-      }
-    });
+    ReviewDialog.recordSessionStart();
   }
 
   void _openCanto(String cantoId) {
@@ -142,53 +137,56 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                             color:
                                 theme.colorScheme.onSurface.withValues(alpha: 0.1)),
                       ),
-                      child: TextField(
-                        controller: _searchController,
-                        onChanged: (val) {
-                          _moveCatalogToTop();
-                          _searchDebounce?.cancel();
-                          _searchDebounce = Timer(
-                            const Duration(milliseconds: 180),
-                            () =>
-                                ref.read(searchTextProvider.notifier).set(val),
+                      child: ValueListenableBuilder<TextEditingValue>(
+                        valueListenable: _searchController,
+                        builder: (context, value, _) {
+                          return TextField(
+                            controller: _searchController,
+                            onChanged: (val) {
+                              _moveCatalogToTop();
+                              _searchDebounce?.cancel();
+                              _searchDebounce = Timer(
+                                const Duration(milliseconds: 180),
+                                () => ref
+                                    .read(searchTextProvider.notifier)
+                                    .set(val),
+                              );
+                            },
+                            style: const TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.w500),
+                            decoration: InputDecoration(
+                              hintText: strings.t(
+                                'Buscar canto por título...',
+                                'Search songs by title...',
+                              ),
+                              hintStyle: TextStyle(
+                                  color: theme.colorScheme.onSurfaceVariant,
+                                  fontWeight: FontWeight.w500),
+                              prefixIcon: Icon(Icons.search_rounded,
+                                  size: 20,
+                                  color: theme.colorScheme.onSurfaceVariant),
+                              suffixIcon: value.text.isNotEmpty
+                                  ? IconButton(
+                                      icon: Icon(Icons.close_rounded,
+                                          size: 20,
+                                          color: theme
+                                              .colorScheme.onSurfaceVariant),
+                                      onPressed: () {
+                                        _searchDebounce?.cancel();
+                                        _searchController.clear();
+                                        _moveCatalogToTop();
+                                        ref
+                                            .read(searchTextProvider.notifier)
+                                            .set('');
+                                      },
+                                    )
+                                  : null,
+                              border: InputBorder.none,
+                              contentPadding: const EdgeInsets.symmetric(
+                                  horizontal: 18, vertical: 14),
+                            ),
                           );
-                          setState(
-                              () {}); // Forzar rebuild para mostrar/ocultar el botón X
                         },
-                        style: const TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.w500),
-                        decoration: InputDecoration(
-                          hintText: strings.t(
-                            'Buscar canto por título...',
-                            'Search songs by title...',
-                          ),
-                          hintStyle: TextStyle(
-                              color: theme.colorScheme.onSurfaceVariant,
-                              fontWeight: FontWeight.w500),
-                          prefixIcon: Icon(Icons.search_rounded,
-                              size: 20,
-                              color: theme.colorScheme.onSurfaceVariant),
-                          suffixIcon: _searchController.text.isNotEmpty
-                              ? IconButton(
-                                  icon: Icon(Icons.close_rounded,
-                                      size: 20,
-                                      color:
-                                          theme.colorScheme.onSurfaceVariant),
-                                  onPressed: () {
-                                    _searchDebounce?.cancel();
-                                    _searchController.clear();
-                                    _moveCatalogToTop();
-                                    ref
-                                        .read(searchTextProvider.notifier)
-                                        .set('');
-                                    setState(() {});
-                                  },
-                                )
-                              : null,
-                          border: InputBorder.none,
-                          contentPadding: const EdgeInsets.symmetric(
-                              horizontal: 18, vertical: 14),
-                        ),
                       ),
                     ),
                   ),
@@ -294,6 +292,6 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
           ],
         ),
       ),
-    ).animate().fadeIn(duration: 500.ms, curve: Curves.easeOut);
+    );
   }
 }

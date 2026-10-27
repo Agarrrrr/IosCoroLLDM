@@ -29,7 +29,9 @@ class ScoreCard extends ConsumerWidget {
         ) !=
         null;
     final hasAnyAudio = hasAudio || hasVocal;
-    final isFavorite = ref.watch(favoritosProvider).contains(canto.id);
+    final isFavorite = ref.watch(
+      favoritosProvider.select((favs) => favs.contains(canto.id)),
+    );
     final strings = AppStrings.of(context);
 
     final cardBg = Theme.of(context).colorScheme.surface;

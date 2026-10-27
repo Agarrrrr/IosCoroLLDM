@@ -1,3 +1,8 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
 # Dependencias
 node_modules/
 

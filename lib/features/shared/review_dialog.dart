@@ -60,6 +60,32 @@ class ReviewDialog extends StatefulWidget {
     }
   }
 
+  static bool _sessionRecorded = false;
+  static bool _shownInCurrentSession = false;
+
+  /// Registra el inicio de sesión una sola vez por ejecución de la app.
+  static void recordSessionStart() {
+    if (_sessionRecorded) return;
+    _sessionRecorded = true;
+    try {
+      final box = Hive.box('cache');
+      final launchCount =
+          (box.get('review_launch_count', defaultValue: 0) as int) + 1;
+      box.put('review_launch_count', launchCount);
+    } catch (_) {}
+  }
+
+  /// Registra que el hermano realmente ha dado uso a la aplicación
+  /// (consultar una partitura o reproducir un canto).
+  static void recordMeaningfulUse() {
+    try {
+      final box = Hive.box('cache');
+      final usageCount =
+          (box.get('review_usage_count', defaultValue: 0) as int) + 1;
+      box.put('review_usage_count', usageCount);
+    } catch (_) {}
+  }
+
   static void markRated() {
     try {
       final box = Hive.box('cache');
@@ -70,31 +96,56 @@ class ReviewDialog extends StatefulWidget {
   static void markDismissed() {
     try {
       final box = Hive.box('cache');
-      box.put('review_dismissed_at', DateTime.now().millisecondsSinceEpoch);
+      final now = DateTime.now().millisecondsSinceEpoch;
+      final dismissCount =
+          (box.get('review_dismiss_count', defaultValue: 0) as int) + 1;
+      final usageCount =
+          box.get('review_usage_count', defaultValue: 0) as int;
+      box.put('review_dismissed_at', now);
+      box.put('review_dismiss_count', dismissCount);
+      box.put('review_dismissed_usage_count', usageCount);
     } catch (_) {}
   }
 
   static bool shouldShowAutoPrompt() {
     try {
+      if (_shownInCurrentSession) return false;
+      if (AdsService.instance.hasRecentFullScreenAd) return false;
+
       final box = Hive.box('cache');
       final hasRated = box.get('review_has_rated', defaultValue: false) as bool;
       if (hasRated) return false;
+
+      final dismissCount =
+          box.get('review_dismiss_count', defaultValue: 0) as int;
+      // No insistir más de 3 veces en total si el usuario ya lo pospuso 3 veces
+      if (dismissCount >= 3) return false;
+
+      final launchCount =
+          box.get('review_launch_count', defaultValue: 1) as int;
+      final usageCount =
+          box.get('review_usage_count', defaultValue: 0) as int;
+
+      // Solo mostrar cuando realmente hayan usado la app:
+      // mínimo 3 sesiones y al menos 5 partituras/audios consultados.
+      if (launchCount < 3 || usageCount < 5) return false;
 
       final dismissedAt = box.get('review_dismissed_at') as int?;
       if (dismissedAt != null) {
         final lastDismissed =
             DateTime.fromMillisecondsSinceEpoch(dismissedAt);
-        if (DateTime.now().difference(lastDismissed).inDays < 7) {
+        final minDays = dismissCount == 1 ? 14 : 30;
+        if (DateTime.now().difference(lastDismissed).inDays < minDays) {
+          return false;
+        }
+        final usageAtDismiss =
+            box.get('review_dismissed_usage_count', defaultValue: 0) as int;
+        if (usageCount - usageAtDismiss < 8) {
           return false;
         }
       }
 
-      final launchCount =
-          (box.get('review_launch_count', defaultValue: 0) as int) + 1;
-      box.put('review_launch_count', launchCount);
-
-      // Prompt on 3rd session, then wait at least 7 days between prompts
-      return launchCount >= 3;
+      return true;
     } catch (_) {
       return false;
     }
@@ -316,8 +367,24 @@ Future<void> showReviewDialog(BuildContext context, {bool force = false}) async 
   if (!force && !ReviewDialog.shouldShowAutoPrompt()) {
     return;
   }
-  return showDialog<void>(
+  if (!force) {
+    ReviewDialog._shownInCurrentSession = true;
+  }
+  await showDialog<void>(
     context: context,
     builder: (context) => const ReviewDialog(),
   );
+  // Si el usuario cerró el modal tocando fuera o con el botón Atrás sin calificar,
+  // registrar el descarte para activar el enfriamiento y que no vuelva a salir de inmediato.
+  if (!force) {
+    try {
+      final box = Hive.box('cache');
+      final hasRated = box.get('review_has_rated', defaultValue: false) as bool;
+      final dismissedAt = box.get('review_dismissed_at') as int?;
+      final now = DateTime.now().millisecondsSinceEpoch;
+      if (!hasRated && (dismissedAt == null || (now - dismissedAt) > 5000)) {
+        ReviewDialog.markDismissed();
+      }
+    } catch (_) {}
+  }
 }

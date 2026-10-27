@@ -28,6 +28,8 @@ function getContentType(filename) {
   if (lower.endsWith('.m4a')) return 'audio/mp4; codecs=mp4a.40.2'
   if (lower.endsWith('.opus') || lower.endsWith('.ogg')) return 'audio/ogg; codecs=opus'
   if (lower.endsWith('.json')) return 'application/json; charset=utf-8'
+  if (lower.endsWith('.pdf')) return 'application/pdf'
+  if (lower.endsWith('.mid') || lower.endsWith('.midi')) return 'audio/midi'
   return 'application/octet-stream'
 }
 
@@ -37,8 +39,8 @@ async function verifySignature(subPath, expStr, sigStr) {
   if (!expStr || !sigStr) return false
   const now = Math.floor(Date.now() / 1000)
   const exp = parseInt(expStr, 10)
-  // Rechazar si expiró o si el timestamp es absurdo (más de 5 minutos en el pasado)
-  if (isNaN(exp) || exp < now - 300) return false
+  // Tolerancia amplia (24h en el pasado) para dispositivos con reloj desfasado o cambio de horario manual
+  if (isNaN(exp) || exp < now - 86400) return false
 
   const enc = new TextEncoder()
   const key = await crypto.subtle.importKey(
@@ -58,9 +60,11 @@ async function verifySignature(subPath, expStr, sigStr) {
 }
 
 function isKnownScraper(request) {
+  // Nota crítica: El reproductor nativo MediaPlayer/Stagefright en Android (especialmente Oppo/ColorOS Android 16)
+  // realiza peticiones de streaming sin cabecera User-Agent. NUNCA bloquear por User-Agent vacío.
   const ua = (request.headers.get('User-Agent') || '').toLowerCase()
-  if (!ua) return true
-  const scrapers = ['python', 'curl', 'wget', 'scrapy', 'aiohttp', 'bot', 'spider', 'crawler', 'go-http-client', 'postman']
+  if (!ua) return false
+  const scrapers = ['scrapy', 'spider', 'crawler']
   return scrapers.some((s) => ua.includes(s))
 }
 
@@ -75,6 +79,7 @@ export default {
     const rawPath = decodeURIComponent(url.pathname)
 
     let r2Key = null
+    let isDynamicManifest = false
 
     // 1. Ruta de previews históricas: /previews/... (Demos públicos de 30s)
     const previewMatch = rawPath.match(/^\/previews\/([a-z0-9][a-z0-9._-]*\.(opus|m4a))$/i)
@@ -82,21 +87,11 @@ export default {
       r2Key = `previews/${previewMatch[1]}`
     }
 
-    // 2. Ruta de audios completos y manifiesto: /audio/... (Protegido contra scraping)
+    // 2. Ruta de audios completos, manifiesto y catálogos OTA: /audio/... (Protegido con firma HMAC)
     else if (rawPath.startsWith('/audio/')) {
       const subPath = rawPath.replace(/^\/audio\//, '')
 
-      // A) Bloquear manifiesto público (los clientes móviles ya lo llevan empaquetado)
-      if (subPath.toLowerCase() === 'voces_manifest.json') {
-        return new Response('Forbidden', { status: 403, headers: corsFor(request) })
-      }
-
-      // B) Bloquear bots y scrapers comunes
-      if (isKnownScraper(request)) {
-        return new Response('Forbidden', { status: 403, headers: corsFor(request) })
-      }
-
-      // C) Validar firma HMAC y vigencia temporal
+      // A) Validar firma HMAC y vigencia temporal primero
       const exp = url.searchParams.get('exp')
       const sig = url.searchParams.get('sig')
       const isValid = await verifySignature(subPath, exp, sig)
@@ -107,8 +102,16 @@ export default {
         })
       }
 
+      // B) Bloquear únicamente crawlers explícitos si llegaran a tener URL
+      if (isKnownScraper(request)) {
+        return new Response('Forbidden', { status: 403, headers: corsFor(request) })
+      }
+
       if (subPath) {
         r2Key = `audio/${subPath}`
+        if (subPath.toLowerCase().endsWith('.json')) {
+          isDynamicManifest = true
+        }
       }
     }
 
@@ -143,7 +146,10 @@ export default {
 
     const headers = corsFor(request)
     headers.set('Content-Type', getContentType(r2Key))
-    headers.set('Cache-Control', 'private, max-age=14400')
+    headers.set(
+      'Cache-Control',
+      isDynamicManifest ? 'no-cache, must-revalidate' : 'private, max-age=14400'
+    )
     headers.set('Accept-Ranges', 'bytes')
     if (object.httpEtag) {
       headers.set('ETag', object.httpEtag)

@@ -127,4 +127,21 @@ const workers = Array.from({ length: CONCURRENCY }, (_, i) => worker(i + 1))
 await Promise.all(workers)
 await saveState()
 
+// Sincronizar manifiestos y catálogos OTA en R2 para entrega instantánea en la app
+const otaFiles = [
+  { r2: 'coro-lldm-previews/audio/voces_manifest.json', local: resolve('assets', 'voces_manifest.json') },
+  { r2: 'coro-lldm-previews/audio/catalogo.json', local: resolve('assets', 'catalogo.json') },
+  { r2: 'coro-lldm-previews/audio/catalogo_en.json', local: resolve('assets', 'catalogo_en.json') },
+]
+for (const item of otaFiles) {
+  if (existsSync(item.local)) {
+    try {
+      await runWrangler(item.r2, item.local)
+      console.log(`[OTA Sync] OK: ${item.r2}`)
+    } catch (err) {
+      console.warn(`[OTA Sync] Error uploading ${item.r2}: ${err.message}`)
+    }
+  }
+}
+
 console.log(`Upload process finished! Total uploaded: ${uploadedCount}, Errors: ${errorCount}`)

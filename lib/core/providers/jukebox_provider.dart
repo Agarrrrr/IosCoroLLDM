@@ -151,6 +151,7 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
   @override
   JukeboxState build() {
     _vocalService.configureGlobalAudioSession();
+    unawaited(_player.setAudioContext(VocalAudioService.vocalAudioContext));
 
     if (Platform.isAndroid) {
       _player.setVolume(0.80);
@@ -328,7 +329,10 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
       if (state.audioMode != JukeboxAudioMode.vocal && !state.isPlayingAdSpot) {
         return;
       }
-      state = state.copyWith(position: pos);
+      final diffMs = (pos.inMilliseconds - state.position.inMilliseconds).abs();
+      if (diffMs >= 220 || pos.inMilliseconds == 0) {
+        state = state.copyWith(position: pos);
+      }
       _syncMediaSessionPlaybackState();
     });
 
@@ -355,11 +359,18 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
       }
       final posMs = (mState.tiempoActual * 1000).round();
       final durMs = (mState.tiempoTotal * 1000).round();
-      state = state.copyWith(
-        isPlaying: mState.isPlaying,
-        position: Duration(milliseconds: posMs),
-        duration: Duration(milliseconds: durMs),
-      );
+      final posDiff = (posMs - state.position.inMilliseconds).abs();
+      final durDiff = (durMs - state.duration.inMilliseconds).abs();
+      if (mState.isPlaying != state.isPlaying ||
+          posDiff >= 220 ||
+          durDiff >= 200 ||
+          posMs == 0) {
+        state = state.copyWith(
+          isPlaying: mState.isPlaying,
+          position: Duration(milliseconds: posMs),
+          duration: Duration(milliseconds: durMs),
+        );
+      }
       _syncMediaSessionPlaybackState();
     });
   }
@@ -738,16 +749,40 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
     _syncMediaSessionMetadata();
 
     try {
-      final sourceUri = await _vocalService.resolvePlaybackSource(track.r2Path);
-      final isLocal = await _vocalService.isLocalFileAvailable(track.r2Path);
+      var isLocal = await _vocalService.isLocalFileAvailable(track.r2Path);
+      var sourceUri = await _vocalService.resolvePlaybackSource(track.r2Path);
       if (epoch != _loadEpoch) return;
 
       state = state.copyWith(isOffline: isLocal);
 
-      final Source source =
+      if (!isLocal) {
+        _vocalService.cacheTrackInBackground(track);
+      }
+
+      final Source initialSource =
           isLocal ? DeviceFileSource(sourceUri) : UrlSource(sourceUri);
 
-      await _player.play(source, position: seekTo);
+      try {
+        await _player.play(initialSource, position: seekTo);
+      } catch (streamError) {
+        if (!isLocal) {
+          debugPrint(
+              'ℹ️ [Jukebox] Streaming directo falló ($streamError), aplicando fallback local Dio...');
+          final downloadedFile =
+              await _vocalService.ensureLocalFileForTrack(track);
+          if (epoch != _loadEpoch) return;
+          if (downloadedFile != null) {
+            isLocal = true;
+            sourceUri = downloadedFile.path;
+            state = state.copyWith(isOffline: true);
+            await _player.play(DeviceFileSource(sourceUri), position: seekTo);
+          } else {
+            rethrow;
+          }
+        } else {
+          rethrow;
+        }
+      }
       if (epoch != _loadEpoch) return;
 
       _vocalSourceReady = true;

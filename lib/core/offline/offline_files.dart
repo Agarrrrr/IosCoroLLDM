@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:isolate';
+import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
 import 'package:coro_lldm/core/security/file_crypto.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:dio/dio.dart';
@@ -18,9 +19,15 @@ class OfflineFiles {
   static const String storageUrl =
       'https://repertoriobc-files.huritolentino.workers.dev';
 
-  static final Dio _dio = Dio()
-    ..options.connectTimeout = const Duration(seconds: 10)
-    ..options.receiveTimeout = const Duration(seconds: 60);
+  static final Dio _dio = Dio(
+    BaseOptions(
+      connectTimeout: const Duration(seconds: 12),
+      receiveTimeout: const Duration(seconds: 60),
+      headers: const {
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 16; CoroLLDM/3.6.0)',
+      },
+    ),
+  );
 
   static String resolvePdfUrl(Canto canto) {
     if (canto.archivo.startsWith('http')) return canto.archivo;
@@ -81,7 +88,16 @@ class OfflineFiles {
       }
     }
 
-    await _download(resolvePdfUrl(canto), file, FileCrypto.isPdf);
+    try {
+      await _download(resolvePdfUrl(canto), file, FileCrypto.isPdf);
+    } catch (primaryError) {
+      debugPrint(
+        '[OfflineFiles] Fallback R2 para PDF ${canto.archivo}: $primaryError',
+      );
+      final fallbackUrl =
+          VocalAudioService().getStreamUrl('pdfs/${canto.archivo}');
+      await _download(fallbackUrl, file, FileCrypto.isPdf);
+    }
     await _rememberVersion('${canto.id}_pdf_version', canto.version);
     return file;
   }
@@ -116,7 +132,15 @@ class OfflineFiles {
       }
     }
 
-    await _download(resolveMidiUrl(canto), file, FileCrypto.isMidi);
+    try {
+      await _download(resolveMidiUrl(canto), file, FileCrypto.isMidi);
+    } catch (primaryError) {
+      debugPrint(
+        '[OfflineFiles] Fallback R2 para MIDI $midi: $primaryError',
+      );
+      final fallbackUrl = VocalAudioService().getStreamUrl('midis/$midi');
+      await _download(fallbackUrl, file, FileCrypto.isMidi);
+    }
     await _rememberVersion(
       '${canto.id}_midi_version',
       canto.effectiveMidiVersion,

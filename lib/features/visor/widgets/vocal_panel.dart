@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 import 'package:coro_lldm/features/shared/app_notification_banner.dart';
 
 import 'package:audioplayers/audioplayers.dart';
@@ -138,16 +137,6 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     }
   }
 
-  Future<bool> _hasInternetConnection() async {
-    try {
-      final result = await InternetAddress.lookup('cloudflare.com')
-          .timeout(const Duration(seconds: 2));
-      return result.isNotEmpty && result[0].rawAddress.isNotEmpty;
-    } catch (_) {
-      return false;
-    }
-  }
-
   void _bindMediaSession() {
     SystemMediaSession.instance.bindCallbacks(
       SystemMediaCallbacks(
@@ -205,6 +194,8 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
   }
 
   void _setupPlayer() {
+    unawaited(_player.setAudioContext(VocalAudioService.vocalAudioContext));
+
     _stateSub = _player.onPlayerStateChanged.listen((state) {
       if (!mounted) return;
 
@@ -218,9 +209,12 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     _posSub = _player.onPositionChanged.listen((pos) {
       if (!mounted || _isDragging) return;
 
-      setState(() {
-        _position = pos;
-      });
+      final diffMs = (pos.inMilliseconds - _position.inMilliseconds).abs();
+      if (diffMs >= 200 || pos.inMilliseconds == 0) {
+        setState(() {
+          _position = pos;
+        });
+      }
 
       if (pos.inSeconds != _lastSyncSec) {
         _lastSyncSec = pos.inSeconds;
@@ -270,9 +264,8 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     });
 
     try {
-      final sourceUri = await _vocalService.resolvePlaybackSource(track.r2Path);
-
-      final isLocal = await _vocalService.isLocalFileAvailable(track.r2Path);
+      var isLocal = await _vocalService.isLocalFileAvailable(track.r2Path);
+      var sourceUri = await _vocalService.resolvePlaybackSource(track.r2Path);
 
       if (!mounted || epoch != _loadEpoch) return;
 
@@ -280,26 +273,64 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
         _isOffline = isLocal;
       });
 
-      final Source source =
-          isLocal ? DeviceFileSource(sourceUri) : UrlSource(sourceUri);
+      // Iniciar auto-caché en segundo plano para dejar la voz guardada offline
+      if (!isLocal) {
+        _vocalService.cacheTrackInBackground(track);
+      }
 
-      // Epoch checks alone cannot cancel a native setSource already in flight.
-      // Serialize commands so an old preload cannot replace the playing voice.
       await _runPlayerOperation(() async {
         if (!mounted || epoch != _loadEpoch) return;
 
-        if (autoPlay) {
-          await widget.onPlaybackStarted?.call();
-          if (!mounted || epoch != _loadEpoch) return;
+        final Source initialSource =
+            isLocal ? DeviceFileSource(sourceUri) : UrlSource(sourceUri);
 
-          await _player.play(source, position: seekTo);
-        } else {
-          await _player.setSource(source);
-          if (!mounted || epoch != _loadEpoch) return;
+        try {
+          if (autoPlay) {
+            await widget.onPlaybackStarted?.call();
+            if (!mounted || epoch != _loadEpoch) return;
 
-          if (seekTo != null && seekTo > Duration.zero) {
-            await _player.seek(seekTo);
+            await _player.play(initialSource, position: seekTo);
+          } else {
+            await _player.setSource(initialSource);
+            if (!mounted || epoch != _loadEpoch) return;
+
+            if (seekTo != null && seekTo > Duration.zero) {
+              await _player.seek(seekTo);
+            }
           }
+        } catch (streamError) {
+          // Fallback a prueba de fallos (ej. Oppo Reno 13 / Android 16 donde MediaPlayer nativo
+          // falla al hacer streaming directo): descargamos por Dio a archivo local y reproducimos.
+          if (!isLocal) {
+            debugPrint(
+                'ℹ️ [VocalPanel] Streaming directo falló ($streamError), aplicando fallback local Dio...');
+            final downloadedFile =
+                await _vocalService.ensureLocalFileForTrack(track);
+            if (!mounted || epoch != _loadEpoch) return;
+            if (downloadedFile != null) {
+              isLocal = true;
+              sourceUri = downloadedFile.path;
+              if (mounted) {
+                setState(() {
+                  _isOffline = true;
+                });
+              }
+              final localSource = DeviceFileSource(sourceUri);
+              if (autoPlay) {
+                await widget.onPlaybackStarted?.call();
+                if (!mounted || epoch != _loadEpoch) return;
+                await _player.play(localSource, position: seekTo);
+              } else {
+                await _player.setSource(localSource);
+                if (!mounted || epoch != _loadEpoch) return;
+                if (seekTo != null && seekTo > Duration.zero) {
+                  await _player.seek(seekTo);
+                }
+              }
+              return;
+            }
+          }
+          rethrow;
         }
       });
     } catch (e) {
@@ -309,7 +340,8 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
         setState(() {
           _isPlaying = false;
         });
-        if (!_isOffline) {
+        // Solo cambiar a piano si el usuario intentó reproducir activamente (autoPlay) y no hay red ni caché
+        if (autoPlay && !_isOffline) {
           final strings = AppStrings.of(context);
           AppNotificationBanner.show(
             context,
@@ -356,25 +388,6 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
     final epoch = _loadEpoch;
 
     try {
-      if (!_isOffline) {
-        final online = await _hasInternetConnection();
-        if (!mounted || epoch != _loadEpoch) return;
-        if (!online) {
-          if (mounted) {
-            final strings = AppStrings.of(context);
-            AppNotificationBanner.show(
-              context,
-              strings.t(
-                'Las voces requieren conexión a internet. Cambiando a piano...',
-                'Voices require internet connection. Switching to piano...',
-              ),
-            );
-            widget.onSwitchToMidi?.call();
-          }
-          return;
-        }
-      }
-
       if (widget.onRequestPlayAccess != null) {
         final allowed = await widget.onRequestPlayAccess!();
 

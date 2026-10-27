@@ -18,18 +18,18 @@ const sharp = require(path.join(rootDir, 'website/node_modules/sharp'));
 // CONFIGURACIÓN DE LA OBRA (MODIFICAR SEGÚN EL CANTO)
 // =========================================================================
 const OBRA = {
-  slug: 'valle-de-los-huesos-secos',
-  titulo: 'VALLE DE LOS HUESOS SECOS',
-  subtitulo: '(Alabanza)',
-  autor: 'M. Salvador Castro S.',
+  slug: 'como-el-ciervo-brama',
+  titulo: 'COMO EL CIERVO BRAMA',
+  subtitulo: '(Salmo 42)',
+  autor: 'David Jared Ramírez',
   arreglo: '',
-  cita: '«Hijo de hombre, profetiza sobre estos huesos y vivirán. ¡Y un estruendo majestuoso ha salido por la tierra! Es la palabra que a su Siervo el Señor le reveló y su pueblo se levantó.»',
-  videoSrc: 'E:/MusescoreCantai/videos/Valle de los Huesos Secos.mp4',
-  audioSrc: 'E:/SV5/ValledeLosHuesosSecos/ValledeLosHuesosSecos_MixDown.wav',
-  audioDelayMs: 49,
-  videoCorteInicio: 3.000,
-  videoCorteFin: 296.000,
-  videoFiltro: 'crop=1904:1428:324:4'
+  cita: '«Como el ciervo brama por las corrientes de las aguas, así clama por ti, oh Dios, el alma mía. Mi alma tiene sed de Dios, del Dios vivo; ¿cuándo vendré, y me presentaré delante de Dios?»',
+  videoSrc: 'E:/MusescoreCantai/videos/Como el Ciervo Brama - disposicion original PDF.mp4',
+  audioSrc: 'E:/SV5/ComoElSiervoBrama/ComoElCiervo_MixDown.mp3',
+  audioDelayMs: 61,
+  videoCorteInicio: 2.960,
+  videoCorteFin: 270.080,
+  videoFiltro: 'crop=1912:956:0:60,scale=1904:952:flags=lanczos,pad=1904:1428:0:238:color=white'
 };
 
 // =========================================================================
@@ -140,14 +140,31 @@ function getCommonCSS() {
 function procesarVideo() {
   const ffmpegBin = process.env.FFMPEG_BIN || 'ffmpeg';
 
-  // 1. Convertir Audio a MP3 si se proveyó audioSrc
+  // 1. Convertir Audio Vocal a MP3 si se proveyó audioVocalSrc
+  if (OBRA.audioVocalSrc && fs.existsSync(OBRA.audioVocalSrc)) {
+    console.log(`--- Convirtiendo Audio Vocal a MP3 (320k) ---`);
+    const dstVocalMuse = path.join(museDir, `${OBRA.titulo} (Vocal).mp3`);
+    const dstVocalProj = path.join(outBaseDir, `${OBRA.titulo} (Vocal).mp3`);
+    const cmdVocal = `"${ffmpegBin}" -y -i "${OBRA.audioVocalSrc}" -c:a libmp3lame -b:a 320k "${dstVocalMuse}"`;
+    execSync(cmdVocal, { stdio: 'inherit' });
+    fs.copyFileSync(dstVocalMuse, dstVocalProj);
+    console.log(`Audio Vocal MP3 guardado en: ${dstVocalMuse} y ${dstVocalProj}`);
+  }
+
+  // 2. Manejo de Audio Master
   if (OBRA.audioSrc && fs.existsSync(OBRA.audioSrc)) {
-    console.log(`--- Convirtiendo Audio a MP3 (320k) ---`);
     const dstMp3Muse = path.join(museDir, `${OBRA.titulo}.mp3`);
     const dstMp3Proj = path.join(outBaseDir, `${OBRA.titulo}.mp3`);
-    const cmdMp3 = `"${ffmpegBin}" -y -i "${OBRA.audioSrc}" -c:a libmp3lame -b:a 320k "${dstMp3Muse}"`;
-    execSync(cmdMp3, { stdio: 'inherit' });
-    fs.copyFileSync(dstMp3Muse, dstMp3Proj);
+    if (OBRA.audioSrc.toLowerCase().endsWith('.mp3')) {
+      console.log(`--- Usando Audio Master MP3 directo: ${OBRA.audioSrc} ---`);
+      fs.copyFileSync(OBRA.audioSrc, dstMp3Muse);
+      fs.copyFileSync(OBRA.audioSrc, dstMp3Proj);
+    } else {
+      console.log(`--- Convirtiendo Audio a MP3 (320k) ---`);
+      const cmdMp3 = `"${ffmpegBin}" -y -i "${OBRA.audioSrc}" -c:a libmp3lame -b:a 320k "${dstMp3Muse}"`;
+      execSync(cmdMp3, { stdio: 'inherit' });
+      fs.copyFileSync(dstMp3Muse, dstMp3Proj);
+    }
     console.log(`Audio MP3 guardado en: ${dstMp3Muse} y ${dstMp3Proj}`);
   }
 
@@ -173,6 +190,16 @@ function procesarVideo() {
   execSync(cmd, { stdio: 'inherit' });
   fs.copyFileSync(dstMuse, dstProj);
   console.log(`Video guardado en: ${dstMuse} y ${dstProj}`);
+
+  // 3. Extraer MP3 del video si no hubo audioSrc específico
+  if (!OBRA.audioSrc) {
+    const dstMp3Muse = path.join(museDir, `${OBRA.titulo}.mp3`);
+    const dstMp3Proj = path.join(outBaseDir, `${OBRA.titulo}.mp3`);
+    const cmdMp3 = `"${ffmpegBin}" -y -i "${dstMuse}" -vn -c:a libmp3lame -b:a 320k "${dstMp3Muse}"`;
+    execSync(cmdMp3, { stdio: 'inherit' });
+    fs.copyFileSync(dstMp3Muse, dstMp3Proj);
+    console.log(`Audio MP3 (del video) guardado en: ${dstMp3Muse} y ${dstMp3Proj}`);
+  }
 }
 
 // =========================================================================

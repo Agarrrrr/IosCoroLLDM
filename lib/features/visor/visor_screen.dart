@@ -87,6 +87,7 @@ import 'package:coro_lldm/features/visor/widgets/async_action_icon_button.dart';
 import 'package:coro_lldm/features/shared/content_notice.dart';
 
 import 'package:coro_lldm/features/shared/app_notification_banner.dart';
+import 'package:coro_lldm/features/shared/review_dialog.dart';
 
 import 'package:coro_lldm/features/visor/widgets/annotation_tools.dart';
 
@@ -628,10 +629,24 @@ class _VisorScreenState extends ConsumerState<VisorScreen> {
 
     SystemMediaSession.instance.stopSession();
 
+    ReviewDialog.recordMeaningfulUse();
+
+    final rootContext = Navigator.of(context, rootNavigator: true).context;
+
     if (!_pdfAdRegistered) {
       _pdfAdRegistered = true;
 
-      unawaited(AdsService.instance.onPdfOpened());
+      unawaited(
+        AdsService.instance.onPdfOpened().then((adShown) {
+          if (!adShown && ReviewDialog.shouldShowAutoPrompt()) {
+            Future.delayed(const Duration(milliseconds: 450), () {
+              if (rootContext.mounted) {
+                showReviewDialog(rootContext);
+              }
+            });
+          }
+        }),
+      );
     }
 
     if (context.canPop()) {

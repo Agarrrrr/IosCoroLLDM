@@ -1,6 +1,6 @@
 import collections
 def read(path):
-    raw=path.read_bytes();ppq=int.from_bytes(raw[12:14],'big');pos=14;tracks=[];tempos=[];meters=[]
+    raw=path.read_bytes();ppq=int.from_bytes(raw[12:14],'big');pos=14;tracks=[];tempos=[];meters=[];keys=[]
     def vlq(b,k):
         v=0
         while True:
@@ -19,6 +19,7 @@ def read(path):
                 if typ==3:name=v.decode('latin1',errors='replace')
                 elif typ==81:tempos.append([t/ppq,60000000/int.from_bytes(v,'big')])
                 elif typ==88:meters.append([t/ppq,list(v)])
+                elif typ==89 and len(v)==2:keys.append([t/ppq,int.from_bytes(v[:1],'big',signed=True),bool(v[1])])
             elif s in [240,247]:n,k=vlq(b,k);k+=n
             else:
                 run=s;typ=s>>4;n=1 if typ in [12,13] else 2;v=b[k:k+n];k+=n
@@ -28,4 +29,4 @@ def read(path):
                     if starts:
                         st,vel=starts.pop(0);notes.append(dict(onset=st/ppq,duration=(t-st)/ppq,pitch=v[0],velocity=vel))
         tracks.append(dict(name=name,notes=sorted(notes,key=lambda n:(n['onset'],n['pitch'])),end=t/ppq))
-    return dict(ppq=ppq,tempos=tempos,meters=meters,tracks=tracks)
+    return dict(ppq=ppq,tempos=tempos,meters=meters,keys=keys,tracks=tracks)

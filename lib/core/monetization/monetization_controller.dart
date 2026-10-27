@@ -357,7 +357,11 @@ class MonetizationController extends StateNotifier<MonetizationState>
   }
 
   Future<bool> consumeAudioAccess(String cantoId) async {
-    await refreshCustomerInfo();
+    if (!state.initialized) {
+      await refreshCustomerInfo();
+    } else {
+      unawaited(refreshCustomerInfo());
+    }
     if (state.isPremium) return true;
     final today = _todayKey();
     if (_box.get('audio_day') != today) {
@@ -392,7 +396,11 @@ class MonetizationController extends StateNotifier<MonetizationState>
   /// Verifica si el usuario tiene créditos para exportar audio.
   /// Devuelve `true` si el usuario es premium o le quedan créditos hoy.
   Future<bool> canExportAudio() async {
-    await refreshCustomerInfo();
+    if (!state.initialized) {
+      await refreshCustomerInfo();
+    } else {
+      unawaited(refreshCustomerInfo());
+    }
     if (state.isPremium) return true;
     final today = _todayKey();
     if (_box.get('audio_export_day') != today) {
@@ -406,7 +414,11 @@ class MonetizationController extends StateNotifier<MonetizationState>
   /// Consume un crédito de exportación de audio cuando el export fue exitoso.
   /// Gratuito: máximo 3 exports por día. Premium: ilimitado.
   Future<bool> consumeAudioExport() async {
-    await refreshCustomerInfo();
+    if (!state.initialized) {
+      await refreshCustomerInfo();
+    } else {
+      unawaited(refreshCustomerInfo());
+    }
     if (state.isPremium) return true;
     final today = _todayKey();
     if (_box.get('audio_export_day') != today) {

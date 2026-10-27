@@ -1,9 +1,13 @@
+import 'dart:async';
+import 'dart:convert';
+import 'dart:io';
+import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
+import 'package:coro_lldm/core/providers/favoritos_provider.dart';
+import 'package:coro_lldm/models/canto.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:coro_lldm/core/providers/favoritos_provider.dart';
-import 'package:coro_lldm/models/canto.dart';
-import 'dart:convert';
 import 'package:hive/hive.dart';
 
 // Funciones puras para procesar datos en Isolate
@@ -37,10 +41,25 @@ List<Canto> _parseCantosList(List<dynamic> data) {
 }
 
 // Provider base que carga el catalogo publico bilingue de cantos.
-// Offline-First: emite la copia en cache Hive al instante y luego
-// reconstruye el catalogo desde los assets empaquetados (catalogo.json
-// en Español y catalogo_en.json en Inglés).
+// Arquitectura Híbrida (Offline-First + OTA Online):
+// 1. Emite la copia en cache Hive al instante (0ms).
+// 2. Reconstruye el catalogo desde los assets empaquetados (catalogo.json y
+//    catalogo_en.json) fusionados con cualquier actualizacion OTA previa.
+// 3. Sincroniza en segundo plano desde Cloudflare R2 para entregar nuevas
+//    partituras y MIDIs al instante sin esperar actualizacion de tienda.
 class CantosNotifier extends AsyncNotifier<List<Canto>> {
+  static final Dio _otaDio = Dio(
+    BaseOptions(
+      connectTimeout: const Duration(seconds: 10),
+      receiveTimeout: const Duration(seconds: 20),
+      responseType: ResponseType.plain,
+      headers: const {
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 16; CoroLLDM/3.6.0)',
+        'Accept': 'application/json',
+      },
+    ),
+  );
+
   @override
   Future<List<Canto>> build() async {
     final box = Hive.box('cache');
@@ -57,7 +76,7 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
       }
     }
 
-    // 2. Carga bilingüe empaquetada con la app (Assets locales).
+    // 2. Carga bilingüe empaquetada con la app (Assets locales) + fusión OTA en caché.
     try {
       final rawEs = await rootBundle.loadString('assets/catalogo.json');
       final rawEn = await rootBundle.loadString('assets/catalogo_en.json');
@@ -73,13 +92,29 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
         if (c is Map<String, dynamic>) c['_idioma'] = 'en';
       }
 
-      final merged = <dynamic>[...es, ...en];
+      var merged = <dynamic>[...es, ...en];
+
+      final cachedOtaRaw = box.get('cantos_ota_json') as String?;
+      if (cachedOtaRaw != null && cachedOtaRaw.isNotEmpty) {
+        try {
+          final otaList = jsonDecode(cachedOtaRaw) as List<dynamic>;
+          merged = _mergeCatalogLists(merged, otaList);
+        } catch (e) {
+          debugPrint('Error merging cached OTA catalog: $e');
+        }
+      }
 
       // Guardar el string en crudo para la proxima sesion
       final mergedJson = jsonEncode(merged);
-      box.put('cantos_json', mergedJson);
+      await box.put('cantos_json', mergedJson);
 
       final lista = await compute(_parseCantosJsonString, mergedJson);
+
+      // 3. Sincronización OTA silenciosa en segundo plano
+      if (!Platform.environment.containsKey('FLUTTER_TEST')) {
+        unawaited(_syncRemoteCatalogsInBackground(merged));
+      }
+
       return lista;
     } catch (e) {
       debugPrint('Error loading bundled catalogs: $e');
@@ -87,6 +122,106 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
       if (state.hasValue) return state.value!;
       rethrow;
     }
+  }
+
+  Future<void> _syncRemoteCatalogsInBackground(
+    List<dynamic> baseBundledList,
+  ) async {
+    try {
+      final vocalService = VocalAudioService();
+      final urlEs = vocalService.getStreamUrl('catalogo.json');
+      final urlEn = vocalService.getStreamUrl('catalogo_en.json');
+
+      final responses = await Future.wait([
+        _otaDio.get<String>(urlEs),
+        _otaDio.get<String>(urlEn),
+      ]);
+
+      final rawEs = responses[0].data;
+      final rawEn = responses[1].data;
+      if (rawEs == null || rawEn == null) return;
+
+      final List<dynamic> remoteEs = jsonDecode(rawEs);
+      final List<dynamic> remoteEn = jsonDecode(rawEn);
+
+      for (final c in remoteEs) {
+        if (c is Map<String, dynamic>) c['_idioma'] = 'es';
+      }
+      for (final c in remoteEn) {
+        if (c is Map<String, dynamic>) c['_idioma'] = 'en';
+      }
+
+      final remoteCombined = <dynamic>[...remoteEs, ...remoteEn];
+      final merged = _mergeCatalogLists(baseBundledList, remoteCombined);
+      final mergedJson = jsonEncode(merged);
+
+      final box = Hive.box('cache');
+      await box.put('cantos_ota_json', jsonEncode(remoteCombined));
+      final previousJson = box.get('cantos_json') as String?;
+      if (previousJson != mergedJson) {
+        await box.put('cantos_json', mergedJson);
+        final updatedLista = await compute(_parseCantosJsonString, mergedJson);
+        state = AsyncValue.data(updatedLista);
+      }
+    } catch (e) {
+      debugPrint('[CantosNotifier] Sync OTA omitido (offline o sin cambios): $e');
+    }
+  }
+
+  static List<dynamic> _mergeCatalogLists(
+    List<dynamic> bundledList,
+    List<dynamic> remoteList,
+  ) {
+    final byId = <String, Map<String, dynamic>>{};
+    final order = <String>[];
+
+    for (final item in bundledList) {
+      if (item is Map) {
+        final map = Map<String, dynamic>.from(item);
+        final id = map['id']?.toString() ?? '';
+        if (id.isNotEmpty) {
+          byId[id] = map;
+          order.add(id);
+        }
+      }
+    }
+
+    for (final item in remoteList) {
+      if (item is Map) {
+        final remoteMap = Map<String, dynamic>.from(item);
+        final id = remoteMap['id']?.toString() ?? '';
+        if (id.isEmpty) continue;
+
+        final existing = byId[id];
+        if (existing == null) {
+          // Nuevo canto publicado vía OTA
+          byId[id] = remoteMap;
+          order.add(id);
+        } else {
+          final localVer = (existing['version'] as num?)?.toInt() ?? 1;
+          final remoteVer = (remoteMap['version'] as num?)?.toInt() ?? 1;
+          final localMidiVer = (existing['midi_version'] as num?)?.toInt() ?? 1;
+          final remoteMidiVer =
+              (remoteMap['midi_version'] as num?)?.toInt() ?? 1;
+
+          // Si el remoto tiene una versión explícitamente superior, o agrega
+          // un MIDI nuevo a un canto que no tenía MIDI en el bundle:
+          final localMidi = existing['midi_archivo']?.toString() ?? '';
+          final remoteMidi = remoteMap['midi_archivo']?.toString() ?? '';
+          final remoteAddsMidi = localMidi.isEmpty &&
+              remoteMidi.isNotEmpty &&
+              remoteMidiVer >= localMidiVer;
+
+          if (remoteVer > localVer ||
+              remoteMidiVer > localMidiVer ||
+              remoteAddsMidi) {
+            byId[id] = remoteMap;
+          }
+        }
+      }
+    }
+
+    return [for (final id in order) byId[id]!];
   }
 }
 
