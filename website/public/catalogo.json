@@ -212,19 +212,6 @@
     "idioma": "es"
   },
   {
-    "id": "aef84e4f-cdb1-4ab3-8dbe-895b03c8826c",
-    "nombre": "A él Oíd",
-    "archivo": "a-l-o-d-1781223809887.pdf",
-    "midi_archivo": "brilliant-light-1781401032876.mid",
-    "vinculo_idioma": "usmc_647b6ab0fc5d9756c985e55b",
-    "temas": [
-      "Elección"
-    ],
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
     "id": "usmc_64b53ce521b21cae02605924",
     "nombre": "A él Oíd y Recibid",
     "archivo": "64b53ce521b21cae02605924_a_él_oíd_y_recibid.pdf",
@@ -10117,7 +10104,9 @@
     ],
     "es_privado": false,
     "_idioma": "es",
-    "idioma": "es"
+    "idioma": "es",
+    "midi_archivo": "brilliant-light-1781401032876.mid",
+    "vinculo_idioma": "usmc_647b6ab0fc5d9756c985e55b"
   },
   {
     "id": "local_apk_1781321072008_882",
