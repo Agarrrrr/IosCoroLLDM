@@ -1526,19 +1526,6 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_661dccb9d6b0cc15aeab1039",
-    "nombre": "A Ti, oh Señor",
-    "archivo": "661dccb9d6b0cc15aeab1039_a_ti_oh_señor.pdf",
-    "temas": [
-      "Adoración"
-    ],
-    "es_privado": false,
-    "vinculo_idioma": null,
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
     "id": "31c396c6-9e1f-4a2e-a237-3b36dafc8730",
     "nombre": "A ti Señor",
     "archivo": "a-ti-se-or-1781309430043.pdf",
@@ -6811,18 +6798,6 @@
     "archivo": "estrellas-en-mi-corona-1781309452386.pdf",
     "temas": [
       "Gloria"
-    ],
-    "es_privado": false,
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
-    "id": "usmc_ee70deb59b27d58c73",
-    "nombre": "Es tu Presencia",
-    "archivo": "ee70deb59b27d58c73_es-tu-presencia.pdf",
-    "temas": [
-      "Alabanza",
-      "Adoración"
     ],
     "es_privado": false,
     "_idioma": "es",
@@ -13049,19 +13024,6 @@
     "idioma": "es"
   },
   {
-    "id": "usmc_d0dbd75a3431c8c03f",
-    "nombre": "Quien Como tu",
-    "archivo": "Quien como tu.pdf",
-    "temas": [
-      "Adoración"
-    ],
-    "es_privado": false,
-    "vinculo_idioma": null,
-    "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
     "id": "usmc_6814a08c520c8624329efd61",
     "nombre": "¿quién Como Tú, oh Jehová?",
     "archivo": "6814a08c520c8624329efd61_quién_como_t_ú_oh_jehová.pdf",
@@ -13072,18 +13034,6 @@
     "es_privado": false,
     "vinculo_idioma": null,
     "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
-    "id": "usmc_64b5fd5021b21cae02606c33",
-    "nombre": "Quién Como Tú, Señor!",
-    "archivo": "64b5fd5021b21cae02606c33_quién_como_tú_señor.pdf",
-    "temas": [
-      "Alabanza",
-      "Adoración"
-    ],
-    "es_privado": false,
     "_idioma": "es",
     "idioma": "es"
   },
@@ -13641,17 +13591,6 @@
       "Santa Cena"
     ],
     "coro_id": "local",
-    "_idioma": "es",
-    "idioma": "es"
-  },
-  {
-    "id": "usmc_661dd60ad6b0cc15aeab11ea",
-    "nombre": "Santa Elección",
-    "archivo": "661dd60ad6b0cc15aeab11ea_santa_eleccion.pdf",
-    "temas": [
-      "Elección"
-    ],
-    "es_privado": false,
     "_idioma": "es",
     "idioma": "es"
   },
