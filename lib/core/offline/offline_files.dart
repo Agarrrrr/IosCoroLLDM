@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:isolate';
 import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
+import 'package:coro_lldm/core/constants/purged_cantos.dart';
 import 'package:coro_lldm/core/security/file_crypto.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:dio/dio.dart';
@@ -46,6 +47,24 @@ class OfflineFiles {
     return '$storageUrl/midi_files/$archivoMidi';
   }
 
+  static Future<void> purgeBlacklistedFiles() async {
+    try {
+      final dir = await _docsDir();
+      for (final id in kPurgedCantoIds) {
+        final pdf = File('${dir.path}/$id.pdf');
+        if (await pdf.exists()) {
+          try { await pdf.delete(); } catch (_) {}
+        }
+        final mid = File('${dir.path}/$id.mid');
+        if (await mid.exists()) {
+          try { await mid.delete(); } catch (_) {}
+        }
+      }
+    } catch (e) {
+      debugPrint('[OfflineFiles] Error purgando archivos: $e');
+    }
+  }
+
   static bool _isUnifiedObjectKey(String value) =>
       value.startsWith('global/') || value.startsWith('local/');
 
@@ -62,6 +81,13 @@ class OfflineFiles {
   }
 
   static Future<File> ensurePdf(Canto canto) async {
+    if (kPurgedCantoIds.contains(canto.id) || isPurgedCanto({'id': canto.id, 'nombre': canto.nombre})) {
+      final file = await pdfFile(canto.id);
+      if (await file.exists()) {
+        try { await file.delete(); } catch (_) {}
+      }
+      throw StateError('Canto eliminado del repertorio');
+    }
     final file = await pdfFile(canto.id);
     if (await _cachedVersionIsCurrent(
       file,

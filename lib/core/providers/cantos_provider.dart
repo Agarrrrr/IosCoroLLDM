@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'package:coro_lldm/core/audio/vocal_audio_service.dart';
+import 'package:coro_lldm/core/constants/purged_cantos.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:dio/dio.dart';
@@ -17,7 +18,8 @@ List<Canto> _parseCantosJsonString(String jsonString) {
 }
 
 List<Canto> _parseCantosList(List<dynamic> data) {
-  final parsed = data.map((e) => Canto.fromJson(e)).toList();
+  final filteredData = data.where((e) => !isPurgedCanto(e)).toList();
+  final parsed = filteredData.map((e) => Canto.fromJson(e)).toList();
   final byId = {for (final canto in parsed) canto.id: canto};
 
   // Una traducción usa el mismo arreglo musical. Si solo una versión tiene
@@ -98,11 +100,17 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
       if (cachedOtaRaw != null && cachedOtaRaw.isNotEmpty) {
         try {
           final otaList = jsonDecode(cachedOtaRaw) as List<dynamic>;
-          merged = _mergeCatalogLists(merged, otaList);
+          final cleanOtaList = otaList.where((e) => !isPurgedCanto(e)).toList();
+          if (cleanOtaList.length != otaList.length) {
+            await box.put('cantos_ota_json', jsonEncode(cleanOtaList));
+          }
+          merged = _mergeCatalogLists(merged, cleanOtaList);
         } catch (e) {
           debugPrint('Error merging cached OTA catalog: $e');
         }
       }
+
+      merged = merged.where((e) => !isPurgedCanto(e)).toList();
 
       // Guardar el string en crudo para la proxima sesion
       final mergedJson = jsonEncode(merged);
@@ -151,8 +159,8 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
         if (c is Map<String, dynamic>) c['_idioma'] = 'en';
       }
 
-      final remoteCombined = <dynamic>[...remoteEs, ...remoteEn];
-      final merged = _mergeCatalogLists(baseBundledList, remoteCombined);
+      final remoteCombined = <dynamic>[...remoteEs, ...remoteEn].where((e) => !isPurgedCanto(e)).toList();
+      final merged = _mergeCatalogLists(baseBundledList, remoteCombined).where((e) => !isPurgedCanto(e)).toList();
       final mergedJson = jsonEncode(merged);
 
       final box = Hive.box('cache');
@@ -177,9 +185,10 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
 
     for (final item in bundledList) {
       if (item is Map) {
+        if (isPurgedCanto(item)) continue;
         final map = Map<String, dynamic>.from(item);
         final id = map['id']?.toString() ?? '';
-        if (id.isNotEmpty) {
+        if (id.isNotEmpty && !kPurgedCantoIds.contains(id)) {
           byId[id] = map;
           order.add(id);
         }
@@ -188,9 +197,10 @@ class CantosNotifier extends AsyncNotifier<List<Canto>> {
 
     for (final item in remoteList) {
       if (item is Map) {
+        if (isPurgedCanto(item)) continue;
         final remoteMap = Map<String, dynamic>.from(item);
         final id = remoteMap['id']?.toString() ?? '';
-        if (id.isEmpty) continue;
+        if (id.isEmpty || kPurgedCantoIds.contains(id)) continue;
 
         final existing = byId[id];
         if (existing == null) {

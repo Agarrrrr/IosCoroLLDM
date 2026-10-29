@@ -1,3 +1,4 @@
+import 'package:coro_lldm/core/constants/purged_cantos.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -13,7 +14,14 @@ class FavoritosNotifier extends Notifier<Set<String>> {
     final box = Hive.box(boxName);
     final data = box.get(key);
     if (data is List) {
-      return data.map((e) => e.toString()).toSet();
+      final set = data
+          .map((e) => e.toString())
+          .where((id) => !kPurgedCantoIds.contains(id))
+          .toSet();
+      if (set.length != data.length) {
+        box.put(key, set.toList());
+      }
+      return set;
     }
     return <String>{};
   }
