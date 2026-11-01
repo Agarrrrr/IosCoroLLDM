@@ -755,9 +755,6 @@ class JukeboxNotifier extends Notifier<JukeboxState> {
 
       state = state.copyWith(isOffline: isLocal);
 
-      if (!isLocal) {
-        _vocalService.cacheTrackInBackground(track);
-      }
 
       final Source initialSource =
           isLocal ? DeviceFileSource(sourceUri) : UrlSource(sourceUri);

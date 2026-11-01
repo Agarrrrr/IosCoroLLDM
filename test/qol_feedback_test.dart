@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:coro_lldm/core/offline/sync_manager.dart';
 import 'package:coro_lldm/core/providers/cantos_provider.dart';
 import 'package:coro_lldm/core/providers/favoritos_provider.dart';
 import 'package:coro_lldm/core/providers/theme_provider.dart';
+import 'package:coro_lldm/core/providers/vocal_audio_provider.dart';
 import 'package:coro_lldm/features/dashboard/dashboard_screen.dart';
 import 'package:coro_lldm/features/shared/content_notice.dart';
 import 'package:coro_lldm/features/visor/visor_screen.dart';
@@ -12,6 +12,7 @@ import 'package:coro_lldm/features/visor/widgets/async_action_icon_button.dart';
 import 'package:coro_lldm/core/midi/midi_engine.dart';
 import 'package:coro_lldm/models/canto.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -47,17 +48,37 @@ class _Language extends LanguageFilterNotifier {
 }
 
 void main() {
-  late Directory directory;
+  final binding = TestWidgetsFlutterBinding.ensureInitialized();
+  setUp(() {
+    final messenger = binding.defaultBinaryMessenger;
+    for (final name in [
+      'xyz.luan/audioplayers.global',
+      'xyz.luan/audioplayers.global/events',
+      'com.lldm.coro/media_session',
+    ]) {
+      messenger.setMockMethodCallHandler(
+          MethodChannel(name), (_) async => null);
+    }
+    messenger.setMockMethodCallHandler(
+        const MethodChannel('xyz.luan/audioplayers'), (call) async {
+      if (call.method == 'create') {
+        final id = (call.arguments as Map)['playerId'];
+        messenger.setMockMethodCallHandler(
+            MethodChannel('xyz.luan/audioplayers/events/$id'),
+            (_) async => null);
+      }
+      return null;
+    });
+  });
   setUpAll(() async {
     GoogleFonts.config.allowRuntimeFetching = false;
-    directory = await Directory.systemTemp.createTemp('qol_feedback_');
-    Hive.init(directory.path);
-    await Hive.openBox('cache');
-    await Hive.openBox(userSettingsBoxName);
+    // These tests exercise UI/filtering, not disk persistence. An in-memory
+    // backend avoids leaving writes queued in the widget test's fake clock.
+    await Hive.openBox('cache', bytes: Uint8List(0));
+    await Hive.openBox(userSettingsBoxName, bytes: Uint8List(0));
   });
   tearDownAll(() async {
     await Hive.close();
-    await directory.delete(recursive: true);
   });
 
   testWidgets('Tema y Favoritos elegidos después de buscar filtran resultados',
@@ -112,6 +133,7 @@ void main() {
       bool fail = false,
       bool empty = false}) async {
     final container = ProviderContainer(overrides: [
+      vocalManifestProvider.overrideWith((ref) async {}),
       cantosBaseProvider.overrideWith(() => _Catalog(
           empty
               ? []

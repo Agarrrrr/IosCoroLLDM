@@ -211,7 +211,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                             fontSize: 12.5,
                             fontWeight:
                                 !isPiano ? FontWeight.w700 : FontWeight.w600,
-                            color: !isPiano ? onAccent : scheme.onSurfaceVariant,
+                            color:
+                                !isPiano ? onAccent : scheme.onSurfaceVariant,
                           ),
                         ),
                       ],
@@ -539,10 +540,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     iconSize: 34,
                     icon: const Icon(Icons.skip_previous_rounded),
                     color: scheme.onSurface,
-                    onPressed: (jukebox.playlist.isEmpty ||
-                            jukebox.isPlayingAdSpot)
-                        ? null
-                        : _handlePrevious,
+                    onPressed:
+                        (jukebox.playlist.isEmpty || jukebox.isPlayingAdSpot)
+                            ? null
+                            : _handlePrevious,
                   ),
                   GestureDetector(
                     onTap: jukebox.playlist.isEmpty ? null : _handleTogglePlay,
@@ -584,10 +585,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     iconSize: 34,
                     icon: const Icon(Icons.skip_next_rounded),
                     color: scheme.onSurface,
-                    onPressed: (jukebox.playlist.isEmpty ||
-                            jukebox.isPlayingAdSpot)
-                        ? null
-                        : _handleNext,
+                    onPressed:
+                        (jukebox.playlist.isEmpty || jukebox.isPlayingAdSpot)
+                            ? null
+                            : _handleNext,
                   ),
                   IconButton(
                     iconSize: 24,
@@ -763,10 +764,10 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 9),
                       decoration: BoxDecoration(
-                        color: jukebox.playlistMode ==
-                                JukeboxPlaylistMode.allSongs
-                            ? scheme.surface
-                            : Colors.transparent,
+                        color:
+                            jukebox.playlistMode == JukeboxPlaylistMode.allSongs
+                                ? scheme.surface
+                                : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: jukebox.playlistMode ==
                                 JukeboxPlaylistMode.allSongs
@@ -969,15 +970,14 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                     final song = jukebox.playlist[index];
                     final isCurrent = jukebox.currentIndex == index;
                     final isFav = favorites.contains(song.id ?? song.canto);
-                    final songTemasItem =
-                        _getTemasForSong(song.canto, song.id);
+                    final songTemasItem = _getTemasForSong(song.canto, song.id);
 
                     return Container(
                       key: ValueKey(
                         'jukebox_item_${song.canto}_$index',
                       ),
                       margin: const EdgeInsets.symmetric(vertical: 4),
-                      decoration: BoxDecoration(
+                      child: Material(
                         color: isCurrent
                             ? Color.alphaBlend(
                                 accentColor.withValues(alpha: 0.12),
@@ -985,101 +985,102 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                               )
                             : scheme.surface,
                         borderRadius: BorderRadius.circular(16),
-                      ),
-                      child: ListTile(
-                        dense: true,
-                        contentPadding: const EdgeInsets.only(
-                          left: 12,
-                          right: 6,
-                          top: 2,
-                          bottom: 2,
-                        ),
-                        onTap: () => _handlePlayAtIndex(
-                          index,
-                          switchTabOnPhone: !isTablet,
-                        ),
-                        leading: Container(
-                          width: 34,
-                          height: 34,
-                          decoration: BoxDecoration(
-                            color: isCurrent
-                                ? accentColor
-                                : scheme.surfaceContainerHighest,
-                            shape: BoxShape.circle,
+                        clipBehavior: Clip.antiAlias,
+                        child: ListTile(
+                          dense: true,
+                          contentPadding: const EdgeInsets.only(
+                            left: 12,
+                            right: 6,
+                            top: 2,
+                            bottom: 2,
                           ),
-                          child: Center(
-                            child: isCurrent && jukebox.isPlaying
-                                ? Icon(
-                                    Icons.volume_up_rounded,
-                                    size: 16,
-                                    color: onAccent,
-                                  )
-                                : Text(
-                                    '${index + 1}',
-                                    style: GoogleFonts.inter(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w700,
-                                      color: isCurrent
-                                          ? onAccent
-                                          : scheme.onSurfaceVariant,
+                          onTap: () => _handlePlayAtIndex(
+                            index,
+                            switchTabOnPhone: !isTablet,
+                          ),
+                          leading: Container(
+                            width: 34,
+                            height: 34,
+                            decoration: BoxDecoration(
+                              color: isCurrent
+                                  ? accentColor
+                                  : scheme.surfaceContainerHighest,
+                              shape: BoxShape.circle,
+                            ),
+                            child: Center(
+                              child: isCurrent && jukebox.isPlaying
+                                  ? Icon(
+                                      Icons.volume_up_rounded,
+                                      size: 16,
+                                      color: onAccent,
+                                    )
+                                  : Text(
+                                      '${index + 1}',
+                                      style: GoogleFonts.inter(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w700,
+                                        color: isCurrent
+                                            ? onAccent
+                                            : scheme.onSurfaceVariant,
+                                      ),
                                     ),
+                            ),
+                          ),
+                          title: Text(
+                            song.canto,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: GoogleFonts.inter(
+                              fontSize: 13.5,
+                              fontWeight:
+                                  isCurrent ? FontWeight.w700 : FontWeight.w600,
+                              color: isCurrent ? accentColor : scheme.onSurface,
+                            ),
+                          ),
+                          subtitle: songTemasItem.isNotEmpty
+                              ? Text(
+                                  songTemasItem.take(2).join(' · '),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: GoogleFonts.inter(
+                                    fontSize: 11,
+                                    color: scheme.onSurfaceVariant,
                                   ),
-                          ),
-                        ),
-                        title: Text(
-                          song.canto,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: GoogleFonts.inter(
-                            fontSize: 13.5,
-                            fontWeight:
-                                isCurrent ? FontWeight.w700 : FontWeight.w600,
-                            color: isCurrent ? accentColor : scheme.onSurface,
-                          ),
-                        ),
-                        subtitle: songTemasItem.isNotEmpty
-                            ? Text(
-                                songTemasItem.take(2).join(' · '),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: GoogleFonts.inter(
-                                  fontSize: 11,
-                                  color: scheme.onSurfaceVariant,
+                                )
+                              : null,
+                          trailing: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              IconButton(
+                                icon: Icon(
+                                  isFav
+                                      ? Icons.favorite_rounded
+                                      : Icons.favorite_border_rounded,
+                                  size: 18,
+                                  color: isFav
+                                      ? Colors.redAccent
+                                      : scheme.onSurfaceVariant
+                                          .withValues(alpha: 0.45),
                                 ),
-                              )
-                            : null,
-                        trailing: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            IconButton(
-                              icon: Icon(
-                                isFav
-                                    ? Icons.favorite_rounded
-                                    : Icons.favorite_border_rounded,
-                                size: 18,
-                                color: isFav
-                                    ? Colors.redAccent
-                                    : scheme.onSurfaceVariant
-                                        .withValues(alpha: 0.45),
+                                onPressed: () {
+                                  ref
+                                      .read(favoritosProvider.notifier)
+                                      .toggle(song.id ?? song.canto);
+                                },
                               ),
-                              onPressed: () {
-                                ref
-                                    .read(favoritosProvider.notifier)
-                                    .toggle(song.id ?? song.canto);
-                              },
-                            ),
-                            ReorderableDragStartListener(
-                              index: index,
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                child: Icon(
-                                  Icons.drag_handle_rounded,
-                                  size: 20,
-                                  color: scheme.onSurfaceVariant,
+                              ReorderableDragStartListener(
+                                index: index,
+                                child: Container(
+                                  padding: const EdgeInsets.all(8),
+                                  child: Icon(
+                                    Icons.drag_handle_rounded,
+                                    size: 20,
+                                    color: scheme.onSurfaceVariant,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     );
@@ -1190,25 +1191,26 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                                       vertical: 1.5,
                                     ),
                                     decoration: BoxDecoration(
-                                      color: accentColor.withValues(alpha: 0.16),
+                                      color:
+                                          accentColor.withValues(alpha: 0.16),
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Text(
                                       '${jukebox.playlist.length}',
-                                    style: TextStyle(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w700,
-                                      color: accentColor,
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w700,
+                                        color: accentColor,
+                                      ),
                                     ),
                                   ),
-                                ),
+                                ],
                               ],
-                            ],
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
               actions: [
                 if (currentSong != null && !jukebox.isPlayingAdSpot)
                   IconButton(
@@ -1216,7 +1218,8 @@ class _JukeboxScreenState extends ConsumerState<JukeboxScreen>
                       Icons.auto_stories_rounded,
                       color: accentColor,
                     ),
-                    tooltip: strings.t('Estudiar partitura', 'Study sheet music'),
+                    tooltip:
+                        strings.t('Estudiar partitura', 'Study sheet music'),
                     onPressed: _openScoreForCurrentSong,
                   ),
                 IconButton(

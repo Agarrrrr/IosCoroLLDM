@@ -8,8 +8,10 @@ import android.media.AudioDeviceCallback
 import android.media.AudioDeviceInfo
 import android.media.AudioManager
 import android.net.Uri
+import android.os.Bundle
 import android.provider.DocumentsContract
 import androidx.core.content.FileProvider
+import androidx.core.view.WindowCompat
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodCall
@@ -18,6 +20,12 @@ import java.io.File
 import java.io.FileInputStream
 
 class MainActivity : FlutterActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // Flutter receives the system insets and handles SafeArea/layout.
+        WindowCompat.enableEdgeToEdge(window)
+    }
+
     private val channelName = "com.lldm.coro/file_saver"
     private val whatsAppAudioShareChannelName = "com.lldm.coro/whatsapp_audio_share"
     private val createFileRequest = 4101
@@ -135,7 +143,7 @@ class MainActivity : FlutterActivity() {
                     result.success(null)
                 }
                 "stopSession" -> {
-                    MediaPlaybackService.stopSession(applicationContext)
+                    MediaPlaybackService.stopSession()
                     result.success(null)
                 }
                 else -> result.notImplemented()

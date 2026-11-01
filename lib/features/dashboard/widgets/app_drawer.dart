@@ -53,272 +53,279 @@ class AppDrawer extends ConsumerWidget {
         borderRadius: BorderRadius.zero,
       ),
       child: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // ── SECCIÓN MAGNÉTICA / FIJA SUPERIOR ──────────────────────────
-            // LOGO SIDEBAR
-            Container(
-              padding:
-                  const EdgeInsets.fromLTRB(20, 20, 20, 12),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                    child: Text(
-                      strings.appTitle,
-                      style: GoogleFonts.inter(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w800,
-                        color: theme.colorScheme.onSurface,
-                        letterSpacing: 0.5,
+        child: LayoutBuilder(builder: (context, constraints) {
+          final compact = constraints.maxHeight <
+              500 * MediaQuery.textScalerOf(context).scale(14) / 14;
+          final topics = ListView(
+            shrinkWrap: compact,
+            physics: compact ? const NeverScrollableScrollPhysics() : null,
+            padding: const EdgeInsets.only(bottom: 12),
+            children: [
+              if (temasUnicos.isNotEmpty) ...[
+                _buildSectionLabel(
+                    context, strings.t('Filtrar por tema', 'Filter by topic'),
+                    topPadding: 10),
+                ...temasUnicos.map((tema) => _buildSidebarBtn(
+                      context: context,
+                      ref: ref,
+                      id: 'tema_$tema',
+                      label: tema,
+                      isTema: true,
+                      onTap: () {
+                        ref.read(soloFavoritosProvider.notifier).set(false);
+                        ref
+                            .read(categoryFilterProvider.notifier)
+                            .set('tema_$tema');
+                      },
+                    )),
+              ],
+            ],
+          );
+          final content = Column(
+            mainAxisSize: compact ? MainAxisSize.min : MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // ── SECCIÓN MAGNÉTICA / FIJA SUPERIOR ──────────────────────────
+              // LOGO SIDEBAR
+              Container(
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 12),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        strings.appTitle,
+                        style: GoogleFonts.inter(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                          color: theme.colorScheme.onSurface,
+                          letterSpacing: 0.5,
+                        ),
                       ),
                     ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 4),
-                    decoration: BoxDecoration(
-                      color:
-                          theme.colorScheme.secondary.withValues(alpha: 0.1),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Text(
-                      '${cantosFiltrados.length}',
-                      style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: theme.colorScheme.secondary,
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 4),
+                      decoration: BoxDecoration(
+                        color:
+                            theme.colorScheme.secondary.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        '${cantosFiltrados.length}',
+                        style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: theme.colorScheme.secondary,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
 
-            // Solo mostramos progreso durante una sincronización activa.
-            Consumer(
-              builder: (context, ref, child) {
-                final syncState = ref.watch(syncManagerProvider);
+              // Solo mostramos progreso durante una sincronización activa.
+              Consumer(
+                builder: (context, ref, child) {
+                  final syncState = ref.watch(syncManagerProvider);
 
-                if (!syncState.isSyncing) return const SizedBox.shrink();
-                return Container(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 20, vertical: 8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.sync_rounded,
-                            size: 14,
-                            color: theme.colorScheme.secondary,
-                          ),
-                          const SizedBox(width: 8),
-                          Expanded(
-                            child: Text(
-                              '${strings.t('Sincronizando', 'Syncing')} '
-                              '(${(syncState.progress * 100).toInt()}%)',
-                              style: GoogleFonts.inter(
-                                fontSize: 11,
-                                fontWeight: FontWeight.w500,
-                                color: theme.colorScheme.secondary,
+                  if (!syncState.isSyncing) return const SizedBox.shrink();
+                  return Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.sync_rounded,
+                              size: 14,
+                              color: theme.colorScheme.secondary,
+                            ),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                '${strings.t('Sincronizando', 'Syncing')} '
+                                '(${(syncState.progress * 100).toInt()}%)',
+                                style: GoogleFonts.inter(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w500,
+                                  color: theme.colorScheme.secondary,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      LinearProgressIndicator(
-                        value: syncState.progress,
-                        backgroundColor: theme.colorScheme.secondary
-                            .withValues(alpha: 0.1),
-                        valueColor: AlwaysStoppedAnimation(
-                            theme.colorScheme.secondary),
-                        borderRadius: BorderRadius.circular(10),
-                        minHeight: 3,
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
-
-            // CATÁLOGO FIJO (Todos los cantos, Mis favoritos, Reproductor)
-            _buildSectionLabel(
-              context,
-              strings.t('CATÁLOGO', 'CATALOG'),
-              topPadding: 8,
-            ),
-            _buildSidebarBtn(
-              context: context,
-              ref: ref,
-              id: '',
-              label: strings.t('Todos los cantos', 'All songs'),
-              isActiveOverride: !soloFavoritos &&
-                  ref.watch(categoryFilterProvider).isEmpty,
-              onTap: () {
-                ref.read(soloFavoritosProvider.notifier).set(false);
-                ref.read(categoryFilterProvider.notifier).set('');
-              },
-            ),
-            _buildSidebarBtn(
-              context: context,
-              ref: ref,
-              id: 'favoritos',
-              label: strings.t('Mis favoritos', 'My favorites'),
-              icon: Icons.favorite_rounded,
-              isActiveOverride: soloFavoritos,
-              onTap: () {
-                ref.read(soloFavoritosProvider.notifier).set(true);
-                ref.read(categoryFilterProvider.notifier).set('');
-              },
-            ),
-            _buildSidebarBtn(
-              context: context,
-              ref: ref,
-              id: 'jukebox',
-              label: strings.t('Reproductor', 'Player'),
-              icon: Icons.headphones_rounded,
-              isActiveOverride: false,
-              closeDrawer: false,
-              onTap: () {
-                final rootNav = Navigator.of(context, rootNavigator: true);
-                _closeDrawerSafely(context);
-                rootNav.push(
-                  PageRouteBuilder(
-                    pageBuilder: (context, anim, secAnim) =>
-                        const JukeboxScreen(),
-                    transitionsBuilder: (context, anim, secAnim, child) {
-                      return SlideTransition(
-                        position: Tween<Offset>(
-                          begin: const Offset(0, 1),
-                          end: Offset.zero,
-                        ).animate(CurvedAnimation(
-                          parent: anim,
-                          curve: Curves.easeOutCubic,
-                        )),
-                        child: child,
-                      );
-                    },
-                  ),
-                );
-              },
-            ),
-
-            const SizedBox(height: 6),
-
-            // ── ÁREA DESLIZABLE (TEMAS) ────────────────────────────────────
-            Expanded(
-              child: ListView(
-                padding: const EdgeInsets.only(bottom: 12),
-                children: [
-                  if (temasUnicos.isNotEmpty) ...[
-                    _buildSectionLabel(
-                      context,
-                      strings.t('Filtrar por tema', 'Filter by topic'),
-                      topPadding: 10,
-                    ),
-                    ...temasUnicos.map((tema) => _buildSidebarBtn(
-                          context: context,
-                          ref: ref,
-                          id: 'tema_$tema',
-                          label: tema,
-                          isTema: true,
-                          onTap: () {
-                            ref
-                                .read(soloFavoritosProvider.notifier)
-                                .set(false);
-                            ref
-                                .read(categoryFilterProvider.notifier)
-                                .set('tema_$tema');
-                          },
-                        )),
-                  ],
-                ],
-              ),
-            ),
-
-            // ── FOOTER MAGNÉTICO (Ajustes / Premium) ───────────────────────
-            Container(
-              decoration: BoxDecoration(
-                color: theme.scaffoldBackgroundColor,
-              ),
-              padding: const EdgeInsets.only(bottom: 10, top: 6),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  FutureBuilder<bool>(
-                    future: AdsService.instance.privacyOptionsRequired(),
-                    builder: (context, snapshot) {
-                      if (snapshot.data != true) {
-                        return const SizedBox.shrink();
-                      }
-                      return _buildFooterBtn(
-                        context: context,
-                        icon: Icons.privacy_tip_outlined,
-                        label: strings.t(
-                          'PRIVACIDAD DE ANUNCIOS',
-                          'AD PRIVACY',
+                          ],
                         ),
-                        onTap: () {
-                          _closeDrawerSafely(context);
-                          AdsService.instance.showPrivacyOptions();
-                        },
-                      );
-                    },
-                  ),
-                  Consumer(
-                    builder: (context, ref, _) {
-                      final premium = ref.watch(monetizationProvider).isPremium;
-                      return _buildFooterBtn(
-                        context: context,
-                        icon: premium
-                            ? Icons.verified_rounded
-                            : Icons.workspace_premium_rounded,
-                        label: premium
-                            ? strings.t('Premium activo', 'Premium active')
-                            : strings.t('Obtener Premium', 'Get Premium'),
-                        onTap: () {
-                          final rootCtx =
-                              Navigator.of(context, rootNavigator: true).context;
-                          _closeDrawerSafely(context);
-                          showPremiumDialog(rootCtx);
-                        },
-                      );
-                    },
-                  ),
-                  _buildFooterBtn(
-                    context: context,
-                    icon: Icons.star_rate_rounded,
-                    label: strings.t('Calificar aplicación', 'Rate application'),
-                    onTap: () {
-                      final rootCtx =
-                          Navigator.of(context, rootNavigator: true).context;
-                      _closeDrawerSafely(context);
-                      showReviewDialog(rootCtx, force: true);
-                    },
-                  ),
-                  _buildFooterBtn(
-                    context: context,
-                    icon: Icons.settings_rounded,
-                    label: strings.t('Ajustes', 'Settings'),
-                    onTap: () {
-                      final rootCtx =
-                          Navigator.of(context, rootNavigator: true).context;
-                      _closeDrawerSafely(context);
-                      showDialog(
-                        context: rootCtx,
-                        builder: (context) => const SettingsDialog(),
-                      );
-                    },
-                  ),
-                ],
+                        const SizedBox(height: 8),
+                        LinearProgressIndicator(
+                          value: syncState.progress,
+                          backgroundColor: theme.colorScheme.secondary
+                              .withValues(alpha: 0.1),
+                          valueColor: AlwaysStoppedAnimation(
+                              theme.colorScheme.secondary),
+                          borderRadius: BorderRadius.circular(10),
+                          minHeight: 3,
+                        ),
+                      ],
+                    ),
+                  );
+                },
               ),
-            ),
-          ],
-        ),
+
+              // CATÁLOGO FIJO (Todos los cantos, Mis favoritos, Reproductor)
+              _buildSectionLabel(
+                context,
+                strings.t('CATÁLOGO', 'CATALOG'),
+                topPadding: 8,
+              ),
+              _buildSidebarBtn(
+                context: context,
+                ref: ref,
+                id: '',
+                label: strings.t('Todos los cantos', 'All songs'),
+                isActiveOverride:
+                    !soloFavoritos && ref.watch(categoryFilterProvider).isEmpty,
+                onTap: () {
+                  ref.read(soloFavoritosProvider.notifier).set(false);
+                  ref.read(categoryFilterProvider.notifier).set('');
+                },
+              ),
+              _buildSidebarBtn(
+                context: context,
+                ref: ref,
+                id: 'favoritos',
+                label: strings.t('Mis favoritos', 'My favorites'),
+                icon: Icons.favorite_rounded,
+                isActiveOverride: soloFavoritos,
+                onTap: () {
+                  ref.read(soloFavoritosProvider.notifier).set(true);
+                  ref.read(categoryFilterProvider.notifier).set('');
+                },
+              ),
+              _buildSidebarBtn(
+                context: context,
+                ref: ref,
+                id: 'jukebox',
+                label: strings.t('Reproductor', 'Player'),
+                icon: Icons.headphones_rounded,
+                isActiveOverride: false,
+                closeDrawer: false,
+                onTap: () {
+                  final rootNav = Navigator.of(context, rootNavigator: true);
+                  _closeDrawerSafely(context);
+                  rootNav.push(
+                    PageRouteBuilder(
+                      pageBuilder: (context, anim, secAnim) =>
+                          const JukeboxScreen(),
+                      transitionsBuilder: (context, anim, secAnim, child) {
+                        return SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(0, 1),
+                            end: Offset.zero,
+                          ).animate(CurvedAnimation(
+                            parent: anim,
+                            curve: Curves.easeOutCubic,
+                          )),
+                          child: child,
+                        );
+                      },
+                    ),
+                  );
+                },
+              ),
+
+              const SizedBox(height: 6),
+
+              // ── ÁREA DESLIZABLE (TEMAS) ────────────────────────────────────
+              if (compact) topics else Expanded(child: topics),
+
+              // ── FOOTER MAGNÉTICO (Ajustes / Premium) ───────────────────────
+              Container(
+                decoration: BoxDecoration(
+                  color: theme.scaffoldBackgroundColor,
+                ),
+                padding: const EdgeInsets.only(bottom: 10, top: 6),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    FutureBuilder<bool>(
+                      future: AdsService.instance.privacyOptionsRequired(),
+                      builder: (context, snapshot) {
+                        if (snapshot.data != true) {
+                          return const SizedBox.shrink();
+                        }
+                        return _buildFooterBtn(
+                          context: context,
+                          icon: Icons.privacy_tip_outlined,
+                          label: strings.t(
+                            'PRIVACIDAD DE ANUNCIOS',
+                            'AD PRIVACY',
+                          ),
+                          onTap: () {
+                            _closeDrawerSafely(context);
+                            AdsService.instance.showPrivacyOptions();
+                          },
+                        );
+                      },
+                    ),
+                    Consumer(
+                      builder: (context, ref, _) {
+                        final premium =
+                            ref.watch(monetizationProvider).isPremium;
+                        return _buildFooterBtn(
+                          context: context,
+                          icon: premium
+                              ? Icons.verified_rounded
+                              : Icons.workspace_premium_rounded,
+                          label: premium
+                              ? strings.t('Premium activo', 'Premium active')
+                              : strings.t('Obtener Premium', 'Get Premium'),
+                          onTap: () {
+                            final rootCtx =
+                                Navigator.of(context, rootNavigator: true)
+                                    .context;
+                            _closeDrawerSafely(context);
+                            showPremiumDialog(rootCtx);
+                          },
+                        );
+                      },
+                    ),
+                    _buildFooterBtn(
+                      context: context,
+                      icon: Icons.star_rate_rounded,
+                      label:
+                          strings.t('Calificar aplicación', 'Rate application'),
+                      onTap: () {
+                        final rootCtx =
+                            Navigator.of(context, rootNavigator: true).context;
+                        _closeDrawerSafely(context);
+                        showReviewDialog(rootCtx, force: true);
+                      },
+                    ),
+                    _buildFooterBtn(
+                      context: context,
+                      icon: Icons.settings_rounded,
+                      label: strings.t('Ajustes', 'Settings'),
+                      onTap: () {
+                        final rootCtx =
+                            Navigator.of(context, rootNavigator: true).context;
+                        _closeDrawerSafely(context);
+                        showDialog(
+                          context: rootCtx,
+                          builder: (context) => const SettingsDialog(),
+                        );
+                      },
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          );
+          // On short windows, scroll the entire drawer so the footer remains
+          // reachable instead of competing with its fixed header for height.
+          return compact ? SingleChildScrollView(child: content) : content;
+        }),
       ),
     );
   }
@@ -329,8 +336,7 @@ class AppDrawer extends ConsumerWidget {
     double topPadding = 20,
   }) {
     return Padding(
-      padding:
-          EdgeInsets.only(left: 20, right: 20, top: topPadding, bottom: 8),
+      padding: EdgeInsets.only(left: 20, right: 20, top: topPadding, bottom: 8),
       child: Text(
         text,
         style: GoogleFonts.inter(

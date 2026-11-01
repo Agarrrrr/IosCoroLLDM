@@ -273,10 +273,7 @@ class _VocalPanelState extends ConsumerState<VocalPanel> {
         _isOffline = isLocal;
       });
 
-      // Iniciar auto-caché en segundo plano para dejar la voz guardada offline
-      if (!isLocal) {
-        _vocalService.cacheTrackInBackground(track);
-      }
+      // La fuente progresiva guarda los mismos bytes que escucha el reproductor.
 
       await _runPlayerOperation(() async {
         if (!mounted || epoch != _loadEpoch) return;

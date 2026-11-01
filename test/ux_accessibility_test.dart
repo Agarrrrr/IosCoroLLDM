@@ -210,16 +210,29 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('Ajustes y Premium permanecen fijos al desplazar 40 temas',
+  testWidgets('Ajustes y Premium permanecen fijos cuando cabe el menú completo',
       (tester) async {
     await mount(tester, const AppDrawer(), AppThemeMode.claro, 'es',
-        many: true);
+        many: true, scale: 1);
     final settings = tester.getCenter(find.text('Ajustes'));
     final premium = tester.getCenter(find.text('Obtener Premium'));
     await tester.scrollUntilVisible(find.text('Tema 39'), 400);
     expect(tester.getCenter(find.text('Ajustes')), settings);
     expect(tester.getCenter(find.text('Obtener Premium')), premium);
     expect(find.text('Ajustes').hitTestable(), findsOneWidget);
+    expect(find.text('Obtener Premium').hitTestable(), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Ajustes y Premium siguen accesibles con texto al 200%',
+      (tester) async {
+    await mount(tester, const AppDrawer(), AppThemeMode.claro, 'es',
+        many: true);
+    await tester.ensureVisible(find.text('Ajustes'));
+    await tester.pumpAndSettle();
+    expect(find.text('Ajustes').hitTestable(), findsOneWidget);
+    await tester.ensureVisible(find.text('Obtener Premium'));
+    await tester.pumpAndSettle();
     expect(find.text('Obtener Premium').hitTestable(), findsOneWidget);
     expect(tester.takeException(), isNull);
   });

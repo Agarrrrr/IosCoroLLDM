@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pointycastle/export.dart';
+import 'progressive_audio_cache.dart';
 
 class VocalTrack {
   final String archivo;
@@ -165,7 +166,8 @@ class VocalAudioService {
   bool _loadingManifest = false;
   bool _syncingRemoteManifest = false;
   DateTime? _lastRemoteSync;
-  final Map<String, Future<File?>> _inFlightTrackDownloads = {};
+  late final ProgressiveAudioCache _progressiveCache =
+      ProgressiveAudioCache(_dio);
 
   static final RegExp _nonAlphanumericRegex = RegExp(r'[^a-z0-9]');
 
@@ -249,7 +251,8 @@ class VocalAudioService {
           };
           mergedSongs[existingIdx] = VocalSong(
             id: existing.id ?? remoteSong.id,
-            canto: existing.canto.isNotEmpty ? existing.canto : remoteSong.canto,
+            canto:
+                existing.canto.isNotEmpty ? existing.canto : remoteSong.canto,
             carpeta: existing.carpeta.isNotEmpty
                 ? existing.carpeta
                 : remoteSong.carpeta,
@@ -410,7 +413,8 @@ class VocalAudioService {
         r2Path.split('/').map((seg) => Uri.encodeComponent(seg)).join('/');
     try {
       final now = DateTime.now().toUtc().millisecondsSinceEpoch ~/ 1000;
-      final exp = now + 86400; // Válido por 24 horas (protección contra reloj desfasado)
+      final exp = now +
+          86400; // Válido por 24 horas (protección contra reloj desfasado)
       final payload = utf8.encode('$r2Path:$exp');
       final hmac = HMac(SHA256Digest(), 64)
         ..init(KeyParameter(Uint8List.fromList(utf8.encode(_hmacSecret))));
@@ -456,7 +460,7 @@ class VocalAudioService {
     if (await local.exists() && await local.length() > 1024) {
       return local.path;
     }
-    return getStreamUrl(r2Path);
+    return _progressiveCache.source(local, getStreamUrl(r2Path));
   }
 
   /// Descarga y almacena en caché local una pista individual (deduplicando descargas en curso).
@@ -471,62 +475,11 @@ class VocalAudioService {
       return existing;
     }
 
-    final inFlight = _inFlightTrackDownloads[track.r2Path];
-    if (inFlight != null && cancelToken == null) {
-      return inFlight;
-    }
-
-    final future = _downloadTrackInternal(track, cancelToken: cancelToken);
-    if (cancelToken == null) {
-      _inFlightTrackDownloads[track.r2Path] = future;
-    }
-    try {
-      return await future;
-    } finally {
-      if (cancelToken == null) {
-        _inFlightTrackDownloads.remove(track.r2Path);
-      }
-    }
-  }
-
-  Future<File?> _downloadTrackInternal(
-    VocalTrack track, {
-    CancelToken? cancelToken,
-  }) async {
-    try {
-      final file = await getLocalFile(track.r2Path);
-      if (await file.exists() && await file.length() > 1024) {
-        return file;
-      }
-      await file.parent.create(recursive: true);
-      final tempFile = File('${file.path}.${DateTime.now().microsecondsSinceEpoch}.tmp');
-      final url = getStreamUrl(track.r2Path);
-
-      await _dio.download(
-        url,
-        tempFile.path,
-        cancelToken: cancelToken,
-      );
-
-      if (await tempFile.exists() && await tempFile.length() > 1024) {
-        if (await file.exists()) {
-          try {
-            await file.delete();
-          } catch (_) {}
-        }
-        await tempFile.rename(file.path);
-        return file;
-      } else {
-        if (await tempFile.exists()) {
-          try {
-            await tempFile.delete();
-          } catch (_) {}
-        }
-      }
-    } catch (e) {
-      debugPrint('⚠️ [VocalAudioService] Error cacheando pista (${track.r2Path}): $e');
-    }
-    return null;
+    return _progressiveCache.download(
+      existing,
+      getStreamUrl(track.r2Path),
+      cancelToken: cancelToken,
+    );
   }
 
   /// Auto-caché silencioso: guarda la pista en disco mientras el usuario la escucha,

@@ -18,6 +18,7 @@ import android.os.Build
 import android.os.IBinder
 import android.os.PowerManager
 import android.os.SystemClock
+import android.util.Log
 import java.io.File
 
 class MediaPlaybackService : Service() {
@@ -48,6 +49,8 @@ class MediaPlaybackService : Service() {
         private var cachedCanSeek: Boolean = true
         private var cachedArtworkPath: String? = null
         private var cachedArtworkBitmap: Bitmap? = null
+        private var startPending = false
+        private var stopRequested = false
 
         fun updateMetadata(
             context: Context,
@@ -78,7 +81,16 @@ class MediaPlaybackService : Service() {
                     try {
                         val file = File(artworkPath)
                         if (file.exists() && file.length() > 0) {
-                            BitmapFactory.decodeFile(artworkPath)
+                            val bounds = BitmapFactory.Options().apply {
+                                inJustDecodeBounds = true
+                            }
+                            BitmapFactory.decodeFile(artworkPath, bounds)
+                            val options = BitmapFactory.Options()
+                            while (bounds.outWidth / options.inSampleSize > 512 ||
+                                bounds.outHeight / options.inSampleSize > 512) {
+                                options.inSampleSize *= 2
+                            }
+                            BitmapFactory.decodeFile(artworkPath, options)
                         } else null
                     } catch (_: Exception) {
                         null
@@ -89,7 +101,7 @@ class MediaPlaybackService : Service() {
             val svc = instance
             if (svc != null) {
                 svc.applyState()
-            } else {
+            } else if (isPlaying) {
                 startServiceCompat(context)
             }
         }
@@ -131,13 +143,22 @@ class MediaPlaybackService : Service() {
             instance?.releaseTransitionLocksIfIdle()
         }
 
-        fun stopSession(context: Context) {
+        fun stopSession() {
             cachedIsPlaying = false
-            instance?.stopSelfCleanly()
-            context.stopService(Intent(context, MediaPlaybackService::class.java))
+            stopRequested = true
+            val svc = instance
+            if (svc != null) {
+                svc.stopSelfCleanly()
+                svc.stopSelf()
+            }
+            // A queued start must be promoted before it is stopped. Cancelling
+            // it here can race Android's foreground-service startup deadline.
         }
 
         private fun startServiceCompat(context: Context) {
+            stopRequested = false
+            if (startPending) return
+            startPending = true
             try {
                 val intent = Intent(context, MediaPlaybackService::class.java)
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -145,7 +166,9 @@ class MediaPlaybackService : Service() {
                 } else {
                     context.startService(intent)
                 }
-            } catch (_: Exception) {
+            } catch (error: Exception) {
+                startPending = false
+                Log.e("CoroMediaPlayback", "Unable to request playback service", error)
             }
         }
     }
@@ -154,17 +177,38 @@ class MediaPlaybackService : Service() {
     private var wakeLock: PowerManager.WakeLock? = null
     private var wifiLock: WifiManager.WifiLock? = null
     private var isForeground = false
+    private val defaultArtwork: Bitmap? by lazy {
+        try {
+            BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
+        } catch (_: Exception) {
+            null
+        }
+    }
 
     override fun onCreate() {
         super.onCreate()
-        instance = this
         createNotificationChannel()
+        // Satisfy startForegroundService before locks, artwork or MediaSession work.
+        // A failed promotion must stop this service, never leave a pending FGS.
+        if (!promoteToForeground(buildStartingNotification())) return
+        instance = this
         initLocks()
         initMediaSession()
         applyState()
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        startPending = false
+        if (!isForeground && !promoteToForeground(buildStartingNotification())) {
+            return START_NOT_STICKY
+        }
+        if (stopRequested) {
+            stopSelfCleanly()
+            stopSelf(startId)
+            return START_NOT_STICKY
+        }
+        instance = this
+        if (mediaSession == null) initMediaSession()
         when (intent?.action) {
             ACTION_PLAY -> commandListener?.invoke("play", null)
             ACTION_PAUSE -> commandListener?.invoke("pause", null)
@@ -172,12 +216,13 @@ class MediaPlaybackService : Service() {
             ACTION_PREV -> if (cachedCanSkipPrev) commandListener?.invoke("previous", null)
         }
         applyState()
-        return START_STICKY
+        return START_NOT_STICKY
     }
 
     override fun onBind(intent: Intent?): IBinder? = null
 
     override fun onDestroy() {
+        startPending = false
         stopSelfCleanly()
         if (instance === this) {
             instance = null
@@ -291,11 +336,7 @@ class MediaPlaybackService : Service() {
             .putString(MediaMetadata.METADATA_KEY_ALBUM, cachedAlbum)
             .putLong(MediaMetadata.METADATA_KEY_DURATION, cachedDurationMs.coerceAtLeast(0L))
 
-        val bmp = cachedArtworkBitmap ?: try {
-            BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
-        } catch (_: Exception) {
-            null
-        }
+        val bmp = cachedArtworkBitmap ?: defaultArtwork
         if (bmp != null) {
             metaBuilder.putBitmap(MediaMetadata.METADATA_KEY_ALBUM_ART, bmp)
             metaBuilder.putBitmap(MediaMetadata.METADATA_KEY_ART, bmp)
@@ -327,23 +368,48 @@ class MediaPlaybackService : Service() {
         session.setPlaybackState(pbState)
 
         val notification = buildNotification(session)
+        if (!isForeground) {
+            promoteToForeground(notification)
+            return
+        }
         try {
-            if (!isForeground) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                    startForeground(
-                        NOTIFICATION_ID,
-                        notification,
-                        ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK,
-                    )
-                } else {
-                    startForeground(NOTIFICATION_ID, notification)
-                }
-                isForeground = true
+            val nm = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            nm.notify(NOTIFICATION_ID, notification)
+        } catch (error: Exception) {
+            Log.e("CoroMediaPlayback", "Unable to update playback notification", error)
+        }
+    }
+
+    private fun buildStartingNotification(): Notification {
+        val builder = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Notification.Builder(this, CHANNEL_ID)
+        } else {
+            @Suppress("DEPRECATION")
+            Notification.Builder(this)
+        }
+        return builder.setSmallIcon(R.drawable.ic_stat_playback)
+            .setContentTitle(cachedTitle)
+            .setContentText(cachedArtist)
+            .setOnlyAlertOnce(true)
+            .setOngoing(true)
+            .setCategory(Notification.CATEGORY_TRANSPORT)
+            .build()
+    }
+
+    private fun promoteToForeground(notification: Notification): Boolean {
+        return try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                startForeground(NOTIFICATION_ID, notification,
+                    ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK)
             } else {
-                val nm = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-                nm.notify(NOTIFICATION_ID, notification)
+                startForeground(NOTIFICATION_ID, notification)
             }
-        } catch (_: Exception) {
+            isForeground = true
+            true
+        } catch (error: Exception) {
+            Log.e("CoroMediaPlayback", "Unable to start foreground playback", error)
+            stopSelf()
+            false
         }
     }
 
@@ -373,7 +439,7 @@ class MediaPlaybackService : Service() {
         val nextPending = serviceActionPendingIntent(ACTION_NEXT, 3)
 
         builder
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_stat_playback)
             .setContentTitle(cachedTitle)
             .setContentText(cachedArtist)
             .setSubText(cachedAlbum)
@@ -382,11 +448,7 @@ class MediaPlaybackService : Service() {
             .setOngoing(cachedIsPlaying)
             .setOnlyAlertOnce(true)
 
-        val artBmp = cachedArtworkBitmap ?: try {
-            BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
-        } catch (_: Exception) {
-            null
-        }
+        val artBmp = cachedArtworkBitmap ?: defaultArtwork
         if (artBmp != null) {
             builder.setLargeIcon(artBmp)
         }
@@ -459,6 +521,7 @@ class MediaPlaybackService : Service() {
     }
 
     private fun stopSelfCleanly() {
+        if (instance === this) instance = null
         releaseLocks()
         try {
             mediaSession?.isActive = false

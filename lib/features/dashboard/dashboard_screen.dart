@@ -88,6 +88,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
     final cantosAsync = ref.watch(cantosFiltradosProvider);
     final cantos = cantosAsync.valueOrNull ?? [];
     final theme = Theme.of(context);
+    final keyboardVisible = MediaQuery.viewInsetsOf(context).bottom > 0;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final soloFavoritos = ref.watch(soloFavoritosProvider);
     final strings = AppStrings.of(context);
@@ -115,7 +116,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
               decoration: BoxDecoration(
                 color: theme.scaffoldBackgroundColor,
                 border: Border(
-                    bottom: BorderSide(color: Colors.grey.withValues(alpha: 0.2))),
+                    bottom:
+                        BorderSide(color: Colors.grey.withValues(alpha: 0.2))),
               ),
               child: Row(
                 children: [
@@ -123,7 +125,10 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                     builder: (context) => IconButton(
                       icon: Icon(Icons.menu_rounded,
                           color: theme.colorScheme.onSurface),
-                      onPressed: () => Scaffold.of(context).openDrawer(),
+                      onPressed: () {
+                        FocusScope.of(context).unfocus();
+                        Scaffold.of(context).openDrawer();
+                      },
                     ),
                   ),
                   Expanded(
@@ -131,11 +136,12 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                       height: 48,
                       margin: const EdgeInsets.symmetric(horizontal: 8),
                       decoration: BoxDecoration(
-                        color: theme.colorScheme.onSurface.withValues(alpha: 0.05),
+                        color:
+                            theme.colorScheme.onSurface.withValues(alpha: 0.05),
                         borderRadius: BorderRadius.circular(14),
                         border: Border.all(
-                            color:
-                                theme.colorScheme.onSurface.withValues(alpha: 0.1)),
+                            color: theme.colorScheme.onSurface
+                                .withValues(alpha: 0.1)),
                       ),
                       child: ValueListenableBuilder<TextEditingValue>(
                         valueListenable: _searchController,
@@ -287,8 +293,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                               },
                             ),
             ),
-            const JukeboxMiniPlayer(),
-            const MonetizationBanner(),
+            if (!keyboardVisible) const JukeboxMiniPlayer(),
+            if (!keyboardVisible) const MonetizationBanner(),
           ],
         ),
       ),
